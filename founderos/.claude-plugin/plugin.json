@@ -1,0 +1,18 @@
+{
+  "name": "founderos",
+  "displayName": "FounderOS",
+  "version": "0.1.0",
+  "description": "Sifirdan tek kisilik yapay zeka servis isini doksan gunde kuran sistem. Her sabah ne yapacagini soyler, musterinin sistemini senin yerine kurar.",
+  "author": {
+    "name": "Berk Sezgin"
+  },
+  "homepage": "https://founderos.so",
+  "license": "UNLICENSED",
+  "keywords": [
+    "founderos",
+    "ai servis",
+    "ajans",
+    "crm",
+    "turkce"
+  ]
+}

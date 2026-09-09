@@ -1,0 +1,139 @@
+---
+user-invocable: false
+name: nisi-sec
+description: İkinci gün, araçlar kurulduktan sonra. On sekiz niş kartından öğrenciye uygun nişi seçer ve Doksan Gün Planı'nı üretir. Niş kararı ya da niş değişimi konuşulduğunda.
+---
+
+# nisi-sec
+
+## 1. Adı, rolü, pazarlamadaki karşılığı
+
+Üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül senin nişini seçer. Niş, sattığın şeyi kime satacağını belirleyen dar sektördür; örnek olarak "klima ve kombi servisleri". Programın tanıtımındaki adı "Kime Satacaksın".
+
+Neden bu iş var: sıfırdan başlayan biri "herkese satarım" diyor ve kimseye satamıyor. Sebebi şu: herkese yazılan mesaj kimseye yazılmamış gibi duruyor. Bir sektörü seçtiğin an mesajın, kanıtın, fiyatın ve itiraz cevapların o sektöre göre hazır geliyor. Sattığın şey değişmiyor, sadece kime söylediğin belli oluyor.
+
+İkinci sebep: kararsızlık. Bu kararı sana bıraksak haftalarca düşünürsün, çünkü hangisinin doğru olduğunu bilmiyorsun ve bilmen de mümkün değil. Bu yüzden seçimi FounderOS yapar, sana sorar gibi yapmaz. Yanlış nişi seçmek, hiçbir niş seçmemekten iyidir.
+
+Şunlar bu modülün işi değildir:
+- Ne satacağını yazmak ve fiyatı koymak (üçüncü ve dördüncü gün).
+- Aday listesi çıkarmak (sekizinci gün).
+- Niş değiştirmek. Değiştirme kararını degisiklige-karar-ver verir, şartları aşağıda yazılı.
+
+Pazarlamadaki karşılığı: bir sektörü seçen kişi, o sektörün dilini konuşan tek satıcı oluyor.
+
+## 2. Ne zaman çalışır
+
+- İkinci gün, araçlar kurulduktan sonra. Bir saat sürer, üstüne doğrulama gelir.
+- Bir daha çalışmaz. Niş, doksan gün ya da beş müşteri boyunca kilitlidir, hangisi önce gelirse.
+- Kilidin tek istisnası şu: 300 temas yapılmış ve o 300 temastan hiç görüşme çıkmamış olacak. O zaman istek degisiklige-karar-ver'e gider. Bu sayının altında niş değişmez, çünkü sorunun nişte mi mesajda mı olduğu daha belli değildir.
+
+## 3. Ne okur
+
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, şehrin, kanal yolun, çalışma düzenin, günlük temas sayın.
+On sekiz niş kartından (bir sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon, gerçek fiyatlar ve kapasite, kanal ve zaman, rekabetin şekli, yasal sınırlar.
+Takvimden: hangi aydayız.
+Gelir planından: bir müşterinin sana ayda getireceği rakam.
+
+## 4. Ne sorar
+
+Sormaz. Kararı FounderOS verir ve sebebini söyler.
+
+## 5. Ne yapar
+
+Eleme yapar, sıralama değil. Sırayla dört elemeden geçirir, kalanlar arasından seçer.
+
+### Birinci eleme: mevsim
+
+İki test:
+- Bu ay ölü sezonda olan nişler düşer. Doksan günün ilk ayında satış yapman lazım; kapalı sezonda kimse sistem satın almaz.
+- Yılın dört ayından fazlası ölü geçen nişler ilk müşteri için düşer. Düğün ve fotoğraf bunun tipik örneği: sezonu Mayıs ile Ekim arası, kalan altı ay boş. Doksan gününün yarısı boş sezona denk gelirse ilk müşteriyi bulamazsın.
+
+Düşen nişler yok olmuyor, ikinci ay listesine gidiyor. Sezonu açıldığında geri geliyorlar.
+
+### İkinci eleme: para
+
+Burada dikkat edilecek bir şey var: müşteri sana tek bir kurtarılan müşteriden ödemiyor, bir ayda kurtarılanların toplamından ödüyor. O yüzden "kaçan bir müşteri kurulum ücretini karşılıyor mu" diye bakmak yanlış olur.
+
+Hesabın iki rakamı da nişin kartından çıkar, hiçbiri buradan uydurulmaz. Kayıp birimi kartın "gerçek fiyatlar ve kapasite" bölümünün son satırında; aylık kaçan iş sayısı kartın "sızıntı nerede" bölümünün birinci sızıntısında. İkisi çarpılır ve o işletmenin ayda kaybettiği para çıkar.
+
+Sonra payın alınır: yarattığın değerin onda biri ile beşte biri arası, çünkü müşteri sana verdiği her 1 TL'ye en az 5 TL geri almalı. Çıkan aralığın üst ucu o nişin taşıyabileceği aylık ücrettir.
+
+Klima ve kombi servisinde: kayıp birimi 1.250 TL, kaçan çağrı ayda 110, çarpımı 137.500 TL, payın 13.750 ile 27.500 TL arası, yani nişin taşıdığı aylık ücret 25.000 TL. Kuaförde: kayıp birimi bir koltuk saati, 1.000 ile 3.500 TL arası. Kartında aylık kaçan randevu sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
+
+Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Klimada 25.000 TL ile 120.000 TL hedefe beş müşteri gerekiyor; beş müşteri için 25 görüşme, 36 randevu, yaklaşık 1.200 arama, günde 50 aramayla 24 iş günü. Sığıyor, niş geçiyor. Aynı hesap günde 10 arama yapan biri için 120 iş güne çıkıyor; o yüzden işin yanında çalışanın doksan günlük hedefi zaten dört müşteri değil, bir ya da iki müşteri ve bu eleme onun için hedef üzerinden değil, tek müşteri üzerinden yapılır.
+
+Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı nerede" bölümlerinden çıkar. Kartta ikisinden biri yoksa niş elenmez, "ölçülemedi" işaretiyle geçer ve karar diğer elemelere kalır.
+
+### Üçüncü eleme: pazar büyüklüğü
+
+On birinci günde 500 kişilik bir aday listesi çıkaracaksın. Doksan günde o listeye yaklaşık 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
+
+Eşik buradan çıkıyor:
+- Şehrinde 500 işletme varsa niş geçer.
+- Yoksa aynı niş Türkiye geneline açılır. Hizmet uzaktan teslim ediliyor, niş değişmiyor, sadece coğrafya büyüyor. Bu durumda "sizin şehirde" cümlesi mesajlardan çıkar ve kanıt cümlesi ülke geneline döner.
+- Türkiye genelinde de 2.000 işletme yoksa niş düşer.
+
+### Dördüncü eleme: kanal
+
+Kanal yolun yazıysa, telefon ağırlıklı nişler geriye gider ve Instagram ağırlıklı nişler öne gelir. Hangi nişte hangisinin açık olduğu kartın "kanal ve zaman" bölümünde yazıyor.
+
+### Kalanlar arasından seçim
+
+Sırayla:
+1. Kalanlardan içeriden tanıdığın bir sektör varsa o birinci adaydır. Sebebi: o sektörün kelimelerini biliyorsun ve işletmeci bunu ilk otuz saniyede anlıyor. Bilmediğin bir sektörde aynı yere gelmen haftalar sürer.
+2. Yoksa şehrinde işletme sayısı en yüksek üç niş alınır.
+
+Üç aday çıkar. Bu üçü doğrulamaya gider.
+
+### Doğrulama
+
+Üç aday nisi-dogrula'ya verilir, tablo geri gelir. Tablo canlı sayılara bakar: gerçekten kaç işletme var, telefonları açık mı, reklam veren var mı.
+
+Tabloda bir sütun rakipleri gösterir: o şehirde aynı nişe yapay zeka asistanı satan biri var mı. Rakip varsa niş DÜŞMEZ. İkisini karıştırmamak lazım:
+- Sektörde çok işletme olması iyidir. Talep orada demektir.
+- Sektöre aynı şeyi satan çok kişi olması ayrı bir şeydir ve sadece açılış cümleni değiştirir.
+
+Rakip varsa teklifi-yaz'a "rakip var" notu gider. O zaman açılış cümlen "biz de yapıyoruz" olmaz, "sizde şu an kaçan şu" olur. Sattığın şeyi anlatmazsın, onun kaybını anlatırsın.
+
+### Karar ve kayıt
+
+Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici müşteri değerini kartın rakamıyla günceller.
+
+Son adım Doksan Gün Planı'nı üretmek. Doksan Gün Planı, doksan gün boyunca önünde duracak on altı bölümlük plandır. İş Beyni'ne ayrı bölüm olarak yazılır.
+
+## 6. Ne söyler
+
+Kararı verirken: "Nişin klima ve kombi servisi. Şehrinde altı yüz yirmi servis var, yetmiş sekizi reklam veriyor. Ekim bakım sezonu, yani telefonları zaten çalıyor. Geçen sezonun listesi hiçbir serviste aranmıyor, sattığın sistemin ilk işi o olacak. İkinci aday oto servis, üçüncü güzellik salonu. Onlara şu an bakmıyoruz."
+Hayır dersen: ikinci adayı söyler, sebebiyle.
+Üçüncüde: "Bugün bunlardan biri seçilecek. Seçmemek de bir karar ve en pahalısı. Bir ay sonra hâlâ hangi sektör diye düşünüyor olursan, o bir ayda hiçbir şey satmamış olursun."
+İçeriden tanıdığı sektör seçilince: "Bu sektörü içeriden biliyorsun. Bu senin en büyük avantajın; telefonda kullandığın üç kelime seni satıcıdan ayırıyor."
+Hiç bilmediği bir sektör çıkarsa: "Bu sektörü tanımıyorsun, sorun değil. Kart o sektörün fiyatlarını, dertlerini ve kelimelerini zaten taşıyor. Yarın teklifi yazarken hepsini okuyacağız."
+Niş değiştirmek isterse: "Üç yüz temasa gelmeden niş değişmez. Şu an kırk temastasın. Bu noktada sorunun nişte mi mesajda mı olduğunu ikimiz de bilemeyiz, ve yanlış olanı değiştirirsek iki hafta kaybederiz."
+
+## 7. Ne yazar
+
+İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi), rakip notu, Doksan Gün Planı.
+CRM'e (adayların ve müşterilerin kaydedildiği takip programı): aday listesinin adı. Dokuz aşama hazır geliyor, sen koymuyorsun; sırası yeni, yazdım, cevap verdi, görüşme ayarlandı, görüşme yaptım, teklif verdim, kazandım, kaybettim, sonra.
+Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
+
+## 8. Yedek yol
+
+- nisi-dogrula sonuç veremezse: elle sayım listesiyle devam edilir, on beş dakika sürer, tablo aynıdır.
+- Sen üç adayı da reddedersen: FounderOS bunu işaret sayar ve günü seçim bitmeden kapatmaz. Reddetme sebebini yazar, o sebep kalan kartlara uygulanır ve üç yeni aday çıkarılır.
+- Üç aday da elemelerden geçemezse: en az eleme yiyen niş seçilir ve hangi elemede takıldığı İş Beyni'ne yazılır. Bu, o nişte hangi konuda zorlanacağını önceden bilmen demek.
+- Şehrinde hiçbir nişte 500 işletme yoksa: bütün nişler Türkiye geneline açılır ve bu İş Beyni'ne yazılır. Mesajlardan "sizin şehirde" cümlesi çıkar, kanıt cümlesi ülke geneline döner.
+- Kartta kapasite bilgisi yoksa: para elemesi o niş için atlanır, "ölçülemedi" yazılır.
+
+## 9. Sıradaki adım ve işaretler
+
+Sıradaki: "Yarın ne sattığını tek cümleyle yazacaksın. Fiyatı dördüncü gün koyacağız. Teklif hazır, sadece bu sektöre çevrilecek."
+
+İşaretler (FounderOS okur, sen bir şey yapmazsın):
+- Üç adaydan hiçbiri para elemesini geçemedi: eşik değil kart eksiktir, kapasite bilgisi olmayan kartlar işaretlenir.
+- Şehirde 500 işletme yok: coğrafya Türkiye geneline açılır, mesaj metinleri buna göre yazılır.
+- Rakip sütunu dolu: teklifi-yaz ve adaya-mesaj-yaz'a not gider, açılış cümlesi değişir.
+- Seçilen nişin mevzuat kısıtı var (sağlık nişleri): teklifi-yaz, yazili-asistani-kur ve sesli-ajani-kur o kısıtı baştan okur.
+- 300 temas doldu ve hiç görüşme çıkmadı: niş değiştirme isteği degisiklige-karar-ver'e açılır.
+- Beş müşteri kazanıldı: niş kilidi açılır, ikinci niş konuşulabilir.
+
+Beş kural: boş sayfa yok (üç aday, tablo ve gerekçe hazır gelir) · sessiz bitiş yok (gün, yarının işiyle kapanır) · onay (niş kaydı senin "tamam"ınla yazılır) · sahadan güncelleme (kart rakamları gelir planını, sahadan gelen sayılar kartı yeniler) · sormaz söyler (nişi seçer ve sebebini söyler, seçenek listesi sunmaz).

@@ -1,0 +1,16 @@
+{
+  "name": "founderos",
+  "description": "FounderOS eklentisinin resmi kaynagi.",
+  "owner": {
+    "name": "Berk Sezgin",
+    "url": "https://founderos.so"
+  },
+  "plugins": [
+    {
+      "name": "founderos",
+      "version": "0.1.0",
+      "description": "Sifirdan tek kisilik yapay zeka servis isini doksan gunde kuran sistem.",
+      "source": "./founderos"
+    }
+  ]
+}
