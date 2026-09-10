@@ -78,6 +78,12 @@ Alan adı, sunucu ve yayın birinci günde konuşulmaz. Bugün marka kimliği ç
 
 Yön seçildikten sonra kit boyunca değişmez. Her artboard aynı ızgaraya, aynı ölçeğe, aynı köşe yarıçapına uyar.
 
+### Yazı tipinde tek zorunlu kural
+
+Seçilen yazı tipi Türkçe karakterleri eksiksiz taşıyacak: ı, İ, ğ, ş, ç, ö, ü. Kontrol edersin. Taşımayan yazı tipi ne kadar güzel olursa olsun elenir; yarısı eksik bir yazı tipi bütün markayı özensiz gösteriyor.
+
+Arial, Helvetica, Times New Roman, Roboto ve Inter seçilmez. Bunlar varsayılan görünüyor ve marka kurmuyor.
+
 ### Sonra Claude Design'da kiti üretme
 
 Kiti sen yapmıyorsun, Claude yapıyor. Senin işin doğru talimatı vermek ve çıkanı düzeltmek.

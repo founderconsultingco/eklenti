@@ -110,6 +110,34 @@ Hakkımızda, blog, hizmetler sayfası yok. Tek sayfa.
 
 Canlı destek kutusu yok. Kendi sitene sohbet kutusu koymak, açamayacağın bir kanal daha açmak demek.
 
+### Sayfanın görünüşü
+
+Sayfanın içeriği kadar görünüşü de yazılı. Bunu serbest bırakırsak her öğrencinin sayfası birbirinin aynısı ve yapay zekâ çıktısı gibi çıkıyor; aradığın işletmeci bunu bir bakışta anlıyor.
+
+**Kime bakıyor.** Bu sayfayı senin adayın açıyor: kırk beş yaşında, Bursa'da oto servisi olan bir adam, telefonundan, iki dakikalığına. Deneysel tasarım burada işe yaramıyor. Sayfa iddialı değil, güvenilir görünecek. Ölçü şu: adam sayfayı görünce "bu adam işini ciddiye alıyor" desin, "bu ne acaba" demesin.
+
+**Yazı tipi.** Marka kitindeki yazı tipleri kullanılır, sayfada yenisi seçilmez. Kitteki seçim yapılırken tek zorunlu kural var ve o kural burada da geçerli: yazı tipi Türkçe karakterleri eksiksiz taşıyacak. ı, İ, ğ, ş, ç, ö, ü harflerini kontrol edersin; taşımayan yazı tipi ne kadar güzel olursa olsun elenir. Yarısı eksik bir yazı tipi sayfayı özensiz gösteriyor.
+
+Arial, Helvetica, Times New Roman, Roboto ve Inter kullanılmaz. Bunlar varsayılan görünüyor. Başlık için karakterli bir yazı tipi, gövde için okunaklı ve ayrı bir yazı tipi; ikisi birbirinden ayırt edilebilecek kadar farklı olacak.
+
+**Renk.** Marka kitinin renkleri kullanılır. Bir renk baskın olur, bir renk vurgu olur, gerisi gri skala. Eşit dağılmış üç dört renk sayfayı kararsız gösteriyor.
+
+Beyaz zemin üstünde mor ve mavi geçişli kutu yapılmaz. Bu, yapay zekâ çıktısının en tanınan işareti ve sektörde herkes bıktı.
+
+**Düzen.** Varsayılan sıralamaya düşmezsin: koca bir başlık, altında yan yana üç kutu, altında alt bilgi. Bu düzen her yerde var ve hiçbir şey anlatmıyor. Bölümlerin ağırlığı farklı olacak: bir bölüm geniş nefes alacak, bir bölüm sıkı duracak. Simetri zorunlu değil.
+
+Sayfada tek bir asıl düğme var. İkinci bir çağrı, üçüncü bir kutu, yan menü yok. Adamın yapacağı tek şey belli olacak.
+
+**Boşluk ve derinlik.** Bölüm araları cömert olur; sıkışık sayfa ucuz duruyor. Zemin düz tek renk kalmayacak: hafif bir doku, ölçülü bir gölge ya da tek bir geometrik detay yeter. Abartı değil, düz olmama meselesi.
+
+**Hareket.** Sayfa açılırken bölümler sırayla belirir, o kadar. Her öğeye ayrı animasyon konmaz, dönen ikon ve kayan yazı yoktur. Tek iyi yapılmış açılış, dağınık on efektten iyi.
+
+**Telefon.** Sayfa önce telefonda kurulur, sonra bilgisayara genişletilir. Adayların çoğu telefondan bakıyor. Yazılar telefonda okunacak kadar büyük, düğme başparmakla basılacak kadar geniş olacak ve sayfa yana kaymayacak.
+
+**Kontrol.** Sayfayı gösterirken üç şeye bakarsın: telefonda okunuyor mu, tek düğme belli mi, Türkçe harfler doğru çıkıyor mu. Üçü tamam değilse sayfa gösterilmez.
+
+**Asla.** Emoji yok. Stok fotoğraf yok. Uydurma müşteri logosu yok. "Yapay zekâ destekli" gibi teknoloji övgüsü yok; adam ne kazanacağını okuyacak, hangi teknolojiyle olduğunu değil.
+
 ### Nasıl kurulur
 
 Siteyi sen kodlamıyorsun, Claude kuruyor. Beş adım, sırayla. Her adımın talimatını FounderOS senin cümlelerinle doldurulmuş halde verir; sen yapıştırırsın.
