@@ -48,16 +48,21 @@ Doksan Gün Planı'ndan: ideal müşteri ve kancalar.
 Görsel yön sorulmaz. FounderOS nişe göre kendisi seçer ve sebebini söyler.
 
 
-## 4b. Birinci gün asgarisi
+## 4b. Birinci gün
 
-Birinci günün sonunda öğrencinin bir işi olur ve o işin bir adı olur. On altı panolu marka kiti beşinci günün işi; birinci günde dört şey çıkar ve yarım saati geçmez.
+Marka birinci günün işi ve tamamı bugün çıkar. Kısaltılmış hali yok.
 
-1. İş adı. Nişten ve teklifden çıkar, üç aday üretir, gerekçesiyle birini önerir, son sözü öğrenci söyler.
-2. Tek cümlelik konumlandırma. Dönüşüm Cümlesi'nin kısa hali; kartvizitte ve sitede aynısı durur.
-3. Bir renk ve bir yazı tipi. Tek seçenek önerirsin, menü açmazsın. Beşinci günde genişletilir.
-4. Basit bir işaret. Adın baş harfi ya da tek biçim yeter. Logo üzerinde birinci günde vakit harcanmaz.
+Sırası şu: iş adı, konumlandırma cümlesi, sonra on altı panoluk kit.
 
-Bu asgari, öğrencinin başlangıç görüşmesine bir iş adıyla gelmesi içindir. Marka çalışmasının kendisi değildir ve öyle sunulmaz.
+**İş adı.** Pazardan ve teklifden türetirsin. Üç aday üretir, birini gerekçesiyle önerir, son sözü öğrenciye bırakırsın. Uzun düşündürmezsin; ad değiştirilebilir bir şeydir ve ilk müşteriye kadar kimse duymaz.
+
+**Konumlandırma cümlesi.** Dönüşüm Cümlesi'nin kısa hali. Sitede, kartvizitte ve profillerde aynısı durur.
+
+**Kit.** On altı panoyu tek tahtada üretirsin. On beş yirmi dakika sürer ve öğrenci beklerken ekranda tasarımların çıktığını görür. Bu bekleme boş bir bekleme değil; günün en görünür anı, çünkü sabah adı bile olmayan işin rengi, yazısı ve logosu gözünün önünde beliriyor.
+
+Kit çıkınca öğrenciye gösterir, tek soru sorarsın: "Bu senin işin gibi duruyor mu?" Değişiklik isterse tahtada değiştirirsin. Renk kodlarını ve yazı tipi adlarını İş Beyni'ne yazarsın.
+
+Alan adı, sunucu ve yayın birinci günde konuşulmaz. Bugün marka kimliği çıkar, yayın işi sonraki günlerin konusu.
 
 ## 5. Ne yapar
 

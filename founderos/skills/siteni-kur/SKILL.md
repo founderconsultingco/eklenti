@@ -46,31 +46,27 @@ Bunu merdivenin alt basamağındaki öğrenciye sormaz. O basamakta bugün alan 
 Alan adı seçimi sorulmaz. FounderOS iş adından türetir ve iki seçenek verir. Uzun düşünülecek bir konu değil.
 
 
-## 4b. Birinci gün asgarisi
+## 4b. Birinci gün
 
-Birinci günün sonunda tek sayfalık bir sayfa hazır olur. Altıncı günün tam sitesi değil; yarım saatlik, beş bölümlük bir sayfa.
+Birinci günün sonunda tek sayfalık bir tanıtım sayfası hazır olur ve öğrenci onu gözüyle görür. **Canlıya çıkmaz.**
+
+Alan adı, sunucu, yayın servisi ve hesap açma birinci günde hiç konuşulmaz. Bunlar sonraki günlerin işi ve birinci günde açılırsa günün üretimini kayıt ekranlarına çevirirler.
+
+Sayfa marka kitinin renk, yazı tipi ve logosuyla kurulur; öğrenci markasının gerçek bir sayfada nasıl durduğunu bugün görür.
+
+Beş bölüm:
 
 1. Başlık: konumlandırma cümlesi.
 2. Ne kaybediyorsun: nişin kayıp birimi, iki cümle.
 3. Ne yapıyoruz: teslimat kontrolünden geçmiş parçalar, üç madde.
-4. İletişim: telefon ve WhatsApp. Birinci günde takvim bağlantısı konmaz, çünkü takvim altıncı günde kuruluyor. Sayfada takvimin yeri açılır ve o gün doldurulur.
-5. Kim: tek cümlelik tanıtım. Fotoğraf isteğe bağlı.
+4. Kim: tek cümlelik tanıtım.
+5. İletişim: telefon ve WhatsApp. Randevu takvimi birinci günde konmaz, çünkü takvim altıncı günde kuruluyor. Sayfada yeri açılır ve o gün doldurulur.
 
-Fotoğraf, referans, fiyat listesi ve uzun metin birinci günde konmaz. Sayfanın işi bugün var olmak, mükemmel olmak değil.
+Sayfayı öğrencinin klasörüne yazarsın ve açmasını söylersin. Bilgisayarında çift tıklayıp tarayıcıda görür. Telefon görünümünü de kontrol ettirirsin.
 
-### Yayın: iki parça, ikisi ayrı
+Fotoğraf, referans, fiyat listesi ve uzun metin birinci günde konmaz. Sayfanın bugünkü işi var olmak ve görünmek.
 
-Sayfanın metnini yazmak ile onu internete koymak iki ayrı iş ve birinci günde ikisini birden garanti edemezsin.
-
-**Metin her hâlükârda bugün çıkar.** Beş bölümün tamamı yazılır ve öğrenciye gösterilir. Bu, günün üretimi ve kimseye bağlı değil.
-
-**Yayın hesap ister.** Ücretsiz yayın servisinde hesap açmak gerekiyor ve o da bir kod deposu hesabı istiyor. Öğrenciye bunu önden söylersin: "Sayfanı internete koymak için iki ücretsiz hesap açmamız lazım, on dakika sürer. Şimdi mi yapalım, yarın araçları kurarken mi?" Kararı o verir.
-
-Şimdi derse yayına alırsın ve adresi verirsin. Yarını seçerse metni İş Beyni'ne yazar, ikinci günün ilk işine koyar ve günü öyle kaparsın. İkisinde de birinci gün eksik bitmiş sayılmaz; adı olan, teklifi olan ve sayfası yazılmış bir işi var.
-
-Öğrenci iki saati geçmiş ve yorulmuşsa sen kararı ona bırakmadan yarına atarsın. Yorgun bir insana kayıt ekranı açtırmak, bütün günün izlenimini bozuyor.
-
-Alan adı hazır değilse ücretsiz adresle yayına çıkar. Kendi alan adı ilk kanıttan sonra alınır; sayfa beklemez.
+Sayfayı gösterdikten sonra tek cümleyle yarını bağlarsın: sayfa hazır, internete koymayı yarın hallediyoruz.
 
 ## 5. Ne yapar
 
