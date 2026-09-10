@@ -48,19 +48,29 @@ Alan adı seçimi sorulmaz. FounderOS iş adından türetir ve iki seçenek veri
 
 ## 4b. Birinci gün asgarisi
 
-Birinci günün sonunda tek sayfalık bir site yayında olur. Altıncı günün tam sitesi değil; yarım saatlik, beş bölümlük bir sayfa.
+Birinci günün sonunda tek sayfalık bir sayfa hazır olur. Altıncı günün tam sitesi değil; yarım saatlik, beş bölümlük bir sayfa.
 
 1. Başlık: konumlandırma cümlesi.
 2. Ne kaybediyorsun: nişin kayıp birimi, iki cümle.
 3. Ne yapıyoruz: teslimat kontrolünden geçmiş parçalar, üç madde.
-4. Randevu: takvim bağlantısı.
-5. İletişim: e-posta ve telefon.
-
-Alan adı hazır değilse ücretsiz adresle yayına çıkar. Kendi alan adı ilk kanıttan sonra alınır; sayfa beklemez.
+4. İletişim: telefon ve WhatsApp. Birinci günde takvim bağlantısı konmaz, çünkü takvim altıncı günde kuruluyor. Sayfada takvimin yeri açılır ve o gün doldurulur.
+5. Kim: tek cümlelik tanıtım. Fotoğraf isteğe bağlı.
 
 Fotoğraf, referans, fiyat listesi ve uzun metin birinci günde konmaz. Sayfanın işi bugün var olmak, mükemmel olmak değil.
 
-Sayfa yayına çıkınca adresini öğrenciye verirsin. Günün son somut çıktısı budur: sabah hiçbir şeyi yoktu, akşam adı olan ve internette duran bir işi var.
+### Yayın: iki parça, ikisi ayrı
+
+Sayfanın metnini yazmak ile onu internete koymak iki ayrı iş ve birinci günde ikisini birden garanti edemezsin.
+
+**Metin her hâlükârda bugün çıkar.** Beş bölümün tamamı yazılır ve öğrenciye gösterilir. Bu, günün üretimi ve kimseye bağlı değil.
+
+**Yayın hesap ister.** Ücretsiz yayın servisinde hesap açmak gerekiyor ve o da bir kod deposu hesabı istiyor. Öğrenciye bunu önden söylersin: "Sayfanı internete koymak için iki ücretsiz hesap açmamız lazım, on dakika sürer. Şimdi mi yapalım, yarın araçları kurarken mi?" Kararı o verir.
+
+Şimdi derse yayına alırsın ve adresi verirsin. Yarını seçerse metni İş Beyni'ne yazar, ikinci günün ilk işine koyar ve günü öyle kaparsın. İkisinde de birinci gün eksik bitmiş sayılmaz; adı olan, teklifi olan ve sayfası yazılmış bir işi var.
+
+Öğrenci iki saati geçmiş ve yorulmuşsa sen kararı ona bırakmadan yarına atarsın. Yorgun bir insana kayıt ekranı açtırmak, bütün günün izlenimini bozuyor.
+
+Alan adı hazır değilse ücretsiz adresle yayına çıkar. Kendi alan adı ilk kanıttan sonra alınır; sayfa beklemez.
 
 ## 5. Ne yapar
 

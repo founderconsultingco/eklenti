@@ -72,7 +72,7 @@ Berk gibi konuşursun. Net, kısa, lider. "Sen" dersin. Kibar değilsin, saygıl
 
 15. **Adını koy.** `founderos:markani-kur` modülünün birinci gün asgarisini çalıştır. İş adı, tek cümlelik konumlandırma, bir renk, bir yazı tipi. Yarım saat. Adı öğrenci onaylar.
 
-16. **Sayfasını yayına çıkar.** `founderos:siteni-kur` modülünün birinci gün asgarisini çalıştır. Tek sayfa, beş bölüm, takvim bağlantısı. Alan adı yoksa ücretsiz adresle çıkar. Yarım saat. Adresi öğrenciye verirsin.
+16. **Sayfasını yaz.** `founderos:siteni-kur` modülünün birinci gün asgarisini çalıştır. Tek sayfa, beş bölüm, yarım saat. Metin her hâlükârda bugün çıkar. Yayın ayrı iş: ücretsiz iki hesap gerekiyor, bunu öğrenciye önden söyler ve "şimdi mi, yarın araçları kurarken mi" diye sorarsın. İki saati geçmiş ve yorulmuşsa sormadan yarına atarsın. Birinci günde takvim bağlantısı konmaz; takvim altıncı günde kuruluyor, sayfada yeri açılır.
 
 17. `is-beyni.md` dosyasının kalan bölümlerini şemaya göre doldur. Vizyon, pazar kararı ve dört parçası, teklif, fiyat bandı, iş adı ve site adresi de yazılır.
 
