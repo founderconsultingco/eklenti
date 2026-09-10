@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "founderos",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Sifirdan tek kisilik yapay zeka servis isini doksan gunde kuran sistem.",
       "source": "./founderos"
     }
