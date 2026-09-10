@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: adaya-mesaj-yaz
-description: Metinler dokuzuncu gün, gönderim on ikinci günden itibaren her gün. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar.
+description: Metinler dördüncü gün, ilk on soğuk temas beşinci günün akşamı, altıncı günden itibaren her gün. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar.
 ---
 
 # adaya-mesaj-yaz
@@ -19,10 +19,9 @@ Bu modül denetim yapmaz, denetimi okur. Her mesajın ilk cümlesi aday-denetimi
 Amaç satış değil, randevu. Telefonda satış yapılmaz.
 
 ## 2. Ne zaman çalışır
+Dördüncü gün: dört kanalın metin kalıpları hazırlanır ve ilk yüz temasın metni denetim kartlarından doldurulur.
 
-Dokuzuncu gün: dört kanalın metin kalıpları hazırlanır ve ilk yüz temasın metni denetim kartlarından doldurulur.
-
-On ikinci günden itibaren her gün çalışır. Sabah bloğunda günün listesi hazır oluyor: her satırda bir aday, denetim kartından gelen üç satır ve sıradaki hareket. Sen sıralamıyorsun.
+Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altıncı günden itibaren her gün tam sayıyla çalışır. Sabah bloğunda günün listesi hazır oluyor: her satırda bir aday, denetim kartından gelen üç satır ve sıradaki hareket. Sen sıralamıyorsun.
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 

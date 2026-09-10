@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeye-getir
-description: Randevu alındıktan görüşmeye kadar. Takvim daveti, ön görüşme sayfası, hatırlatma, gelmeyen aday.
+description: Takvim ve ön görüşme sayfası ikinci gün kurulur; sonra randevu alındıktan görüşmeye kadar. Takvim daveti, hatırlatma, gelmeyen aday.
 ---
 
 # gorusmeye-getir
@@ -11,10 +11,9 @@ description: Randevu alındıktan görüşmeye kadar. Takvim daveti, ön görü�
 Bu modül, randevu alındığı andan görüşmenin ilk saniyesine kadar geçen süreyi yönetir. Amacı adayın takvime yazılması değil; adayın görüşmeye gelmesi. Pazarlamada bu, ilk müşteriyi getiren zincirin "randevu" adımıdır. Onay sayfası ve hatırlatma akışı bu zincirin standart parçasıdır. Bu modülün işi olmayanlar: randevu almak (adaya-mesaj-yaz), görüşmeyi yönetmek (gorusmeyi-yonet), görüşme sonrası (gorusmeyi-analiz-et). Gelme hedefi yüzde yetmiş. Yüzde ellinin altı sorun demek. Yüzde kırk beş ve altı tıkanıklık demek.
 
 ## 2. Ne zaman çalışır
+Takvim ikinci gün, CRM bağlantısıyla birlikte açılır ve aynı gün yayına alınan sayfaya yerleşir. Ön görüşme sayfasının boş hali de o gün gelir; randevu takvimi, sayfanın yazısı, hatırlatma akışı ve EVET akışı ikinci günde kurulur. Takvim hazır pakette gelmiyor, o gün açılıyor; geri kalanı hazır kurulum paketinden senin hesabına aktarılır. Sonra her randevuda kendiliğinden çalışır: randevu CRM'e düştüğü an başlar, görüşme saatinde biter. Aday gelmezse bir kez daha çalışır, yeni randevu için.
 
-Sayfanın boş hali altıncı gün siteni-kur modülünden gelir. Randevu takvimi, sayfanın yazısı, hatırlatma akışı ve EVET akışı aynı gün bu modülle kurulur. Takvim hazır pakette gelmiyor, bugün açılıyor; geri kalanı hazır kurulum paketinden senin hesabına aktarılır. Bu kurulum, ilk on bir günün hazırlık işlerinin parçasıdır. Sonra her randevuda kendiliğinden çalışır: randevu CRM'e düştüğü an başlar, görüşme saatinde biter. Aday gelmezse bir kez daha çalışır, yeni randevu için.
-
-Bir şeyi baştan söyleyeyim. Tanıdıklara ilk mesaj dördüncü günün akşamı gidiyor, yani ilk randevu beşinci günde çıkabilir ve o gün sayfa henüz yok. Sorun değil: o randevularda modül sayfasız çalışır, takvim daveti ve hatırlatma yeter. Tanıdığı ikna eden şey sayfa değil senin adın. Sayfa altıncı gün kurulur, videolar onuncu günde çekilince tamamlanır ve soğuk adaylar onu tam haliyle görür.
+Bir şeyi baştan söyleyeyim. Tanıdıklara ilk mesaj üçüncü günün akşamı gidiyor, yani ilk randevu dördüncü günde çıkabilir. O gün sayfa var ama videolar yok. Sorun değil: tanıdığı ikna eden şey sayfa değil senin adın; takvim daveti ve hatırlatma yeter. Videolar beşinci günde çekilince sayfa tamamlanır ve soğuk adaylar onu tam haliyle görür.
 
 ## 3. Ne okur
 
@@ -26,7 +25,7 @@ Sormaz. Randevu telefonda alınırken adaydan istenen üç şeyi, adaya-mesaj-ya
 
 ## 5. Ne yapar
 
-**A. Kurulum, altıncı gün (tek sefer).** Randevu takvimini bugün ben açıyorum; hazır pakette gelmiyor, çünkü takvim bir kişiye bağlı açılıyor ve o kişi sensin. Sayfanın yazısı, hatırlatma akışı ve EVET akışı hazır paketten geliyor.
+**A. Kurulum, ikinci gün (tek sefer).** Randevu takvimini bugün ben açıyorum; hazır pakette gelmiyor, çünkü takvim bir kişiye bağlı açılıyor ve o kişi sensin. Sayfanın yazısı, hatırlatma akışı ve EVET akışı hazır paketten geliyor.
 
 Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
 - Görüşme süresi 30 dakika, takvim aralığı 30 dakika. Yani takvimde otuz dakikalık yer ayrılır; adaya on beş dakika denir; gerçekte görüşme yirmi beşi geçmez.
@@ -58,7 +57,7 @@ Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
    - görüşmede ne olacağı: teşhis, satış değil;
    - ona soracağın üç soru (telefonu kim açıyor, cevapsız arama kaç, eski liste nerede); böylece düşünerek gelir;
    - nasıl katılacağı: sessiz yer, araç kullanırken değil, kalem kâğıt;
-   - kanıt: kartın sektör rakamı; onuncu günden sonra kanıt cümlesi ve kırk ile altmış saniyelik demo kaydı (video o sabah yeniden çekilir); o güne kadar yalnızca kartın sektör rakamı kullanılır; kanıt hikâyesi çıkınca o;
+   - kanıt: kartın sektör rakamı; beşinci günden sonra kanıt cümlesi ve kırk ile altmış saniyelik demo kaydı (video o sabah yeniden çekilir); o güne kadar yalnızca kartın sektör rakamı kullanılır; kanıt hikâyesi çıkınca o;
    - kapanış: "Bu görüşme için işletmenizi inceliyorum, lütfen gelin ve sözünüzü tutun."
 3. EVET düğmesi: WhatsApp'ta hazır "EVET" mesajı açan link. Takvim davetini kabul etmesi ayrıca telefonda söylenir (B bölümü, üç küçük söz).
 4. Altında üç kısa itiraz cevabı, yazıyla:
@@ -124,11 +123,11 @@ Otuz randevudan sonra gelme oranı yüzde ellinin altındaysa: "Otuz randevu, on
 
 ## 7. Ne yazar
 
-CRM'e yazar: randevu durumu (onaysız; EVET gelince onaylı; sonra geldi ya da gelmedi), hatırlatma gönderim kayıtları (bunları kendiliğinden giden mesaj sistemi yazar), erteleme sayısı, sözlü rıza notu, gelmeme sebebi (sen söylersen). Aşama satırı ayrıdır; adaya-mesaj-yaz modülünün kuralıyla yazılır. İş Beyni'ne yazar: gelme oranı (otuz randevuda bir güncellenir), ön görüşme sayfasının ve videonun adresi, randevu takviminin adresi (takvim altıncı günde kurulur, adresi aynı gün İş Beyni'ne yazılır), hangi hatırlatmaya cevap geldiği. Niş kartının "sahadan dolacak" bölümüne yazar: bu nişte gelme oranı ve işletmecinin gerçekten müsait olduğu saat. Kartlarda bu bilgi yoktur; ilk gerçek bilgi buradan gelir. Onay: hazırlık günü kurulum ve şablon metinleri senin "tamam" demenle geçer. Sonrasında hatırlatmalar onaylı şablondan kendiliğinden gider; bu, onaylanmış e-posta takipleriyle aynı istisnanın içindedir. Arama ve gelmeyen randevu mesajı her zaman senin elinden çıkar.
+CRM'e yazar: randevu durumu (onaysız; EVET gelince onaylı; sonra geldi ya da gelmedi), hatırlatma gönderim kayıtları (bunları kendiliğinden giden mesaj sistemi yazar), erteleme sayısı, sözlü rıza notu, gelmeme sebebi (sen söylersen). Aşama satırı ayrıdır; adaya-mesaj-yaz modülünün kuralıyla yazılır. İş Beyni'ne yazar: gelme oranı (otuz randevuda bir güncellenir), ön görüşme sayfasının ve videonun adresi, randevu takviminin adresi (takvim ikinci günde kurulur, adresi aynı gün İş Beyni'ne yazılır), hangi hatırlatmaya cevap geldiği. Niş kartının "sahadan dolacak" bölümüne yazar: bu nişte gelme oranı ve işletmecinin gerçekten müsait olduğu saat. Kartlarda bu bilgi yoktur; ilk gerçek bilgi buradan gelir. Onay: hazırlık günü kurulum ve şablon metinleri senin "tamam" demenle geçer. Sonrasında hatırlatmalar onaylı şablondan kendiliğinden gider; bu, onaylanmış e-posta takipleriyle aynı istisnanın içindedir. Arama ve gelmeyen randevu mesajı her zaman senin elinden çıkar.
 
 ## 8. Yedek yol
 
-WhatsApp Business hattın hazır değilse hatırlatmalar yalnız e-postadan gider ve sen o gün telefonla arayarak teyit edersin. Ön görüşme videosu çekilmediyse sayfa yazıyla açılır, "video yarın" notu düşülür, gün durmaz. Sayfanın boş hali yoksa (altıncı gün aksadıysa) mesajlar linksiz gider; sayfanın içeriğini telefonda üç cümleyle sen söylersin. EVET iş akışı kurulamadıysa gelen EVET'i görünce durumu elle "onaylı" yaparsın. CRM bağlantısı yoksa randevu geçici dosyaya yazılır; hatırlatmaları kendi telefonundan elle gönderirsin; akış aynı. Adayın e-postası yoksa sadece WhatsApp; davet de WhatsApp'tan gider.
+WhatsApp Business hattın hazır değilse hatırlatmalar yalnız e-postadan gider ve sen o gün telefonla arayarak teyit edersin. Ön görüşme videosu çekilmediyse sayfa yazıyla açılır, "video yarın" notu düşülür, gün durmaz. Sayfanın boş hali yoksa (ikinci gün aksadıysa) mesajlar linksiz gider; sayfanın içeriğini telefonda üç cümleyle sen söylersin. EVET iş akışı kurulamadıysa gelen EVET'i görünce durumu elle "onaylı" yaparsın. CRM bağlantısı yoksa randevu geçici dosyaya yazılır; hatırlatmaları kendi telefonundan elle gönderirsin; akış aynı. Adayın e-postası yoksa sadece WhatsApp; davet de WhatsApp'tan gider.
 
 ## 9. Sıradaki adım ve işaretler
 

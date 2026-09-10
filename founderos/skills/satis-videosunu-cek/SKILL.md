@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: satis-videosunu-cek
-description: Onuncu günün ikinci yarısı, provalarla aynı gün. Ön görüşme videosu ve üç itiraz videosu.
+description: Beşinci günün ikinci yarısı, provalarla aynı gün. Ön görüşme videosu ve üç itiraz videosu.
 ---
 
 # satis-videosunu-cek
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Yedinci günün ikinci yarısının modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının son adımı: satış videosu.
+Beşinci günün ikinci yarısının modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının son adımı: satış videosu.
 
 Bu modül ön görüşme videosunu çektirir. Randevu alan adaya, görüşmeden önce izlettiğin video. Üstüne üç kısa itiraz videosu gelir.
 
@@ -22,7 +22,7 @@ Bunu açıkça yazıyorum, çünkü "satış videosu" denince akla o geliyor.
 
 Siteye konan uzun satış videosunun işi ikna etmek değil, elemek. Reklamdan gelen, seni hiç tanımayan kalabalığı süzüyor. O video kanıt biriktikten ve reklam bütçen oluştuktan sonra kuruluyor. Sebebi şu: elemek için önce elenecek kadar çok yabancının sayfaya gelmesi gerekiyor, o da ancak her gün reklam parası harcamaya başlayınca oluyor. İkincisi, o videonun içine koyacağın kanıt ilk müşteriden sonra çıkıyor; kanıtsız çekilen video kimseyi elemiyor, sadece bir günü yiyor.
 
-Senin onuncu gününde ne kanıtın var ne reklam bütçen. O videoyu bugün çekersen elemek için değil, boşluğu doldurmak için çekmiş olursun.
+Senin beşinci gününde ne kanıtın var ne reklam bütçen. O videoyu bugün çekersen elemek için değil, boşluğu doldurmak için çekmiş olursun.
 
 O yüzden sıra şu: bugün ön görüşme videosu, ilk müşteriden sonra site videosu. Site videosunu satis-sayfasini-yaz kurar.
 
@@ -36,15 +36,14 @@ Sistemdeki videolar, karıştırma:
 - **Ön görüşme videosu:** bu modül. Üç ile beş dakika, herkese aynı, randevu alana gider.
 - **İtiraz videoları:** bu modül. Üç tane, her biri bir iki dakika, aynı sayfada durur.
 - **Video mesaj:** bir dakika, adaya özel, yazı yolunda en çok istenen yüz işletmeye.
-- **Deneme videosu:** on birinci gün, kimseye gitmez.
+- **Deneme videosu:** beşinci gün, kimseye gitmez.
 - **Site videosu:** ilk müşteriden sonra.
 - **Yirmi birinci gün videosu:** müşterinin çektiği kısa video.
 
 Pazarlamadaki karşılığı: görüşmeden önce seni izlemiş aday, görüşmeye yabancı gelmiyor.
 
 ## 2. Ne zaman çalışır
-
-- Onuncu günün ikinci yarısında, bir buçuk saat. Provaların yapıldığı gün; kameraya konuşmakla prova aynı kası çalıştırıyor, ikisi arka arkaya daha iyi gidiyor.
+- Beşinci günün ikinci yarısında, bir buçuk saat. Provaların yapıldığı gün; kameraya konuşmakla prova aynı kası çalıştırıyor, ikisi arka arkaya daha iyi gidiyor.
 - İlk kanıt hikâyesi çıkınca ikinci kez: kanıt parçası gerçek müşteriyle değişir.
 - Elli görüşme dolmadan metin değişmez.
 
@@ -96,7 +95,7 @@ Bu üç videonun işi şu: aday bu soruları görüşmede sormuyor, çünkü cev
 
 ### Süre
 
-Ön görüşme videosu üç ile beş dakika. Bu videoyu üç dakikadan yirmi dakikaya kadar çekenler var, ama yirmi dakikayı dolduran kişinin elinde yıllarca birikmiş kanıt var. Senin onuncu gününde beş dakikadan fazlası doldurma olur ve doldurma izlenmiyor.
+Ön görüşme videosu üç ile beş dakika. Bu videoyu üç dakikadan yirmi dakikaya kadar çekenler var, ama yirmi dakikayı dolduran kişinin elinde yıllarca birikmiş kanıt var. Senin beşinci gününde beş dakikadan fazlası doldurma olur ve doldurma izlenmiyor.
 
 İtiraz videoları bir ile iki dakika.
 
@@ -162,20 +161,20 @@ Niş kartına: elli görüşmeden sonra hangi itirazın videoya rağmen soruldu�
 
 ## 8. Yedek yol
 
-- Bugün çekilemezse: on birinci gün sabah çekilir. Ön görüşme sayfası videosuz açılır, yerine üç cümlelik yazı konur ve gün durmaz.
+- Bugün çekilemezse: altıncı gün sabah çekilir. Ön görüşme sayfası videosuz açılır, yerine üç cümlelik yazı konur ve gün durmaz.
 - Ses kötü çıkarsa: kulaklık mikrofonuyla tekrar. Kötü ses videoyu bitirir.
 - Kameraya çıkamıyorsan: ses yolu, yukarıdaki kuralla.
-- Üç itiraz videosuna vakit kalmazsa: ön görüşme videosu bugün, itiraz videoları on birinci gün sabah. Sıra bu, tersi değil.
+- Üç itiraz videosuna vakit kalmazsa: ön görüşme videosu bugün, itiraz videoları altıncı gün sabah. Sıra bu, tersi değil.
 - YouTube'a yüklenemezse: video geçici olarak sayfaya doğrudan konur.
 - Üç çekimde de olmadıysa: en iyisi yüklenir. Dördüncü çekim yok.
 - Sağlık nişindeysen: kartın yasal sınırlar bölümü okunur. Metinde tedavi sözü, hasta görseli ve "kesin sonuç" gibi iddialar geçmez.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: bu videolar altıncı günde kurulan ön görüşme sayfasına bu akşam giriyor. Yarın ikinci prova turu ve video mesaj kurulumu.
+Sıradaki: bu videolar ikinci günde kurulan ön görüşme sayfasına bu akşam giriyor. Yarın ikinci prova turu ve video mesaj kurulumu.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Onuncu gün bitti, video yok: on birinci sabahın ilk işi olur.
+- Beşinci gün bitti, video yok: altıncı sabahın ilk işi olur.
 - Dördüncü çekim isteği: reddedilir, en iyisi yüklenir.
 - Ses yolu kullanıldı: beş görüşmeden sonra yüzle yeniden çekim takvime düşer.
 - Otuz randevu doldu ve gelme oranı yüzde ellinin altında: videonun izlenip izlenmediğine bakılır, hatırlatma metinleri gözden geçirilir.

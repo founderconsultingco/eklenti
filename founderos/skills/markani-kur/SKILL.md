@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: markani-kur
-description: Beşinci gün sabah. İş adı, logo, renk, yazı tipi ve on altı panolu marka kiti.
+description: Birinci gün. İş adı, konumlandırma, logo, renk, yazı tipi ve on altı panolu marka kiti.
 ---
 
 # markani-kur
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Altıncı günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının ilk adımı: neden senden alsınlar.
+Birinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının ilk adımı: neden senden alsınlar.
 
 Bu modül senin marka kitini kurar. Marka kiti, işinin nasıl görüneceğini tek yerde toplayan dosya: ad, logo, renkler, yazı tipleri, kullanım kuralları ve hazır şablonlar.
 
@@ -20,15 +20,14 @@ Bir uyarı da baştan: bu iş bir gün sürer. İki günden fazla sürerse bir s
 
 Şunlar bu modülün işi değildir:
 - Instagram, WhatsApp ve YouTube profillerinin doldurulması (kisisel-markani-kur, aynı gün, ikinci yarıda).
-- Landing page (siteni-kur, altıncı gün).
-- Ön görüşme videosu (satis-videosunu-cek, onuncu gün).
-- Adı bulmak. Ad dördüncü günde geçici konur, burada kesinleşir.
+- Landing page (siteni-kur, aynı gün).
+- Ön görüşme videosu (satis-videosunu-cek, beşinci gün).
+- Adı bulmak. Ad burada konur.
 
 Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine para verecek insanın ilk baktığı şey.
 
 ## 2. Ne zaman çalışır
-
-- Beşinci gün sabah. İki üç saat sürer, tek oturuşta biter.
+- Birinci gün, teklif ve fiyat bandından sonra. Ad ve konumlandırma yarım saat, on altı panoluk kit on beş yirmi dakika. Tek oturuşta biter.
 - İlk kanıt hikâyesi çıkınca ikinci kez, kısa bir güncelleme için: kanıt satırı ve rakam kite girer.
 - Başka zaman çalışmaz. "Logoyu değiştirsem" isteği degisiklige-karar-ver'e gider.
 
@@ -36,7 +35,7 @@ Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine p
 
 İş Beyni'nden: geçici iş adı, şehir, kanal yolu, hazırlık seviyesi, gelir planı.
 Niş kartından: sektörün dili, işletmecinin dertleri, rekabetin şekli, yasal sınırlar.
-Üçüncü ve dördüncü günden: Dönüşüm Cümlesi, sistemin adı, üç kademenin içeriği, fiyat.
+Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin içeriği, fiyat.
 Doksan Gün Planı'ndan: ideal müşteri ve kancalar.
 
 ## 4. Ne sorar
@@ -218,7 +217,7 @@ Bir sonraki modüllere: sayfa düzeni panosu siteni-kur'a, kanal şablonları ki
 
 ## 8. Yedek yol
 
-- Claude Design açılmazsa: kit sade hali kurulur. Renk, yazı tipi ve tek sayfalık hızlı referans yazıyla çıkarılır, görsel panolar ertesi güne kalır. Beşinci gün kapanır, altıncı gün ertelenmez.
+- Claude Design açılmazsa: kit sade hali kurulur. Renk, yazı tipi ve tek sayfalık hızlı referans yazıyla çıkarılır, görsel panolar ertesi güne kalır. Birinci gün kapanır, ikinci gün ertelenmez.
 - Yazı tipi Türkçe karakteri bozuyorsa: talimat yenilenir ve Türkçe destekleyen bir tipe geçilir. Bu tartışma konusu değil.
 - Üç adı da beğenmezsen: bir kez daha üç ad gelir. İkinci turda seçim yapılır; üçüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
 - Elinde hazır logo varsa: kit onun etrafına kurulur, logo yeniden yapılmaz.
@@ -231,7 +230,7 @@ Sıradaki: aynı günün ikinci yarısında kisisel-markani-kur. Yarın site ve 
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Kit iki kez baştan yaptırıldı: üçüncü tur açılmaz, eldeki kitle devam edilir.
-- Beşinci gün bitti, kit yarım: kalan panolar hızlı referansa iner, altıncı gün ertelenmez.
+- Birinci gün bitti, kit yarım: kalan panolar hızlı referansa iner, ikinci gün ertelenmez.
 - Türkçe karakter bozuk: yazı tipi zorunlu olarak değişir.
 - İlk kanıt hikâyesi çıktı: kit ikinci kez çalışır, kanıt satırı ve rakam girer.
 - "Logoyu değiştirsem" isteği: degisiklige-karar-ver'e gider, tek başına açılmaz.

@@ -11,12 +11,11 @@ description: Görüşmeden sonra. Nerede koptu, ne öğrenildi, kayıt İş Beyn
 Görüşme bittikten sonra çalışan arka plan yardımcısıdır. Arka plan yardımcısı, FounderOS'un ağır işleri verdiği yardımcıdır; öğrenci onu görmez, sonucu FounderOS anlatır. İki hali var. Birincisi arama analizi: randevu telefonunu inceler, ilk yirmi aramada öğrenciye yol gösterir. İkincisi görüşme analizi: satış görüşmesinin kaydını ya da notunu inceler. Pazarlamadaki karşılığı şu: satış görüşmeleri kaydedilir, yazılı kayıtlar FounderOS ile incelenir. Teklif, soru sırası ve itiraz cevapları gerçek müşterinin söylediklerine göre gelişir. Görüşme, kazanma ya da kaybetme anı değildir; bilgi kaynağıdır. Üç işi var: öğrenciye tek düzeltme vermek, sayıları tutmak, işletmecinin gerçek cümlelerini teklife ve mesajlara geri yazmak.
 
 ## 2. Ne zaman çalışır
-
 Görüşme halinde iki adım var.
 - Hızlı adım: görüşme biter bitmez, öğrenci "kaydı yükle" dediğinde çalışır. Dört şey çıkarır: sonuç, evet ile ödeme arasındaki süre, gerekiyorsa bir saat sonra gidecek mesaj, o günün prova konusu. Prova konusu aktif düzeltmedir. Aktif düzeltme, şu an üzerinde çalışılan tek düzeltmedir.
 - Tam adım: aynı gün akşam bloğunda, rakamlari-oku modülünden önce çalışır. On soruyu cevaplar, sonra denetim ölçümünü doldurur.
 
-Arama halinde: on ikinci günden itibaren ilk yirmi aramada, her notun hemen ardından çalışır. Çıktısı "sıradaki beş aramada tek şey". Yirminci aramadan sonra not kapanır; akşam sadece sayılar tutulur.
+Arama halinde: beşinci günün akşamından itibaren ilk yirmi aramada, her notun hemen ardından çalışır. Çıktısı "sıradaki beş aramada tek şey". Yirminci aramadan sonra not kapanır; akşam sadece sayılar tutulur.
 
 İlk yirmi görüşmede öğretme halindedir: ton, seviye, kopma noktası. Kopma noktası, görüşmede işletmecinin soğuduğu andır. Yirmi görüşmeden sonra kısa hale geçer: sonuç, sayılar, geri yazım.
 
@@ -105,7 +104,7 @@ Bu dört satır aday-denetimi-cikar'a geri yazılır: hangi bulgu tipi görüşm
 
 İzin. Kayıt izni görüşmenin ilk yarım dakikasında alınır ve hatta kim varsa herkesten tek tek alınır: "Notlarım için kaydediyorum, uygun mu?" Ortağı ya da ikinci bir kişi varsa ona da ayrıca sorulur. Biri "hayır" derse kayıt yok, aşağıdaki not yolu işler. Gizli kayıt yok; izinsiz alınmış kayıt bu modüle hiç girmez.
 
-Kayıt nasıl alınır. Görüntülü görüşmede görüşme programının kendi kayıt düğmesi. Telefon görüşmesinde iki yol var: telefonun kendi ses kaydedicisi, ya da görüşmeyi hoparlöre alıp ikinci bir telefonun ses kaydedicisiyle kaydetmek. Hangisi sende çalışıyor, bunu on birinci günde bir kez denersin: kendini otuz saniye kaydet, dinle, ses anlaşılıyor mu bak. Görüşme sırasında kayıt düğmesiyle uğraşılmaz; kayıt açılışta başlar, kapanışta biter.
+Kayıt nasıl alınır. Görüntülü görüşmede görüşme programının kendi kayıt düğmesi. Telefon görüşmesinde iki yol var: telefonun kendi ses kaydedicisi, ya da görüşmeyi hoparlöre alıp ikinci bir telefonun ses kaydedicisiyle kaydetmek. Hangisi sende çalışıyor, bunu beşinci günde bir kez denersin: kendini otuz saniye kaydet, dinle, ses anlaşılıyor mu bak. Görüşme sırasında kayıt düğmesiyle uğraşılmaz; kayıt açılışta başlar, kapanışta biter.
 
 Kayıt yazıya nasıl çevrilir. Ses dosyasını buraya, sohbete atarsın; dökümü FounderOS çıkarır. Program kurman, abone olman ya da para ödemen gerekmiyor. Dosyayı atarken tek cümle yazarsın: "Ahmet Bey görüşmesi, kaydı attım." Döküm çıkınca analiz kendiliğinden başlar; sen ayrıca bir şey söylemezsin.
 
@@ -176,7 +175,7 @@ FounderOS'a giden işaretler:
 - İlk kapanış: musteriyi-karsila modülü ve kanıt hikâyesi yolu açılır; sabah dinlenecek kayıt hazır.
 - Denetim bulgusu son on görüşmenin yarısından fazlasında hiç söylenmedi: açılış provası, gorusme-provasi-yap.
 - Aynı bulgu tipi üst üste reddedildi: kanitini-hazirla'nın test saati kartın saatiyle karşılaştırılır, karta not düşer.
-- Kayıt üst üste iki kez dökümsüz geldi (kim konuştuğu belli değil): kayıt yolu on birinci gündeki gibi bir kez daha denenir, o güne kadar not yolu işler.
+- Kayıt üst üste iki kez dökümsüz geldi (kim konuştuğu belli değil): kayıt yolu beşinci gündeki gibi bir kez daha denenir, o güne kadar not yolu işler.
 - Görüşme "denetimsiz" işaretlendi: sabah planına uyarı, aday-denetimi-cikar'a işaret.
 
 Beş kural: boş sayfa (on soru, denetim ölçümünün dört satırı, beş dakikalık notun altı satırı, kontrol listesi, tek sayfa şablonu hazır) · sessiz bitiş (her analiz tek düzeltme ve prova konusuyla biter) · onay (adaya mesaj öğrenciden, CRM ve niş kartı "tamam" ile; kayıt izni görüşmenin başında herkesten tek tek) · sahadan güncelleme (modülün kendisi sahadan güncellemedir: teklife son on görüşmede, mesajlara not olarak, denetime bulgu ölçümü, niş kartına otuzda) · sormaz söyler (düzeltmeyi kendisi seçer; tek istisna kayıt ve not yoksa iki satır).

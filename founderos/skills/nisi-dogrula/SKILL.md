@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nisi-dogrula
-description: nisi-sec'in yardımcısı. Bir nişin canlı verisini sayar: işletme sayısı, reklam veren oranı, sezon, rakip. Niş kararından önce çalışır.
+description: nisi-sec'in yardımcısı, ikinci gün. Seçilen pazarın canlı verisini sayar: işletme sayısı, reklam veren oranı, sezon, rakip. Karar bozulursa o gün değiştirilir.
 ---
 
 # nisi-dogrula (arka plan yardımcısı)
@@ -54,7 +54,7 @@ Reklam sayfasına hangi yoldan bakılacağı henüz karara bağlanmadı. Karar g
 
 Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 
-1. Bu şehirde en az 500 işletme var mı? On birinci günde 500 kişilik aday listesi çıkacak ve doksan günde ona 1.320 arama yapılacak. Bu sayının altında liste dolmuyor.
+1. Bu şehirde en az 500 işletme var mı? Üçüncü günde 500 kişilik aday listesi çıkacak ve doksan günde ona 1.320 arama yapılacak. Bu sayının altında liste dolmuyor.
 2. Türkiye'de en az 2.000 işletme var mı? Şehirde 500 çıkmazsa niş Türkiye geneline açılıyor, o zaman bu sayı devreye giriyor. Ülke çapında büyük bir pazar aranmıyor; dört müşteri için 2.000 yeter. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
 4. Telefonu ya da Instagram'ı açık olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın.

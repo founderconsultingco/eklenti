@@ -1,39 +1,38 @@
 ---
 user-invocable: false
 name: musteri-takip-sistemini-kur
-description: Yedinci gün. Öğrencinin kendi CRM bölümü: fırsat hattı, aşamalar, şablonlar, takip zinciri.
+description: İkinci gün, CRM bağlantısından sonra. Öğrencinin kendi CRM bölümü: fırsat hattı, aşamalar, şablonlar, takip zinciri.
 ---
 
 # musteri-takip-sistemini-kur
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Sekizinci günün sabah bloğunda çalışan modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın altıncı aşamasının altyapısını kuruyoruz: takip sistemi.
+İkinci günün modülü, CRM bağlantısından hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın altıncı aşamasının altyapısını kuruyoruz: takip sistemi.
 
 Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, adayların ve her temasın kaydedildiği takip programıdır. Aday, henüz müşterin olmayan ama olabilecek işletmedir. Temas, bir adaya bir kanaldan bir kez ulaşmandır.
 
 Müşterinin sistemiyle karıştırma. O, müşteri kazandığında CRM'de ayrı bir bölümde kuruluyor.
 
-Neden bu iş var: on ikinci günden itibaren günde yüz temas yapacaksın. Telefon yolunda kırk beş arama, yirmi beş e-posta, on beş Instagram mesajı, on beş takip. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
+Neden bu iş var: altıncı günden itibaren günde yüz temas yapacaksın. Telefon yolunda kırk beş arama, yirmi beş e-posta, on beş Instagram mesajı, on beş takip. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
 
 Üçüncüsü bugünün asıl işi: aynı adaya dört ayrı kanaldan ulaşacaksın. Telefon, e-posta, Instagram, video. Kimin hangi kanalda nerede kaldığını bilmezsen ya aynı kişiye üst üste yazarsın ya da cevap vereni unutursun. İkisi de adayı kaybettiriyor.
 
-Neden bugün: aday listesini sekizinci günde çıkaracaksın, sahaya on ikinci günde çıkacaksın. Sistem listeden önce hazır olacak ki liste geldiğinde tek seferde içine girsin.
+Neden bugün: aday listesini üçüncü günde çıkaracaksın, sahaya altıncı günde çıkacaksın. Sistem listeden önce hazır olacak ki liste geldiğinde tek seferde içine girsin.
 
 Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört akış hesabın açıldığı gün hazır geldi. Bugünkü işin doğrulamak ve tanımak.
 
 Şunlar bu modülün işi değildir:
-- Randevu takvimi, hatırlatma akışı ve ön görüşme sayfasının doldurulması (gorusmeye-getir, altıncı gün).
-- Aday listesinin çıkarılması (aday-listesi-cikar, sekizinci gün).
+- Randevu takvimi, hatırlatma akışı ve ön görüşme sayfasının doldurulması (gorusmeye-getir, aynı gün).
+- Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü gün).
 - Adayın denetlenmesi ve denetim kartının doldurulması (aday-denetimi-cikar). Bu modül o kartın CRM'deki yerini gösteriyor, kartı doldurmuyor.
-- Mesaj metinleri ve hangi durumda hangi kanalın açılacağı (adaya-mesaj-yaz, dokuzuncu gün).
+- Mesaj metinleri ve hangi durumda hangi kanalın açılacağı (adaya-mesaj-yaz, dördüncü gün).
 
 Pazarlamadaki karşılığı: aday takibi.
 
 ## 2. Ne zaman çalışır
-
-- Yedinci günün sabah bloğu, üç saat.
-- İkinci kez: sekizinci günde liste geldiğinde. O gün yalnız yükleme bölümü açılır.
+- İkinci gün, CRM bağlantısından hemen sonra, üç saat.
+- İkinci kez: üçüncü günde liste geldiğinde. O gün yalnız yükleme bölümü açılır.
 - Üçüncü kez: üç yüzüncü temasta ya da bir satır işe yaramadığında.
 
 Üç saat tam zamanlıda sabah bloğunu tam dolduruyor. İşin yanında çalışıyorsan sabah bloğun bir saat, o yüzden modül bölünüyor. Bölünmenin nasıl olduğu beşinci bölümün sonunda yazılı.
@@ -103,7 +102,7 @@ Bilmen gereken üç şey var:
 
 **Denetimin testleri kanal durumunu değiştirmiyor.** Denetim sırasında yapılan deneme araması "arama testi sonucu" satırına, yazılı test "yazılı test sonucu" satırına yazılıyor. İkisi de denetim klasöründe ve ikisi de kanal durumuna dokunmuyor. Sebebi basit: o bir test, temas değil. Temas, adaya kendini tanıttığın andır. Kanal durumuna yazsak hiç konuşmadığın aday konuşulmuş görünür ve takip zinciri boşuna çalışır.
 
-Hangi durumda hangi kanalın açılacağını dokuzuncu günde yazılan karar tablosu söylüyor. Bugün senin işin düzeni anlamak, kuralı ezberlemek değil.
+Hangi durumda hangi kanalın açılacağını dördüncü günde yazılan karar tablosu söylüyor. Bugün senin işin düzeni anlamak, kuralı ezberlemek değil.
 
 ### Üçüncü iş, kayıt satırlarını tanı (30 dakika)
 
@@ -121,7 +120,7 @@ Bizim beş klasörümüzde toplam elli beş satır duruyor. Hepsini ezberlemiyor
 
 Dört satır hakkında ayrıca bilgin olsun:
 
-**"Kayıt türü" ne işe yarıyor.** İki değeri var: aday ve bağlantı. Aday, senin nişinde işletmesi olan kişi. Bağlantı, sana birini bağlayabilecek kişi; dördüncü günde çıkardığın B listesi buraya giriyor. Günün listesi sadece "aday" işaretlileri getiriyor, yani bağlantılar akşamki sayıları bozmuyor.
+**"Kayıt türü" ne işe yarıyor.** İki değeri var: aday ve bağlantı. Aday, senin nişinde işletmesi olan kişi. Bağlantı, sana birini bağlayabilecek kişi; ikinci günün akşamında çıkardığın B listesi buraya giriyor. Günün listesi sadece "aday" işaretlileri getiriyor, yani bağlantılar akşamki sayıları bozmuyor.
 
 **"Sıcak mı soğuk mu" ne zaman doluyor.** Görüşmede değil, kayıt açıldığında. Tanıdıkların ve onların bağladığı kişiler "sıcak", listeden çıkan işletmeler "soğuk".
 
@@ -169,7 +168,7 @@ Randevu alındığı anda "onaysız" duruyor. Aday ön görüşme sayfasındaki 
 
 Randevu durumu ile aşama ayrı şeyler. Aday gelmese de aşaması "görüşme ayarlandı"da kalıyor.
 
-Takvimi altıncı günde gorusmeye-getir'de açtın, ayarları da o gün yapıldı.
+Takvimi bugün gorusmeye-getir'de açtın, ayarları da o gün yapıldı.
 
 ### Yedinci iş, günün listesi ve akşam sayıları (15 dakika)
 
@@ -195,9 +194,9 @@ Oranlara bugün bakmıyorsun. Her oranın kendi eşiği var: iki yüz temasta ce
 6. Bir kaydı aç ve üç şeye bak: dört kanal durumunun dördü de "yapılmadı" mı, sıradaki hareket satırı boş mu, kayıt türü "aday" mı. Dört kanalı "yeni aday hazırlama" akışı dolduruyor, birkaç saniye sürebiliyor; hemen bakma, sayfayı bir kez yenile.
 7. Bir kaydı aday hattına ekle, aşaması "yeni" gelsin. Sonra elle "yazdım" yap ve ekranın o kaydı taşıdığını gör.
 8. Aynı dosyayı ikinci kez yükle. CRM aynı kişiyi gördüğünde yeni kayıt açmıyor, mevcut kaydı güncelliyor. 10 kayıt 10 kalmalı. 20 olduysa eşlemeyi yanlış yapmışsın, geri al ve tekrarla.
-9. Test kayıtlarını sil. On birinci günde gerçek liste gelecek.
+9. Test kayıtlarını sil. Yarın gerçek liste gelecek.
 
-Bu adımlar sekizinci günün beş yüz kişilik yüklemesini garantiye alıyor. Aynı adayın iki kere girmemesi önemli, çünkü ikinci ayda listeyi yenilediğinde aynı işletmeler tekrar çıkıyor ve arka arkaya aranan numara seni engelliyor.
+Bu adımlar üçüncü günün beş yüz kişilik yüklemesini garantiye alıyor. Aynı adayın iki kere girmemesi önemli, çünkü ikinci ayda listeyi yenilediğinde aynı işletmeler tekrar çıkıyor ve arka arkaya aranan numara seni engelliyor.
 
 ### Dokuzuncu iş, not kuralı (5 dakika)
 
@@ -213,20 +212,20 @@ Adayın söylediği cümle nota gidiyor, itirazı ise ayrıca "itiraz" satırın
 
 Ayarlarda "özel değerler" ekranı var. İkinci günde dördünü doldurmuştun: adın, şehrin, telefonun, e-postan. Bugün bir satır daha doluyor.
 
-Takvimin linki altıncı günde belli oldu; o linki "takvim linki" satırına yapıştırıyorsun. Bütün randevu mesajları ve e-posta takipleri o satırdan okuyor. Yanlış yazılan tek satır bütün mesajları bozuyor, o yüzden yapıştırdıktan sonra linke bir kez kendin tıkla.
+Takvimin linki bugün belli oldu; o linki "takvim linki" satırına yapıştırıyorsun. Bütün randevu mesajları ve e-posta takipleri o satırdan okuyor. Yanlış yazılan tek satır bütün mesajları bozuyor, o yüzden yapıştırdıktan sonra linke bir kez kendin tıkla.
 
 ### Süre ve bölünme
 
 Toplam üç saat: 20 + 25 + 30 + 10 + 15 + 10 + 15 + 30 + 5 + 10 dakika.
 
-**Tam zamanlıysan** sabah bloğu üç saat ve modül tam oturuyor, ama boşluk yok. Blok dolar da bir iş kalırsa kalan iş test yüklemesidir; o sekizinci günün sabah bloğunun ilk yarım saatine kayıyor. Kanal durumu düzeni ve sıradaki hareket kuralı hiçbir koşulda kaymıyor; onları bilmeden sahada ne olduğunu anlamıyorsun.
+**Tam zamanlıysan** sabah bloğu üç saat ve modül tam oturuyor, ama boşluk yok. Blok dolar da bir iş kalırsa kalan iş test yüklemesidir; o üçüncü günün sabah bloğunun ilk yarım saatine kayıyor. Kanal durumu düzeni ve sıradaki hareket kuralı hiçbir koşulda kaymıyor; onları bilmeden sahada ne olduğunu anlamıyorsun.
 
 **İşin yanında çalışıyorsan** sabah bloğun bir saat, modül ikiye bölünüyor:
-- Yedinci gün sabah bloğu, bir saat: birinci, ikinci ve dördüncü iş. Yani doğrulama, kanal durumu düzeni ve sıradaki hareket kuralı.
-- Yedinci gün akşam bloğu, bir saat: üçüncü, beşinci ve altıncı iş. Yani kayıt satırları, takip zinciri ve randevu durumu.
-- Sekizinci gün sabah bloğu, bir saat: günün listesi, test yüklemesi, not kuralı, takvim linki.
+- İkinci gün sabah bloğu, bir saat: birinci, ikinci ve dördüncü iş. Yani doğrulama, kanal durumu düzeni ve sıradaki hareket kuralı.
+- İkinci gün akşam bloğu, bir saat: üçüncü, beşinci ve altıncı iş. Yani kayıt satırları, takip zinciri ve randevu durumu.
+- Üçüncü gün sabah bloğu, bir saat: günün listesi, test yüklemesi, not kuralı, takvim linki.
 
-Sekizinci güne kayan işlerin hepsi liste yüklenmeden önce bitmiş oluyor. Liste geldiğinde sistem hazır.
+Üçüncü güne kayan işlerin hepsi liste yüklenmeden önce bitmiş oluyor. Liste geldiğinde sistem hazır.
 
 ## 6. Ne söyler
 
@@ -250,7 +249,7 @@ Bitince: "Sistem hazır. Sırada paranın yolu: ödeme linki ve evrak listesi."
 
 Bir sonraki modüllere: randevu durumu ve erteleme sayısı gorusmeye-getir'e (aynı gün, bu modülden sonra), yükleme adımları aday-listesi-cikar'a, denetim satırları aday-denetimi-cikar'a, dört kanal durum satırı ve sıradaki hareket satırı adaya-mesaj-yaz ile video-mesaj-cek'e, günün listesinin sırası gunu-planla'ya, akşamki beş sayı rakamlari-oku'ya, takip günü gelenler ve gelmedi işaretliler gunu-planla'ya, itiraz satırı gorusmeyi-analiz-et'e ve teklifin on görüşmelik kontrolüne, gözlem ve kanca satırları adaya-mesaj-yaz'a.
 
-Bu modülün tanıttığı ama doldurmadığı satırlar da var: sızıntı puanını, en güçlü bulguyu, lira karşılığını, karar verenin adını ve denetim kartının tamamını aday-denetimi-cikar yazıyor; arama testi ve yazılı test sonucunu kanitini-hazirla üretiyor ve dokuzuncu günde yazıyor. Bu modül yalnızca yerlerini gösteriyor.
+Bu modülün tanıttığı ama doldurmadığı satırlar da var: sızıntı puanını, en güçlü bulguyu, lira karşılığını, karar verenin adını ve denetim kartının tamamını aday-denetimi-cikar yazıyor; arama testi ve yazılı test sonucunu kanitini-hazirla üretiyor ve dördüncü günde yazıyor. Bu modül yalnızca yerlerini gösteriyor.
 
 ## 8. Yedek yol
 
@@ -258,19 +257,19 @@ Bu modülün tanıttığı ama doldurmadığı satırlar da var: sızıntı puan
 - Bir ekranı bulamazsan: ekranın görüntüsünü buraya at, hangi düğme olduğunu söylerim. Tarayıcı çevirisini açma.
 - Dokuz aşama ya da bir klasör eksik geliyorsa: kurulum sırasında bir şey aksamış demektir. Sen elle eklemiyorsun, buraya yazıyorsun, aynı gün düzeltiliyor.
 - Takip zinciri test kaydında görünmüyorsa: akış kapalı kalmış olabilir. Buraya yaz, bakıyorum. Zincir çalışmasa da gün durmuyor; takip günlerini o hafta ben hatırlatıyorum.
-- Yükleme ekranı bulunamazsa ya da eşleme tutmazsa: sekizinci güne kadar vaktin var. O gün elle giriş yolu devreye giriyor ve ilk yüz aday elle yazılıyor.
+- Yükleme ekranı bulunamazsa ya da eşleme tutmazsa: üçüncü güne kadar vaktin var. O gün elle giriş yolu devreye giriyor ve ilk yüz aday elle yazılıyor.
 - Aynı kayıt ikinci kez yeni kayıt açıyorsa: eşleme yanlış. Liste yüklenmeden düzeltiyorsun, sonra düzeltmek zor.
 - Yüklenen kayıtlarda dört kanal durumu boş geliyorsa: "yeni aday hazırlama" akışı çalışmamış demektir. Sayfayı yenile, hâlâ boşsa buraya yaz. Yüklemeyi geri almıyorsun, satırları sonradan doldurmak mümkün.
-- Takvim linki hâlâ yoksa: altıncı günde gorusmeye-getir yarım kalmış demektir, önce o bitiyor. Boş linkli mesaj gönderilmiyor.
+- Takvim linki hâlâ yoksa: ikinci günde gorusmeye-getir yarım kalmış demektir, önce o bitiyor. Boş linkli mesaj gönderilmiyor.
 
 ## 9. Sıradaki adım ve işaretler
 
 Sıradaki: aynı gün, bu modülden sonra onay belgesinin ödeme linki adımı.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Yedinci gün bitti, test yüklemesi yapılmadı: sekizinci günün ilk yarım saati buna gider.
+- İkinci gün bitti, test yüklemesi yapılmadı: üçüncü günün ilk yarım saati buna gider.
 - Kanal durumu düzeni anlatılmadan gün bitti: modül ertesi sabah ilk iş olarak yeniden açılır. Bu düzeni bilmeden sahada ne olduğunu anlamıyorsun.
-- Sekizinci günde yüklenen kayıt sayısı dosyadakinden az: eşleme yanlış, yükleme geri alınır ve tekrarlanır.
+- Üçüncü günde yüklenen kayıt sayısı dosyadakinden az: eşleme yanlış, yükleme geri alınır ve tekrarlanır.
 - Bir adayda aynı anda iki sıradaki hareket görünüyor: o gece düzeltilir; ikinci kez olursa satırın ayarı gözden geçirilir.
 - Sabah listesi boş geliyor ama kayıtlar duruyor: süzme şartlarından biri yanlış, o sabah düzeltilir.
 - Üç gün üst üste hiç not yazılmadı: modül ikinci kez açılır, not kuralı tekrarlanır.

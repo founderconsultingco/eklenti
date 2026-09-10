@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: video-mesaj-cek
-description: Kurulum on birinci gün, sonra yazı yolunda her gün. Dream 100 adaylarına kişisel video mesaj.
+description: Kurulum beşinci gün, sonra yazı yolunda her gün. En çok istenen yüz işletmeye kişisel video mesaj.
 ---
 
 # video-mesaj-cek
@@ -21,9 +21,8 @@ Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kend
 Şunlar bu modülün işi değildir: denetimin kendisi (aday-denetimi-cikar), hangi adaya hangi gün hangi kanalın geleceği kararı (adaya-mesaj-yaz), ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, ön görüşme sayfasında durur), kendi sisteminin demo ekran kaydı (kanitini-hazirla), yirmi birinci gün müşteri videosu, yazılı mesajlar (adaya-mesaj-yaz). Telefon yolunda video yok; orada en çok istenen yüz işletme aranır.
 
 ## 2. Ne zaman çalışır
-
-- On birinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: ekran kaydı programı ve YouTube bir kez ayarlanır. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin. Kanalın beşinci günde açılmıştı, video oraya yükleniyor.
-- On ikinci günden itibaren, yazı yolunda, her gün. En çok istenen yüz işletmeye ilk yazılı temas günde beş adayla yayılır; bu beş, günün kırk e-postası ve otuz Instagram mesajının içindedir. Video, o ilk temasın üçüncü günü, cevap gelmediyse, iki kanaldan aynı gün gider. Yani her gün beş yeni ilk temas, beş video.
+- Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: ekran kaydı programı ve YouTube bir kez ayarlanır. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin. Kanal ikinci günde araçlarla birlikte açılmıştı, video oraya yükleniyor.
+- Altıncı günden itibaren, yazı yolunda, her gün. En çok istenen yüz işletmeye ilk yazılı temas günde beş adayla yayılır; bu beş, günün kırk e-postası ve otuz Instagram mesajının içindedir. Video, o ilk temasın üçüncü günü, cevap gelmediyse, iki kanaldan aynı gün gider. Yani her gün beş yeni ilk temas, beş video.
 - Videonun yeri saha bloğunun son yarım saatidir; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
 - İlk hafta ilk temas da video da günde üç, bir saat; ikinci haftadan itibaren ikisi de beş, doksan dakika. İşin yanında çalışıyorsan ilk temas da video da günde iki, saha bloğunun sonunda, kırk dakika; en çok istenen listen kırk işletme.
 - İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden yirmi birinci güne, ve şirket kuruluş günü. O günlerde iki değil bir video çekilir, süre yirmi dakikaya iner. Sebebi rakamda: yirmi bir günlük teslim elli saat alıyor ve o saatler akşamdan çıkıyor. Sıfır video günü yine olmaz.
@@ -108,7 +107,7 @@ Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yar
 
 ### Kayıt: ekran kaydı, tek çekim, montaj yok
 
-Kayıt bilgisayarda ekran kaydı programıyla yapılır: ekran açık, yüzün köşede baloncukta, tek çekim, montaj yok. Kurulum bir kez, on birinci günde, FounderOS adım adım söyler.
+Kayıt bilgisayarda ekran kaydı programıyla yapılır: ekran açık, yüzün köşede baloncukta, tek çekim, montaj yok. Kurulum bir kez, beşinci günde, FounderOS adım adım söyler.
 
 Program ücretsiz seçeneği olan bir tarayıcı programıdır; adını ve adresini FounderOS o gün verir. Ücretsiz paketin bir kayıt süresi sınırı var. O sınırı ben sana söylemem, sen ekrandan okursun: hesap sayfasında "Free plan" yazan yerde kaç dakika yazıyorsa bana söylersin, plan ona göre yapılır. Bizim videomuz bir dakika, hangi sınır çıkarsa çıksın altında kalıyor.
 
@@ -151,9 +150,9 @@ Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutars
 
 **E-posta** (adres varsa): video YouTube'a "liste dışı" yüklenir; liste dışı videoyu linki olan herkes izler, hesap gerekmez, aramada çıkmaz.
 
-Kurulum bir kez, on birinci gün:
-1. Yedinci günün iş e-postasıyla açılmış Google hesabına gir (yoksa o e-postayla aç).
-2. O hesapla YouTube'a gir; kanal beşinci günde açılmıştı, videolar oraya yüklenir.
+Kurulum bir kez, beşinci gün:
+1. İkinci günün iş e-postasıyla açılmış Google hesabına gir (yoksa o e-postayla aç).
+2. O hesapla YouTube'a gir; kanal ikinci günde açılmıştı, videolar oraya yüklenir.
 
 Her gün, her video için:
 1. YouTube uygulamasını aç, alttaki artı işaretine bas, "video yükle" de.
@@ -195,7 +194,7 @@ Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
 
 ## 6. Ne söyler
 
-On birinci gün: "Yarın sahaya çıkıyorsun. Bugün kurulum ve bir deneme videosu, kimseye gitmeyecek. Listenin en altındaki adayın kartını açtım, bulgusu Haritalar'daki yorum. Ekranı aç, konuş. Sonra bir kez izle, beş şeye bak: adı ilk sekiz saniyede geçiyor mu, bulgu ekranda görünüyor mu, tek saat teklifi var mı, doksan saniyenin altında mı, sesin canlı mı. Sonra bir daha izleme. İlk videon ortalama olacak, herkesinki öyle."
+Beşinci gün: "Yarın sahaya çıkıyorsun. Bugün kurulum ve bir deneme videosu, kimseye gitmeyecek. Listenin en altındaki adayın kartını açtım, bulgusu Haritalar'daki yorum. Ekranı aç, konuş. Sonra bir kez izle, beş şeye bak: adı ilk sekiz saniyede geçiyor mu, bulgu ekranda görünüyor mu, tek saat teklifi var mı, doksan saniyenin altında mı, sesin canlı mı. Sonra bir daha izleme. İlk videon ortalama olacak, herkesinki öyle."
 Saha bloğunun sonunda: "Bugün beş video: Ahmet, Mehmet, Ayşe, Kemal, Selin. Beşinin de kartı hazır. Ahmet Bey'in bulgusu şu: salı formu doldurdun, dönüş gelmedi. Ekranda o formun sayfası duracak. Senaryo altı parça, karşında. Okuma, söyle. Üç çekim, en iyisi gider."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, video çekmiyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."
 Kartta rakam yoksa: "Bu kartta lira karşılığı boş. Üçüncü parçayı çıkardım, video elli saniye. Rakam uydurmuyoruz, ilk soruda çöker."

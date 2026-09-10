@@ -65,7 +65,7 @@ Claude aboneliğinin aylık tutarı.
 Demo hattının numarası, demo alt hesabı, demo kaydının yeri ve tarihi.
 Ödeme sağlayıcı ve link adresleri, şirket ve vergi levhası durumu, sözleşmenin sürümü ve doldurulma tarihi.
 CRM kurulumu: dokuz aşamanın doğrulandığı, kayıt satırlarının tam listesi, takip zincirinin günleri, aynı numaranın birleştiğinin doğrulandığı.
-Yazan: araclari-kur, musteri-takip-sistemini-kur, aday-listesi-cikar, kanitini-hazirla, onay-belgesini-hazirla, isini-kur (on birinci gün).
+Yazan: araclari-kur, musteri-takip-sistemini-kur, aday-listesi-cikar, kanitini-hazirla, onay-belgesini-hazirla, isini-kur (beşinci gün).
 
 ### 8. Listeler
 Sıcak çevre: A listesindeki kişi sayısı, B listesindeki kişi sayısı, listenin çıkarıldığı tarih, hangi kaynaklardan tarandığı.

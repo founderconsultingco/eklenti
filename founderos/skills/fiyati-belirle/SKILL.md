@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: fiyati-belirle
-description: Dördüncü gün sabah. Kurulum ve aylık ücret, hazırlık kapısı, deneme fiyatı. Fiyat sorulduğunda ya da fiyat itirazı geldiğinde.
+description: Birinci gün fiyat bandı, üçüncü gün kesin fiyat. Kurulum ve aylık ücret, hazırlık kapısı, deneme fiyatı. Fiyat sorulduğunda ya da fiyat itirazı geldiğinde.
 ---
 
 # fiyati-belirle
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Beşinci günün ikinci yarısının modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül rakamı koyar.
+Birinci ve üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül rakamı koyar.
 
 Neden bu iş var: sıfırdan başlayan biri fiyatı iki yoldan biriyle belirliyor ve ikisi de yanlış. Ya kendi emeğinden hesaplıyor ("bir haftamı alıyor, şu kadar olsun"), ya da korkuyla belirliyor ("çok isterim, alamaz"). İkisi de aynı sonuca çıkıyor: düşük fiyat.
 
@@ -20,14 +20,14 @@ Düşük fiyatın bedeli de bilinmeli. Ucuz fiyat ucuz müşteri getiriyor: paza
 - Ne sattığını yazmak (teklifi-yaz, dün).
 - Nasıl teslim ettiğini çizmek (hizmet-akisini-ciz, bu sabah).
 - Görüşmede fiyat itirazını yönetmek (gorusmeyi-yonet). Buradan çıkan cevaplar oraya girdi olur.
-- Ödeme linki (onay-belgesini-hazirla, yedinci gün); havale yolu ve sözleşme (dördüncü gün).
+- Ödeme yolu ve sözleşme (onay-belgesini-hazirla, üçüncü gün).
 - Kâr hesabı ve zam kararı (kari-hesapla, her ay).
 
 Pazarlamadaki karşılığı: fiyat matematik değil, kendini nereye koyduğun.
 
 ## 2. Ne zaman çalışır
-
-- Dördüncü gün sabah, bir saat.
+- Birinci gün: fiyat bandı, nişin kartından alt ve üst rakam, on dakika.
+- Üçüncü gün sabah, bir saat: kesin fiyat. Akşam tanıdıklara ilk mesaj gidiyor, fiyat ondan önce tek rakama iner.
 - Her yeni müşteri kazandığında kısa bir kontrol için.
 - kari-hesapla üç ayda bir bu modülü yeniden çalıştırır.
 

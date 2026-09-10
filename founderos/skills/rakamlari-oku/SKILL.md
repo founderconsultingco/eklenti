@@ -24,11 +24,10 @@ Neden bu iş var: sıfırdan başlayan biri sayıya bakmadığı için nerede ol
 Pazarlamadaki karşılığı: ölçmediğin şeyi yönetemezsin, ama yanlış şeyi ölçersen yanlış şeyi yönetirsin.
 
 ## 2. Ne zaman çalışır
-
 - Her akşam, günün sonunda. Beş dakika sürer.
 - Görüşme olan günlerde gorusmeyi-analiz-et'ten sonra çalışır.
-- On ikinci günden itibaren her gün.
-- Dördüncü günden on birinci güne kadar kısa hali: yalnız sıcak çevreye giden mesajlar ve gelen cevaplar sayılır. Öncesinde sayılacak temas yok.
+- Altıncı günden itibaren her gün.
+- Üçüncü günden beşinci güne kadar kısa hali: yalnız sıcak çevreye giden mesajlar ve gelen cevaplar sayılır. Öncesinde sayılacak temas yok.
 
 ## 3. Ne okur
 
@@ -46,7 +45,7 @@ Tek istisna: CRM'de o gün hiç kayıt yoksa tek soru sorar. "Bugün hiç kayıt
 
 ### Her akşam yazılan sayılar
 
-Beş sayı, her akşam, istisnasız. Sayıları FounderOS çıkarıyor: her kanalın tarih satırına bugün yazılmış kayıtları sayıyor. Onuncu günden itibaren her sayının yanında sıcak ve soğuk ayrımı duruyor (kayıttaki sıcak mı soğuk mu satırından); ikisi tek toplamda birleşmiyor.
+Beş sayı, her akşam, istisnasız. Sayıları FounderOS çıkarıyor: her kanalın tarih satırına bugün yazılmış kayıtları sayıyor. Beşinci günden itibaren her sayının yanında sıcak ve soğuk ayrımı duruyor (kayıttaki sıcak mı soğuk mu satırından); ikisi tek toplamda birleşmiyor.
 1. Kaç temas, kanal ayrımıyla.
 2. Kaç cevap geldi.
 3. Kaç cevap olumluydu.

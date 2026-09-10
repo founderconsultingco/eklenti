@@ -1,35 +1,34 @@
 ---
 user-invocable: false
 name: aday-listesi-cikar
-description: Sekizinci gün ve her ay. Soğuk aday listesinin çıkarılması.
+description: Üçüncü gün ve her ay. Beş yüz kişilik soğuk aday listesi ve en çok istenen yüz işletme.
 ---
 
 # aday-listesi-cikar
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-On birinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının üçüncü adımındayız.
+Üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının üçüncü adımındayız.
 
 Bu modül üç şey çıkarıyor: beş yüz kişilik aday listesi, içinden seçilen en çok istenen yüz işletme ve her sabah kendiliğinden hazırlanan günün saha listesi. Aday, henüz müşterin olmayan ama olabilecek işletmedir.
 
 Neden beş yüz: doksan günde bu listeye 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste beş yüzün altındaysa üçüncü haftada arayacak kimsen kalmıyor.
 
-Neden bugün: yarın kanıtını hazırlıyorsun ve mesajlarını yazıyorsun, on ikinci gün sahaya çıkıyorsun. Yarının deneme aramaları bu listeden yapılıyor.
+Neden bugün: yarın kanıtını hazırlıyorsun ve mesajlarını yazıyorsun, altıncı gün sahaya çıkıyorsun. Yarının deneme aramaları bu listeden yapılıyor.
 
 Şunlar bu modülün işi değildir:
 - Sıcak çevre listesi (tanidik-listesi-cikar, dün). O ayrı liste, ayrı mesaj.
 - Adayın denetimi (aday-denetimi-cikar). Bu modül denetimi tarif etmez, çağırır.
 - Mesajların metni (adaya-mesaj-yaz, yarın) ve video mesaj (video-mesaj-cek, sahaya çıktıktan sonra).
-- Takip sisteminin kurulması (musteri-takip-sistemini-kur, yedinci gün). Bugün o sisteme yükleme yapıyorsun.
+- Takip sisteminin kurulması (musteri-takip-sistemini-kur, ikinci gün). Bugün o sisteme yükleme yapıyorsun.
 
 Pazarlamadaki karşılığı: aday listesi.
 
 ## 2. Ne zaman çalışır
-
-- Sekizinci gün, üç saat. Instagram kaynağını da kullanıyorsan yirmi dakika daha. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan çekim ve temizlik sabah bloğunda, geri kalanı akşam bloğunda.
+- Üçüncü gün, üç saat. Instagram kaynağını da kullanıyorsan yirmi dakika daha. Liste çıkaran programın hesabı dün açıldığı için çekim yirmi dakikada biter. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan çekim ve temizlik sabah bloğunda, geri kalanı akşam bloğunda.
 - Her gün: günün saha listesi sabah bloğunda kendiliğinden hazırlanır. Senin bir işin yok, açtığında sıralanmış duruyor.
 - İkinci kez: her ay bir kere. Liste baştan yenilenir, yüz işletme yeniden seçilir, hızlı denetimler tazelenir.
-- Üçüncü kez: liste beş yüzün altına düştüğünde ya da niş değiştiğinde.
+- Üçüncü kez: liste beş yüzün altına düştüğünde ya da pazar değiştiğinde.
 
 ## 3. Ne okur
 
@@ -37,7 +36,7 @@ Pazarlamadaki karşılığı: aday listesi.
 Niş kartından (seçtiğin sektörün bütün bilgisinin durduğu dosya): Google Haritalar'daki kategori adları, kanal ve zaman bölümü, kim karar veriyor bölümü, yasal sınırlar.
 aday-denetimi-cikar'dan: hızlı denetimin beş satırı ve sızıntı puanı. Denetim orada yürür, bu modül puanı okur ve sıralamada kullanır.
 CRM'den: cevap veren adaylar, takip günü bugüne düşenler, denetimi hazır olanlar. Günün saha listesi bunlardan çıkıyor.
-Dördüncü günün sıcak listesinden: A listesindeki işletmeler.
+İkinci günün sıcak listesinden: A listesindeki işletmeler.
 
 ## 4. Ne sorar
 
@@ -64,7 +63,7 @@ Karar senin. FounderOS başka hiçbir yerde seçenek sunmaz, kararı verir ve se
 1. Claude'un tarayıcı eklentisini ve Google Haritalar'ı aç.
 2. Arama kelimesi: kartındaki kategori adı artı semt adı ("Nilüfer klima servisi" gibi). Şehri tek seferde aratmıyorsun, Haritalar belli bir sayıdan sonrasını göstermiyor; semt semt gidiyorsun ve taradıklarını bir kenara yazıyorsun.
 3. Eklenti her işletme kartından altı şeyi tabloya yazıyor: işletme adı, telefon, web sitesi, semt, yorum sayısı ve puan, varsa Instagram hesabı. E-posta bu yolda gelmiyor; siteyi açıp aramayı sadece yüz işletme için, hızlı denetim sırasında yapıyorsun.
-4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün CRM'e yüklüyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dokuzuncu ve onuncu günün sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor.
+4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün CRM'e yüklüyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci günün sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor.
 
 Hangi yolu seçtiğin İş Beyni'ne yazılıyor, ay sonundaki yenileme aynı yoldan yürüyor.
 
@@ -149,13 +148,13 @@ Eskiden bu adımda her işletme için tek cümlelik gözlem satırı yazılıyor
 
 Sahibinin adını bulma işi de denetime taşındı, denetimin dokuzuncu satırı o, burada tekrar anlatılmıyor. Sonucu aynı: adı bulunan aday telefon sırasına, bulunamayan yazı sırasına giriyor.
 
-Altmış dakikada otuz işletme bitiyor, kalan yetmişi dokuzuncu günün sabah bloğunda tamamlıyorsun. Bugün otuz yeterli, çünkü yarının deneme aramaları o otuz işletmeden yapılıyor. İşin yanında çalışıyorsan kırk işletme seçtin: bugün yirmisi, yarın yirmisi.
+Altmış dakikada otuz işletme bitiyor, kalan yetmişi dördüncü günün sabah bloğunda tamamlıyorsun. Bugün otuz yeterli, çünkü yarının deneme aramaları o otuz işletmeden yapılıyor. İşin yanında çalışıyorsan kırk işletme seçtin: bugün yirmisi, yarın yirmisi.
 
 Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adımda CRM'e gidiyor.
 
 ### Adım 7: CRM'e yükle (15 dakika)
 
-Sekizinci günün test yüklemesinin aynısı, bu sefer gerçek listeyle.
+İkinci günün test yüklemesinin aynısı, bu sefer gerçek listeyle.
 
 1. Tabloyu Excel olarak kaydet.
 2. CRM'de yükleme ekranını aç, dosyayı seç, yüklemeye ad ver: kayıt sayısı ve tarih. "512 aday, 6 Eylül" gibi.
@@ -163,7 +162,7 @@ Sekizinci günün test yüklemesinin aynısı, bu sefer gerçek listeyle.
 4. Kaynak sütunu iki değer alıyor: Haritalar ya da Instagram. Hangi adayın telefonla, hangisinin yazıyla gideceğini o belirliyor ve "nereden bulundu" satırı da o sütundan doluyor.
 5. Kayıtta ad alanı boş kabul edilmiyor. Sahibinin adı bulunmayan kayıtlarda o alana işletme adı yazılıyor.
 6. Yükle, sonra yüklenen sayıyı dosyadakiyle karşılaştır. Numara tekrarı temizlendiği ve iki liste birleştirildiği için ikisi tutuyor olmalı; büyük fark varsa eşleme yanlış, geri al ve tekrarla.
-7. Hepsinin aşaması "yeni" ve üstlerinde "soğuk" işareti var; aşama, adayın işin neresinde olduğunu gösteren etiket. En çok istenen yüz işletmeye ayrı işaret koy. Denetimi bugün yapılmayanlarda sızıntı puanı boş kalıyor, dokuzuncu günde doluyor.
+7. Hepsinin aşaması "yeni" ve üstlerinde "soğuk" işareti var; aşama, adayın işin neresinde olduğunu gösteren etiket. En çok istenen yüz işletmeye ayrı işaret koy. Denetimi bugün yapılmayanlarda sızıntı puanı boş kalıyor, dördüncü günde doluyor.
 
 ### Listenin günlük yenilenmesi
 
@@ -214,18 +213,18 @@ Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, 
 - Tarayıcı eklentisi de çalışmazsa: elle yazma, en son çare. Bir tabloya altı sütun açıyorsun (işletme adı, telefon, web sitesi, semt, yorum sayısı, Instagram) ve Haritalar'da çıkan her işletmeyi yazıyorsun. Yavaş yol, o yüzden önce diğer ikisi deneniyor.
 - Şehrinde 500 çıkmazsa: kartın diğer kategori adları, sonra komşu ilçeler, sonra Instagram kaynağı, sonra Türkiye geneli. Dördü de yetmezse niş kararı haftanın kararına gidiyor.
 - Instagram aracı sonuç vermezse ya da kredi yetmezse: liste Haritalar'la yürüyor, yazı yolunun Instagram tarafı sahada elle doluyor.
-- Hızlı denetim bugün otuza ulaşmazsa: yarının deneme aramaları kaç işletme denetlendiyse o kadarıyla yapılıyor. Kalan denetim dokuzuncu güne kayıyor, saha ertelenmiyor.
+- Hızlı denetim bugün otuza ulaşmazsa: yarının deneme aramaları kaç işletme denetlendiyse o kadarıyla yapılıyor. Kalan denetim dördüncü güne kayıyor, saha ertelenmiyor.
 - Yükleme kabul etmezse: liste tabloda kalıyor, temaslar oradan yürüyor, yükleme ilk boş saatte tekrarlanıyor.
 - Üç saat aşılırsa: hızlı denetim yarım kalabilir, otuz işletme yeter. Liste, temizlik ve yükleme bugün bitiyor.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: dokuzuncu gün, kanıtını hazırlıyorsun ve mesajlarını yazıyorsun.
+Sıradaki: dördüncü gün, kanıtını hazırlıyorsun ve mesajlarını yazıyorsun.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Sekizinci gün bitti, liste yüklenmedi: dokuzuncu günün ilk işi olur ve o günün akışı bir saat kayar.
-- Yüz işletme seçilmedi: yarının deneme araması yapılamıyor, dokuzuncu günün ilk yarım saatinde seçilir.
-- Hızlı denetimi biten sayı otuzun altında: yarının deneme aramaları eksik yapılır, denetim dokuzuncu günün sabah bloğuna eklenir.
+- Üçüncü gün bitti, liste yüklenmedi: dördüncü günün ilk işi olur ve o günün akışı bir saat kayar.
+- Yüz işletme seçilmedi: yarının deneme araması yapılamıyor, dördüncü günün ilk yarım saatinde seçilir.
+- Hızlı denetimi biten sayı otuzun altında: yarının deneme aramaları eksik yapılır, denetim dördüncü günün sabah bloğuna eklenir.
 - Aynı işletme hem sıcak hem soğuk listede görünüyor: altıncı eleme atlanmış, soğuk mesaj durdurulur.
 - Bir ay geçti, liste yenilenmedi: modül ikinci kez açılır.
 

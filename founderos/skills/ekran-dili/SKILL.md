@@ -52,6 +52,6 @@ Bir modül İngilizce ekranlı bir programda adım anlatıyorsa:
 
 ## Hangi programlar İngilizce
 
-İkinci günde: aday listesi çıkaran program. Altıncı günde: siteyi yayına alan program ve kod deposu. Altıncı ve on ikinci günlerde: WhatsApp iş hesabının yönetim ekranı. Yedinci günde: ödeme sağlayıcısının bir bölümü. Bunların hangi ekranında hangi düğmeye basılacağı ilgili modülün kendi metninde yazılı; burada sadece dilin nasıl ele alınacağı yazıyor.
+İkinci günde: aday listesi çıkaran program, siteyi yayına alan program ve kod deposu, WhatsApp iş hesabının yönetim ekranı. Üçüncü günde: ödeme sağlayıcısının bir bölümü. Bunların hangi ekranında hangi düğmeye basılacağı ilgili modülün kendi metninde yazılı; burada sadece dilin nasıl ele alınacağı yazıyor.
 
 Türkçe olan ve bu bölümün ilgilenmediği ekranlar: Google işletme profili, e-Devlet, banka uygulamaları, WhatsApp'ın kendisi. CRM bu listede değil: onun ekranı İngilizce ve düğme adları her adımda birlikte veriliyor.

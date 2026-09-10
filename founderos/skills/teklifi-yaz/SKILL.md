@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: teklifi-yaz
-description: Üçüncü gün sabah. Dönüşüm Cümlesi, sistemin adı ve üç kademe yazılır. Teklif metni ya da ne satıldığı konuşulduğunda.
+description: Birinci gün teklifin gövdesi, üçüncü gün kademeler. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk. Teklif metni ya da ne satıldığı konuşulduğunda.
 ---
 
 # teklifi-yaz
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Dördüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül ne sattığını yazar. Programın tanıtımındaki adı "Ne Satacaksın".
+Birinci ve üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül ne sattığını yazar. Programın tanıtımındaki adı "Ne Satacaksın".
 
 Satacağın şey zaten belli ve değişmiyor: işletmenin kaçırdığı talebi randevuya çeviren sistem. Bu modül o sabit şeyi senin sektörünün diline çevirir, ona bir ad koyar ve tek cümleye indirir.
 
@@ -18,15 +18,15 @@ Doğrusu şu: özellik bilgi verir, sonuç satar. İşletmeci "yapay zeka asista
 
 Şunlar bu modülün işi değildir:
 - Fiyatı koymak (fiyati-belirle, yarın, günün ikinci yarısında).
-- İş adını, logoyu ve marka kitini kurmak (beşinci gün, markani-kur).
+- İş adını, logoyu ve marka kitini kurmak (birinci gün, markani-kur).
 - Mesaj metni yazmak (adaya-mesaj-yaz). Bu modül ne sattığını yazar, oraya nasıl yazacağını değil.
 - Görüşmede itirazı yönetmek (gorusmeyi-yonet). Buradan çıkan cevaplar oraya girdi olur.
 
 Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelimeleriyle konuşan kazanıyor.
 
 ## 2. Ne zaman çalışır
-
-- Üçüncü gün sabah, bir buçuk saat.
+- Birinci gün: teklifin gövdesi, teslimat kontrolünden sonra, yarım saat. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk.
+- Üçüncü gün sabah, bir saat: kademeler ve kapsam, hizmet-akisini-ciz ile birlikte.
 - Sonra sadece bir şartla yeniden çalışır: on görüşme birikecek ve aynı işaret bu on görüşmenin en az beşinde görülecek. Kararı degisiklige-karar-ver verir. Tek görüşmeyle teklif değişmez; bir görüşmede duyduğun cümle bilgidir, kanıt değildir. Fiyatın rakamı ayrı bir eşiğe bağlı, o otuz görüşmede açılıyor.
 - Her görüşmeden sonra gorusmeyi-analiz-et not düşer, ama bu modülü çalıştırmaz.
 
@@ -41,7 +41,7 @@ Dört sızıntı, işletmenin müşteri kaybettiği dört yerdir: açılmayan te
 
 ## 4. Ne sorar
 
-Sormaz. İş adın yoksa geçici bir ad koyar; beşinci gün markani-kur onu kesinleştirir.
+Sormaz. İş adın yoksa geçici bir ad koyar; aynı gün markani-kur onu kesinleştirir.
 
 
 ## 4b. Birinci gün: teklifin gövdesi
@@ -154,7 +154,7 @@ Eski sürüm silinmez. Sonraki sürümler on görüşmelik birikimden çıkar ve
 
 - Kartın açılış cümlesi senin şehrinde oturmuyorsa: cümle şehirsiz kurulur ve ilk on aramadan sonra düzeltilir.
 - Sen "başka bir şey satmak istiyorum" dersen: sebebi bir kere anlatılır. Israr edersen "300 temas sonra konuşuruz, şimdi bu" denir.
-- Bir dakikalık anlatım iki denemede söylenemezse: prova sayacına "teklif provası" eklenir ve onuncu güne kadar her sabah bir kez yapılır. Prova sayacı, sahaya çıkmadan önce yaptığın alıştırmaların sayısıdır.
+- Bir dakikalık anlatım iki denemede söylenemezse: prova sayacına "teklif provası" eklenir ve dördüncü güne kadar her sabah bir kez yapılır. Prova sayacı, sahaya çıkmadan önce yaptığın alıştırmaların sayısıdır.
 - Kartın "işletmecinin iç sesi" satırı boşsa: duygu parçası genel yazılır ve ilk on görüşmede işletmecilerin kendi cümlelerinden doldurulur.
 - Sağlık nişindeysen: kartın yasal sınırlar bölümü önce okunur. Sonuç cümlesinde tedavi sözü, "kesin sonuç" ve "en iyi" gibi iddialar geçmez.
 

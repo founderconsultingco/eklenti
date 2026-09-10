@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: siteni-kur
-description: Altıncı gün. Tek sayfalık tanıtım sitesi ve randevu takvimi.
+description: Birinci gün tanıtım sayfası hazırlanır ve görülür, ikinci gün yayına alınır. Tek sayfalık tanıtım sitesi ve randevu takvimi.
 ---
 
 # siteni-kur
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Yedinci günün sabah bloğu modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının üçüncü adımı: satış sayfası.
+Birinci ve ikinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının üçüncü adımı: satış sayfası.
 
 Landing page, tek işi olan tek sayfalık site demek. Bizim sayfamızın tek işi şu: adayın randevu almasını sağlamak.
 
@@ -25,10 +25,9 @@ Neden tek sayfa: çok sayfalı site yapmak günler alıyor ve hiçbir işe yaram
 Pazarlamadaki karşılığı: sitenin işi seni satmak değil, şüpheyi kaldırmak.
 
 ## 2. Ne zaman çalışır
-
-- Altıncı günün sabah bloğu, iki üç saat. Sayfayı FounderOS kurar, sen bu pencereden bakarsın; hiçbir adımda komut satırı yok.
-- Aynı günün ikinci yarısında, on beş dakika: takvim sayfaya yerleşir.
-- İlk kanıt hikâyesi çıkınca üçüncü kez: gizli duran sonuç ve müşteri bölümleri açılır. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa altıncı gün halinde kalmaz.
+- Birinci gün: tanıtım sayfası hazırlanır ve öğrenci gözüyle görür. Canlıya çıkmaz. Yarım saat.
+- İkinci gün, araçlar kurulduktan sonra, bir saat: sayfa yayına alınır, takvim sayfaya yerleşir. Sayfayı FounderOS kurar, sen bu pencereden bakarsın; hiçbir adımda komut satırı yok.
+- İlk kanıt hikâyesi çıkınca üçüncü kez: gizli duran sonuç ve müşteri bölümleri açılır. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa ikinci gün halinde kalmaz.
 
 ## 3. Ne okur
 
@@ -60,7 +59,7 @@ Beş bölüm:
 2. Ne kaybediyorsun: nişin kayıp birimi, iki cümle.
 3. Ne yapıyoruz: teslimat kontrolünden geçmiş parçalar, üç madde.
 4. Kim: tek cümlelik tanıtım.
-5. İletişim: telefon ve WhatsApp. Randevu takvimi birinci günde konmaz, çünkü takvim altıncı günde kuruluyor. Sayfada yeri açılır ve o gün doldurulur.
+5. İletişim: telefon ve WhatsApp. Randevu takvimi birinci günde konmaz, çünkü takvim ikinci günde kuruluyor. Sayfada yeri açılır ve o gün doldurulur.
 
 Sayfayı öğrencinin klasörüne yazarsın ve açmasını söylersin. Bilgisayarında çift tıklayıp tarayıcıda görür. Telefon görünümünü de kontrol ettirirsin.
 
@@ -92,7 +91,7 @@ Sayfa dokuz bölümden oluşur ve sırası değişmez. İlk müşterinden önce 
 
 **Dokuz: son çağrı ve alt bölüm.** Tek cümle ve tek düğme. Altta iş adı, şehir, iş e-postası, WhatsApp numarası.
 
-Üç bölüm gizli başladığı için sayfa altıncı günde kısa görünür. Doğrusu bu. Boş bir "müşterilerimiz" bölümü, hiç olmamasından kötü.
+Üç bölüm gizli başladığı için sayfa ikinci günde kısa görünür. Doğrusu bu. Boş bir "müşterilerimiz" bölümü, hiç olmamasından kötü.
 
 ### Sayfada olmayacaklar
 
@@ -181,7 +180,7 @@ Bu bölüm bütçe merdiveninin hangi basamağında olduğuna göre değişiyor.
 
 **Orta ve üst basamakta.** Alan adı bugün alınır. İş adının sade hali, tire yok, rakam yok, uzun değil. FounderOS iki seçenek verir.
 
-Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve on ikinci günden itibaren her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
+Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve altıncı günden itibaren her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
 
 Aynı gün üçüncü bir iş daha var ve atlanırsa sahaya çıktığın gün anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** Takip e-postaları ve randevu hatırlatmaları CRM'den gidiyor; adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıyor ve büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menüde "Settings", içinde "Email Services" (e-posta ayarları), oradan gönderen alan adını ekleyip alan adını aldığın yere birkaç satır giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
 
@@ -193,9 +192,9 @@ Bu adım randevu hatırlatmalarını da açıyor. Randevu alındığında giden 
 
 Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin yirmi birinci gün raporu çıkıp kanıt hikâyen yazıldığı zaman. O gün hem para girmiş oluyor hem de sitede gösterecek bir sonucun oluyor. O gün alan adı alınır, ücretsiz adres yenisine yönlendirilir, iş e-postası kurulur ve site adresi İş Beyni'nde ve e-posta imzasında güncellenir. Bu, gizli bölümlerin açıldığı günün aynısı; ikisi tek işte yapılır.
 
-O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki on ikinci günde şaşırma.
+O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki altıncı günde şaşırma.
 
-Yeni alan adından hemen yüz e-posta atılmaz. Adres alıştırılır: ilk gün on beş, sonra yirmi, sonra otuz. Alıştırmanın başlayabilmesi için doğrulamanın yeşile dönmüş olması gerekiyor; dönmeden atılan her e-posta hem boşa gider hem de adresin itibarını düşürür. Bu sayı adaya-mesaj-yaz'da yazılı; orta ve üst basamakta alıştırma on ikinci gün başlar, alt basamakta alan adının alındığı gün başlar.
+Yeni alan adından hemen yüz e-posta atılmaz. Adres alıştırılır: ilk gün on beş, sonra yirmi, sonra otuz. Alıştırmanın başlayabilmesi için doğrulamanın yeşile dönmüş olması gerekiyor; dönmeden atılan her e-posta hem boşa gider hem de adresin itibarını düşürür. Bu sayı adaya-mesaj-yaz'da yazılı; orta ve üst basamakta alıştırma altıncı gün başlar, alt basamakta alan adının alındığı gün başlar.
 
 ## 6. Ne söyler
 
@@ -220,23 +219,23 @@ Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-po
 ## 8. Yedek yol
 
 - Alan adı alınamazsa: site yayın servisinin verdiği ücretsiz adreste yayına alınır, alan adı gelince bağlanır. Gün durmaz. Alt basamakta bu zaten normal yol, aksama sayılmaz.
-- Yayına alma takılırsa: site bilgisayarında çalışıyordur, yayın ertesi günün sabah bloğuna kalır. Sekizinci günün işi ertelenmez.
+- Yayına alma takılırsa: site bilgisayarında çalışıyordur, yayın ertesi günün sabah bloğuna kalır. Üçüncü günün işi ertelenmez.
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
 - Sayfa iki üç saati aşarsa: marka kiti adımı yarına kalır, sade haliyle yayına alınır. Sade ama yayında olan sayfa, güzel ama olmayan sayfadan iyi.
 - Takvim bugün kurulamazsa: düğmeler geçici olarak WhatsApp'a gider ve bu İş Beyni'ne yazılır.
 - İş e-postası kurulamazsa: mevcut e-postanla devam edilir ve günlük gönderim sayısı yarıya iner.
 - Sağlık nişindeysen: kartın yasal sınırlar bölümü sayfaya uygulanır. Tedavi sözü, hasta görseli, öncesi sonrası düzeni ve "kesin sonuç" gibi iddialar sayfada geçmez.
-- Ön görüşme sayfasının yeri bugün açılamazsa: yedinci günün sabahında açılır, o gün uzar.
+- Ön görüşme sayfasının yeri bugün açılamazsa: üçüncü günün sabahında açılır, o gün uzar.
 
 ## 9. Sıradaki adım ve işaretler
 
 Sıradaki: aynı gün, siteden hemen sonra ön görüşme sayfası, randevu takvimi ve hatırlatma akışı.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Altıncı gün bitti, sayfa yayında değil: yedinci günün sabah bloğunun ilk işi olur, sonrası ertelenmez.
+- İkinci gün bitti, sayfa yayında değil: üçüncü günün sabah bloğunun ilk işi olur, sonrası ertelenmez.
 - Alan adı alınmadı ve basamak orta ya da üst: ücretsiz adres kullanılır, işaret açık kalır.
 - Alt basamaktasın ve alan adı alınmadı: bu işaret açılmaz, çünkü doğru olan bu. Alan adı işareti ilk kanıt hikâyesi çıktığı gün açılır.
-- Altıncı gün bitti, takvim sayfaya gömülmedi: yedinci günün ilk on beş dakikası.
+- İkinci gün bitti, takvim sayfaya gömülmedi: üçüncü günün ilk on beş dakikası.
 - İş e-postası kurulmadı: günlük e-posta hedefi yarıya iner.
 - İlk kanıt hikâyesi çıktı: sonuç şeridi, müşteri yorumları ve örnek çalışmalar bölümleri açılır, ikinci düğme görünür olur. Alt basamaktaysan aynı gün alan adı alınır, ücretsiz adres yenisine yönlendirilir ve iş e-postası kurulur.
 - İngilizce ekran yüzünden yayın adımı yarım kaldı: ekran görüntüsü istenir, adım aynı gün tamamlanır.

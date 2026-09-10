@@ -80,7 +80,7 @@ Ulaşma:
 - Kanca: İşletmecinin zaten bildiği ama yapmadığı şeyi hatırlatan tek cümle; mesajın ve aramanın açılışı.
 - Yaşanmış kanca: Senin gerçekten yaşadığın olay: "dün akşam yedide aradım, açan olmadı".
 - Deneme araması: Adayı gerçek müşteri gibi denemen: akşam arayıp açıyor mu bakmak, mesaj yazıp kaç saatte döndüğünü ölçmek, formunu doldurup dönüş var mı görmek. Dokuzuncu gün toplu yapılır, on birinci günden sonra her akşam yarım saat; yaşanmış kancanın kaynağı.
-- Akşam testi: On birinci günün akşamından itibaren her akşam yedi ile yedi buçuk arası, ertesi gün aranacak ilk yirmi adayın telefon testi.
+- Akşam testi: Beşinci günün akşamından itibaren her akşam yedi ile yedi buçuk arası, ertesi gün aranacak ilk yirmi adayın telefon testi.
 - Kanıt cümlesi: Deneme aramalarının toplu sayımından çıkan tek cümle: "Geçen hafta otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Senin saydığın, yuvarlanmayan rakam; her pazartesi güncellenir. Kanıt hikâyesinden ayrıdır.
 - Demo hattı: Nişin için hazır duran 0850 numarası; sen almıyorsun, dokuzuncu günde sana açılıyor. Görüşmede "şu numarayı arayın" denen numara budur; telefonu nişin diliyle konuşan sesli asistan açıyor. Aynı nişteki bütün öğrenciler aynı numarayı kullanıyor.
 - En çok istenen yüz işletme: Şehrinde müşterin olmasını en çok istediğin yüz işletme; yazı yolunda onlara video mesaj da çekilir. Her ay yeniden seçilir.
@@ -94,7 +94,7 @@ Ulaşma:
 - Niteleme: Adayın gerçekten alıcı olup olmadığını anlama: sorunun farkında mı, parası var mı, kararı kim veriyor.
 - Kilit: Değiştirilmeyen şey ve eşiği. Dört ayrı kilit var. Mesaj metni: iki yüz temasta sadece bakılır, üç yüz temasta karar verilir. Teklifin kelimeleri: on görüşme birikmeden ve aynı işaret o onun en az beşinde görülmeden değişmez. Fiyatın rakamı: otuz görüşme birikmeden değişmez. Niş: doksan gün ya da beş müşteri boyunca kilitlidir; tek istisnası üç yüz temas yapılmış ve hiç görüşme çıkmamış olmasıdır. Dördünün de kararını degisiklige-karar-ver verir.
 - Gelir planı: Birinci günde hedef gelirden geriye doğru kurulan hesap: kaç müşteri, kaç görüşme, kaç randevu, kaç arama, kaç gün. İş Beyni'nde durur, dördüncü günde fiyat kesinleşince ve üç yüzüncü temasta güncellenir.
-- Aylık masraf tablosu: Birinci günde kurulan, hangi ay cebinden ne çıkacağını gösteren dört bölümlü liste: ikinci günden itibaren, yedinci günden itibaren, dokuzuncu günden itibaren (demo hattı), on birinci günden itibaren, yani şirket kurulunca.
+- Aylık masraf tablosu: Birinci günde kurulan, hangi ay cebinden ne çıkacağını gösteren dört bölümlü liste: ikinci günden itibaren, dördüncü günden itibaren (demo hattı), ve şirket kurulunca.
 - Randevu durumu: CRM'in kendi randevu kaydında duran durum; aşamadan ayrıdır. Değerleri: onaysız, onaylı, geldi, gelmedi, iptal. Ayrı bir satır açılmıyor, randevunun kendi ekranında duruyor. Aday gelmese de aşaması "görüşme ayarlandı"da kalır.
 - Günlük sayı görünümü: Her akşam okunacak beş sayı. CRM'de böyle bir ekran yok; sayıları FounderOS kayıtlardan okuyup çıkarıyor.
 - Saat tablosu: Yirmi bir günlük teslimatın sana kaç saate mal olduğunu gösteren liste; üçüncü günde tahminle kurulur, ilk müşteride gerçek saatlerle yeniden yazılır.
@@ -148,16 +148,16 @@ Randevu ve görüşme:
 - Tahsilat: Müşterinin aylık ücretinin karttan çekilmesi. İlk çekim otuz birinci gün, sonrası her ay aynı gün, kendiliğinden olur.
 - Ödeme sağlayıcı: Parayı senin adına tahsil eden şirket. Kart bilgisi onda durur, para oradan hesabına geçer. Karta itiraz edilirse bu şirket seni riskli görür ve hesabı kapatabilir.
 - Arabulucu: Mahkemeye gitmeden önce iki tarafı masaya oturtan resmî görevli. İşletmeler arasındaki para davalarında mahkemeden önce buraya başvurmak zorunlu.
-- Şahıs şirketi: Tek kişinin kendi adına kurduğu en basit şirket. Başvurusu e-Devlet'ten yapılır. Takvime değil ilk "evet"e bağlıdır: on birinci günde kuruluşa hazır hâle gelir, ilk sözlü "evet"i aldığın gün kurulur.
+- Şahıs şirketi: Tek kişinin kendi adına kurduğu en basit şirket. Başvurusu e-Devlet'ten yapılır. Takvime değil ilk "evet"e bağlıdır: beşinci günde kuruluşa hazır hâle gelir, ilk sözlü "evet"i aldığın gün kurulur.
 - Vergi levhası: Vergi dairesinin şirketine verdiği belge. Parayı senin adına tahsil eden şirketler bunu istiyor.
 - Mali müşavir: Şirketinin vergisini, defterini ve beyannamelerini takip eden meslek sahibi. Aylık ücretle çalışır.
 - Bağ-Kur: Kendi işini kuranların her ay ödediği sigorta primi. Şirketin açıldığı tarihten itibaren başlar.
 
 Prova ve analiz:
-- İlk on bir gün: Sahaya çıkmadan önceki hazırlık günleri, Yol Haritası'nın ilk dört aşaması; on ikinci gün günde yüz temas başlar.
+- İlk beş gün: Sahaya çıkmadan önceki hazırlık günleri, Yol Haritası'nın ilk dört aşaması; altıncı gün günde yüz temas başlar.
 - Sabah planı: Sabah bloğunun başında FounderOS'un hazırladığı, o gün ne yapacağını söyleyen plan.
 - Prova: FounderOS'un işletme sahibini oynadığı alıştırma. Sahaya çıkmadan on iki prova yapılır, sonra ilk yirmi görüşmenin her birinden önce on dakika.
-- Prova sayacı: Sahaya çıkmadan önce yapılan provaların sayısı; on ikide dolar, dolmadan on ikinci gün başlamaz.
+- Prova sayacı: Sahaya çıkmadan önce yapılan provaların sayısı; on ikide dolar, dolmadan soğuk saha açılmaz.
 - Temiz, tekrar: Provanın iki sonucu. Temiz: düzeltme yerine oturdu. Tekrar: aynı düzeltme bir sonraki provaya taşınır.
 - Rol kartı: Senden iyi biriyle yapılan sesli provada karşı tarafa verilen tek sayfa: niş, karar verici, üç itiraz ve iki kural ("rakamı kolay verme", "bitince tek şey söyle").
 - Prova notu: Her provanın sonunda çıkan tek sayfa: bir iyi, bir düzeltilecek, temiz ya da tekrar.
@@ -169,7 +169,7 @@ Prova ve analiz:
 - Saha bloğu: Aramanın ve mesajın yapıldığı pencere. Tam zamanlıda 10.00-12.00 ve 14.00-17.00; işin yanında çalışanda 18.00-20.30 ve cumartesi 10.00-13.00.
 - Akşam bloğu: Kaydın, sayı okumanın, analizin ve provanın penceresi. Tam zamanlıda 17.00-18.30; işin yanında çalışanda 21.00-22.00.
 - Kurulum bloğu: Müşteriyle yapılan görüşmelerin penceresi; saatini müşteri belirler, işin yanında çalışanda akşam ya da hafta sonu olur ve bu müşteriye baştan söylenir.
-- Bütçe merdiveni: Birinci günde belirlenen üç basamak; elindeki paraya göre hangi aracın hangi güne kadar bekleyeceğini söyler. Alt basamakta sadece iki kalem alınır, saha yine on ikinci günde açılır.
+- Bütçe merdiveni: Birinci günde belirlenen üç basamak; elindeki paraya göre hangi aracın hangi güne kadar bekleyeceğini söyler. Alt basamakta sadece iki kalem alınır, saha yine altıncı günde açılır.
 - Havale yolu: Şirketin henüz yokken parayı tahsil etme yolu. Hesap bilgisi, tutar ve açıklama satırı tek mesajda gider. Ödeme linkiyle eşit derecede geçerlidir, yedek değildir.
 - İnanç değişimi: Öğrencinin vazgeçmesine yol açan bir cümleyi çürüten hazır karşılık. On sekizi bir bankada duruyor, ana yönetici gerektiğinde birini öğrencinin kendi rakamıyla söyler.
 - Aday denetimi: Bir işletmeye ulaşmadan önce, o işletmenin müşterisini nerede kaçırdığını dışarıdan bakarak çıkarma işi. İki hâli var: iki dakikalık hızlı denetim ve sekiz dakikalık derin denetim.

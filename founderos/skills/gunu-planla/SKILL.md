@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gunu-planla
-description: Her sabah, on ikinci günden itibaren. O günün tek işi, sayıları ve sırası.
+description: Her sabah, altıncı günden itibaren. Dünü tek cümleyle okur, o günün tek işini, sayılarını ve sırasını verir.
 ---
 
 # gunu-planla
@@ -25,10 +25,9 @@ Kural tek: gün satışla başlar. Teslimat, kurulum, araç, öğrenme, hepsi sa
 Pazarlamadaki karşılığı: sabah ne yapacağını bilen kişi öğlene kadar iş yapmış oluyor, bilmeyen kişi öğlene kadar hazırlanıyor.
 
 ## 2. Ne zaman çalışır
-
 - Her gün, sabah bloğunun başında, çalışmaya başlamadan önce. Beş dakika sürer.
 - Sabah bloğunun saati çalışma düzenine göre değişir. Plan sana saat vermez, pencere adı verir.
-- On ikinci günden itibaren her gün. Öncesinde ilk on bir günün kendi sırası var, plan onu okur.
+- Altıncı günden itibaren her gün. Öncesinde ilk beş günün kendi sırası var, plan onu okur.
 - Bir gün açılmazsa ertesi sabah iki gün birden gösterir. İki gün üst üste açılmazsa bu bir vazgeçme işaretidir ve planın yerine tek konu gelir.
 
 ## 3. Ne okur

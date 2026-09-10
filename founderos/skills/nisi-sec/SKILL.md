@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: nisi-sec
-description: İkinci gün, araçlar kurulduktan sonra. On sekiz niş kartından öğrenciye uygun nişi seçer ve Doksan Gün Planı'nı üretir. Niş kararı ya da niş değişimi konuşulduğunda.
+description: Birinci gün. On sekiz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda.
 ---
 
 # nisi-sec
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül senin nişini seçer. Niş, sattığın şeyi kime satacağını belirleyen dar sektördür; örnek olarak "klima ve kombi servisleri". Programın tanıtımındaki adı "Kime Satacaksın".
+Birinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül senin nişini seçer. Niş, sattığın şeyi kime satacağını belirleyen dar sektördür; örnek olarak "klima ve kombi servisleri". Programın tanıtımındaki adı "Kime Satacaksın".
 
 Neden bu iş var: sıfırdan başlayan biri "herkese satarım" diyor ve kimseye satamıyor. Sebebi şu: herkese yazılan mesaj kimseye yazılmamış gibi duruyor. Bir sektörü seçtiğin an mesajın, kanıtın, fiyatın ve itiraz cevapların o sektöre göre hazır geliyor. Sattığın şey değişmiyor, sadece kime söylediğin belli oluyor.
 
@@ -19,17 +19,16 @@ Fark önemli: sana menü açıp "hangisini istersin" diye sormuyorum. Araştırm
 Bu karara "ilk odak pazarımız" denir, "hayatının nişi" değil. Araştırma ne kadar iyi olursa olsun başlangıçta bilinmeyenler kalıyor ve hiçbir araştırma sahanın yerini tutmuyor. Öğrenciye geri dönüşü olmayan bir kapı gibi sunulmaz; bir başlangıç noktası, sınanacak varsayımlar ve ne olursa yeniden bakılacağı belli bir karar gibi sunulur. Böylece seçim yapabilecek kadar güvenir, seçimini savunmak zorunda hissetmez.
 
 Şunlar bu modülün işi değildir:
-- Ne satacağını yazmak ve fiyatı koymak (üçüncü ve dördüncü gün).
-- Aday listesi çıkarmak (sekizinci gün).
+- Teklifin kademelerini yazmak ve kesin fiyatı koymak (üçüncü gün).
+- Aday listesi çıkarmak (üçüncü gün).
 - Niş değiştirmek. Değiştirme kararını degisiklige-karar-ver verir, şartları aşağıda yazılı.
 
 Pazarlamadaki karşılığı: bir sektörü seçen kişi, o sektörün dilini konuşan tek satıcı oluyor.
 
 ## 2. Ne zaman çalışır
-
-- İkinci gün, araçlar kurulduktan sonra. Bir saat sürer, üstüne doğrulama gelir.
-- Bir daha çalışmaz. Niş, doksan gün ya da beş müşteri boyunca kilitlidir, hangisi önce gelirse.
-- Kilidin tek istisnası şu: 300 temas yapılmış ve o 300 temastan hiç görüşme çıkmamış olacak. O zaman istek degisiklige-karar-ver'e gider. Bu sayının altında niş değişmez, çünkü sorunun nişte mi mesajda mı olduğu daha belli değildir.
+- Birinci gün, teslimat kontrolünden ve tekliften önce. Bir saat sürer. Canlı doğrulama aynı gün yapılmaz; ikinci günde nisi-dogrula sayar ve karar bozulursa o gün birlikte değiştirilir.
+- Bir daha çalışmaz. İlk odak pazarı, doksan gün ya da beş müşteri boyunca kilitlidir, hangisi önce gelirse.
+- Kilidin tek istisnası şu: 300 temas yapılmış ve o 300 temastan hiç görüşme çıkmamış olacak. O zaman istek degisiklige-karar-ver'e gider. Bu sayının altında pazar değişmez, çünkü sorunun pazarda mı mesajda mı olduğu daha belli değildir.
 
 ## 3. Ne okur
 
@@ -119,7 +118,7 @@ Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı ner
 
 ### Üçüncü eleme: pazar büyüklüğü
 
-On birinci günde 500 kişilik bir aday listesi çıkaracaksın. Doksan günde o listeye yaklaşık 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
+Üçüncü günde 500 kişilik bir aday listesi çıkaracaksın. Doksan günde o listeye yaklaşık 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
 
 Eşik buradan çıkıyor:
 - Şehrinde 500 işletme varsa niş geçer.
@@ -179,7 +178,7 @@ Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: "Yarın ne sattığını tek cümleyle yazacaksın. Fiyatı dördüncü gün koyacağız. Teklif hazır, sadece bu sektöre çevrilecek."
+Sıradaki: "Yarın ne sattığını tek cümleyle yazacaksın. Fiyat bandı bugün, kesin rakam üçüncü gün. Teklif hazır, sadece bu sektöre çevrilecek."
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üç adaydan hiçbiri para elemesini geçemedi: eşik değil kart eksiktir, kapasite bilgisi olmayan kartlar işaretlenir.

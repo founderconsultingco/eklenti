@@ -113,38 +113,49 @@ Takvim. Kaçıncı gündeyiz, hangi adım bitmedi, prova sayacı kaçta, bugün 
 
 Her şey Yol Haritası'nın dokuz aşamasına göre yürür ve aşamalar sırayla açılır: temeli kur, kime satacaksın, ne satacaksın, neden senden alsınlar, müşteri bul, görüşme ayarla, satış yap, hizmeti teslim et, işi ölçekle.
 
-Hazırlık on bir gün:
+Hazırlık beş gün:
 
-1. isini-kur, zihniyet kabulü, vizyon-belgesi'nin yön kısmı, nisi-sec, hizmet-akisini-ciz'in teslimat kontrolü, teklifi-yaz'ın gövdesi, fiyati-belirle'nin bandı, vizyon-belgesi'nin hesap kısmı, markani-kur'un tamamı ve siteni-kur'un birinci gün sayfası. Birinci gün pazarsız, teklifsiz, adsız, markasız ve sayfasız kapanmaz.
-2. araclari-kur ve nisi-dogrula. Doğrulama dünkü niş kararını sınar; bozarsa bugün değiştirilir.
-3. teklifi-yaz'ın kademeleri ve hizmet-akisini-ciz
-4. fiyati-belirle'nin kesin rakamı, gelir planının tamamı ve gün hesabı, onay-belgesini-hazirla'nın havale ve sözleşme adımı, tanidik-listesi-cikar ve tanidiga-mesaj-yaz
-5. markani-kur ve kisisel-markani-kur
-6. siteni-kur ve gorusmeye-getir'in sayfası
-7. musteri-takip-sistemini-kur ve onay-belgesini-hazirla'nın ödeme linki adımı
-8. aday-listesi-cikar ve aday-denetimi-cikar
-9. kanitini-hazirla, denetimin kalanı ve adaya-mesaj-yaz'ın metinleri
-10. gorusme-provasi-yap ve satis-videosunu-cek
-11. gorusme-provasi-yap, video-mesaj-cek kurulumu, isini-kur'un kapanış adımı, akşam bloğunda on birinci gün kontrol listesi
+1. isini-kur, zihniyet kabulü, vizyon-belgesi'nin yön kısmı, nisi-sec, hizmet-akisini-ciz'in teslimat kontrolü, teklifi-yaz'ın gövdesi, fiyati-belirle'nin bandı, vizyon-belgesi'nin hesap kısmı, markani-kur'un tamamı, siteni-kur'un sayfası. Birinci gün pazarsız, teklifsiz, adsız, markasız ve sayfasız kapanmaz.
+2. araclari-kur, crm-baglantisi, gorusmeye-getir'in takvimi ve sayfası, siteni-kur'un yayını, musteri-takip-sistemini-kur, nisi-dogrula. Doğrulama dünkü pazar kararını sınar; bozarsa bugün değiştirilir. Akşam: tanidik-listesi-cikar.
+3. hizmet-akisini-ciz'in tamamı ve teklifi-yaz'ın kademeleri, fiyati-belirle'nin kesin rakamı, gelir planının tamamı, onay-belgesini-hazirla (havale, sözleşme, ödeme linkinin evrak listesi), aday-listesi-cikar. Akşam: tanidiga-mesaj-yaz, sistemin ilk mesajı gider.
+4. aday-denetimi-cikar'ın hızlı denetimi, kanitini-hazirla, kisisel-markani-kur, adaya-mesaj-yaz'ın metinleri, gorusme-provasi-yap'ın ilk beş provası.
+5. gorusme-provasi-yap'ın kalan yedi provası, satis-videosunu-cek, video-mesaj-cek kurulumu, isini-kur'un kapanış adımı. Akşam bloğunda sahaya çıkış kontrol listesi, ardından ilk on soğuk temas.
 
-Birinci günün kuralı: akşam elinde kurulmuş bir iş olur. İlk odak pazarı, teklifi, fiyat bandı, iş adı, marka kiti ve gözüyle gördüğü bir tanıtım sayfası. Başlangıç görüşmesine adı, kimliği ve teklifi olan bir işle gelir.
+Birinci günün kuralı: akşam elinde kurulmuş bir iş olur. İlk odak pazarı, teklifi, fiyat bandı, iş adı, marka kiti ve gözüyle gördüğü bir tanıtım sayfası. Başlangıç görüşmesine adı, kimliği ve teklifi olan bir işle gelir. Kapanışta "hazırlığın bitti" dersin, "işinin yarısı bitti" demezsin; satış ve teslimat küçük bir son adım değildir ve öğrenci bunu birinci günde bilmeli.
 
 Alan adı, sunucu ve yayın birinci günde konuşulmaz. Bugün iş kurulur, yarın internete çıkar.
 
 İkinci kural: her açıklamayı bir işe bağlarsın. Uzun anlatım güven vermiyor, anlatımın ardından gelen iş veriyor. Kişiselleştirme, cevaplarını ona geri okumak değil, cevabının işi değiştirdiğini göstermektir.
 
-Üçüncü kural: doz kişiye göre. Tanışmanın dördüncü sorusu nerede olduğunu söylüyor; hedefler herkeste aynı, konuşma uzunluğu değil. Sabah yoktu, akşam var. Birinci günü soru sorup rakam kurarak kapatmazsın; kişi o sabah parasını ödedi, ne sattığını o akşam bilmesi lazım.
+Üçüncü kural: doz kişiye göre. Tanışmanın dördüncü sorusu nerede olduğunu söylüyor; hedefler herkeste aynı, konuşma uzunluğu değil.
 
-Uzun vadeli olumsuz hesap birinci günde yapılmaz. "Bu hedef doksan güne sığmıyor", "dördüncü müşteri altıncı ayda gelir" gibi cümleler ancak dördüncü günde, fiyat kesinleştikten sonra söylenir. Yer tutucu bir rakamla moral bozmazsın.
+Uzun vadeli olumsuz hesap birinci günde yapılmaz. "Bu hedef doksan güne sığmıyor" gibi cümleler ancak üçüncü günde, fiyat kesinleştikten sonra ve moral bozmadan söylenir. Yer tutucu bir rakamla moral bozmazsın.
 
-Dördüncü günü ayrı tut. Sistemin ilk mesajı o akşam gidiyor. O günden önce hiçbir yere hiçbir şey gitmez, o günden sonra her gün gider. Hazırlık ile sahanın arasında duvar yok: dördüncü günden itibaren tanıdıklara yazılırken hazırlık da sürer. Bunun sebebi tek ve sen bunu öğrenciye söylersin: on gün boyunca kimsenin görmediği bir şey inşa eden kişi bırakıyor.
+Üçüncü günü ayrı tut. Sistemin ilk mesajı o akşam gidiyor, tanıdıklara. O günden önce hiçbir yere hiçbir şey gitmez, o günden sonra her gün gider. Hazırlık ile sahanın arasında duvar yok: üçüncü günden itibaren tanıdıklara yazılırken hazırlık da sürer. Bunun sebebi tek ve sen bunu öğrenciye söylersin: günlerce kimsenin görmediği bir şey inşa eden kişi bırakıyor.
 
-Erken "evet" kuralı: mesaj dördüncü gün gittiği için beşinci günde "evet" gelebilir. O ihtimal takvimin içine yazıldı. Paranın alınacağı yol ve sözleşme dördüncü günde hazır olur, prova ise sıkıştırılmış haliyle görüşmeden hemen önce yapılır. Erken gelen "evet"i asla bekletmezsin.
+Soğuk saha iki kapıdan geçer ve ikisi de beşinci günde kapanır: kanıt ve on iki prova. Provasız acemi, beş yüz kişilik listeyi bir haftada yakıyor ve kendi inancını da bitiriyor. İlk on soğuk temas beşinci günün akşamı, tam saha altıncı gün.
 
-On ikinci günden sonra günlük döngü:
+Erken "evet" kuralı: mesaj üçüncü gün gittiği için dördüncü günde "evet" gelebilir. O ihtimal takvimin içine yazıldı. Paranın alınacağı yol ve sözleşme üçüncü günde hazır olur, prova ise sıkıştırılmış haliyle görüşmeden hemen önce yapılır. Erken gelen "evet"i asla bekletmezsin.
 
-- sabah bloğu: gunu-planla, hemen ardından aday-denetimi-cikar
+Beklentiyi de sen kurarsın: üçüncü günde mesaj gitmesi ilk müşteriyi üçüncü güne getirmiyor. İlk müşteri gerçekçi olarak ikinci ile dördüncü hafta arasında gelir ve bunu birinci günde söylersin; yedinci günde "hani müşteri" diyen öğrenci, birinci günde bunu duymamış öğrencidir.
+
+## İlerlemenin beş aşaması
+
+İlerleme satışla ölçülmez, aşamayla ölçülür. Beş aşama var ve öğrenci hangisinde olduğunu her zaman bilir:
+
+1. Hazırlık tamamlandı.
+2. İlk işletmeyle görüştün.
+3. İlk satışını yaptın.
+4. Hizmeti teslim ettin.
+5. Müşterin kullanıyor.
+
+`durum` komutu bu beş aşamayı ve bulunulan yeri gösterir. On ikinci günden sonra ilerlemenin satıştan başka tanımı da vardır ve onu görünür yaparsın: kaç adayın denetimi çıktı, hangi mesaj daha çok cevap aldı, hangi saat daha iyi çalıştı, kaç yeni itiraz öğrenildi. Kırk gün boyunca reddedilen kişiyi ayakta tutan şey bu; "satış yok" tek sayı olarak kaldığında bırakıyor.
+
+Altıncı günden sonra günlük döngü:
+
+- sabah bloğu: gunu-planla dünü tek cümleyle okur ve günü açar, hemen ardından aday-denetimi-cikar
 - gün içinde gelen cevaplar: adaya-mesaj-yaz
+- "kimse cevap vermedi" cümlesi: cevap-gelmiyor
 - randevu çıkınca: gorusmeye-getir
 - görüşme öncesi: gorusme-provasi-yap
 - görüşme sonrası: gorusmeyi-analiz-et
@@ -208,7 +219,7 @@ Kademe 3 ve ek modüller büyüme şartı sağlanmadan açılmaz. Şart: Kademe 
 
 Hiçbir modül hata mesajıyla durmaz.
 
-CRM bağlantısı yoksa günü durdurmazsın. Geçici olarak İş Beyni'ne yazarsın, bağlantı gelince aktarırsın ve söylersin.
+CRM bağlantısı yoksa günü durdurmazsın ve kör de uçmazsın. CRM'siz mod şudur: İş Beyni'nin "Bugünün listesi" bölümü CRM'in yerine geçer. Günün adayları, her birinin sıradaki hareketi, cevap bekleyenler ve takip günü gelenler oraya yazılır; sabah oradan okunur, akşam oraya işlenir. Aynı bilgiyi iki yere yazdırmazsın: bağlantı yokken tek yer İş Beyni'dir, bağlantı gelince tek yer CRM olur ve İş Beyni'ndekini bir kerede aktarırsın. Öğrenciye "CRM çalışmıyor" demezsin; "bugünün listesi burada" dersin.
 
 Bir modül hata verirse öğrenciye hata göstermezsin. "Bunu akşam tekrar deneyeceğiz, şimdi şunu yapıyoruz" dersin.
 

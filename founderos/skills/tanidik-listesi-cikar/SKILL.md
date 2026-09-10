@@ -1,31 +1,30 @@
 ---
 user-invocable: false
 name: tanidik-listesi-cikar
-description: Dördüncü günün ikinci yarısı. Tanıdık listesinin çıkarılması ve sıralanması.
+description: İkinci günün akşamı. Tanıdık listesinin çıkarılması ve sıralanması.
 ---
 
 # tanidik-listesi-cikar
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Onuncu günün sabah modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ilk adımı: müşteri bul.
+İkinci günün akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ilk adımı: müşteri bul.
 
 Bu modül seni tanıyan herkesin listesini çıkarıyor. Öğleden sonra o listeye ne yazacağını yazıyoruz.
 
 Neden soğuk listeden önce: seni zaten tanıyan ya da bir tanıdık üzerinden gelen kişide kapanış oranı, hiç tanımadığın birine göre belirgin şekilde yüksek. Aynı teklif, aynı sen, aynı fiyat. Tek fark, araya giren isim.
 
-İkinci sebep zamanlama. Sahaya on ikinci günde çıkıyorsun. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
+İkinci sebep zamanlama. Sahaya altıncı günde çıkıyorsun. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
 
 Şunlar bu modülün işi değildir:
 - Mesajın metni (tanidiga-mesaj-yaz, aynı gün, ikinci yarıda).
-- Soğuk aday listesi (aday-listesi-cikar, sekizinci gün).
+- Soğuk aday listesi (aday-listesi-cikar, üçüncü gün).
 - Müşteri olduktan sonra referans istemek (musteriyi-elde-tut). O ayrı bir iş ve referans dönemi geldiğinde açılıyor.
 
 Pazarlamadaki karşılığı: sıcak çevre. Seni zaten tanıyan insanlar.
 
 ## 2. Ne zaman çalışır
-
-- Dördüncü günün ikinci yarısında, bir saat. Fiyat belli olduktan sonra.
+- İkinci günün akşam bloğu, bir saat. Fiyat bandı birinci günden belli; kesin fiyat yarın gelecek, liste onu beklemez.
 - İkinci kez: her ay bir kere, listeye yeni girenler eklenir.
 
 ## 3. Ne okur
@@ -113,8 +112,8 @@ Bir sonraki modüllere: A ve B listeleri tanidiga-mesaj-yaz'a, "sıcak" işareti
 
 ## 8. Yedek yol
 
-- Rehberin küçükse: Instagram ve e-posta kutusu daha çok isim veriyor. Yine de az çıkarsa liste az kalıyor ve gün durmuyor; sekizinci günün soğuk listesi zaten geliyor.
-- Kimseye yazmak istemiyorsan: FounderOS seni zorlamıyor ama bunu İş Beyni'ne yazıyor. On ikinci günden sonra soğuk aramada zorlanırsan haftanın kararında bu satır tekrar açılıyor.
+- Rehberin küçükse: Instagram ve e-posta kutusu daha çok isim veriyor. Yine de az çıkarsa liste az kalıyor ve gün durmuyor; üçüncü günün soğuk listesi zaten geliyor.
+- Kimseye yazmak istemiyorsan: FounderOS seni zorlamıyor ama bunu İş Beyni'ne yazıyor. Altıncı günden sonra soğuk aramada zorlanırsan haftanın kararında bu satır tekrar açılıyor.
 - CRM'e toplu giriş yapamazsan: A listesini elle girersin, beş on kişi.
 
 ## 9. Sıradaki adım ve işaretler
@@ -124,7 +123,7 @@ Sıradaki: aynı günün ikinci yarısında mesajlar.
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Liste elli kişinin altında: FounderOS rehberin gerçekten küçük mü yoksa eleme mi yaptın diye sorar.
 - A listesi boş: nişinde tanıdığın yok demektir, sorun değil, B listesi tek başına çalışır.
-- Dördüncü gün bitti, liste çıkmadı: beşinci günün ilk yarım saati buna gider, soğuk liste sonra çıkar.
+- İkinci gün bitti, liste çıkmadı: üçüncü günün ilk yarım saati buna gider, soğuk liste sonra çıkar.
 - Bir ay geçti, listeye kimse eklenmedi: modül ikinci kez açılır.
 
 Beş kural: boş sayfa yok (altı yer ve iki listenin tanımı hazır gelir) · sessiz bitiş yok (öğleye kadar iki liste yerinde) · onay (listeye kimin gireceğine FounderOS karar veriyor, kimin çıkacağına sen) · sahadan güncelleme (her ay yeni isimler eklenir) · sormaz söyler (nereleri tarayacağını, sırayı ve iki liste ayrımını FounderOS söyler).

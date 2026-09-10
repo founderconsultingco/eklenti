@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: onay-belgesini-hazirla
-description: Ödeme yolu ve sözleşme yedinci gün kurulur, sonra her kapanışta çalışır. Onay belgesi ve güvence.
+description: Ödeme yolu, sözleşme ve ödeme linki evrak listesi üçüncü gün kurulur, sonra her kapanışta çalışır. Onay belgesi ve güvence.
 ---
 
 # onay-belgesini-hazirla
@@ -23,10 +23,8 @@ Pazarlamada iki cümle: sözlü evet kapanış değildir, para kapanıştır. Az
 Tek kural, karıştırma: onay belgesi para gelmeden gitmez. Sözleşme ve ödeme bilgisi ise "evet"ten hemen sonra gider; ödeme bilgisi o gün hangi yol açıksa odur, link ya da havale. Görüşmede "bilgi gönder, teklif yaz" diyen adaya hiçbir şey gitmez; o bir itirazdır, cevabı görüşmenin içinde verilir.
 
 ## 2. Ne zaman çalışır
-
-- Dördüncü gün, yarım saat: havale yolu ve sözleşme. Bugün akşam tanıdıklara ilk mesaj gidiyor, yani beşinci günde "evet" gelebilir. Paranın alınacağı yol o günden önce hazır olacak. Bugün biten üç şey: hesap bilgisi, tutar satırı ve açıklama satırı tek mesaj olarak yazılır; sözleşme şablonunun köşeli parantezleri doldurulur; onay belgesi taslağı kurulur. Bu üçü olmadan gelen "evet" beklemeye düşer ve bekleyen "evet" soğur.
-- Yedinci gün: ödeme linki yolu. Sağlayıcı ölçütleri okunur, tabloya yazılır, sağlayıcıyı sen seçersin ve seçtiğinin istediği evrak listesi çıkarılır. Başvuru bu gün yapılmaz, çünkü sağlayıcıların çoğu vergi levhası istiyor ve levha şirket kurulunca geliyor. Vergi levhası, vergi dairesinin şirketine verdiği belgedir. Bugünkü işin evrak listesini çıkarmak, böylece levha gelir gelmez başvuru aynı gün gider.
-- On birinci gün: şirket bugün kurulmuyor, kuruluşa hazır oluyor. Şirket ilk sözlü "evet"i aldığın gün kurulur; sebebi şu, şirketi açtığın günden itibaren aylık sabit gider işliyor ve sen kazanmasan da işliyor. Bugün yapılan kontrol: havale mesajı hazır mı, şablonların köşeli parantezleri dolu mu, sözleşmenin doldurulmuş sürümü doğru mu, onay belgesi taslağındaki rakamlar bugünkü fiyatla aynı mı. Bunlar on birinci günün kontrol listesinde de var. Ödeme sağlayıcısına başvuru şu zincire bağlı: şirket kurulur, vergi levhası gelir, levhanın geldiği gün başvuru gider. Başvurunun onayı birkaç gün sürer; o günlerde kapanan müşterinin parası havaleyle alınır ve bu bir aksaklık değil, planın kendisi.
+- Üçüncü gün, bir saat: havale yolu, sözleşme ve ödeme linkinin evrak listesi. Bugün akşam tanıdıklara ilk mesaj gidiyor, yani dördüncü günde "evet" gelebilir. Paranın alınacağı yol o günden önce hazır olacak. Bugün biten şeyler: hesap bilgisi, tutar satırı ve açıklama satırı tek mesaj olarak yazılır; sözleşme şablonunun köşeli parantezleri doldurulur; onay belgesi taslağı kurulur; ödeme sağlayıcısı ölçütleri okunur, tabloya yazılır, sağlayıcıyı sen seçersin ve seçtiğinin istediği evrak listesi çıkarılır. Başvuru bugün yapılmaz, çünkü sağlayıcıların çoğu vergi levhası istiyor ve levha şirket kurulunca geliyor. Vergi levhası, vergi dairesinin şirketine verdiği belgedir. Evrak listesi hazır olursa levha gelir gelmez başvuru aynı gün gider. Bunlar olmadan gelen "evet" beklemeye düşer ve bekleyen "evet" soğur.
+- Beşinci gün: şirket bugün kurulmuyor, kuruluşa hazır oluyor. Şirket ilk sözlü "evet"i aldığın gün kurulur; sebebi şu, şirketi açtığın günden itibaren aylık sabit gider işliyor ve sen kazanmasan da işliyor. Bugün yapılan kontrol: havale mesajı hazır mı, şablonların köşeli parantezleri dolu mu, sözleşmenin doldurulmuş sürümü doğru mu, onay belgesi taslağındaki rakamlar bugünkü fiyatla aynı mı. Bunlar sahaya çıkış kontrol listesinde de var. Ödeme sağlayıcısına başvuru şu zincire bağlı: şirket kurulur, vergi levhası gelir, levhanın geldiği gün başvuru gider. Başvurunun onayı birkaç gün sürer; o günlerde kapanan müşterinin parası havaleyle alınır ve bu bir aksaklık değil, planın kendisi.
 - Her kapanışta, görüşmenin son dakikasında: hazır kapanış mesajı elinde olur, sen gönderirsin.
 - Para hesabına geçtiği an: onay belgesi hazırlanır, en geç bir saat içinde gider. Para gece ya da hafta sonu geçtiyse ertesi sabah ilk iş.
 - Aylık ödemenin ilk iki ayında: tahsilat hatırlatma mesajları hazırlanır.
@@ -43,11 +41,11 @@ Doksan Gün Planı'nın beşinci bölümünden: teslimatın yirmi bir günlük t
 
 Sormaz. Rakamlar, tarihler ve maddeler İş Beyni'nde ve kartta yazılı. Senden aldığı iki şey: paranın geldiği ("geldi") ve kurulum görüşmesinin saati.
 
-Tek istisna yedinci günde: ödeme sağlayıcısının adını sen seçersin. Ölçütleri FounderOS verir, tabloyu FounderOS doldurur, kararı sen verirsin. Sebebi para: komisyonu sen ödüyorsun.
+Tek istisna üçüncü günde: ödeme sağlayıcısının adını sen seçersin. Ölçütleri FounderOS verir, tabloyu FounderOS doldurur, kararı sen verirsin. Sebebi para: komisyonu sen ödüyorsun.
 
 ## 5. Ne yapar
 
-### Dokuzuncu gün: iki ödeme yolu ve iki şablon
+### Üçüncü gün: iki ödeme yolu ve iki şablon
 
 **İki yol var ve ikisi de birinci sınıf.** Para iki yoldan gelir: ödeme linki ya da havale. Havale ikinci sınıf yol değil. İlk müşterilerin çoğu havaleyle kapanıyor, çünkü ilk "evet" geldiğinde çoğu öğrencinin henüz şirketi ve sağlayıcı hesabı yok. İkisinin de metni bugün hazırlanır, ikisi de kapanış anında beş dakika içinde gönderilebilir halde durur. Hangisinin kullanılacağını o günkü durum belirler; görüşmenin ortasında karar verilmez.
 
@@ -113,7 +111,7 @@ Ayrı bir imza programına abone olmana gerek yok. Belge bazen istenmeyen posta 
 
 **Onay belgesi taslağı.** Tek sayfa, sekiz başlık, rakamlar ve yirmi bir günlük teslimat takvimi (Doksan Gün Planı'nın beşinci bölümünden) önceden dolu. CRM'in belge bölümünde ikinci şablon olarak durur. İmza satırı yoktur; doldurulup link olarak gönderilir.
 
-### On birinci gün: kuruluşa hazır olmak ve kontrol
+### Beşinci gün: kuruluşa hazır olmak ve kontrol
 
 Şirketin bugün kurulmuyor. Bugün kuruluşa hazır oluyorsun: mali müşavirin belli, ona soracağın beş sorunun cevabı yazılı, istediği belgeler bir klasörde, kuruluş için tek telefon kalmış. Şirket ilk sözlü "evet"i aldığın gün kurulur.
 
@@ -123,9 +121,9 @@ Bugün yapılan kontrol üç şey:
 - Havale mesajı hazır mı: hesap bilgisi, tutar satırı, açıklama satırı tek mesajda duruyor mu.
 - Sözleşme şablonunu kendine gönderdin mi, imza satırları çalışıyor mu, köşeli parantezlerin hepsi dolu mu.
 - Onay belgesi taslağındaki rakamlar bugünkü fiyatla aynı mı.
-Bunlar zaten on birinci günün kontrol listesinde var.
+Bunlar zaten sahaya çıkış kontrol listesinde var.
 
-Sahaya çıkış bunların hiçbirine bağlı değil; on ikinci gün ertelenmez.
+Sahaya çıkış bunların hiçbirine bağlı değil; altıncı gün ertelenmez.
 
 Sağlayıcının başvurusu onaylandığı gün şunu yaparsın: kendi kartınla küçük bir deneme ödemesi yapar, para hesabına düşüyor mu görür, sonra iade edersin.
 
@@ -170,7 +168,7 @@ Sessiz çalışır: kart kayıtlı, her ay kendiliğinden çekilir. Müşteriye 
 
 ### Havale yolunun ayrıntısı
 
-Havale, linkin yokluğunda başvurulan yol değil; iki eşit yoldan biri. İlk müşterilerin çoğu böyle kapanıyor. Kapanışta hesap bilgini verirsin ve mesaj dördüncü günde hazırlanmış haliyle gider; o an bir şey yazmazsın.
+Havale, linkin yokluğunda başvurulan yol değil; iki eşit yoldan biri. İlk müşterilerin çoğu böyle kapanıyor. Kapanışta hesap bilgini verirsin ve mesaj üçüncü günde hazırlanmış haliyle gider; o an bir şey yazmazsın.
 
 Dikkat edilecek üç şey:
 - Para hesabına geçtiğini gördüğünde müşteri sayılır. Dekont tek başına yetmez. Dekont, paranın gönderildiğini gösteren banka belgesidir; gönderildiğini gösterir, hesabına düştüğünü göstermez.
@@ -185,7 +183,7 @@ fiyati-belirle ya da teklifi-yaz yeniden çalışırsa şablonlardaki rakamlar a
 
 ## 6. Ne söyler
 
-Dokuzuncu gün: "Bugün dört iş: havale mesajı, ödeme sağlayıcısı tablosu, sözleşme şablonu, onay belgesi taslağı. Havale mesajı bugün bitiyor; bugünden itibaren şirketin olmadan da müşteri kapatabilirsin, beklemiyoruz. Sağlayıcı tablosunda beş ölçüt var: şahıs şirketini kabul ediyor mu, vergi levhası istiyor mu, komisyonu ne, aylığı karttan kendiliğinden çekebiliyor mu, Türkiye'de çalışıyor mu. Tabloyu ben dolduruyorum, adı sen yazıyorsun; komisyonu sen ödeyeceksin, seçimi ben yapmam. Başvuru şirket kurulunca gider, şirket de ilk 'evet' geldiği gün kurulur. İlk 'evet'te beş dakikan olacak. O beş dakikada hazırlık yapamazsın."
+Üçüncü gün: "Bugün dört iş: havale mesajı, ödeme sağlayıcısı tablosu, sözleşme şablonu, onay belgesi taslağı. Havale mesajı bugün bitiyor; bugünden itibaren şirketin olmadan da müşteri kapatabilirsin, beklemiyoruz. Sağlayıcı tablosunda beş ölçüt var: şahıs şirketini kabul ediyor mu, vergi levhası istiyor mu, komisyonu ne, aylığı karttan kendiliğinden çekebiliyor mu, Türkiye'de çalışıyor mu. Tabloyu ben dolduruyorum, adı sen yazıyorsun; komisyonu sen ödeyeceksin, seçimi ben yapmam. Başvuru şirket kurulunca gider, şirket de ilk 'evet' geldiği gün kurulur. İlk 'evet'te beş dakikan olacak. O beş dakikada hazırlık yapamazsın."
 
 Havale yoluyla kapanışta: "Şirketin yok diye beklemiyorsun, havale ikinci sınıf yol değil. Mesaj hazır: hesap, tutar, açıklama satırı. Şimdi gönder, hatta kal. Dekont değil, hesabına düştüğünü göreceksin. Faturayı müşavirine sordun mu? Sormadıysan müşteriye tarih söyleme, 'yazılı bildireceğim' de."
 Kapanış anında: "Evet dedi. Konuşmayı kes. Hazır mesajı yapıştır; bugün havale yolundasın: hesap, tutar, açıklama satırı, sözleşme, karşılama formu. Link yolundaysan aynı mesajın dört linkli hali. Hatta kal. Kurulum görüşmesini şimdi takvime yaz, en geç öbür gün."
@@ -218,11 +216,11 @@ Sıradaki: musteriyi-karsila (karşılama formu, kurulum görüşmesi), sonra mu
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Kapanıştan sonra para on dakikada düşmedi: aynı oturumda tek hatırlatma.
 - Sözleşme iki gün imzalanmadı: kurulum görüşmesinin ilk maddesi olur.
-- On birinci gün geldi, sözleşme doldurulmadı: sahaya çıkarsın ama ilk "evet"ten önce doldurulur. Beş dakikada bitiyor.
+- Beşinci gün geldi, sözleşme doldurulmadı: sahaya çıkarsın ama ilk "evet"ten önce doldurulur. Beş dakikada bitiyor.
 - İki müşteride üst üste "bu da dahil mi" tartışması çıktı: kapsam dışı listesi karta ve sözleşmeye eklenir.
 - Aylık tahsilat iki kez düşmedi: degisiklige-karar-ver'e not gider. Bu fiyat sorunu değil, tahsilat sorunudur.
-- Sağlayıcı tablosu yedinci günde doldurulmadı: sahaya çıkışı durdurmaz, ilk hafta içinde doldurulur; o arada havale yolu yürür.
+- Sağlayıcı tablosu üçüncü günde doldurulmadı: sahaya çıkışı durdurmaz, ilk hafta içinde doldurulur; o arada havale yolu yürür.
 - Havale mesajı hazır değilken ilk "evet" geldi: mesaj o an yazılır, ödeme beklemez; ertesi gün şablon haline getirilir.
 - Mali müşavire fatura sorusu üç gündür sorulmadı: sabah planına girer, çünkü müşteri bunu ilk gün soruyor.
 
-Beş kural: boş sayfa yok (havale mesajı ve sözleşme dördüncü günde, sağlayıcı ölçütleri ve ödeme linki yedinci günde hazırlanır) · sessiz bitiş yok (ödeme, sözleşme durumu ve kurulum görüşmesi tarihi kaydedilir) · onay (linkler, havale mesajı, sözleşme, onay belgesi ve tahsilat hatırlatmaları senin elinden gider; sağlayıcının adını sen seçersin) · sahadan güncelleme (kapsam dışı ve yasal sınır maddeleri karta yazılır) · sormaz söyler (rakamları ve tarihleri FounderOS doldurur; tek istisna sağlayıcı seçimi, sebebi para).
+Beş kural: boş sayfa yok (havale mesajı, sözleşme, sağlayıcı ölçütleri ve ödeme linkinin evrak listesi üçüncü günde hazırlanır) · sessiz bitiş yok (ödeme, sözleşme durumu ve kurulum görüşmesi tarihi kaydedilir) · onay (linkler, havale mesajı, sözleşme, onay belgesi ve tahsilat hatırlatmaları senin elinden gider; sağlayıcının adını sen seçersin) · sahadan güncelleme (kapsam dışı ve yasal sınır maddeleri karta yazılır) · sormaz söyler (rakamları ve tarihleri FounderOS doldurur; tek istisna sağlayıcı seçimi, sebebi para).

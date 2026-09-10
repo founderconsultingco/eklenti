@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeyi-yonet
-description: Satış görüşmesinin kendisi. Triyaj, keşif, sunum, fiyat, kapanış.
+description: Satış görüşmesinin kendisi, dördüncü günden itibaren. Triyaj, keşif, sunum, fiyat, kapanış.
 ---
 
 # gorusmeyi-yonet
@@ -13,8 +13,7 @@ Bu modül satış görüşmesinin kendisidir. Aday hatta girdiği saniyede başl
 Bu modülün işi olmayanlar: adayı randevuya getirmek (gorusmeye-getir), prova (gorusme-provasi-yap), görüşme sonrası analiz (gorusmeyi-analiz-et), onay belgesi (onay-belgesini-hazirla; bu belge kapanıştan sonra, para geldikten sonra gönderilir).
 
 ## 2. Ne zaman çalışır
-
-Her görüşmede, görüşme saatinden on dakika önce açılır ve görüşme özet ekranını hazırlar. Görüşme özet ekranı, görüşmeden önce bir kez okuduğun tek sayfadır. Görüşme bitince işi gorusmeyi-analiz-et'e devreder. On ikinci günden itibaren çalışır. İlk yirmi görüşmede öğrenci görüşmeden önce gorusme-provasi-yap'tan geçer, bu atlanamaz. Öğrenci görüşmeyi telefondan da görüntülü de yapabilir. Modül ikisine de uyar.
+Her görüşmede, görüşme saatinden on dakika önce açılır ve görüşme özet ekranını hazırlar. Görüşme özet ekranı, görüşmeden önce bir kez okuduğun tek sayfadır. Görüşme bitince işi gorusmeyi-analiz-et'e devreder. Dördüncü günden itibaren çalışır; ilk randevu tanıdıklardan o gün çıkabilir. İlk yirmi görüşmede öğrenci görüşmeden önce gorusme-provasi-yap'tan geçer, bu atlanamaz. Öğrenci görüşmeyi telefondan da görüntülü de yapabilir. Modül ikisine de uyar.
 
 ## 3. Ne okur
 

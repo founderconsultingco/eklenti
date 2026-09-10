@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: aday-denetimi-cikar
-description: Sekizinci ve dokuzuncu gün hızlı denetim, sonra her sabah derin denetim ve sızıntı puanı.
+description: Dördüncü gün hızlı denetim, sonra her sabah derin denetim ve sızıntı puanı.
 ---
 
 # aday-denetimi-cikar
@@ -19,10 +19,9 @@ Pazarlamadaki karşılığı: aday araştırması ve denetim.
 Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Görülemeyen satıra "bakılamadı" yazılır. Tahmin, yorum ve "muhtemelen" yasak; mesaja giren tek bulgu, ekranda gördüğün bulgudur.
 
 ## 2. Ne zaman çalışır
-
 İki hâli var ve ikisi ayrı işler.
 
-**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Sekizinci ve dokuzuncu günde, en çok istenen yüz işletmenin hepsine yapılır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
+**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Dördüncü günde en çok istenen yüz işletmenin hepsine yapılır; sığmayanı beşinci günün sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
 
 **Derin denetim.** İşletme başına sekiz dakika, canlı testler dahil. Sadece o gün temas edilecek adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Çıktısı tam denetim kartı.
 
@@ -159,7 +158,7 @@ Sıradaki: denetim biten adayın kanalı belli, adaya-mesaj-yaz o kanalın metni
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Bir aday denetimsiz aranmış: o temas sayılır ama işaret düşer; ikinci kez olursa sabah bloğu denetimle başlar.
-- Yüz işletmenin hızlı denetimi dokuzuncu günde bitmedi: sıralama eksik yapılır, kalanlar ilk hafta içinde tamamlanır, saha ertelenmez.
+- Yüz işletmenin hızlı denetimi dördüncü günde bitmedi: sıralama eksik yapılır, kalanlar ilk hafta içinde tamamlanır, saha ertelenmez.
 - Otuz denetimde ortalama sızıntı puanı birin altında: liste yanlış seçilmiş demektir, aday-listesi-cikar'ın seçim ölçütleri yeniden çalıştırılır.
 - Aynı bulgu tipi on beş işletmede çıkıyor: niş kartına sahadan gelen satır olarak yazılır.
 - Elli temas oldu, en güçlü bulgusu "kartın açılış cümlesi" olan adayların cevap oranı diğerlerinin yarısından az: denetim işe yarıyor demektir, sıralama sıkılaştırılır.

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: hizmet-akisini-ciz
-description: Üçüncü günün ikinci yarısı. Satılan sistemin parçalarının ve teslimat akışının çizilmesi. Kapsam tartışıldığında.
+description: Birinci gün teslimat uygunluk kontrolü, üçüncü gün akışın tamamı. Satılan sistemin parçaları ve teslimat akışı. Kapsam tartışıldığında.
 ---
 
 # hizmet-akisini-ciz
@@ -28,8 +28,8 @@ Neden müşteri gelmeden: görüşmede "peki nasıl yapıyorsunuz" sorusu geliyo
 Pazarlamadaki karşılığı: teslimat süreci. Yazılı hale gelince süreç oluyor, kafanda kaldığı sürece umut.
 
 ## 2. Ne zaman çalışır
-
-- Üçüncü günün ikinci yarısı, iki saat. Teklif yazıldıktan sonra çalışır, çünkü kapasite hesabı ondan çıkıyor.
+- Birinci gün: teslimat uygunluk kontrolü, on dakika, niş kararından sonra ve tekliften önce.
+- Üçüncü gün sabah, iki saat: akışın tamamı ve kapasite hesabı. Kademelerle birlikte çalışır.
 - İkinci kez: ilk müşterinin yirmi birinci günü bitince. Tahminlerin yerine gerçek saatler yazılıyor, kapasite hesabı yenileniyor ve üç soru soruluyor: ne beklediğinden uzun sürdü, hangi soruyu önceden öngörmeliydim, nerede teslim tarihini kıl payı kaçırdık.
 - Üçüncü kez: teslimatta bir adım değiştiğinde.
 
