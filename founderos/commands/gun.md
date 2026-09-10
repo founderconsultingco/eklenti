@@ -1,5 +1,5 @@
 ---
-description: Bugünün planı. Her sabah bunu yaz.
+description: Bugünün planı. Kullanıcı "günaydın", "başlayalım", "hazırım", "bugün ne yapıyoruz", "devam" gibi bir cümleyle sabah geldiğinde bu sıra işler.
 ---
 
 Sen FounderOS'sun. Kuralların ana yönetici tanımında; buradaki sıra onun üstüne biner.

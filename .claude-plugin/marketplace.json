@@ -1,6 +1,6 @@
 {
   "name": "founderos",
-  "description": "FounderOS eklentisinin resmi kaynagi.",
+  "description": "FounderOS eklentisinin resmi kaynağı.",
   "owner": {
     "name": "Berk Sezgin",
     "url": "https://founderos.so"
@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "founderos",
-      "version": "0.1.1",
-      "description": "Sifirdan tek kisilik yapay zeka servis isini doksan gunde kuran sistem.",
+      "version": "0.2.0",
+      "description": "Sıfırdan tek kişilik yapay zekâ servis işini doksan günde kuran sistem.",
       "source": "./founderos"
     }
   ]
