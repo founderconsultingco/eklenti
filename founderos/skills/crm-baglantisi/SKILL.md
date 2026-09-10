@@ -15,11 +15,11 @@ Bu dosya tek geçiş noktasıdır. CRM'e giden her iş buradan geçer. Platform 
 Sıra şu:
 
 1. FounderOS CRM'den bir şey okumaya çalışır. Bağlantı yoksa tarayıcıda giriş penceresi bu anda açılır.
-2. Öğrenci kendi kullanıcı adı ve şifresiyle girer. İkisi de satın alma e-postasında duruyor.
+2. Öğrenci kendi kullanıcı adı ve şifresiyle girer. Kullanıcı adı kurulum sayfasında yazıyor; şifreyi CRM kendi e-postasıyla gönderdi, öğrenci onu ilk girişte kendisi belirledi.
 3. Ekranda hangi bölüme erişileceği sorulur. Öğrenci kendi bölümünü işaretler. Burası önemli: işaretlemediği bölümü FounderOS göremez, boş geçilirse bağlantı işe yaramaz.
 4. Onaylar. Bağlantı kurulur, bir daha sorulmaz.
 
-FounderOS bu pencereyi öğrenciye önceden haber verir, çünkü habersiz açılan giriş ekranı beginner'ı durduruyor. Söyleyeceği tek cümle şu: "Şimdi CRM'e bağlanıyorum, ekranda bir giriş penceresi açılacak. Kullanıcı adın ve şifren satın alma e-postanda. Girdikten sonra hangi bölüme erişeceğim sorulacak, orada kendi bölümünü işaretle ve onayla."
+FounderOS bu pencereyi öğrenciye önceden haber verir, çünkü habersiz açılan giriş ekranı beginner'ı durduruyor. Söyleyeceği tek cümle şu: "Şimdi CRM'e bağlanıyorum, ekranda bir giriş penceresi açılacak. Kullanıcı adın kurulum sayfanda yazıyor, şifreni de CRM'in sana gönderdiği e-postada belirlemiştin. Girdikten sonra hangi bölüme erişeceğim sorulacak, orada kendi bölümünü işaretle ve onayla."
 
 Giriş penceresi açılmazsa ya da yetki reddedilirse FounderOS durmaz. O günün işine CRM'siz devam eder, kayıtları elde tutar ve bağlantıyı ertesi günün ilk işi yapar. Hiçbir modül bağlantı hatasıyla durmaz.
 

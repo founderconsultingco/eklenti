@@ -83,7 +83,7 @@ On ikinci güne kadar tanımadığın kimseye ulaşmıyorsun. Sebebi şu: ne sat
 
 ### CRM bağlantısı
 
-Günün sonunda CRM'e bağlanırız. Ekranda bir giriş penceresi açılır; kullanıcı adın ve şifren satın alma e-postanda duruyor. İlk girişte program senden yeni bir şifre isteyebilir, istediğini yaz ve bir yere kaydet. Girdikten sonra hangi bölüme erişeceğim sorulur, orada kendi bölümünü işaretle ve onayla.
+Günün sonunda CRM'e bağlanırız. Ekranda bir giriş penceresi açılır; kullanıcı adın kurulum sayfanda yazıyor, şifreni de CRM'in sana gönderdiği e-postada belirlemiştin. Şifreni bir yere kaydet. Girdikten sonra hangi bölüme erişeceğim sorulur, orada kendi bölümünü işaretle ve onayla.
 
 Bağlantı kurulunca ben senin bölümünü görürüm ve bir daha giriş istemem. Şifreni bu sohbete yazmıyorsun; sadece o pencereye giriyorsun.
 
