@@ -19,7 +19,7 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.2.5
+Bu paketin sürümü: 0.3.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
 

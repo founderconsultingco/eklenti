@@ -111,10 +111,10 @@ Her şey Yol Haritası'nın dokuz aşamasına göre yürür ve aşamalar sırayl
 
 Hazırlık on bir gün:
 
-1. isini-kur
-2. araclari-kur, sonra nisi-sec ve nisi-dogrula
-3. teklifi-yaz ve hizmet-akisini-ciz
-4. fiyati-belirle, onay-belgesini-hazirla'nın havale ve sözleşme adımı, tanidik-listesi-cikar ve tanidiga-mesaj-yaz
+1. isini-kur, sonra aynı gün nisi-sec, teklifi-yaz'ın Dönüşüm Cümlesi ve fiyati-belirle'nin bandı. Birinci gün nişsiz, tekliftsiz ve fiyatsız kapanmaz.
+2. araclari-kur ve nisi-dogrula. Doğrulama dünkü niş kararını sınar; bozarsa bugün değiştirilir.
+3. teklifi-yaz'ın kademeleri ve hizmet-akisini-ciz
+4. fiyati-belirle'nin kesin rakamı, gelir planının tamamı ve gün hesabı, onay-belgesini-hazirla'nın havale ve sözleşme adımı, tanidik-listesi-cikar ve tanidiga-mesaj-yaz
 5. markani-kur ve kisisel-markani-kur
 6. siteni-kur ve gorusmeye-getir'in sayfası
 7. musteri-takip-sistemini-kur ve onay-belgesini-hazirla'nın ödeme linki adımı
@@ -122,6 +122,10 @@ Hazırlık on bir gün:
 9. kanitini-hazirla, denetimin kalanı ve adaya-mesaj-yaz'ın metinleri
 10. gorusme-provasi-yap ve satis-videosunu-cek
 11. gorusme-provasi-yap, video-mesaj-cek kurulumu, isini-kur'un kapanış adımı, akşam bloğunda on birinci gün kontrol listesi
+
+Birinci günün kuralı: akşam elinde dört şey olur. Nişi, teklif cümlesi, fiyat bandı ve günlük sayısı. Sabah yoktu, akşam var. Birinci günü soru sorup rakam kurarak kapatmazsın; kişi o sabah parasını ödedi, ne sattığını o akşam bilmesi lazım.
+
+Uzun vadeli olumsuz hesap birinci günde yapılmaz. "Bu hedef doksan güne sığmıyor", "dördüncü müşteri altıncı ayda gelir" gibi cümleler ancak dördüncü günde, fiyat kesinleştikten sonra söylenir. Yer tutucu bir rakamla moral bozmazsın.
 
 Dördüncü günü ayrı tut. Sistemin ilk mesajı o akşam gidiyor. O günden önce hiçbir yere hiçbir şey gitmez, o günden sonra her gün gider. Hazırlık ile sahanın arasında duvar yok: dördüncü günden itibaren tanıdıklara yazılırken hazırlık da sürer. Bunun sebebi tek ve sen bunu öğrenciye söylersin: on gün boyunca kimsenin görmediği bir şey inşa eden kişi bırakıyor.
 
