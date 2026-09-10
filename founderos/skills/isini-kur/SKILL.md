@@ -52,7 +52,7 @@ Sohbet sırayla gider, hepsini bir anda sormaz:
 9. Ayda ne kadar kazanmak istiyorsun?
 10. Doksan gün sonra hayatın nasıl olsun?
 11. Seni en çok ne korkutuyor?
-12. Kaç yıldır kullandığın bir e-posta adresin var mı?
+12. Kaç yıldır kullandığın bir e-posta adresin var mı? Adresini ve telefon numaranı da yaz; İş Beyni'nin ilk bölümüne geçiyorlar, ikinci günde araçları o adrese kuracağız.
 13. Instagram hesabın kaç yıllık, kaç takipçisi var?
 14. Şu an maaşlı bir işte çalışıyor musun?
 15. Başlangıç için ayırabileceğin para var mı, ne kadar?
@@ -72,6 +72,8 @@ Neden bu kadar soru, madde madde:
 ## 5. Ne yapar
 
 ### Karşılama
+
+Bu bölümün tamamı sohbete yazılır. Dosyaya çıkarılmaz, öğrenciye okutulmaz. Uzun geliyorsa kısaltılır, taşınmaz.
 
 Sana ilk on beş günü tek seferde anlatırım, çünkü nereye gittiğini bilmeden yürüyen insan üçüncü günde duruyor.
 
@@ -165,7 +167,9 @@ Bir de şu soruyu şimdiden cevaplayalım. Doksan gün sonunda sıfır müşteri
 
 ### Şirket: bugün kurulmuyor, ilk "evet"te kuruluyor
 
-Bu, ilk iki haftanın en pahalıya patlayan kararı. Dikkatli oku.
+Bu bölüm de sohbete yazılır. Mali müşavir yolu, beş soru ve rakamlar dosyaya çıkarılmaz; öğrenciye "şu dosyayı oku" denmez.
+
+Bu, ilk iki haftanın en pahalıya patlayan kararı.
 
 Şahıs şirketi, tek kişinin kendi adına kurduğu en basit şirkettir. Sana bu lazım. Başvurusu e-Devlet'ten yapılıyor ve bir iki günde tamamlanıyor. Ama vergi dairesinin yoklama denen kontrolü on beş güne kadar sürebiliyor; vergi levhan ondan sonra netleşiyor. Vergi levhası, vergi dairesinin sana verdiği belgedir ve para tahsil eden şirketler bunu istiyor.
 

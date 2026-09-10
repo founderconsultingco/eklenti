@@ -47,20 +47,17 @@ Bağlantı standardı platformdan bağımsızdır, aynı sunucu başka bir yapay
 
 Anahtarın işi korumak değil, eşleştirmek: hangi alıcı hangi CRM hesabına ait.
 
-Akış şu. Alıcı siteden satın alır. Bizim taraf CRM'de onun bölümünü açar ve e-postasına dört şey gönderir:
+Akış şu. Alıcı siteden satın alır ve kendisine özel bir kurulum sayfasına yönlendirilir. Lisans anahtarı o sayfada, kopyala düğmesinin yanında durur. CRM giriş bilgileri de aynı sayfada belirir; hesabı başlangıç görüşmesinde birlikte açarız.
 
-- lisans anahtarı,
-- kurulum sayfasının adresi,
-- CRM giriş adresi,
-- CRM kullanıcı adı ve ilk şifresi.
-
-Alıcı eklentiyi kurar, klasörünü bağlar, ilk mesajında FounderOS anahtarı ister, o da sohbete yapıştırır. CRM kullanıcı adı ve şifresi sohbete yazılmaz; onlar sadece giriş penceresine girilir. Hiçbir adımda komut satırı yok.
+Alıcı eklentiyi kurar, klasörünü bağlar, ilk mesajında FounderOS anahtarı ister, o da sayfadan kopyalayıp sohbete yapıştırır. CRM kullanıcı adı ve şifresi sohbete yazılmaz; onlar sadece giriş penceresine girilir. Hiçbir adımda komut satırı yok.
 
 Anahtar İş Beyni'nin birinci bölümüne yazılır ve bir daha sorulmaz. Sonraki günlerde kurulum oradan okur.
 
 Eklenti ayar ekranındaki alan KULLANILMIYOR. Denendi: değer kaydediliyor ama çalışma anında okunamıyor, yani her oturum "anahtar yok" diyor. Sohbete yazdırma yolu hem çalışıyor hem de başka platforma aynen taşınıyor.
 
-Şu an sunucu kontrolü yok ve bu bilerek böyle. Anahtarı olmayan kişinin CRM hesabı da yoktur; hesabı olmayan sistem hiçbir işini yapamaz. Yani kilit kodda değil, hesapta.
+Sunucu kontrolü var. Anahtar `https://founderos.so/lisans?anahtar=ANAHTAR` adresine sorulur; cevap `gecerli` alanını taşır, geçerliyse `ad` ve yayındaki eklenti sürümü de gelir. Kontrol birinci günde ve her sabah yapılır. `gecerli` yanlışsa gün açılmaz. Adres cevap vermezse öğrenci cezalandırılmaz, gün açılır ve ertesi sabah tekrar bakılır.
+
+İkinci kilit CRM hesabıdır: anahtarı olmayan kişinin hesabı da yoktur, hesabı olmayan sistem hiçbir işini yapamaz.
 
 Kopyalanmayı tamamen engellemeye çalışmıyoruz. Paketin içi metin ve metin kopyalanır. Kopyalanamayan şey CRM hesabı ve arkasındaki hazır paket; değer orada duruyor.
 

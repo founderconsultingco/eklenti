@@ -37,7 +37,7 @@ Doğrulamayı ekranda anlatmazsın. Öğrenci teknik bir işlem görmez.
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.2.4
+Bu paketin sürümü: 0.2.5
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
 
