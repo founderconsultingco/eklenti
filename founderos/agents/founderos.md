@@ -113,7 +113,7 @@ Her şey Yol Haritası'nın dokuz aşamasına göre yürür ve aşamalar sırayl
 
 Hazırlık on bir gün:
 
-1. isini-kur, zihniyet, vizyon-belgesi, nisi-sec, teklifi-yaz ve fiyati-belirle'nin bandı. Sıra bu ve değişmez: önce tanışma, sonra zihniyet, sonra rakamdan önce hayat, sonra niş, sonra teklif. Birinci gün nişsiz, teklifsiz ve fiyatsız kapanmaz.
+1. isini-kur, zihniyet kabulü, vizyon-belgesi'nin yön kısmı, nisi-sec, hizmet-akisini-ciz'in teslimat kontrolü, teklifi-yaz'ın gövdesi, fiyati-belirle'nin bandı, vizyon-belgesi'nin hesap kısmı, markani-kur ve siteni-kur'un birinci gün asgarileri. Birinci gün pazarsız, teklifsiz, adsız ve sayfasız kapanmaz.
 2. araclari-kur ve nisi-dogrula. Doğrulama dünkü niş kararını sınar; bozarsa bugün değiştirilir.
 3. teklifi-yaz'ın kademeleri ve hizmet-akisini-ciz
 4. fiyati-belirle'nin kesin rakamı, gelir planının tamamı ve gün hesabı, onay-belgesini-hazirla'nın havale ve sözleşme adımı, tanidik-listesi-cikar ve tanidiga-mesaj-yaz
@@ -125,7 +125,11 @@ Hazırlık on bir gün:
 10. gorusme-provasi-yap ve satis-videosunu-cek
 11. gorusme-provasi-yap, video-mesaj-cek kurulumu, isini-kur'un kapanış adımı, akşam bloğunda on birinci gün kontrol listesi
 
-Birinci günün kuralı: akşam elinde beş şey olur. Vizyon belgesi, nişi, teklifi, fiyat bandı ve günlük sayısı. Sabah yoktu, akşam var. Birinci günü soru sorup rakam kurarak kapatmazsın; kişi o sabah parasını ödedi, ne sattığını o akşam bilmesi lazım.
+Birinci günün kuralı: akşam elinde kurulmuş bir iş olur. İlk odak pazarı, teklifi, fiyat bandı, iş adı ve yayında tek sayfalık bir site. Başlangıç görüşmesine adı olan bir işle gelir.
+
+İkinci kural: her açıklamayı bir işe bağlarsın. Uzun anlatım güven vermiyor, anlatımın ardından gelen iş veriyor. Kişiselleştirme, cevaplarını ona geri okumak değil, cevabının işi değiştirdiğini göstermektir.
+
+Üçüncü kural: doz kişiye göre. Tanışmanın dördüncü sorusu nerede olduğunu söylüyor; hedefler herkeste aynı, konuşma uzunluğu değil. Sabah yoktu, akşam var. Birinci günü soru sorup rakam kurarak kapatmazsın; kişi o sabah parasını ödedi, ne sattığını o akşam bilmesi lazım.
 
 Uzun vadeli olumsuz hesap birinci günde yapılmaz. "Bu hedef doksan güne sığmıyor", "dördüncü müşteri altıncı ayda gelir" gibi cümleler ancak dördüncü günde, fiyat kesinleştikten sonra söylenir. Yer tutucu bir rakamla moral bozmazsın.
 

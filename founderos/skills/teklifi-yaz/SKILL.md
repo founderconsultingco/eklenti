@@ -43,6 +43,33 @@ Dört sızıntı, işletmenin müşteri kaybettiği dört yerdir: açılmayan te
 
 Sormaz. İş adın yoksa geçici bir ad koyar; beşinci gün markani-kur onu kesinleştirir.
 
+
+## 4b. Birinci gün: teklifin gövdesi
+
+Birinci günde teklifin tamamı değil gövdesi çıkar, ama gövde satılabilir olur. Öğrenci ekranda okuyunca "bunu ben satarım" diyebilmeli.
+
+Gövdenin beş parçası var:
+
+1. Dönüşüm Cümlesi. Kime, neyi, hangi sonuç için.
+2. Sistemin adı.
+3. Bu nişin ne kaybettiği. Kartın kayıp birimi. Rakam kartta yoksa "sahadan dolacak" der, uydurmazsın.
+4. Sistemin o kaybı nasıl durduğu. Teslimat uygunluk kontrolünden geçmiş parçalar, sadece onlar.
+5. Karşı tarafın riski. Ödeme sırası, deneme, çıkış şartı. Bir işletme sahibinin "peki ya olmazsa" sorusunun cevabı.
+
+### Güçlü teklif, dolu teklif değildir
+
+Bir teklifi güçlendirmenin kolay yolu içine daha fazla sistem, bonus, destek ve garanti koymaktır. Bu yol yanlış ve tek kişilik bir işte tehlikeli: her eklenen parça teslimat yükü, bakım yükü ve söz verilmiş bir iş demek.
+
+İlk teklifin gücü çok şey içermesinden gelmiyor. Önemli bir sorunu anlaşılır ve teslim edilebilir biçimde çözmesinden geliyor. Değer matematiği açık olacak: karşı taraf ne kaybediyor, sen ne alıyorsun, aradaki fark görünür olacak. Riski üstlenmen de bir parça eklemek değil, aynı parçayı daha az riskli sunmaktır.
+
+Ek hizmetler ilk müşteride temel hizmetin değeri ve maliyeti görüldükten sonra eklenir. Birinci günde kademe sayısını artırmazsın.
+
+### Kapanış
+
+Teklifi öğrencinin kendi şehri, kendi nişi ve kendi rakamlarıyla ekrana yazarsın. Sonra tek soru sorarsın: "Bunu bir işletme sahibine okusan sence ne der?" Cevabı teklifin sahadan gelen ilk verisidir, İş Beyni'ne yazarsın.
+
+Kademelerin ayrıntısı ve teslimat akışının tamamı üçüncü günün işidir.
+
 ## 5. Ne yapar
 
 ### Önce özellik ile sonucu ayırır

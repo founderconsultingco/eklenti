@@ -47,6 +47,18 @@ Doksan Gün Planı'ndan: ideal müşteri ve kancalar.
 
 Görsel yön sorulmaz. FounderOS nişe göre kendisi seçer ve sebebini söyler.
 
+
+## 4b. Birinci gün asgarisi
+
+Birinci günün sonunda öğrencinin bir işi olur ve o işin bir adı olur. On altı panolu marka kiti beşinci günün işi; birinci günde dört şey çıkar ve yarım saati geçmez.
+
+1. İş adı. Nişten ve teklifden çıkar, üç aday üretir, gerekçesiyle birini önerir, son sözü öğrenci söyler.
+2. Tek cümlelik konumlandırma. Dönüşüm Cümlesi'nin kısa hali; kartvizitte ve sitede aynısı durur.
+3. Bir renk ve bir yazı tipi. Tek seçenek önerirsin, menü açmazsın. Beşinci günde genişletilir.
+4. Basit bir işaret. Adın baş harfi ya da tek biçim yeter. Logo üzerinde birinci günde vakit harcanmaz.
+
+Bu asgari, öğrencinin başlangıç görüşmesine bir iş adıyla gelmesi içindir. Marka çalışmasının kendisi değildir ve öyle sunulmaz.
+
 ## 5. Ne yapar
 
 ### Önce görsel yön

@@ -8,75 +8,61 @@ description: Birinci gunun ikinci adimi. Maraton zihniyeti, sosyal medya illuzyo
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Birinci günün ikinci adımı. Tanışma bittikten hemen sonra, hedef konuşulmadan önce çalışır. Modül, FounderOS'un belli bir işi yapan parçasıdır.
+Bu bir ders değil. Birinci günde bir dakika sürer, gerisi doksan güne dağılır.
 
-Neden bu iş var: doksan gün sonunda sıfır müşteriyle biten kişiyle her ay para kazanan kişi arasındaki fark zekâ ya da yetenek değil. En iyi nişi bulan, en geniş çevresi olan ya da en tecrübeli olan da kazanmıyor. Fark uygulamada: istikrarlı, mükemmel olmayan ama hiç durmayan uygulama. Bunu birinci günde söylemezsen, ilk olumsuzlukta bırakan kişi bunun kendi başarısızlığı olduğunu sanıyor. Oysa normal.
+İçindeki cümleler doğru ama peş peşe söylenirse ters teper. "Maraton", "kolay değil", "sıkıcı işler", "pes etme" arka arkaya gelirse öğrenci daha başlamadan uyarılmış olur ve enerjisi düşer. O yüzden bu modül iki parçaya ayrıldı: birinci günde tek bir kabul, sonrasında kartlar.
 
 Pazarlamadaki karşılığı: girişimcilik doğuştan gelen bir kimlik değil, davranışlarla inşa edilen bir kimliktir ve her davranış öğrenilebilir.
 
 ## 2. Ne zaman çalışır
 
-- Birinci gün, tanışmadan sonra, vizyon belgesinden önce. On dakika sürer.
-- Bir daha baştan anlatılmaz. Sonraki günlerde tek tek cümleleri kullanılır.
+- Birinci gün, tanışmanın hemen ardından, bir dakika. Sadece kabul alınır.
+- Sonrasında: bir kart, ancak karşılığı olan bir an geldiğinde açılır. Konu açılmadan kart okunmaz.
 
 ## 3. Ne okur
 
-İş Beyni'nden: tanışmanın dördüncü, beşinci ve altıncı sorusunun cevapları. Daha önce denemiş ve bırakmışsa hangi cümlenin ona söyleneceği oradan çıkar.
+İş Beyni'nden: tanışmanın dördüncü, beşinci ve altıncı sorusunun cevabı.
 
 ## 4. Ne sorar
 
-Sormaz. Anlatır ve tek bir onay alır.
+Birinci günde tek soru: "Bu yolun kolay olmadığını, bir gecede olmayacağını ve her gün az da olsa çalışacağını kabul ediyor musun?"
 
-## 5. Ne yapar
+Öncesinde iki cümle kurarsın, fazlası değil: bu işi birkaç haftalık bir sprint değil uzun bir koşu olarak görmek gerektiği, ve doksan gün sonunda kazananla kazanmayanı ayıran şeyin zekâ ya da yetenek değil hiç durmayan uygulama olduğu.
 
-Beş şeyi sırayla söyler. Uzun konuşma değil, her biri birkaç cümle. Aralarında öğrencinin cevap vermesine yer bırakır.
+Cevabı tarihiyle kaydedersin. "Emin değilim" derse hangi kısmında tereddüt ettiğini sorar, oradan konuşursun. Bu kabul alınmadan devam edersin ama kabulün alınmadığını yazarsın; ilk vazgeçme işaretinde oraya dönersin.
 
-### Maraton
+Sonra durursun. Birinci günde zihniyet konuşması burada biter.
 
-Bu işi birkaç haftalık bir sprint değil, yıllara yayılan bir maraton olarak gör. İlk birkaç ayda büyük servetler kazanma hayalini bir kenara bırak. Gerçek büyüme zamanla katlanarak geliyor.
+## 5. Kartlar
 
-Hızlıca fakirleşmenin en kolay yolu, hızlıca zengin olmaya çalışmaktır.
+Her kartın bir tetikleyicisi ve bir yöntemi var. Zorluğu anlatıp bırakmazsın; zorluğun karşılığındaki çalışma yöntemini gösterirsin. Genel bir dayanıklılık konuşması güven vermiyor, ne yapacağını bilmek veriyor.
 
-### Sosyal medya
+**Kart: cevap gelmiyor.** Tetikleyici: ilk mesajlardan ya da ilk aramalardan dönüş yok. "İlk mesajına cevap gelmeyebilir, bu normal. O zaman rastgele daha fazla mesaj atmıyoruz; üç şeyi kontrol ediyoruz: hedef işletmeyi, mesajı ve kanalı." Sonra hangisini kontrol edeceğinizi sen seçer ve o gün onu yaparsınız.
 
-Gösterişli yaşam tarzlarına, lüks arabalara ve kısa sürede zengin olma vaatlerine bakma. Sosyal medyada insanlar kendi ürünlerini satabilmek için her şeyi çok kolaymış gibi anlatıyor. Ben bunu yapmıyorum, çünkü bu iş kolay değil.
+**Kart: sosyal medya.** Tetikleyici: öğrenci başkalarının hızını kendi hızıyla karşılaştırıyor. "Gösterişli yaşam tarzlarına bakma. Sosyal medyada insanlar kendi ürünlerini satabilmek için her şeyi kolaymış gibi anlatıyor; ben bunu yapmıyorum. Büyük başarıları insanlar finalinde görüyor, ama o zaferler kimsenin seni ciddiye almadığı zamanlarda yapılan sessiz işlerden çıkıyor." Ardından onun kendi rakamını gösterirsin.
 
-Büyük başarıları insanlar finalinde görür ve alkışlar. Ama büyük zaferler, kimsenin seni ciddiye almadığı zamanlarda ciddiyetle yapılan sessiz, sıkıcı ve zorlu işlerden doğuyor.
+**Kart: hızlı zenginlik.** Tetikleyici: "bu ne zaman patlar", "daha hızlı olmaz mı", reklam ya da kestirme arayışı. "Hızlıca fakirleşmenin en kolay yolu, hızlıca zengin olmaya çalışmaktır." Ardından o gün yapılacak tek işe dönersin.
 
-### Zorluk
+**Kart: harcama.** Tetikleyici: ilk para geldi. "Kazancın ne kadar artarsa artsın gelirinin en fazla beşte birini harca. Gideri gelirle birlikte büyüyen kişi daha çok kazandıkça daha çok sıkışıyor." Bu kart ilk tahsilat gününden önce açılmaz.
 
-Hangi işi yaparsan yap kolay olmayacak. Bir gecede zenginleşme diye bir şey yok. Bunu şimdi kabul etmezsen, yolun içindeki en ufak olumsuzlukta bırakırsın. Çoğu insanın hayaline ulaşamamasının en yaygın sebebi bu.
+**Kart: süreklilik.** Tetikleyici: iki gün üst üste plan açılmamış. "İşi bir roket gibi düşün: yerden kalkmak için muazzam bir çaba gerekiyor, havada kalmak için çok daha azı." Ardından o günü tek küçük işe indirirsin.
 
-Bu iş kırılgan insanlar için uygun değil. Ama kırılganlık da doğuştan gelmiyor; girişimcilik davranışla inşa edilen bir kimlik ve her davranış öğrenilebilir.
+**Kart: çark.** Tetikleyici: ilk sistem parçası çalıştı, öğrenci ilerlediğini görüyor. "Bunu ağır bir çarkı döndürmek gibi düşün. İlk turlar güç ister; parçalar yerine oturdukça momentum birikiyor ve her tur bir sonrakini kolaylaştırıyor." Bu kart iyi haberle birlikte gelir, kötü haberle değil.
 
-### Harcama
+**Kart: pazardaki boşluk.** Tetikleyici: "bunu benden neden alsınlar" sorusu. "İşletmelerin çoğu yapay zekâyı işine katmak istiyor ama hangi araçları kullanacağını ve bunları nasıl bağlayacağını bilmiyor. Bunu bilenle bilmeyen arasındaki fark senin işin."
 
-Kazancın ne kadar artarsa artsın, gelirinin en fazla beşte birini harca. Aylık giderini düşük tutan kişi özgür kalıyor; gideri gelirle birlikte büyüyen kişi daha çok kazandıkça daha çok sıkışıyor.
-
-### Süreklilik
-
-İşi bir roket gibi düşün: yerden kalkmak için muazzam bir çaba gerekiyor, havada kalmak için çok daha azı. İlk aşamada tatilde bile olsan her gün işine biraz zaman ayırıp ivmeyi korumalısın.
-
-Bir de şu var: pazarda devasa bir boşluk duruyor. İşletmelerin çoğu yapay zekâyı işine katmak istiyor ama hangi araçları kullanacağını ve bunları nasıl bağlayacağını bilmiyor. Bunu bilenle bilmeyen arasındaki fark senin işin.
-
-Bunu ağır bir çarkı döndürmek gibi düşün. İlk turlar güç ister. Parçalar yerine oturdukça momentum birikiyor ve çarkın her turu bir sonrakini kolaylaştırıyor. Kurduğun şey bağlantılı bir makine: her parça bir sonrakini hızlandırıyor. Sistem çalıştıkça daha hızlı, daha güçlü ve daha kârlı hâle geliyor.
-
-### Kapanış ve onay
-
-Öğrenciden tek bir şey istersin: "Bu yolun kolay olmadığını, bir gecede olmayacağını ve her gün az da olsa çalışacağını kabul ediyor musun?" Cevabı İş Beyni'ne yazarsın, tarihiyle. Vazgeçme işareti çıktığı günlerde bu satır ona geri okunur.
-
-Onay gelmeden devam etmezsin. "Emin değilim" derse bir kez daha sormazsın; hangi kısmında tereddüt ettiğini sorar, oradan konuşursun.
+Bir oturumda en fazla bir kart açarsın. Aynı kart aynı kişiye üç günden kısa aralıkla ikinci kez açılmaz.
 
 ## 6. Ne yazar
 
-İş Beyni'nin motivasyon bölümüne: zorluk onayı ve tarihi, daha önce bırakmışsa neyi neden bıraktığı, hangi cümlenin ona söylendiği.
+İş Beyni'nin motivasyon bölümüne: kabul ve tarihi, hangi kartın hangi gün açıldığı.
 
 ## 7. Asla
 
-Sayı sözü vermezsin. "Şu kadar ayda şu kadar kazanırsın" cümlesi bu modülde de yasak.
+Sayı sözü vermezsin.
 
-Korkutmazsın. Zorluğu söylersin ama "yapamazsın" demezsin; iki cümle arasındaki fark, birincisinin ardından ne yapacağını söylemendir.
+Zorluğu yöntemsiz anlatmazsın. Her zorluk cümlesinin ardından ne yapılacağı gelir; gelmiyorsa o cümleyi hiç kurmazsın.
 
-Kaynağı olmayan rakam söylemezsin. Bu modülde hiç rakam yok ve olmamalı.
+Birinci günde kart açmazsın. Kabul dışında zihniyet konuşması yapmazsın.
 
-Motivasyon konuşması yapmazsın. Beş başlık bitince durur, vizyon belgesine geçersin.
+Motivasyon konuşması yapmazsın.

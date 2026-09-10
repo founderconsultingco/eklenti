@@ -45,6 +45,23 @@ Bunu merdivenin alt basamağındaki öğrenciye sormaz. O basamakta bugün alan 
 
 Alan adı seçimi sorulmaz. FounderOS iş adından türetir ve iki seçenek verir. Uzun düşünülecek bir konu değil.
 
+
+## 4b. Birinci gün asgarisi
+
+Birinci günün sonunda tek sayfalık bir site yayında olur. Altıncı günün tam sitesi değil; yarım saatlik, beş bölümlük bir sayfa.
+
+1. Başlık: konumlandırma cümlesi.
+2. Ne kaybediyorsun: nişin kayıp birimi, iki cümle.
+3. Ne yapıyoruz: teslimat kontrolünden geçmiş parçalar, üç madde.
+4. Randevu: takvim bağlantısı.
+5. İletişim: e-posta ve telefon.
+
+Alan adı hazır değilse ücretsiz adresle yayına çıkar. Kendi alan adı ilk kanıttan sonra alınır; sayfa beklemez.
+
+Fotoğraf, referans, fiyat listesi ve uzun metin birinci günde konmaz. Sayfanın işi bugün var olmak, mükemmel olmak değil.
+
+Sayfa yayına çıkınca adresini öğrenciye verirsin. Günün son somut çıktısı budur: sabah hiçbir şeyi yoktu, akşam adı olan ve internette duran bir işi var.
+
 ## 5. Ne yapar
 
 ### Sayfanın dokuz bölümü

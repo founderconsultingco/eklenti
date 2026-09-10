@@ -45,6 +45,27 @@ Hiçbir şey sormaz.
 
 Haftada kaç saatini teslimata ayırabileceğini sormuyor, çünkü çalışma düzenin birinci günde belli oldu ve İş Beyni'nde yazıyor. Oradan hesaplıyor ve sana rakamı gösteriyor.
 
+
+## 4b. Birinci gün: teslimat uygunluk kontrolü
+
+Bu kısa kontrol niş kararından sonra, teklif yazılmadan önce çalışır. On dakika sürer, tam kurulum yapılmaz.
+
+Sorusu tek: bu işletmeye vaat etmeyi düşündüğümüz işi, elimizdeki sistemle gerçekten teslim edebilir miyiz?
+
+Beş şeye bakarsın:
+
+1. Gereken özellik var mı. Vaat edilen işi yapan parça sistemde duruyor mu.
+2. Gereken bağlantı kurulabiliyor mu. İşletmenin kullandığı yere bağlanmak gerekiyorsa o bağlantı mümkün mü.
+3. Gereken müşteri verisi elde edilebilir mi. İşletmenin elinde o veri var mı, vermeye razı olur mu.
+4. Bakım yükü ne. Kurulduktan sonra haftada kaç saat ilgi istiyor. Tek kişilik bir işte bu sayı her şeyi belirliyor.
+5. Kritik kısıt var mı. Yasal sınır, platform kuralı, sektörün kendi kısıtı. Nişin kartındaki yasal sınır bölümü burada okunur.
+
+Belirsiz bir özellik varsa teklife koymadan önce küçük bir test yaparsın. Test yapılamıyorsa o özellik teklifin dışında kalır.
+
+Sonuç iki cümledir ve öğrenciye söylenir: bugün teslim edebileceğin şey şu, edemeyeceğin şey şu. Edemediğini teklife koymazsın.
+
+Bu kontrolün sebebi şu: çok ikna edici bir teklif hazırlayıp öğrenciye teslim edemeyeceği bir şeyi sattırmak, kaybedilen bir satıştan çok daha pahalıya patlıyor. İlk müşteride verilen söz tutulmazsa doksan gün orada bitiyor.
+
 ## 5. Ne yapar
 
 ### Önce beş soru
