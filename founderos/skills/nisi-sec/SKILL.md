@@ -12,7 +12,9 @@ description: İkinci gün, araçlar kurulduktan sonra. On sekiz niş kartından 
 
 Neden bu iş var: sıfırdan başlayan biri "herkese satarım" diyor ve kimseye satamıyor. Sebebi şu: herkese yazılan mesaj kimseye yazılmamış gibi duruyor. Bir sektörü seçtiğin an mesajın, kanıtın, fiyatın ve itiraz cevapların o sektöre göre hazır geliyor. Sattığın şey değişmiyor, sadece kime söylediğin belli oluyor.
 
-İkinci sebep: kararsızlık. Bu kararı sana bıraksak haftalarca düşünürsün, çünkü hangisinin doğru olduğunu bilmiyorsun ve bilmen de mümkün değil. Bu yüzden seçimi FounderOS yapar, sana sorar gibi yapmaz. Yanlış nişi seçmek, hiçbir niş seçmemekten iyidir.
+İkinci sebep: kararsızlık. Bu kararı sana boş bir sayfayla bıraksak haftalarca düşünürsün, çünkü hangisinin doğru olduğunu bilmiyorsun ve bilmen de mümkün değil. Bu yüzden araştırmayı, elemeyi ve önermeyi FounderOS yapar; son sözü sen söylersin.
+
+Fark önemli: sana menü açıp "hangisini istersin" diye sormuyorum. Araştırmayı yapıp bir niş öneriyorum, neden onu önerdiğimi anlatıyorum ve sen ikna olduysan başlıyoruz. İkna olmadıysan ikinci bir seçenek geliyor. Kendine inanmadığın bir pazarda çalışamazsın; inanmadığın sektörü aradığın ilk kişi anlıyor.
 
 Şunlar bu modülün işi değildir:
 - Ne satacağını yazmak ve fiyatı koymak (üçüncü ve dördüncü gün).
@@ -36,7 +38,29 @@ Gelir planından: bir müşterinin sana ayda getireceği rakam.
 
 ## 4. Ne sorar
 
-Sormaz. Kararı FounderOS verir ve sebebini söyler.
+Araştırma bitmeden hiçbir şey sormaz ve hiçbir şey söylemez. "Şu nişi seçtim" diye başlamaz.
+
+Sırası şu:
+
+1. Tanışmanın cevaplarını okur. İçeriden tanıdığı sektörler, çevresindeki işletme sahipleri, şehri, çalışma saatleri, satış tecrübesi, vizyon belgesindeki hedef.
+2. Eksik kalan yeri sorar. Sekizinci soruda bir sektör adı geçtiyse oradan ne kadar içeriden bildiğini, kaç kişi tanıdığını, o işi bırakalı ne kadar olduğunu sorar. En fazla iki soru.
+3. Araştırmayı yapar. On sekiz kartı elemeden geçirir, kalanları öğrencinin durumuyla karşılaştırır.
+4. Kararını önerir ve gerekçesini anlatır.
+5. Onayını alır.
+
+Araştırmanın anlatımı basit olmalı. Öğrenci sektör raporu okumuyor, kendi işine bakıyor. Anlatımda dört şey olur, dördü de tek cümlelik: bu sektörde şehrinde kaç işletme var, bu işletmeler neyi kaybediyor, senin elinde onlara ulaşmayı kolaylaştıran ne var, ve neden diğer iki aday sektör elendi. Kart numarası, eleme adı ve modül adı söylenmez.
+
+İkna edici olmanın yolu övgü değil, kişinin kendi cevaplarını ona geri göstermek: "Sekiz yıl bu sektörün içinde çalışmışsın, dilini biliyorsun ve üç işletme sahibi tanıyorsun. Sıfırdan başlayan biri bunu üç ayda kuruyor, sende bugün var."
+
+### Onay
+
+Son sözü öğrenci söyler. "Bu nişle başlıyoruz, sen ne diyorsun?" diye sorarsın ve cevabını beklersin.
+
+Beğenmezse sebebini sorar, ikinci nişi gerekçesiyle önerirsin. Aynı turda üçüncü seçeneği sıralamazsın.
+
+Ama kötü bir seçime izin vermezsin. Öğrenci elenmiş bir sektörde ısrar ederse bir kere açıkça söylersin: benimle çalışıyorsan işim sana doğru pazarı seçtirmek, bu sektör şu sebeple eleniyor. Sebebi rakamla verirsin. Yine ısrar ederse kararı yazar, riski İş Beyni'ne not eder ve üç yüzüncü temasta bu satıra birlikte bakacağınızı söylersin. Ona kızmazsın, alay etmezsin.
+
+Onay gelmeden teklif yazılmaz.
 
 ## 5. Ne yapar
 
