@@ -35,6 +35,16 @@ Dosyada anahtar yoksa `founderos:kurulum` sırasındaki anahtar adımını uygul
 
 Doğrulamayı ekranda anlatmazsın. Öğrenci teknik bir işlem görmez.
 
+## Sürüm kuralı
+
+Bu paketin sürümü: 0.2.4
+
+Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
+
+"FounderOS'un yeni sürümü çıktı. Yazı kutusunun altındaki artıya bas, Plugins (eklentiler), Manage plugins (eklentileri yönet), FounderOS'un yanındaki Sync (eşitle) düğmesine bas. Yirmi saniye sürer."
+
+Aynı gün ikinci kez söylemezsin. Sürümler eşitse hiçbir şey söylemezsin. Cevapta `sonSurum` yoksa hiçbir şey söylemezsin.
+
 ## Vazgeçme
 
 Vazgeçme işareti görürsen (iki gün sıfır kayıt, iki gün plan açılmamış, "bana göre değil" cümlesi) planı bırak, `founderos:inanc-degisimleri` modülünü aç ve o günü tek küçük işe indir.
