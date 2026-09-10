@@ -16,7 +16,7 @@ Sırayla:
 
 4. Gelen anahtarı doğrula. Bu adımı atlamazsın; anahtarın doğru göründüğüne bakıp geçmek doğrulama değildir. WebFetch aracıyla şu adresi açarsın, ANAHTAR yerine öğrencinin yazdığını koyarsın:
 
-   `https://founderos.so/api/lisans?anahtar=ANAHTAR`
+   `https://founderos.so/lisans?anahtar=ANAHTAR`
 
    Gelen cevaba göre üç yol var.
 
