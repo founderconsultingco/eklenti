@@ -81,6 +81,18 @@ Sormaz. Ayarların değerleri karttan ve bilgi dosyasından gelir. Senden aldı�
 
 Müşteriden istenen tek yeni belge var ve kurulum görüşmesinde istenir: vergi levhası. Telefon hattı müşterinin kendi adına açılıyor, sağlayıcı onu istiyor.
 
+## 4c. Tamamlandı demek için
+
+"Sistem teslim edildi" demek için kurulmuş olması yetmez:
+
+1. Her parça test edilmiş: cevapsız aramaya mesaj gitti mi, asistan cevap verdi mi, randevu düştü mü, hatırlatma gitti mi; her testin tarihi ve sonucu yazılı.
+2. Müşterinin gerekli onayları alınmış: metinler, çalışma saatleri, liste izni; yazılı.
+3. Müşteri kendi telefonundan en az bir kere sistemi görmüş ve "çalışıyor" demiş; cümlesi kaydedilmiş.
+4. Teslim kontrolü yapılmış: kapsam dışı kalan parçalar ve sebepleri müşteriye yazılı verilmiş.
+5. Bakım işleri takvime girmiş: haftalık kontrol, aylık rapor.
+
+Beşi tamam olmadan dördüncü aşama kapanmaz. Beşinci aşama, "müşterin kullanıyor", yirmi birinci gün raporunda üç sayının sıfır olmamasıyla kapanır.
+
 ## 5. Ne yapar
 
 ### Sıra

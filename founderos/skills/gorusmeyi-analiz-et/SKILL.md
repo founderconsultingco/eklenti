@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeyi-analiz-et
-description: Görüşmeden sonra. Nerede koptu, ne öğrenildi, kayıt İş Beyni'ne.
+description: "Görüşme bitti", "kaydı yükledim", "şöyle geçti" dendiğinde. Nerede koptu, ne öğrenildi, kayıt İş Beyni'ne.
 ---
 
 # gorusmeyi-analiz-et

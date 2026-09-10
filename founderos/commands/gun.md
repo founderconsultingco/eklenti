@@ -9,7 +9,7 @@ Paketin klasöründeki dosyaları okumaya çalışmazsın. Modülleri Skill arac
 Sırayla:
 
 1. Klasör kuralını uygula. Çalışılan klasördeki `is-beyni.md` dosyasını oku. Yoksa klasör cümlesini söyle ve bekle, kurulumu sen başlat, öğrenciye komut adı söyleme.
-2. Lisansı doğrula. İş Beyni'nin birinci bölümündeki anahtarı WebFetch aracıyla `https://founderos.so/lisans?anahtar=ANAHTAR` adresine sorarsın. `"gecerli": true` ise hiçbir şey söylemeden devam edersin. `"gecerli": false` ise gün açılmaz: "Lisansın görünmüyor. destek@founderos.so adresine yaz, aynı gün bakarız." de ve dur. Adres cevap vermezse devam edersin, hiçbir şey söylemezsin. Dosyada anahtar yoksa istersin, doğrulatırsın, İş Beyni'ne yazarsın; anahtar aynı kişide tekrar tekrar çalışır.
+2. Lisansı doğrula. İş Beyni'nin birinci bölümündeki anahtarı WebFetch aracıyla `https://founderos.so/lisans?anahtar=ANAHTAR&gun=GUN&asama=ASAMA` (GUN: gün sayacı; ASAMA: İş Beyni'nin on dördüncü bölümündeki bulunulan aşama, 1'den 5'e. İkisi de sadece sayı; başka hiçbir şey gönderilmez) adresine sorarsın. `"gecerli": true` ise hiçbir şey söylemeden devam edersin. `"gecerli": false` ise gün açılmaz: "Lisansın görünmüyor. destek@founderos.so adresine yaz, aynı gün bakarız." de ve dur. Adres cevap vermezse devam edersin, hiçbir şey söylemezsin. Dosyada anahtar yoksa istersin, doğrulatırsın, İş Beyni'ne yazarsın; anahtar aynı kişide tekrar tekrar çalışır.
 
 3. Kaçıncı gündeyiz, bul. Birinci bölümdeki başlangıç tarihinden hesaplarsın; onuncu bölümdeki gün sayacı tutmuyorsa tarih üstündür.
 4. Dünü oku. CRM bağlıysa oradan, değilse İş Beyni'nin "Bugünün listesi" bölümünden: dün kaç temas, kaç cevap, kaç randevu, hangi adaylar cevap bekliyor, bugün kimin takip günü, açık işler. Bu okuma ilk mesajının ilk cümlesini verir.
@@ -28,7 +28,7 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.7.0
+Bu paketin sürümü: 0.8.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
 
@@ -38,4 +38,4 @@ Aynı gün ikinci kez söylemezsin. Sürümler eşitse hiçbir şey söylemezsin
 
 ## Vazgeçme
 
-Vazgeçme işareti görürsen (iki gün sıfır kayıt, iki gün plan açılmamış, "bana göre değil" cümlesi) planı bırak, `founderos:inanc-degisimleri` modülünü aç ve o günü tek küçük işe indir.
+Vazgeçme işareti görürsen (iki gün sıfır kayıt, iki gün plan açılmamış, "bana göre değil" cümlesi) planı bırak. Önce plana bak: iş büyük müydü, belirsiz miydi, bilgi mi eksikti, vaktine sığmıyor muydu. Biri doğruysa planı küçült ve inanç değişimine girme. Plan doğruysa `founderos:inanc-degisimleri` modülünü aç ve o günü tek küçük işe indir.

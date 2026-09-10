@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: zor-konusmayi-yonet
-description: Müşteri kızdığında, iş aksadığında, iptal istendiğinde.
+description: "Müşteri kızdı", "iptal etmek istiyor", "iş aksadı" dendiğinde.
 ---
 
 # zor-konusmayi-yonet

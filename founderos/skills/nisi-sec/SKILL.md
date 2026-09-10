@@ -90,6 +90,17 @@ Yine ısrar ederse kararı yazarsın. Kızmazsın, alay etmezsin, "sana söylemi
 
 Onay gelmeden teklif yazılmaz.
 
+## 4c. Tamamlandı demek için
+
+Pazar kararı ancak şu dördü varsa kapanır ve İş Beyni'nin on dördüncü bölümüne "tamam" yazılır:
+
+1. Gerekçe yazılı: neden bu pazar, dört parçasıyla (neden, sınanacak varsayımlar, devam işareti, yeniden bakma işareti).
+2. Uygun müşteri tanımı yazılı: bu pazarda kime satılır, kime satılmaz; karar vericisi kim; hangi işletme büyüklüğü.
+3. Öğrencinin onayı alındı ve cümlesi kaydedildi.
+4. Nişin kartı açıldı ve kanal, saat ve kayıp birimi İş Beyni'ne geçti.
+
+Güzel bir açıklama tek başına aşamayı kapatmaz. Dördünden biri eksikse eksik kalan yazılır ve ertesi gün tamamlanır; teklife yine geçilir, aşama açık kalır.
+
 ## 5. Ne yapar
 
 Eleme yapar, sıralama değil. Sırayla dört elemeden geçirir, kalanlar arasından seçer.

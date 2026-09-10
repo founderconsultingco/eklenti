@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusme-provasi-yap
-description: Dördüncü ve beşinci gün on iki prova, sonra her görüşmeden önce. Prova sayacı dolmadan soğuk saha açılmaz.
+description: Dördüncü ve beşinci gün on iki prova, sonra her görüşmeden önce. "Yarın görüşmem var" dendiğinde on dakikalık prova. Prova sayacı dolmadan soğuk saha açılmaz.
 ---
 
 # gorusme-provasi-yap

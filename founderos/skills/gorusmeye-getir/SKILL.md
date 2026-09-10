@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeye-getir
-description: Takvim ve ön görüşme sayfası ikinci gün kurulur; sonra randevu alındıktan görüşmeye kadar. Takvim daveti, hatırlatma, gelmeyen aday.
+description: "Randevu aldım", "yarın görüşme var" dendiğinde. Takvim ve ön görüşme sayfası ikinci gün kurulur; sonra randevu alındıktan görüşmeye kadar: davet, hatırlatma, gelmeyen aday.
 ---
 
 # gorusmeye-getir

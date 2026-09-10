@@ -67,6 +67,18 @@ Fotoğraf, referans, fiyat listesi ve uzun metin birinci günde konmaz. Sayfanı
 
 Sayfayı gösterdikten sonra tek cümleyle yarını bağlarsın: sayfa hazır, internete koymayı yarın hallediyoruz.
 
+## 4c. Tamamlandı demek için
+
+Sayfa "hazır" demek için görünmesi yetmez. Beş kontrol, hepsi ekranda gösterilir:
+
+1. Metinler doğru: konumlandırma cümlesi, kayıp, parçalar İş Beyni'ndekiyle aynı; uydurma rakam, uydurma yorum yok.
+2. İletişim yolu çalışıyor: telefon numarası doğru ve aranabiliyor, WhatsApp bağlantısı açılıyor; deneme mesajı atılıp gelmiş.
+3. Bağlantılar çalışıyor: yayındaysa takvim bağlantısı bir randevu ekranı açıyor, sayfadaki her düğme bir yere gidiyor.
+4. Telefonda okunuyor: yazı büyüklüğü, düğme genişliği, yana kayma yok.
+5. Türkçe harfler doğru çıkıyor.
+
+Birinci günde bir, dört ve beş kontrol edilir (sayfa yayında değil). İkinci günde yayınla birlikte iki ve üç eklenir ve aşama o zaman kapanır.
+
 ## 5. Ne yapar
 
 ### Sayfanın dokuz bölümü

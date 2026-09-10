@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: adaya-mesaj-yaz
-description: Metinler dördüncü gün, ilk on soğuk temas beşinci günün akşamı, altıncı günden itibaren her gün. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar.
+description: Metinler dördüncü gün, saha altıncı günden itibaren her gün. "Bir işletme cevap verdi", "biri geri döndü" dendiğinde cevap konuşması buradan. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar.
 ---
 
 # adaya-mesaj-yaz

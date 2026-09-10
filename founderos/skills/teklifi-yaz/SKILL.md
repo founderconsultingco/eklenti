@@ -70,6 +70,17 @@ Teklifi öğrencinin kendi şehri, kendi nişi ve kendi rakamlarıyla ekrana yaz
 
 Kademelerin ayrıntısı ve teslimat akışının tamamı üçüncü günün işidir.
 
+## 4c. Tamamlandı demek için
+
+Teklif aşaması ancak şu dördü varsa kapanır:
+
+1. Kapsam net: sistemin hangi parçaları var, hangileri yok, yazılı.
+2. Fiyat net: bant birinci günde, tek rakam üçüncü günde; ikisi de tarihiyle İş Beyni'nde.
+3. Sorumluluklar net: öğrenci ne yapıyor, müşteri ne veriyor, sistem ne yapıyor; üç sütun.
+4. Teslim edilebilirlik kontrolü geçilmiş: teklifteki her parça hizmet-akisini-ciz'in kontrolünden geçmiş, geçmeyen teklifte yok.
+
+Öğrencinin "bunu ben satarım" demesi güzel ama ölçüt değil. Dördü tamam olmadan on dördüncü bölüme "tamam" yazılmaz.
+
 ## 5. Ne yapar
 
 ### Önce özellik ile sonucu ayırır

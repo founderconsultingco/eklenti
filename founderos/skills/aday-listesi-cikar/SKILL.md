@@ -44,6 +44,17 @@ Tek bir şey sorar: listeyi hangi yolla çıkaracağın. Sebebi şu, orada senin
 
 Bir de silme öncesi durak var: silinecek satırları görüp onaylıyorsun.
 
+## 4c. Tamamlandı demek için
+
+Liste "hazır" demek için kayıt sayısı yetmez:
+
+1. Beş yüz kayıt var ve her birinde telefon ya da e-posta dolu; ikisi de boş olan kayıt listede değil.
+2. Örnekleme doğrulaması yapılmış: rastgele on kayıt açılmış, işletme gerçekten var, kategori doğru, numara çalışıyor. Onda üçten fazlası tutmuyorsa liste yeniden çekilir.
+3. En çok istenen yüz işletmenin her birinde uygunluk gerekçesi var: neden bu, tek satır.
+4. Liste CRM'e ya da CRM yoksa İş Beyni'nin on beşinci bölümüne yüklenmiş ve sayım tutuyor.
+
+Dördü tamam olmadan liste "hazır" sayılmaz ve on dördüncü bölüme yazılmaz.
+
 ## 5. Ne yapar
 
 ### Hangi yolla liste çıkarılır, bu seçim senin

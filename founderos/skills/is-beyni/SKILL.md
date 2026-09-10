@@ -31,9 +31,10 @@ Mali müşavirin adı ve beş sorunun cevabı.
 Yazan: isini-kur (birinci gün), hizmet-akisini-ciz.
 
 ### 2. Hedef ve para
+Vizyon: bir yıl sonra hayat, bir yıl sonra iş, çalışma sınırları (haftada kaç saat, hangi pencereler, tek başına kaç müşteri), seçilen kombinasyon ve tempo, tarihiyle. Zihniyet kabulü ve tarihi.
 Hedef gelir, gelir planının bütün basamakları, güncellenmiş müşteri değeri, aylık masraf tablosunun dört bölümü, çıkış hesabının dört satırı ve üç aylık yaşam gideri şartı.
 Aylık kâr hesapları buraya tarihiyle ekleniyor: ayın geliri kurulum ve aylık ayrımıyla, gider kalemleri tek tek, kâr marjı, banka hesabındaki değişim.
-Yazan: isini-kur, araclari-kur, nisi-sec, kari-hesapla.
+Yazan: isini-kur, zihniyet, vizyon-belgesi, araclari-kur, nisi-sec, kari-hesapla.
 
 ### 3. Niş
 Seçilen niş, seçim tarihi, coğrafya (şehir mi Türkiye geneli mi), doğrulama tablosu ve tarihi, ikinci ve üçüncü aday niş, sezon durumu.
@@ -97,13 +98,31 @@ Ayrıca: aktif müşteri sayısı, ilk müşteri tarihi, müşteri başına haft
 Yazan: musteriyi-karsila, musteri-sistemini-kur, yazili-asistani-kur, sesli-ajani-kur, kaybolanlari-geri-getir, yorum-topla, sistemi-kontrol-et, aylik-raporu-hazirla, musteriyi-elde-tut, zor-konusmayi-yonet, onay-belgesini-hazirla, kari-hesapla.
 
 ### 13. Açık işler
-Bekleyen sorular ve her birinin hangi güne ya da hangi eşiğe bağlı olduğu. Ertelenen istekler ve hangi eşikte açılacakları. Ertesi güne kalan iş.
+İlk satır her zaman "Sonraki adım": tek cümle, her akşam yeniden yazılır. Ertesi sabah açılış cümlesi buradan çıkar.
+Bekleyen sorular ve her birinin hangi güne ya da hangi eşiğe bağlı olduğu. Ertelenen istekler ve hangi eşikte açılacakları. Ertesi güne kalan iş. Ertelenen bir iş üç kez ertelendiyse yanına sebebi yazılır: büyük mü, belirsiz mi, bilgi mi eksik; o satır plana "ödev" olarak değil "küçültülmüş iş" olarak döner.
 Bu bölüm her sabah gunu-planla tarafından okunuyor; sırası gelen açık iş o günün planına giriyor.
+Yazan: bütün modüller.
+
+### 14. Aşama ve tamamlanma
+Beş aşama ve her birinin durumu: hazırlık tamamlandı, ilk işletmeyle görüştün, ilk satışını yaptın, hizmeti teslim ettin, müşterin kullanıyor. Her aşamanın tamamlanma ölçütü ilgili modülde yazılı; burada her ölçütün yanında "tamam" ya da "eksik" ve tarih durur. Güzel bir paragraf aşamayı tamamlamaz; ölçütlerin hepsi "tamam" olmadan aşama kapanmaz.
+Aşama kapanınca tek satır: ne bitti, ne zaman, kanıtı nerede.
+Yazan: nisi-sec, teklifi-yaz, siteni-kur, aday-listesi-cikar, gorusmeyi-analiz-et, onay-belgesini-hazirla, musteri-sistemini-kur, durum.
+
+### 15. Bugünün listesi
+CRM bağlı değilken CRM'in yerine geçen bölüm. Günün adayları, her birinin sıradaki hareketi ve kanalı, cevap bekleyenler, takip günü gelenler, dün ne oldu. Sabah okunur, akşam işlenir. CRM bağlanınca bir kerede oraya aktarılır ve bu bölüm "CRM'e taşındı, tarih" satırıyla kapanır. Aynı bilgi iki yerde tutulmaz.
+Yazan: gunu-planla, adaya-mesaj-yaz, rakamlari-oku, araclari-kur.
+
+### 16. Taslaklar
+Hazırlanmış ama henüz kullanılmamış her şey: gönderilmemiş mesaj, onaylanmamış teklif sürümü, çekilmemiş video metni, doldurulmamış sözleşme. Her satırda ne olduğu, ne zaman hazırlandığı, neyi beklediği. Kullanıldığı gün buradan silinmez, "kullanıldı, tarih" diye işaretlenir. Bu bölüm dolup taşıyorsa sistem üretip öğrenci kullanmıyor demektir; bu bir işarettir.
+Yazan: bütün modüller.
+
+### 17. Takılmalar ve destek
+Öğrencinin takıldığı her yer: tarih, cümlesi ("anlamadım", "yapamadım", "bende bu ekran yok"), sorunun türü (bilgi, erişim, teknik hata, uygulama), ne denendi, çözüldü mü. Desteğe aktarılan durumlarda gönderilen özet ve gelen cevap. Destekten gelen çözüm buraya yazılır ve bir daha aynı yerde takılınca önce buraya bakılır.
 Yazan: bütün modüller.
 
 ## Doksan Gün Planı nerede duruyor
 
-Doksan Gün Planı İş Beyni'nin içinde değil, ayrı bir dosya olarak yanında duruyor. On altı bölümlük metin ikinci günün akşamında bir kere yazılıyor ve doksan gün boyunca modüller ona bakıyor. gorusmeyi-analiz-et sahadan gelenlerle günceller.
+Doksan Gün Planı İş Beyni'nin içinde değil, ayrı bir dosya olarak yanında duruyor. On altı bölümlük metin birinci günde pazar kararıyla birlikte yazılıyor, ikinci günün doğrulamasıyla güncelleniyor ve doksan gün boyunca modüller ona bakıyor. gorusmeyi-analiz-et sahadan gelenlerle günceller.
 
 Niş kartı da ayrı bir dosya olarak duruyor. Kart on altı bölümlü sabit yapıda, sonunda bir de Kaynaklar bölümü var; modüller kartı bölüm adıyla okuyor: Kapsam, Gerçek fiyatlar ve kapasite (sonunda kayıp birimi), Sızıntı nerede, Sezon, Rekabetin şekli, Kim karar veriyor, İşletmecinin gerçek dertleri (sonunda sözlüğü ve iç sesi), Açılış cümlesi, Duran havuz, Asistan kuralları, Kanal ve zaman, Reklam kütüphanesi kelimeleri, Yasal sınırlar, Yoğun şehirler, Gerçek itirazlar ve karşılıkları (başında en güçlü üç itiraz), Sahadan dolacak, Kaynaklar.
 
@@ -145,6 +164,11 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 
 ## 2. Hedef ve para
 
+- Vizyon, bir yıl sonra hayat:
+- Vizyon, bir yıl sonra iş:
+- Çalışma sınırları (haftada saat, pencereler, tek başına kaç müşteri):
+- Seçilen kombinasyon ve tempo:
+- Zihniyet kabulü ve tarihi:
 - Hedef aylık gelir:
 - Gelir planının basamakları:
 - Müşteri değeri:
@@ -297,6 +321,34 @@ Tek değişken kuralı: aynı hafta iki değişiklik yazılmışsa o testin veri
 
 ## 13. Açık işler
 
+- Sonraki adım (tek cümle, her akşam yeniden):
 - Bekleyen soru, hangi güne ya da eşiğe bağlı:
 - Ertelenen istek, hangi eşikte açılacak:
 - Ertesi güne kalan iş:
+- Üç kez ertelenen iş ve sebebi (büyük, belirsiz, bilgi eksik):
+
+## 14. Aşama ve tamamlanma
+
+- Bulunulan aşama:
+- 1. Hazırlık tamamlandı: (ölçütler tamam/eksik, tarih)
+- 2. İlk işletmeyle görüştün: (ölçütler tamam/eksik, tarih)
+- 3. İlk satışını yaptın: (ölçütler tamam/eksik, tarih)
+- 4. Hizmeti teslim ettin: (ölçütler tamam/eksik, tarih)
+- 5. Müşterin kullanıyor: (ölçütler tamam/eksik, tarih)
+
+## 15. Bugünün listesi
+
+CRM bağlı değilken burası CRM'in yerine geçer. CRM bağlanınca "CRM'e taşındı, tarih" yazılır.
+
+- Dün ne oldu:
+- Bugünün adayları (aday, sıradaki hareket, kanal):
+- Cevap bekleyenler:
+- Takip günü gelenler:
+
+## 16. Taslaklar
+
+- (ne, hazırlanma tarihi, neyi bekliyor / kullanıldı tarihi)
+
+## 17. Takılmalar ve destek
+
+- (tarih, cümle, tür: bilgi/erişim/teknik/uygulama, denenen, çözüldü mü, destek özeti, gelen cevap)

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: fiyati-belirle
-description: Birinci gün fiyat bandı, üçüncü gün kesin fiyat. Kurulum ve aylık ücret, hazırlık kapısı, deneme fiyatı. Fiyat sorulduğunda ya da fiyat itirazı geldiğinde.
+description: Birinci gün fiyat bandı, üçüncü gün kesin fiyat. "Fiyat ne diyeyim", "pahalı dedi" dendiğinde itiraz bölümü.
 ---
 
 # fiyati-belirle

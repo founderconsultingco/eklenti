@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: onay-belgesini-hazirla
-description: Ödeme yolu, sözleşme ve ödeme linki evrak listesi üçüncü gün kurulur, sonra her kapanışta çalışır. Onay belgesi ve güvence.
+description: "Evet dedi", "kabul etti", "parayı gönderecek" dendiğinde kapanış mesajı ve onay belgesi. Ödeme yolu ve sözleşme üçüncü gün kurulur.
 ---
 
 # onay-belgesini-hazirla
