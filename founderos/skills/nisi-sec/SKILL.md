@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nisi-sec
-description: Birinci gün. On sekiz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda.
+description: Birinci gün. On dokuz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda.
 ---
 
 # nisi-sec
@@ -33,7 +33,7 @@ Pazarlamadaki karşılığı: bir sektörü seçen kişi, o sektörün dilini ko
 ## 3. Ne okur
 
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, şehrin, kanal yolun, çalışma düzenin, günlük temas sayın.
-On sekiz niş kartından (bir sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon, gerçek fiyatlar ve kapasite, kanal ve zaman, rekabetin şekli, yasal sınırlar.
+On dokuz niş kartından (bir sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon, gerçek fiyatlar ve kapasite, kanal ve zaman, rekabetin şekli, yasal sınırlar.
 Takvimden: hangi aydayız.
 Gelir planından: bir müşterinin sana ayda getireceği rakam.
 
@@ -45,7 +45,7 @@ Sırası şu:
 
 1. Tanışmanın cevaplarını okur. İçeriden tanıdığı sektörler, çevresindeki işletme sahipleri, şehri, çalışma saatleri, satış tecrübesi, vizyon belgesindeki hedef.
 2. Eksik kalan yeri sorar. Sekizinci soruda bir sektör adı geçtiyse oradan ne kadar içeriden bildiğini, kaç kişi tanıdığını, o işi bırakalı ne kadar olduğunu sorar. En fazla iki soru.
-3. Araştırmayı yapar. On sekiz kartı elemeden geçirir, kalanları öğrencinin durumuyla karşılaştırır.
+3. Araştırmayı yapar. On dokuz kartı elemeden geçirir, kalanları öğrencinin durumuyla karşılaştırır.
 4. Kararını önerir ve gerekçesini anlatır.
 5. Onayını alır.
 

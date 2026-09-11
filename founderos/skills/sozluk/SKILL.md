@@ -46,7 +46,7 @@ Kişiler:
 - Senden iyi biri: Daha önce telefonla ya da yüz yüze hizmet satmış ve müşteriyle görüşme yürütmüş bir tanıdık; on birinci günün sesli provası onunla yapılır.
 
 Niş ve teklif:
-- Niş: Sattığın şeyi kime satacağını belirleyen dar sektör (örnek: klima servisleri). On sekiz niş var, birini FounderOS seçer.
+- Niş: Sattığın şeyi kime satacağını belirleyen dar sektör (örnek: klima servisleri). On dokuz niş var, birini FounderOS seçer.
 - İdeal müşteri sayfası: Seçilen sektörün içindeki tek kişinin on iki başlıkta tarifi (derdi, korkusu, ne zaman satın alır, ne satın almaz). İş Beyni'nin on sekizinci bölümü; teklif, site, mesaj ve video buradan beslenir.
 - Niş kartı: Bir sektör hakkında bilinen her şeyin (fiyatlar, kaçan müşterinin bedeli, itirazlar, kim karar veriyor, yasaklar) yazılı olduğu hazır sayfa.
 - AI Müşteri Dönüşüm Sistemi: Sattığımız şeyin kategori adı. Gelen talebi karşılayan, randevu ve teklif sürecini ilerleten, satışı takip eden, eski müşteriyi geri kazanan, FounderOS CRM üstünde çalışan tek sistem. Tanımı "İş modeli" bölümünde; öğrenciye böyle anlatılır, işletmeciye ise öğrencinin kendi sistem adıyla ve sonuç diliyle anlatılır.

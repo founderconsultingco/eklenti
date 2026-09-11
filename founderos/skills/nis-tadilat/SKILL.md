@@ -7,7 +7,7 @@ description: Sadece mutfak-banyo tadilat ve ic mimarlik nisinin karti: rakamlar,
 # Mutfak-banyo tadilat ve iç mimarlık
 
 
-**Kapsam.** Mutfak dolabı üreten atölye ve mağazalar, banyo tadilatı yapan usta/firmalar, anahtar teslim ev/daire tadilatı yapan küçük müteahhitler, küçük iç mimarlık ve dekorasyon ofisleri. Zincir bayiler de dahil (ör. Kelebek Mutfak-Banyo bayileri) ([sikayetvar.com/kelebek-mutfak](https://www.sikayetvar.com/kelebek-mutfak/soz-verilen-tarihte-teslim-edilmeyen-mutfak-dolaplari-ve-iletisimsizlik-nedeniyle-yasanan-magduriyet)). Dahil değil: büyük inşaat firmaları, toplu konut/şantiye işleri, sadece mobilya perakendecisi olup üretim/uygulama yapmayan mağazalar (Trendyol, Hepsiburada gibi e-ticaret kanalları).
+**Kapsam.** Mutfak dolabı üreten atölye ve mağazalar, banyo tadilatı yapan usta/firmalar, anahtar teslim ev/daire tadilatı yapan küçük müteahhitler, küçük iç mimarlık ve dekorasyon ofisleri. Zincir bayiler de dahil (ör. Kelebek Mutfak-Banyo bayileri) ([sikayetvar.com/kelebek-mutfak](https://www.sikayetvar.com/kelebek-mutfak/soz-verilen-tarihte-teslim-edilmeyen-mutfak-dolaplari-ve-iletisimsizlik-nedeniyle-yasanan-magduriyet)). Dahil değil: büyük inşaat firmaları, toplu konut/şantiye işleri, sadece mobilya perakendecisi olup üretim/uygulama yapmayan mağazalar (Trendyol, Hepsiburada gibi e-ticaret kanalları). İlk odak için en uygun büyüklük: ekibi olan, yüksek tutarlı ve düzenli talep alan firma; tek ustalı işletmede keşif ve teklif zinciri usta sahadayken yürümüyor.
 
 Müşteri yolculuğu: teklif (keşif, teklif, sözleşme ve kapora). Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
 

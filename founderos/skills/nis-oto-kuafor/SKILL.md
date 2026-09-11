@@ -7,7 +7,7 @@ description: Sadece oto kuafor, seramik kaplama ve arac kaplama nisinin karti: r
 # Oto kuaför, seramik kaplama, araç kaplama
 
 
-**Kapsam.** Detaylı iç dış temizlik, pasta cila, seramik kaplama, boya koruma filmi, cam filmi.
+**Kapsam.** Detaylı iç dış temizlik, pasta cila, seramik kaplama, boya koruma filmi, cam filmi. İlk odak için en uygun büyüklük: PPF ve seramik kaplama yapan, düzenli fiyat talebi alan merkez; fiyat sorup kaybolanın takibi en büyük fırsat.
 
 Müşteri yolculuğu: randevu (fiyat listeden, araç randevuyla alınır). Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
 
@@ -57,15 +57,13 @@ Fiyat sorup gelmeyenler. Sahibinin telefonunda duruyor, kimse dokunmuyor.
 
 Yenileme zamanı gelenler. Kaplama iki üç yılda yenileniyor.
 
-**Asistan fiyat vermiyor.** Bu sektörde en meşru itiraz "araç görmeden fiyat verilmez" olacak ve haklılar. Sektörün tamamı zaten fiyat yayınlamıyor.
+**Asistan kuralları.** Fiyat vermez; bu sektörde en meşru itiraz "araç görmeden fiyat verilmez" ve haklılar, sektörün tamamı fiyat yayınlamıyor. Asistan bilgi toplar: aracın marka, model, yılı, hangi hizmet, boyada çizik var mı, fotoğraf gönderebilir mi, ne zaman getirmek istiyor. Fotoğraf gelirse kayda ekler. Sonra randevu verir; fiyatı usta söyler. Bunu görüşmede baştan söylemezsek satış ölür.
 
-Asistan bilgi topluyor: aracın marka, model, yılı, hangi hizmet isteniyor, boyada çizik var mı, fotoğraf gönderebilir mi, ne zaman getirmek istiyor. Sonra randevu veriyor. Fiyatı usta söylüyor.
+Ton: bu sektörde nezaket satın alma kriteri. Övgüler "detayları güzelce anlatıyor", "çok nezaket sahibi" üstüne; şikayetler "üslup" üstüne. Asistan robot gibi konuşursa reddedilir, ustanın kendi diliyle konuşur. Teklif yolculuğu parçası: fiyat sorup kaybolan kişi bu nişin en büyük kaybıdır; ustanın verdiği fiyatın ardından tekliften satışa takip zinciri açılır, ilk mesaj "fotoğrafları usta gördü, şu tarihe kadar yer var" diye gider.
 
-Bunu görüşmede baştan söylemezsek satış ölür.
+**Kanal ve zaman.** Talep ağırlıkla Instagram DM ve WhatsApp'tan geliyor; işin kendisi görsel olduğu için fotoğraf paylaşımı ve "önce sonra" gönderileri talebi başlatıyor. Telefon ikinci kanal. Gün içinde ustanın eli araçta, telefona bakamıyor; talebin hangi saatte yoğunlaştığı kartta yok, sahadan dolacak. Sezon bölümüne göre bahar ve yaz öncesi yoğun, kış ölü; kış aylarında duran havuz ve teklif takibi işin çoğunu taşıyor.
 
-**Ton uyarısı.** Bu sektörde nezaket satın alma kriteri. Övgüler "detayları güzelce anlatıyor", "çok nezaket sahibi" üzerine. Şikayetler "üslup" üzerine.
-
-Asistan robot gibi konuşursa reddedilir. Ustanın kendi diliyle konuşmalı.
+**Reklam kütüphanesi kelimeleri.** "seramik kaplama", "boya koruma filmi", "PPF", "cam filmi", "pasta cila", "detaylı temizlik", "araç kaplama", şehir adı ile birlikte. Reklam veren işletme reklamdan gelen DM'i kaçırıyorsa ilk aday odur.
 
 **Yoğun şehirler.** İstanbul, Ankara, İzmir, Bursa, Kocaeli, Adana, Antalya, Kayseri.
 
@@ -92,3 +90,5 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, bot fiyat veremez, tekno
 ---
 
 ---
+
+**Kaynaklar.** Kartın içinde geçen fiyat listesi, zincir marka kampanyası, sektör forumu kapasite sözü ve Google yorumları; her biri ilgili satırın yanında adlandırılmış. Talep saati ve dönüşüm oranı için kaynak yok, sahadan dolacak.

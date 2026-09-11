@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-kartlari
-description: On sekiz nis kartinin listesi, kart kurallari ve kart sablonu. Nis secilirken ve hangi kart modulunun acilacagi belirsizken acilir.
+description: On dokuz nis kartinin listesi, kart kurallari ve kart sablonu. Nis secilirken ve hangi kart modulunun acilacagi belirsizken acilir.
 ---
 
 # FounderOS Niş Kartları (taslak 2, 5 Eylül 2026)
@@ -30,6 +30,7 @@ Durum: 18 kartın 18'i tam araştırmayla yazıldı (kart başına 15 ile 47 kay
 - Diş kliniği
 - Pilates, PT ve butik stüdyo
 - Estetik cerrahi ve medikal estetik
+- Yetişkinlere yönelik dil ve mesleki eğitim kursları
 
 ---
 
@@ -113,5 +114,6 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 - Diş kliniği: `nis-dis-klinigi`
 - Pilates, PT ve butik stüdyo: `nis-pilates`
 - Estetik cerrahi ve medikal estetik: `nis-estetik`
+- Yetişkinlere yönelik dil ve mesleki eğitim kursları: `nis-dil-kursu`
 
 Bir nişin rakamını, itirazını, yasal sınırını ya da kayıp birimini kendi kartından okursun. Kartta rakam yoksa "sahadan dolacak" der ve iş rakamsız yürür.

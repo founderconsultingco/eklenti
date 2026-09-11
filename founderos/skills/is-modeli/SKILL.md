@@ -20,7 +20,7 @@ Girişimci, işletmelere tek tek bot satmak yerine; gelen talepleri karşılayan
 
 ## Kime satıyoruz
 
-Müşteri taleplerini telefon, WhatsApp, Instagram, site ya da formdan alan ve satışını **randevu, görüşme ya da fiyat teklifiyle** tamamlayan yerel hizmet işletmeleri. On sekiz niş kartının hepsi bu tanımın içinde.
+Müşteri taleplerini telefon, WhatsApp, Instagram, site ya da formdan alan ve satışını **randevu, görüşme ya da fiyat teklifiyle** tamamlayan yerel hizmet işletmeleri. On dokuz niş kartının hepsi bu tanımın içinde.
 
 Sistemin çözdüğü dertler: başvuruya geç dönülmesi ya da hiç dönülmemesi; cevapsız kalan telefon ve mesaj; randevuya gelmeyenin takip edilmemesi; görüşme ve tekliften sonra takibin bırakılması; eski müşteri listesinin kullanılmaması; müşteri bilgisinin kanallar ve çalışanlar arasında dağılması; çalışanların aynı soruları cevaplamak ve hatırlatma yapmak için sürekli zaman harcaması.
 
