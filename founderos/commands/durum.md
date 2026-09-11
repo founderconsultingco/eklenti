@@ -16,6 +16,6 @@ Sonra tek ekran çıkar:
 6. Açık işler: İş Beyni'nin açık işler bölümü.
 7. Tek cümlelik sıradaki adım.
 
-Rakamları CRM'den ve İş Beyni'nden al, tahmin etme. Ölçülemeyen sayıya "ölçülemedi" yaz, uydurma.
+Rakamları CRM'den ve İş Beyni'nden al, tahmin etme. CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir) bugünün adayları ve randevular İş Beyni'nin "Bugünün listesi" bölümünden gelir; "CRM yok" yazmazsın, listeyi gösterirsin. Ölçülemeyen sayıya "ölçülemedi" yaz, uydurma.
 
 Bu ekran karar vermez, gösterir. Karar `degisiklige-karar-ver` modülünün işi.

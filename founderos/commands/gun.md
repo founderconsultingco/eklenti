@@ -16,7 +16,9 @@ Sırayla:
 
 5. Günü tek cümleyle aç ve o cümle düne bağlansın. "Günaydın" demezsin, "Dün iki işletmeden cevap aldın; önce görüşme isteyene hazırlanıyoruz" dersin. Dün hiçbir şey olmadıysa onu da söylersin, süslemeden. Bu cümle olmadan gün açılmaz; öğrencinin sistemin onu hatırladığını gördüğü tek yer burası.
 
-   Beş günlük hazırlık içindeysek (gün sayacı altıdan küçük) günün sırasını ana yöneticinin merdiveninden okur ve o günün işini açarsın; gunu-planla altıncı günden itibaren.
+   Hazırlık aşaması kapanmadıysa (İş Beyni'nin on dördüncü bölümünde birinci aşamanın ölçütleri "tamam" değilse) günün sırasını ana yöneticinin beş bloğundan ve öğrencinin çalışma düzeninden okursun: tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün. Gün sayacına bakarak "hazırlık bitti" demezsin; işin yanında çalışan biri yedinci günde hâlâ dördüncü bloktadır. Öğrenciye blok numarası söylemezsin, bugün ne yapacağını söylersin. gunu-planla saha açıldıktan sonra çalışır.
+
+   Bir de şu: dün başlangıç görüşmesi yapıldıysa ya da öğrenci "CRM hesabım açıldı" diyorsa, o günün ilk işi araclari-kur'un "CRM açıldığı gün" adımıdır ve günün planının önüne geçer.
 
 6. `founderos:gunu-planla` modülünü çalıştır. O günün tek işini, sayılarını ve sırasını ver. CRM bağlı değilse plan İş Beyni'ndeki listeden kurulur; öğrenciye "CRM çalışmıyor" demezsin, "bugünün listesi burada" dersin ve aynı bilgiyi iki yere yazdırmazsın.
 7. Günün işi hangi modüle düşüyorsa onu sen seç ve çalıştır. Öğrenciye modül adı sorma, menü sunma.
@@ -28,7 +30,7 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.13.1
+Bu paketin sürümü: 0.14.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
 

@@ -37,7 +37,7 @@ Aylık kâr hesapları buraya tarihiyle ekleniyor: ayın geliri kurulum ve aylı
 Yazan: isini-kur, zihniyet, vizyon-belgesi, araclari-kur, nisi-sec, kari-hesapla.
 
 ### 3. Niş
-Seçilen niş, seçim tarihi, coğrafya (şehir mi Türkiye geneli mi), doğrulama tablosu ve tarihi, ikinci ve üçüncü aday niş, sezon durumu.
+Seçilen niş, seçim tarihi, coğrafya (şehir mi Türkiye geneli mi), doğrulama tablosu ve tarihi, ikinci ve üçüncü aday niş, sezon durumu. İdeal müşterinin tek cümlelik tanımı ve hedeflenen işletme büyüklüğü (ayrıntısı on sekizinci bölümde).
 Niş kilidi: doksan gün ya da beş müşteri, hangisi önce gelirse. Kilidin başlangıç tarihi burada yazılı.
 Yazan: nisi-sec, nisi-dogrula.
 
@@ -53,9 +53,9 @@ Müşteriye gösterilecek beş satır, saat tablosu ve tahmin oldukları notu, k
 Yazan: hizmet-akisini-ciz.
 
 ### 6. Marka ve varlıklar
-Marka kitinin yeri, renkler, yazı tipleri, logo ve en küçük boyutu, görsel yön.
+Marka kitinin yeri, renkler, yazı tipleri, logo ve en küçük boyutu, görsel yön. Dosya haritası: `marka/` altındaki her dosyanın adı, ne işe yaradığı, nerede durduğu; modüller logoyu ve görselleri buradan bulur. Eksik gerçek bilgiler satırı: henüz olmayan telefon, e-posta ya da adres ve hangi dosyayı beklettiği. Açılış görseli hangi kaynaktan (video kapağı, kurucu fotoğrafı, marka görseli).
 Instagram kullanıcı adı ve hesap yaşı, profil fotoğrafının yeri, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, biyografi metni ve sürümü.
-Alan adı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, siteyi yeniden başlatma komutu, sayfanın metin sürümü ve tarihi, hangi bölümlerin gizli olduğu.
+Alan adı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, siteyi yeniden başlatma komutu, sayfanın metin sürümü ve tarihi, müşteri gelince değişecek bölümler.
 Video adresleri: ön görüşme videosu, üç itiraz videosu, deneme videosu, kanıt ekran kaydı.
 Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-sayfasini-yaz, isini-kur.
 
@@ -193,6 +193,8 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - İkinci aday niş:
 - Üçüncü aday niş:
 - Sezon durumu:
+- İdeal müşteri, tek cümle:
+- Hedeflenen işletme büyüklüğü:
 - Niş kilidi (doksan gün ya da beş müşteri, başlangıç tarihi):
 
 ## 4. Teklif ve fiyat
@@ -230,6 +232,9 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Yazı tipleri:
 - Logo ve en küçük boyutu:
 - Görsel yön:
+- Dosya haritası (dosya, ne için, nerede):
+- Eksik gerçek bilgiler (bilgi, hangi dosyayı bekletiyor):
+- Açılış görselinin kaynağı:
 - Instagram kullanıcı adı ve hesap yaşı:
 - Profil fotoğrafının yeri:
 - WhatsApp Business numarası ve karşılama mesajı:
@@ -241,7 +246,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Ön görüşme sayfasının adresi:
 - Proje klasörünün yeri:
 - Sayfanın metin sürümü ve tarihi:
-- Gizli duran bölümler:
+- Müşteri gelince değişecek bölümler:
 - Video adresleri (ön görüşme, üç itiraz, deneme, kanıt ekran kaydı):
 
 ## 7. Araçlar ve hesaplar

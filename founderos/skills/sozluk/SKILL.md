@@ -17,11 +17,12 @@ Sistem ve dosyalar:
 - İş Beyni: Senin hakkında bilinen her şeyin yazıldığı tek dosya, senin bilgisayarında. On üç bölümü var: kurucu, hedef ve para, niş, teklif ve fiyat, teslimat, marka ve varlıklar, araçlar ve hesaplar, listeler, mesajlar ve kanıt, sayılar, kararlar, müşteriler, açık işler. Hiçbir satır silinmiyor; değişen bilginin yenisi tarihiyle altına yazılıyor.
 - Kurucu bölümü: İş Beyni'nde seni anlatan dört satır: seni ne motive eder, ne durdurur, daha önce nerede bıraktın, nerede düşme riskin var.
 - Marka kiti: İşinin nasıl görüneceğini tek yerde toplayan dosya: ad, logo, renkler, yazı tipleri, kullanım kuralları ve hazır şablonlar. Birinci gün kurulur, on panodan oluşur.
-- Pano: Marka kitindeki tek bir tasarım sayfası. On altı pano tek tahtada yan yana durur.
-- Claude Design: Claude'un içinde çalışan tasarım tahtası. Birçok tasarımı tek sayfada yan yana koyar, üstünde tıklayıp yazı ve renk değiştirmene izin verir, sonunda hepsini görsel olarak indirirsin.
-- Görsel yön: Marka kitinin bütün panolarında uyulan sabit görünüm kuralı. Üç yön var (sağlam ve yüksek kontrastlı, sakin ve temiz, ölçülü ve kurumsal); FounderOS nişe göre seçer.
+- Pano: Marka kitindeki tek bir tasarım sayfası. On pano tek tahtada yan yana durur; öğrenciye "on sayfa, tek ekranda yan yana" diye anlatılır.
+- Dosya haritası: İş Beyni'nin altıncı bölümünde duran liste: marka klasöründeki hangi dosya ne işe yarıyor ve nerede duruyor. Öğrenci okumaz, modüller okur; site kurulurken logo buradan bulunur.
+- Claude Design: Claude'un içinde çalışan tasarım tahtası. Birçok tasarımı tek sayfada yan yana koyar, üstünde tıklayıp yazı ve renk değiştirmene izin verir. Tahta markanın görsel sistemidir; kullanılacak dosyaları FounderOS o sistemden ayrıca üretir, tahtadan indirilen resim teslim sayılmaz.
+- Görsel yön: Marka kitinin bütün panolarında uyulan sabit görünüm kuralı. İki yüzeyi var: kimlik yüzeyi (logo, sosyal, kartvizit; koyu zemin, tek doygun renk, malzeme hissi) ve okuma yüzeyi (sayfa gövdesi, belge, e-posta; açık zemin). Renk ve yazı tipi ikisinde aynıdır.
 - Yol Haritası: Herkes için aynı olan dokuz aşamalık harita: temeli kur, kime satacaksın, ne satacaksın, neden senden alsınlar, müşteri bul, görüşme ayarla, satış yap, hizmeti teslim et, işi ölçekle. Aşamalar sırayla açılır, biri bitmeden sonraki başlamaz.
-- Doksan Gün Planı: Üçüncü günün akşamı, niş seçilince FounderOS'un senin için yazdığı on altı bölümlük plan; doksan gün boyunca önünde durur.
+- Doksan Gün Planı: Birinci blokta pazar kararıyla birlikte üretilen, ikinci bloğun doğrulamasıyla güncellenen, doksan gün boyunca önünde duran on altı bölümlük plan.
 - CRM: Adayların, müşterilerin ve her temasın kaydedildiği takip programı (crm.founderos.so). Hiçbir sayıyı sen girmezsin, buradan çıkar.
 - Senin CRM bölümün: CRM'in içinde sana ayrılan yer; başlangıç görüşmende birlikte açılır, adayların ve randevuların orada durur. Açılana kadar aynı işi İş Beyni'nin "Bugünün listesi" bölümü yapar.
 - Müşteri bölümü (alt hesap): Kazandığın her müşteri için CRM'de açılan ayrı bölüm; müşterinin sistemi orada kurulur.
@@ -46,22 +47,32 @@ Kişiler:
 
 Niş ve teklif:
 - Niş: Sattığın şeyi kime satacağını belirleyen dar sektör (örnek: klima servisleri). On sekiz niş var, birini FounderOS seçer.
+- İdeal müşteri sayfası: Seçilen sektörün içindeki tek kişinin on iki başlıkta tarifi (derdi, korkusu, ne zaman satın alır, ne satın almaz). İş Beyni'nin on sekizinci bölümü; teklif, site, mesaj ve video buradan beslenir.
 - Niş kartı: Bir sektör hakkında bilinen her şeyin (fiyatlar, kaçan müşterinin bedeli, itirazlar, kim karar veriyor, yasaklar) yazılı olduğu hazır sayfa.
 - Dört sızıntı: İşletmenin müşteri kaybettiği dört yer: açılmayan telefon, geç dönülen mesaj, dönülmeyen form, geri aranmayan eski müşteri.
 - Duran havuz: İşletmenin elindeki, uzun süredir aranmamış eski müşteri listesi.
 - Kayıp birimi: İşletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şey: "bir boş gün", "bir koltuk saati", "bir keşif".
 - Dönüşüm Cümlesi: Ne sattığını tek cümlede söyleyen cümle. Beş parçası var: kime, hangi kayıp, hangi sonuç, hangi yöntemle, sonunda hangi duygu.
 - Bir dakikalık anlatım: Ne sattığını bir dakikada anlatan hazır metin; dördüncü günde teklifle birlikte yazılır, randevu telefonunda ve görüşmenin açılışında kullanılır.
+- Sızıntı puanı: Bir işletmenin dışarıdan görülen beş yerine bakılarak verilen sıfır ile beş arası puan; "bu işletme müşteri kaçırıyor mu" sorusunun cevabı.
+- Uygunluk puanı: Aynı işletmeye "bize para verebilir mi" diye bakılarak verilen sıfır ile on beş arası puan; A, B, C kademesine bölünür. Sızıntı puanıyla karıştırılmaz; derdi olan ama ödeyemeyen işletme listenin sonuna gider.
 - Sızıntı kanıtı: Niş kartında duran, o sektörde müşterinin nerede ve ne kadar kaybedildiğini gösteren rakamlı kanıt.
 - İşletmecinin sözlüğü: Niş kartında duran, o sektörün işletmecisinin kendi kullandığı kelimelerin listesi; mesaj da görüşme de o kelimelerle yazılır.
 - Sistemin adı: Sattığın sisteme nişe özel verilen iki üç kelimelik ad. Adı olmayan sistem saatlik işçilik gibi ucuz görünür.
 - Kademe 1, 2, 3: Sattığın sistemin üç boyu. Kademe 1 Hızlı Dönüş: cevapsız aramaya anında mesaj, yazılı asistan, randevu ve hatırlatma. Kademe 2 Tam Sistem, asıl satılan: üstüne eski müşterileri geri arama, Google yorumu toplama, aylık rapor. Kademe 3 Büyüme: üstüne reklam yönetimi; ancak büyüme şartı sağlanınca, en erken ikinci ay.
 - Görüşmede tek paket tek rakam: Görüşmede sadece Kademe 2 söylenir; üç kademe sitede durur.
 - Karşılaştırma fiyatı: Sitede duran pahalı seçenek; görüşmede söylenmez, aday onu görmüş gelir.
+- Fiyat bandı: Birinci blokta karttan çıkan alt ve üst rakam; kesin rakam üçüncü blokta konur. Öğrenciye "aralık" ya da "alt ve üst sınır" diye anlatılır.
+- Teslimat maliyeti: Bir müşteriye sistemi kurup yürütmenin sana saat ve para olarak maliyeti; fiyatın dört dayanağından biri.
+- Alan adı: Sitenin internet adresi, "dolusezon.com" gibi. Yıllık küçük bir ücretle alınır; bütçe merdiveninin alt basamağında ilk kanıta kadar ertelenir.
 - Deneme fiyatı: Hazırlık seviyen düşükse ilk iki müşteride kurulum ücretinin yarısı; indirim değil, karşılığında üç şey alınır.
 - Üç karşılık: Deneme fiyatının karşılığı: rakamları paylaşma izni, isim ve logo izni, yirmi birinci günde kısa bir video.
 - Güvence: Müşteriye verdiğin söz: yirmi birinci günde rapor; raporda üç sayı görünür (sisteme gelen talep, sistemin yazdığı randevu, eski müşteri listesinde ulaşılan kişi), kurulamayan parçanın satırı boş kalır ve sayılmaz, yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Şartı: müşteri giriş izinlerini kurulum görüşmesinde, karşılama formunu ve duran havuz onayını yedinci güne kadar verir. Eski müşteri listesinde İYS onaylı numara çıkmazsa geri çağırma parçası güvencenin sonucuna sayılmaz. Sayı sözü asla verilmez.
 - Garanti: FounderOS'un sana verdiği söz; müşteriye verdiğin güvenceden ayrıdır, görüşmede hiç anılmaz.
+- Bugünün listesi: CRM açılana kadar CRM'in yerine geçen İş Beyni bölümü: günün adayları, sıradaki hareket, cevap bekleyenler, takip günü gelenler. CRM açıldığı gün bir kerede oraya taşınır.
+- Havuz: Arayabileceğin işletme sayısı; "havuz doksan güne yeter" demek, listede doksan gün boyunca arayacak kadar işletme var demek.
+- Randevu ve görüşme: Randevu, yazılan saattir; görüşme, gerçekten yapılandır. Yazılan randevuların yaklaşık yüzde yetmişi görüşmeye dönüyor.
+- Canlıya girmek: Sistemin müşteride gerçekten çalışmaya başlaması; aylık ücret o gün başlar. Öğrenciye "sistem çalışmaya başlayınca" diye anlatılır.
 - Bot: İşletmecilerin yazılı asistana taktığı ad. Biz bot satmıyoruz; bu kelimeyi işletmeci söyler, biz "kaçan aramanın randevuya dönmesi" deriz.
 - Kanıt hikâyesi: Bir müşteride ne yaptığını gerçek rakamla anlatan kısa yazı; ilk müşterinin yirmi birinci gününde çıkar. Ondan önceki kanıtın deneme araması (sorunun kanıtı) ve demo hattındaki canlı sistemdir (çözümün kanıtı).
 - Büyüme şartı: Kademe 3 ve ek hizmetlerin açılma şartı: Kademe 2 ilk müşteride sorunsuz teslim edilmiş ve yirmi birinci gün raporu çıkmış olacak.
@@ -88,9 +99,9 @@ Ulaşma:
 - İtiraz videosu: Bir ile iki dakikalık, tek itiraza cevap veren kısa video. Üç tane, niş kartındaki üç itirazdan. Ön görüşme sayfasında videonun altında durur.
 - Site videosu: Sitenin ortasına giren uzun tanıtım videosu. İlk müşteriden sonra çekilir, sebebi kanıtın ve reklam bütçesinin o zaman oluşmasıdır. Yedinci günde yeri açılır ama boş kalır.
 - Video mesaj: Yazı yolunda en çok istenen yüz işletmeye çektiğin, adaya özel, bir dakikalık, telefonla çekilmiş video; ilk yazılı temasın üçüncü günü, cevap gelmediyse gider. Ön görüşme videosundan ayrıdır.
-- Landing page: Tek işi olan tek sayfalık site. Bizimkinin tek işi randevu aldırmak. Dokuz bölümü var: sonuç şeridi, başlık ve açıklama, iki düğme, video alanı, müşteri yorumları, örnek çalışmalar, nasıl çalışır, görüşme planlama, son çağrı. İlk müşterinden önce üçü gizli durur. Yedinci günde kurulur.
-- Önizleme adresi (localhost): Sitenin yalnızca senin bilgisayarında açıldığı geçici adres. İnternette değildir, kimseye gönderilmez; yayına almadan önce kontrol için kullanılır.
-- Vercel: Siteni internette yayınlayan ücretsiz servis. Yedinci günün son adımı siteyi oraya koymak.
+- Landing page (tanıtım sayfası): Tek işi olan tek sayfalık site. Bizimkinin tek işi randevu aldırmak. On bölümü var: üst çubuk, açılış, dert, bedel, ne yapıyoruz, neden biz, kim, güvence, sorular, son çağrı. Hiçbir bölüm boş ya da gizli durmaz; kanıt gerektiren yerler müşteri gelene kadar elimizde olanla dolu, müşteri gelince değişir. Birinci günde kurulur, ikinci blokta yayına çıkar.
+- Önizleme: Sayfanın yayına çıkmadan önce ekranda kart olarak açılan hali. FounderOS ona telefon ve masaüstü genişliğinde bakar; öğrenci tıklayıp görür. İnternette değildir.
+- Yayın servisi (Vercel): Siteni internette yayınlayan ücretsiz servis. Orta ve üst basamakta ikinci blokta kendi alan adıyla oraya konur; alt basamakta ilk kanıta kadar ücretsiz adres kullanılır.
 - Niteleme: Adayın gerçekten alıcı olup olmadığını anlama: sorunun farkında mı, parası var mı, kararı kim veriyor.
 - Kilit: Değiştirilmeyen şey ve eşiği. Dört ayrı kilit var. Mesaj metni: iki yüz temasta sadece bakılır, üç yüz temasta karar verilir. Teklifin kelimeleri: on görüşme birikmeden ve aynı işaret o onun en az beşinde görülmeden değişmez. Fiyatın rakamı: otuz görüşme birikmeden değişmez. Niş: doksan gün ya da beş müşteri boyunca kilitlidir; tek istisnası üç yüz temas yapılmış ve hiç görüşme çıkmamış olmasıdır. Dördünün de kararını degisiklige-karar-ver verir.
 - Gelir planı: Birinci günde hedef gelirden geriye doğru kurulan hesap: kaç müşteri, kaç görüşme, kaç randevu, kaç arama, kaç gün. İş Beyni'nde durur, dördüncü günde fiyat kesinleşince ve üç yüzüncü temasta güncellenir.

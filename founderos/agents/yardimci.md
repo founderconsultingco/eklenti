@@ -1,6 +1,6 @@
 ---
 name: yardimci
-description: FounderOS'un arka plan yardımcısı. Ağır ve uzun işleri ana konuşmayı şişirmeden yapar: canlı niş sayımı, uzun kayıt okuma, aylık rapor derlemesi, çok sayfalı araştırma. Sonucu tek özet olarak döner.
+description: FounderOS'un arka plan yardımcısı. Ağır ve uzun işleri ana konuşmayı şişirmeden yapar: canlı niş sayımı, ideal müşteri araştırması (yorumlar, gruplar, ilanlar), uzun kayıt okuma, aylık rapor derlemesi, çok sayfalı araştırma. Sonucu tek özet olarak döner.
 tools: Read, Glob, Grep, WebSearch, WebFetch, Bash
 model: inherit
 ---

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gunu-planla
-description: Her sabah, altıncı günden itibaren. Dünü tek cümleyle okur, o günün tek işini, sayılarını ve sırasını verir.
+description: Her sabah, saha açıldıktan sonra. Dünü tek cümleyle okur, o günün tek işini, sayılarını ve sırasını verir.
 ---
 
 # gunu-planla

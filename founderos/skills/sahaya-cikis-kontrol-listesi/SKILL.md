@@ -34,9 +34,9 @@ Bu dörtten biri eksikse saha yine açılır. Eksik olan kapanış anında ortay
 
 ## Üç: randevu ve takip
 
-9. **Randevu takvimi.** Bir aday takvimden randevu alabiliyor. Kanıt: bağlantıyı kendine gönder, kendin bir randevu al, takvimde gör, sonra iptal et.
-10. **Hatırlatma.** Randevu alındığında giden mesaj ve görüşmeden önce giden hatırlatma metinleri hazır ve senin onayından geçmiş. Kanıt: sen aldığın deneme randevusunda mesajlar sana geldi mi.
-11. **CRM.** Dokuz aşama açık, bir deneme kaydı açıp aşamalar arasında gezdirdin ve sonra sildin. Kanıt: ekran.
+9. **Randevu yolu.** CRM açıldıysa: bir aday takvimden randevu alabiliyor; kanıt, bağlantıyı kendine gönder, randevu al, takvimde gör, iptal et. CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir): sayfadaki düğme WhatsApp'ına gidiyor ve verdiğin saati İş Beyni'nin "Bugünün listesi" bölümüne yazıyorum; kanıt, düğmeye bas, mesaj sana düşsün.
+10. **Hatırlatma.** Randevudan bir gün önce ve iki saat önce gidecek metinler hazır ve senin onayından geçmiş. CRM varsa kendiliğinden gider; yoksa sen gönderirsin, metni ben veririm. Kanıt: metinler İş Beyni'nde.
+11. **Kayıt yeri.** CRM açıldıysa dokuz aşama açık, bir deneme kaydı açıp aşamalar arasında gezdirdin ve sildin; kanıt ekran. CRM açılmadıysa İş Beyni'nin "Bugünün listesi" bölümü açık ve bugünün adayları orada; kanıt, "durum" yazınca listeyi gösteriyor.
 12. **Günlük sayı görünümü.** Her akşam bakacağın sayılar FounderOS'tan geliyor: temas, cevap, randevu, görüşme. Kanıt: "gün" yazınca sıfırları gösteriyor.
 
 ## Dört: anlatım ve prova

@@ -27,7 +27,7 @@ Pazarlamadaki karşılığı: sitenin işi seni satmak değil, şüpheyi kaldır
 ## 2. Ne zaman çalışır
 - Birinci gün: tanıtım sayfası tam olarak kurulur, iki genişlikte kontrol edilir, öğrenci gözüyle görür. Canlıya çıkmaz. Bir saat; yarısı kurmak, yarısı bakıp düzeltmek.
 - İkinci gün, araçlar kurulduktan sonra, bir saat: sayfa yayına alınır, takvim sayfaya yerleşir. Sayfayı FounderOS kurar, sen bu pencereden bakarsın; hiçbir adımda komut satırı yok.
-- İlk kanıt hikâyesi çıkınca üçüncü kez: gizli duran sonuç ve müşteri bölümleri açılır. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa ikinci gün halinde kalmaz.
+- İlk kanıt hikâyesi çıkınca üçüncü kez: güven satırı ve bedel bölümü gerçek rakama döner, müşterinin sözü ve örnek çalışma bölümleri eklenir. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa ikinci gün halinde kalmaz.
 
 ## 3. Ne okur
 
@@ -222,7 +222,7 @@ Bu adım randevu hatırlatmalarını da açıyor. Randevu alındığında giden 
 
 **Alt basamakta.** Bugün kendi internet adresini almıyorsun ve iş e-postası kurmuyorsun. Site, yayın servisinin verdiği ücretsiz adresle yayına çıkıyor ve bugünkü işini o adres görüyor: aradığın işletmeci adını Google'a yazınca sayfa çıkıyor, mesajındaki link bir yere gidiyor, ilgilenen adaya göndereceğin tek adres oluyor. Sayfanın kendisi diğer basamaklardakiyle aynı, tek fark adresin.
 
-Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin yirmi birinci gün raporu çıkıp kanıt hikâyen yazıldığı zaman. O gün hem para girmiş oluyor hem de sitede gösterecek bir sonucun oluyor. O gün alan adı alınır, ücretsiz adres yenisine yönlendirilir, iş e-postası kurulur ve site adresi İş Beyni'nde ve e-posta imzasında güncellenir. Bu, gizli bölümlerin açıldığı günün aynısı; ikisi tek işte yapılır.
+Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin yirmi birinci gün raporu çıkıp kanıt hikâyen yazıldığı zaman. O gün hem para girmiş oluyor hem de sitede gösterecek bir sonucun oluyor. O gün alan adı alınır, ücretsiz adres yenisine yönlendirilir, iş e-postası kurulur ve site adresi İş Beyni'nde ve e-posta imzasında güncellenir. Bu, sayfanın müşteri rakamıyla güncellendiği günün aynısı; ikisi tek işte yapılır.
 
 O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki altıncı günde şaşırma.
 
@@ -248,8 +248,8 @@ Bitince, ikinci blok: "Sayfa yayında. Linkini artık mesajına koyabilirsin."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: alan adı ve nereden alındığı, alan adı bugün alınmadıysa hangi basamak yüzünden ertelendiği ve hangi güne ertelendiği, canlı site adresi (alt basamakta yayın servisinin verdiği ücretsiz adres), ön görüşme sayfasının adresi, proje klasörünün yeri, siteyi yeniden başlatma komutu, sayfanın metin sürümü ve tarihi, iş e-postası ve alıştırma başlangıç tarihi, hangi bölümlerin gizli olduğu.
-Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-posta imzasına, ön görüşme sayfasının boş hali gorusmeye-getir'e, iş e-postası adaya-mesaj-yaz'a, gizli bölümlerin listesi ve ertelenmiş alan adı ilk kanıt hikâyesi çıktığında birlikte açılmak üzere kanitini-hazirla'ya.
+İş Beyni'ne: alan adı ve nereden alındığı, alan adı bugün alınmadıysa hangi basamak yüzünden ertelendiği ve hangi güne ertelendiği, canlı site adresi (alt basamakta ücretsiz adres), ön görüşme sayfasının adresi, sayfanın dosya yolu, sayfanın metin sürümü ve tarihi, her bölümün metninin nereden geldiği, iş e-postası ve alıştırma başlangıç tarihi, müşteri gelince değişecek bölümler, açılış görselinin kaynağı.
+Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-posta imzasına, ön görüşme sayfasının boş hali gorusmeye-getir'e, iş e-postası adaya-mesaj-yaz'a, müşteri gelince değişecek bölümlerin listesi ve ertelenmiş alan adı ilk kanıt hikâyesi çıktığında birlikte güncellenmek üzere kanitini-hazirla'ya.
 
 ## 8. Yedek yol
 
@@ -279,4 +279,4 @@ Sıradaki: aynı gün, siteden hemen sonra ön görüşme sayfası, randevu takv
 - İngilizce ekran yüzünden yayın adımı yarım kaldı: ekran görüntüsü istenir, adım aynı gün tamamlanır.
 - Sayfaya form, fiyat ya da uydurma yorum eklendi: kaldırılır, sebebi tekrar söylenir.
 
-Beş kural: boş sayfa yok (on bölümün metni İş Beyni'nden hazır gelir, öğrenci tek satır yazmaz) · sessiz bitiş yok (günün sonunda sayfa yayında) · onay (metin senin "tamam"ınla yayınlanır) · sahadan güncelleme (ilk müşteride gizli bölümler açılır, alt basamakta aynı gün kendi adresine geçilir) · sormaz söyler (sayfanın bölümlerini, sırasını, neyin konmayacağını ve adresin bugün mü ilk kanıttan sonra mı alınacağını FounderOS söyler).
+Beş kural: boş sayfa yok (on bölümün metni İş Beyni'nden hazır gelir, öğrenci tek satır yazmaz) · sessiz bitiş yok (günün sonunda sayfa yayında) · onay (metin senin "tamam"ınla yayınlanır) · sahadan güncelleme (ilk müşteride güven satırı, bedel ve iki yeni bölüm gerçek rakamla gelir; alt basamakta aynı gün kendi adresine geçilir) · sormaz söyler (sayfanın bölümlerini, sırasını, neyin konmayacağını ve adresin bugün mü ilk kanıttan sonra mı alınacağını FounderOS söyler).

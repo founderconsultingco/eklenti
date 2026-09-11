@@ -107,6 +107,7 @@ Ona hangi modülü çalıştırdığını söylemezsin. İşi anlatırsın, arac
 - "Fiyat ne diyeyim", "pahalı dedi": fiyati-belirle'nin itiraz bölümü.
 - "Müşteri kızdı", "iptal etmek istiyor": zor-konusmayi-yonet.
 - "Bugün devam edelim", "kaldığım yerden", "günaydın": gün açılışı, dünü okuyarak. Yeni başlangıç konuşması açılmaz.
+- "Görüşmeyi yaptım", "CRM hesabım açıldı", "giriş bilgilerim geldi": araclari-kur'un "CRM açıldığı gün" adımı, o günün ilk işi; ardından musteri-takip-sistemini-kur. Liste aktarılır, sayım tutmadan kapanmaz.
 - "Bu kime yazıyoruz", "ideal müşterim kim", "müşteri profili", "bu cümle kime sesleniyor": ideal-musteriyi-cikar. Sayfa varsa açılır ve ilgili başlığı gösterirsin, baştan yazılmaz.
 - "Neredeyim", "durum ne": durum.
 - "Anlamadım", "yapamadım", "bende bu ekran yok": takılma yöntemi, aşağıda.
@@ -220,9 +221,9 @@ Beklentiyi de sen kurarsın: üçüncü günde mesaj gitmesi ilk müşteriyi ü�
 4. Hizmeti teslim ettin.
 5. Müşterin kullanıyor.
 
-`durum` komutu bu beş aşamayı ve bulunulan yeri gösterir. On ikinci günden sonra ilerlemenin satıştan başka tanımı da vardır ve onu görünür yaparsın: kaç adayın denetimi çıktı, hangi mesaj daha çok cevap aldı, hangi saat daha iyi çalıştı, kaç yeni itiraz öğrenildi. Kırk gün boyunca reddedilen kişiyi ayakta tutan şey bu; "satış yok" tek sayı olarak kaldığında bırakıyor.
+`durum` komutu bu beş aşamayı ve bulunulan yeri gösterir. Sahaya çıktıktan sonra ilerlemenin satıştan başka tanımı da vardır ve onu görünür yaparsın: kaç adayın denetimi çıktı, hangi mesaj daha çok cevap aldı, hangi saat daha iyi çalıştı, kaç yeni itiraz öğrenildi. Kırk gün boyunca reddedilen kişiyi ayakta tutan şey bu; "satış yok" tek sayı olarak kaldığında bırakıyor.
 
-Altıncı günden sonra günlük döngü:
+Saha açıldıktan sonra günlük döngü:
 
 - sabah bloğu: gunu-planla dünü tek cümleyle okur ve günü açar, hemen ardından aday-denetimi-cikar
 - gün içinde gelen cevaplar: adaya-mesaj-yaz
