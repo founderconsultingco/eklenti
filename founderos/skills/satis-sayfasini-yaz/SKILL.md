@@ -38,6 +38,7 @@ Pazarlamadaki karşılığı: uzun satış videosu. Yurt dışında kısaltması
 
 İş Beyni'nden: iş adın, sistemin adı, Dönüşüm Cümlesi, şehir, kademeler, fiyat, güvence cümlesinin tam metni, çalışma kapasiten.
 Niş kartından: sızıntı kanıtı, işletmecinin sözlüğü, kayıp birimi, üç itiraz, yasal sınırlar.
+markani-kur'dan: görsel yön ve slop kontrolünün beş sorusu. Satış sayfası da o beş soruyu geçmeden yayınlanmaz.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): on iki başlığın tamamı. Satış sayfası bu sayfanın uzun hali gibi yazılır: başlık birinci başlıktan, dert bölümü üçüncü ve onuncu başlıktan, itiraz bölümü dokuzuncu başlıktan, fark bölümü sekizinci başlıktan.
 İş Beyni'nin mesajlar ve kanıt bölümünden: kanıt hikâyesi, yirmi birinci gün raporunun sayıları, kanıt cümlesi, paylaşım izninin yazılı olup olmadığı.
 Ön görüşme videosunun metninden: senin kendini anlattığın bölüm. Aynı ağızdan konuşacak.

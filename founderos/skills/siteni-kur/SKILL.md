@@ -134,6 +134,8 @@ Arial, Helvetica, Times New Roman, Roboto ve Inter kullanılmaz. Bunlar varsayı
 
 **Renk.** Marka kitinin renkleri kullanılır. Bir renk baskın olur, bir renk vurgu olur, gerisi gri skala. Eşit dağılmış üç dört renk sayfayı kararsız gösteriyor.
 
+**Slop kontrolü sayfada da geçerli.** markani-kur'daki beş soru burada da sorulur, sayfa gösterilmeden önce: koyu zemin artı tek parlak vurgu mu, düzen büyük başlık artı üç kart artı düğme mi, tek gerçek fotoğraf yok mu, bütün bölümler aynı genişlik ve aynı ritimde mi, hiç insan izi yok mu. İkisi "evet"se sayfa yeniden kurulur. Bölümler farklı genişlikte olacak, en az biri tam genişlikte fotoğrafla; başlıkların hepsi büyük harf olmayacak.
+
 Beyaz zemin üstünde mor ve mavi geçişli kutu yapılmaz. Bu, yapay zekâ çıktısının en tanınan işareti ve sektörde herkes bıktı.
 
 **Düzen.** Varsayılan sıralamaya düşmezsin: koca bir başlık, altında yan yana üç kutu, altında alt bilgi. Bu düzen her yerde var ve hiçbir şey anlatmıyor. Bölümlerin ağırlığı farklı olacak: bir bölüm geniş nefes alacak, bir bölüm sıkı duracak. Simetri zorunlu değil.

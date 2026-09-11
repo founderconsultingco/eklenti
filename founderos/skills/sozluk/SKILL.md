@@ -16,7 +16,7 @@ Sistem ve dosyalar:
 - Arka plan yardımcısı: FounderOS'un ağır işleri (internetten canlı niş sayımı, görüşme kaydını okuma, aylık rapor) verdiği yardımcı; sen onu görmezsin, sonucu FounderOS anlatır. Aday listesini sen kendin çıkarıyorsun, o iş arka planda yapılmıyor.
 - İş Beyni: Senin hakkında bilinen her şeyin yazıldığı tek dosya, senin bilgisayarında. On üç bölümü var: kurucu, hedef ve para, niş, teklif ve fiyat, teslimat, marka ve varlıklar, araçlar ve hesaplar, listeler, mesajlar ve kanıt, sayılar, kararlar, müşteriler, açık işler. Hiçbir satır silinmiyor; değişen bilginin yenisi tarihiyle altına yazılıyor.
 - Kurucu bölümü: İş Beyni'nde seni anlatan dört satır: seni ne motive eder, ne durdurur, daha önce nerede bıraktın, nerede düşme riskin var.
-- Marka kiti: İşinin nasıl görüneceğini tek yerde toplayan dosya: ad, logo, renkler, yazı tipleri, kullanım kuralları ve hazır şablonlar. Altıncı günde kurulur, on altı panodan oluşur.
+- Marka kiti: İşinin nasıl görüneceğini tek yerde toplayan dosya: ad, logo, renkler, yazı tipleri, kullanım kuralları ve hazır şablonlar. Birinci gün kurulur, on panodan oluşur.
 - Pano: Marka kitindeki tek bir tasarım sayfası. On altı pano tek tahtada yan yana durur.
 - Claude Design: Claude'un içinde çalışan tasarım tahtası. Birçok tasarımı tek sayfada yan yana koyar, üstünde tıklayıp yazı ve renk değiştirmene izin verir, sonunda hepsini görsel olarak indirirsin.
 - Görsel yön: Marka kitinin bütün panolarında uyulan sabit görünüm kuralı. Üç yön var (sağlam ve yüksek kontrastlı, sakin ve temiz, ölçülü ve kurumsal); FounderOS nişe göre seçer.

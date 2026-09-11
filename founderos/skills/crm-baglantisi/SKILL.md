@@ -60,5 +60,3 @@ Sunucu kontrolü var. Anahtar `https://founderos.so/lisans?anahtar=ANAHTAR` adre
 İkinci kilit CRM hesabıdır: anahtarı olmayan kişinin hesabı da yoktur, hesabı olmayan sistem hiçbir işini yapamaz.
 
 Kopyalanmayı tamamen engellemeye çalışmıyoruz. Paketin içi metin ve metin kopyalanır. Kopyalanamayan şey CRM hesabı ve arkasındaki hazır paket; değer orada duruyor.
-
-Sonradan sunucu kontrolü eklenecekse yeri burasıdır. Anahtar bağlantı kurulurken bir uca sorulur, cevap "geçerli" değilse bağlantı kurulmaz. Modüllerin hiçbiri değişmez.

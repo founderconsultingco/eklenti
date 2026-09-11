@@ -72,6 +72,10 @@ Bu bilgi teklifi-yaz ve adaya-mesaj-yaz modüllerine gider. Rakip varsa niş dü
 
 nisi-sec'e üç satır ve altı sütunluk bir tablo döner. Her hücrede rakam ve o rakamın nereden geldiği yazar. Tablonun altında tek satır: birinci aday şu, sebebi şu.
 
+**Bulunamayan hücreye "ölçülemedi" yazılır ve boş bırakılmaz.** Altı sütunun hepsi her nişte dolmuyor; reklam veren oranı ve rakip sayısı en sık boş kalanlar. Boş bırakılan hücre öğrenciye "bakılmadı mı, sıfır mı" diye okunuyor. nisi-sec kararı anlatırken ölçülemeyen sütunu da söyler: "Reklam veren oranını ölçemedim, o yüzden bu karar diğer dört ölçüye dayanıyor." Eksik ölçü kararı durdurmuyor, ama saklanmıyor.
+
+**Rakamın kaynağı hem tabloda hem sohbette adlandırılır.** "Bursa'da 409 servis" yetmiyor; nereden sayıldığı söyleniyor. Kaynağı söylenmeyen rakam, öğrencinin müşteriye tekrarlayamayacağı rakamdır ve o rakam ilk görüşmede onu zor durumda bırakıyor.
+
 FounderOS bunu sana kendi cümlesiyle anlatır ve tabloyu gösterir.
 
 ### Veri konusunda bir not
