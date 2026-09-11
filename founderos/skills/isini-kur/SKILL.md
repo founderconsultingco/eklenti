@@ -26,7 +26,7 @@ Pazarlamadaki karşılığı: iş kurmak fikir bulmak değil, günlük bir sayı
 
 ## 2. Ne zaman çalışır
 
-- Birinci gün, tek oturumda. İki saat sürer. Mali müşavir araması bu iki saatin dışında, mesai saatinde yapılır.
+- Birinci blok, günün ilk işi. Kırk dakika sürer: on beş soru çoğunlukla seçenekli, üstüne kısa bir başlangıç değerlendirmesi. Mali müşavir araması bu sürenin dışında, mesai saatinde yapılır.
 - Beşinci gün ikinci kez, kısa bir kontrol için.
 
 ## 3. Ne okur

@@ -30,6 +30,8 @@ Pazarlamadaki karşılığı: aday listesi.
 - İkinci kez: her ay bir kere. Liste baştan yenilenir, yüz işletme yeniden seçilir, hızlı denetimler tazelenir.
 - Üçüncü kez: liste beş yüzün altına düştüğünde ya da pazar değiştiğinde.
 
+**Liste bozuk geldiğinde önce yeniden puanlanır, yeniden çekilmez.** Bu kural senin cebinle ilgili: çekim para harcıyor, puanlama bedava. "Listedekiler bana uygun değil" dediğinde yapılan ilk iş ideal müşteri sayfasını düzeltmek ve beş yüz kaydı o sayfaya göre yeniden puanlamak; bu birkaç dakika sürüyor ve tek kuruş harcamıyor. Liste ancak iki halde yeniden çekilir: kayıt sayısı beş yüzün altına düştüyse ya da şehir veya sektör değiştiyse. Bunun dışında bir daha çekim yapılmaz.
+
 ## 3. Ne okur
 
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): nişin, şehrin, kanal yolun, çalışma düzenin, seçtiğin yol, varsa liste çıkaran programın anahtarı.
@@ -50,7 +52,7 @@ Liste "hazır" demek için kayıt sayısı yetmez:
 
 1. Beş yüz kayıt var ve her birinde telefon ya da e-posta dolu; ikisi de boş olan kayıt listede değil.
 2. Örnekleme doğrulaması yapılmış: rastgele on kayıt açılmış, işletme gerçekten var, kategori doğru, numara çalışıyor. Onda üçten fazlası tutmuyorsa liste yeniden çekilir.
-3. En çok istenen yüz işletmenin her birinde uygunluk gerekçesi var: neden bu, tek satır.
+3. En çok istenen yüz işletmenin her birinde uygunluk gerekçesi var: neden bu, tek satır. Yüz işletme uygunluk kademesi A olanlardan seçilir; A yüze yetmezse eksik kalan yer B kademesinden sızıntı puanı yüksek olanlarla tamamlanır ve kaç tanesinin B'den geldiği yazılır.
 4. Liste CRM'e ya da CRM yoksa İş Beyni'nin on beşinci bölümüne yüklenmiş ve sayım tutuyor.
 
 Dördü tamam olmadan liste "hazır" sayılmaz ve on dördüncü bölüme yazılmaz.

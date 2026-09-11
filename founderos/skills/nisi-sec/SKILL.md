@@ -189,7 +189,7 @@ Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: "Yarın ne sattığını tek cümleyle yazacaksın. Fiyat bandı bugün, kesin rakam üçüncü gün. Teklif hazır, sadece bu sektöre çevrilecek."
+Sıradaki: "Şimdi bu pazarın içinden sana para verecek tek kişiyi çıkarıyoruz, sonra ona ne sattığını yazıyoruz. Fiyat bandı bu blokta, kesin rakam üçüncü blokta."
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üç adaydan hiçbiri para elemesini geçemedi: eşik değil kart eksiktir, kapasite bilgisi olmayan kartlar işaretlenir.

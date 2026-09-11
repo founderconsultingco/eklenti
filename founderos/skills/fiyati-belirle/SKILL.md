@@ -170,6 +170,7 @@ Sıradaki: "Aynı günün ikinci yarısında paranın yolunu ve tanıdık listen
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Fiyatı sesli söylerken üç denemede rakam düşüyor: prova sayacına "fiyat provası" yazılır.
 - Fiyat itirazı son on görüşmenin yarısından fazlasında çıktı: teklifi-yaz'a işaret gider.
+- Onuncu görüşme tamamlandı: ideal-musteriyi-cikar yenileme için açılır. Sahada duyulan cümleler masabaşı satırlarının üstüne yazılır ve on sekizinci bölümün saha sürümü çıkar. Bu, teklifin kelimelerinin açıldığı eşikle aynı eşiktir; ikisi aynı oturumda yapılır.
 - Kapanış oranı beklenenin üstünde: fiyat düşük, kari-hesapla'ya işaret gider.
 - İlk müşteri kazanıldı: aralık etiketi kalkar, rakam kesinleşir.
 - Otuz görüşme doldu: fiyat kilidi açılır, kapanış oranı ilk kez okunur, karar degisiklige-karar-ver'de verilir.

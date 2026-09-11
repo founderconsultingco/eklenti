@@ -40,6 +40,8 @@ Bu üç satır yoksa mesaj yazılmaz, aday aranmaz.
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): açılış cümlesi, işletmecinin kullandığı kelimeler, hangi kanal hangi saatte, fiyat gizli mi, sızıntı kanıtı, itirazlar, yasal sınırlar.
 
+İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): günü nasıl geçiyor (hangi saatte yazılacağını belirler), nereden bilgi alıyor (hangi kanaldan yaklaşılacağını belirler), üç dert ve alıntıları. Mesajın ikinci cümlesi bu alıntılardan birinin kelimeleriyle yazılır.
+
 CRM'den (adayların ve her temasın kaydedildiği takip programı): sahibinin adı, telefon, e-posta, Instagram, sızıntı puanı, en çok istenen yüz işletmeden mi, dört kanalın durum satırları, sıradaki hareket satırı, önceki temaslar, aşama.
 
 ## 4. Ne sorar

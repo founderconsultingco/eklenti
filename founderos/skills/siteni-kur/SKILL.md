@@ -34,6 +34,7 @@ Pazarlamadaki karşılığı: sitenin işi seni satmak değil, şüpheyi kaldır
 Marka kitinden: renkler, yazı tipleri, logo, düğme ve kart görünümü. Kiti PDF olarak dışa aktarırsın, sayfayı kurarken Claude'a yüklersin.
 İş Beyni'nden: iş adı, Dönüşüm Cümlesi, sistemin adı, şehir, kanal yolu, bütçe merdiveninin hangi basamağında olduğun, alan adı, takvim adresi, WhatsApp numarası. Takvim adresi sabah İş Beyni'nde boş duruyor; takvim bugünün ikinci yarısında gorusmeye-getir ile kuruluyor ve adresi o zaman geliyor. Sabah sayfada sadece yerini açıyorsun.
 Niş kartından: sızıntı kanıtı, işletmecinin sözlüğü, üç itiraz, yasal sınırlar.
+İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, müşterinin müşterisi, üç korku. Sayfanın başlığı birinci başlıktan, ilk bölüm üçüncü başlıktan, kanıt bölümü onuncu başlıktan çıkar. Hangi cümlenin hangi başlıktan geldiği öğrenciye söylenir.
 Doksan Gün Planı'ndan: kancalar ve sonuç tanımı.
 
 ## 4. Ne sorar

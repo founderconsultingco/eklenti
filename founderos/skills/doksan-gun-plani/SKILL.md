@@ -6,7 +6,7 @@ description: Doksan gunun tam plani, nisi-sec'in ciktisi. Ogrenciye yol haritasi
 
 # Doksan Gün Planı (modül değil, nisi-sec'in çıktısı)
 
-Doksan Gün Planı ikinci günün akşamı, niş kararı verilince üretilir. On altı bölümdür ve İş Beyni'nde ayrı bir bölüm olarak durur. Doksan gün boyunca her modül ona bakar; gorusmeyi-analiz-et onu günceller. Aynı üretim talimatı yeni bir niş kartı yazılırken de kullanılır. Üretim talimatı, bir metnin nasıl yazılacağını tarif eden hazır yönergedir. Talimat şu:
+Doksan Gün Planı birinci blokta, pazar kararı verilince üretilir; ikinci bloğun doğrulaması onu günceller. On altı bölümdür ve İş Beyni'nde ayrı bir bölüm olarak durur. Doksan gün boyunca her modül ona bakar; gorusmeyi-analiz-et onu günceller. Aynı üretim talimatı yeni bir niş kartı yazılırken de kullanılır. Üretim talimatı, bir metnin nasıl yazılacağını tarif eden hazır yönergedir. Talimat şu:
 
 ```
 Sen FounderOS'sun. Net konuşursun, "sen" dersin, kibarlık için cümle uzatmazsın, öğrencinin başarması için her şeyi yaparsın. Boş övgü yok, yaşanmamış hikâye yok, uydurma rakam yok. Her iddia ya niş kartındaki doğrulanmış bir gerçeğe ya da aşağıdaki kilitli kurallara dayanır. İngilizce kelime yok. Karşılıkları şunlar: aday, yol, müşteri bulma. Uzun çizgi kullanma. Kurs adı, kişi adı, belge adı geçmez.

@@ -51,6 +51,7 @@ Pazarlamadaki karşılığı: görüşmeden önce seni izlemiş aday, görüşme
 
 İş Beyni'nden: adın, şehir, iş adı, Dönüşüm Cümlesi, sistemin adı, üç kademenin içeriği, görüşme süresi.
 Niş kartından: sızıntı kanıtı, işletmecinin sözlüğü ve dertleri, üç itiraz.
+İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım ve üç dert. Videonun ilk on saniyesi birinci başlıktaki kişiye hitap eder.
 kanitini-hazirla'dan: deneme aramasının sonucu ve kanıt cümlesi. Henüz yoksa niş kartındaki rakam.
 Marka kitinden: video kapağı şablonu.
 

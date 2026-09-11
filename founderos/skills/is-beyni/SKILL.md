@@ -6,9 +6,9 @@ description: Is Beyni'nin on uc bolumlu semasi, yazma kurallari ve bos sablonu. 
 
 # İş Beyni (dosyanın yapısı)
 
-İş Beyni, öğrenci hakkında bilinen her şeyin yazıldığı tek dosya. Otuz sekiz modül ondan okuyor ve ona yazıyor. Bu bölüm o dosyanın hangi bölümlerden oluştuğunu, hangi modülün nereye yazdığını ve kuralları tanımlıyor. Modüller "İş Beyni'ne şunu yaz" dediğinde yazılan yer burada tarif edilen bölümdür.
+İş Beyni, öğrenci hakkında bilinen her şeyin yazıldığı tek dosya. Bütün modüller ondan okuyor ve ona yazıyor. Bu bölüm o dosyanın hangi bölümlerden oluştuğunu, hangi modülün nereye yazdığını ve kuralları tanımlıyor. Modüller "İş Beyni'ne şunu yaz" dediğinde yazılan yer burada tarif edilen bölümdür.
 
-Dosya öğrencinin bilgisayarında duruyor, tek dosya, on üç bölüm. Bölümlerin sırası ve adları sabit; modüller bu adlarla arıyor.
+Dosya öğrencinin bilgisayarında duruyor, tek dosya, on sekiz bölüm. Bölümlerin sırası ve adları sabit; modüller bu adlarla arıyor.
 
 ## Kurallar
 
@@ -119,6 +119,13 @@ Yazan: bütün modüller.
 ### 17. Takılmalar ve destek
 Öğrencinin takıldığı her yer: tarih, cümlesi ("anlamadım", "yapamadım", "bende bu ekran yok"), sorunun türü (bilgi, erişim, teknik hata, uygulama), ne denendi, çözüldü mü. Desteğe aktarılan durumlarda gönderilen özet ve gelen cevap. Destekten gelen çözüm buraya yazılır ve bir daha aynı yerde takılınca önce buraya bakılır.
 Yazan: bütün modüller.
+
+### 18. İdeal müşteri
+Nişin içindeki tek kişinin tarifi. On iki başlık: tek cümlelik tanım, günü nasıl geçiyor, üç derdi kendi cümleleriyle, üç korkusu, satın alma tetikleyicisi, karar biçimi, nereden bilgi alıyor, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar, müşterinin müşterisi, ne satın almaz, FounderOS'un yorumu.
+Her satırın yanında kaynağı yazılı ve her satır ya "bulgu" ya "yorum" diye işaretli; ikisi hiçbir zaman karışmıyor. Alıntılar düzeltilmeden duruyor.
+Eleme listesi bu bölümün altında: bu tipe satmıyoruz satırları. aday-listesi-cikar sıralamayı, aday-denetimi-cikar uygunluk puanını buradan alıyor.
+Sürüm ve tarih: masabaşı sürümü birinci blokta yazılıyor, saha sürümü onuncu görüşmeden sonra üstüne yazılıyor. Eski sürüm silinmiyor.
+Yazan: ideal-musteriyi-cikar, gorusmeyi-analiz-et.
 
 ## Doksan Gün Planı nerede duruyor
 
@@ -352,3 +359,24 @@ CRM bağlı değilken burası CRM'in yerine geçer. CRM bağlanınca "CRM'e taş
 ## 17. Takılmalar ve destek
 
 - (tarih, cümle, tür: bilgi/erişim/teknik/uygulama, denenen, çözüldü mü, destek özeti, gelen cevap)
+
+## 18. İdeal müşteri
+
+Sürüm: (masabaşı / saha) · Tarih: · Hedeflenen işletme büyüklüğü:
+
+Her satırın sonuna kaynağı ve işareti yazılır: (kaynak, bulgu) ya da (yorum).
+
+- 1. Tek cümlelik tanım:
+- 2. Günü nasıl geçiyor:
+- 3. Üç derdi, kendi cümleleriyle:
+- 4. Üç korkusu (satıcıya, teknolojiye, para kaybetmeye):
+- 5. Satın alma tetikleyicisi:
+- 6. Karar biçimi:
+- 7. Nereden bilgi alıyor:
+- 8. Daha önce ne denedi ve neden bıraktı:
+- 9. İtiraz olmayan itirazlar:
+- 10. Müşterinin müşterisi:
+- 11. Ne satın almaz (eleme listesi, en az beş madde):
+- 12. FounderOS'un yorumu (en fazla beş cümle, her biri "yorum" ile başlar):
+
+Saha sürümü: (onuncu görüşmeden sonra yazılır, masabaşı sürümü silinmez)

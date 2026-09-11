@@ -34,6 +34,7 @@ Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelim
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sızıntı nerede, açılış cümlesi, duran havuz, gerçek fiyatlar ve kapasite, işletmecinin gerçek dertleri ve iç sesi, asistan kuralları, rekabetin şekli, yasal sınırlar.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, doğrulama tablosundaki rakip notu, şehir.
+İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, üç korku, satın alma tetikleyicisi, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar. Teklifin her cümlesi bu başlıklardan birine bağlanır ve hangisine bağlandığı öğrenciye gösterilir.
 Sabit teklif metninden: kaçırılan talebi randevuya çeviren sistem, dört sızıntı, üç kademe.
 
 Dört sızıntı, işletmenin müşteri kaybettiği dört yerdir: açılmayan telefon, geç dönülen mesaj, dönülmeyen form, geri aranmayan eski müşteri.

@@ -57,9 +57,36 @@ Beşi de dışarıdan görünüyor, hiçbiri hesap açmayı gerektirmiyor.
 
 **5. Duran havuz izi.** Kartın duran havuz tiplerinden hangisinin bu işletmede olduğunu gösteren dışarıdan görülebilir işaret. En sık olanı yorum tarihleri: iki üç yıl öncesine giden yorumlar varsa o işletmenin eski müşteri listesi var demektir. Bulgu sayılan hal: eski yorumlar var ve son yorumlar seyrelmiş; yani müşteri gelmiş ve geri gelmemiş.
 
-Her satır bir puan. Toplam sıfırla beş arası ve adı **sızıntı puanı**. Puan CRM'e yazılır ve yüz işletme buna göre sıralanır. Aynı puandakiler yorum sayısına göre sıralanır, çünkü çok yorum çok iş demek.
+Her satır bir puan. Toplam sıfırla beş arası ve adı **sızıntı puanı**. Sızıntı puanı tek bir soruyu cevaplıyor: bu işletme müşteri kaçırıyor mu.
 
 Sıfır puan çıkan işletme listeden çıkmaz, listenin sonuna gider. Sıfır puan "sorunu yok" demek değil, "dışarıdan görülmüyor" demek.
+
+### Uygunluk puanı, aynı iki dakikada
+
+Sızıntı puanı "bu işletmenin derdi var mı" diyor. Uygunluk puanı ayrı bir soruya bakıyor: **bu işletme sana para verebilir mi.** İkisi ayrı sayıdır ve karıştırılmaz; derdi olan ama ödeyemeyen işletmeye harcanan yüz arama, doksan gününü yakan şeydir.
+
+Uygunluk puanı İş Beyni'nin on sekizinci bölümündeki ideal müşteri sayfasından üretilir. Sayfa değişince puan yeniden hesaplanır, liste yeniden çekilmez.
+
+Üç ağırlıkta sinyal var. Sinyallerin kelimeleri nişe göre değişiyor, ağırlıkları değişmiyor:
+
+**Güçlü sinyal, üç puan, en fazla altı.** Sahibin kendisi görünüyor: Google profilinde sahibin adı yazılı, sitede "kurucu" ya da "sahibi" bölümü var, Instagram'da sahibin yüzü var. Karar vereni bulduğun her işaret güçlü sinyaldir, çünkü tek kişilik işte en pahalı şey doğru kişiye ulaşmaktır.
+
+**Orta sinyal, iki puan, en fazla altı.** İşletmenin büyüklüğü ideal müşteri sayfasında işaretlenen bandın içinde: çalışan sayısı, araç sayısı, şube sayısı, yorum sayısı. Para veren işaretleri: reklam veriyor, randevu sistemi var, ücretli bir sayfası var. Bunlar "bu iş para harcıyor" demektir.
+
+**Zayıf sinyal, bir puan, en fazla üç.** Genel canlılık işaretleri: düzenli paylaşım, güncel çalışma saati, doldurulmuş profil. Tek başına hiçbir şey söylemez, eşitlik bozar.
+
+**Eleme, puana bakılmaz.** İdeal müşteri sayfasının on birinci başlığındaki "ne satın almaz" listesindeki her madde burada elemedir. Buna ek olarak her nişte sabit dört eleme var: işletme kapanmış ya da devren ilanı var, zincirin şubesi (kararı başka şehirde veriliyor), aynı hizmeti zaten alıyor (sitede randevu ve otomatik cevap sistemi görünüyor), kartın yasal sınırları o işletmeyi kapsam dışı bırakıyor. Elenen işletme listede kalmaz, "elendi" ve sebebiyle işaretlenir.
+
+**Sert sınırlar, eleme değil sıraya koyma.** Çok küçük olan (yorum sayısı çok düşük, tek kişi, profil neredeyse boş) listenin sonuna gider: derdi olabilir ama ödeyemez. Çok büyük olan (kendi pazarlama ekibi olacak kadar kalabalık) da sonuna gider: kararı sen ulaşamayacağın bir masada veriliyor.
+
+Toplam sıfırla on beş arası. Üç kademeye bölünür:
+- **A, on ve üstü.** Bugün aranır. En çok istenen yüz işletme buradan seçilir.
+- **B, altı ile dokuz.** Sıradaki hafta.
+- **C, beşin altı.** Toplu iş, mesaj ve e-posta; arama yapılmaz.
+
+**Sıralama iki sayıyla yapılır.** Önce uygunluk kademesi, sonra kademe içinde sızıntı puanı. Yani A kademesindeki beş sızıntılı işletme listenin en başında, B kademesindeki beş sızıntılı işletme ondan sonra duruyor. Sebebi şu: ödeyebilen ve derdi olan kişiyle konuşmak, derdi olan ama ödeyemeyen kişiyle konuşmaktan her zaman iyidir.
+
+**Puanlar CRM'e iki ayrı alan olarak yazılır.** Tek alanda toplanmaz. İlk otuz aramadan sonra hangi kademenin gerçekten randevu verdiğine bakılır; kademe eşikleri ancak o zaman değişir, kulaktan değil.
 
 ### Derin denetim, denetim kartı, sekiz dakika
 
