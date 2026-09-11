@@ -17,8 +17,8 @@ Elindeki ön görüşme videosuyla karıştırma. O video randevu almış adaya 
 Neden bugüne kadar beklendi: bu videonun gövdesi kanıt. Kanıt hikâyen yoksa video bir vaatler listesine dönüyor ve seni hiç tanımayan birinde vaatler listesi çalışmıyor. İkinci sebep: bu videoyu izleyecek insan reklamdan geliyor. Reklam bütçen yoksa videoyu kimse izlemiyor ve iki gün boşa gidiyor.
 
 Şunlar bu modülün işi değildir:
-- Ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, onuncu gün).
-- Tek sayfalık tanıtım sitesi (siteni-kur, altıncı gün). O sayfa duruyor, bu ayrı bir sayfa.
+- Ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, beşinci blok).
+- Tek sayfalık tanıtım sitesi (siteni-kur, birinci blok). O sayfa duruyor, bu ayrı bir sayfa.
 - Reklamın kendisi. Bu modül sadece reklamın gideceği yeri kurar. Reklam kurulumu bu pakette yok; büyüme şartı sağlandıktan sonra ayrı bir ek modül olarak geliyor.
 
 Pazarlamadaki karşılığı: uzun satış videosu. Yurt dışında kısaltmasıyla anılıyor, biz adını söylüyoruz.
@@ -26,7 +26,7 @@ Pazarlamadaki karşılığı: uzun satış videosu. Yurt dışında kısaltması
 ## 2. Ne zaman çalışır
 
 Üç şart birden sağlanınca açılır, biri eksikse açılmaz:
-- En az bir müşterinin yirmi birinci gün raporu çıkmış ve kanıt hikâyesi yazılmış olacak.
+- En az bir müşterinin rapor günü raporu çıkmış ve kanıt hikâyesi yazılmış olacak.
 - O müşteri hikâyesinin paylaşılmasına yazılı izin vermiş olacak.
 - Aylık reklam bütçesi ayırabiliyor olacaksın.
 
@@ -40,7 +40,7 @@ Pazarlamadaki karşılığı: uzun satış videosu. Yurt dışında kısaltması
 Niş kartından: sızıntı kanıtı, işletmecinin sözlüğü, kayıp birimi, üç itiraz, yasal sınırlar.
 markani-kur'dan: görsel yön ve slop kontrolünün beş sorusu. Satış sayfası da o beş soruyu geçmeden yayınlanmaz.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): on iki başlığın tamamı. Satış sayfası bu sayfanın uzun hali gibi yazılır: başlık birinci başlıktan, dert bölümü üçüncü ve onuncu başlıktan, itiraz bölümü dokuzuncu başlıktan, fark bölümü sekizinci başlıktan.
-İş Beyni'nin mesajlar ve kanıt bölümünden: kanıt hikâyesi, yirmi birinci gün raporunun sayıları, kanıt cümlesi, paylaşım izninin yazılı olup olmadığı.
+İş Beyni'nin mesajlar ve kanıt bölümünden: kanıt hikâyesi, rapor günü raporunun sayıları, kanıt cümlesi, paylaşım izninin yazılı olup olmadığı.
 Ön görüşme videosunun metninden: senin kendini anlattığın bölüm. Aynı ağızdan konuşacak.
 Görüşme analizlerinden: son otuz görüşmede en çok çıkan itiraz. Bu sayımı CRM yapmıyor; FounderOS itiraz satırlarını okuyup tekrar edeni buluyor, o yüzden itiraz her görüşmeden sonra kelimesi kelimesine yazılıyor.
 
@@ -65,7 +65,7 @@ Sıra değişmez. Her bölümün yanında ne yazacağın var. Köşeli parantezl
 
 **3. Vaat.** Ne kazanacağı, tek cümle. Bunu kurarken şunu koru: yeni kaynak eklemeden, elindekinden. "[Kayıp birimi] bütçenize dokunmadan, bugün zaten gelen [talep birimi]'nden daha fazlasını [sonuç birimi]'ne çeviren sistemi anlatacağım."
 
-**4. Teslim sözü.** Kim kuruyor, kaç günde. "Size özel kuruyorum, yirmi bir günde çalışır halde teslim ediyorum."
+**4. Teslim sözü.** Kim kuruyor, kaç günde. "Size özel kuruyorum, [21/28] günde çalışır halde teslim ediyorum."
 
 **5. Birinci kanıt, erken.** Birinci dakikadan önce, sen kendini tanıtmadan gelir. Bu videonun en önemli yapı kararı: izleyen "bu kim" diye düşünürken sistemin çalıştığını görüyor. Kanıt ekran kaydı ya da demo hattı kaydı, otuz kırk saniye. Ekranda tek satır yazı: ne izlediği.
 

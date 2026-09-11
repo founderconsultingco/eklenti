@@ -6,7 +6,7 @@ description: "Musteriyle imzalanacak hizmet sozlesmesinin sablonu. Sadece onay-b
 
 # Hizmet Sözleşmesi (modül değil, onay-belgesini-hazirla'nın kullandığı şablon)
 
-Bu şablon dördüncü günde kurulur ve her müşteride yalnız köşeli parantezler değişir. Metne kendin madde ekleme, çıkarma. Kendi hukukçun varsa bir kere okutmanı öneririm; bir kere okutulur, sonra her müşteride aynı metin kullanılır.
+Bu şablon üçüncü blokta kurulur ve her müşteride yalnız köşeli parantezler değişir. Metne kendin madde ekleme, çıkarma. Kendi hukukçun varsa bir kere okutmanı öneririm; bir kere okutulur, sonra her müşteride aynı metin kullanılır.
 
 ---
 
@@ -22,15 +22,15 @@ Taraflar birlikte "Taraflar" olarak anılacaktır.
 
 ### 2. Sözleşmenin konusu
 
-Bu sözleşmenin konusu, Müşteri'nin işletmesine gelen talebin karşılanmasını ve randevuya dönüştürülmesini sağlayan sistemin Hizmet Veren tarafından kurulması, canlıya alınması ve aylık olarak yürütülmesidir.
+Bu sözleşmenin konusu, Müşteri'nin işletmesine gelen talebin karşılanmasını, randevuya ya da fiyat teklifine dönüştürülmesini ve satışa kadar takibini sağlayan sistemin Hizmet Veren tarafından kurulması, canlıya alınması ve aylık olarak yürütülmesidir.
 
 Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parçasıdır.
 
 ### 3. Tanımlar
 
 **Sistem:** Ek-1'de sayılan parçaların bütünü.
-**Kurulum dönemi:** Kurulum ücretinin Hizmet Veren'in hesabına geçtiği günü izleyen 21 (yirmi bir) günlük süre.
-**Rapor:** Kurulum döneminin 21. gününde Müşteri'ye yazılı olarak verilen, Ek-2'de sayılan üç sayıyı gösteren belge.
+**Kurulum dönemi:** Kurulum ücretinin Hizmet Veren'in hesabına geçtiği günü izleyen [21/28] günlük süre. (Sayı, Hizmet Veren'in çalışma düzenine göre sözleşme doldurulurken yazılır: yirmi bir ya da yirmi sekiz.)
+**Rapor:** Kurulum döneminin son gününde ([21/28]. gün) Müşteri'ye yazılı olarak verilen, Ek-2'de sayılan üç sayıyı gösteren belge.
 **Giriş izni:** Müşteri'nin kendi hesapları üzerinden Hizmet Veren'e verdiği, Ek-3'te sayılan sınırlı yetkiler.
 
 ### 4. Hizmetin kapsamı ve teslim süresi
@@ -55,7 +55,7 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 
 ### 6. Güvence
 
-6.1. Hizmet Veren, kurulum döneminin 21. gününde Müşteri'ye raporu verir.
+6.1. Hizmet Veren, kurulum döneminin son gününde ([21/28]. gün) Müşteri'ye raporu verir.
 
 6.2. Raporda Ek-2'de sayılan sayıların tamamının sıfır olması halinde Hizmet Veren, izleyen ay için aylık ücret talep etmez ve sistemi ücretsiz olarak yürütmeye devam eder.
 
@@ -77,11 +77,11 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 
 ### 8. Hesap ve veri sahipliği
 
-8.1. Sistemin kurulduğu bütün hesaplar Müşteri'ye aittir ve Müşteri adına açılır.
+8.1. Ek-3'te sayılan kanal hesapları ve sistem için alınan telefon numarası Müşteri'ye aittir ve Müşteri adına açılır; sistemin kurulduğu platform hesabı madde 8.3'e tabidir.
 
 8.2. Müşteri'nin mevcut telefon numarasına dokunulmaz. Sistem için yeni numara alınması gerekiyorsa numara Müşteri adına ve Müşteri'nin hesabından alınır.
 
-8.3. Sözleşmenin sona ermesi halinde Hizmet Veren, kendisine tanınan bütün giriş izinlerinin kaldırılmasını talep eder ve sistemin çalışır halde Müşteri'de kalması için gereken bilgiyi yazılı olarak teslim eder.
+8.3. Sözleşmenin sona ermesi halinde Hizmet Veren, kendisine tanınan bütün giriş izinlerinin kaldırılmasını talep eder, kişi listesini dışa aktarıp Müşteri'ye teslim eder ve kendisindeki kopyayı siler. Sistemin kurulu hali (akışlar, mesaj şablonları, asistan ayarları) Hizmet Veren'in yönettiği platform hesabında bulunur ve Müşteri'ye devredilmez; sözleşme bitince kapatılır.
 
 ### 9. Kişisel veriler
 
@@ -99,13 +99,15 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 
 10.2. Hizmet Veren, Müşteri'nin adını ve çalışmadan elde edilen sonuçları kendi tanıtımında ancak Müşteri'nin yazılı onayıyla kullanabilir.
 
+10.3. [Deneme fiyatı uygulanıyorsa] Kurulum ücreti deneme fiyatıyla alınmıştır. Karşılığında Müşteri üç şeyi kabul eder: rapordaki sayıların paylaşılmasına izin, işletme adının ve logosunun tanıtımda kullanılmasına izin, rapor gününde kısa bir video. Videoda Müşteri'nin ya da çalışanlarının yüzü görünecekse ayrıca yazılı izin alınır. İzin sonradan geri alınırsa yayındaki ad, logo ve video kaldırılır; deneme fiyatı geri istenmez.
+
 ### 11. Fikri mülkiyet
 
 11.1. Hizmet Veren'in sistemi kurarken kullandığı yöntem, şablon ve yapılar Hizmet Veren'e aittir.
 
 11.2. Müşteri'nin verdiği içerik, marka ve veriler Müşteri'ye aittir.
 
-11.3. Müşteri, sistemin kurulu halini kendi işletmesinde kullanmaya devam edebilir; bu yapıyı üçüncü kişilere satamaz ve devredemez.
+11.3. Müşteri'nin kendi adına olan hesaplar (Google işletme profili, Facebook ve Instagram hesapları, WhatsApp numarası, takvim) ve kişi listesi Müşteri'de kalır. Sistemin kurulu hali Hizmet Veren'e aittir; Müşteri bunu üçüncü kişilere satamaz, devredemez ve kopyalayamaz.
 
 ### 12. Süre ve fesih
 
@@ -139,7 +141,7 @@ Taraflar arasındaki bildirimler madde 1'de yazılı e-posta adreslerine yapıl�
 
 ### 17. Yürürlük
 
-Bu sözleşme 17 (on yedi) maddeden ve 3 (üç) ekten oluşur, taraflarca okunarak [tarih] tarihinde elektronik ortamda imzalanmıştır.
+Bu sözleşme 17 (on yedi) maddeden ve 3 (üç) ekten oluşur, taraflarca okunarak [tarih] tarihinde elektronik ortamda ya da Müşteri'nin yazılı kabul beyanıyla imzalanmıştır; yazılı kabul beyanı bu belgeye eklidir.
 
 **Hizmet Veren:** [Ad Soyad], İmza
 **Müşteri:** [Yetkili Ad Soyad], İmza
@@ -155,7 +157,8 @@ Bu sözleşme 17 (on yedi) maddeden ve 3 (üç) ekten oluşur, taraflarca okunar
 - Konuşmayı yarıda bırakanın ve görüşüp karar vermeyenin takibi
 - Eski müşteri listesine dönüş turu; hizmet sonrası tekrar randevu, ek hizmet ve referans mesajları
 - Google değerlendirme isteme akışı
-- Yirmi birinci gün raporu ve aylık rapor
+- Rapor günü ([21/28]. gün) raporu ve aylık rapor
+- [Telefon altyapısı uygunsa] Gelen aramayı karşılayan sesli asistan ve cevapsız aramanın Müşteri adına alınan 0850 numaraya yönlendirilmesi
 [Teklifle çalışan işletmede "randevu" satırlarının yerine: işletmenin onayladığı teklifin gönderilmesi, cevabının ve kabulünün takibi, kabulde kapora ya da ödeme bağlantısı.]
 
 Kapsam dışı olanlar, her sözleşmede açıkça yazılır:
@@ -168,8 +171,10 @@ Kapsam dışı olanlar, her sözleşmede açıkça yazılır:
 ### EK-2: Raporda yer alan üç sayı
 
 1. Kurulum dönemi içinde sisteme gelen talep sayısı
-2. Sistem üzerinden yazılan randevu sayısı
+2. [Randevu yolunda: Sistem üzerinden yazılan randevu sayısı | Teklif yolunda: Sistemin takip ettiği teklif sayısı | İkisi birlikte: Sistem üzerinden yazılan randevu ve takip edilen teklif sayısı]
 3. Eski müşteri listesinden ulaşılan kişi sayısı
+
+(İkinci satırın hangisi olduğu, Ek-1'deki müşteri yolculuğuna göre sözleşme doldurulurken seçilir; köşeli parantez belgede kalmaz.)
 
 ### EK-3: Giriş izinleri
 
@@ -177,5 +182,6 @@ Kapsam dışı olanlar, her sözleşmede açıkça yazılır:
 2. Facebook sayfası ve iş portfolyosu: yönetici yetkisi
 3. Instagram işletme hesabı: bağlantı izni
 4. WhatsApp Business ve bağlı Meta hesabı: bağlantı izni
+5. [Telefon altyapısı uygunsa] 0850 numara başvurusu için vergi levhası ve operatörde cevapsız arama yönlendirmesi
 
 İzinler Müşteri'nin kendi hesapları üzerinden verilir, şifre paylaşılmaz. Sözleşme sona erdiğinde izinler kaldırılır.

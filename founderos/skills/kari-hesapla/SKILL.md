@@ -61,7 +61,8 @@ Kalemler sırayla:
 - Mali müşavir ücreti.
 - Bağ-Kur primi.
 - Vergi. Rakamı müşavirinden aldın.
-- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı, demo hattı. CRM ücretsiz, bu satıra yazılmıyor.
+- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı. CRM ve demo hattı ücretsiz, bu satıra yazılmıyor.
+- Sesli dakika: müşterilerinin sesli asistanının konuştuğu dakikalar, CRM'in ücret ekranından okunur, müşteri başına ayrı. Sesli asistan kurulmadıysa sıfır.
 - Ödeme komisyonu. Her tahsilattan kesilen yüzde.
 - Varsa reklam harcaması, varsa dışarıdan aldığın yardım.
 

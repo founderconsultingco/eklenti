@@ -55,7 +55,7 @@ Yazan: hizmet-akisini-ciz.
 ### 6. Marka ve varlıklar
 Marka kitinin yeri, renkler, yazı tipleri, logo ve en küçük boyutu, görsel yön. Dosya haritası: `marka/` altındaki her dosyanın adı, ne işe yaradığı, nerede durduğu; modüller logoyu ve görselleri buradan bulur. Eksik gerçek bilgiler satırı: henüz olmayan telefon, e-posta ya da adres ve hangi dosyayı beklettiği. Açılış görseli hangi kaynaktan (video kapağı, kurucu fotoğrafı, marka görseli).
 Instagram kullanıcı adı ve hesap yaşı, profil fotoğrafının yeri, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, biyografi metni ve sürümü.
-Alan adı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, siteyi yeniden başlatma komutu, sayfanın metin sürümü ve tarihi, müşteri gelince değişecek bölümler.
+Alan adı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, sayfanın metin sürümü ve tarihi, müşteri gelince değişecek bölümler.
 Video adresleri: ön görüşme videosu, üç itiraz videosu, deneme videosu, kanıt ekran kaydı.
 Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-sayfasini-yaz, isini-kur.
 
@@ -66,7 +66,7 @@ Claude aboneliğinin aylık tutarı.
 Demo hattının numarası, demo alt hesabı, demo kaydının yeri ve tarihi.
 Ödeme sağlayıcı ve link adresleri, şirket ve vergi levhası durumu, sözleşmenin sürümü ve doldurulma tarihi.
 CRM kurulumu: dokuz aşamanın doğrulandığı, kayıt satırlarının tam listesi, takip zincirinin günleri, aynı numaranın birleştiğinin doğrulandığı.
-Yazan: araclari-kur, musteri-takip-sistemini-kur, aday-listesi-cikar, kanitini-hazirla, onay-belgesini-hazirla, isini-kur (beşinci gün).
+Yazan: araclari-kur, musteri-takip-sistemini-kur, aday-listesi-cikar, kanitini-hazirla, onay-belgesini-hazirla, isini-kur (beşinci blok).
 
 ### 8. Listeler
 Sıcak çevre: A listesindeki kişi sayısı, B listesindeki kişi sayısı, listenin çıkarıldığı tarih, hangi kaynaklardan tarandığı.
@@ -93,7 +93,7 @@ Yazan: degisiklige-karar-ver.
 
 ### 12. Müşteriler
 Her müşteri için ayrı bir alt başlık. Bir müşterinin bu alt başlığının adı bilgi dosyası; modüller "bilgi dosyasına yaz" dediğinde yazılan yer burasıdır, ayrı bir dosya değildir.
-İçinde: adı, işletmesi, başlangıç tarihi, kademe, kurulum ve aylık ücret, kurulum döneminin günü, alınan giriş izinleri, İYS sonucu, karekodun yeri, asistanın kuralları, telefon hattının bilgileri ve sesli ajanın ayarları, haftalık kontrol sonuçları, kriz kayıtları, yirmi birinci gün raporunun üç sayısı, kapsam dışı kalan parçalar ve sebepleri, aktif mi, kim bağladı.
+İçinde: adı, işletmesi, başlangıç tarihi, kademe, kurulum ve aylık ücret, kurulum döneminin günü, alınan giriş izinleri, İYS sonucu, karekodun yeri, asistanın kuralları, 0850 numara ve hattın bağlandığı tarih (hat şifresi ve adresi hiçbir dosyaya yazılmaz) ve sesli ajanın ayarları, haftalık kontrol sonuçları, kriz kayıtları, rapor günü raporunun üç sayısı, kapsam dışı kalan parçalar ve sebepleri, aktif mi, kim bağladı.
 Ayrıca: aktif müşteri sayısı, ilk müşteri tarihi, müşteri başına haftalık saat.
 Yazan: musteriyi-karsila, musteri-sistemini-kur, yazili-asistani-kur, sesli-ajani-kur, kaybolanlari-geri-getir, yorum-topla, sistemi-kontrol-et, aylik-raporu-hazirla, musteriyi-elde-tut, zor-konusmayi-yonet, onay-belgesini-hazirla, kari-hesapla.
 
@@ -106,7 +106,7 @@ Yazan: bütün modüller.
 ### 14. Aşama ve tamamlanma
 Beş aşama ve her birinin durumu: hazırlık tamamlandı, ilk işletmeyle görüştün, ilk satışını yaptın, hizmeti teslim ettin, müşterin kullanıyor. Her aşamanın tamamlanma ölçütü ilgili modülde yazılı; burada her ölçütün yanında "tamam" ya da "eksik" ve tarih durur. Güzel bir paragraf aşamayı tamamlamaz; ölçütlerin hepsi "tamam" olmadan aşama kapanmaz.
 Aşama kapanınca tek satır: ne bitti, ne zaman, kanıtı nerede.
-Yazan: nisi-sec, teklifi-yaz, siteni-kur, aday-listesi-cikar, gorusmeyi-analiz-et, onay-belgesini-hazirla, musteri-sistemini-kur, durum.
+Yazan: nisi-sec, teklifi-yaz, siteni-kur, aday-listesi-cikar, sahaya çıkış kontrol listesi ("Hazırlık tamamlandı" satırı), gorusmeyi-analiz-et, onay-belgesini-hazirla, musteri-sistemini-kur, durum, kurulum (birinci günün kapanışında "Bulunulan aşama: 1").
 
 ### 15. Bugünün listesi
 CRM bağlı değilken CRM'in yerine geçen bölüm. Günün adayları, her birinin sıradaki hareketi ve kanalı, cevap bekleyenler, takip günü gelenler, dün ne oldu. Sabah okunur, akşam işlenir. CRM bağlanınca bir kerede oraya aktarılır ve bu bölüm "CRM'e taşındı, tarih" satırıyla kapanır. Aynı bilgi iki yerde tutulmaz.
@@ -339,7 +339,7 @@ Tek değişken kuralı: aynı hafta iki değişiklik yazılmışsa o testin veri
 - Sesli ajan ayarları:
 - Haftalık kontrol sonuçları:
 - Kriz kayıtları:
-- Yirmi birinci gün raporunun üç sayısı:
+- Rapor günü raporunun üç sayısı:
 - Kapsam dışı kalan parçalar ve sebepleri:
 - Aktif mi:
 - Kim bağladı:

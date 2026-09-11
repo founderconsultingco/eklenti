@@ -94,6 +94,14 @@ Bütün işlevler aynı kayıtlar ve aynı satış süreci üstünde çalışır
 
 **Randevu satış sayılmaz. Teklif kabulü ödeme sayılmaz.** Raporlar gerçekleşen ve kaydedilen olaylara dayanır.
 
+## Güvence cümlesi (tek kaynak, iki sürüm)
+
+Rapor günü ve güvence her yerde aynı cümleyle yazılır; sözleşme, onay belgesi, site, görüşme ve rapor bu cümleyi buradan alır. Rapor günü öğrencinin çalışma düzenine göre [21/28]. gündür: tam zamanlıda yirmi bir, işin yanında çalışanda yirmi sekiz; hangisi olduğu İş Beyni'nden okunur ve belgeye o sayı yazılır.
+
+Randevu yolunda: "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz."
+
+Teklif yolunda ikinci sayı değişir: "sistemin takip ettiği teklif sayısı". İkisi birlikte olan nişte ikinci sayı "sistemin yazdığı randevu ve takip ettiği teklif sayısı" olur. Gerisi aynı. Hangi sürümün geçerli olduğunu niş kartının "Müşteri yolculuğu" satırı söyler.
+
 ## Tek sistem, iki müşteri yolculuğu
 
 Her niş kartında hangi yolculuğun geçerli olduğu yazılıdır; hizmet-akisini-ciz onu okur ve teslimatı ona göre kurar.

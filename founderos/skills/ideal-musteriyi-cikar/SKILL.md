@@ -141,7 +141,7 @@ Sayfayı değiştirmek isterse, on görüşmeden önce: "Şu an elimizde sekiz g
 
 Niş kartına: sahada doğrulanan alıntılar, "Sahadan dolacak" bölümüne.
 
-Doksan Gün Planı'na: ideal müşteri satırı bu sayfanın birinci başlığıyla değiştirilir.
+Doksan Gün Planı üretilirken (bant konunca) bu sayfanın birinci başlığını sekizinci bölümüne alır; plan bu modülden sonra yazıldığı için burada bir şey değiştirilmez.
 
 ## 8. Yedek yol
 

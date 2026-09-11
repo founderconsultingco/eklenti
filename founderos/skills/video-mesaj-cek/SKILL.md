@@ -18,14 +18,14 @@ Videoya kimin gireceğini de bu modül seçmez. Seçimi adaya-mesaj-yaz'daki kar
 
 Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kendi elinle uğraşmak. Doğru yüz kişi, yanlış yüz bin takipçiden değerlidir.
 
-Şunlar bu modülün işi değildir: denetimin kendisi (aday-denetimi-cikar), hangi adaya hangi gün hangi kanalın geleceği kararı (adaya-mesaj-yaz), ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, ön görüşme sayfasında durur), kendi sisteminin demo ekran kaydı (kanitini-hazirla), yirmi birinci gün müşteri videosu, yazılı mesajlar (adaya-mesaj-yaz). Telefon yolunda video yok; orada en çok istenen yüz işletme aranır.
+Şunlar bu modülün işi değildir: denetimin kendisi (aday-denetimi-cikar), hangi adaya hangi gün hangi kanalın geleceği kararı (adaya-mesaj-yaz), ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, ön görüşme sayfasında durur), kendi sisteminin demo ekran kaydı (kanitini-hazirla), rapor günü müşteri videosu, yazılı mesajlar (adaya-mesaj-yaz). Telefon yolunda video yok; orada en çok istenen yüz işletme aranır.
 
 ## 2. Ne zaman çalışır
-- Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: ekran kaydı programı ve YouTube bir kez ayarlanır. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin. Kanal ikinci günde araçlarla birlikte açılmıştı, video oraya yükleniyor.
+- Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: ekran kaydı programı ve YouTube bir kez ayarlanır. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı, video oraya yükleniyor.
 - Altıncı günden itibaren, yazı yolunda, her gün. En çok istenen yüz işletmeye ilk yazılı temas günde beş adayla yayılır; bu beş, günün kırk e-postası ve otuz Instagram mesajının içindedir. Video, o ilk temasın üçüncü günü, cevap gelmediyse, iki kanaldan aynı gün gider. Yani her gün beş yeni ilk temas, beş video.
 - Videonun yeri saha bloğunun son yarım saatidir; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
 - İlk hafta ilk temas da video da günde üç, bir saat; ikinci haftadan itibaren ikisi de beş, doksan dakika. İşin yanında çalışıyorsan ilk temas da video da günde iki, saha bloğunun sonunda, kırk dakika; en çok istenen listen kırk işletme.
-- İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden yirmi birinci güne, ve şirket kuruluş günü. O günlerde iki değil bir video çekilir, süre yirmi dakikaya iner. Sebebi rakamda: yirmi bir günlük teslim elli saat alıyor ve o saatler akşamdan çıkıyor. Sıfır video günü yine olmaz.
+- İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde iki değil bir video çekilir, süre yirmi dakikaya iner. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor ve o saatler akşamdan çıkıyor. Sıfır video günü yine olmaz.
 - Yüz işletme yaklaşık dört haftada biter; ilk hafta üçle başladığın için birkaç gün fazlasıyla. Ay sonunda aday-listesi-cikar yeni yüz işletme seçer, aday-denetimi-cikar onların hızlı denetimini yapar.
 - Cevap gelirse o adaya video durur; konuşma adaya-mesaj-yaz'ın üç adımlı cevap konuşmasıyla sürer. Üç adım: önce dinlediğini belli edersin, sonra göremediği şeyi söylersin, sonra saat teklif edersin.
 
@@ -38,7 +38,7 @@ Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kend
 
 Kartın altıncı ve yedinci satırı da okunur: canlı arama testi ve yazılı test. Yaşanmış kanca oradan çıkıyor, "dün akşam yedide aradım, açan olmadı" cümlesinin kaynağı o satır.
 
-CRM'den: en çok istenen yüz işletme işareti, dört kanalın durum satırları, sıradaki hareket satırı, ilk temas tarihi ve kanalı, cevap durumu, sahibinin adı, Instagram hesabı, e-posta adresi.
+Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`): en çok istenen yüz işletme işareti, dört kanalın durum satırları, sıradaki hareket satırı, ilk temas tarihi ve kanalı, cevap durumu, sahibinin adı, Instagram hesabı, e-posta adresi.
 
 İş Beyni'nden: Dönüşüm Cümlesi, sistemin adı, şehir, Instagram hesabının yaşı, kanıt cümlesi, YouTube kanalı hazır mı.
 
@@ -109,7 +109,7 @@ Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yar
 
 Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit:
 
-"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini yirmi bir günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım[; deneme fiyatı açıksa: bu yüzden ay sonuna kadar kurulum ücretinde yarı fiyat uyguluyorum]. Siz ya da tanıdığınız biri bu tarife uyuyorsa on beş dakika görüşüp birkaç örnek göstereyim, uygun mu birlikte bakalım. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
+"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini [21/28] günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım[; deneme fiyatı açıksa: bu yüzden ay sonuna kadar kurulum ücretinde yarı fiyat uyguluyorum]. Siz ya da tanıdığınız biri bu tarife uyuyorsa on beş dakika görüşüp birkaç örnek göstereyim, uygun mu birlikte bakalım. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
 
 Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. "Yarı fiyat" fiyati-belirle'deki deneme fiyatının kendisidir ve yalnızca deneme fiyatı açıksa söylenir: hazırlık seviyesi düşük öğrencide ilk iki müşteri. Hazırlık seviyesi yüksek öğrenci bu cümleyi hiç söylemez; İş Beyni'ndeki deneme fiyatı işareti kapalıysa köşeli parantez içindeki cümle videoya girmez. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
 
@@ -160,7 +160,7 @@ Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutars
 
 Kurulum bir kez, beşinci gün:
 1. İkinci günün iş e-postasıyla açılmış Google hesabına gir (yoksa o e-postayla aç).
-2. O hesapla YouTube'a gir; kanal ikinci günde açılmıştı, videolar oraya yüklenir.
+2. O hesapla YouTube'a gir; kanal dördüncü blokta kisisel-markani-kur ile açılmıştı, videolar oraya yüklenir.
 
 Her gün, her video için:
 1. YouTube uygulamasını aç, alttaki artı işaretine bas, "video yükle" de.
@@ -186,7 +186,7 @@ Aynı video hem e-postadan hem Instagram'dan gittiyse bu tek harekettir, iki tem
 Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
 - **İki gün sonra, cevap yok:** Instagram'dan sesli mesaj takibi. "Geçen gün bir video göndermiştim, görmüş müydünüz? Görmediyseniz sorun değil." Adayın Instagram'ı yoksa bu takip e-postadan tek satır gider.
 - **Yedi gün sonra, cevap yok:** e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer ve altı ay sonra yeniden taranır. Adayın e-postası yoksa ayrılık mesajı Instagram'dan gider.
-- **Cevap gelirse:** beş dakika içinde aynı kanaldan üç adımlı cevap konuşması. Diğer kanalların sıradaki hareketi durur. CRM'de cevabın videodan sonra geldiği işaretlenir.
+- **Cevap gelirse:** beş dakika içinde aynı kanaldan üç adımlı cevap konuşması. Diğer kanalların sıradaki hareketi durur. Kayıt yerinde cevabın videodan sonra geldiği işaretlenir.
 
 Şaka ve hareketli görsel takibi yok. İkinci video yok; bir adaya bir video.
 
@@ -212,7 +212,7 @@ Cevap gelince: "Ahmet Bey videoya cevap yazdı: 'nasıl çalışıyor bu?' Anlat
 
 ## 7. Ne yazar
 
-CRM'de adayın kaydına: video kanal durumu satırı "yapıldı", gittiği tarih, hangi kanallardan gittiği, YouTube linki, sonucu ve sıradaki tarih. Tek sıradaki hareket satırı: iki gün sonrası Instagram sesli mesaj, yedi gün sonrası ayrılık. Temas sayacına bir temas. Bu adayın üçüncü, yedinci ve on dördüncü gün takibi kapatılır. Cevap gelirse "video sonrası" işareti.
+Kayıt yerinde (CRM ya da `adaylar.csv`) adayın kaydına: video kanal durumu satırı "yapıldı", gittiği tarih, hangi kanallardan gittiği, YouTube linki, sonucu ve sıradaki tarih. Tek sıradaki hareket satırı: iki gün sonrası Instagram sesli mesaj, yedi gün sonrası ayrılık. Temas sayacına bir temas. Bu adayın üçüncü, yedinci ve on dördüncü gün takibi kapatılır. Cevap gelirse "video sonrası" işareti.
 
 Denetim kartına dokunulmaz; kart aday-denetimi-cikar'ın çıktısıdır, buradan değiştirilmez.
 

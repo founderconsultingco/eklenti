@@ -17,8 +17,8 @@ Neden bu iş var: aradığın işletmeci telefonu kapattıktan sonra adını ar�
 İkinci sebep, daha önemlisi: bu işi tek kişi yapıyor. İşletmeci "şirketle mi çalışıyorum, adamla mı" diye düşünüyor ve doğru cevap ikincisi. Türkiye'de küçük işletmeye satarken insanın adı çoğu zaman şirketin adından güçlü. O yüzden profiller şirketi değil seni gösterir; şirket adı arkada durur.
 
 Şunlar bu modülün işi değildir:
-- Marka kiti (markani-kur, aynı gün sabah). Renkler, logo ve şablonlar oradan gelir.
-- Landing page (siteni-kur, yarın).
+- Marka kiti (markani-kur, birinci blok). Renkler, logo ve şablonlar oradan gelir.
+- Landing page (siteni-kur, birinci blokta kuruldu, ikinci blokta yayında).
 - İçerik üretmek. Profiller doldurulur, paylaşım yapılmaz. İçerik ikinci ayın işi.
 - Takipçi kasmak. Takipçi sayısı bu işte hiçbir şey getirmiyor.
 
@@ -31,7 +31,7 @@ Pazarlamadaki karşılığı: profil bir vitrin değil, kimlik kartı. İşi tan
 ## 3. Ne okur
 
 Marka kitinden: logo, renkler, kanal profil görselleri, e-posta imzası şablonu.
-İş Beyni'nden: kesin iş adı, kendi adın, şehir, Dönüşüm Cümlesi, sistemin adı, e-posta ve Instagram hesabının yaşı. Site adresi bugün yok, yarın akşam geliyor.
+İş Beyni'nden: kesin iş adı, kendi adın, şehir, Dönüşüm Cümlesi, sistemin adı, e-posta ve Instagram hesabının yaşı, canlı site adresi (altıncı bölüm; ikinci blokta yayına girdi).
 Niş kartından: işletmecinin sözlüğü.
 
 ## 4. Ne sorar
@@ -49,16 +49,16 @@ Hesap işletme hesabına çevrilir. Ayarlar, hesap türü, işletme hesabına ge
 Profil dört parçadan oluşur:
 - **Fotoğraf:** senin yüzün. Logo değil. Logo koyan tek kişilik işler şirket taklidi yapıyor gibi duruyor ve işletmeci bunu anlıyor.
 - **Ad satırı:** kendi adın, yanında ne yaptığın. "Ahmet Yılmaz, klima servislerine kaçan aramaları kazandırıyorum" gibi.
-- **Biyografi:** üç satır. Birinci satır kime ne yaptığın, Dönüşüm Cümlesi'nin kısaltılmış hali. İkinci satır kanıt; ilk müşteriden önce niş kartındaki rakam, sonra kendi rakamın. Üçüncü satır tek çağrı ve link. Instagram tek link alıyor ve o link siten oluyor, çünkü sayfada takvim zaten gömülü. Site yarın akşam yayına girene kadar üçüncü satır boş kalır; yayına girdiği akşam eklenir.
+- **Biyografi:** üç satır. Birinci satır kime ne yaptığın, Dönüşüm Cümlesi'nin kısaltılmış hali. İkinci satır kanıt; ilk müşteriden önce niş kartındaki rakam, sonra kendi rakamın. Üçüncü satır tek çağrı ve link. Instagram tek link alıyor ve o link siten oluyor; sayfanın düğmesi WhatsApp'ına, CRM açılınca takvimine gider. Site ikinci blokta yayına girdiği için üçüncü satır bugün dolu yazılır.
 - **Öne çıkan hikâye yok.** İçerik olmadan öne çıkan hikâye boş duruyor ve boş duran şey yeni açılmış izlenimi veriyor.
 
 Hesap yeniyse: hemen mesaj atmaya başlamazsın. Yeni açılmış bir hesaptan gelen mesaj daha kolay engelleniyor. Altıncı güne kadar hesabı normal kullanırsın; nişindeki işletmeleri takip edersin, gördüğün gönderilere gerçek yorum yazarsın. Bu, mesaj atmadan önce hesabın canlı görünmesini sağlıyor.
 
-Adaya mesaj atmadan önce onun bir gönderisine gerçek bir yorum yazma kuralı da buradan geliyor ve altıncı günde adaya-mesaj-yaz'da işliyor.
+Adaya mesaj atmadan önce onun bir gönderisine gerçek bir yorum yazma kuralı da buradan geliyor ve saha açılınca adaya-mesaj-yaz'da işliyor.
 
 ### WhatsApp Business
 
-Uygulama telefonuna kurulur, iş numarana bağlanır. Kişisel numaran değil.
+Uygulama ikinci blokta arama yapacağın numarayla kuruldu; bugün yalnız profil ve karşılama metni tamamlanır.
 
 Doldurulacaklar: işletme adı, kategori, kısa açıklama (Dönüşüm Cümlesi), çalışma saatleri, e-posta, varsa site adresi, profil görseli (marka kitindeki).
 
@@ -71,7 +71,7 @@ Not: bu senin kendi WhatsApp'ın, müşterinin sistemi değil. Müşteriye kurdu
 Üç satır, marka kitindeki şablondan:
 1. Kim olduğun. Adın ve ne yaptığın, unvan değil.
 2. Kanıt satırı.
-3. Tek çağrı: takvim linki.
+3. Tek çağrı: sitenin adresi (düğmesi WhatsApp'ına, CRM açılınca takvimine gider).
 
 Uzun yasal uyarı yok, motivasyon sözü yok, sosyal medya ikonları dizisi yok. Üç satırdan fazlası imza olmaktan çıkıp reklama dönüyor.
 
@@ -87,7 +87,7 @@ Kanala içerik yüklemiyorsun. Kanalın boş olması sorun değil, çünkü kims
 
 LinkedIn kurulmaz. Bizim kanallarımız telefon, e-posta, Instagram ve WhatsApp. LinkedIn'de küçük işletme sahibi yok.
 
-Paylaşım yapılmaz. Profiller doldurulur, gün biter. "Bir tanıtım gönderisi atayım" cümlesi ertesi güne sarkar ve o gün site günü.
+Paylaşım yapılmaz. Profiller doldurulur, gün biter. "Bir tanıtım gönderisi atayım" cümlesi ikinci aya sarkar; ilk kanıt gelmeden paylaşılacak bir şey yok.
 
 Takipçi satın alınmaz, takipleşme yapılmaz.
 
@@ -104,18 +104,19 @@ LinkedIn sorarsa: "LinkedIn'de senin müşterin yok. Klima servisi sahibi Linked
 
 İş Beyni'ne: Instagram kullanıcı adı ve hesap yaşı, işletme hesabına geçildiği, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, profil fotoğrafının yeri, biyografi metni ve sürümü.
 Bir sonraki modüllere: Instagram hesap yaşı adaya-mesaj-yaz'a (yeni hesapsa mesaj başlangıcı sahanın ilk gününe kilitlenir), YouTube adresi satis-videosunu-cek'e, WhatsApp numarası onay-belgesini-hazirla'ya.
+Siteye: bugün çekilen fotoğraf sayfanın Kim bölümüne konur ve sayfa yeniden yayınlanır (siteni-kur, on dakika); birinci günde fotoğrafsız kurulduysa bu adım atlanmaz.
 
 ## 8. Yedek yol
 
 - Fotoğrafın yoksa: gün durmaz, profiller doldurulur, fotoğraf ertesi sabah eklenir. Ama bir gün içinde eklenir.
-- Instagram hesabın hiç yoksa: bugün açılır ve "yeni hesap" işareti konur. Mesaj başlangıcı yine altıncı gün, ama günde beş yerine iki üç mesajla başlanır.
+- Instagram hesabın hiç yoksa: bugün açılır ve "yeni hesap" işareti konur. Mesaj başlangıcı yine sahanın ilk günü, ama günde beş yerine iki üç mesajla başlanır.
 - WhatsApp Business ikinci bir numara istiyorsa: demo hattı bu iş için kullanılmaz, o ayrı. Kişisel numaranı kullanabilirsin ama bunu İş Beyni'ne yazarız; ikinci hat alınca değişir.
 - İş adı henüz kesinleşmediyse: profiller kendi adınla açılır, iş adı sonra eklenir. Ad bekleyip gün kaybedilmez.
 - Sağlık nişindeysen: biyografide tedavi sözü, hasta görseli, "en iyi" gibi iddialar geçmez. Kartın yasal sınırlar bölümü senin profilin için de okunur.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: yarın site ve ön görüşme sayfası.
+Sıradaki: aynı blokta kanıt, mesaj metinleri ve ilk beş prova; beşinci blokta kalan provalar ve videolar.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Instagram hesabı üç aydan yeni: mesaj başlangıcı ve günlük mesaj sayısı buna göre ayarlanır.

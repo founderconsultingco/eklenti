@@ -11,7 +11,7 @@ description: "Öğrenci \"evet dedi\", \"kabul etti\", \"parayı gönderecek\" d
 Kapanış anının ve kapanıştan sonraki ilk saatin belgelerini hazırlayan modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Üç şey üretir:
 
 1. Ödemenin iki yolu, ikisi de hazır durur ve ikisi de birinci sınıftır. Birincisi ödeme linkleri: biri kurulum ücreti için tek seferlik, biri aylık ücret için düzenli ödeme. Düzenli ödeme, müşterinin kartından her ay kendiliğinden çekilen ödemedir. Sağlayıcın ikisini tek linkte topluyorsa tek link olur. İkincisi havale mesajı: hesap bilgisi, tutar ve açıklama satırı tek mesajda. Şirketin yokken de para alabilirsin.
-2. Sözleşme. Bir kere hazırlanır, her müşteride sadece adı ve rakamı değişir. CRM'in (adayların ve müşterilerin kaydedildiği takip programı) belge bölümünden imzalanır.
+2. Sözleşme. Bir kere hazırlanır, her müşteride sadece adı ve rakamı değişir. CRM açıksa belge bölümünden imzalanır; CRM açılmadıysa PDF gider ve müşterinin WhatsApp'taki yazılı kabulü imza sayılır (aşağıda).
 3. Onay belgesi. Para hesabına geçtikten sonra müşteriye giden tek sayfa.
 
 Neden var: sözlü "evet" ile paranın hesabına geçmesi arasındaki her dakika kayıp riskidir. Bir de şu var: insan bir şey satın aldıktan sonra pişmanlık çoğunlukla ilk iki günde gelir. O akşam eşi sorar: ne aldın, ne kadar verdin, ne yapacak bu kişi. Müşteri cevap veremezse ertesi sabah geri dönmek ister. Onay belgesi o soruların cevabını müşterinin eline verir.
@@ -32,10 +32,10 @@ Tek kural, karıştırma: onay belgesi para gelmeden gitmez. Sözleşme ve ödem
 
 ## 3. Ne okur
 
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): iş adın, sistemin adı, Kademe 2'nin bu nişteki içeriği, kurulum ve aylık rakam, deneme fiyatı işareti, güvence cümlesi ve şartı, hazırlık seviyesi, şirket ve vergi levhası durumu, ödeme sağlayıcın ve link adreslerin, havale mesajının hazır hali (hesap bilgisi, tutar satırı, açıklama satırı), mali müşavirinin adı ve faturanın ne zaman kesileceği sorusuna verdiği cevap, rakamın vergisi dahil mi hariç mi söyleneceği, sözleşmenin hangi sürümü elinde. Kademe 2, görüşmede satılan tam sistemdir. Güvence, müşteriye verdiğin sözdür: yirmi birinci günde rapor; raporda yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz.
-CRM'den: kapanan adayın kaydı, işletme adı, sahibinin adı, telefon ve e-posta, kapanış saati, kayıp rakamı ve birimi, kurulum görüşmesi tarihi.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): iş adın, sistemin adı, Kademe 2'nin bu nişteki içeriği, kurulum ve aylık rakam, deneme fiyatı işareti, güvence cümlesi ve şartı, hazırlık seviyesi, şirket ve vergi levhası durumu, ödeme sağlayıcın ve link adreslerin, havale mesajının hazır hali (hesap bilgisi, tutar satırı, açıklama satırı), mali müşavirinin adı ve faturanın ne zaman kesileceği sorusuna verdiği cevap, rakamın vergisi dahil mi hariç mi söyleneceği, sözleşmenin hangi sürümü elinde. Kademe 2, görüşmede satılan tam sistemdir. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz.
+Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`): kapanan adayın kaydı, işletme adı, sahibinin adı, telefon ve e-posta, kapanış saati, kayıp rakamı ve birimi, kurulum görüşmesi tarihi.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): "Yasal sınırlar" bölümündeki kısıtlar ve yasak vaatler (diş ve estetikte tanıtım yasağı, güzellikte hekim yetkisi gereken işlemler, sigortada acente unvanı, haşerede izin belgesi, emlakta İYS, oto galeride yetki belgesi).
-Doksan Gün Planı'nın beşinci bölümünden: teslimatın yirmi bir günlük takvimi.
+Doksan Gün Planı'nın beşinci bölümünden: teslimatın [21/28] günlük takvimi.
 
 ## 4. Ne sorar
 
@@ -70,7 +70,7 @@ Tabloyu FounderOS doldurur, sağlayıcıları yan yana koyar, adı sen yazarsın
 
 **Havale mesajı, bugün hazırlanır.** Tek mesaj, dört satır, kapanış anında kopyalanıp gönderilecek halde durur:
 1. Hesap bilgisi: hesabın hangi adla açık olduğu (senin adın ya da şirket unvanın), banka adı ve IBAN. Şube ve hesap numarası yazılmaz.
-2. Tutar: kurulum ücreti, rakamla, tek satır. Aylık ücret bu satırda yok; o otuz birinci günün işi ve mesajın altında ayrı bir cümleyle tarihiyle anılır.
+2. Tutar: kurulum ücreti, rakamla, tek satır. Aylık ücret bu satırda yok; o [31/38]. günün işi ve mesajın altında ayrı bir cümleyle tarihiyle anılır.
 3. Açıklama satırı: müşterinin havale ekranındaki açıklama kutusuna yazacağı metin. Kısa ve sabit: işletme adı ve "kurulum". Bunu yazdırmanın tek sebebi var, gelen parayı kimin gönderdiğini karıştırmamak.
 4. Tek cümle: "Gönderdikten sonra ekran görüntüsünü buraya atın; ben hesabıma düştüğünü görünce onay belgenizi göndereceğim."
 
@@ -86,7 +86,7 @@ Senin dolduracağın yerler: iki tarafın bilgileri, kurulum ücreti, aylık üc
 
 Şablonun kilit maddeleri şunlar ve neden orada olduklarını bilmen lazım:
 - Kapsam dışı kalan parça güvencenin sonucuna sayılmıyor. Yasal sınır ya da platform kuralı yüzünden kurulamayan bir parça varsa aynı gün yazılı bildiriyorsun.
-- Müşteri yükümlülüğünü geç yerine getirirse yirmi bir gün o günden başlıyor ve tahsilat aynı kadar öteleniyor. Bu maddeyi kimse okumuyor ama seni koruyan madde bu.
+- Müşteri yükümlülüğünü geç yerine getirirse [21/28] gün o günden başlıyor ve tahsilat aynı kadar öteleniyor. Bu maddeyi kimse okumuyor ama seni koruyan madde bu.
 - Sayı taahhüdü yok. Sözleşmede açıkça yazıyor: sonuç taahhüdü içermez.
 - Hesaplar müşterinin adına, şifre paylaşılmıyor, mevcut numarasına dokunulmuyor.
 - Liste müşterinin, sen sadece onun yazılı talimatıyla kullanıyorsun ve iş bitince siliyorsun. Gönderilecek metinleri müşteri onaylıyor.
@@ -94,11 +94,15 @@ Senin dolduracağın yerler: iki tarafın bilgileri, kurulum ücreti, aylık üc
 - Kurulum ücreti kurulum bittikten sonraki fesihte iade edilmiyor.
 - Deneme fiyatı varsa üç karşılık ayrıca yazılıyor.
 
-Üç karşılık, deneme fiyatının karşılığında aldığın üç şeydir: rakamları paylaşma izni, isim ve logo izni, yirmi birinci günde kısa bir video. Videoda müşterinin ya da çalışanlarının yüzü görünecekse ayrıca yazılı izin alınır. İzin sonradan geri alınırsa yayındaki isim, logo ve video kaldırılır. Fiyatın ne olacağını şablondaki madde belirler; sen müşteriye kendiliğinden "fiyat değişmez" demezsin.
+Üç karşılık, deneme fiyatının karşılığında aldığın üç şeydir: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video. Videoda müşterinin ya da çalışanlarının yüzü görünecekse ayrıca yazılı izin alınır. İzin sonradan geri alınırsa yayındaki isim, logo ve video kaldırılır. Fiyatın ne olacağını şablondaki madde belirler; sen müşteriye kendiliğinden "fiyat değişmez" demezsin.
 
-İmza CRM'in belge bölümünden atılıyor ve işini görüyor. Müşteriye "bu ıslak imza yerine geçer" gibi bir cümle kurmuyorsun; gerek de yok, imzalı belge ikinizde de duruyor.
+İmza iki yoldan atılır ve ikisi de geçerlidir; hangisi olduğunu CRM'in açık olup olmadığı belirler.
 
-Şablonu CRM'e kurma sırası, FounderOS adım adım söyler:
+**CRM açılmadıysa (başlangıç görüşmesi henüz yapılmadıysa ya da erken "evet" geldiyse):** sözleşme klasörde `sozlesme-[musteri].pdf` olarak doldurulur, FounderOS yazar, sen okursun. Müşteriye WhatsApp'tan gider; müşteri belgeyi okuyup aynı sohbete "okudum, kabul ediyorum, [ad soyad], [tarih]" yazar ve o yazılı kabul sözleşmenin imzası sayılır; ardından kapora ya da kurulum ücretinin havalesi gelir. Yazılı kabulün ekran görüntüsü ve belge müşterinin bilgi dosyasında saklanır. CRM açıldığı gün aynı belge CRM'in belge bölümüne yüklenir ve "imzalandı, [tarih], WhatsApp yazılı kabul" notuyla kayda bağlanır; yeniden imzalatılmaz.
+
+**CRM açıldıysa:** imza CRM'in belge bölümünden atılır ve işini görür. Müşteriye "bu ıslak imza yerine geçer" gibi bir cümle kurmuyorsun; gerek de yok, imzalı belge ikinizde de duruyor.
+
+Şablonu CRM'e kurma sırası, CRM açıldığı gün FounderOS adım adım söyler (araclari-kur'un "CRM açıldığı gün" adımının hemen ardından, on beş dakika):
 1. CRM'de ödemeler bölümüne gir, belgeler ve sözleşmeler ekranını aç.
 2. Yeni belge oluştur; hazır metni yapıştır ya da PDF olarak yükle.
 3. Müşteri adı, işletme adı, kurulum rakamı ve aylık rakam için değişken satırlar koy.
@@ -106,10 +110,10 @@ Senin dolduracağın yerler: iki tarafın bilgileri, kurulum ücreti, aylık üc
 5. Kendi imzanı bir kere çiz, şablona göm.
 6. Şablon olarak kaydet.
 7. Kendi e-postana deneme gönderimi yap, geldiğini gör.
-8. Gönderim ayarında e-posta ve kısa mesajı birlikte seç.
+8. Gönderim ayarında e-postayı seç; kısa mesaj yolu Türkiye'de kapalı.
 Ayrı bir imza programına abone olmana gerek yok. Belge bazen istenmeyen posta kutusuna düşer; onun için kapanış mesajında ayrıca link de verirsin.
 
-**Onay belgesi taslağı.** Tek sayfa, sekiz başlık, rakamlar ve yirmi bir günlük teslimat takvimi (Doksan Gün Planı'nın beşinci bölümünden) önceden dolu. CRM'in belge bölümünde ikinci şablon olarak durur. İmza satırı yoktur; doldurulup link olarak gönderilir.
+**Onay belgesi taslağı.** Tek sayfa, sekiz başlık, rakamlar ve [21/28] günlük teslimat takvimi (Doksan Gün Planı'nın beşinci bölümünden) önceden dolu. CRM açıksa belge bölümünde ikinci şablon olarak durur ve link olarak gönderilir; CRM açık değilse klasörde `onay-belgesi-[musteri].pdf` olarak doldurulur ve WhatsApp'tan gider. İmza satırı yoktur.
 
 ### Beşinci gün: kuruluşa hazır olmak ve kontrol
 
@@ -119,11 +123,11 @@ Ayrı bir imza programına abone olmana gerek yok. Belge bazen istenmeyen posta 
 
 Bugün yapılan kontrol üç şey:
 - Havale mesajı hazır mı: hesap bilgisi, tutar satırı, açıklama satırı tek mesajda duruyor mu.
-- Sözleşme şablonunu kendine gönderdin mi, imza satırları çalışıyor mu, köşeli parantezlerin hepsi dolu mu.
+- Sözleşme şablonunu kendine gönderdin mi (CRM açıksa belge bölümünden, açık değilse PDF olarak WhatsApp'tan), köşeli parantezlerin hepsi dolu mu.
 - Onay belgesi taslağındaki rakamlar bugünkü fiyatla aynı mı.
 Bunlar zaten sahaya çıkış kontrol listesinde var.
 
-Sahaya çıkış bunların hiçbirine bağlı değil; altıncı gün ertelenmez.
+Sahaya çıkış bunların hiçbirine bağlı değil; saha ertelenmez.
 
 Sağlayıcının başvurusu onaylandığı gün şunu yaparsın: kendi kartınla küçük bir deneme ödemesi yapar, para hesabına düşüyor mu görür, sonra iade edersin.
 
@@ -133,9 +137,9 @@ Sağlayıcının başvurusu onaylandığı gün şunu yaparsın: kendi kartınla
 
 Link yolu: mesajın içinde dört link vardır: kurulum ödemesi, aylık için kart kaydı, sözleşme, karşılama formu. Sağlayıcın kurulumla aylığı tek linkte topluyorsa üç link olur. Sen hatta kalırsın: "Kapatmadan önce linke tıklayın, ben hattayım."
 
-Havale yolu: mesajın içinde havalenin üç satırı (hesap bilgisi, tutar, açıklama satırı) ve iki link vardır: sözleşme ve karşılama formu. Altında tek cümleyle aylık ücretin otuz birinci günde nasıl alınacağı yazar. Sen yine hatta kalırsın: "Kapatmadan önce havaleyi başlatın, ben hattayım."
+Havale yolu: mesajın içinde havalenin üç satırı (hesap bilgisi, tutar, açıklama satırı) ve iki link vardır: sözleşme ve karşılama formu. Altında tek cümleyle aylık ücretin [31/38]. günde nasıl alınacağı yazar. Sen yine hatta kalırsın: "Kapatmadan önce havaleyi başlatın, ben hattayım."
 
-İkisinde de sözleşme ayrıca CRM'den e-posta ve kısa mesajla gider. Hangi yolun kullanılacağı görüşmeden önce bellidir ve görüşme özet ekranında yazar; görüşmenin ortasında karar verilmez.
+CRM açıksa ikisinde de sözleşme ayrıca CRM'den e-postayla gider; CRM açılmadıysa PDF WhatsApp'tan gider ve yazılı kabul imza sayılır. Hangi yolun kullanılacağı görüşmeden önce bellidir ve görüşme özet ekranında yazar; görüşmenin ortasında karar verilmez.
 
 Kurulum görüşmesini aynı konuşmada takvime yazarsın, en geç iki gün sonrasına. Karşılama formunu kapanışta gönderirsin; müşteri hemen doldurursa iyi, son teslim tarihi yedinci gündür.
 
@@ -147,12 +151,12 @@ Fatura konusunu işletmeci sormadan sen açarsın. Şirketin varsa: "Faturasın�
 
 Para hesabına geçtikten sonra en geç bir saat içinde, e-postayla ve WhatsApp'a. Başlıklar:
 1. Ne aldınız: sistemin adı ve Kademe 2'nin maddeleri, işletmecinin kendi diliyle, tek paragraf.
-2. Ne ödediniz, ne zaman: kurulum ve aylık rakam, ödeme tarihi, ilk aylık tahsilatın otuz birinci gün olduğu, faturanın kimden geleceği.
-3. Yirmi bir günün takvimi: sıfırıncı günden yirmi birinci güne, gün gün ne olacağı.
+2. Ne ödediniz, ne zaman: kurulum ve aylık rakam, ödeme tarihi, ilk aylık tahsilatın [31/38]. gün olduğu, faturanın kimden geleceği.
+3. Kurulum döneminin takvimi: sıfırıncı günden [21/28]. güne, gün gün ne olacağı.
 4. Sizden ne bekliyorum, tarihli: giriş izinleri kurulum görüşmesinde; eski müşteri listesi üçüncü günde; karşılama formu ve duran havuz onayı yedinci güne kadar. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Kararı kimin vereceği ve ne kadar sürede cevap geleceği de burada yazar.
 5. Güvence ve şartı: sözleşmedeki cümlenin aynısı.
 6. Neyi yapmıyorum: reklam bütçesi benden çıkmaz, yeni site yapmıyorum, mevcut numaranıza dokunmuyorum, nişin yasakladığı vaatleri vermiyorum.
-7. Yirmi birinci günde raporda ne olacak: sonuç cümlesi buraya aynen girer. "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz; o ay bittiğinde kapsamı daraltarak devam, normal ücretle devam ya da yazılı bildirimle ayrılma yollarından biri seçilir." Sayı sözü yok.
+7. Rapor gününde raporda ne olacak: İş modeli'ndeki güvence cümlesi, nişin yolculuğuna göre (randevu ya da teklif sürümü) buraya aynen girer; arkasına şu eklenir: "O ay bittiğinde kapsamı daraltarak devam, normal ücretle devam ya da yazılı bildirimle ayrılma yollarından biri seçilir." Sayı sözü yok.
 8. Sıradaki adım: kurulum görüşmesinin günü ve saati, o görüşmeye ne getireceği. Karşılama formunu henüz doldurmadıysa linki burada bir kez daha durur.
 
 Belge boyunca "ben" ve "siz" konuşulur; şirket ağzıyla "biz" yok, ekibin yok.
@@ -162,7 +166,7 @@ Dil kuralı: az söz ver, fazla teslim et. Belgede rakam sözü yok, para iadesi
 
 Sessiz çalışır: kart kayıtlı, her ay kendiliğinden çekilir. Müşteriye her ay "yenileyelim mi" diye sorulmaz; sorarsan her ay yeniden karar vermek zorunda kalır.
 
-İlk tahsilat otuz birinci gündür. Yirmi birinci günde sonuç çıkmadıysa tahsilat çekilmeden durdurulur, ikinci ay ücretsiz çalışır. Müşteri kendi şartını geç yerine getirdiyse (izinleri ya da listeyi geç verdiyse) yirmi bir gün onun verdiği günden başlar; tahsilat da aynı kadar ötelenir.
+İlk tahsilat [31/38]. gündür. Rapor gününde sonuç çıkmadıysa tahsilat çekilmeden durdurulur, ikinci ay ücretsiz çalışır. Müşteri kendi şartını geç yerine getirdiyse (izinleri ya da listeyi geç verdiyse) [21/28] gün onun verdiği günden başlar; tahsilat da aynı kadar ötelenir.
 
 İlk iki ayda tahsilattan üç gün önce, bir gece önce ve sabahı kısa mesaj gider. Metni FounderOS hazırlar, sen gönderirsin. Sebebi şu: tanımadığı bir tahsilatı gören müşteri "bu kişi beni dolandırıyor mu" diye düşünür.
 
@@ -173,7 +177,7 @@ Havale, linkin yokluğunda başvurulan yol değil; iki eşit yoldan biri. İlk m
 Dikkat edilecek üç şey:
 - Para hesabına geçtiğini gördüğünde müşteri sayılır. Dekont tek başına yetmez. Dekont, paranın gönderildiğini gösteren banka belgesidir; gönderildiğini gösterir, hesabına düştüğünü göstermez.
 - Şirketin yoksa bu yolu ancak mali müşavirine sorup belgeyi ne zaman keseceğini öğrendikten sonra kullanırsın. Cevap gelmeden müşteriye tarih sözü verilmez.
-- Havale yolundaysan otuz birinci günün tahsilatını elle istersin; hatırlatma mesajları aynen gider. Elle istenen tahsilatın tek kuralı var: gününde istenir, ertelenmez, "bu ay geçsin" denmez.
+- Havale yolundaysan [31/38]. günün tahsilatını elle istersin; hatırlatma mesajları aynen gider. Elle istenen tahsilatın tek kuralı var: gününde istenir, ertelenmez, "bu ay geçsin" denmez.
 
 Şirket kurulup link geldiğinde havaledeki müşterileri linke geçirirsin: tek mesaj, kart kaydı linki ve tek cümle sebep ("her ay elden istemeyelim"). Sözleşme ve onay belgesi aynen yürür, yeniden imzalanmaz.
 
@@ -187,12 +191,12 @@ fiyati-belirle ya da teklifi-yaz yeniden çalışırsa şablonlardaki rakamlar a
 
 Havale yoluyla kapanışta: "Şirketin yok diye beklemiyorsun, havale ikinci sınıf yol değil. Mesaj hazır: hesap, tutar, açıklama satırı. Şimdi gönder, hatta kal. Dekont değil, hesabına düştüğünü göreceksin. Faturayı müşavirine sordun mu? Sormadıysan müşteriye tarih söyleme, 'yazılı bildireceğim' de."
 Kapanış anında: "Evet dedi. Konuşmayı kes. Hazır mesajı yapıştır; bugün havale yolundasın: hesap, tutar, açıklama satırı, sözleşme, karşılama formu. Link yolundaysan aynı mesajın dört linkli hali. Hatta kal. Kurulum görüşmesini şimdi takvime yaz, en geç öbür gün."
-Para gelince: "Para geldi. Müşterin var. Onay belgesi hazır; içinde yirmi bir günün takvimi ve senden bekledikleri var. Bu gece aklına düşecek soruyu bu belge cevaplıyor."
+Para gelince: "Para geldi. Müşterin var. Onay belgesi hazır; içinde [21/28] günün takvimi ve senden bekledikleri var. Bu gece aklına düşecek soruyu bu belge cevaplıyor."
 Para gelmezse: "Sözlü evet kapanış değil. On dakika hattayken bekle, sonra tek mesaj: 'Link geldi mi?' Akşam bir mesaj, yarın bir arama. İki günde ödeme yoksa 'sonra' aşamasına atıyoruz."
 
 ## 7. Ne yazar
 
-CRM'e: aşama kazandım, ödeme saati ve tutarı, sözleşme durumu (gönderildi, imzalandı), onay belgesi gönderildi, kurulum görüşmesi tarihi, aylık tahsilat günü.
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on ikinci bölümü): aşama kazandım, ödeme saati ve tutarı, sözleşme durumu (gönderildi, imzalandı), onay belgesi gönderildi, kurulum görüşmesi tarihi, aylık tahsilat günü.
 İş Beyni'ne: müşteri sayısı, kurulum ve aylık gelir, ilk müşteri tarihi, sözleşmenin sürümü ve doldurulma tarihi, ödeme sağlayıcı tablosunun beş satırı ve seçtiğin sağlayıcının adı ile komisyon oranı, link adreslerin, havale mesajının hazır hali, hangi müşterinin hangi yoldan ödediği, şirket ve vergi levhası durumu, mali müşavirin fatura sorusuna verdiği cevap.
 Niş kartına: bu nişte sözleşmeye eklenen yasal sınır maddesi ve çıkan kapsam dışı tartışmaları, ilk müşteriden sonra.
 

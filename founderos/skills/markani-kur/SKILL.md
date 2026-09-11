@@ -14,12 +14,12 @@ Bu modül senin marka kitini kurar. Marka kiti, işinin nasıl görüneceğini t
 
 Neden bu iş var: işletmeci seni tanımıyor. Aramadan önce adını Google'a yazacak, Instagram'ına bakacak, e-postandaki imzaya bakacak. Gördüğü şey derme çatmaysa fiyatı duymadan karar veriyor. Marka satış yapmıyor ama satışı mümkün kılıyor.
 
-İkinci sebep: sen 40.000 TL kurulum ve aylık 30.000 TL istiyorsun. Bu rakamı isteyen birinin görüntüsü o rakamı taşıyacak. Rakam ile görüntü arasındaki uçurumu işletmeci saniyede fark ediyor.
+İkinci sebep: sen 40.000 TL kurulum ve aylık [bandın üst ucu] istiyorsun. Bu rakamı isteyen birinin görüntüsü o rakamı taşıyacak. Rakam ile görüntü arasındaki uçurumu işletmeci saniyede fark ediyor.
 
 Bir uyarı da baştan: bu iş bir gün sürer. İki günden fazla sürerse bir satış günü yemiş oluyorsun. Kit bittiğinde bitmiştir; iki hafta sonra beğenmezsen o zaman bakarız.
 
 Şunlar bu modülün işi değildir:
-- Instagram, WhatsApp ve YouTube profillerinin doldurulması (kisisel-markani-kur, aynı gün, ikinci yarıda).
+- Instagram, WhatsApp ve YouTube profillerinin doldurulması (kisisel-markani-kur, dördüncü blok).
 - Landing page (siteni-kur, aynı gün).
 - Ön görüşme videosu (satis-videosunu-cek, beşinci gün).
 - Adı bulmak. Ad burada konur.
@@ -36,12 +36,12 @@ Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine p
 İş Beyni'nden: geçici iş adı, şehir, kanal yolu, hazırlık seviyesi, gelir planı.
 Niş kartından: sektörün dili, işletmecinin dertleri, rekabetin şekli, yasal sınırlar.
 Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin içeriği, fiyat.
-Doksan Gün Planı'ndan: ideal müşteri ve kancalar.
+İş Beyni'nin on sekizinci bölümünden: ideal müşteri (Doksan Gün Planı aynı anda arka planda yazılıyor olabilir, beklenmez).
 
 ## 4. Ne sorar
 
 İki şey sorar:
-1. Kesin iş adı. Üç seçenek önerir, sen birini seçersin. Adı bulmak senin işin değil, seçmek senin işin.
+1. Kesin iş adı. Tek ad önerir, gerekçesiyle; beğenmezsen ikincisi gelir, en fazla üç tur. Adı bulmak senin işin değil, onaylamak senin işin.
 2. Elinde kullanmak istediğin bir renk ya da bir görsel var mı. Yoksa yoluna devam eder.
 
 Görsel yön sorulmaz. FounderOS nişe göre kendisi seçer ve sebebini söyler.
@@ -53,7 +53,7 @@ Marka birinci günün işi ve tamamı bugün çıkar. Kısaltılmış hali yok.
 
 Sırası şu: iş adı, konumlandırma cümlesi, sonra on panoluk kit.
 
-**İş adı.** Pazardan ve teklifden türetirsin. Üç aday üretir, birini gerekçesiyle önerir, son sözü öğrenciye bırakırsın. Uzun düşündürmezsin; ad değiştirilebilir bir şeydir ve ilk müşteriye kadar kimse duymaz.
+**İş adı.** Pazardan ve teklifden türetirsin. Tek ad üretir, gerekçesiyle önerir, son sözü öğrenciye bırakırsın; beğenmezse ikincisi gelir. Uzun düşündürmezsin; ad değiştirilebilir bir şeydir ve ilk müşteriye kadar kimse duymaz.
 
 **Konumlandırma cümlesi.** Dönüşüm Cümlesi'nin kısa hali. Sitede, kartvizitte ve profillerde aynısı durur.
 
@@ -95,7 +95,7 @@ O yüzden bu modül iki aşamalıdır ve ikincisi olmadan biten kit teslim sayı
 
 **İkinci aşama: gerçek dosyalar.** FounderOS o sistemden çıkan dosyaları öğrencinin `marka/` klasörüne kendisi yazar. Adları, boyutları ve biçimleri belli; öğrenci hiçbirini kırpmaz, dönüştürmez, yeniden boyutlandırmaz.
 
-Bu ikinci aşamada birkaç işlem satırı ekranda görünür ve bunu öğrenciye **önceden** söylersin, yoksa korkuyor: "Şimdi dosyaları üretiyorum. Ekranda birkaç işlem satırı göreceksin, normal; ben logonun farklı boylarını hazırlıyorum." Dosya yazarken komut çalıştırmama kuralının tek istisnası burasıdır ve haber vermeden kullanılmaz.
+Bu ikinci aşamada birkaç işlem satırı ekranda görünür ve bunu öğrenciye **önceden** söylersin, yoksa korkuyor: "Şimdi dosyaları üretiyorum. Ekranda birkaç işlem satırı göreceksin, normal; ben logonun farklı boylarını hazırlıyorum." Ana yöneticinin "dosya yazarken komut çalıştırma" kuralının tek istisnası burasıdır (görsel dosyaları üretmek için) ve haber vermeden kullanılmaz.
 
 ### Birinci aşama: Claude Design'da sistemi üretme
 
@@ -103,11 +103,11 @@ Claude Design, Claude'un içinde çalışan tasarım tahtası. Tek bir sayfada b
 
 Adımlar:
 
-1. Claude'u aç, yeni bir sohbet başlat.
-2. Aşağıdaki talimatı olduğu gibi yapıştır. FounderOS o talimatı senin adın, nişin, cümlen ve rakamlarınla doldurulmuş halde verir; sen sadece kopyalayıp yapıştırırsın.
-3. Claude on panoyu tek tahtada üretir. On beş yirmi dakika sürer.
-4. Tahta açılınca üstünden geçersin. Beğenmediğin yazıyı tıklayıp değiştirirsin, rengi düzeltirsin.
-5. FounderOS'a "kit hazır" dersin ve renk kodlarıyla yazı tipi adlarını ona söylersin.
+1. FounderOS aşağıdaki talimatı senin adın, nişin, cümlen ve rakamlarınla doldurur ve tasarım tahtasını bu sohbetin içinde kendisi üretir. Sen hiçbir şey kopyalamaz, yapıştırmaz, yeni sohbet açmazsın.
+2. On pano tek tahtada çıkar. On beş yirmi dakika sürer; FounderOS başlamadan "on beş yirmi dakika sürer, bitince göstereceğim" der ve aynı mesajda üretir.
+3. Tahta gelince FounderOS slop kontrolünü kendisi yapar, sonra sana gösterir. Sen üstünden geçersin: beğenmediğin yazıyı söylersin, düzeltilir.
+4. Renk kodlarını ve yazı tipi adlarını FounderOS tahtadan okur, sen söylemezsin; İş Beyni'nin altıncı bölümüne yazar.
+5. "Tamam" deyince ikinci aşamaya, dosyaların üretilmesine geçilir.
 
 ### On pano
 
@@ -144,7 +144,8 @@ Adımlar:
 **`marka/sosyal/`**
 - Üç Instagram karesi, 1080x1350, gerçek metinleriyle dolu.
 - Bir hikâye, 1080x1920.
-- `whatsapp-profil.png` ve işletme açıklaması metni.
+- `whatsapp-profil.png` ve `whatsapp-aciklama.txt`: işletme açıklaması metni.
+- `instagram-biyografi.txt`: üç satırlık biyografi metni. "Biyografi hazır" demek bu dosyanın klasörde durması demek; dosyasız "hazır" denmez.
 
 **`marka/kurumsal/`**
 - `marka-karti.pdf`: tek sayfada logo, renk kodları, yazı tipi adları, temel kurallar. Kitin kendisi değil, cebe giren hali.
@@ -224,11 +225,11 @@ Okuma yüzeyinde en az üç yerde insan eli görünecek: gerçek bir iş fotoğr
 
 ### Pano sayısı
 
-On altı pano çok. Gerçekten kullanılacak **sekiz ila on pano** üretilir: kapak, marka temeli, logo sistemi, logo kuralları ve yanlış kullanımlar (tek panoda), renk ve tipografi (tek panoda), sayfa düzeni, sosyal medya, satış materyali, hızlı referans. Kalanlar istenirse sonradan üretilir. Dolu görünen kit iyi kit değildir; on altı panonun on beşini kimse açmıyor.
+Kit on panodur, fazlası üretilmez. Gerçekten kullanılacak **on pano** şunlar: kapak, marka temeli, logo sistemi, logo kuralları ve yanlış kullanımlar (tek panoda), renk ve tipografi (tek panoda), sayfa düzeni, sosyal medya, satış materyali, hızlı referans. Kalanlar istenirse sonradan üretilir. Dolu görünen kit iyi kit değildir; on altı panonun on beşini kimse açmıyor.
 
 ### Claude Design talimatı
 
-FounderOS bu talimatı köşeli parantezleri senin bilgilerinle doldurarak verir. Sen kopyalayıp yapıştırırsın.
+FounderOS bu talimatı köşeli parantezleri senin bilgilerinle doldurur ve tahtayı bu sohbette kendisi üretir. Sen hiçbir şey yapıştırmazsın.
 
 ```
 Sen kıdemli bir marka kimliği tasarımcısısın. Tek bir tasarım tahtası üzerinde, çok panolu, eksiksiz bir marka kiti kuracaksın. Panoları tek tahtaya numaralı ve mantıklı bir düzende yerleştir.
@@ -317,10 +318,10 @@ Dördü de geçmeden kit tamamlanmış sayılmaz. Bir dosyanın nasıl üretilec
 
 ## 6. Ne söyler
 
-Açılışta: "Bugün marka günü ve tek gün. İki günden fazla sürerse bir satış gününü yemiş olursun. İki üç saat, tek oturuş."
+Açılışta: "Şimdi marka. Bir saat, tek oturuş; yarına sarkarsa yayın günü kayar. Ad, kimlik ve dosyalar bugün çıkıyor."
 Görsel yönü söylerken: "Nişin klima ve kombi servisi. Yön sağlam ve yüksek kontrastlı: koyu zemin, kalın başlık, tek vurgu rengi. Sebebi şu: bu sektörde güven, işini bilen ve lafı uzatmayan görüntüden geliyor. Bunu tartışmıyoruz."
-Ad seçerken: "Üç ad öneriyorum. Birini seç. Bulmak benim işim, seçmek senin. Uzun düşünme, iki hafta sonra zaten alışacaksın."
-Talimatı verirken: "Şimdi Claude'da yeni bir sohbet aç ve şunu yapıştır. On beş yirmi dakika sürer, beklersin. Sonra tahtanın üstünden geçip beğenmediğin yazıyı düzeltirsin."
+Ad önerirken: "Adın şu: [ad]. Sebebi: [tek cümle]. Bulmak benim işim, onaylamak senin. Uzun düşünme, iki hafta sonra zaten alışacaksın. Olmadıysa söyle, ikincisini getiririm."
+Tahtayı üretmeden önce: "Şimdi görsel sistemini üretiyorum: on sayfa, tek ekranda yan yana. On beş yirmi dakika sürer, bitince göstereceğim. Beğenmediğin yazıyı söylersin, düzeltirim."
 Öğrenci beğenmezse: "Kaç kere baştan yaptırdığını sayıyorum. İkinci denemeden sonra durursun. Mükemmel logo diye bir şey yok, işini yapan logo var. İki hafta sonra hâlâ rahatsızsan o zaman bakarız."
 Klişe çıkarsa: "Bu panoda devre kartı var, çıkar. Sen teknoloji satmıyorsun, kaçan aramanın randevuya dönmesini satıyorsun."
 Rakam ile görüntü uyuşmazsa: "40.000 TL kurulum istiyorsun. Bu kit o rakamı taşıyor mu? Taşımıyorsa fiyatı duymadan hayır diyorlar."
@@ -336,7 +337,7 @@ Bir sonraki modüllere: sayfa düzeni panosu siteni-kur'a, kanal şablonları ki
 
 - Claude Design açılmazsa: kit sade hali kurulur. Renk, yazı tipi ve tek sayfalık hızlı referans yazıyla çıkarılır, görsel panolar ertesi güne kalır. Birinci gün kapanır, ikinci gün ertelenmez.
 - Yazı tipi Türkçe karakteri bozuyorsa: talimat yenilenir ve Türkçe destekleyen bir tipe geçilir. Bu tartışma konusu değil.
-- Üç adı da beğenmezsen: bir kez daha üç ad gelir. İkinci turda seçim yapılır; üçüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
+- Adı beğenmezsen: ikincisi gelir, sonra üçüncüsü; üçüncü turda karar verilir, dördüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
 - Elinde hazır logo varsa: kit onun etrafına kurulur, logo yeniden yapılmaz.
 - Kit süreyi aşarsa: sıra bellidir ve baştan kısaltılır. Bugün mutlaka biten dört şey var: logo dosyaları, profil görseli, renk ve yazı tipi kararı, marka kartı. Sosyal kareler ve kurumsal belgeler ikinci bloğa kalabilir. Sebebi şu: yarın sayfa yayına çıkıyor ve hesaplar açılıyor, ikisi de logoyu ve profil görselini istiyor.
 - Bir dosya biçimi üretilemezse: üretilebilen hali verilir ve sınır açıkça söylenir. "Bunu ben üretemiyorum, şu hali elinde" demek dürüsttür; üretilmemiş dosyayı listede "hazır" göstermek değil.
@@ -345,7 +346,7 @@ Bir sonraki modüllere: sayfa düzeni panosu siteni-kur'a, kanal şablonları ki
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: aynı günün ikinci yarısında kisisel-markani-kur. Yarın site ve ön görüşme sayfası.
+Sıradaki: aynı gün tanıtım sayfası (siteni-kur). Profil ve fotoğraf dördüncü blokta (kisisel-markani-kur).
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Kit iki kez baştan yaptırıldı: üçüncü tur açılmaz, eldeki kitle devam edilir.
@@ -354,4 +355,4 @@ Sıradaki: aynı günün ikinci yarısında kisisel-markani-kur. Yarın site ve 
 - İlk kanıt hikâyesi çıktı: kit ikinci kez çalışır, kanıt satırı ve rakam girer.
 - "Logoyu değiştirsem" isteği: degisiklige-karar-ver'e gider, tek başına açılmaz.
 
-Beş kural: boş sayfa yok (görsel yön, on panonun listesi ve Claude Design talimatı hazır gelir) · sessiz bitiş yok (akşam dosyalar marka klasöründe ve dosya haritası İş Beyni'nde; tahta resmi teslim sayılmaz) · onay (üç adı FounderOS önerir, kesin adı sen seçersin) · sahadan güncelleme (ilk kanıt hikâyesi çıkınca kit ikinci kez çalışır, kanıt satırı ve rakam girer) · sormaz söyler (görsel yönü ve kaçınılacakları FounderOS söyler, tartışılmaz).
+Beş kural: boş sayfa yok (görsel yön, on panonun listesi ve Claude Design talimatı hazır gelir) · sessiz bitiş yok (akşam dosyalar marka klasöründe ve dosya haritası İş Beyni'nde; tahta resmi teslim sayılmaz) · onay (adı FounderOS önerir, sen onaylarsın) · sahadan güncelleme (ilk kanıt hikâyesi çıkınca kit ikinci kez çalışır, kanıt satırı ve rakam girer) · sormaz söyler (görsel yönü ve kaçınılacakları FounderOS söyler, tartışılmaz).

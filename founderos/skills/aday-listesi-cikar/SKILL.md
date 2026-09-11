@@ -14,13 +14,13 @@ Bu modül üç şey çıkarıyor: beş yüz kişilik aday listesi, içinden seç
 
 Neden beş yüz: doksan günde bu listeye 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste beş yüzün altındaysa üçüncü haftada arayacak kimsen kalmıyor.
 
-Neden bugün: yarın kanıtını hazırlıyorsun ve mesajlarını yazıyorsun, altıncı gün sahaya çıkıyorsun. Yarının deneme aramaları bu listeden yapılıyor.
+Neden bugün: bir sonraki blokta kanıtını hazırlıyorsun ve mesajlarını yazıyorsun, iki blok sonra sahaya çıkıyorsun. O bloğun deneme aramaları bu listeden yapılıyor.
 
 Şunlar bu modülün işi değildir:
 - Sıcak çevre listesi (tanidik-listesi-cikar, dün). O ayrı liste, ayrı mesaj.
 - Adayın denetimi (aday-denetimi-cikar). Bu modül denetimi tarif etmez, çağırır.
 - Mesajların metni (adaya-mesaj-yaz, yarın) ve video mesaj (video-mesaj-cek, sahaya çıktıktan sonra).
-- Takip sisteminin kurulması (musteri-takip-sistemini-kur, ikinci gün). Bugün o sisteme yükleme yapıyorsun.
+- Takip sisteminin kurulması (musteri-takip-sistemini-kur, CRM açıldığı gün). Bugün liste kayıt yerine yazılıyor: CRM açıldıysa CRM'e, açılmadıysa `adaylar.csv`'ye.
 
 Pazarlamadaki karşılığı: aday listesi.
 
@@ -37,12 +37,12 @@ Pazarlamadaki karşılığı: aday listesi.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): nişin, şehrin, kanal yolun, çalışma düzenin, seçtiğin yol, varsa liste çıkaran programın anahtarı.
 Niş kartından (seçtiğin sektörün bütün bilgisinin durduğu dosya): Google Haritalar'daki kategori adları, kanal ve zaman bölümü, kim karar veriyor bölümü, yasal sınırlar.
 aday-denetimi-cikar'dan: hızlı denetimin beş satırı ve sızıntı puanı. Denetim orada yürür, bu modül puanı okur ve sıralamada kullanır.
-CRM'den: cevap veren adaylar, takip günü bugüne düşenler, denetimi hazır olanlar. Günün saha listesi bunlardan çıkıyor.
+Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): cevap veren adaylar, takip günü bugüne düşenler, denetimi hazır olanlar. Günün saha listesi bunlardan çıkıyor.
 İkinci günün sıcak listesinden: A listesindeki işletmeler.
 
 ## 4. Ne sorar
 
-Tek bir şey sorar: listeyi hangi yolla çıkaracağın. Sebebi şu, orada senin cebinden para çıkıyor. Bunun dışında hiçbir şey sormaz; hangi kategoriyi arayacağını, kaç kayıt çekeceğini, neyi eleyeceğini ve hangi yüz işletmeyi seçeceğini FounderOS söylüyor.
+Sormaz. Listenin yolu ikinci blokta seçildi ve İş Beyni'nde yazıyor; o gün seçilmediyse bugün tek soru olarak sorulur, sebebi orada senin cebinden para çıkması. Bunun dışında hiçbir şey sormaz; hangi kategoriyi arayacağını, kaç kayıt çekeceğini, neyi eleyeceğini ve hangi yüz işletmeyi seçeceğini FounderOS söylüyor.
 
 Bir de silme öncesi durak var: silinecek satırları görüp onaylıyorsun.
 
@@ -53,7 +53,7 @@ Liste "hazır" demek için kayıt sayısı yetmez:
 1. Beş yüz kayıt var ve her birinde telefon ya da e-posta dolu; ikisi de boş olan kayıt listede değil.
 2. Örnekleme doğrulaması yapılmış: rastgele on kayıt açılmış, işletme gerçekten var, kategori doğru, numara çalışıyor. Onda üçten fazlası tutmuyorsa liste yeniden çekilir.
 3. En çok istenen yüz işletmenin her birinde uygunluk gerekçesi var: neden bu, tek satır. Yüz işletme uygunluk kademesi A olanlardan seçilir; A yüze yetmezse eksik kalan yer B kademesinden sızıntı puanı yüksek olanlarla tamamlanır ve kaç tanesinin B'den geldiği yazılır.
-4. Liste CRM'e ya da CRM yoksa İş Beyni'nin on beşinci bölümüne yüklenmiş ve sayım tutuyor.
+4. Liste kayıt yerine yazılmış (CRM açıldıysa CRM'e, açılmadıysa `adaylar.csv`'ye; sayısı sekizinci bölümde, günün adayları on beşinci bölümde) ve sayım tutuyor.
 
 Dördü tamam olmadan liste "hazır" sayılmaz ve on dördüncü bölüme yazılmaz.
 
@@ -76,7 +76,7 @@ Karar senin. FounderOS başka hiçbir yerde seçenek sunmaz, kararı verir ve se
 1. Claude'un tarayıcı eklentisini ve Google Haritalar'ı aç.
 2. Arama kelimesi: kartındaki kategori adı artı semt adı ("Nilüfer klima servisi" gibi). Şehri tek seferde aratmıyorsun, Haritalar belli bir sayıdan sonrasını göstermiyor; semt semt gidiyorsun ve taradıklarını bir kenara yazıyorsun.
 3. Eklenti her işletme kartından altı şeyi tabloya yazıyor: işletme adı, telefon, web sitesi, semt, yorum sayısı ve puan, varsa Instagram hesabı. E-posta bu yolda gelmiyor; siteyi açıp aramayı sadece yüz işletme için, hızlı denetim sırasında yapıyorsun.
-4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün CRM'e yüklüyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci bloğun sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor.
+4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün kayıt yerine yazıyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci bloğun sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor.
 
 Hangi yolu seçtiğin İş Beyni'ne yazılıyor, ay sonundaki yenileme aynı yoldan yürüyor.
 
@@ -128,7 +128,7 @@ Her elemede aynı hareketi yapıyorsun: ilgili sütuna göre sıralıyorsun, sil
 
 **Beş: nişin yasal sınırına takılan.** Kartın yasal sınırlar bölümü hangi işletme tipinin listeye girmeyeceğini söylüyor.
 
-**Altı: dün sıcak listeye giren işletmeler.** A listen beş on kişi, ona bakıp bu listede varsa çıkarıyorsun. Tanıdığına dün mesaj attın, iki gün sonra soğuk arama metniyle dönmüyorsun. Bu elemeyi elle yapıyorsun, CRM'in numara birleştirmesine güvenme: tanıdığının kaydında cep numarası var, buradakinde işletmenin sabit hattı, ikisi tutmuyor.
+**Altı: dün sıcak listeye giren işletmeler.** A listen beş on kişi, ona bakıp bu listede varsa çıkarıyorsun. Tanıdığına bu akşam mesaj gidecek; aynı kişiye iki gün sonra soğuk arama metniyle dönmüyorsun. Bu elemeyi elle yapıyorsun, CRM'in numara birleştirmesine güvenme: tanıdığının kaydında cep numarası var, buradakinde işletmenin sabit hattı, ikisi tutmuyor.
 
 Bir şeyi yapmıyorsun: numaraları sabit hat ve cep diye ayırıp birini silmiyorsun. Sen arıyorsun ve işletmenin ilan ettiği sabit hat tam da aradığın numara.
 
@@ -140,7 +140,7 @@ Ham listede adlar "Yılmaz Isı Sistemleri San. Tic. Ltd. Şti." gibi geliyor; a
 
 Tabloya bir sütun daha açıyorsun ve kısa işletme adını yazıyorsun: "Yılmaz Isı". Şu ekler kırpılıyor: Ltd. Şti., A.Ş., San., Tic., Ltd., Limited, Anonim Şirketi.
 
-Yükleme sırasında CRM'e giden sütun bu oluyor, uzun olan değil. İki listeyi birleştirirken de bu sütun kullanılıyor, çünkü Instagram'daki ad zaten kısa halidir.
+Kayıt yerine giden sütun bu oluyor, uzun olan değil. İki listeyi birleştirirken de bu sütun kullanılıyor, çünkü Instagram'daki ad zaten kısa halidir.
 
 ### Adım 5: en çok istenen yüz işletmeyi seç (15 dakika)
 
@@ -163,7 +163,7 @@ Sahibinin adını bulma işi de denetime taşındı, denetimin dokuzuncu satır�
 
 Altmış dakikada otuz işletme bitiyor, kalan yetmişi dördüncü günün sabah bloğunda tamamlıyorsun. Bugün otuz yeterli, çünkü yarının deneme aramaları o otuz işletmeden yapılıyor. İşin yanında çalışıyorsan kırk işletme seçtin: bugün yirmisi, yarın yirmisi.
 
-Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adımda CRM'e gidiyor.
+Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adımda kayıt yerine gidiyor.
 
 ### Adım 7: listeyi kayıt yerine koy (15 dakika)
 
@@ -185,7 +185,7 @@ Liste ayda bir tamamen yenileniyor ama her gün yeniden sıralanıyor. İkisi ay
 
 **Ayda bir:** modül baştan çalışıyor. Yeni çekim, yeni temizlik, yüz işletme yeniden seçiliyor, hızlı denetimler tazeleniyor. Sen sadece silme onayını veriyorsun.
 
-**Her gün:** sabah bloğunda "gün" yazıyorsun ve o günün saha listesi hazır geliyor. Sen sıralamıyorsun, kimi arayacağına karar vermiyorsun; sıralamayı FounderOS kuruyor, CRM'de hazır böyle bir ekran yok. Sıra sabit, dört basamak:
+**Her gün:** sabah bloğunda "günaydın" yazıyorsun ve o günün saha listesi hazır geliyor. Sen sıralamıyorsun, kimi arayacağına karar vermiyorsun; sıralamayı FounderOS kuruyor, CRM'de hazır böyle bir ekran yok. Sıra sabit, dört basamak:
 
 1. **Cevap verenler.** Mesajına dönmüş, telefonu açmış, "sonra ara" demiş herkes. En başta duruyorlar, çünkü cevap veren adayın ilgisi bir günde soğuyor.
 2. **Takip günü gelenler.** Üçüncü, yedinci ve on dördüncü gün zincirinde bugüne düşenler.
@@ -208,13 +208,13 @@ Bu düzeni koruduğun sürece rahatsın.
 
 ## 6. Ne söyler
 
-Açılışta: "Bugün üç saat. Çıktı: beş yüz kişilik liste ve içinden seçilen yüz kişi. Yarın kanıtını hazırlıyoruz, deneme aramaları bu listeden yapılacak."
-Araç seçiminde: "İki yol var. Apify yirmi dakikada sekiz yüz kayıt veriyor, e-posta ve Instagram hesabı da geliyor, tutarı 1,2 dolar, kredin ayda 5 dolar. Tarayıcı eklentisi üç saatte yüz işletme veriyor, para gitmiyor ama e-posta da gelmiyor. Sana soruyorum çünkü para senin cebinden çıkıyor. Hangisi?"
+Açılışta: "Bugün üç saat. Çıktı: beş yüz kişilik liste ve içinden seçilen yüz kişi. Bir sonraki blokta kanıtını hazırlıyoruz, deneme aramaları bu listeden yapılacak."
+Araç seçiminde: "İki yol var. Liste çıkaran program yirmi dakikada sekiz yüz kayıt veriyor, e-posta ve Instagram hesabı da geliyor, tutarı 1,2 dolar, kredin ayda 5 dolar. Tarayıcı eklentisi üç saatte yüz işletme veriyor, para gitmiyor ama e-posta da gelmiyor. Sana soruyorum çünkü para senin cebinden çıkıyor. Hangisi?"
 Daha az kayıt çekmek isterse: "800 çekiyoruz çünkü eleyeceğiz. Doksan günde bu listeye 1.320 arama gidecek; beş yüzün altında kalırsan üçüncü haftada arayacak kimsen kalmıyor."
 Yorum çekmek isterse: "İşaretleme. Bu araç yorum metnini de veriyor ama yorum çekmek maliyeti artırıyor ve ne kadar artıracağını kesin söyleyemem; fiyat çekilen yorum sayısına göre işliyor ve her işletmenin yorumu farklı. Bilmediğim rakamı söylemem. Kredin ayda 5 dolar ve yorumlu çekim onu hızla bitiriyor. Yorumlara hızlı denetimde gözünle bakıyorsun."
 Instagram'dan telefon isterse: "O araç profil sonucunda telefon da e-posta da vermiyor. O adayı telefon sırasına koyarsan boş satır arıyorsun; yazıyla gidiyor. Aynı işletme Haritalar'da da varsa iki kaydı adından birleştiriyoruz."
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
-Bitince: "Liste CRM'de, yüz işletme işaretli, otuzunun denetimi bitti. Yarın kanıtını hazırlıyoruz ve mesajlarını yazıyoruz."
+Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?"
 
 ## 7. Ne yazar
 
@@ -234,7 +234,7 @@ Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, 
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: dördüncü gün, kanıtını hazırlıyorsun ve mesajlarını yazıyorsun.
+Sıradaki: bu akşam tanıdıklara ilk mesaj (tanidiga-mesaj-yaz); bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üçüncü gün bitti, liste yüklenmedi: dördüncü günün ilk işi olur ve o günün akışı bir saat kayar.
@@ -243,4 +243,4 @@ Sıradaki: dördüncü gün, kanıtını hazırlıyorsun ve mesajlarını yazıy
 - Aynı işletme hem sıcak hem soğuk listede görünüyor: altıncı eleme atlanmış, soğuk mesaj durdurulur.
 - Bir ay geçti, liste yenilenmedi: modül ikinci kez açılır.
 
-Beş kural: boş sayfa yok (kategori adı, ayarlar, altı eleme ve seçim ölçütleri hazır gelir) · sessiz bitiş yok (akşam liste CRM'de, yüz işletme işaretli ve otuzunun puanı yazılı) · onay (silinecek satırları görüp onaylıyorsun) · sahadan güncelleme (her ay liste ve yüz işletme yenilenir, her gün saha listesi yeniden sıralanır) · sormaz söyler (kategoriyi, sayıyı, elemeleri ve seçim ölçütlerini FounderOS söyler; tek istisna hangi araçla çalışacağın, çünkü orada cebinden para çıkıyor).
+Beş kural: boş sayfa yok (kategori adı, ayarlar, altı eleme ve seçim ölçütleri hazır gelir) · sessiz bitiş yok (akşam liste kayıt yerinde, yüz işletme işaretli ve otuzunun puanı yazılı) · onay (silinecek satırları görüp onaylıyorsun) · sahadan güncelleme (her ay liste ve yüz işletme yenilenir, her gün saha listesi yeniden sıralanır) · sormaz söyler (kategoriyi, sayıyı, elemeleri ve seçim ölçütlerini FounderOS söyler; tek istisna hangi araçla çalışacağın, çünkü orada cebinden para çıkıyor).

@@ -12,9 +12,9 @@ description: "İkinci gün. Hesaplar, e-posta, alan adı, randevu yolu, liste ç
 
 Bugün hesap açıyorsun. Alet almıyorsun, sistem kurmuyorsun. Üç saat.
 
-Neden bugün: dün işi kurduk; pazar, teklif, fiyat bandı, marka ve sayfa klasöründe. Bugün o işin hesaplarını açıyor ve sayfayı internete çıkarıyoruz. Yarın aday listesini çıkaracaksın; listeyi hangi yolla çıkaracağını bugün seçip deniyoruz.
+Neden bugün: dün işi kurduk; pazar, teklif, fiyat bandı, marka ve sayfa klasöründe. Bugün o işin hesaplarını açıyor ve sayfayı internete çıkarıyoruz. Bir sonraki blokta aday listesini çıkaracaksın; listeyi hangi yolla çıkaracağını bugün seçip deniyoruz.
 
-Neden bu kadar az program: bir kişilik işi öldüren şey program eksikliği değil, program kalabalığı. Yedi ayrı program aldığında her birini diğerine bağlaman gerekir, bu 21 ayrı bağlantı eder ve kurulum 40 ile 80 saat arasında sürer. O saatlerde kimse aranmaz. Biz dört parçayla başlıyoruz.
+Neden bu kadar az program: bir kişilik işi öldüren şey program eksikliği değil, program kalabalığı. Yedi ayrı program aldığında her birini diğerine bağlaman gerekir, bu 21 ayrı bağlantı eder ve kurulum 40 ile 80 saat arasında sürer. O saatlerde kimse aranmaz. Biz dört araçla başlıyoruz.
 
 Şunlar bu modülün işi değildir:
 - Sayfanın yayına alınması (siteni-kur, bugün, araçlardan sonra).
@@ -23,7 +23,7 @@ Neden bu kadar az program: bir kişilik işi öldüren şey program eksikliği d
 - Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok). Bugün sadece o listeyi hangi yolla çıkaracağını seçiyor ve seçtiğin yolu deniyoruz.
 - Müşterinin sistemi (musteri-sistemini-kur, müşteri geldiğinde).
 
-Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını deniyor. Bizimki dört parça.
+Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını deniyor. Bizimki dört araç.
 
 ## 2. Ne zaman çalışır
 - İkinci blok, sabah bloğu, üç saat. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan iki oturuş. Bugün açılan hesaplar: WhatsApp iş hesabı, alan adı ve yayın servisi (siteni-kur'un yayın adımında), iş e-postası, liste çıkaran program, takvim. Liste çıkaran programın anahtarı bugün İş Beyni'ne yazılır ki yarınki çekim yirmi dakikada bitsin.
@@ -36,7 +36,7 @@ Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını den
 
 İş Beyni'nden: kendi adın, şehrin, telefon numaran, şu an kullandığın kişisel e-posta adresin, çalışma düzenin, aylık masraf tablosu, bütçe merdiveninin hangi basamağında olduğun, gelir planındaki günlük temas hedefin.
 
-Bir de üçüncü bölümden nişini ve şehrini; liste yolunun denemesi onlarla yapılır. Kesin fiyat yarın; bugünün işi ondan bağımsız.
+Bir de üçüncü bölümden nişini ve şehrini; liste yolunun denemesi onlarla yapılır. Kesin fiyat bir sonraki blokta; bugünün işi ondan bağımsız.
 
 ## 4. Ne sorar
 
@@ -50,11 +50,11 @@ Başka bir şey sormaz. Hangi programın kurulacağı, hangisinin kurulmayacağ�
 
 ## 5. Ne yapar
 
-### Dört parça
+### Dört araç
 
 **Bir: Claude.** FounderOS burada çalışıyor, İş Beyni burada duruyor. Zaten kurulu, dün bütün günü burada geçirdin; bugün onunla ilgili iş yok.
 
-**İki: senin CRM bölümün.** CRM'in içinde sana ayrılan yer. FounderOS'u aldığın için ücretsiz, ayrı ödeme yok. Kiminle konuştuğun, ne konuştuğun, kimin randevusu ne zaman, hepsi burada tutulacak. Müşteri kazandığında her müşteri için ayrı bir bölüm daha açılacak; onlara müşteri bölümü diyoruz, karıştırma.
+**İki: senin CRM bölümün.** CRM'in içinde sana ayrılan yer; bugün açılmıyor, başlangıç görüşmende birlikte açılacak. FounderOS'u aldığın için ücretsiz, ayrı ödeme yok. Kiminle konuştuğun, ne konuştuğun, kimin randevusu ne zaman, o günden sonra hepsi orada tutulacak; o güne kadar İş Beyni'nin "Bugünün listesi" bölümünde. Müşteri kazandığında her müşteri için ayrı bir bölüm daha açılacak; onlara müşteri bölümü diyoruz, karıştırma.
 
 **Üç: aday listesini çıkaracağın yol.** İki seçenek var ve bugün birini seçiyorsun: liste çıkaran program (Apify) ya da Claude'un tarayıcı eklentisi. Yarının listesi seçtiğin yoldan çıkacak. Seçimi ve kurulumu üçüncü adımda yapıyorsun.
 
@@ -66,7 +66,7 @@ Programları birbirine bağlayan ara programlar alınmıyor. Hiç. CRM'in kendi 
 
 Ayrı arama programı alınmıyor. Kendi telefonundan arıyorsun.
 
-Toplu e-posta gönderen program alınmıyor. E-postaların CRM'den gidiyor.
+Toplu e-posta gönderen program alınmıyor. E-postaların CRM açılınca oradan, o güne kadar kendi iş e-postandan gidiyor.
 
 Telefonu insan yerine açıp konuşan program senin için alınmıyor. O sattığın sistemin parçası; müşteri geldiğinde müşterinin bölümünde, müşterinin telefon altyapısı uygunsa kurulur. Kendi adaylarını sen arıyorsun.
 
@@ -96,7 +96,7 @@ CRM hesabın başlangıç görüşmende açılıyor, yani randevu takvimin henü
 3. Kendi telefonunun takvimine de koyuyorsun. Tek yer değil iki yer, çünkü telefonun seni uyarıyor.
 4. Hatırlatmayı sen gönderiyorsun: görüşmeden bir gün önce ve iki saat önce, kendi WhatsApp'ından. Metni ben veriyorum.
 
-Başlangıç görüşmende CRM açıldığı gün bu dört adım kendiliğinden yerini bırakıyor: takvim açılıyor, düğme takvim linkine dönüyor, hatırlatmalar otomatiğe geçiyor ve buradaki liste CRM'e aktarılıyor. Ne kaybettiğini de bil: bu birkaç gün boyunca hatırlatmaları sen gönderiyorsun, o kadar.
+Başlangıç görüşmende CRM açıldığı gün bu dört adım kendiliğinden yerini bırakıyor: takvim açılıyor, düğme takvim linkine dönüyor, hatırlatmaların e-posta tarafı otomatiğe geçiyor (WhatsApp tarafını sen göndermeye devam ediyorsun) ve buradaki liste CRM'e aktarılıyor. Ne kaybettiğini de bil: bu birkaç gün boyunca hatırlatmaları sen gönderiyorsun, o kadar.
 
 ### CRM açıldığı gün (1 saat, o günün ilk işi)
 
@@ -108,7 +108,7 @@ Bu adım başlangıç görüşmesinden sonraki ilk oturumda çalışır.
 4. Ayarlar bölümünde işletme bilgilerini doldur: adın, şehrin, arama yapacağın telefon numarası, kişisel e-posta adresin, saat dilimi olarak İstanbul.
 5. Aynı ekranda Google hesabını bağla. Bağlan düğmesine basınca Google'ın izin sayfası açılır, izin verirsin. Bağlandıktan sonra takvim iki yönlü çalışır: CRM'e düşen randevu telefonundaki takvimde de görünür.
 6. Bugün randevu takviminde bir iş yok, takvim henüz açılmadı. Google bağlantısı kurulduğu için bugün takvim açıldığında dolu saatlerin kendiliğinden kapanacak.
-7. Ayarlarda "özel değerler" diye bir ekran var. Özel değerler, bir kere yazınca bütün mesajlarda kendiliğinden görünen bilgilerdir. Bugün dördünü doldur: adın, şehrin, telefon numaran, e-posta adresin. Kalan satırlar boş kalacak, çünkü sitenin adresi bugün belli oluyor.
+7. Ayarlarda "özel değerler" diye bir ekran var. Özel değerler, bir kere yazınca bütün mesajlarda kendiliğinden görünen bilgilerdir. Bugün dördünü doldur: adın, şehrin, telefon numaran, e-posta adresin. Sitenin adresini de yaz (altıncı bölümde); kalan satırlar müşteri gelince dolar.
 
 Sonra İş Beyni'nin "Bugünün listesi" bölümündeki her satır CRM'e aktarılır ve bölüm "CRM'e taşındı, tarih" satırıyla kapanır. Sayım tutmadan kapanmaz. Aynı gün musteri-takip-sistemini-kur çalışır ve takip zincirini kurar.
 
@@ -179,7 +179,7 @@ Karşılığında beş şeye dikkat ediyorsun ve beşi de zaten yapacağın şey
 - Listeye işletmenin genel numarası ve genel e-postası girer. Kişinin özel cep numarası girmez.
 - İlk temasta kim olduğunu ve numarayı nereden bulduğunu söylersin. "Google Haritalar'dan buldum" cümlesi baştan geçer.
 - Her aramanın ve her mesajın sonunda çıkış var: "İstemiyorsanız söyleyin, bir daha aramam."
-- İstemeyen kişi aynı gün listeden çıkar ve bir daha aranmaz. CRM'de kapanma sebebi "aday istemedi" işaretlenir ve kayıt mesaj almaya kapatılır.
+- İstemeyen kişi aynı gün listeden çıkar ve bir daha aranmaz. Kayıt yerinde (CRM ya da `adaylar.csv`) kapanma sebebi "aday istemedi" işaretlenir ve kayıt mesaj almaya kapatılır.
 - Kimden ne zaman ne istendiği kayıtlı duruyor.
 
 Bu beşine uyduğun sürece bu konuyu bir daha düşünmene gerek yok.
@@ -206,8 +206,8 @@ Geriye tek kalem kalıyor: Claude aboneliği. Tutarını ödeme ekranında göre
 
 ## 6. Ne söyler
 
-Açılışta: "Bugün üç saat, dört parça. Alet almıyoruz. Dün kurduğun işin hesaplarını açıyoruz ve öğleden sonra sayfan internete çıkıyor. Yarın aday listesini çıkaracaksın; o listeyi hangi yolla çıkaracağını bugün seçip deniyoruz."
-Daha çok program isterse: "Hayır. Yedi program alan kişi haftalarca o programları birbirine bağlamakla uğraşıyor ve o sürede kimseyi aramıyor. Dört parça yeter."
+Açılışta: "Bugün üç saat, dört araç. Alet almıyoruz. Dün kurduğun işin hesaplarını açıyoruz ve öğleden sonra sayfan internete çıkıyor. Bir sonraki blokta aday listesini çıkaracaksın; o listeyi hangi yolla çıkaracağını bugün seçip deniyoruz."
+Daha çok program isterse: "Hayır. Yedi program alan kişi haftalarca o programları birbirine bağlamakla uğraşıyor ve o sürede kimseyi aramıyor. Dört araç yeter."
 Programları birbirine bağlayan araç isterse: "Müşterin yok. Müşterin yokken bunu kurmak, boş dükkânın kasasını süslemek. CRM'in kendi akışları zaten var."
 İnternet adresi almak isterse: "Bugün, araçların arkasından. Merdivenin alt basamağındaysan bugün almıyorsun; site ücretsiz adresle çıkıyor, kendi adresini ilk kanıttan sonra alıyorsun."
 Liste yolunu seçerken: "İki yol var. Liste çıkaran program yirmi dakikada sekiz yüz kayıt veriyor, e-posta ve sosyal medya hesabı da geliyor, tutarı 1,2 dolar ve kredin ayda 5 dolar. Tarayıcı eklentisi üç saatte yüz işletme veriyor, para gitmiyor ama e-posta da gelmiyor. Sana soruyorum çünkü para senin cebinden çıkıyor. Hangisi?"
@@ -215,7 +215,7 @@ Liste programı ücretli mi derse: "Ücretsiz planda kalıyorsun ve kart istemiy
 İngilizce ekranda takılırsa: "Ekranın görüntüsünü at, hangi düğme olduğunu söylerim. Tarayıcının çevirisini açma; çeviri düğme adlarını değiştiriyor ve bir sonraki adımda tarif ettiğim yazıyı ekranda bulamıyorsun."
 Türkiye numarası isterse: "CRM'in numara verdiği ülkelerde Türkiye yok. Sen zaten kendi telefonundan arıyorsun, bu bir eksik değil."
 Bugün eksik hissederse: "Eksik değil, erken. Bugün üç saat; yarın kesin fiyat ve aday listesi."
-Bitince: "Dört parça kurulu, liste yolun belli. Şimdi sayfan yayına çıkıyor; akşam tanıdık listeni çıkarıyoruz. Devam edelim mi?"
+Bitince: "Üç araç kurulu, CRM bölümün görüşmede açılacak, liste yolun belli. Şimdi sayfan yayına çıkıyor; akşam tanıdık listeni çıkarıyoruz. Devam edelim mi?"
 
 ## 7. Ne yazar
 
@@ -242,8 +242,8 @@ Sıradaki: aynı gün, sayfanın yayını (siteni-kur), sonra pazar doğrulamas�
 - Liste yolu seçilmedi: üçüncü bloğun ilk yarım saati buna gider ve o günün akışı kayar.
 - Birinci yol seçildi ama deneme yapılmadı ya da anahtar alınmadı: niş doğrulaması elle sayım yoluna düşer, işaret üçüncü bloğa kadar açık kalır.
 - İkinci yol seçildi ama eklenti kurulmadı ya da Google Haritalar'a izin verilmedi: aynı işaret açılır, kurulum üçüncü bloktan önceki ilk boş saate yazılır.
-- Takvim bağlanmadı: bugünkü randevu kurulumu bunu ilk iş yapar.
+- Google takvimine çalışma saatleri işaretlenmedi: ertesi sabahın ilk beş dakikası.
 - Masraf tablosuna Claude aboneliğinin tutarı girilmedi: gelir planı eksik hesaplıyor demektir, ilk kâr hesabında sorulur.
 - İkinci blokta üç saat aşıldı ve hâlâ program araştırılıyor: modül kapanır, kalan ne varsa üçüncü bloğun ilk yarım saatine yazılır.
 
-Beş kural: boş sayfa yok (dört adımın sırası ve ayarları hazır gelir) · sessiz bitiş yok (akşam dört parça kurulu) · onay (abonelik tutarını sen görürsün, tabloya senin söylediğin girer) · sahadan güncelleme (bir hesap kilitlenince modül ikinci kez açılır) · sormaz söyler (hangi programların kurulacağını, hangilerinin kurulmayacağını FounderOS söyler; tek istisna liste yolu, çünkü orada cebinden para çıkıyor).
+Beş kural: boş sayfa yok (dört adımın sırası ve ayarları hazır gelir) · sessiz bitiş yok (akşam araçlar kurulu, sayfa yayında) · onay (abonelik tutarını sen görürsün, tabloya senin söylediğin girer) · sahadan güncelleme (bir hesap kilitlenince modül ikinci kez açılır) · sormaz söyler (hangi programların kurulacağını, hangilerinin kurulmayacağını FounderOS söyler; tek istisna liste yolu, çünkü orada cebinden para çıkıyor).

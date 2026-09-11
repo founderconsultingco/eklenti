@@ -8,7 +8,7 @@ description: "Müşteri kazanıldıktan sonra sürekli. Haftalık görünür iş
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Yirmi birinci gün raporundan sonrasını yöneten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. İkinci ay planı, düzenli temas, referans, üst pakete geçiş ve gerekirse ayrılık bu modülün işidir.
+Rapor günü raporundan sonrasını yöneten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. İkinci ay planı, düzenli temas, referans, üst pakete geçiş ve gerekirse ayrılık bu modülün işidir.
 
 Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil.
 
@@ -24,15 +24,15 @@ En tehlikeli an üçüncü ay. Müşteri mutlu görünür, sen rahatlarsın, tem
 - Raporu yazmak ve kanıt hikâyesini üretmek (aylik-raporu-hazirla). Kanıt hikâyesi orada yazılır ve izni orada alınır; bu modül onu referans belgesi olarak paketler ve gönderir.
 - Haftalık teknik bakım (sistemi-kontrol-et).
 - Sistem bozulunca krizi yönetmek (zor-konusmayi-yonet).
-- İlk yirmi bir günün teslimatı (musteriyi-karsila ve diğerleri).
+- İlk [21/28] günün teslimatı (musteriyi-karsila ve diğerleri).
 - Yeni aday bulmak. Referanstan gelen aday normal aday hattına girer (gorusmeye-getir).
 
 Pazarlamada tek cümle: satış bittiğinde iş bitmez, asıl para ikinci ayda kalan müşteridedir.
 
 ## 2. Ne zaman çalışır
 
-- Yirmi ikinci günden itibaren, müşteri devam ettiği sürece.
-- Yirmi ikinci günden otuzuncu güne kadar da her hafta görüşme sürer. İlk ayın ritmi musteriyi-karsila'da başlamıştı, aynı ritim devam eder.
+- Rapor gününden sonraki günden itibaren, müşteri devam ettiği sürece.
+- Rapor gününden ilk tahsilata kadar da her hafta görüşme sürer. İlk ayın ritmi musteriyi-karsila'da başlamıştı, aynı ritim devam eder.
 - İkinci ve üçüncü ay iki haftada bir görüşme. Doksanıncı günden sonra ayda bir. Bu görüşmelerin hepsi kurulum bloğundadır, saatini müşteri seçer; işin yanında çalışıyorsan akşam ya da hafta sonu. Sıfırlama, kurtarma ve çıkış görüşmesi de aynı pencerededir.
 - Aylık rapor görüşmesi o dönemin görüşmesinin yerine geçer, ayrıca bir görüşme yapılmaz.
 - Her hafta: haftada iki üç kez iş kanıtı, haftada bir sesli mesaj. İş kanıtı sabah bloğunda gider, on saniye sürer. Sesli mesajın penceresi yok; yürürken kaydedip gönderirsin.
@@ -45,7 +45,7 @@ Pazarlamada tek cümle: satış bittiğinde iş bitmez, asıl para ikinci ayda k
 
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): son görüşme tarihi, son mesaj tarihi, tahsilat günü ve durumu, çözülmemiş arıza, randevu sayıları.
 Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): rapor sayıları, müşterinin verdiği işe dönme sayısı, kayıp birimi, beklenti cümleleri, kanıt hikâyesi izni, güvencenin sonucu ve ücretsiz ay durumu, müşterinin kişisel ayrıntıları.
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): büyüme şartı sağlandı mı, kaç aktif müşterin var, gelir planı. Büyüme şartı şu: görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş ve yirmi birinci gün raporu çıkmış olacak.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): büyüme şartı sağlandı mı, kaç aktif müşterin var, gelir planı. Büyüme şartı şu: görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş ve rapor günü raporu çıkmış olacak.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon.
 Doksan Gün Planı'nın ikinci bölümünden: bu nişte Kademe 3 var mı, ikinci ayda ne değişir.
 
@@ -64,7 +64,7 @@ Kural şu: iyi sonuç üretip sessiz kalırsan müşteriyi kaybedersin. Orta son
 2. Sesli mesaj. Haftada bir, otuz altmış saniye. Yürürken ya da kahve yaparken kaydedersin. Müşteri sesini duymak istiyor, yazıdan bambaşka bir etki yapar.
 3. Kazanımı sormadan paylaş. Rekor kırıldığında aynı saat içinde yazarsın, aylık rapora saklamazsın. "Bu hafta en iyi haftanı geçirdin, [şu kadar] randevu geldi."
 
-Bu üçünün sahibi ilk yirmi bir günde musteriyi-karsila, yirmi ikinci günden sonra bu modül.
+Bu üçünün sahibi ilk [21/28] günde musteriyi-karsila, yirmi ikinci günden sonra bu modül.
 
 Müşteri sayısına göre kademe: bir ya da iki müşteride haftada iki üç iş kanıtı. Üç ve daha fazla müşteride haftada iki. Sesli mesaj her müşteri için haftada bir kalır, çünkü altmış saniye sürer.
 
@@ -202,7 +202,7 @@ Bir şey daha: tahsilat konuşmasının içinde itirazla uğraşmazsın. İtiraz
 
 ### Ücretsiz ay bitiyorsa
 
-Yirmi birinci gün raporunda yazılan satırların hepsi sıfır çıktıysa ikinci ay ücreti alınmamıştı. O ay açık uçlu değildir.
+Rapor günü raporunda yazılan satırların hepsi sıfır çıktıysa ikinci ay ücreti alınmamıştı. O ay açık uçlu değildir.
 
 Ayın son haftasında bir görüşme yaparsın ve üç yoldan biri seçilir:
 1. Kapsamı daraltıp devam. Kademe 2'den Kademe 1'e inilir, rakam fiyati-belirle'nin aralığından okunur. Parça çıkarıp yeni ücret uydurulmaz.
@@ -215,11 +215,11 @@ Bu görüşmenin sonucu ve tarihi bilgi dosyasına yazılır.
 
 Şart: büyüme şartı sağlanmış olacak. En erken ikinci ay.
 
-Üst paket, Kademe 3'tür. Yani reklam yönetimi. Bir de ikinci ayda sesli asistan eklenebilir. Doksan Gün Planı'nın ikinci bölümünde bu niş için Kademe 3'e "yok" yazıyorsa bu görüşme hiç yapılmaz; sağlık nişlerinde durum budur. Onun yerine kapsam içinde derinleşilir.
+Üst paket, Kademe 3'tür. Yani dış arama ve reklam yönetimi: sistemin kendisinin eski müşteriyi ya da yeni başvuruyu araması, ülke, numara ve izin şartına bağlı; ve reklam. Doksan Gün Planı'nın ikinci bölümünde bu niş için Kademe 3'e "yok" yazıyorsa bu görüşme hiç yapılmaz; sağlık nişlerinde durum budur. Onun yerine kapsam içinde derinleşilir.
 
 Sıra yine aynı: önce daha fazlası, sonra daha iyisi, en son yenisi.
 
-İlk haftalık görüşmede, yirmi birinci gün raporunda ve kriz anında üst paket konuşulmaz. Doğru an şu: müşteri bir görüşmede kendi ağzıyla kazandığı işten bahsettiğinde. O görüşmenin sonunda konuşursun. Üçüncü ayın gözden geçirmesi de doğal bir andır.
+İlk haftalık görüşmede, rapor günü raporunda ve kriz anında üst paket konuşulmaz. Doğru an şu: müşteri bir görüşmede kendi ağzıyla kazandığı işten bahsettiğinde. O görüşmenin sonunda konuşursun. Üçüncü ayın gözden geçirmesi de doğal bir andır.
 
 ### Fiyat
 
@@ -248,7 +248,7 @@ Müşteriye baştan doğru cümleyi kurman için: hesaplar müşterinin adına, 
 
 Müşteride kalanlar: Google işletme profili, Facebook ve Instagram hesapları, WhatsApp numarası, kendi takvimi, ve CRM'den dışa aktardığın kişi listesi.
 
-Müşteride kalmayanlar: akışlar, şablonlar, asistanın cevap listesi ve kuralları. Sebebi şu ve müşteriye de böyle anlatılır: sistem, senin açtığın ve senin yönettiğin bir CRM hesabının içinde kurulu. O hesap müşterinin adına açılmıyor, müşteri oraya kısıtlı yetkili bir kullanıcı olarak giriyor. Yani müşterinin kendi hesapları (Google, Facebook, Instagram, WhatsApp, kendi takvimi) onda; sistemin kendisi sende. Devri yok.
+Müşteride kalmayanlar: akışlar, şablonlar, asistanın cevap listesi ve kuralları. Sebebi şu ve müşteriye de böyle anlatılır: sistem, senin adına açılan ve senin yönettiğin bir CRM hesabının içinde kurulu. O hesap müşterinin adına açılmıyor, müşteri oraya kısıtlı yetkili bir kullanıcı olarak giriyor. Yani müşterinin kendi hesapları (Google, Facebook, Instagram, WhatsApp, kendi takvimi) onda; sistemin kendisi sende. Devri yok.
 
 Kişi listesini dışa aktarırken bir sınır var: notlar kısalıyor ve akış geçmişi dışa aktarıma girmiyor. Bunu müşteriye söylersin.
 

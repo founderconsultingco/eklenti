@@ -73,4 +73,4 @@ Kayıt eksikse (kime ne zaman yazıldığı belli değilse) önce kayıt tamamla
 
 Sıradaki: değiştirilen tek şeyle o günün listesi.
 
-İşaretler: aynı kontrol üç kez üst üste aynı sonucu veriyorsa degisiklige-karar-ver'e not düşer. Otuz temasta sıfır cevap ve beş kontrol temizse, o zaman metin baştan yazılır; bu tek istisna.
+İşaretler: aynı kontrol üç kez üst üste aynı sonucu veriyorsa degisiklige-karar-ver'e not düşer. Elli temasta sıfır cevap ve beş kontrol temizse degisiklige-karar-ver açılır ve metne o karar verir; elliden önce metne dokunulmaz, değişen şey kanal, saat ya da listedir.

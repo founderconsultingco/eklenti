@@ -8,7 +8,7 @@ description: "On dokuz nis kartinin listesi, kart kurallari ve kart sablonu. Nis
 
 Kartlar plugin'in skill'lerinin okuduğu bilgi dosyalarıdır. Kural: uydurma yok, her rakam kaynaklı, bilinmeyen "sahadan dolacak" diye yazılır. Şablon en sonda.
 
-Durum: 18 kartın 18'i tam araştırmayla yazıldı (kart başına 15 ile 47 kaynak). Bilinen açıklar: oto kuaför kartı şablondan önce yazıldı, beş bölümü (fiyat ve kapasite ayrı başlık, asistan kuralları, kanal ve zaman, reklam kütüphanesi kelimeleri, kaynak listesi) eksik, tamamlanacak; Meta Reklam Kütüphanesi hiçbir kartta görülemedi (canlı taramayla dolacak); diş kliniğinde TDB ve Resmi Gazete tam metni robot engeline takıldı, hukukçu teyidi şart.
+Durum: 19 kartın 19'u şablona göre yazıldı (kart başına 5 ile 47 kaynak; oto kuaför kartı şablona sonradan tamamlandı, dil ve mesleki eğitim kursları kartı en son eklendi). Bilinen açıklar: Meta Reklam Kütüphanesi hiçbir kartta görülemedi (canlı taramayla dolacak); diş kliniğinde TDB ve Resmi Gazete tam metni robot engeline takıldı, hukukçu teyidi şart.
 
 ## İçindekiler
 

@@ -11,13 +11,13 @@ description: "Öğrenci \"randevu aldım\", \"yarın görüşme var\" dediğinde
 Bu modül, randevu alındığı andan görüşmenin ilk saniyesine kadar geçen süreyi yönetir. Amacı adayın takvime yazılması değil; adayın görüşmeye gelmesi. Pazarlamada bu, ilk müşteriyi getiren zincirin "randevu" adımıdır. Onay sayfası ve hatırlatma akışı bu zincirin standart parçasıdır. Bu modülün işi olmayanlar: randevu almak (adaya-mesaj-yaz), görüşmeyi yönetmek (gorusmeyi-yonet), görüşme sonrası (gorusmeyi-analiz-et). Gelme hedefi yüzde yetmiş. Yüzde ellinin altı sorun demek. Yüzde kırk beş ve altı tıkanıklık demek.
 
 ## 2. Ne zaman çalışır
-Takvim CRM hesabın açıldığı gün, yani başlangıç görüşmesinden sonra açılır ve sayfaya o gün yerleşir. O güne kadar sayfadaki "Görüşme ayarla" düğmesi WhatsApp'ına bağlıdır, saatleri sen verirsin ve İş Beyni'nin "Bugünün listesi" bölümüne yazılır. Elle alınan randevu da randevudur; sayaçlara aynı şekilde girer. Ön görüşme sayfasının yazısı ikinci blokta hazırlanır ve sayfa o zaman yayına girer; randevu takvimi, hatırlatma akışı ve EVET akışı CRM açıldığı gün kurulur. Takvim hazır pakette gelmiyor, o gün açılıyor; geri kalanı hazır kurulum paketinden senin hesabına aktarılır. Sonra her randevuda kendiliğinden çalışır: randevu CRM'e düştüğü an başlar, görüşme saatinde biter. Aday gelmezse bir kez daha çalışır, yeni randevu için.
+Takvim CRM hesabın açıldığı gün, yani başlangıç görüşmesinden sonra açılır ve sayfaya o gün yerleşir. O güne kadar sayfadaki "Görüşme ayarla" düğmesi WhatsApp'ına bağlıdır, saatleri sen verirsin ve İş Beyni'nin "Bugünün listesi" bölümüne yazılır. Elle alınan randevu da randevudur; sayaçlara aynı şekilde girer. Ön görüşme sayfası, randevu takvimi, hatırlatma akışı ve EVET akışı CRM açıldığı gün kurulur; sayfanın yazısı o gün bu modülden çıkar, videosu beşinci blokta çekilmiş olur. Takvim hazır pakette gelmiyor, o gün açılıyor; geri kalanı hazır kurulum paketinden senin hesabına aktarılır. Sonra her randevuda kendiliğinden çalışır: randevu CRM'e düştüğü an başlar, görüşme saatinde biter. Aday gelmezse bir kez daha çalışır, yeni randevu için.
 
 Bir şeyi baştan söyleyeyim. Tanıdıklara ilk mesaj üçüncü günün akşamı gidiyor, yani ilk randevu dördüncü günde çıkabilir. O gün sayfa var ama videolar yok. Sorun değil: tanıdığı ikna eden şey sayfa değil senin adın; takvim daveti ve hatırlatma yeter. Videolar beşinci günde çekilince sayfa tamamlanır ve soğuk adaylar onu tam haliyle görür.
 
 ## 3. Ne okur
 
-CRM'den okur: randevu kaydı (aday, saat, kanal, sahibinin adı, işletme), adayın aşaması, önceki temaslar ve söylediği itiraz, en çok istenen yüz işletme işareti, kanitini-hazirla modülünün ölçümü ve kanıt cümlesi. İş Beyni'nden okur: Dönüşüm Cümlesi, sistemin adı, bir dakikalık anlatım, kanal yolu, şehir, ön görüşme sayfasının adresi, senin takvim adresin. Niş kartından okur: "Kanal ve zaman" ve "Kim karar veriyor" bölümleri. Kartların ortak bulgusu şu: bu işletmeciler kendi müşterilerine karşı randevuya sadık olmayan taraf. Klima servisi "geleceğiz" deyip gelmez. Diş kliniği hastanın randevusunu haber vermeden iptal eder. Estetik merkezi bir gün önceden iptal eder. Emlakçıya günde yüz seksen ile iki yüz yirmi bildirim düşer. Teyit ve hatırlatma olmadan görüşmeye gelmezler.
+CRM'den okur: randevu kaydı (aday, saat, kanal, sahibinin adı, işletme), adayın aşaması, önceki temaslar ve söylediği itiraz, en çok istenen yüz işletme işareti, kanitini-hazirla modülünün ölçümü ve kanıt cümlesi. İş Beyni'nden okur: Dönüşüm Cümlesi, sistemin adı, bir dakikalık anlatım, kanal yolu, şehir, ön görüşme sayfasının adresi, senin takvim adresin. Niş kartından okur: "Kanal ve zaman" ve "Kim karar veriyor" bölümleri. Kartların ortak bulgusu şu: bu işletmeciler kendi müşterilerine karşı randevuya sadık olmayan taraf. Klima servisi "geleceğiz" deyip gelmez. Diş kliniği hastanın randevusunu haber vermeden iptal eder. Estetik merkezi bir gün önceden iptal eder. Emlakçıya günde onlarca bildirim düşer, kartta sayısı yazar. Teyit ve hatırlatma olmadan görüşmeye gelmezler.
 
 ## 4. Ne sorar
 
@@ -34,7 +34,7 @@ Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
 - Ara tampon 15 dakika; iki görüşme arasındaki boşluk. Tampon adaya gösterilmez.
 - Dolu saatler Google Takvim'den kendiliğinden kapanır.
 - Takvimde açık görünen saatler senin pencerelerinden çıkar; başka saat hiç görünmez. Hangi pencerenin açılacağı aşağıda "Randevu saatleri hangi pencereden verilir" bölümünde yazılı. Bu ayarı FounderOS kurar; çalışma düzenin değişirse aynı gün yeniden kurulur.
-- Randevu formunun satırları: ad, soyad, telefon, e-posta. Ayrıca işletme adı ve tek soru: "İşletmenizde telefonu kim açıyor?" Bu soru boş bırakılırsa randevu düşmez, sadece not olarak kalır. "Son on iki ayda hiç para kazanmamış işletme randevu alamaz" kuralı siteni-kur modülündedir.
+- Randevu formunun satırları: ad, soyad, telefon, e-posta. Ayrıca işletme adı ve tek soru: "İşletmenizde telefonu kim açıyor?" Bu soru boş bırakılırsa randevu düşmez, sadece not olarak kalır.
 - Rıza: sayfada onay kutusu, altında aydınlatma metni var. Aydınlatma metni, KVKK'nın istediği, bilgilerin ne için kullanılacağını anlatan kısa yazıdır. Randevuyu telefonda sen girdiğinde adayın işaretleyeceği kutu yoktur. O zaman sözlü rıza cümlesini telefonda söylersin: "Size WhatsApp ve e-posta göndereceğim, uygun mu?" CRM notuna "sözlü onay" yazılır. Adayın yazdığı EVET yazılı kayıt olarak saklanır.
 - Kendiliğinden onay kapalı. Randevu "onaysız" olarak doğar; adayın EVET'i onu onaylı yapar. "EVET yaz, onaylansın" CRM'de hazır özellik değildir, ayrı bir akış olarak kuruldu ve hesabında açık geliyor: adayın cevabında evet ya da tamam geçerse randevu kendiliğinden "onaylı" oluyor. Bunun bir sınırı var: akış sadece CRM'e düşen cevapları görüyor, yani e-postayı. Aday EVET'i WhatsApp'tan yazarsa o mesaj senin telefonunda kalıyor, onaylı işaretini sen koyuyorsun. EVET gelmezse randevu düşmez, işaret olur (bkz. C).
 - Yeniden planlama izni açık; erteleme linki mesajda var. Erteleme ayrı takvimden yapılır; böylece eski hatırlatmalar yeniden gitmez.
@@ -52,12 +52,12 @@ Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
 
 Ön görüşme sayfası:
 1. Üstte tek satır: "Görüşmeden önce üç dakikalık videoyu izleyin, sonra EVET yazın ki yerinizi kesinleştireyim."
-2. Video üç ile beş dakika. Sen kendi telefonunla çekersin; metnini bu modül yazar. Metnin sırası:
+2. Video üç ile beş dakika. Sen kendi telefonunla çekersin; metni satis-videosunu-cek'te yazılır (yedi bölüm), burası özetidir:
    - kim olduğun, tek cümle;
    - görüşmede ne olacağı: teşhis, satış değil;
    - ona soracağın üç soru (telefonu kim açıyor, cevapsız arama kaç, eski liste nerede); böylece düşünerek gelir;
    - nasıl katılacağı: sessiz yer, araç kullanırken değil, kalem kâğıt;
-   - kanıt: kartın sektör rakamı; beşinci günden sonra kanıt cümlesi ve kırk ile altmış saniyelik demo kaydı (video o sabah yeniden çekilir); o güne kadar yalnızca kartın sektör rakamı kullanılır; kanıt hikâyesi çıkınca o;
+   - kanıt: kartın sektör rakamı; dördüncü bloktan sonra kanıt cümlesi, CRM açıldıktan sonra kırk ile altmış saniyelik demo kaydı (video o sabah yeniden çekilir); o güne kadar yalnızca kartın sektör rakamı kullanılır; kanıt hikâyesi çıkınca o;
    - kapanış: "Bu görüşme için işletmenizi inceliyorum, lütfen gelin ve sözünüzü tutun."
 3. EVET düğmesi: WhatsApp'ta hazır "EVET" mesajı açan link. Takvim davetini kabul etmesi ayrıca telefonda söylenir (B bölümü, üç küçük söz).
 4. Altında üç kısa itiraz cevabı, yazıyla:
@@ -83,7 +83,7 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
 **B. Telefondayken, randevu alınırken.** (Bu modül, adaya-mesaj-yaz modülünün dördüncü parçasına şu dört satırı ekler.)
 - Sen telefondayken adayın bilgisini takvime kendin girersin; "siz doldurun" demezsin.
 - Randevu yirmi dört ile kırk sekiz saat içinde; en iyisi kırk saat sonrası. "Haftaya" yok; iki saat teklif edilir, üçüncüsü söylenmez. Teklif edilen iki saat senin pencerelerinden çıkar (yukarıdaki "Randevu saatleri hangi pencereden verilir" bölümü). Tam zamanlıysan "Yarın on bir mi, üç mü?" İşin yanındaysan "Yarın sekiz buçuk mu, cumartesi bir mi?" Saatleri sen açıklamazsın; niye o saat diye sorarsa tek cümle: "O saatlerde tam size ayrılıyorum".
-- Kapatmadan önce sözlü rıza ve üç küçük söz: "Size WhatsApp ve e-posta göndereceğim, uygun mu? Hangisi? Şimdi davet gönderiyorum. Kapatınca gelen mesaja EVET yazın. Üç dakikalık videoyu bu akşam izleyin. Takvim davetini kabul edin."
+- Kapatmadan önce sözlü rıza ve üç küçük söz: "Size WhatsApp ve e-posta göndereceğim, uygun mu? Hangisi? Şimdi davet gönderiyorum. Kapatınca gelen mesaja EVET yazın. Üç dakikalık videoyu bu akşam izleyin. Takvim davetini kabul edin." CRM açılmadıysa davet yerine WhatsApp'tan saat teyidi gider ve son cümle "Saati WhatsApp'tan yazıyorum, 'tamam' deyin" olur.
 - Kapanış, geleceği kesinmiş gibi: "Yarın on birde sizi arıyorum, hazır olun." "İlginizi çekerse gelin" demek yasak.
 - Aciliyet gerçek sebeple: kartın sızıntısı ("bu hafta kaçan her arama"). Uydurma "yer kalmadı" baskısı yok.
 - Gelmemenin asıl sebebi hatırlatma eksikliği değil, randevunun nasıl alındığı. İşletmeci telefonu kapatmak için "evet" der. Bu yüzden görüşme ayarlanmadan üç şey net olur: sorunun farkında mı, parası var mı, kararı kim veriyor.
@@ -113,7 +113,7 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
 
 ## 6. Ne söyler
 
-Randevu düşünce sana: "Randevun var: Ahmet Bey, yarın on birde. Üç şey gitti: davet, video, EVET isteği. Senin işin tek. Bu akşam Ahmet Bey EVET ya da 'tamam' yazdıysa dokunma. Yazmadıysa sabah bloğunda ara: 'Bugün on birde görüşüyoruz, hazır mısınız? Şu iki rakamı yanınıza alın.' Kırk üç dakika mesajı kendiliğinden gider. Prova bugün akşam bloğunda."
+Randevu düşünce sana: "Randevun var: Ahmet Bey, yarın on birde. Üç şey gitti: davet, video, EVET isteği. Senin işin tek. Bu akşam Ahmet Bey EVET ya da 'tamam' yazdıysa dokunma. Yazmadıysa sabah bloğunda ara: 'Bugün on birde görüşüyoruz, hazır mısınız? Şu iki rakamı yanınıza alın.' İki saat öncesi mesajı CRM açıksa kendiliğinden gider, açılmadıysa sen gönderirsin. Prova bugün akşam bloğunda."
 
 İşin yanında çalışan öğrenciye, randevu saati verilirken: "Saha bloğun sekiz buçukta bitiyor. Görüşmeyi oraya değil, hemen arkasına koyuyoruz: yarın sekiz buçuk. Adaya iki saat söyle, üçüncüsünü söyleme: yarın sekiz buçuk mu, cumartesi bir mi? Aramanın saatini görüşmeye yedirmiyoruz; bu akşam yine on arama var."
 

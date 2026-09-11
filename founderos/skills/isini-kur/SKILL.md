@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: isini-kur
-description: "Birinci gün. Kurucuyu on beş soruyla tanır, kısa başlangıç değerlendirmesi yapar, İş Beyni'ni açar. Sistem ilk kez çalıştığında ya da hedef değiştiğinde."
+description: "Birinci gün. Kurucuyu on sekiz soruyla tanır, kısa başlangıç değerlendirmesi yapar, İş Beyni'ni açar. Sistem ilk kez çalıştığında ya da hedef değiştiğinde."
 ---
 
 # isini-kur
@@ -14,10 +14,10 @@ Neden bu iş var: sıfırdan başlayan biri ilk gününü şu iki şeyden birine
 
 Bu modül birinci günü tek bir şeye bağlar. Akşam yattığında elinde bir rakam olacak: günde kaç kişiye ulaşacaksın ve kaç müşteride bu iş senin geçimini karşılayacak. O rakamı bilmeyen insan ikinci hafta vazgeçiyor, çünkü ilerlediğini göremiyor.
 
-Birinci günün sonunda elinde olacaklar: bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu, ve şirket konusunda ne zaman ne yapacağını gösteren net bir kural.
+Birinci günün sonunda elinde olacaklar: bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu, şirket konusunda ne zaman ne yapacağını gösteren net bir kural; ve günün diğer modüllerinden pazar, ideal müşteri, teklif, fiyat bandı, iş adı, marka kiti ve tanıtım sayfası.
 
 Şunlar bu modülün işi değildir:
-- Kime satacağına karar vermek (ikinci gün).
+- Kime satacağına karar vermek (nisi-sec, aynı gün, bu modülden hemen sonra).
 - Teklifin kademelerini yazmak ve kesin fiyatı koymak (üçüncü gün). Bu modül gelir planında geçici bir rakam kullanır.
 - Aday bulmak ve mesaj yazmak (üçüncü günden sonra).
 - Şirketi bugün kurmak. Aşağıda sebebi yazıyor.
@@ -32,7 +32,7 @@ Pazarlamadaki karşılığı: iş kurmak fikir bulmak değil, günlük bir sayı
 ## 3. Ne okur
 
 İş Beyni şablonundan: doldurulacak satırların listesi. İş Beyni, senin hakkında bilinen her şeyin yazıldığı tek dosyadır ve senin bilgisayarında durur.
-CRM'den: senin bölümün açılmış mı, açılmamış mı. Bağlantı günün sonunda kurulur. CRM, adayların ve müşterilerin kaydedildiği takip programıdır. Aday, henüz görüşmediğin, ulaşmaya çalıştığın işletme sahibidir.
+CRM'den: hiçbir şey; hesap başlangıç görüşmesinde açılır. CRM, adayların ve müşterilerin kaydedildiği takip programıdır. Aday, henüz görüşmediğin, ulaşmaya çalıştığın işletme sahibidir.
 Sabit kurallardan: günlük temas hedefi, gelir planındaki oranlar, masraf kalemleri. Hepsi aşağıda yazılı.
 
 ## 4. Ne sorar
@@ -178,9 +178,9 @@ Bugün bitmeden üç şey elinde olacak: kime satacağın, ne satacağın ve ka�
 
 Sattığın şey şu: işletmelerin kaçırdığı müşteriyi geri kazandıran bir sistem. Küçük bir işletme telefonu açamadığında, mesaja saatler sonra döndüğünde ya da eski müşterisini hiç aramadığında para kaybediyor. Sen o kaybı durduran sistemi kuruyorsun. Bugün bunun senin sektöründeki tam karşılığını yazacağız.
 
-İlk beş günün planı, Yol Haritası'nın aşamalarına göre. Birinci gün pazarını seçer, teklifini yazar, fiyat bandını koyar, markanı kurar ve sayfanı hazırlarız; akşam kurulmuş bir işin olur. İkinci gün araçları kurar, CRM'ini ve takvimini açar, sayfanı yayına alır, pazarını canlı veriyle doğrularız; akşam tanıdık listen çıkar. Üçüncü gün teslimat akışını çizer, fiyatını kesinleştirir, sözleşmeni ve ödeme yolunu hazırlar, beş yüz kişilik aday listeni çıkarırız; aynı akşam tanıdıklarına ilk mesajı atarsın, sistemin ilk mesajı o gün gider. Dördüncü gün elinde göstereceğin kanıt hazırlanır, ilk yüz mesajın metni yazılır, profillerin kurulur ve provalar başlar; prova, sahaya çıkmadan önce yaptığın sesli alıştırmadır. Beşinci gün provaları bitirir, videoları çeker, şirketini kuruluşa hazır hale getirir ve sahaya çıkış kontrolünü yaparsın; akşam ilk on soğuk temas gider. Altıncı gün tam sahadasın.
+İlk beş günün planı, Yol Haritası'nın aşamalarına göre. Birinci gün pazarını seçer, teklifini yazar, fiyat bandını koyar, markanı kurar ve sayfanı hazırlarız; akşam kurulmuş bir işin olur. İkinci gün araçlarını kurar, randevu yolunu WhatsApp'ına bağlar, sayfanı yayına alır, pazarını canlı sayımla doğrularız; CRM hesabın başlangıç görüşmende açılır; akşam tanıdık listen çıkar. Üçüncü gün teslimat akışını çizer, fiyatını kesinleştirir, sözleşmeni ve ödeme yolunu hazırlar, beş yüz kişilik aday listeni çıkarırız; aynı akşam tanıdıklarına ilk mesajı atarsın, sistemin ilk mesajı o gün gider. Dördüncü gün elinde göstereceğin kanıt hazırlanır, ilk yüz mesajın metni yazılır, profillerin kurulur ve provalar başlar; prova, sahaya çıkmadan önce yaptığın sesli alıştırmadır. Beşinci gün provaları bitirir, videoları çeker, şirketini kuruluşa hazır hale getirir ve sahaya çıkış kontrolünü yaparsın; akşam ilk on soğuk temas gider. Altıncı gün tam sahadasın.
 
-Altıncı güne kadar tanımadığın kimseye ulaşmıyorsun. Sebebi şu: ne sattığını bilmeden yazdığın mesaj işe yaramıyor, üstelik o işletme sahibi seni bir daha ciddiye almıyor. Tanıdıklarına üçüncü günde yazacağız, o ayrı.
+Beşinci bloğun akşamına kadar tanımadığın kimseye ulaşmıyorsun. Sebebi şu: ne sattığını bilmeden yazdığın mesaj işe yaramıyor, üstelik o işletme sahibi seni bir daha ciddiye almıyor. Tanıdıklarına üçüncü günde yazacağız, o ayrı.
 
 ### CRM: bugün yok, görüşmede açılıyor
 
@@ -190,7 +190,7 @@ CRM, adayların ve müşterilerin kaydedildiği takip programı. Senin hesabın 
 
 O zamana kadar yerine geçen şey belli: İş Beyni'nin "Bugünün listesi" bölümü. Adaylar, sıradaki hareketler, cevap bekleyenler, takip günü gelenler orada duruyor. CRM açıldığı gün bu liste bir kerede oraya aktarılıyor ve bölüm "CRM'e taşındı, tarih" satırıyla kapanıyor. Aynı bilgi iki yerde tutulmuyor.
 
-Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bunu net söylersin: **görüşmeyi ertelemek sahaya çıkışı erteliyor.**
+Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bunu net söylersin: **görüşmeyi ertelemek sahaya çıkışı ertelemiyor ama sahaya elin daha boş çıkıyorsun.**
 
 ### Kurucu bölümü
 
@@ -219,11 +219,11 @@ Birinci ve on birinci sorunun cevabından çıkar, ayrıca sorulmaz.
 
 Bu sayı pazarlık konusu değil. Sayıyı düşürürsen plandaki bütün tarihler kayar ve bunu üç hafta sonra fark edersin.
 
-Tek istisna var: ilk müşterinin kurulum haftasında, yani onun sıfırıncı gününden yedinci gününe kadar hedef yarıya iner. 100 yapıyorsan 50'ye, 40 yapıyorsan 20'ye. O hafta teslimat yapıyorsun.
+Tek istisna var ve yalnız işin yanında çalışan için: ilk müşterinin bütün teslim süresinde (sıfırıncı günden rapor gününe) günlük hedef kırktan yirmiye iner, çünkü teslimat akşamlardan çıkıyor. Tam zamanlıda hedef düşmez.
 
 ### Hazırlık seviyesi
 
-Üç şeye bakılır: satış tecrüben var mı, bu sektörü içeriden tanıyor musun, telefonda tanımadığın biriyle konuşabiliyor musun. Üçüncüsünü güvenin ölçüsü sayıyoruz.
+Üç şeye bakılır: satış tecrüben var mı (onuncu soru), bu sektörü içeriden tanıyor musun (sekizinci soru), telefonda tanımadığın biriyle konuşabiliyor musun (onuncu sorunun tek devam sorusu: "Tanımadığın birini iş için aramak seni zorlar mı?"). Üçüncüsünü güvenin ölçüsü sayıyoruz.
 
 Üçü de yoksa ilk iki müşteride yarı fiyat çalışacaksın. İndirim değil, karşılığında müşteriden aldığın şeyler var. Ayrıntısını üçüncü gün konuşacağız.
 
@@ -332,7 +332,7 @@ Dört bölüm halinde yazarız, çünkü dördü farklı zamanlarda başlıyor.
 Bugünden itibaren:
 - Claude aboneliği. Claude, FounderOS'un üzerinde çalıştığı yapay zeka programı.
 - CRM ücretsiz. FounderOS'u aldığın için CRM de seninle geliyor, ayrıca ödeme yok.
-- Aday listesi çıkaran program (Apify). Ücretsiz planda ayda 5 dolar kredi veriyor. İletişim bilgisi veren araçta 1.000 kayıt 5 dolar; üçüncü blokta 800 kayıt çekiyorsun, yani 4 dolar. Kredinin içinde kalıyor, cebinden çıkmıyor.
+- Aday listesi çıkaran program (Apify). Ücretsiz planda ayda 5 dolar kredi veriyor. İletişim bilgisi veren araçta 1.000 kayıt 1,5 dolardan başlıyor; üçüncü blokta 800 kayıt çekiyorsun, yani 1,2 dolar. Kredinin içinde kalıyor, cebinden çıkmıyor.
 
 İkinci bloktan itibaren:
 - İnternet adresi, yılda 10 ile 60 dolar arası.
@@ -358,7 +358,7 @@ On ikinci sorunun cevabı bu tabloyu karşılamıyorsa liste kısılır. Nasıl 
 
 **Üst basamak: altı aydan fazlasını karşılıyor.** Değişen tek şey, şirket kuruluş belgelerinin beşinci blokta tamamen hazır durması ve ilk "evet" günü tek telefonla açılması. Fazla para hiçbir kalemi öne çekmez; erken alınan araç sahaya çıkışı hızlandırmıyor.
 
-Üç basamağın da ortak kuralı: hiçbir basamakta sahaya çıkış ertelenmez ve hiçbir basamakta reklam bütçesi yoktur. Reklam ilk müşteriden ve yirmi birinci gün raporundan önce açılmaz.
+Üç basamağın da ortak kuralı: hiçbir basamakta sahaya çıkış ertelenmez ve hiçbir basamakta reklam bütçesi yoktur. Reklam ilk müşteriden ve rapor günü raporundan önce açılmaz.
 
 Basamağın hangisi olduğu İş Beyni'ne yazılır. Bir basamak yukarı çıktığında ertelenmiş kalemler sırayla açılır ve sırayı FounderOS söyler.
 
@@ -373,8 +373,8 @@ Gelir planı bitince: "Günde yüz kişi. Kâğıda yaz, masana yapıştır, fot
 İşin yanında çalışana: "Günde kırk kişi, saha bloğunda; senin saha bloğun akşam altı ile sekiz buçuk arası ve cumartesi sabahı. Maaşlı işinden ayrılmayı dört müşteride konuşuruz, öncesinde değil. Maaşının duruyor olması senin avantajın: kirayı ödemek için o müşteriye muhtaç değilsin, o yüzden fiyatını düşürmeyeceksin."
 Şirket konusunda: "Bugün şirket kurmuyoruz, beşinci günde de kurmuyoruz. Şirket ilk 'evet'ini aldığın gün kuruluyor. Kurduğun tarihten itibaren ayda 13.750 ile 16.300 TL arası sabit gider başlıyor ve sen o gün kazanmaya başlamış oluyorsun. Bugünkü işin sadece mali müşavirini bulup beş soruyu sormak. Maaşlı bir işin varsa ilk soru senin için ayda 11.808 TL demek, cevabı müşavirinden geliyor, benden değil."
 Bütçe endişesi gelirse: "Bugün cebinden çıkan para [tablodaki ilk bölümün toplamı]. Şirket gideri henüz yok, ilk 'evet'e kadar da yok. Elindeki parayla kaç ay çıkıyorsun, birlikte yazdık; o sayı üçün altındaysa merdivenin alt basamağından yürüyoruz ve kendi adresi ikinci günde değil, ilk kanıttan sonra alınıyor."
-Bir işi gününün dışına taşırırsan: "Marka ve sayfa birinci günün işi, yayın ikincinin. Üçüncü güne taşarsa bir satış gününü yemiş oluyorsun. Altıncı günde sen kimi aradın diye soracağım."
-Hedef gerçekçi değilse: "Bu hedefe bu günlük sayıyla şu kadar ayda varılır. İki seçenek var: ya süreyi uzatırız ya hedefi indiririz. Rakamla oynamıyoruz, çünkü oynadığın rakam seni değil takvimi kandırır."
+Bir işi gününün dışına taşırırsan: "Marka ve sayfa birinci bloğun işi, yayın ikincinin. Üçüncü bloğa taşarsa bir satış gününü yemiş oluyorsun. Saha açılınca sen kimi aradın diye soracağım."
+Hedef gerçekçi değilse (yalnız üçüncü blokta, kesin fiyat konduktan sonra; birinci günde bu cümle kurulmaz): "Bu hedefe bu günlük sayıyla şu kadar ayda varılır. İki seçenek var: ya süreyi uzatırız ya hedefi indiririz. Rakamla oynamıyoruz, çünkü oynadığın rakam seni değil takvimi kandırır."
 Rakamlar korkutursa: "960 arama çok gibi duruyor. Günde elli arama yaparsan yirmi iş günü. Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
 
 ## 7. Ne yazar
@@ -390,11 +390,11 @@ CRM'e bugün bir şey yazılmıyor, çünkü hesabın başlangıç görüşmende
 - Mali müşavir bulunamazsa: birinci günde bulunması şart değil, beşinci bloğa kadar zamanın var. Bulduğun gün adını ve beş sorunun cevabını yazarız. Beşinci bloğa kadar da bulunamazsa ilk kapanışta parayı havaleyle alırız ve şirketi o hafta içinde kurarız.
 - Şirket hazırlığı beşinci blokta tamamlanmazsa: sahaya yine çıkarsın, saha ertelenmez. Şirket zaten ilk "evet"te kuruluyor; ilk para havale yoluyla alınır, nasıl olacağını onay belgesini hazırladığımız gün anlatacağım. Faturanın ne zaman kesileceğini müşavirin söyler, o cevabı beklemeden müşteriye söz vermezsin.
 - Şirket hiç açılamıyorsa: bu durum İş Beyni'ne yazılır, FounderOS'a bildirirsin, cevabı sana getirir.
-- Gün iki saatte bitmezse: bölünür. Ama gelir planı ve günlük sayı aynı gün mutlaka biter, kalanı ertesi sabaha kalabilir.
+- Öğrencinin bugün dört saati yoksa: gün tek sabit noktadan ikiye bölünür, fiyat bandından sonra (pazar, ideal müşteri, teklif ve bant birinci oturuşta; hesap, marka ve sayfa ikinci oturuşta, aynı gün akşam ya da ertesi akşam). Bölme noktasından önce bırakılmaz; "yarısında bırakırsan yarın pazarsız uyanırsın."
 
 ### Günün kapanışı
 
-Birinci gün tek mesajla kapanmaz ve yedi konu tek mesaja sığmaz. Sıra şu, her biri ayrı mesaj:
+Birinci gün tek mesajla kapanmaz ve altı konu tek mesaja sığmaz. Sıra şu, her biri ayrı mesaj:
 
 **1. Bugün ne kazandın.** Yedi madde, hepsi somut: pazarın, ideal müşterin, teklifin, fiyat bandın, işinin adı, marka kitin, tanıtım sayfan. Klasördeki dosyaları adıyla sayarsın: İş Beyni, Doksan Gün Planı, niş kartı, marka klasörü, sayfa. Sonunda tek cümle: "Sabah hiçbiri yoktu. Akşam hepsi klasörünün içinde duruyor." Rakam gösteren kapanış, sıfat kullanan kapanıştan güçlü.
 
@@ -418,15 +418,15 @@ Sonunda köprü cümlesi: "O görüşmeye artık adı olan bir işle geliyorsun:
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: "Yarın araçları kuruyoruz. Bugünkü rakam, yarın seçeceğin sektöre göre bir kez daha güncellenecek."
+Sıradaki: "Yarın araçları kuruyoruz ve sayfan yayına çıkıyor. Bugünkü rakam üçüncü blokta kesin fiyatla bir kez daha güncellenecek."
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Hedef gelir, günlük sayıyla makul sürede çıkmıyor: gelir planında düzeltilir, tartışma açılmaz.
 - Maaşlı işi var ya da günlük vakti beş saatin altında: çalışma düzeni "işin yanında" yazılır, takvim uzatılır.
-- Yedinci sorunun cevabı telefonu dışlıyor: kanal yolu "yazı" yazılır, günlük temas hedefi aynı kalır ama randevu beklentisi ona göre kurulur.
+- Kartın kanal ve zaman bölümü yazıyı işaret ediyor: kanal yolu "yazı" yazılır, günlük temas hedefi aynı kalır ama randevu beklentisi ona göre kurulur.
 - Altıncı sorunun cevabında bir bırakma noktası varsa: o güne yaklaşırken FounderOS ayrıca döner.
 - Maaşlı bir işi var: Bağ-Kur sorusu mali müşavire sorulacakların ilk maddesi olur.
-- Beşinci günde mali müşavir ya da belgeler eksik: havale yolu ilk kapanışta hazır tutulur, altıncı gün ertelenmez.
+- Beşinci blokta mali müşavir ya da belgeler eksik: havale yolu ilk kapanışta hazır tutulur, saha ertelenmez.
 - Üçüncü gün fiyat kesinleşti: gelir planı güncellenir.
 - Üç yüzüncü temas tamamlandı: oranlar öğrencinin kendi rakamıyla değiştirilir.
 

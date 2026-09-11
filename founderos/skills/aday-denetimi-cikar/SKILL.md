@@ -21,7 +21,7 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 ## 2. Ne zaman çalışır
 İki hâli var ve ikisi ayrı işler.
 
-**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Dördüncü blokta en çok istenen yüz işletmenin hepsine yapılır; sığmayanı beşinci bloğun sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
+**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Üçüncü blokta en çok istenen yüz işletmenin ilk otuzuna, dördüncü blokta kalan yetmişine yapılır; sığmayanı beşinci bloğun sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
 
 **Derin denetim.** İşletme başına sekiz dakika, canlı testler dahil. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
 
@@ -33,7 +33,7 @@ Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin dene
 
 Niş kartından: kayıp birimi ve rakamı, sızıntı nerede bölümünün üç sızıntısı, duran havuz tipleri, kanal ve zaman, işletmecinin sözlüğü ve iç sesi, açılış cümlesi, yasal sınırlar.
 
-CRM'den: adayın kaydı, önceki temaslar, hangi kanalların denendiği, kanal durumu satırları.
+Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): adayın kaydı, önceki temaslar, hangi kanalların denendiği, kanal durumu satırları.
 
 kanitini-hazirla'dan: o adaya yapılmış canlı arama ve yazılı test sonucu varsa.
 
@@ -154,7 +154,7 @@ Bir de şu: denetim kartı adayın kendisine gönderilmez. Gönderilirse iki şe
 
 Sabah, derin denetim başlarken: "Bugünün beş adayı hazır, sıra sızıntı puanına göre. İlkinden başlıyoruz: [ad], puan dört. Şimdi tek şey senden: saat [saat]'te bu numarayı ara, açılıyor mu bak, sonucu söyle. Gerisini ben dolduruyorum."
 Denetim bitince: "[Ad] için en güçlü bulgu şu: [bulgu]. Lira karşılığı [rakam]. Sıradaki kanal telefon. Arama kartın hazır, kanca bu bulgudan yazıldı."
-Öğrenci denetimi atlamak isterse: "Denetimsiz mesaj yüzde bir cevap alıyor, denetimli mesaj yüzde yedi. Beş dakikayı burada harcamazsan yirmi mesajı boşa harcıyorsun. Hangisi daha uzun sürüyor?"
+Öğrenci denetimi atlamak isterse: "Yurt dışı satış verisi başlangıç rakamı olarak şunu söylüyor: denetimsiz mesaj yüzde bir cevap alıyor, denetimli mesaj yüzde yedi; kendi oranın otuz temasta belli olur. Beş dakikayı burada harcamazsan yirmi mesajı boşa harcıyorsun. Hangisi daha uzun sürüyor?"
 Öğrenci yüz işletmenin hepsine derin denetim yapmak isterse: "Yüz işletmeye sekiz dakika on üç saat eder ve o gün hiç arama yapmazsın. Derin denetim sadece o gün arayacaklarına. Kalanların hızlı denetimi zaten var ve sırayı o belirliyor."
 Bulgu çıkmazsa: "Bu işletmede dışarıdan görünen sızıntı yok. Bu 'sorunu yok' demek değil, 'göremiyoruz' demek. Listenin sonuna gidiyor, kartın açılış cümlesiyle aranıyor. Sıradaki."
 Öğrenci uydurmaya kalkarsa: "Bunu görmedin. Görmediğin bulgu mesaja girmez; ilk soruda çöker ve o adayı bir daha arayamazsın. Bakılamadı yazıyoruz, geçiyoruz."

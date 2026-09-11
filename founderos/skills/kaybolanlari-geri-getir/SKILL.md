@@ -37,7 +37,7 @@ Pazarlamadaki karşılığı: dört sızıntının dördüncüsü. Dört sızın
 - On ikinci günden sonra yeni kişiye ilk mesaj gitmez. Kalan liste ikinci aya kalır.
 - On beşinci günden on sekizinci güne: eksikler turu. Bu dört gün bu modülün sahipliğindedir. Kurulamayan parçalar kapatılır, kapatılamayanlar kapsam dışı sayılır ve müşteriye yazılı bildirilir, açık kalan işler tek listede toplanır ve rapora hazır edilir. Son takip mesajları bu turla üst üste biner.
 - On yedinci günde son takip mesajı da bitmiş olur.
-- On dokuzuncu günden yirmi birinci güne: rapor.
+- On dokuzuncu günden rapor gününe: rapor.
 - Sonrası: bu kampanya en sık altı ayda bir tekrarlanır, daha sık değil. Talebi yoğun nişte üç ayda bir olabilir. Hiçbir nişte, o nişin kendi doğal tekrar aralığından sık yapılmaz. Doğal aralık yılda birse kampanya da yılda bir olur.
 
 ## 3. Ne okur
@@ -45,7 +45,7 @@ Pazarlamadaki karşılığı: dört sızıntının dördüncüsü. Dört sızın
 Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): duran havuz listesi, sahibin yazılı onayı, İYS sorgusunun yazılı sonucu, müşterinin çalışma saatleri, devri alacak kişinin adı. İYS, bir işletmenin insanlara toplu mesaj gönderebilmesi için gereken izinlerin tutulduğu devlet sistemidir.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): Duran havuz bölümündeki kimlerin geri çağrılacağı ve uyandırma sebebi; tekrar aralığı orada yazılı değilse Sahadan dolacak bölümüne bakılır. Ayrıca yasal sınırlar, işletmecinin kendi kullandığı cümleler, sezon.
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): yüklenen kayıtlar, gönderim ve cevap sayıları, numaranın kalite notu.
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): yirmi bir günün takvimi, sistemin adı.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): [21/28] günün takvimi, sistemin adı.
 
 ## 4. Ne sorar
 
@@ -230,7 +230,7 @@ Oran ne zaman hesaplanır: iki yüz kişiye gitmeden metin hakkında teşhis kon
 
 Beklenen oran verilmez. Müşteriye "şu kadar randevu çıkarırım" denmez. Bu listeye ait güvenilir bir Türkiye rakamı yok; başka işlerin yüzdesini buraya taşımak yanıltır. Kendi rakamın ilk müşterilerinden çıkacak.
 
-Yirmi birinci günün raporundaki sayıların çoğu buradan çıkacak.
+Rapor gününün raporundaki sayıların çoğu buradan çıkacak.
 
 ### Bu bölümdeki kanun bilgileri için
 
@@ -254,15 +254,15 @@ Niş kartının Sahadan dolacak bölümüne: bu nişte işe yarayan geri çağı
 
 ## 8. Yedek yol
 
-- İYS sonucu gelmediyse: gönderim başlamaz, liste bekler, müşteriye yazılı bildirilir. Yirmi bir gün müşterinin verdiği günden başlar.
+- İYS sonucu gelmediyse: gönderim başlamaz, liste bekler, müşteriye yazılı bildirilir. [21/28] gün müşterinin verdiği günden başlar.
 - Müşteri İYS'ye kayıtlı değilse ya da kaydını bilmiyorsa: muhasebecisine sorar, cevabı yazılı getirir. Yedinci güne kadar cevap gelmezse bu parça ilk turda kapsam dışıdır ve güvencenin sonucuna sayılmaz.
-- İYS sonucu boş geldiyse (hiç izinli numara yok): bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz. Güvence, müşteriye verdiğin sözdür: yirmi birinci günde rapor; raporda yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Bu ihtimali kurulum görüşmesinin ikinci maddesinde, güvencenin şartını söylerken zaten söyledin; söylemediysen bugün söylenir.
+- İYS sonucu boş geldiyse (hiç izinli numara yok): bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Bu ihtimali kurulum görüşmesinin ikinci maddesinde, güvencenin şartını söylerken zaten söyledin; söylemediysen bugün söylenir.
 - İzinli liste elliden azsa: tek parti, tek gönderim, konuşmaları elle okursun. Oran hesaplanmaz, rapora sayı yazılır.
 - Şablon onayı gelmediyse: gönderim bekler. Başka kanaldan yazılmaz.
 - Numaranın notu kırmızıya düşerse: gönderim durur, metin sadeleşir, not yeşile dönünce elli kişilik yeni parti denenir.
 - Sağlık nişinde klinik metni onaylamazsa: bu parça ilk turda kapsam dışı, müşteriye yazılı bildirilir.
 - Liste kirliyse (yarıdan fazlası eksik satır): temizlenen kısımla başlanır, müşteriden ikinci bir döküm istenir.
-- Müşteri listeyi hiç vermezse: yirmi bir gün onun listeyi verdiği günden başlar. Yedinci güne kadar da gelmezse bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz.
+- Müşteri listeyi hiç vermezse: [21/28] gün onun listeyi verdiği günden başlar. Yedinci güne kadar da gelmezse bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz.
 
 ## 9. Sıradaki adım ve işaretler
 

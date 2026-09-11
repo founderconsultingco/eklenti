@@ -38,7 +38,7 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - İki müşteri yolculuğu: randevuyla çalışan işletme (başvuru, konuşma, randevu, hatırlatma, katılım) ve fiyat teklifiyle çalışan işletme (başvuru, bilgi toplama, keşif, teklif, takip, kabul). Bazı nişlerde ikisi birlikte. Hangisi olduğu kartta yazar.
 - Kademe 1 Temel Kapsam: gelen tarafın karşılanması (mesaj asistanı; telefon altyapısı uygunsa gelen aramayı karşılayan sesli asistan), randevu ya da teklif takibi, hatırlatma.
 - Kademe 2 Tam Kapsam, asıl satılan: üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor.
-- Kademe 3 Genişletilmiş Kapsam: üstüne dış arama ve reklam. Sağlık nişlerinde reklam yok. Şartı: Kademe 2 ilk müşteride sorunsuz teslim edilmiş ve rapor çıkmış olacak. En erken ikinci ay.
+- Kademe 3 Genişletilmiş Kapsam: üstüne dış arama ve reklam. Yasal sınırı olan sağlık nişlerinde Kademe 3 yok. Şartı: Kademe 2 ilk müşteride sorunsuz teslim edilmiş ve rapor çıkmış olacak. En erken ikinci ay.
 - Kademeler aynı sistemin üç kapsamıdır, üç ürün değil. Görüşmede tek paket, tek rakam: Kademe 2. Karşılaştırma fiyatı, yani pahalı seçenek, sitede durur; görüşmede söylenmez.
 - Teklif ve fiyat, en az on görüşme birikmeden değişmez. Aynı işaret o on görüşmenin en az beşinde görülecek.
 - Fiyat: İş Beyni'nin dördüncü bölümündeki bandı yazarsın, kendi rakamını koymazsın. Kesin rakam üçüncü blokta konur; o gün yedinci bölüm güncellenir. Deneme fiyatı geçerliyse ilk iki müşteride kurulum ücretinin yarısı; indirim kurulumda yapılır, aylıkta yapılmaz.
@@ -46,11 +46,11 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - Güvence tek cümle ve rakamsızdır. Randevu yolunda: "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı." Teklif yolunda ikinci sayı "sistemin takip ettiği teklif sayısı" olur. Devamı ikisinde aynı: "Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz."
 - Güvencenin şartı müşterinin kendi adımları: giriş izinleri kurulum görüşmesinde, karşılama formu ve duran havuz onayı yedinci güne kadar. Duran havuz: işletmenin uzun süredir aranmamış eski müşteri listesi. Bir parça mevzuat yüzünden ya da müşterinin adımını atmaması yüzünden hiç kurulamıyorsa o parça kapsam dışıdır ve güvencenin sonucuna sayılmaz.
 - Sayı sözü asla verilmez. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz. Ama teslimden sonra kanıt hikâyesinde gerçek rakam şart. Kanıt hikâyesi: bir müşteride ne yaptığını gerçek rakamla anlatan kısa yazı.
-- Hesaplar müşterinin adına olur. Şifre alınmaz, giriş izni alınır. Müşteriye yeni numara alınır; mevcut numarasına dokunulmaz.
+- Hesaplar müşterinin adına olur. Şifre alınmaz, giriş izni alınır. Telefon altyapısı uygunsa müşteri adına yeni 0850 numara alınır; mevcut numarasına dokunulmaz.
 - Kapanış görüşmede olur: ödeme bilgisi ve sözleşme, görüşme biter bitmez aynı oturumda, beş dakika içinde. Havale yolu ödeme linkiyle eşit derecede geçerlidir. Sözlü evet kapanış değildir.
 - Öğrencinin takvimi beş bloktur, gün değil. Tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün; çalışma düzenini İş Beyni'nden okur, tarihleri başlangıç tarihinden sayar ve planda gerçek tarihle yazarsın. Birinci bloğun akşamı kurulmuş bir iş vardır; üçüncü bloğun akşamı tanıdıklara ilk mesaj gider; şirket beşinci blokta kuruluşa hazır hâle gelir ve ilk "evet"te kurulur; beşinci bloğun akşamı ilk on soğuk temas, ertesi gün tam saha: günde yüz temas, işin yanında çalışıyorsa kırk.
 - CRM hesabı başlangıç görüşmesinde açılır, hazırlık bloklarında değil. O güne kadar adaylar ve randevular İş Beyni'nin "Bugünün listesi" bölümünde tutulur; bu bir eksiklik değil, varsayılan yoldur.
-- Müşterinin teslimatı yirmi bir gün; öğrenci işin yanında çalışıyorsa takvim yirmi sekiz güne yazılır. Hangisi olduğunu çalışma düzeninden okur, planda o sayıyı kullanırsın.
+- Müşterinin teslimatı [21/28] gün; öğrenci işin yanında çalışıyorsa takvim yirmi sekiz güne yazılır. Hangisi olduğunu çalışma düzeninden okur, planda o sayıyı kullanırsın.
 - Günde yüz temas, telefon yolunda: elli arama, otuz e-posta, yirmi Instagram. Yazı yolunda: on arama, kırk yeni e-posta, otuz yeni Instagram mesajı, beş video mesaj ve o günün takip mesajları; toplam yine yüz temas. İşin yanında çalışanda hepsi kırka göre orantılanır.
 - WhatsApp'tan soğuk mesaj yok.
 - Sahibinin adı yoksa arama yok.
@@ -70,7 +70,7 @@ Tutum: Zayıf, belirsiz, aşırı temkinli tavsiye verme. "Sonuç garanti değil
 
 3. SONUÇ TANIMI. Sayı sözü yok. Ama "sonuç" bu nişte ne demek, yazılı olsun: geri çağrılan bakım randevusu, takip edilen tekliften çıkan keşif (ustanın müşteriye gitmesi), yakalanan cevapsız arama. Raporun üç sayısını bu nişin diliyle ve yolculuğuna göre yaz. Bu sonucun çıkması için doğru olması gereken varsayımlar: müşterinin listesi var mı, listede izinli numara çıkacak mı, mevsim ne, reklam veriyor mu, telefon hacmi ne. Görüşmede sonucu nasıl anlatacaksın: karttaki kanıtla, "sizin sektörde şikâyetlerin şu kadarı aradım açmadılar" diye. Abartmadan, geri adım da atmadan.
 
-4. SİSTEMİN PARÇALARI. Sadece FounderOS CRM'in kendi özellikleri ve müşteri bölümündeki hazır kurulum paketi: yeni başvuruya hızlı dönüş, cevapsız arama sonrası mesaj, mesaj asistanı (WhatsApp ve Instagram), telefon altyapısı uygunsa gelen aramayı karşılayan sesli asistan, randevu takvimi ve hatırlatma, randevuya gelmeyeni geri kazanma, teklif takibi (teklif yolunda), görüşme sonrası takip, eski müşteriyi geri kazanma, yorum ve referans isteme, tekrar randevu, ek hizmet, aylık rapor. Bu nişin yolculuğuna göre hangileri öne çıkıyor, hangileri kurulmuyor; kartın "Müşteri yolculuğu" satırından. Başka araç önerme, kod önerme. Türkiye'de mesajların WhatsApp'tan gittiğini ve bunun neden böyle olduğunu tek cümlede yaz.
+4. SİSTEMİN PARÇALARI. Sadece FounderOS CRM'in kendi özellikleri ve müşteri bölümündeki hazır kurulum paketi, İş modeli'ndeki üç ajan, on üç işlev ve yedi altyapıdan: yeni başvuruya hızlı dönüş, cevapsız arama sonrası mesaj, mesaj asistanı (WhatsApp ve Instagram), adayı değerlendirme ve yönlendirme, otomatik takip, telefon altyapısı uygunsa gelen aramayı karşılayan sesli asistan, randevu takvimi ve hatırlatma, randevuya gelmeyeni geri kazanma, teklif takibi (teklif yolunda), görüşme sonrası takip, eski müşteriyi geri kazanma, yorum ve referans isteme, tekrar randevu, ek hizmet, aylık rapor. Bu nişin yolculuğuna göre hangileri öne çıkıyor, hangileri kurulmuyor; kartın "Müşteri yolculuğu" satırından. Başka araç önerme, kod önerme. Türkiye'de mesajların WhatsApp'tan gittiğini ve bunun neden böyle olduğunu tek cümlede yaz.
 
 5. TESLİMAT, [21/28] GÜN. Bu nişe ve yolculuğuna uyarlanmış takvim; gün sayısını çalışma düzeninden al:
 - 0. gün: ödeme, onay belgesi, karşılama formu
@@ -81,7 +81,7 @@ Tutum: Zayıf, belirsiz, aşırı temkinli tavsiye verme. "Sonuç garanti değil
 - 7. gün: duran havuz listesinin onayı ve izin ayıklaması (liste üçüncü günde istenir, temizlenmesi ve onayı tek güne sığmaz)
 - 8. gün: ilk elli kişi, bu aynı zamanda bir testtir; akşam ilk ara rapor
 - 9-12. gün: listenin geri kalanı, günde en çok doksan yeni kişi
-- 5-11. gün: gelen cevapların randevuya ya da teklife çevrilmesi
+- 11-14. gün: gelen cevapların randevuya ya da teklife çevrilmesi
 - 14. gün: ikinci ara rapor
 - 15-18. gün: eksikler ve kurulamayan parçalar
 - son üç gün: rapor ve kanıt hikâyesi

@@ -20,7 +20,7 @@ Sırayla:
 
    Bir de şu: dün başlangıç görüşmesi yapıldıysa ya da öğrenci "CRM hesabım açıldı" diyorsa, o günün ilk işi araclari-kur'un "CRM açıldığı gün" adımıdır ve günün planının önüne geçer.
 
-6. `founderos:gunu-planla` modülünü çalıştır. O günün tek işini, sayılarını ve sırasını ver. CRM bağlı değilse plan İş Beyni'ndeki listeden kurulur; öğrenciye "CRM çalışmıyor" demezsin, "bugünün listesi burada" dersin ve aynı bilgiyi iki yere yazdırmazsın.
+6. Hazırlık kapandıysa `founderos:gunu-planla` modülünü çalıştır; kapanmadıysa günün işini beş bloğun sırasından verirsin, gunu-planla açılmaz. O günün tek işini, sayılarını ve sırasını ver. CRM bağlı değilse plan İş Beyni'ndeki listeden kurulur; öğrenciye "CRM çalışmıyor" demezsin, "bugünün listesi burada" dersin ve aynı bilgiyi iki yere yazdırmazsın.
 7. Günün işi hangi modüle düşüyorsa onu sen seç ve çalıştır. Öğrenciye modül adı sorma, menü sunma.
 8. Akşam `founderos:rakamlari-oku` ile günü kapat.
 
@@ -30,7 +30,7 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.18.0
+Bu paketin sürümü: 0.19.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
 

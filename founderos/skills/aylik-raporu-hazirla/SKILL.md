@@ -8,9 +8,9 @@ description: "Ayda bir, artı sekizinci ve on dördüncü günün ara raporu. M�
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Müşteriye gösterilen raporu üreten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Üç hali var: sekizinci ve on dördüncü günün ara raporu, yirmi birinci gün raporu (güvencenin karşılığı olan rapor budur), ve sonraki aylık raporlar. Müşteriye sayı gösteren her şey buradan çıkar.
+Müşteriye gösterilen raporu üreten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Üç hali var: sekizinci ve on dördüncü günün ara raporu, rapor günü raporu (güvencenin karşılığı olan rapor budur), ve sonraki aylık raporlar. Müşteriye sayı gösteren her şey buradan çıkar.
 
-Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil. Müşteri şartını geç yerine getirdiyse yirmi bir gün onun verdiği günden başlar; buradaki bütün günler onunla birlikte kayar.
+Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil. Müşteri şartını geç yerine getirdiyse [21/28] gün onun verdiği günden başlar; buradaki bütün günler onunla birlikte kayar.
 
 Neden bu iş var: müşteri çoğunlukla kötü sonuç yüzünden değil, hiçbir şey görmediği için ayrılır. Kendini değersiz hisseder, işin yapılıp yapılmadığını bilmez. Müşterinin kafasında sessizlik, işin yapılmadığı anlamına gelir.
 
@@ -34,8 +34,8 @@ Pazarlamadaki karşılığı: müşterinin ödediği şeyin görünür hali.
 - On dördüncü günün akşam bloğu: ikinci ara rapor. Aynı üç satır.
 - On dokuzuncu gün: rapor hazırlanmaya başlar, eksik sayılar toplanır.
 - Yirminci gün: müşteriye tek soruyu sen sorarsın. Aşağıda yazıyor.
-- Yirmi birinci gün: rapor görüşmesi ve tek sayfa. Bu birinci ayın raporudur. Görüşme kurulum bloğundadır, saatini müşteri seçer; işin yanında çalışıyorsan akşam ya da hafta sonu.
-- Sonraki raporlar: her aylık tahsilat gününden üç gün önce. İlk aylık rapor altmış birinci günün tahsilatından önce çıkar; yirmi sekizinci günde ikinci bir rapor gitmez. Tahsilat günü kayarsa rapor da onunla kayar.
+- Rapor günü: rapor görüşmesi ve tek sayfa. Bu birinci ayın raporudur. Görüşme kurulum bloğundadır, saatini müşteri seçer; işin yanında çalışıyorsan akşam ya da hafta sonu.
+- Sonraki raporlar: her aylık tahsilat gününden üç gün önce. İlk aylık rapor ikinci ayın tahsilatından üç gün önce çıkar; rapor günüyle ikinci aylık rapor arasında başka rapor gitmez. Tahsilat günü kayarsa rapor da onunla kayar.
 - Görüşme sıklığı: ilk ay haftalık, sonra iki haftada bir, müşterinin doksanıncı gününden sonra ayda bir.
 
 ## 3. Ne okur
@@ -52,7 +52,7 @@ CRM'den (adayların ve müşterilerin kaydedildiği takip programı):
 Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya):
 - ortalama iş bedeli
 - kayıp rakamı ve birimi. Kayıp birimi, işletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şeydir: bir boş gün, bir koltuk saati.
-- yirmi bir günün başlangıç tarihi
+- [21/28] günün başlangıç tarihi
 - kapsam dışı kalan parçalar ve sebepleri
 - duran havuz ve yorum sayıları
 - beklenti cümleleri
@@ -62,7 +62,7 @@ Hazır rapor kalıbından: tek sayfanın iskeleti ve görüşmenin sırası.
 
 ## 4. Ne sorar
 
-Müşteriye tek soru sorar, yirminci gün: "Bu randevulardan kaçı işe döndü?"
+Müşteriye tek soru sorar, rapordan bir gün önce: randevu yolunda "Bu randevulardan kaçı işe döndü?", teklif yolunda "Bu tekliflerden kaçı ödemeye döndü?"
 
 Sebebi şu: sistem para görmüyor. Kim ne kadar ödedi, hangi iş kapandı, bunlar sistemin dışında. Bu sayı müşterinin ağzından gelmezse rapora yazılmaz.
 
@@ -74,11 +74,11 @@ Senden aldığı iki şey: müşterinin verdiği bu sayı ve rapor görüşmesin
 
 ### Sonuç cümlesi: rakamsız, ölçülebilir, senin elinde
 
-Güvence, müşteriye verdiğin sözdür: yirmi birinci günde rapor, sonuç yoksa ikinci ay ücret yok. Peki "sonuç yok" ne demek? Bu tanımlanmazsa rapor günü tartışmaya döner.
+Güvence, müşteriye verdiğin sözdür: rapor gününde rapor, sonuç yoksa ikinci ay ücret yok. Peki "sonuç yok" ne demek? Bu tanımlanmazsa rapor günü tartışmaya döner.
 
 Sonuç cümlesi sözleşmede ve onay belgesinde hazır durur, her müşteride aynıdır:
 
-"Yirmi birinci günün raporunda üç sayı görünecek. Randevuyla çalışan işletmede: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Teklifle çalışan işletmede: sisteme gelen talep sayısı, gönderilen ve cevap alınan teklif sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz; rapor gerçekleşen olayı yazar. Bir parça kurulamadıysa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz."
+Cümle İş modeli bölümündeki "Güvence cümlesi"dir, iki sürümü ve "ikisi birlikte" hali oradadır; teklif yolunda ikinci sayı "sistemin takip ettiği teklif sayısı"dır. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz; rapor gerçekleşen olayı yazar. Bir parça kurulamadıysa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz.
 
 Bu cümle üç işi birden yapıyor:
 1. Rakam sözü vermiyor. "Şu kadar randevu" demiyor, sıfır olmamasını istiyor. Satışta sayı sözü verilmez, bu kurala uyuyor.
@@ -87,13 +87,13 @@ Bu cümle üç işi birden yapıyor:
 
 Boş kalan satır ne demek: bir parça mevzuat yüzünden ya da müşterinin kendi adımını atmaması yüzünden hiç kurulamadıysa o satır sayılmaz. Bilinen haller: cevapsız arama yönlendirmesi kurulamaması, izinlerin çıkmaması, listenin gelmemesi, listede İYS izinli numara çıkmaması, Google işletme profilinin doğrulanmamış olması, sağlık nişinde hukukçu onayının gelmemesi, kare kodun bastırılıp asılmaması.
 
-Kartta kayıp birimi yazmayan üç niş var: estetik, tadilat, sigorta. Orada birimi kurulum görüşmesinde müşteriye sorar ve karta yazarsın.
+Kartta kayıp biriminin lira karşılığı yazmayan iki niş var: emlak ofisi ve oto galeri ("sahadan dolacak"). Orada birimi kurulum görüşmesinde müşteriye sorar ve karta yazarsın.
 
 ### Ara rapor: sekizinci ve on dördüncü günün akşamı
 
-Yirmi birinci gün raporu tek rapor değildir. Sekizinci günün ve on dördüncü günün akşam bloğunda müşteriye üç satırlık bir durum mesajı gider.
+Rapor günü raporu tek rapor değildir. Sekizinci günün ve on dördüncü günün akşam bloğunda müşteriye üç satırlık bir durum mesajı gider.
 
-Neden gerekiyor, tek cümle: para verip iki hafta ses duymayan müşteri sistemin çalışmadığını düşünür ve yirmi birinci günü beklemez.
+Neden gerekiyor, tek cümle: para verip iki hafta ses duymayan müşteri sistemin çalışmadığını düşünür ve rapor gününü beklemez.
 
 Üç satırda üç sayı var, hepsi CRM'den okunur: bugüne kadar kaç kişiye ulaşıldı, kaç cevap geldi, kaç randevu yazıldı.
 
@@ -118,13 +118,13 @@ Kurallar:
 - Bir parça kapsam dışı kaldıysa o satır boş kalır ve yanına tek kelime yazılır: kurulmadı.
 - Mesaj senin elinden gider, kendiliğinden gitmez.
 - Müşterinin şartı geç geldiği için takvim kaydıysa ara raporlar da onunla kayar; sekizinci ve on dördüncü gün, takvimin kendi sekizinci ve on dördüncü günüdür.
-- Takvim yirmi sekiz güne yazıldıysa (işin yanında çalışanda böyle olur) yirmi birinci günün akşamında üçüncü bir ara rapor gider, metni aynıdır. Sebebi aynı: müşteri iki haftadan uzun süre sayı görmeden kalmaz.
+- Takvim yirmi sekiz güne yazıldıysa (işin yanında çalışanda böyle olur) rapor gününün akşamında üçüncü bir ara rapor gider, metni aynıdır. Sebebi aynı: müşteri iki haftadan uzun süre sayı görmeden kalmaz.
 
 Bu mesaj haftalık iş kanıtının yerine geçmez. İş kanıtı tek satır ve tek görüntüdür, "sistem çalışıyor" der. Ara rapor sayı gösterir, "şu ana kadar şu oldu" der. İkisi ayrı iştir ve ikisi de gider.
 
-### Yirmi birinci gün raporu: görüşme, sonra tek sayfa
+### Rapor günü raporu: görüşme, sonra tek sayfa
 
-Kendiliğinden gitmez. Yirmi birinci günün raporu görüşmede anlatılır, tek sayfa arkasından gider. Bu görüşme o haftanın görüşmesinin yerine geçer; saatini on dokuzuncu gün müşteriye yazıp teyit alırsın. Görüşme kurulum bloğunda yapılır.
+Kendiliğinden gitmez. Rapor gününün raporu görüşmede anlatılır, tek sayfa arkasından gider. Bu görüşme o haftanın görüşmesinin yerine geçer; saatini on dokuzuncu gün müşteriye yazıp teyit alırsın. Görüşme kurulum bloğunda yapılır.
 
 Görüşmenin sırası:
 1. Kötü haber. Kötü olan neyse ilk sen söylersin.
@@ -157,7 +157,7 @@ Bu sınır rapora tek cümleyle yazılır. Yoksa müşteri bütün işi sistemin
 
 ### Para satırı
 
-Cümle şu: "Sistem yirmi bir günde [x] randevu yazdı. Sen bunlardan [y] tanesinin işe döndüğünü söyledin. Senin verdiğin ortalama iş bedeliyle bu [z] TL."
+Cümle şu: "Sistem [21/28] günde [x] randevu yazdı. Sen bunlardan [y] tanesinin işe döndüğünü söyledin. Senin verdiğin ortalama iş bedeliyle bu [z] TL."
 
 Kurallar:
 - Ortalama iş bedeli müşterinin kendi verdiği rakamdır. Kartın aralığı yalnız kontrol içindir.
@@ -189,7 +189,7 @@ Nasıl çıkar: CRM'de hazır bir aylık rapor taslağı yok. CRM'in raporlar b�
 
 Yanına iki cümlelik not değil, altmış saniyelik bir sesli mesaj koyarsın. Tek başına giden bir dosya soğuk durur. Müşteri rakamı değil, biriyle konuştuğunu hissetmeyi arıyor.
 
-Aylık raporun satırları yirmi birinci günkü ile aynıdır, üstüne geçen ayla karşılaştırma eklenir. Karşılaştırma en az iki ay birikmeden yazılmaz.
+Aylık raporun satırları rapor günündeki ile aynıdır, üstüne geçen ayla karşılaştırma eklenir. Karşılaştırma en az iki ay birikmeden yazılmaz.
 
 Sezon uyarısı: düşüşü sezona bağlamak yalnız sezon rakamı karta yazılmış nişlerde geçerlidir. Klima ve kombi, düğün, fotoğraf, pilates, haşere, oto servisin lastik dönemi. Kalan nişlerde sezon mazerettir, yapılmaz.
 
@@ -198,12 +198,12 @@ Sezon uyarısı: düşüşü sezona bağlamak yalnız sezon rakamı karta yazıl
 Görüşmenin beşinci maddesi budur. Kurallar:
 - Yenileme ayrı bir olay değildir. İyi haber verdiysen, kazanımı kutladıysan ve sayıları birlikte geçtiysen yenileme sıradan bir kontrol görüşmesidir.
 - Her ay "yenileyelim mi" diye sorulmaz. Sorduğun her sefer müşteriyi seni yeniden yargılamaya zorlarsın; tahsilat arka planda sessiz akar.
-- Üst pakete geçiş ilk raporda konuşulmaz. En erken ikinci ay, ve ancak büyüme şartı sağlandıysa. Büyüme şartı iki maddedir: görüşmede satılan tam sistem, yani Kademe 2, sorunsuz teslim edilmiş olacak ve yirmi birinci gün raporu çıkmış olacak.
+- Üst pakete geçiş ilk raporda konuşulmaz. En erken ikinci ay, ve ancak büyüme şartı sağlandıysa. Büyüme şartı iki maddedir: görüşmede satılan tam sistem, yani Kademe 2, sorunsuz teslim edilmiş olacak ve rapor günü raporu çıkmış olacak.
 - Sistemin yapabildiği fazladan şeyleri raporda anlatma; onları üst pakete geçiş görüşmesine sakla.
 
 ### Rapordan kanıt hikâyesi
 
-Yirmi birinci gün raporu senin ilk kanıt hikâyenin ham maddesidir. Kanıt hikâyesi, bir müşteride ne yaptığını gerçek rakamla anlatan kısa yazıdır.
+Rapor günü raporu senin ilk kanıt hikâyenin ham maddesidir. Kanıt hikâyesi, bir müşteride ne yaptığını gerçek rakamla anlatan kısa yazıdır.
 
 Kurallar: ham, canlı ve yeni kanıt cilalıdan iyidir. Anlatmak yerine göstermek iyidir. Küçük kilometre taşı yeter; hayat değiştiren sonuç bekleme.
 
@@ -231,7 +231,7 @@ Gelme oranı ölçütü yüzde yetmiştir. Altındaysa sorun randevuda değil, h
 
 ## 6. Ne söyler
 
-Kurulum görüşmesinde: "Yirmi birinci günde ne göreceğini şimdi söylüyorum. Raporda üç sayı olacak: gelen talep, yazılan randevu, ulaşılan eski müşteri. Kuramadığımız bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay parayı almam. O ay bittiğinde birlikte karar veririz: ya kapsamı daraltıp devam ederiz, ya normal ücretle devam ederiz, ya da sözleşmedeki yazılı bildirimle ayrılırız. Sana şu kadar randevu getiririm demiyorum, öyle diyen yalan söylüyor."
+Kurulum görüşmesinde: "Rapor gününde ne göreceğini şimdi söylüyorum. Raporda üç sayı olacak: gelen talep, yazılan randevu, ulaşılan eski müşteri. Kuramadığımız bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay parayı almam. O ay bittiğinde birlikte karar veririz: ya kapsamı daraltıp devam ederiz, ya normal ücretle devam ederiz, ya da sözleşmedeki yazılı bildirimle ayrılırız. Sana şu kadar randevu getiririm demiyorum, öyle diyen yalan söylüyor."
 Sekizinci gün akşamı: "Bugün üç satır gidiyor. Ulaşılan, cevap veren, randevu. Sayılar düşükse de gidiyor; müşteri kötü sayıyı kaldırır, sessizliği kaldıramaz. Parayı verip iki hafta ses duymayan adam sistemin çalışmadığını düşünür."
 Yirminci gün: "Yarın rapor. Bugün senden tek bir sayı istiyorum: bu randevulardan kaçı işe döndü. Bu sayıyı ben bilemem, sistem parayı görmüyor. Söylersen rapora yazarım, söylemezsen para satırı boş kalır."
 Öğrenciye, rapordan önce: "Kötü haberi ilk sen söyleyeceksin. Yirmi dakikalık görüşmenin ilk iki dakikası bu. Müşteri sorunu senden önce bulursa sonucu düzeltsen bile güveni kaybedersin."
@@ -242,7 +242,7 @@ Rapordan sonra öğrenciye: "Rapor gitti, yanına altmış saniyelik sesli mesaj
 
 Bilgi dosyasına: ara raporların gönderildiği tarihler ve o günkü üç sayı, rapor tarihleri, raporun satırlarının değerleri, müşterinin verdiği işe dönme sayısı, sonuç cümlesinin tuttu mu tutmadı mı, kapsam dışı kutusunun içeriği, büyüme şartı sağlandı mı ve hangi tarihte sağlandı, kanıt hikâyesi izni ve tarihi.
 CRM'e: rapor gönderildi mi ve tarihi, sonuç cümlesi tuttu mu, ikinci ay ücreti alındı mı.
-Niş kartının Sahadan dolacak bölümüne: bu nişte yirmi bir günde çıkan gerçek randevu sayısı, işe dönme sayısı, kayıp biriminin sahada nasıl söylendiği.
+Niş kartının Sahadan dolacak bölümüne: bu nişte [21/28] günde çıkan gerçek randevu sayısı, işe dönme sayısı, kayıp biriminin sahada nasıl söylendiği.
 
 ## 8. Yedek yol
 
@@ -266,6 +266,6 @@ Sıradaki: ikinci ay planı (musteriyi-elde-tut), haftalık kontrol (sistemi-kon
 - Yirminci gün geldi, müşterinin sayısı yok: aynı gün ikinci kez sorulur.
 - Normal ücretle devam edildi ve ikinci rapor da bütün satırları sıfır gösterdi: iş zor-konusmayi-yonet'e geçer.
 - Müşteri iki haftadır rapora cevap vermiyor: ayrılık böyle başlar, haftalık kontrolün ilk maddesi olur.
-- Kademe 2 sorunsuz teslim edildi ve yirmi birinci gün raporu çıktı: büyüme şartı açılır, kanıt hikâyesi istenir. Kanıt hikâyesi çıkınca siten, e-posta imzan, yedinci gün takibin ve Instagram profilin yeni kanıtla güncellenir.
+- Kademe 2 sorunsuz teslim edildi ve rapor günü raporu çıktı: büyüme şartı açılır, kanıt hikâyesi istenir. Kanıt hikâyesi çıkınca siten, e-posta imzan, yedinci gün takibin ve Instagram profilin yeni kanıtla güncellenir.
 
 Beş kural: boş sayfa yok (raporun satırları, görüşmenin sırası ve sonuç cümlesi hazır gelir) · sessiz bitiş yok (kötü ay da raporlanır) · onay (rapor senin elinden gider, kendiliğinden gitmez) · sahadan güncelleme (gerçek randevu sayısı ve kayıp birimi karta yazılır) · sormaz söyler (raporun sırasını FounderOS verir; müşteriye tek soru sorulur).

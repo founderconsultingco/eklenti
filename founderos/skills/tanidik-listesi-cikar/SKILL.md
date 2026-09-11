@@ -10,11 +10,11 @@ description: "İkinci günün akşamı. Tanıdık listesinin çıkarılması ve 
 
 İkinci günün akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ilk adımı: müşteri bul.
 
-Bu modül seni tanıyan herkesin listesini çıkarıyor. Öğleden sonra o listeye ne yazacağını yazıyoruz.
+Bu modül seni tanıyan herkesin listesini çıkarıyor. O listeye ne yazacağını bir sonraki bloğun akşamı, kesin fiyat konunca yazıyoruz.
 
 Neden soğuk listeden önce: seni zaten tanıyan ya da bir tanıdık üzerinden gelen kişide kapanış oranı, hiç tanımadığın birine göre belirgin şekilde yüksek. Aynı teklif, aynı sen, aynı fiyat. Tek fark, araya giren isim.
 
-İkinci sebep zamanlama. Sahaya altıncı günde çıkıyorsun. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
+İkinci sebep zamanlama. Saha üç blok sonra açılıyor. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
 
 Şunlar bu modülün işi değildir:
 - Mesajın metni (tanidiga-mesaj-yaz, yarın akşam; bugün liste çıkar, mesaj yarın gider).
@@ -66,7 +66,7 @@ Bir saatte bitiyor. Uzatma, tereddüt ettiğin ismi yaz ve geç.
 
 Çıkardığın isimleri ikiye ayırıyorsun. Bu ayrımı biz koyduk, sebebi şu: iki gruba giden mesaj bambaşka ve karıştırırsan ikisi de çalışmıyor. Ayrımı bozarsan gerisi de bozuluyor.
 
-**A listesi: senin nişinde işletmesi olanlar.** Kuzenin klima servisi işletiyorsa, eski patronun oto galericiyse, komşun kuaförse buraya giriyor. Bunlar aday. Onlara referans sormuyorsun, doğrudan işi anlatıyorsun. CRM'e giriyorlar, kayıt türleri "aday", aşamaları "yeni", sıcak mı soğuk mu satırları "sıcak".
+**A listesi: senin nişinde işletmesi olanlar.** Kuzenin klima servisi işletiyorsa, eski patronun oto galericiyse, komşun kuaförse buraya giriyor. Bunlar aday. Onlara referans sormuyorsun, doğrudan işi anlatıyorsun. Kayıt yerine giriyorlar (CRM henüz açılmadıysa İş Beyni'nin sekizinci bölümüne ad ad; üçüncü blokta `adaylar.csv` çıkınca oraya "sıcak" işaretiyle eklenirler; CRM açıldığı gün oraya taşınırlar), kayıt türleri "aday", aşamaları "yeni", sıcak mı soğuk mu satırları "sıcak".
 
 **B listesi: geri kalan herkes.** Onlara satmıyorsun. Tek bir şey soruyorsun: tanıdığın var mı.
 
@@ -94,31 +94,31 @@ Bir de şunu bil: çok hayır geleceksin. Bu normal ve senin metninle ilgili de�
 
 ## 6. Ne söyler
 
-Açılışta: "Bugün sabah seni tanıyan herkesin listesini çıkarıyoruz, ikinci yarıda ne yazacağını yazıyoruz. Bir saat, rehberini baştan sona geçeceksin."
+Açılışta: "Bu akşam seni tanıyan herkesin listesini çıkarıyoruz. Mesajı bugün yazmıyoruz; kesin fiyat konunca, bir sonraki bloğun akşamı gidecek. Bir saat, rehberini baştan sona geçeceksin."
 Listeyi elemek isterse: "Elemeyi sen yapmıyorsun. Rehberinde kim varsa listede. 'O ilgilenmez' dediğin kişi, ilgilenen birini tanıyor olabilir."
 Utanırsa: "Kimse seni konuşmuyor. Mesajını okuyup gününe dönüyorlar. Sen üç gün düşünüyorsun, onlar üç dakika bile düşünmüyor."
 Hayır cevaplarından yılarsa: "Çok hayır gelecek, bu normal. Kaç mesaj attığın senin elinde, kaç cevap geldiği değil. Günü mesaj sayısıyla değerlendiriyoruz."
 Tanıdığına indirim yapmak isterse: "Aynı fiyat. İndirim yaptığın anda iş arkadaşlığa dönüyor, arkadaşlıkta giriş izni de istenmiyor tarih de verilmiyor. O müşteriden ne kanıt çıkıyor ne para."
 Grup mesajı atmak isterse: "Gruba atmıyorsun. Gruptaki isimleri alıp tek tek yazıyorsun. Gruba atılan mesaj kimseye atılmamış sayılıyor."
 Liste küçük çıkarsa: "Rehberini gerçekten baştan sona geçtin mi? WhatsApp sohbetlerine, Instagram'a ve gönderilenler kutusuna da bak. Bir saat dolmadan bitmiyor."
-Bitince: "Liste hazır. Öğleden sonra iki mesaj yazıyoruz: nişindeki tanıdıklarına biri, geri kalan herkese biri."
+Bitince: "Liste hazır. Mesajlar bir sonraki bloğun akşamı gidiyor: nişindeki tanıdıklarına biri, geri kalan herkese biri. Bugünlük bu kadar; yarın kesin fiyat ve aday listesi. Yarın görüşürüz."
 
 ## 7. Ne yazar
 
 İş Beyni'ne: A listesindeki kişi sayısı, B listesindeki kişi sayısı, listenin çıkarıldığı tarih, hangi yerlerin tarandığı.
-CRM'e: A listesindeki isimler, aşamaları "yeni", "sıcak" işaretiyle.
-CRM'deki "B listesi" listesine: B listesindeki isimler, üç kademeye sıralanmış halde. Aday havuzuna girmiyorlar.
+Kayıt yerine (CRM açıldıysa CRM; açılmadıysa İş Beyni'nin sekizinci bölümü, üçüncü bloktan sonra `adaylar.csv`): A listesindeki isimler, aşamaları "yeni", "sıcak" işaretiyle.
+B listesi: CRM açıldıysa CRM'deki "B listesi" listesine; açılmadıysa klasörde `baglantilar.csv` dosyasına, üç kademeye sıralanmış halde. Aday havuzuna girmiyorlar.
 Bir sonraki modüllere: A ve B listeleri tanidiga-mesaj-yaz'a, "sıcak" işareti aday-listesi-cikar'a (o kayıtlar soğuk listeden çıkarılıyor).
 
 ## 8. Yedek yol
 
 - Rehberin küçükse: Instagram ve e-posta kutusu daha çok isim veriyor. Yine de az çıkarsa liste az kalıyor ve gün durmuyor; üçüncü bloğun soğuk listesi zaten geliyor.
 - Kimseye yazmak istemiyorsan: FounderOS seni zorlamıyor ama bunu İş Beyni'ne yazıyor. Saha açıldıktan sonra soğuk aramada zorlanırsan haftanın kararında bu satır tekrar açılıyor.
-- CRM'e toplu giriş yapamazsan: A listesini elle girersin, beş on kişi.
+- CRM açıksa ve toplu giriş yapamazsan: A listesini elle girersin, beş on kişi. CRM açılmadıysa bu satır işlemez, liste zaten dosyada.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: yarın, üçüncü bloğun akşamı, bu listeye ilk mesaj (tanidiga-mesaj-yaz). Bugün mesaj gitmez; liste yarın kesin fiyat konduktan sonra kullanılır.
+Sıradaki: bir sonraki bloğun akşamı bu listeye ilk mesaj (tanidiga-mesaj-yaz). Bugün mesaj gitmez; liste kesin fiyat konduktan sonra kullanılır. Bugünlük bu kadar, yarın görüşürüz.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Liste elli kişinin altında: FounderOS rehberin gerçekten küçük mü yoksa eleme mi yaptın diye sorar.
@@ -126,4 +126,4 @@ Sıradaki: yarın, üçüncü bloğun akşamı, bu listeye ilk mesaj (tanidiga-m
 - İkinci blok bitti, liste çıkmadı: üçüncü bloğun ilk yarım saati buna gider, soğuk liste sonra çıkar.
 - Bir ay geçti, listeye kimse eklenmedi: modül ikinci kez açılır.
 
-Beş kural: boş sayfa yok (altı yer ve iki listenin tanımı hazır gelir) · sessiz bitiş yok (öğleye kadar iki liste yerinde) · onay (listeye kimin gireceğine FounderOS karar veriyor, kimin çıkacağına sen) · sahadan güncelleme (her ay yeni isimler eklenir) · sormaz söyler (nereleri tarayacağını, sırayı ve iki liste ayrımını FounderOS söyler).
+Beş kural: boş sayfa yok (altı yer ve iki listenin tanımı hazır gelir) · sessiz bitiş yok (akşam bitmeden iki liste yerinde) · onay (listeye kimin gireceğine FounderOS karar veriyor, kimin çıkacağına sen) · sahadan güncelleme (her ay yeni isimler eklenir) · sormaz söyler (nereleri tarayacağını, sırayı ve iki liste ayrımını FounderOS söyler).

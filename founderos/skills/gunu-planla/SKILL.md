@@ -27,13 +27,13 @@ Pazarlamadaki karşılığı: sabah ne yapacağını bilen kişi öğlene kadar 
 ## 2. Ne zaman çalışır
 - Her gün, sabah bloğunun başında, çalışmaya başlamadan önce. Beş dakika sürer.
 - Sabah bloğunun saati çalışma düzenine göre değişir. Plan sana saat vermez, pencere adı verir.
-- Altıncı günden itibaren her gün. Öncesinde ilk beş günün kendi sırası var, plan onu okur.
+- Saha açıldıktan sonra her gün. Hazırlık kapanmadan bu modül çalışmaz; hazırlığın sırasını ana yönetici beş bloktan kurar.
 - Bir gün açılmazsa ertesi sabah iki gün birden gösterir. İki gün üst üste açılmazsa bu bir vazgeçme işaretidir ve planın yerine tek konu gelir.
 
 ## 3. Ne okur
 
 İş Beyni'nden: gün sayacı, çalışma düzeni ve günlük temas sayın, kanal yolu, haftanın kararı, ertelenen işler, kurucu bölümündeki zorlanma riskin.
-CRM'den: bugünün randevuları, cevap bekleyen adaylar, takip günü gelenler, gelmedi işaretli randevular. Dünkü sayılar ve günün sıralanmış saha listesi CRM'de hazır durmuyor; FounderOS kayıtlardan çıkarıp sıraya koyuyor.
+Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): bugünün randevuları, cevap bekleyen adaylar, takip günü gelenler, gelmedi işaretli randevular. Dünkü sayılar ve günün sıralanmış saha listesi CRM'de hazır durmuyor; FounderOS kayıtlardan çıkarıp sıraya koyuyor.
 Denetim tarafından: hangi adayların denetim kartı hazır, sızıntı puanları, her birinin sıradaki kanalı, bugün derin denetimi yapılacak adayların sırası.
 Teslimat tarafından: aktif müşterilerin hangi günde olduğu ve o günün işi.
 Takvimden: hangi gün, hangi pencerenin ne kadarı dolu.
@@ -73,7 +73,7 @@ Gün şu sırayla geçer ve bu sıra değişmez:
 
 **Sabah bloğu: önce denetim, sonra liste.** Plan beş dakikada verilir, hemen ardından o günün derin denetimleri yapılır. Tam zamanlıda beş aday, işin yanında üç; bunlar günün ilk aramaları. Kalan temaslar hızlı denetimle gider, hızlı denetimi olmayan aday listeye girmez. Denetim bitmeden aranacak liste kilitlenmez. Denetimler bitince bugünün saha listesi açılır: üstte dün cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda denetimsizler. Sen sıralamıyorsun, sıra hazır geliyor. Dünkü cevaplara dönüş ve e-posta takiplerinin onayı da bu blokta biter.
 
-**Önce satış.** Saha bloğunun ilk işi temas bloğudur. Telefon yolundaysan aramalar nişin söylediği yoğun saatte yapılır, çoğu nişte bu sabahın ve öğlenin içine düşüyor. Bu blok bitmeden başka bir şey açılmaz.
+**Önce satış.** Saha bloğunun ilk yarım saati temasa ayrılır. Telefon yolundaysan aramalar nişin söylediği yoğun saatte yapılır, çoğu nişte bu sabahın ve öğlenin içine düşüyor. Bu blok bitmeden başka bir şey açılmaz.
 
 **Sonra cevaplar.** Gün içinde gelen cevaplara dönülür, randevular yazılır. Bu iş saha bloğunun içindedir, sonrasına bırakılmaz; cevap veren adayın ilgisi bir günde soğuyor.
 
@@ -89,11 +89,11 @@ Akşam bloğunun içi de sabittir: kayıt kontrolü, günün sayılarının okun
 
 Tam zamanlı çalışıyorsan ilk müşterinin teslimi günlük temas hedefini düşürmez. Teslim işi akşam bloğuna ve kurulum bloğuna sığıyor, saha bloğuna taşınmıyor.
 
-İşin yanında çalışıyorsan hedef sadece kurulum haftasında değil, ilk müşterinin **bütün teslim süresinde** yarıya iniyor: sıfırıncı günden yirmi birinci güne kadar, her gün. Kırk temas o dönemde yirmi oluyor. Bir gün daha aynı şekilde yarılanıyor, o da şirket kuruluş günü.
+İşin yanında çalışıyorsan hedef sadece kurulum haftasında değil, ilk müşterinin **bütün teslim süresinde** yarıya iniyor: sıfırıncı günden rapor gününe kadar, her gün. Kırk temas o dönemde yirmi oluyor. Bir gün daha aynı şekilde yarılanıyor, o da şirket kuruluş günü.
 
-Sebebi rakamda: yirmi bir günlük teslim bir kişinin yaklaşık elli saatini alıyor ve o saatler senin akşam bloğundan çıkıyor. Senin akşam bloğun günde bir saat, yirmi bir günde yirmi bir saat ediyor. Teslim elli saat istiyor. Aradaki fark başka bir yerden değil, saha bloğundan alınıyor. Bunu plan baştan yazıyor ki sen hem sayıyı tutturamayıp hem de kendini suçlu hissetme. Garanti şartı da bu günleri hariç tutuyor.
+Sebebi rakamda: [21/28] günlük teslim bir kişinin yaklaşık elli saatini alıyor ve o saatler senin akşam bloğundan çıkıyor. Senin akşam bloğun günde bir saat, [21/28] günde yirmi bir saat ediyor. Teslim elli saat istiyor. Aradaki fark başka bir yerden değil, saha bloğundan alınıyor. Bunu plan baştan yazıyor ki sen hem sayıyı tutturamayıp hem de kendini suçlu hissetme. Garanti şartı da bu günleri hariç tutuyor.
 
-Teslim bitip yirmi birinci gün raporu çıktığı gün hedef kırka döner. Plan bunu kendisi yapar, sen hatırlatmazsın.
+Teslim bitip rapor günü raporu çıktığı gün hedef kırka döner. Plan bunu kendisi yapar, sen hatırlatmazsın.
 
 ### İlk otuz dakika
 
@@ -111,7 +111,7 @@ Denetim bu otuz dakikanın içinde değil, öncesinde. Denetim sabah bloğunda b
 
 Bazı işler her gün değil, tek seferde yapılır:
 
-- Aday listesi ve yüz işletmenin hızlı denetimi: haftada bir gün, tercihen pazar.
+- Aday listesi ve yüz işletmenin hızlı denetimi: ayda bir, listenin yenilendiği gün.
 - Mesaj metinlerinin o haftaki kişiselleştirmesi: tek oturuşta, haftalık.
 - Video mesaj çekimi (yazı yolundaysan): günde beş, arka arkaya, tek oturuşta.
 
@@ -151,12 +151,12 @@ Gün sayacı bunun için var. Her sabah planın başında duruyor: kaçıncı g�
 Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: elli arama, otuz e-posta, yirmi Instagram. Saha bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Akşam bana tek satır yazacaksın: kaç temas, kaç cevap, kaç randevu."
 Normal bir sabah (işin yanında): "Gün [sayı]. Sabah bloğun bir saat: üç adayın denetimi ve dünkü cevaplar. Saha bloğun akşam. Günün sayısı kırk. İlk otuz dakikada on temas. Akşam tek satır."
 Denetimden önce: "Plan hazır, beş dakika sürdü. Şimdi bugünün adaylarının denetimi. Denetim bitmeden liste kilitlenmiyor; ilk aramalar bu adaylara, gerisi hızlı denetimle."
-Öğrenci araç kurcalamaya başlarsa: "Bugün temas bloğu bitmedi. O bitmeden başka bir şey açılmıyor. Kurcaladığın şey akşam da orada duruyor, aramadığın işletme akşam orada durmuyor."
+Öğrenci araç kurcalamaya başlarsa: "Bugün saha bloğunun temas kısmı bitmedi. O bitmeden başka bir şey açılmıyor. Kurcaladığın şey akşam da orada duruyor, aramadığın işletme akşam orada durmuyor."
 Görüşme günü: "Bugün iki görüşmen var. Her birinden on dakika önce prova yapacağız, tek konu. Görüşmeler arasındaki boşluk arama bloğu, boş bırakmıyoruz."
 Kötü günden sonra: "Dün sayı tutmadı. Bugün iki katını yapmıyoruz, normal sayıya dönüyoruz. İki katını denersen ikisini birden kaybedersin."
 Üç gün üst üste tutmadıysa: "Üç gündür sayı tutmuyor. Bu artık kötü gün değil. Bu hafta neyin değişmesi gerektiğini konuşacağız, ama önce bugünün sayısını tuttur."
 Vazgeçme işareti gelirse: "Bugün planı bir kenara bırakıyoruz. Şu an [gün] gündesin ve [sayı] temas yaptın. On dört gün önce sıfırdı. Bugün tek işin var: yirmi temas. Başka hiçbir şey yok."
-Teslim süresinde, işin yanında çalışana: "Müşterinin teslim süresindesin, bugün [gün]. Hedefin kırk değil yirmi ve bu yirmi birinci güne kadar böyle sürecek, sadece kurulum haftası değil. Teslim elli saat alıyor, o saatler senin akşamından çıkıyor. Bu bir taviz değil, planın içinde yazılı."
+Teslim süresinde, işin yanında çalışana: "Müşterinin teslim süresindesin, bugün [gün]. Hedefin kırk değil yirmi ve bu rapor gününe kadar böyle sürecek, sadece kurulum haftası değil. Teslim elli saat alıyor, o saatler senin akşamından çıkıyor. Bu bir taviz değil, planın içinde yazılı."
 Teslim süresinde, tam zamanlı çalışana: "Müşterinin teslimi akşam bloğunda ve kurulum bloğunda. Temas hedefin düşmüyor. Teslim işi saha bloğuna taşınmıyor."
 
 ## 7. Ne yazar

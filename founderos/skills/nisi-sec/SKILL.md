@@ -121,9 +121,9 @@ Hesabın iki rakamı da nişin kartından çıkar, hiçbiri buradan uydurulmaz. 
 
 Sonra payın alınır: yarattığın değerin onda biri ile beşte biri arası, çünkü müşteri sana verdiği her 1 TL'ye en az 5 TL geri almalı. Çıkan aralığın üst ucu o nişin taşıyabileceği aylık ücrettir.
 
-Klima ve kombi servisinde: kayıp birimi 1.250 TL, kaçan çağrı ayda 110, çarpımı 137.500 TL, payın 13.750 ile 27.500 TL arası, yani nişin taşıdığı aylık ücret 25.000 TL. Kuaförde: kayıp birimi bir koltuk saati, 1.000 ile 3.500 TL arası. Kartında aylık kaçan randevu sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
+Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; payın onda biri ile beşte biri arası; nişin taşıdığı aylık ücret o aralığın üst ucu. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
 
-Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Klimada 25.000 TL ile 120.000 TL hedefe beş müşteri gerekiyor; beş müşteri için 25 görüşme, 36 randevu, yaklaşık 1.200 arama, günde 50 aramayla 24 iş günü. Sığıyor, niş geçiyor. Aynı hesap günde 10 arama yapan biri için 120 iş güne çıkıyor; o yüzden işin yanında çalışanın doksan günlük hedefi zaten dört müşteri değil, bir ya da iki müşteri ve bu eleme onun için hedef üzerinden değil, tek müşteri üzerinden yapılır.
+Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Hesap isini-kur'daki zincirle yapılır (hedef bölü nişin aylık ücreti, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı). Aynı hesap günde 10 arama yapan biri için çok daha uzun çıkar; o yüzden işin yanında çalışanda bu eleme hedef üzerinden değil, tek müşteri üzerinden yapılır. Bu hesap içeride yapılır; "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta verilir.
 
 Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı nerede" bölümlerinden çıkar. Kartta ikisinden biri yoksa niş elenmez, "ölçülemedi" işaretiyle geçer ve karar diğer elemelere kalır.
 
@@ -150,7 +150,7 @@ Sırayla:
 
 ### Doğrulama
 
-Üç aday nisi-dogrula'ya verilir, tablo geri gelir. Tablo canlı sayılara bakar: gerçekten kaç işletme var, telefonları açık mı, reklam veren var mı.
+Doğrulama ikinci blokta: üç aday nisi-dogrula'ya verilir, tablo o gün geri gelir. Tablo canlı sayılara bakar: gerçekten kaç işletme var, telefonları açık mı, reklam veren var mı. Birinci günde kartın rakamıyla karar verilir ve öğrenciye "canlı sayım yarın" denir.
 
 Tabloda bir sütun rakipleri gösterir: o şehirde aynı nişe yapay zeka asistanı satan biri var mı. Rakip varsa niş DÜŞMEZ. İkisini karıştırmamak lazım:
 - Sektörde çok işletme olması iyidir. Talep orada demektir.
@@ -160,24 +160,23 @@ Rakip varsa teklifi-yaz'a "rakip var" notu gider. O zaman açılış cümlen "bi
 
 ### Karar ve kayıt
 
-Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici müşteri değerini kartın rakamıyla günceller.
+Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici müşteri değerini kartın bandının ortasıyla günceller ve "geçici" etiketi kalır; kesin rakam üçüncü blokta girer.
 
 Seçilen kartı klasöre `nis-karti.md` adıyla yazar ve öğrenciye söyler: "Sektörünün kartı klasöründe, adı nis-karti; okuman gerekmiyor, ben okuyorum." Doksan Gün Planı bu modülde değil, fiyat bandı konduktan sonra üretilir; on altı bölümlük plan klasörde `doksan-gun-plani.md` olarak durur ve arka plan yardımcısı yazar.
 
 ## 6. Ne söyler
 
-Kararı verirken: "Nişin klima ve kombi servisi. Şehrinde altı yüz yirmi servis var, yetmiş sekizi reklam veriyor. Ekim bakım sezonu, yani telefonları zaten çalıyor. Geçen sezonun listesi hiçbir serviste aranmıyor, sattığın sistemin ilk işi o olacak. İkinci aday oto servis, üçüncü güzellik salonu. Onlara şu an bakmıyoruz."
+Kararı verirken: "Nişin [niş]. Kartın rakamına göre şehrinde [sayı] işletme var; canlı sayımı yarın yapıyoruz. [Sezon cümlesi karttan], yani telefonları zaten çalıyor. Geçen sezonun listesi hiçbir serviste aranmıyor, sattığın sistemin ilk işi o olacak. İkinci aday oto servis, üçüncü güzellik salonu. Onlara şu an bakmıyoruz."
 Hayır dersen: ikinci adayı söyler, sebebiyle.
 Üçüncüde: "Bugün bunlardan biri seçilecek. Seçmemek de bir karar ve en pahalısı. Bir ay sonra hâlâ hangi sektör diye düşünüyor olursan, o bir ayda hiçbir şey satmamış olursun."
 İçeriden tanıdığı sektör seçilince: "Bu sektörü içeriden biliyorsun. Bu senin en büyük avantajın; telefonda kullandığın üç kelime seni satıcıdan ayırıyor."
-Hiç bilmediği bir sektör çıkarsa: "Bu sektörü tanımıyorsun, sorun değil. Kart o sektörün fiyatlarını, dertlerini ve kelimelerini zaten taşıyor. Yarın teklifi yazarken hepsini okuyacağız."
+Hiç bilmediği bir sektör çıkarsa: "Bu sektörü tanımıyorsun, sorun değil. Kart o sektörün fiyatlarını, dertlerini ve kelimelerini zaten taşıyor. Birazdan teklifi yazarken hepsini okuyacağız."
 Niş değiştirmek isterse: "Üç yüz temasa gelmeden niş değişmez. Şu an kırk temastasın. Bu noktada sorunun nişte mi mesajda mı olduğunu ikimiz de bilemeyiz, ve yanlış olanı değiştirirsek iki hafta kaybederiz."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi), rakip notu.
+İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi), rakip notu. Doğrulama tablosu ikinci blokta nisi-dogrula yazar.
 Klasöre: `nis-karti.md`, seçilen kartın tamamı.
-CRM'e (adayların ve müşterilerin kaydedildiği takip programı): aday listesinin adı. Dokuz aşama hazır geliyor, sen koymuyorsun; sırası yeni, yazdım, cevap verdi, görüşme ayarlandı, görüşme yaptım, teklif verdim, kazandım, kaybettim, sonra.
 Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 
 ## 8. Yedek yol

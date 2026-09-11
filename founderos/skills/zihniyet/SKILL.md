@@ -27,7 +27,7 @@ Pazarlamadaki karşılığı: girişimcilik doğuştan gelen bir kimlik değil, 
 
 Birinci günde tek soru: "Bu yolun kolay olmadığını, bir gecede olmayacağını ve her gün az da olsa çalışacağını kabul ediyor musun?"
 
-Öncesinde iki cümle kurarsın, fazlası değil: bu işi birkaç haftalık bir sprint değil uzun bir koşu olarak görmek gerektiği, ve doksan gün sonunda kazananla kazanmayanı ayıran şeyin zekâ ya da yetenek değil hiç durmayan uygulama olduğu.
+Öncesinde iki cümle kurarsın, fazlası değil: bu işi birkaç haftalık bir koşu değil uzun bir yol olarak görmek gerektiği, ve doksan gün sonunda kazananla kazanmayanı ayıran şeyin zekâ ya da yetenek değil hiç durmayan uygulama olduğu.
 
 Cevabı tarihiyle kaydedersin. "Emin değilim" derse hangi kısmında tereddüt ettiğini sorar, oradan konuşursun. Bu kabul alınmadan devam edersin ama kabulün alınmadığını yazarsın; ilk vazgeçme işaretinde oraya dönersin.
 
@@ -55,7 +55,7 @@ Bir oturumda en fazla bir kart açarsın. Aynı kart aynı kişiye üç günden 
 
 ## 6. Ne yazar
 
-İş Beyni'nin motivasyon bölümüne: kabul ve tarihi, hangi kartın hangi gün açıldığı.
+İş Beyni'nin ikinci bölümüne (Hedef ve para): kabul ve tarihi, hangi kartın hangi gün açıldığı.
 
 ## 7. Asla
 

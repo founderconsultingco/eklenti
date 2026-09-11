@@ -18,9 +18,9 @@ Dil ayrımı: "müşteri" senin paranı ödeyen işletmedir. Telefonu açan kiş
 
 Sesli ajan yazılı asistanın yerine geçmiyor, yanında duruyor. İkisi aynı karttan çıkıyor, aynı üç soruyu soruyor, aynı hallerde işi insana bırakıyor. Sebebi tek cümle: bir işletme iki ağızdan iki farklı şey söyleyemez. Yazılı asistan yazana cevap veriyor, sesli ajan arayana.
 
-Üç çıktısı var, üçü de niş kartından çıkar: ajanın konuşma metni, insana aktarma kuralları, söylemeyecekleri.
+Üç çıktısı var, üçü de niş kartından çıkar: ajanın konuşma metni, insana devir kuralları, söylemeyecekleri.
 
-Şunlar bu modülün işi değildir: numara, hat, yönlendirme, ajanın CRM bağlantısı, akışlar, test ve canlıya alma. Onlar musteri-sistemini-kur'un işi. Bu modül ajanın ne konuşacağını kurar, telefonun nasıl bağlandığını değil.
+Şunlar bu modülün işi değildir: numara, hat, yönlendirme, akışlar, test ve canlıya alma. Onlar musteri-sistemini-kur'un işi. Bu modül ajanın ne konuşacağını kurar, telefonun nasıl bağlandığını değil.
 
 Pazarlamadaki karşılığı: sattığımız şey telefona bakan robot değil, kaçan aramanın randevuya dönmesi. Küçük işletmede kaçan arama en pahalı kayıptır, çünkü arayan kişi kapatır ve bir sonrakini arar.
 
@@ -29,7 +29,7 @@ Pazarlamadaki karşılığı: sattığımız şey telefona bakan robot değil, k
 Sesli taraf kurulumun ikinci dalgasında canlıya alınıyor, sebebi hattın dışarıdan gelmesi. Metinler ise birinci dalgada, yazılı asistanla aynı gün hazırlanıyor.
 
 - İkinci gün: kart okunur, ajanın konuşma metni ve üç kuralı çıkarılır. Metin tek sayfada müşteriye gider ve yazılı onayı istenir. Bu sayfa yazılı asistanın sayfasıyla birlikte gider; müşteri iki metni bir oturumda onaylar.
-- Hat geldiği gün (yedinci günden on dördüncü güne): ajan kurulur, ses ve tanıma tarafı seçilir, cevap listesi yüklenir.
+- Hat bağlandığı gün (yedinci günden on dördüncü güne): asistanın metni ve cevap listesi Voice AI ekranına yüklenir, Türkçe ses seçilir.
 - Ertesi gün: sen kendi telefonundan on aramayı yaparsın.
 - Deneme temizse: yönlendirme müşterinin telefonundan açılır ve gerçek aramayla iki tur daha yapılır. Yönlendirmeyi açmak musteri-sistemini-kur'un işi.
 - Canlıya alındıktan sonraki yedi gün: her akşam bütün konuşma dökümleri okunur, günde tek düzeltme yapılır. Sonra haftalık kontrol sistemi-kontrol-et'e geçer.
@@ -40,7 +40,7 @@ Pencereler: kart okuma ve metin yazma sabah bloğunda; ajanın kurulması, on ar
 ## 3. Ne okur
 
 Niş kartından: "Asistan kuralları" bölümü (toplanacak bilgiler, insana devir, söylenmeyecekler), işletmecinin kendi kullandığı cümleler, yoğun saatler, yasal sınırlar.
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü): iş adı, çalışma saatleri, randevu uzunluğu, hizmet bölgesi, hizmet listesi, sık sorulan on soru ve cevabı, devri alacak kişinin adı ve numarası, hattın bilgileri.
+Bilgi dosyasından (İş Beyni'nin müşteriler bölümü): iş adı, çalışma saatleri, randevu uzunluğu, hizmet bölgesi, hizmet listesi, sık sorulan on soru ve cevabı, devri alacak kişinin adı ve numarası, 0850 numara ve hattın bağlandığı tarih.
 yazili-asistani-kur'dan: üretim talimatının kimlik bölümü, soru sırası, insana devir listesi, söylemeyecekleri, cevap listesi. Bunlar yeniden yazılmaz, olduğu gibi alınır; değişen sadece mecraya göre biçimidir.
 musteri-sistemini-kur'dan: hattın kurulduğu gün, ajanın CRM bağlantısının açıldığı gün, yönlendirmenin hangi durumlar için açıldığı.
 
@@ -81,7 +81,7 @@ Ajan takvimde boş saati görür ve en fazla iki saat seçeneği söyler. Arayan
 
 Onay yazılı gider. Konuşma biter bitmez arayanın numarasına WhatsApp'tan onay mesajı düşer. Sebebi basit: sesli onay unutulur, yazılı kalır. Onay mesajını gönderen akış musteri-sistemini-kur'da kurulu.
 
-### İnsana aktarma
+### İnsana devir
 
 Yazılı asistandaki altı hal aynen geçerli. Konu tarafında para, hukuk ve garanti, uzmanlık; durum tarafında öfke ve şikâyet, "insanla görüşmek istiyorum", üç turda anlaşamama.
 
@@ -121,9 +121,7 @@ Konuşmanın dökümü ve özeti alan olarak tutulmaz, kaydın konuşmalar böl�
 
 ### Türkçe kurulumu
 
-Üç şey seçiliyor ve üçü de Türkçe destekliyor: konuşulanı yazıya çeviren taraf, ajanın sesi, ve arkadaki dil modeli. Dil tek seçilir. Çok dilli kurulumda her dilin doğruluğu düşüyor; müşterinin işi Türkçe, ajan da tek dilli kurulur.
-
-Bir açık var ve saklamıyorum: Türkçeye özel bir doğruluk ölçüsü yayımlanmamış. Bu yüzden ilk kurulumda ses ve tanıma tarafı iki ayrı seçenekle denenir ve kulakla seçilir. Bu bir tasarım kararı, kaynaktan gelmiyor. Seçilen ikili bilgi dosyasına yazılır, sonraki müşterilerde oradan başlanır.
+Voice AI ekranında dil Türkçe, tek dil seçilir; çok dilli kurulumda her dilin doğruluğu düşüyor, müşterinin işi Türkçe. Ses seçeneği ekrandaki Türkçe seslerden kulakla seçilir: iki sesle beşer cümle dinlenir, doğal olan alınır. Seçilen ses bilgi dosyasına yazılır, sonraki müşterilerde oradan başlanır.
 
 En çok hata çıkan üç yer: sayılar, saatler, mahalle ve sokak adları. Deneme listesinde üçü de var.
 
@@ -164,7 +162,7 @@ Aynı soru üç konuşmada takıldıysa cevap listesine eklenir. Aktarma oranı 
 ## 6. Ne söyler
 
 İkinci gün: "Sesli ajanın metnini de bugün çıkarıyoruz. Yazılı asistanla aynı üç soru, aynı aktarma kuralları, aynı yasak liste. Değişen tek şey biçim: cümleler kısalıyor, rakamlar tekrarlanıyor, kimlik ilk cümlede geçiyor. İki metni birlikte gönder, tek onay al."
-Hat gelince: "Hat geldi, ajanı kuruyorum. Bugün ses ve tanıma tarafını iki seçenekle deneyip kulağınla seçeceğiz. Yarın on aramayı kendi telefonundan yapacaksın."
+Hat gelince: "Hat bağlandı, asistanı kuruyorum. Bugün iki sesi dinleyip kulağınla seçeceğiz. Yarın on aramayı kendi telefonundan yapacaksın."
 Deneme günü: "On aramayı yap ve güzel olanı seçme. Kız, fiyat sor, sözünü kes, gürültülü bir yerden ara, 'insan mısın' de. İki aramada da sayı ve adres dene; sesli ajanların en çok kaybettiği yer orası."
 Müşteri "telefonu robot açmasın" derse: "Robot açmıyor, siz açıyorsunuz. Ajan sadece siz açamadığınızda devreye giriyor. Bugün o aramalar boşa gidiyor, yarın randevuya dönecek. Ve ilk cümlede kendini tanıtacak, kimse aldatılmayacak."
 Ajan randevu yazmıyorsa: "Ajan güzel konuşuyor ama randevu almıyor. Bu iyi ajan değil. Görev bölümünü değiştiriyorum; bilgi vermek değil saat önermek üzerine kuracağım."

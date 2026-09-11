@@ -123,6 +123,8 @@ Tek istisna: müşteri asistanın bir cevabından şikâyet ettiyse o aynı gün
 - Otuz yorum isteği gitti ve hiç yorum gelmediyse istek anına ve metne bakılır.
 - "Bir daha yazmayın" diyen varsa üç iş günü içinde işlenir. Kanun bunu istiyor. Bu kuyruğun boşaldığını her hafta doğrularsın.
 
+**8b. Sesli asistan (kurulduysa).** Haftanın çağrı sayısı, kaçı randevu yazdı, kaçı çalışana devredildi, dakika tüketimi (kâr hesabına gider). Bir de kendi telefonundan tek arama: yönlendirme üç durumda da açık mı (cevap verilmedi, meşgul, ulaşılamıyor), asistan açıyor mu, randevu yazıyor mu. Bozuksa aynı gün destek@founderos.so'ya yazılır, müşteriye tek cümle bildirilir.
+
 **9. Sayılar.** Geçen haftanın rakamları alınır ve bir öncekiyle karşılaştırılır:
 - randevu sayısı
 - gelme oranı, yani randevu alanların kaçının gerçekten geldiği. Ölçüt yüzde yetmiş; altındaysa sorun randevuda değil hatırlatmadadır.
@@ -185,7 +187,7 @@ Aynı şey ikinci kez olursa sebebini sorarsın. Müşteri bilerek kapattıysa s
 
 Haftalık kontrol aylık ücretin içindedir, ayrıca ücretlendirilmez.
 
-Kapsam dışı olan: müşterinin sonradan istediği yeni parça, yeni kanal, yeni akış, başka bir yazılıma bağlanma. Bunları müşteriyle ayrıca konuşursun. En erken ikinci ayda, büyüme şartı sağlanınca açılır. Büyüme şartı iki maddedir: görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş olacak ve yirmi birinci gün raporu çıkmış olacak.
+Kapsam dışı olan: müşterinin sonradan istediği yeni parça, yeni kanal, yeni akış, başka bir yazılıma bağlanma. Bunları müşteriyle ayrıca konuşursun. En erken ikinci ayda, büyüme şartı sağlanınca açılır. Büyüme şartı iki maddedir: görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş olacak ve rapor günü raporu çıkmış olacak.
 
 Ayda birkaç küçük istek normaldir, onları yaparsın. Yeni parça, yeni kanal, yeni akış ya da başka bir yazılıma bağlanma isteği küçük istek değildir; o kapsam dışıdır ve müşteriye yazılı sen söylersin.
 

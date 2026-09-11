@@ -25,7 +25,7 @@ Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altınc�
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 
-Günlük süre dört saat: kırk beş arama iki saat, e-posta ve Instagram bir saat, takip onayı ve cevaplar bir saat.
+Günlük süre dört saat: elli arama iki saat, e-posta ve Instagram bir saat, takip onayı ve cevaplar bir saat.
 
 ## 3. Ne okur
 
@@ -62,7 +62,7 @@ Kural sert: **denetimi olmayan aday aranmaz.** Sabah listesinde denetimsiz aday 
 
 Yaşanmış kanca da denetim kartından geliyor: altıncı satır canlı arama testi, yedinci satır yazılı test. "Dün akşam yedide aradım, açan olmadı" cümlesi oradan çıkıyor.
 
-Denetimli mesaj denetimsize göre kat kat fazla cevap alıyor: yüzde bir yerine yüzde yedi. Bu fark adaya özel yazmanın tek başına getirdiğidir, kanalın hedefi değildir.
+Denetimli mesaj denetimsize göre kat kat fazla cevap alıyor: yurt dışı satış verisinde yüzde bir yerine yüzde yedi; kendi oranın sahadan dolacak. Bu fark adaya özel yazmanın tek başına getirdiğidir, kanalın hedefi değildir.
 
 Sahte kişiselleştirme yok: görmediğin şey mesaja girmez. Tam adı ve şirketi olmayan kanıt hikâyesi anılmaz, uydurma görünür.
 
@@ -165,7 +165,7 @@ Her kanal satırı dört değerden birini alır:
 
 Sıradaki hareket kanal başına değil, adayın tamamı için tek satır. Tek kuralı var: **bir adayın aynı anda tek bir sıradaki hareketi ve tek bir tarihi olur.** İki kanal aynı gün açılmaz. Bir kanaldan cevap gelirse diğerlerinin sıradaki hareketi durur, aday cevap konuşmasına geçer. Aday "bir daha yazma" derse dört satır da aynı gün "kapandı" olur.
 
-Akşam "akşam" yazdığında kimin hangi kanalda durduğunu tek listede görüyorsun: dört kanalın durumu ve sıradaki hareket. İki hareket birden görünen satır hatadır, o gece düzeltilir.
+Akşam sayılarını söylediğinde kimin hangi kanalda durduğunu tek listede görüyorsun: dört kanalın durumu ve sıradaki hareket. İki hareket birden görünen satır hatadır, o gece düzeltilir.
 
 ### Karar tablosu: hangi durumda hangi kanal
 
@@ -201,9 +201,9 @@ Zincirin içinde kanal değişir, karar tablosuna göre: e-postayla başlayan ad
 
 Yazı yolunda en çok istenen yüz işletmede sıra video zinciriyle yürür; takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. İlk temas günde beş adayla yayılır.
 
-E-posta takiplerini sen sabah bloğunda onaylarsın, CRM gün içinde sırayla gönderir. Bu, "göndermek senin elinde" kuralının istisnasıdır ve yalnız onayladığın şablon metinler için geçerlidir: e-posta takipleri ve gorusmeye-getir'in randevu hatırlatmaları. İlk mesajlar ve Instagram her zaman senin elinden çıkar. Telefon takibi sadece cevap verenlere.
+E-posta takiplerini sen sabah bloğunda onaylarsın; CRM açıksa gün içinde sırayla CRM gönderir, CRM açılmadıysa kendi iş e-postandan tek tek sen gönderirsin (metin hazır gelir, kopyala yapıştır). CRM'den gitmesi "göndermek senin elinde" kuralının istisnasıdır ve yalnız onayladığın şablon metinler için geçerlidir: e-posta takipleri ve gorusmeye-getir'in randevu hatırlatmaları. İlk mesajlar ve Instagram her zaman senin elinden çıkar. Telefon takibi sadece cevap verenlere.
 
-Her takip tazedir, aynı metin tekrarlanmaz. Satışların çoğu beşinci ile yedinci temas arasında geliyor, satıcıların yarısı birinci takipten sonra bırakıyor.
+Her takip tazedir, aynı metin tekrarlanmaz. Yurt dışı satış verisine göre satışların çoğu beşinci ile yedinci temas arasında geliyor, satıcıların yarısı birinci takipten sonra bırakıyor.
 
 ### Cevap geldiğinde, üç adımlı cevap konuşması
 
@@ -218,7 +218,7 @@ Her takip tazedir, aynı metin tekrarlanmaz. Satışların çoğu beşinci ile y
 
 Niteleme, yani adayın gerçekten alıcı olup olmadığını anlama, soru yağmuru değil; sohbetin içine gömülüdür. "Bütçeniz ne" değil: "sizin büyüklüğünüzde işletmelerde kurulum şu aralıkta oluyor, uygun mu". "Karar verici siz misiniz" değil: "böyle bir şeye karar verirken süreç nasıl işliyor". Görüşme ayarlanmadan üç şey net olmalı: sorunun farkında mı, parası var mı, kararı kim veriyor. Üçü yoksa o randevuya gelmez.
 
-Cevap veren adaya beş dakika içinde dönülür. On dakikadan sonra dönersen şans yirmi kat düşüyor.
+Cevap veren adaya beş dakika içinde dönülür. Yurt dışı satış verisine göre on dakikadan sonra dönersen şans yirmi kat düşüyor.
 
 Adayın sıcak mı soğuk mu olduğu CRM'e yazılır. Sıcak aday: bir saat içinde cevap veriyor, soru soruyor, mesajı ortağına iletmiş, saat teklif ediyor. Soğuk aday: cevap süresi uzuyor, "sadece bakıyorum", "bilgi gönderin yeter", tek kelimelik cevaplar. Sıcak adaya aynı gün saat verilir. Soğuk aday üç takip düzenine bırakılır, kovalanmaz.
 
@@ -239,7 +239,7 @@ Kabul et, çevir, soruya bağla. Cevapların içi kartın diliyle dolar.
 "Bot fiyat veremez." "Haklısınız, zaten vermiyor; araç bilgisi ve fotoğraf toplayıp randevuya çeviriyor, fiyatı usta söylüyor".
 "Ben zaten kendim bakıyorum." Kartın kanıtıyla: "Şikayetlerde üç kanal arasında kopukluk var, WhatsApp'tan onaylanan randevu sistemde görünmüyor".
 "Instagram'ı ajansa verdim." "Ajans reklamı yapıyor, özel mesaj ve telefon cevabı sizde; ajansın ürettiği talep tam orada ölüyor. Rakibi değil tamamlayıcısıyım".
-"Zaten yapay zeka / bot teklifi aldık." "Güzel, o zaman kaçırdığınızı biliyorsunuz. Ne vaat ettiler?" Dinle, sonra: "Biz bot satmıyoruz; kaçan aramanın ve geri aranmayan eski müşterinin randevuya dönmesini satıyoruz, yirmi birinci günde raporla. Kurulan bir sistem varsa on beş dakikada ne kaçırdığını söylerim".
+"Zaten yapay zeka / bot teklifi aldık." "Güzel, o zaman kaçırdığınızı biliyorsunuz. Ne vaat ettiler?" Dinle, sonra: "Biz bot satmıyoruz; kaçan aramanın ve geri aranmayan eski müşterinin randevuya dönmesini satıyoruz, rapor gününde raporla. Kurulan bir sistem varsa on beş dakikada ne kaçırdığını söylerim".
 "Ezberden mi okuyorsun?" "Ezber metin yok, ama isterseniz çıkarırım" ve ilk soruya devam.
 "Araba kullanıyorum / müşterideyim." "Dikkatinizi dağıtmayayım, ne zaman uygun?" ve bir sonraki temas için gün al.
 "Hemen yazın beni." Bu sahte evet, gelmez. "Açıkçası size uyar mı bilmiyorum, herkesi almıyoruz; önce biraz tanıyayım".
@@ -276,7 +276,7 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.
-- Saha bloğu: aramalar ve yeni mesajlar. Telefon yolu: kırk beş arama, yirmi beş e-posta, on beş Instagram, on beş takip. Yazı yolu: on arama, kırk yeni e-posta, otuz yeni Instagram mesajı, beş video ve o günün takipleri; toplam yine yüz.
+- Saha bloğu: aramalar ve yeni mesajlar. Telefon yolu: elli arama, otuz e-posta, yirmi Instagram, takipler bu sayının içinde. Yazı yolu: on arama, kırk yeni e-posta, otuz yeni Instagram mesajı, beş video ve o günün takipleri; toplam yine yüz.
 - Akşam bloğu: kanal durumu ekranı, kayıt kontrolü, ertesi günün onayı.
 
 **İşin yanında: günde kırk temas.**
@@ -284,7 +284,7 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 - Saha bloğu, yani akşam ve cumartesi öğleden önce: on arama, on beş e-posta, beş Instagram, on takip. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
 - Akşam bloğu: kanal durumu ekranı ve kayıt kontrolü, on beş dakika.
 
-İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden yirmi birinci güne, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas: beş arama, sekiz e-posta, iki Instagram, beş takip. Sebebi rakamda: yirmi bir günlük teslim elli saat alıyor, o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
+İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas: beş arama, sekiz e-posta, iki Instagram, beş takip. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor, o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
 
 Günlük e-posta sınırı yeni adresi alıştırma sürecine bağlı: önce on beş, sonra yirmi, sonra otuz. Hangi saatte hangi kanalın açık olduğunu nişin kanal ve zaman bölümü söylüyor: güzellik salonu akşam yoğun, pazartesi ve salı sabahı sakin; oto serviste öğle ve mesai sonu uygun. Mesai sonrası "telefonu kim açıyor" ölçümü denetimin altıncı satırında yapılıyor.
 
@@ -302,7 +302,7 @@ Bir seferde tek şey değişir: ya sadece açılış cümlesi ya sadece kanal.
 
 ## 6. Ne söyler
 
-Sabah: "Bugün kırk beş arama, yirmi beş e-posta, on beş Instagram, on beş takip. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
+Sabah: "Bugün elli arama, otuz e-posta, yirmi Instagram; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
 Arama öncesi: "Yılmaz Isı, Ahmet Kaya. En güçlü bulgu: dün akşam yedide aradın, açan olmadı. Kanca bu. Lira karşılığını söyleme, görüşmeye saklıyoruz. Ara."
 Kapattıktan sonra: "Ne oldu? Tek kelime yeter." Sen "açmadı" dersin: "Yazdım. Telefon satırı yapıldı, ikinci deneme perşembe. Sıradaki hareket bu, başka bir şey açmıyoruz. Sonraki aday."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, aramıyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."

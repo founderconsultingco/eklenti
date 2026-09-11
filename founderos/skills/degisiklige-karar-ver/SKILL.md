@@ -82,7 +82,7 @@ Zayıf halkayı buldun. Şimdi sebebini arıyorsun ve sıra şu:
 
 **Dört. Dışarısı.** Mevsim, tatil, bayram, o sektörün yoğun dönemi. En son buraya bakılır, çünkü en kolay suçlanan yer burasıdır ve neredeyse hiçbir zaman gerçek sebep değildir.
 
-Sebebi bulduğunu sandığında beş kez "neden" diye sor. İlk cevap neredeyse hiçbir zaman gerçek sebep olmuyor. Cevap gelmiyor, neden? Mesaj genel duruyor, neden? Adayı tanımıyorum, neden? Listede gözlem satırı boş, neden? Listeyi çıkarırken o alanı doldurmamışım. Gerçek sebep mesaj değil, liste.
+Sebebi bulduğunu sandığında beş kez "neden" diye sor. İlk cevap neredeyse hiçbir zaman gerçek sebep olmuyor. Cevap gelmiyor, neden? Mesaj genel duruyor, neden? Adayı tanımıyorum, neden? Listede denetim kartı boş, neden? Listeyi çıkarırken o alanı doldurmamışım. Gerçek sebep mesaj değil, liste.
 
 ### Dört kilit
 

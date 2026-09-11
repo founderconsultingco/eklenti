@@ -17,8 +17,8 @@ Neden bu iş var: aradığın işletmeci telefonu kapattıktan sonra adını Goo
 Neden tek sayfa: çok sayfalı site yapmak günler alıyor ve hiçbir işe yaramıyor. Senin adayın "hakkımızda" sayfası okumuyor. Bir cümle okuyor, aşağı kaydırıyor, bir düğmeye basıyor.
 
 Şunlar bu modülün işi değildir:
-- Marka kiti (markani-kur, dün). Sayfanın renkleri, yazı tipleri ve düzeni oradan gelir.
-- Ön görüşme videosu (satis-videosunu-cek, aynı gün, siteden hemen sonra). O video bu sayfaya değil, ön görüşme sayfasına girer.
+- Marka kiti (markani-kur, aynı gün, siteden hemen önce). Sayfanın renkleri, yazı tipleri ve düzeni oradan gelir.
+- Ön görüşme videosu (satis-videosunu-cek, beşinci blok). O video bu sayfaya değil, ön görüşme sayfasına girer.
 - Takvimin kendisi ve ayarları (gorusmeye-getir, CRM açıldığı gün). Bu modül sayfada düğmeyi WhatsApp'a bağlar; takvim CRM açıldığı gün gelir ve düğme o gün takvime döner.
 - Blog, hizmet sayfaları, "hakkımızda". Yok.
 
@@ -39,7 +39,7 @@ Doksan Gün Planı'ndan: kancalar ve sonuç tanımı.
 
 ## 4. Ne sorar
 
-Bir şey sorar: alan adını aldın mı. Almadıysan bugün alınır, on ile altmış dolar arası, yıllık.
+Birinci günde tek soru sorar: fotoğrafın var mı (aşağıda). İkinci blokta bir şey daha sorar: alan adını aldın mı. Almadıysan o gün alınır, on ile altmış dolar arası, yıllık.
 
 Bunu merdivenin alt basamağındaki öğrenciye sormaz. O basamakta bugün alan adı alınmıyor ve sebebi aşağıda yazılı.
 
@@ -96,21 +96,21 @@ Sırası değişmez. Hiçbir bölüm boş kutu olarak durmaz ve hiçbir bölüm 
 
 **1. Üst çubuk.** Logo ve tek düğme: "Görüşme ayarlayın". Menü yok, çünkü gidilecek başka sayfa yok.
 
-**2. Açılış.** Başlığın üstünde tek satırlık bir etiket: kime konuştuğunu söyler, "[Şehir]'deki [sektör] işletmeleri için" gibi. Sonra başlık: adayın elde edeceği sonuç, onun kelimeleriyle. Başlıkta bir kelime ya da öbek vurgulanır; renkle ya da farklı bir yazı karakteriyle, ikisiyle birden değil. Altında iki satırı geçmeyen açıklama: Dönüşüm Cümlesi'nin sadeleşmiş hali. Sonra düğme, tek başına. Düğmenin altında güven satırı: bugün elimizde ne varsa o. Müşteri yoksa "21. gün raporu, sonuç yoksa ikinci ay ücretsiz" gibi güvencenin özeti; müşteri gelince gerçek sayı ve yorum.
+**2. Açılış.** Başlığın üstünde tek satırlık bir etiket: kime konuştuğunu söyler, "[Şehir]'deki [sektör] işletmeleri için" gibi. Sonra başlık: adayın elde edeceği sonuç, onun kelimeleriyle. Yazının yanında (telefonda altında) ürünün kendisi: bir telefon çerçevesinde, işletmeye gelen mesaj ve sistemin cevabı, dört beş baloncuk, sayfanın kendi kodunda çizilmiş. Metni kartın asistan kurallarından ve işletmecinin sözlüğünden; uydurma isim yok, "Ahmet Bey" yerine kartın tipik müşterisi. Başlıkta bir kelime ya da öbek vurgulanır; renkle ya da farklı bir yazı karakteriyle, ikisiyle birden değil. Altında iki satırı geçmeyen açıklama: Dönüşüm Cümlesi'nin sadeleşmiş hali. Sonra düğme, tek başına. Düğmenin altında güven satırı: bugün elimizde ne varsa o. Müşteri yoksa "[21/28]. gün raporu, sonuç yoksa ikinci ay ücretsiz" gibi güvencenin özeti; müşteri gelince gerçek sayı ve yorum.
 
 Açılışta bir görsel var ve bu görsel sayfanın en pahalı yeri. Öncelik sırası: ön görüşme videosunun kapağı (video çekildiyse), kurucunun gerçek fotoğrafı (kisisel-markani-kur'dan geldiyse), marka kitinin `ana-gorsel` dosyası. Üçü de yoksa açılış görselsiz kurulur ve bu açıkça daha zayıf bir sayfadır; fotoğraf gelince açılış değişir.
 
 **3. Dert.** Üç paragraf, kart değil düz yazı. İdeal müşteri sayfasının üçüncü başlığından: adayın kendi cümleleriyle, düzeltilmeden. "Aradım açmadılar" cümlesi orada nasıl yazıyorsa öyle. Bu bölüm sayfanın en çok okunan yeri, çünkü adam kendi cümlesini okuyor.
 
-**4. Bedel.** Kartın kayıp birimi ve rakamı, tek hesap: "Sezonda günde elli çağrı, üçte biri açılmıyor; açılmayan çağrı ortalama 1.250 lira." Bu rakamlar niş kartındandır ve sayfada kaynağı kartın Kaynaklar bölümünde yazdığı şekilde yazar; kartta kaynak yoksa rakam da yoktur, bölüm kayıp biriminin adıyla rakamsız kurulur. "X'in yayınladığı rapor" gibi bir kaynak kartta aynen geçmiyorsa sayfaya yazılmaz. Müşterinin yirmi birinci gün raporu gelince bu bölüm onun gerçek rakamıyla değişir ve kaynak "müşterimizin raporu" olur.
+**4. Bedel.** Kartın kayıp birimi ve rakamı, tek hesap: "Sezonda günde elli çağrı, üçte biri açılmıyor; açılmayan çağrı ortalama 1.250 lira." Bu rakamlar niş kartındandır ve sayfada kaynağı kartın Kaynaklar bölümünde yazdığı şekilde yazar; kartta kaynak yoksa rakam da yoktur, bölüm kayıp biriminin adıyla rakamsız kurulur. "X'in yayınladığı rapor" gibi bir kaynak kartta aynen geçmiyorsa sayfaya yazılmaz. Müşterinin rapor günü raporu gelince bu bölüm onun gerçek rakamıyla değişir ve kaynak "müşterimizin raporu" olur.
 
-**5. Ne yapıyoruz.** Sistemin adı ve teslimat kontrolünden geçmiş parçalar. Her parça tek cümle, sonuç diliyle: "Telefon açılmayınca otuz saniye içinde WhatsApp'tan mesaj gidiyor." Araç adı yok, "yapay zekâ" kelimesi yok, teknik kelime yok. Bu bölümde kart yerine sıra kullanılır: bir çağrı geldiğinde ne olduğu, adım adım.
+**5. Ne yapıyoruz.** Sistemin adı ve teslimat kontrolünden geçmiş parçalar. Üç an, üç telefon ekranı yan yana (telefonda alt alta): mesaj geldi ve cevap gitti; sistem sordu ve saat verdi; randevu yazıldı ve hatırlatma gitti. Her ekranın altında tek cümle, sonuç diliyle: "Telefon açılmayınca otuz saniye içinde WhatsApp'tan mesaj gidiyor." Araç adı yok, "yapay zekâ" kelimesi yok, teknik kelime yok, ikon sırası yok. Kalan parçalar (eski müşteriyi geri kazanma, yorum, rapor) üç ekranın altında düz yazı üç satır.
 
 **6. Neden biz.** İki sütunlu karşılaştırma değil, üç kısa satır: nasıl yapılmıyor, biz nasıl yapıyoruz. Kartın "rekabetin şekli" bölümünden. "Reklam ajansı reklam verir, kaçan telefona bakmaz" gibi. Rakip adı geçmez.
 
-**7. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından: "Altı yıl bayide satış yaptım, bu sektörü içeriden biliyorum." Uydurma unvan yok, uydurma ekip yok. Fotoğraf varsa burada da durur. Bu bölüm müşteri gelmeden önce sayfanın en güçlü kanıtıdır, çünkü tek gerçek olan şey kurucunun kendisi.
+**7. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından: "Altı yıl bayide satış yaptım, bu sektörü içeriden biliyorum." Uydurma unvan yok, uydurma ekip yok. Öğrencinin fotoğrafı metnin yanında, dikey, gerçek; yoksa bölüm fotoğrafsız kurulur ve dördüncü blokta fotoğraf gelince güncellenir. Harf avatarı, daire içinde ok, siluet konmaz. Bu bölüm müşteri gelmeden önce sayfanın en güçlü kanıtıdır, çünkü tek gerçek olan şey kurucunun kendisi.
 
-**8. Güvence.** Yirmi birinci gün raporu ve şartı, fiyati-belirle'deki tam metinle. Sayı sözü yok; "sistem çalışıyor mu" sözü var. Aday burada rahatlıyor.
+**8. Güvence.** Rapor günü raporu ve şartı, fiyati-belirle'deki tam metinle. Sayı sözü yok; "sistem çalışıyor mu" sözü var. Aday burada rahatlıyor.
 
 **9. Sorular.** Kartın en güçlü üç itirazı, soru biçiminde, cevaplarıyla. "Yetişemiyoruz, eleman yok" itirazı burada "Elemanım yok, bunu kim yönetecek?" sorusu olur. Cevaplar teklifi-yaz'daki itiraz cevaplarıdır, sayfa diline çevrilmiş.
 
@@ -136,41 +136,51 @@ Hakkımızda, blog, hizmetler sayfası yok. Canlı destek kutusu yok. Boş video
 
 ### Sayfanın görünüşü
 
-Sayfanın içeriği kadar görünüşü de yazılı. Serbest bırakılırsa her öğrencinin sayfası aynı çıkıyor ve yapay zekâ çıktısı gibi duruyor; aradığın işletmeci bunu bir bakışta anlıyor.
+Sayfanın içeriği kadar görünüşü de yazılı. Serbest bırakılırsa her öğrencinin sayfası aynı çıkıyor ve yapay zekâ çıktısı gibi duruyor; aradığın işletmeci bunu bir bakışta anlıyor. Yapay zekâ çıktısı gibi duran sayfanın tarifi belli: koyu bir kutu, içinde dev büyük harfli başlık, altında yan yana üç ikonlu kart, tam genişlikte bir düğme, hiç fotoğraf yok, hiç ürün yok, dört bölümde aynı ritim. Bu tarifin her parçası aşağıda tek tek yasaklı.
 
-**Görsel dünya marka kitinden gelir, başka yerden değil.** Kitin iki yüzeyi var ve sayfa ikisini de kullanır: açılış bandı ve son çağrı kimlik yüzeyidir, koyu ve tek doygun renkli, marka görseliyle; gövde okuma yüzeyidir, açık zeminli. Sebebi şu: adayın akşam telefonundan okuyor, on bölüm koyu zeminde okunmaz; ama ilk ekran ve son ekran koyu kimlikle gelince sayfa "modern bir iş" der ve kitle sayfa arasında dikiş kalmaz. İnternetteki ajans sayfalarından alınan şey de bu: koyu açılış, tek düğme, tek vurgulu kelime, dert önce, kanıt sonra, tekrar eden çağrı. Baştan sona siyah sayfa alınmaz, çünkü o sayfalar telefondan okunmuyor.
+**Sayfanın omurgası ürünün kendisidir, metin değil.** Beğenilen ajans sayfalarının ortak yanı şu: ilk ekranda sattıkları şey görünüyor; bir panel, bir telefon ekranı, bir konuşma. Bizim sattığımız şey bir konuşma: işletmenin telefonuna gelen mesaj ve sistemin verdiği cevap. O yüzden sayfanın en az iki bölümünde bu konuşma bir telefon çerçevesinin içinde gösterilir ve FounderOS onu sayfanın kendi kodunda çizer, resim olarak değil: telefon çerçevesi, üstte işletmenin adı, altında dört beş baloncuk. Baloncukların metni nişin kartından ve yazılı asistanın kurallarından gelir, uydurulmaz: müşterinin sorusu, asistanın cevabı, saat teklifi, "randevunuz yazıldı". Sağ üstteki saat gerçek bir akşam saati (kartın kapanış saatinden sonrası), tarih bugünün tarihi. Bu ekran sayfanın ana görselidir; kitin `ana-gorsel` dosyası varsa onun arkasında doku olarak durur, telefon ekranının yerine geçmez.
 
-**Yazı tipi.** Marka kitindeki iki yazı tipi, sayfada yenisi seçilmez. Türkçe karakter kontrolü: ı, İ, ğ, ş, ç, ö, ü, ₺. Gövde yazısı telefonda en az 16 piksel, satır uzunluğu altmış beş ile yetmiş beş karakter arası, satır yüksekliği yazı tipine göre ayarlı. Başlık büyük ama sığar; harf aralığı eksiye kaçırılmaz, "-0,04"ün ötesi sıkışık duruyor. Bütün başlıklar büyük harf olmaz.
+**İki yüzey, kitten.** Kitin iki yüzeyi var ve sayfa ikisini de kullanır. Açılış bandı ve son çağrı kimlik yüzeyidir: koyu zemin, ama düz koyu kutu değil; kitin malzemesi (kâğıt dokusu, ince ışık geçişi, `ana-gorsel`in bulanık hali, ne ise) zeminin üstünde ve tek doygun renk yalnız düğmede ve başlıktaki tek vurgu kelimesinde. Gövde okuma yüzeyidir: açık zemin, koyu yazı, dar sütun. Sebebi şu: adayın akşam telefonundan okuyor, on bölüm koyu zeminde okunmaz; ama ilk ekran ve son ekran koyu kimlikle gelince sayfa "modern bir iş" der ve kitle sayfa arasında dikiş kalmaz. Baştan sona siyah sayfa alınmaz. Koyu bandın "malzemesiz" olup olmadığı slop kontrolünün ilk sorusudur.
 
-**Renk.** Kitin renkleri: bir baskın, bir vurgu, gerisi gri skala. Metin ve zemin arasında okunabilirlik oranı gövde için 4,5'e 1, büyük yazı için 3'e 1; bu sayı ölçülür, göz kararı verilmez. Renkli zemin üstündeki ikincil yazı gri değil, o rengin koyusu ya da açığı olur. Yazıya renk geçişi yapılmaz; vurgu ağırlıkla ya da boyutla verilir.
+**Açılışın yerleşimi sabittir.** Telefonda: küçük etiket, başlık, iki satır açıklama, düğme, güven satırı, altında telefon çerçevesi. Masaüstünde iki sütun: solda yazı, sağda telefon çerçevesi hafif eğik ya da düz, arkasında kitin dokusu. Başlık dev büyük harf değil: cümle düzeninde, iki üç satır, tek kelime vurgulu. Etiket koyu bantta ince bir hap: "[Şehir]'deki [sektör] işletmeleri için". Güven satırı düğmenin hemen altında, küçük ve gri değil, okunur: güvencenin özeti ya da müşteri gelince gerçek sayı.
 
-**Düzen.** Varsayılan düzene düşülmez: koca başlık, altında yan yana üç kutu, altında alt bilgi. Aynı boyda "ikon, başlık, iki satır" kartlar sayfa iskeleti değildir; kartın içinde kart hiç değildir. Bölümlerin ağırlığı farklı olur: dert bölümü düz yazı ve dar sütun, ne yapıyoruz bölümü sıra, kim bölümü fotoğraf ve metin yan yana, bedel bölümü tek büyük rakam değil bir hesap. Her bölümün üstüne küçük etiket konmaz; etiket yalnızca açılışta var. Bölüm numarası yok.
+**Bölümler birbirine benzemez.** Varsayılan düzene düşülmez: koca başlık, altında yan yana üç kutu, altında alt bilgi. Aynı boyda "ikon, başlık, iki satır" kartlar sayfa iskeleti değildir; ikon sırası hiç değildir. Her bölümün kendi biçimi var ve sırası şu: dert bölümü düz yazı, dar sütun, üç paragraf, arada bir çekme cümle büyük puntoyla; bedel bölümü bir hesap, sol tarafta rakamlar alt alta, sağda tek cümle sonuç; ne yapıyoruz bölümü üç telefon ekranı yan yana (telefonda alt alta), her biri bir anın görüntüsü: mesaj geldi, sistem cevapladı, randevu yazıldı; neden biz bölümü iki sütunlu tablo değil, üç satırlık karşılaştırma, sol "böyle yapılıyor" gri, sağ "biz böyle" koyu; kim bölümü fotoğraf ve metin yan yana, fotoğraf kare değil dikey, kenarı yumuşak; güvence bölümü açık zemin üstünde tek çerçeveli kutu, kitin vurgu rengiyle ince kenar; sorular bölümü açılır kapanır üç satır; son çağrı koyu bant, tek cümle, tek düğme, altında iletişim. Her bölümün üstüne küçük etiket konmaz; etiket yalnızca açılışta var. Bölüm numarası yok.
 
-**Boşluk ve derinlik.** Bölüm araları cömert, bölüm içi sıkı; başlığın üstü altından daha boş. Gölge varsa hafif kaydırılmış ve yumuşak; kenarı renkli çizgi, camsı bulanıklık, sert blok gölge yok. Zemin düz tek renk kalmaz ama dokusu nişin dünyasından gelir: fotoğraf, kâğıt, metal, ne ise. Sebepsiz çizgili ya da kareli zemin yok.
+**Fotoğraf: gerçek olan girer, taklit girmez.** Kim bölümünde öğrencinin kendi fotoğrafı; kurulum öğrencinin telefonundaki bir fotoğrafla başlar (düz duvar, gün ışığı, yüz görünüyor), yoksa Kim bölümü fotoğrafsız kurulur ve dördüncü blokta kişisel marka kurulurken çekilen fotoğrafla güncellenir; bu güncelleme dördüncü bloğun planında yazılıdır. Öğrencinin sektörden gerçek çalışma fotoğrafı varsa (dükkân, atölye, servis aracı; poz verilmemiş) dert bölümünün üstünde tam genişlikte durabilir. Stok fotoğraf yok, gülen model yok, turuncu düz siluetler yok, çizgi film illüstrasyon yok, daire içinde ok ya da harf avatar yok. Fotoğraf yoksa o bölüm fotoğrafsız kurulur; fotoğraf taklidi yapan çizim konmaz.
 
-**Fotoğraf.** En az bir bölüm tam genişlikte gerçek fotoğrafla. Stok fotoğraf yok, gülen model yok, çizgi film illüstrasyon yok. Fotoğraf yoksa o bölüm fotoğrafsız kurulur; fotoğraf taklidi yapan çizim konmaz.
+**Yazı tipi.** Marka kitindeki iki yazı tipi, sayfada yenisi seçilmez. Türkçe karakter kontrolü: ı, İ, ğ, ş, ç, ö, ü, ₺. Gövde yazısı telefonda en az 16 piksel, satır uzunluğu altmış beş ile yetmiş beş karakter arası, satır yüksekliği yazı tipine göre ayarlı. Başlık büyük ama sığar; harf aralığı eksiye kaçırılmaz, "-0,04"ün ötesi sıkışık duruyor. Hiçbir başlık tamamı büyük harf olmaz; büyük harf yalnız etiket hapında, o da küçük puntoyla.
 
-**İkon.** İkon gerekiyorsa çizilir ya da tek bir aileden alınır, aynı çizgi kalınlığında. Emoji ve klavye işareti ikon değildir.
+**Renk.** Kitin renkleri: bir baskın, bir vurgu, gerisi gri skala. Metin ve zemin arasında okunabilirlik oranı gövde için 4,5'e 1, büyük yazı için 3'e 1; bu sayı ölçülür, göz kararı verilmez. Renkli zemin üstündeki ikincil yazı gri değil, o rengin koyusu ya da açığı olur. Yazıya renk geçişi yapılmaz; vurgu ağırlıkla ya da boyutla verilir. Neon vurgu koyu zeminde yasaktır; vurgu rengi kitin doygun rengidir ve sayfada en fazla üç yerde görünür: düğme, başlığın vurgu kelimesi, güvence kutusunun kenarı.
 
-**Hareket.** Tek bir yapılmış an: sayfa açılırken açılış bölümü belirir, o kadar. Her bölüme aynı belirme konmaz, dönen ikon ve kayan yazı yoktur. Hareket azaltma tercihi olan kullanıcıda hareket kapanır.
+**Düğme.** Tek düğme metni, sayfada üç kez: üst çubuk, açılış, son çağrı. Genişliği metni kadar artı boşluk, tam genişlik değil (telefonda bile). Köşe yarıçapı kitten. Üstüne gelme, basılı, odak hali var.
+
+**Boşluk ve derinlik.** Bölüm araları cömert, bölüm içi sıkı; başlığın üstü altından daha boş. Gölge varsa hafif kaydırılmış ve yumuşak; kenarı renkli çizgi, camsı bulanıklık, sert blok gölge yok. Telefon çerçevesinin kendi gölgesi var, sayfanın geri kalanında gölge yok. Sebepsiz çizgili ya da kareli zemin yok.
+
+**İkon.** İkon yalnız sorular bölümünün açma kapama işaretinde ve telefon çerçevesinin içinde (gönder, geri). Bölüm başlıklarının yanında ikon yok, üç kartın üstünde ikon yok. Emoji ve klavye işareti ikon değildir.
+
+**Hareket.** Tek bir yapılmış an: sayfa açılırken telefon çerçevesindeki baloncuklar sırayla belirir, o kadar. Her bölüme aynı belirme konmaz, dönen ikon ve kayan yazı yoktur. Hareket azaltma tercihi olan kullanıcıda hareket kapanır ve baloncuklar hazır gelir.
 
 **Tarayıcının çizdiği yerler.** Metin seçim rengi, odak halkası, bağlantı altçizgisi ve kaydırma çubuğu da sayfanın parçası; kitin rengiyle ayarlanır. Bu, sayfanın yapılmış mı toplanmış mı olduğunu gösteren en ucuz işaret.
 
-**Durumlar.** Düğmenin üstüne gelme, basılı, odak hali var. Takvim yüklenemezse görünen bir yedek düğme var. Uzun başlık taşmıyor, uzun iş adı üst çubuğu bozmuyor.
-
 **Telefon.** Sayfa önce 390 piksel genişlikte kurulur, sonra 1440'a açılır. Düğme başparmakla basılacak kadar geniş, sayfa yana kaymıyor, 360'ta da taşma yok.
 
-**Slop kontrolü, sayfa gösterilmeden önce.** Beş soru: gövde de koyu mu, yoksa açılış bandındaki koyu zemin düz kutu mu; düzen başlık artı üç kart artı düğme mi; tek gerçek fotoğraf yok mu; bütün bölümler aynı genişlik ve ritimde mi; hiç insan izi yok mu. İkisi "evet"se sayfa yeniden kurulur, öğrenciye gösterilmez.
+**Referans testi, sayfa gösterilmeden önce.** FounderOS sayfanın telefon ve masaüstü görüntüsüne bakar ve altı soruyu cevaplar; ikisi "evet"se sayfa yeniden kurulur, öğrenciye gösterilmez:
+1. İlk ekranda ürün yok mu: telefon çerçevesi ve içinde gerçek konuşma görünmüyor mu?
+2. Koyu bant düz kutu mu: dokusuz, malzemesiz, tek renk siyah ya da lacivert mi?
+3. Bir başlık tamamı büyük harf mi, ya da bir vurgu neon mu?
+4. Bir yerde yan yana üç aynı kart, ikon sırası ya da tam genişlikte düğme var mı?
+5. Sayfada hiç insan izi yok mu: öğrencinin fotoğrafı ya da gerçek çalışma fotoğrafı, kurucu bölümünde gerçek geçmiş?
+6. İki bölüm aynı ritimde mi: aynı genişlik, aynı başlık boyu, aynı iç düzen?
 
 ### Nasıl kurulur: tek atışta
 
 Sayfa bir kere kurulur, bir kere bakılır, bir kere düzeltilir ve biter. Sonsuz düzeltme turu yoktur; her tur öğrencinin kotasını ve akşamını yiyor.
 
-**1. Malzeme toplanır, soru sorulmaz.** İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur.
+**1. Malzeme toplanır, tek soru sorulur.** Tek soru: "Telefonunda düz duvar önünde, gün ışığında çekilmiş bir fotoğrafın var mı? Varsa klasöre at, Kim bölümüne koyuyorum; yoksa sorun değil, dördüncü blokta çekiyoruz." Gerisi sorulmaz. İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur.
 
 **2. Sayfa tam yazılır.** On bölüm, gerçek metin, marka kitinin dosyalarıyla, tek HTML dosyası, dış bağımlılık yok. `site/[is-adi].html` olarak klasöre yazılır. Yarım yazılıp "devamı sonra" denmez. Kitin dosyaları gerçekten kullanılır: üst çubukta `marka/logo/logo-yatay-acik` (koyu bantta koyu hali), açılışta `marka/site-gorselleri/ana-gorsel`, bağlantı önizlemesi olarak `baglanti-onizlemesi-1200x630` (sayfanın başlığındaki og:image satırı), sekmede favicon; dosyalar sayfanın içine gömülür ki tek dosya olarak taşınsın. Kitte olmayan görsel için boş kutu konmaz, o bölüm görselsiz kurulur. Sayfadaki her WhatsApp bağlantısı İş Beyni'ndeki telefon numarasıyla doludur; boş `wa.me/` bağlantısı sayfaya yazılmaz, numara yoksa önce sorulur.
 
-**3. Önizleme ve tek bakış.** Sayfa ekranda kart olarak açılır (öğrenci tıklar, görür), FounderOS aynı sayfaya iki genişlikte bakar: telefon ve masaüstü. Baktığı şeyler: slop kontrolünün beş sorusu, okunabilirlik oranı, Türkçe karakterler, taşma, tek düğme, açılış görseli. Bulduğu her şeyi tek listede toplar.
+**3. Önizleme ve tek bakış.** Sayfa ekranda kart olarak açılır (öğrenci tıklar, görür), FounderOS aynı sayfaya iki genişlikte bakar: telefon ve masaüstü. Baktığı şeyler: referans testinin altı sorusu, okunabilirlik oranı, Türkçe karakterler, taşma, tek düğme, telefon çerçevesindeki konuşma, kitin logosu ve görselleri gerçekten sayfada mı. Bulduğu her şeyi tek listede toplar.
 
 **4. Hepsi bir kerede düzeltilir.** Liste ne kadarsa o kadar, tek turda. Sonra bir kez daha bakılır, ikinci tur düzeltme sadece ilk turun bozduğu bir şey varsa yapılır. Üçüncü tur yok.
 
@@ -200,9 +210,9 @@ Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsAp
 
 ### Ön görüşme sayfası
 
-Aynı gün ikinci bir sayfa daha kurulur ve bu sayfa herkese açık değildir. Adresi yalnızca randevu alan adaya gider.
+İkinci bir sayfa daha var ve bu sayfa herkese açık değildir. Adresi yalnızca randevu alan adaya gider. Bu modül onu kurmaz: sayfa CRM açıldığı gün gorusmeye-getir ile kurulur, çünkü EVET düğmesi ve takvim CRM'de yaşıyor. O güne kadar randevu alan adaya video ve üç cümle WhatsApp'tan gider.
 
-İçinde üç şey olur: ön görüşme videosu, bir EVET düğmesi, üç itirazın cevabı. Sayfanın boş hali bugün kurulur; video aynı gün, siteden sonra çekilir, yazısı ve düğmesi yarın gorusmeye-getir ile doldurulur.
+İçinde üç şey olur: ön görüşme videosu (beşinci blokta çekilir), bir EVET düğmesi, üç itirazın cevabı.
 
 Neden ayrı sayfa: randevu almış aday ile hiç tanımadığın aday aynı şeyi okumaz. Randevu alan aday zaten ilgileniyor; ona satmaya değil, gelmesini sağlamaya çalışıyorsun.
 
@@ -214,17 +224,17 @@ Bu bölüm bütçe merdiveninin hangi basamağında olduğuna göre değişiyor.
 
 Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve saha açıldıktan sonra her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
 
-Aynı gün üçüncü bir iş daha var ve atlanırsa sahaya çıktığın gün anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** Takip e-postaları ve randevu hatırlatmaları CRM'den gidiyor; adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıyor ve büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menüde "Settings", içinde "Email Services" (e-posta ayarları), oradan gönderen alan adını ekleyip alan adını aldığın yere birkaç satır giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
+CRM açıldığı gün bir iş daha var ve atlanırsa anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** CRM açılana kadar e-postaları kendi iş e-postandan tek tek sen gönderiyorsun, hatırlatmaları da; CRM açılınca takip e-postaları ve randevu hatırlatmalarının e-posta tarafı CRM'den gidiyor ve adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıp büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menüde "Settings", içinde "Email Services" (e-posta ayarları), oradan gönderen alan adını ekleyip alan adını aldığın yere birkaç satır giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
 
 Alt basamaktaysan bu iş de alan adıyla birlikte erteleniyor. O zamana kadar takip e-postaları gitmiyor; takibi telefondan ve Instagram'dan yapıyorsun, adres gelince e-posta kanalı açılıyor.
 
-Bu adım randevu hatırlatmalarını da açıyor. Randevu alındığında giden onay e-postası, yirmi dört saat öncesi ve kırk üç dakika öncesi hatırlatmaları hep senin adresinden çıkıyor. Adres doğrulanmamışken denendi ve mesaj adayın gelen kutusuna değil çöp kutusuna düştü; yani doğrulama olmadan hatırlatma sistemi çalışıyor gibi görünür ama kimse görmez.
+Bu adım randevu hatırlatmalarının e-posta tarafını da açıyor. Randevu alındığında giden onay e-postası, bir gün öncesi ve iki saat öncesi hatırlatmaları hep senin adresinden çıkıyor. Adres doğrulanmamışken denendi ve mesaj adayın gelen kutusuna değil çöp kutusuna düştü; yani doğrulama olmadan hatırlatma sistemi çalışıyor gibi görünür ama kimse görmez.
 
 **Alt basamakta.** Bugün kendi internet adresini almıyorsun ve iş e-postası kurmuyorsun. Site, yayın servisinin verdiği ücretsiz adresle yayına çıkıyor ve bugünkü işini o adres görüyor: aradığın işletmeci adını Google'a yazınca sayfa çıkıyor, mesajındaki link bir yere gidiyor, ilgilenen adaya göndereceğin tek adres oluyor. Sayfanın kendisi diğer basamaklardakiyle aynı, tek fark adresin.
 
-Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin yirmi birinci gün raporu çıkıp kanıt hikâyen yazıldığı zaman. O gün hem para girmiş oluyor hem de sitede gösterecek bir sonucun oluyor. O gün alan adı alınır, ücretsiz adres yenisine yönlendirilir, iş e-postası kurulur ve site adresi İş Beyni'nde ve e-posta imzasında güncellenir. Bu, sayfanın müşteri rakamıyla güncellendiği günün aynısı; ikisi tek işte yapılır.
+Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin rapor günü raporu çıkıp kanıt hikâyen yazıldığı zaman. O gün hem para girmiş oluyor hem de sitede gösterecek bir sonucun oluyor. O gün alan adı alınır, ücretsiz adres yenisine yönlendirilir, iş e-postası kurulur ve site adresi İş Beyni'nde ve e-posta imzasında güncellenir. Bu, sayfanın müşteri rakamıyla güncellendiği günün aynısı; ikisi tek işte yapılır.
 
-O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki altıncı günde şaşırma.
+O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki saha açılınca şaşırma.
 
 Yeni alan adından hemen yüz e-posta atılmaz. Adres alıştırılır: ilk gün on beş, sonra yirmi, sonra otuz. Alıştırmanın başlayabilmesi için doğrulamanın yeşile dönmüş olması gerekiyor; dönmeden atılan her e-posta hem boşa gider hem de adresin itibarını düşürür. Bu sayı adaya-mesaj-yaz'da yazılı; orta ve üst basamakta alıştırma sahanın ilk günü başlar, alt basamakta alan adının alındığı gün başlar.
 
@@ -261,7 +271,7 @@ Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-po
 - CRM açıldığı gün takvim kurulamazsa: düğmeler WhatsApp'ta kalır, ertesi gün tekrar denenir ve bu İş Beyni'ne yazılır.
 - İş e-postası kurulamazsa: mevcut e-postanla devam edilir ve günlük gönderim sayısı yarıya iner.
 - Sağlık nişindeysen: kartın yasal sınırlar bölümü sayfaya uygulanır. Tedavi sözü, hasta görseli, öncesi sonrası düzeni ve "kesin sonuç" gibi iddialar sayfada geçmez.
-- Ön görüşme sayfasının yeri bugün açılamazsa: üçüncü günün sabahında açılır, o gün uzar.
+- Ön görüşme sayfası bu modülün işi değil; CRM açıldığı gün gorusmeye-getir kurar.
 
 ## 9. Sıradaki adım ve işaretler
 
@@ -279,4 +289,4 @@ Sıradaki: aynı gün, pazar doğrulaması (nisi-dogrula arka planda) ve akşam 
 - İngilizce ekran yüzünden yayın adımı yarım kaldı: ekran görüntüsü istenir, adım aynı gün tamamlanır.
 - Sayfaya form, fiyat ya da uydurma yorum eklendi: kaldırılır, sebebi tekrar söylenir.
 
-Beş kural: boş sayfa yok (on bölümün metni İş Beyni'nden hazır gelir, öğrenci tek satır yazmaz) · sessiz bitiş yok (günün sonunda sayfa yayında) · onay (metin senin "tamam"ınla yayınlanır) · sahadan güncelleme (ilk müşteride güven satırı, bedel ve iki yeni bölüm gerçek rakamla gelir; alt basamakta aynı gün kendi adresine geçilir) · sormaz söyler (sayfanın bölümlerini, sırasını, neyin konmayacağını ve adresin bugün mü ilk kanıttan sonra mı alınacağını FounderOS söyler).
+Beş kural: boş sayfa yok (on bölümün metni İş Beyni'nden hazır gelir, öğrenci tek satır yazmaz) · sessiz bitiş yok (birinci gün sayfa klasörde ve ekranda, ikinci blokta yayında) · onay (metin senin "tamam"ınla yayınlanır) · sahadan güncelleme (ilk müşteride güven satırı, bedel ve iki yeni bölüm gerçek rakamla gelir; alt basamakta aynı gün kendi adresine geçilir) · sormaz söyler (sayfanın bölümlerini, sırasını, neyin konmayacağını ve adresin bugün mü ilk kanıttan sonra mı alınacağını FounderOS söyler).

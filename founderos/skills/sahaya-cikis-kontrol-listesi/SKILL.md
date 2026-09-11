@@ -36,20 +36,20 @@ Bu dörtten biri eksikse saha yine açılır. Eksik olan kapanış anında ortay
 
 9. **Randevu yolu.** CRM açıldıysa: bir aday takvimden randevu alabiliyor; kanıt, bağlantıyı kendine gönder, randevu al, takvimde gör, iptal et. CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir): sayfadaki düğme WhatsApp'ına gidiyor ve verdiğin saati İş Beyni'nin "Bugünün listesi" bölümüne yazıyorum; kanıt, düğmeye bas, mesaj sana düşsün.
 10. **Hatırlatma.** Randevudan bir gün önce ve iki saat önce gidecek metinler hazır ve senin onayından geçmiş. CRM varsa kendiliğinden gider; yoksa sen gönderirsin, metni ben veririm. Kanıt: metinler İş Beyni'nde.
-11. **Kayıt yeri.** CRM açıldıysa dokuz aşama açık, bir deneme kaydı açıp aşamalar arasında gezdirdin ve sildin; kanıt ekran. CRM açılmadıysa İş Beyni'nin "Bugünün listesi" bölümü açık ve bugünün adayları orada; kanıt, "durum" yazınca listeyi gösteriyor.
-12. **Günlük sayı görünümü.** Her akşam bakacağın sayılar FounderOS'tan geliyor: temas, cevap, randevu, görüşme. Kanıt: "gün" yazınca sıfırları gösteriyor.
+11. **Kayıt yeri.** CRM açıldıysa dokuz aşama açık, bir deneme kaydı açıp aşamalar arasında gezdirdin ve sildin; kanıt ekran. CRM açılmadıysa İş Beyni'nin "Bugünün listesi" bölümü açık ve bugünün adayları orada; kanıt, "neredeyim" deyince listeyi gösteriyor.
+12. **Günlük sayı görünümü.** Her akşam bakacağın sayılar FounderOS'tan geliyor: temas, cevap, randevu, görüşme. Kanıt: sabah "günaydın" yazınca sıfırları gösteriyor.
 
 ## Dört: anlatım ve prova
 
 13. **Bir dakikalık anlatım.** Sesli olarak, kâğıda bakmadan, bir dakikada söyleyebiliyorsun. Kanıt: kendi sesini kaydet, süreye bak, buraya at.
 14. **Provalar.** Dördüncü ve beşinci bloğun on iki provası yapıldı, prova notları duruyor, açık kalan tek düzeltme belli. Kanıt: prova sayacı ve son prova notu.
 15. **Üç itiraz.** En sık gelecek üç itirazın karşılığını ezberden söyleyebiliyorsun. Kanıt: FounderOS üçünü arka arkaya sorar, sen cevaplarsın.
-16. **Görüşme özet ekranı.** Ekran açılıyor ve boş bir adayla doğru görünüyor. Kanıt: ekran.
+16. **Görüşme özet ekranı.** FounderOS uydurma bir adayla özet ekranını sohbette üretiyor ve beş satırı doğru görünüyor. Kanıt: üretilen ekran.
 
 ## Beş: vitrin
 
-17. **Site.** Adres açılıyor, telefon numarası doğru, ön görüşme videosu oynuyor. Kanıt: siteyi telefonundan aç.
-18. **Kişisel hesap.** Profil fotoğrafı, açıklaması ve sabit gönderisi yerinde. Kanıt: profili telefondan aç.
+17. **Site.** Adres açılıyor, telefon numarası doğru, düğme WhatsApp'ına (CRM açıldıysa takvime) gidiyor. Ön görüşme videosu YouTube'da liste dışı yüklü, linki İş Beyni'nde. Kanıt: siteyi telefonundan aç, videoyu linkten aç.
+18. **Kişisel hesap.** Profil fotoğrafı, biyografisi ve linki yerinde. Kanıt: profili telefondan aç.
 19. **E-posta.** İş e-postandan kendine bir mesaj at, gitsin ve imzası görünsün. Kanıt: gelen mesaj.
 20. **Demo hattı.** CRM açıldıysa: numara çalışıyor, yazılan mesaja asistan cevap veriyor; kanıt, kendi telefonundan yaz, cevabı gör. CRM açılmadıysa bu madde "başlangıç görüşmesinde" diye açık kalır ve görüşmede kendi telefonundan canlı gösterim yapılır.
 
@@ -57,13 +57,13 @@ Vitrin maddelerinden biri eksikse saha açılır ve o madde ilk hafta içinde ta
 
 ## Altı: kendin
 
-21. **Çalışma düzeni ve pencereler.** Yarından itibaren hangi saatlerde arayacağın yazılı ve o saatler takvimde blok olarak duruyor. Kanıt: takvim.
+21. **Çalışma düzeni ve pencereler.** Yarından itibaren hangi saatlerde arayacağın yazılı ve o saatler kendi Google takviminde (ikinci blokta işaretlendi) blok olarak duruyor. Kanıt: takvim.
 22. **Günlük sayı.** Yarın kaç temas yapacağın tek rakam olarak yazılı ve görünen bir yerde. Kanıt: kâğıdın fotoğrafı.
 23. **İlk gün listesi.** Yarın sabah arayacağın ilk yirmi kayıt bugünden seçilmiş ve sıralanmış. Kanıt: liste.
 24. **Üç aylık yaşam gideri ve masraf tablosu.** Tablonun bölümleri güncel, şirket bölümü henüz başlamamış olarak duruyor. Kanıt: tablo.
 
 ## Liste bitince
 
-FounderOS iki satır yazar ve İş Beyni'ne kaydeder: saha açılıyor mu, hangi maddeler açık. Sahaya çıkış dörtlüsü tamamsa on dördüncü bölüme şu satırı da yazar ve bunu atlamaz, çünkü sabah planı bu satıra bakarak hazırlıktan sahaya geçer: "1. Hazırlık tamamlandı: tamam, [tarih], kanıt: sahaya çıkış kontrol listesi, açık maddeler: [numaralar]". Dörtlüden biri eksikse satır "eksik" olarak yazılır, eksik madde ertesi sabah bitince "tamam"a çevrilir. Sonra tek cümle söyler ve o cümle sabit: "Yarın sabah [saat]'te ilk aramayı yapıyorsun. Bugünkü eksikler bunu değiştirmiyor."
+FounderOS iki satır yazar ve İş Beyni'ne kaydeder: saha açılıyor mu, hangi maddeler açık. Sahaya çıkış dörtlüsü tamamsa on dördüncü bölüme şu satırı da yazar ve bunu atlamaz, çünkü sabah planı bu satıra bakarak hazırlıktan sahaya geçer: "1. Hazırlık tamamlandı: tamam, [tarih], kanıt: sahaya çıkış kontrol listesi, açık maddeler: [numaralar]". Dörtlüden biri eksikse satır "eksik" olarak yazılır, eksik madde ertesi sabah bitince "tamam"a çevrilir. Sonra tek cümle söyler ve o cümle sabit: "Şimdi ilk on soğuk temas gidiyor; yarın sabah bloğunda tam saha. Bugünkü eksikler bunu değiştirmiyor."
 
 Açık kalan her madde bir işaret olur ve ilgili gün geldiğinde FounderOS kendisi hatırlatır. Öğrenciden liste ezberlemesi istenmez.

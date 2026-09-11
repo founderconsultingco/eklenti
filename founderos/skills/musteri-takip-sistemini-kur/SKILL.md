@@ -14,11 +14,11 @@ Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, adaylar�
 
 Müşterinin sistemiyle karıştırma. O, müşteri kazandığında CRM'de ayrı bir bölümde kuruluyor.
 
-Neden bu iş var: altıncı günden itibaren günde yüz temas yapacaksın. Telefon yolunda kırk beş arama, yirmi beş e-posta, on beş Instagram mesajı, on beş takip. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
+Neden bu iş var: altıncı günden itibaren günde yüz temas yapacaksın. Telefon yolunda elli arama, otuz e-posta, yirmi Instagram mesajı; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
 
 Üçüncüsü bugünün asıl işi: aynı adaya dört ayrı kanaldan ulaşacaksın. Telefon, e-posta, Instagram, video. Kimin hangi kanalda nerede kaldığını bilmezsen ya aynı kişiye üst üste yazarsın ya da cevap vereni unutursun. İkisi de adayı kaybettiriyor.
 
-Neden bugün: aday listesini üçüncü günde çıkaracaksın, sahaya altıncı günde çıkacaksın. Sistem listeden önce hazır olacak ki liste geldiğinde tek seferde içine girsin.
+Neden bugün: CRM bugün açıldı; aday listen `adaylar.csv`'de, temasların ve puanların orada hazır. Sistem bugün tanınır ve liste tek seferde içine girer; yarından itibaren kayıt yeri CRM'dir.
 
 Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört akış hesabın açıldığı gün hazır geldi. Bugünkü işin doğrulamak ve tanımak.
 
@@ -26,13 +26,13 @@ Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört 
 - Randevu takvimi, hatırlatma akışı ve ön görüşme sayfasının doldurulması (gorusmeye-getir, aynı gün).
 - Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok).
 - Adayın denetlenmesi ve denetim kartının doldurulması (aday-denetimi-cikar). Bu modül o kartın CRM'deki yerini gösteriyor, kartı doldurmuyor.
-- Mesaj metinleri ve hangi durumda hangi kanalın açılacağı (adaya-mesaj-yaz, dördüncü gün).
+- Mesaj metinleri ve hangi durumda hangi kanalın açılacağı (adaya-mesaj-yaz, dördüncü blok).
 
 Pazarlamadaki karşılığı: aday takibi.
 
 ## 2. Ne zaman çalışır
 - CRM hesabın açıldığı gün, bağlantıdan hemen sonra, üç saat. Hesap başlangıç görüşmesinde açıldığı için bu gün sabit değil; görüşmenin ertesi günüdür. O güne kadar takip işini İş Beyni'nin "Bugünün listesi" bölümü yapar: takip günü gelenler her sabah oradan okunur ve mesajları sen gönderirsin.
-- İkinci kez: üçüncü günde liste geldiğinde. O gün yalnız yükleme bölümü açılır.
+- İkinci kez: ayda bir liste yenilendiğinde. O gün yalnız yükleme bölümü açılır.
 - Üçüncü kez: üç yüzüncü temasta ya da bir satır işe yaramadığında.
 
 Üç saat tam zamanlıda sabah bloğunu tam dolduruyor. İşin yanında çalışıyorsan sabah bloğun bir saat, o yüzden modül bölünüyor. Bölünmenin nasıl olduğu beşinci bölümün sonunda yazılı.
@@ -150,7 +150,7 @@ Bir kayıt aç, sıradaki hareketi "ara" yap ve tarihine yarını yaz. Sonra ger
 
 Cevap vermeyene tek seferde vazgeçmiyorsun. Zincir üç adımlı: üçüncü gün, yedinci gün, on dördüncü gün. Zincir hesabında kurulu ve açık; sen kurmuyorsun.
 
-Ne yapıyor: bir kanalın durumu "yapıldı" olduğu anda başlıyor. Üçüncü, yedinci ve on dördüncü günde adayın sıradaki tarihini o güne çekiyor, yani aday o sabah kendiliğinden günün listesine düşüyor. Yirmi birinci günde sıradaki hareketi "yok" yapıyor ve adayı "sonra" aşamasına taşıyor. Kaydı silinmiyor, altı ay sonra yeniden açılıyor.
+Ne yapıyor: bir kanalın durumu "yapıldı" olduğu anda başlıyor. Üçüncü, yedinci ve on dördüncü günde adayın sıradaki tarihini o güne çekiyor, yani aday o sabah kendiliğinden günün listesine düşüyor. Rapor gününde sıradaki hareketi "yok" yapıyor ve adayı "sonra" aşamasına taşıyor. Kaydı silinmiyor, altı ay sonra yeniden açılıyor.
 
 Mesajı zincir göndermiyor, sen gönderiyorsun. Zincir sadece o günü sana hatırlatıyor. Tek istisna e-posta takipleri: onların metnini sen onaylıyorsun, gönderimi CRM yapıyor.
 
@@ -174,7 +174,7 @@ Takvimi bugün gorusmeye-getir'de açtın, ayarları da o gün yapıldı.
 
 Bu ikisini CRM'de aramıyorsun, çünkü CRM'de böyle bir ekran yok. İkisi de benden geliyor.
 
-Sabah "gün" yazıyorsun. O gün temas edeceğin adayları sırayla veriyorum: önce cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda denetimsizler. Aynı puandakileri yorum sayısı ayırıyor, çok yorum çok iş demek. Kaç kayıt geleceğini çalışma düzenin belirliyor; ekranda gördüğün sayı o gün bitirilecek sayı.
+Sabah "günaydın" yazıyorsun. O gün temas edeceğin adayları sırayla veriyorum: önce cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda hızlı denetimi o sabah yapılacaklar. Aynı puandakileri yorum sayısı ayırıyor, çok yorum çok iş demek. Kaç kayıt geleceğini çalışma düzenin belirliyor; ekranda gördüğün sayı o gün bitirilecek sayı.
 
 Akşam "akşam" yazıyorsun. Beş sayıyı veriyorum: kaç temas (kanal ayrımıyla), kaç cevap, kaç olumlu cevap, kaç randevu, kaç görüşme ve kapanış. Sayıları CRM kayıtlarından ben çıkarıyorum.
 

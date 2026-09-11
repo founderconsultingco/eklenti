@@ -8,7 +8,7 @@ description: "Müşteride yorum isteme ve yorum yanıtlama."
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-İşi biten kişiden Google yorumu isteyen ve gelen yorumları yöneten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Görüşmede sattığın tam sistemin, yani Kademe 2'nin parçalarından biridir. Kademe 2, Kademe 1'in üstüne üç iş ekler: eski müşterileri geri arama, Google yorumu toplama, aylık rapor. Bu modül ikincisini yapar.
+İşi biten kişiden Google yorumu isteyen ve gelen yorumları yöneten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Görüşmede sattığın tam kapsamın, yani Kademe 2'nin parçalarından biridir. Kademe 2, Kademe 1'in üstüne üç iş ekler: eski müşteriyi geri kazanma, yorum ve referans, aylık rapor. Bu modül ikincisini yapar.
 
 Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil.
 
@@ -35,7 +35,7 @@ Pazarlamadaki karşılığı: işletmenin bir daha kaybetmediği itibar. Google'
 - İkinci günden dördüncü güne: yorum linki ve QR kodu alınır, metinler müşteriye onaya gider, QR kodun basılıp nereye asılacağı kararlaştırılır. Link ve metin işi akşam bloğunda yapılır; QR kodun yeri müşteriyle konuşulacağı için kurulum bloğuna girer, çoğunlukla haftalık görüşmenin içinde.
 - Altıncı gün canlıya alma sonrası: işi biten her kişi için istek çalıştırılır. Hangi yolun açık olduğu aşağıdaki kurallara göre belirlenir.
 - On üçüncü günden sonra: WhatsApp yolu açılabilir. Daha önce açılmaz, çünkü sekizinci günden on ikinci güne kadar hattın günlük yerinin çoğu eski müşteri listesinin ilk mesajlarına ayrılmıştır. O günlerde hatta yalnız randevu hatırlatmaları ve cevapsız aramaya dönüşler için yer kalır.
-- Yirmi birinci gün: rapora yorum satırı girer.
+- Rapor günü: rapora yorum satırı girer.
 - Sonrası: haftalık kontrolde yeni yorumlar okunur, cevapsız yorum bırakılmaz (sistemi-kontrol-et).
 
 Eski müşteri listesine yorum isteği gönderilmez. O listeye giden mesaj ayrı bir iştir ve ikisi birbirine karışmaz.
@@ -45,7 +45,7 @@ Eski müşteri listesine yorum isteği gönderilmez. O listeye giden mesaj ayrı
 Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): Google işletme profilinin doğrulanmış olup olmadığı, yorum linki ve QR kodu, müşterinin çalışma saatleri, izin durumu.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): işin bittiği an için Sahadan dolacak bölümü, yasal sınırlar, yorumlarda en çok neyin konuşulduğu, işletmecinin kendi kullandığı cümleler.
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): kapanmış randevular, gelen yorum bildirimleri.
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): yirmi bir günün takvimi, sistemin adı.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): [21/28] günün takvimi, sistemin adı.
 
 ## 4. Ne sorar
 
@@ -108,7 +108,7 @@ Birinci ayda çoğu müşteride yalnız QR çalışır. Bunu müşteriye baştan
 
 ### İstek anı nişten çıkar
 
-İsteğin zamanı "iş bitti" anıdır. Bu an nişe göre değişiyor ve karttan çıkıyor:
+İsteğin zamanı kayıttaki "iş bitti" tarihidir (musteri-sistemini-kur'da tanımlı: işletmenin iç bildirime "geldi" ve "bitti" demesi). O işaretin ne zaman verileceği nişe göre değişiyor ve karttan çıkıyor:
 
 - Temizlik: aynı gün, ekip evden çıktıktan sonra.
 - Kuaför ve berber: koltuktan kalkınca. Kırk beş altmış dakikalık randevunun sonu. QR için en uygun niş.
@@ -233,7 +233,7 @@ Niş kartının Sahadan dolacak bölümüne: işin bittiği gerçek an, işe yar
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: haftalık kontrol (sistemi-kontrol-et), yirmi birinci gün raporu (aylik-raporu-hazirla).
+Sıradaki: haftalık kontrol (sistemi-kontrol-et), rapor günü raporu (aylik-raporu-hazirla).
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Cevap metni yazıldı ama müşterinin onayı iki gün gelmedi: müşteriye hatırlatılır.

@@ -17,7 +17,7 @@ Dün akşam çıkardığın iki listeye gidecek mesajları yazıyor ve gönderme
 Bu ayrımı bozarsan gerisi çalışmıyor. Tanıdığa satmaya çalışan kişi karşısındakini kaçırıyor, çünkü karşısındaki hem satın almak zorunda hissediyor hem hayır demenin yolunu bulamıyor. Referans soran kişi kimseyi sıkıştırmıyor ve "hayır" cevabı ilişkiyi bozmuyor.
 
 Şunlar bu modülün işi değildir:
-- Listeyi çıkarmak (tanidik-listesi-cikar, dün akşam).
+- Listeyi çıkarmak (tanidik-listesi-cikar, ikinci bloğun akşamı).
 - Soğuk mesajlar (adaya-mesaj-yaz, dördüncü blokta yazılır, saha açılınca gider). Metin bambaşka.
 - Randevu ayarlamak (gorusmeye-getir). Cevap gelip randevu çıkınca o modül devralıyor.
 
@@ -31,12 +31,12 @@ Pazarlamadaki karşılığı: sıcak temas ve referans isteği.
 ## 3. Ne okur
 
 İş Beyni'nden: Dönüşüm Cümlen, nişin, iş adın, kapasiten, deneme fiyatı kuralın.
-Sabahki listeler: A ve B, sırasıyla.
+Dün akşam çıkan listeler: A ve B, sırasıyla.
 Niş kartından: işletmecinin kendi kullandığı cümleler, nişin tipik sızıntısı.
 
 ## 4. Ne sorar
 
-Tek şey sorar ve o da sıfırdan değil, onay için: "İş Beyni'nde kapasiten üç yazıyor. Mesaja üç yazıyorum, tamam mı?"
+Tek şey sorar ve o da sıfırdan değil, onay için: "İş Beyni'nde tek başına taşıyabileceğin müşteri sayısı [vizyon belgesindeki sınır] yazıyor. Mesaja onu yazıyorum, tamam mı?"
 
 Sebebi şu: mesajın içinde bu sayı geçiyor ve doğru olmak zorunda. O sayıyı gören biri sana birini bağlarsa ve sen yer yok dersen, o kişi bir daha kimseyi bağlamıyor.
 
@@ -90,7 +90,7 @@ Bu kadar. İkinci takip yok, üçüncü takip yok. Sıcak çevrede ısrar ilişk
 
 Cevap "bakayım, aklıma gelirse söylerim" ise bu bir hayır değil. İki gün sonraki takip yine gidiyor, sonrası gitmiyor.
 
-Sıcak kayıtlarda soğuk listedeki üç adımlı takip zinciri kapalı. CRM onlara kendiliğinden mesaj göndermiyor.
+Sıcak kayıtlarda soğuk listedeki üç adımlı takip zinciri kapalı. Onlara kendiliğinden mesaj gitmiyor; CRM açıksa da kapalı, açılmadıysa zaten senin elinden çıkıyor.
 
 ### Tanıştırma geldiğinde
 
@@ -104,7 +104,7 @@ Biri "şu arkadaşımla konuş" dediğinde iş orada bitmiyor. Tanıştırmalar�
 
 "Merhaba, [tanıdığının adı] sizi bana bağladı. Ben [adın], [niş] için [tek cümlelik sonuç] yapıyorum. On beş dakikada ne yaptığımı göstereyim, işinize yaramazsa orada anlarız."
 
-Tanıştırılan kişi CRM'e aday olarak giriyor, "sıcak" işaretiyle, ve kimin bağladığı yazılıyor. O kayıt sonra lazım oluyor: iş çıkarsa bağlayan kişiye haber veriyorsun.
+Tanıştırılan kişi kayıt yerine (CRM ya da `adaylar.csv`) aday olarak giriyor, "sıcak" işaretiyle, ve kimin bağladığı yazılıyor. O kayıt sonra lazım oluyor: iş çıkarsa bağlayan kişiye haber veriyorsun.
 
 ### Yasaklar
 
@@ -145,12 +145,12 @@ Bedava yapmak isterse: "Hayır. Parasını ödemeyen müşteri giriş izni vermi
 Yalvarma cümlesi kurarsa: "O cümleyi çıkarıyoruz. Sana acıyan kişi seni kolluyor, müşteri bağlamıyor."
 Cevap gelmeyince: "İki gün sonra tek mesaj, sonrası yok. Sıcak çevrede ısrar ilişkiyi yıpratıyor."
 Metni değiştirmek isterse: "Elli mesajdan önce dokunmuyoruz. Otuz mesajın cevabı metnin iyi mi kötü mü olduğunu söylemiyor."
-Bitince: "İlk mesajlar gitti. Yarın soğuk listeyi çıkarıyoruz, sıcak mesajlar arka planda devam ediyor."
+Bitince: "İlk mesajlar gitti. Bir sonraki blokta adayların hızlı denetimi ve profiller; sıcak mesajlar arka planda devam ediyor. Bugünlük bu kadar, yarın görüşürüz."
 
 ## 7. Ne yazar
 
-CRM'e: A listesine ve tanıştırılanlara giden her mesaj temas olarak, kanal ve tarihle. Gelen cevaplar. Tanıştırılan kişiler, "sıcak" işaretiyle ve kimin bağladığı yazılı.
-CRM'deki "B listesi" listesine: B listesine giden mesajlar ve gelen cevaplar. Bu kayıtlar aday havuzuna ve akşam okunan sayılara karışmıyor.
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): A listesine ve tanıştırılanlara giden her mesaj temas olarak, kanal ve tarihle. Gelen cevaplar. Tanıştırılan kişiler, "sıcak" işaretiyle ve kimin bağladığı yazılı.
+B listesine (CRM'deki "B listesi" listesi ya da `baglantilar.csv`): B listesine giden mesajlar ve gelen cevaplar. Bu kayıtlar aday havuzuna ve akşam okunan sayılara karışmıyor.
 İş Beyni'ne: iki mesajın metni ve sürüm tarihi, mesajda geçen sayı, günlük gönderim sayısı, sıcak çevreden gelen cevap ve randevu sayısı.
 Bir sonraki modüllere: çıkan randevular gorusmeye-getir'e, sıcak sayılar rakamlari-oku'ya ayrı satır olarak, kimin bağladığı bilgisi musteriyi-karsila'ya (iş çıkarsa o kişiye haber veriyorsun).
 
@@ -165,7 +165,7 @@ Bir sonraki modüllere: çıkan randevular gorusmeye-getir'e, sıcak sayılar ra
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: yarın dördüncü blok, adayların hızlı denetimi ve profiller.
+Sıradaki: bir sonraki blok, adayların hızlı denetimi ve profiller. Bugünlük bu kadar, yarın görüşürüz.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üçüncü blok bitiyor, ilk mesajlar gitmedi: blok kapanmaz. Bu mesaj ertelenmeyen tek iştir; metin hazırsa gönderme on dakikadır, gitmeden gün bitmez.

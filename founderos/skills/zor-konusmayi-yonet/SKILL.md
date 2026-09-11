@@ -10,7 +10,7 @@ description: "Öğrenci \"müşteri kızdı\", \"iptal etmek istiyor\", \"iş ak
 
 Bir şey ters gittiğinde ne söyleyeceğini veren modül. Modül, FounderOS'un belli bir işi yapan parçasıdır.
 
-Buradaki gün numaraları müşterinin ilk yirmi bir gününden sayılır, senin doksan gününden değil.
+Buradaki gün numaraları müşterinin ilk [21/28] gününden sayılır, senin doksan gününden değil.
 
 Neden bu iş var: sıfırdan başlayan biri kötü haber anında iki şeyden birini yapar. Ya kaybolur, mesaja cevap vermez, "elimde iyi bir şey olunca yazarım" der. Ya da savunmaya geçer, piyasayı ya da müşterinin kendi ekibini suçlar. İkisi de aynı yere çıkar: müşteri gider.
 
@@ -24,7 +24,7 @@ Kaçmanın asıl sebebi o an ne diyeceğini bilmemektir. Cümle hazırsa kaçmaz
 - Bozukluğu bulmak ve düzeltmek (sistemi-kontrol-et). Orası bozukluğu bulur, düzeltir ve düzeltme sırasını verir; burası o sırada söylenecek cümleyi verir.
 - Raporu yazmak ve sayıları üretmek (aylik-raporu-hazirla). Rapor görüşmesinin sırası da orada.
 - Aylık düzen, referans ve ayrılık adımları (musteriyi-elde-tut). Sıfırlama, kurtarma ve çıkış görüşmesi orada tanımlı; burası o görüşmelerin telefonla açılışını ve kriz anındaki cümleleri verir.
-- İlk yirmi bir günün teslimatı (musteriyi-karsila ve diğerleri).
+- İlk [21/28] günün teslimatı (musteriyi-karsila ve diğerleri).
 - Satış görüşmesindeki itirazlar (gorusmeyi-yonet). Orası aday, burası müşteri.
 
 Pazarlamadaki karşılığı: müşteriyi kaybettiren şey sorunun kendisi değil, sorunun nasıl konuşulduğudur.
@@ -38,7 +38,7 @@ Pazarlamadaki karşılığı: müşteriyi kaybettiren şey sorunun kendisi deği
 - Müşteri kendi işinden çıkan bir sonucu sana yüklediğinde.
 - Müşterinin kendi müşterisi asistandan şikâyetçi olup doğrudan sana yazdığında ya da seni aradığında.
 - Para konusu açıldığında: iade istendiğinde, ödeme geçmediğinde, ücret tartışmaya açıldığında.
-- Yirmi birinci gün raporunda yazılan satırlar sıfır çıktığında.
+- Rapor günü raporunda yazılan satırlar sıfır çıktığında.
 - Sen teslim edemeyecek durumda olduğunda: hastalık, tatil, ailevi durum, başka bir iş.
 - Müşterinin ya da senin verinin dışarı çıktığından şüphelendiğinde.
 - Senin hakkında kötü söz çıktığında.
@@ -53,7 +53,7 @@ CRM'den (adayların ve müşterilerin kaydedildiği takip programı): son otuz g
 Sözleşmeden: işi bitirme, iade ve haber verme maddeleri. FounderOS sözleşmeyi yorumlamaz, sadece hangi maddeye bakacağını söyler.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): o sektörde konuşulması yasak olan konular.
 
-Güvence şudur: yirmi birinci günde rapor, yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Şartı var, o da onay belgesinde yazılı.
+Güvence şudur: rapor gününde rapor, yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Şartı var, o da onay belgesinde yazılı.
 
 ## 4. Ne sorar
 
@@ -69,7 +69,7 @@ Bir. Sen söylersin, o bulmaz. Kötü haberi müşteri kendi fark ederse güven 
 
 İki. İlk haber saatler içinde gider, ertesi güne kalmaz. Elinde çözüm olmasa bile aynı gün tek satır yazarsın: "Aldım, bakıyorum. Bugün akşama kadar döneceğim." Bu satır otuz saniye sürer ve müşterinin gerginliğini en çok düşüren şeydir. Sonra söylediğin saatte dönersin. Dönemiyorsan yine yazarsın.
 
-Üç. İlk haber yazılı gider, asıl konuşma telefonla yapılır. Şu dört halde mutlaka arayacaksın: para tartışmaya döndüyse, müşteri kızgınsa, sistem bir günden uzun durduysa, yirmi birinci gün raporunda yazılan satırlar sıfır çıktıysa. Yazışmada ton okunmaz; kırgın duran bir cümle konuşurken küçülür.
+Üç. İlk haber yazılı gider, asıl konuşma telefonla yapılır. Şu dört halde mutlaka arayacaksın: para tartışmaya döndüyse, müşteri kızgınsa, sistem bir günden uzun durduysa, rapor günü raporunda yazılan satırlar sıfır çıktıysa. Yazışmada ton okunmaz; kırgın duran bir cümle konuşurken küçülür.
 
 Bu modül pencere tanımaz. Kurulum bloğunu, akşam bloğunu, hafta sonunu beklemezsin. İlk satır ne zaman öğrendiysen o zaman gider; işteysen bir dakikalık aranı kullanırsın. Telefonla yapılacak asıl konuşma kurulum bloğuna kalabilir, ama o zaman ilk satırda saatini yazarsın: "Bu akşam sekizde arayacağım." Sonra o saatte ararsın.
 
@@ -215,9 +215,9 @@ Kapsam dışı isteğe verilecek cevabın üç parçası var ve "hayır" kelimes
 
 Sınırı kendi ağzından değil belgeden söylemek ikinizi de rahatlatır. Kavga çıkmaz, çünkü ikiniz de aynı kâğıda bakıyorsunuz.
 
-Zaman kuralı da var: yeni parça en erken ikinci ayda açılır. Büyüme şartı iki maddedir. Görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş olacak ve yirmi birinci gün raporu çıkmış olacak. Bu şart sağlanmadan yeni parça satılmaz, müşteri istese bile. Yarım kalan bir işin üstüne ikinci iş koyarsan ikisi birden batar.
+Zaman kuralı da var: yeni parça en erken ikinci ayda açılır. Büyüme şartı iki maddedir. Görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş olacak ve rapor günü raporu çıkmış olacak. Bu şart sağlanmadan yeni parça satılmaz, müşteri istese bile. Yarım kalan bir işin üstüne ikinci iş koyarsan ikisi birden batar.
 
-### Yirmi birinci günde sonuç çıkmadıysa
+### Rapor gününde sonuç çıkmadıysa
 
 Rapor görüşmesinin beş adımlık sırası aylik-raporu-hazirla'da ve aynen uygulanır. Sıranın birinci maddesi kötü haberdir; kötü haberi sona saklamak en yaygın hatadır, çünkü müşteri iyi haberleri dinlerken kötüyü bekler ve hiçbirini duymaz. Dördüncü maddeyi de atlamazsın: kazanan bir şey varsa kutlarsın. Sadece sorun konuşan biri, konuşulacak sorun sayılır.
 
@@ -250,7 +250,7 @@ Para konusunda tehdit dili kullanmazsın ve sözleşmeyi silah gibi sallamazsın
 Kart geçmemesi çoğunlukla kötü niyet değildir: limit, kartın süresi, bankanın bloke etmesi. İlk mesaj bu varsayımla yazılır.
 
 Sıra musteriyi-elde-tut'takiyle aynıdır ve şöyle işler:
-1. Aynı gün tek mesaj, suçlama yok: "Bu sabahki ödeme geçmemiş, muhtemelen limit ya da kart süresi. Yeni ödeme linkini gönderiyorum, iki dakika sürer." Linki CRM'de KENDİ hesabından üretirsin, müşterinin alt hesabından değil. Müşterinin alt hesabından üretilen link müşterinin kendi ödeme hesabına para toplar; senin tahsilatın oradan geçmez.
+1. Aynı gün tek mesaj, suçlama yok: "Bu sabahki ödeme geçmemiş, muhtemelen limit ya da kart süresi. Yeni ödeme linkini gönderiyorum, iki dakika sürer." Linki kendi ödeme sağlayıcı hesabından üretirsin, müşterinin alt hesabından değil. Müşterinin alt hesabından üretilen link müşterinin kendi ödeme hesabına para toplar; senin tahsilatın oradan geçmez.
 2. Üç gün içinde tek yazılı hatırlatma.
 3. Hâlâ geçmediyse telefon edersin. Üçüncü kez yazmazsın; üst üste yazılı mesaj takip gibi durur ve ilişkiyi bozar.
 4. Hizmeti durdurmadan önce yazılı bildirim gider. Bildirimin süresi ve yolu sözleşme şablonunda yazar; gün sayısını kendin uydurmazsın, oradan okursun.
@@ -395,7 +395,7 @@ Sıradaki: kriz kapandıysa haftalık bakım (sistemi-kontrol-et) ve aylık düz
 - Müşteri kızgın aradı: o gün rakamlar yazıyla gönderilir, gönderilmediyse akşam bloğunda sorulur.
 - Ödeme geçmedi: dört adımlı sıra başlar.
 - İki mesaja cevap gelmedi ve tahsilat yaklaşıyor: önce konuşma, sonra tahsilat.
-- Yirmi birinci gün raporunda yazılan satırların hepsi sıfır: görüşme telefonla değil, yüz yüze ya da görüntülü yapılır.
+- Rapor günü raporunda yazılan satırların hepsi sıfır: görüşme telefonla değil, yüz yüze ya da görüntülü yapılır.
 - Bir müşteride açık kriz var ve üç gündür ondan hiç söz etmedin: sorulur.
 
 Beş kural: boş sayfa yok (kriz anında kuracağın cümle hazır gelir) · sessiz bitiş yok (her zor konuşma bir kayıtla ve tarihli bir sözle biter) · onay (müşteriye giden her mesaj senin elinden çıkar) · sahadan güncelleme (krizde işe yarayan cümle niş kartına yazılır) · sormaz söyler (hangi konuşmanın yapılacağını FounderOS söyler).

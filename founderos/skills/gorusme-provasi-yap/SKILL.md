@@ -84,7 +84,7 @@ Ton gerçekçidir. Kaba değil ama kolay "evet" demeyen biri.
 
 Yetişmezse aynı akşam tamamlanır. Altıncı gün, yani sahaya çıkış, provalar bitince başlar.
 
-**E. Görüşme öncesi prova, altıncı günden sonra, on dakika.** Tam görüşme değil, iki parça.
+**E. Görüşme öncesi prova, saha açıldıktan sonra, on dakika.** Tam görüşme değil, iki parça.
 
 Birinci parça, iki dakika, açılış provası. Görüşme özet ekranındaki en güçlü bulguyu tek cümlede söylersin. FounderOS işletmeci gibi tepki verir ve tepkiyi kendisi seçer: kabul eder ("evet, o saatte kimse olmuyor"), reddeder ("biz açtık, yanlış numarayı aramışsınız") ya da geçiştirir. Üçüne de senin cevabın hazır olacak. Ret gelirse tartışmazsın, saati söyleyip soruya bağlarsın: "Yedi ondaydı; o saatte telefona kim bakıyor?" Geçiştirme gelirse bulguyu tekrarlamaz, soruya geçersin. Bu iki dakika hiçbir provada atlanmaz.
 
@@ -103,12 +103,12 @@ Birinci parça, iki dakika, açılış provası. Görüşme özet ekranındaki e
 - İşletmecinin kelimesini geri yansıtma.
 - Cümle soruyla bitti mi.
 
-Sonuç: bir iyi (senin cümlenle), bir düzeltilecek, "temiz" ya da "tekrar". Ton kelimeden önemli. Ama yazılı provada ton ölçülemez. Onu iki şey ölçer: senden iyi biriyle sesli prova ve gerçek görüşmede adayın tepkisi. Yani "ezberden mi okuyorsun" geldi mi, on aramada on itiraz geldi mi. Kötü provadan sonra şu söylenir: "Satış yapamadığını henüz bilmiyoruz; daha tek gerçek görüşme yapmadın." Üç nefes, sıradaki prova. İlk on bir günde on iki dolduysa "bir prova daha" isteği reddedilir: "On iki prova yaptın, sıfır gerçek görüşme. 'Biraz daha hazırlanayım' derken ilk hayırı geciktiriyorsun. İlk yirmi beş hayır zaten normal."
+Sonuç: bir iyi (senin cümlenle), bir düzeltilecek, "temiz" ya da "tekrar". Ton kelimeden önemli. Ama yazılı provada ton ölçülemez. Onu iki şey ölçer: senden iyi biriyle sesli prova ve gerçek görüşmede adayın tepkisi. Yani "ezberden mi okuyorsun" geldi mi, on aramada on itiraz geldi mi. Kötü provadan sonra şu söylenir: "Satış yapamadığını henüz bilmiyoruz; daha tek gerçek görüşme yapmadın." Üç nefes, sıradaki prova. Beşinci blok kapanmadan on iki dolduysa "bir prova daha" isteği reddedilir: "On iki prova yaptın, sıfır gerçek görüşme. 'Biraz daha hazırlanayım' derken ilk hayırı geciktiriyorsun. İlk yirmi beş hayır zaten normal."
 
 **G. Yapılmayacaklar.**
 - Ezberden okumak, ezber metni açık tutmak.
 - Kelime cilalamak. İyi enerjiyle söylenmiş sıradan cümle, tereddütle söylenmiş mükemmel cümleyi yener.
-- İlk on bir günde on üçüncü prova. "Hazır hissedince" başlamak.
+- Beşinci blok kapanmadan on üçüncü prova. "Hazır hissedince" başlamak.
 - Acemiyle acemi prova yapmak.
 - Her provada yeni bir şey düzeltmek. Tek şey, temiz çıkana kadar.
 - Provayı gerçek görüşme yerine saymak. Sayılar sahadan gelir.
@@ -157,7 +157,7 @@ FounderOS'a giden işaretler:
 - Aynı konu üç provada "tekrar" aldı: senden iyi biriyle sesli prova.
 - On provada hâlâ kendini küçültme cümlesi var: kurucu bölümüne güven notu, sabah planına girer.
 - Provayı atlıyorsun: sıkıştırılmış prova ve sabah planına uyarı.
-- İlk on bir günde on üçüncü prova isteği: reddedilir, rakamla ("on iki prova, sıfır gerçek görüşme").
+- Beşinci blok kapanmadan on üçüncü prova isteği: reddedilir, rakamla ("on iki prova, sıfır gerçek görüşme").
 - Fiyat provasında rakam üç denemede düşüyor: fiyati-belirle'ye not, provada fiyat cümlesi üç kez.
 - Açılış provasında bulgu cümlesi üç kez "tekrar" aldı: sonraki üç provanın konusu sadece açılış olur, senaryo değişmez.
 - Bulgu cümlesi provada genellemeye kayıyor ("genelde açmıyorsunuz"): aday-denetimi-cikar'ın "gördüğün şey yazılır" kuralı sabah planına hatırlatma olarak girer.

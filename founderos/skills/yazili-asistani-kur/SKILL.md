@@ -197,7 +197,7 @@ Kim kurtarır: hesabın sahibi müşteri, kurtarmayı da o yapar. Sen yol göste
 
 Ne kadar beklenir: yedinci güne kadar. O güne kadar açılmazsa takvime yazma parçası ilk turda kurulmuyor demektir.
 
-Kapsam dışı sayılır mı: evet. Müşterinin kendi adımını atmaması yüzünden hiç kurulamayan parça kapsam dışıdır ve güvencenin sonucuna sayılmaz. Bunu kurulum görüşmesinde sesli söylüyorsun ve onay belgesinin "neyi yapmıyorum" başlığına yazıyorsun. Yirmi birinci gün raporunda o satır boş kalıyor; sıfır sayılmıyor.
+Kapsam dışı sayılır mı: evet. Müşterinin kendi adımını atmaması yüzünden hiç kurulamayan parça kapsam dışıdır ve güvencenin sonucuna sayılmaz. Bunu kurulum görüşmesinde sesli söylüyorsun ve onay belgesinin "neyi yapmıyorum" başlığına yazıyorsun. Rapor günü raporunda o satır boş kalıyor; sıfır sayılmıyor.
 
 Bu sırada asistan durmuyor. Randevu saatini konuşup topluyor, sonucu devri alacak kişiye bırakıyor, takvime yazmayı o kişi elle yapıyor. Müşteri talebi kaybetmiyor, sadece bir adım elde yürüyor. Hesap sonradan açılırsa parça ikinci turda kuruluyor.
 
@@ -241,7 +241,7 @@ Asistanın hiç kullanmayacağı kelimelerin listesini FounderOS hazırlar ve ku
 
 Denemede temiz demek: fiyat vermedi, uydurmadı, randevuyu yazdı. Bu üçü aynı anda olmadan deneme temiz sayılmaz.
 
-Bu deneme yalnız asistanı ölçer. Beşinci günün on iki senaryoluk testi ayrıdır; orada sistemin baştan sona her parçası denenir. Biri diğerinin yerine geçmez.
+Bu deneme yalnız asistanı ölçer. Beşinci günün on dört senaryoluk testi ayrıdır; orada sistemin baştan sona her parçası denenir. Biri diğerinin yerine geçmez.
 
 ### Canlıda izleme ve düzeltme
 
@@ -267,7 +267,7 @@ Yedinci güne kadar hesap açılmazsa: "Takvime yazma parçası ilk turda kurulm
 Bilgi dosyasına: asistanın üç kuralı, üretim talimatının sürümü ve tarihi, cevap listesinin içeriği, müşterinin metin onayının tarihi, deneme sonuçları, canlıdaki düzeltmeler ve tarihleri, şablonların onay durumu ve hangi gün onaylandığı, Google hesabında şifre sorunu çıktıysa hangi yolla çözüldüğü ya da hangi parçanın kapsam dışına alındığı ve bunun müşteriye hangi gün sesli söylendiği.
 CRM'e: asistanın açık olduğu kanallar, devir sayısı, randevuya dönen konuşma oranı. Bunlara ek olarak asistan konuşmanın içinden iki bilgiyi kişi kartına kendisi yazar: istenen işin ne olduğu ve ilçe. İkisi de hazır kurulum paketinde bağlı gelir. Ad, telefon ve e-posta ayrı bir iş değildir, onları sistem zaten kaydeder.
 Niş kartının Sahadan dolacak bölümüne: bu nişte en sık takılan soru, en sık devir sebebi, işe yarayan ilk mesaj.
-musteri-sistemini-kur'a teslim edilen ayar listesi: cevap gecikmesi, mesaj uzunluğu sınırı, asistanın kullanmayacağı kelimeler, sinirlenme algılanınca insana aktarma, mesai dışı davranışı.
+musteri-sistemini-kur'a teslim edilen ayar listesi: cevap gecikmesi, mesaj uzunluğu sınırı, asistanın kullanmayacağı kelimeler, sinirlenme algılanınca insana devir, mesai dışı davranışı.
 
 ## 8. Yedek yol
 

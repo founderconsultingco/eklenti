@@ -27,8 +27,8 @@ Senin beşinci gününde ne kanıtın var ne reklam bütçen. O videoyu bugün �
 O yüzden sıra şu: bugün ön görüşme videosu, ilk müşteriden sonra site videosu. Site videosunu satis-sayfasini-yaz kurar.
 
 Şunlar bu modülün işi değildir:
-- Landing page (siteni-kur, aynı gün sabah).
-- Ön görüşme sayfasının kurulması ve randevu akışı (gorusmeye-getir, yarın). Bu modül videoyu üretir, o sayfaya koyar.
+- Landing page (siteni-kur, birinci blok; ikinci blokta yayında).
+- Ön görüşme sayfasının kurulması ve randevu akışı (gorusmeye-getir, CRM açıldığı gün). Bu modül videoyu üretir, o sayfaya koyar.
 - Video mesaj (video-mesaj-cek). O bir dakika ve adaya özel.
 - Siteye konan uzun satış videosu (satis-sayfasini-yaz, ilk müşteriden sonra).
 
@@ -38,7 +38,7 @@ Sistemdeki videolar, karıştırma:
 - **Video mesaj:** bir dakika, adaya özel, yazı yolunda en çok istenen yüz işletmeye.
 - **Deneme videosu:** beşinci gün, kimseye gitmez.
 - **Site videosu:** ilk müşteriden sonra.
-- **Yirmi birinci gün videosu:** müşterinin çektiği kısa video.
+- **Rapor günü videosu:** müşterinin çektiği kısa video.
 
 Pazarlamadaki karşılığı: görüşmeden önce seni izlemiş aday, görüşmeye yabancı gelmiyor.
 
@@ -117,7 +117,7 @@ Metni ezberleme, yedi parçayı bil ve kendi kelimelerinle anlat.
 
 ### Yükleme ve yerleştirme
 
-Videolar YouTube'a liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler. Kanal dün açılmıştı.
+Videolar YouTube'a liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı.
 
 Ön görüşme sayfasına şu sırayla konur: ön görüşme videosu en üstte, altında EVET düğmesi, altında üç itiraz videosu.
 
@@ -127,7 +127,7 @@ EVET düğmesi videodan sonra değil, videonun hemen altında durur. Videoyu son
 
 Video sayfaya konunca iş bitmiyor. Randevu alan adayların bir kısmı sayfayı açıp videoyu izlemiyor.
 
-Bu yüzden hatırlatma mesajlarının işi videoyu izletmek. Randevudan sonra giden ilk mesaj ve ilk e-posta "görüşmeden önce şu üç dakikalık videoyu izleyin" der. Bu akış yarın gorusmeye-getir'de kuruluyor.
+Bu yüzden hatırlatma mesajlarının işi videoyu izletmek. Randevudan sonra giden ilk mesaj ve ilk e-posta "görüşmeden önce şu üç dakikalık videoyu izleyin" der. Bu akış CRM açıldığı gün gorusmeye-getir'de kuruluyor; o güne kadar videoyu randevu alan adaya WhatsApp'tan sen gönderiyorsun.
 
 ### İlk videon ortalama olacak
 
@@ -162,17 +162,17 @@ Niş kartına: elli görüşmeden sonra hangi itirazın videoya rağmen soruldu�
 
 ## 8. Yedek yol
 
-- Bugün çekilemezse: altıncı gün sabah çekilir. Ön görüşme sayfası videosuz açılır, yerine üç cümlelik yazı konur ve gün durmaz.
+- Bugün çekilemezse: ertesi sabah çekilir. Ön görüşme sayfası videosuz açılır, yerine üç cümlelik yazı konur ve gün durmaz.
 - Ses kötü çıkarsa: kulaklık mikrofonuyla tekrar. Kötü ses videoyu bitirir.
 - Kameraya çıkamıyorsan: ses yolu, yukarıdaki kuralla.
-- Üç itiraz videosuna vakit kalmazsa: ön görüşme videosu bugün, itiraz videoları altıncı gün sabah. Sıra bu, tersi değil.
+- Üç itiraz videosuna vakit kalmazsa: ön görüşme videosu bugün, itiraz videoları ertesi sabah. Sıra bu, tersi değil.
 - YouTube'a yüklenemezse: video geçici olarak sayfaya doğrudan konur.
 - Üç çekimde de olmadıysa: en iyisi yüklenir. Dördüncü çekim yok.
 - Sağlık nişindeysen: kartın yasal sınırlar bölümü okunur. Metinde tedavi sözü, hasta görseli ve "kesin sonuç" gibi iddialar geçmez.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: bu videolar ikinci günde kurulan ön görüşme sayfasına bu akşam giriyor. Yarın ikinci prova turu ve video mesaj kurulumu.
+Sıradaki: bu videolar ön görüşme sayfasına CRM açıldığı gün giriyor; o güne kadar WhatsApp'tan gidiyor. Aynı blokta video mesaj kurulumu ve şirket hazırlığı, akşam sahaya çıkış kontrol listesi. Geçelim mi?
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Beşinci gün bitti, video yok: altıncı sabahın ilk işi olur.

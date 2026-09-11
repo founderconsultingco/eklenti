@@ -38,7 +38,7 @@ Bu ikisini ayrı ayrı değil arka arkaya sorarsın ve birlikte okursun. Girişi
 
 Sonra üç çalışma sınırını yazarsın, sormadan, cevaplardan çıkararak: haftada kaç saat, hangi pencerelerde, kaç müşteriye kadar tek başına taşıyabilir. Bu sınırlar araştırmanın girdisi olur.
 
-Aylık bir hedef rakamı da alırsın ama bunu bir yön olarak alırsın, hesap olarak değil. Burada "şu kadar istiyorum" cümlesi kaydedilir, üstüne plan kurulmaz.
+Aylık hedef rakamı tanışmada (11b) alındı; yeniden sormazsın, buraya yön olarak taşırsın, hesap olarak değil. Burada "şu kadar istiyorum" cümlesi kaydedilir, üstüne plan kurulmaz.
 
 ### Hedef fiyatın gerekçesi değildir
 
@@ -52,7 +52,7 @@ Bu bölüm teklif ve fiyat bandı çıktıktan sonra açılır. Artık elinde ge
 
 Mantık tek: hedef, müşteri sayısı çarpı aylık fiyat.
 
-Aynı hedefe giden birkaç kombinasyonu önüne koyarsın: az müşteri yüksek fiyat, çok müşteri düşük fiyat, arası. Hangisinin onun tarif ettiği hayata ve az önce yazdığınız çalışma sınırlarına uyduğunu birlikte görürsünüz. Günde on iki saat çalışmak istemeyen birinin çok müşterili kombinasyonu seçmesinin anlamı yok.
+Aynı hedefe giden kombinasyonlardan (az müşteri yüksek fiyat, çok müşteri düşük fiyat, arası) onun tarif ettiği hayata ve az önce yazdığınız çalışma sınırlarına uyanı sen seçer, gerekçesini söyler, diğer ikisini neden elediğini tek cümleyle eklersin; menü açmazsın. Günde on iki saat çalışmak istemeyen birinin çok müşterili kombinasyonu seçmesinin anlamı yok.
 
 Üç şeyi söylersin.
 
