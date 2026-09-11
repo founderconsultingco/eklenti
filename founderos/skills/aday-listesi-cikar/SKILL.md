@@ -110,6 +110,10 @@ Bir: Instagram'dan çıkan aday listesi yazı yolu listesidir, telefon listesine
 
 Üç: biyografideki bağlantı siteye gidiyorsa site sütunu ondan doluyor ve o siteden e-posta bulunabiliyor; bulunursa kayıt e-posta listesine de giriyor.
 
+### Adım 2b: iş ilanı kaynağı (15 dakika, her nişte)
+
+Bir işletme "resepsiyonist", "sekreter", "çağrı karşılama elemanı", "müşteri temsilcisi", "randevu asistanı" ilanı veriyorsa telefonu kaçırdığını kendi ağzıyla söylüyor demektir; bu, listedeki en sıcak niyet işaretidir. Kartın "iş ilanı kelimeleri" satırındaki kelimelerle (kartta yoksa varsayılan altı kelime: resepsiyonist, sekreter, çağrı karşılama, müşteri temsilcisi, randevu asistanı, ön büro) üç yere bakılır: iş ilanı siteleri (nişin ve şehrin adıyla arama), Instagram'da işletmenin son gönderi ve hikâyeleri ("eleman arıyoruz"), işletmenin sitesindeki "kariyer" sayfası. Bulunan işletme zaten listedeyse kaydına "ilan var: [tarih], [ilan başlığı]" yazılır; listede yoksa Haritalar'dan bulunup eklenir. Bu adımdan çıkan işletmeler en çok istenen yüze doğrudan girer ve hızlı denetimde onuncu satırı dolu gelir. Yirmi dakikada beş on işletme çıkar; sıfır çıkarsa sorun değil, ay sonunda tekrar bakılır.
+
 ### Adım 3: temizlik (40 dakika)
 
 Ham listede sana yaramayacak kayıtlar var. Altı eleme yapıyorsun.
@@ -146,12 +150,13 @@ Kayıt yerine giden sütun bu oluyor, uzun olan değil. İki listeyi birleştiri
 
 Kalan listenin içinden yüz tanesini işaretliyorsun: müşterin olmasını en çok istediğin işletmeler. Sıradaki adımda sadece onlar denetimden geçiyor.
 
-Üç seçim ölçütü var ve sırası şu:
-1. **Büyük olanlar.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor.
-2. **Ulaşılabilir olanlar.** Web sitesi ve Instagram hesabı dolu gelenler.
-3. **Nişin içinde kalanlar.** Kategori tam uyanlar.
+Dört seçim ölçütü var ve sırası şu:
+1. **İlan verenler.** İş ilanı kaynağından gelenler yüzün başına girer, sıra sormaz.
+2. **Büyük olanlar.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor.
+3. **Ulaşılabilir olanlar.** Web sitesi ve Instagram hesabı dolu gelenler.
+4. **Nişin içinde kalanlar.** Kategori tam uyanlar.
 
-Üçünü birden taşıyan ilk yüz satırı işaretliyorsun. Emin olamadığını da işaretle, ay sonunda değiştireceksin. İşin yanında çalışıyorsan yüz değil kırk işletme seçiyorsun; onlara ayrı emek vereceksin ve günün kırk temasa yetiyor.
+İlanı olanlar artı kalan üçünü birden taşıyan ilk yüz satırı işaretliyorsun. Emin olamadığını da işaretle, ay sonunda değiştireceksin. İşin yanında çalışıyorsan yüz değil kırk işletme seçiyorsun; onlara ayrı emek vereceksin ve günün kırk temasa yetiyor.
 
 ### Adım 6: yüz işletmenin hızlı denetimi (60 dakika)
 

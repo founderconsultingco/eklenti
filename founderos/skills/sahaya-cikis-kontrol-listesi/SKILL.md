@@ -51,7 +51,7 @@ Bu dörtten biri eksikse saha yine açılır. Eksik olan kapanış anında ortay
 17. **Site.** Adres açılıyor, telefon numarası doğru, düğme WhatsApp'ına (CRM açıldıysa takvime) gidiyor. Ön görüşme videosu YouTube'da liste dışı yüklü, linki İş Beyni'nde. Kanıt: siteyi telefonundan aç, videoyu linkten aç.
 18. **Kişisel hesap.** Profil fotoğrafı, biyografisi ve linki yerinde. Kanıt: profili telefondan aç.
 19. **E-posta.** İş e-postandan kendine bir mesaj at, gitsin ve imzası görünsün. Kanıt: gelen mesaj.
-20. **Demo hattı.** CRM açıldıysa: numara çalışıyor, yazılan mesaja asistan cevap veriyor; kanıt, kendi telefonundan yaz, cevabı gör. CRM açılmadıysa bu madde "başlangıç görüşmesinde" diye açık kalır ve görüşmede kendi telefonundan canlı gösterim yapılır.
+20. **Tarayıcı demosu.** Link telefondan açılıyor, beş senaryo çalışıyor, "randevunuz yazıldı"ya varıyor, cevapsız arama sahnesi mesajı düşürüyor. Kanıt: kendi telefonundan dene, ekran kaydı klasörde.
 
 Vitrin maddelerinden biri eksikse saha açılır ve o madde ilk hafta içinde tamamlanır. Site eksikse ilk aramalarda site adresi verilmez, onun yerine e-posta adresi verilir.
 

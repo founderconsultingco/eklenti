@@ -156,7 +156,7 @@ Para iadesi ne zaman konuşulur: bu telefonda değil. Adam ilk konuşmada "param
 
 ### Müşterinin kendi müşterisi sana yazarsa ya da seni ararsa
 
-Olur. İşletmenin bir müşterisi asistandan rahatsız olur ve seni bulur: numaranı bir yerden görmüştür, demo hattına düşmüştür, sitenden ulaşmıştır. Genelde cümle şudur: "Bana robot cevap verdi", "Yazdım, kimse dönmedi", "Randevumu yanlış yazmışsınız."
+Olur. İşletmenin bir müşterisi asistandan rahatsız olur ve seni bulur: numaranı bir yerden görmüştür, sitenden ulaşmıştır. Genelde cümle şudur: "Bana robot cevap verdi", "Yazdım, kimse dönmedi", "Randevumu yanlış yazmışsınız."
 
 Kural tek: sen o kişinin muhatabı değilsin. O kişi senin müşterin değil, işletmenin müşterisi. Cevabı işletme verir, sen vermezsin. Araya girersen işletmenin ağzından konuşmuş olursun; sağlık nişinde bu doğrudan müşteriye ceza yazdırır.
 
@@ -214,6 +214,8 @@ Kapsam dışı isteğe verilecek cevabın üç parçası var ve "hayır" kelimes
 3. Yolu göster: "Ayrı bir iş olarak fiyatlayıp yazayım, bakarsın."
 
 Sınırı kendi ağzından değil belgeden söylemek ikinizi de rahatlatır. Kavga çıkmaz, çünkü ikiniz de aynı kâğıda bakıyorsunuz.
+
+Kurulum dönemi içinde (rapor gününden önce) gelen istek ayrıca sert kuralla yürür, çünkü en çok orada kayılır: iş kurulurken "şunu da ekleyelim" diyen müşteri iki haftalık işi altı aya çevirir ve sen bedava çalışırsın. Kurulum döneminde hiçbir yeni parça kurulmaz; istek müşterinin bilgi dosyasındaki "sonra listesi"ne yazılır ve müşteriye tek cümle söylenir, hazır: "Not aldım, iyi fikir. Kurduğumuz şeyi bozmadan bitirelim; rapor çıkınca bunu ayrı konuşuruz." Kapsam, kurulum görüşmesinde ve onay belgesinde yazılıdır; beklenti farkı çıkmasın diye kurulum görüşmesinde neyin girip neyin girmediği bir kez sesli okunur. Kapsamı baştan yazmamak müşterinin değil senin hatandır.
 
 Zaman kuralı da var: yeni parça en erken ikinci ayda açılır. Büyüme şartı iki maddedir. Görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş olacak ve rapor günü raporu çıkmış olacak. Bu şart sağlanmadan yeni parça satılmaz, müşteri istese bile. Yarım kalan bir işin üstüne ikinci iş koyarsan ikisi birden batar.
 
@@ -357,6 +359,7 @@ Kızgın mesaj gelince: "Yazışma, ara. Yazıda insanlar abartır, konuşurken 
 Kızgın telefon gelince: "Tek cümle: iyi ki aradın, baştan anlat, sözünü kesmeyeceğim. Sonra sus. Rakam okuma, savunma yapma, söz verme. Kızgınlık geçince 'bu tabloyu ben de kabul etmiyorum, akşam yazıyorum' de ve kapat. Rakamı akşam yazıyla gönder. Para lafı açılırsa 'onu da konuşacağız ama önce bakacağım' de; iade konuşması ayrı telefondur."
 Müşterinin müşterisi sana yazınca: "Ona cevap veren sen değilsin. Tek cümle yaz: sistem tarafına bakıyorum, konuyu bugün işletmeye iletiyorum. Fiyat, randevu, tedavi konuşma. Sonra aynı gün müşterine yaz; sakladığın şikâyet bir hafta sonra başkasından ona gider."
 Kapsam dışı istek gelince: "Hayır deme, sınırı söyle. Onay belgesinde neyi yaptığın yazıyor. 'İyi fikir, bu paketin içinde değil, ayrı bir iş olarak fiyatlayayım' de. Aynı kâğıda bakan iki kişi kavga etmez."
+Kurulum döneminde ek istek gelince: "Tek cümle: 'Not aldım, iyi fikir. Kurduğumuzu bozmadan bitirelim; rapor çıkınca ayrı konuşuruz.' Sonra listesine yaz, kurma."
 Sonuç çıkmayınca: "Kötü haberle başla, raporu açmadan söyle. Sona saklarsan müşteri iyi haberlerin hiçbirini duymaz. Sonra üç satırı oku, sıfır olan satırı sen göster."
 İade isteyince: "Tek soru: gerçekten hiçbir şey aldı mı. Almadıysa iade et, tartışma. Bir iade ucuz; karta itiraz edilirse ödeme hesabın kapanır ve dört müşterinin parasını da alamazsın."
 Ödeme geçmeyince: "Kart geçmemesi kötü niyet değil, çoğu zaman limit. İlk mesajı buna göre yaz. Suçlayıcı yazarsan bir daha kart vermez. Üç gün içinde tek hatırlatma, sonra ara."

@@ -19,7 +19,7 @@ Neden bu kadar az program: bir kişilik işi öldüren şey program eksikliği d
 Şunlar bu modülün işi değildir:
 - Sayfanın yayına alınması (siteni-kur, bugün, araçlardan sonra).
 - Parayı senin adına tahsil edecek şirketin seçimi (onay-belgesini-hazirla, üçüncü blok). Başvuru şirket kurulup vergi levhası gelince gidiyor, yani ilk "evet"ten sonra.
-- Demo hattı (başlangıç görüşmesinde CRM bölümünle birlikte veriliyor; testi kanitini-hazirla'da). Hazır geliyor, ücretsiz.
+- Tarayıcı demosu (kanitini-hazirla, dördüncü blok; FounderOS kurar, ücretsiz).
 - Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok). Bugün sadece o listeyi hangi yolla çıkaracağını seçiyor ve seçtiğin yolu deniyoruz.
 - Müşterinin sistemi (musteri-sistemini-kur, müşteri geldiğinde).
 
@@ -188,9 +188,9 @@ Bu beşine uyduğun sürece bu konuyu bir daha düşünmene gerek yok.
 
 Birinci günde bütçe merdiveninin hangi basamağında olduğunu yazdık. Hangi kalemin hangi gün alınacağını o basamak söylüyor, ben o satırı okuyorum, sen bir şey yapmıyorsun.
 
-**Alt basamak.** Bugün sadece iki kalem: Claude aboneliği ve liste çıkaran programın ücretsiz planı. Ücretsiz kredinin dışına çıkan hiçbir şey yapılmıyor; kredi biterse ay dolana kadar tarayıcı eklentisi yolundan yürüyorsun. Bugün internet adresi ve iş e-postası alınmıyor, site ücretsiz adresle yayına çıkıyor ve kendi adresin ilk kanıttan sonra alınıyor. Demo hattı CRM'le birlikte zaten ücretsiz geliyor; o güne kadar kendi telefonundan canlı gösterim yapılıyor. Sahaya çıkış yine beşinci bloğun sonunda.
+**Alt basamak.** Bugün sadece iki kalem: Claude aboneliği ve liste çıkaran programın ücretsiz planı. Ücretsiz kredinin dışına çıkan hiçbir şey yapılmıyor; kredi biterse ay dolana kadar tarayıcı eklentisi yolundan yürüyorsun. Bugün internet adresi ve iş e-postası alınmıyor, site ücretsiz adresle yayına çıkıyor ve kendi adresin ilk kanıttan sonra alınıyor. Tarayıcı demosu ücretsiz, dördüncü blokta FounderOS kurar. Sahaya çıkış yine beşinci bloğun sonunda.
 
-**Orta basamak.** Bugün aynı iki kalem. Bugün internet adresi ve iş e-postası alınıyor, demo hattı CRM'le geliyor. Sistemin varsaydığı normal yol bu.
+**Orta basamak.** Bugün aynı iki kalem. Bugün internet adresi ve iş e-postası alınıyor. Sistemin varsaydığı normal yol bu.
 
 **Üst basamak.** Sıra değişmiyor. Fazla para hiçbir kalemi öne çekmiyor, erken alınan araç sahaya çıkışı hızlandırmıyor. Değişen tek şey beşinci blokta şirket belgelerinin tamamen hazır durması.
 

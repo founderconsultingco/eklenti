@@ -14,7 +14,7 @@ Bu modül senin marka kitini kurar. Marka kiti, işinin nasıl görüneceğini t
 
 Neden bu iş var: işletmeci seni tanımıyor. Aramadan önce adını Google'a yazacak, Instagram'ına bakacak, e-postandaki imzaya bakacak. Gördüğü şey derme çatmaysa fiyatı duymadan karar veriyor. Marka satış yapmıyor ama satışı mümkün kılıyor.
 
-İkinci sebep: sen 40.000 TL kurulum ve aylık [bandın üst ucu] istiyorsun. Bu rakamı isteyen birinin görüntüsü o rakamı taşıyacak. Rakam ile görüntü arasındaki uçurumu işletmeci saniyede fark ediyor.
+İkinci sebep: sen [kurulum bandının üst ucu] kurulum ve aylık [aylık bandın üst ucu] istiyorsun. Bu rakamı isteyen birinin görüntüsü o rakamı taşıyacak. Rakam ile görüntü arasındaki uçurumu işletmeci saniyede fark ediyor.
 
 Bir uyarı da baştan: bu iş bir gün sürer. İki günden fazla sürerse bir satış günü yemiş oluyorsun. Kit bittiğinde bitmiştir; iki hafta sonra beğenmezsen o zaman bakarız.
 
@@ -324,7 +324,7 @@ Ad önerirken: "Adın şu: [ad]. Sebebi: [tek cümle]. Bulmak benim işim, onayl
 Tahtayı üretmeden önce: "Şimdi görsel sistemini üretiyorum: on sayfa, tek ekranda yan yana. On beş yirmi dakika sürer, bitince göstereceğim. Beğenmediğin yazıyı söylersin, düzeltirim."
 Öğrenci beğenmezse: "Kaç kere baştan yaptırdığını sayıyorum. İkinci denemeden sonra durursun. Mükemmel logo diye bir şey yok, işini yapan logo var. İki hafta sonra hâlâ rahatsızsan o zaman bakarız."
 Klişe çıkarsa: "Bu panoda devre kartı var, çıkar. Sen teknoloji satmıyorsun, kaçan aramanın randevuya dönmesini satıyorsun."
-Rakam ile görüntü uyuşmazsa: "40.000 TL kurulum istiyorsun. Bu kit o rakamı taşıyor mu? Taşımıyorsa fiyatı duymadan hayır diyorlar."
+Rakam ile görüntü uyuşmazsa: "[Kurulum bandının üst ucu] kurulum istiyorsun. Bu kit o rakamı taşıyor mu? Taşımıyorsa fiyatı duymadan hayır diyorlar."
 
 ## 7. Ne yazar
 

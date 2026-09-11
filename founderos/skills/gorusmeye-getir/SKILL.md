@@ -57,7 +57,7 @@ Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
    - görüşmede ne olacağı: teşhis, satış değil;
    - ona soracağın üç soru (telefonu kim açıyor, cevapsız arama kaç, eski liste nerede); böylece düşünerek gelir;
    - nasıl katılacağı: sessiz yer, araç kullanırken değil, kalem kâğıt;
-   - kanıt: kartın sektör rakamı; dördüncü bloktan sonra kanıt cümlesi, CRM açıldıktan sonra kırk ile altmış saniyelik demo kaydı (video o sabah yeniden çekilir); o güne kadar yalnızca kartın sektör rakamı kullanılır; kanıt hikâyesi çıkınca o;
+   - kanıt: kartın sektör rakamı; dördüncü bloktan sonra kanıt cümlesi ve tarayıcı demosunun kırk ile altmış saniyelik ekran kaydı; o güne kadar yalnızca kartın sektör rakamı kullanılır; kanıt hikâyesi çıkınca o;
    - kapanış: "Bu görüşme için işletmenizi inceliyorum, lütfen gelin ve sözünüzü tutun."
 3. EVET düğmesi: WhatsApp'ta hazır "EVET" mesajı açan link. Takvim davetini kabul etmesi ayrıca telefonda söylenir (B bölümü, üç küçük söz).
 4. Altında üç kısa itiraz cevabı, yazıyla:

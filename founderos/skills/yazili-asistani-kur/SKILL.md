@@ -16,7 +16,7 @@ Dil ayrımı: "müşteri" senin paranı ödeyen işletmedir. Ona yazan kişiye "
 
 Üç çıktısı var, üçü de niş kartından çıkar: asistanın toplayacağı bilgiler, insana devir kuralları, söylemeyecekleri.
 
-Şunlar bu modülün işi değildir: kanalların bağlanması, takvim, akışlar, bildirimler, test ve canlıya alma. Onlar musteri-sistemini-kur'un işi. Senin kendi demo hattındaki demo asistanı da bu modülün işi değil, o kanitini-hazirla'da kuruldu. Ama demo asistanının kimlik cümlesi, tonu ve mesaj uzunluğu kuralları buradan gider.
+Şunlar bu modülün işi değildir: kanalların bağlanması, takvim, akışlar, bildirimler, test ve canlıya alma. Onlar musteri-sistemini-kur'un işi. Senin tarayıcı demondaki örnek asistan da bu modülün işi değil, o kanitini-hazirla'da kuruldu. Ama demo asistanının kimlik cümlesi, tonu ve mesaj uzunluğu kuralları buradan gider.
 
 Beşinci günün üç sorulu testinde üçüncü soruyu ("randevuya çeviriyor mu") musteri-sistemini-kur ölçer. Sonuç bu modüle işaret olarak döner ve asistan burada düzeltilir.
 

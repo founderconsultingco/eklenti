@@ -113,15 +113,17 @@ Eleme yapar, sıralama değil. Sırayla dört elemeden geçirir, kalanlar arası
 
 Düşen nişler yok olmuyor, ikinci ay listesine gidiyor. Sezonu açıldığında geri geliyorlar.
 
-### İkinci eleme: para
+### İkinci eleme: para (müşteri değeri)
+
+Fiyat değerden hesaplandığı için niş seçimi de değerden başlar: hangi nişte en çok değer üretebilirsin, en çok orada kazanırsın. Müşterisi başına az para dönen işletme (tek koltuklu berber, küçük spor salonu, restoran) değer formülünü taşımaz; bunlara "en iyi niş hangisi" diye değil "hangi nişte kaçan bir müşteri en pahalı" diye bakılır. Kural: kartın kayıp birimi ve aylık kaçan olay sayısı, formülle çıkan kurulum ücretinin saat tablosundaki kurulum maliyetini karşılamasına yetmiyorsa o niş ya yalnız büyük işletmeleriyle geçer ya düşer.
 
 Burada dikkat edilecek bir şey var: müşteri sana tek bir kurtarılan müşteriden ödemiyor, bir ayda kurtarılanların toplamından ödüyor. O yüzden "kaçan bir müşteri kurulum ücretini karşılıyor mu" diye bakmak yanlış olur.
 
 Hesabın iki rakamı da nişin kartından çıkar, hiçbiri buradan uydurulmaz. Kayıp birimi kartın "gerçek fiyatlar ve kapasite" bölümünün son satırında; aylık kaçan iş sayısı kartın "sızıntı nerede" bölümünün birinci sızıntısında. İkisi çarpılır ve o işletmenin ayda kaybettiği para çıkar.
 
-Sonra payın alınır: yarattığın değerin onda biri ile beşte biri arası, çünkü müşteri sana verdiği her 1 TL'ye en az 5 TL geri almalı. Çıkan aralığın üst ucu o nişin taşıyabileceği aylık ücrettir.
+Sonra kurulum ve aylık çıkar: aylık kayıp çarpı on iki, yıllık; kurulum yıllığın yüzde onu; aylık kurulumun yüzde yirmisi. Bu, o nişin taşıyabileceği fiyattır (formül fiyati-belirle'de).
 
-Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; payın onda biri ile beşte biri arası; nişin taşıdığı aylık ücret o aralığın üst ucu. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
+Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; × 12 = yıllık; kurulum = yıllığın onda biri; aylık = kurulumun beşte biri. Müşteri değeri elemesi: bu kurulum rakamı saat tablosundaki kurulum maliyetini karşılamıyorsa niş yalnız büyük işletmeleriyle (çok koltuk, çok şube, çok ekip) geçer, kartın Kapsam bölümüne bu şart yazılır; büyük işletmesi de taşımıyorsa niş düşer. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
 
 Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Hesap isini-kur'daki zincirle yapılır (hedef bölü nişin aylık ücreti, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı). Aynı hesap günde 10 arama yapan biri için çok daha uzun çıkar; o yüzden işin yanında çalışanda bu eleme hedef üzerinden değil, tek müşteri üzerinden yapılır. Bu hesap içeride yapılır; "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta verilir.
 

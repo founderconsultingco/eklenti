@@ -120,6 +120,10 @@ Asistan, işletmenin yerine her satışı kendi başına kapatan bir çalışan 
 
 Kademeler bu daralma ve genişlemenin adıdır, ayrı ürün değil: **Kademe 1 Temel Kapsam** (gelen tarafın karşılanması, randevu ya da teklif takibi, hatırlatma), **Kademe 2 Tam Kapsam** (üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor; asıl satılan bu), **Kademe 3 Genişletilmiş Kapsam** (üstüne dış arama ve reklam; büyüme şartı sağlanınca, en erken ikinci ay). Hiçbir kademe tek başına "bot" olarak anlatılmaz ve satılmaz. Görüşmede tek paket, tek rakam: Kademe 2.
 
+## Fiyat kuralı (kilitli)
+
+Fiyat iki parça: kurulum ücreti ve aylık ücret; ikisi de değerden hesaplanır, harcanan saatten değil. Kurulum ücreti, işletmenin yıllık kaybının yüzde onu (sistem para kazandırıyor: kaçan talep, takip, geri kazanma); sistem yalnız personel saati kurtarıyorsa yıllık tasarrufun yüzde yirmisi ile yirmi beşi. Aylık ücret kurulum ücretinin yüzde yirmisi. Deneme fiyatı ilk iki müşteride kurulumun yarısı, aylık aynı. Görüşmede rakam işletmecinin kendi sayısıyla formülden çıkar; formül ve oranlar kilitlidir, otuz görüşme birikmeden değişmez. Ayrıntı fiyati-belirle'de.
+
 Müşteriye verilen şey CRM hesabı ya da yazılım erişimi değildir: işletmenin müşteri iletişimini, randevularını ve satış takibini bir arada yürüten, işletmeye uyarlanmış sistem. Devam eden yönetim ve iyileştirme kapsamı sözleşmede açıkça yazılır.
 
 ## Sınırlar

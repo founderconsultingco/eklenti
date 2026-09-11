@@ -190,7 +190,7 @@ Birinci günde burada durulur. Sayfa hazır, öğrencinin klasöründe ve ekran�
 
 ### Yayına alma: ikinci blok
 
-İki yol var ve hangisinin seçileceğini bütçe merdiveni söylüyor, öğrenci değil.
+İki yol var ve hangisinin seçileceğini bütçe merdiveni söylüyor, öğrenci değil. Aynı yayın yeri dördüncü blokta bir dosya daha alır: `site/demo.html`, tarayıcı demosu (kanitini-hazirla kurar), aynı adresin altında `/demo` olarak durur ve ana sayfadan link verilmez; demo görüşmeye gelme sebebidir.
 
 **Ücretsiz adres.** Sayfa, FounderOS'un ekranda açtığı kartın adresiyle paylaşılabilir hale gelir; hesap yok, İngilizce ekran yok, beş dakika. Alt basamaktaki öğrencinin yolu bu ve ilk kanıta kadar bu adres işini görüyor: aradığın işletmeci adını Google'a yazınca sayfa çıkıyor, mesajındaki link bir yere gidiyor. Kısıtı da açıkça söylenir: adres senin iş adını taşımıyor.
 

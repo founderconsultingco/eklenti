@@ -78,7 +78,7 @@ Dört küçük şey daha:
 
 Müşteriye söylenen: ikinci ay yeni bir şey ekleme ayı değil, çalışanı büyütme ayı.
 
-Sırayı şöyle tut: önce daha fazlası, sonra daha iyisi, en son yenisi. Çalışan bir şey varsa onu büyüt. Bozuk bir şey varsa onu düzelt. Yeniye kaçmak çalışan işi bırakmaktır.
+Başlangıç noktası müşterinin kendi cümlesidir: rapor günü görüşmesinde sorulan "sıradaki en büyük baş ağrısı ne" sorusunun cevabı bilgi dosyasında duruyor. İkinci ayın teklifi o cümleden kurulur; müşteri kendi derdini söylediği için burada satış yok, dinleyip çözüm var. Cevap sistemin kapsamındaysa (yorum, geri kazanma, teklif takibi) kapsamı açarsın; Kademe 3'ün işiyse (dış arama, reklam) büyüme şartını beklersin; hiçbirine girmiyorsa (yeni site, içerik, muhasebe) kapsam dışı dersin ve o derdi kimin çözebileceğini söylersin. Sırayı şöyle tut: önce daha fazlası, sonra daha iyisi, en son yenisi. Çalışan bir şey varsa onu büyüt. Bozuk bir şey varsa onu düzelt. Yeniye kaçmak çalışan işi bırakmaktır.
 
 İkinci ayda somut olarak yapılanlar:
 - Eski müşteri listesinde birinci aya sığmayan kişilere mesaj gönderilir. Metni müşteri onaylar, gönderimi sen başlatırsın (kaybolanlari-geri-getir).

@@ -84,6 +84,8 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 
 **Reklam kütüphanesi kelimeleri.** Meta Reklam Kütüphanesi'nde aranacak 8-15 Türkçe anahtar kelime (hizmet adları, kampanya kelimeleri, yan hizmetler).
 
+**İş ilanı kelimeleri.** İş ilanı sitelerinde ve Instagram'da aranacak, bu nişte telefonu ve randevuyu yöneten kişinin ilan adı ("resepsiyonist", "hasta kabul", "ön büro", "müşteri temsilcisi", "randevu asistanı" gibi), şehir adıyla. Kartta bu satır yoksa varsayılan altı kelime kullanılır: resepsiyonist, sekreter, çağrı karşılama, müşteri temsilcisi, randevu asistanı, ön büro.
+
 **Yasal sınırlar.** Reklam, tanıtım, mesaj (İYS), sağlık, KVKK açısından bu nişe özel kısıt var mı; kaynaklı. Yoksa "yok".
 
 **Yoğun şehirler.** Kaynaklı.

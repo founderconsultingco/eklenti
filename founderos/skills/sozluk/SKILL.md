@@ -60,6 +60,7 @@ Niş ve teklif:
 - Kayıp birimi: İşletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şey: "bir boş gün", "bir koltuk saati", "bir keşif".
 - Dönüşüm Cümlesi: Ne sattığını tek cümlede söyleyen cümle. Beş parçası var: kime, hangi kayıp, hangi sonuç, hangi yöntemle, sonunda hangi duygu.
 - Bir dakikalık anlatım: Ne sattığını bir dakikada anlatan hazır metin; birinci blokta teklifle birlikte yazılır, randevu telefonunda ve görüşmenin açılışında kullanılır.
+- Haftanın tek sayısı: O hafta yazılan görüşme sayısı. Haftanın son akşamında ve haftalık karar toplantısının başında ilk söylenen sayı; işin nereye gittiğini tek başına gösterir.
 - Halka: Sayı zincirinin dört adımından biri: temas, cevap, randevu, görüşme. Haftanın kararında en zayıf halka bulunur ve yalnız o değişir.
 - Sızıntı puanı: Bir işletmenin dışarıdan görülen beş yerine bakılarak verilen sıfır ile beş arası puan; "bu işletme müşteri kaçırıyor mu" sorusunun cevabı.
 - Uygunluk puanı: Aynı işletmeye "bize para verebilir mi" diye bakılarak verilen sıfır ile on beş arası puan; A, B, C kademesine bölünür. Sızıntı puanıyla karıştırılmaz; derdi olan ama ödeyemeyen işletme listenin sonuna gider.
@@ -70,14 +71,16 @@ Niş ve teklif:
 - Kademe 1, 2, 3: Aynı sistemin üç kapsamı, üç ayrı ürün değil. Kademe 1 Temel Kapsam: gelen tarafın karşılanması, randevu ya da teklif takibi, hatırlatma. Kademe 2 Tam Kapsam, asıl satılan: üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor. Kademe 3 Genişletilmiş Kapsam: üstüne dış arama ve reklam; büyüme şartı sağlanınca, en erken ikinci ay. Hiçbir kademe tek başına "bot" diye satılmaz.
 - Görüşmede tek paket tek rakam: Görüşmede sadece Kademe 2 söylenir; üç kademe sitede durur.
 - Karşılaştırma fiyatı: Sitede duran pahalı seçenek; görüşmede söylenmez, aday onu görmüş gelir.
-- Fiyat bandı (bant): Birinci blokta karttan çıkan alt ve üst rakam; kesin rakam üçüncü blokta konur. Öğrenciye "aralık" ya da "alt ve üst sınır" diye anlatılır; konuşmada kısaca "bant" denir.
-- Teslimat maliyeti: Bir müşteriye sistemi kurup yürütmenin sana saat ve para olarak maliyeti; fiyatın dört dayanağından biri.
+- Fiyat bandı (bant): Birinci blokta kartın alt ve üst rakamlarıyla formülden çıkan iki kurulum ve iki aylık; nişin varsayılan rakamı üçüncü blokta konur, görüşmede söylenen rakam işletmecinin kendi sayısıyla formülden çıkar. Öğrenciye "aralık" ya da "alt ve üst sınır" diye anlatılır; konuşmada kısaca "bant" denir.
+- Kurulum ücreti: Sistemi kurmanın bir kerelik bedeli; işletmenin yıllık kaybının yüzde onu (sistem para kurtarıyorsa yıllık tasarrufun yüzde yirmisi ile yirmi beşi). Kısa hali: aşağı yukarı bir aylık kaybı kadar.
+- Aylık ücret: Sistemi yürütmenin her ay tekrar eden bedeli; kurulum ücretinin yüzde yirmisi. Bakım, düzeltme, kontrol ve raporların karşılığı. Kârın yaşadığı yer.
+- Teslimat maliyeti: Bir müşteriye sistemi kurup yürütmenin sana saat ve para olarak maliyeti; kurulum ücretinin tabanı.
 - Alan adı: Sitenin internet adresi, "dolusezon.com" gibi. Yıllık küçük bir ücretle alınır; bütçe merdiveninin alt basamağında ilk kanıta kadar ertelenir.
 - Deneme fiyatı (yarı fiyat): Hazırlık seviyen düşükse ilk iki müşteride kurulum ücretinin yarısı; indirim değil, karşılığında üç şey alınır. Konuşmada "yarı fiyat" da denir, aynı şey.
 - Üç karşılık: Deneme fiyatının karşılığı: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video.
 - Güvence: Müşteriye verdiğin söz: rapor gününde ([21/28]. gün) rapor; raporda üç sayı görünür (sisteme gelen talep; nişin yolculuğuna göre sistemin yazdığı randevu ya da takip ettiği teklif; eski müşteri listesinde ulaşılan kişi), kurulamayan parçanın satırı boş kalır ve sayılmaz, yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Tam metni ve iki sürümü İş modeli bölümünde; her belge oradan okur. Şartı: müşteri giriş izinlerini kurulum görüşmesinde, karşılama formunu ve duran havuz onayını yedinci güne kadar verir. Eski müşteri listesinde İYS onaylı numara çıkmazsa geri çağırma parçası güvencenin sonucuna sayılmaz. Sayı sözü asla verilmez.
 - Garanti: FounderOS'un sana verdiği söz; müşteriye verdiğin güvenceden ayrıdır, görüşmede hiç anılmaz.
-- Başlangıç görüşmesi: Paketle gelen altmış dakikalık bire bir görüşme; kurulum sayfasındaki takvimden birinci gün alınır, iki üç güne konur. CRM bölümün ve demo hattın orada açılır, birinci günde kurulan her şey gözden geçirilir.
+- Başlangıç görüşmesi: Paketle gelen altmış dakikalık bire bir görüşme; kurulum sayfasındaki takvimden birinci gün alınır, iki üç güne konur. CRM bölümün orada açılır, birinci günde kurulan her şey gözden geçirilir.
 - Lisans anahtarı: Kurulum sayfasında duran, FounderOS'un seni tanımasını sağlayan tek satırlık kod. Birinci gün bir kere yazılır, İş Beyni'nde durur; her sabah sessizce doğrulanır.
 - Konumlandırma cümlesi: Marka kitinde duran, işinin kime ne yaptığını tek cümlede söyleyen cümle; Dönüşüm Cümlesi'nin markaya bakan kısa hali.
 - Aşama (üç anlamı var): adayın kayıt yerindeki durumu (yeni, yazdım, cevap verdi, görüşme ayarlandı, görüşme yaptım, teklif verdim, kazandım, kaybettim, sonra); Yol Haritası'nın dokuz aşaması; ve İş Beyni'nin on dördüncü bölümündeki beş ilerleme aşaması (hazırlık tamamlandı, ilk işletmeyle görüştün, ilk satışını yaptın, hizmeti teslim ettin, müşterin kullanıyor). Hangisi olduğu cümleden anlaşılır.
@@ -100,7 +103,7 @@ Niş ve teklif:
 - Rapor günü: Müşterinin kurulum döneminin son günü; tam zamanlı öğrencide yirmi birinci, işin yanında çalışanda yirmi sekizinci gün. Belgelerde "[21/28]. gün" diye yazılır, sözleşme ve onay belgesi doldurulurken tek sayıya iner. İlk aylık tahsilat rapor gününden on gün sonradır ([31/38]. gün).
 - Canlıya girmek: Sistemin müşteride gerçekten çalışmaya başlaması; aylık ücret o gün başlar. Öğrenciye "sistem çalışmaya başlayınca" diye anlatılır.
 - Bot: İşletmecilerin yazılı asistana taktığı ad. Biz bot satmıyoruz; bu kelimeyi işletmeci söyler, biz "kaçan aramanın randevuya dönmesi" deriz.
-- Kanıt hikâyesi: Bir müşteride ne yaptığını gerçek rakamla anlatan kısa yazı; ilk müşterinin rapor gününde çıkar. Ondan önceki kanıtın deneme araması (sorunun kanıtı) ve demo hattındaki canlı sistemdir (çözümün kanıtı).
+- Kanıt hikâyesi: Bir müşteride ne yaptığını gerçek rakamla anlatan kısa yazı; ilk müşterinin rapor gününde çıkar. Ondan önceki kanıtın deneme araması (sorunun kanıtı) ve tarayıcı demosudur (çözümün kanıtı).
 - Büyüme şartı: Kademe 3 ve ek hizmetlerin açılma şartı: Kademe 2 ilk müşteride sorunsuz teslim edilmiş ve rapor günü raporu çıkmış olacak.
 - Hazırlık seviyesi: Satış tecrüben, sektör bilgin ve güvenin var mı; birinci günde cevaplarından FounderOS çıkarır. Üçü de yoksa "düşük" sayılır ve ilk iki müşteride deneme fiyatı uygulanır.
 - Kanal yolu: Senin ağırlıklı ulaşma biçimin, "telefon" ya da "yazı". Birinci gün FounderOS seçer, sana sormaz.
@@ -119,7 +122,7 @@ Ulaşma:
 - Deneme araması: Adayı gerçek müşteri gibi denemen: akşam arayıp açıyor mu bakmak, mesaj yazıp kaç saatte döndüğünü ölçmek, formunu doldurup dönüş var mı görmek. Dördüncü blokta hızlı denetimle birlikte ilk kez yapılır, saha açıldıktan sonra her akşam yarım saat; yaşanmış kancanın kaynağı.
 - Akşam testi: Saha açıldıktan sonra her akşam yedi ile yedi buçuk arası, ertesi gün aranacak ilk yirmi adayın telefon testi.
 - Kanıt cümlesi: Deneme aramalarının toplu sayımından çıkan tek cümle: "Geçen hafta otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Senin saydığın, yuvarlanmayan rakam; her pazartesi güncellenir. Kanıt hikâyesinden ayrıdır.
-- Demo hattı: Nişin için hazır duran 0850 numarası; sen almıyorsun, başlangıç görüşmesinde CRM bölümünle birlikte sana veriliyor. O güne kadar görüşmede kendi telefonundan canlı gösterim yaparsın. Görüşmede "şu numarayı arayın" denen numara budur; telefonu nişin diliyle konuşan sesli asistan açıyor. Aynı nişteki bütün öğrenciler aynı numarayı kullanıyor.
+- Tarayıcı demosu: Sattığın sistemin telefonda açılan çalışan örneği; tek sayfa, WhatsApp konuşması gibi, adayın kendisi yazıp deniyor. Dördüncü blokta FounderOS kurar, sitenin adresine `/demo` olarak konur. Görüşmede "şu linki açın, bir müşteri gibi yazın" denen şey budur. Telefon araması yok; gerçek asistan değil, kartın kurallarıyla yazılmış örnek, ve bunu adaya söylersin.
 - En çok istenen yüz işletme: Şehrinde müşterin olmasını en çok istediğin yüz işletme; yazı yolunda onlara video mesaj da çekilir. Her ay yeniden seçilir.
 - Ön görüşme videosu: Beşinci blokta çektiğin, üç ile beş dakikalık, randevu alan herkese aynı giden video. Ön görüşme sayfasının en üstünde durur. Yedi bölümü var: kim olduğun ve videonun sebebi, görüşmede ne olacağı, senden istediklerim, neden gelmeni istiyorum, ne yaptığın kısaca, kanıt, onaylama ve kapanış.
 - İtiraz videosu: Bir ile iki dakikalık, tek itiraza cevap veren kısa video. Üç tane, niş kartındaki üç itirazdan. Ön görüşme sayfasında videonun altında durur.
@@ -131,7 +134,7 @@ Ulaşma:
 - Niteleme: Adayın gerçekten alıcı olup olmadığını anlama: sorunun farkında mı, parası var mı, kararı kim veriyor.
 - Kilit: Değiştirilmeyen şey ve eşiği. Dört ayrı kilit var. Mesaj metni: iki yüz temasta sadece bakılır, üç yüz temasta karar verilir. Teklifin kelimeleri: on görüşme birikmeden ve aynı işaret o onun en az beşinde görülmeden değişmez. Fiyatın rakamı: otuz görüşme birikmeden değişmez. Niş: doksan gün ya da beş müşteri boyunca kilitlidir; tek istisnası üç yüz temas yapılmış ve hiç görüşme çıkmamış olmasıdır. Dördünün de kararını degisiklige-karar-ver verir.
 - Gelir planı: Birinci günde hedef gelirden geriye doğru kurulan hesap: kaç müşteri, kaç görüşme, kaç randevu, kaç arama, kaç gün. İş Beyni'nde durur, üçüncü blokta fiyat kesinleşince ve üç yüzüncü temasta güncellenir.
-- Aylık masraf tablosu: Birinci günde kurulan, hangi ay cebinden ne çıkacağını gösteren dört bölümlü liste: bugünden itibaren, ikinci bloktan itibaren (adres ve e-posta), CRM açılınca (demo hattı ücretsiz; sesli dakika varsa), ve şirket kurulunca.
+- Aylık masraf tablosu: Birinci günde kurulan, hangi ay cebinden ne çıkacağını gösteren dört bölümlü liste: bugünden itibaren, ikinci bloktan itibaren (adres ve e-posta), CRM açılınca (sesli dakika varsa), ve şirket kurulunca.
 - Randevu durumu: CRM'in kendi randevu kaydında duran durum; aşamadan ayrıdır. Değerleri: onaysız, onaylı, geldi, gelmedi, iptal. Ayrı bir satır açılmıyor, randevunun kendi ekranında duruyor. Aday gelmese de aşaması "görüşme ayarlandı"da kalır.
 - Günlük sayı görünümü: Her akşam okunacak beş sayı. CRM'de böyle bir ekran yok; sayıları FounderOS kayıtlardan okuyup çıkarıyor.
 - Saat tablosu: [21/28] günlük teslimatın sana kaç saate mal olduğunu gösteren liste; üçüncü günde tahminle kurulur, ilk müşteride gerçek saatlerle yeniden yazılır.
@@ -142,12 +145,13 @@ Ulaşma:
 Randevu ve görüşme:
 - Ön görüşme sayfası: Randevu alınınca adaya gönderilen, herkese açık olmayan sayfa: ön görüşme videosu, EVET düğmesi, üç itiraz videosu. CRM açıldığı gün gorusmeye-getir ile kurulur, videoları beşinci blokta çekilmiş olur ve aynı gün eklenir. CRM açılmadan alınan randevuda video WhatsApp'tan gönderilir.
 - Üç küçük söz: Randevu alırken adaydan istenen üç şey: gelen mesaja EVET yaz, videoyu izle, takvim davetini kabul et.
-- Görüşme özet ekranı: Görüşmeden on dakika önce açılan tek sayfa: adayın adı, kayıp birimi ve rakamı, deneme araması gözlemi, söyleyeceğin tek fiyat, üç itiraz. Bir kez okunur, görüşmede bakılmaz.
+- Görüşme özet ekranı: Görüşmeden on dakika önce açılan tek sayfa: adayın adı, kayıp birimi ve rakamı, deneme araması gözlemi, nişin varsayılan rakamı, soru bölümünde sorulacak altı veri sorusu, üç itiraz. Bir kez okunur, görüşmede bakılmaz; altı sorunun cevabıyla rakam görüşmede yeniden kurulur.
 - Satış Haritası: Görüşmenin yazılı planı: ne soracağın, hangi sırayla gideceğin, fiyatı nasıl söyleyeceğin, itiraz gelince ne yapacağın.
 - Ayırma sorusu: Görüşmenin ilk sorusu: "Başlamadan önce, ne yaptığımız hakkında ne biliyorsunuz?" Cevabına göre aday bilen ya da bilmeyen sayılır.
 - Bilen aday, bilmeyen aday: Videoyu izleyip EVET yazmış ve ne yaptığını bilen aday (soru bölümü beş dakika) ile hiç bilmeyen aday (soru bölümü on iki dakikaya kadar).
 - Soru bölümü: Görüşmenin, senin sorup işletmecinin anlattığı kısmı; en fazla on iki dakika.
 - Üç kabul: İşletmecinin görüşmede kendi ağzıyla söylemesi gereken üç şey: sorun gerçek, şimdi çözülmeli, tek başıma olmaz.
+- Karar görüşmesi: Görüşme "düşüneyim" ya da "ortağıma sorayım" ile bittiğinde, hattayken iki üç gün sonrasına yazılan yirmi dakikalık ikinci görüşme; karar verici hatta olur, dertler onun cümleleriyle yeniden okunur, rakam yeniden söylenir. Bir defa yapılır, e-postaya bırakılmaz.
 - Ayırıcı soru: "Pahalı" gelince sorulan tek soru: "Sonucun kesin olacağını bilseniz bu rakam mantıklı gelir miydi?" Evet ise inanç sorunu, hayır ise fiyat sorunu.
 - Karşılama formu: Müşterinin ödemeden hemen sonra doldurduğu on dört soruluk bilgi formu; güvencenin şartıdır, son teslim yedinci gün.
 - Gelen talep: Müşterinin sistemine düşen her arama, mesaj ve form; rapor günü raporunun ilk sayısı odur.
@@ -167,7 +171,7 @@ Randevu ve görüşme:
 - Asistan takibi: İşletmenin müşterisinden cevap gelmeyince asistanın attığı üç mesaj. Senin adaylarına attığın takiple aynı şey değil.
 - Onaylı şablon: WhatsApp'ın sahibi Meta'nın önceden onayladığı hazır mesaj metni. Karşı taraf sana son yirmi dört saat içinde yazmadıysa ona ancak onaylı şablonla yazılabilir. Instagram'da böyle bir onay yok.
 - Kalite notu: WhatsApp'ın her hatta verdiği not: yeşil, sarı, kırmızı. Son yedi günde kaç kişinin engellediğine ve şikâyet ettiğine bakıyor. Kırmızıya düşen hattın günlük sınırı iniyor.
-- Hat: Mesajın ya da aramanın gidip geldiği telefon numarası. Dosyada dört yerde geçiyor: müşterinin WhatsApp Business hattı, başlangıç görüşmesinde sana açılan demo hattı, işletmenin ilan ettiği ve müşterilerinin bildiği numara, ve sesli ajanın oturduğu 0850 hat. O 0850 hat müşteri adına açılır, ilanda kullanılmaz, işletmenin cevap veremediği aramalar oraya yönlendirilir. WhatsApp'a bağlanan hatta Meta kalite notu verir ve günlük bir mesaj sınırı koyar.
+- Hat: Mesajın ya da aramanın gidip geldiği telefon numarası. Dosyada üç yerde geçiyor: müşterinin WhatsApp Business hattı, işletmenin ilan ettiği ve müşterilerinin bildiği numara, ve sesli asistanın oturduğu 0850 hat. O 0850 hat müşteri adına açılır, ilanda kullanılmaz, işletmenin cevap veremediği aramalar oraya yönlendirilir. WhatsApp'a bağlanan hatta Meta kalite notu verir ve günlük bir mesaj sınırı koyar.
 - Akış: Bir olay olunca kendiliğinden çalışan adım zinciri. Mesajı, bildirimi ve hatırlatmayı akış gönderir.
 - Değişiklik kaydı: CRM'de yapılan işlemlerin listesi. Her ayar değişikliğini göstermiyor, o yüzden tek dayanak sayılmıyor.
 - Meta'nın WhatsApp yönetim ekranı: Meta'nın işletme hesapları için açtığı ayrı sayfa. Hattın kalite notu ve günlük mesaj sınırı CRM'de değil, burada görünür.
@@ -211,7 +215,8 @@ Prova ve analiz:
 - Havale yolu: Şirketin henüz yokken parayı tahsil etme yolu. Hesap bilgisi, tutar ve açıklama satırı tek mesajda gider. Ödeme linkiyle eşit derecede geçerlidir, yedek değildir.
 - İnanç değişimi: Öğrencinin vazgeçmesine yol açan bir cümleyi çürüten hazır karşılık. On sekizi bir bankada duruyor, ana yönetici gerektiğinde birini öğrencinin kendi rakamıyla söyler.
 - Aday denetimi: Bir işletmeye ulaşmadan önce, o işletmenin müşterisini nerede kaçırdığını dışarıdan bakarak çıkarma işi. İki hâli var: iki dakikalık hızlı denetim ve sekiz dakikalık derin denetim.
-- Denetim kartı: Aday denetiminin çıktısı olan tek sayfa. Dokuz satır bulgu, artı en güçlü bulgu, lira karşılığı ve sıradaki kanal. Adayın kendisine gönderilmez.
+- Denetim kartı: Aday denetiminin çıktısı olan tek sayfa. On satır bulgu (iş ilanı dahil), artı en güçlü bulgu, lira karşılığı ve sıradaki kanal.
+- İş ilanı sinyali: İşletmenin resepsiyonist, sekreter ya da çağrı karşılama elemanı ilanı vermesi; telefonu kaçırdığını kendisinin söylemesi demek. Listede öne alınır, e-posta açılışı ondan kurulur. Adayın kendisine gönderilmez.
 - En güçlü bulgu: Denetim kartındaki bulgulardan mesaja girecek olanı; tek cümle ve gördüğün şey. Dört kanal da bundan beslenir ama aynı cümleyi kullanmaz.
 - Lira karşılığı: En güçlü bulgunun para hâli; kayıp birimi ile kartın sızıntı rakamının çarpımı. Kartta rakam yoksa boş kalır, uydurulmaz.
 - Kanal durumu: Bir adayın dört kanalının her biri için ayrı tutulan satır. Değerleri: yapılmadı, yapıldı, cevap geldi, kapandı. Yanında o kanalın tarihi ve sonucu durur. Sıradaki hareket ile sıradaki tarih kanal başına değil, adayın tamamı için tek satırdır.
@@ -243,7 +248,7 @@ FounderOS Berk'in sesiyle konuşur: net, önden giden, harekete geçiren, gerçe
 
 ## Ortak kurallar (bütün modüller için)
 
-1. Göndermek senin elinde. Hiçbir modül adaya ya da müşteriye kendi başına mesaj göndermez, hiçbir şey yayınlamaz. İki istisna: senin "tamam" dediğin hazır metinler CRM'den kendiliğinden gider (e-posta takipleri ve randevu hatırlatmaları); demo hattını arayan adaya asistan kendisi cevap verir. Bu kural senin kendi adaylarına ve müşterilerine gönderdiğin mesajlar içindir. Müşterinin senden satın aldığı sistem ayrıdır: o kendiliğinden çalışır (cevapsız aramaya dönüş, randevu onayı ve hatırlatması, yorum isteği, yazılı asistanın cevapları) ve metinlerini müşteri onaylar. İlk mesajlar, aramalar ve Instagram her zaman senin elinden çıkar.
+1. Göndermek senin elinde. Hiçbir modül adaya ya da müşteriye kendi başına mesaj göndermez, hiçbir şey yayınlamaz. Tek istisna: senin "tamam" dediğin hazır metinler CRM'den kendiliğinden gider (e-posta takipleri ve randevu hatırlatmaları). Bu kural senin kendi adaylarına ve müşterilerine gönderdiğin mesajlar içindir. Müşterinin senden satın aldığı sistem ayrıdır: o kendiliğinden çalışır (cevapsız aramaya dönüş, randevu onayı ve hatırlatması, yorum isteği, yazılı asistanın cevapları) ve metinlerini müşteri onaylar. İlk mesajlar, aramalar ve Instagram her zaman senin elinden çıkar.
 2. Kapanış hızı. Sözlü "evet" kapanış değildir. Sözleşme ve ödeme bilgisi görüşme biter bitmez, aynı oturumda, sen telefonu kapatmadan gider. "Aynı gün" yok, "beş dakika içinde" var. Ödeme iki yoldan biriyle alınır ve ikisi de eşit derecede geçerlidir: ödeme linki (şirketin ve sağlayıcı hesabın varsa) ya da havale (şirketin henüz yoksa; hesap bilgisi, tutar ve açıklama satırı tek mesajda gider). Havale yolu ikinci sınıf bir yol değildir, ilk müşterilerin çoğu böyle kapanır. Havale şablonu ve sözleşme üçüncü blokta hazır durur; ödeme linki şirket kurulup sağlayıcı hesabı açılınca gelir.
 3. Güvence şartlı. "Rapor gününde rapor; yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz" sözü müşterinin kendi adımlarına bağlı: giriş izinleri kurulum görüşmesinde (en geç ikinci gün), karşılama formu ve duran havuz onayı yedinci güne kadar. Bir de şu var: bir parça mevzuat yüzünden ya da müşterinin kendi adımını atmaması yüzünden hiç kurulamıyorsa, o parça kapsam dışıdır ve güvencenin sonucuna sayılmaz. Bilinen haller: eski müşteri listesinde İYS izinli numara çıkmaması, Google işletme profilinin doğrulanmamış olması, sağlık nişinde hukukçu onayının gelmemesi, QR kodun bastırılıp asılmaması. Bunlar kurulum görüşmesinde sesli söylenir ve onay belgesinin "neyi yapmıyorum" başlığına yazılır. Sözleşmede yazılı, kurulum görüşmesinde sesli söylenir.
 4. Sayı sözü ile gerçek rakam ayrı. Satışta sayı sözü verilmez. Teslimden sonra yazılan kanıt hikâyesinde ise gerçek rakam şart; rakamsız kanıt hikâyesi işe yaramaz.

@@ -98,11 +98,13 @@ Hızlı denetimin beş satırının üstüne dört şey daha eklenir.
 
 **8. Reklam izi.** Meta reklam kütüphanesinde işletmenin adı aratılır. Yazılan: aktif reklam var mı, kaç tanesi, ne zamandır yayında, hangi kelimeler geçiyor. Reklam veren işletme para harcıyor demektir ve gelen talebi kaçırıyorsa kaybı iki katı; bu, mesajın en sert cümlesini üretir. Kütüphaneye ulaşılamazsa "bakılamadı" yazılır.
 
-**9. Kim karar veriyor.** Kartın "kim karar veriyor" bölümünün söylediği kişinin adı. Üç yere bakılır: sitenin hakkımızda ve iletişim sayfası, Instagram biyografisi, Google yorumlarına verilen cevapların altındaki imza. Bulunamazsa "bulunamadı" yazılır ve o aday telefon sırasına girmez, yazı sırasına düşer.
+**9. İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle iş ilanı sitelerine, işletmenin Instagram'ına ve sitesinin kariyer sayfasına bakılır. Yazılan: ilan var mı, tarihi, başlığı. "Resepsiyonist arıyoruz" ilanı veren işletme telefonu kaçırdığını kendisi söylüyor; bu bulgu varsa en güçlü bulgu sırasında canlı arama testinin hemen ardına girer ve e-posta açılışı bu ilandan kurulur.
+
+**10. Kim karar veriyor.** Kartın "kim karar veriyor" bölümünün söylediği kişinin adı. Üç yere bakılır: sitenin hakkımızda ve iletişim sayfası, Instagram biyografisi, Google yorumlarına verilen cevapların altındaki imza. Bulunamazsa "bulunamadı" yazılır ve o aday telefon sırasına girmez, yazı sırasına düşer.
 
 ### Denetim kartının kendisi
 
-Tek sayfa, sabit yapıda, dokuz satır artı üç sonuç satırı. FounderOS doldurur, sen okursun.
+Tek sayfa, sabit yapıda, on satır artı üç sonuç satırı. FounderOS doldurur, sen okursun.
 
 ```
 İşletme: [kısa ad] · Semt: [semt] · Karar veren: [ad ya da bulunamadı]
@@ -114,14 +116,15 @@ Tek sayfa, sabit yapıda, dokuz satır artı üç sonuç satırı. FounderOS dol
 6 Arama testi: [saat, sonuç] ya da yapılmadı
 7 Yazılı test: [saat, sonuç] ya da yapılmadı
 8 Reklam: [var/yok/bakılamadı]
-9 Sızıntı puanı: [0-5]
+9 İş ilanı: [ilan var: tarih, başlık / yok / bakılmadı]
+10 Sızıntı puanı: [0-5]
 
 EN GÜÇLÜ BULGU: [tek cümle, gördüğün şey]
 LİRA KARŞILIĞI: [kayıp birimi × kartın sızıntı rakamı, tek satır hesap]
 SIRADAKİ KANAL: [telefon / e-posta / Instagram / video]
 ```
 
-**En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi. Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gider; bu adayın sırası listenin sonundadır.
+**En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve iş ilanı varsa o ("resepsiyonist arıyorsunuz" cümlesi). O da yoksa yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi. Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gider; bu adayın sırası listenin sonundadır.
 
 **Lira karşılığı** tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
@@ -191,4 +194,4 @@ Sıradaki: denetim biten adayın kanalı belli, adaya-mesaj-yaz o kanalın metni
 - Elli temas oldu, en güçlü bulgusu "kartın açılış cümlesi" olan adayların cevap oranı diğerlerinin yarısından az: denetim işe yarıyor demektir, sıralama sıkılaştırılır.
 - Bir denetim kartında "bakılamadı" sayısı dördü geçiyor: o aday listenin sonuna gider.
 
-Beş kural: boş sayfa yok (dokuz satırın hepsi ve bakılacak yerler hazır gelir) · sessiz bitiş yok (her denetim bir bulgu, bir rakam ve bir kanalla biter) · onay (canlı testleri sen yaparsın ve sonucu sen söylersin, kart senin söylediğinle dolar) · sahadan güncelleme (tekrarlanan bulgu niş kartına yazılır, cevap alan bulgu tipi sıralamayı değiştirir) · sormaz söyler (neye bakılacağını, hangi bulgunun güçlü olduğunu ve hangi kanala gideceğini FounderOS söyler).
+Beş kural: boş sayfa yok (on satırın hepsi ve bakılacak yerler hazır gelir) · sessiz bitiş yok (her denetim bir bulgu, bir rakam ve bir kanalla biter) · onay (canlı testleri sen yaparsın ve sonucu sen söylersin, kart senin söylediğinle dolar) · sahadan güncelleme (tekrarlanan bulgu niş kartına yazılır, cevap alan bulgu tipi sıralamayı değiştirir) · sormaz söyler (neye bakılacağını, hangi bulgunun güçlü olduğunu ve hangi kanala gideceğini FounderOS söyler).

@@ -67,7 +67,7 @@ Sıra değişmez. Her bölümün yanında ne yazacağın var. Köşeli parantezl
 
 **4. Teslim sözü.** Kim kuruyor, kaç günde. "Size özel kuruyorum, [21/28] günde çalışır halde teslim ediyorum."
 
-**5. Birinci kanıt, erken.** Birinci dakikadan önce, sen kendini tanıtmadan gelir. Bu videonun en önemli yapı kararı: izleyen "bu kim" diye düşünürken sistemin çalıştığını görüyor. Kanıt ekran kaydı ya da demo hattı kaydı, otuz kırk saniye. Ekranda tek satır yazı: ne izlediği.
+**5. Birinci kanıt, erken.** Birinci dakikadan önce, sen kendini tanıtmadan gelir. Bu videonun en önemli yapı kararı: izleyen "bu kim" diye düşünürken sistemin çalıştığını görüyor. Kanıt ekran kaydı ya da tarayıcı demosunun kaydı, otuz kırk saniye. Ekranda tek satır yazı: ne izlediği.
 
 **6. Kim olduğun.** Kanıttan sonra, kısa. Adın, ne yaptığın, amacın tek cümle, ve şu: "Sistemi ben kuruyorum, baştan sona muhatabınız benim." Buradaki cümleler ön görüşme videosundaki cümlelerle aynı olacak, iki videoda iki farklı insan konuşmayacak.
 

@@ -132,6 +132,7 @@ Görüşmenin sırası:
 3. Hedefi yeniden koy.
 4. Kazanımı kutla.
 5. Sıradaki adımı göster.
+6. Tek soru, görüşmenin son cümlesi: "İşinizde çözebileceğim bir sonraki en büyük baş ağrısı ne?" Cevabı tartışmazsın, satmazsın, yazarsın: müşterinin bilgi dosyasına "sıradaki baş ağrısı" satırına, tarihle. Bu satır ikinci ayın teklifidir; büyüme şartı sağlanınca musteriyi-elde-tut buradan başlar. Cevap "yok, şimdilik iyiyiz" ise onu da yazarsın ve bir ay sonra aynı soruyu bir daha sorarsın.
 
 Birinci maddeyi atlama. Müşteri sorunu senden önce bulursa, sonucu düzeltsen bile güveni kaybedersin.
 
@@ -198,7 +199,7 @@ Sezon uyarısı: düşüşü sezona bağlamak yalnız sezon rakamı karta yazıl
 Görüşmenin beşinci maddesi budur. Kurallar:
 - Yenileme ayrı bir olay değildir. İyi haber verdiysen, kazanımı kutladıysan ve sayıları birlikte geçtiysen yenileme sıradan bir kontrol görüşmesidir.
 - Her ay "yenileyelim mi" diye sorulmaz. Sorduğun her sefer müşteriyi seni yeniden yargılamaya zorlarsın; tahsilat arka planda sessiz akar.
-- Üst pakete geçiş ilk raporda konuşulmaz. En erken ikinci ay, ve ancak büyüme şartı sağlandıysa. Büyüme şartı iki maddedir: görüşmede satılan tam sistem, yani Kademe 2, sorunsuz teslim edilmiş olacak ve rapor günü raporu çıkmış olacak.
+- Üst pakete geçiş ilk raporda konuşulmaz; ilk raporda yalnız "sıradaki en büyük baş ağrısı ne" sorusu sorulur ve cevap yazılır. Geçiş en erken ikinci ay, ve ancak büyüme şartı sağlandıysa. Büyüme şartı iki maddedir: görüşmede satılan tam sistem, yani Kademe 2, sorunsuz teslim edilmiş olacak ve rapor günü raporu çıkmış olacak.
 - Sistemin yapabildiği fazladan şeyleri raporda anlatma; onları üst pakete geçiş görüşmesine sakla.
 
 ### Rapordan kanıt hikâyesi

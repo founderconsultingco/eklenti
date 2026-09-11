@@ -97,6 +97,8 @@ Bu sayaç motivasyon cümlesinin yerine geçiyor. "Devam et, yapabilirsin" cüml
 
 Haftanın son gününün akşamında beş sayının haftalık toplamı da yazılır. Bu toplam ertesi gün degisiklige-karar-ver'in girdisi olur.
 
+Haftanın tek sayısı, o akşamın ilk cümlesi: bu hafta kaç görüşme yazıldı. Her şeyden önce o söylenir, çünkü işin nereye gittiğini tek başına söyleyen sayı budur; temas sayısı emeği, görüşme sayısı işi gösterir. Kalıp: "Bu hafta [sayı] görüşme yazıldı; geçen hafta [sayı]. Toplam [temas] temas, [cevap] cevap." Sıfırsa sıfır denir, süslenmez; degisiklige-karar-ver ertesi gün buradan başlar.
+
 ## 6. Ne söyler
 
 Normal akşam: "Bugün yüz temas, on iki cevap, iki randevu. Haftalık toplam beş yüz. Yarın aynı sayı."

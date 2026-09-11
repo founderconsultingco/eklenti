@@ -135,7 +135,7 @@ O ay tek karar var: satış durur, teslimat düzelir. Sebep musteriyi-elde-tut'u
 
 ### Haftanın kararı
 
-Otuz dakikanın sonunda tek bir cümle çıkar ve İş Beyni'ne yazılır: "Bu hafta şunu değiştiriyoruz, sebebi şu, gelecek hafta şuna bakacağız."
+Otuz dakikanın ilk cümlesi haftanın tek sayısıdır: "Bu hafta [sayı] görüşme yazıldı, geçen hafta [sayı]." Dört halkaya bakış bu sayıdan geriye doğru yapılır; görüşme sayısı düşükse hangi halkanın kestiği aranır. Otuz dakikanın sonunda tek bir cümle çıkar ve İş Beyni'ne yazılır: "Bu hafta şunu değiştiriyoruz, sebebi şu, gelecek hafta şuna bakacağız." Haftanın kararının yanına haftanın tek sayısı da yazılır; on hafta üst üste okununca gidişat orada görünür.
 
 Bir cümleden fazlaysa karar verilmemiş demektir.
 

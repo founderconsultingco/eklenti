@@ -7,7 +7,7 @@ description: "Sadece pilates, PT ve butik studyo nisinin karti: rakamlar, itiraz
 # Pilates, PT ve butik stüdyo
 
 
-**Kapsam.** Reformer ve mat pilates stüdyoları, bağımsız çalışan kişisel antrenörler (PT), EMS (elektrostimülasyon) stüdyoları, butik yoga stüdyoları. Büyük zincir spor salonları (klasik gym) hariç. Google Haritalar'da "Pilates stüdyosu", "Spor kulübü", "Fitness merkezi", "Yoga stüdyosu" kategorileri altında geçiyorlar. EMS tarafında Fitamine kendini "EMS antrenman merkezi" olarak tanımlıyor (fitamine.com.tr). İlk odak için en uygun büyüklük: özel ders ya da çok seanslı paket satan stüdyo; deneme dersinden üyeliğe geçiş ve yenileme takibi sistemin asıl işi.
+**Kapsam.** Reformer ve mat pilates stüdyoları, bağımsız çalışan kişisel antrenörler (PT), EMS (elektrostimülasyon) stüdyoları, butik yoga stüdyoları. Büyük zincir spor salonları (klasik gym) hariç. Google Haritalar'da "Pilates stüdyosu", "Spor kulübü", "Fitness merkezi", "Yoga stüdyosu" kategorileri altında geçiyorlar. EMS tarafında Fitamine kendini "EMS antrenman merkezi" olarak tanımlıyor (fitamine.com.tr). İlk odak için en uygun büyüklük: özel ders ya da çok seanslı paket satan, birden fazla eğitmeni olan stüdyo; deneme dersinden üyeliğe geçiş ve yenileme takibi sistemin asıl işi. Müşteri değeri şartı: tek eğitmenli küçük stüdyo ve klasik spor salonu formülü taşımıyor, kapsam dışı; paket fiyatı yüksek ve üye sayısı çok olan stüdyolar ilk odak.
 
 Müşteri yolculuğu: randevu (deneme dersi randevusu, sonra üyelik). Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
 

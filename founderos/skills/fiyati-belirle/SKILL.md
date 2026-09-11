@@ -35,7 +35,7 @@ Pazarlamadaki karşılığı: fiyat matematik değil, kendini nereye koyduğun.
 
 İş Beyni'nden: hazırlık seviyen, gelir planın, kanal yolun, nişin, bu sabah çıkan saat tablosu (yalnız kurulum ücreti teslim maliyetini karşılıyor mu kontrolü için; fiyat saatten hesaplanmıyor).
 Niş kartından: gerçek fiyatlar ve kapasite, duran havuz, yasal sınırlar.
-Sabit fiyat kurallarından: aşağıdaki rakamlar.
+Kilitli formül ve oranlardan: aşağıda.
 
 Hazırlık seviyesi, satış tecrübenin, sektör bilgin ve güvenin olup olmadığıdır; üçü de yoksa ilk iki müşteride deneme fiyatı uygulanır.
 
@@ -45,60 +45,70 @@ Sormaz. Rakamı söyler.
 
 ## 5. Ne yapar
 
-### Sabit rakamlar
+### Formül ve oranlar (kilitli)
 
-Bunlar sistemin başlangıç rakamları. Kesinleşene kadar aralık olarak durur.
+Fiyat iki parçadır ve ikisi de değerden hesaplanır, senin saatinden değil: **kurulum ücreti** ve **aylık ücret**. Formül ve oranlar kilitlidir; rakam işletmenin kendi sayısından çıkar.
 
-- Kurulum ücreti: 40.000 TL.
-- Deneme fiyatı: 20.000 TL, yani kurulum ücretinin yarısı. Aylık ücret değişmez.
-- Aylık ücret, Kademe 1 için 20.000 ile 25.000 TL arası.
-- Aylık ücret, Kademe 2 için nişe göre 25.000 ile 45.000 TL arası. Rakam banttan seçilmez, hesaptan çıkar; bant sadece çoğu nişin nereye düştüğünü gösterir. Görüşmede satılan budur.
-- Aylık ücret, Kademe 3 için reklam bütçesi hariç 50.000 TL ve üstü.
+- **Kurulum ücreti, para kazandıran sistem için:** yıllık ek gelirin yüzde onu. Yıllık ek gelir, işletmenin ayda kaybettiği paranın (kayıp birimi çarpı aylık kaçan olay) on ikiyle çarpımı. Kısa hali: kurulum, bir aylık kaybın bir buçuk katından az, bir katından fazla; öğrenciye "aşağı yukarı bir aylık kaybınız kadar" diye anlatılır. Bizim sistemin ana işi bu: kaçan talebi yakalamak, takip etmek, eski müşteriyi geri kazanmak. Varsayılan formül budur.
+- **Kurulum ücreti, para kurtaran sistem için:** yıllık tasarrufun yüzde yirmisi ile yirmi beşi. Yıllık tasarruf, haftada kurtarılan personel saati çarpı saat maliyeti çarpı elli iki. Bu formül iki durumda kullanılır: kartta kayıp biriminin lira karşılığı yoksa ("sahadan dolacak"), ya da görüşmede işletmecinin kendi rakamı kaçan talep yerine telefon başında harcanan saati gösteriyorsa. İkisi de hesaplanabiliyorsa büyük olan değil, sistemin o işletmede yaptığı asıl iş hangisiyse o kullanılır; iki formül toplanmaz.
+- **Aylık ücret:** kurulum ücretinin yüzde yirmisi. Karşılığı: sistemin bakımı, metin ve ayar düzeltmeleri, bozulanın onarılması, haftalık kontrol, ara raporlar ve aylık rapor. Kısa hali: "aylık, kurulumun beşte biri."
+- **Deneme fiyatı:** hazırlık seviyesi düşükse ilk iki müşteride kurulum ücretinin yarısı. Aylık ücret değişmez, çünkü aylık kurulumdan hesaplanır ve tam kurulumdan hesaplanmaya devam eder.
+- **Karşılaştırma fiyatı:** Kademe 2'nin üç aylık peşin paketi (kurulum artı üç aylık). Sitede durur, görüşmede söylenmez.
+- **Taban:** kurulum ücreti saat tablosundaki kurulum saatinin maliyetini karşılamıyorsa o işletme sana küçük demektir; fiyat yukarı yuvarlanmaz, aday uygunluk puanında düşer ve nişte bu sık oluyorsa nisi-sec'in müşteri değeri elemesine işaret gider.
+
+Neden saat değil değer: birinin daha iyi olduğu bir işi daha hızlı yapıyor diye daha az kazanması saçma. Saatten hesaplayan herkes kendini ucuzlatıyor; değerden hesaplayan rakamın arkasında veri taşıyor ve görüşmede "neden bu kadar" sorusuna rakamla cevap veriyor.
 
 ### Kurulum ücreti neden var
 
 Üç işi birden yapıyor:
 1. Nakit getiriyor. İlk ayın masrafını o karşılıyor.
-2. Ciddi olmayanı eliyor. 40.000 TL'yi peşin ödeyen kişi fiyat sormaya gelmemiş demektir.
+2. Ciddi olmayanı eliyor. Kurulum ücretini peşin ödeyen kişi fiyat sormaya gelmemiş demektir.
 3. Seni erken ayrılıktan koruyor. Kurulum en ağır emeğin harcandığı yer; müşteri ikinci ay ayrılsa bile o emeğin karşılığı ödenmiş oluyor.
 
-Şunu aklında tut: kurulum ücreti teslim maliyetini karşılar, kâr aylık ücrette yaşar.
+Şunu aklında tut: kurulum ücreti teslim maliyetini karşılar ve değerin ilk dilimidir; aylık ücret kârın yaşadığı yerdir, çünkü tekrar eder.
 
-### Fiyat nasıl hesaplanır: üç adım
+### Fiyat nasıl hesaplanır: dört adım
 
-**Birinci adım, işletmenin kaybını hesapla.** İki rakam kartın kendisinden çıkar, ikisi de senden çıkmaz. Birincisi kayıp birimi: kartın "gerçek fiyatlar ve kapasite" bölümünün son satırında yazıyor. İkincisi aylık kaçan iş sayısı: kartın "sızıntı nerede" bölümünde birinci sızıntının rakamı. İkisini çarparsın. Kartta hangisi yoksa hesap o kalemsiz yapılır ve eksik olduğu yazılır; rakam uydurulmaz.
+**Birinci adım, işletmenin aylık kaybını hesapla.** İki rakam kartın kendisinden çıkar, ikisi de senden çıkmaz. Birincisi kayıp birimi: kartın "gerçek fiyatlar ve kapasite" bölümünün son satırında yazıyor. İkincisi aylık kaçan olay sayısı: kartın "sızıntı nerede" bölümünde birinci sızıntının rakamı. İkisini çarparsın. Kartta hangisi yoksa hesap o kalemsiz yapılır ve eksik olduğu yazılır; rakam uydurulmaz.
 
-Kalıp, rakamlar karttan: kartın kayıp biriminin ortası alınır; kartın sızıntı bölümündeki günlük kaçan olay sayısının temkinli alt ucu, ayda yirmi iki iş günüyle çarpılır; çıkan aylık kaçan olay sayısı kayıp birimiyle çarpılır. Bu, o işletmenin bir ayda sadece o sızıntıdan kaybettiği para. Kartta günlük sayı yoksa çarpım yapılmaz, "sahadan dolacak" yazılır.
+Kalıp, rakamlar karttan: kartın kayıp biriminin ortası alınır; kartın sızıntı bölümündeki günlük kaçan olay sayısının temkinli alt ucu, ayda yirmi iki iş günüyle çarpılır; çıkan aylık kaçan olay sayısı kayıp birimiyle çarpılır. Bu, o işletmenin bir ayda sadece o sızıntıdan kaybettiği para. Kartta günlük sayı yoksa çarpım yapılmaz, tasarruf formülüne geçilir; o da yoksa "sahadan dolacak" yazılır.
 
-**İkinci adım, sayıya girmeyenleri ekle.** Sistem gece de çalışıyor, hastalanmıyor, takibi unutmuyor, gece ikide gelen mesaja cevap veriyor. Kartın ikinci ve üçüncü sızıntısı da burada (karttan okunur). Bunların lira karşılığı kartta yok, o yüzden çarpıma girmiyor. Ama fiyatı savunurken söylenir ve rakamın üst ucunu haklı çıkaran şey bunlar.
+**İkinci adım, yıla çevir ve kurulumu koy.** Aylık kayıp çarpı on iki, yıllık kayıp. Kurulum ücreti bunun yüzde onu. Tasarruf formülündeysen haftalık saat çarpı saat maliyeti çarpı elli iki, kurulum bunun yüzde yirmisi ile yirmi beşi.
 
-**Üçüncü adım, payını al.** Kural şu: yarattığın değerin onda biri ile beşte biri arası. Kademe 2'nin aylık rakamı bu aralığın üst ucundan seçilir ve yuvarlanır.
+**Üçüncü adım, aylığı koy.** Kurulum ücretinin yüzde yirmisi. Yuvarlanır; bin lira basamağına, aşağı değil yukarı.
 
-Bu oran neden böyle: müşteri sana verdiği her 1 TL'ye en az 5 TL geri almalı. Altına inerse ilk kötü haftada iptal ediyor. Beş ile on kat arasında memnun oluyor, on katın üstünde referans getiriyor.
+**Dördüncü adım, sayıya girmeyenleri söyle, rakama katma.** Sistem gece de çalışıyor, hastalanmıyor, takibi unutmuyor, gece ikide gelen mesaja cevap veriyor. Kartın ikinci ve üçüncü sızıntısı da burada (karttan okunur). Bunların lira karşılığı kartta yoksa çarpıma girmiyor; ama fiyatı savunurken söylenir, rakamın arkasındaki fazlayı bunlar taşır.
 
-**Hesap bandın altına düşerse.** Çıkan rakam Kademe 2 bandının altındaysa fiyat banda çekilmez, hesap doğru kabul edilir. Sırayla üç şey yapılır. Bir: kartın ikinci ve üçüncü sızıntısının lira karşılığı sahadan biliniyorsa çarpıma eklenir ve hesap tekrarlanır. İki: yine altındaysa Kademe 2'nin rakamı hesabın verdiği rakam olur ve gelir planı o rakamla yeniden hesaplanır, yani hedefine daha çok müşteri gerekir. Üç: yeniden hesaplanan müşteri sayısı doksan güne sığmıyorsa, yani gereken arama sayısı senin günlük sayınla doksan günü aşıyorsa, niş düşer ve birinci günün ikinci sırasındaki nişe geçilir. Bu sıra hiçbir zaman atlanmaz; fiyatı yukarı yuvarlayarak niş kurtarılmaz.
+**Hesap küçük çıkarsa.** Kurulum ücreti teslim maliyetinin altında kalıyorsa fiyat yukarı yuvarlanmaz, hesap doğru kabul edilir. Sırayla üç şey yapılır. Bir: kartın ikinci ve üçüncü sızıntısının lira karşılığı sahadan biliniyorsa aylık kayba eklenir ve hesap tekrarlanır. İki: yine altındaysa bu niş için hedeflenen işletme büyüklüğü yükseltilir (çok koltuklu, çok şubeli, çok ekipli) ve ideal müşteri sayfası buna göre daraltılır; küçük işletmeler uygunluk puanında C'ye düşer. Üç: nişin çoğu işletmesi bu hesabı taşımıyorsa niş düşer ve birinci günün ikinci sırasındaki nişe geçilir. Bu sıra hiçbir zaman atlanmaz; fiyatı yukarı yuvarlayarak niş kurtarılmaz.
 
-Bu hesabı telefonda tek cümlede söyleyebilirsin: "Ayda kurtardığınızın beşte birinden azını alıyorum."
+Bu hesabı telefonda iki cümlede söyleyebilirsin: "Ayda kaçırdığınız [aylık kayıp], yılda [yıllık]. Kurulum bunun onda biri, aylık da kurulumun beşte biri."
+
+### Bant, kesin rakam ve görüşmedeki rakam
+
+Üç rakam var ve karıştırılmaz:
+- **Bant (birinci gün):** formül kartın alt ve üst rakamlarıyla iki kez çalıştırılır; çıkan iki kurulum ve iki aylık, bandın uçlarıdır. Öğrenciye "aralık" diye anlatılır.
+- **Nişin varsayılan rakamı (üçüncü blok, kesin fiyat):** formül kartın orta rakamlarıyla çalıştırılır. Bu rakam İş Beyni'ne yazılır, siteye karşılaştırma fiyatı olarak girer, "fiyat ne" cevabında aralık olarak söylenir.
+- **Görüşmede söylenen rakam:** soru bölümünde işletmeci kendi rakamlarını verdi (kaç arama, kaçı cevapsız, bir müşteri ne getiriyor). Formül o rakamlarla yeniden çalıştırılır ve söylenen rakam odur. İşletmecinin rakamı nişin varsayılanının yüzde otuz altında ya da üstündeyse kendi rakamı geçerlidir; aradaysa varsayılan söylenir, rakamla oynanmaz. Böylece fiyat hem her işletmeye özel hem tartışılmaz: rakamı işletmeci verdi, formül sabit.
+
+Kilit şudur: otuz görüşme birikmeden değişmeyen şey formül, oranlar ve nişin varsayılanıdır. Görüşmede işletmecinin rakamıyla hesap kurmak fiyatı değiştirmek değildir, formülü uygulamaktır.
 
 ### Üç kademeye rakam
 
-Üç kademeye de rakam yazılır. Yasal sınırı olan nişlerde Kademe 3'e "yok" yazılır.
+Üç kademeye de rakam yazılır ve üçü de aynı formülden çıkar; fark, hesaba giren sızıntılardır. Kademe 1 Temel Kapsam: yalnız birinci sızıntı (kaçan talep). Kademe 2 Tam Kapsam: birinci sızıntı artı eski müşteri geri kazanımının lira karşılığı (kartta varsa); görüşmede satılan budur. Kademe 3 Genişletilmiş Kapsam: Kademe 2 artı dış arama ve reklamın getirdiği ek gelir; en erken ikinci ay, büyüme şartından sonra. Yasal sınırı olan nişlerde Kademe 3'e "yok" yazılır.
 
-Karşılaştırma fiyatı da yazılır: Kademe 2'nin üç aylık paketi. Karşılaştırma fiyatı sitede duran pahalı seçenektir, görüşmede söylenmez. Aday onu görmüş gelir ve tek rakamı duyduğunda kafasında bir kıyas olur.
+Karşılaştırma fiyatı da yazılır: Kademe 2'nin üç aylık paketi. Sitede duran pahalı seçenektir, görüşmede söylenmez. Aday onu görmüş gelir ve tek rakamı duyduğunda kafasında bir kıyas olur.
 
-### Beş kat kuralı ve üç bölge
+### Değer payı kuralı ve üç bölge
 
-Fiyatın tavanı işletmecinin kazancından çıkar, senin hedefinden değil. Kural şu: işletmeci bu işe verdiği her liraya karşılık en az beş lira geri almalı. Beşin altında sessizce "acaba yanlış mı yaptım" diye düşünür, kötü bir haftada iptal eder ve yorum yazmaz. Beş ile on arası memnundur, kalır, yorum yazar. Onun üstünde seni başkasına anlatır. Üçüncü adımdaki "kurtardığının beşte birinden azı" cümlesi bu kuralın telefondaki halidir; matematiği aynıdır.
-
-Hesap: kartın kayıp birimi çarpı ayda kurtarılması beklenen olay sayısı, işletmecinin brüt kazancı değil kârıdır; kâr payı karttan ya da işletmeciden gelir (kartın "gerçek fiyatlar ve kapasite" bölümünden; kartta yoksa görüşmede sorulur). Kârın beşte biri, işletmecinin sana ödeyebileceği tavandır. Aylık ücret bu tavanın altında kalır.
+Fiyatın tavanı işletmecinin kazancından çıkar, senin hedefinden değil. Formülün oranları tavandır: ilk yıl işletmeci sana yıllık kaybının üçte birinden azını öder (kurulum artı on iki aylık), ikinci yıldan itibaren dörtte birinden azını; yani verdiği her liraya karşılık ilk yıl yaklaşık üç, sonra dört lira geri alır. Üç bölge var. Formülün üstünde: işletmeci sessizce "acaba yanlış mı yaptım" der, kötü bir haftada iptal eder, yorum yazmaz. Formülde: memnundur, kalır, yorum yazar. Formülün çok altında: sen kendini ucuzlatmışsındır, dört müşteriyle geçinemezsin. Değer hesabı işletmecinin brüt kazancıyla değil kârıyla yapılır; kâr payı kartın "gerçek fiyatlar ve kapasite" bölümünden, kartta yoksa görüşmede sorulur.
 
 ### Çırak tuzağı
 
-Sıfırdan başlayan herkesin yaptığı hata: kulağa iyi geldiği için yüksek bir kurulum ücreti istemek. Çırak ilk gün büyük işe konur, iş bozulur, müşteri parasını geri ister, çırak daha başlamadan biter. Yüksek kurulum ücretinde üç şey olur: ilk kurulum hatasında iade istenir ve ilk izlenim gider; rakamı haklı çıkarmak için olmayan kanıt uydurulur; para cebe girince teslimat baskısı kalkar ve sonuç düşer.
+Sıfırdan başlayan herkesin yaptığı hata: kulağa iyi geldiği için formülün üstünde bir kurulum ücreti istemek. Çırak ilk gün büyük işe konur, iş bozulur, müşteri parasını geri ister, çırak daha başlamadan biter. Formülün üstündeki kurulum ücretinde üç şey olur: ilk kurulum hatasında iade istenir ve ilk izlenim gider; rakamı haklı çıkarmak için olmayan kanıt uydurulur; para cebe girince teslimat baskısı kalkar ve sonuç düşer.
 
 Bu yüzden ilk iki müşteride deneme fiyatı var ve güvence sözleşmede yazılı: riskin bir kısmı sende kalıyor, bu seni daha hızlı öğrenmeye zorluyor ve satışta dürüstlük olarak okunuyor. "Sadece işe yararsa ödersiniz" cümlesinin bizdeki hali "rapor gününde sayılar sıfırsa ikinci ay ücretsiz"dir. Kurulum ücreti tamamen sıfırlanmaz; sıfır olan iş ciddiye alınmıyor ve işletmeci takip etmiyor.
 
-Randevu başına ya da gelen müşteri başına ücret modeli bizim işe uymuyor ve sebebini bil: o model reklamla dışarıdan talep üreten ajanslar içindir, talep onların. Bizim sistem işletmenin zaten gelen talebini kurtarıyor; "bu randevu sistemden mi geldi yoksa zaten gelecek miydi" tartışması her ay çıkar. O yüzden bizde sabit aylık ücret artı olaya bağlı güvence var.
+Randevu başına ya da gelen müşteri başına ücret modeli bizim işe uymuyor ve sebebini bil: o model reklamla dışarıdan talep üreten ajanslar içindir, talep onların. Bizim sistem işletmenin zaten gelen talebini kurtarıyor; "bu randevu sistemden mi geldi yoksa zaten gelecek miydi" tartışması her ay çıkar. O yüzden bizde kurulum artı sabit aylık ücret artı olaya bağlı güvence var.
 
 ### Süre hükmü (yalnız üçüncü blokta, kesin fiyatla)
 
@@ -160,22 +170,22 @@ Rakamı yazışmada tek başına vermezsin. Bağlamsız rakam her zaman pahalı 
 
 ## 6. Ne söyler
 
-Rakamı verirken: "Fiyatın şu: kurulum 40.000, aylık [rakam]. Sen daha önce satış yapmadın, o yüzden ilk iki müşteride kurulum 20.000, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
-Matematiği gösterirken: "Rakamı tartışmıyoruz, matematiği gösteriyorum. Bu sektörde kaçan bir müşteri [kart rakamı] ediyor. Sistem ayda [sayı] tanesini geri getirirse [sonuç]. Senin payın onun beşte birinden az."
+Rakamı verirken: "Fiyatın şu: kurulum [rakam], aylık [rakam], yani kurulumun beşte biri. Sen daha önce satış yapmadın, o yüzden ilk iki müşteride kurulum yarısı, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
+Matematiği gösterirken: "Rakamı tartışmıyoruz, matematiği gösteriyorum. Bu sektörde kaçan bir müşteri [kart rakamı] ediyor, ayda [sayı] tanesi kaçıyor: ayda [aylık kayıp], yılda [yıllık]. Kurulum yıllığın onda biri: [kurulum]. Aylık kurulumun beşte biri: [aylık]. İlk yıl toplam ödediği, kaybettiğinin üçte birinden az."
 Prova: "Şimdi rakamı sesli söyle ve sus. Ben saymaya başlayacağım. Otuz saniye konuşmayacaksın."
 "Çok yüksek" derse: "Matematiği bir daha bakalım. Deneme fiyatın zaten var. Fiyatı sen değil, ilk otuz görüşme belirleyecek. Şimdilik bu."
 Müşteri itiraz edince: "Tek soru sor: sonucun kesin olacağını bilseniz bu rakam mantıklı gelir miydi? Evet derse sorun fiyat değil, inanç; kanıta dön. Hayır derse Kademe 1'e in, indirim yapma."
-Ucuz satmak isterse: "Ucuz fiyat ucuz müşteri getiriyor. Ayrıca dört müşteriyle geçineceksin. 15.000 TL'ye satarsan sekiz müşteri lazım, sekizini tek başına taşıyamazsın."
+Ucuz satmak isterse: "Ucuz fiyat ucuz müşteri getiriyor. Ayrıca dört müşteriyle geçineceksin. Formülün yarısına satarsan sekiz müşteri lazım, sekizini tek başına taşıyamazsın."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: üç kademenin rakamı, karşılaştırma fiyatı, deneme fiyatı işareti, üç karşılık, güvence cümlesi ve şartları, "fiyat ne" cevabı, kartın kaçan müşteri rakamı ve kurtarma tahmini, fiyat sürümü 1 ve tarihi.
+İş Beyni'ne: hangi formülün kullanıldığı (gelir ya da tasarruf) ve hesabın iki girdisi, üç kademenin kurulum ve aylık rakamı, nişin varsayılan rakamı ve bandı, karşılaştırma fiyatı, deneme fiyatı işareti, üç karşılık, güvence cümlesi ve şartları, "fiyat ne" cevabı, kartın kaçan müşteri rakamı ve kurtarma tahmini, fiyat sürümü 1 ve tarihi.
 CRM'e (açıldığı gün): kurulum ve aylık ücret satırları kayıtta hazır duruyor, aday "kazandım" aşamasına geçtiğinde doldurulur.
 
 ## 8. Yedek yol
 
-- Aylık aralık kesinleşmemişse: modül kart verisinden bir aralık önerir ve "aralık" etiketiyle kaydeder. Rakam ilk müşteride kesinleşir.
-- Kartta kayıp birimi ya da sızıntı rakamı yoksa: hesap yapılamaz, Kademe 2 aralığının ortası yazılır ve "kart eksik" işareti düşülür. İlk üç görüşmede işletmecilere kayıp birimi sorulur, gelen cevapla hesap tekrarlanır ve fiyat düzeltilir.
+- Bant kesinleşmemişse: modül kart verisinden formülle bir aralık önerir ve "aralık" etiketiyle kaydeder. Nişin varsayılanı üçüncü blokta konur, görüşmede işletmecinin rakamıyla hesap yeniden kurulur.
+- Kartta kayıp birimi ya da sızıntı rakamı yoksa: gelir formülü yapılamaz, tasarruf formülüne geçilir (kartın personel ve telefon saati bilgisiyle); o da yoksa "kart eksik" işareti düşülür ve rakam ilk üç görüşmede işletmecinin kendi sayısıyla kurulur.
 - Sen "çok yüksek" dersen: matematik bir kez daha anlatılır, deneme fiyatı hatırlatılır, indirim açılmaz.
 - Fiyat itirazı son on görüşmenin yarısından fazlasında geliyorsa: sorun fiyat değil, teklifi anlatış biçimidir. teklifi-yaz'a işaret gider.
 - Kapanış oranın beklenenin çok üstündeyse: fiyatın düşük demektir. kari-hesapla'ya işaret gider.

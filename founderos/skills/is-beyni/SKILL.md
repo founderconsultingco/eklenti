@@ -12,7 +12,7 @@ Dosya öğrencinin bilgisayarında duruyor, tek dosya, on sekiz bölüm. Bölüm
 
 ## Kurallar
 
-**Silme yok, üstüne yazma yok.** Bir bilgi değiştiğinde eskisi kalıyor ve yanına yeni hali tarihiyle yazılıyor. "Fiyat 40.000" satırının altına "6 Eylül: 45.000" düşüyor. Sebebi şu: doksan gün sonra neyin ne zaman değiştiğini bilmek, o gün ne olduğunu bilmekten değerli.
+**Silme yok, üstüne yazma yok.** Bir bilgi değiştiğinde eskisi kalıyor ve yanına yeni hali tarihiyle yazılıyor. "Kurulum 100.000" satırının altına "6 Eylül: 110.000" düşüyor. Sebebi şu: doksan gün sonra neyin ne zaman değiştiğini bilmek, o gün ne olduğunu bilmekten değerli.
 
 **Her satırın tarihi var.** Tarihsiz satır yazılmıyor.
 
@@ -63,7 +63,7 @@ Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-
 CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, sesli mesaj metni.
 Apify hesabı, programın anahtarı, kalan kredi, harcanan kredi, on kayıtlık denemenin dosyası ve tarihi.
 Claude aboneliğinin aylık tutarı.
-Demo hattının numarası, demo alt hesabı, demo kaydının yeri ve tarihi.
+Tarayıcı demosunun adresi, dosyası, test tarihi ve demo kaydının yeri.
 Ödeme sağlayıcı ve link adresleri, şirket ve vergi levhası durumu, sözleşmenin sürümü ve doldurulma tarihi.
 CRM kurulumu: dokuz aşamanın doğrulandığı, kayıt satırlarının tam listesi, takip zincirinin günleri, aynı numaranın birleştiğinin doğrulandığı.
 Yazan: araclari-kur, musteri-takip-sistemini-kur, aday-listesi-cikar, kanitini-hazirla, onay-belgesini-hazirla, isini-kur (beşinci blok).
@@ -93,7 +93,7 @@ Yazan: degisiklige-karar-ver.
 
 ### 12. Müşteriler
 Her müşteri için ayrı bir alt başlık. Bir müşterinin bu alt başlığının adı bilgi dosyası; modüller "bilgi dosyasına yaz" dediğinde yazılan yer burasıdır, ayrı bir dosya değildir.
-İçinde: adı, işletmesi, başlangıç tarihi, kademe, kurulum ve aylık ücret, kurulum döneminin günü, alınan giriş izinleri, İYS sonucu, karekodun yeri, asistanın kuralları, 0850 numara ve hattın bağlandığı tarih (hat şifresi ve adresi hiçbir dosyaya yazılmaz) ve sesli ajanın ayarları, haftalık kontrol sonuçları, kriz kayıtları, rapor günü raporunun üç sayısı, kapsam dışı kalan parçalar ve sebepleri, aktif mi, kim bağladı.
+İçinde: adı, işletmesi, başlangıç tarihi, kademe, kurulum ve aylık ücret, kurulum döneminin günü, alınan giriş izinleri, İYS sonucu, karekodun yeri, asistanın kuralları, 0850 numara ve hattın bağlandığı tarih (hat şifresi ve adresi hiçbir dosyaya yazılmaz) ve sesli ajanın ayarları, haftalık kontrol sonuçları, kriz kayıtları, rapor günü raporunun üç sayısı, kapsam dışı kalan parçalar ve sebepleri, sıradaki baş ağrısı (rapor günü görüşmesinde müşterinin kendi cümlesi), aktif mi, kim bağladı.
 Ayrıca: aktif müşteri sayısı, ilk müşteri tarihi, müşteri başına haftalık saat.
 Yazan: musteriyi-karsila, musteri-sistemini-kur, yazili-asistani-kur, sesli-ajani-kur, kaybolanlari-geri-getir, yorum-topla, sistemi-kontrol-et, aylik-raporu-hazirla, musteriyi-elde-tut, zor-konusmayi-yonet, onay-belgesini-hazirla, kari-hesapla.
 
@@ -215,8 +215,10 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Kademe 1 içeriği:
 - Kademe 2 içeriği:
 - Kademe 3 içeriği:
-- Kurulum ücreti:
-- Aylık ücret:
+- Kullanılan formül (gelir / tasarruf) ve iki girdisi:
+- Fiyat bandı (kurulum alt-üst, aylık alt-üst):
+- Kurulum ücreti (nişin varsayılanı):
+- Aylık ücret (kurulumun yüzde yirmisi):
 - Karşılaştırma fiyatı:
 - Deneme fiyatı ve üç karşılık:
 - Güvence cümlesinin tam metni:
@@ -269,7 +271,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Aday listesi programı, anahtar, kalan kredi, harcanan kredi:
 - On kayıtlık denemenin dosyası ve tarihi:
 - Yapay zeka aboneliğinin aylık tutarı:
-- Demo hattı numarası, demo alt hesabı, demo kaydının yeri ve tarihi:
+- Tarayıcı demosunun adresi, dosyası, test tarihi ve demo kaydının yeri:
 - Ödeme sağlayıcı ve link adresleri:
 - Şirket ve vergi levhası durumu:
 - Sözleşmenin sürümü ve doldurulma tarihi:
@@ -341,6 +343,8 @@ Tek değişken kuralı: aynı hafta iki değişiklik yazılmışsa o testin veri
 - Kriz kayıtları:
 - Rapor günü raporunun üç sayısı:
 - Kapsam dışı kalan parçalar ve sebepleri:
+- Sıradaki baş ağrısı (rapor günü görüşmesinde müşterinin kendi cümlesi, tarihli):
+- Sonra listesi (kurulum döneminde gelen ek istekler, tarihli; rapor gününden sonra konuşulur):
 - Aktif mi:
 - Kim bağladı:
 

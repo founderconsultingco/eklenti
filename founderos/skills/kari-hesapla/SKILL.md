@@ -53,7 +53,7 @@ O ay hesabına gerçekten geçen para yazılır. Fatura kesilen değil, geçen.
 - Kurulum ücretleri. Bunlar bir kerelik, tekrar etmiyor.
 - Aylık ücretler. Bunlar her ay tekrar ediyor.
 
-Bu ayrım önemli. İki müşteriden 140.000 TL geldiyse ve bunun 80.000'i kurulum ücretiyse (müşteri başına 40.000), gelecek ay tekrar edecek olan 60.000. Kurulum parasını aylık gelir sanmak en sık yapılan hata.
+Bu ayrım önemli. İki müşteriden gelen paranın büyük kısmı kurulum ücretiyse gelecek ay tekrar edecek olan yalnız iki aylık ücrettir; aylık kurulumun beşte biri olduğu için ilk ayın cirosu tekrar eden gelirin birkaç katı görünür. Kurulum parasını aylık gelir sanmak en sık yapılan hata.
 
 ### Gider
 
@@ -61,7 +61,7 @@ Kalemler sırayla:
 - Mali müşavir ücreti.
 - Bağ-Kur primi.
 - Vergi. Rakamı müşavirinden aldın.
-- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı. CRM ve demo hattı ücretsiz, bu satıra yazılmıyor.
+- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı. CRM ve tarayıcı demosu ücretsiz, bu satıra yazılmıyor.
 - Sesli dakika: müşterilerinin sesli asistanının konuştuğu dakikalar, CRM'in ücret ekranından okunur, müşteri başına ayrı. Sesli asistan kurulmadıysa sıfır.
 - Ödeme komisyonu. Her tahsilattan kesilen yüzde.
 - Varsa reklam harcaması, varsa dışarıdan aldığın yardım.
@@ -116,8 +116,8 @@ Aynı zamanda karşılaştırma rakamları güncellenir. Yurt dışından alınm
 
 ## 6. Ne söyler
 
-Ay sonu: "Bu ay hesabına 140.000 TL geçti. İki müşteri: 80.000'i kurulum, yani bir kerelik; 60.000'i aylık, yani tekrar edecek olan. Giderin 34.000. Cebinde kalan 106.000 TL, kâr marjın yüzde yetmiş altı."
-Ciroya sevinirse: "140.000 ciro, 106.000 kâr, ama bunun 80.000'i bir kerelik kurulum parası. Gelecek ay tekrar edecek olan 60.000. Ciro gurur, kâr geçim. Bu ay konuşacağımız rakam ikincisi."
+Ay sonu: "Bu ay hesabına [toplam] geçti. İki müşteri: [tutar] kurulum, yani bir kerelik; [tutar] aylık, yani tekrar edecek olan. Giderin [tutar]. Cebinde kalan [tutar], kâr marjın yüzde [oran]."
+Ciroya sevinirse: "[Ciro] ciro, [kâr] kâr, ama bunun [tutar]'i bir kerelik kurulum parası. Gelecek ay tekrar edecek olan [aylıkların toplamı]. Ciro gurur, kâr geçim. Bu ay konuşacağımız rakam ikincisi."
 Yüksek kâr marjı görürse: "O rakam vergiyi ve primi saymıyor. Hepsi çıktıktan sonrasına bakıyoruz, öbürü kendini kandırmak."
 Sabit gideri karşılamıyorsa: "Tekrar eden gelirin sabit giderini karşılamıyor. Şu an işi ayakta tutan şey kurulum paraları ve onlar tekrar etmiyor. Bu ay tek hedef: bir müşteri daha."
 Maaşlı işten ayrılmak isterse: "Dört müşterin var, evet. Üç aylık yaşam giderin birikti mi? Birikmediyse bu konuşmayı gelecek ay yaparız."

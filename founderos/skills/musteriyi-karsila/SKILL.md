@@ -100,7 +100,7 @@ Gündem dokuz madde, bu sırayla:
 6. İletişim düzeni: tek kanal, haftalık görüşme günü ve hangi pencerede yapılacağı.
 7. Paranın ve kaydın üç kalemi, tek nefeste: toplu mesaj için gereken resmi izin kaydının (İYS) ve mesajların altındaki tanıtıcı satır için vergi numarasının ya da ticaret sicil numarasının kimde olduğu (müşteri kendi belgelerinden bulur, sen istemezsin, o kutuyu o doldurur); WhatsApp'ın işletmeden mesaj başına aldığı ücretin müşterinin kendi hesabından çıktığı ve ilk ayda gönderim tavanının dört yüz on kişi olduğu; şablon onayının Meta'dan birkaç gün sürebildiği ve onay gelmeden eski müşteriye mesajın gitmeyeceği.
 8. Telefon tarafı: işletmenin telefon altyapısına bakılır; uygunsa 0850 numara başvurusu müşteri adına burada başlatılır ve hat bilgilerinin destek adresine nasıl gideceği söylenir; uygun değilse sesli karşılama kapsam dışı yazılır ve söylenir.
-9. Beklenti: ne zaman ne olacak.
+9. Beklenti: ne zaman ne olacak; ve kapsam sesli: onay belgesindeki "ne aldınız" ve "neyi yapmıyorum" başlıkları bir kez okunur, kurulum döneminde yeni parça eklenmeyeceği, isteklerin sonra listesine yazılıp rapor gününden sonra konuşulacağı söylenir.
 
 Metin onayının sırası şudur: bu görüşmede hazır paketten çıkan şablonlar onaylanır (eski müşteri mesajları, yorum isteği, hatırlatmalar). Yazılı asistanın kendi metinleri ikinci günde gönderilir, onayı üçüncü günden önce gelir.
 

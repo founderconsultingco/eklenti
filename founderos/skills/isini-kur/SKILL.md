@@ -251,7 +251,7 @@ Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama dem
 
 Doldurulmuş örnek, tam zamanlı biri için:
 
-Ayda 120.000 TL istiyorsun. Bir müşteri ayda 30.000 TL getiriyor, yani 4 müşteri lazım. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 50 arama yaparsan 20 iş günü, yani bir ay. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın sonunda çıkıyor.
+Ayda 120.000 TL istiyorsun. Bir müşteri ayda 30.000 TL getiriyor (aylık ücret; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani 4 müşteri lazım. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 50 arama yaparsan 20 iş günü, yani bir ay. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın sonunda çıkıyor.
 
 Aynı hesap işin yanında çalışan biri için başka bir yere çıkıyor. Günde 10 arama yapan birinde aynı zincir çok daha uzun sürüyor; o yüzden işin yanında çalışan birinin doksan günlük hedefi dört müşteri değil, bir ya da iki müşteri. Bir müşteri bu işin çalıştığının kanıtı ve doksan gün için yeterli.
 
@@ -339,7 +339,7 @@ Bugünden itibaren:
 - İş e-posta hesabı, ilk ay 20 dolar, sonra 12 dolara düşürülür.
 
 CRM açıldığı gün (başlangıç görüşmesinden sonra):
-- Demo hattı: sistemin nasıl çalıştığını göstermek için sana açılan numara; ücreti sana ait değil.
+- Sesli dakika: müşterinin sesli asistanı kurulursa konuşma dakikası; ilk müşteriye kadar sıfır, rakamı CRM'in ücret ekranından okunur.
 
 Şirket kurulunca, yani ilk "evet"ten sonra:
 - Mali müşavir ve Bağ-Kur. Rakamı müşavirinden aldın, tabloya onu yazarsın.
@@ -352,9 +352,9 @@ Bölümlerin toplamı ayrı ayrı yazılır, çünkü hangi ay cebinden ne çık
 
 On ikinci sorunun cevabı bu tabloyu karşılamıyorsa liste kısılır. Nasıl kısılacağı bugün yazılır, o güne bırakılmaz. Üç basamak var ve hangisinde olduğunu senin verdiğin rakam belirler, ben sormam.
 
-**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Sadece iki kalem alınır: Claude aboneliği ve aday listesi çıkaran programın ücretsiz planı. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Demo hattı CRM'le birlikte zaten ücretsiz geliyor; o güne kadar kendi telefonundan yapılan canlı gösterim kullanılır. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
+**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Sadece iki kalem alınır: Claude aboneliği ve aday listesi çıkaran programın ücretsiz planı. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
 
-**Orta basamak: üç ile altı aylık masrafı karşılıyor.** Tablonun ilk iki bölümü alınır, demo hattı CRM'le gelir, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
+**Orta basamak: üç ile altı aylık masrafı karşılıyor.** Tablonun ilk iki bölümü alınır, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
 
 **Üst basamak: altı aydan fazlasını karşılıyor.** Değişen tek şey, şirket kuruluş belgelerinin beşinci blokta tamamen hazır durması ve ilk "evet" günü tek telefonla açılması. Fazla para hiçbir kalemi öne çekmez; erken alınan araç sahaya çıkışı hızlandırmıyor.
 

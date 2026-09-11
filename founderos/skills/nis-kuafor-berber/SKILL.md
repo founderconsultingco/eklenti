@@ -7,7 +7,7 @@ description: "Sadece randevulu kuafor ve berber nisinin karti: rakamlar, itirazl
 # Randevulu kuaför ve berber
 
 
-**Kapsam.** Randevuyla çalışan kadın kuaförü salonları ve premium erkek berberleri. Saç kesimi, boya, fön, kalıp, gelin saçı, sakal tıraşı gibi klasik kuaförlük hizmetleri dahil. Botoks, dermapen, karbon peeling, lazer epilasyon gibi tıbbi/estetik işlem yapan "güzellik merkezleri" bu nişin dışında, çünkü onlar ayrı bir sağlık mevzuatına tabi (aşağıda mevzuat kısmında). Google Haritalar'da "Kuaför", "Bayan Kuaförü", "Erkek Kuaförü", "Berber", bazen "Güzellik Salonu" kategorisiyle geçiyorlar.
+**Kapsam.** Randevuyla çalışan kadın kuaförü salonları ve premium erkek berberleri. Saç kesimi, boya, fön, kalıp, gelin saçı, sakal tıraşı gibi klasik kuaförlük hizmetleri dahil. Botoks, dermapen, karbon peeling, lazer epilasyon gibi tıbbi/estetik işlem yapan "güzellik merkezleri" bu nişin dışında, çünkü onlar ayrı bir sağlık mevzuatına tabi (aşağıda mevzuat kısmında). Google Haritalar'da "Kuaför", "Bayan Kuaförü", "Erkek Kuaförü", "Berber", bazen "Güzellik Salonu" kategorisiyle geçiyorlar. Müşteri değeri şartı: bir koltuk saati bu nişte düşük kaldığı için kurulum ücreti formülü ancak çok koltuklu, birden fazla çalışanı olan, randevu defteri dolu salonlarda teslim maliyetini karşılıyor. İlk odak yalnız onlar; tek koltuklu berber ve küçük mahalle kuaförü kapsam dışı, uygunluk puanında C.
 
 Müşteri yolculuğu: randevu. Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
 

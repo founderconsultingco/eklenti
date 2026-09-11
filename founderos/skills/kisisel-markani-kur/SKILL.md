@@ -110,7 +110,7 @@ Siteye: bugün çekilen fotoğraf sayfanın Kim bölümüne konur ve sayfa yenid
 
 - Fotoğrafın yoksa: gün durmaz, profiller doldurulur, fotoğraf ertesi sabah eklenir. Ama bir gün içinde eklenir.
 - Instagram hesabın hiç yoksa: bugün açılır ve "yeni hesap" işareti konur. Mesaj başlangıcı yine sahanın ilk günü, ama günde beş yerine iki üç mesajla başlanır.
-- WhatsApp Business ikinci bir numara istiyorsa: demo hattı bu iş için kullanılmaz, o ayrı. Kişisel numaranı kullanabilirsin ama bunu İş Beyni'ne yazarız; ikinci hat alınca değişir.
+- WhatsApp Business ikinci bir numara istiyorsa: kişisel numaranı kullanabilirsin ama bunu İş Beyni'ne yazarız; ikinci hat alınca değişir.
 - İş adı henüz kesinleşmediyse: profiller kendi adınla açılır, iş adı sonra eklenir. Ad bekleyip gün kaybedilmez.
 - Sağlık nişindeysen: biyografide tedavi sözü, hasta görseli, "en iyi" gibi iddialar geçmez. Kartın yasal sınırlar bölümü senin profilin için de okunur.
 
