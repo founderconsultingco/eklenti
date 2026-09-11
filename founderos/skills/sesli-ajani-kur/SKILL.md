@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: sesli-ajani-kur
-description: Müşterinin ikinci dalgası. Gelen aramayı karşılayan sesli ajan.
+description: "Müşterinin ikinci dalgası. Gelen aramayı karşılayan sesli ajan."
 ---
 
 # sesli-ajani-kur

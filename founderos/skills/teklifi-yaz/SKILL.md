@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: teklifi-yaz
-description: Birinci gün teklifin gövdesi, üçüncü gün kademeler. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk. Teklif metni ya da ne satıldığı konuşulduğunda.
+description: "Birinci gün teklifin gövdesi, üçüncü gün kademeler. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk. Teklif metni ya da ne satıldığı konuşulduğunda."
 ---
 
 # teklifi-yaz

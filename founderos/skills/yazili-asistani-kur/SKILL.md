@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: yazili-asistani-kur
-description: Müşterinin ikinci ve üçüncü günü. WhatsApp ve Instagram mesaj asistanı: karşılama, değerlendirme ve yönlendirme, insana devir; artı dört takip zinciri (otomatik takip, gelmeyeni geri kazanma, tekliften satışa takip, görüşme sonrası takip) ve tek zincir kuralı.
+description: "Müşterinin ikinci ve üçüncü günü. WhatsApp ve Instagram mesaj asistanı: karşılama, değerlendirme ve yönlendirme, insana devir; artı dört takip zinciri (otomatik takip, gelmeyeni geri kazanma, tekliften satışa takip, görüşme sonrası takip) ve tek zincir kuralı."
 ---
 
 # yazili-asistani-kur

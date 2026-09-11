@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: cevap-gelmiyor
-description: Öğrenci "kimse cevap vermedi", "hiç dönüş yok" dediğinde. Yapılan işi beş kontrolle inceler, tek gerekçeli değişiklik önerir; motivasyon konuşması yapmaz.
+description: "Öğrenci \"kimse cevap vermedi\", \"hiç dönüş yok\" dediğinde. Yapılan işi beş kontrolle inceler, tek gerekçeli değişiklik önerir; motivasyon konuşması yapmaz."
 ---
 
 # cevap-gelmiyor

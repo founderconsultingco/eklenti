@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: kaybolanlari-geri-getir
-description: Müşterinin duran havuzu: eski müşteri listesinin uyandırılması, randevu ya da teklif çıkarma. Artı hizmet sonrası üç devam zinciri: tekrar randevu, ek hizmet, referans.
+description: "Müşterinin duran havuzu: eski müşteri listesinin uyandırılması, randevu ya da teklif çıkarma. Artı hizmet sonrası üç devam zinciri: tekrar randevu, ek hizmet, referans."
 ---
 
 # kaybolanlari-geri-getir

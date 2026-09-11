@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteriyi-karsila
-description: İlk ödeme geldiğinde, müşterinin birinci günü. Karşılama, erişimler, on dört sorulu karşılama formu (müşteri yolculuğu ve tekrar aralığı dahil), yirmi bir günlük takvim.
+description: "İlk ödeme geldiğinde, müşterinin birinci günü. Karşılama, erişimler, on dört sorulu karşılama formu (müşteri yolculuğu ve tekrar aralığı dahil), yirmi bir günlük takvim."
 ---
 
 # musteriyi-karsila

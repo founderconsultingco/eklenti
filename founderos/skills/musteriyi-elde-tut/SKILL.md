@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteriyi-elde-tut
-description: Müşteri kazanıldıktan sonra sürekli. Haftalık görünür iş, kademe yükseltmesi.
+description: "Müşteri kazanıldıktan sonra sürekli. Haftalık görünür iş, kademe yükseltmesi."
 ---
 
 # musteriyi-elde-tut

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: is-modeli
-description: Ne sattigimizin tek kaynagi: AI Musteri Donusum Sistemi, uc ajan, on uc islev, yedi altyapi parcasi, iki musteri yolculugu, kademeler ve sinirlar. Teklif, teslimat, rapor ve sozlesme yazilirken ve 'ne satiyoruz' sorulunca acilir.
+description: "Ne sattigimizin tek kaynagi: AI Musteri Donusum Sistemi, uc ajan, on uc islev, yedi altyapi parcasi, iki musteri yolculugu, kademeler ve sinirlar. Teklif, teslimat, rapor ve sozlesme yazilirken ve 'ne satiyoruz' sorulunca acilir."
 ---
 
 # İş modeli (ne satıyoruz)

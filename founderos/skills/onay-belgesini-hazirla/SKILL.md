@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: onay-belgesini-hazirla
-description: "Evet dedi", "kabul etti", "parayı gönderecek" dendiğinde kapanış mesajı ve onay belgesi. Ödeme yolu ve sözleşme üçüncü gün kurulur.
+description: "Öğrenci \"evet dedi\", \"kabul etti\", \"parayı gönderecek\" dediğinde kapanış mesajı ve onay belgesi. Ödeme yolu ve sözleşme üçüncü blokta kurulur."
 ---
 
 # onay-belgesini-hazirla

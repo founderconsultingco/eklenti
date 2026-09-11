@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: zihniyet
-description: Birinci gunun ikinci adimi. Maraton zihniyeti, sosyal medya illuzyonu, zorluk kabulu, harcama disiplini ve sureklilik. Tanismadan sonra, hedef konusulmadan once acilir.
+description: "Birinci gunun ikinci adimi. Maraton zihniyeti, sosyal medya illuzyonu, zorluk kabulu, harcama disiplini ve sureklilik. Tanismadan sonra, hedef konusulmadan once acilir."
 ---
 
 # zihniyet

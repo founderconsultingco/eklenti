@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-cam-balkon
-description: Sadece cam balkon, PVC pencere ve panjur nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece cam balkon, PVC pencere ve panjur nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Cam balkon, PVC pencere, panjur

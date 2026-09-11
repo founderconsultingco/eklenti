@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-oto-servis
-description: Sadece oto servis ve cam filmi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece oto servis ve cam filmi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Oto servis ve cam filmi

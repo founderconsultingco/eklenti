@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: ekran-dili
-description: Ingilizce arayuzlerde cikan genel kelimelerin Turkce karsiliklari. Ogrenciye bir ekranda dugme tarif ederken acilir.
+description: "Ingilizce arayuzlerde cikan genel kelimelerin Turkce karsiliklari. Ogrenciye bir ekranda dugme tarif ederken acilir."
 ---
 
 # Ekran dili (İngilizce arayüzler)

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-kuafor-berber
-description: Sadece randevulu kuafor ve berber nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece randevulu kuafor ve berber nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Randevulu kuaför ve berber

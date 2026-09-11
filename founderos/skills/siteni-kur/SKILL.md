@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: siteni-kur
-description: Birinci gün tanıtım sayfası İş Beyni'nden tam kurulur, iki genişlikte kontrol edilir ve görülür; ikinci blokta yayına alınır. Tek sayfalık, on bölümlü tanıtım sayfası; 'sitem', 'sayfam', 'landing page' dendiğinde de açılır.
+description: "Birinci gün tanıtım sayfası İş Beyni'nden tam kurulur, iki genişlikte kontrol edilir ve görülür; ikinci blokta yayına alınır. Tek sayfalık, on bölümlü tanıtım sayfası; 'sitem', 'sayfam', 'landing page' dendiğinde de açılır."
 ---
 
 # siteni-kur
@@ -19,20 +19,20 @@ Neden tek sayfa: çok sayfalı site yapmak günler alıyor ve hiçbir işe yaram
 Şunlar bu modülün işi değildir:
 - Marka kiti (markani-kur, dün). Sayfanın renkleri, yazı tipleri ve düzeni oradan gelir.
 - Ön görüşme videosu (satis-videosunu-cek, aynı gün, siteden hemen sonra). O video bu sayfaya değil, ön görüşme sayfasına girer.
-- Takvimin kendisi ve ayarları (aynı gün, gorusmeye-getir). Bu modül sayfada takvimin yerini açar, takvim bugün, bu modülden sonra açılıp bağlanır.
+- Takvimin kendisi ve ayarları (gorusmeye-getir, CRM açıldığı gün). Bu modül sayfada düğmeyi WhatsApp'a bağlar; takvim CRM açıldığı gün gelir ve düğme o gün takvime döner.
 - Blog, hizmet sayfaları, "hakkımızda". Yok.
 
 Pazarlamadaki karşılığı: sitenin işi seni satmak değil, şüpheyi kaldırmak.
 
 ## 2. Ne zaman çalışır
 - Birinci gün: tanıtım sayfası tam olarak kurulur, iki genişlikte kontrol edilir, öğrenci gözüyle görür. Canlıya çıkmaz. Bir saat; yarısı kurmak, yarısı bakıp düzeltmek.
-- İkinci gün, araçlar kurulduktan sonra, bir saat: sayfa yayına alınır, takvim sayfaya yerleşir. Sayfayı FounderOS kurar, sen bu pencereden bakarsın; hiçbir adımda komut satırı yok.
+- İkinci blok, araçlar kurulduktan sonra, bir saat: sayfa yayına alınır. Sayfayı FounderOS kurar, sen bu pencereden bakarsın; hiçbir adımda komut satırı yok.
 - İlk kanıt hikâyesi çıkınca üçüncü kez: güven satırı ve bedel bölümü gerçek rakama döner, müşterinin sözü ve örnek çalışma bölümleri eklenir. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa ikinci gün halinde kalmaz.
 
 ## 3. Ne okur
 
 Marka kitinden, İş Beyni'nin altıncı bölümündeki dosya haritası üzerinden: renk kodları, yazı tipleri, logo dosyalarının yolu, `ana-gorsel`, bağlantı önizlemesi. Öğrenci hiçbir şey yüklemez; FounderOS dosyaları haritadan bulur.
-İş Beyni'nden: iş adı, Dönüşüm Cümlesi, sistemin adı, şehir, kanal yolu, bütçe merdiveninin hangi basamağında olduğun, alan adı, takvim adresi, WhatsApp numarası. Takvim adresi sabah İş Beyni'nde boş duruyor; takvim bugünün ikinci yarısında gorusmeye-getir ile kuruluyor ve adresi o zaman geliyor. Sabah sayfada sadece yerini açıyorsun.
+İş Beyni'nden: iş adı, Dönüşüm Cümlesi, sistemin adı, şehir, kanal yolu, bütçe merdiveninin hangi basamağında olduğun, alan adı, WhatsApp numarası, varsa takvim adresi. Takvim adresi CRM açılana kadar İş Beyni'nde boş durur; o güne kadar düğme WhatsApp'a gider, CRM açıldığı gün gorusmeye-getir adresi verir ve düğme değişir.
 Niş kartından: sızıntı kanıtı, işletmecinin sözlüğü, üç itiraz, yasal sınırlar.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, müşterinin müşterisi, üç korku. Sayfanın başlığı birinci başlıktan, ilk bölüm üçüncü başlıktan, kanıt bölümü onuncu başlıktan çıkar. Hangi cümlenin hangi başlıktan geldiği öğrenciye söylenir.
 Doksan Gün Planı'ndan: kancalar ve sonuç tanımı.
@@ -70,7 +70,7 @@ Sayfa "hazır" demek için görünmesi yetmez. Beş kontrol, hepsi ekranda göst
 
 1. Metinler doğru: konumlandırma cümlesi, kayıp, parçalar İş Beyni'ndekiyle aynı; uydurma rakam, uydurma yorum yok.
 2. İletişim yolu çalışıyor: telefon numarası doğru ve aranabiliyor, WhatsApp bağlantısı açılıyor; deneme mesajı atılıp gelmiş.
-3. Bağlantılar çalışıyor: yayındaysa takvim bağlantısı bir randevu ekranı açıyor, sayfadaki her düğme bir yere gidiyor.
+3. Bağlantılar çalışıyor: düğme WhatsApp'ı (CRM açıldıysa randevu ekranını) açıyor, sayfadaki her düğme bir yere gidiyor; boş bağlantı yok.
 4. Telefonda okunuyor: yazı büyüklüğü, düğme genişliği, yana kayma yok.
 5. Türkçe harfler doğru çıkıyor.
 
@@ -102,7 +102,7 @@ Açılışta bir görsel var ve bu görsel sayfanın en pahalı yeri. Öncelik s
 
 **3. Dert.** Üç paragraf, kart değil düz yazı. İdeal müşteri sayfasının üçüncü başlığından: adayın kendi cümleleriyle, düzeltilmeden. "Aradım açmadılar" cümlesi orada nasıl yazıyorsa öyle. Bu bölüm sayfanın en çok okunan yeri, çünkü adam kendi cümlesini okuyor.
 
-**4. Bedel.** Kartın kayıp birimi ve rakamı, tek hesap: "Sezonda günde elli çağrı, üçte biri açılmıyor; açılmayan çağrı ortalama 1.250 lira." Bu rakamlar niş kartındandır ve sayfada kaynağı yazar: "sektör ortalaması", "kendi ölçümümüz" değil. Müşterinin yirmi birinci gün raporu gelince bu bölüm onun gerçek rakamıyla değişir ve kaynak "müşterimizin raporu" olur.
+**4. Bedel.** Kartın kayıp birimi ve rakamı, tek hesap: "Sezonda günde elli çağrı, üçte biri açılmıyor; açılmayan çağrı ortalama 1.250 lira." Bu rakamlar niş kartındandır ve sayfada kaynağı kartın Kaynaklar bölümünde yazdığı şekilde yazar; kartta kaynak yoksa rakam da yoktur, bölüm kayıp biriminin adıyla rakamsız kurulur. "X'in yayınladığı rapor" gibi bir kaynak kartta aynen geçmiyorsa sayfaya yazılmaz. Müşterinin yirmi birinci gün raporu gelince bu bölüm onun gerçek rakamıyla değişir ve kaynak "müşterimizin raporu" olur.
 
 **5. Ne yapıyoruz.** Sistemin adı ve teslimat kontrolünden geçmiş parçalar. Her parça tek cümle, sonuç diliyle: "Telefon açılmayınca otuz saniye içinde WhatsApp'tan mesaj gidiyor." Araç adı yok, "yapay zekâ" kelimesi yok, teknik kelime yok. Bu bölümde kart yerine sıra kullanılır: bir çağrı geldiğinde ne olduğu, adım adım.
 
@@ -168,7 +168,7 @@ Sayfa bir kere kurulur, bir kere bakılır, bir kere düzeltilir ve biter. Sonsu
 
 **1. Malzeme toplanır, soru sorulmaz.** İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur.
 
-**2. Sayfa tam yazılır.** On bölüm, gerçek metin, marka kitinin dosyalarıyla, tek HTML dosyası, dış bağımlılık yok. `site/[is-adi].html` olarak klasöre yazılır. Yarım yazılıp "devamı sonra" denmez.
+**2. Sayfa tam yazılır.** On bölüm, gerçek metin, marka kitinin dosyalarıyla, tek HTML dosyası, dış bağımlılık yok. `site/[is-adi].html` olarak klasöre yazılır. Yarım yazılıp "devamı sonra" denmez. Kitin dosyaları gerçekten kullanılır: üst çubukta `marka/logo/logo-yatay-acik` (koyu bantta koyu hali), açılışta `marka/site-gorselleri/ana-gorsel`, bağlantı önizlemesi olarak `baglanti-onizlemesi-1200x630` (sayfanın başlığındaki og:image satırı), sekmede favicon; dosyalar sayfanın içine gömülür ki tek dosya olarak taşınsın. Kitte olmayan görsel için boş kutu konmaz, o bölüm görselsiz kurulur. Sayfadaki her WhatsApp bağlantısı İş Beyni'ndeki telefon numarasıyla doludur; boş `wa.me/` bağlantısı sayfaya yazılmaz, numara yoksa önce sorulur.
 
 **3. Önizleme ve tek bakış.** Sayfa ekranda kart olarak açılır (öğrenci tıklar, görür), FounderOS aynı sayfaya iki genişlikte bakar: telefon ve masaüstü. Baktığı şeyler: slop kontrolünün beş sorusu, okunabilirlik oranı, Türkçe karakterler, taşma, tek düğme, açılış görseli. Bulduğu her şeyi tek listede toplar.
 
@@ -194,7 +194,7 @@ Sıra şu:
 4. Bitince "Visit" (siteyi aç). Canlı adres açılır.
 5. Sol menüde "Settings", içinde "Domains" (internet adresleri): adresini ekle. Servis birkaç satır verir; satırları FounderOS okur, alan adını aldığın yerde nereye yazacağını tek tek söyler.
 
-Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsApp'a gidiyor mu, telefonda düzgün mü. Sonra takvim: gorusmeye-getir takvimi kurunca düğmeler oraya bağlanır; takvim bugün yoksa düğme WhatsApp'ta kalır ve İş Beyni'ne yazılır.
+Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsApp'a gidiyor mu, telefonda düzgün mü. Düğme bugün WhatsApp'a gider; CRM açıldığı gün gorusmeye-getir takvimi kurunca düğmeler oraya bağlanır, o güne kadar bu İş Beyni'nde yazılıdır.
 
 Şifre, kart bilgisi ve müşteriye ait özel bilgi hiçbir adımda sohbete yazılmaz.
 
@@ -212,7 +212,7 @@ Bu bölüm bütçe merdiveninin hangi basamağında olduğuna göre değişiyor.
 
 **Orta ve üst basamakta.** Alan adı bugün alınır. İş adının sade hali, tire yok, rakam yok, uzun değil. FounderOS iki seçenek verir.
 
-Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve altıncı günden itibaren her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
+Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve saha açıldıktan sonra her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
 
 Aynı gün üçüncü bir iş daha var ve atlanırsa sahaya çıktığın gün anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** Takip e-postaları ve randevu hatırlatmaları CRM'den gidiyor; adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıyor ve büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menüde "Settings", içinde "Email Services" (e-posta ayarları), oradan gönderen alan adını ekleyip alan adını aldığın yere birkaç satır giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
 
@@ -226,7 +226,7 @@ Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin 
 
 O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki altıncı günde şaşırma.
 
-Yeni alan adından hemen yüz e-posta atılmaz. Adres alıştırılır: ilk gün on beş, sonra yirmi, sonra otuz. Alıştırmanın başlayabilmesi için doğrulamanın yeşile dönmüş olması gerekiyor; dönmeden atılan her e-posta hem boşa gider hem de adresin itibarını düşürür. Bu sayı adaya-mesaj-yaz'da yazılı; orta ve üst basamakta alıştırma altıncı gün başlar, alt basamakta alan adının alındığı gün başlar.
+Yeni alan adından hemen yüz e-posta atılmaz. Adres alıştırılır: ilk gün on beş, sonra yirmi, sonra otuz. Alıştırmanın başlayabilmesi için doğrulamanın yeşile dönmüş olması gerekiyor; dönmeden atılan her e-posta hem boşa gider hem de adresin itibarını düşürür. Bu sayı adaya-mesaj-yaz'da yazılı; orta ve üst basamakta alıştırma sahanın ilk günü başlar, alt basamakta alan adının alındığı gün başlar.
 
 ## 6. Ne söyler
 
@@ -258,20 +258,20 @@ Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-po
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
 - Birinci günde sayfa bir saati aşarsa: ikinci düzeltme turu atlanır, ilk turun haliyle kapanır. Cümle düzeltmeleri yarın sabaha kalır; sayfa yine tam ve on bölümlüdür.
 - Açılış görseli yoksa: sayfa görselsiz kurulur ve İş Beyni'ne "açılış görseli bekliyor: fotoğraf" yazılır. kisisel-markani-kur fotoğrafı getirince açılış yeniden kurulur.
-- Takvim bugün kurulamazsa: düğmeler geçici olarak WhatsApp'a gider ve bu İş Beyni'ne yazılır.
+- CRM açıldığı gün takvim kurulamazsa: düğmeler WhatsApp'ta kalır, ertesi gün tekrar denenir ve bu İş Beyni'ne yazılır.
 - İş e-postası kurulamazsa: mevcut e-postanla devam edilir ve günlük gönderim sayısı yarıya iner.
 - Sağlık nişindeysen: kartın yasal sınırlar bölümü sayfaya uygulanır. Tedavi sözü, hasta görseli, öncesi sonrası düzeni ve "kesin sonuç" gibi iddialar sayfada geçmez.
 - Ön görüşme sayfasının yeri bugün açılamazsa: üçüncü günün sabahında açılır, o gün uzar.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: aynı gün, siteden hemen sonra ön görüşme sayfası, randevu takvimi ve hatırlatma akışı.
+Sıradaki: aynı gün, pazar doğrulaması (nisi-dogrula arka planda) ve akşam tanıdık listesi. Ön görüşme sayfası, takvim ve hatırlatma akışı CRM açıldığı gün.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - İkinci gün bitti, sayfa yayında değil: üçüncü günün sabah bloğunun ilk işi olur, sonrası ertelenmez.
 - Alan adı alınmadı ve basamak orta ya da üst: ücretsiz adres kullanılır, işaret açık kalır.
 - Alt basamaktasın ve alan adı alınmadı: bu işaret açılmaz, çünkü doğru olan bu. Alan adı işareti ilk kanıt hikâyesi çıktığı gün açılır.
-- İkinci gün bitti, takvim sayfaya gömülmedi: üçüncü günün ilk on beş dakikası.
+- İkinci blok bitti, sayfa yayına çıkmadı: üçüncü bloğun ilk on beş dakikası; saha ertelenmez.
 - İş e-postası kurulmadı: günlük e-posta hedefi yarıya iner.
 - İlk kanıt hikâyesi çıktı: açılıştaki güven satırı gerçek sayıya döner, bedel bölümü müşterinin raporuyla değişir, müşterinin sözü ve örnek çalışma bölümleri eklenir. Alt basamaktaysan aynı gün alan adı alınır, ücretsiz adres yenisine yönlendirilir ve iş e-postası kurulur.
 - Video çekildi: açılış görseli video kapağı olur.

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeyi-yonet
-description: Satış görüşmesinin kendisi, dördüncü günden itibaren. Triyaj, keşif, sunum, fiyat, kapanış.
+description: "Satış görüşmesinin kendisi, dördüncü günden itibaren. Triyaj, keşif, sunum, fiyat, kapanış."
 ---
 
 # gorusmeyi-yonet

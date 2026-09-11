@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: ideal-musteriyi-cikar
-description: Nis karari onaylandiktan hemen sonra, teklif yazilmadan once calisir. Ayrica 'ideal musterim kim', 'kime yaziyorum', 'bu cumle kime sesleniyor', 'musteri profili' dendiginde ve onuncu gorusme tamamlandiginda acilir. Secilen sektorun icindeki tek kisiyi on iki baslikta cikarir: dertleri, korkulari, satin alma tetikleyicisi, karar bicimi, ne satin almaz. Teklif, site, mesaj ve video bu sayfadan besleniyor.
+description: "Nis karari onaylandiktan hemen sonra, teklif yazilmadan once calisir. Ayrica 'ideal musterim kim', 'kime yaziyorum', 'bu cumle kime sesleniyor', 'musteri profili' dendiginde ve onuncu gorusme tamamlandiginda acilir. Secilen sektorun icindeki tek kisiyi on iki baslikta cikarir: dertleri, korkulari, satin alma tetikleyicisi, karar bicimi, ne satin almaz. Teklif, site, mesaj ve video bu sayfadan besleniyor."
 ---
 
 # ideal-musteriyi-cikar

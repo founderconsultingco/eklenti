@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-guzellik-salonu
-description: Sadece guzellik salonu ve guzellik merkezi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece guzellik salonu ve guzellik merkezi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Güzellik salonu ve güzellik merkezi

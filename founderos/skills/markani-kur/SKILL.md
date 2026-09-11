@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: markani-kur
-description: Birinci gün. İş adı, konumlandırma, logo, renk, yazı tipi; on panoluk görsel sistem ve marka klasörüne yazılan gerçek dosyalar.
+description: "Birinci gün. İş adı, konumlandırma, logo, renk, yazı tipi; on panoluk görsel sistem ve marka klasörüne yazılan gerçek dosyalar."
 ---
 
 # markani-kur
@@ -132,13 +132,13 @@ Adımlar:
 - `sembol.svg` ve `sembol-seffaf.png`: başka bir görselin üstüne.
 - `sosyal-profil.png`, 1000x1000: Instagram ve WhatsApp profili. Daire kırpımına güvenli. Uzun iş adı küçük daireye sıkıştırılmaz; sembol ya da kısa hal kullanılır, hangisi okunuyorsa.
 - `favicon.svg`, `favicon-32.png`: tarayıcı sekmesi.
-- `eposta-logo.png`, genişlik 240: e-posta imzası.
+- `eposta-logo.png`, genişlik 240: e-posta imzası. Bu dosya yalnız burada durur, kurumsal klasöründe kopyası yoktur.
 - `logo-tek-renk.svg`: siyah beyaz baskı ve damga.
 
-**`marka/site/`**
+**`marka/site-gorselleri/`** (sayfanın kendisi `site/` klasöründedir; ikisi karışmasın diye bu klasörün adı farklıdır)
 - `ana-gorsel.png` ve mobil hali: sayfanın ilk ekranı.
 - `baglanti-onizlemesi-1200x630.png`: link paylaşıldığında görünen kare. Bu dosya olmadan paylaşılan link boş bir kutu gösteriyor ve amatör duruyor.
-- `ikonlar/` içinde sekiz ikon, ayrı ayrı.
+- Sekiz ikon, `ikon-` önekiyle aynı klasörde, alt klasör yok.
 - `gorsel-aciklamalari.md`: her görsel için tek satır Türkçe açıklama. Görme engelli ziyaretçi ve arama motoru bunu okuyor.
 
 **`marka/sosyal/`**
@@ -150,7 +150,7 @@ Adımlar:
 - `marka-karti.pdf`: tek sayfada logo, renk kodları, yazı tipi adları, temel kurallar. Kitin kendisi değil, cebe giren hali.
 - `kartvizit-on.pdf`, `kartvizit-arka.pdf`: baskı ölçüsüyle.
 - `eposta-imzasi.html` ve görünüşü.
-- `onay-belgesi-kapak.pdf`: müşteriye giden belgenin başlığı.
+- `onay-belgesi-kapak.pdf`: müşteriye giden belgenin başlığı. Tek sayfa, bir megabayttan küçük; büyük çıkarsa görsel sıkıştırılıp yeniden yazılır.
 
 Üç kural bu klasörler için:
 

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: inanc-degisimleri
-description: On sekiz inanc degisimi cumlesi. Sadece vazgecme isareti geldiginde, rakam gosterildikten sonra acilir.
+description: "On sekiz inanc degisimi cumlesi. Sadece vazgecme isareti geldiginde, rakam gosterildikten sonra acilir."
 ---
 
 # On sekiz inanç değişimi (bankası)

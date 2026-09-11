@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-tadilat
-description: Sadece mutfak-banyo tadilat ve ic mimarlik nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece mutfak-banyo tadilat ve ic mimarlik nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Mutfak-banyo tadilat ve iç mimarlık

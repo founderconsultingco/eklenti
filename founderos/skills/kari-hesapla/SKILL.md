@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: kari-hesapla
-description: Ayda bir. Gelir, gider, kâr marjı, müşteri başına kâr.
+description: "Ayda bir. Gelir, gider, kâr marjı, müşteri başına kâr."
 ---
 
 # kari-hesapla

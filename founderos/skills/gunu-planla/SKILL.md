@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gunu-planla
-description: Her sabah, saha açıldıktan sonra. Dünü tek cümleyle okur, o günün tek işini, sayılarını ve sırasını verir.
+description: "Her sabah, saha açıldıktan sonra. Dünü tek cümleyle okur, o günün tek işini, sayılarını ve sırasını verir."
 ---
 
 # gunu-planla
@@ -71,7 +71,7 @@ Plan "sabah" diyorsa sabah bloğunu kastediyor. Nişin kanal ve zaman bölümü 
 
 Gün şu sırayla geçer ve bu sıra değişmez:
 
-**Sabah bloğu: önce denetim, sonra liste.** Plan beş dakikada verilir, hemen ardından o günün derin denetimleri yapılır. Tam zamanlıda beş aday, işin yanında üç. Denetim bitmeden aranacak liste kilitlenmez, çünkü denetimsiz aday aranmıyor. Denetimler bitince bugünün saha listesi açılır: üstte dün cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda denetimsizler. Sen sıralamıyorsun, sıra hazır geliyor. Dünkü cevaplara dönüş ve e-posta takiplerinin onayı da bu blokta biter.
+**Sabah bloğu: önce denetim, sonra liste.** Plan beş dakikada verilir, hemen ardından o günün derin denetimleri yapılır. Tam zamanlıda beş aday, işin yanında üç; bunlar günün ilk aramaları. Kalan temaslar hızlı denetimle gider, hızlı denetimi olmayan aday listeye girmez. Denetim bitmeden aranacak liste kilitlenmez. Denetimler bitince bugünün saha listesi açılır: üstte dün cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda denetimsizler. Sen sıralamıyorsun, sıra hazır geliyor. Dünkü cevaplara dönüş ve e-posta takiplerinin onayı da bu blokta biter.
 
 **Önce satış.** Saha bloğunun ilk işi temas bloğudur. Telefon yolundaysan aramalar nişin söylediği yoğun saatte yapılır, çoğu nişte bu sabahın ve öğlenin içine düşüyor. Bu blok bitmeden başka bir şey açılmaz.
 
@@ -132,7 +132,7 @@ Yapılacak tek şey: ertesi sabah normal sayıya dönmek. Kaç gün tutturduğun
 ### Vazgeçme işaretleri
 
 Şunlardan biri görülürse o günün planı iptal olur ve yerine tek konu gelir:
-- CRM'de iki gün sıfır kayıt.
+- CRM'de ya da Bugünün listesi'nde iki gün sıfır kayıt.
 - Sabah planı iki gün açılmamış.
 - Senden "niş değiştirsem", "bana göre değil", "ara vereyim" gibi bir cümle gelmiş.
 
@@ -150,7 +150,7 @@ Gün sayacı bunun için var. Her sabah planın başında duruyor: kaçıncı g�
 
 Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: elli arama, otuz e-posta, yirmi Instagram. Saha bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Akşam bana tek satır yazacaksın: kaç temas, kaç cevap, kaç randevu."
 Normal bir sabah (işin yanında): "Gün [sayı]. Sabah bloğun bir saat: üç adayın denetimi ve dünkü cevaplar. Saha bloğun akşam. Günün sayısı kırk. İlk otuz dakikada on temas. Akşam tek satır."
-Denetimden önce: "Plan hazır, beş dakika sürdü. Şimdi bugünün adaylarının denetimi. Denetim bitmeden liste kilitlenmiyor, denetimsiz aday aranmıyor."
+Denetimden önce: "Plan hazır, beş dakika sürdü. Şimdi bugünün adaylarının denetimi. Denetim bitmeden liste kilitlenmiyor; ilk aramalar bu adaylara, gerisi hızlı denetimle."
 Öğrenci araç kurcalamaya başlarsa: "Bugün temas bloğu bitmedi. O bitmeden başka bir şey açılmıyor. Kurcaladığın şey akşam da orada duruyor, aramadığın işletme akşam orada durmuyor."
 Görüşme günü: "Bugün iki görüşmen var. Her birinden on dakika önce prova yapacağız, tek konu. Görüşmeler arasındaki boşluk arama bloğu, boş bırakmıyoruz."
 Kötü günden sonra: "Dün sayı tutmadı. Bugün iki katını yapmıyoruz, normal sayıya dönüyoruz. İki katını denersen ikisini birden kaybedersin."
@@ -180,7 +180,7 @@ Sıradaki: sabah bloğunda aday-denetimi-cikar, akşam bloğunda rakamlari-oku.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Sabah planı iki gün üst üste açılmadı: vazgeçme işareti, plan yerine tek konu gelir.
-- CRM'de iki gün sıfır kayıt: aynı şekilde.
+- CRM'de ya da Bugünün listesi'nde iki gün sıfır kayıt: aynı şekilde.
 - Üç gün üst üste günlük sayı tutmadı: haftanın kararına gider.
 - Saha bloğunun ilk otuz dakikasında temas yok, beş gün üst üste: sıra bozulmuş demektir, plan sabah bloğunu tek madde haline getirir.
 - Sabah bloğu iki gün üst üste denetimsiz kapandı: plan ertesi sabah denetimle başlar, başka madde açılmaz.

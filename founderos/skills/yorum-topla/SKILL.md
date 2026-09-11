@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: yorum-topla
-description: Müşteride yorum isteme ve yorum yanıtlama.
+description: "Müşteride yorum isteme ve yorum yanıtlama."
 ---
 
 # yorum-topla

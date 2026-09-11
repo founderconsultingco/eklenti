@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-kartlari
-description: On dokuz nis kartinin listesi, kart kurallari ve kart sablonu. Nis secilirken ve hangi kart modulunun acilacagi belirsizken acilir.
+description: "On dokuz nis kartinin listesi, kart kurallari ve kart sablonu. Nis secilirken ve hangi kart modulunun acilacagi belirsizken acilir."
 ---
 
 # FounderOS Niş Kartları (taslak 2, 5 Eylül 2026)

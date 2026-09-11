@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: satis-videosunu-cek
-description: Beşinci günün ikinci yarısı, provalarla aynı gün. Ön görüşme videosu ve üç itiraz videosu.
+description: "Beşinci günün ikinci yarısı, provalarla aynı gün. Ön görüşme videosu ve üç itiraz videosu."
 ---
 
 # satis-videosunu-cek

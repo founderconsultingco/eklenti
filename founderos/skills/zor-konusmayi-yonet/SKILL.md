@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: zor-konusmayi-yonet
-description: "Müşteri kızdı", "iptal etmek istiyor", "iş aksadı" dendiğinde.
+description: "Öğrenci \"müşteri kızdı\", \"iptal etmek istiyor\", \"iş aksadı\" dediğinde."
 ---
 
 # zor-konusmayi-yonet

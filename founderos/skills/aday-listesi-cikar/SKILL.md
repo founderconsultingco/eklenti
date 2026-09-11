@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: aday-listesi-cikar
-description: Üçüncü gün ve her ay. Beş yüz kişilik soğuk aday listesi ve en çok istenen yüz işletme.
+description: "Üçüncü gün ve her ay. Beş yüz kişilik soğuk aday listesi ve en çok istenen yüz işletme."
 ---
 
 # aday-listesi-cikar
@@ -76,7 +76,7 @@ Karar senin. FounderOS başka hiçbir yerde seçenek sunmaz, kararı verir ve se
 1. Claude'un tarayıcı eklentisini ve Google Haritalar'ı aç.
 2. Arama kelimesi: kartındaki kategori adı artı semt adı ("Nilüfer klima servisi" gibi). Şehri tek seferde aratmıyorsun, Haritalar belli bir sayıdan sonrasını göstermiyor; semt semt gidiyorsun ve taradıklarını bir kenara yazıyorsun.
 3. Eklenti her işletme kartından altı şeyi tabloya yazıyor: işletme adı, telefon, web sitesi, semt, yorum sayısı ve puan, varsa Instagram hesabı. E-posta bu yolda gelmiyor; siteyi açıp aramayı sadece yüz işletme için, hızlı denetim sırasında yapıyorsun.
-4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün CRM'e yüklüyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci günün sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor.
+4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün CRM'e yüklüyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci bloğun sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor.
 
 Hangi yolu seçtiğin İş Beyni'ne yazılıyor, ay sonundaki yenileme aynı yoldan yürüyor.
 
@@ -165,9 +165,11 @@ Altmış dakikada otuz işletme bitiyor, kalan yetmişi dördüncü günün saba
 
 Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adımda CRM'e gidiyor.
 
-### Adım 7: CRM'e yükle (15 dakika)
+### Adım 7: listeyi kayıt yerine koy (15 dakika)
 
-İkinci günün test yüklemesinin aynısı, bu sefer gerçek listeyle.
+**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır; on iki sütun: kısa işletme adı, sahibinin adı, telefon, e-posta, Instagram hesabı, web sitesi, adres, semt, yorum sayısı, kaynak, sızıntı puanı, en güçlü bulgu; artı uygunluk puanı, kanal durumu, sıradaki hareket ve tarih, not. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
+
+**CRM açıldıysa:** aşağıdaki yedi adım, gerçek listeyle.
 
 1. Tabloyu Excel olarak kaydet.
 2. CRM'de yükleme ekranını aç, dosyayı seç, yüklemeye ad ver: kayıt sayısı ve tarih. "512 aday, 6 Eylül" gibi.
@@ -175,7 +177,7 @@ Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adım
 4. Kaynak sütunu iki değer alıyor: Haritalar ya da Instagram. Hangi adayın telefonla, hangisinin yazıyla gideceğini o belirliyor ve "nereden bulundu" satırı da o sütundan doluyor.
 5. Kayıtta ad alanı boş kabul edilmiyor. Sahibinin adı bulunmayan kayıtlarda o alana işletme adı yazılıyor.
 6. Yükle, sonra yüklenen sayıyı dosyadakiyle karşılaştır. Numara tekrarı temizlendiği ve iki liste birleştirildiği için ikisi tutuyor olmalı; büyük fark varsa eşleme yanlış, geri al ve tekrarla.
-7. Hepsinin aşaması "yeni" ve üstlerinde "soğuk" işareti var; aşama, adayın işin neresinde olduğunu gösteren etiket. En çok istenen yüz işletmeye ayrı işaret koy. Denetimi bugün yapılmayanlarda sızıntı puanı boş kalıyor, dördüncü günde doluyor.
+7. Hepsinin aşaması "yeni" ve üstlerinde "soğuk" işareti var; aşama, adayın işin neresinde olduğunu gösteren etiket. En çok istenen yüz işletmeye ayrı işaret koy. Denetimi bugün yapılmayanlarda sızıntı puanı boş kalıyor, dördüncü blokta doluyor.
 
 ### Listenin günlük yenilenmesi
 
@@ -188,7 +190,7 @@ Liste ayda bir tamamen yenileniyor ama her gün yeniden sıralanıyor. İkisi ay
 1. **Cevap verenler.** Mesajına dönmüş, telefonu açmış, "sonra ara" demiş herkes. En başta duruyorlar, çünkü cevap veren adayın ilgisi bir günde soğuyor.
 2. **Takip günü gelenler.** Üçüncü, yedinci ve on dördüncü gün zincirinde bugüne düşenler.
 3. **Denetimi hazır, sızıntı puanı yüksek adaylar.** Puanı yüksek olan önce; eşitlik yorum sayısıyla bozuluyor.
-4. **Denetimsizler.** Sıranın sonu; bunlar aranmadan önce derin denetimden geçiyor, denetimsiz aday aranmıyor.
+4. **Hızlı denetimi olmayanlar.** Sıranın sonu; bunlara ulaşılmadan önce iki dakikalık hızlı denetim yapılıyor, hızlı denetimsiz adaya hiçbir kanaldan ulaşılmıyor. Derin denetim ayrı: her sabah sıranın başındaki üç beş aday için, ilk aramalar onlara.
 
 **Kaç kayıt:** çalışma düzenine göre günlük temas sayın kadar. Tam zamanlıysan yüz kayıt, işin yanında kırk. Fazlası hazırlanmıyor; ekranda gördüğün sayı o gün bitirilecek sayı.
 
@@ -216,7 +218,7 @@ Bitince: "Liste CRM'de, yüz işletme işaretli, otuzunun denetimi bitti. Yarın
 
 ## 7. Ne yazar
 
-CRM'e: bütün kayıtlar, aşamaları "yeni", "soğuk" işaretiyle, kaynağı ve nereden bulunduğu yazılı. En çok istenen yüz işletme ayrı işaretle. Denetimi bitenlerde sızıntı puanı ve en güçlü bulgu dolu; denetim kartının kendisini aday-denetimi-cikar yazıyor.
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`): bütün kayıtlar, aşamaları "yeni", "soğuk" işaretiyle, kaynağı ve nereden bulunduğu yazılı. En çok istenen yüz işletme ayrı işaretle. Denetimi bitenlerde sızıntı puanı ve en güçlü bulgu dolu; denetim kartının kendisini aday-denetimi-cikar yazıyor.
 İş Beyni'ne: listenin çıkarıldığı tarih, seçilen yol (Apify mi tarayıcı eklentisi mi), ham kayıt sayısı, elenen ve kalan sayı, Instagram kaynağı kullanıldı mı, kaç kayıt adından birleştirildi, yüz işletmenin seçim tarihi, hızlı denetimi biten sayı, kullanılan kategori adı ve kapsanan semtler, harcanan kredi.
 Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, sızıntı puanı ve en güçlü bulgu adaya-mesaj-yaz ile video-mesaj-cek'e, denetimi bitmiş otuz işletme kanitini-hazirla'nın yarınki deneme aramalarına, kategori adı ve seçilen yol bir sonraki ay tekrarı için kendine.
 
@@ -226,8 +228,8 @@ Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, 
 - Tarayıcı eklentisi de çalışmazsa: elle yazma, en son çare. Bir tabloya altı sütun açıyorsun (işletme adı, telefon, web sitesi, semt, yorum sayısı, Instagram) ve Haritalar'da çıkan her işletmeyi yazıyorsun. Yavaş yol, o yüzden önce diğer ikisi deneniyor.
 - Şehrinde 500 çıkmazsa: kartın diğer kategori adları, sonra komşu ilçeler, sonra Instagram kaynağı, sonra Türkiye geneli. Dördü de yetmezse niş kararı haftanın kararına gidiyor.
 - Instagram aracı sonuç vermezse ya da kredi yetmezse: liste Haritalar'la yürüyor, yazı yolunun Instagram tarafı sahada elle doluyor.
-- Hızlı denetim bugün otuza ulaşmazsa: yarının deneme aramaları kaç işletme denetlendiyse o kadarıyla yapılıyor. Kalan denetim dördüncü güne kayıyor, saha ertelenmiyor.
-- Yükleme kabul etmezse: liste tabloda kalıyor, temaslar oradan yürüyor, yükleme ilk boş saatte tekrarlanıyor.
+- Hızlı denetim bugün otuza ulaşmazsa: yarının deneme aramaları kaç işletme denetlendiyse o kadarıyla yapılıyor. Kalan denetim dördüncü bloğa kayıyor, saha ertelenmiyor.
+- CRM yüklemeyi kabul etmezse: liste `adaylar.csv` olarak kalıyor, temaslar oradan yürüyor, yükleme ilk boş saatte tekrarlanıyor.
 - Üç saat aşılırsa: hızlı denetim yarım kalabilir, otuz işletme yeter. Liste, temizlik ve yükleme bugün bitiyor.
 
 ## 9. Sıradaki adım ve işaretler

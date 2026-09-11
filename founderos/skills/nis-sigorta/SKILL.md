@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-sigorta
-description: Sadece sigorta acentesi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece sigorta acentesi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Sigorta acentesi

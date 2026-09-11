@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: aylik-raporu-hazirla
-description: Ayda bir, artı sekizinci ve on dördüncü günün ara raporu. Müşteriye giden rapor ve kanıt hikâyesi.
+description: "Ayda bir, artı sekizinci ve on dördüncü günün ara raporu. Müşteriye giden rapor ve kanıt hikâyesi."
 ---
 
 # aylik-raporu-hazirla

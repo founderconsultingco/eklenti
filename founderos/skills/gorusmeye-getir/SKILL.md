@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeye-getir
-description: "Randevu aldım", "yarın görüşme var" dendiğinde. Ön görüşme sayfası ikinci blokta hazırlanır, randevu takvimi CRM açıldığı gün kurulur; o güne kadar randevular WhatsApp'tan elle alınır; sonra randevu alındıktan görüşmeye kadar: davet, hatırlatma, gelmeyen aday.
+description: "Öğrenci \"randevu aldım\", \"yarın görüşme var\" dediğinde. Ön görüşme sayfası ve randevu takvimi CRM açıldığı gün kurulur; o güne kadar randevular WhatsApp'tan elle alınır ve Bugünün listesi'ne yazılır; sonra randevu onayı, hatırlatma ve EVET akışı."
 ---
 
 # gorusmeye-getir
@@ -25,7 +25,7 @@ Sormaz. Randevu telefonda alınırken adaydan istenen üç şeyi, adaya-mesaj-ya
 
 ## 5. Ne yapar
 
-**A. Kurulum, ikinci gün (tek sefer).** Randevu takvimini bugün ben açıyorum; hazır pakette gelmiyor, çünkü takvim bir kişiye bağlı açılıyor ve o kişi sensin. Sayfanın yazısı, hatırlatma akışı ve EVET akışı hazır paketten geliyor.
+**A. Kurulum, CRM açıldığı gün (tek sefer).** Randevu takvimini o gün ben açıyorum; hazır pakette gelmiyor, çünkü takvim bir kişiye bağlı açılıyor ve o kişi sensin. Sayfanın yazısı, hatırlatma akışı ve EVET akışı hazır paketten geliyor.
 
 Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
 - Görüşme süresi 30 dakika, takvim aralığı 30 dakika. Yani takvimde otuz dakikalık yer ayrılır; adaya on beş dakika denir; gerçekte görüşme yirmi beşi geçmez.

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: is-beyni
-description: Is Beyni'nin on uc bolumlu semasi, yazma kurallari ve bos sablonu. Kayit ilk kez acilirken ve bir bilginin hangi bolume yazilacagi belirsizken acilir.
+description: "Is Beyni'nin on sekiz bolumlu semasi, yazma kurallari ve bos sablonu. Kayit ilk kez acilirken ve bir bilginin hangi bolume yazilacagi belirsizken acilir."
 ---
 
 # İş Beyni (dosyanın yapısı)
@@ -18,7 +18,7 @@ Dosya öğrencinin bilgisayarında duruyor, tek dosya, on sekiz bölüm. Bölüm
 
 **Kilitli satırlar işaretli.** Mesaj metni, teklifin kelimeleri, fiyatın rakamı ve niş kilitli satırlardır; yanlarında hangi eşikte açılacakları yazıyor. Eşik dolmadan bu satırlar değişmiyor.
 
-**Boş bölüm silinmiyor.** Henüz sırası gelmemiş bölüm başlığıyla duruyor, altında "henüz yok, [kaçıncı] günde dolacak" yazıyor. Öğrenci dosyayı açtığında nerede olduğunu görüyor.
+**Boş bölüm silinmiyor.** Henüz sırası gelmemiş bölüm başlığıyla duruyor, altında "henüz yok, [hangi adımda] dolacak" yazıyor; boş bölüme tarih atılmıyor, tarih ancak satır dolunca yazılıyor. Öğrenci dosyayı açtığında nerede olduğunu görüyor.
 
 **Öğrenci dosyayı elle düzenlemiyor.** FounderOS yazıyor, öğrenci okuyor ve düzeltme istiyor.
 
@@ -129,7 +129,7 @@ Yazan: ideal-musteriyi-cikar, gorusmeyi-analiz-et.
 
 ## Doksan Gün Planı nerede duruyor
 
-Doksan Gün Planı İş Beyni'nin içinde değil, ayrı bir dosya olarak yanında duruyor. On altı bölümlük metin birinci günde pazar kararıyla birlikte yazılıyor, ikinci günün doğrulamasıyla güncelleniyor ve doksan gün boyunca modüller ona bakıyor. gorusmeyi-analiz-et sahadan gelenlerle günceller.
+Doksan Gün Planı İş Beyni'nin içinde değil, ayrı bir dosya olarak yanında duruyor. Dosyanın adı `doksan-gun-plani.md`, nişin kartı da yanında `nis-karti.md`. On altı bölümlük metin birinci blokta fiyat bandı konduktan sonra arka plan yardımcısı tarafından yazılıyor, ikinci bloğun doğrulamasıyla ve üçüncü bloğun kesin fiyatıyla güncelleniyor ve doksan gün boyunca modüller ona bakıyor. gorusmeyi-analiz-et sahadan gelenlerle günceller.
 
 Niş kartı da ayrı bir dosya olarak duruyor. Kart on altı bölümlü sabit yapıda, sonunda bir de Kaynaklar bölümü var; modüller kartı bölüm adıyla okuyor: Kapsam, Gerçek fiyatlar ve kapasite (sonunda kayıp birimi), Sızıntı nerede, Sezon, Rekabetin şekli, Kim karar veriyor, İşletmecinin gerçek dertleri (sonunda sözlüğü ve iç sesi), Açılış cümlesi, Duran havuz, Asistan kuralları, Kanal ve zaman, Reklam kütüphanesi kelimeleri, Yasal sınırlar, Yoğun şehirler, Gerçek itirazlar ve karşılıkları (başında en güçlü üç itiraz), Sahadan dolacak, Kaynaklar.
 
@@ -143,7 +143,7 @@ Yeni bir öğrencinin kaydını açarken bu şablonun birebir kopyasını yazars
 
 Bu dosyayı FounderOS yazar, öğrenci okur. Elle düzenlenmez.
 
-Kurallar: silme yok, üstüne yazma yok. Değişen bilginin yenisi tarihiyle altına yazılır. Her satırın tarihi vardır. Boş bölüm silinmez, altına "henüz yok, [kaçıncı] günde dolacak" yazılır. Kilitli satırın yanında hangi eşikte açılacağı yazar.
+Kurallar: silme yok, üstüne yazma yok. Değişen bilginin yenisi tarihiyle altına yazılır. Her satırın tarihi vardır. Boş bölüm silinmez, altına "henüz yok, [hangi adımda] dolacak" yazılır; boş bölüme tarih atılmaz. Kilitli satırın yanında hangi eşikte açılacağı yazar.
 
 Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası değişmez; modüller bu adlarla arar.
 
@@ -157,6 +157,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Telefon:
 - E-posta:
 - Çalışma düzeni (tam zamanlı / işin yanında):
+- Günlük temas sayısı:
 - Haftalık teslimat saati:
 - Hazırlık seviyesi:
 - Kanal yolu (telefon / yazı):
@@ -168,6 +169,8 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Düşme riski nerede:
 - Mali müşavir:
 - Beş sorunun cevabı:
+- Motivasyon satırı:
+- Tanışma cevapları (on sekiz soru, her biri tek satır):
 
 ## 2. Hedef ve para
 
@@ -177,6 +180,10 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Seçilen kombinasyon ve tempo:
 - Zihniyet kabulü ve tarihi:
 - Hedef aylık gelir:
+- Aylık zorunlu gider:
+- Net maaş (maaşlı işi varsa):
+- Bütçe merdiveni basamağı (alt / orta / üst) ve ertelenen kalemler:
+- Özgürlük bölümü:
 - Gelir planının basamakları:
 - Müşteri değeri:
 - Aylık masraf tablosu:
@@ -190,6 +197,9 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Seçim tarihi:
 - Coğrafya:
 - Doğrulama tablosu ve tarihi:
+- İçeriden tanıdığı sektör:
+- Telefonundaki işletme sahipleri (sektör, kaç kişi):
+- Rakip notu:
 - İkinci aday niş:
 - Üçüncü aday niş:
 - Sezon durumu:
@@ -269,6 +279,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 
 - Sıcak çevre: A listesi kişi sayısı, B listesi kişi sayısı, çıkarılma tarihi, taranan kaynaklar:
 - Soğuk liste: çıkarılma tarihi, ham kayıt, elenen, kalan, sahibinin adı bulunan sayısı, kategori adı, kapsanan semtler:
+- Havuzun yeri (CRM açılana kadar `adaylar.csv`, sonra CRM; taşınma tarihi):
 - En çok istenen yüz işletme: seçim tarihi, kaç kişi, ölçütler:
 
 ## 9. Mesajlar ve kanıt
@@ -293,6 +304,8 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Akşamın tek cümlesi:
 - Görüşme sayacı:
 - Prova sayacı:
+- Aktif düzeltme (tek satır, temiz çıkana kadar):
+- Koşan toplam (bugüne kadar temas, görüşme, randevu; kilitler buradan okunur):
 - İtiraz sayacı:
 - Fiyat itirazı sayacı:
 - Evet ile ödeme arası süre:

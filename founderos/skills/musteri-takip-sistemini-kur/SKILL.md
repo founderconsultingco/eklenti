@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteri-takip-sistemini-kur
-description: CRM hesabı açıldığı gün (başlangıç görüşmesinden sonra), bağlantıdan hemen sonra. Öğrencinin kendi CRM bölümü: fırsat hattı, aşamalar, şablonlar, takip zinciri.
+description: "CRM hesabı açıldığı gün (başlangıç görüşmesinden sonra), bağlantıdan hemen sonra. Öğrencinin kendi CRM bölümü: fırsat hattı, aşamalar, şablonlar, takip zinciri."
 ---
 
 # musteri-takip-sistemini-kur
@@ -24,7 +24,7 @@ Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört 
 
 Şunlar bu modülün işi değildir:
 - Randevu takvimi, hatırlatma akışı ve ön görüşme sayfasının doldurulması (gorusmeye-getir, aynı gün).
-- Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü gün).
+- Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok).
 - Adayın denetlenmesi ve denetim kartının doldurulması (aday-denetimi-cikar). Bu modül o kartın CRM'deki yerini gösteriyor, kartı doldurmuyor.
 - Mesaj metinleri ve hangi durumda hangi kanalın açılacağı (adaya-mesaj-yaz, dördüncü gün).
 

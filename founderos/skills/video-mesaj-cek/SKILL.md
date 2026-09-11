@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: video-mesaj-cek
-description: Kurulum beşinci gün, sonra yazı yolunda her gün. En çok istenen yüz işletmeye kişisel video mesaj.
+description: "Kurulum beşinci gün, sonra yazı yolunda her gün. En çok istenen yüz işletmeye kişisel video mesaj."
 ---
 
 # video-mesaj-cek

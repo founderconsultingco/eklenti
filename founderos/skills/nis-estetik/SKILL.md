@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-estetik
-description: Sadece estetik cerrahi ve medikal estetik nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece estetik cerrahi ve medikal estetik nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Estetik cerrahi ve medikal estetik

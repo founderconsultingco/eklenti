@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: vizyon-belgesi
-description: Birinci gunun ucuncu adimi. Once yasanmak istenen hayat, sonra o hayatin aylik rakami, sonra hedefe giden fizibilite. Hedef ya da rakam konusuldugunda acilir.
+description: "Birinci gunun ucuncu adimi. Once yasanmak istenen hayat, sonra o hayatin aylik rakami, sonra hedefe giden fizibilite. Hedef ya da rakam konusuldugunda acilir."
 ---
 
 # vizyon-belgesi
@@ -64,7 +64,7 @@ Fiyatın tavanı. Bir işletme sahibinin tek başına "evet" diyebildiği bir ba
 
 Sonra tempoyu gösterirsin: hedefteki müşteri sayısına ayda kaç müşteri kapatarak kaç ayda ulaşıldığı. Bu bir şans meselesi değil, tempo meselesi. Tempo bir hesaptır, taahhüt değil ve bunu söylersin.
 
-Hedef, çalışma sınırlarıyla uyuşmuyorsa bunu birinci günde saklamazsın ama moral bozmadan söylersin: "Bu hedef bu çalışma saatiyle doksan günde değil, şu sürede çıkıyor. İki yol var: süre uzar ya da hedef iner. Karar senin, bugün vermek zorunda değilsin."
+Birinci günde tempoyu gösterirsin, hüküm vermezsin: bandın alt ve üst ucuyla kaç müşteri, kaç görüşme, günde kaç temas gerektiğini yazarsın ve tek cümleyle bağlarsın: "Bu hesap bantla yapıldı; üçüncü blokta kesin fiyat konunca süreyi birlikte netleştiriyoruz." "Sığmıyor", "süre uzar ya da hedef iner" cümleleri birinci günde kurulmaz; o hüküm üçüncü blokta, fiyati-belirle'nin süre hükmüyle verilir.
 
 ## 6. Ne yazar
 

@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: nisi-dogrula
-description: nisi-sec'in yardımcısı, ikinci gün. Seçilen pazarın canlı verisini sayar: işletme sayısı, reklam veren oranı, sezon, rakip. Karar bozulursa o gün değiştirilir.
+description: "nisi-sec'in yardımcısı, ikinci gün. Seçilen pazarın canlı verisini sayar: işletme sayısı, reklam veren oranı, sezon, rakip. Karar bozulursa o gün değiştirilir."
 ---
 
 # nisi-dogrula (arka plan yardımcısı)
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Üçüncü günün arka plan yardımcısı. Arka plan yardımcısı, FounderOS'un ağır işleri verdiği yardımcıdır; sen onu görmezsin, sonucu FounderOS anlatır.
+İkinci bloğun arka plan yardımcısı. Arka plan yardımcısı, FounderOS'un ağır işleri verdiği yardımcıdır; sen onu görmezsin, sonucu FounderOS anlatır.
 
 İşi tek cümleyle: nisi-sec'in seçtiği üç nişin gerçekten satış yapılabilir bir pazar olup olmadığını canlı sayılarla kontrol etmek.
 
@@ -18,7 +18,7 @@ Pazarlamadaki karşılığı: bu kontrolün ekranı, FounderOS'un tanıtım sayf
 
 Şunlar bu yardımcının işi değildir:
 - Niş seçmek. O nisi-sec'in işi; bu yardımcı sadece sayı üretir.
-- Aday listesi çıkarmak. O sekizinci gün, aday-listesi-cikar modülünde. Aynı tarama kullanılır ama amaç farklıdır: burada sayıyoruz, orada listeliyoruz.
+- Aday listesi çıkarmak. O üçüncü blokta, aday-listesi-cikar modülünde. Aynı tarama kullanılır ama amaç farklıdır: burada sayıyoruz, orada listeliyoruz.
 
 ## 2. Ne zaman çalışır
 
@@ -54,7 +54,7 @@ Reklam sayfasına hangi yoldan bakılacağı henüz karara bağlanmadı. Karar g
 
 Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 
-1. Bu şehirde en az 500 işletme var mı? Üçüncü günde 500 kişilik aday listesi çıkacak ve doksan günde ona 1.320 arama yapılacak. Bu sayının altında liste dolmuyor.
+1. Bu şehirde en az 500 işletme var mı? Üçüncü blokta 500 kişilik aday listesi çıkacak ve doksan günde ona 1.320 arama yapılacak. Bu sayının altında liste dolmuyor.
 2. Türkiye'de en az 2.000 işletme var mı? Şehirde 500 çıkmazsa niş Türkiye geneline açılıyor, o zaman bu sayı devreye giriyor. Ülke çapında büyük bir pazar aranmıyor; dört müşteri için 2.000 yeter. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
 4. Telefonu ya da Instagram'ı açık olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın.
@@ -90,7 +90,7 @@ Bu tarama herkese açık yerlerden işletme bilgisi topluyor: harita kaydı, iş
 
 İş Beyni'ne: doğrulama tablosu ve tarihi, hangi sayıların canlı sayıldığı, hangilerinin karttan geldiği.
 Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı, kartın "sahadan dolacak" bölümüne.
-CRM'e: hiçbir şey. Aday listesi sekizinci gün çıkar.
+CRM'e: hiçbir şey. Aday listesi üçüncü blokta çıkar.
 
 ## 8. Yedek yol
 

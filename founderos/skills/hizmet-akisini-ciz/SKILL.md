@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: hizmet-akisini-ciz
-description: Birinci gün teslimat uygunluk kontrolü, üçüncü gün akışın tamamı. Satılan sistemin parçaları ve teslimat akışı. Kapsam tartışıldığında.
+description: "Birinci gün teslimat uygunluk kontrolü, üçüncü gün akışın tamamı. Satılan sistemin parçaları ve teslimat akışı. Kapsam tartışıldığında."
 ---
 
 # hizmet-akisini-ciz
@@ -10,7 +10,7 @@ description: Birinci gün teslimat uygunluk kontrolü, üçüncü gün akışın
 
 Beşinci günün sabah modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın üçüncü aşamasının ikinci adımı: hizmet akışı.
 
-Teslimatın takvimi elinde zaten var. İkinci günün akşamında Doksan Gün Planı'nın beşinci bölümü yazıldı ve yirmi bir günün hangi gününde ne olacağını nişine uyarlanmış halde veriyor. Bu modül o takvimi yeniden yazmıyor, ondan beş şey çıkarıyor:
+Teslimatın takvimi elinde zaten var. Birinci blokta Doksan Gün Planı'nın beşinci bölümü yazıldı ve yirmi bir günün hangi gününde ne olacağını nişine uyarlanmış halde veriyor. Bu modül o takvimi yeniden yazmıyor, ondan beş şey çıkarıyor:
 
 1. Müşteriye gösterilecek sayfa. Aynı takvimin, teknik hiçbir kelime geçmeyen hali.
 2. Saat tablosu. Aynı takvimin sana kaç saate mal olduğu.
@@ -85,6 +85,8 @@ Yazılı bir teslimat süreci şu beşine cevap veriyor. Cevabı olmayan süreç
 ### Birinci çıktı: müşteriye gösterilecek sayfa
 
 Takvimi beş satıra indiriyorsun. Her satırda üç şey var: o günlerde ne oluyor, müşteri ne veriyor, müşteri ne görüyor.
+
+Kurulan parçaların listesi sabittir ve tek yerden gelir: İş modeli bölümündeki üç ajan, on üç işlev ve yedi altyapı parçası. Bu sayfada ve teklifte müşteriye sayılan parçalar o listeden, kartın müşteri yolculuğuna göre seçilir; kendi sayın olmaz ("beş parça", "dört parça" gibi), dört sızıntı ile parça listesi karıştırılmaz: sızıntı sorundur, parça çözümdür.
 
 **Sıfırıncı ve birinci gün, karşılama.** Para hesabına geçtikten sonra en geç bir saat içinde onay belgesini sen gönderiyorsun; para gece ya da hafta sonu geçtiyse ertesi sabah ilk iş. Aynı gün karşılama formunu istiyorsun ve kurulum görüşmesinin saatini teyit ediyorsun. Birinci gün bir saatlik görüntülü kurulum görüşmesi yapıyorsun: dört giriş iznini alıyorsun, hizmet listesini ve sık sorulan on soruyu konuşuyorsun, hazır kurulum paketinden çıkan mesaj metinlerini onaylatıyorsun, iletişim düzenini kuruyorsun. Asistanın kendi metinleri bugün onaya gitmiyor; onlar ikinci günde yazılıyor ve o gün müşteriye gidiyor.
 Müşteri ne veriyor: karşılama formu, dört giriş izni, imzalı sözleşme, hazır paketin mesaj metinlerine onay.

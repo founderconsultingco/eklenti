@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-temizlik
-description: Sadece temizlik sirketi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece temizlik sirketi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Temizlik şirketi

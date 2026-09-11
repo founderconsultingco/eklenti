@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteri-sistemini-kur
-description: Müşterinin ikinci gününden itibaren. AI Müşteri Dönüşüm Sistemi'nin kurulması: yedi altyapı parçası, üç ajan, on üç işlev; hangi parçaların açılacağını nişin müşteri yolculuğu (randevu ya da teklif) belirler.
+description: "Müşterinin ikinci gününden itibaren. AI Müşteri Dönüşüm Sistemi'nin kurulması: yedi altyapı parçası, üç ajan, on üç işlev; hangi parçaların açılacağını nişin müşteri yolculuğu (randevu ya da teklif) belirler."
 ---
 
 # musteri-sistemini-kur

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: tanidiga-mesaj-yaz
-description: Üçüncü günün akşamı, sistemin ilk mesajı. Sonra her gün: tanıdığa giden mesaj ve tek takip.
+description: "Üçüncü günün akşamı, sistemin ilk mesajı. Sonra her gün: tanıdığa giden mesaj ve tek takip."
 ---
 
 # tanidiga-mesaj-yaz
@@ -10,22 +10,22 @@ description: Üçüncü günün akşamı, sistemin ilk mesajı. Sonra her gün: 
 
 Üçüncü günün akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ikinci adımı.
 
-Sabah çıkardığın iki listeye gidecek mesajları yazıyor ve göndermeye başlıyorsun.
+Dün akşam çıkardığın iki listeye gidecek mesajları yazıyor ve göndermeye başlıyorsun.
 
 İki mesaj var, çünkü iki liste var. A listesindeki tanıdığın kendi işletmesini işletiyor, ona işi anlatıyorsun. B listesindeki tanıdığın işletme sahibi değil, ona satmıyorsun, tek bir şey soruyorsun: tanıdığın var mı.
 
 Bu ayrımı bozarsan gerisi çalışmıyor. Tanıdığa satmaya çalışan kişi karşısındakini kaçırıyor, çünkü karşısındaki hem satın almak zorunda hissediyor hem hayır demenin yolunu bulamıyor. Referans soran kişi kimseyi sıkıştırmıyor ve "hayır" cevabı ilişkiyi bozmuyor.
 
 Şunlar bu modülün işi değildir:
-- Listeyi çıkarmak (tanidik-listesi-cikar, aynı gün sabah).
-- Soğuk mesajlar (adaya-mesaj-yaz, altıncı gün). Metin bambaşka.
+- Listeyi çıkarmak (tanidik-listesi-cikar, dün akşam).
+- Soğuk mesajlar (adaya-mesaj-yaz, dördüncü blokta yazılır, saha açılınca gider). Metin bambaşka.
 - Randevu ayarlamak (gorusmeye-getir). Cevap gelip randevu çıkınca o modül devralıyor.
 
 Pazarlamadaki karşılığı: sıcak temas ve referans isteği.
 
 ## 2. Ne zaman çalışır
-- Üçüncü günün akşam bloğu, bir saat. Metinler yazılıyor ve ilk mesajlar gidiyor. Sistemin ilk mesajı bu; bu günden önce hiçbir yere hiçbir şey gitmiyor, bu günden sonra her gün gidiyor.
-- Dördüncü günden itibaren her gün, liste bitene kadar. Günlük sayı aşağıda.
+- Üçüncü bloğun akşam bloğu, bir saat. Metinler yazılıyor ve ilk mesajlar gidiyor. Sistemin ilk mesajı bu; bu günden önce hiçbir yere hiçbir şey gitmiyor, bu günden sonra her gün gidiyor.
+- Ertesi günden itibaren her gün, liste bitene kadar. Günlük sayı aşağıda.
 - Cevap geldiğinde: aynı gün.
 
 ## 3. Ne okur
@@ -124,7 +124,7 @@ Metni her mesaj için baştan yazmıyorsun, aynı metni kullanıyorsun. Ama her 
 
 Tam zamanlı çalışıyorsan günde otuz mesaj. İşin yanında çalışıyorsan günde on beş.
 
-Üçüncü günün akşamı ve dördüncü gün sahada değilsin, mesajlar günün işi. Dördüncü ve beşinci gün soğuk hazırlığı ve provalarla dolu; o iki günde günde on mesaj. Liste bitmediyse altıncı günden sonra günlük temas hedefinin içinde devam ediyor.
+Üçüncü bloğun akşamı ve dördüncü blokta sahada değilsin, mesajlar günün işi. Dördüncü ve beşinci blok soğuk hazırlığı ve provalarla dolu; o günlerde günde on mesaj. Liste bitmediyse saha açıldıktan sonra günlük temas hedefinin içinde devam ediyor.
 
 İki yüz kişilik B listesi bu tempoyla yaklaşık bir haftada bitiyor.
 
@@ -156,19 +156,19 @@ Bir sonraki modüllere: çıkan randevular gorusmeye-getir'e, sıcak sayılar ra
 
 ## 8. Yedek yol
 
-- Liste küçükse: mesajlar bir günde bitiyor, sorun değil. Soğuk liste yarın geliyor.
+- Liste küçükse: mesajlar bir akşamda bitiyor, sorun değil. Soğuk liste bugün gündüz zaten çıktı.
 - Cevap hiç gelmezse: metin değil sıra sorunu olabilir. İlk mesajlar işletme sahiplerine mi gitti, ona bakılır. Metin elli mesajdan önce değişmiyor.
 - Tanıdığın "ben yapayım mı" derse: A listesi mesajına geçiyorsun, referans sorusu kapanıyor.
 - Biri rahatsız olursa: tek cümle özür, konu kapanıyor, o kişi listeden çıkıyor. Tartışma yok.
 - Nişinde hiç tanıdığın yoksa: A listesi boş kalıyor, B listesi tek başına çalışıyor.
-- Randevu altıncı günden önce çıkarsa: gorusme-provasi-yap'ın sıkıştırılmış provası devreye giriyor, görüşmeden önce.
+- Randevu saha açılmadan önce çıkarsa: gorusme-provasi-yap'ın sıkıştırılmış provası devreye giriyor, görüşmeden önce.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: üçüncü gün, soğuk aday listesi.
+Sıradaki: yarın dördüncü blok, adayların hızlı denetimi ve profiller.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Üçüncü gün bitti, ilk mesajlar gitmedi: dördüncü günün sabahına eklenir.
+- Üçüncü blok bitiyor, ilk mesajlar gitmedi: blok kapanmaz. Bu mesaj ertelenmeyen tek iştir; metin hazırsa gönderme on dakikadır, gitmeden gün bitmez.
 - Liste bitti, hiç cevap gelmedi: metin ve sıra birlikte gözden geçirilir.
 - Tanıştırma geldi ama iki metin gönderilmedi: hatırlatılır.
 - Sıcak çevreden randevu çıktı: görüşmeden önce sıkıştırılmış prova açılır.

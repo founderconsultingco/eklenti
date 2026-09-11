@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-oto-kuafor
-description: Sadece oto kuafor, seramik kaplama ve arac kaplama nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece oto kuafor, seramik kaplama ve arac kaplama nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Oto kuaför, seramik kaplama, araç kaplama

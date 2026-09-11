@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: kanitini-hazirla
-description: Dördüncü gün. Deneme araması ve demo hattı: sorunun ve çözümün kanıtı. Beşinci günden itibaren her akşam yarım saat akşam testi.
+description: "Dördüncü gün. Deneme araması ve demo hattı: sorunun ve çözümün kanıtı. Beşinci günden itibaren her akşam yarım saat akşam testi."
 ---
 
 # kanitini-hazirla
@@ -77,7 +77,7 @@ Aynı satır o adayın denetim kartının altıncı ve yedinci satırına da dü
 
 **Yaşanmış kanca ve kanıt cümlesi.**
 
-Yaşanmış kancayı FounderOS yazar, aday bazında, tek satır, gün, saat, kanal ve sonuçla: "Dün akşam yedi onda aradım, açan olmadı." "Salı on yirmide WhatsApp'tan yazdım, dörtte döndünüz." "Formunuzu Salı doldurdum, dönüş gelmedi." Kural: sadece yaşanmış olan; gün ve saat gerçek; "genelde açmıyorsunuz" gibi genelleme yok. Dördüncü günün elli denemesi o adayların kancası olur ve altıncı gün "geçen Salı" diye söylenir. Diğer adayların kancası akşam testinden gelir.
+Yaşanmış kancayı FounderOS yazar, aday bazında, tek satır, gün, saat, kanal ve sonuçla: "Dün akşam yedi onda aradım, açan olmadı." "Salı on yirmide WhatsApp'tan yazdım, dörtte döndünüz." "Formunuzu Salı doldurdum, dönüş gelmedi." Kural: sadece yaşanmış olan; gün ve saat gerçek; "genelde açmıyorsunuz" gibi genelleme yok. Dördüncü bloğun elli denemesi o adayların kancası olur ve sahanın ilk günü "geçen Salı" diye söylenir. Diğer adayların kancası akşam testinden gelir.
 
 Toplu kanıt cümlesini FounderOS CRM sayımından yazar: "Geçen hafta [şehir]de otuz [niş] işletmesini akşam yedide aradım, yirmi ikisi açmadı." "On işletmenin formunu doldurdum, üçü döndü, en hızlısı dört saat." Kurallar: sayı yuvarlanmaz, yukarı çekilmez. Bir kanalda on denemeden az varsa o kanal için toplu cümle yok. Her pazartesi güncellenir. Görüşmede bu cümle kartın kanıtı değil, senin kendi sayımındır ve öyle söylenir: "Ben saydım." Kullanıldığı yerler: arama ve e-posta açılışı, video mesajın beşinci satırı, görüşme özet ekranı ve sunum, "kanıtla" itirazının cevabı, ön görüşme sayfası ve videosu, kanıt hikâyesi çıkana kadar e-posta imzasındaki kanıt satırı.
 
@@ -85,7 +85,7 @@ Yurt dışında "müşteri ilk dönene gider, beş dakika içinde dönmeyen kayb
 
 **Çözümün kanıtı: demo hattı ve canlı sistem.**
 
-Demo hattı: nişinin demo numarası. Sen almıyorsun, kurmuyorsun, cebinden para çıkmıyor. Numara hazır duruyor, dördüncü günde sana açılıyor. Türkiye numarası, 0850 ile başlıyor; arayan kişi normal bir işletmeyi aramış gibi arıyor.
+Demo hattı: nişinin demo numarası. Sen almıyorsun, kurmuyorsun, cebinden para çıkmıyor. Numara hazır duruyor, başlangıç görüşmesinde CRM bölümünle birlikte sana veriliyor. Türkiye numarası, 0850 ile başlıyor; arayan kişi normal bir işletmeyi aramış gibi arıyor.
 
 Numara nişe göre, kişiye göre değil. Aynı nişteki herkes aynı numarayı kullanıyor, çünkü gösterdiğin şey senin işin değil, sistemin kendisi. Klima nişindeysen karşına bir klima servisinin asistanı çıkıyor. Bu bilerek böyle. Numara senin işletme adınla konuşsaydı işletmeci senin klimacı olduğunu sanardı; şimdi ne sattığın net kalıyor.
 
@@ -95,17 +95,17 @@ Asistanın kuralları paketten gelir: fiyat vermez, marka ve model tavsiye etmez
 
 Demo bir şeyi doğrudan gösteriyor: kaçırılan arama. İşletmecinin kaçırdığı arama, bu numarada kaçmıyor. Bunu anlatmıyorsun, dinletiyorsun. Müşterinin kendi sisteminde bu parça yönlendirmeye bağlı, o yüzden görüşmede "sizde de aynısı olacak" değil, "sistemin yaptığı iş bu" diye anlatılır.
 
-Test, dördüncü günün ikinci yarısında. Kendi telefonundan demo numarasını ararsın, en az beş tam tur, kötü senaryolar dahil: normal randevu, fiyat sorusu, "insan mısın", mesai dışı arama, randevu değiştirme. Fiyat verdiyse, saçmaladıysa, randevuyu yazmadıysa "tamam" yok; FounderOS düzeltir, tekrar denersin. Bozuk demo, hiç demo olmamasından kötüdür. Demo "tamam" almadan da görüşmeler yapılır; o zaman kanıtın deneme aramasıdır.
+Test, demo hattı elindeyse bugünün ikinci yarısında; başlangıç görüşmesi henüz yapılmadıysa CRM açıldığı gün, araclari-kur'un "CRM açıldığı gün" adımının sonunda. O güne kadar kanıtın deneme aramasıdır ve görüşmede kendi telefonundan canlı gösterim yaparsın. Kendi telefonundan demo numarasını ararsın, en az beş tam tur, kötü senaryolar dahil: normal randevu, fiyat sorusu, "insan mısın", mesai dışı arama, randevu değiştirme. Fiyat verdiyse, saçmaladıysa, randevuyu yazmadıysa "tamam" yok; FounderOS düzeltir, tekrar denersin. Bozuk demo, hiç demo olmamasından kötüdür. Demo "tamam" almadan da görüşmeler yapılır; o zaman kanıtın deneme aramasıdır.
 
-Demo kaydı: test temiz çıkınca kırk ile altmış saniyelik bir kayıt alırsın. İki telefon gerekiyor: biriyle ararsın, öbürüyle çekersin. Sahne: telefon çalar, asistan açar, üç dört cümlelik konuşma, randevu onayı. Kullanım: beşinci gün ön görüşme videosunun kanıt bölümü bu kayıtla çekilir. Mesajlarda ve video mesajda demo kaydı gönderilmez, aday sorsa da. Demo, görüşmeye gelme sebebidir; önceden gönderirsen sebebi harcamış olursun.
+Demo kaydı: test temiz çıkınca kırk ile altmış saniyelik bir kayıt alırsın. İki telefon gerekiyor: biriyle ararsın, öbürüyle çekersin. Sahne: telefon çalar, asistan açar, üç dört cümlelik konuşma, randevu onayı. Kullanım: ön görüşme videosunun kanıt bölümü bu kayıtla çekilir; kayıt videodan sonra gelirse kanıt bölümü o gün yeniden çekilir, üç dakika sürer. Mesajlarda ve video mesajda demo kaydı gönderilmez, aday sorsa da. Demo, görüşmeye gelme sebebidir; önceden gönderirsen sebebi harcamış olursun.
 
 Görüşmedeki yeri: soru bölümünden sonra, sunumda. Ekran paylaşımı ve sunum dosyası yok. "Şimdi şu numarayı arayın, kapatmadan dinleyin." Soru bölümünden önce gösterilmez. Adaya özel demo, yani onun işletme adıyla kurulmuş bir hat, görüşmeden önce yapılmaz; kişiye özel olan şey adayın kendi deneme sonucudur. Onun adına kurulum ödemeden sonra yapılır.
 
-**Dördüncü gün akışı.** Sabah bloğunun başında FounderOS yazılı test sorularını ve form adaylarını verir · yazılı testler ve form testleri kartın yazdığı saatte, yani sabah on ile on bir arası · arkasından FounderOS demoyu kurar, sen beklemezsin, adaya-mesaj-yaz'ın kanal şablonlarına bakarsın · saha bloğunun içinde demo testi, beş tur, yirmi dakika · hemen arkasından ekran kaydı · akşam yedi ile sekiz arası telefon testi, otuz arama (nişin saati farklıysa FounderOS söyler) · testin bitiminden on beş dakika sonra sonuçları söylersin, CRM'e ve o adayların denetim kartına yazılır; gece ilk yüz temas üretilir, form sonuçları ertesi günün sabah bloğunda kesinleşir. İşin yanında çalışıyorsan: yazılı ve form testleri öğle arasında, on ile on bir arası olmuyorsa FounderOS'un vereceği saatte (yirmi dakika); telefon testi 19.00-20.00, yani saha bloğunun içinde; demo testi dördüncü günün akşam bloğunda; ön görüşme videosunun kanıt bölümü beşinci günün sabah bloğunda çekilir. Dördüncü gün toplam bir buçuk saat.
+**Dördüncü blok akışı.** Sabah bloğunun başında FounderOS yazılı test sorularını ve form adaylarını verir · yazılı testler ve form testleri kartın yazdığı saatte, yani sabah on ile on bir arası · demo hattı elindeyse saha bloğunun içinde demo testi, beş tur, yirmi dakika, hemen arkasından kayıt (elinde değilse bu iki adım CRM gününe kayar) · akşam yedi ile sekiz arası telefon testi, otuz arama (nişin saati farklıysa FounderOS söyler) · testin bitiminden on beş dakika sonra sonuçları söylersin, CRM'e ve o adayların denetim kartına yazılır; gece ilk yüz temas üretilir, form sonuçları ertesi günün sabah bloğunda kesinleşir. İşin yanında çalışıyorsan: yazılı ve form testleri öğle arasında, on ile on bir arası olmuyorsa FounderOS'un vereceği saatte (yirmi dakika); telefon testi 19.00-20.00, yani saha bloğunun içinde; demo testi dördüncü günün akşam bloğunda; ön görüşme videosunun kanıt bölümü beşinci günün sabah bloğunda çekilir. Dördüncü gün toplam bir buçuk saat.
 
 ## 6. Ne söyler
 
-Sabah bloğunda: "Bugün iki kanıt çıkarıyoruz. Sorunun kanıtı: kartın söylediği kapanış saatinden sonra otuz işletmeyi arayacaksın, kaçının açmadığını sayacağız. Çözümün kanıtı: günün ikinci yarısında demo hattında çalışan sistemi kendi telefonundan göreceksin. Yarından sonra 'bana güvenin' demeyeceksin; 'dün akşam aradım, açan olmadı' diyeceksin."
+Sabah bloğunda: "Bugün iki kanıt çıkarıyoruz. Sorunun kanıtı: kartın söylediği kapanış saatinden sonra otuz işletmeyi arayacaksın, kaçının açmadığını sayacağız. Çözümün kanıtı: demo hattın açıldıysa günün ikinci yarısında çalışan sistemi kendi telefonundan göreceksin; açılmadıysa o kanıt başlangıç görüşmenden sonra geliyor. Yarından sonra 'bana güvenin' demeyeceksin; 'dün akşam aradım, açan olmadı' diyeceksin."
 Test sırasında biri açarsa: "Konuşma başlatma. 'Kaça kadar açıksınız' de, teşekkür et, kapat. Bana 'açtı' de."
 Akşam bloğunda: "Otuz arama, yirmi ikisi açmadı. Yirmi ikisinin kartına altıncı satır olarak yazıldı; yarın onları bu cümleyle arıyorsun. Yazılı on sorudan şimdilik dördü döndü, en hızlısı bir saat; kalanı yarın sabah kesinleşir. Form sonuçları da yarın sabah. Kanıt cümlen yarın sabah hazır, içinde uydurma tek rakam yok."
 Demo bozuksa: "Fiyat verdi. Böyle demo gösterilmez. Düzeltiyorum, on dakika sonra tekrar dene."
@@ -121,7 +121,7 @@ CRM'de adayın notuna: kanal, gün, saat, sonuç, dönüş süresi. Aynı sonuç
 - Otuz aramada yirmi beşten fazlası açtıysa: telefon kanıtı zayıf. Yazılı ve form testine ağırlık verilir; kanca kartın açılış cümlesi olur.
 - Yazılı testte aday satış sanıp kızarsa: tek satır "müşteri olarak sormuştum, teşekkürler"; aday "sonra" aşamasına.
 - Demo beş turda temiz çıkmadıysa: "tamam" yok, görüşmeler yine yapılır, kanıt deneme araması; her gün bir tur daha test.
-- CRM'e yazılamıyorsa: sonuçlar geçici dosyaya, ertesi sabah aktarılır.
+- CRM'e yazılamıyorsa ya da henüz açılmadıysa: sonuçlar `adaylar.csv`'ye ve `denetim-kartlari.md`'ye; CRM açıldığı gün aktarılır.
 - İşin yanında çalışıyorsan ve akşam testinden sonra ertesi gün mesai saatinde arayamıyorsan: açmayan adayı öğle arasında ararsın ya da kanca e-postayla gider.
 
 ## 9. Sıradaki adım ve işaretler

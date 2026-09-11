@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: aday-denetimi-cikar
-description: Dördüncü gün hızlı denetim, sonra her sabah derin denetim ve sızıntı puanı.
+description: "Dördüncü gün hızlı denetim, sonra her sabah derin denetim ve sızıntı puanı."
 ---
 
 # aday-denetimi-cikar
@@ -21,9 +21,9 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 ## 2. Ne zaman çalışır
 İki hâli var ve ikisi ayrı işler.
 
-**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Dördüncü günde en çok istenen yüz işletmenin hepsine yapılır; sığmayanı beşinci günün sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
+**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Dördüncü blokta en çok istenen yüz işletmenin hepsine yapılır; sığmayanı beşinci bloğun sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
 
-**Derin denetim.** İşletme başına sekiz dakika, canlı testler dahil. Sadece o gün temas edilecek adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Çıktısı tam denetim kartı.
+**Derin denetim.** İşletme başına sekiz dakika, canlı testler dahil. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
 
 Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin denetim her sabah sıranın başındakileri açar.
 
@@ -161,7 +161,7 @@ Bulgu çıkmazsa: "Bu işletmede dışarıdan görünen sızıntı yok. Bu 'soru
 
 ## 7. Ne yazar
 
-CRM'e: her adayın sızıntı puanı, denetim tarihi, denetim kartının tamamı "denetim kartı" satırına, en güçlü bulgu tek satır olarak ayrı alana (mesaj metinleri oradan okuyor), karar verenin adı, reklam işareti, arama testi sonucu ve yazılı test sonucu kendi satırlarına. Kanal durumu satırlarına dokunulmuyor: denetim bir test, temas değil.
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; denetim kartının tamamı CRM'siz günlerde klasördeki `denetim-kartlari.md` dosyasına, aday adıyla): her adayın sızıntı puanı ve uygunluk puanı, denetim tarihi, denetim kartının tamamı "denetim kartı" satırına, en güçlü bulgu tek satır olarak ayrı alana (mesaj metinleri oradan okuyor), karar verenin adı, reklam işareti, arama testi sonucu ve yazılı test sonucu kendi satırlarına. Kanal durumu satırlarına dokunulmuyor: denetim bir test, temas değil.
 
 İş Beyni'ne: kaç adayın hızlı denetimi yapıldı, kaçının derin denetimi yapıldı, puan dağılımı, hangi bulgu tipi en çok cevap alıyor (bu satır otuz temastan sonra dolmaya başlıyor).
 
@@ -176,7 +176,7 @@ Sonraki modüllere: en güçlü bulgu ve lira karşılığı adaya-mesaj-yaz'a, 
 - Canlı arama testi yapılamadıysa (senin telefonun yok, saat uygun değil, aynı gün ikinci kez aranmaz): kart o satır boş gider, en güçlü bulgu sıradaki satırdan seçilir. Test ertesi gün yapılır ve kart güncellenir.
 - Meta reklam kütüphanesine ulaşılamazsa: "bakılamadı" yazılır, puana girmez. Bu satırın hiç dolmaması sık oluyor ve sistemi durdurmuyor.
 - Karar verenin adı bulunamazsa: aday telefon sırasından çıkar, e-posta ve Instagram sırasına geçer. Sonradan ad öğrenilirse telefona döner.
-- Denetim için ayrılan sabah bloğu dolarsa: o gün kaç aday denetlendiyse o kadarıyla sahaya çıkılır. Denetimsiz aday aranmaz; onun yerine listenin altındaki, denetimi hazır olan aday aranır. Saha bloğu hiçbir gün denetim yüzünden kısalmaz.
+- Denetim için ayrılan sabah bloğu dolarsa: o gün kaç adayın derin denetimi bittiyse ilk aramalar o kadar olur, gerisi hızlı denetimle gider. Hızlı denetimi olmayan adaya ulaşılmaz; onun yerine listenin altındaki, hızlı denetimi hazır olan aday alınır. Saha bloğu hiçbir gün denetim yüzünden kısalmaz.
 - Bir aday iki kez denetlenirse: eski kart silinmez, yenisi tarihiyle altına yazılır. Aradaki fark başlı başına bir bulgudur: "üç ay önce de aramıştım, o zaman da açılmamıştı" cümlesi çok güçlü.
 
 ## 9. Sıradaki adım ve işaretler

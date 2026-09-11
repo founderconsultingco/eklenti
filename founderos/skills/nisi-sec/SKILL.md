@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nisi-sec
-description: Birinci gün. On dokuz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda.
+description: "Birinci gün. On dokuz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda."
 ---
 
 # nisi-sec
@@ -45,7 +45,7 @@ Sırası şu:
 
 1. Tanışmanın cevaplarını okur. İçeriden tanıdığı sektörler, çevresindeki işletme sahipleri, şehri, çalışma saatleri, satış tecrübesi, vizyon belgesindeki hedef.
 2. Eksik kalan yeri sorar. Sekizinci soruda bir sektör adı geçtiyse oradan ne kadar içeriden bildiğini, kaç kişi tanıdığını, o işi bırakalı ne kadar olduğunu sorar. En fazla iki soru.
-3. Araştırmayı yapar. On dokuz kartı elemeden geçirir, kalanları öğrencinin durumuyla karşılaştırır.
+3. Araştırmayı yapar. On dokuz kartı elemeden geçirir, kalanları öğrencinin durumuyla karşılaştırır. Bunu anlatırken ne yaptığını doğru söyler: "kartları okudum ve senin cevaplarınla karşılaştırdım"; "araştırmayı yaptım", "piyasayı taradım" demez, çünkü canlı sayım ikinci blokta arka planda yapılır ve o güne kadar rakamlar karttandır. Şehir sayısı söylerken kaynağını söyler: "kartın rakamı, canlı sayım yarın."
 4. Kararını önerir ve gerekçesini anlatır.
 5. Onayını alır.
 
@@ -129,7 +129,7 @@ Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı ner
 
 ### Üçüncü eleme: pazar büyüklüğü
 
-Üçüncü günde 500 kişilik bir aday listesi çıkaracaksın. Doksan günde o listeye yaklaşık 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
+Üçüncü blokta 500 kişilik bir aday listesi çıkaracaksın. Doksan günde o listeye yaklaşık 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
 
 Eşik buradan çıkıyor:
 - Şehrinde 500 işletme varsa niş geçer.
@@ -162,7 +162,7 @@ Rakip varsa teklifi-yaz'a "rakip var" notu gider. O zaman açılış cümlen "bi
 
 Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici müşteri değerini kartın rakamıyla günceller.
 
-Son adım Doksan Gün Planı'nı üretmek. Doksan Gün Planı, doksan gün boyunca önünde duracak on altı bölümlük plandır. İş Beyni'ne ayrı bölüm olarak yazılır.
+Seçilen kartı klasöre `nis-karti.md` adıyla yazar ve öğrenciye söyler: "Sektörünün kartı klasöründe, adı nis-karti; okuman gerekmiyor, ben okuyorum." Doksan Gün Planı bu modülde değil, fiyat bandı konduktan sonra üretilir; on altı bölümlük plan klasörde `doksan-gun-plani.md` olarak durur ve arka plan yardımcısı yazar.
 
 ## 6. Ne söyler
 
@@ -175,7 +175,8 @@ Niş değiştirmek isterse: "Üç yüz temasa gelmeden niş değişmez. Şu an k
 
 ## 7. Ne yazar
 
-İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi), rakip notu, Doksan Gün Planı.
+İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi), rakip notu.
+Klasöre: `nis-karti.md`, seçilen kartın tamamı.
 CRM'e (adayların ve müşterilerin kaydedildiği takip programı): aday listesinin adı. Dokuz aşama hazır geliyor, sen koymuyorsun; sırası yeni, yazdım, cevap verdi, görüşme ayarlandı, görüşme yaptım, teklif verdim, kazandım, kaybettim, sonra.
 Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 

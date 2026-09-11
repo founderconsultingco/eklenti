@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: crm-baglantisi
-description: CRM baglantisinin nasil kuruldugu, hangi bilginin CRM'de hangisinin Is Beyni'nde durdugu, olcu kurallari ve lisans anahtari akisi. CRM'e ilk kez baglanirken ve bir sayinin nereden okunacagi belirsizken acilir.
+description: "CRM baglantisinin nasil kuruldugu, hangi bilginin CRM'de hangisinin Is Beyni'nde durdugu, olcu kurallari ve lisans anahtari akisi. CRM'e ilk kez baglanirken ve bir sayinin nereden okunacagi belirsizken acilir."
 ---
 
 # CRM bağlantısı ve araç haritası

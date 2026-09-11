@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-hasere
-description: Sadece hasere ilaclama nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece hasere ilaclama nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Haşere ilaçlama

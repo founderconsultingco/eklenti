@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-elektrik
-description: Sadece elektrik ve teknik bakim nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece elektrik ve teknik bakim nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Elektrik ve teknik bakım

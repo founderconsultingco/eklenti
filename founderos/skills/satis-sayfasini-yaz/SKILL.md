@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: satis-sayfasini-yaz
-description: Ek modül. Uzun satış videosu ve satış sayfası; ilk kanıt hikâyesi çıkınca açılır.
+description: "Ek modül. Uzun satış videosu ve satış sayfası; ilk kanıt hikâyesi çıkınca açılır."
 ---
 
 # satis-sayfasini-yaz

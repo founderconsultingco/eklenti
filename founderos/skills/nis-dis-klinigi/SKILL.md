@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-dis-klinigi
-description: Sadece dis klinigi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece dis klinigi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Diş kliniği

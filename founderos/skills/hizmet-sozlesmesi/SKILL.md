@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: hizmet-sozlesmesi
-description: Musteriyle imzalanacak hizmet sozlesmesinin sablonu. Sadece onay-belgesini-hazirla adiminda acilir.
+description: "Musteriyle imzalanacak hizmet sozlesmesinin sablonu. Sadece onay-belgesini-hazirla adiminda acilir."
 ---
 
 # Hizmet Sözleşmesi (modül değil, onay-belgesini-hazirla'nın kullandığı şablon)

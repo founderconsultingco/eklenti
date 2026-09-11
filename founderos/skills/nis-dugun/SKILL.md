@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-dugun
-description: Sadece dugun organizasyon ve mekan nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece dugun organizasyon ve mekan nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Düğün organizasyon ve mekan

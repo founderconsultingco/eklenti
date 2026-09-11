@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: adaya-mesaj-yaz
-description: Metinler dördüncü gün, saha altıncı günden itibaren her gün. "Bir işletme cevap verdi", "biri geri döndü" dendiğinde cevap konuşması buradan. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar.
+description: "Metinler dördüncü gün, saha altıncı günden itibaren her gün. \"Bir işletme cevap verdi\", \"biri geri döndü\" dendiğinde cevap konuşması buradan. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar."
 ---
 
 # adaya-mesaj-yaz
@@ -311,7 +311,7 @@ Akşam: "Kırk üç arama, on yedisi açtı, beşi konuştu, bir randevu. Yirmi 
 
 ## 7. Ne yazar
 
-CRM'e: her temas kaydı, kanalı, tarihi ve sonucu. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (yeni, yazdım, cevap verdi, görüşme ayarlandı, "sonra"). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi.
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): her temas kaydı, kanalı, tarihi ve sonucu. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (yeni, yazdım, cevap verdi, görüşme ayarlandı, "sonra"). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi.
 
 İş Beyni'ne: mesaj sürümü ve tarihi, hangi bulgu tipi hangi kanalda cevap alıyor, kanal başına cevap oranı, en sık üç itiraz.
 
@@ -328,7 +328,7 @@ Onay: e-posta metni "tamam" deyince sıraya girer; arama sonucu sen söyleyince 
 - E-posta adresin henüz alışmamışsa e-posta sınırı düşer, telefon artar. Eski bir Gmail adresin varsa yirmi e-posta oradan gider.
 - Instagram hesabın yeniyse özel mesaj sıfır, Instagram satırı bütün adaylarda "kapandı" yazılır, e-posta artar.
 - O gün telefon yapamıyorsan ("sesim yok") yazı yolu rakamları geçerli, ertesi gün geri dönülür. Telefon satırlarının tarihi bir gün kayar.
-- CRM açılmıyorsa temaslar ve kanal durumları geçici dosyaya yazılır, akşam aktarılır.
+- CRM açıksa ama o an girilemiyorsa: temaslar ve kanal durumları `adaylar.csv`'ye yazılır, akşam aktarılır. CRM henüz açılmadıysa bu bir aksaklık değil; `adaylar.csv` zaten kayıt yeridir.
 - Sahibinin adı bulunamayan işletmeler e-posta ve Instagram listesine düşer. Ad sonradan öğrenilirse telefon satırı "yapılmadı" olarak açılır.
 
 ## 9. Sıradaki adım ve işaretler

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-emlak
-description: Sadece emlak ofisi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece emlak ofisi nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Emlak ofisi

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: kisisel-markani-kur
-description: Dördüncü gün. Kurucunun kendi profili: fotoğraf, biyografi, sosyal hesaplar.
+description: "Dördüncü gün. Kurucunun kendi profili: fotoğraf, biyografi, sosyal hesaplar."
 ---
 
 # kisisel-markani-kur
@@ -95,15 +95,15 @@ Takipçi satın alınmaz, takipleşme yapılmaz.
 
 Açılışta: "Bir saat. Dört profil dolduracağız: Instagram, WhatsApp, e-posta imzası, YouTube. Paylaşım yok, içerik yok. Bugün sadece doldurma günü."
 Fotoğraf için: "Profil fotoğrafına logo koyma, yüzünü koy. Tek kişilik bir işte logo koyan kişi şirket taklidi yapıyor gibi duruyor ve işletmeci bunu anlıyor. Telefonla, düz duvar önünde, gün ışığında çek. On dakika."
-Biyografi için: "Üç satır. Ne yaptığın, kanıtın, linkin. Dördüncü satır yazmak istiyorsan yazma. Link yarın akşam geliyor, bugün o satır boş."
-Hesabı yeniyse: "Hesabın iki aylık. Altıncı güne kadar mesaj atmıyoruz, çünkü yeni hesaptan gelen mesaj daha kolay engelleniyor. Bu yedi günde nişindeki işletmeleri takip et, gördüğün gönderilere gerçek yorum yaz. Günde beş dakika."
-İçerik üretmek isterse: "Bugün paylaşım yok. İçerik ikinci ayın işi ve şu an elinde paylaşacak kanıt yok. Altıncı günde kim aradın diye soracağım, kaç gönderi attın diye değil."
+Biyografi için: "Üç satır. Ne yaptığın, kanıtın, linkin. Dördüncü satır yazmak istiyorsan yazma. Link sitenin adresi, altıncı bölümde yazıyor; ben koyuyorum."
+Hesabı yeniyse: "Hesabın iki aylık. Saha açılana kadar mesaj atmıyoruz, çünkü yeni hesaptan gelen mesaj daha kolay engelleniyor. O güne kadar nişindeki işletmeleri takip et, gördüğün gönderilere gerçek yorum yaz. Günde beş dakika."
+İçerik üretmek isterse: "Bugün paylaşım yok. İçerik ikinci ayın işi ve şu an elinde paylaşacak kanıt yok. Saha açılınca kim aradın diye soracağım, kaç gönderi attın diye değil."
 LinkedIn sorarsa: "LinkedIn'de senin müşterin yok. Klima servisi sahibi LinkedIn'de değil, telefonun ucunda."
 
 ## 7. Ne yazar
 
 İş Beyni'ne: Instagram kullanıcı adı ve hesap yaşı, işletme hesabına geçildiği, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, profil fotoğrafının yeri, biyografi metni ve sürümü.
-Bir sonraki modüllere: Instagram hesap yaşı adaya-mesaj-yaz'a (yeni hesapsa mesaj başlangıcı altıncı güne kilitlenir), YouTube adresi satis-videosunu-cek'e, WhatsApp numarası onay-belgesini-hazirla'ya.
+Bir sonraki modüllere: Instagram hesap yaşı adaya-mesaj-yaz'a (yeni hesapsa mesaj başlangıcı sahanın ilk gününe kilitlenir), YouTube adresi satis-videosunu-cek'e, WhatsApp numarası onay-belgesini-hazirla'ya.
 
 ## 8. Yedek yol
 

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: degisiklige-karar-ver
-description: Haftanın sonunda. Neyin değişeceğine karar verilir: niş mi, mesaj mı, fiyat mı.
+description: "Haftanın sonunda. Neyin değişeceğine karar verilir: niş mi, mesaj mı, fiyat mı."
 ---
 
 # degisiklige-karar-ver

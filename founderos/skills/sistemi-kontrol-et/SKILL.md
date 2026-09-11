@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: sistemi-kontrol-et
-description: Her hafta, her müşteri için. Sistem sessizce bozuldu mu.
+description: "Her hafta, her müşteri için. Sistem sessizce bozuldu mu."
 ---
 
 # sistemi-kontrol-et

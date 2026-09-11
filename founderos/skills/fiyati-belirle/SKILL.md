@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: fiyati-belirle
-description: Birinci gün fiyat bandı, üçüncü gün kesin fiyat. "Fiyat ne diyeyim", "pahalı dedi" dendiğinde itiraz bölümü.
+description: "Birinci gün fiyat bandı, üçüncü gün kesin fiyat. \"Fiyat ne diyeyim\", \"pahalı dedi\" dendiğinde itiraz bölümü."
 ---
 
 # fiyati-belirle
@@ -27,7 +27,7 @@ Pazarlamadaki karşılığı: fiyat matematik değil, kendini nereye koyduğun.
 
 ## 2. Ne zaman çalışır
 - Birinci gün: fiyat bandı, nişin kartından alt ve üst rakam, on dakika.
-- Üçüncü gün sabah, bir saat: kesin fiyat. Akşam tanıdıklara ilk mesaj gidiyor, fiyat ondan önce tek rakama iner.
+- Üçüncü blok sabah, bir saat: kesin fiyat. Akşam tanıdıklara ilk mesaj gidiyor, fiyat ondan önce tek rakama iner. Kesin fiyat konduğu anda süre hükmü de verilir (aşağıda) ve Doksan Gün Planı'nın yedinci bölümü güncellenir.
 - Her yeni müşteri kazandığında kısa bir kontrol için.
 - kari-hesapla üç ayda bir bu modülü yeniden çalıştırır.
 
@@ -99,6 +99,10 @@ Sıfırdan başlayan herkesin yaptığı hata: kulağa iyi geldiği için yükse
 Bu yüzden ilk iki müşteride deneme fiyatı var ve güvence sözleşmede yazılı: riskin bir kısmı sende kalıyor, bu seni daha hızlı öğrenmeye zorluyor ve satışta dürüstlük olarak okunuyor. "Sadece işe yararsa ödersiniz" cümlesinin bizdeki hali "yirmi birinci günde sayılar sıfırsa ikinci ay ücretsiz"dir. Kurulum ücreti tamamen sıfırlanmaz; sıfır olan iş ciddiye alınmıyor ve işletmeci takip etmiyor.
 
 Randevu başına ya da gelen müşteri başına ücret modeli bizim işe uymuyor ve sebebini bil: o model reklamla dışarıdan talep üreten ajanslar içindir, talep onların. Bizim sistem işletmenin zaten gelen talebini kurtarıyor; "bu randevu sistemden mi geldi yoksa zaten gelecek miydi" tartışması her ay çıkar. O yüzden bizde sabit aylık ücret artı olaya bağlı güvence var.
+
+### Süre hükmü (yalnız üçüncü blokta, kesin fiyatla)
+
+Kesin rakam konunca gelir planı isini-kur'daki zincirle yeniden hesaplanır (hedef bölü müşteri değeri, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, arama bölü günlük arama sayısı eşittir gün). Çıkan gün doksanı geçiyorsa bugün, ilk kez, söylenir ve iki yoldan biri seçilir: hedef doksan güne indirilir ya da doksan gün sonrası için ikinci hedef yazılır. Bu cümle birinci günde kurulmaz; birinci günde yalnız tempo gösterilir. Moral bozmadan söylenir, rakamla: "Bu fiyatla hedefin doksan güne değil yüz yirmi güne sığıyor. Doksan günde dört müşteri, sonrası ikinci hedef." Karar İş Beyni'nin ikinci bölümüne tarihle yazılır.
 
 ### Deneme fiyatı
 

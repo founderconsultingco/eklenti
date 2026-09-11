@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-fotograf
-description: Sadece fotograf studyosu nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece fotograf studyosu nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Fotoğraf stüdyosu

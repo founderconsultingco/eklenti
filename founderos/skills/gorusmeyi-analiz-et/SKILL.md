@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusmeyi-analiz-et
-description: "Görüşme bitti", "kaydı yükledim", "şöyle geçti" dendiğinde. Nerede koptu, ne öğrenildi, kayıt İş Beyni'ne.
+description: "Öğrenci \"görüşme bitti\", \"kaydı yükledim\", \"şöyle geçti\" dediğinde. Nerede koptu, ne öğrenildi, kayıt İş Beyni'ne."
 ---
 
 # gorusmeyi-analiz-et

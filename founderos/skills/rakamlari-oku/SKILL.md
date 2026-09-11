@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: rakamlari-oku
-description: Her akşam. Günün beş sayısı ve tek cümle.
+description: "Her akşam. Günün beş sayısı ve tek cümle."
 ---
 
 # rakamlari-oku
@@ -26,20 +26,20 @@ Pazarlamadaki karşılığı: ölçmediğin şeyi yönetemezsin, ama yanlış ş
 ## 2. Ne zaman çalışır
 - Her akşam, günün sonunda. Beş dakika sürer.
 - Görüşme olan günlerde gorusmeyi-analiz-et'ten sonra çalışır.
-- Altıncı günden itibaren her gün.
-- Üçüncü günden beşinci güne kadar kısa hali: yalnız sıcak çevreye giden mesajlar ve gelen cevaplar sayılır. Öncesinde sayılacak temas yok.
+- Saha açıldıktan sonra her gün.
+- Üçüncü bloktan saha açılana kadar kısa hali: yalnız sıcak çevreye giden mesajlar ve gelen cevaplar sayılır. Öncesinde sayılacak temas yok.
 
 ## 3. Ne okur
 
-CRM'den: o günün bütün kayıtları. Temas sayısı ve kanalı, gelen cevaplar, olumlu cevaplar, yazılan randevular, gelen ve gelmeyen randevular, yapılan görüşmeler, kapanışlar. Akşamki beş sayıyı FounderOS bu kayıtlardan sayıyor.
+Kayıt yerinden: CRM açıldıysa CRM'den, açılmadıysa İş Beyni'nin "Bugünün listesi" bölümünden. O günün bütün kayıtları: temas sayısı ve kanalı, gelen cevaplar, olumlu cevaplar, yazılan randevular, gelen ve gelmeyen randevular, yapılan görüşmeler, kapanışlar. Akşamki beş sayıyı FounderOS bu kayıtlardan sayıyor. CRM'siz günlerde sayılar gün içinde öğrencinin söylediklerinden Bugünün listesi'ne yazılmıştır; bu "elle yazıldı" sayılmaz, normal yoldur.
 İş Beyni'nden: gelir planındaki hedefler, dünkü ve bu haftanın sayıları, gün sayacı.
 gorusmeyi-analiz-et'ten: o günkü görüşmelerin sonucu.
 
 ## 4. Ne sorar
 
-Sormaz. Sayıları CRM'den kendisi alır.
+Sormaz. Sayıları kayıt yerinden kendisi alır.
 
-Tek istisna: CRM'de o gün hiç kayıt yoksa tek soru sorar. "Bugün hiç kayıt görünmüyor. Gerçekten sıfır mı, yoksa yazmayı mı unuttun?" Sebebi şu: sıfır gün ile yazılmamış gün aynı şey değil ve ikisine verilen cevap farklı.
+Tek istisna: kayıt yerinde o gün hiç kayıt yoksa tek soru sorar. "Bugün hiç kayıt görünmüyor. Gerçekten sıfır mı, yoksa yazmayı mı unuttun?" Sebebi şu: sıfır gün ile yazılmamış gün aynı şey değil ve ikisine verilen cevap farklı.
 
 ## 5. Ne yapar
 
@@ -109,12 +109,12 @@ Sayaç okurken: "Gün yirmi altı. Toplam bin iki yüz temas, on iki görüşme.
 
 ## 7. Ne yazar
 
-İş Beyni'ne: o günün beş sayısı, gün sayacı, haftalık toplam, akşamın tek cümlesi, kötü görüşme notu. Bir de koşan toplam: bugüne kadar kaç temas, kaç görüşme, kaç randevu. Bu toplam her akşam üstüne ekleniyor ve bütün kilitler (üç yüz temas, on görüşme, otuz görüşme, otuz randevu) ondan okunuyor. CRM böyle bir toplamı tutmuyor, o yüzden akşam sayımı atlanan gün kilitler de kayıyor.
+İş Beyni'ne: o günün beş sayısı (onuncu bölüm), gün sayacı, haftalık toplam, akşamın tek cümlesi, kötü görüşme notu. CRM açılmadıysa Bugünün listesi'nin "Dün ne oldu" satırı da bu akşam yazılır; sabah planı oradan okur. Bir de koşan toplam: bugüne kadar kaç temas, kaç görüşme, kaç randevu. Bu toplam her akşam üstüne ekleniyor ve bütün kilitler (üç yüz temas, on görüşme, otuz görüşme, otuz randevu) ondan okunuyor. CRM böyle bir toplamı tutmuyor, o yüzden akşam sayımı atlanan gün kilitler de kayıyor.
 CRM'e: eksik kalan kayıtlar tamamlanır. Bu modül eksik kaydı görür ve sana söyler, ama senin onayın olmadan yazmaz.
 
 ## 8. Yedek yol
 
-- CRM'e o gün yazılmamışsa: sayılar senden alınır ve "elle yazıldı" notu düşülür. Üç gün üst üste elle yazılıyorsa kayıt alışkanlığı bozulmuş demektir, haftanın kararına gider.
+- CRM açıkken o gün CRM'e yazılmamışsa: sayılar senden alınır ve "elle yazıldı" notu düşülür. Üç gün üst üste elle yazılıyorsa kayıt alışkanlığı bozulmuş demektir, haftanın kararına gider. CRM açılmadıysa bu satır işlemez.
 - Bir sayı ölçülemiyorsa: "ölçülemedi" yazılır, uydurulmaz. Ölçülemeyen sayı hakkında karar verilmez.
 - Görüşme kaydı yoksa: gorusmeyi-analiz-et'in yedek yolu işler, bu modül sadece sayıları alır.
 - Akşam okuma atlanırsa: ertesi sabah plandan önce yapılır, atlanmaz. İki gün üst üste atlanırsa haftanın kararına gider.
@@ -126,7 +126,7 @@ Sıradaki: ertesi sabah gunu-planla. Haftanın son akşamında degisiklige-karar
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - İki gün üst üste sıfır kayıt: vazgeçme işareti, sabah planı değişir.
-- Üç gün üst üste sayılar elle yazıldı: kayıt alışkanlığı bozuk, haftanın kararına gider.
+- Üç gün üst üste sayılar elle yazıldı (yalnız CRM açıkken): kayıt alışkanlığı bozuk, haftanın kararına gider.
 - İki yüz temasta cevap oranı yüzde ikinin altında: teşhis işareti degisiklige-karar-ver'e gider, karar üç yüzde verilir.
 - Otuz randevu doldu: gelme oranı ilk kez okunur.
 - Otuz görüşme doldu: kapanış oranı ilk kez okunur, fiyat kilidi açılır.

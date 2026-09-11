@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: nis-dil-kursu
-description: Sadece yetiskinlere yonelik dil ve mesleki egitim kurslari nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir.
+description: "Sadece yetiskinlere yonelik dil ve mesleki egitim kurslari nisinin karti: rakamlar, itirazlar, yasal sinir, kayip birimi, kanal ve zaman. O nis secildikten sonra acilir."
 ---
 
 # Yetişkinlere yönelik dil ve mesleki eğitim kursları

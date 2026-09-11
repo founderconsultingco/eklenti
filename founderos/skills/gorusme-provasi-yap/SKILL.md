@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: gorusme-provasi-yap
-description: Dördüncü ve beşinci gün on iki prova, sonra her görüşmeden önce. "Yarın görüşmem var" dendiğinde on dakikalık prova. Prova sayacı dolmadan soğuk saha açılmaz.
+description: "Dördüncü ve beşinci gün on iki prova, sonra her görüşmeden önce. \"Yarın görüşmem var\" dendiğinde on dakikalık prova. Prova sayacı dolmadan soğuk saha açılmaz."
 ---
 
 # gorusme-provasi-yap
@@ -147,7 +147,7 @@ CRM'e hiçbir şey yazmaz. Kartın "sahadan dolacak" bölümüne prova verisi gi
 
 ## 8. Yedek yol
 
-Senden iyi biri bulunamadıysa beşinci günün iki sesli provası FounderOS ile yazılı yapılır. Kurucu bölümüne "senden iyi biriyle sesli prova bulunamadı" notu düşer. On iki yine dolar, altıncı gün başlar. Sesli söylemeden sadece yazıyorsan bir kez hatırlatılır, ısrar edilmez. Prova yarım kalırsa sayılmaz; aynı senaryo kaldığı yerden devam eder. Kartın itirazları zayıfsa Doksan Gün Planı 12. bölümün on genel itirazı kullanılır. Aday belli değilse genel orta zorluk senaryosu oynanır. Provada dağılıyor, cevap veremiyorsan senaryo bir alt zorluğa iner, konu değişmez. Prova atlandıysa üç dakikalık sıkıştırılmış prova yapılır (E maddesi). Konuşarak yazdırma imkanı varsa sesli prova aynı modülle yapılır.
+Senden iyi biri bulunamadıysa beşinci bloğun iki sesli provası FounderOS ile yazılı yapılır. Kurucu bölümüne "senden iyi biriyle sesli prova bulunamadı" notu düşer. On iki yine dolar, saha açılır. Sesli söylemeden sadece yazıyorsan bir kez hatırlatılır, ısrar edilmez. Prova yarım kalırsa sayılmaz; aynı senaryo kaldığı yerden devam eder. Kartın itirazları zayıfsa Doksan Gün Planı 12. bölümün on genel itirazı kullanılır. Aday belli değilse genel orta zorluk senaryosu oynanır. Provada dağılıyor, cevap veremiyorsan senaryo bir alt zorluğa iner, konu değişmez. Prova atlandıysa üç dakikalık sıkıştırılmış prova yapılır (E maddesi). Konuşarak yazdırma imkanı varsa sesli prova aynı modülle yapılır.
 
 ## 9. Sıradaki adım ve işaretler
 
