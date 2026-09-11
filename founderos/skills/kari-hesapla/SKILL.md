@@ -94,7 +94,7 @@ Her ay üç soruya bakılır:
 
 Burada dikkatli olmak lazım, çünkü iki farklı şey karıştırılıyor.
 
-**Yeni müşterilerin fiyatı yükselir.** Kanıt hikâyen çıktıkça, üçüncü müşteriden itibaren tam fiyat, sonrasında da kartın izin verdiği yere kadar. Yeni fiyat yeni müşterilere uygulanır.
+**Yeni müşterilerin fiyatı yükselir.** Kanıt hikâyen çıktıkça, üçüncü müşteriden itibaren tam fiyat. Oranlar değişmez, formül aynı kalır; rakam ancak daha büyük işletmeye satınca büyür. Yeni fiyat yeni müşterilere uygulanır.
 
 **Mevcut müşterinin aynı hizmete zammı yoktur.** Onun yerine kademe yükseltmesi var: müşteri sonuç görmeye başladıktan sonra, en erken ikinci ayda, üst kademeye geçiş konuşulur. Aldığı iş büyür, ücreti de büyür. Aynı işe daha fazla para istemek değil, daha fazla iş vermek.
 

@@ -38,7 +38,7 @@ Her görüşmede, görüşme saatinden on dakika önce açılır ve görüşme �
 - Denetim kartı (aday-denetimi-cikar'dan; adayın kaydında duruyor, mesajın ilk cümlesi de oradan çıkmıştı):
   - EN GÜÇLÜ BULGU: o adayda gerçekten görülmüş tek cümle.
   - LİRA KARŞILIĞI: kayıp birimi çarpı kartın rakamı, tek satır hesap.
-  - Sızıntı puanı, sıfırla dokuz arası.
+  - Sızıntı puanı, sıfırla beş arası.
   - Canlı arama testi ve yazılı test sonucu, saatiyle. Bunlar kartın altıncı ve yedinci satırı.
   - Dört kanalın durum satırları: hangi kanaldan kaç kez temas edildi, cevap hangisinden geldi.
 - Niş kartı (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa):
@@ -115,7 +115,7 @@ Kurallar:
 4. [21/28] gün ve rapor: "Altıncı gün canlı, yedinci gün liste, rapor günü raporda şu rakamlar".
 5. Sonuç tanımı ve güvence, tek nefeste, geri adım yok: "Ayda şu kadar müşteri garanti etmiyorum; kaçan aramanın ve aranmayan listenin randevuya dönüp dönmediğini rapor gününde rakamla göstereceğim. Rakam yoksa ikinci ay ücret almıyorum. Şartı tek: giriş izinlerini ilk gün, listeyi ve onayı yedinci güne kadar veriyorsunuz".
 6. Onun cümlesi: "Sonunda telefon çaldığında 'iş kaçtı' diye düşünmeyeceksiniz".
-Kanıt üç tane. Birincisi tarayıcı demosu: "Şimdi şu linki açın, bir müşteri gibi bir şey yazın." Görüntülüde de telefonda da aynı; aday kendi telefonunda dener, sen dürüstlük cümlesini söylersin (örnek olduğu, gerçek sistemin onun kurallarıyla kurulacağı). İkincisi kendi kanıt cümlen, "ben saydım" diye. Üçüncüsü kart rakamı. Sunumda araç adı, yazılım, ekran görüntüsü yok: "Mutfakta ne kullandığımı değil, önünüze gelen randevuyu satıyorum". "Anlaşıldı mı" kontrolü bir kez. Ekran paylaşımı ve sunum dosyası yok. Üç dakikayı öğrenci konuşur, işletmeci not alır: "Şunu yazın: altıncı gün, yedinci gün, rapor günü".
+Kanıt üç tane. Birincisi tarayıcı demosu: "Şimdi şu linki açın, bir müşteri gibi bir şey yazın." Görüntülüde de telefonda da aynı; aday kendi telefonunda dener, sen dürüstlük cümlesini söylersin (örnek olduğu, gerçek sistemin onun kurallarıyla kurulacağı). İkincisi kendi kanıt cümlen, "ben saydım" diye. Üçüncüsü kart rakamı. Sunumda araç adı, yazılım, ekran görüntüsü yok: "Mutfakta ne kullandığımı değil, önünüze gelen randevuyu satıyorum". "Anlaşıldı mı" kontrolü bir kez. Ekran paylaşımı ve sunum dosyası yok; tek istisna tarayıcı demosunun linki, o da adayın kendi telefonunda açılır, senin ekranından gösterilmez. Üç dakikayı öğrenci konuşur, işletmeci not alır: "Şunu yazın: altıncı gün, yedinci gün, rapor günü".
 
 **E. Fiyattan önce iki soru, fiyat, sessizlik.**
 - Bağlantı sorusu: "Bu, anlattığınız sorunu çözer mi? Neden öyle düşünüyorsunuz?" Sebebi işletmeci kendi söyler. "Rakam dışında sorunuz var mı?" Sorusu varsa fiyattan önce cevaplanır. Cevap "emin değilim" ise fiyata geçilmez: "Neyi görseniz emin olurdunuz?"
@@ -128,7 +128,7 @@ Kanıt üç tane. Birincisi tarayıcı demosu: "Şimdi şu linki açın, bir mü
 - "Düşüneyim." "Elbette. Neyi düşüneceksiniz: çalışır mı, rakam mı, kararı başkası mı veriyor?" Nedenini söyleyemeyen ciddi alıcı değil, "sonra". Gecikmenin bedeli: "Düşünürken bu hafta yine üç arama kaçacak, bunu görmeyeceksiniz, tehlike bu". Yine düşüneyim derse: yirmi dakikalık karar görüşmesi, iki üç gün sonrasına, şimdi, sen hattayken takvime yazılır. "Ben size yazarım", "e-posta atın" yolu kapalıdır; tarih hattayken alınmazsa görüşme olmaz. Karar görüşmesinin sırası sabittir: onun kendi cümleleriyle dertler yeniden okunur, rakamı yeniden söylenir, tek soru: "nasıl ilerleyelim?" Bir defa; ikinci erteleme "sonra"dır.
 - "Ortağıma/eşime sorayım." "Anladım. Tek karar verici siz olsaydınız bugün başlar mıydınız?" Evet derse: "Ortağınız ne sorar? Şimdi cevaplayayım, tam resmi anlatın". Gerçekten ortak kararıysa ortaklı karar görüşmesi şimdi, sen hattayken takvime girer, iki üç gün sonrasına, ortak da hatta; kendisi ortağına anlatmasın, çünkü anlatan satamaz. Bu görüşme yirmi dakikadır: dertler onun cümleleriyle, tarayıcı demosu, rakam, "nasıl ilerleyelim?"
 - "Zaten telefonu ben açıyorum / elemanım bakıyor." Kartın kanıtı: "Günde elli servise yetişirken telefon çaldığında araç altındasınız; haziranda şikayetler yüzde üç yüz yirmi arttı".
-- "Bot müşterimi soğutur / fiyat veremez / güvenmiyorum." "Haklısınız, kötü kurulmuş kendiliğinden giden mesaj hiç olmamasından beter. Bu fiyat vermez, pazarlık yapmaz, bilgi toplar, size getirir; siz onaylarsınız. Şimdi şu numarayı arayın, nasıl konuştuğunu dinleyin".
+- "Bot müşterimi soğutur / fiyat veremez / güvenmiyorum." "Haklısınız, kötü kurulmuş kendiliğinden giden mesaj hiç olmamasından beter. Bu fiyat vermez, pazarlık yapmaz, bilgi toplar, size getirir; siz onaylarsınız. Şimdi şu linki açın, bir müşteri gibi yazın, nasıl cevap verdiğini görün".
 - "Telefonum elimden gider mi?" "Hayır. Numaranıza dokunmuyorum, yeni numara alıyorum, yönlendirmeyi siz istediğinizde açıyoruz".
 - "Denedik, olmadı / ajans / yazılım / zaten yapay zeka teklifi aldık." "Ne oldu?" Dinle. "Tam bunu istemiyoruz." Farkı tek cümleyle söyle: "Ben bot satmıyorum, kaçan aramanın randevuya dönmesini satıyorum, rapor gününde raporla".
 - "Garanti veriyor musun?" Güvenceyi tekrar söyle, tek nefeste, şartıyla. Sayı garantisi yok, "ama" yok.
@@ -206,7 +206,7 @@ Görüşmeden sonra: donduğun an kayda yazılır, akşam analizinde kopma nokta
 
 ## 6. Ne söyler
 
-Görüşmeden on dakika önce: "Ahmet Bey, klima servisi, günde elli iş. Denetim kartından en güçlü bulgu: dün akşam yedi onda aradın, açan olmadı. Lira karşılığı hazır, telefonda söylemedin, bugün söyleyeceksin. Sızıntı puanı dört. Aday e-postadan döndü, açılışta oradaki cümleye bağla. EVET yazmış: bilen aday, ayırma sorusunda belli olur. Kayıp birimi 'sezon haftası', çarpım ekranda. Rakam: kurulum kırk bin, aylık [rakam]. Üç itiraz hazır. Ekranı kapat, üç nefes, ara."
+Görüşmeden on dakika önce: "Ahmet Bey, klima servisi, günde elli iş. Denetim kartından en güçlü bulgu: dün akşam yedi onda aradın, açan olmadı. Lira karşılığı hazır, telefonda söylemedin, bugün söyleyeceksin. Sızıntı puanı dört. Aday e-postadan döndü, açılışta oradaki cümleye bağla. EVET yazmış: bilen aday, ayırma sorusunda belli olur. Kayıp birimi 'sezon haftası', çarpım ekranda. Rakam: nişin varsayılanı kurulum [rakam], aylık [rakam]; altı veri sorusundan sonra işletmecinin rakamıyla yeniden kurulur. Üç itiraz hazır. Ekranı kapat, üç nefes, ara."
 
 Görüşmede donarsan, akşam: "Fiyattan sonra kilitlendin, on iki saniye. Kurtarma cümlesi ezberde değilmiş. Bir saniye, not alıyorum. Bugünkü prova bu, tek konu, başka şey yok." Görüşme bitince: "Kapandı mı? Ödeme düştü mü? Kurulum görüşmesi ne zaman? Kaydı yükle, akşam analiz." Kapanmadıysa: "Sebebi tek cümleyle yaz. İlk on görüşmede orana bakmıyoruz, yirmi beş hayır normal; sen sıradakine bak. Bugün akşam bloğunda prova." Hayır sonrası öğrenci düşerse kurucu bölümüne göre konuşur, boş övgü yok: "Otuz görüşme, altı kapanış. Hedef yüzde yirmi, sen yüzde yirmidesin. Sıradaki arama."
 
@@ -216,7 +216,7 @@ CRM: aşama (görüşme yaptım → kazandım / kaybettim / sonra), kapanış se
 
 ## 8. Yedek yol
 
-Görüntülü açılmadıysa telefona geç, akış aynı, kanıt "şu numarayı arayın". Kayıt izni verilmezse kayıt yok. Öğrenci görüşmeden sonra beş dakikada not yazar, analiz o nottan yapılır. İşletmeci ilk dakikada "fiyat ne" derse: "Söyleyeceğim, birkaç sorudan sonra; önce sizde ne kaçıyor onu bulayım ki rakam havada kalmasın". Geç geldi, araçta, dinlemiyor: "Bugün uygun değilse yarın aynı saat, size haksızlık olmasın". Sadece fiyat duymak isteyen, sorulara cevap vermeyen: kısa soru bölümü, rakamı söyle, kapat. Kovalanmaz. Ödeme sistemi çalışmıyorsa: sözleşme CRM'in belge bölümünden şimdi imzalanır, ödeme linki bir saat içinde, öğrenci hatta kalır. Öğrencinin sesi titriyor, ilk görüşme: normal. Sunumu ezberden değil kendi kelimelerinle yap. Kötü görüşme günün kalanını bozmaz.
+Görüntülü açılmadıysa telefona geç, akış aynı, kanıt "şu linki açın, bir müşteri gibi yazın". Kayıt izni verilmezse kayıt yok. Öğrenci görüşmeden sonra beş dakikada not yazar, analiz o nottan yapılır. İşletmeci ilk dakikada "fiyat ne" derse: "Söyleyeceğim, birkaç sorudan sonra; önce sizde ne kaçıyor onu bulayım ki rakam havada kalmasın". Geç geldi, araçta, dinlemiyor: "Bugün uygun değilse yarın aynı saat, size haksızlık olmasın". Sadece fiyat duymak isteyen, sorulara cevap vermeyen: kısa soru bölümü, rakamı söyle, kapat. Kovalanmaz. Ödeme sistemi çalışmıyorsa: sözleşme CRM'in belge bölümünden şimdi imzalanır, ödeme linki bir saat içinde, öğrenci hatta kalır. Öğrencinin sesi titriyor, ilk görüşme: normal. Sunumu ezberden değil kendi kelimelerinle yap. Kötü görüşme günün kalanını bozmaz.
 
 ## 9. Sıradaki adım ve işaretler
 

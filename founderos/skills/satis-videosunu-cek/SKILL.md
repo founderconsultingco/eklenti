@@ -77,7 +77,7 @@ Sıra sabit. Toplam üç ile beş dakika.
 
 **5. Ne yaptığın, kısaca.** Sistemin adı ve üç adım, tek cümlelik adımlar. Teknik kelime yok. Bu parça kısa kalır; asıl anlatım görüşmede.
 
-**6. Kanıt.** İlk müşteriden önce kanıt iki şeydir: niş kartındaki rakam ve senin kendi deneme araman. "Geçen hafta şehrimizdeki otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Bu cümle gerçek olacak; sayı uydurulmuyor. İlk kanıt hikâyesi çıkınca bu parça onunla değişir ve video yeniden çekilir.
+**6. Kanıt.** İlk müşteriden önce kanıt üç şeydir: niş kartındaki rakam, senin kendi deneme araman ve tarayıcı demosunun kırk ile altmış saniyelik ekran kaydı (dördüncü blokta çekilir; üstüne tek cümle: bu bir örnek, gerçek sistem işletmenin kendi kurallarıyla kurulur). "Geçen hafta şehrimizdeki otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Bu cümle gerçek olacak; sayı uydurulmuyor. İlk kanıt hikâyesi çıkınca bu parça onunla değişir ve video yeniden çekilir.
 
 **7. Onaylama ve kapanış.** "Aşağıdaki EVET düğmesine basın, takvim davetini kabul edin. Görüşmeden önce iki hatırlatma göndereceğim. Yarın görüşürüz."
 

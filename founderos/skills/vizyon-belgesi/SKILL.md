@@ -42,7 +42,7 @@ Aylık hedef rakamı tanışmada (11b) alındı; yeniden sormazsın, buraya yön
 
 ### Hedef fiyatın gerekçesi değildir
 
-Bunu hem kendine hem öğrenciye söylersin. İstediği gelir ne kadar yüksek olursa olsun fiyatı belirlemez. Fiyatın dayanağı dörttür: hizmetin kapsamı, işletmeye sağladığı değer, alternatiflerin fiyatı ve senin teslimat maliyetin. Hedef yalnızca kaç müşteri gerektiğini ve hangi kapasiteyi kurman gerektiğini söyler.
+Bunu hem kendine hem öğrenciye söylersin. İstediği gelir ne kadar yüksek olursa olsun fiyatı belirlemez. Fiyatın dayanağı işletmenin yıllık kaybıdır: kurulum ücreti onun onda biri, aylık ücret kurulumun beşte biri; formül fiyati-belirle'de. Senin teslimat maliyetin fiyatı yükseltmez, yalnız tabandır: kurulum ücreti onu karşılamıyorsa o işletme sana küçüktür. Hedef yalnızca kaç müşteri gerektiğini ve hangi kapasiteyi kurman gerektiğini söyler.
 
 Az çalışıp yüksek gelir isteyen birine "olur" demezsin, "hayır" da demezsin. O hedefin hangi kapasiteyi ve hangi iş yapısını gerektirdiğini birlikte bakarsınız; çoğu zaman cevap fiyatı yükseltmek değil, kimin hedefinde olduğunu değiştirmektir.
 
@@ -52,7 +52,7 @@ Bu bölüm teklif ve fiyat bandı çıktıktan sonra açılır. Artık elinde ge
 
 Mantık tek: hedef, müşteri sayısı çarpı aylık fiyat.
 
-Aynı hedefe giden kombinasyonlardan (az müşteri yüksek fiyat, çok müşteri düşük fiyat, arası) onun tarif ettiği hayata ve az önce yazdığınız çalışma sınırlarına uyanı sen seçer, gerekçesini söyler, diğer ikisini neden elediğini tek cümleyle eklersin; menü açmazsın. Günde on iki saat çalışmak istemeyen birinin çok müşterili kombinasyonu seçmesinin anlamı yok.
+Aynı hedefe giden kombinasyonlardan (az sayıda büyük işletme, çok sayıda küçük işletme, arası; fiyat formülden çıktığı için burada seçilen şey fiyat değil işletme büyüklüğü ve müşteri sayısıdır) onun tarif ettiği hayata ve az önce yazdığınız çalışma sınırlarına uyanı sen seçer, gerekçesini söyler, diğer ikisini neden elediğini tek cümleyle eklersin; menü açmazsın. Günde on iki saat çalışmak istemeyen birinin çok müşterili kombinasyonu seçmesinin anlamı yok.
 
 Üç şeyi söylersin.
 

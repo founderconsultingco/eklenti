@@ -58,7 +58,7 @@ Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 2. Türkiye'de en az 2.000 işletme var mı? Şehirde 500 çıkmazsa niş Türkiye geneline açılıyor, o zaman bu sayı devreye giriyor. Ülke çapında büyük bir pazar aranmıyor; dört müşteri için 2.000 yeter. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
 4. Telefonu ya da Instagram'ı açık olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın.
-5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; kurulum saat tablosundaki maliyeti karşılamalı.
+5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; kurulum teslim maliyetini karşılamalı (ikinci blokta kaba ölçü: elli saat çarpı öğrencinin saatinin değeri; saat tablosu üçüncü blokta).
 
 ### Altıncı sütun: rakip
 

@@ -90,7 +90,7 @@ Toplam sıfırla on beş arası. Üç kademeye bölünür:
 
 ### Derin denetim, denetim kartı, sekiz dakika
 
-Hızlı denetimin beş satırının üstüne dört şey daha eklenir.
+Hızlı denetimin beş satırının üstüne beş şey daha eklenir.
 
 **6. Canlı arama testi.** kanitini-hazirla'nın kuralıyla, o modülün metnindeki sınırlar aynen geçerli. Kartın "kanal ve zaman" bölümünün söylediği yoğun saatin dışında bir arama. Yazılan: aradığın saat, açıldı mı, kaç çalışta açıldı, sesli mesaj çıktı mı, geri döndüler mi ve ne kadar sonra. Açılmadıysa bu senin en güçlü bulgun oluyor ve mesajın ilk cümlesi bu.
 

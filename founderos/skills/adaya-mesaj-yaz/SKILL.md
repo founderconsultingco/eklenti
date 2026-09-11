@@ -229,7 +229,7 @@ Kabul et, çevir, soruya bağla. Cevapların içi kartın diliyle dolar.
 "Meşgulüm." "Beş dakikanız yok mu? Beş dakikanız yoksa zaten yardımcı olamam".
 "Sonra arayın." "Tabii. Otuz saniyede söyleyeyim, siz karar verin" artı tek cümle artı soru, cevap beklemeden.
 "Mail atın." "Açıkçası ikimizin de vaktine yazık; yarın on beş dakika konuşalım, her şeyi orada anlatırım". Israr ederse: "On beş dakikanın amacı bu, size uyar mı onu bile bilmiyorum".
-"Fiyat ne?" Aralık artı sebep artı görüşme: "Kurulum şu aralıkta başlıyor, işletmeye göre değişiyor; sizde ne çıkacağını on beş dakikada söyleyebilirim". Fiyatı söyleyip indirim yapma.
+"Fiyat ne?" Cevap İş Beyni'nin dördüncü bölümündeki "fiyat ne" cevabından okunur, burada yeniden yazılmaz; kalıbı fiyati-belirle'de: aralık artı sebep artı görüşmeye bağlama. Fiyatı söyleyip indirim yapma.
 "İlgilenmiyorum." "Sorabilir miyim, tamamen dolu olduğunuz için mi, büyümek istemediğiniz için mi?" Ya da tek soru: "Kapatmadan tek şey: geçen sezonun listesini hiç aramadıysanız orada kaç iş duruyor, merak etmez misiniz?".
 "Zaten elemanım/ekibim var." Soğuksa kapat. Sıcaksa: "Neden cevap yazdınız o zaman?". Kartın karşılığı: personel bulunamıyor ve güvenilmiyor, bunu kendileri söylüyor.
 "Zaten işim çok." "Doluluk kârlılık değil; mesele boş günü doldurmak değil, ucuz işi eleyip yüksek işi öne almak".

@@ -122,7 +122,7 @@ Kaynaklarda "tek kişi kaç müşteri taşır" diye bir rakam yok, o yüzden san
 
 Tavana gelince üç yol var ve biri seçilir:
 1. Kapsamı daralt. Yeni müşterilere daha küçük paket sat.
-2. Fiyatı yükselt. Aynı işi daha az müşteriyle aynı paraya yap.
+2. Daha büyük işletmeye sat. Rakamı sen yükseltmezsin, formül ve oranlar sabittir; yıllık kaybı büyük işletmede aynı formül daha yüksek kurulum ve aylık verir, aynı para daha az müşteriyle gelir.
 3. Yardım al. İlk devredilecek iş satış değil, tekrar eden ve seni yıpratan iştir: bakım kontrolleri, rapor hazırlığı, liste temizliği.
 
 Satışı devretmek en son yapılır. Satışı bırakan kişi işini bırakmış oluyor.
@@ -135,7 +135,7 @@ O ay tek karar var: satış durur, teslimat düzelir. Sebep musteriyi-elde-tut'u
 
 ### Haftanın kararı
 
-Otuz dakikanın ilk cümlesi haftanın tek sayısıdır: "Bu hafta [sayı] görüşme yazıldı, geçen hafta [sayı]." Dört halkaya bakış bu sayıdan geriye doğru yapılır; görüşme sayısı düşükse hangi halkanın kestiği aranır. Otuz dakikanın sonunda tek bir cümle çıkar ve İş Beyni'ne yazılır: "Bu hafta şunu değiştiriyoruz, sebebi şu, gelecek hafta şuna bakacağız." Haftanın kararının yanına haftanın tek sayısı da yazılır; on hafta üst üste okununca gidişat orada görünür.
+Otuz dakikanın ilk cümlesi haftanın tek sayısıdır: "Bu hafta [sayı] görüşme yapıldı, geçen hafta [sayı]." Dört halkaya bakış bu sayıdan geriye doğru yapılır; görüşme sayısı düşükse hangi halkanın kestiği aranır. Otuz dakikanın sonunda tek bir cümle çıkar ve İş Beyni'ne yazılır: "Bu hafta şunu değiştiriyoruz, sebebi şu, gelecek hafta şuna bakacağız." Haftanın kararının yanına haftanın tek sayısı da yazılır; on hafta üst üste okununca gidişat orada görünür.
 
 Bir cümleden fazlaysa karar verilmemiş demektir.
 

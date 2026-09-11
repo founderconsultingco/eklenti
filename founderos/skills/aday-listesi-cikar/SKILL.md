@@ -112,7 +112,7 @@ Bir: Instagram'dan çıkan aday listesi yazı yolu listesidir, telefon listesine
 
 ### Adım 2b: iş ilanı kaynağı (15 dakika, her nişte)
 
-Bir işletme "resepsiyonist", "sekreter", "çağrı karşılama elemanı", "müşteri temsilcisi", "randevu asistanı" ilanı veriyorsa telefonu kaçırdığını kendi ağzıyla söylüyor demektir; bu, listedeki en sıcak niyet işaretidir. Kartın "iş ilanı kelimeleri" satırındaki kelimelerle (kartta yoksa varsayılan altı kelime: resepsiyonist, sekreter, çağrı karşılama, müşteri temsilcisi, randevu asistanı, ön büro) üç yere bakılır: iş ilanı siteleri (nişin ve şehrin adıyla arama), Instagram'da işletmenin son gönderi ve hikâyeleri ("eleman arıyoruz"), işletmenin sitesindeki "kariyer" sayfası. Bulunan işletme zaten listedeyse kaydına "ilan var: [tarih], [ilan başlığı]" yazılır; listede yoksa Haritalar'dan bulunup eklenir. Bu adımdan çıkan işletmeler en çok istenen yüze doğrudan girer ve hızlı denetimde onuncu satırı dolu gelir. Yirmi dakikada beş on işletme çıkar; sıfır çıkarsa sorun değil, ay sonunda tekrar bakılır.
+Bir işletme "resepsiyonist", "sekreter", "çağrı karşılama elemanı", "müşteri temsilcisi", "randevu asistanı" ilanı veriyorsa telefonu kaçırdığını kendi ağzıyla söylüyor demektir; bu, listedeki en sıcak niyet işaretidir. Kartın "iş ilanı kelimeleri" satırındaki kelimelerle (kartta yoksa varsayılan altı kelime: resepsiyonist, sekreter, çağrı karşılama, müşteri temsilcisi, randevu asistanı, ön büro) üç yere bakılır: iş ilanı siteleri (nişin ve şehrin adıyla arama), Instagram'da işletmenin son gönderi ve hikâyeleri ("eleman arıyoruz"), işletmenin sitesindeki "kariyer" sayfası. Bulunan işletme zaten listedeyse kaydına "ilan var: [tarih], [ilan başlığı]" yazılır; listede yoksa Haritalar'dan bulunup eklenir. Bu adımdan çıkan işletmeler en çok istenen yüze doğrudan girer ve denetim kartında dokuzuncu satırı dolu gelir. On beş dakikada beş on işletme çıkar; sıfır çıkarsa sorun değil, ay sonunda tekrar bakılır.
 
 ### Adım 3: temizlik (40 dakika)
 
@@ -164,7 +164,7 @@ Bu adımı bu modül tarif etmiyor. Yüz işletmenin hızlı denetimi bu adımda
 
 Eskiden bu adımda her işletme için tek cümlelik gözlem satırı yazılıyordu; artık yazılmıyor. Yerini denetimin en güçlü bulgusu aldı. Fark şu: gözlem satırı "gördüğüm bir şey", en güçlü bulgu "kaçırdığın müşteri".
 
-Sahibinin adını bulma işi de denetime taşındı, denetimin dokuzuncu satırı o, burada tekrar anlatılmıyor. Sonucu aynı: adı bulunan aday telefon sırasına, bulunamayan yazı sırasına giriyor.
+Sahibinin adını bulma işi de denetime taşındı, derin denetimin onuncu maddesi o ve sonucu kartın başlık satırına yazılıyor, burada tekrar anlatılmıyor. Sonucu aynı: adı bulunan aday telefon sırasına, bulunamayan yazı sırasına giriyor.
 
 Altmış dakikada otuz işletme bitiyor, kalan yetmişi dördüncü günün sabah bloğunda tamamlıyorsun. Bugün otuz yeterli, çünkü yarının deneme aramaları o otuz işletmeden yapılıyor. İşin yanında çalışıyorsan kırk işletme seçtin: bugün yirmisi, yarın yirmisi.
 

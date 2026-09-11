@@ -96,7 +96,7 @@ Sıra değişmez. Her bölümün yanında ne yazacağın var. Köşeli parantezl
 **18. Şüphe, üçüncü kanıt, davet, eleme, talimat.** Sırayla ve hızlı:
 - Şüphe: "Belki daha önce buna benzer sözler duydunuz." Ardından iki somut kötü tecrübe, fiil kurarak.
 - En güçlü kanıt burada, çağrıdan hemen önce.
-- Doğrulama daveti: "Bana inanmanız gerekmiyor." Sonra ne yapacağını söyle: canlı gösterim, arayıp sorabileceği müşteri, hangisi elindeyse.
+- Doğrulama daveti: "Bana inanmanız gerekmiyor." Sonra ne yapacağını söyle: tarayıcı demosu (sitenin /demo linki), arayıp sorabileceği müşteri, hangisi elindeyse.
 - Şartlı davet: kimin görüşme alması gerektiğini iki şartla söyle.
 - Görüşmede ne olacağı üç madde, ve "size bir şey satmayacağım".
 - Dürüst eleme: "Uymuyorsa ikimiz de vakit kaybetmeyelim diye onu da söyleyeceğim."

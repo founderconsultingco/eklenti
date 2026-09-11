@@ -53,7 +53,7 @@ Haftada bir: en zayıf tek adımı bulur. On görüşmede bir: teklife düşüle
 
 Çıktı tek sayfadır, üç parçası var. Bir iyi şey: kayıttan alıntıyla. Bir düzeltilecek şey: tek şey, en büyük etkisi olan; ikinci şey yazılmaz. Bir prova konusu: o düzeltilecek şey gorusme-provasi-yap modülüne gider. Düzeltme, on görüşme boyunca ya da üç görüşme üst üste temiz çıkana kadar aynı kalır. Her görüşmede yeni şey verilmez. Ölçüt şu: "Usta bir satıcı bu görüşmeyi kapatır mıydı, ne yapardı?". İşletmeci suçlanmaz, öğrenci de suçlanmaz: "suç kişide değil yöntemde".
 
-**B. Hızlı adım, görüşme biter bitmez.** Sonuç CRM'e yazılır. Evet ile ödeme arasındaki süre İş Beyni'ne yazılır. Kazanıldıysa iş musteriyi-karsila modülüne devredilir. "Düşüneyim" ile bittiyse iki şeye bakılır: işletmeci sebebini söyledi mi, takip tarihi alındı mı? İkisi de varsa bir saat sonra tek satırlık mesaj hazırlanır, öğrenci gönderir: "Perşembe on birde on dakika, sadece [sebep] konuşacağız, başka şey yok.". Sebep söylemeyen aday "sonra" aşamasına yazılır; ona mesaj gitmez. "Hayır" ile bittiyse adaya-mesaj-yaz modülünün ayrılık kalıbı kullanılır. O günün prova konusu aktif düzeltmedir; akşam bloğundaki provaya yazılır.
+**B. Hızlı adım, görüşme biter bitmez.** Sonuç CRM'e yazılır. Evet ile ödeme arasındaki süre İş Beyni'ne yazılır. Kazanıldıysa iş musteriyi-karsila modülüne devredilir. "Düşüneyim" ile bittiyse iki şeye bakılır: işletmeci sebebini söyledi mi, karar görüşmesi hattayken tarihlendi mi? İkisi de varsa bir saat sonra tek satırlık mesaj hazırlanır, öğrenci gönderir: "Perşembe on birde yirmi dakika, sadece [sebep] konuşacağız, başka şey yok.". Sebep söylemeyen ya da hattayken karar görüşmesi tarihlenmeyen aday "sonra" aşamasına yazılır; ona mesaj gitmez, tarih e-postayla kovalanmaz. "Hayır" ile bittiyse adaya-mesaj-yaz modülünün ayrılık kalıbı kullanılır. O günün prova konusu aktif düzeltmedir; akşam bloğundaki provaya yazılır.
 
 **C. Arama analizi, ilk yirmi arama, her nottan sonra.** Girdi iki şey: öğrencinin otuz saniyelik notu (işletmeci ne dedi, nerede koptu) ve CRM kaydı. Kontrol listesi:
 - Ayakta ve kulaklıkla mı aradı?
@@ -127,7 +127,7 @@ Nerede durur: ses dosyası senin bilgisayarında, dökümden çıkan tek sayfal�
 
 FounderOS'un ağzından.
 
-Hızlı adım, görüşme biter bitmez: "Kapanmadı, 'düşüneyim' dedi. Sebep rakam. Perşembe on bir alındı. On ikide şu tek satır gidiyor, sen gönder. Bugünkü prova akşam bloğunda, konusu aynı: 'yetişemiyorum' duyunca 'neden'."
+Hızlı adım, görüşme biter bitmez: "Kapanmadı, 'düşüneyim' dedi. Sebep rakam. Karar görüşmesi Perşembe on bire yazıldı, yirmi dakika. On ikide şu tek satır gidiyor, sen gönder. Bugünkü prova akşam bloğunda, konusu aynı: 'yetişemiyorum' duyunca 'neden'."
 
 Akşam, tek sayfa: "Ahmet Bey görüşmesi, yirmi iki dakika. İyi: kaybı işletmeci söyledi, 'haftada iki boş gün'. Sen susmayı bildin. Düzeltilecek tek şey: sunuma erken geçtin. İşletmeci 'yetişemiyorum' dedi, sen 'neden' demeden sisteme geçtin. 'Düşüneyim' oradan doğdu; düşünecek bir bedel hissetmedi. Bu düzeltme temiz çıkana kadar aynı."
 

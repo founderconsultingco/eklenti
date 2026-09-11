@@ -64,7 +64,8 @@ Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
    - "Telefonum elimden gider mi?" Hayır; yeni numara açılır, mevcut numaraya dokunulmaz.
    - "Yazılı asistan müşterimi kaçırır mı?" Fiyat vermez, bilgi toplar, randevuya çevirir; son sözü işletme sahibi verir.
    - "Ne kadar?" Fiyat aralığı yazılır; kesin rakam görüşmede netleşir.
-5. Referanslar varsa referanslar; yoksa kartın sektör rakamı.
+5. Üç kademenin adı ve karşılaştırma fiyatı (Kademe 2'nin üç aylık peşin paketi), İş Beyni'nin dördüncü bölümünden, tek satır; başka rakam yok. Sitede fiyat yoktur, karşılaştırma fiyatının tek yeri burasıdır.
+6. Referanslar varsa referanslar; yoksa kartın sektör rakamı.
 
 Hatırlatma akışı: hazır kurulum paketinde gelir, sen sadece adını girersin. Kanal: WhatsApp ve e-posta. CRM'in numara verdiği ülkelerde Türkiye olmadığı için hatırlatmaların WhatsApp tarafı senin kendi WhatsApp Business hattından, senin elinle gider; CRM metni hazırlar ve saati gelince sana hatırlatır, sen gönderirsin. E-posta her durumda CRM'den kendiliğinden gider ve link oradadır. Gece mesaj yok, 09.00-21.00 arası. Tek istisna 43 dakika mesajı; sabah randevusunda 09.00'dan önce de gider. Bu aralık adayın saatidir, senin pencerenden ayrıdır: aday gece mesaj almaz, sen de kendi pencerenin dışında mesaj göndermezsin.
 
@@ -78,7 +79,7 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
 - 24 saat önce, insan yazmış gibi, kendiliğinden gitmiş görünmeyen: "[Ad] Bey, ben [öğrenci]. Yarın [saat] konuşuyoruz, takvimde görüyorum. Geleceğinizi bir 'tamam' ile yazar mısınız?" Randevu yirmi dört saatten yakınsa bu mesaj, randevu alındıktan iki saat sonra ya da aynı akşam 20.00'de gider.
 - 43 dakika önce, kendiliğinden: "43 dakika sonra görüşüyoruz, uygun mu?" Neden kırk üç? Yuvarlak saat kendiliğinden giden mesaj gibi görünür; tuhaf rakam insan yazmış gibi durur. Görüntülü görüşmeyse arama linki bu mesajda olur. Telefonla görüşmeyse "sizi ben arayacağım" yazar. Ayrı "1 saat önce" mesajı yok; 43 dakika mesajı onun yerine geçer.
 - İlk 20 randevuda ve soğuk telefonla (aday seni hiç tanımazken aranarak) alınmış randevularda, EVET gelmediyse görüşmeden iki saat önce sen ararsın: "Bugün üçte görüşüyoruz, hazır mısınız? Şu iki rakamı yanınızda bulundurun." EVET geldiyse aramazsın.
-- Görüşmeden bir saat sonra gidecek mesaj bu modülün değil, gorusmeyi-analiz-et modülünün işidir. O mesaj yalnızca görüşme "düşüneyim" ile bitip takip tarihi alındıysa gider; tek satırlık teyittir.
+- Görüşmeden bir saat sonra gidecek mesaj bu modülün değil, gorusmeyi-analiz-et modülünün işidir. O mesaj yalnızca görüşme "düşüneyim" ile bitip karar görüşmesi hattayken tarihlendiyse gider; tek satırlık teyittir.
 
 **B. Telefondayken, randevu alınırken.** (Bu modül, adaya-mesaj-yaz modülünün dördüncü parçasına şu dört satırı ekler.)
 - Sen telefondayken adayın bilgisini takvime kendin girersin; "siz doldurun" demezsin.

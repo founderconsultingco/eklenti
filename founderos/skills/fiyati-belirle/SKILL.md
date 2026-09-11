@@ -53,8 +53,8 @@ Fiyat iki parçadır ve ikisi de değerden hesaplanır, senin saatinden değil: 
 - **Kurulum ücreti, para kurtaran sistem için:** yıllık tasarrufun yüzde yirmisi ile yirmi beşi. Yıllık tasarruf, haftada kurtarılan personel saati çarpı saat maliyeti çarpı elli iki. Bu formül iki durumda kullanılır: kartta kayıp biriminin lira karşılığı yoksa ("sahadan dolacak"), ya da görüşmede işletmecinin kendi rakamı kaçan talep yerine telefon başında harcanan saati gösteriyorsa. İkisi de hesaplanabiliyorsa büyük olan değil, sistemin o işletmede yaptığı asıl iş hangisiyse o kullanılır; iki formül toplanmaz.
 - **Aylık ücret:** kurulum ücretinin yüzde yirmisi. Karşılığı: sistemin bakımı, metin ve ayar düzeltmeleri, bozulanın onarılması, haftalık kontrol, ara raporlar ve aylık rapor. Kısa hali: "aylık, kurulumun beşte biri."
 - **Deneme fiyatı:** hazırlık seviyesi düşükse ilk iki müşteride kurulum ücretinin yarısı. Aylık ücret değişmez, çünkü aylık kurulumdan hesaplanır ve tam kurulumdan hesaplanmaya devam eder.
-- **Karşılaştırma fiyatı:** Kademe 2'nin üç aylık peşin paketi (kurulum artı üç aylık). Sitede durur, görüşmede söylenmez.
-- **Taban:** kurulum ücreti saat tablosundaki kurulum saatinin maliyetini karşılamıyorsa o işletme sana küçük demektir; fiyat yukarı yuvarlanmaz, aday uygunluk puanında düşer ve nişte bu sık oluyorsa nisi-sec'in müşteri değeri elemesine işaret gider.
+- **Karşılaştırma fiyatı:** Kademe 2'nin üç aylık peşin paketi (kurulum artı üç aylık). Ön görüşme sayfasında durur (sitede fiyat yoktur), görüşmede söylenmez.
+- **Taban:** kurulum ücreti saat tablosundaki kurulum saatlerinin maliyetini (kurulum saatleri çarpı senin saatinin değeri, yani aylık hedefin bölü ayda çalışacağın saat; bu ölçü sistemin kendi kararıdır) karşılamıyorsa o işletme sana küçük demektir; fiyat yukarı yuvarlanmaz, aday uygunluk puanında düşer ve nişte bu sık oluyorsa nisi-sec'in müşteri değeri elemesine işaret gider.
 
 Neden saat değil değer: birinin daha iyi olduğu bir işi daha hızlı yapıyor diye daha az kazanması saçma. Saatten hesaplayan herkes kendini ucuzlatıyor; değerden hesaplayan rakamın arkasında veri taşıyor ve görüşmede "neden bu kadar" sorusuna rakamla cevap veriyor.
 
@@ -87,7 +87,7 @@ Bu hesabı telefonda iki cümlede söyleyebilirsin: "Ayda kaçırdığınız [ay
 
 Üç rakam var ve karıştırılmaz:
 - **Bant (birinci gün):** formül kartın alt ve üst rakamlarıyla iki kez çalıştırılır; çıkan iki kurulum ve iki aylık, bandın uçlarıdır. Öğrenciye "aralık" diye anlatılır.
-- **Nişin varsayılan rakamı (üçüncü blok, kesin fiyat):** formül kartın orta rakamlarıyla çalıştırılır. Bu rakam İş Beyni'ne yazılır, siteye karşılaştırma fiyatı olarak girer, "fiyat ne" cevabında aralık olarak söylenir.
+- **Nişin varsayılan rakamı (üçüncü blok, kesin fiyat):** formül kartın orta rakamlarıyla çalıştırılır. Bu rakam İş Beyni'ne yazılır, ön görüşme sayfasındaki karşılaştırma fiyatı bundan hesaplanır, "fiyat ne" cevabında aralık olarak söylenir.
 - **Görüşmede söylenen rakam:** soru bölümünde işletmeci kendi rakamlarını verdi (kaç arama, kaçı cevapsız, bir müşteri ne getiriyor). Formül o rakamlarla yeniden çalıştırılır ve söylenen rakam odur. İşletmecinin rakamı nişin varsayılanının yüzde otuz altında ya da üstündeyse kendi rakamı geçerlidir; aradaysa varsayılan söylenir, rakamla oynanmaz. Böylece fiyat hem her işletmeye özel hem tartışılmaz: rakamı işletmeci verdi, formül sabit.
 
 Kilit şudur: otuz görüşme birikmeden değişmeyen şey formül, oranlar ve nişin varsayılanıdır. Görüşmede işletmecinin rakamıyla hesap kurmak fiyatı değiştirmek değildir, formülü uygulamaktır.
@@ -96,11 +96,13 @@ Kilit şudur: otuz görüşme birikmeden değişmeyen şey formül, oranlar ve n
 
 Üç kademeye de rakam yazılır ve üçü de aynı formülden çıkar; fark, hesaba giren sızıntılardır. Kademe 1 Temel Kapsam: yalnız birinci sızıntı (kaçan talep). Kademe 2 Tam Kapsam: birinci sızıntı artı eski müşteri geri kazanımının lira karşılığı (kartta varsa); görüşmede satılan budur. Kademe 3 Genişletilmiş Kapsam: Kademe 2 artı dış arama ve reklamın getirdiği ek gelir; en erken ikinci ay, büyüme şartından sonra. Yasal sınırı olan nişlerde Kademe 3'e "yok" yazılır.
 
-Karşılaştırma fiyatı da yazılır: Kademe 2'nin üç aylık paketi. Sitede duran pahalı seçenektir, görüşmede söylenmez. Aday onu görmüş gelir ve tek rakamı duyduğunda kafasında bir kıyas olur.
+Hesap Kademe 2 ile yapılır: bant, nişin varsayılan rakamı ve görüşmedeki rakam Kademe 2'nin rakamıdır. Kartta eski müşteri geri kazanımının lira karşılığı yoksa Kademe 2'nin rakamı Kademe 1'inkiyle aynı çıkar; iki kademe aynı rakamla yazılır, fark kapsamda kalır, rakam uydurulmaz. "Pahalı" itirazında Kademe 1'e inmek kapsamı küçültmektir; iki rakam aynıysa inilecek yer yoktur ve indirim de yapılmaz, kanıta dönülür.
+
+Karşılaştırma fiyatı da yazılır: Kademe 2'nin üç aylık paketi. Ön görüşme sayfasında duran pahalı seçenektir (sitede fiyat yoktur), görüşmede söylenmez. Randevu alan aday onu görmüş gelir ve tek rakamı duyduğunda kafasında bir kıyas olur.
 
 ### Değer payı kuralı ve üç bölge
 
-Fiyatın tavanı işletmecinin kazancından çıkar, senin hedefinden değil. Formülün oranları tavandır: ilk yıl işletmeci sana yıllık kaybının üçte birinden azını öder (kurulum artı on iki aylık), ikinci yıldan itibaren dörtte birinden azını; yani verdiği her liraya karşılık ilk yıl yaklaşık üç, sonra dört lira geri alır. Üç bölge var. Formülün üstünde: işletmeci sessizce "acaba yanlış mı yaptım" der, kötü bir haftada iptal eder, yorum yazmaz. Formülde: memnundur, kalır, yorum yazar. Formülün çok altında: sen kendini ucuzlatmışsındır, dört müşteriyle geçinemezsin. Değer hesabı işletmecinin brüt kazancıyla değil kârıyla yapılır; kâr payı kartın "gerçek fiyatlar ve kapasite" bölümünden, kartta yoksa görüşmede sorulur.
+Fiyatın tavanı işletmecinin kazancından çıkar, senin hedefinden değil. Formülün oranları tavandır: ilk yıl işletmeci sana yıllık kaybının yaklaşık üçte birini öder (kurulum yüzde on, on iki aylık yüzde yirmi dört; toplam yüzde otuz dört), ikinci yıldan itibaren dörtte birinden azını (yüzde yirmi dört); yani verdiği her liraya karşılık ilk yıl yaklaşık üç, sonra dört lira geri alır. Bu oran gelir formülü içindir; tasarruf formülünde kurulum yıllık tasarrufun yüzde yirmisi ile yirmi beşi olduğu için oran söylenmez, yalnız kurulum ve aylık söylenir. Üç bölge var. Formülün üstünde: işletmeci sessizce "acaba yanlış mı yaptım" der, kötü bir haftada iptal eder, yorum yazmaz. Formülde: memnundur, kalır, yorum yazar. Formülün çok altında: sen kendini ucuzlatmışsındır, dört müşteriyle geçinemezsin. Değer hesabı işletmecinin brüt kazancıyla değil kârıyla yapılır; kâr payı kartın "gerçek fiyatlar ve kapasite" bölümünden, kartta yoksa görüşmede sorulur.
 
 ### Çırak tuzağı
 
@@ -171,7 +173,7 @@ Rakamı yazışmada tek başına vermezsin. Bağlamsız rakam her zaman pahalı 
 ## 6. Ne söyler
 
 Rakamı verirken: "Fiyatın şu: kurulum [rakam], aylık [rakam], yani kurulumun beşte biri. Sen daha önce satış yapmadın, o yüzden ilk iki müşteride kurulum yarısı, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
-Matematiği gösterirken: "Rakamı tartışmıyoruz, matematiği gösteriyorum. Bu sektörde kaçan bir müşteri [kart rakamı] ediyor, ayda [sayı] tanesi kaçıyor: ayda [aylık kayıp], yılda [yıllık]. Kurulum yıllığın onda biri: [kurulum]. Aylık kurulumun beşte biri: [aylık]. İlk yıl toplam ödediği, kaybettiğinin üçte birinden az."
+Matematiği gösterirken: "Rakamı tartışmıyoruz, matematiği gösteriyorum. Bu sektörde kaçan bir müşteri [kart rakamı] ediyor, ayda [sayı] tanesi kaçıyor: ayda [aylık kayıp], yılda [yıllık]. Kurulum yıllığın onda biri: [kurulum]. Aylık kurulumun beşte biri: [aylık]. İlk yıl toplam ödediği, kaybettiğinin yaklaşık üçte biri; ikinci yıldan itibaren dörtte birinden azı."
 Prova: "Şimdi rakamı sesli söyle ve sus. Ben saymaya başlayacağım. Otuz saniye konuşmayacaksın."
 "Çok yüksek" derse: "Matematiği bir daha bakalım. Deneme fiyatın zaten var. Fiyatı sen değil, ilk otuz görüşme belirleyecek. Şimdilik bu."
 Müşteri itiraz edince: "Tek soru sor: sonucun kesin olacağını bilseniz bu rakam mantıklı gelir miydi? Evet derse sorun fiyat değil, inanç; kanıta dön. Hayır derse Kademe 1'e in, indirim yapma."

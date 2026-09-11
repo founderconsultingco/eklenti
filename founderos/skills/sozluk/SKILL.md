@@ -60,7 +60,7 @@ Niş ve teklif:
 - Kayıp birimi: İşletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şey: "bir boş gün", "bir koltuk saati", "bir keşif".
 - Dönüşüm Cümlesi: Ne sattığını tek cümlede söyleyen cümle. Beş parçası var: kime, hangi kayıp, hangi sonuç, hangi yöntemle, sonunda hangi duygu.
 - Bir dakikalık anlatım: Ne sattığını bir dakikada anlatan hazır metin; birinci blokta teklifle birlikte yazılır, randevu telefonunda ve görüşmenin açılışında kullanılır.
-- Haftanın tek sayısı: O hafta yazılan görüşme sayısı. Haftanın son akşamında ve haftalık karar toplantısının başında ilk söylenen sayı; işin nereye gittiğini tek başına gösterir.
+- Haftanın tek sayısı: O hafta yapılan görüşme sayısı; randevu değil, gerçekleşen görüşme. Haftanın son akşamında ve haftalık karar toplantısının başında ilk söylenen sayı; işin nereye gittiğini tek başına gösterir.
 - Halka: Sayı zincirinin dört adımından biri: temas, cevap, randevu, görüşme. Haftanın kararında en zayıf halka bulunur ve yalnız o değişir.
 - Sızıntı puanı: Bir işletmenin dışarıdan görülen beş yerine bakılarak verilen sıfır ile beş arası puan; "bu işletme müşteri kaçırıyor mu" sorusunun cevabı.
 - Uygunluk puanı: Aynı işletmeye "bize para verebilir mi" diye bakılarak verilen sıfır ile on beş arası puan; A, B, C kademesine bölünür. Sızıntı puanıyla karıştırılmaz; derdi olan ama ödeyemeyen işletme listenin sonuna gider.
@@ -69,10 +69,10 @@ Niş ve teklif:
 - Sistemin adı: Sattığın sisteme nişe özel verilen iki üç kelimelik ad. Adı olmayan sistem saatlik işçilik gibi ucuz görünür.
 - Kapsam: Sistemin hangi parçalarının bir müşteriye kurulacağı; üç kapsam var ve adları Kademe 1, 2, 3.
 - Kademe 1, 2, 3: Aynı sistemin üç kapsamı, üç ayrı ürün değil. Kademe 1 Temel Kapsam: gelen tarafın karşılanması, randevu ya da teklif takibi, hatırlatma. Kademe 2 Tam Kapsam, asıl satılan: üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor. Kademe 3 Genişletilmiş Kapsam: üstüne dış arama ve reklam; büyüme şartı sağlanınca, en erken ikinci ay. Hiçbir kademe tek başına "bot" diye satılmaz.
-- Görüşmede tek paket tek rakam: Görüşmede sadece Kademe 2 söylenir; üç kademe sitede durur.
-- Karşılaştırma fiyatı: Sitede duran pahalı seçenek; görüşmede söylenmez, aday onu görmüş gelir.
+- Görüşmede tek paket tek rakam: Görüşmede sadece Kademe 2 söylenir; üç kademe ve karşılaştırma fiyatı ön görüşme sayfasında durur, sitede fiyat yoktur.
+- Karşılaştırma fiyatı: Ön görüşme sayfasında duran pahalı seçenek (Kademe 2'nin üç aylık peşin paketi); sitede fiyat yoktur, görüşmede söylenmez, randevu alan aday onu görmüş gelir.
 - Fiyat bandı (bant): Birinci blokta kartın alt ve üst rakamlarıyla formülden çıkan iki kurulum ve iki aylık; nişin varsayılan rakamı üçüncü blokta konur, görüşmede söylenen rakam işletmecinin kendi sayısıyla formülden çıkar. Öğrenciye "aralık" ya da "alt ve üst sınır" diye anlatılır; konuşmada kısaca "bant" denir.
-- Kurulum ücreti: Sistemi kurmanın bir kerelik bedeli; işletmenin yıllık kaybının yüzde onu (sistem para kurtarıyorsa yıllık tasarrufun yüzde yirmisi ile yirmi beşi). Kısa hali: aşağı yukarı bir aylık kaybı kadar.
+- Kurulum ücreti: Sistemi kurmanın bir kerelik bedeli; işletmenin yıllık kaybının yüzde onu (kartta kayıp biriminin lira karşılığı yoksa ya da sistem o işletmede yalnız personel saati kurtarıyorsa, yıllık tasarrufun yüzde yirmisi ile yirmi beşi). Kısa hali: aşağı yukarı bir aylık kaybı kadar.
 - Aylık ücret: Sistemi yürütmenin her ay tekrar eden bedeli; kurulum ücretinin yüzde yirmisi. Bakım, düzeltme, kontrol ve raporların karşılığı. Kârın yaşadığı yer.
 - Teslimat maliyeti: Bir müşteriye sistemi kurup yürütmenin sana saat ve para olarak maliyeti; kurulum ücretinin tabanı.
 - Alan adı: Sitenin internet adresi, "dolusezon.com" gibi. Yıllık küçük bir ücretle alınır; bütçe merdiveninin alt basamağında ilk kanıta kadar ertelenir.
@@ -111,7 +111,7 @@ Niş ve teklif:
 
 Ulaşma:
 - Temas: Bir adaya bir kanaldan (telefon, e-posta, Instagram) bir kez ulaşma; açılmayan telefon da, cevapsız e-posta da temas sayılır. "Günde yüz" demek yüz temas demek.
-- Takip: İlk temastan cevap gelmezse aynı adaya üçüncü, yedinci ve on dördüncü gün gönderilen mesaj. Görüşmeden sonra "düşüneyim" diyen işletmeciye iki gün içinde yapılan on dakikalık tarihli aramaya da takip denir.
+- Takip: İlk temastan cevap gelmezse aynı adaya üçüncü, yedinci ve on dördüncü gün gönderilen mesaj. Görüşme sonrası "düşüneyim" için takip değil karar görüşmesi vardır.
 - Aşama: Adayın CRM'deki durumu. Sırası: yeni, yazdım, cevap verdi, görüşme ayarlandı, görüşme yaptım, teklif verdim, kazandım, kaybettim, sonra.
 - "Sonra" aşaması: Şimdi olmayan ama altı ay sonra yeniden aranacak aday.
 - Arama kartı: Her aramadan önce açılan küçük kart: sahibinin adı, en güçlü bulgu, kanca, itirazların kısa listesi.
@@ -143,7 +143,7 @@ Ulaşma:
 - Günlük gönderim sınırı: Yeni e-posta adresinin ilk haftalarda günde kaç e-posta gönderebileceği; on beşten başlar, otuza çıkar.
 
 Randevu ve görüşme:
-- Ön görüşme sayfası: Randevu alınınca adaya gönderilen, herkese açık olmayan sayfa: ön görüşme videosu, EVET düğmesi, üç itiraz videosu. CRM açıldığı gün gorusmeye-getir ile kurulur, videoları beşinci blokta çekilmiş olur ve aynı gün eklenir. CRM açılmadan alınan randevuda video WhatsApp'tan gönderilir.
+- Ön görüşme sayfası: Randevu alınınca adaya gönderilen, herkese açık olmayan sayfa: ön görüşme videosu, EVET düğmesi, üç itiraz videosu, üç kademenin adı ve karşılaştırma fiyatı. CRM açıldığı gün gorusmeye-getir ile kurulur, videoları beşinci blokta çekilmiş olur ve aynı gün eklenir. CRM açılmadan alınan randevuda video WhatsApp'tan gönderilir.
 - Üç küçük söz: Randevu alırken adaydan istenen üç şey: gelen mesaja EVET yaz, videoyu izle, takvim davetini kabul et.
 - Görüşme özet ekranı: Görüşmeden on dakika önce açılan tek sayfa: adayın adı, kayıp birimi ve rakamı, deneme araması gözlemi, nişin varsayılan rakamı, soru bölümünde sorulacak altı veri sorusu, üç itiraz. Bir kez okunur, görüşmede bakılmaz; altı sorunun cevabıyla rakam görüşmede yeniden kurulur.
 - Satış Haritası: Görüşmenin yazılı planı: ne soracağın, hangi sırayla gideceğin, fiyatı nasıl söyleyeceğin, itiraz gelince ne yapacağın.

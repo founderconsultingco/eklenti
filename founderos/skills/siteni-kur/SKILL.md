@@ -212,7 +212,7 @@ Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsAp
 
 İkinci bir sayfa daha var ve bu sayfa herkese açık değildir. Adresi yalnızca randevu alan adaya gider. Bu modül onu kurmaz: sayfa CRM açıldığı gün gorusmeye-getir ile kurulur, çünkü EVET düğmesi ve takvim CRM'de yaşıyor. O güne kadar randevu alan adaya video ve üç cümle WhatsApp'tan gider.
 
-İçinde üç şey olur: ön görüşme videosu (beşinci blokta çekilir), bir EVET düğmesi, üç itirazın cevabı.
+İçinde dört şey olur: ön görüşme videosu (beşinci blokta çekilir), bir EVET düğmesi, üç itirazın cevabı, üç kademenin adı ve karşılaştırma fiyatı (sitede fiyat yoktur, tek yeri burası).
 
 Neden ayrı sayfa: randevu almış aday ile hiç tanımadığın aday aynı şeyi okumaz. Randevu alan aday zaten ilgileniyor; ona satmaya değil, gelmesini sağlamaya çalışıyorsun.
 

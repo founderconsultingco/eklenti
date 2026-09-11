@@ -189,7 +189,7 @@ Kartla doldurulur:
 - Kademe 3 bu nişte mümkün mü. Yasal sınırı olan sağlık nişlerinde "yok" yazılır. Dış arama her nişte şarta bağlıdır ve ilk müşteride vaat edilmez.
 - Teklifin dışında kalanlar, İş modelinin sınırlar listesinden bu nişe düşenler: reklam yok, içerik yok, işletmenin asıl işi yok, dış arama şartlı, bilinmeyen fiyat uydurulmaz. Bunlar teklif metninde tek satırla yazılır; sonradan "o da dahil sanmıştım" çıkmaz.
 
-Görüşmede tek paket ve tek rakam söylenir, o da Kademe 2'dir. Üç kademe sitede durur, aday oraya bakar.
+Görüşmede tek paket ve tek rakam söylenir, o da Kademe 2'dir. Üç kademe ve karşılaştırma fiyatı ön görüşme sayfasında durur, randevu alan aday oraya bakar; sitede fiyat yoktur.
 
 ### İtirazlar
 

@@ -229,7 +229,7 @@ Tek istisna var ve yalnız işin yanında çalışan için: ilk müşterinin bü
 
 ### Gelir planı, tersten
 
-Bu bölümün birinci günde görünen kısmı ikiye iner: hedefine kaç müşteri gerekiyor ve günde kaç kişiye ulaşacaksın. Zincirin tamamı, gün hesabı ve takvime yayılması üçüncü günde açılır, çünkü o gün fiyatın kesinleşir. Sebebi şu: bugün elimizdeki müşteri değeri yer tutucu bir rakam, ondan çıkan gün sayısı da yer tutucu olur. Yer tutucu bir rakamla birinci günde moral bozmayız.
+Bu bölümün birinci günde görünen kısmı ikiye iner: hedefine kaç müşteri gerekiyor (niş seçilip bant çıkınca söylenir, on sekiz soru biterken değil) ve günde kaç kişiye ulaşacaksın. Zincirin tamamı, gün hesabı ve takvime yayılması üçüncü günde açılır, çünkü o gün fiyatın kesinleşir. Sebebi şu: bugün elimizdeki müşteri değeri yer tutucu bir rakam, ondan çıkan gün sayısı da yer tutucu olur. Yer tutucu bir rakamla birinci günde moral bozmayız.
 
 Birinci günde asla söylenmeyen şey: "bu hedef doksan güne sığmıyor", "dördüncü müşteri altıncı ayda gelir" ve benzeri uzun vadeli olumsuz hesaplar. Kişi o sabah parasını ödedi. Sığmayan bir hedefi üçüncü günde gerçek fiyatla gösterir ve o gün hedefi birlikte küçültürüz.
 
@@ -240,7 +240,7 @@ Buradaki oranlar bu işi yıllardır yapan kişilerin kendi rakamları. Yurt dı
 Zincir 11b'nin cevabından, yani senin hedefinden başlar:
 
 1. Aylık hedefin. Sen söyledin.
-2. Bir müşterinin sana ayda getirdiği para. Bugün için 30.000 TL yazıyoruz. Bu bir yer tutucu, nişlerin ortasına yakın bir rakam. Üçüncü blokta fiyatın nişinin kartından hesaplanınca gerçek rakam girer ve bu rakam yukarı da aşağı da gidebilir; aşağı giderse hedefe daha çok müşteri gerekir ve planı o gün yeniden kurarız. Kurulum ücreti buna eklenmez; o bir kere alınır, plan her ay tekrar edeni sayar.
+2. Bir müşterinin sana ayda getirdiği para, yani aylık ücret. Bu satır bugün nişin seçildiği adımda dolar: seçilen kartın bandının orta aylık ücreti yazılır ve "geçici" etiketi taşır. On sekiz soru biterken buraya rakam konmaz; kaynağı olmayan rakam söylenmez. Üçüncü blokta fiyatın nişinin kartından hesaplanınca kesin rakam girer ve bu rakam yukarı da aşağı da gidebilir; aşağı giderse hedefe daha çok müşteri gerekir ve planı o gün yeniden kurarız. Kurulum ücreti buna eklenmez; o bir kere alınır, plan her ay tekrar edeni sayar.
 3. Kaç müşteri gerekiyor: hedef bölü müşteri değeri.
 4. Kaç görüşme gerekiyor: her beş görüşmeden biri müşteriye dönüyor.
 5. Kaç randevu gerekiyor: yazılan randevuların yaklaşık yüzde yetmişi görüşmeye dönüşüyor, kalanı gelmiyor.
@@ -251,7 +251,7 @@ Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama dem
 
 Doldurulmuş örnek, tam zamanlı biri için:
 
-Ayda 120.000 TL istiyorsun. Bir müşteri ayda 30.000 TL getiriyor (aylık ücret; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani 4 müşteri lazım. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 50 arama yaparsan 20 iş günü, yani bir ay. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın sonunda çıkıyor.
+Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 50 arama yaparsan 20 iş günü, yani bir ay. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın sonunda çıkıyor.
 
 Aynı hesap işin yanında çalışan biri için başka bir yere çıkıyor. Günde 10 arama yapan birinde aynı zincir çok daha uzun sürüyor; o yüzden işin yanında çalışan birinin doksan günlük hedefi dört müşteri değil, bir ya da iki müşteri. Bir müşteri bu işin çalıştığının kanıtı ve doksan gün için yeterli.
 

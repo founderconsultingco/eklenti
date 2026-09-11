@@ -44,7 +44,7 @@ Bu dörtten biri eksikse saha yine açılır. Eksik olan kapanış anında ortay
 13. **Bir dakikalık anlatım.** Sesli olarak, kâğıda bakmadan, bir dakikada söyleyebiliyorsun. Kanıt: kendi sesini kaydet, süreye bak, buraya at.
 14. **Provalar.** Dördüncü ve beşinci bloğun on iki provası yapıldı, prova notları duruyor, açık kalan tek düzeltme belli. Kanıt: prova sayacı ve son prova notu.
 15. **Üç itiraz.** En sık gelecek üç itirazın karşılığını ezberden söyleyebiliyorsun. Kanıt: FounderOS üçünü arka arkaya sorar, sen cevaplarsın.
-16. **Görüşme özet ekranı.** FounderOS uydurma bir adayla özet ekranını sohbette üretiyor ve beş satırı doğru görünüyor. Kanıt: üretilen ekran.
+16. **Görüşme özet ekranı.** FounderOS uydurma bir adayla özet ekranını sohbette üretiyor ve altı veri sorusu dahil bütün satırları doğru görünüyor. Kanıt: üretilen ekran.
 
 ## Beş: vitrin
 
