@@ -105,6 +105,14 @@ Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yar
 
 **Senaryoda hiç geçmeyecek kalıplar:** "içeriğinizi takip ediyorum", "umarım iyisinizdir", "hızlı bir soru", "sayfanıza baktım", "sizin gibi işletmelere". "Şu kadar müşteri getiririm" gibi sayı sözü yok. Adı ve şirketi olmayan kanıt hikâyesi yok. "Ayda on beş müşteri, olmazsa para iade" gibi teklif artı söz kalıbı yok. Görmediğin hiçbir şey videoya girmez.
 
+### Teklif anlatım kalıbı, videonun ortası
+
+Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit:
+
+"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini yirmi bir günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım; bu yüzden ay sonuna kadar kurulum ücretinde yarı fiyat uyguluyorum. Siz ya da tanıdığınız biri bu tarife uyuyorsa on beş dakika görüşüp birkaç örnek göstereyim, uygun mu birlikte bakalım. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
+
+Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. "Yarı fiyat" fiyati-belirle'deki deneme fiyatının kendisidir; ilk iki müşteride vardır, sonra bu cümle çıkar. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
+
 ### Kayıt: ekran kaydı, tek çekim, montaj yok
 
 Kayıt bilgisayarda ekran kaydı programıyla yapılır: ekran açık, yüzün köşede baloncukta, tek çekim, montaj yok. Kurulum bir kez, beşinci günde, FounderOS adım adım söyler.

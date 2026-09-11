@@ -86,6 +86,20 @@ Bu hesabı telefonda tek cümlede söyleyebilirsin: "Ayda kurtardığınızın b
 
 Karşılaştırma fiyatı da yazılır: Kademe 2'nin üç aylık paketi. Karşılaştırma fiyatı sitede duran pahalı seçenektir, görüşmede söylenmez. Aday onu görmüş gelir ve tek rakamı duyduğunda kafasında bir kıyas olur.
 
+### Beş kat kuralı ve üç bölge
+
+Fiyatın tavanı işletmecinin kazancından çıkar, senin hedefinden değil. Kural şu: işletmeci bu işe verdiği her liraya karşılık en az beş lira geri almalı. Beşin altında sessizce "acaba yanlış mı yaptım" diye düşünür, kötü bir haftada iptal eder ve yorum yazmaz. Beş ile on arası memnundur, kalır, yorum yazar. Onun üstünde seni başkasına anlatır. Üçüncü adımdaki "kurtardığının beşte birinden azı" cümlesi bu kuralın telefondaki halidir; matematiği aynıdır.
+
+Hesap: kartın kayıp birimi çarpı ayda kurtarılması beklenen olay sayısı, işletmecinin brüt kazancı değil kârıdır; kâr payı karttan ya da işletmeciden gelir (servis işinde yüzde otuz beş, emlakta yüzde elli gibi; kartta yoksa görüşmede sorulur). Kârın beşte biri, işletmecinin sana ödeyebileceği tavandır. Aylık ücret bu tavanın altında kalır.
+
+### Çırak tuzağı
+
+Sıfırdan başlayan herkesin yaptığı hata: kulağa iyi geldiği için yüksek bir kurulum ücreti istemek. Çırak ilk gün büyük işe konur, iş bozulur, müşteri parasını geri ister, çırak daha başlamadan biter. Yüksek kurulum ücretinde üç şey olur: ilk kurulum hatasında iade istenir ve ilk izlenim gider; rakamı haklı çıkarmak için olmayan kanıt uydurulur; para cebe girince teslimat baskısı kalkar ve sonuç düşer.
+
+Bu yüzden ilk iki müşteride deneme fiyatı var ve güvence sözleşmede yazılı: riskin bir kısmı sende kalıyor, bu seni daha hızlı öğrenmeye zorluyor ve satışta dürüstlük olarak okunuyor. "Sadece işe yararsa ödersiniz" cümlesinin bizdeki hali "yirmi birinci günde sayılar sıfırsa ikinci ay ücretsiz"dir. Kurulum ücreti tamamen sıfırlanmaz; sıfır olan iş ciddiye alınmıyor ve işletmeci takip etmiyor.
+
+Randevu başına ya da gelen müşteri başına ücret modeli bizim işe uymuyor ve sebebini bil: o model reklamla dışarıdan talep üreten ajanslar içindir, talep onların. Bizim sistem işletmenin zaten gelen talebini kurtarıyor; "bu randevu sistemden mi geldi yoksa zaten gelecek miydi" tartışması her ay çıkar. O yüzden bizde sabit aylık ücret artı olaya bağlı güvence var.
+
 ### Deneme fiyatı
 
 Hazırlık seviyen düşük çıktıysa ilk iki müşteride kurulum yarıya iner, aylık aynı kalır.

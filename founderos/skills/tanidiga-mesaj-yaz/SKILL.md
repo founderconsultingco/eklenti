@@ -62,9 +62,11 @@ Nişe özel yazılmış hali, genel yazılmış halinden daha iyi çalışıyor.
 
 Hazır metin:
 
-"Selam [ad], nasılsın. Kısa bir şey soracağım. Yeni bir iş kurdum, [niş] için [tek cümlelik sonuç] yapıyorum. Bu ay [sayı] yeni işletmeyle çalışacağım. Aklına böyle biri geliyor mu acaba? Gelmiyorsa da sorun değil, sormuş olayım dedim."
+"Selam [ad], nasılsın. Kısa bir şey soracağım. Yeni bir iş kurdum: [niş] gibi çok telefon ve mesaj alan işletmelere, [tek cümlelik sonuç] sağlayan bir sistem kuruyorum. Şu an ay sonuna kadar [sayı] işletmeyle çalışmak istiyorum; amacım ilk örnek çalışmaları ve referansları çıkarmak. Aklına böyle biri geliyor mu acaba? Gelmiyorsa hiç sorun değil, sormuş olayım dedim."
 
-Doldurulmuş hali: "Selam Murat, nasılsın. Kısa bir şey soracağım. Yeni bir iş kurdum, klima ve kombi servislerinin kaçırdığı aramaları randevuya çeviriyorum. Bu ay üç yeni işletmeyle çalışacağım. Aklına böyle biri geliyor mu acaba? Gelmiyorsa da sorun değil, sormuş olayım dedim."
+Doldurulmuş hali: "Selam Murat, nasılsın. Kısa bir şey soracağım. Yeni bir iş kurdum: klima ve kombi servisleri gibi sezonda telefonu susmayan işletmelere, kaçan her aramayı randevuya çeviren bir sistem kuruyorum. Şu an ay sonuna kadar üç işletmeyle çalışmak istiyorum; amacım ilk örnek çalışmaları ve referansları çıkarmak. Aklına böyle biri geliyor mu acaba? Gelmiyorsa hiç sorun değil, sormuş olayım dedim."
+
+"Amacım ilk örnek çalışmaları çıkarmak" cümlesi iki iş yapıyor: yeni olduğunu saklamıyor, ve sayının neden küçük olduğunu açıklıyor. Yeni olduğunu saklayan mesaj tanıdıkta hemen anlaşılır ve güveni yer.
 
 ### A listesinin mesajı
 

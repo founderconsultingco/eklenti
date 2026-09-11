@@ -80,10 +80,18 @@ Teklif aşaması ancak şu dördü varsa kapanır:
 2. Fiyat net: bant birinci günde, tek rakam üçüncü günde; ikisi de tarihiyle İş Beyni'nde.
 3. Sorumluluklar net: öğrenci ne yapıyor, müşteri ne veriyor, sistem ne yapıyor; üç sütun.
 4. Teslim edilebilirlik kontrolü geçilmiş: teklifteki her parça hizmet-akisini-ciz'in kontrolünden geçmiş, geçmeyen teklifte yok.
+5. Tam teklif cümlesi yazılmış ve altı parçası da dolu: nitelik (kime, kime değil), sonuç (olay olarak), süre (gün), yöntem (üç beş adım), güvence, fiyat (görüşme için); artı "siz tek şey yaparsınız" cümlesi. Dört kaldıraçtan biri eksikse yeniden yazılır.
+6. Sayı garantisi yok, ödünç kanıt yok: cümlede "ayda şu kadar" ve olmayan bir referans geçmiyor.
 
-Öğrencinin "bunu ben satarım" demesi güzel ama ölçüt değil. Dördü tamam olmadan on dördüncü bölüme "tamam" yazılmaz.
+Öğrencinin "bunu ben satarım" demesi güzel ama ölçüt değil. Altısı tamam olmadan on dördüncü bölüme "tamam" yazılmaz.
 
 ## 5. Ne yapar
+
+### Pazar, teklif, ikna: sıra bu
+
+Satış üç şeye bağlı ve sırası önemli: pazar, teklifin gücü, ikna. Çok arama yapıp satamıyorsan sorun onda dokuz ikna değil, tekliftir; teklif de değilse pazardır. Sıfırdan başlayan biri ikna işinde iyi olmayacak, bunu biliyoruz. O yüzden bütün yük teklife biniyor: normal bir pazarda iyi bir teklif ve kötü bir satışçı, başarır. Bu senin durumun ve bu bir teselli değil, bir plan. İyi teklif, kötü satışçıyı taşır; hiçbir satış eğitimi zayıf teklifi taşımaz.
+
+Teklif iki nokta arasındaki köprüdür: işletmecinin şu anki hali ve olmak istediği hali. Köprü o kadar sağlam görünecek ki geçmemek tuhaf gelecek. Kartın "işletmecinin gerçek dertleri" bölümü birinci noktayı, ideal müşteri sayfasının satın alma tetikleyicisi ikinci noktayı veriyor.
 
 ### Önce özellik ile sonucu ayırır
 
@@ -117,6 +125,51 @@ Beşinci parça iş anlatmaz, duygu anlatır ve karttaki "işletmecinin iç sesi
 FounderOS cümleyi kartın açılış tipine göre kurar. Üç tip var: geri çağırma, kaçan arama, teklif alıp kaybolan. Hangisinin bu nişte en güçlü olduğu kartta yazılı.
 
 Bir test var: cümleyi sesli söyle. Ağzından çıkarken tuhaf ya da bulanık geliyorsa adaya da öyle gelecek. Tuhaf gelmeyene kadar yeniden yazılır.
+
+### Teklifin altı parçası ve tam teklif
+
+Dönüşüm Cümlesi telefonda söylediğin kısa haldir. Görüşmede, sitede ve videoda söylediğin şey tam tekliftir ve altı parçadan oluşur. Altısı da yazılmadan teklif bitmiş sayılmaz:
+
+1. **Sonuç.** İşletmecinin gerçekten istediği şey, senin yönteminin adı değil. Sonucun somutluk basamağı var ve ne kadar yukarıdaysan o kadar iyi: başvuru bir isimdir, kolay küçümsenir; randevu gerçektir, takvimde biri var; teklif kabulü daha gerçek; kapanmış iş tartışılmaz. Teklif, sistemin gerçekten ölçebildiği en yukarıdaki basamağı söyler: randevu nişinde "yazılan ve gelen randevu", teklif nişinde "cevap alınan ve kabul edilen teklif". Rakam sözü verilmez; olay sözü verilir.
+2. **Süre.** Sonucun ne zaman görüneceği. Bizimki sabit: sistem yirmi bir günde kurulur ve yirmi birinci günde üç sayı önüne konur. Gün yazılır, ay değil; "yirmi bir gün" "üç hafta"dan sert okunuyor.
+3. **Yöntem.** Sistemin adı ve üç ile beş adımı, çocuk anlayacak kadar sade. "Telefon açılmayınca otuz saniyede mesaj gidiyor, cevap gelince sistem üç soru soruyor, randevu takvime düşüyor, gelmeyeni ertesi gün arıyor." Araç adı yok.
+4. **Güvence.** Riskin sende olduğu cümle: yirmi birinci gün raporundaki üç sayı sıfırsa ikinci ay ücretsiz; deneme fiyatı varsa o da burada. Güvence sayı garantisi değil, "sistem çalışıyor mu" garantisidir.
+5. **Fiyat.** Tam teklifte fiyatın yeri var ama telefonda ve sitede yok; görüşmede matematiğiyle söylenir. Kural fiyati-belirle'de.
+6. **Nitelik.** Kime satıyorsun ve **kime satmıyorsun**. "Yalnızca iki ve daha çok hekimli klinikler", "günde yirmi çağrıdan az alan işletmeyle çalışmıyorum" gibi. Kimseyi elemeyen teklif kimseye özel değildir; nitelik cümlesi ideal müşteri sayfasının "ne satın almaz" başlığından çıkar.
+
+Bir de yedinci şey var, parça değil kaldıraç: **işletmecinin yapması gereken tek şey.** İyi tekliflerin hepsinde şu cümle var: "her şeyi sizin için biz yapıyoruz", "ek personel almadan", "mevcut düzeninizi değiştirmeden". Teklifte işletmecinin ne yapacağı tek cümleyle yazılır ve o cümle kısa olur: "Siz bize telefon hattınızı ve WhatsApp'ınızı bağlarsınız, gerisi bizde."
+
+**Tam teklif cümlesi, kalıp:** "[Nitelik] için. [Sistemin adı] ile [süre] içinde [sonuç]; olmazsa [güvence]. Siz [tek şey] yaparsınız, gerisini biz kuruyoruz."
+
+Randevu nişine örnek: "Bursa'da iki ve daha çok teknisyeni olan klima servisleri için. Sezon Çağrı Sistemi ile yirmi bir gün içinde açılmayan her arama aynı dakika mesajla yakalanıyor ve randevuya çevriliyor; yirmi birinci günün raporunda üç sayı sıfırsa ikinci ay ücretsiz. Siz hattınızı bağlarsınız, gerisini biz kuruyoruz."
+
+Teklif nişine örnek: "Ekibi olan mutfak ve banyo tadilat firmaları için. Keşif Takip Sistemi ile yirmi bir gün içinde her keşif talebi randevuya, verdiğiniz her teklif cevaba bağlanıyor; cevapsız teklif kalmıyor. Yirmi birinci günün raporunda üç sayı sıfırsa ikinci ay ücretsiz. Siz teklifi hazırlarsınız, göndermeyi ve takibi biz yapıyoruz."
+
+### Dört kaldıraç: teklifin değeri nereden geliyor
+
+Bir teklifin değeri dört şeyden çıkıyor ve yazarken dördüne de bakılır: istenen sonuç ne kadar büyük, o sonuca inanma ihtimali ne kadar yüksek, sonuç ne kadar çabuk geliyor, işletmecinin ne kadar az emeği gerekiyor. İlk ikisi yukarı, son ikisi aşağı çekilir.
+
+- **Sonuç:** işletmecinin kendi cümlesiyle, kartın kayıp birimiyle. "Akşam kaç arama kaçırdım diye düşünmüyorsun."
+- **İnanma ihtimali:** güvence ve kanıt. Kanıt yokken güvence tek başına taşır; kanıt gelince kanıt önde.
+- **Süre:** yirmi bir gün, gün olarak.
+- **Emek:** "siz tek şey yaparsınız" cümlesi.
+
+Cümlede dört kaldıraçtan biri yoksa eksik yazılmıştır.
+
+### İyi teklif neye benzer
+
+Gerçekte çalışan tekliflerin ortak kalıbı şu: önce kim için olduğu, sonra sonuç, sonra süre, sonra riskin kimde olduğu, sonra işletmecinin ne kadar az iş yapacağı. Bizim modele çevrilmiş örnekler, öğrencinin nişine göre yeniden yazılır, olduğu gibi kullanılmaz:
+
+- "Diş kliniklerinin, gelen aramaları 7/24 karşılayan bir sistemle cevapsız aramaları randevuya çevirmesine yardımcı oluyoruz. Sistem yirmi bir günde hazır, her şeyi sizin için biz kuruyoruz."
+- "Emlak ofislerinin, gelen talebi bütçe ve bölgeye göre eleyip doğru danışmana yönlendiren bir sistemle, ek personel almadan gösterim randevusu çıkarmasına yardımcı oluyoruz."
+- "Reklamınızdan gelen başvuruya beş dakika içinde dönen, ihtiyacını soran ve takviminize randevu yazan bir sistem kuruyoruz; ek personel almanıza ve reklam düzeninizi değiştirmenize gerek yok."
+- "Bilgi isteyip kayıt olmamış kişileri yeniden harekete geçiren, seviye tespitine çağıran bir takip sistemi kuruyoruz; her şeyi biz yapıyoruz."
+
+Kalıbın doğru kısmı: sonuç önde, süre net, emek sıfıra yakın, "her şeyi biz yapıyoruz". Bunlar alınır.
+
+Kalıbın alınmayacak kısmı: **"her ay otuz hasta garanti ediyoruz"** gibi sayı garantisi. İşletmeciyi o an ikna eder, yirmi birinci günde seni yalancı çıkarır ve sözleşmede geçmiyor. Bizde güvence olaya bağlıdır, sayıya değil. Bir de "düzinelerce işletme için yaptık, sonuçlar burada" cümlesi: kanıt varsa yazılır, yoksa yazılmaz, ödünç kanıt uydurulmaz.
+
+Teklifin özellik listesine dönüp dönmediğini anlamanın testi: cümlede "7/24", "yapay zekâ", "otomasyon" varsa ve sonuç yoksa, özellik listesidir. "7/24" tek başına sonuç değildir; "akşam dokuzda gelen mesaj sabah randevu olarak masanda" sonuçtur.
 
 Şunu da bil: bu cümle ilk günden mükemmel olmayacak. Sahaya çıkınca on görüşmede oturuyor. Bugünkü işin mükemmel cümleyi bulmak değil, söyleyebileceğin bir cümleyle sahaya çıkmak.
 
