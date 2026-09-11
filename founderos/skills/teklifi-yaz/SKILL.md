@@ -34,7 +34,7 @@ Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelim
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sızıntı nerede, açılış cümlesi, duran havuz, gerçek fiyatlar ve kapasite, işletmecinin gerçek dertleri ve iç sesi, asistan kuralları, rekabetin şekli, yasal sınırlar.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, doğrulama tablosundaki rakip notu, şehir.
-İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, üç korku, satın alma tetikleyicisi, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar. Teklifin her cümlesi bu başlıklardan birine bağlanır ve hangisine bağlandığı öğrenciye gösterilir.
+İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, üç korku, satın alma tetikleyicisi, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar, ne satın almaz (nitelik cümlesi buradan çıkar). Teklifin her cümlesi bu başlıklardan birine bağlanır ve hangisine bağlandığı öğrenciye gösterilir.
 İş modelinden: ne sattığımız, üç ajan, on üç işlev, iki müşteri yolculuğu, kademeler ve sınırlar. Sabit teklif metninden: dört sızıntı, üç kademe.
 Niş kartından: bu nişin müşteri yolculuğu (randevu, teklif ya da ikisi). Dönüşüm Cümlesi ona göre kurulur: randevu nişinde "randevuya dönmesini", teklif nişinde "teklife dönüp kapanmasını" der.
 

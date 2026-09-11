@@ -109,9 +109,9 @@ Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yar
 
 Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit:
 
-"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini yirmi bir günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım; bu yüzden ay sonuna kadar kurulum ücretinde yarı fiyat uyguluyorum. Siz ya da tanıdığınız biri bu tarife uyuyorsa on beş dakika görüşüp birkaç örnek göstereyim, uygun mu birlikte bakalım. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
+"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini yirmi bir günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım[; deneme fiyatı açıksa: bu yüzden ay sonuna kadar kurulum ücretinde yarı fiyat uyguluyorum]. Siz ya da tanıdığınız biri bu tarife uyuyorsa on beş dakika görüşüp birkaç örnek göstereyim, uygun mu birlikte bakalım. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
 
-Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. "Yarı fiyat" fiyati-belirle'deki deneme fiyatının kendisidir; ilk iki müşteride vardır, sonra bu cümle çıkar. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
+Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. "Yarı fiyat" fiyati-belirle'deki deneme fiyatının kendisidir ve yalnızca deneme fiyatı açıksa söylenir: hazırlık seviyesi düşük öğrencide ilk iki müşteri. Hazırlık seviyesi yüksek öğrenci bu cümleyi hiç söylemez; İş Beyni'ndeki deneme fiyatı işareti kapalıysa köşeli parantez içindeki cümle videoya girmez. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
 
 ### Kayıt: ekran kaydı, tek çekim, montaj yok
 
