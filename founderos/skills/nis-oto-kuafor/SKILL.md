@@ -9,6 +9,8 @@ description: Sadece oto kuafor, seramik kaplama ve arac kaplama nisinin karti: r
 
 **Kapsam.** Detaylı iç dış temizlik, pasta cila, seramik kaplama, boya koruma filmi, cam filmi.
 
+Müşteri yolculuğu: randevu (fiyat listeden, araç randevuyla alınır). Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
+
 **Gerçek fiyatlar ve kapasite.** Yayınlanmış bir fiyat listesinden: seramik kaplama tam uygulama 19.000 ile 43.000 arası. Boya koruma filmi tüm araç 72.000 ile 130.000, ön set 22.000 ile 38.000. Detaylı iç temizlik 8.800 ile 12.000. Cam filmi 11.000 ile 19.000. Standart yıkama 550 ile 750.
 
 Zincir bir markanın canlı kampanyası: ön boya koruma filmi artı seramik kaplama paketi 35.900 lira.

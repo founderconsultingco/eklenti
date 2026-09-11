@@ -10,7 +10,7 @@ description: Birinci gün teklifin gövdesi, üçüncü gün kademeler. Dönüş
 
 Birinci ve üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül ne sattığını yazar. Programın tanıtımındaki adı "Ne Satacaksın".
 
-Satacağın şey zaten belli ve değişmiyor: işletmenin kaçırdığı talebi randevuya çeviren sistem. Bu modül o sabit şeyi senin sektörünün diline çevirir, ona bir ad koyar ve tek cümleye indirir.
+Satacağın şey zaten belli ve değişmiyor: işletmenin kaçırdığı talebi randevuya ya da teklife çeviren ve satışa kadar takip eden sistem; kategori adı AI Müşteri Dönüşüm Sistemi, tanımı "İş modeli" bölümünde. Bu modül o sabit şeyi senin sektörünün diline çevirir, ona bir ad koyar ve tek cümleye indirir.
 
 Neden bu iş var: sıfırdan başlayan biri telefonda ne sattığını anlatamıyor. Anlatmaya çalışırken özellik sayıyor. "Yapay zeka asistan kuruyorum, WhatsApp'a bağlanıyor, randevu yazıyor, hatırlatma gönderiyor." İşletmeci bunu dinlerken kafasında başka bir şey düşünüyor, çünkü bu cümlede onun derdi geçmiyor.
 
@@ -35,10 +35,11 @@ Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelim
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sızıntı nerede, açılış cümlesi, duran havuz, gerçek fiyatlar ve kapasite, işletmecinin gerçek dertleri ve iç sesi, asistan kuralları, rekabetin şekli, yasal sınırlar.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, doğrulama tablosundaki rakip notu, şehir.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, üç korku, satın alma tetikleyicisi, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar. Teklifin her cümlesi bu başlıklardan birine bağlanır ve hangisine bağlandığı öğrenciye gösterilir.
-Sabit teklif metninden: kaçırılan talebi randevuya çeviren sistem, dört sızıntı, üç kademe.
+İş modelinden: ne sattığımız, üç ajan, on üç işlev, iki müşteri yolculuğu, kademeler ve sınırlar. Sabit teklif metninden: dört sızıntı, üç kademe.
+Niş kartından: bu nişin müşteri yolculuğu (randevu, teklif ya da ikisi). Dönüşüm Cümlesi ona göre kurulur: randevu nişinde "randevuya dönmesini", teklif nişinde "teklife dönüp kapanmasını" der.
 
 Dört sızıntı, işletmenin müşteri kaybettiği dört yerdir: açılmayan telefon, geç dönülen mesaj, dönülmeyen form, geri aranmayan eski müşteri.
-Üç kademe, sattığın sistemin üç boyudur. Kademe 1 Hızlı Dönüş, Kademe 2 Tam Sistem, Kademe 3 Büyüme. Görüşmede yalnız Kademe 2 satılır.
+Üç kademe, aynı sistemin üç kapsamıdır, üç ayrı ürün değil. Kademe 1 Temel Kapsam, Kademe 2 Tam Kapsam, Kademe 3 Genişletilmiş Kapsam. Görüşmede yalnız Kademe 2 satılır ve hiçbir kademe "bot" diye anlatılmaz.
 
 ## 4. Ne sorar
 
@@ -130,9 +131,10 @@ Tek ad söylenir, seçenek listesi verilmez. Beğenmezsen ikinci ad söylenir.
 ### Üç kademenin içi
 
 Kartla doldurulur:
-- Kademe 1 bu sektörde ne demek: hangi kanal açık, asistan fiyat verir mi, hangi bilgiyi toplar.
+- Kademe 1 bu sektörde ne demek: hangi kanal açık, asistan fiyat verir mi, hangi bilgiyi toplar, yolculuk randevu mu teklif mi.
 - Kademe 2'de duran havuzun tipi ne ve eski müşteriyi hangi sebeple arayacağız. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Sebep kartta yazılı ve kişinin kendi geçmiş işine bağlı olur, kampanya olmaz.
-- Kademe 3 bu nişte mümkün mü. Yasal sınırı olan sağlık nişlerinde "yok" yazılır.
+- Kademe 3 bu nişte mümkün mü. Yasal sınırı olan sağlık nişlerinde "yok" yazılır. Dış arama her nişte şarta bağlıdır ve ilk müşteride vaat edilmez.
+- Teklifin dışında kalanlar, İş modelinin sınırlar listesinden bu nişe düşenler: reklam yok, içerik yok, işletmenin asıl işi yok, dış arama şartlı, bilinmeyen fiyat uydurulmaz. Bunlar teklif metninde tek satırla yazılır; sonradan "o da dahil sanmıştım" çıkmaz.
 
 Görüşmede tek paket ve tek rakam söylenir, o da Kademe 2'dir. Üç kademe sitede durur, aday oraya bakar.
 

@@ -68,7 +68,11 @@ Bu kontrolün sebebi şu: çok ikna edici bir teklif hazırlayıp öğrenciye te
 
 ## 5. Ne yapar
 
-### Önce beş soru
+### Önce yolculuk, sonra beş soru
+
+Teslimat kurulmadan önce tek karar: bu işletme randevuyla mı satıyor, teklifle mi, ikisiyle mi. Niş kartının "Kapsam" bölümünde yazılı; karttaki yol esas alınır, işletme görüşmede tersini söylerse kartın "sahadan dolacak" bölümüne not düşülür ve o müşteride görüşmedeki yol kurulur. Yolculuk, sistemin hangi parçalarının açılacağını ve raporun hangi sayıları göstereceğini belirler; onsuz kurulum başlamaz.
+
+### Sonra beş soru
 
 Yazılı bir teslimat süreci şu beşine cevap veriyor. Cevabı olmayan süreç, süreç değil. FounderOS beşinin de cevabını takvimden çıkarıp önüne koyuyor, sen okuyup düzeltiyorsun.
 

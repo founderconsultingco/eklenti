@@ -78,7 +78,7 @@ Güvence, müşteriye verdiğin sözdür: yirmi birinci günde rapor, sonuç yok
 
 Sonuç cümlesi sözleşmede ve onay belgesinde hazır durur, her müşteride aynıdır:
 
-"Yirmi birinci günün raporunda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Bir parça kurulamadıysa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz."
+"Yirmi birinci günün raporunda üç sayı görünecek. Randevuyla çalışan işletmede: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Teklifle çalışan işletmede: sisteme gelen talep sayısı, gönderilen ve cevap alınan teklif sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz; rapor gerçekleşen olayı yazar. Bir parça kurulamadıysa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz."
 
 Bu cümle üç işi birden yapıyor:
 1. Rakam sözü vermiyor. "Şu kadar randevu" demiyor, sıfır olmamasını istiyor. Satışta sayı sözü verilmez, bu kurala uyuyor.

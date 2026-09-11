@@ -9,6 +9,8 @@ description: Sadece temizlik sirketi nisinin karti: rakamlar, itirazlar, yasal s
 
 **Kapsam.** Ev temizliği (günlük, haftalık, aylık gündelikçi veya profesyonel ekip), ofis/işyeri temizliği, inşaat sonrası temizlik, koltuk ve halı yıkama, bazen ek olarak cam silme. Zincir olmayan, tek şubeli, genelde birkaç kişilik ekiple çalışan yerel firmalar. Google Haritalar ve ilan sitelerinde genelde birleşik kategori adlarıyla geçiyorlar: "Ev Temizleme, Temizlik ve İlaçlama Hizmetleri", "İşyeri Temizleme, Temizlik ve İlaçlama Hizmetleri", "Apartman Temizliği, Temizlik ve İlaçlama Hizmetleri" (sahibinden.com kategori sayfaları). Kapsam dışı: büyük ölçekli kurumsal tesis yönetimi (AVM, fabrika, hastane ihalesi alan şirketler), sadece ilaçlama/haşere mücadelesi yapan firmalar (ayrı ruhsat gerektiriyor, ayrı niş), oto kuaför/detaylı araç bakımı.
 
+Müşteri yolculuğu: teklif (metrekare ve iş tipine göre teklif; sonra iş günü randevusu). Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
+
 **Gerçek fiyatlar ve kapasite.** Ev temizliği: Armut'ta ortalama fiyat 479-1.024 TL, gerçek taleplerde 2.194-4.613 TL (armut.com/fiyatlari/ev-temizligi_191, 2026). Doğu Temizlik'in (Diyarbakır) kendi sitesindeki fiyat listesi: tek personelle 2+1 ev (100 m²'ye kadar) 2.500 TL, iki personelle 5.000 TL (dogutemizlik.com). CNN Türk'e göre (12.02.2026) stüdyo/1+1 için 4 saatlik temizlik 2.000 TL'den başlıyor, 3+1'de 6.000 TL'ye çıkıyor, ütü veya yemek gibi ek hizmet 1.000 TL'ye kadar ayrı ücretlendiriliyor.
 
 İşyeri/ofis temizliği: Armut'ta ortalama 1.000-60.000 TL, gerçek taleplerde 2.000-197.999 TL, alan büyüklüğüne göre değişiyor (armut.com/fiyatlari/isyeri-temizligi_691).

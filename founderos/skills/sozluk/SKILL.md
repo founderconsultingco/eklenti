@@ -49,6 +49,9 @@ Niş ve teklif:
 - Niş: Sattığın şeyi kime satacağını belirleyen dar sektör (örnek: klima servisleri). On sekiz niş var, birini FounderOS seçer.
 - İdeal müşteri sayfası: Seçilen sektörün içindeki tek kişinin on iki başlıkta tarifi (derdi, korkusu, ne zaman satın alır, ne satın almaz). İş Beyni'nin on sekizinci bölümü; teklif, site, mesaj ve video buradan beslenir.
 - Niş kartı: Bir sektör hakkında bilinen her şeyin (fiyatlar, kaçan müşterinin bedeli, itirazlar, kim karar veriyor, yasaklar) yazılı olduğu hazır sayfa.
+- AI Müşteri Dönüşüm Sistemi: Sattığımız şeyin kategori adı. Gelen talebi karşılayan, randevu ve teklif sürecini ilerleten, satışı takip eden, eski müşteriyi geri kazanan, FounderOS CRM üstünde çalışan tek sistem. Tanımı "İş modeli" bölümünde; öğrenciye böyle anlatılır, işletmeciye ise öğrencinin kendi sistem adıyla ve sonuç diliyle anlatılır.
+- FounderOS CRM: Sattığımız sistemin üstünde çalıştığı platform, adresi crm.founderos.so. Müşteriye yönelik her anlatımda platformun adı budur; altyapının kendi adı söylenmez.
+- Müşteri yolculuğu: İşletmenin satışını nasıl kapattığı. İki yol var: randevuyla (diş, kuaför, servis) ve fiyat teklifiyle (tadilat, sigorta, temizlik); bazı nişlerde ikisi birlikte. Hangi yolun geçerli olduğu niş kartında yazılı, teslimat ona göre kurulur.
 - Dört sızıntı: İşletmenin müşteri kaybettiği dört yer: açılmayan telefon, geç dönülen mesaj, dönülmeyen form, geri aranmayan eski müşteri.
 - Duran havuz: İşletmenin elindeki, uzun süredir aranmamış eski müşteri listesi.
 - Kayıp birimi: İşletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şey: "bir boş gün", "bir koltuk saati", "bir keşif".
@@ -59,7 +62,7 @@ Niş ve teklif:
 - Sızıntı kanıtı: Niş kartında duran, o sektörde müşterinin nerede ve ne kadar kaybedildiğini gösteren rakamlı kanıt.
 - İşletmecinin sözlüğü: Niş kartında duran, o sektörün işletmecisinin kendi kullandığı kelimelerin listesi; mesaj da görüşme de o kelimelerle yazılır.
 - Sistemin adı: Sattığın sisteme nişe özel verilen iki üç kelimelik ad. Adı olmayan sistem saatlik işçilik gibi ucuz görünür.
-- Kademe 1, 2, 3: Sattığın sistemin üç boyu. Kademe 1 Hızlı Dönüş: cevapsız aramaya anında mesaj, yazılı asistan, randevu ve hatırlatma. Kademe 2 Tam Sistem, asıl satılan: üstüne eski müşterileri geri arama, Google yorumu toplama, aylık rapor. Kademe 3 Büyüme: üstüne reklam yönetimi; ancak büyüme şartı sağlanınca, en erken ikinci ay.
+- Kademe 1, 2, 3: Aynı sistemin üç kapsamı, üç ayrı ürün değil. Kademe 1 Temel Kapsam: gelen tarafın karşılanması, randevu ya da teklif takibi, hatırlatma. Kademe 2 Tam Kapsam, asıl satılan: üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor. Kademe 3 Genişletilmiş Kapsam: üstüne dış arama ve reklam; büyüme şartı sağlanınca, en erken ikinci ay. Hiçbir kademe tek başına "bot" diye satılmaz.
 - Görüşmede tek paket tek rakam: Görüşmede sadece Kademe 2 söylenir; üç kademe sitede durur.
 - Karşılaştırma fiyatı: Sitede duran pahalı seçenek; görüşmede söylenmez, aday onu görmüş gelir.
 - Fiyat bandı: Birinci blokta karttan çıkan alt ve üst rakam; kesin rakam üçüncü blokta konur. Öğrenciye "aralık" ya da "alt ve üst sınır" diye anlatılır.

@@ -61,7 +61,7 @@ Kanıtsız teselli yasak. "Tam da senin gibiler başarıyor", "sen kesin yapars�
 
 On beş soruya, ne için cevap verdiğini bilerek başlaması lazım. Bir saat boyunca ne kurduğunu bilmeden soru cevaplayan öğrenci hem kötü cevap veriyor hem "bu nereye gidiyor" diye düşünüyor. İlk sorudan önce iki cümle:
 
-"Kuracağın iş şu: işletmelerin kaçırdığı müşteriyi yakalayan bir sistem kuruyorsun ve aylık ücretle satıyorsun. Telefona bakılmadığında, mesaja geç dönüldüğünde, eski müşteri unutulduğunda kaybolan işi geri getiren bir sistem; kurulumu sen yapıyorsun, çalışmasını yapay zekâ yapıyor."
+"Kuracağın iş şu: işletmelerin kaçırdığı müşteriyi yakalayan bir sistem kuruyorsun ve aylık ücretle satıyorsun. Adı AI Müşteri Dönüşüm Sistemi: telefona bakılmadığında, mesaja geç dönüldüğünde, teklif verilip takip edilmediğinde, eski müşteri unutulduğunda kaybolan işi geri getiriyor. Kurulumu sen yapıyorsun, çalışmasını yapay zekâ yapıyor, hepsi FounderOS CRM'in üstünde."
 
 İki cümle. Daha uzun anlatmazsın, çünkü ayrıntısı bugünün ilerleyen saatlerinde zaten çıkacak. Ama bu iki cümle olmadan soru sorulmaz.
 

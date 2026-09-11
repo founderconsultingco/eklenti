@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteri-sistemini-kur
-description: Müşterinin ikinci gününden itibaren. On dört parçalı komple sistemin kurulması.
+description: Müşterinin ikinci gününden itibaren. AI Müşteri Dönüşüm Sistemi'nin kurulması: yedi altyapı parçası, üç ajan, on üç işlev; hangi parçaların açılacağını nişin müşteri yolculuğu (randevu ya da teklif) belirler.
 ---
 
 # musteri-sistemini-kur
@@ -16,37 +16,49 @@ Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gü
 
 Bir de dil ayrımı: "müşteri" senin paranı ödeyen işletmedir. Onun kendi müşterisine bu bölümde "arayan kişi" ya da "işletmenin müşterisi" diyoruz.
 
-### Kurulan on dört parça
+### Kurulan sistem: üç ajan, on üç işlev, yedi altyapı parçası
 
-Temel:
-1. Kayıt ve tek mesaj ekranı. Bütün kanallar tek ekrana düşer, her kişinin tek kaydı olur.
-2. Formlar ve ön eleme. Siteden ve karekoddan gelen talep forma düşer, form kaydı açar.
+Kurduğun şeyin listesi "İş modeli" bölümünde duruyor ve buradaki liste onun kurulum sırasına dizilmiş halidir. Her satır ayrı bir ürün değil; bir kısmı asistanın yürüttüğü iş, bir kısmı asistanla birlikte çalışan otomasyon. Müşteriye anlatırken parça saymazsın, yolculuğu anlatırsın: "Biri yazdığında, aradığında, geldiğinde ya da gelmediğinde ne oluyor."
 
-Gelen taraf:
-3. Yazılı asistan: WhatsApp ve Instagram. Yazana anında cevap verir, soruyu sorar, randevuya çevirir.
-4. Sohbet kutusu ve Facebook mesajları. Aynı asistanın siteye ve Facebook sayfasına açılan iki kapısı.
-5. Gelen arama asistanı. Telefona cevap veren sesli ajan; işletme açmadığında hattı o karşılar, konuşur ve randevu yazar.
-6. Cevapsız aramaya dönüş. Konuşma randevusuz biterse ya da arayan kapatırsa aynı dakika WhatsApp'tan yazılı dönüş.
-7. Altmış saniye kuralı. Hangi kanaldan gelirse gelsin ilk yanıtın altmış saniye içinde çıkması; ölçülür ve kaçarsa bildirim yükselir.
+**Hangi parçalar açılır, yolculuk söyler.** Randevu nişinde takvim, hatırlatma ve gelmeyeni geri kazanma açılır; teklif takibi kapalı kalabilir. Teklif nişinde teklif takibi, görüşme sonrası takip ve kapora yolu açılır; takvim ancak keşif randevusu varsa. İkisi birlikte olan nişte ikisi de açılır. Açılmayan parça sessizce düşmez; kurulum görüşmesinde söylenir ve teslim paketinde "bu işletmede kapalı, sebebi şu" diye yazar.
 
-Randevu ve satış:
-8. Randevu takvimi ve hatırlatmalar. Çakışmasız takvim, onay mesajı, yirmi dört saat ve bir saat kala hatırlatma, sonuç sorusu.
-9. Teklif takibi. Fiyat verilip cevap gelmeyen kişinin peşine düşen zincir.
-10. Ödeme ve fatura. Kapora ya da tamamı için ödeme linki, ödendi bilgisinin kayda düşmesi.
+**Altyapı, önce (birinci dalga, ilk gün):**
+1. Müşteri ve Satış Süreci Takibi (CRM & Pipeline). Bütün kanallar tek ekrana düşer, her kişinin tek kaydı olur, aşamalar yolculuğa göre adlandırılır.
+2. İletişim Kanalı Bağlantıları (Channel Integrations). WhatsApp, Instagram, site sohbeti, formlar, karekod; telefon ikinci dalgada.
+3. İşletme Bilgi Bankası (Knowledge Base). Hizmetler, onaylı fiyatlar, saatler, sık sorular. Asistan burada olmayan şeyi uydurmaz, "çalışana aktarıyorum" der.
+4. Takvim ve Yönlendirme (Calendars & Routing). Çakışmasız takvim, hangi işin hangi çalışana gideceği.
+5. Konuşmayı Çalışana Devretme (Human Handover). Müşteri insan isteyince ya da asistanın yetkisi aşılınca; devralınca asistan susar.
+6. Otomasyon ve Takip Kontrolleri (Workflow Controls). Randevu alınınca davet takibi durur, satış olunca satış takibi durur, aynı kişiye iki zincir aynı anda yazmaz.
+7. Sonuç Takibi ve Raporlama (Reporting). Başvuru, randevu, katılım, teklif, doğrulanmış satış. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz.
 
-Geri kazanma ve itibar:
-11. Duran havuz. İşletmenin uzun süredir aranmamış eski müşteri listesinin geri çağrılması.
-12. Giden arama ajanı. Aynı sesli ajanın listeyi arayan hali. Şarta bağlı, sebebi aşağıda yazılı.
-13. Yorum isteme ve yorum yanıtlama. İşi biten kişiden yorum istemek ve gelen her yoruma yanıt yazmak.
+**Gelen taraf (birinci dalga, yazılı; ikinci dalga, sesli):**
+8. AI Mesajlaşma ve Randevu Asistanı (AI Chat & Appointment Setter). Yazana anında cevap verir, ihtiyacı öğrenir, ölçüte uygunluğuna bakar, randevuya ya da çalışana yönlendirir. Adayı Değerlendirme ve Yönlendirme (Lead Qualification & Routing) bu asistanın içindedir.
+9. Yeni Başvuruya Hızlı Dönüş (Speed-to-Lead). Form, karekod ya da mesaj gelince ilk iletişim altmış saniye içinde çıkar; ölçülür, kaçarsa bildirim yükselir.
+10. Cevapsız Arama Sonrası Mesaj (Missed-Call Text Back). Açılmayan aramanın ardından aynı dakika WhatsApp'tan yazılı dönüş.
+11. AI Telefon Karşılama Asistanı (AI Voice Receptionist). İkinci dalga. İşletme açmadığında hattı karşılar, bilgi verir, randevu yazar, gerekince çalışana aktarır.
 
-Görünürlük:
-14. İşletmenin panosu ve aylık rapor. Müşterinin kendi girip rakamı gördüğü ekran, artı ayın raporu.
+**Randevu ve satış (yolculuğa göre):**
+12. Randevu Hatırlatmaları (Appointment Reminders). Onay mesajı, bir gün ve bir saat kala hatırlatma.
+13. Randevuya Gelmeyeni Geri Kazanma (No-Show Recovery). Gelmeyenle aynı gün yeniden iletişim, yeni randevu hedefi.
+14. AI Otomatik Takip (AI Auto Follow-Up). Konuşmayı yarıda bırakanı, cevap vermeyeni, "sonra" diyeni takip eden zincir.
+15. Fiyat Teklifinden Satışa Takip (Quote-to-Close). Teklif nişinde: işletmenin onayladığı teklif gönderilir, cevap ve kabul takip edilir, kapora ya da ödeme linki düşer.
+16. Görüşme Sonrası Satış Takibi (Post-Call Follow-Up). Görüşüp almayanı, görüşmenin sonucuna göre takip.
+17. Ödeme ve fatura. Kapora ya da tamamı için ödeme linki, ödendi bilgisinin kayda düşmesi.
 
-Nişe göre bir iki parça düşebilir. Sağlık nişinde yorum yanıtlamanın dili daralır, bazı işlerde teklif diye bir adım yoktur. Düşen parça sessizce düşmez; niş kartında yazılıdır ve kurulum görüşmesinde söylenir.
+**Geri kazanma ve itibar (Kademe 2):**
+18. Eski Müşteri ve Başvuruyu Yeniden Kazanma (Database Reactivation). Duran havuzun mesajla geri çağrılması; izin ve altyapı uygunsa dış aramayla.
+19. AI Dış Arama (AI Outbound Calling). Şarta bağlı, ilk müşteride vaat edilmez; sebebi aşağıda.
+20. Müşteri Yorumu İsteme ve Referans İsteme (Review Requests, Referral Requests). İşi bitenden yorum, memnun olandan tavsiye.
+21. Tekrar Randevu Alma ve Ek Hizmet Satışı (Rebooking, Upsell). Bakım ve kontrol zamanı gelince ulaşma; işletmenin önceden belirlediği ek hizmeti sunma.
+
+**Görünürlük:**
+22. İşletmenin panosu ve aylık rapor. Müşterinin kendi girip rakamı gördüğü ekran, artı yirmi birinci gün ve aylık rapor.
+
+Nişe göre parçalar düşer ve bu normaldir. Sağlık nişinde yorum yanıtlamanın dili daralır, teklif nişinde takvim kapalı kalabilir, randevu nişinde teklif takibi hiç açılmaz. Düşen parça niş kartında yazılıdır ve kurulum görüşmesinde söylenir.
 
 Şunlar bu modülün işi değildir: asistanın senaryosu, soruları ve kuralları (yazili-asistani-kur), sesli ajanın konuşma metni ve kuralları (sesli-ajani-kur), eski müşteri mesajlarının metni ve gönderimi (kaybolanlari-geri-getir), yorum kampanyasının yürütülmesi (yorum-topla), aylık raporun yazılması (aylik-raporu-hazirla), karşılama ve izinler (musteriyi-karsila). Şöyle düşün: bu modül boruyu döşer, suyu başka modül akıtır.
 
-Pazarlamadaki karşılığı hazır kurulum paketidir: adını yazınca çalışan set. Teknik karşılığı özel değerler ekranıdır. Orada on dört satır vardır ve bütün mesajları, sayfaları ve bildirimleri o satırlar doldurur.
+Pazarlamadaki karşılığı hazır kurulum paketidir: adını yazınca çalışan set. Teknik karşılığı özel değerler ekranıdır. Oradaki satırlar bütün mesajları, sayfaları ve bildirimleri doldurur.
 
 ## 2. Ne zaman çalışır
 

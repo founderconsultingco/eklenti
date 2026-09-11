@@ -14,6 +14,8 @@ Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gü
 
 Dil ayrımı: "müşteri" senin paranı ödeyen işletmedir. Telefonu açan kişiye "arayan kişi" diyoruz.
 
+İş modelindeki adıyla bu, AI Telefon Karşılama Asistanı (AI Voice Receptionist). Aynı ajanın giden hali, AI Dış Arama (AI Outbound Calling), ayrı bir kuruluş değil ayrı bir ayardır: sistem kendisi arama başlatır, eski müşteriyi ya da yeni başvuruyu arar, görüşmeyi randevuya ya da çalışana yönlendirir. Dış arama şarta bağlıdır: numara, hesap ve iletişim izni (İYS) uygunsa açılır, ilk müşteride vaat edilmez, gelen taraf sorunsuz çalıştıktan sonra ayrıca sınanır ve sonucu bilgi dosyasına yazılır. Cevapsız aramaya mesaj göndermek dış arama değildir; o ayrı bir işlevdir ve yazılı taraftadır.
+
 Sesli ajan yazılı asistanın yerine geçmiyor, yanında duruyor. İkisi aynı karttan çıkıyor, aynı üç soruyu soruyor, aynı hallerde işi insana bırakıyor. Sebebi tek cümle: bir işletme iki ağızdan iki farklı şey söyleyemez. Yazılı asistan yazana cevap veriyor, sesli ajan arayana.
 
 Üç çıktısı var, üçü de niş kartından çıkar: ajanın konuşma metni, insana aktarma kuralları, söylemeyecekleri.

@@ -35,7 +35,7 @@ Durum: 18 kartın 18'i tam araştırmayla yazıldı (kart başına 15 ile 47 kay
 
 # Şablon
 
-# FounderOS Niş Kartı: şablon ve kurallar
+# FounderOS Niş Kartı: Şablon ve Kurallar
 
 Kart, FounderOS plugin'inin skill'lerinin okuduğu bilgi dosyasıdır. Öğrenci (Türkiye'de sıfırdan tek kişilik yapay zeka servis işi kuran, hiç müşterisi olmamış biri) nişini seçtiğinde bu kart açılır ve sistemin tamamı bu dille konuşur.
 
@@ -54,6 +54,8 @@ Sattığımız şey sabit: yerel işletmelerin KAÇIRDIĞI TALEBİ randevuya/iş
 # [Niş adı]
 
 **Kapsam.** Hangi işletmeler dahil, hangileri değil. Google Haritalar'da nasıl geçiyorlar (kategori adları).
+
+Bölümün son satırı sabit: `Müşteri yolculuğu: randevu | teklif | ikisi birlikte (kısa gerekçe).` Teslimat ve rapor bu satırı okur; boş bırakılmaz.
 
 **Gerçek fiyatlar ve kapasite.** Ana hizmetlerin yayınlanmış fiyat aralıkları (kaynaklı). Günde/haftada kaç iş çıkarabildikleri (forum, röportaj, sektör yazısı). Bundan çıkan "kaçan tek bir müşteri = ne demek" hesabı, işletmecinin diliyle ("bir boş gün", "bir koltuk saati", "bir keşif").
 
