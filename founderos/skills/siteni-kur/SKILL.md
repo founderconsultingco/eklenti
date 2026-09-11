@@ -138,7 +138,7 @@ Hakkımızda, blog, hizmetler sayfası yok. Canlı destek kutusu yok. Boş video
 
 Sayfanın içeriği kadar görünüşü de yazılı. Serbest bırakılırsa her öğrencinin sayfası aynı çıkıyor ve yapay zekâ çıktısı gibi duruyor; aradığın işletmeci bunu bir bakışta anlıyor.
 
-**Görsel dünya marka kitinden gelir, başka yerden değil.** İki saat önce kurduğun kit açık zeminli, nişin kendi renkleriyle, gerçek fotoğraflıydı. Sayfa o kitin devamı gibi durur. İnternetteki beğenilen ajans sayfalarının çoğu siyah zemin, parlak vurgu ve İngilizce yazılım estetiğidir; o sayfalar yazılım satan Amerikalılara yapılmış. Senin adayın Bursa'da kombi servisi olan elli yaşında bir adam ve sayfayı akşam telefonundan açıyor. Ona koyu bir yazılım sayfası değil, işini bilen bir ustanın sayfası lazım. O sayfalardan alınan şey görünüşleri değil, kurgusudur: tek düğme, tek vurgulu kelime, dert önce, kanıt sonra, tekrar eden çağrı.
+**Görsel dünya marka kitinden gelir, başka yerden değil.** Kitin iki yüzeyi var ve sayfa ikisini de kullanır: açılış bandı ve son çağrı kimlik yüzeyidir, koyu ve tek doygun renkli, marka görseliyle; gövde okuma yüzeyidir, açık zeminli. Sebebi şu: adayın akşam telefonundan okuyor, on bölüm koyu zeminde okunmaz; ama ilk ekran ve son ekran koyu kimlikle gelince sayfa "modern bir iş" der ve kitle sayfa arasında dikiş kalmaz. İnternetteki ajans sayfalarından alınan şey de bu: koyu açılış, tek düğme, tek vurgulu kelime, dert önce, kanıt sonra, tekrar eden çağrı. Baştan sona siyah sayfa alınmaz, çünkü o sayfalar telefondan okunmuyor.
 
 **Yazı tipi.** Marka kitindeki iki yazı tipi, sayfada yenisi seçilmez. Türkçe karakter kontrolü: ı, İ, ğ, ş, ç, ö, ü, ₺. Gövde yazısı telefonda en az 16 piksel, satır uzunluğu altmış beş ile yetmiş beş karakter arası, satır yüksekliği yazı tipine göre ayarlı. Başlık büyük ama sığar; harf aralığı eksiye kaçırılmaz, "-0,04"ün ötesi sıkışık duruyor. Bütün başlıklar büyük harf olmaz.
 
@@ -160,7 +160,7 @@ Sayfanın içeriği kadar görünüşü de yazılı. Serbest bırakılırsa her 
 
 **Telefon.** Sayfa önce 390 piksel genişlikte kurulur, sonra 1440'a açılır. Düğme başparmakla basılacak kadar geniş, sayfa yana kaymıyor, 360'ta da taşma yok.
 
-**Slop kontrolü, sayfa gösterilmeden önce.** Beş soru: koyu zemin artı tek parlak vurgu mu; düzen başlık artı üç kart artı düğme mi; tek gerçek fotoğraf yok mu; bütün bölümler aynı genişlik ve ritimde mi; hiç insan izi yok mu. İkisi "evet"se sayfa yeniden kurulur, öğrenciye gösterilmez.
+**Slop kontrolü, sayfa gösterilmeden önce.** Beş soru: gövde de koyu mu, yoksa açılış bandındaki koyu zemin düz kutu mu; düzen başlık artı üç kart artı düğme mi; tek gerçek fotoğraf yok mu; bütün bölümler aynı genişlik ve ritimde mi; hiç insan izi yok mu. İkisi "evet"se sayfa yeniden kurulur, öğrenciye gösterilmez.
 
 ### Nasıl kurulur: tek atışta
 
@@ -236,7 +236,7 @@ Alt basamaktaki öğrenciye: "Bugün kendi adresini almıyoruz. Site ücretsiz a
 Alt basamaktaki öğrenci adres almak isterse: "Alma. O para bugün cebinden çıkarsa sahaya çıkışta elin daralıyor ve ücretsiz adres bugünkü işi aynı şekilde yapıyor. İlk kanıttan sonra alıyoruz, ücretsiz adresi yenisine yönlendiriyoruz."
 İngilizce ekranda takılırsa: "Ekranın görüntüsünü at, hangi düğme olduğunu söylerim. Tarayıcının çevirisini açma; çeviri düğme adlarını değiştiriyor ve bir sonraki adımda tarif ettiğim yazıyı ekranda bulamıyorsun."
 Müşteri yorumu yok diye üzülürse: "Müşteri gelince iki bölüm eklenecek: onun sözü ve onun raporu. Bugün sayfanın en güçlü kanıtı sensin; kim bölümü o yüzden var ve o yüzden gerçek."
-Koyu ve parlak bir sayfa isterse: "O sayfalar yazılım satan Amerikalılara yapılmış. Senin adayın akşam telefonundan bakan bir usta. Ona işini bilen bir adamın sayfası lazım, yazılım şirketinin sayfası değil. Kurgusunu aldık, görünüşünü almadık."
+Baştan sona koyu sayfa isterse: "Açılış ve kapanış zaten koyu, markan orada. Gövdeyi koyu yaparsak adayın akşam telefonundan on bölümü okuyamıyor. Modern görünen kısım kalıyor, okunmayan kısım açık oluyor."
 Başlığı yazarken: "Başlıkta ne sattığını değil, onun ne kazanacağını yazıyoruz. Aday kendi sonucunu okuyunca duruyor, senin araçlarını okuyunca kaydırıyor."
 Fiyat sorarsa: "Sayfaya fiyat koymuyoruz. Rakam görüşmede, matematiğiyle birlikte söyleniyor. Sayfada tek başına duran rakam her zaman pahalı görünüyor."
 Form isterse: "Form koymuyoruz. Formu dolduran aday cevap bekliyor ve sen dört saat aramadayken cevap veremezsin. Tek yol takvim; takvim seni beklemiyor."

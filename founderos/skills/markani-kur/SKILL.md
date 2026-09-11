@@ -65,21 +65,19 @@ Alan adı, sunucu ve yayın birinci günde konuşulmaz. Bugün marka kimliği ç
 
 ## 5. Ne yapar
 
-### Önce görsel yön
+### Önce görsel yön: iki yüzey, tek kimlik
 
-Üç hazır yön var. FounderOS nişe göre birini seçer, sana sorar gibi yapmaz, seçtiğini ve sebebini söyler:
+Markanın iki yüzeyi var ve ikisi aynı kimliği taşır ama aynı zemini taşımaz.
 
-**Saha ve usta işi.** Klima ve kombi servisi, oto servis, elektrik, haşere, cam balkon, tadilat, temizlik. Açık ve kirli beyaz zemin, işin kendi rengi (iş kıyafeti, servis aracı, alet, malzeme renkleri), kalın ve kısa kelime markası, gerçek iş fotoğrafı. Sebebi: bu sektörde güven, işin yapılırken görünmesinden geliyor. Karşı taraf bir uygulama değil bir usta arıyor.
+**Kimlik yüzeyi.** Logo, marka görseli, sosyal profil, Instagram kareleri, kartvizit. Burada muhatap öğrencinin kendisi ve onu Instagram'da gören herkes. Bu yüzey iddialı ve modern durur: **koyu zemin, tek doygun renk, gerçek malzeme hissi.** Siyah üstünde tek bir rengin ışığı; kumaş, cam, metal ya da dalga gibi fiziksel bir doku; kalın ve sıkı bir kelime markası; tek cümleyle anlatılabilen bir işaret. Sebebi şu: öğrenci yapay zekâ servisi satıyor ve markası "bu adam modern bir iş yapıyor" demeli. Sektörün kendisi kombi olsa da ajansın kimliği kombi görünmez.
 
-**Randevulu ve temas eden iş.** Diş kliniği, estetik, güzellik salonu, pilates, kuaför. Açık zemin, çok boşluk, ince ve dengeli yazı, tek nötr vurgu, mekândan ve elden gerçek fotoğraf. Sebebi: bu nişlerde yasal sınırlar sert, iddialı görüntü hem yasak hem ters tepiyor.
+**Okuma yüzeyi.** Tanıtım sayfasının gövdesi, onay belgesi, rapor, e-posta. Burada muhatap işletme sahibi, akşam, telefondan. Bu yüzey **açık zemin**: aynı renk, aynı yazı tipi, aynı işaret, ama okunur. Koyu kimlik burada açılış bandı, alt bölüm ve marka anları olarak görünür; gövde açıktır. Gerçek teknoloji markaları da böyle yapıyor: kimlik koyu, ürün sayfası açık.
 
-**Para ve belge işi.** Emlak, sigorta, oto galeri, düğün organizasyon, fotoğraf stüdyosu. Orta kontrast, düz ve okunaklı yazı, iki renk artı gri skala, belge ve imza dokusu. Sebebi: bu sektörlerde müşteri güven algısı zaten kırık, abartılı görüntü şüphe artırıyor.
+İkisi arasında dikiş olmaz, çünkü renk ve yazı tipi aynıdır; değişen tek şey zemindir.
 
-**Rengi yön değil kart seçer.** Yönün kendisi zemin ve doku kuralını veriyor; rengi niş kartından çıkarırsın. Kartın işletmecinin dünyasında gerçekten bulunan renkleri vardır: servis aracının rengi, iş tulumunun rengi, malzemenin rengi, sezonun rengi. Renk oradan gelir, palet kataloğundan değil. Gerekçesi öğrenciye tek cümleyle söylenir: "Bu sarı senin sektörünün kendi sarısı, servis aracının üstündeki sarı."
+**Rengi kart seçer, doygunluğunu kimlik.** Renk niş kartından gelir: sektörün dünyasında gerçekten bulunan renk. Kimlik yüzeyinde o renk doygun ve tek başınadır; klima için sıcak sarı turuncu, elektrik için elektrik mavisi, temizlik için canlı yeşil gibi. İki renk yarıştırılmaz, mor mavi geçişi yapılmaz. Gerekçesi öğrenciye tek cümleyle söylenir.
 
-**Koyu zemin varsayılan değildir.** Hiçbir yön koyu zeminle başlamaz. Koyu zemin ancak tek bir şartla seçilir: nişin işi gerçekten geceyse ya da ekran başındaysa (nöbetçi hizmet, güvenlik, gece vardiyası). O şart yoksa açık zemin kullanılır. Sebebi aşağıdaki bölümde.
-
-Yön seçildikten sonra kit boyunca değişmez. Her artboard aynı ızgaraya, aynı ölçeğe, aynı köşe yarıçapına uyar.
+**Koyu zemin kuralı, doğru hali.** Koyu zemin yasak değildir; **düz siyah üstüne tek neon** yasaktır. Koyu zemin ancak malzemeyle gelir: rengin ışığı bir yerden vuruyor, zeminde bir doku var, işaretin bir ağırlığı var. Düz siyah kutu üstünde parlak yazı, yapay zekâ işi gibi durur; siyah kumaş üstüne vuran tek renk ışık, ajans işi gibi durur. Fark malzemedir, renk değil.
 
 ### Yazı tipinde tek zorunlu kural
 
@@ -180,7 +178,7 @@ Talimatın içinde yazılı ama bilmen lazım, çünkü çıkanı sen kontrol ed
 
 Sektör klişeleri. Diş nişindeysen parlayan beyaz diş, mavi turkuaz geçiş, gülen stok model yok. Oto nişindeysen dişli çark ve İngiliz anahtarı yok. Güzellikte pembe ve altın yaldız yok.
 
-Yapay zeka klişeleri. Devre kartı, robot kafası, mor mavi neon geçiş, beyin ikonu, parlayan kıvılcım. Bunlar hem herkeste var hem de senin sattığın şeyi yanlış anlatıyor; sen teknoloji satmıyorsun.
+Yapay zeka klişeleri. Devre kartı, robot kafası, mor mavi neon geçiş, beyin ikonu, parlayan kıvılcım, camdan 3D harf, sonsuzluk işareti. Bunlar hem herkeste var hem de senin sattığın şeyi yanlış anlatıyor; sen teknoloji satmıyorsun.
 
 Şablon estetiği. Sebepsiz renk geçişi, üç sütunlu boş kart dizisi, her şeyin ortalanması, gereksiz gölge.
 
@@ -190,7 +188,7 @@ Süs. Her eleman bir iş yapacak. Bir şeyin orada neden durduğunu söyleyemiyo
 
 Bir marka kitinin en kötü hali çirkin olması değil, **yapay zekanın ürettiğinin anlaşılması.** Öğrenci bu kiti bir işletme sahibine gösterecek; "bunu bir programa yaptırmış" diye okunduğu an satıcı olarak değeri sıfırlanıyor. Ve yapay zekanın varsayılan zevki çok belirli, hep aynı beş şeye gidiyor:
 
-1. Koyu antrasit zemin artı tek neon vurgu.
+1. Düz koyu kutu artı tek neon vurgu, üstünde hiç malzeme yok.
 2. Soyut geometrik işaret: kare ızgara, altıgen, iç içe halka, kesik daire.
 3. Her panoda aynı kalıp: renkli etiket çubuğu, kutu, altında not.
 4. Tek kare fotoğraf yok, tek el izi yok, tek yerel iz yok.
@@ -202,7 +200,7 @@ Bunların hiçbiri kötü tasarım değil; hepsi **varsayılan** tasarım. Sorun
 
 Talimat gönderilmeden önce beş soruyu kendine sorarsın. İkisine "evet" diyorsan yön baştan kurulur, üretim başlamaz:
 
-1. Zemin koyu ve üstünde tek parlak vurgu rengi mi var?
+1. Zemin düz koyu bir kutu mu, yoksa üstüne ışık vuran bir malzeme mi? Düz kutu artı parlak yazı slop'tur; dokulu zemin artı tek doygun renk değildir.
 2. Logo soyut bir geometrik şekil mi? **"Bu bir telefon uygulaması simgesi olabilir mi" diye sor; olabiliyorsa reddet.**
 3. Bütün panolar aynı şablonun tekrarı mı?
 4. Kitin içinde tek bir gerçek fotoğraf ya da doku var mı, yoksa hepsi düz renk ve kutu mu?
@@ -212,15 +210,17 @@ Kontrol sessiz yapılmaz. Kiti gösterirken öğrenciye tek cümleyle söylenir:
 
 ### Logo kuralı
 
-Yerel hizmet markasında **önce kelime markası.** İşin adı, iyi seçilmiş bir yazı tipiyle, tek ayırt edici detayla: bir harfin kesilmesi, bir alt çizgi, bir nokta. Soyut ızgara, altıgen, iç içe halka ve kesik daire yasaktır.
+İyi ajans logolarının ortak noktası soyut olmaları değil, **tek cümleyle anlatılabilmeleri.** Yukarı giden ok. Üst üste üç ok. Bir yıldız. Kesilmiş bir S harfi. Piksellerden bir artı. Bir yabancı işarete bakıp bir cümlede ne olduğunu söyleyebiliyorsa işaret çalışıyor; söyleyemiyorsa, "dokuzuncu kare son randevuyu temsil ediyor" gibi bir hikâye anlatmak gerekiyorsa, işaret çalışmıyor.
 
-İşaret kullanılacaksa vaadi kodlayacak ve bakan kişi bakar bakmaz okuyacak: dolu bir takvim, bir teyit işareti, bir açık kapı, bir çalan telefon. "Dokuzuncu kare son randevuyu temsil ediyor" gibi anlatılması gereken hiçbir hikâye işe yaramaz; bir işareti anlatmak zorunda kalıyorsan o işaret çalışmıyor demektir.
+Kural şu: **işaret bir kelimeyle özetlenir.** Ok, yıldız, kapı, dalga, harf. Kelimesi yoksa reddedilir. Kare ızgara, altıgen, iç içe halka ve kesik daire bu testi geçemediği için yasaktır; ok, yıldız ve harf geçtiği için serbesttir.
 
-Sektör klişesi ayrı, sektör gerçeği ayrı. Dişli çark klişedir, servis aracı gerçektir.
+Kelime markası işaretten önemlidir ve ona ayrı emek verilir: kalın geometrik bir yazı, sıkı harf aralığı, ve **tek bir özel kesim.** Bir harfin köşesi alınmış, bir harf kare yapılmış, bir nokta eklenmiş, bir harf ikiye bölünmüş. Tek kesim; ikincisi süs olur. Bu tek kesim, yazı tipinden indirilen bir kelimeyi markaya çeviren şeydir.
+
+Sektör klişesi ayrı, sektör gerçeği ayrı. Dişli çark klişedir, servis aracının sarısı gerçektir.
 
 ### İnsan izi
 
-Kitte en az üç yerde insan eli görünecek: gerçek bir iş fotoğrafı kompozisyonu, kurucunun adının kendi yazısıyla ya da imza biçiminde duruşu, ve şehir damgası ("Bursa, 2026" gibi). Her yer büyük harf olmaz; büyük harf vurgu içindir, varsayılan değildir.
+Okuma yüzeyinde en az üç yerde insan eli görünecek: gerçek bir iş fotoğrafı kompozisyonu, kurucunun adının imza biçiminde duruşu, ve şehir damgası ("Bursa, 2026" gibi). Kimlik yüzeyinde insan izi malzemedir: kumaş, cam, metal, ışık. Her yer büyük harf olmaz; büyük harf vurgu içindir, varsayılan değildir.
 
 ### Pano sayısı
 
@@ -250,6 +250,13 @@ Kurallar: [o yönün kuralları: zemin, kontrast, başlık yazısının karakter
 Sebebi: [yönün gerekçesi]
 Bu yönü bütün panolarda birebir uygula. Aynı ızgara, aynı ölçek, aynı köşe yarıçapı, aynı gölge dili her yerde. Sekiz noktalık ızgara kullan.
 
+İKİ YÜZEY
+Kimlik yüzeyi (kapak, logo panoları, sosyal, kartvizit): koyu zemin, tek doygun renk [kartın rengi, HEX], zeminde gerçek malzeme hissi. Malzemeyi düz siyah kutuyla değil, rengin bir yerden vuran ışığıyla ve dokuyla kur: katmanlı ışık, ince tane, tek yönden gelen parlama. Mor mavi geçiş yok, iki renk yok.
+Okuma yüzeyi (sayfa düzeni, belge, e-posta): aynı renk ve yazı tipi, açık zemin. Koyu kimlik burada yalnızca açılış bandı ve alt bölümdür.
+
+LOGO
+Önce kelime markası: kalın geometrik sans, sıkı aralık, tek özel kesim (bir harfin köşesi, bir kare harf, bir nokta; yalnızca bir tane). Sonra işaret: tek kelimeyle anlatılabilen bir şekil (ok, yıldız, harf, kapı, dalga). Kare ızgara, altıgen, iç içe halka, kesik daire yasak. İşareti 32 ve 16 pikselde de göster.
+
 PANOLAR (bu sırayla, on tane; daha fazlasını üretme)
 01 Kapak: marka adı, tek cümlelik pozisyon, şehir ve yıl damgası, sürüm.
 02 Marka temeli: pozisyon cümlesi, kime ne söz veriliyor, marka kişiliği beş sıfat, üç madde "biz buyuz", üç madde "biz bu değiliz".
@@ -270,7 +277,7 @@ Sayı sözü verme. "Ayda şu kadar randevu" gibi bir cümle hiçbir panoda geç
 
 KAÇINILACAKLAR
 Yapay zeka görünümü, en önemlisi bu. Şu beşini yapma: koyu antrasit zemin artı tek neon vurgu; soyut geometrik logo ("bu bir telefon uygulaması simgesi olabilir mi" testini geçemiyorsa kullanma); bütün panoların aynı şablonun tekrarı olması; hiç fotoğraf ve hiç doku olmaması; büyük başlık artı üç kart artı düğme sayfa düzeni.
-Zemin açık olacak. Koyu zemini yalnızca nişin işi gerçekten geceyse ya da ekran başındaysa kullan.
+Kimlik yüzeyinde koyu zemin malzemesiz olmaz; okuma yüzeyi açık olur.
 [Nişe özel klişeler: kartın sektörüne göre yasak görseller]
 Yapay zeka klişeleri: devre kartı, robot kafası, mor mavi neon geçiş, beyin ikonu, parlayan kıvılcım ya da yıldız.
 Şablon estetiği: sebepsiz renk geçişi, üç sütunlu boş kart dizisi, her şeyin ortalanması, gereksiz gölge.
