@@ -1,14 +1,14 @@
 ---
 user-invocable: false
 name: kaybolanlari-geri-getir
-description: Müşterinin duran havuzu. Eski müşteri listesinin uyandırılması.
+description: Müşterinin duran havuzu: eski müşteri listesinin uyandırılması, randevu ya da teklif çıkarma. Artı hizmet sonrası üç devam zinciri: tekrar randevu, ek hizmet, referans.
 ---
 
 # kaybolanlari-geri-getir
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Müşterinin elindeki eski müşteri listesine mesaj gönderip randevu çıkaran modül. Teslimatın yedinci gününden on yedinci gününe kadar çalışır. Hazırlığı daha erken başlar: mesaj metinleri kurulum görüşmesinin yapıldığı gün onaya gönderilir. Modül, FounderOS'un belli bir işi yapan parçasıdır.
+Müşterinin elindeki eski müşteri listesine mesaj gönderip randevu ya da teklif çıkaran modül; iş modelindeki adıyla Eski Müşteri ve Başvuruyu Yeniden Kazanma (Database Reactivation). Aynı modül, hizmet bittikten sonraki üç devam zincirinin de sahibidir: tekrar randevu, ek hizmet, referans. Teslimatın yedinci gününden on yedinci gününe kadar çalışır. Hazırlığı daha erken başlar: mesaj metinleri kurulum görüşmesinin yapıldığı gün onaya gönderilir. Modül, FounderOS'un belli bir işi yapan parçasıdır.
 
 Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil.
 
@@ -209,6 +209,18 @@ Randevu hatırlatmaları altyapıdan gelir, sayısı artırılmaz. Fazla hatırl
 Bir de şu: fotoğraf nişinin kartında yedi şikâyetin yedisi de ilk temasta değil, iş satıldıktan sonraki sessizlikten çıkmış. Randevu alan kişiye randevu gününe kadar en az bir kere yazılır. Sessiz kalmak bu listede en pahalı hatadır.
 
 Randevuya gelmeyen kişi, randevudan bir saat sonra giden sonuç sorusuyla yakalanır. Cevabı asistan karşılar.
+
+### Üç devam zinciri: tekrar randevu, ek hizmet, referans
+
+Duran havuz geçmişe yazar; bu üç zincir hizmeti bitmiş müşteriye yazar. Üçü de Kademe 2'nin parçasıdır, üçü de iş modelinde adıyla var, üçü de aynı izin kuralına tabidir: hizmet ilişkisi olan kişiye, İYS'ye uygun, tek zincir.
+
+**Tekrar Randevu Alma (Rebooking).** Tetik: hizmetin doğal tekrar aralığı doldu. Aralık karşılama formunun yeni sorusundan gelir: klima bakımı yılda bir, diş kontrolü altı ayda bir, kuaför altı haftada bir, araç kaplama koruma yenilemesi. Mesaj bir hatırlatmadır, kampanya değil: "Geçen bakımın üstünden bir yıl geçti, sezon başlamadan bir gün ayıralım mı." Bir mesaj, bir hatırlatma; cevap gelmezse kapanır, gelirse asistan devralır. Aralığı olmayan hizmette (düğün, tadilat) bu zincir açılmaz.
+
+**Ek Hizmet Satışı (Upsell).** Tetik: hizmet bitti ve işletmenin önceden belirlediği bir ek hizmet bu kişiye uyuyor. Ek hizmet listesi karşılama formunda işletmeden alınır; asistan kendi kafasından ek hizmet önermez. Tek mesaj, hizmet bittikten yedi gün sonra, işletmenin onayladığı cümleyle. Cevap gelirse asistan devralır, gelmezse kapanır; ikinci mesaj yok. Sağlık nişlerinde bu zincir yasal sınırlar bölümüne göre daralır ya da kapanır.
+
+**Referans İsteme (Referral Requests).** Tetik: yorum isteğine olumlu cevap geldi ya da hizmet sonrası memnuniyet mesajı geldi. Yalnızca memnun olduğunu yazana gider; herkese gitmez. Tek mesaj: "Çevrenizde aynı ihtiyacı olan biri varsa bu numarayı verebilirsiniz, ilk görüşme benden." Karşılık teklif edilmez, iyilik olarak istenmez, ikinci mesaj yok. Gelen referans normal aday hattına girer ve kaynağı "referans" yazılır.
+
+Üç zincirin de metni hazır kurulum paketinde gelir, müşteri kurulum görüşmesinde onaylar. Üçü de raporun "eski müşteri listesinde ulaşılan kişi" satırına değil, ayrı bir satıra yazılır: hizmet sonrası temas ve ondan çıkan randevu ya da teklif.
 
 ### Ölçüm
 

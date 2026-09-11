@@ -148,14 +148,22 @@ Bu sözleşme 17 (on yedi) maddeden ve 3 (üç) ekten oluşur, taraflarca okunar
 
 ### EK-1: Hizmetin kapsamı
 
-[Seçilen kademeye göre doldurulur. Örnek:]
-- Gelen yazılı mesajları karşılayan ve randevu yazan asistanın kurulması ve yürütülmesi
-- Cevapsız aramaya kendiliğinden dönüş mesajı
-- Randevu takvimi, onay ve hatırlatma mesajları
-- Eski müşteri listesine dönüş turu
+[Seçilen kademeye ve işletmenin müşteri yolculuğuna göre "İş modeli" bölümünden doldurulur. Randevuyla çalışan işletme için örnek:]
+- Gelen yazılı mesajları karşılayan, ihtiyacı belirleyen ve randevu yazan asistanın kurulması ve yürütülmesi
+- Yeni başvuruya hızlı dönüş ve cevapsız aramaya kendiliğinden dönüş mesajı
+- Randevu takvimi, onay ve hatırlatma mesajları; randevuya gelmeyenle yeniden iletişim
+- Konuşmayı yarıda bırakanın ve görüşüp karar vermeyenin takibi
+- Eski müşteri listesine dönüş turu; hizmet sonrası tekrar randevu, ek hizmet ve referans mesajları
 - Google değerlendirme isteme akışı
-- Aylık rapor
-[Kapsam dışı olanlar açıkça yazılır.]
+- Yirmi birinci gün raporu ve aylık rapor
+[Teklifle çalışan işletmede "randevu" satırlarının yerine: işletmenin onayladığı teklifin gönderilmesi, cevabının ve kabulünün takibi, kabulde kapora ya da ödeme bağlantısı.]
+
+Kapsam dışı olanlar, her sözleşmede açıkça yazılır:
+- Reklam yönetimi, sosyal medya içeriği ve site yapımı
+- İşletmenin asıl hizmetinin yerine getirilmesi
+- Fiyat, kampanya ve hizmet koşulu belirleme; asistan yalnızca Müşteri'nin onayladığı bilgiyi kullanır
+- Telefonla dış arama, yalnızca numara, hesap ve iletişim izni uygunsa ve ayrıca yazılı anlaşmayla
+- Belirli bir randevu, satış ya da gelir miktarı; randevu satış sayılmaz, teklif kabulü ödeme sayılmaz
 
 ### EK-2: Raporda yer alan üç sayı
 

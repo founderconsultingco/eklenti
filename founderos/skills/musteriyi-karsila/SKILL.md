@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteriyi-karsila
-description: İlk ödeme geldiğinde, müşterinin birinci günü. Karşılama, erişimler, karşılama formu, yirmi bir günlük takvim.
+description: İlk ödeme geldiğinde, müşterinin birinci günü. Karşılama, erişimler, on dört sorulu karşılama formu (müşteri yolculuğu ve tekrar aralığı dahil), yirmi bir günlük takvim.
 ---
 
 # musteriyi-karsila
@@ -59,7 +59,7 @@ Sormaz. Görüşmenin gündemi, izin listesi ve mesajlar hazır gelir. Senden al
 
 Para hesaba geçer geçmez, arada ölü zaman bırakmadan yukarıdaki beş iş yapılır.
 
-Karşılama formu on iki sorudur. Ayrımı karıştırma: müşterinin yedinci güne kadar vermesi gereken şey karşılama formudur, güvencenin şartı odur. Bilgi dosyası (İş Beyni'nin müşteriler bölümü) ise senin tuttuğun geniş dosyadır; formu, görüşme notlarını ve izinleri içerir.
+Karşılama formu on dört sorudur. Ayrımı karıştırma: müşterinin yedinci güne kadar vermesi gereken şey karşılama formudur, güvencenin şartı odur. Bilgi dosyası (İş Beyni'nin müşteriler bölümü) ise senin tuttuğun geniş dosyadır; formu, görüşme notlarını ve izinleri içerir.
 
 Sorular:
 1. Ad, soyad, işletme adı, telefon, e-posta.
@@ -74,6 +74,8 @@ Sorular:
 10. Neden benimle çalışmaya karar verdiniz.
 11. Karar vermeden önce en büyük tereddüdünüz neydi.
 12. Logo, iş fotoğrafları, varsa tanıtım metinleri.
+13. Satışınız nasıl kapanıyor: randevuyla mı, fiyat teklifiyle mi, ikisiyle mi? Teklifle kapanıyorsa teklifi kim hazırlıyor, kaç günde çıkıyor, hangi belgeyle gidiyor?
+14. Hizmetin tekrar aralığı var mı (bakım, kontrol, yenileme; kaç ayda bir) ve müşteriye sunmak istediğiniz ek hizmetler neler?
 
 Onuncu ve on birinci soru bilgi toplamaz. Müşteriye kendi kararını kendi eliyle yazdırır; pişmanlığı düşüren en ucuz şey budur. Bir de yirmi birinci günün kanıt hikâyesine malzeme olur.
 

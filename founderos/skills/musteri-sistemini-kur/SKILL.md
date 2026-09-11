@@ -32,7 +32,7 @@ Kurduğun şeyin listesi "İş modeli" bölümünde duruyor ve buradaki liste on
 7. Sonuç Takibi ve Raporlama (Reporting). Başvuru, randevu, katılım, teklif, doğrulanmış satış. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz.
 
 **Gelen taraf (birinci dalga, yazılı; ikinci dalga, sesli):**
-8. AI Mesajlaşma ve Randevu Asistanı (AI Chat & Appointment Setter). Yazana anında cevap verir, ihtiyacı öğrenir, ölçüte uygunluğuna bakar, randevuya ya da çalışana yönlendirir. Adayı Değerlendirme ve Yönlendirme (Lead Qualification & Routing) bu asistanın içindedir.
+8. AI Mesajlaşma ve Randevu Asistanı (AI Chat & Appointment Setter). Yazana anında cevap verir, ihtiyacı öğrenir, ölçüte uygunluğuna bakar, randevuya ya da çalışana yönlendirir. Adayı Değerlendirme ve Yönlendirme (Lead Qualification & Routing) bu asistanın içindedir. Metni ve kuralları: yazili-asistani-kur.
 9. Yeni Başvuruya Hızlı Dönüş (Speed-to-Lead). Form, karekod ya da mesaj gelince ilk iletişim altmış saniye içinde çıkar; ölçülür, kaçarsa bildirim yükselir.
 10. Cevapsız Arama Sonrası Mesaj (Missed-Call Text Back). Açılmayan aramanın ardından aynı dakika WhatsApp'tan yazılı dönüş.
 11. AI Telefon Karşılama Asistanı (AI Voice Receptionist). İkinci dalga. İşletme açmadığında hattı karşılar, bilgi verir, randevu yazar, gerekince çalışana aktarır.
@@ -40,7 +40,7 @@ Kurduğun şeyin listesi "İş modeli" bölümünde duruyor ve buradaki liste on
 **Randevu ve satış (yolculuğa göre):**
 12. Randevu Hatırlatmaları (Appointment Reminders). Onay mesajı, bir gün ve bir saat kala hatırlatma.
 13. Randevuya Gelmeyeni Geri Kazanma (No-Show Recovery). Gelmeyenle aynı gün yeniden iletişim, yeni randevu hedefi.
-14. AI Otomatik Takip (AI Auto Follow-Up). Konuşmayı yarıda bırakanı, cevap vermeyeni, "sonra" diyeni takip eden zincir.
+14. AI Otomatik Takip (AI Auto Follow-Up). Konuşmayı yarıda bırakanı, cevap vermeyeni, "sonra" diyeni takip eden zincir. Bu ve 13, 15, 16 numaralı zincirlerin metni: yazili-asistani-kur, "Dört takip zinciri".
 15. Fiyat Teklifinden Satışa Takip (Quote-to-Close). Teklif nişinde: işletmenin onayladığı teklif gönderilir, cevap ve kabul takip edilir, kapora ya da ödeme linki düşer.
 16. Görüşme Sonrası Satış Takibi (Post-Call Follow-Up). Görüşüp almayanı, görüşmenin sonucuna göre takip.
 17. Ödeme ve fatura. Kapora ya da tamamı için ödeme linki, ödendi bilgisinin kayda düşmesi.
@@ -49,7 +49,7 @@ Kurduğun şeyin listesi "İş modeli" bölümünde duruyor ve buradaki liste on
 18. Eski Müşteri ve Başvuruyu Yeniden Kazanma (Database Reactivation). Duran havuzun mesajla geri çağrılması; izin ve altyapı uygunsa dış aramayla.
 19. AI Dış Arama (AI Outbound Calling). Şarta bağlı, ilk müşteride vaat edilmez; sebebi aşağıda.
 20. Müşteri Yorumu İsteme ve Referans İsteme (Review Requests, Referral Requests). İşi bitenden yorum, memnun olandan tavsiye.
-21. Tekrar Randevu Alma ve Ek Hizmet Satışı (Rebooking, Upsell). Bakım ve kontrol zamanı gelince ulaşma; işletmenin önceden belirlediği ek hizmeti sunma.
+21. Tekrar Randevu Alma ve Ek Hizmet Satışı (Rebooking, Upsell). Bakım ve kontrol zamanı gelince ulaşma; işletmenin önceden belirlediği ek hizmeti sunma. Bu ikisinin ve referans isteğinin metni: kaybolanlari-geri-getir, "Üç devam zinciri".
 
 **Görünürlük:**
 22. İşletmenin panosu ve aylık rapor. Müşterinin kendi girip rakamı gördüğü ekran, artı yirmi birinci gün ve aylık rapor.

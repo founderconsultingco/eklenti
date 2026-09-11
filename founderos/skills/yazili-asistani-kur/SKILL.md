@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: yazili-asistani-kur
-description: Müşterinin ikinci ve üçüncü günü. WhatsApp ve Instagram yazılı asistanı.
+description: Müşterinin ikinci ve üçüncü günü. WhatsApp ve Instagram mesaj asistanı: karşılama, değerlendirme ve yönlendirme, insana devir; artı dört takip zinciri (otomatik takip, gelmeyeni geri kazanma, tekliften satışa takip, görüşme sonrası takip) ve tek zincir kuralı.
 ---
 
 # yazili-asistani-kur
@@ -142,6 +142,28 @@ Birinci takip, karşı tarafın son mesajından yirmi üç saat sonra gider. Wha
 Metinler: birincisi hatırlatma, ikincisi tek cümlelik fayda, üçüncüsü kolay çıkış ("İstemezseniz sorun değil, kapatayım").
 
 Instagram'da böyle bir onay yok. Orada üç takip de serbest metindir.
+
+### Değerlendirme ve yönlendirme
+
+İş modelindeki adıyla Adayı Değerlendirme ve Yönlendirme (Lead Qualification & Routing) ayrı bir bot değil, bu asistanın üç sorusunun içindedir. Üç soru üç şeyi çıkarır: ne istiyor, ne zaman istiyor, işletmenin ölçütüne uyuyor mu (bölge, iş tipi, en düşük iş bedeli; hepsi karşılama formundan). Uyuyorsa yolculuğa göre ilerler: randevu nişinde doğru takvime, teklif nişinde bilgi toplayıp "teklif hazırlanacak" aşamasına ve sorumlu çalışana. Uymuyorsa nazikçe kapatır ve kaydı "uygun değil" işaretler; işletme sahibinin telefonu boşuna çalmaz. Hangi iş hangi çalışana gidiyor, karşılama formunun yedinci sorusundan gelir; tek kişilik işletmede hepsi sahibine.
+
+Asistanın bilgi kaynağı İşletme Bilgi Bankası'dır (Knowledge Base): hizmetler, onaylı fiyatlar, saatler, sık sorular. Orada olmayan şeye asistan cevap uydurmaz; "bunu size çalışanımız iletsin" der ve insana devir kuralı çalışır.
+
+### Dört takip zinciri
+
+Asistanın takibi dışında dört zincir daha var ve dördü de aynı asistanın metniyle, aynı kurallarla, aynı kayıt üstünde çalışır. Her zincirin bir tetiği, üç adımı ve bir durma şartı var. Hangi zincirlerin açılacağını nişin müşteri yolculuğu belirler.
+
+**1. AI Otomatik Takip (AI Auto Follow-Up).** Tetik: konuşma yarıda kaldı, cevap gelmedi ya da "sonra" dendi. Adımlar yukarıda, "Asistan takibi" bölümünde. Durma: cevap geldi, randevu alındı ya da teklif gönderildi.
+
+**2. Randevuya Gelmeyeni Geri Kazanma (No-Show Recovery).** Randevu nişinde. Tetik: randevu saati geçti ve kayıt "geldi" olmadı. Adımlar: aynı gün iki saat sonra kısa mesaj ("bugün görüşemedik, sizin için uygun başka bir saat açayım mı"), ertesi gün ikinci mesaj iki saat seçeneğiyle, üç gün sonra son mesaj. Durma: yeni randevu alındı ya da "istemiyorum" dendi. Bu zincir sitem etmez, suçlamaz; işletmeci bunu ister, sen izin vermezsin.
+
+**3. Fiyat Teklifinden Satışa Takip (Quote-to-Close).** Teklif nişinde, sistemin asıl işi burası. Tetik: işletme teklifi onayladı ve "gönder" dedi; asistan teklifi kendisi yazmaz ve fiyat uydurmaz, işletmenin verdiği belgeyi gönderir. Adımlar: teklif gönderildi mesajı ve "sorunuz var mı"; iki gün sonra "inceleyebildiniz mi, bir soru varsa buradayım"; beş gün sonra son mesaj, işletmenin onayladığı tek bir sebep ile (sezon, kontenjan, geçerlilik tarihi; kampanya uydurulmaz). Durma: kabul, red ya da "düşüneceğim, siz aramayın". Kabul gelince kapora ya da ödeme linki düşer ve aşama "kabul edildi" olur; ödeme gelene kadar "satış" yazılmaz.
+
+**4. Görüşme Sonrası Satış Takibi (Post-Call Follow-Up).** Randevu yapıldı ya da keşif oldu, satın alma olmadı. Tetik: kayıt "görüşüldü, karar yok". Adımlar: ertesi gün teşekkür ve görüşmede konuşulan tek şeyin özeti (işletmeci görüşmeden sonra üç kelime yazıyor, asistan onu kullanıyor; uydurma özet yok); dört gün sonra "kararınızda size yardımcı olacak bir bilgi var mı"; on gün sonra son mesaj. Durma: karar geldi ya da "aramayın".
+
+**Tek zincir kuralı, Otomasyon ve Takip Kontrolleri (Workflow Controls).** Bir kişiye aynı anda tek zincir yazar. Randevu alınınca davet ve otomatik takip durur; teklif kabul edilince teklif takibi durur; satın alma gerçekleşince bütün satış zincirleri durur ve yalnızca hizmet sonrası zincirler (yorum, tekrar randevu) açılır. Çalışan konuşmayı devralınca asistan ve bütün zincirler o kayıtta susar. "İstemiyorum", "aramayın", "çıkar beni" gelince kayıt kapanır ve bir daha hiçbir zincir yazmaz; bu İYS kuralıdır, tartışılmaz.
+
+Dört zincirin metinleri hazır kurulum paketinde gelir, nişe ve yolculuğa göre; müşteri kurulum görüşmesinin yapıldığı gün onaylar. Onaylanmamış zincir çalışmaz.
 
 ### Şablonun onayına nereden bakılır
 
