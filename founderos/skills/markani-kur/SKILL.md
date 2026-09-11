@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: markani-kur
-description: Birinci gün. İş adı, konumlandırma, logo, renk, yazı tipi ve on altı panolu marka kiti.
+description: Birinci gün. İş adı, konumlandırma, logo, renk, yazı tipi; on panoluk görsel sistem ve marka klasörüne yazılan gerçek dosyalar.
 ---
 
 # markani-kur

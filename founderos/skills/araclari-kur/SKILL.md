@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: araclari-kur
-description: İkinci gün. Hesaplar, CRM girişi, e-posta, alan adı, takvim, liste çıkaran program. Bir araç bağlanmadığında da buraya bakılır.
+description: İkinci gün. Hesaplar, e-posta, alan adı, randevu yolu, liste çıkaran program. CRM açıldığı gün son kez çalışır. Bir araç bağlanmadığında da buraya bakılır.
 ---
 
 # araclari-kur

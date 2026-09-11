@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: musteri-takip-sistemini-kur
-description: İkinci gün, CRM bağlantısından sonra. Öğrencinin kendi CRM bölümü: fırsat hattı, aşamalar, şablonlar, takip zinciri.
+description: CRM hesabı açıldığı gün (başlangıç görüşmesinden sonra), bağlantıdan hemen sonra. Öğrencinin kendi CRM bölümü: fırsat hattı, aşamalar, şablonlar, takip zinciri.
 ---
 
 # musteri-takip-sistemini-kur
