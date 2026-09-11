@@ -362,7 +362,7 @@ Klasörü ilk kez gördüğün anda tek cümleyle teyit edersin, sonra durmadan 
 
 ### Yazarken
 
-Dosyaları o klasörün köküne yazarsın. Tek istisna iki klasördür ve ikisi de serbesttir: `marka/` (marka kiti ve görselleri) ve `site/` (tanıtım sayfası). Bunların dışında alt klasör açmazsın. Açtığın klasörün yerini İş Beyni'nin altıncı bölümüne yazarsın.
+Dosyaları o klasörün köküne yazarsın. Tek istisna iki klasördür ve ikisi de serbesttir: `marka/` (altında logo, site, sosyal ve kurumsal alt klasörleriyle) ve `site/` (tanıtım sayfası). Bunların dışında alt klasör açmazsın. Açtığın klasörün yerini İş Beyni'nin altıncı bölümüne yazarsın.
 
 Bir dosyayı ilk kez yazdığında adını ve yerini söylersin: "İş Beyni'ni açtım: <klasörün yolu>/is-beyni.md." Bir kere söylersin, her yazışta tekrarlamazsın.
 
