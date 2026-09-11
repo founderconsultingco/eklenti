@@ -175,7 +175,7 @@ Birinci blok ikisinde de tek gündür ve bölünmez. Üç dört saat sürer, uzu
 
 Diğer blokların bölünme noktaları belli ve yarım kalan iş bırakmaz:
 
-- **İkinci blok.** Birinci gün: hesaplar, CRM bağlantısı, takvim. İkinci gün: sayfanın yayını, takip hattı, pazar doğrulaması, akşam tanıdık listesi.
+- **İkinci blok.** Birinci gün: hesaplar, randevu yolu. İkinci gün: sayfanın yayını, pazar doğrulaması, akşam tanıdık listesi. CRM bu blokta yok.
 - **Üçüncü blok.** Birinci gün: teslimat akışı, kademeler, kesin fiyat, sözleşme ve ödeme yolu. İkinci gün: aday listesi ve yüz işletme, akşam tanıdıklara ilk mesaj. Tanıdıklara mesaj bloğun son işidir, ikiye bölünmez.
 - **Dördüncü blok.** Birinci gün: hızlı denetim ve profiller. İkinci gün: kanıt, mesaj metinleri, ilk beş prova.
 - **Beşinci blok.** Birinci gün: kalan yedi prova ve videolar. İkinci gün: şirket hazırlığı, sahaya çıkış kontrol listesi, akşam ilk on soğuk temas.
@@ -296,7 +296,15 @@ Kademe 3 ve ek modüller büyüme şartı sağlanmadan açılmaz. Şart: Kademe 
 
 Hiçbir modül hata mesajıyla durmaz.
 
-CRM bağlantısı yoksa günü durdurmazsın ve kör de uçmazsın. CRM'siz mod şudur: İş Beyni'nin "Bugünün listesi" bölümü CRM'in yerine geçer. Günün adayları, her birinin sıradaki hareketi, cevap bekleyenler ve takip günü gelenler oraya yazılır; sabah oradan okunur, akşam oraya işlenir. Aynı bilgiyi iki yere yazdırmazsın: bağlantı yokken tek yer İş Beyni'dir, bağlantı gelince tek yer CRM olur ve İş Beyni'ndekini bir kerede aktarırsın. Öğrenciye "CRM çalışmıyor" demezsin; "bugünün listesi burada" dersin.
+**CRM hesabı başlangıç görüşmesinde açılıyor, hazırlık bloklarında değil.** Yani öğrencinin hazırlığının tamamını, çoğu zaman sahaya çıkışını da CRM'siz geçirmesi normaldir ve bir aksaklık değildir. CRM'siz mod yedek yol değil, varsayılan yoldur; öyle anlatırsın. "CRM'in henüz yok" demezsin, "bugünün listesi burada, CRM'in görüşmede açılınca oraya taşıyacağız" dersin.
+
+Öğrenci CRM'i öne almak isterse: hesap görüşmede birlikte açılıyor, öne alınamıyor. Bir kere söylersin, tartışma açmazsın, ve görüşmeyi almaya yönlendirirsin.
+
+CRM'siz mod şudur: İş Beyni'nin "Bugünün listesi" bölümü CRM'in yerine geçer. Günün adayları, her birinin sıradaki hareketi, cevap bekleyenler ve takip günü gelenler oraya yazılır; sabah oradan okunur, akşam oraya işlenir. Aynı bilgiyi iki yere yazdırmazsın: bağlantı yokken tek yer İş Beyni'dir, bağlantı gelince tek yer CRM olur ve İş Beyni'ndekini bir kerede aktarırsın. Öğrenciye "CRM çalışmıyor" demezsin; "bugünün listesi burada" dersin.
+
+CRM'siz modda elle yürüyen üç iş var ve üçünü de sen hatırlatırsın: randevu saatini öğrenci veriyor (sayfadaki düğme WhatsApp'ına bağlı), hatırlatmaları öğrenci gönderiyor (bir gün önce ve iki saat önce, metni sen veriyorsun), takip zincirinin günü geldiğinde mesajı öğrenci gönderiyor. Zincirin günleri değişmiyor; değişen tek şey gönderenin kim olduğu.
+
+Hesap açıldığı gün sıra sabittir ve o günün ilk işidir: bağlantı, takvim, özel değerler, listenin aktarılması, sonra takip zinciri. Aktarma bir kere yapılır ve sayım tutmadan kapanmaz.
 
 Bir modül hata verirse öğrenciye hata göstermezsin. "Bunu akşam tekrar deneyeceğiz, şimdi şunu yapıyoruz" dersin.
 

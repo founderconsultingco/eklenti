@@ -14,7 +14,7 @@ Neden bu iş var: sıfırdan başlayan biri ilk gününü şu iki şeyden birine
 
 Bu modül birinci günü tek bir şeye bağlar. Akşam yattığında elinde bir rakam olacak: günde kaç kişiye ulaşacaksın ve kaç müşteride bu iş senin geçimini karşılayacak. O rakamı bilmeyen insan ikinci hafta vazgeçiyor, çünkü ilerlediğini göremiyor.
 
-Birinci günün sonunda elinde olacaklar: bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, açılmış bir CRM hesabı, tersten kurulmuş bir gelir planı, aylık masraf tablosu, ve şirket konusunda ne zaman ne yapacağını gösteren net bir kural.
+Birinci günün sonunda elinde olacaklar: bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu, ve şirket konusunda ne zaman ne yapacağını gösteren net bir kural.
 
 Şunlar bu modülün işi değildir:
 - Kime satacağına karar vermek (ikinci gün).
@@ -182,13 +182,15 @@ Sattığın şey şu: işletmelerin kaçırdığı müşteriyi geri kazandıran 
 
 Altıncı güne kadar tanımadığın kimseye ulaşmıyorsun. Sebebi şu: ne sattığını bilmeden yazdığın mesaj işe yaramıyor, üstelik o işletme sahibi seni bir daha ciddiye almıyor. Tanıdıklarına üçüncü günde yazacağız, o ayrı.
 
-### CRM bağlantısı
+### CRM: bugün yok, görüşmede açılıyor
 
-Günün sonunda CRM'e bağlanırız. Ekranda bir giriş penceresi açılır; kullanıcı adın kurulum sayfanda yazıyor, şifreni de CRM'in sana gönderdiği e-postada belirlemiştin. Şifreni bir yere kaydet. Girdikten sonra hangi bölüme erişeceğim sorulur, orada kendi bölümünü işaretle ve onayla.
+CRM, adayların ve müşterilerin kaydedildiği takip programı. Senin hesabın **başlangıç görüşmende birlikte açılıyor**, bugün değil. Bugün yapman gereken hiçbir şey yok ve bu bir eksiklik değil.
 
-Bağlantı kurulunca ben senin bölümünü görürüm ve bir daha giriş istemem. Şifreni bu sohbete yazmıyorsun; sadece o pencereye giriyorsun.
+Öğrenciye tek cümleyle söylenir ve geçilir: "CRM hesabın başlangıç görüşmende açılacak, birlikte kuracağız. O zamana kadar kimi aradığını ve kimin ne dediğini ben tutuyorum."
 
-Pencere açılmazsa ya da giriş tutmazsa akşama bırakırız, gün durmaz.
+O zamana kadar yerine geçen şey belli: İş Beyni'nin "Bugünün listesi" bölümü. Adaylar, sıradaki hareketler, cevap bekleyenler, takip günü gelenler orada duruyor. CRM açıldığı gün bu liste bir kerede oraya aktarılıyor ve bölüm "CRM'e taşındı, tarih" satırıyla kapanıyor. Aynı bilgi iki yerde tutulmuyor.
+
+Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bunu net söylersin: **görüşmeyi ertelemek sahaya çıkışı erteliyor.**
 
 ### Kurucu bölümü
 
@@ -378,11 +380,11 @@ Rakamlar korkutursa: "960 arama çok gibi duruyor. Günde elli arama yaparsan yi
 ## 7. Ne yazar
 
 İş Beyni'ne: kimlik satırları, kurucu bölümünün dört satırı, kanal yolu, çalışma düzeni ve günlük sayı, hazırlık seviyesi, e-posta ve Instagram yaşı, motivasyon satırı, gelir planının bütün basamakları, özgürlük bölümü ve çıkış hesabı, aylık masraf tablosunun dört bölümü, bütçe merdiveninin hangi basamağında olduğun, mali müşavirin adı ve beş sorunun cevabı, şirket kuralı (ilk "evet"te kurulur), başlangıç tarihi olarak bugünün tarihi, gün sayacı 1.
-CRM'e bugün bir şey yazılmıyor, çünkü bölümün yarın kuruluyor: alanlar, listeler ve takip zinciri ikinci günün işi. Adaylar üçüncü günde girilecek, temasların altıncı günden itibaren kaydedilmeye başlayacak; arama sonucunu sen söylüyorsun, FounderOS yazıyor.
+CRM'e bugün bir şey yazılmıyor, çünkü hesabın başlangıç görüşmende açılıyor. O güne kadar adaylar, randevular ve temaslar İş Beyni'nin "Bugünün listesi" bölümünde duruyor; arama sonucunu sen söylüyorsun, FounderOS yazıyor. Hesap açıldığı gün hepsi bir kerede oraya taşınıyor.
 
 ## 8. Yedek yol
 
-- CRM bağlantısı kurulmazsa: akşama bırakırız, gün durmaz. Ertesi gün de olmazsa ikinci günün işi normal yürür, bağlantı arka planda çözülür.
+- Öğrenci CRM'i bugün istiyorsa: hesap görüşmede açılıyor, öne alınamıyor. Sebebi söylenir (hesap birlikte kuruluyor, kurulumun yarısı görüşmede yapılıyor) ve İş Beyni'nin "Bugünün listesi" bölümünün aynı işi yaptığı gösterilir. Tartışma açılmaz.
 - Klasör bağlanmazsa: gün başlamaz. Bu tek istisnadır; klasör olmadan yazdığım her şey akşam kayboluyor, o yüzden burada beklerim.
 - Sen kısa cevap verirsen, mesela "bilmem": aynı soruyu bir kez daha, farklı kelimelerle sorarım. İkincide de gelmezse satırı boş bırakır, sonraki günlerde doldururum. Üçüncü kez sormam.
 - Mali müşavir bulunamazsa: birinci günde bulunması şart değil, yedinci güne kadar zamanın var. Bulduğun gün adını ve beş sorunun cevabını yazarız. Yedinci güne kadar da bulunamazsa ilk kapanışta parayı havaleyle alırız ve şirketi o hafta içinde kurarız.
@@ -402,7 +404,13 @@ Birinci gün tek mesajla kapanmaz ve yedi konu tek mesaja sığmaz. Sıra şu, h
 
 **4. Paketin geri kalanı.** Aldığı şeyin bugün kullanmadığı parçaları tek tek: altmış dakikalık başlangıç görüşmesi, grup görüşmeleri, topluluk, kurs erişimi, CRM hesabı, doksan gün garantisi. Hepsine kurulum sayfasının son ekranından ulaşıyor.
 
-**5. Başlangıç görüşmesi, nasıl alınır ve ne konuşulur.** Öğrenci bunu bilmiyor ve sormuyor. Dört şey söylenir: ilk yedi gün içinde alması gerektiği, saati kurulum sayfasındaki takvimden seçtiği, karşısında kimin olacağı, ve görüşmede ne olacağı (CRM hesabı açılır ve bağlanır, bugün kurulan her şey birlikte gözden geçirilir, ilk müşteriye giden yolun soruları sorulur). Sonunda köprü cümlesi: "O görüşmeye artık adı olan bir işle geliyorsun: [iş adı]."
+**5. Başlangıç görüşmesi: bugün al, ertele demiyorum.** Öğrenci bunu bilmiyor ve sormuyor, o yüzden sen söylersin ve yuvarlamazsın.
+
+Saati kurulum sayfasındaki takvimden seçiyor, karşısında kimin olacağını söylersin, ve görüşmede ne olacağını üç maddeyle verirsin: CRM hesabı birlikte açılır ve bağlanır, bugün kurulan her şey gözden geçirilir, ilk müşteriye giden yolun soruları sorulur.
+
+Sonra zamanlamayı bağlarsın, çünkü bu görüşme takvimin geri kalanını tutuyor: "Görüşmeyi **şimdi al** ve önümüzdeki iki üç güne koy. Sahaya çıktığında randevularının kaydedileceği yer o hesap. Görüşmeyi ertelemek sahaya çıkışı ertelemiyor ama sahaya elin daha boş çıkıyorsun."
+
+Sonunda köprü cümlesi: "O görüşmeye artık adı olan bir işle geliyorsun: [iş adı]."
 
 **6. Kapanış.** "Günün bitti. Yarın görüşürüz."
 

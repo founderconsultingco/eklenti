@@ -27,8 +27,9 @@ Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını den
 
 ## 2. Ne zaman çalışır
 - İkinci gün, sabah bloğu, üç saat. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan iki oturuş. Bugün açılan hesaplar: alan adı, yayın servisi ve kod deposu, liste çıkaran program, iş e-postası, takvim. Liste çıkaran programın anahtarı bugün İş Beyni'ne yazılır ki üçüncü günün çekimi yirmi dakikada bitsin.
-- Aynı gün, sırayla: CRM bağlantısı, takvim, dün hazırlanan sayfanın yayına alınması, takip hattının kurulması.
-- CRM giriş bilgileri kurulum sayfasında henüz yoksa (hesap başlangıç görüşmesinde açılıyorsa) CRM ve takip hattı adımları atlanır, gün durmaz: CRM'siz modda İş Beyni'nin "Bugünün listesi" bölümü açılır, takvim ve sayfa yine bugün kurulur. Giriş bilgileri geldiği gün CRM bağlanır ve İş Beyni'ndeki liste bir kerede aktarılır. Öğrenciye "CRM yok" denmez, "CRM'in gelince buraya taşıyacağız" denir.
+- Aynı gün, sırayla: dün hazırlanan sayfanın yayına alınması, randevu yolu, takip hattı.
+- **CRM bugün kurulmuyor.** Hesap başlangıç görüşmesinde açılıyor; o güne kadar CRM'siz mod varsayılan yoldur, yedek yol değil. İş Beyni'nin "Bugünün listesi" bölümü bugün açılır ve adayların, randevuların, takiplerin yeri orasıdır. Öğrenciye "CRM yok" denmez; "CRM'in görüşmede açılınca listeni oraya taşıyacağız" denir ve geçilir.
+- **CRM açıldığı gün** bu modül son bir kez çalışır: bağlantı kurulur, randevu takvimi açılır, özel değerler doldurulur ve İş Beyni'ndeki liste bir kerede aktarılır. Bir saat sürer, o günün ilk işidir ve o günün planının önüne geçer. Sonra musteri-takip-sistemini-kur çalışır.
 - İkinci kez: bir hesap kilitlendiğinde ya da bir program çalışmadığında.
 
 ## 3. Ne okur
@@ -87,7 +88,20 @@ Bu listeyi okuyunca eksik hissedebilirsin. Doğrusu bu. Kurulumla uğraşmak ço
 
 Kontrol: FounderOS'a "İş Beyni'nde ne yazıyor" diye sor. Dün yazdıklarını sayması lazım. Saymıyorsa tanıtma eksik kalmış, altıncı adımı tekrarla.
 
-### Adım 2: senin CRM bölümün (1 saat)
+### Adım 2: randevu yolu (yarım saat)
+
+CRM hesabın başlangıç görüşmende açılıyor, yani randevu takvimin henüz yok. Bu, sahaya çıkmanı engellemiyor; ilk randevuları elle alıyorsun ve bu hiç de kötü bir şey değil, çünkü telefonda saat veren kişi bağlantı kuruyor.
+
+1. Tanıtım sayfandaki "Görüşme ayarla" düğmesi bugün takvim linkine değil, WhatsApp'ına bağlanıyor. Aday yazıyor, sen saat veriyorsun.
+2. Verdiğin her saati İş Beyni'nin "Bugünün listesi" bölümüne yazıyorum: kim, ne zaman, hangi kanaldan geldi.
+3. Kendi telefonunun takvimine de koyuyorsun. Tek yer değil iki yer, çünkü telefonun seni uyarıyor.
+4. Hatırlatmayı sen gönderiyorsun: görüşmeden bir gün önce ve iki saat önce, kendi WhatsApp'ından. Metni ben veriyorum.
+
+Başlangıç görüşmende CRM açıldığı gün bu dört adım kendiliğinden yerini bırakıyor: takvim açılıyor, düğme takvim linkine dönüyor, hatırlatmalar otomatiğe geçiyor ve buradaki liste CRM'e aktarılıyor. Ne kaybettiğini de bil: bu birkaç gün boyunca hatırlatmaları sen gönderiyorsun, o kadar.
+
+### CRM açıldığı gün (1 saat, o günün ilk işi)
+
+Bu adım başlangıç görüşmesinden sonraki ilk oturumda çalışır.
 
 1. Sana verilen CRM adresine git. Kayıt ekranında e-postanı yaz.
 2. Gelen e-postadaki şifreyi al ve gir. İlk girişte kendi şifreni belirlersin. Şifreyi bir yere not et, İş Beyni'ne yazma.
@@ -97,7 +111,7 @@ Kontrol: FounderOS'a "İş Beyni'nde ne yazıyor" diye sor. Dün yazdıklarını
 6. Bugün randevu takviminde bir iş yok, takvim henüz açılmadı. Google bağlantısı kurulduğu için bugün takvim açıldığında dolu saatlerin kendiliğinden kapanacak.
 7. Ayarlarda "özel değerler" diye bir ekran var. Özel değerler, bir kere yazınca bütün mesajlarda kendiliğinden görünen bilgilerdir. Bugün dördünü doldur: adın, şehrin, telefon numaran, e-posta adresin. Kalan satırlar boş kalacak, çünkü sitenin adresi bugün belli oluyor.
 
-Bugün yapılmayanlar: aday listesi üçüncü günde yükleniyor, randevu takviminin ayarları bugün yapılıyor.
+Sonra İş Beyni'nin "Bugünün listesi" bölümündeki her satır CRM'e aktarılır ve bölüm "CRM'e taşındı, tarih" satırıyla kapanır. Sayım tutmadan kapanmaz. Aynı gün musteri-takip-sistemini-kur çalışır ve takip zincirini kurar.
 
 Türkiye notu: CRM'in numara verdiği ülkeler listesinde Türkiye yok, yani buradan Türkiye numarası alamıyorsun. Senin için sorun değil, kendi telefonundan arıyorsun. Randevu hatırlatmalarını da kendi WhatsApp'ından göndereceksin; onun kurulumu bugün.
 
@@ -212,7 +226,7 @@ Aylık masraf tablosuna: Claude aboneliğinin tutarı ve yanına o günkü kurla
 
 ## 8. Yedek yol
 
-- CRM bölümü açılmazsa: gün durmaz, kayıtları geçici olarak bir tabloya tutarsın. Bugün açılmış olması lazım, randevu takviminin ayarları o gün yapılıyor.
+- CRM açıldığı gün giriş tutmazsa: gün durmaz, CRM'siz mod devam eder ve ertesi gün tekrar denenir. Aktarma bir kere yapılıyor, acelesi yok.
 - Liste programının hesabı açılmazsa ya da deneme boş dönerse: ikinci yola geçilir, tarayıcı eklentisi bugün kurulur. Bu bir aksama değil, zaten iki yoldan biri.
 - Tarayıcı eklentisi de kurulmazsa: üçüncü güne kadar vaktin var, o gün elle yazma yoluna düşülür. Bir tabloya beş sütun açarsın (işletme adı, telefon, web sitesi, semt, not), Google Haritalar'da kategoriyi ve semti aratırsın, çıkan her işletmeden bu bilgileri tabloya yazarsın. 100 işletme yaklaşık üç saat sürüyor.
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
@@ -226,7 +240,7 @@ Aylık masraf tablosuna: Claude aboneliğinin tutarı ve yanına o günkü kurla
 Sıradaki: aynı gün, kime satacağını seçiyoruz.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- İkinci gün bitti, CRM bölümü açık değil: üçüncü günün ilk yarım saati buna gider.
+- Başlangıç görüşmesi yapıldı ama CRM hâlâ açılmadı: bu bir destek konusudur, öğrencinin işi değil. Desteğe aktarılır, öğrenci CRM'siz modda devam eder.
 - Liste yolu seçilmedi: üçüncü günün ilk yarım saati buna gider ve o günün akışı kayar.
 - Birinci yol seçildi ama deneme yapılmadı ya da anahtar alınmadı: niş doğrulaması elle sayım yoluna düşer, işaret üçüncü güne kadar açık kalır.
 - İkinci yol seçildi ama eklenti kurulmadı ya da Google Haritalar'a izin verilmedi: aynı işaret açılır, kurulum üçüncü günden önceki ilk boş saate yazılır.

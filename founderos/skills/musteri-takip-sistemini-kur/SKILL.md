@@ -8,7 +8,7 @@ description: İkinci gün, CRM bağlantısından sonra. Öğrencinin kendi CRM b
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-İkinci günün modülü, CRM bağlantısından hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın altıncı aşamasının altyapısını kuruyoruz: takip sistemi.
+CRM hesabın açıldığı günün modülü, bağlantıdan hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın altıncı aşamasının altyapısını kuruyoruz: takip sistemi.
 
 Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, adayların ve her temasın kaydedildiği takip programıdır. Aday, henüz müşterin olmayan ama olabilecek işletmedir. Temas, bir adaya bir kanaldan bir kez ulaşmandır.
 
@@ -31,7 +31,7 @@ Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört 
 Pazarlamadaki karşılığı: aday takibi.
 
 ## 2. Ne zaman çalışır
-- İkinci gün, CRM bağlantısından hemen sonra, üç saat.
+- CRM hesabın açıldığı gün, bağlantıdan hemen sonra, üç saat. Hesap başlangıç görüşmesinde açıldığı için bu gün sabit değil; görüşmenin ertesi günüdür. O güne kadar takip işini İş Beyni'nin "Bugünün listesi" bölümü yapar: takip günü gelenler her sabah oradan okunur ve mesajları sen gönderirsin.
 - İkinci kez: üçüncü günde liste geldiğinde. O gün yalnız yükleme bölümü açılır.
 - Üçüncü kez: üç yüzüncü temasta ya da bir satır işe yaramadığında.
 
@@ -253,7 +253,7 @@ Bu modülün tanıttığı ama doldurmadığı satırlar da var: sızıntı puan
 
 ## 8. Yedek yol
 
-- CRM bölümü açılmadıysa: bugünün ilk işi o, yarım saatte kapanıyor.
+- CRM henüz açılmadıysa: bu modül çalışmaz ve beklemez. Takip zinciri elle yürür, günleri İş Beyni'ne yazılır, sen gönderirsin. Zincirin günleri aynıdır; değişen tek şey mesajı kimin gönderdiği.
 - Bir ekranı bulamazsan: ekranın görüntüsünü buraya at, hangi düğme olduğunu söylerim. Tarayıcı çevirisini açma.
 - Dokuz aşama ya da bir klasör eksik geliyorsa: kurulum sırasında bir şey aksamış demektir. Sen elle eklemiyorsun, buraya yazıyorsun, aynı gün düzeltiliyor.
 - Takip zinciri test kaydında görünmüyorsa: akış kapalı kalmış olabilir. Buraya yaz, bakıyorum. Zincir çalışmasa da gün durmuyor; takip günlerini o hafta ben hatırlatıyorum.

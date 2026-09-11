@@ -23,10 +23,10 @@ Sistem ve dosyalar:
 - Yol Haritası: Herkes için aynı olan dokuz aşamalık harita: temeli kur, kime satacaksın, ne satacaksın, neden senden alsınlar, müşteri bul, görüşme ayarla, satış yap, hizmeti teslim et, işi ölçekle. Aşamalar sırayla açılır, biri bitmeden sonraki başlamaz.
 - Doksan Gün Planı: Üçüncü günün akşamı, niş seçilince FounderOS'un senin için yazdığı on altı bölümlük plan; doksan gün boyunca önünde durur.
 - CRM: Adayların, müşterilerin ve her temasın kaydedildiği takip programı (crm.founderos.so). Hiçbir sayıyı sen girmezsin, buradan çıkar.
-- Senin CRM bölümün: CRM'in içinde sana ayrılan yer; ikinci günde açılır, adayların ve randevuların orada durur.
+- Senin CRM bölümün: CRM'in içinde sana ayrılan yer; başlangıç görüşmende birlikte açılır, adayların ve randevuların orada durur. Açılana kadar aynı işi İş Beyni'nin "Bugünün listesi" bölümü yapar.
 - Müşteri bölümü (alt hesap): Kazandığın her müşteri için CRM'de açılan ayrı bölüm; müşterinin sistemi orada kurulur.
 - Hazır kurulum paketi: Müşteri için önceden hazırlanmış, adını yazınca çalışan sayfa, takvim ve mesaj seti.
-- Başlangıç ayarları: Senin CRM bölümüne ikinci günde hazır gelen ekranlar ve mesaj taslakları; sen kurmuyorsun, yüklü geliyor.
+- Başlangıç ayarları: Senin CRM bölümüne hazır gelen ekranlar ve mesaj taslakları; sen kurmuyorsun, yüklü geliyor.
 - Özel değerler: Senin ve her müşterinin CRM bölümünde ad, telefon, takvim linki gibi bilgilerin yazıldığı tek ekran; bütün mesajları ve sayfaları o satırlar doldurur.
 - Üç sorulu test: Müşterinin beşinci günündeki test: çalışıyor mu, kullanması iyi mi, randevuya çeviriyor mu.
 - Claude: FounderOS'un üzerinde çalıştığı yapay zeka programı; aylık ücreti maliyet tablosunda.
