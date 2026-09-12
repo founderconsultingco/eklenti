@@ -28,7 +28,7 @@ Sormaz. Randevu telefonda alınırken adaydan istenen üç şeyi, adaya-mesaj-ya
 **A. Kurulum, CRM açıldığı gün (tek sefer).** Randevu takvimini o gün ben açıyorum; hazır pakette gelmiyor, çünkü takvim bir kişiye bağlı açılıyor ve o kişi sensin. Sayfanın yazısı, hatırlatma akışı ve EVET akışı hazır paketten geliyor.
 
 Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
-- Görüşme süresi 30 dakika, takvim aralığı 30 dakika. Yani takvimde otuz dakikalık yer ayrılır; adaya on beş dakika denir; gerçekte görüşme yirmi beşi geçmez.
+- Görüşme süresi 30 dakika, takvim aralığı 30 dakika. Yani takvimde otuz dakikalık yer ayrılır; **adaya yirmi dakika denir** ve görüşme yirmi beşi geçmez. Söylenen süre ile gerçek süre birbirini tutar; adaya on beş deyip yirmi beş dakika konuşmak küçük bir sözden dönmedir ve görüşmenin son beş dakikasında karşı taraf saate bakar. Telefonda söylenen rakam da budur (adaya-mesaj-yaz, altıncı adım).
 - En erken randevu 4 saat sonrası.
 - Sayfadan kendisi randevu alan aday en fazla 3 gün sonrasına randevu alabilir. Telefonda alınan randevu yine 48 saat içinde olur. Yoğun haftada 5 güne esnetilebilir.
 - Ara tampon 15 dakika; iki görüşme arasındaki boşluk. Tampon adaya gösterilmez.
@@ -77,6 +77,11 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
 - Gelmeyen randevu araması ve arkasındaki mesaj: görüşme saatinin hemen üstüdür, yani hangi pencerede görüşme varsa orada.
 - Randevu alınınca hemen: "Merhaba [Ad] Bey, ben [öğrenci], [gün] [saat] görüşmemiz kayıtta. Görüşmeden önce şu üç dakikalık videoyu izleyin, sonra EVET yazın, yerinizi kesinleştireyim." Link WhatsApp ve e-postada.
 - 24 saat önce, insan yazmış gibi, kendiliğinden gitmiş görünmeyen: "[Ad] Bey, ben [öğrenci]. Yarın [saat] konuşuyoruz, takvimde görüyorum. Geleceğinizi bir 'tamam' ile yazar mısınız?" Randevu yirmi dört saatten yakınsa bu mesaj, randevu alındıktan iki saat sonra ya da aynı akşam 20.00'de gider.
+- Görüşme sabahı, tek satır, senin elinden. Bu mesajın işi hatırlatmak değil, merak bırakmak: "yarın konuşuyoruz" diyen mesaj cevapsız kalıyor, "baktım, iki şey not ettim" diyen mesaja cevap geliyor ve cevap veren adam geliyor. Üç hali var ve hangisini kullanacağın gerçekten ne yaptığına bağlıdır, hiçbiri uydurulmaz.
+  - Gerçekten baktıysan: "[Ad] Bey günaydın. Bugünkü görüşme için sitenizdeki randevu akışına baktım, iki nokta not ettim. [Saat]'te ekranda gösteririm."
+  - Gerçekten rakiplere baktıysan: "[Ad] Bey günaydın. Bölgenizdeki dört [niş] işletmesinin telefon ve mesaj akışına baktım. Sizin tarafta uygulanabilecek belirgin bir fark var. [Saat]'te birlikte bakalım."
+  - Özel bir hazırlık yapmadıysan merak uydurulmaz, düz yazılır: "[Ad] Bey günaydın. Bugün [saat]'te görüşüyoruz. Birkaç kısa soruyla başlayacağım, sonra size uyan akışı göstereceğim."
+  Adam "ne buldunuz" diye yazarsa telefonda anlatmazsın: "Ekranda göstermem daha kolay, [saat]'te bakalım." Bulduğun şeyi mesajda anlatırsan görüşmeye gelme sebebi kalmıyor.
 - 43 dakika önce, kendiliğinden: "43 dakika sonra görüşüyoruz, uygun mu?" Neden kırk üç? Yuvarlak saat kendiliğinden giden mesaj gibi görünür; tuhaf rakam insan yazmış gibi durur. Görüntülü görüşmeyse arama linki bu mesajda olur. Telefonla görüşmeyse "sizi ben arayacağım" yazar. Ayrı "1 saat önce" mesajı yok; 43 dakika mesajı onun yerine geçer.
 - İlk 20 randevuda ve soğuk telefonla (aday seni hiç tanımazken aranarak) alınmış randevularda, EVET gelmediyse görüşmeden iki saat önce sen ararsın: "Bugün üçte görüşüyoruz, hazır mısınız? Şu iki rakamı yanınızda bulundurun." EVET geldiyse aramazsın.
 - Görüşmeden bir saat sonra gidecek mesaj bu modülün değil, gorusmeyi-analiz-et modülünün işidir. O mesaj yalnızca görüşme "düşüneyim" ile bitip karar görüşmesi hattayken tarihlendiyse gider; tek satırlık teyittir.
