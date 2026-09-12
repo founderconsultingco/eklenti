@@ -61,7 +61,7 @@ Dördü tamam olmadan liste "hazır" sayılmaz ve on dördüncü bölüme yazıl
 
 ### Liste nereden geliyor: veri servisi
 
-Listeyi FounderOS'un veri servisi çekiyor. Sen hesap açmıyorsun, anahtar görmüyorsun, program ekranı açmıyorsun, Excel'de satır silmiyorsun. FounderOS servise kategoriyi ve şehri söylüyor; servis Google Haritalar'dan kayıtları çekiyor, kapalı işletmeleri, tekrarları, iletişimi olmayanları ve zincirleri işaretliyor, işletme adını kısaltıyor, telefonu tek biçime getiriyor, siteden e-posta ve Instagram hesabını çıkarıyor ve listeyi sayfa sayfa FounderOS'a veriyor. FounderOS satırları klasöründeki `adaylar.csv` dosyasına yazıyor. Senin yaptığın tek şey silme onayı.
+Listeyi FounderOS'un veri servisi çekiyor. Sen hesap açmıyorsun, anahtar görmüyorsun, program ekranı açmıyorsun, Excel'de satır silmiyorsun. FounderOS servise kategoriyi ve şehri söylüyor; servis Google Haritalar'dan kayıtları çekiyor, kapalı işletmeleri, tekrarları, iletişimi olmayanları ve zincirleri işaretliyor, işletme adını kısaltıyor, telefonu tek biçime getiriyor, siteden e-posta ve Instagram hesabını çıkarıyor ve listeyi sayfa sayfa FounderOS'a veriyor. FounderOS satırları klasöründeki `adaylar.csv` dosyasına yazıyor; sen listeyi yanındaki `adaylar.html` sayfasından görüyorsun, Excel açmıyorsun. Senin yaptığın tek şey silme onayı.
 
 Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki genişletmeler tavanın içinde. Tavan dolarsa ya da servis kapalıysa yedek yol Claude'un tarayıcı eklentisi; kurulumu araclari-kur'un üçüncü adımında yazılı. Yedek yol üç saatte yaklaşık yüz işletme veriyor ve e-posta getirmiyor; o gün sıra şu:
 
@@ -145,7 +145,7 @@ Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adım
 
 ### Adım 7: listeyi kayıt yerine koy (15 dakika)
 
-**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır. Sütunlar servisin başlığıyla başlar (kısa ad, ad, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, puan, kategori, ipuçları, elenme, harita), sonuna denetim sütunları eklenir: sahibinin adı, sızıntı puanı, en güçlü bulgu, uygunluk puanı, kanal durumu, sıradaki hareket ve tarih, not. Kaynak tek: Haritalar. Başlık satırı bir kere yazılır, servisin sayfaları altına eklenir. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
+**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır. Sütunlar ve değerler aday-listesi-dosyasi'nda sabittir: ilk on dört sütun servisin başlığı (kısa ad, ad, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, puan, kategori, ipuçları, elenme, harita), kalan yirmi biri FounderOS'un eklediği eklenme tarihi, kaynak, yüz işareti, denetim sütunları (sahibinin adı, uygunluk puanı, sızıntı puanı, en güçlü bulgu, lira karşılığı, denetim tarihi) ve temas sütunları (aşama, dört kanalın durumu, temas sayısı, son temas, sıradaki hareket ve tarihi, randevu tarihi, not). Her kayda eklenme tarihi o günün tarihiyle yazılır. Kaynak tek: Haritalar. Başlık satırı bir kere yazılır, servisin sayfaları altına eklenir. Dosya ilk kez yazıldığında yanına `adaylar.html` sayfası kurulur ve veri dosyası üretilir (şablon ve komut aday-listesi-dosyasi'nda); listeyi o sayfadan görürsün, Excel açmazsın. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
 
 **CRM açıldıysa:** aşağıdaki yedi adım, gerçek listeyle.
 
@@ -193,11 +193,14 @@ Daha az kayıt çekmek isterse: "800 çekiyoruz çünkü eleyeceğiz. Doksan gü
 Tavan dolduysa: "Bu ayın tavanı doldu; servis gelecek ay yeniden açılıyor. Bugün tarayıcı eklentisiyle elle devam ediyoruz, yüz işletme çıkar."
 Yorumları da çekelim derse: "Hayır. Yorumlara hızlı denetimde gözünle bakıyorsun, yüz işletme için yetiyor."
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
+Liste ilk kez yazılınca: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır. Yeşil satır bugün sırada, turuncu satır günü geçmiş; satıra tıklayınca ayrıntısı açılır."
+Listeyi görmek isteyince: "Veriyi yeniledim. `adaylar.html` dosyasını aç; açıksa sayfayı yenile."
 Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?"
 
 ## 7. Ne yazar
 
 Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`): bütün kayıtlar, aşamaları "yeni", "soğuk" işaretiyle, kaynağı ve nereden bulunduğu yazılı. En çok istenen yüz işletme ayrı işaretle. Denetimi bitenlerde sızıntı puanı ve en güçlü bulgu dolu; denetim kartının kendisini aday-denetimi-cikar yazıyor.
+Klasöre: `adaylar.csv` ilk kez yazıldığında yanına `adaylar.html` (şablon aday-listesi-dosyasi'nda, olduğu gibi kopyalanır) ve her yazıştan sonra `adaylar-veri.js` (yenileme komutu aynı yerde).
 İş Beyni'ne: listenin çıkarıldığı tarih, çekimin iş kimliği, ham kayıt sayısı, servisin işaretlediği ve onayla silinen sayılar, kalan sayı, yüz işletmenin seçim tarihi, hızlı denetimi biten sayı, kullanılan kategori adı ve kapsanan ilçeler, bu ayki kullanım ve tavan, yedek yol kullanıldıysa tarihi.
 Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, sızıntı puanı ve en güçlü bulgu adaya-mesaj-yaz ile video-mesaj-cek'e, denetimi bitmiş otuz işletme kanitini-hazirla'nın yarınki deneme aramalarına, kategori adı ve seçilen yol bir sonraki ay tekrarı için kendine.
 

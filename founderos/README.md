@@ -27,7 +27,7 @@ Sistemin beyni. Kim olduğu, sesi, beş kuralı, günün modülünü nasıl seç
 Yetmiş beceri, üç tür:
 
 - Otuz dokuz modül: `isini-kur`, `nisi-sec`, `fiyati-belirle` ve diğerleri. Günün işini yapan parçalar.
-- Sekiz bilgi becerisi: `is-beyni` (şema ve boş şablon), `crm-baglantisi`, `sozluk`, `ekran-dili`, `inanc-degisimleri`, `doksan-gun-plani`, `hizmet-sozlesmesi`, `on-birinci-gun-kontrol-listesi`.
+- On bilgi becerisi: `is-beyni` (şema ve boş şablon), `crm-baglantisi`, `sozluk`, `ekran-dili`, `is-modeli`, `inanc-degisimleri`, `doksan-gun-plani`, `hizmet-sozlesmesi`, `sahaya-cikis-kontrol-listesi`, `aday-listesi-dosyasi` (adaylar.csv sütunları, `adaylar.html` şablonu ve yenileme komutu; şablon beceri klasöründe ham dosya olarak durur).
 - On dokuz niş becerisi: `nis-kartlari` (liste, kurallar, şablon) ve on dokuz nişin kendi kartı, `nis-kuafor-berber` biçiminde. Kartlar ayrı duruyor çünkü hepsi tek dosyada 286 KB tutuyordu; öğrencinin sadece kendi nişinin kartı açılıyor.
 
 Hepsi `user-invocable: false`. Öğrenci modül adı bilmez.

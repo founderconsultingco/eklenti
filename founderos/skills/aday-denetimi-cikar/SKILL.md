@@ -164,7 +164,7 @@ Bulgu çıkmazsa: "Bu işletmede dışarıdan görünen sızıntı yok. Bu 'soru
 
 ## 7. Ne yazar
 
-Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; denetim kartının tamamı CRM'siz günlerde klasördeki `denetim-kartlari.md` dosyasına, aday adıyla): her adayın sızıntı puanı ve uygunluk puanı, denetim tarihi, denetim kartının tamamı "denetim kartı" satırına, en güçlü bulgu tek satır olarak ayrı alana (mesaj metinleri oradan okuyor), karar verenin adı, reklam işareti, arama testi sonucu ve yazılı test sonucu kendi satırlarına. Kanal durumu satırlarına dokunulmuyor: denetim bir test, temas değil.
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; denetim kartının tamamı CRM'siz günlerde klasördeki `denetim-kartlari.md` dosyasına, aday adıyla): her adayın sızıntı puanı ve uygunluk puanı, denetim tarihi, denetim kartının tamamı "denetim kartı" satırına, en güçlü bulgu tek satır olarak ayrı alana (mesaj metinleri oradan okuyor), karar verenin adı, reklam işareti, arama testi sonucu ve yazılı test sonucu kendi satırlarına. Kanal durumu satırlarına dokunulmuyor: denetim bir test, temas değil. `adaylar.csv`'ye yazıldıysa sayfanın verisi yenilenir (aday-listesi-dosyasi).
 
 İş Beyni'ne: kaç adayın hızlı denetimi yapıldı, kaçının derin denetimi yapıldı, puan dağılımı, hangi bulgu tipi en çok cevap alıyor (bu satır otuz temastan sonra dolmaya başlıyor).
 

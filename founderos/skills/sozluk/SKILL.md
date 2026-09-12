@@ -118,6 +118,7 @@ Ulaşma:
 - Arama kartı: Her aramadan önce açılan küçük kart: sahibinin adı, en güçlü bulgu, kanca, itirazların kısa listesi.
 - Açılış cümlesi: Niş kartında hazır duran, o sektörün işletmecisine ilk temasta söylenen tek cümle; kanca ve mesajın açılışı ondan çıkar.
 - Kayıt yeri: Adayların ve temasların yazıldığı yer; CRM açıldıysa CRM, açılmadıysa klasördeki `adaylar.csv` (havuz), `baglantilar.csv` (tanıdıkların B listesi), `denetim-kartlari.md` (denetim kartları) ve İş Beyni'nin on beşinci bölümü (bugünün listesi). CRM açıldığı gün hepsi bir kerede taşınır.
+- Aday listesi sayfası: Klasördeki `adaylar.html`; öğrencinin aday havuzunu gördüğü tek ekran. `adaylar.csv`'yi okur, ipuçlarını Türkçe gösterir, bugün sırada olanı yeşil, günü geçmişi turuncu boyar, satıra tıklayınca ayrıntı açılır. Öğrenci Excel açmaz; FounderOS `adaylar.csv`'ye her yazıştan sonra sayfanın verisini yeniler (sütunlar, şablon ve komut aday-listesi-dosyasi'nda).
 - Kanca: İşletmecinin zaten bildiği ama yapmadığı şeyi hatırlatan tek cümle; mesajın ve aramanın açılışı.
 - Yaşanmış kanca: Senin gerçekten yaşadığın olay: "dün akşam yedide aradım, açan olmadı".
 - Deneme araması: Adayı gerçek müşteri gibi denemen: akşam arayıp açıyor mu bakmak, mesaj yazıp kaç saatte döndüğünü ölçmek, formunu doldurup dönüş var mı görmek. Dördüncü blokta hızlı denetimle birlikte ilk kez yapılır, saha açıldıktan sonra her akşam yarım saat; yaşanmış kancanın kaynağı.
