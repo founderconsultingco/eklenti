@@ -409,6 +409,10 @@ Her takip tazedir, aynı metin tekrarlanmaz. Zincirin sebebi: cevapların çoğu
 - Şüpheci ("denedik olmadı", "pahalı görünüyor"): savunmaya geçme. Önce haklı olduğu yeri kabul et, sonra farklı bir açı ver.
 - Hazır: karmaşıklaştırma, hemen takvime al.
 
+**Gelen cevap kayda girer, sohbette kalmaz.** Cevap geldiğinde öğrenci cevabın kendisini söyler ya da yapıştırır; aday aracının `cevap` kodu onu adayın satırına yazar (`son_cevap`), hangi dala girdiğini işaretler (`cevap_dali`) ve adayı aynı güne "yanıt yaz" diye planlar. FounderOS yanıtı o dalın metninden kurar ve yazılı kanal metnine yazar; öğrenci kopyalayıp gönderir.
+
+Bunun tek sebebi kolaylık değil. Hangi dalın randevuya döndüğü ancak dal kaydedilirse sayılabiliyor. Kaydedilmeyen cevap, otuz görüşme sonra "hangi itiraz bizi öldürüyor" sorusuna cevap veremiyor.
+
 **Yazılı kanalda on iki cevap dalı.** Telefonda itirazın cevabını sesinle yumuşatabiliyorsun; yazıda o yok, o yüzden cevap kısa, net ve tek soruyla biter. Her dal iki üç cümleyi geçmez. Instagram'da mesaj üç satırı, e-postada beş satırı aşmaz.
 
 1. **"Fiyat ne kadar?"** Fiyatı saklamak görüşme kazandırmıyor, konuşmayı bitiriyor. Bandın belliyse bandı verirsin: "Kurulum [band], aylık [band]. Rakamı işletmenin büyüklüğü ve kaç kanal bağlanacağı değiştiriyor. Sizde talepler sadece Instagram'a mı geliyor, WhatsApp'a da mı?" Band belli değilse neyin belirlediğini söylersin, uydurmazsın. Kesin rakam görüşmede netleşir ve bunu da söylersin.

@@ -13,6 +13,10 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
   guncelle ANAHTAR sutun=deger ... [--semt S]
   temas ANAHTAR --kanal K --sonuc "..." [--durum D] [--asama A] [--siradaki "..."] [--tarih T] [--randevu "YYYY-AA-GG SS:DD"] [--not "..."]
   sonuclar DOSYA            (sayfanın "Sonuçları kopyala" metni; her satırı temas olarak işler)
+                            satır: AD | kanal | sonuç [| anahtar: değer ...]
+                            sonuç: açmadı, gönderdim, istemedi, ilgilendi, randevu, sonra, cevap
+                            cevapta: metin: "gelen cevabın kendisi" ve dal: fiyat|bilgi|mesgul|...
+  ogren [--esik N]          (hangi gözlem ve hangi kanal cevap getiriyor; eşik altı sayılmaz)
   sil ANAHTAR --sebep "..."  (satırı elenme ile işaretler, silmez)
   bugun [--sayi N] [--planla] [--kanal telefon|yazı]
   ozet
@@ -24,7 +28,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.26.0"
+SURUM = "0.27.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -33,7 +37,8 @@ EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", 
            "bulgu", "kanca", "lira", "denetim_tarihi", "asama", "telefon_durumu",
            "eposta_durumu", "instagram_durumu", "video_durumu", "temas_sayisi",
            "son_temas_tarihi", "son_temas_kanali", "siradaki_hareket", "siradaki_tarih",
-           "randevu_tarihi", "eposta_konu", "eposta_metni", "dm_metni", "not"]
+           "randevu_tarihi", "eposta_konu", "eposta_metni", "dm_metni",
+           "son_cevap", "cevap_dali", "not"]
 SUTUNLAR = SERVIS + EKLENEN
 ASAMALAR = ["yeni", "temasta", "cevap verdi", "randevu", "görüşüldü", "sonra", "kapandı", "müşteri"]
 DURUMLAR = ["yapılmadı", "yapıldı", "cevap geldi", "kapandı"]
@@ -511,7 +516,13 @@ def takip_gunu(s, kacinci=None):
 
 
 SONUC_KELIME = {"açmadı": "acmadi", "acmadi": "acmadi", "gönderdim": "gonderdim", "gonderdim": "gonderdim",
-                "istemedi": "istemedi", "ilgilendi": "ilgilendi", "randevu": "randevu", "sonra": "sonra"}
+                "istemedi": "istemedi", "ilgilendi": "ilgilendi", "randevu": "randevu", "sonra": "sonra",
+                "cevap": "cevap"}
+
+# Yazili kanalda gelen cevabin hangi dala girdigi. Dal adi kaydediliyor ki
+# hangi dalin gorusmeye dondugu sonradan sayilabilsin.
+CEVAP_DALLARI = ["fiyat", "bilgi", "mesgul", "zaten var", "kim", "referans",
+                 "ilgilenmiyor", "sonra", "olumlu", "anlasilmadi"]
 
 
 def kmt_sonuclar(a):
@@ -569,6 +580,18 @@ def kmt_sonuclar(a):
         elif kod == "sonra":
             t = ek.get("tarih", "+7")
             temas_uygula(satirlar, s, kanal, "sonra ara dedi", "yapıldı", "sonra", kanal + ", tekrar ara", t, None, notu)
+        elif kod == "cevap":
+            # Gelen cevabin kendisi kaydediliyor: yaniti FounderOS bundan yaziyor
+            # ve hangi dal oldugu sayilabiliyor. Cevap gelen aday ayni gun donulur.
+            metin = ek.get("metin") or ek.get("cevap") or ""
+            dal = kucult(ek.get("dal", ""))
+            if dal and dal not in CEVAP_DALLARI:
+                dal = ""
+            s["son_cevap"] = metin[:500]
+            if dal:
+                s["cevap_dali"] = dal
+            temas_uygula(satirlar, s, kanal, "cevap geldi" + (" (%s)" % dal if dal else ""),
+                         "cevap geldi", "cevap verdi", kanal + ", yanıt yaz", bugun().isoformat(), None, notu)
         islenen.append(ozet_satir(s))
         dokum[kod] = dokum.get(kod, 0) + 1
     kaydet(satirlar)
@@ -576,7 +599,7 @@ def kmt_sonuclar(a):
     n = nis_oku()
     print("gün dökümü: niş %s, açılış sürümü %s, temas %d, %s" % (
         n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", len(islenen),
-        ", ".join("%s %d" % (k, dokum[k]) for k in ("acmadi", "gonderdim", "istemedi", "ilgilendi", "randevu", "sonra") if dokum.get(k))))
+        ", ".join("%s %d" % (k, dokum[k]) for k in ("acmadi", "gonderdim", "istemedi", "ilgilendi", "randevu", "sonra", "cevap") if dokum.get(k))))
     for x in islenen:
         print("  " + x)
     if bulunamayan:
@@ -710,6 +733,85 @@ def kmt_ozet(a):
         print("niş %s, açılış sürümü %s" % (n["ad"], n.get("acilis_surumu") or "1"))
     if canli:
         print("son eklenme %s, kaynaklar: %s" % (max(s["eklenme_tarihi"] for s in canli), ", ".join(sorted({s["kaynak"] for s in canli if s["kaynak"]}))))
+    # Stok: liste bitmeden once haber ver. Takvimle degil stokla tetikleniyor,
+    # cunku listenin ne zaman bitecegi tempoya bagli.
+    dokunulmamis = say(lambda s: acik(s) and not s["son_temas_tarihi"])
+    tempo = 0
+    try:
+        tempo = int(str(n.get("gunluk_temas") or "").strip() or 0)
+    except ValueError:
+        tempo = 0
+    if tempo > 0:
+        gun_kaldi = dokunulmamis / float(tempo)
+        satir = "stok: %d dokunulmamış aday, günde %d temasla %.1f gün" % (dokunulmamis, tempo, gun_kaldi)
+        if gun_kaldi < 5:
+            satir += "  >>> liste bitiyor, yeni ilçe çekilmeli"
+        print(satir)
+    else:
+        print("stok: %d dokunulmamış aday (günlük tempo sayfa.json'a yazılmamış, gün hesabı yapılamadı)" % dokunulmamis)
+
+
+def cevap_verdi(s):
+    """Bu aday bir sekilde cevap verdi mi. Asama ileri gittiyse ya da cevap
+    kaydedildiyse evet; "sonra" da cevaptir, sessizlik degildir."""
+    return bool(s["son_cevap"]) or s["asama"] in ("cevap verdi", "randevu", "görüşüldü", "müşteri", "sonra")
+
+
+def kmt_ogren(a):
+    """Hangi gozlem ve hangi kanal cevap getiriyor.
+    Esik altindaki kova sayilmaz: az sayida temastan cikan oran yaniltir."""
+    satirlar = yukle()
+    esik = a.esik
+    temasli = [s for s in satirlar if not s["elenme"] and s["son_temas_tarihi"]]
+    if not temasli:
+        print("henüz temas yok, öğrenilecek bir şey de yok")
+        return
+
+    def dok(baslik, anahtar_fn):
+        kova = {}
+        for s in temasli:
+            k = anahtar_fn(s)
+            if k is None:
+                continue
+            d = kova.setdefault(k, [0, 0])
+            d[0] += 1
+            if cevap_verdi(s):
+                d[1] += 1
+        if not kova:
+            return
+        print(baslik)
+        for k in sorted(kova, key=lambda x: -kova[x][0]):
+            n, c = kova[k]
+            if n < esik:
+                print("  %-28s %3d temas, eşik altı (%d gerekiyor), sayılmıyor" % (k, n, esik))
+            else:
+                print("  %-28s %3d temas, %3d cevap, %%%.0f" % (k, n, c, 100.0 * c / n))
+
+    print("öğrenme özeti, eşik %d temas. Eşiğin altındaki satır karar için kullanılmaz." % esik)
+    dok("gözlemin kaynağı:", lambda s: {"denetim": "denetimden gelen bulgu",
+                                        "profil": "profilden gelen gözlem",
+                                        "": "gözlemsiz"}[gozlem(s)[2]])
+    dok("son temas kanalı:", lambda s: s["son_temas_kanali"] or None)
+    dok("profil işareti:", lambda s: (ipucu_gozlem(s) or (None, None))[0] if gozlem(s)[2] == "profil" else None)
+    dok("sızıntı puanı:", lambda s: ("sızıntı " + s["sizinti"]) if s["sizinti"] else None)
+
+    daller = {}
+    for s in temasli:
+        if s["cevap_dali"]:
+            d = daller.setdefault(s["cevap_dali"], [0, 0])
+            d[0] += 1
+            if s["asama"] in ("randevu", "görüşüldü", "müşteri"):
+                d[1] += 1
+    if daller:
+        print("cevap dalı, randevuya dönen:")
+        for k in sorted(daller, key=lambda x: -daller[x][0]):
+            n, r = daller[k]
+            print("  %-28s %3d cevap, %3d randevu%s" % (k, n, r, "" if n >= esik else "  (eşik altı)"))
+
+    n = nis_oku()
+    if n.get("ad"):
+        print("niş %s, açılış sürümü %s. Açılış metni değişirse sürüm artar ve bu tablo o sürümden sonrasını ayrı sayar."
+              % (n["ad"], n.get("acilis_surumu") or "1"))
 
 
 def kmt_bul(a):
@@ -722,7 +824,7 @@ def kmt_bul(a):
         print(ozet_satir(s) + (" | ELENDİ: " + s["elenme"] if s["elenme"] else "") + (" | not: " + s["not"] if s["not"] else ""))
 
 
-SENARYO_ALANLAR = ["ad", "acilis_surumu", "ogrenci", "acilis_sorusu", "isleyis_sorusu", "vaat", "calisan", "itirazlar"]
+SENARYO_ALANLAR = ["ad", "acilis_surumu", "ogrenci", "acilis_sorusu", "isleyis_sorusu", "vaat", "calisan", "gunluk_temas", "itirazlar"]
 ITIRAZ_ALANLAR = ["durum", "soyle", "neden", "sonra"]
 
 
@@ -872,6 +974,7 @@ def ana():
     t.add_argument("--not", dest="notu")
     t.add_argument("--semt")
 
+    s = alt.add_parser("ogren"); s.add_argument("--esik", type=int, default=30)
     s = alt.add_parser("sonuclar")
     s.add_argument("dosya")
 
@@ -914,7 +1017,7 @@ def ana():
     if not KLASOR.exists():
         hata("klasör yok: %s" % KLASOR)
     calisma().mkdir(parents=True, exist_ok=True)
-    {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar,
+    {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar, "ogren": kmt_ogren,
      "sil": kmt_sil, "bugun": kmt_bugun, "ozet": kmt_ozet, "bul": kmt_bul, "sayfa": kmt_sayfa}[a.komut](a)
 
 

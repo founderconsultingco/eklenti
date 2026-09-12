@@ -24,6 +24,8 @@ Bu modül ikisinin arasını tutuyor. Haftada bir bakıyor, tek bir şeye karar 
 
 Pazarlamadaki karşılığı: bir seferde tek şey değiştiren kişi öğreniyor, hepsini birden değiştiren kişi tahmin ediyor.
 
+**Karar sayıdan çıkar, izlenimden değil.** Aday aracının `ogren` komutu dört kırılımda cevap oranını basıyor: gözlemin kaynağı (denetimden mi, profilden mi, gözlemsiz mi), son temas kanalı, hangi profil işaretinin kullanıldığı, ve sızıntı puanı. Üstüne cevap dallarının kaçının randevuya döndüğü. Eşiğin (varsayılan otuz temas) altındaki satır "eşik altı" diye işaretleniyor ve karara girmiyor; az sayıdan çıkan oran yanıltıyor ve bu sistemin en sık yapılan hatası. FounderOS haftanın sonunda bu tabloyu okur, öğrenciye tek cümleyle söyler ve değişiklik önerisini ona dayandırır.
+
 ## 2. Ne zaman çalışır
 
 - Haftada bir, aynı gün, otuz dakika. Gün ilk hafta seçilir ve değişmez.
