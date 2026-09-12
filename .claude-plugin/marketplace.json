@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "founderos",
-      "version": "0.28.0",
+      "version": "0.29.0",
       "description": "Sıfırdan tek kişilik yapay zekâ servis işini doksan günde kuran sistem.",
       "source": "./founderos"
     }

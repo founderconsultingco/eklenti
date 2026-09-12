@@ -95,12 +95,28 @@ Dördü de aynı bulgudan besleniyor ama aynı cümleyi kullanmıyor. Aynı aday
 
 Sesli söylenecek satırlar tırnak içinde; "bekle" yazan yerde susarsın, karşı taraf konuşur. Sayfanın Saha modu kartı bu altı adımı aynı sırayla gösterir.
 
-1. Tanış ve kaynağı söyle: "Merhaba, ben [adın], [şehir]'den arıyorum. Numaranızı Haritalar'daki işletme sayfanızdan aldım. [Ad] Bey siz misiniz?" Bekle. Adını, şehrini ve numarayı nereden aldığını ilk cümlede söylersin; işletmeci en çok bunu merak eder. Karar verenin adı bilinmiyorsa: "İşletme sahibi siz misiniz?" Ustayla konuşuyorsan "Usta" doğaldır, "Bey" zorunlu değil.
+1. Tanış ve kaynağı söyle: "[sakin] Merhaba, ben [adın], [şehir]'den arıyorum. Numaranızı Haritalar'daki işletme sayfanızdan aldım. [Ad] Bey siz misiniz?" [cevabı bekle] Adını, şehrini ve numarayı nereden aldığını ilk cümlede söylersin; işletmeci en çok bunu merak eder. Ustayla konuşuyorsan "Usta" doğaldır, "Bey" zorunlu değil.
+
+   **Karar verenin adı bilinmiyorsa açılış değişir.** "İşletme sahibi siz misiniz?" sorusu adamı savunmaya geçiriyor, çünkü bu soruyu günde beş satıcı soruyor. Yerine yardım isteyen hal kullanılır:
+
+   "[sakin] Merhaba, burası [işletme adı] mı?" [cevabı bekle] "[meraklı] Kısa bir konuda yardımcı olabilir misiniz? Gelen aramaları ve randevuları kimin takip ettiğini öğrenmek istiyorum." [cevabı bekle]
+
+   İki iş yapıyor. Yardım istenen insan yardım ediyor, satıcıya kapanan kapı yardım isteyene kapanmıyor. Ve cevap kimin karar verdiğini kendiliğinden söylüyor, sen sormadan. "Ben ilgileniyorum" derse: "Tamamdır, doğru kişiye ulaşmışım." ve ikinci adıma geçersin. Başkası derse gatekeeper akışına geçersin (aşağıda).
 2. Rahatlat ve küçük izni al: "Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?" Bekle. İki iş yapıyor. Birincisi, karşı tarafın aklındakini ("bu kim, ne satacak") önce sen söylüyorsun, savunması düşüyor. İkincisi, konuşmanın en başında küçük bir evet alıyorsun; evet diyen kişi otuz saniye daha dinliyor. "Alakasızsa kapatalım" cümlesi kalkmaz, çünkü çıkışı sen açtığın için kimse çıkmak zorunda hissetmiyor. Kısa hali de olur: "Sizi tanımıyorum, kısa tutacağım." Acelesi olan, sesi gergin ya da dükkanda kalabalık olan işletmecide kısa hali kullanılır.
-3. Gözlem ya da kartın sorusu. Denetim kartında yaşanmış gözlem varsa o, günüyle: "Salı akşamı yediye doğru sizi bir kere aradım, açılmadı. Onun için arıyorum." Gözlem yoksa uydurmazsın, kartın açılış sorusunu sorarsın; klima kartında bu "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?" gibi bir sorudur. Tek aramadan "sürekli kaçırıyorsunuz" çıkarılmaz.
+3. Gözlem ya da kartın sorusu. Denetim kartında yaşanmış gözlem varsa o, günüyle: "[sakin] Salı akşamı yediye doğru sizi bir kere aradım, [kısa durakla] açılmadı. Onun için arıyorum." Gözlem gerçek olduğu için bu cümle en güçlü açılış; aramanın neden o işletmeye yapıldığını söylüyor ve konuşmayı rastgele aramadan çıkarıyor.
+
+   **Gözlem yoksa aynı şeyi iddia olarak değil soru olarak sorarsın.** "Sizi akşam aradım, kimse açmadı" cümlesi aramadıysan kurulmaz; yerine "Mesai dışında gelen aramalar sizde şu anda nasıl karşılanıyor?" sorulur. Aynı konuyu açar, hiçbir şey uydurmaz ve cevabı onun ağzından alır. Uydurulan gözlemin bedeli şu: adam "ne zaman aradınız" diye soruyor, sen sayıyı bilmiyorsun, konuşma orada bitiyor ve o aday bir daha açmıyor.
+
+   Sıralama da buradan çıkar: akşam testinde açmayan adaylar ertesi günün listesinde önde gelir, çünkü onlarda söylenecek gerçek bir cümle var. Testi yapılmamış adayda bu adım kartın sorusuna düşer.
+
+   Gözlem yoksa uydurmazsın, kartın açılış sorusunu sorarsın; klima kartında bu "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?" gibi bir sorudur. Tek aramadan "sürekli kaçırıyorsunuz" çıkarılmaz.
 4. İşleyiş sorusu, tek soru: "Yoğunken telefona yetişemediğinizde müşteri ne yapıyor, tekrar mı arıyor, mesaj mı yazıyor?" Bekle, araya girme. Cevabı ne olursa olsun sonraki cümlenin malzemesi odur.
 5. Ne yaptığını tek cümlede söyle, kapsamın içinde kal: "Ben tam bunun için bir sistem kuruyorum: siz işteyken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, bilgiyi alıp randevuya yazıyor; eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç işletmeyle başlıyorum." Sistemin adı varsa "adı [sistemin adı]" diye eklenir. Teslim edilmeyen parça söylenmez: cevapsız aramayı geri arama ve telefonu açan sesli asistan, İş Beyni'nde "kuruldu" yazmıyorsa cümleye girmez.
+5b. Karar vericiyi doğrula, tek soru. Beşinci adımdan sonra, saat teklif etmeden önce: "Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz, yoksa görüşmede olması gereken biri daha var mı?" [cevabı bekle] Tek soru, sorgu değil. "Ben veriyorum" derse geçersin. "Ortağım da var" ya da "eşim bakıyor" derse: "O zaman onu da alalım, ikinizin uygun olduğu bir saat bulalım." İki kişilik görüşme tek kişilikten uzun sürmüyor ama ikinci görüşmeyi ortadan kaldırıyor. Bu soru sorulmazsa görüşme yapılıyor, adam ikna oluyor ve "bir de ortağıma danışayım" diyor; o dosya çoğu zaman kapanmıyor.
+
 6. Randevu, belirli saat ve doğru süre: "Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin." Görüşme yirmi beş dakika planlanır, "on beş" denmez. Soru gelirse kısa cevap ve görüşmeye bağlama: "Tam bunu görüşmede gösteririm, yarın on bir mi, üç mü?" Randevu kırk sekiz saatten uzağa alınmaz, en iyisi kırk saat sonrası. Onay mesajı için e-posta ya da WhatsApp izni telefondayken alınır. Sonrası gorusmeye-getir'in işi.
+
+**Metindeki işaretler.** Tırnak içindeki cümlelerin arasında köşeli parantezli işaretler var; onlar sesli okunmaz, nasıl söyleneceğini söyler. Altısı var: `[sakin]` acele etme, ilk cümleyi yavaş söyle. `[meraklı]` sesin sonu yukarı, gerçekten merak ediyormuş gibi. `[kısa durakla]` bir saniye sus, önemli cümleden önce ya da sonra. `[cevabı bekle]` sorunu sordun, artık susuyorsun; karşı taraf düşünürken sessizliği doldurmak konuşmanın en sık öldüğü yer. `[vurgu: şu kelime]` o kelimeyi biraz daha yüksek ve yavaş söyle; insan bir cümleden iki üç kelime hatırlıyor, hangisi olacağını sen seçiyorsun. `[yavaşla]` sayı, tarih ve saat söylerken. Niş kartlarındaki metinlerde bu işaretler yoktur, onlar düz yazılır; işaretler bu modülün kendi metinlerinde durur.
 
 Ton kuralları, ezber metinden önemli. Yüzde yirmi ne dediğin, yüzde seksen nasıl dediğin.
 - Ayakta ve gezinerek konuş, telefon elde değil.
@@ -115,7 +131,17 @@ Ton kuralları, ezber metinden önemli. Yüzde yirmi ne dediğin, yüzde seksen 
 - Aksan, şive, genç ses: başta söyle, saklama.
 - Tek tonda konuşma. Aynı metin düz sesle okununca satış kaydı gibi duyuluyor, sesin yükselip alçalmasıyla okununca konuşma gibi duyuluyor. Cümlenin içinde bir kelimeyi öne çıkar, sonunu yukarı bağla. Ne söylediğin yüzde yirmi, nasıl söylediğin yüzde seksen.
 - Konuşma metnin dışına çıkarsa peşinden git. İşletmeci kendi derdini anlatmaya başladıysa iş iyi gidiyor demektir; sözünü kesip metne dönme, dinle, sonra işleyiş sorusuna bağla. Metin bir ray değil, yolu şaşırınca dönülecek yer.
-- Araya tek cümlelik insan lafı girebilir: şehir, semt, hava, sektörün o haftaki yoğunluğu. Bir cümle, sonra işe dön. İki cümleden fazlası samimiyet taklidi olur ve karşı taraf anlar.
+- Araya tek cümlelik insan lafı girebilir: şehir, semt, hava, sektörün o haftaki yoğunluğu. Bir cümle, sonra işe dön. İki cümleden fazlası samimiyet taklidi olur ve karşı taraf anlar. Şaka uydurma; gerçekten aklına gelen bir şey yoksa hiç söyleme.
+- Cümlenin sonunu sunum gibi yukarı kaldırma. Soru soruyorsan yukarı, anlatıyorsan düz. Her cümlenin sonu yukarı çıkarsa metin okunuyormuş gibi duyuluyor.
+- Karşı tarafın söylediği gerçek ayrıntıyı sonraki cümlende kullan. "Sahadayız, akşam bakıyoruz" dediyse iki cümle sonra "siz sahadayken" dersin. Dinlendiğini gösteren tek şey bu.
+
+Aynı cümlenin iki söylenişi, farkı duymak için:
+
+Robotik: "Merhaba. Yapay zekâ destekli çağrı karşılama çözümleri sunuyoruz. İşletmenize katkı sağlayabileceğimizi düşünüyoruz."
+
+Doğal: "[sakin] Merhaba, Ahmet Bey? Ben Eren. Plansız aradım, kısa tutacağım. [kısa durakla] Mesai dışında gelen aramaları sizde kim takip ediyor?" [cevabı bekle]
+
+Fark metinde değil. Birincisi kendini anlatıyor, ikincisi soru soruyor ve susuyor.
 
 **Görüşmenin kendisini sat, sistemi değil.** Altıncı adımda saat teklif etmeden önce ya da hemen sonrasında tek cümle: görüşmeden ne çıkacağını söylersin. İşletmeci "yirmi dakikamı niye vereyim" sorusunu sesli sormuyor ama kafasında soruyor. Cevabı önceden verirsen gelme oranı yükseliyor.
 
@@ -180,7 +206,39 @@ Kapatır kapatmaz ilk mesaj gider (gorusmeye-getir, A bölümü). Görüşme sab
 
 Konuşmada dikkat edilecek dört şey: adam "bilgi gönderin" dediğinde isteği reddedilmedi ama saat aynı konuşmada alındı; "robot mu" sorusuna teknik anlatım yapılmadı; lira geçmedi; ve kapanış "ilginizi çekerse gelin" değil, "yarın üçte sizi arıyorum" oldu.
 
-**Telefonu açan başkası** (sekreter, kalfa, personel). "Merhaba, ben [adın], [şehir]'den arıyorum. [Ad] Bey'le görüşebilir miyim?" Bekle. "Ne hakkında?" gelirse: "Yoğunken telefona yetişemediğiniz saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?" Konuyu saklamazsın, "kendisi biliyor" demezsin; sahibi geri aradığında konuyu bilmeli. Not bıraktırma, saat al. "Kendisi yok, bana anlatın" derse iki cümle anlat ve yine saat iste; çalışana satış yapma, karar onda değil. Açan kişinin adını al, karta yaz, bir sonraki aramada onunla başla: "Merhaba Selin Hanım, dün konuşmuştuk."
+**İkinci örnek: telefonu personel açıyor, sahibinin adı bilinmiyor.** Bu yol birincisinden daha sık çıkıyor. Diş kliniği, İzmir. Akşam testi yapılmış, açılmamış.
+
+> **Sen:** [sakin] Merhaba, burası Armoni Diş Kliniği mi?
+> **O:** Evet, buyurun.
+> **Sen:** [meraklı] Kısa bir konuda yardımcı olabilir misiniz? Hasta aramalarını ve randevuları kimin takip ettiğini öğrenmek istiyorum.
+> **O:** Randevulara ben bakıyorum ama sistem falan olursa hocam karar verir.
+> **Sen:** Anladım. Kendisi şu an müsait mi?
+> **O:** Hastada, bir saate çıkar.
+> **Sen:** Peki, bir saat sonra tekrar arayayım. Aradığımda kimi soracağımı bileyim, adınızı alabilir miyim?
+> **O:** Merve. Hocam da Serdar Bey.
+> **Sen:** Teşekkürler Merve Hanım, bir saat sonra Serdar Bey'i arayacağım.
+
+Bir saat sonra, ikinci arama:
+
+> **Sen:** [sakin] Merhaba Serdar Bey, ben Murathan, İzmir'den. Merve Hanım'la konuşmuştum, sizi bir saat sonra aramamı söyledi. Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?
+> **O:** Kısaca söyleyin.
+> **Sen:** Salı akşamı yediye doğru kliniği bir kere aradım, [kısa durakla] açılmadı. Onun için arıyorum. Mesai dışında gelen aramalar sizde şu anda nasıl karşılanıyor?
+> **O:** Telesekreter var, mesaj bıraksınlar, sabah dönüyoruz.
+> **Sen:** [sakin] Anladım, çoğu klinikte var. Mesaj bırakılınca geri dönüşü sabah biri elle mi yapıyor?
+> **O:** Evet, Merve bakıyor.
+> **Sen:** [meraklı] Peki hiç mesaj bırakmadan kapatan hastayı görebiliyor musunuz?
+> **O:** Yok, onu göremeyiz tabii.
+> **Sen:** Benim kurduğum sistemin farkı tam orada. Mesaj bırakmasını beklemiyor; kapanan aramanın hemen ardından yazıyor, ne için aradığını soruyor ve uygunsa randevuya yazıyor. [kısa durakla] Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz?
+> **O:** Ben veririm.
+> **Sen:** Yirmi dakikada gerçek akış üzerinden göstereyim. Görüşmede size sunum yapmayacağım; bir hastanın kliniğe nereden ulaştığına ve nerede beklediğine birlikte bakacağız. Yarın on bir mi daha uygun, üçte mi?
+> **O:** Yarın on bir olsun.
+> **Sen:** Tamamdır. [yavaşla] Yarın on bir. Daveti göndereyim, e-posta adresinizi alabilir miyim?
+
+Burada iki şey görülüyor. Birincisi, personel engel değil kaynak oldu: sahibin adı, saati ve kendi adı alındı, üçü de ikinci aramanın açılışını kurdu. İkincisi, telesekreter itirazı tartışılmadı; "işe yaramaz" denmedi, neyi yakalayıp neyi kaçırdığı soruldu ve boşluğu adam kendi ağzıyla söyledi.
+
+**Telefonu açan başkası** (sekreter, kalfa, personel). "Merhaba, ben [adın], [şehir]'den arıyorum. [Ad] Bey'le görüşebilir miyim?" [cevabı bekle]
+
+Adı bilmiyorsan yardım isteyen açılışla başlarsın (birinci adım) ve "başkası ilgileniyor" cevabını aldığında iki soru sorarsın, sırayla. Önce aynı anda aktarmayı dene: "[sakin] Anladım. Kendisi şu an müsait mi?" Müsaitse hat aktarılır, konuşma baştan başlar. Değilse: "Ne zaman ulaşmam daha uygun olur?" Saat alınır. Sonra adı: "Aradığımda kimi soracağımı bileyim, adını alabilir miyim?" Bu üç cümle sırayla gider, aynı nefeste değil; her birinden sonra cevabı beklersin. "Ne hakkında?" gelirse: "Yoğunken telefona yetişemediğiniz saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?" Konuyu saklamazsın, "kendisi biliyor" demezsin; sahibi geri aradığında konuyu bilmeli. Not bıraktırma, saat al. "Kendisi yok, bana anlatın" derse iki cümle anlat ve yine saat iste; çalışana satış yapma, karar onda değil. Açan kişinin adını al, karta yaz, bir sonraki aramada onunla başla: "Merhaba Selin Hanım, dün konuşmuştuk."
 
 **Açılmadı.** Hemen bir kez daha ara; yine açılmazsa o gün bırak. Mesaj bırakma. Yarın başka saatte bir kez daha. İki günde açılmazsa e-posta, karar tablosuna göre.
 
@@ -242,6 +300,21 @@ Ne zaman gider: ilk yazılı temasın üçüncü günü. Aynı video hem e-posta
 Videodan sonra hangi kanal gelir: iki gün sonra Instagram'dan sesli mesaj takibi, yedi gün sonra e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer. Adayın Instagram'ı yoksa ikinci gün takibi e-postadan tek satır gider; e-postası yoksa ayrılık mesajı Instagram'dan gider.
 
 Videoda gösterilen şey bulgunun kendisidir. Aynı adaya hem e-posta hem video gittiyse video, e-postanın söylemediği ikinci bulguyu gösterir.
+
+### Aramanın sonucu nereye yazılır
+
+Her aramadan sonra tek kelimelik sonucu sen söylersin, kaydı FounderOS yazar. Yeni durum adı yok; hepsi mevcut sütunlara oturur. Sekiz ayrım var:
+
+- **Cevap vermedi.** Saha modunda "Açmadı". Telefon satırı "yapıldı", sıradaki tarih ertesi gün.
+- **Yanlış kişi.** Telefon "yapıldı", sıradaki hareket "doğru kişiye ulaş", nota kimin çıktığı yazılır. Aşama değişmez.
+- **Karar vericiye yönlendirildi.** Telefon "yapıldı", sahibi sütununa öğrenilen ad, sıradaki tarih verilen saat, nota gatekeeper'ın adı. Bu aday sırada öne gelir, çünkü artık adı ve saati var.
+- **Tekrar aranacak.** Saha modunda "Sonra ara". Verdiği tarih yazılır; tarih vermediyse yedi gün.
+- **İlgilenmiyor.** Saha modunda "İstemedi". Aşama "kapandı", aday bir daha aranmaz.
+- **Uygun değil.** Konuştunuz ve işletme gerçekten sana uymuyor (hacim yok, sektör dışı, kapanmış). `sil --sebep` ile listeden çıkar; satır durur, sayfada görünmez.
+- **Görüşme alındı.** Saha modunda "Randevu", saatiyle. Aşama "randevu", gorusmeye-getir devralır.
+- **İletişim istemiyor.** "Bir daha aramayın", "beni listenizden çıkarın" gibi açık bir talep. Bu "istemedi"den ayrıdır ve daha serttir: `sil --sebep "iletişim istemiyor"` ile satır listeden çıkar. Sebebi şu: "istemedi" aşamasındaki aday altı ay sonra yeniden taranıyor, iletişim istemeyen aday hiçbir zaman taranmamalı. Hiçbir kanaldan bir daha yazılmaz, aranmaz; e-posta ve Instagram satırları da kapanır. Bu talebi tartışmazsın, sebebini sormazsın: "Anladım, kaydınızı çıkarıyorum, iyi çalışmalar."
+
+Bu sekizinin dışında bir sonuç yazma ihtiyacı duyuyorsan kaydedilecek şey sonuç değil nottur; nota yazılır.
 
 ### Kanal durumu takibi
 
@@ -329,12 +402,19 @@ Her durumda üç şey: söylenecek cümle (tırnak içinde, sesli okunur), ne i�
 - **"Şu an müsait değilim."** Söyle: "Tabii, ne zaman arayayım? Bugün akşamüstü mü, yarın sabah mı?" Ne için: zamanı olmadığını kabul edip somut saat almak, anlatmaya devam etmek değil. Sonra: saat verirse teşekkür et, kapat, FounderOS saati sıradaki tarihe yazar. Belirsiz cevapta bir kez daha sor ("Yarın on gibi uygun mu?"); yine belirsizse yarın ara, üçüncü kez arama.
 - **"Ne için arıyorsunuz?"** Söyle: "Yoğunken telefona yetişemediğiniz saatlerde WhatsApp'a ve Instagram'a yazan müşteriye cevap verip randevuya yazan bir sistem kuruyorum. Sizde böyle bir şey var mı diye soracaktım." Ne için: tek cümlede ne olduğunu söylemek ve konuşmayı işletmenin işleyişine çevirmek. Sonra: "yok" derse dördüncü adımdaki işleyiş sorusuna geç; "var" derse "Nasıl çalışıyor, kim cevap veriyor?" diye sor, cevaba göre ya görüşme iste ya kapat.
 - **"WhatsApp'tan bilgi gönderin."** Söyle: "Tabii, kısa bir özet göndereyim. Yalnız yazıyla biraz soyut kalıyor; yirmi dakikada gerçek akışı gösterirsem ne olduğu çok daha net anlaşılıyor. Yarın on bir mi daha uygun, üç mü?" İsteği reddetmezsin ama saati aynı konuşmada alırsın; bilgiyi gönderip beklemek adayı kaybetmenin en sık yolu. Adam ikinci kez "önce göndereyim" derse yumuşat: "Göndereyim. Okuduktan sonra konuşalım derseniz yarın on bir ya da üç için yer ayırayım, hangisi size yakın?" Üçüncü kez direnirse zorlamazsın: "Tamamdır, özeti gönderiyorum. Okuyunca anlamlı gelirse buradan cevap vermeniz yeterli." Eski hali de geçerli: "Olur, on dakika içinde gönderiyorum: kim olduğum, ne yaptığım ve sayfamın adresi, üç satır. Okuduktan sonra yarın on dakika konuşabilir miyiz, yoksa ben mi arayayım?" Ne için: isteği reddetmemek ama sonraki teması bugün bağlamak. Sonra: kapatınca on dakika içinde şu mesaj gider (bu numaraya yazma iznini kendisi verdi, soğuk mesaj sayılmaz): "Merhaba [Ad] Bey, ben [adın], az önce görüştük. Yoğunken telefona yetişemediğiniz saatlerde WhatsApp'a ve Instagram'a yazan müşteriye cevap verip randevuya yazan bir sistem kuruyorum; eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. Sayfam: [tanıtım sayfasının adresi]. Yarın on birde yirmi dakika uyar mı?" Demo hattı, video ya da rapor örneği gerçekten varsa bir cümle daha eklenir; yoksa anılmaz. Cevap gelmezse üçüncü gün tek takip, yedinci gün tek soru; sonra bırak.
+**İtiraz cevaplarının ortak tekniği: ölçülüyor mu.** İşletmecinin itirazlarının çoğu bir çözümü anlatıyor: telesekreterim var, ertesi gün geri arıyoruz, zaten az arama geliyor. Bunların hiçbiri yanlış değil ve hiçbirine "işe yaramaz" denmez. Sorulacak tek şey şu: o çözümün sonucunu ölçüyor musunuz. Çünkü ölçülmeyen bir şey hakkında ikinizin de bilgisi yok, ve bilgisizlik ortak olduğunda konuşma tartışma olmaktan çıkıp birlikte bakmaya dönüyor.
+
+Kural: karşı tarafı mantıksız duruma düşüren soru sorulmaz. "Sizce müşteri hangisini seçer, telesekretere düşeni mi canlı açanı mı?" diye sormak adamı köşeye sıkıştırıyor, adam da köşede satın almıyor. Doğrusu ölçüyü sormak, cevabı ona bırakmak ve bilinmiyorsa bunu birlikte kabul etmek. Ölçülüyorsa ve sayı düşükse geri çekilirsin; o aday sana uygun değil ve bunu söylemek seni satıcıdan ayırıyor.
+
+- **"Telesekreterimiz var, mesaj bıraksınlar."** Söyle: "[sakin] Anladım, çoğu yerde var. Mesaj bırakılınca geri dönüşü sonradan biri elle mi yapıyor?" [cevabı bekle] "Evet" derse: "[meraklı] Peki hiç mesaj bırakmadan kapatan kişiyi görebiliyor musunuz?" [cevabı bekle] Ne için: telesekreteri kötülemek değil, neyi yakalayıp neyi kaçırdığını ayırmak; arayanların çoğu mesaj bırakmadan kapatıyor ve o kişi hiçbir yerde görünmüyor. Sonra: "Göremiyoruz" derse: "Benim kurduğum sistemin farkı orada, mesaj bırakmasını beklemiyor, kapanan aramanın hemen ardından yazıyor. Yirmi dakikada göstereyim, yarın on bir mi, üç mü?" "Görebiliyoruz" derse teşekkür et ve kapat.
+- **"Mesai dışında zaten fazla arama gelmiyor."** Söyle: "[sakin] Olabilir. Bunu bir yerden sayı olarak görebiliyor musunuz, yoksa genel izlenim mi?" [cevabı bekle] Ne için: hacim gerçekten düşükse bu iş o işletmeye gerekmiyor; bunu kabul etmek konuşmayı bitirmiyor, güven kuruyor. Sonra: "Sayıyla görüyoruz, gerçekten az" derse: "Anladım, o zaman bu sistem sizde öncelikli değil. Vaktinizi aldım." Kapat, zorlama yok. "Ölçmüyoruz" derse: "[kısa durakla] O zaman ikimiz de bilmiyoruz. Sayıyı görmeden size lazım olduğunu söylemem. Görüşmede kendi telefon kayıtlarınızdan bu sayıyı nasıl çıkarabileceğinizi göstereyim, sonra gerçekten kayıp var mı birlikte görürüz. Yarın on bir mi, üç mü?"
+- **"Cevapsız aramaları ertesi gün geri arıyoruz."** Söyle: "[sakin] İyi, en azından takip ediliyor. Geri aradıklarınızın kaçına ulaşabildiğinizi ölçüyor musunuz?" [cevabı bekle] Ne için: takibi küçümsemeden aradaki boşluğu göstermek. Sonra: "Ölçmüyoruz" ya da "çoğuna ulaşamıyoruz" derse: "Benim anlattığım şey ertesi günkü aramanın yerine geçmiyor, [vurgu: ilk dakikaları] kapatıyor. Siz ertesi gün aradığınızda konuşma zaten başlamış oluyor. Yirmi dakikada göstereyim, yarın on bir mi, üç mü?" "Hepsine ulaşıyoruz" derse teşekkür et ve kapat.
 - **"Takvim linkinizi gönderin, ben seçerim."** Söyle: "Gönderebilirim. Ama linki gönderip sizi saat aramakla uğraştırmayayım; uygun saati şimdi seçelim, daveti ben oluşturayım. Yarın on bir mi, üç mü?" Ne için: link gönderilen randevuların çoğu hiç alınmıyor; aday telefonu kapattığı anda konu kapanıyor. Sonra: saat seçerse takvime sen girersin. Linkte ısrar ederse direnmezsin: "Tamamdır, linki gönderiyorum. Saati seçtiğinizde davet kendiliğinden gelir." Link gittikten sonra iki gün cevap yoksa aday takip zincirine girer, ikinci kez link gönderilmez.
 - **"Zaten böyle bir sistemimiz var."** Söyle: "Güzel, o zaman ihtiyacınız olmayabilir. Tek merak ettiğim şu: sistem sadece ilk mesajı mı atıyor, yoksa gelen cevaba göre konuşmayı sürdürüp randevuyu da yazıyor mu?" Ne için: kurulu sistemi kötülemeden gerçekten fark olup olmadığını anlamak; çoğu işletmede kurulu olan tek bir otomatik mesajdır. Sonra: "randevuyu da yazıyor" derse teşekkür et ve kapat, zorlama yok, FounderOS "sonra" yazar. "Sadece mesaj atıyor" derse tek cümle: "Aradaki fark orada. Yirmi dakikada göstereyim, yarın on bir mi, üç mü?"
 - **"Biz zaten kendimiz ilgileniyoruz."** Söyle: "İyi o zaman, çoğu işletme ilgilenemiyor. Yoğunken de yetişebiliyor musunuz, yoksa akşama kalan mesajlar oluyor mu?" Ne için: "kendimiz" cevabının arkasındaki gerçeği anlamak. Sonra: "yetişiyoruz" derse teşekkür et, "yoğun dönemde değişirse aramamı ister misiniz" de, kapat; FounderOS "sonra, sezon başı" yazar. "Akşama kalıyor" derse görüşme iste.
 - **"Yapay zekâ / bot istemiyoruz."** Söyle: "Anlıyorum, kötü kurulmuş olanı ben de istemem. Evet, mesajlara cevap veren bir yapay zekâ asistanı; ama fiyat vermiyor, sadece ne istendiğini ve adresi alıp size uygun bir randevu yazıyor. Fiyat ve karışık konu size düşüyor. Sizi rahatsız eden, müşteriyle robot konuşması mı, yoksa yanlış bilgi vermesi mi?" Ne için: kaygıyı gizlemeden ne yaptığını söylemek ve gerçek endişeyi ayırmak. Sonra: "robot konuşması" derse: "Müşteri isterse hemen size devrediyor, o kural baştan var" de ve görüşmede telefonundan denemesini teklif et. "Yanlış bilgi" derse: "Fiyat ve garanti konusuna hiç girmiyor" de. Israr sürerse kapat: "Anladım, zorlamayayım. Fikriniz değişirse numaram sizde olsun." Bu adaya bir daha bu konuyla gidilmez.
 - **"Pahalı."** İlk aramada fiyat konuşulmaz; fiyatı sorarsa İş Beyni'nin dördüncü bölümündeki "fiyat ne" cevabı okunur (aralık ve sebep), pazarlık ve indirim yok. "Pahalı" genelde o aralığı duyunca gelir. Söyle: "Olabilir. Şunu sorayım: rakam mı yüksek geldi, yoksa işe yarayacağından emin değilsiniz?" Ne için: fiyat itirazı ile güven itirazını ayırmak; "sonuç kesin" demeden. Sonra: "rakam" derse: "O zaman görüşmede bir işin sizde kaç lira ettiğini birlikte hesaplayalım, karar sizin" ve saat iste. "Emin değilim" derse: "Haklısınız, ilk müşterilerimle kanıt topluyorum; rapor günü sayıları görüyorsunuz" ve saat iste. İkisine de hayır derse kapat.
-- **"İlgilenmiyorum."** Söyle: "Anladım, teşekkür ederim. Kapatmadan tek şey sorayım: şu an dolu olduğunuz için mi, yoksa konu size uzak geldiği için mi?" Ne için: bir kez, tek soruyla sebebi öğrenmek. Sonra: "dolu" derse: "Anladım, yoğunluk geçince bir kez daha arayabilir miyim?" cevap ne olursa kapat. "Uzak" ya da sert bir hayır: "Tamam, vaktinizi aldım, iyi çalışmalar." Kapat; FounderOS "istemedi" işaretler, bir daha aranmaz.
+- **"İlgilenmiyorum."** Söyle: "[sakin] Anladım, teşekkür ederim. Kapatmadan tek şey sorabilir miyim?" [cevabı bekle] İzin verirse tek soru sorulur, vermezse hiç sorulmaz: "Tamam, rahatsız etmeyeyim, iyi çalışmalar." İzin isteyip sormak, izinsiz sormaktan daha çok cevap alıyor; ve izin vermeyen adamın hayırı gerçek hayırdır. Tek soru: "Kapatmadan tek şey sorayım: şu an dolu olduğunuz için mi, yoksa konu size uzak geldiği için mi?" Ne için: bir kez, tek soruyla sebebi öğrenmek. Sonra: "dolu" derse: "Anladım, yoğunluk geçince bir kez daha arayabilir miyim?" cevap ne olursa kapat. "Uzak" ya da sert bir hayır: "Tamam, vaktinizi aldım, iyi çalışmalar." Kapat; FounderOS "istemedi" işaretler, bir daha aranmaz.
 - **"Sonra arayın."** Söyle: "Tabii, ne zaman uygun?" Ne için: tarih almak. Sonra: verdiği güne yazılır; vermezse "yarın öğleden sonra deneyeyim mi" diye sorulur, cevap beklenir. Cevap beklemeden devam edilmez.
 - **"Fiyat ne?"** Cevap İş Beyni'nin dördüncü bölümündeki "fiyat ne" cevabından okunur, burada yeniden yazılmaz; kalıbı fiyati-belirle'de: aralık artı sebep artı görüşmeye bağlama. Fiyatı söyleyip indirim yapma.
 - **"Zaten elemanım / ekibim var."** Söyle: "Güzel, o zaman şunu sorayım: en yoğun saatte eleman sahadayken telefona ve mesajlara kim bakıyor?" Ne için: elemanın telefona bakabildiği anı sormak. Sonra: "bakıyor" derse teşekkür et ve kapat; "o da sahada" derse görüşme iste.
