@@ -27,7 +27,11 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 
 Bu modülün en büyük tuzağı şu: her adayı tek tek araştırmaya kalkmak. İşletme başına sekiz dakika, günde yüz temas, sekiz yüz dakika. Olmuyor. Ama araştırmadan gönderilen mesaj da işe yaramıyor. Çözüm, araştırmayı sorunun kaynağına göre üçe ayırmak.
 
-**Birinci katman, kayıtla birlikte gelen.** Veri servisi her kayıt için sekiz işaret çıkarıyor: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site yok, hafta sonu kapalı, Instagram yok, yorumu az, ve son yorumlarda "aradım açan olmadı" yazıyor. Bunlar beş yüz kaydın hepsinde var, sıfır iş gerektiriyor ve tahmin değil: Google işletme profilinde görünen şeyler. Gözlem sırasının tabanı bu.
+**Birinci katman, kayıtla birlikte gelen.** Veri servisi her kayıt için işaretleri çıkarıyor: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site yok, hafta sonu kapalı, Instagram yok, yorumu az, işletme kapanmış olabilir, ve yorumlarda kaçan talebi anlatan bir cümle var. Bunlar beş yüz kaydın hepsinde var, sıfır iş gerektiriyor ve tahmin değil: Google işletme profilinde görünen şeyler. Gözlem sırasının tabanı bu.
+
+Yorum işaretinin iki türü ayrı duruyor, çünkü ikisi aynı şeyi söylemiyor: telefona ulaşılamadığını yazan yorum ile söz verilen gün gelinmediğini yazan yorum. Birincisi doğrudan sattığımız şeyi anlatıyor, ikincisi ona komşu. Servis işaretin yanında yorumun kendi cümlesini de getiriyor ve mesaja o cümle giriyor: "Google yorumlarınızdan birinde şöyle yazıyor: 'Telefonları açmıyor.'" Genel cümle yerine müşterisinin kendi cümlesi. "Kapanmış olabilir" işareti kanca değil, uyarı: o aday aranmadan önce doğrulanır, çünkü yorumda "bina yıkılmış" yazan işletme Google'da hâlâ açık görünüyor.
+
+Bu katmanın ne kadar dolduğunu ölçtük, tahmin etmedik. İki gerçek çekim, kırk kayıt: telefon kırkta otuz sekiz, site kırkta otuz iki, e-posta kırkta on sekiz, Instagram kırkta on dokuz, yorum şikayeti yirmi kayıtta dört ila beş. Bundan çıkan iki sonuç plana yazıldı: yazılı kanal tek başına listenin yarısına yetmiyor, telefon ana kanal kalıyor; ve güçlü gözlem her adayda çıkmıyor, dört kayıttan birinde çıkıyor, kalanı toplu araştırma ile insan testine kalıyor.
 
 **İkinci katman, toplu araştırma.** Bazı soruların cevabı aday başına değil, niş ve şehir başına aynı yerden geliyor. "Bu şehirde bu nişte kim eleman arıyor" sorusu için yüz ayrı arama yapmanın anlamı yok; tek arama yapılır, çıkan işletme adları listeye dağıtılır. İki soru böyle:
 

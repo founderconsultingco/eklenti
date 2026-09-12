@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.28.0
+Aracın sürümü: 0.29.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -55,11 +55,12 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.28.0"
+SURUM = "0.29.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
-          "yorum_sayisi", "puan", "kategori", "ipuclari", "elenme", "harita"]
+          "yorum_sayisi", "puan", "kategori", "ipuclari", "yorum_alinti", "elenme",
+          "harita"]
 EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", "sizinti",
            "bulgu", "kanca", "lira", "denetim_tarihi", "asama", "telefon_durumu",
            "eposta_durumu", "instagram_durumu", "video_durumu", "temas_sayisi",
@@ -262,6 +263,12 @@ def satir_bul(satirlar, anahtar, semt=None):
 
 def ozet_satir(s):
     _b, _k, _kaynak = gozlem(s)
+    # Uyari isareti bulgunun yerine gecmez, yanina yazilir: aday aranmadan once
+    # dogrulanacak demektir.
+    _ip = set((s.get("ipuclari") or "").split())
+    _uyari = [u for u in UYARI_ISARET if u in _ip]
+    if _uyari:
+        _b = ((_b + " ") if _b else "") + "[kapanmış olabilir, önce doğrula]"
     return " | ".join([s["kisa_ad"] or s["ad"], s["telefon"] or "telefon yok", s["sahibi"] or "sahibi ?",
                        "sızıntı " + (s["sizinti"] or "-"), s["asama"] or "yeni",
                        ("son " + s["son_temas_tarihi"] + " " + s["son_temas_kanali"]).strip() if s["son_temas_tarihi"] else "temas yok",
@@ -708,8 +715,12 @@ TOPLU_ISARET = ["is_ilani", "reklam_veriyor"]
 IPUCU_GOZLEM = [
  ("is_ilani", "İş ilanı var: telefona bakacak kişi arıyor",
   "Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"),
- ("yorum_sikayet", "Son yorumlarda aranıp ulaşılamadığını yazan bir müşteri var",
-  "Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"),
+ ("sikayet_ulasilamiyor", "Yorumlarda telefona ulaşılamadığını yazan bir müşteri var",
+  "Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"),
+ ("sikayet_gelmedi", "Yorumlarda söz verilen gün gelinmediğini yazan bir müşteri var",
+  "Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"),
+ ("yorum_sikayet", "Son yorumlarda kaçan talebe işaret eden bir yorum var",
+  "Google yorumlarınızdan biri yetişilemeyen bir müşteriyi anlatıyor"),
  ("profil_sahipsiz", "Google işletme profili sahiplenilmemiş görünüyor",
   "Google'daki işletme sayfanız sahiplenilmemiş görünüyor"),
  ("aksam_kapali", "Google'da hafta içi kapanış saati 18.00 ve öncesi",
@@ -731,10 +742,15 @@ IPUCU_BIRLESIK = [
  (("reklam_veriyor", "aksam_kapali"),
   "Reklam veriyor ama Google'da akşam altıda kapanıyor",
   "Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"),
- (("reklam_veriyor", "yorum_sikayet"),
+ (("reklam_veriyor", "sikayet_ulasilamiyor"),
   "Reklam veriyor ve yorumlarda ulaşılamadığı yazıyor",
-  "Reklam veriyorsunuz ama yorumlarınızdan birinde 'aradım açan olmadı' yazıyor"),
+  "Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"),
 ]
+
+
+# Kanca olmayan, elle bakilmasi gereken isaretler. Yorumda "bina yikilmis",
+# "dukkan tasinmis" yaziyorsa aday aranmaz, once dogrulanir.
+UYARI_ISARET = ["kapanmis_olabilir"]
 
 
 def ipucu_gozlem(s):
@@ -756,9 +772,19 @@ def gozlem(s):
     if s.get("bulgu"):
         return s["bulgu"], s.get("kanca") or "", "denetim"
     g = ipucu_gozlem(s)
-    if g:
-        return g[0], g[1], "profil"
-    return "", "", ""
+    if not g:
+        return "", "", ""
+    bulgu, kanca = g
+    # Veri servisi sikayet cumlesini oldugu gibi getiriyorsa genel cumle yerine
+    # musterinin kendi cumlesi kullanilir. Kendi cumlesi her zaman daha guclu.
+    alinti = (s.get("yorum_alinti") or "").strip()
+    ip = set((s.get("ipuclari") or "").split())
+    if alinti and ("yorum_sikayet" in ip or "sikayet_ulasilamiyor" in ip
+                   or "sikayet_gelmedi" in ip):
+        kisa = alinti if len(alinti) <= 140 else alinti[:137].rstrip() + "..."
+        bulgu = "Yorumda yazıyor: " + kisa
+        kanca = "Google yorumlarınızdan birinde şöyle yazıyor: \"%s\"" % kisa
+    return bulgu, kanca, "profil"
 
 
 def acik(s):
@@ -1285,11 +1311,13 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // gitmesin diye var. Sira guclu olandan zayifa.
 var IPUCU_BIRLESIK=[
  [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
- [['reklam_veriyor','yorum_sikayet'],"Reklam veriyorsunuz ama yorumlarınızdan birinde 'aradım açan olmadı' yazıyor"]
+ [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"]
 ];
 var IPUCU_KANCA=[
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
- ['yorum_sikayet',"Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"],
+ ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
+ ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
+ ['yorum_sikayet',"Google yorumlarınızdan biri yetişilemeyen bir müşteriyi anlatıyor"],
  ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
  ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
  ['saat_yok',"Google'da çalışma saatiniz yazmıyor"],
@@ -1298,6 +1326,12 @@ var IPUCU_KANCA=[
  ['instagram_yok',"Instagram hesabınızı bulamadım"]
 ];
 function profilKancasi(r){
+ // Sikayet cumlesi geldiyse genel cumle yerine musterinin kendi cumlesi.
+ var al=(r.yorum_alinti||'').trim();
+ if(al&&(r._ipucu.indexOf('yorum_sikayet')>=0||r._ipucu.indexOf('sikayet_ulasilamiyor')>=0||r._ipucu.indexOf('sikayet_gelmedi')>=0)){
+  if(al.length>140) al=al.slice(0,137).replace(/\s+$/,'')+'...';
+  return 'Google yorumlarınızdan birinde şöyle yazıyor: "'+al+'"';
+ }
  for(var j=0;j<IPUCU_BIRLESIK.length;j++){
   var k=IPUCU_BIRLESIK[j][0], hepsi=true;
   for(var m=0;m<k.length;m++) if(r._ipucu.indexOf(k[m])<0) hepsi=false;
@@ -1306,7 +1340,7 @@ function profilKancasi(r){
  for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
  return '';
 }
-var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda "ulaşamadım"','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda şikayet','uyari'],sikayet_ulasilamiyor:['Yorumda "ulaşamadım"','uyari'],sikayet_gelmedi:['Yorumda "gelmediler"','uyari'],kapanmis_olabilir:['Kapanmış olabilir','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}

@@ -157,11 +157,13 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // gitmesin diye var. Sira guclu olandan zayifa.
 var IPUCU_BIRLESIK=[
  [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
- [['reklam_veriyor','yorum_sikayet'],"Reklam veriyorsunuz ama yorumlarınızdan birinde 'aradım açan olmadı' yazıyor"]
+ [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"]
 ];
 var IPUCU_KANCA=[
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
- ['yorum_sikayet',"Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"],
+ ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
+ ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
+ ['yorum_sikayet',"Google yorumlarınızdan biri yetişilemeyen bir müşteriyi anlatıyor"],
  ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
  ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
  ['saat_yok',"Google'da çalışma saatiniz yazmıyor"],
@@ -170,6 +172,12 @@ var IPUCU_KANCA=[
  ['instagram_yok',"Instagram hesabınızı bulamadım"]
 ];
 function profilKancasi(r){
+ // Sikayet cumlesi geldiyse genel cumle yerine musterinin kendi cumlesi.
+ var al=(r.yorum_alinti||'').trim();
+ if(al&&(r._ipucu.indexOf('yorum_sikayet')>=0||r._ipucu.indexOf('sikayet_ulasilamiyor')>=0||r._ipucu.indexOf('sikayet_gelmedi')>=0)){
+  if(al.length>140) al=al.slice(0,137).replace(/\s+$/,'')+'...';
+  return 'Google yorumlarınızdan birinde şöyle yazıyor: "'+al+'"';
+ }
  for(var j=0;j<IPUCU_BIRLESIK.length;j++){
   var k=IPUCU_BIRLESIK[j][0], hepsi=true;
   for(var m=0;m<k.length;m++) if(r._ipucu.indexOf(k[m])<0) hepsi=false;
@@ -178,7 +186,7 @@ function profilKancasi(r){
  for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
  return '';
 }
-var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda "ulaşamadım"','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda şikayet','uyari'],sikayet_ulasilamiyor:['Yorumda "ulaşamadım"','uyari'],sikayet_gelmedi:['Yorumda "gelmediler"','uyari'],kapanmis_olabilir:['Kapanmış olabilir','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}
