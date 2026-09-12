@@ -106,7 +106,7 @@ Bitince: "Liste hazır. Mesajlar bir sonraki bloğun akşamı gidiyor: nişindek
 ## 7. Ne yazar
 
 İş Beyni'ne: A listesindeki kişi sayısı, B listesindeki kişi sayısı, listenin çıkarıldığı tarih, hangi yerlerin tarandığı.
-Kayıt yerine (CRM açıldıysa CRM; açılmadıysa İş Beyni'nin sekizinci bölümü, üçüncü bloktan sonra `adaylar.csv`): A listesindeki isimler, aşamaları "yeni", "sıcak" işaretiyle.
+Kayıt yerine (CRM açıldıysa CRM; açılmadıysa İş Beyni'nin sekizinci bölümü, üçüncü bloktan sonra `adaylar.csv`): A listesindeki isimler, aşamaları "yeni", "sıcak" işaretiyle (`adaylar.csv`'ye aday aracıyla, kaynak "tanıdık" ve bağlayan adıyla; aday-listesi-dosyasi).
 B listesi: CRM açıldıysa CRM'deki "B listesi" listesine; açılmadıysa klasörde `baglantilar.csv` dosyasına, üç kademeye sıralanmış halde. Aday havuzuna girmiyorlar.
 Bir sonraki modüllere: A ve B listeleri tanidiga-mesaj-yaz'a, "sıcak" işareti aday-listesi-cikar'a (o kayıtlar soğuk listeden çıkarılıyor).
 

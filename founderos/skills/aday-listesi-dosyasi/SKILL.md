@@ -1,84 +1,83 @@
 ---
 user-invocable: false
 name: aday-listesi-dosyasi
-description: "adaylar.csv'nin sutunlari ve degerleri, adaylar.html sayfasinin kurulmasi (sablon bu klasorde) ve veri dosyasinin yenilenme komutu. Liste ilk yazilirken, adaylar.csv'ye her yazistan sonra ve ogrenci listesini sorunca acilir."
+description: "Aday listesinin kurallari: adaylar.csv'nin otuz sekiz sutunu, adaylar.html sayfasi (Liste ve Saha modu) ve aday aracinin komutlari (cek, ekle, guncelle, temas, sonuclar, sil, bugun, ozet, bul, sayfa). Cekim bitince, denetim yazilirken, sabah gunun listesi kurulurken, saha sonuclari yapistirilinca ve ogrenci listesini sorunca acilir."
 ---
 
-# Aday listesi dosyası ve sayfası
+# Aday listesi: dosya, sayfa ve araç
 
-Öğrencinin aday havuzunun CRM açılana kadarki tek yeri klasördeki `adaylar.csv` dosyasıdır; yanında öğrencinin gözüyle baktığı `adaylar.html` sayfası durur. Bu dosya ikisinin de kurallarını taşır: sütunlar, değerler, kim ne yazar, sayfa nasıl üretilir ve yenilenir. Modüller sütun adını buradan alır, kendi başına sütun uydurmaz.
+Öğrencinin aday havuzu klasöründeki `adaylar.csv` dosyasıdır; öğrenci onu `adaylar.html` sayfasından görür; ikisini de `.founderos/adaylar-arac.py` aracı yönetir. FounderOS csv'yi elle düzenlemez: satır eklemek, hücre değiştirmek, günün listesini çıkarmak, sayfayı yenilemek, hepsi aracın komutlarıyla olur. Araç yanlış sütun adını, yanlış aşama adını, yanlış tarihi kabul etmez; her yazıştan önce yedek alır, her yazıştan sonra sayfayı kendisi yeniler. Bu dosya sütunları, komutları ve ne zaman hangisinin çalıştırılacağını verir.
 
-## Üç dosya, tek klasör
+## Klasördeki dosyalar
 
-- `adaylar.csv`: kayıtların kendisi. Veri servisinden gelen satırlar FounderOS tarafından buraya eklenir, denetim ve temas bilgisi buraya işlenir. UTF-8, virgülle ayrılmış, başlık satırı bir kere.
-- `adaylar.html`: öğrencinin çift tıklayıp tarayıcıda açtığı sayfa. Bir kere yazılır, bir daha değişmez. Veriyi yanındaki `adaylar-veri.js` dosyasından okur.
-- `adaylar-veri.js`: `adaylar.csv`'nin sayfaya okunacak kopyası ve üretilme saati. Her csv değişikliğinden sonra FounderOS yeniden üretir; öğrenci bu dosyayı hiç görmez.
+- `adaylar.csv`: kayıtların kendisi, tek kaynak. UTF-8, virgülle ayrılmış, başlık bir kere.
+- `adaylar.html`: öğrencinin çift tıklayıp tarayıcıda açtığı sayfa. Araç her yazıştan sonra yeniden üretir; veri sayfanın içinde gömülüdür, yanına başka dosya gerekmez. İki sekmesi var: Liste (bütün havuz, arama, süzgeç, sıralama, satıra tıklayınca ayrıntı) ve Saha modu (bugün sırada olanlar kart kart: telefon, sahibi, bulgu, kanca, açılış cümlesi ve itirazlar; her kartta sonuç düğmeleri; sonunda "Sonuçları kopyala").
+- `.founderos/`: gizli çalışma klasörü, öğrenci görmez. İçinde `adaylar-arac.py` (araç), `adaylar-sablon.html` (sayfa şablonu), `sayfa.json` (niş adı, açılış cümlesi, itirazlar), `gelen.csv` (servisten son inen ham sayfa), `sonuc.txt` (öğrencinin yapıştırdığı son saha sonuçları), `yedek/` (son on csv yedeği). Klasör kuralının üçüncü istisnasıdır; başka bir şey buraya yazılmaz.
 
-Öğrenci csv'yi Excel'de açmaz, açmak isterse sayfaya yönlendirilir: "Listeyi görmek için klasördeki `adaylar.html` dosyasına çift tıkla." Sayfa Excel'e göre üç şeyi daha iyi yapar: ipuçlarını Türkçe rozet olarak gösterir, bugün sırada olanı yeşil, günü geçmişi turuncu boyar, satıra tıklayınca ayrıntıyı açar.
+Öğrenci csv'yi Excel'de açmaz, açmak isterse sayfaya yönlendirilir. Yer tarifi çıplak yol değil, adım adım: "Masaüstü, sonra FounderOS klasörü, `adaylar.html` dosyası; üstüne çift tıkla, tarayıcıda açılır."
 
-## Sütunlar (sıra ve ad sabittir)
+## Kurulum (bir kere, listenin çıktığı gün)
 
-İlk on dört sütun veri servisinin başlığıdır, FounderOS değiştirmez; kalan yirmi biri FounderOS ekler ve doldurur. Tarihler her yerde `YYYY-AA-GG` biçimindedir. Boş bilgi boş bırakılır, "yok" yazılmaz.
+1. `aday-listesi-araci` becerisini aç. Beceri açıldığında klasör yolu görünür; `adaylar-arac.py` ve `adaylar-sablon.html` orada durur. İkisini öğrencinin klasöründeki `.founderos/` altına kopyala (kopyalama komutuyla; olmazsa beceride gömülü duran iki metni aynı adlarla birebir yaz).
+2. Öğrencinin klasörünün içinde `python3 .founderos/adaylar-arac.py surum` çalıştır; sürüm numarası gelmeli. Gelmiyorsa dosya eksik ya da kesik kopyalanmıştır, yeniden kopyala. `python3` yoksa `python` dene.
+3. Niş bilgisini sayfaya yaz: `python3 .founderos/adaylar-arac.py sayfa --nis "Klima servisi" --acilis "<niş kartındaki açılış cümlesi>" --itiraz "<itiraz 1 ve karşılığı>" --itiraz "<itiraz 2>" --itiraz "<itiraz 3>"`. Saha modunda kartların üstünde bunlar durur.
+4. Öğrenciye tek cümle: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır."
 
-Servisten gelenler:
-1. `kisa_ad`: aramada ve mesajda kullanılan kısa işletme adı.
-2. `ad`: Haritalar'daki tam ad.
-3. `telefon`: `+90` ile başlayan tek biçim.
-4. `eposta`
-5. `instagram`: hesap adresi.
-6. `site`
-7. `adres`
-8. `semt`: ilçe ya da semt.
-9. `yorum_sayisi`
-10. `puan`: Haritalar puanı.
-11. `kategori`: Haritalar'ın verdiği kategori; kartla karşılaştırma bundan yapılır.
-12. `ipuclari`: boşlukla ayrılmış kodlar: `profil_sahipsiz`, `site_yok`, `instagram_yok`, `yorum_az`, `aksam_kapali`, `hafta_sonu_kapali`, `pazar_kapali`, `saat_yok`. Hızlı denetimin dışarıdan görülen kısmı; sayfa bunları Türkçe gösterir.
-13. `elenme`: servisin işaretlediği sebep (`kapali`, `tekrar`, `iletisim_yok`, `zincir`). Onayla silinen satır dosyadan çıkar; bu sütun dolu satır sayfada görünmez.
-14. `harita`: Haritalar bağlantısı.
+Beceri her sürümde araçla birlikte güncellenir. `surum` çıktısı becerideki sürümden küçükse iki dosyayı yeniden kopyala; csv'ye dokunma, araç eski dosyayı okur ve eksik sütunu kendisi ekler.
 
-FounderOS'un eklediği sütunlar:
-15. `eklenme_tarihi`: kaydın listeye girdiği gün. Çekim günü yazılır, sonra değişmez.
-16. `kaynak`: `haritalar`, `iş ilanı`, `elle`.
-17. `yuz`: en çok istenen yüz işletmedeyse `evet`, değilse boş.
-18. `sahibi`: karar verenin adı; derin denetimin onuncu maddesi.
-19. `uygunluk`: uygunluk puanı, 0-15. Sayfa A (10 ve üstü), B (6-9), C (5 ve altı) diye gösterir.
-20. `sizinti`: sızıntı puanı, 0-5. Denetlenmemişse boş.
-21. `bulgu`: en güçlü bulgu, tek cümle.
-22. `lira`: lira karşılığı, tek satır hesap.
-23. `denetim_tarihi`
-24. `asama`: `yeni`, `temasta`, `cevap verdi`, `randevu`, `görüşüldü`, `sonra`, `kapandı`, `müşteri`. Adayın işin neresinde olduğu; aynı anda tek değer.
-25. `telefon_durumu`, 26. `eposta_durumu`, 27. `instagram_durumu`, 28. `video_durumu`: dört kanalın durumu, her biri `yapılmadı`, `yapıldı`, `cevap geldi` ya da `kapandı`. Kuralı adaya-mesaj-yaz'da: bir kanaldan cevap gelince diğerleri durur.
-29. `temas_sayisi`: bütün kanallarda toplam temas.
-30. `son_temas_tarihi`, 31. `son_temas_kanali` (`telefon`, `e-posta`, `instagram`, `video`).
-32. `siradaki_hareket`: tek satır, örneğin "telefon, 3. gün takibi". Bir adayın aynı anda tek sıradaki hareketi olur.
-33. `siradaki_tarih`: o hareketin günü. Bugünse sayfa yeşil, geçmişse turuncu gösterir; günün listesi bu sütundan çıkar.
-34. `randevu_tarihi`
-35. `not`: serbest, kısa. "Kalfa açtı, sahibi öğleden sonra dükkanda" gibi.
+## Sütunlar (sıra ve ad sabittir, otuz sekiz sütun)
 
-Kim yazar: 1-14 veri servisi (aday-listesi-cikar Adım 1); 15-17 aday-listesi-cikar (Adım 5 ve 7); 18-23 aday-denetimi-cikar; 24-35 adaya-mesaj-yaz, gorusmeye-getir, gorusmeyi-analiz-et, sabah listesi (gunu-planla, sıradaki tarih) ve akşam kapanışı (rakamlari-oku). CRM açıldığı gün dosya CRM'e yüklenir ve "CRM'e taşındı, tarih" notuyla kapanır; o günden sonra sayfa da eskir, öğrenciye CRM gösterilir.
+İlk on dört sütun veri servisinin başlığıdır: `kisa_ad` (aramada ve mesajda kullanılan kısa ad), `ad` (Haritalar'daki tam ad), `telefon` (+90 ile tek biçim), `eposta`, `instagram`, `site`, `adres`, `semt`, `yorum_sayisi`, `puan`, `kategori` (Haritalar'ın verdiği; kartla karşılaştırma bundan), `ipuclari` (boşlukla ayrılmış kodlar: profil_sahipsiz, site_yok, instagram_yok, yorum_az, aksam_kapali, hafta_sonu_kapali, pazar_kapali, saat_yok), `elenme` (dolu satır listede yoktur: servisin sebebi ya da "aday istemedi" gibi sonradan yazılan sebep; satır silinmez), `harita`.
 
-## Sayfa nasıl kurulur (bir kere, listenin çıktığı gün)
+Kalan yirmi dördü FounderOS'un aracıyla doldurduğu sütunlar:
+- `eklenme_tarihi`: kaydın listeye girdiği gün, araç yazar, sonra değişmez.
+- `kaynak`: haritalar, iş ilanı, elle, tanıdık, referans. `baglayan`: tanıdık ya da referansta kimin bağladığı.
+- `yuz`: en çok istenen yüz işletmedeyse evet.
+- Denetim: `sahibi` (karar veren), `uygunluk` (0-15; sayfa A 10 ve üstü, B 6-9, C 5 ve altı), `sizinti` (0-5), `bulgu` (en güçlü bulgu, tek cümle), `kanca` (o adaya söylenecek tek cümle), `lira` (lira karşılığı, tek satır hesap), `denetim_tarihi`.
+- Temas: `asama` (yeni, temasta, cevap verdi, randevu, görüşüldü, sonra, kapandı, müşteri; tek değer), `telefon_durumu`, `eposta_durumu`, `instagram_durumu`, `video_durumu` (her biri yapılmadı, yapıldı, cevap geldi, kapandı), `temas_sayisi`, `son_temas_tarihi`, `son_temas_kanali` (telefon, e-posta, instagram, video), `siradaki_hareket` (tek satır, adayın tek sonraki adımı), `siradaki_tarih` (o adımın günü; bugünse sayfada yeşil, geçmişse turuncu; günün listesi buradan çıkar), `randevu_tarihi` (YYYY-AA-GG SS:DD), `not` (kısa; araç her notun başına günü koyar).
 
-Şablon bu becerinin klasöründe `adaylar.html` adıyla durur; beceri açıldığında klasörün yolu görünür. aday-listesi-cikar'ın yedinci adımında, `adaylar.csv` ilk kez yazıldığında FounderOS şablonu öğrencinin klasörüne `adaylar.html` adıyla olduğu gibi kopyalar: yolu biliyorsa kopyalama komutuyla, bilmiyorsa dosyayı okuyup aynı adla birebir yazarak. Şablonun içi değiştirilmez, kısaltılmaz, "iyileştirilmez". Kopyaladıktan sonra dosyanın `</html>` ile bittiği ve 12.000 bayttan büyük olduğu kontrol edilir; tutmuyorsa yeniden kopyalanır. Sonra veri dosyası üretilir (aşağıda) ve öğrenciye tek cümle söylenir: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır." Sayfa daha sonra hiç yeniden yazılmaz; klasörde varsa dokunulmaz.
+Tarihler `YYYY-AA-GG`. Boş bilgi boş kalır, "yok" yazılmaz. Kim doldurur: 1-14 ve eklenme tarihi araç (cek, ekle); kaynak, bağlayan, yüz aday-listesi-cikar ve tanidik-listesi-cikar; denetim sütunları aday-denetimi-cikar; temas sütunları saha sonuçlarıyla (sonuclar) ve adaya-mesaj-yaz, gorusmeye-getir, gorusmeyi-analiz-et, gunu-planla, rakamlari-oku.
 
-## Veri dosyası nasıl yenilenir (her csv değişikliğinden sonra)
+## Komutlar
 
-`adaylar.csv`'ye her yazıştan sonra FounderOS öğrencinin klasörünün içinde şu komutu sessizce çalıştırır; satırlar sohbete girmez, öğrenci komut görmez:
+Hepsi öğrencinin klasörünün içinden: `cd "<klasör>" && python3 .founderos/adaylar-arac.py <komut>`. Komut ve ham çıktı sohbete girmez; sonucu tek iki cümleyle söylersin. Araç "HATA:" ile başlayan bir satır basarsa yazmamıştır, sebebi okur ve düzeltip yeniden çalıştırırsın.
 
-```
-python3 -c "import json,datetime;t=datetime.timezone(datetime.timedelta(hours=3));print('window.ADAYLAR='+json.dumps(open('adaylar.csv',encoding='utf-8').read())+';window.ADAYLAR_TARIH='+json.dumps(datetime.datetime.now(t).strftime('%d.%m.%Y %H:%M'))+';')" > adaylar-veri.js
-```
+**cek --is <iş kimliği> [--ozet] [--kategori-disi "<kategori>"]... [--tut "<ad>"]...** Veri servisinden biten çekimi kendisi indirir ve listeye ekler. Lisans anahtarını `is-beyni.md`'den bulur, ayrıca verilmez. Sıra: önce `--ozet` ile yalnız özeti al (kaç kayıt, kaçı telefonlu, servis kaçını neden işaretledi), öğrenciye "bunları listeye almıyorum, tamam mı?" de; sonra `--ozet` olmadan çalıştır. Kartın dışındaki Haritalar kategorileri `--kategori-disi` ile dışarıda kalır ("oto klima" gibi), öğrencinin "bunu tut" dediği işaretli satır `--tut` ile girer. Aynı çekim ikinci kez çalıştırılırsa tekrarlar atlanır, çift kayıt olmaz. "çalışıyor" derse çekim bitmemiştir, yirmi saniye sonra yine sorarsın. "veri servisine ulaşılamadı" derse yedek yol: `aday_sonuc` aracıyla sayfaları alır, servisin başlığıyla `.founderos/gelen.csv` dosyasına yazar, `ekle` çalıştırırsın.
 
-`python3` yoksa aynı işi yapan yedek:
+**ekle <dosya> [--kaynak K] [--baglayan AD] [--yuz] [--tut ...] [--kategori-disi ...]** Servis başlığıyla yazılmış bir csv'yi listeye ekler. Yedek yolda (tarayıcı eklentisi, elle liste), iş ilanı kaynağında (`--kaynak "iş ilanı"`), tanıdık A listesinde (`--kaynak tanıdık --baglayan "<kim>"`) kullanılır. Dosyada en az `kisa_ad` ve `telefon` sütunları olmalı; diğerleri boş kalabilir.
 
-```
-node -e "const fs=require('fs');fs.writeFileSync('adaylar-veri.js','window.ADAYLAR='+JSON.stringify(fs.readFileSync('adaylar.csv','utf8'))+';window.ADAYLAR_TARIH='+JSON.stringify(new Date().toLocaleString('tr-TR',{timeZone:'Europe/Istanbul',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}))+';')"
-```
+**guncelle "<işletme ya da telefon>" sutun=değer ... [--semt S]** Bir adayın hücrelerini değiştirir. Denetim bitince: `guncelle "Özkan Klima" sahibi="Özkan Bey" uygunluk=11 sizinti=4 bulgu="Akşam yedide aradım, açan olmadı" kanca="..." lira="4 arama x 1.800 TL" denetim_tarihi=bugün`. Yüz işletme seçilince: `yuz=evet`. Tarih için bugün, yarın, +3 ya da 2026-09-15 yazılır. `not=metin` notu tarihiyle sonuna ekler, `not==metin` notu baştan yazar. Aynı ad iki işletmede varsa araç durur ve seçenekleri basar; telefonla ya da `--semt` ile ayırırsın.
 
-İkisi de çalışmazsa FounderOS dosyayı kendisi yazar: `window.ADAYLAR=` artı csv'nin tamamı JSON dizesi olarak artı `;window.ADAYLAR_TARIH="GG.AA.YYYY SS:DD";`. Bu son yol pahalıdır, yalnız komut çalışmadığında.
+**temas "<işletme>" --kanal telefon|e-posta|instagram|video --sonuc "..." [--durum cevap geldi|kapandı] [--asama ...] [--siradaki "..."] [--tarih +3] [--randevu "2026-09-15 14:00"] [--not "..."]** Tek bir temas işler: kanal durumunu, temas sayısını, son temas tarihini yazar, sıradaki hareketi ve tarihi kurar. Sohbette tek tek bildirilen temaslar için.
 
-Ne zaman yenilenir: çekim bitip liste yazıldığında, hızlı ve derin denetim sonuçları işlendiğinde, sabah günün listesi kurulduğunda (sıradaki tarihler yazılır), akşam kapanışında temaslar işlendiğinde ve öğrenci "listemi göster", "listemi yenile", "listem nerede" dediğinde. Sayfa açıkken yenilenen veri, sayfa tazelenince görünür; öğrenciye "sayfayı yenile" denir.
+**sonuclar .founderos/sonuc.txt** Öğrencinin sayfadaki "Sonuçları kopyala" düğmesiyle aldığı metni işler. Öğrenci o metni sohbete yapıştırınca metni olduğu gibi `.founderos/sonuc.txt` dosyasına yazar, komutu çalıştırır, çıktıyı tek cümleyle özetlersin ("Dokuz sonuç işlendi: iki randevu, üç ilgilendi, dördü açmadı; yarın altı takip var"). Metnin biçimi: her satır `işletme | kanal | sonuç | randevu: ... | tarih: ... | not: ...`. Sonuç kelimeleri ve aracın yaptığı: `açmadı` (telefon yapıldı, yarın tekrar), `gönderdim` (yazılı kanal yapıldı; ilk gönderimden 3, 7 ve 14 gün sonra takip; dördüncüden sonra "sonra"), `istemedi` (kanal ve aşama kapandı, bir daha aranmaz), `ilgilendi` (cevap geldi, aşama cevap verdi, üç gün sonra takip), `randevu` (aşama randevu, randevu tarihi yazılır, sıradaki hareket randevu hazırlığı), `sonra` (aşama sonra, verilen tarihte tekrar; tarih yoksa bir hafta). Modülün kuralı başka bir şey söylüyorsa üstüne `guncelle` ile düzeltirsin. Araç bulamadığı ya da anlamadığı satırları sonda listeler; onları elle işlersin.
 
-## Öğrenci listeyi sorunca
+**sil "<işletme>" --sebep "aday istemedi"** Satırı listeden çıkarır (elenme dolar, satır durur, sayfada görünmez). Onayla silinen servis satırları için de bu kullanılır.
 
-"Listem nerede", "listemi göster", "kimleri arayacağım", "Excel'de açayım mı" gibi her soruda cevap aynı: veri dosyası yenilenir ve sayfa gösterilir. Yer tarifi çıplak yol değil, adım adım: "Masaüstü, sonra FounderOS klasörü, `adaylar.html` dosyası; üstüne çift tıkla, tarayıcıda açılır." Sayfada ne göreceği tek cümleyle söylenir: yeşil satır bugün sırada, turuncu satır günü geçmiş, satıra tıklayınca ayrıntı açılır. Beş yüz satır sohbete dökülmez; öğrenci belli bir adayı sorarsa o adayın satırı okunup söylenir.
+**bugun [--planla --kanal telefon|yazı] [--sayi 100]** Günün listesini basar, dört grup sırasıyla: cevap verenler, takibi bugüne düşenler, denetimi hazır olanlar (yüz işletme önce, sızıntı puanı yüksek önce), denetimsizler. `--planla` ile sıradaki tarihi olmayan seçilenlere bugünü ve "ilk temas" hareketini yazar; sayfanın Saha modu o anda dolar. Sabah gunu-planla bunu çalıştırır: tam zamanlıda `--sayi 100`, işin yanında `--sayi 40`. Sekiz yüz satırı sohbete almazsın, bu çıktı yeter.
+
+**ozet** Sayılar: toplam, telefonlu, denetlenmiş, yüz, bugün sırada, gecikmiş, aşama dağılımı, bugün temas edilen, toplam temas. Akşam kapanışında (rakamlari-oku) ve İş Beyni'ne sayı yazarken buradan okunur.
+
+**bul "<metin>"** Ada, sahibine, semte ya da telefona göre satırları basar. Öğrenci bir adayı sorunca.
+
+**sayfa [--nis ...] [--acilis ...] [--itiraz ...]** Sayfayı yeniden üretir; niş bilgisi verilirse önce onu kaydeder. Her yazış zaten sayfayı yeniler; bu komut "listemi göster", "listemi yenile" dendiğinde ve niş bilgisi değiştiğinde çalışır.
+
+**surum** Aracın sürümü.
+
+## Ne zaman ne çalışır
+
+- Çekim bitince: `cek --ozet`, onay, `cek`. Sonra kurulum adımları (ilk kezse) ve öğrenciye sayfa cümlesi.
+- Yüz işletme seçilince: her biri için `guncelle ... yuz=evet`.
+- Hızlı ve derin denetim bitince: her aday için tek `guncelle` (sahibi, uygunluk, sızıntı, bulgu, kanca, lira, denetim tarihi).
+- Sabah, günün planı kurulurken: `bugun --planla`. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her aramadan sonra düğmeye bas, akşam Sonuçları kopyala."
+- Gün içinde öğrenci bir temas anlatırsa: `temas`.
+- Öğrenci saha sonuçlarını yapıştırınca: `sonuclar`.
+- Akşam kapanışında: `ozet`; sayılar İş Beyni'ne ve `olcum_yaz`'a.
+- Öğrenci "listem nerede", "listemi göster", "kimi arayacağım" derse: `sayfa`, sonra sayfayı tarif et; satırları sohbete dökme. Belli bir adayı sorarsa `bul`.
+- Öğrenci "Excel'de açayım mı" derse: hayır, sayfa; sebebini tek cümleyle söyle (ipuçları Türkçe, bugün sırada olan yeşil, satırda arama kartı).
+
+## Araç çalışmazsa
+
+`python3` de `python` da yoksa ya da araç açılmıyorsa gün durmaz: csv'yi bu dosyadaki sütun sırasıyla kendin yazarsın, sayfayı şablondaki `/*FOUNDEROS-VERI*/` yerine `window.ADAYLAR=<csv metni JSON dizesi>;window.ADAYLAR_TARIH="GG.AA.YYYY SS:DD";window.ADAYLAR_NIS={};` koyarak üretirsin. Pahalı yoldur; yalnız araç çalışmadığında, ve İş Beyni'nin on üçüncü bölümüne (açık işler) "aday aracı çalışmadı, tarih" yazılır.
+
+CRM açıldığı gün havuz CRM'e yüklenir (musteri-takip-sistemini-kur) ve csv "CRM'e taşındı, tarih" notuyla kapanır; o günden sonra kayıt yeri CRM'dir.

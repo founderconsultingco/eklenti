@@ -163,7 +163,7 @@ Teslim süresinde, tam zamanlı çalışana: "Müşterinin teslimi akşam bloğu
 
 İş Beyni'ne: gün sayacı, o günün planı, planın açılıp açılmadığı, tamamlanan blok, o gün kaç adayın derin denetiminin yapıldığı, ertesi güne kalan iş.
 CRM'e: hiçbir şey. Kayıtları modüllerin kendisi yazar, plan sadece sırayı verir.
-CRM açılmadıysa `adaylar.csv`'ye: bugün sıraya alınan her adayın sıradaki hareket ve sıradaki tarih sütunları (bugünün tarihi); sonra sayfanın verisi yenilenir (aday-listesi-dosyasi). Böylece `adaylar.html` sabah açıldığında günün adayları yeşil görünür.
+CRM açılmadıysa günün listesi aday aracıyla kurulur (aday-listesi-dosyasi, `bugun --planla`; tam zamanlıda yüz, işin yanında kırk): bugün sıraya alınan adayların sıradaki tarihi bugüne yazılır, sayfanın Saha modu dolar. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Sekiz yüz satır sohbete okunmaz, aracın çıktısı yeter.
 
 ## 8. Yedek yol
 

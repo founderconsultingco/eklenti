@@ -74,7 +74,7 @@ Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki ge
 
 1. FounderOS kartındaki Haritalar kategori adını ve İş Beyni'ndeki şehrini alır, servise sekiz yüz kayıt ister. Beş yüz istiyorsun ama eleyeceksin.
 2. Servis "çalışıyor" der. FounderOS iş kimliğini hemen İş Beyni'ne yazar ve sana tek cümle söyler: "Çekim başladı, birkaç dakika sürer." Sonucu yirmi saniyede bir sorar, en fazla on kez; on sorguda bitmediyse başka işe geçer ve daha sonra yalnız sonucu sorar, çekimi yeniden başlatmaz. Çekim sunucuda sürdüğü için ekranı kapatsan da bozulmaz.
-3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı hangi sebeple işaretli.
+3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı hangi sebeple işaretli. Sen "tamam" deyince listeyi klasöre kendi aracıyla indirir (aday-listesi-dosyasi); satırlar sohbete dökülmez, çift kayıt olmaz.
 4. Ay başında bu çekim ilk çekimdir; genişletme ve aylık yenileme aynı yoldan yürür, hepsi aylık tavanın içinde.
 
 Şehrinde 800 çıkmıyorsa sıra şu: kartındaki diğer kategori adları (aynı şehir), sonra komşu iller. Her il ayrı bir çekimdir ve aylık tavan ilk listeyle birlikte üç çekime yetiyor; hangi ilin ekleneceğini haftanın kararı seçer. "Türkiye geneli" ayrı bir çekim değildir, il il açılmak demektir; o zaman mesajlardan "sizin şehirde" cümlesi çıkıyor.
@@ -88,8 +88,6 @@ Bir kural: kişisel hesap listeye girmiyor, işletme olarak açılmış hesap gi
 ### Adım 2b: iş ilanı kaynağı (15 dakika, her nişte)
 
 Bir işletme "resepsiyonist", "sekreter", "çağrı karşılama elemanı", "müşteri temsilcisi", "randevu asistanı" ilanı veriyorsa telefonu kaçırdığını kendi ağzıyla söylüyor demektir; bu, listedeki en sıcak niyet işaretidir. Kartın "iş ilanı kelimeleri" satırındaki kelimelerle (kartta yoksa varsayılan altı kelime: resepsiyonist, sekreter, çağrı karşılama, müşteri temsilcisi, randevu asistanı, ön büro) üç yere bakılır: iş ilanı siteleri (nişin ve şehrin adıyla arama), Instagram'da işletmenin son gönderi ve hikâyeleri ("eleman arıyoruz"), işletmenin sitesindeki "kariyer" sayfası. Bulunan işletme zaten listedeyse kaydına "ilan var: [tarih], [ilan başlığı]" yazılır; listede yoksa Haritalar'dan bulunup eklenir. Bu adımdan çıkan işletmeler en çok istenen yüze doğrudan girer ve denetim kartında dokuzuncu satırı dolu gelir. On beş dakikada beş on işletme çıkar; sıfır çıkarsa sorun değil, ay sonunda tekrar bakılır.
-
-### Adım 3: temizlik (40 dakika)
 
 ### Adım 3: temizlik (20 dakika, onay senin)
 
@@ -145,7 +143,7 @@ Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adım
 
 ### Adım 7: listeyi kayıt yerine koy (15 dakika)
 
-**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır. Sütunlar ve değerler aday-listesi-dosyasi'nda sabittir: ilk on dört sütun servisin başlığı (kısa ad, ad, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, puan, kategori, ipuçları, elenme, harita), kalan yirmi biri FounderOS'un eklediği eklenme tarihi, kaynak, yüz işareti, denetim sütunları (sahibinin adı, uygunluk puanı, sızıntı puanı, en güçlü bulgu, lira karşılığı, denetim tarihi) ve temas sütunları (aşama, dört kanalın durumu, temas sayısı, son temas, sıradaki hareket ve tarihi, randevu tarihi, not). Her kayda eklenme tarihi o günün tarihiyle yazılır. Kaynak tek: Haritalar. Başlık satırı bir kere yazılır, servisin sayfaları altına eklenir. Dosya ilk kez yazıldığında yanına `adaylar.html` sayfası kurulur ve veri dosyası üretilir (şablon ve komut aday-listesi-dosyasi'nda); listeyi o sayfadan görürsün, Excel açmazsın. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
+**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır. Sütunlar ve değerler aday-listesi-dosyasi'nda sabittir: ilk on dört sütun servisin başlığı (kısa ad, ad, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, puan, kategori, ipuçları, elenme, harita), kalan yirmi dördü FounderOS'un eklediği eklenme tarihi, kaynak ve bağlayan, yüz işareti, denetim sütunları (sahibinin adı, uygunluk puanı, sızıntı puanı, en güçlü bulgu, kanca, lira karşılığı, denetim tarihi) ve temas sütunları (aşama, dört kanalın durumu, temas sayısı, son temas, sıradaki hareket ve tarihi, randevu tarihi, not). Her kayda eklenme tarihi o günün tarihiyle yazılır. Kaynak tek: Haritalar. Başlık satırı bir kere yazılır, servisin sayfaları altına eklenir. Dosyayı ve yanındaki `adaylar.html` sayfasını FounderOS'un aday aracı yazar (aday-listesi-dosyasi); FounderOS csv'yi elle düzenlemez, her yazıştan sonra sayfa kendiliğinden yenilenir. Sayfanın iki sekmesi var: Liste ve Saha modu. Listeyi oradan görürsün, Excel açmazsın. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
 
 **CRM açıldıysa:** aşağıdaki yedi adım, gerçek listeyle.
 
@@ -163,7 +161,7 @@ Liste ayda bir tamamen yenileniyor ama her gün yeniden sıralanıyor. İkisi ay
 
 **Ayda bir:** yüz işletme yeniden seçiliyor ve hızlı denetimler tazeleniyor. Yeni çekim yalnız liste beş yüzün altına düştüyse ya da şehir veya sektör değiştiyse yapılıyor; o zaman modül baştan çalışıyor ve sen sadece silme onayını veriyorsun.
 
-**Her gün:** sabah bloğunda "günaydın" yazıyorsun ve o günün saha listesi hazır geliyor. Sen sıralamıyorsun, kimi arayacağına karar vermiyorsun; sıralamayı FounderOS kuruyor, CRM'de hazır böyle bir ekran yok. Sıra sabit, dört basamak:
+**Her gün:** sabah bloğunda "günaydın" yazıyorsun ve o günün saha listesi hazır geliyor. Sen sıralamıyorsun, kimi arayacağına karar vermiyorsun; sıralamayı FounderOS kuruyor, CRM'de hazır böyle bir ekran yok. Liste sayfanın Saha modu sekmesinde kart kart durur: telefon, sahibi, bulgu, kanca, açılış cümlesi, itirazlar. Her aramadan sonra karttaki düğmeye basıyorsun (açmadı, istemedi, ilgilendi, randevu, sonra ara), akşam "Sonuçları kopyala" deyip FounderOS'a yapıştırıyorsun; kayıtları ve yarının sırasını o yazıyor. Sıra sabit, dört basamak:
 
 1. **Cevap verenler.** Mesajına dönmüş, telefonu açmış, "sonra ara" demiş herkes. En başta duruyorlar, çünkü cevap veren adayın ilgisi bir günde soğuyor.
 2. **Takip günü gelenler.** Üçüncü, yedinci ve on dördüncü gün zincirinde bugüne düşenler.
@@ -193,21 +191,21 @@ Daha az kayıt çekmek isterse: "800 çekiyoruz çünkü eleyeceğiz. Doksan gü
 Tavan dolduysa: "Bu ayın tavanı doldu; servis gelecek ay yeniden açılıyor. Bugün tarayıcı eklentisiyle elle devam ediyoruz, yüz işletme çıkar."
 Yorumları da çekelim derse: "Hayır. Yorumlara hızlı denetimde gözünle bakıyorsun, yüz işletme için yetiyor."
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
-Liste ilk kez yazılınca: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır. Yeşil satır bugün sırada, turuncu satır günü geçmiş; satıra tıklayınca ayrıntısı açılır."
+Liste ilk kez yazılınca: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her aramadan sonra düğmeye bas."
 Listeyi görmek isteyince: "Veriyi yeniledim. `adaylar.html` dosyasını aç; açıksa sayfayı yenile."
 Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?"
 
 ## 7. Ne yazar
 
 Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`): bütün kayıtlar, aşamaları "yeni", "soğuk" işaretiyle, kaynağı ve nereden bulunduğu yazılı. En çok istenen yüz işletme ayrı işaretle. Denetimi bitenlerde sızıntı puanı ve en güçlü bulgu dolu; denetim kartının kendisini aday-denetimi-cikar yazıyor.
-Klasöre: `adaylar.csv` ilk kez yazıldığında yanına `adaylar.html` (şablon aday-listesi-dosyasi'nda, olduğu gibi kopyalanır) ve her yazıştan sonra `adaylar-veri.js` (yenileme komutu aynı yerde).
+Klasöre: `adaylar.csv` ve `adaylar.html`, aday aracıyla; ilk gün gizli `.founderos/` klasörü ve araç kurulur (aday-listesi-araci), niş bilgisi sayfaya yazılır (aday-listesi-dosyasi).
 İş Beyni'ne: listenin çıkarıldığı tarih, çekimin iş kimliği, ham kayıt sayısı, servisin işaretlediği ve onayla silinen sayılar, kalan sayı, yüz işletmenin seçim tarihi, hızlı denetimi biten sayı, kullanılan kategori adı ve kapsanan ilçeler, bu ayki kullanım ve tavan, yedek yol kullanıldıysa tarihi.
 Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, sızıntı puanı ve en güçlü bulgu adaya-mesaj-yaz ile video-mesaj-cek'e, denetimi bitmiş otuz işletme kanitini-hazirla'nın yarınki deneme aramalarına, kategori adı ve seçilen yol bir sonraki ay tekrarı için kendine.
 
 ## 8. Yedek yol
 
 - Veri servisi kapalıysa, çekim iki denemede de hata verirse ya da aylık tavan dolduysa: tarayıcı eklentisi yoluna geçiliyor; günün içinde geçiliyor ve bugünün çıktısı yüz işletme oluyor. Servis açılınca kalan kayıt servisten çekiliyor.
-- Tarayıcı eklentisi de çalışmazsa: elle yazma, en son çare. Bir tabloya altı sütun açıyorsun (işletme adı, telefon, web sitesi, semt, yorum sayısı, Instagram) ve Haritalar'da çıkan her işletmeyi yazıyorsun. Yavaş yol, o yüzden önce diğer ikisi deneniyor.
+- Tarayıcı eklentisi de çalışmazsa: elle yazma, en son çare. Bir tabloya altı sütun açıyorsun (işletme adı, telefon, web sitesi, semt, yorum sayısı, Instagram) ve Haritalar'da çıkan her işletmeyi yazıyorsun. Yavaş yol, o yüzden önce diğer ikisi deneniyor. Yedek yoldan gelen kayıtlar da aynı dosyaya aracın ekle komutuyla girer (aday-listesi-dosyasi).
 - Şehrinde 500 çıkmazsa: kartın diğer kategori adları, sonra komşu iller, sonra Türkiye geneli. Üçü de yetmezse niş kararı haftanın kararına gidiyor.
 - Hızlı denetim bugün otuza ulaşmazsa: yarının deneme aramaları kaç işletme denetlendiyse o kadarıyla yapılıyor. Kalan denetim dördüncü bloğa kayıyor, saha ertelenmiyor.
 - CRM yüklemeyi kabul etmezse: liste `adaylar.csv` olarak kalıyor, temaslar oradan yürüyor, yükleme ilk boş saatte tekrarlanıyor.
