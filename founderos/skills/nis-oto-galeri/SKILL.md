@@ -96,6 +96,13 @@ Karşı taraf bunu söylerse:
 - "Yetki belgesi, mesleki yeterlilik derken zaten resmiyetle boğuluyorum, bir de yazılım mı." Söyle: "Belge ve yönetmelik tarafına hiç girmiyorum, o yük sizde kalıyor, ben azaltamam. Sistemin işi yalnız telefon ve mesaj tarafı; belge işiyle uğraştığınız bir öğleden sonra ilandan yazan alıcıya kim dönüyor, siz mi, sonra mı?" Ne için: sistemin mevzuat yükünü azaltmadığını dürüstçe söylemek ve sadece mesaj tarafındaki kaybı sormak; kartta esnaf odası başkanının mevzuat karmaşası şikayeti var, bunu tekrar etmezsin. Sonra: "sonra" derse görüşme iste; "yetişiyorum" derse teşekkür et ve kapat.
 - "Müşteri zaten pazarlık için geliyor, bot pazarlık yapamaz ki." Söyle: "Yapamaz, yapmıyor da; pazarlık sizin işiniz. Sistem sadece alıcının ne zaman geleceğini ve takası olup olmadığını alıp önünüze koyuyor. Pazarlığa oturmadan, mesajda kaybolan alıcı sizde ayda hiç oluyor mu, yoksa herkes vitrine kadar geliyor mu?" Ne için: pazarlığın galericide kaldığını kartın diliyle söylemek ve pazarlığa gelmeyen alıcıyı ona söyletmek. Sonra: "oluyor" derse saat iste; "herkes geliyor" derse teşekkür et ve kapat; FounderOS "sonra" yazar.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Vitrin, Rota, Anahtar. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: capraz, kivrim, akis.
+Paletler: gece, celik, bordo.
+Tipografi: sade, teknik.
+
 **Sahadan dolacak.** Türkiye'deki bağımsız galeri sayısında kaynaklar arasında ciddi fark var (35.000 ile 80.000 arası), gerçek sayı sahadan teyit edilmeli. Ortalama kâr marjı ve galericinin ayda kaç alım kapattığı. Sahibinden/arabam mesajlarına galeri özelinde gerçek dönüş süresi (bu oturumda sadece platform şikayetleri bulundu). Fiyat sorup vazgeçen adayların oranı ve geri kazanılma oranı. Hangi kademenin daha kolay satıldığı. Çalışan bir açılış cümlesi ve ilk vaka çalışması. Meta Reklam Kütüphanesi'nde galerilerin gerçek reklam durumu (bu oturumda erişilemedi).
 
 **Kaynaklar.**

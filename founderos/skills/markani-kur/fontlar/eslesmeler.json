@@ -1,0 +1,121 @@
+{
+ "teknik": {
+  "ad": "Teknik ve net",
+  "baslik": {
+   "ad": "Space Grotesk",
+   "paket": "space-grotesk",
+   "agirliklar": [
+    500,
+    700
+   ]
+  },
+  "govde": {
+   "ad": "Inter",
+   "paket": "inter",
+   "agirliklar": [
+    400,
+    500,
+    600
+   ]
+  }
+ },
+ "karakter": {
+  "ad": "Karakterli ve sıcak",
+  "baslik": {
+   "ad": "Bricolage Grotesque",
+   "paket": "bricolage-grotesque",
+   "agirliklar": [
+    600,
+    800
+   ]
+  },
+  "govde": {
+   "ad": "Inter",
+   "paket": "inter",
+   "agirliklar": [
+    400,
+    500,
+    600
+   ]
+  }
+ },
+ "editoryal": {
+  "ad": "Editoryal ve pahalı",
+  "baslik": {
+   "ad": "Instrument Serif",
+   "paket": "instrument-serif",
+   "agirliklar": [
+    400
+   ]
+  },
+  "govde": {
+   "ad": "Inter",
+   "paket": "inter",
+   "agirliklar": [
+    400,
+    500,
+    600
+   ]
+  }
+ },
+ "saglam": {
+  "ad": "Geniş ve sağlam",
+  "baslik": {
+   "ad": "Archivo",
+   "paket": "archivo",
+   "agirliklar": [
+    600,
+    800
+   ]
+  },
+  "govde": {
+   "ad": "Inter",
+   "paket": "inter",
+   "agirliklar": [
+    400,
+    500,
+    600
+   ]
+  }
+ },
+ "yumusak": {
+  "ad": "Yumuşak geometrik",
+  "baslik": {
+   "ad": "Sora",
+   "paket": "sora",
+   "agirliklar": [
+    600,
+    700
+   ]
+  },
+  "govde": {
+   "ad": "Inter",
+   "paket": "inter",
+   "agirliklar": [
+    400,
+    500,
+    600
+   ]
+  }
+ },
+ "sade": {
+  "ad": "Sade ve nötr",
+  "baslik": {
+   "ad": "Manrope",
+   "paket": "manrope",
+   "agirliklar": [
+    700,
+    800
+   ]
+  },
+  "govde": {
+   "ad": "Manrope",
+   "paket": "manrope",
+   "agirliklar": [
+    400,
+    500,
+    600
+   ]
+  }
+ }
+}

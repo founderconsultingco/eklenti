@@ -12,7 +12,7 @@ ciziyor. Bu betik bir tarayiciyi gorunmez kipte acip her adresi o olcude
 ekran goruntusu aliyor, PDF olanlari yazdiriyor. Tarayici bulunamazsa
 uretebildigini uretiyor, uretemedigini raporluyor; sessizce gecmiyor.
 """
-import glob, json, os, shutil, subprocess, sys, tempfile
+import base64, glob, json, os, re, shutil, subprocess, sys, tempfile
 
 # (ad, klasor, bicim, olcek)  bicim: png | png-saydam | pdf
 VARLIKLAR = [
@@ -76,6 +76,68 @@ def tarayici():
             return bulunan[-1]
     return None
 
+ESLESME = {
+ "teknik":    {"baslik": ("space-grotesk", "Space Grotesk", [500, 700]),
+               "govde":  ("inter", "Inter", [400, 500, 600])},
+ "karakter":  {"baslik": ("bricolage-grotesque", "Bricolage Grotesque", [600, 800]),
+               "govde":  ("inter", "Inter", [400, 500, 600])},
+ "editoryal": {"baslik": ("instrument-serif", "Instrument Serif", [400]),
+               "govde":  ("inter", "Inter", [400, 500, 600])},
+ "saglam":    {"baslik": ("archivo", "Archivo", [600, 800]),
+               "govde":  ("inter", "Inter", [400, 500, 600])},
+ "yumusak":   {"baslik": ("sora", "Sora", [600, 700]),
+               "govde":  ("inter", "Inter", [400, 500, 600])},
+ "sade":      {"baslik": ("manrope", "Manrope", [700, 800]),
+               "govde":  ("manrope", "Manrope", [400, 500, 600])},
+}
+ARALIK = {
+ "latin":     "U+0000-00FF,U+0131,U+2000-206F,U+20BA,U+2122,U+2191-2193",
+ "latin-ext": "U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF",
+}
+
+def fontlari_goc(kit_yolu, font_klasoru):
+    """Secilen esleşmenin woff2 dosyalarini kitin icine gomer.
+
+    Sebebi: kit ogrencinin makinesinde, matbaada ve baska bir bilgisayarda
+    ayni gorunmek zorunda. Yazi tipi disaridan cagrilirsa internet yoksa
+    sayfa sistem yazi tipine dusuyor ve marka bozuluyor."""
+    try:
+        govde = io_oku(kit_yolu)
+    except Exception:
+        return None
+    m = re.search(r'tipografi\s*:\s*["\']([a-z-]+)["\']', govde)
+    ad = m.group(1) if m else "teknik"
+    es = ESLESME.get(ad) or ESLESME["teknik"]
+    parca = []
+    for rol in ("baslik", "govde"):
+        paket, aile, agirliklar = es[rol]
+        for w in agirliklar:
+            for alt, aralik in ARALIK.items():
+                yol = os.path.join(font_klasoru, "%s-%s-%d.woff2" % (paket, alt, w))
+                if not os.path.exists(yol):
+                    continue
+                with open(yol, "rb") as d:
+                    b64 = base64.b64encode(d.read()).decode("ascii")
+                parca.append(
+                    "@font-face{font-family:'%s';font-style:normal;font-weight:%d;"
+                    "font-display:block;unicode-range:%s;"
+                    "src:url(data:font/woff2;base64,%s) format('woff2')}"
+                    % (aile, w, aralik, b64))
+    if not parca:
+        return None
+    stil = "<style>" + "".join(parca) + "</style>"
+    if "FOUNDEROS-FONT" in govde:
+        govde = re.sub(r"<style id=fos-font>.*?</style>", "", govde, flags=re.S)
+        govde = govde.replace("<!--FOUNDEROS-FONT-->", "<!--FOUNDEROS-FONT-->" + stil.replace("<style>", "<style id=fos-font>"), 1)
+    else:
+        govde = govde.replace("</title>", "</title><!--FOUNDEROS-FONT-->" + stil.replace("<style>", "<style id=fos-font>"), 1)
+    io_yaz(kit_yolu, govde)
+    return ad
+
+def io_oku(yol):
+    with open(yol, encoding="utf-8") as d:
+        return d.read()
+
 def pay_olc(tr, profil):
     """Gorunmez kipte --window-size dis pencere olcusudur; gorunen alan arac
     cubugu kadar kisa kalir ve ekran goruntusunun altinda beyaz serit birakir.
@@ -130,8 +192,11 @@ def main():
         print(json.dumps({"hata": "marka-kiti.html bulunamadi", "yol": kaynak},
                          ensure_ascii=False)); return 1
 
+    font_klasoru = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fontlar")
+    gomulen = fontlari_goc(kaynak, font_klasoru)
+
     tr = tarayici()
-    sonuc = {"uretilen": [], "uretilemeyen": [], "tarayici": tr}
+    sonuc = {"uretilen": [], "uretilemeyen": [], "tarayici": tr, "yazi_tipi": gomulen}
     if not tr:
         sonuc["hata"] = "tarayici-yok"
         sonuc["uretilemeyen"] = [a for a, _, _, _ in VARLIKLAR]
@@ -185,14 +250,13 @@ def main():
     buyuk = os.path.join(kok, "logo", "favicon.png")
     kucuk = os.path.join(kok, "logo", "favicon-32.png")
     if os.path.exists(buyuk):
-        if shutil.which("sips"):
-            calistir(["sips", "-z", "32", "32", buyuk, "--out", kucuk], 30)
-        if not os.path.exists(kucuk):
-            try:
-                from PIL import Image
-                Image.open(buyuk).resize((32, 32), Image.LANCZOS).save(kucuk)
-            except Exception:
-                pass
+        # her calismada yeniden uretilir; eski dosya duruyor diye atlanmaz
+        try:
+            from PIL import Image
+            Image.open(buyuk).resize((32, 32), Image.LANCZOS).save(kucuk)
+        except Exception:
+            if shutil.which("sips"):
+                calistir(["sips", "-z", "32", "32", buyuk, "--out", kucuk], 30)
         if os.path.exists(kucuk):
             sonuc["uretilen"].append("logo/favicon-32.png")
         else:

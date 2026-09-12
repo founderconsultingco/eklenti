@@ -102,6 +102,13 @@ Karşı taraf bunu söylerse:
 - "Bebek ve hamile işim zaten hastane yönlendirmesiyle geliyor." Söyle: "Hastaneden gelen için bir şey yapmaya gerek yok. Ben yenidoğan çekimini yaptırıp sonra kaybolan aile için arıyorum; aylık takip ya da bir yaş çekimi zamanı gelince o aileye sizin adınıza bir hatırlatma gitse ters olur mu?" Ne için: hastane kanalını tartışmamak, aynı ailenin sonraki seanslarını sormak; kartta yenidoğan artı takip seansları artı albüm içeren yıllık paketin sektörün kendi ürünü olduğu yazıyor, bunu sen söylemezsin. Sonra: "ters olmaz" derse saat iste; "hepsi kendi geliyor" derse teşekkür et, kapat; FounderOS "sonra" yazar.
 - "Stüdyoya zaten servet yatırdım, bir yazılıma daha param yok." Söyle: "Rakamı görüşmede konuşuruz; sezonda kaçan tek bir düğün sizde o ayın işinin ne kadarı eder, küçük bir parçası mı, yoksa ciddi bir bölümü mü?" Ne için: fiyatı görüşmeye bırakmak; kartın "kaçan tek düğün sezon ayındaki işin beşte biri ile yarısı" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de param yok" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Kare, Poz, Işık. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: mercek, cekirdek, hilal.
+Paletler: gece, kum, bordo.
+Tipografi: editoryal, yumusak.
+
 **Sahadan dolacak.** Gerçek DM/WhatsApp yanıt süreleri, DM'e ilk yanıtın kaç günde geldiği. Kapatma oranı, çalışan açılış cümlesi, hangi kademenin en çok satıldığı, ilk vaka çalışması. Kim karar veriyor sorusuna kaynaklı bir röportaj. Şehir bazlı yoğunluk sıralaması, İstanbul dışında. Zincir/franchise varlığı, Meta Reklam Kütüphanesi örnekleri. Fotoğrafçı esnafına özel sicil sayısı. Fiyat sorup kaybolan havuzunun büyüklüğü. Google Haritalar kategori adları. İYS'nin bu nişe özel uygulanışı. Sezon dışı (kasım-nisan) talep düşüşü.
 
 **Kaynaklar.**

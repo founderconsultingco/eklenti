@@ -78,6 +78,13 @@ Karşı taraf bunu söylerse:
 - "Randevu iptali hastanın suçu, biz ne yapalım." Söyle: "Hastanın iptali sizin suçunuz değil, doğru. Ben öbür yönü soruyorum: klinik tarafında bir saat değişince ya da kayınca hastaya haber sizden mi gidiyor, yoksa hasta kapıya gelince mi öğreniyor?" Ne için: iptali tartışmamak, klinikten hastaya giden teyidi sormak; kartta habersiz iptal edilen randevu şikayeti var, bunu sen söylemezsin, ona söyletirsin. Sonra: "bizden gidiyor" derse teşekkür et ve kapat; "gelince öğreniyor" derse "işte o teyit için kuruyorum" de ve saat iste.
 - "Ek maliyet, karşılığını göremem." Söyle: "Rakamı görüşmede konuşuruz; kliniğinizde randevusunu kaçırıp bir daha aramayan tek bir implant hastası bir günün işi mi eder, yoksa daha fazlası mı?" Ne için: fiyatı görüşmeye bırakmak; kartın "tek hasta bir günün cirosuna yakın, implant hastası onlarca katı" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de istemem" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Dent, Koltuk, Klinik. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: hilal, mercek, halka.
+Paletler: murekkep, derin, orman.
+Tipografi: sade, yumusak.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademenin satıldığı, ilk vaka çalışması. Ayrıca: Türkiye genelinde özel diş kliniği/poliklinik sayısı, il bazlı yoğunluk sıralaması, Meta Reklam Kütüphanesi'nde bu nişte görülen örnekler, 12 Kasım 2025 yönetmeliğinin tam madde numaraları ve bunların kliniğin kendi kayıtlı hastasına gönderdiği bire bir kontrol/randevu mesajını kapsayıp kapsamadığı, TDB'nin implant kalemine ait resmi tarife rakamı, özel klinik ölçeğinde günlük hasta/koltuk kapasitesi, İYS'nin sağlık hatırlatma mesajını ticari ileti sayıp saymadığı.
 
 **Kaynaklar.**

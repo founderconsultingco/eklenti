@@ -91,6 +91,13 @@ Karşı taraf bunu söylerse:
 - "Ucuzcu rakip çok, fiyat kırılıyor." Söyle: "Fiyatı kırılan iş küçük iş; ben kaçan büyük iş için arıyorum. Geçen ay keşfe gidip teklif verdiğiniz de sonra sessizce kaybolan bir tesisat ya da proje işi oldu mu, yoksa hepsi cevap verdi mi?" Ne için: fiyat rekabetini tartışmamak, kaybolan büyük teklifi sormak; kartta tek bir işin bedelinin çok geniş aralıkta değiştiği ve teklif alıp kaybolanların ustanın telefonunda durduğu yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "oldu" derse "işte o teklif için kuruyorum" de ve saat iste; "hepsi cevap verdi" derse teşekkür et, kapat; FounderOS "sonra" yazar.
 - "Fiyat listem zaten var, odanın tarifesini kullanıyorum." Söyle: "Tarife sizde, iyi; ama müşteri o tarifeyi görmüyor, fiyatı öğrenmek için yine sizi arıyor ya da yazıyor. O arama sahadayken düştüğünde müşteri bekliyor mu, yoksa bir sonraki ustaya mı geçiyor?" Ne için: tarifenin olmasıyla müşterinin fiyata ulaşmasını ayırmak; kartta oda tarifelerinin halka açık sayfalarda görünmediği yazıyor, bunu iddia etmezsin, ona sorarsın. Sonra: "bekler" derse teşekkür et ve kapat; "geçer" derse görüşme iste.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Hat, Devre, Saha. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: akis, dugum, kivrim.
+Paletler: murekkep, celik, koz.
+Tipografi: teknik, saglam.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademenin satıldığı, elektrikçi/tesisatçının kendi ağzından dert ve kelime dağarcığı (iki oturumdur zayıf kaldı), Elektrik İç Tesisleri Yönetmeliği'nin konut/işyeri için periyodik kontrol ve topraklama ölçümü maddelerinin tam metni, SMM belgesinin zorunluluk kapsamı, asansör periyodik kontrol yönetmeliğinin tam metni ve cezaları, iş yerlerinde topraklama ölçümü zorunluluğunu düzenleyen İSG yönetmeliğinin ilgili maddesi, meslek koluna göre esnaf sayısı kırılımı (Ticaret Bakanlığı'ndan özel talep gerekebilir), telefonu kimin açtığı, hangi kanaldan (telefon/WhatsApp/Instagram) daha kolay ulaşılıyor, site/apartman yönetiminde bakım firması seçimini kimin (yönetici mi, yönetim kurulu mu) yaptığı.
 
 **Kaynaklar.**

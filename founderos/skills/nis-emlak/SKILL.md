@@ -95,6 +95,13 @@ Karşı taraf bunu söylerse:
 - "Hafta sonu, akşam ben zaten telefondayım." Söyle: "Telefon yanınızda, ama yer gösterimleri de tam o saatlerde. Cumartesi bir dairede müşteriyle içerideyken yazan ikinci alıcıya o anda mı dönüyorsunuz, yoksa gösterim bitince mi?" Ne için: telefonun yanında olmasıyla açılabilmesini ayırmak; kartta yer gösterimlerinin gün içine ve hafta sonuna yığıldığı yazıyor, bunu ona söyletirsin. Sonra: "gösterim bitince" derse: "İşte o aradaki alıcı için kuruyorum" de ve saat iste; "o anda dönüyorum" derse teşekkür et ve kapat.
 - "Yetki belgesi, regülasyon derdim yeter, yeni sisteme param yok." Söyle: "Belge ve yönetmelik tarafına hiç girmiyorum, sistem ilan da paylaşmıyor; sadece size yazan alıcıya cevap verip yer gösterimine yazıyor. Rakamı görüşmede konuşuruz; kaçan tek bir alıcı sizde bir yer gösterimi mi eder, yoksa bir ayın komisyonu mu?" Ne için: sistemin mevzuata girmediğini kartın diliyle söylemek, fiyatı görüşmeye bırakmak ve kayıp birimini iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de param yok" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Portföy, Anahtar, Estate. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: kule, dugum, kademe.
+Paletler: derin, kum, celik.
+Tipografi: sade, editoryal.
+
 **Sahadan dolacak.** Gerçek ilan mesajı/arama dönüş süreleri (dakika bazında); İYS'nin mevcut talep sahibine (arayan kişiye) anlık dönüş mesajı için net istisna maddesi olup olmadığı; Google Haritalar'daki tam kategori adı; ortalama ilan başına gelen mesaj/arama sayısı; yer gösterimi randevusuna gelmeme (no-show) oranı; bu nişte hangi kademenin (1/2/3) en çok satıldığı; ilk vaka çalışması; franchise ofislerin merkezi CRM'iyle bu sistemin nasıl bir arada çalışacağı.
 
 **Kaynaklar.**

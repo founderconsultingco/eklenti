@@ -86,6 +86,13 @@ Karşı taraf bunu söylerse:
 - "Pazar kapalıyız, kayıp olmuyor." Söyle: "Pazar konusuna girmiyorum, o şehre göre değişiyor zaten. Ben hafta içi ve cumartesi, salon doluyken gelen mesajı soruyorum: o saatlerde yazan müşteriye kim dönüyor, siz mi, kalfa mı?" Ne için: pazarı tartışmamak; kartta pazar kuralının ile göre değiştiği ve asıl kaybın hafta içi cevap hızında olduğu yazıyor, bunu ona sorarsın. Sonra: "kalfa bakıyor, yetişiyor" derse teşekkür et ve kapat; "ben, ara verince" derse görüşme iste.
 - "Kadın kuaförüyüz, müşteri mahremiyeti önemli, botla konuşmaz." Söyle: "Doğru, saçla ilgili konuşma salonda, yüz yüze olur. Sistem sadece hangi hizmet istendiğini ve saati soruyor, sizin kelimelerinizle, nazikçe; işlemin detayına hiç girmiyor. Sizce müşteriyi rahatsız eden, nazik bir cevabın hemen gelmesi mi, yoksa akşam yazıp sabaha kadar cevap alamamak mı?" Ne için: mahremiyet kaygısını kabul edip sistemin nerede durduğunu söylemek; kartta şikayetlerin kaba davranış ve diyalog eksikliği üstüne olduğu ve tonun nazik kurulması gerektiği yazıyor, bunu işletmeciye söylemezsin. Sonra: "cevapsız kalmak" derse görüşmede kendi telefonundan denemesini teklif et ve saat iste; "yine de istemem" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Koltuk, Sıra, Ayna. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: halka, hilal, cekirdek.
+Paletler: koz, bordo, gece.
+Tipografi: karakter, yumusak.
+
 **Sahadan dolacak.** Bu nişe özel, bağımsız kaynaklı no-show oranı yok, sadece satıcı iddiaları var. Randevu uygulamalarının gerçek kullanım/penetrasyon oranı (Türkiye'de kaç kuaför/berber hangi yazılımı kullanıyor) bulunamadı, uygulama mağazası yorum sayıları düşük (Kuaförüm Yanımda 67 yorum, başka bir uygulama 3 yorum), ama bu düşük kullanımın kanıtı değil, sadece zayıf bir işaret. Berberin/kuaförün günlük gerçek kapasitesi (kaç müşteri), kim karar veriyor, işletmecinin kendi ağzından "boş koltuk" tarzı ifadeler, İYS'nin randevu hatırlatma mesajını kapsayıp kapsamadığı, güncel (2024-2025) toplam kuaför sayısı, gerçek dönüş süreleri, çalışan açılış cümlesi ve kapatma oranı hâlâ bilinmiyor.
 
 **Kaynaklar.**

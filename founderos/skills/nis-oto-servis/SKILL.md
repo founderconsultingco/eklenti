@@ -90,6 +90,13 @@ Karşı taraf bunu söylerse:
 - "Kış lastiği zaten zorunlu, insanlar kendiliğinden gelir." Söyle: "Ticari araçta zorunlu, binekte değil; binek müşterisi hava soğuyunca aklına gelirse geliyor. Geçen kış lastik değiştiren binek müşterilerine bu kış sizden bir hatırlatma gidiyor mu?" Ne için: zorunluluğun yalnız ticari araçta olduğunu kartın diliyle söylemek ve hatırlatmayı sormak. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
 - "Garantili araç bize zaten gelmez, yetkili servise gider." Söyle: "Bildiğim kadarıyla garantili araç sahibi de eşdeğer parça ve faturayla bağımsız serviste bakım yaptırabiliyor, garantisi düşmüyor; bunu müşteri çoğu zaman bilmiyor. Size 'aracım garantide, gelemem' diyen müşteri oluyor mu?" Ne için: kartın yasal sınırındaki bulguyu tek cümleyle söylemek ve bu müşterinin kapıya gelip gelmediğini sormak. Sonra: "oluyor" derse görüşme iste; "hiç olmaz, bize garantisiz gelir" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Garaj, Rota, Servis. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: capraz, akis, cekirdek.
+Paletler: gece, celik, koz.
+Tipografi: teknik, saglam.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat/gün içinde geri aranıyor). Günlük ortalama araç/iş kapasitesi (kaldıraç, köprü sayısına göre). Çalışan açılış cümlesi ve kapatma oranı. Hangi kademenin daha çok sattığı ve ilk vaka çalışması. Ustanın telefona bakma alışkanlığı (kendisi mi bakıyor, çırağa mı bırakıyor). Cam filmi ve oto elektrik segmentlerine özgü şikayet/forum kanıtı (bu araştırmada ayrı derinlemesine taranmadı, kapsam sınırlı kaldı). Google Haritalar'daki tam kategori adları.
 
 **Kaynaklar.**

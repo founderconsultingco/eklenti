@@ -89,6 +89,13 @@ Karşı taraf bunu söylerse:
 - "Ucuzcu müşteri var, ekstra ödemeye parası yok." Söyle: "Tek manikür, tek ağda soran sistemin hedefi değil zaten; paket soranı öne alıyor. Rakamı görüşmede konuşuruz; ay içinde kaçan tek bir epilasyon paketi müşterisi sizde bir koltuk saati mi eder, yoksa birkaç saat mi?" Ne için: fiyatı görüşmeye bırakmak; kartın "bir paket müşterisi üç boş koltuk saati" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de para yok" derse teşekkür et ve kapat.
 - "Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Söyle: "Reklam yapmıyorum zaten; öncesi sonrası fotoğrafı yok, 'tedavi' lafı yok, kampanya yok. Sistem size zaten yazan ve zaten paket almış müşteriyle konuşuyor. Şu an size yazan müşteriye cevap dakikalar içinde mi gidiyor, yoksa müsait olunca mı?" Ne için: iş modelinin reklam değil mevcut talep olduğunu söylemek; kartın yasal sınırındaki dil kuralına uyulduğunu belirtmek. Sonra: "müsait olunca" derse görüşme iste; "hemen gidiyor" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Ayna, Seans, Glow. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: hilal, mercek, halka.
+Paletler: bordo, kum, mor.
+Tipografi: editoryal, yumusak.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi versiyonu, kapatma oranı, hangi kademenin (1/2/3) daha çok satıldığı, ilk vaka çalışması, salon sahiplerinin bota karşı ilk tepkisi (güven mi şüphe mi), lazer epilasyon davasının güncel sonucu, Meta Reklam Kütüphanesi'nde bu niş için gerçek durum, adayın kendi talep kanalının hangisi olduğu.
 
 **Kaynaklar.**

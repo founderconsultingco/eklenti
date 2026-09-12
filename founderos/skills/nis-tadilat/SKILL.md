@@ -92,6 +92,13 @@ Karşı taraf bunu söylerse:
 - "Instagram'ı ajansa verdim, oradan geliyor zaten." Söyle: "Ajans gönderiyi atıyor, talebi getiriyor; gönderinin altından 'mutfak kaç para' diye yazan müşteriye ve keşiften sonraki takibe kim bakıyor, ajans mı, siz mi?" Ne için: ajansın talep ürettiğini, cevabın ve keşif sonrası takibin işletmede kaldığını ayırmak; ajansın rakibi değil tamamlayıcısısın. Sonra: "ben" derse "ben tam o tarafı kuruyorum, ajansla işim yok" de ve saat iste; "ajans dönüyor" derse teşekkür et ve kapat.
 - "Ben oda üyesiyim, meslek kurallarına aykırı olur mu?" Söyle: "Baktığım kaynaklarda buna dair bir kural görmedim ama odayla teyit etmedim, o yüzden 'olmaz' demem. Sistem tanıtım yapmıyor, size zaten yazan müşteriye cevap veriyor ve keşif verdiğiniz kişiyi hatırlatıyor. Odanızın bu konuda yazılı bir kuralı var mı?" Ne için: doğrulanmamış şeyi kesin söylememek; kartın yasal sınırında bu konunun doğrulanamadığı yazıyor. Sonra: "yok" ya da "bilmiyorum" derse görüşme iste, görüşmeden önce oda kuralına bak; "var, yasak" derse teşekkür et ve kapat, FounderOS uygunluk sütununa "oda kuralı" yazar.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Keşif, Proje, Reno. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: kule, kademe, dugum.
+Paletler: kum, kiremit, celik.
+Tipografi: saglam, karakter.
+
 **Sahadan dolacak.** Ortalama teklif-karar süresi (gün/hafta olarak), gerçek dönüş süreleri, ilk aramaya kadar geçen süre, çalışan açılış cümlesi, kapanma oranı, hangi kademenin (1/2/3) satıldığı, ilk vaka çalışması, atölye/ofis başına aylık gerçek iş kapasitesi, personel/eleman sorunu olup olmadığı, işletmecinin müsait olduğu gerçek saatler, şehir bazlı yoğunluk sıralaması, Meta Reklam Kütüphanesi'nde bu niş için reklam veren örnekleri.
 
 **Kaynaklar.**

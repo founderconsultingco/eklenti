@@ -87,6 +87,13 @@ Karşı taraf bunu söylerse:
 - "Yetkili servisiz, marka bizim adımıza reklam yapıyor." Söyle: "Marka müşteriyi getiriyor, telefonu ve WhatsApp'ı yine siz açıyorsunuz. Markanın çağrı merkezinden düşen randevu dışında size doğrudan yazan ya da arayan müşteri oluyor mu?" Ne için: markanın ürettiği talebin sahada nerede kaldığını sormak. Sonra: "oluyor" derse görüşme iste; "her şey merkezden geliyor" derse teşekkür et ve kapat; FounderOS uygunluk sütununa "talep merkezden" yazar.
 - "Kış geldi, klima işi bitti." Söyle: "Kombi tarafı başlıyor, aynı sistem kombi bakım ve arıza çağrısını da yazıyor. Geçen kış kombi bakımı yaptırdığınız müşterilere bu kış hatırlatma gidiyor mu?" Ne için: iki sezonun birbirini beslediğini kartın diliyle söylemek. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Sezon, Servis, Hat. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: akis, dalga, cekirdek.
+Paletler: murekkep, celik, koz.
+Tipografi: teknik, saglam.
+
 **Sahadan dolacak.** Türkiye genelinde toplam klima/kombi servisi işletme sayısı, Armut'taki 2.665-3.553 rakamı sadece bir platforma özel. Gerçek dönüş süreleri, kaç saat ya da gün içinde geri arandığı. Çalışan açılış cümlesinin gerçek kapatma oranı. Hangi kademenin (1, 2 ya da 3) bu nişte daha kolay satıldığı. Telefonun açık kaldığı gerçek saatler ve yetkili servislerin çağrı merkezi çalışma modeli. İlk vaka çalışması. Doğalgaz periyodik tesisat kontrolü yönetmeliğinin kombi bakım hizmetiyle pratikte nasıl bir ilişkisi olduğu.
 
 **Kaynaklar.**

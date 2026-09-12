@@ -72,6 +72,13 @@ Karşı taraf bunu söylerse:
 - "Mesul müdür zaten her şeyi takip ediyor, yazılıma gerek yok." Söyle: "Mesul müdür süreci takip ediyor, doğru; ama yasa onu tek bir işyerine bağlıyor ve çoğu küçük firmada sahada ilaçlayan da o. Mesul müdür sahadayken fiyat soran müşteriye kim yazıyor, o mu, yoksa ofiste biri var mı?" Ne için: mesul müdürün sahada olduğu anı sormak; kartın iç sesinde "ben sahada ilaçlarken telefona bakacak kimse yok, mesul müdür de benim" yazıyor, bunu sen söylemezsin. Sonra: "ofiste biri var, bakıyor" derse teşekkür et ve kapat; "o da sahada" derse görüşme iste.
 - "Koku, kimyasal soruları müşteriyi ürkütür, cevap vermeyelim." Söyle: "O sorular zaten geliyor, cevapsız kalınca müşteri başka firmaya soruyor. Sistem kokunun ne kadar sürdüğü gibi sorulara sizin onayladığınız genel cevabı veriyor, ilacın adını ve dozunu size, mesul müdüre bırakıyor. Sizde bu soruları bugün kim cevaplıyor, siz mi, saha ekibi mi?" Ne için: kaygıyı kabul edip sistemin genel bilgiyle sınırlı kaldığını ve detayı mesul müdüre bıraktığını kartın asistan kurallarıyla söylemek. Sonra: "ben, akşam" derse görüşme iste; "cevap vermiyoruz, istemiyoruz" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Kalkan, Saha, Devriye. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: cekirdek, halka, capraz.
+Paletler: orman, derin, celik.
+Tipografi: saglam, teknik.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri (telefon/DM ne kadar sürede dönülüyor), çalışan açılış cümlesi, kapatma oranı, hangi kademenin (1/2/3) satıldığı, işletme başına günlük iş kapasitesinin kurumsal (otel/fabrika) işlerde nasıl değiştiği, işletmecinin kendi ağzından dert listesi, mesul müdür dışında kaç kişi çalıştığı, İstanbul ve diğer illerin izinli firma sayıları, Google Haritalar kategori adları, KVKK'ya özel bir kısıt olup olmadığı, ilk vaka çalışması.
 
 **Kaynaklar.**

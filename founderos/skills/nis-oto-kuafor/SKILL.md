@@ -106,6 +106,13 @@ Karşı taraf bunu söylerse:
 - "Elemanım var, o baksın." Söyle: "İyi, o zaman şunu sorayım: eleman da araç başındayken Instagram'dan yazan seramik müşterisine kim dönüyor?" Ne için: elemanın da araçta olduğu anı sormak; kartta işletmecilerin elemana güvenemediği yazıyor, bunu sen söylemezsin. Sonra: "bakıyor, yetişiyor" derse teşekkür et ve kapat; "o da araçta" derse görüşme iste.
 - "Instagram'ı ajansa verdim." Söyle: "Ajans fotoğrafı paylaşıyor, önce sonra gönderisini atıyor; o gönderinin altından 'fiyat ne' diye yazan müşteriye kim cevap veriyor, ajans mı, siz mi?" Ne için: ajansın talep ürettiğini, cevabın dükkanda kaldığını kartın diliyle ayırmak; ajansın rakibi değil tamamlayıcısısın. Sonra: "ben, akşam" derse "ben tam o mesajın tarafını kuruyorum, ajansla işim yok" de ve saat iste; "ajans anında dönüyor" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Parla, Cila, Vitrin. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: hilal, yildiz, capraz.
+Paletler: gece, celik, koz.
+Tipografi: teknik, saglam.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademenin satıldığı.
 
 ---

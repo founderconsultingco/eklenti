@@ -76,6 +76,13 @@ Karşı taraf bunu söylerse:
 - "Fiyatı danışman söyler, sistem söyleyemez." Söyle: "Söylemiyor zaten; hangi dil ya da alan, hedef ne, hangi gün uygun diye soruyor, seviye tespiti randevusuna yazıyor, kur ve ödeme planını tespitten sonra danışman veriyor. Böyle olsa kurumunuzda işe yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını ve nerede durduğunu kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
 - "Öğrenci verisi hassas." Söyle: "Doğru, o yüzden sistem kayıtlı öğrencinin ders, devamsızlık ve sınav bilgisine hiç dokunmuyor; yalnız başvuru aşamasında çalışıyor, hangi dil, hedef ne, hangi gün uygun, o kadar. 'Kesin başarı', 'garanti' gibi bir cümle de kurmuyor. Başvuru formunuzda açık rıza satırı şu an var mı?" Ne için: veri kaygısını kabul edip sistemin nerede durduğunu kartın asistan ve yasal kurallarıyla söylemek. Sonra: "var" derse görüşme iste; "yok" derse "görüşmede onu da birlikte ekleriz" de ve saat iste; "yine de istemem" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Seviye, Kademe, Lingo. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: kademe, kule, yildiz.
+Paletler: derin, murekkep, koz.
+Tipografi: sade, karakter.
+
 **Sahadan dolacak.** Şubenin aylık başvuru ve kayıt sayısı, başvurudan kayda dönüşüm oranı, talebin yoğun saati, işletmecinin kendi cümleleri, rakip yapay zekâ teklifi olup olmadığı, yaz ve Ramazan döneminin gerçek etkisi, çalışan açılış cümlesi.
 
 **Kaynaklar.** English Park Dil Okulları, "İstanbul İngilizce kursu fiyatları 2026" (kur fiyat aralığı). English Time, "İngilizce kursu fiyatları 2026" (kur yapısı, sınıf büyüklüğü, sezon, peşin indirimi). Şikayetvar, İngilizce ve kurs şikayetleri listesi (cevapsızlık, aşırı arama, iptal ve iade). Lexpera blog, "5580 sayılı Özel Öğretim Kurumları Kanunu çerçevesinde reklam yasakları" (yasal sınırlar ve cezalar). MEB Özel Öğretim Kurumları Genel Müdürlüğü ruhsatlı kurum dizini (il bazlı sayım).

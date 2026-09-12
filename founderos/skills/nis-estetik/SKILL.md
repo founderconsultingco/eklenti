@@ -70,6 +70,13 @@ Karşı taraf bunu söylerse:
 - "Hasta mahremiyeti var, bilgi toplayamayız." Söyle: "Doğru, o yüzden sistem tıbbi soru sormuyor; ad, telefon, hangi işlemle ilgilendiği, uygun tarih ve daha önce konsültasyon yapılıp yapılmadığı, o kadar. Tıbbi her şey hekimde kalıyor. Şu an WhatsApp'tan yazan kişiden sekreteriniz bundan fazlasını mı soruyor, yoksa aynısını mı?" Ne için: mahremiyet kaygısını kabul edip toplanan bilginin sekreterin zaten sorduğu bilgi olduğunu ona söyletmek; kartta sağlık verisinin özel nitelikli olduğu ve tonun mahremiyete duyarlı olması gerektiği yazıyor. Sonra: "aynısını" derse görüşme iste; "yine de istemem" derse teşekkür et ve kapat.
 - "Kurulum maliyetimiz zaten çok yüksek, ek gidere param yok." Söyle: "Rakamı görüşmede konuşuruz; kliniğinizde kontrole gelmeyip başka yere giden ya da konsültasyon isteyip cevap alamayan tek bir hasta aylık bir gider kalemi kadar mı eder, yoksa çok daha fazla mı?" Ne için: fiyatı görüşmeye bırakmak; kartın "boş kalan her randevu doğrudan zarar" ve "tek bir hasta aylık ücreti kat kat karşılıyor" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de param yok" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Derma, Kontur, Klinik. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: hilal, mercek, kivrim.
+Paletler: bordo, kum, mor.
+Tipografi: editoryal, sade.
+
 **Sahadan dolacak.** İşletmecinin kendi ağzından dertleri ve terminolojisi; kim telefonu/DM'i açıyor (küçük klinikte kesin teyit); günün müsait/müsait olmayan saatleri; Türkiye'de toplam klinik/muayenehane/saç ekim merkezi sayısı ve TPRECD üye sayısı; botoks, dolgu, liposuction ve saç ekiminin genel fiyat aralığı (rinoplasti dışında hiçbiri bu oturumda bulunamadı); kapasite (günde/haftada kaç ameliyat/seans); duran havuzun klinikte nerede durduğu; hangi kademenin satıldığı; ilk vaka çalışması; 12 Kasım 2025 yönetmeliğinin birincil tam metni ve madde numaraları (bu oturumda ikinci kez de sadece ikincil kaynaklardan doğrulandı, resmigazete.gov.tr ve dosyaism.saglik.gov.tr PDF'i erişim engelleri yüzünden okunamadı); il bazlı yoğunluk sıralaması.
 
 **Kaynaklar.**

@@ -108,6 +108,13 @@ Karşı taraf bunu söylerse:
 - "İptal ve iade kuralımız zaten net." Söyle: "Kural net olsun, sistem de ona dokunmuyor; iptal, iade ve dondurma konusunu size devrediyor, kendi karar vermiyor. Yaptığı tek şey randevu yazarken o kuralı üyeye yazılı hatırlatmak. Şu an üye randevu alırken iptal ve telafi kuralını yazılı görüyor mu, yoksa sorun çıkınca mı öğreniyor?" Ne için: kuralı tartışmamak, kuralın üyeye ne zaman ulaştığını sormak; kartta kural olsa bile iade taleplerinin aylarca cevapsız kaldığı şikayetler var, bunu sen söylemezsin. Sonra: "yazılı görüyor" derse teşekkür et ve kapat; "sorun çıkınca" derse görüşme iste.
 - "Dondurma sistemi zaten var, takip ediyoruz." Söyle: "Sistem var, iyi; ben dondurup geri dönmeyeni soruyorum. Dondurma süresi biten üyeye stüdyodan bir mesaj gidiyor mu, yoksa üye hatırlarsa mı dönüyor?" Ne için: dondurma kuralıyla dondurma sonrası takibi ayırmak; kartta "yetkiliye ulaşılamıyor" denip aylarca ders alınamayan ve "kimse benimle iletişime geçmedi" diyen üye şikayetleri var, bunu sen söylemezsin, ona söyletirsin. Sonra: "mesaj gidiyor" derse teşekkür et, kapat; FounderOS "sonra" yazar. "Hatırlarsa dönüyor" derse "işte o hatırlatma için kuruyorum" de ve saat iste.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Seans, Ritim, Studio. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: dalga, halka, kivrim.
+Paletler: orman, kum, mor.
+Tipografi: yumusak, sade.
+
 **Sahadan dolacak.** Toplam stüdyo sayısının tek ve kesin rakamı (iki kaynak 1.913 ile 2.066 arasında farklı sayı veriyor), gerçek no-show ve iptal oranı yüzdesi, deneme dersi sonrası dönüşüm oranı, ortalama DM ve WhatsApp yanıt süresi, kaç kademenin satıldığı, ilk vaka çalışması, karar vericinin net unvanı (sahibi mi, ortak eğitmen mi, resepsiyonist mi telefonu açıyor), işletmeci ağzından birebir alıntı, Meta Reklam Kütüphanesi'nde bu nişin reklam verme yoğunluğu.
 
 **Kaynaklar.**

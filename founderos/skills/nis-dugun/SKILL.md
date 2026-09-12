@@ -79,6 +79,13 @@ Karşı taraf bunu söylerse:
 - "Kapora aldık, sözleşme imzalandı, bizim işimiz bitti." Söyle: "Kapora alındıktan sonra çift düğüne kadar yazmaya devam ediyor: menü, saat, davetli sayısı. Düğün günü siz salondayken o mesajlara kim dönüyor, yoksa çiftten 'aradım, ulaşamadım' duyduğunuz oluyor mu?" Ne için: kapora sonrası sessizliğin şikayetlerin çıktığı nokta olduğunu kartın diliyle bilmek ama bunu iddia etmemek, çiftin ne dediğini ona söyletmek; sistem kapora vermiş çiftin mesajına da dakikalar içinde cevap verip sorusunu size iletiyor. Sonra: "biz dönüyoruz" derse teşekkür et ve kapat; "ulaşamadım diyen oluyor" derse görüşme iste.
 - "Küçük işletmeyiz, bu bize göre değil." Söyle: "Bu işe iki kişi de başlıyor, büyük zincir yok; ben de ilk üç firmayla başlıyorum. Rakamı görüşmede konuşuruz; kaçan tek bir cumartesi sizde bir düğünün tamamı mı eder, yoksa daha azı mı?" Ne için: küçük ölçeğin bu nişte norm olduğunu kartın diliyle söylemek, fiyatı görüşmeye bırakmak ve kayıp birimini iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de bize göre değil" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Tören, Sahne, Gün. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: hilal, yildiz, mercek.
+Paletler: bordo, kum, mor.
+Tipografi: editoryal, karakter.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat veya gün içinde cevap veriliyor), işletmecinin DM ve telefon yoğunluğunun gerçek saatleri, çalışan açılış cümlesinin kapatma oranı, hangi kademenin (1, 2 veya 3) bu nişte daha kolay satıldığı, ilk vaka çalışması, Meta Reklam Kütüphanesi'nde bu sektörün gerçek reklam durumu, fiyat sorup kaybolan havuzunun ortalama aylık büyüklüğü, kış aylarında gerçek doluluk oranı, İYS'nin bu sektörde pratikte ne kadar uygulandığı, kim karar veriyor sorusunun kesin cevabı.
 
 **Kaynaklar.**

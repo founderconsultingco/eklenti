@@ -105,6 +105,13 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 
 Bu bölümün kuralları: Söyle cümlesi soruyla biter ve tek soru taşır, ikinci itiraz sorusu yok. Lira rakamı telefonda söylenmez, görüşmeye kalır. Kartta olmayan rakam geçmez; kartın rakamı geçiyorsa işletmecinin anlayacağı biçimde ("iki katından fazla", "günde onlarca çağrı"). Kartın kanıtı öğrencinin ağzından iddia olarak söylenmez, işletmeciye soru olarak sorulur ("bunu sen söylemezsin, ona söyletirsin"). Yer tutucu yalnız [adın], [şehir], [Şehir], [Ad]. Kendini küçültme yok, muhtaç ton yok, ısrar yok; açık ret gelince teşekkür ve kapanış, aday bir daha aranmaz. "Sonra" satırında FounderOS'un ne yazacağı varsa açıkça yazılır ("FounderOS 'sonra, sezon başı' yazar"). Bu bölüm yoksa Saha modu kartı modülün genel metniyle çalışır, uydurmaz.
 
+**Marka yönü.** markani-kur'un seçim ekranını besler. Tasarım kararı değil, başlangıç noktası.
+İsim kökleri: [üç kök, nişin kendi dilinden]. Sistem adı kurulurken köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) eklenir.
+İsim aileleri: [müşterisi usta ve esnafsa: kısa uydurma, kısa Türkçe kelime, soyadı | müşterisi İngilizce kelimeye alışıksa: sistem adı, kısa uydurma, soyadı].
+İşaretler: [üç işaret: capraz hilal akis halka dugum kule dalga kivrim kademe mercek cekirdek yildiz].
+Paletler: [üç palet: gece murekkep orman koz celik bordo kum derin mor kiremit].
+Tipografi: [iki eşleşme: teknik karakter editoryal saglam yumusak sade].
+
 **Sahadan dolacak.** Bilinmeyenler listesi (gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademe satılıyor, ilk vaka çalışması).
 
 **Kaynaklar.** Kullanılan tüm URL'ler.

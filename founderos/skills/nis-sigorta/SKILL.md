@@ -95,6 +95,13 @@ Karşı taraf bunu söylerse:
 - "Hasar sürecini bot karıştırır, itibarımı riske atar." Söyle: "Haklısınız, o yüzden sistem hasara ve ödemeye hiç girmiyor; hasar yazan müşteriye sizi bağladığını söyleyip size devrediyor, kendi kafasından yenileme de yapmıyor. Sadece teklif için bilgi topluyor ve yenileme zamanını hatırlatıyor. Sizde hasar sorusuyla teklif sorusu aynı hatta mı geliyor, yoksa ayrılıyor mu?" Ne için: hasar kaygısını kabul edip sistemin sınırını kartın asistan kurallarıyla söylemek; kartta şikayetlerin hasar, ödeme ve onaysız otomatik yenilemede yoğunlaştığı yazıyor, bunu işletmeciye söylemezsin. Sonra: "aynı hatta" derse: "Sistem ikisini ayırıp hasarı size bırakıyor" de ve saat iste; "yine de istemem" derse teşekkür et ve kapat.
 - "Küçük acenteyim, yazılıma param yok." Söyle: "Komisyonun dipte olduğunu biliyorum, onun için kaçan yenileme daha çok acıtıyor. Rakamı görüşmede konuşuruz; kaçan tek bir kasko yenilemesi sizde bir aylık komisyonun ne kadarı eder, küçük bir kısmı mı, önemli bir kısmı mı?" Ne için: fiyatı görüşmeye bırakmak ve kartın "bir tecdit" kayıp birimini iddia etmeden ona söyletmek; kartta taban komisyon isteğinin sektörün kendi derdi olduğu yazıyor. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de para yok" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Poliçe, Teminat, Kalkan. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: sistem adı, kısa uydurma, soyadı (müşterisi İngilizce kelimeye alışık).
+İşaretler: dugum, halka, kule.
+Paletler: derin, celik, murekkep.
+Tipografi: sade, saglam.
+
 **Sahadan dolacak.** TOBB Levhasına kayıtlı toplam acente sayısının kesin resmi rakamı (TÜSAF 20.000, 2023 raporu 15.500 diyor, fark netleşmeli). Bir acentenin günde veya haftada işleyebildiği ortalama teklif ve poliçe adedi. Yenileme hatırlatma aramalarının gerçek dönüş ve kapanış oranı. Acentelerin bugün fiilen kullandığı hatırlatma yöntemi, örnekleme yapılmalı. Konut sigortası fiyat aralığı, sektör yayınlamıyor. Yönetmeliğin güncel tam metni resmi kaynaktan (mevzuat.gov.tr veya SEDDK) doğrulanmalı, bu araştırmada erişim engellendi. İYS'nin yenileme hatırlatmasına uygulanıp uygulanmadığı, hukuki teyit gerekir. Hangi kademenin (1, 2 veya 3) bu nişte daha kolay satıldığı ve ilk vaka çalışması. Meta Reklam Kütüphanesi'nde bu nişin reklam verme durumu.
 
 **Kaynaklar.**

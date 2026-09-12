@@ -100,6 +100,13 @@ Karşı taraf bunu söylerse:
 - "Fiyatı görmeden veremem, WhatsApp'tan pazarlık ediyorum." Söyle: "Vermiyor, haklısınız; metrekaresine, kirine, kaç personel istendiğine göre değişir. Sistem ev mi ofis mi inşaat sonrası mı, kaç metrekare, kaç personel, hangi gün ve adresi alıp size iletiyor; fiyatı ve pazarlığı yine siz yapıyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
 - "Ev temizliğinde güven meselesi var, botla olmaz." Söyle: "Doğru, eve giren kişiye güven sistemle olmaz, sistem eve girmiyor. Yalnız mesaja cevap veriyor, bilgiyi alıyor ve gün veriyor; kimin gideceği, ekip, hepsi sizde kalıyor. Sizce müşteri güveni ilk nerede kaybediyor, yazıp cevap alamadığında mı, yoksa ekip kapıya geldiğinde mi?" Ne için: güven kaygısını kabul edip sistemin eve giren kişiyi değiştirmediğini söylemek; kartta şikayetlerin ilk temasının gelmeme ve dönmeme olduğu yazıyor, bunu ona söyletirsin. Sonra: "cevap alamadığında" derse görüşme iste; "yine de istemem" derse teşekkür et ve kapat.
 
+**Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
+İsim kökleri: Berrak, Kat, Puro. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
+İsim aileleri: kısa uydurma, kısa Türkçe kelime, soyadı (müşterisi usta ve esnaf; sistem adı kurulacaksa kökü Türkçe olur).
+İşaretler: halka, kademe, mercek.
+Paletler: derin, orman, celik.
+Tipografi: sade, teknik.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat/gün içinde geri dönülüyor), telefonu kimin açtığı (sahip mi eleman mı), günde/haftada gerçekte kaç iş çıkarılabildiği, hangi kademenin (1/2/3) bu segmentte daha çok satıldığı, ilk vaka çalışması, çalışan açılış cümlesi, kapatma oranı, Meta Reklam Kütüphanesi'nde gerçekte ne görüldüğü.
 
 **Kaynaklar.**
