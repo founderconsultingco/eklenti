@@ -85,6 +85,25 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, bot fiyat veremez, tekno
 
 "Instagram'ı ajansa verdim." Ajans reklam ve içerik yapıyor, DM ve telefon cevabı sende kalıyor. Ajansın ürettiği talep tam orada ölüyor. Ajansın rakibi değil, tamamlayıcısısın.
 
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+
+Açılış sorusu: "Geçen yıl seramik kaplama yaptırdığınız müşterileri bakım zamanı gelince siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
+
+İşleyiş sorusu: "Gün içinde eliniz araçtayken Instagram'dan ya da WhatsApp'tan fiyat soran müşteriye ne oluyor, akşama mı kalıyor, başka yere de mi yazıyor?"
+
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz araç başındayken Instagram'a, WhatsApp'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, aracın markasını, modelini, hangi hizmeti istediğini ve fotoğrafını alıp randevuya yazıyor; geçen yılın seramik müşterilerine de bakım zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç oto kuaförle başlıyorum."
+
+Çalışan açarsa: "Usta araç başındayken Instagram'a ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
+
+Karşı taraf bunu söylerse:
+
+- "Benim müşterim zaten telefonla geliyor, ben açıyorum." Söyle: "Güzel, çoğu usta açamıyor. Kaplamanın ortasında, elinizde makine varken çalan telefonu da açabiliyor musunuz, yoksa o akşama mı kalıyor?" Ne için: telefonun yanında olmasıyla açılabilmesini ayırmak; kartta günde bir iki araç çıktığı ve kaçan tek seramik müşterisinin bir günlük ciro olduğu yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "açıyorum" derse teşekkür et, "birkaç ay sonra bir kez daha arayabilir miyim" diye sor, kapat; FounderOS "sonra" yazar. "Akşama kalıyor" derse: "İşte o aradaki müşteri için kuruyorum" de ve saat iste.
+- "Fiyatı telefonda konuşmam lazım, bot fiyat veremez." Söyle: "Vermiyor, haklısınız; araç görülmeden bu işte fiyat verilmez. Aracın markasını, modelini, yılını, hangi hizmeti istediğini, boyada çizik olup olmadığını soruyor, fotoğraf isteyip kayda ekliyor ve size uygun saate randevu yazıyor. Fiyatı araç gelince siz söylüyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "yine de istemem" derse teşekkür et ve kapat.
+- "Zaten iş var, yetiştiremiyorum." Söyle: "Yeni müşteri getirmiyorum zaten; boş gün doldurmak için değil, sıraya giren işin içinden seramik ve kaplama soranı öne almak için arıyorum. Bugün fiyat soranların içinden hangisi yıkama, hangisi seramik, bunu kim ayırıyor?" Ne için: doluluğun kârlılık olmadığını kartın diliyle söylemek; ucuz işi eleyip yüksek bileti öne almayı ona sormak. Sonra: "ben, akşam bakıyorum" derse "o akşama kalan seramik sorusu için kuruyorum" de ve saat iste; "gerek yok" derse teşekkür et, kapat; FounderOS "sonra" yazar.
+- "Ucuzcu müşteri var, teknolojiye para yok." Söyle: "Ucuzcu müşteri sistemin hedefi değil zaten; seramik ve kaplama soranı öne alıyor. Rakamı görüşmede konuşuruz; ay içinde kaçan tek bir seramik müşterisi sizde bir günlük iş mi eder, daha fazlası mı?" Ne için: fiyatı görüşmeye bırakmak; kartın "kaçan tek seramik müşterisi bir boş gün" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o günün hesabını birlikte yaparız, karar sizin" de ve saat iste; "yine de para yok" derse teşekkür et ve kapat.
+- "Elemanım var, o baksın." Söyle: "İyi, o zaman şunu sorayım: eleman da araç başındayken Instagram'dan yazan seramik müşterisine kim dönüyor?" Ne için: elemanın da araçta olduğu anı sormak; kartta işletmecilerin elemana güvenemediği yazıyor, bunu sen söylemezsin. Sonra: "bakıyor, yetişiyor" derse teşekkür et ve kapat; "o da araçta" derse görüşme iste.
+- "Instagram'ı ajansa verdim." Söyle: "Ajans fotoğrafı paylaşıyor, önce sonra gönderisini atıyor; o gönderinin altından 'fiyat ne' diye yazan müşteriye kim cevap veriyor, ajans mı, siz mi?" Ne için: ajansın talep ürettiğini, cevabın dükkanda kaldığını kartın diliyle ayırmak; ajansın rakibi değil tamamlayıcısısın. Sonra: "ben, akşam" derse "ben tam o mesajın tarafını kuruyorum, ajansla işim yok" de ve saat iste; "ajans anında dönüyor" derse teşekkür et ve kapat.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademenin satıldığı.
 
 ---

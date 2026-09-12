@@ -131,7 +131,7 @@ Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı ner
 
 ### Üçüncü eleme: pazar büyüklüğü
 
-Üçüncü blokta 500 kişilik bir aday listesi çıkaracaksın. Doksan günde o listeye yaklaşık 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
+Üçüncü blokta 500 kişilik bir aday listesi çıkaracaksın. Her işletmeye ilk temas ve üç takip gidiyor; beş yüz işletme doksan günü ancak dolduruyor. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
 
 Eşik buradan çıkıyor:
 - Şehrinde 500 işletme varsa niş geçer.

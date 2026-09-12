@@ -55,7 +55,7 @@ Reklam sütunu "görülemedi" kaldığında o niş yorum sayısına göre puanla
 
 Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 
-1. Bu şehirde en az 500 işletme var mı? Sayım çekimi beş yüze ulaştıysa cevap evet; altında kaldıysa gelen sayı yazılır. Üçüncü blokta 500 kişilik aday listesi çıkacak ve doksan günde ona 1.320 arama yapılacak. Bu sayının altında liste dolmuyor.
+1. Bu şehirde en az 500 işletme var mı? Sayım çekimi beş yüze ulaştıysa cevap evet; altında kaldıysa gelen sayı yazılır. Üçüncü blokta 500 kişilik aday listesi çıkacak; her işletmeye ilk temas ve üç takip gittiği için beş yüzün altında liste doksan günü doldurmuyor.
 2. Türkiye'de en az 2.000 işletme var mı? Şehirde 500 çıkmazsa niş Türkiye geneline açılıyor, o zaman bu sayı devreye giriyor. Ülke çapında büyük bir pazar aranmıyor; dört müşteri için 2.000 yeter. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
 4. Telefonu dolu olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın. Instagram bu sayımda ölçülmüyor, oran yalnız telefonla kurulur.

@@ -37,7 +37,7 @@ Sabit kurallardan: günlük temas hedefi, gelir planındaki oranlar, masraf kale
 
 ## 4. Ne sorar
 
-Bu, sana soru soran tek modüldür. Sebebi basit: bu bilgileri başka hiçbir yerden bilemez. Diğer bütün modüller söyler, sormaz.
+Bu, sana en çok soru soran modüldür. Sebebi basit: bu bilgileri başka hiçbir yerden bilemez. Diğer modüller çoğunlukla söyler, sormaz.
 
 Sıra sabittir ve sebebi var: bugünkü durumun, istediğin değişim, geçmişin ve engellerin, kullanabileceğin avantajların, sana uygun çalışma biçimi. Kolaydan zora, dıştan içe.
 

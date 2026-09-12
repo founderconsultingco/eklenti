@@ -14,7 +14,7 @@ Bu şablon üçüncü blokta kurulur ve her müşteride yalnız köşeli parante
 
 ### 1. Taraflar
 
-**Hizmet Veren:** [Ad Soyad] - [İşletme Adı], [Adres], Vergi Dairesi: [Vergi Dairesi], Vergi No: [Vergi No], E-posta: [E-posta], Telefon: [Telefon]. Bu sözleşmede "Hizmet Veren" olarak anılacaktır.
+**Hizmet Veren:** [Ad Soyad] - [İşletme Adı], [Adres], Vergi Dairesi: [Vergi Dairesi], Vergi No: [Vergi No; şirket henüz kurulmadıysa T.C. kimlik numarası, gerçek kişide vergi kimlik numarası odur], E-posta: [E-posta], Telefon: [Telefon]. Bu sözleşmede "Hizmet Veren" olarak anılacaktır.
 
 **Hizmet Alan:** [İşletme Unvanı], [Adres], Vergi Dairesi: [Vergi Dairesi], Vergi/MERSİS No: [No], Yetkili: [Ad Soyad], E-posta: [E-posta], Telefon: [Telefon]. Bu sözleşmede "Müşteri" olarak anılacaktır.
 

@@ -17,13 +17,14 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
   bugun [--sayi N] [--planla] [--kanal telefon|yazı]
   ozet
   bul METIN
-  sayfa [--nis AD] [--acilis "..."] [--itiraz "..."]...
+  sayfa [--kart TELEFON.md | --dosya SENARYO.json] [--nis AD] [--ogrenci-ad AD --sehir S --sistem-adi AD] [--acilis "..."] [--itiraz "..."]...
+                            (Saha modu kartının söyle metni: niş kartının "Telefonda söylenecekler" bölümü ve öğrencinin adı, şehri)
   surum
 """
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.23.0"
+SURUM = "0.24.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -637,22 +638,114 @@ def kmt_bul(a):
         print(ozet_satir(s) + (" | ELENDİ: " + s["elenme"] if s["elenme"] else "") + (" | not: " + s["not"] if s["not"] else ""))
 
 
+SENARYO_ALANLAR = ["ad", "ogrenci", "acilis_sorusu", "isleyis_sorusu", "vaat", "calisan", "itirazlar"]
+ITIRAZ_ALANLAR = ["durum", "soyle", "neden", "sonra"]
+
+
+def senaryo_dogrula(n):
+    """sayfa.json içeriğini süzer: bilinmeyen alan düşer, itirazlar sözlük listesine çevrilir."""
+    c = {}
+    for k in SENARYO_ALANLAR:
+        if k not in n:
+            continue
+        v = n[k]
+        if k == "ogrenci":
+            if isinstance(v, dict):
+                c[k] = {x: str(v.get(x, "")).strip() for x in ("ad", "sehir", "sistem_adi")}
+        elif k == "itirazlar":
+            l = []
+            for x in (v if isinstance(v, list) else []):
+                if isinstance(x, str) and x.strip():
+                    l.append({"durum": x.strip(), "soyle": "", "neden": "", "sonra": ""})
+                elif isinstance(x, dict) and str(x.get("durum", "")).strip():
+                    l.append({y: str(x.get(y, "")).strip() for y in ITIRAZ_ALANLAR})
+            c[k] = l
+        else:
+            c[k] = str(v).strip()
+    # eski alan adı
+    if "acilis" in n and "acilis_sorusu" not in c:
+        c["acilis_sorusu"] = str(n["acilis"]).strip()
+    return c
+
+
+def kart_oku(metin):
+    """Niş kartının "Telefonda söylenecekler" bölümünü (olduğu gibi kopyalanmış metin) senaryoya çevirir."""
+    n = {}
+    satirlar = metin.replace("\r\n", "\n").split("\n")
+    for s in satirlar:
+        t = s.strip()
+        if not t:
+            continue
+        if t.startswith("# ") and "ad" not in n:
+            n["ad"] = t[2:].strip()
+            continue
+        for etiket, alan in (("Açılış sorusu:", "acilis_sorusu"), ("İşleyiş sorusu:", "isleyis_sorusu"),
+                             ("Ne yaptığın:", "vaat"), ("Çalışan açarsa:", "calisan")):
+            if t.startswith(etiket):
+                n[alan] = t[len(etiket):].strip().strip('"').strip()
+        if t.startswith('- "') and "Söyle:" in t:
+            e = re.match(r'-\s*"(?P<durum>[^"]+)"\s*Söyle:\s*"(?P<soyle>[^"]*(?:"[^"]*"[^"]*)*?)"\s*(?:Ne için:\s*(?P<neden>.*?))?\s*(?:Sonra:\s*(?P<sonra>.*))?$', t)
+            if not e:
+                continue
+            n.setdefault("itirazlar", []).append({"durum": e.group("durum").strip(), "soyle": e.group("soyle").strip(),
+                                                 "neden": (e.group("neden") or "").strip(), "sonra": (e.group("sonra") or "").strip()})
+    return n
+
+
 def kmt_sayfa(a):
-    if a.nis or a.acilis or a.itiraz:
-        n = nis_oku()
-        if a.nis:
-            n["ad"] = a.nis
-        if a.acilis:
-            n["acilis"] = a.acilis
-        if a.itiraz:
-            n["itirazlar"] = a.itiraz
+    degisti = False
+    n = senaryo_dogrula(nis_oku())
+    if a.dosya:
+        try:
+            g = json.loads(Path(a.dosya).read_text(encoding="utf-8"))
+        except (OSError, ValueError) as e:
+            hata("senaryo dosyası okunamadı: %s" % e)
+        if not isinstance(g, dict):
+            hata("senaryo dosyası bir sözlük olmalı")
+        n.update(senaryo_dogrula(g))
+        degisti = True
+    if a.kart:
+        try:
+            g = kart_oku(Path(a.kart).read_text(encoding="utf-8"))
+        except OSError as e:
+            hata("kart dosyası okunamadı: %s" % e)
+        if not g.get("acilis_sorusu") and not g.get("itirazlar"):
+            hata("kart dosyasında 'Açılış sorusu:' ya da '- \"...\" Söyle:' satırı yok; niş kartının Telefonda söylenecekler bölümünü olduğu gibi kopyala")
+        n.update(senaryo_dogrula(g))
+        degisti = True
+    if a.nis:
+        n["ad"] = a.nis; degisti = True
+    if a.ogrenci_ad or a.sehir or a.sistem_adi:
+        o = n.get("ogrenci", {"ad": "", "sehir": "", "sistem_adi": ""})
+        if a.ogrenci_ad:
+            o["ad"] = a.ogrenci_ad
+        if a.sehir:
+            o["sehir"] = a.sehir
+        if a.sistem_adi:
+            o["sistem_adi"] = a.sistem_adi
+        n["ogrenci"] = o; degisti = True
+    if a.acilis:
+        n["acilis_sorusu"] = a.acilis; degisti = True
+    if a.itiraz:
+        n["itirazlar"] = senaryo_dogrula({"itirazlar": a.itiraz})["itirazlar"]; degisti = True
+    if degisti:
         calisma().mkdir(parents=True, exist_ok=True)
         (calisma() / "sayfa.json").write_text(json.dumps(n, ensure_ascii=False, indent=1), encoding="utf-8")
     if not (KLASOR / "adaylar.csv").exists():
         kaydet([], sayfa_da=False)
     sayfa_uret()
     h = KLASOR / "adaylar.html"
+    eksik = []
+    o = n.get("ogrenci") or {}
+    if not o.get("ad") or not o.get("sehir"):
+        eksik.append("öğrencinin adı ve şehri")
+    if not n.get("acilis_sorusu"):
+        eksik.append("açılış sorusu")
+    if not n.get("itirazlar"):
+        eksik.append("nişe özel itirazlar")
     print("sayfa yenilendi: adaylar.html (%d bayt), %s" % (h.stat().st_size, simdi_metin()))
+    if eksik:
+        print("eksik senaryo bilgisi: " + ", ".join(eksik) + " (sayfa --dosya ile ver; Saha modu o zamana kadar genel metinle çalışır)")
 
 
 def ana():
@@ -712,7 +805,12 @@ def ana():
     f.add_argument("metin")
 
     y = alt.add_parser("sayfa")
+    y.add_argument("--dosya", help="senaryo JSON dosyası (ad, ogrenci, acilis_sorusu, isleyis_sorusu, vaat, calisan, itirazlar)")
+    y.add_argument("--kart", help="niş kartının Telefonda söylenecekler bölümü, olduğu gibi kopyalanmış .md dosyası")
     y.add_argument("--nis")
+    y.add_argument("--ogrenci-ad", dest="ogrenci_ad")
+    y.add_argument("--sehir")
+    y.add_argument("--sistem-adi", dest="sistem_adi")
     y.add_argument("--acilis")
     y.add_argument("--itiraz", action="append")
 

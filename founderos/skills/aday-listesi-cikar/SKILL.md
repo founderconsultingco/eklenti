@@ -12,7 +12,7 @@ description: "Üçüncü gün ve her ay. Beş yüz kişilik soğuk aday listesi 
 
 Bu modül üç şey çıkarıyor: beş yüz kişilik aday listesi, içinden seçilen en çok istenen yüz işletme ve her sabah kendiliğinden hazırlanan günün saha listesi. Aday, henüz müşterin olmayan ama olabilecek işletmedir.
 
-Neden beş yüz: doksan günde bu listeye 1.320 arama yapacaksın, yani her işletmeyi ortalama iki üç kez arayacaksın. Liste beş yüzün altındaysa üçüncü haftada arayacak kimsen kalmıyor.
+Neden beş yüz: her işletmeye ilk temas ve üç takip gidiyor, günde yüz temasla beş yüz işletme doksan günü ancak dolduruyor. Liste beş yüzün altındaysa üçüncü haftada arayacak kimsen kalmıyor.
 
 Neden bugün: bir sonraki blokta kanıtını hazırlıyorsun ve mesajlarını yazıyorsun, iki blok sonra sahaya çıkıyorsun. O bloğun deneme aramaları bu listeden yapılıyor.
 
@@ -187,18 +187,18 @@ Bu düzeni koruduğun sürece rahatsın.
 Açılışta: "Bugün üç saat. Çıktı: beş yüz kişilik liste ve içinden seçilen yüz kişi. Bir sonraki blokta kanıtını hazırlıyoruz, deneme aramaları bu listeden yapılacak."
 Çekim başlarken: "Çekim başladı, birkaç dakika sürer. Bitince kaç kayıt geldiğini ve kaçının neden işaretlendiğini söyleyeceğim."
 Çekim bitince: "[toplam] kayıt geldi. [sayı] tanesinde telefon, [sayı] tanesinde e-posta, [sayı] tanesinde Instagram var. Servis [sayı] satırı işaretledi: [sayı] tekrar, [sayı] kapalı, [sayı] iletişimsiz, [sayı] zincir. Bunları listeye almıyorum, tamam mı? Görmek istersen gösteririm."
-Daha az kayıt çekmek isterse: "800 çekiyoruz çünkü eleyeceğiz. Doksan günde bu listeye 1.320 arama gidecek; beş yüzün altında kalırsan üçüncü haftada arayacak kimsen kalmıyor."
+Daha az kayıt çekmek isterse: "800 çekiyoruz çünkü eleyeceğiz. Her işletmeye ilk temas ve üç takip gidiyor; beş yüzün altında kalırsan üçüncü haftada arayacak kimsen kalmıyor."
 Tavan dolduysa: "Bu ayın tavanı doldu; servis gelecek ay yeniden açılıyor. Bugün tarayıcı eklentisiyle elle devam ediyoruz, yüz işletme çıkar."
 Yorumları da çekelim derse: "Hayır. Yorumlara hızlı denetimde gözünle bakıyorsun, yüz işletme için yetiyor."
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
-Liste ilk kez yazılınca: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her aramadan sonra düğmeye bas."
+Liste ilk kez yazılınca: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her kartta ne söyleyeceğin yazıyor; her aramadan sonra düğmeye bas."
 Listeyi görmek isteyince: "Veriyi yeniledim. `adaylar.html` dosyasını aç; açıksa sayfayı yenile."
 Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?"
 
 ## 7. Ne yazar
 
 Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`): bütün kayıtlar, aşamaları "yeni", "soğuk" işaretiyle, kaynağı ve nereden bulunduğu yazılı. En çok istenen yüz işletme ayrı işaretle. Denetimi bitenlerde sızıntı puanı ve en güçlü bulgu dolu; denetim kartının kendisini aday-denetimi-cikar yazıyor.
-Klasöre: `adaylar.csv` ve `adaylar.html`, aday aracıyla; ilk gün gizli `.founderos/` klasörü ve araç kurulur (aday-listesi-araci), niş bilgisi sayfaya yazılır (aday-listesi-dosyasi).
+Klasöre: `adaylar.csv` ve `adaylar.html`, aday aracıyla; ilk gün gizli `.founderos/` klasörü ve araç kurulur (aday-listesi-araci), niş kartının "Telefonda söylenecekler" bölümü ve öğrencinin adı, şehri sayfaya yazılır (aday-listesi-dosyasi, kurulum 3. adım); Saha modu kartındaki Söyle metni oradan dolar.
 İş Beyni'ne: listenin çıkarıldığı tarih, çekimin iş kimliği, ham kayıt sayısı, servisin işaretlediği ve onayla silinen sayılar, kalan sayı, yüz işletmenin seçim tarihi, hızlı denetimi biten sayı, kullanılan kategori adı ve kapsanan ilçeler, bu ayki kullanım ve tavan, yedek yol kullanıldıysa tarihi.
 Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, sızıntı puanı ve en güçlü bulgu adaya-mesaj-yaz ile video-mesaj-cek'e, denetimi bitmiş otuz işletme kanitini-hazirla'nın yarınki deneme aramalarına, kategori adı ve seçilen yol bir sonraki ay tekrarı için kendine.
 

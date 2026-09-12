@@ -16,7 +16,7 @@ Kullanım kuralı: bir oturumda en fazla bir tane. Aynı inanç değişimi aynı
 
 ## Birinci küme: reddedilme
 
-**1. "Herkes reddediyor."** Reddedilme işin bozulduğunun değil, işin başladığının işareti. Planındaki zincir baştan reddedilme üzerine kurulu: her beş görüşmeden biri müşteri oluyor, yani dördü hayır. Otuz üç aramada bir randevu çıkıyor, yani otuz iki tanesi çıkmıyor. Sen bugüne kadar [şu kadar] arama yaptın; plana göre bu sayıda [şu kadar] randevu bekleniyordu. Kullanım: ilk yüz temas içinde.
+**1. "Herkes reddediyor."** Reddedilme işin bozulduğunun değil, işin başladığının işareti. Planındaki zincir baştan reddedilme üzerine kurulu: planın varsayımı beş görüşmeden bir müşteri, yani dördü hayır; senin gerçek oranın otuz görüşmede belli olacak. Otuz üç aramada bir randevu çıkıyor, yani otuz iki tanesi çıkmıyor. Sen bugüne kadar [şu kadar] arama yaptın; plana göre bu sayıda [şu kadar] randevu bekleniyordu. Kullanım: ilk yüz temas içinde.
 
 **2. "İlk yirmi beş hayır"**. İlk yirmi beş hayır ölçüm değil, ısınma. Sen o sırada satmayı değil konuşmayı öğreniyorsun. Oran ancak otuz görüşmeden sonra bir şey söylüyor; ondan önce bakılan oran seni yanlış yere götürür. Kaç görüşme yaptın: [rakam]. Kullanım: ilk otuz görüşme içinde.
 
@@ -32,7 +32,7 @@ Kullanım kuralı: bir oturumda en fazla bir tane. Aynı inanç değişimi aynı
 
 **7. "Teklifim zayıf, baştan yazsam."** Teklifin kelimeleri on görüşme dolmadan değişmiyor ve aynı işaret o on görüşmenin en az beşinde görülmeden değişmiyor. Sende [şu kadar] görüşme var. Şu anda teklifi değiştirirsen neyin işe yaradığını bir daha hiç bilemezsin, çünkü ölçtüğün şeyi ortadan kaldırmış olursun. Kullanım: kapanmayan görüşmelerden sonra.
 
-**8. "Sattığım şeyi ben bile tam anlamıyorum."** Anlamak anlatmakla geliyor, okumakla değil. Bir dakikalık anlatımını sesli olarak kaç kez söyledin: [rakam]. Bugünün işi okumak değil, on kere sesli söylemek. Kullanım: hazırlık bloğunun uzaması.
+**8. "Sattığım şeyi ben bile tam anlamıyorum."** Anlamak anlatmakla geliyor, okumakla değil. Bugünün işi okumak değil, bir dakikalık anlatımı on kere sesli söylemek: ilk üçü kendine, sonrakiler telefonda. Kaç kez söylediğini sen say, FounderOS'a söyle. Kullanım: hazırlık bloğunun uzaması.
 
 ## Üçüncü küme: para ve fiyat
 
@@ -52,7 +52,7 @@ Kullanım kuralı: bir oturumda en fazla bir tane. Aynı inanç değişimi aynı
 
 **15. "Biraz daha hazırlanayım, sonra ararım."** Hazırlık bir yere kadar hazırlık, ondan sonra erteleme. Ölçüsü şu: on iki prova yapıldıysa ve sıfır gerçek görüşme varsa hazırlık bitmiştir. Sende [prova sayacı] prova, [görüşme sayısı] görüşme var. Kullanım: prova sayacı dolduğunda.
 
-**16. "Sistemi daha iyi kurayım, sonra satarım."** Sattığın şey sistem değil, sonuç. Sistem ilk müşteride kuruluyor ve ilk müşteride öğreniliyor. Bugüne kadar araç ekranında geçirdiğin süre [rakam], sahada geçirdiğin süre [rakam]. Kullanım: araç kurcalama.
+**16. "Sistemi daha iyi kurayım, sonra satarım."** Sattığın şey sistem değil, sonuç. Sistem ilk müşteride kuruluyor ve ilk müşteride öğreniliyor. Bugüne kadar yaptığın temas sayısı kayıtta: [temas sayısı]. Araç ekranında geçen saati kimse saymıyor ama o saat bu sayıya bir şey eklemedi. Kullanım: araç kurcalama.
 
 ## Beşinci küme: kimlik
 

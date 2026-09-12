@@ -92,6 +92,16 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 
 **Gerçek itirazlar ve karşılıkları.** 5-7 itiraz; her biri işletmecinin ağzından, karşılık sektör verisiyle. Bölümün ilk satırı sabit: `En güçlü üç itiraz: [üç kısa ad, virgülle]`. Sistem üç itiraz videosunu bu üçünden çekiyor.
 
+**Telefonda söylenecekler.** Öğrencinin telefonda sesli okuyacağı satırlar; aday sayfasının Saha modu kartı bu bölümü olduğu gibi gösterir. Genel arama sırası (tanış, rahatlat, gözlem ya da açılış sorusu, işleyiş sorusu, ne yaptığın, randevu) ve genel itirazlar (müsait değilim, ne için arıyorsunuz, WhatsApp'tan gönderin, kendimiz ilgileniyoruz, bot istemiyoruz, pahalı, ilgilenmiyorum) adaya-mesaj-yaz modülünde durur, karta yazılmaz. Karta yalnız bu nişe özel olan girer. Bölümün yapısı sabit, satır adları değişmez:
+
+- `Açılış sorusu: "…"` Kartın açılış cümlesinin telefonda sorulan hali. Tek soru, işletmecinin bir cümleyle cevaplayabileceği, zaten yapması gerektiğini bildiği bir şeyi hatırlatan. Sınav sorusu değil ("kaç arama kaçırdığınızı biliyor musunuz" yazılmaz).
+- `İşleyiş sorusu: "…"` Yoğunken telefona ya da mesaja yetişemeyince müşterinin ne yaptığını soran tek soru, nişin diliyle (sahada, koltukta, ameliyatta, keşifte).
+- `Ne yaptığın: "…"` Sistemin bu nişte ne yaptığı, tek cümle, kapsam içi: yazan müşteriye dakikalar içinde cevap, bilgiyi alıp randevuya ya da teklife yazma, eski müşteriye zamanı gelince hatırlatma. Teslim edilmeyen parça (cevapsız aramayı geri arama, telefonu açan sesli asistan) yazılmaz. Sonu sabit: "[Şehir]'de bu ay ilk üç [işletme türü] ile başlıyorum."
+- `Çalışan açarsa: "…"` Telefonu sahibi yerine açan kişinin "ne hakkında" sorusuna nişin diliyle iki cümle ve saat isteği ("Ne zaman [yerde] olur?").
+- `Karşı taraf bunu söylerse:` altında 5-7 madde, kartın "Gerçek itirazlar" bölümündeki itirazlardan, telefonda söylenecek biçimde. Her madde tek satır ve üç parça: `- "[itiraz, işletmecinin ağzından]" Söyle: "[sesli okunacak cümle]" Ne için: [tek cümle gerekçe] Sonra: [iki olası cevaba göre ne yapılır]`.
+
+Bu bölümün kuralları: Söyle cümlesi soruyla biter ve tek soru taşır, ikinci itiraz sorusu yok. Lira rakamı telefonda söylenmez, görüşmeye kalır. Kartta olmayan rakam geçmez; kartın rakamı geçiyorsa işletmecinin anlayacağı biçimde ("iki katından fazla", "günde onlarca çağrı"). Kartın kanıtı öğrencinin ağzından iddia olarak söylenmez, işletmeciye soru olarak sorulur ("bunu sen söylemezsin, ona söyletirsin"). Yer tutucu yalnız [adın], [şehir], [Şehir], [Ad]. Kendini küçültme yok, muhtaç ton yok, ısrar yok; açık ret gelince teşekkür ve kapanış, aday bir daha aranmaz. "Sonra" satırında FounderOS'un ne yazacağı varsa açıkça yazılır ("FounderOS 'sonra, sezon başı' yazar"). Bu bölüm yoksa Saha modu kartı modülün genel metniyle çalışır, uydurmaz.
+
 **Sahadan dolacak.** Bilinmeyenler listesi (gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademe satılıyor, ilk vaka çalışması).
 
 **Kaynaklar.** Kullanılan tüm URL'ler.

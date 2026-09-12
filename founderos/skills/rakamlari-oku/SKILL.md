@@ -136,5 +136,6 @@ Sıradaki: ertesi sabah gunu-planla. Haftanın son akşamında degisiklige-karar
 - Otuz görüşme doldu: kapanış oranı ilk kez okunur, fiyat kilidi açılır.
 - Bir sayı normalin çok altına düştü: haftayı beklemez, aynı akşam degisiklige-karar-ver açılır.
 - Akşam okuma iki gün üst üste atlandı: haftanın kararına gider.
+- Üç gün üst üste temas var ama sıfır cevap: ertesi sabah cevap-gelmiyor gunu-planla'dan önce açılır; liste, mesaj ve kanal sırayla kontrol edilir, niş değişmez.
 
 Beş kural: boş sayfa yok (beş sayı ve tek cümlelik kalıp hazır gelir) · sessiz bitiş yok (her gün tek cümleyle kapanır) · onay (CRM'e eksik kayıt senin onayınla yazılır) · sahadan güncelleme (kendi oranların birikince karşılaştırma rakamlarının yerine geçer) · sormaz söyler (hangi sayıya bakılacağını ve hangisine bakılmayacağını FounderOS söyler).

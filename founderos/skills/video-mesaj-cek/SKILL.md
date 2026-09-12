@@ -109,25 +109,19 @@ Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yar
 
 Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit:
 
-"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini [21/28] günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım[; deneme fiyatı açıksa: bu yüzden ay sonuna kadar kurulum ücretinde yarı fiyat uyguluyorum]. Siz ya da tanıdığınız biri bu tarife uyuyorsa on beş dakika görüşüp birkaç örnek göstereyim, uygun mu birlikte bakalım. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
+"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini [21/28] günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım. Yarın on birde yirmi dakika konuşalım, uymazsa siz saat söyleyin. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
 
-Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. "Yarı fiyat" fiyati-belirle'deki deneme fiyatının kendisidir ve yalnızca deneme fiyatı açıksa söylenir: hazırlık seviyesi düşük öğrencide ilk iki müşteri. Hazırlık seviyesi yüksek öğrenci bu cümleyi hiç söylemez; İş Beyni'ndeki deneme fiyatı işareti kapalıysa köşeli parantez içindeki cümle videoya girmez. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
+Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. Fiyat, deneme fiyatı ve kademe videoda söylenmez, görüşmeye kalır. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
 
 ### Kayıt: ekran kaydı, tek çekim, montaj yok
 
-Kayıt bilgisayarda ekran kaydı programıyla yapılır: ekran açık, yüzün köşede baloncukta, tek çekim, montaj yok. Kurulum bir kez, beşinci günde, FounderOS adım adım söyler.
+Kayıt bilgisayarın kendi ekran kaydıyla yapılır: ekran açık, sesin kayıtta, yüzün yok. Program indirilmiyor, hesap açılmıyor, ücretsiz. Yüzün olmadığı için ses her şey: mikrofon açık, sessiz oda. Tek çekim, montaj yok.
 
-Program ücretsiz seçeneği olan bir tarayıcı programıdır; adını ve adresini FounderOS o gün verir. Ücretsiz paketin bir kayıt süresi sınırı var. O sınırı ben sana söylemem, sen ekrandan okursun: hesap sayfasında "Free plan" yazan yerde kaç dakika yazıyorsa bana söylersin, plan ona göre yapılır. Bizim videomuz bir dakika, hangi sınır çıkarsa çıksın altında kalıyor.
+Mac'te: "Shift", "Command" ve "5" tuşlarına birlikte bas; ekranın altında bir çubuk çıkar. Çubukta ekranı çerçeveleyen ikinci simge "Record Entire Screen" (bütün ekranı kaydet); yanındaki "Options" (seçenekler) listesinde "Microphone" (mikrofon) altında bilgisayarın mikrofonunu seç. "Record" (kaydet) düğmesine bas, konuş; bitince üst çubuktaki kare "Stop" (durdur) düğmesine bas. Video masaüstüne düşer.
 
-Ekran İngilizce. Düğme adlarını üç parçalı veriyorum: İngilizcesi tırnakta, Türkçesi parantezde, ekranın neresinde olduğu. Ekran dili bölümündeki genel listede olan kelimelerde Türkçesini tekrar yazmıyorum, sadece nerede olduğunu söylüyorum.
+Windows'ta: "Windows" tuşu ile "Shift" ve "S" tuşlarına birlikte bas, üstte küçük çubuk çıkar; çubuktaki kamera simgesi "Record" (kaydet) yazar, ona bas, kaydedilecek alanı seç, mikrofon simgesinin açık olduğuna bak, "Start" (başla) de. Bitince "Stop" (durdur). Video "Videos" (Videolar) klasörüne düşer. Bu çubuk yoksa Windows'un eski sürümündedir; "Windows" tuşu ile "G" oyun çubuğunu açar, oradaki "Record" (kaydet) düğmesi aynı işi görür.
 
-1. Sağ üstte "Record" (kayda başla) yazan kırmızı düğmeye bas.
-2. Açılan pencerede "Screen" (ekran) yazan seçeneği ve altında "Camera" (kamera) yazan seçeneği birlikte açık bırak. İkisi birden açık olacak: biri adayın sayfası, biri senin yüzün.
-3. Sonra "Start" yazan düğmeye bas, geri sayım biter, konuşmaya başla.
-4. Bitince ekranın altındaki "Stop" düğmesine bas.
-5. Videoyu bilgisayarına almak için "Download" yazan yere bas.
-
-Ekran senin gördüğünle uyuşmuyorsa tek yol var ve utanılacak bir şey değil: ekranın görüntüsünü al, buraya at, FounderOS hangi düğme olduğunu söyler. Tarayıcının çeviri özelliği açılmaz; çeviri düğme adlarını değiştiriyor ve sonraki adım tutmuyor.
+Ekran senin gördüğünle uyuşmuyorsa ekranın görüntüsünü al, buraya at, hangi düğme olduğunu söylerim.
 
 Işık yüzüne gelsin, karanlık köşe olmasın; arka plan temiz olsun. Sessiz yer; kulaklığın mikrofonu yeter. Gülümse, sesini canlı tut; robot gibi konuşmak, videoyu yapay zekaya çektirmekle aynı şeye çıkıyor.
 

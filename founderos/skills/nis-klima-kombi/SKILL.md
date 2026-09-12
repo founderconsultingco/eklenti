@@ -65,6 +65,26 @@ En güçlü üç itiraz: telefonum zaten yanımda, fiyatı görmeden veremem, se
 
 "Yetkili servisiz, marka bizim adımıza reklam yapıyor." Marka talep üretiyor ama telefonu kim açtığı sahada senin elinde; Baymak, Buderus, ECA örneklerindeki şikayetlerin çoğu markanın ürettiği talebin sahada karşılanamamasından çıkıyor.
 
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+
+Açılış sorusu: "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?"
+
+İşleyiş sorusu: "Yazın en yoğun haftada siz sahadayken telefon çalınca ne oluyor, müşteri tekrar mı arıyor, WhatsApp'tan mı yazıyor?"
+
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, cihazı ve adresi alıp servis randevusuna yazıyor; geçen sezonun bakım listesine de sezon başında sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+
+Çalışan açarsa: "Sezonda usta sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman serviste olur?"
+
+Karşı taraf bunu söylerse:
+
+- "Telefonum zaten yanımda, ben açıyorum." Söyle: "Güzel, çoğu usta açamıyor. Çatıda ya da müşterinin evinde elinizde alet varken çalan telefonu da açabiliyor musunuz, yoksa o akşama mı kalıyor?" Ne için: telefonun yanında olmasıyla açılabilmesini ayırmak; kartta sezonda günde onlarca çağrı düştüğü yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "açıyorum" derse teşekkür et, "sezon başında bir kez daha arayabilir miyim" diye sor, kapat; FounderOS "sonra, sezon başı" yazar. "Akşama kalıyor" derse: "İşte o aradaki müşteri için kuruyorum" de ve saat iste.
+- "Fiyatı görmeden veremem, bot nasıl fiyat versin?" Söyle: "Vermiyor, haklısınız; klimada kombide tek fiyat söylenmez. Cihazın markasını, kaç yıllık olduğunu, bakım mı arıza mı montaj mı olduğunu ve adresi alıyor, size uygun saate randevu yazıyor. Fiyatı gidince siz söylüyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "yine de istemem" derse teşekkür et ve kapat.
+- "Bizim müşteri zaten arar, geri gelir." Söyle: "Geri gelen için bir şey yapmaya gerek yok zaten. Ben geçen sezon bakım yaptırıp bu sezon aramayanlar için arıyorum; onlara sezon başında sizin adınıza bir hatırlatma gitse ters olur mu?" Ne için: geri geleni tartışmamak, aramayanı sormak. Sonra: "ters olmaz" derse saat iste; "gerek yok, hepsi arar" derse teşekkür et, kapat; FounderOS "sonra" yazar.
+- "Elemanım bakıyor, ihtiyacım yok." Söyle: "İyi, o zaman şunu sorayım: yazın en yoğun haftada eleman da sahadayken telefona ve WhatsApp'a kim bakıyor?" Ne için: elemanın sahada olduğu anı sormak; kartta iyi usta bulmanın zor olduğu yazıyor, bunu sen söylemezsin. Sonra: "dükkanda biri var, bakıyor" derse teşekkür et ve kapat; "o da sahada" derse görüşme iste.
+- "Sezon zaten dolu, yeni müşteri istemiyorum." Söyle: "Yeni müşteri getirmiyorum zaten. Dolu sezonda açılmayan telefonun ve akşama kalan mesajın cevaplanması, bir de sezon bitince eski müşterinin hatırlatılması. Dolu sezonda sizde en çok ne kaçıyor, telefon mu, mesaj mı?" Ne için: sistemin talep üretmediğini söylemek ve sızıntıyı ona söyletmek. Sonra: cevabını al, "tam o tarafı kuruyorum, sezon bitince yirmi dakika görüşelim mi" de ve gün iste; verdiği günü FounderOS sıradaki tarihe yazar. Gün vermezse kapat, "sonra, sezon sonu" yazılır.
+- "Yetkili servisiz, marka bizim adımıza reklam yapıyor." Söyle: "Marka müşteriyi getiriyor, telefonu ve WhatsApp'ı yine siz açıyorsunuz. Markanın çağrı merkezinden düşen randevu dışında size doğrudan yazan ya da arayan müşteri oluyor mu?" Ne için: markanın ürettiği talebin sahada nerede kaldığını sormak. Sonra: "oluyor" derse görüşme iste; "her şey merkezden geliyor" derse teşekkür et ve kapat; FounderOS uygunluk sütununa "talep merkezden" yazar.
+- "Kış geldi, klima işi bitti." Söyle: "Kombi tarafı başlıyor, aynı sistem kombi bakım ve arıza çağrısını da yazıyor. Geçen kış kombi bakımı yaptırdığınız müşterilere bu kış hatırlatma gidiyor mu?" Ne için: iki sezonun birbirini beslediğini kartın diliyle söylemek. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
+
 **Sahadan dolacak.** Türkiye genelinde toplam klima/kombi servisi işletme sayısı, Armut'taki 2.665-3.553 rakamı sadece bir platforma özel. Gerçek dönüş süreleri, kaç saat ya da gün içinde geri arandığı. Çalışan açılış cümlesinin gerçek kapatma oranı. Hangi kademenin (1, 2 ya da 3) bu nişte daha kolay satıldığı. Telefonun açık kaldığı gerçek saatler ve yetkili servislerin çağrı merkezi çalışma modeli. İlk vaka çalışması. Doğalgaz periyodik tesisat kontrolü yönetmeliğinin kombi bakım hizmetiyle pratikte nasıl bir ilişkisi olduğu.
 
 **Kaynaklar.**

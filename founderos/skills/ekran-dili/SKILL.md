@@ -6,7 +6,7 @@ description: "Ingilizce arayuzlerde cikan genel kelimelerin Turkce karsiliklari.
 
 # Ekran dili (İngilizce arayüzler)
 
-Bu sistemde Türkçe bilmeyen ekranlar var ve bu değişmiyor: CRM, aday listesi çıkaran program, siteyi yayına alan program, WhatsApp iş hesabının yönetim ekranı, ödeme sağlayıcısının bir kısmı, kod deposu. Öğrenci İngilizce bilmiyor kabul edilir. Bilen öğrenci için de aynı yol yürür, bir zararı yok.
+Bu sistemde Türkçe bilmeyen ekranlar var ve bu değişmiyor: CRM, siteyi yayına alan servis, YouTube'un bir kısmı, WhatsApp iş hesabının yönetim ekranı, ödeme sağlayıcısının bir kısmı, Claude uygulamasının bazı düğmeleri. Öğrenci İngilizce bilmiyor kabul edilir. Bilen öğrenci için de aynı yol yürür, bir zararı yok.
 
 Kural, bütün modüllerde geçerli: FounderOS hiçbir zaman "İngilizce ekranı oku" demez. Bir düğmeden söz ederken üç şeyi birden verir.
 
@@ -52,6 +52,6 @@ Bir modül İngilizce ekranlı bir programda adım anlatıyorsa:
 
 ## Hangi programlar İngilizce
 
-İkinci günde: aday listesi çıkaran program, siteyi yayına alan program ve kod deposu, WhatsApp iş hesabının yönetim ekranı. Üçüncü günde: ödeme sağlayıcısının bir bölümü. Bunların hangi ekranında hangi düğmeye basılacağı ilgili modülün kendi metninde yazılı; burada sadece dilin nasıl ele alınacağı yazıyor.
+İkinci blokta: siteyi yayına alan servis, WhatsApp iş hesabının yönetim ekranı. Üçüncü blokta: ödeme sağlayıcısının bir bölümü. Beşinci blokta: YouTube'un yükleme ekranı. CRM başlangıç görüşmesinde açılıyor, o yüzden onun ekranları sabit bir bloğa bağlı değil. Bunların hangi ekranında hangi düğmeye basılacağı ilgili modülün kendi metninde yazılı; burada sadece dilin nasıl ele alınacağı yazıyor.
 
 Türkçe olan ve bu bölümün ilgilenmediği ekranlar: Google işletme profili, e-Devlet, banka uygulamaları, WhatsApp'ın kendisi. CRM bu listede değil: onun ekranı İngilizce ve düğme adları her adımda birlikte veriliyor.

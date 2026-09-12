@@ -69,6 +69,25 @@ En güçlü üç itiraz: telefona zaten ben bakıyorum, aracı görmeden fiyat v
 
 "Garantili araç bize zaten gelmez, yetkili servise gider." Rekabet Kurumu tebliğine göre garanti kapsamındaki araç sahibi de OEM eşdeğeri parça ve fatura şartıyla bağımsız serviste bakım yaptırabilir, garanti bundan dolayı düşmez.
 
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+
+Açılış sorusu: "Geçen sezon lastiğini değiştirdiğiniz ya da bakımını yaptığınız müşterileri bu sezon siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
+
+İşleyiş sorusu: "Siz aracın altındayken, elleriniz yağlıyken telefon çalınca ne oluyor, çırak mı açıyor, müşteri tekrar mı arıyor?"
+
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz aracın altındayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, aracın markasını, modelini, kilometresini ve arızanın belirtisini alıp servis randevusuna yazıyor; geçen yılın bakım ve lastik müşterilerine de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+
+Çalışan açarsa: "Usta aracın altındayken telefona ve WhatsApp'a yetişilemeyen saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
+
+Karşı taraf bunu söylerse:
+
+- "Zaten müşterim telefonla arıyor, ben bakıyorum." Söyle: "Güzel, çoğu usta bakamıyor. Aracın altındayken, elinizde anahtar varken çalan telefonu da açabiliyor musunuz, yoksa o akşama mı kalıyor?" Ne için: telefonun çalmasıyla açılabilmesini ayırmak; kartta şikayetlerin çoğunun iletişimsizlik ve gecikme üstüne olduğu yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "açıyorum" derse teşekkür et, "lastik sezonu başında bir kez daha arayabilir miyim" diye sor, kapat; FounderOS "sonra, lastik sezonu" yazar. "Akşama kalıyor" derse: "İşte o aradaki müşteri için kuruyorum" de ve saat iste.
+- "Fiyatı telefonda veremem, aracı görmem lazım." Söyle: "Vermiyor, haklısınız; araca bakmadan ne fiyat ne teşhis söylenir. Sistem markayı, modeli, yılı, kilometreyi soruyor, belirti ses mi ışık mı koku mu diye alıyor, varsa videoyu kayda ekliyor ve size uygun saate randevu yazıyor; arızayı da fiyatı da araç köprüye çıkınca siz söylüyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek; teşhis iddiası yok. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
+- "Zaten işim var, yetişemiyorum." Söyle: "Yeni müşteri getirmiyorum zaten. Dolu dükkanda sıraya giren işin içinden bakım, lastik seti ya da cam filmi soranı öne almak için arıyorum. Bugün arayanların içinden hangisi küçük iş, hangisi tam bakım, bunu kim ayırıyor?" Ne için: doluluğun kârlılık olmadığını kartın diliyle söylemek; düşük bileti eleyip yüksek bileti öne almayı ona sormak. Sonra: "ben, akşam" derse "o akşama kalan bakım sorusu için kuruyorum" de ve saat iste; "gerek yok" derse teşekkür et, kapat; FounderOS "sonra" yazar.
+- "Ustam yeter, telefonla kimse ilgilenmeyecek." Söyle: "İyi, o zaman şunu sorayım: usta da sizinle birlikte aracın altındayken WhatsApp'tan yazan müşteriye kim dönüyor?" Ne için: ustanın da araçta olduğu anı sormak; kartta iyi usta bulmanın zor olduğu ve güven sorunu yazıyor, bunu sen söylemezsin. Sonra: "çırak bakıyor" derse teşekkür et ve kapat; "o da altta" derse görüşme iste.
+- "Kış lastiği zaten zorunlu, insanlar kendiliğinden gelir." Söyle: "Ticari araçta zorunlu, binekte değil; binek müşterisi hava soğuyunca aklına gelirse geliyor. Geçen kış lastik değiştiren binek müşterilerine bu kış sizden bir hatırlatma gidiyor mu?" Ne için: zorunluluğun yalnız ticari araçta olduğunu kartın diliyle söylemek ve hatırlatmayı sormak. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
+- "Garantili araç bize zaten gelmez, yetkili servise gider." Söyle: "Bildiğim kadarıyla garantili araç sahibi de eşdeğer parça ve faturayla bağımsız serviste bakım yaptırabiliyor, garantisi düşmüyor; bunu müşteri çoğu zaman bilmiyor. Size 'aracım garantide, gelemem' diyen müşteri oluyor mu?" Ne için: kartın yasal sınırındaki bulguyu tek cümleyle söylemek ve bu müşterinin kapıya gelip gelmediğini sormak. Sonra: "oluyor" derse görüşme iste; "hiç olmaz, bize garantisiz gelir" derse teşekkür et ve kapat.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat/gün içinde geri aranıyor). Günlük ortalama araç/iş kapasitesi (kaldıraç, köprü sayısına göre). Çalışan açılış cümlesi ve kapatma oranı. Hangi kademenin daha çok sattığı ve ilk vaka çalışması. Ustanın telefona bakma alışkanlığı (kendisi mi bakıyor, çırağa mı bırakıyor). Cam filmi ve oto elektrik segmentlerine özgü şikayet/forum kanıtı (bu araştırmada ayrı derinlemesine taranmadı, kapsam sınırlı kaldı). Google Haritalar'daki tam kategori adları.
 
 **Kaynaklar.**

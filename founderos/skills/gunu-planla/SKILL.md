@@ -91,7 +91,7 @@ Tam zamanlı çalışıyorsan ilk müşterinin teslimi günlük temas hedefini d
 
 İşin yanında çalışıyorsan hedef sadece kurulum haftasında değil, ilk müşterinin **bütün teslim süresinde** yarıya iniyor: sıfırıncı günden rapor gününe kadar, her gün. Kırk temas o dönemde yirmi oluyor. Bir gün daha aynı şekilde yarılanıyor, o da şirket kuruluş günü.
 
-Sebebi rakamda: [21/28] günlük teslim bir kişinin yaklaşık elli saatini alıyor ve o saatler senin akşam bloğundan çıkıyor. Senin akşam bloğun günde bir saat, [21/28] günde yirmi bir saat ediyor. Teslim elli saat istiyor. Aradaki fark başka bir yerden değil, saha bloğundan alınıyor. Bunu plan baştan yazıyor ki sen hem sayıyı tutturamayıp hem de kendini suçlu hissetme. Garanti şartı da bu günleri hariç tutuyor.
+Sebebi rakamda: [21/28] günlük teslim bir kişinin yaklaşık elli saatini alıyor ve o saatler senin akşam bloğundan çıkıyor. Senin akşam bloğun günde bir saat; teslim süresi boyunca bu saatler elli saati karşılamıyor. Aradaki fark başka bir yerden değil, saha bloğundan alınıyor. Bunu plan baştan yazıyor ki sen hem sayıyı tutturamayıp hem de kendini suçlu hissetme. Garanti şartı da bu günleri hariç tutuyor.
 
 Teslim bitip rapor günü raporu çıktığı gün hedef kırka döner. Plan bunu kendisi yapar, sen hatırlatmazsın.
 
@@ -163,7 +163,7 @@ Teslim süresinde, tam zamanlı çalışana: "Müşterinin teslimi akşam bloğu
 
 İş Beyni'ne: gün sayacı, o günün planı, planın açılıp açılmadığı, tamamlanan blok, o gün kaç adayın derin denetiminin yapıldığı, ertesi güne kalan iş.
 CRM'e: hiçbir şey. Kayıtları modüllerin kendisi yazar, plan sadece sırayı verir.
-CRM açılmadıysa günün listesi aday aracıyla kurulur (aday-listesi-dosyasi, `bugun --planla`; tam zamanlıda yüz, işin yanında kırk): bugün sıraya alınan adayların sıradaki tarihi bugüne yazılır, sayfanın Saha modu dolar. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Sekiz yüz satır sohbete okunmaz, aracın çıktısı yeter.
+CRM açılmadıysa günün listesi aday aracıyla kurulur (aday-listesi-dosyasi, `bugun --planla`; tam zamanlıda yüz, işin yanında kırk): bugün sıraya alınan adayların sıradaki tarihi bugüne yazılır, sayfanın Saha modu dolar. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her kartta ne söyleyeceğin yazıyor, her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Sekiz yüz satır sohbete okunmaz, aracın çıktısı yeter.
 
 ## 8. Yedek yol
 

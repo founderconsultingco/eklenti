@@ -117,7 +117,7 @@ Metni ezberleme, yedi parçayı bil ve kendi kelimelerinle anlat.
 
 ### Yükleme ve yerleştirme
 
-Videolar YouTube'a liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı.
+Videolar YouTube'a liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı. Yükleme yolu, bilgisayardan: youtube.com adresinde sağ üstteki kamera simgesi "Create" (oluştur), listede "Upload videos" (video yükle); açılan pencerede "Select files" (dosya seç) ile telefondan bilgisayara aldığın videoyu seç (telefondan bilgisayara geçirme: iPhone'da AirDrop ya da kabloyla Fotoğraflar, Android'de kabloyla ya da Google Fotoğraflar). Başlık kutusuna videonun adını yaz, "Next" (ileri) ile üç ekran geç, son ekranda "Visibility" (görünürlük) altında "Unlisted" (liste dışı) seç, "Save" (kaydet). Sağdaki "Video link" (video bağlantısı) satırındaki adresi kopyala, bana yapıştır. YouTube'un arayüzü hesabının diline göre Türkçe de olabilir; o zaman aynı düğmelerin Türkçesi ekranda yazıyor.
 
 Ön görüşme sayfasına şu sırayla konur: ön görüşme videosu en üstte, altında EVET düğmesi, altında üç itiraz videosu.
 

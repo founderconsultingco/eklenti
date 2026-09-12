@@ -14,11 +14,11 @@ Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, adaylar�
 
 Müşterinin sistemiyle karıştırma. O, müşteri kazandığında CRM'de ayrı bir bölümde kuruluyor.
 
-Neden bu iş var: altıncı günden itibaren günde yüz temas yapacaksın. Telefon yolunda elli arama, otuz e-posta, yirmi Instagram mesajı; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
+Neden bu iş var: saha açılınca günde yüz temas yapacaksın. Telefon yolunda elli arama, otuz e-posta, yirmi Instagram mesajı; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
 
 Üçüncüsü bugünün asıl işi: aynı adaya dört ayrı kanaldan ulaşacaksın. Telefon, e-posta, Instagram, video. Kimin hangi kanalda nerede kaldığını bilmezsen ya aynı kişiye üst üste yazarsın ya da cevap vereni unutursun. İkisi de adayı kaybettiriyor.
 
-Neden bugün: CRM bugün açıldı; aday listen `adaylar.csv`'de, temasların ve puanların orada hazır. Sistem bugün tanınır ve liste tek seferde içine girer; yarından itibaren kayıt yeri CRM'dir.
+Neden bugün: CRM bugün açıldı. Sistem bugün tanınır ve İş Beyni'ndeki liste tek seferde içine girer; yarından itibaren kayıt yeri CRM'dir.
 
 Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört akış hesabın açıldığı gün hazır geldi. Bugünkü işin doğrulamak ve tanımak.
 
@@ -31,11 +31,11 @@ Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört 
 Pazarlamadaki karşılığı: aday takibi.
 
 ## 2. Ne zaman çalışır
-- CRM hesabın açıldığı gün, bağlantıdan hemen sonra, üç saat. Hesap başlangıç görüşmesinde açıldığı için bu gün sabit değil; görüşmenin ertesi günüdür. O güne kadar takip işini İş Beyni'nin "Bugünün listesi" bölümü yapar: takip günü gelenler her sabah oradan okunur ve mesajları sen gönderirsin.
+- CRM hesabın açıldığı gün, bağlantıdan hemen sonra, bir saat. Hesap başlangıç görüşmesinde açıldığı için bu gün sabit değil; görüşmenin ertesi günüdür. O güne kadar takip işini İş Beyni'nin "Bugünün listesi" bölümü yapar: takip günü gelenler her sabah oradan okunur ve mesajlar elle gider.
 - İkinci kez: ayda bir liste yenilendiğinde. O gün yalnız yükleme bölümü açılır.
 - Üçüncü kez: üç yüzüncü temasta ya da bir satır işe yaramadığında.
 
-Üç saat tam zamanlıda sabah bloğunu tam dolduruyor. İşin yanında çalışıyorsan sabah bloğun bir saat, o yüzden modül bölünüyor. Bölünmenin nasıl olduğu beşinci bölümün sonunda yazılı.
+Bir saat: kurmuyorsun, tanıyorsun. İşin yanında çalışıyorsan bu saat ikinci bloğun ilk akşamına oturur.
 
 ## 3. Ne okur
 
@@ -154,7 +154,7 @@ Ne yapıyor: bir kanalın durumu "yapıldı" olduğu anda başlıyor. Üçüncü
 
 Mesajı zincir göndermiyor, sen gönderiyorsun. Zincir sadece o günü sana hatırlatıyor. Tek istisna e-posta takipleri: onların metnini sen onaylıyorsun, gönderimi CRM yapıyor.
 
-Sebebi şu: satışların çoğu ilk temasta olmuyor, beşinci ile yedinci temas arasında oluyor. İki temasta bırakan kişi işin çoğunu görmeden bırakıyor.
+Sebebi şu: cevapların çoğu ilk temasta gelmiyor; iki temasta bırakan kişi işin çoğunu görmeden bırakıyor. Bizde kaçıncı temasta geldiği sahadan dolacak.
 
 Zincirin istisnası yok, herkeste aynı çalışıyor. Bu bilerek böyle: dallanan akış bozulduğunda sessizce bozuluyor, tek yollu akış bozulduğunda hemen görülüyor. Yazı yolundaki yüz işletmede video sırası ayrı yürüyor; zincir o adayları sadece listende gösteriyor, ne yapacağını video sırası söylüyor.
 
@@ -182,21 +182,19 @@ Sen kimi arayacağına karar vermiyorsun, sıralama yapmıyorsun, sayı toplamı
 
 Oranlara bugün bakmıyorsun. Her oranın kendi eşiği var: iki yüz temasta cevap oranına ilk teşhis için bakılıyor, üç yüz temasta karar veriliyor, gelme oranı otuz randevu birikmeden okunmuyor, kapanış oranı otuz görüşme birikmeden okunmuyor. Tek istisna haftalık zayıf halka bakışı; o ilk haftadan itibaren çalışıyor ve sayıya bakıyor, orana değil.
 
-### Sekizinci iş, test yüklemesi (30 dakika)
+### Sekizinci iş, yükleme ekranı (30 dakika)
 
-İkinci günde on kayıtlık bir deneme yapmıştın. O Excel dosyasını şimdi kullanıyorsun.
+Yükleme ekranını iki durumda da aynı yerden açıyorsun; yaptığın iş aday listenin hazır olup olmadığına göre değişiyor.
 
-1. Dosyayı aç, sütun başlıklarına bak: işletme adı, adres, telefon, web sitesi, puan, yorum sayısı, kategori, çalışma saatleri.
-2. CRM'de kişiler bölümünü aç, sağ üstteki "Import" (yükleme) düğmesine bas, dosyayı seç.
-3. Eşleme ekranı geliyor. Dosyanın hangi sütunu CRM'in hangi satırına gidecek, tek tek işaretliyorsun: işletme adı, telefon, web sitesi, adres, yorum sayısı, semt.
+1. Sol menüde "Contacts" (kişiler). Sağ üstte "Import Contacts" (kişileri içe aktar) düğmesi.
+2. "Upload File" (dosya yükle) kutusuna dosyayı bırak. Aday listen `adaylar.csv`'de hazırsa o dosyayı veriyorum; listen henüz çıkmadıysa bugün dosya yüklemiyorsun, ekranı görüp geri okuyla çıkıyorsun ve bu adım liste çıktığı gün tamamlanıyor.
+3. "Map Fields" (alanları eşle) ekranı gelir: dosyanın hangi sütunu CRM'in hangi satırına gidecek, satır satır seçilir. Hangi sütunun nereye gideceğini ben veririm, sen listeden seçersin.
 4. Kayıt türü satırına "aday" yaz. Yükleme ekranı bütün kayıtlara aynı değeri verebiliyor, tek tek yazmıyorsun.
-5. Yükle. 10 kayıt düşüyor.
+5. Yükle, sonra sayıyı karşılaştır: CRM'e düşen kayıt sayısı dosyadaki satır sayısıyla aynı olmalı. Tutmuyorsa eşleme yanlıştır, geri alınır ve tekrarlanır.
 6. Bir kaydı aç ve üç şeye bak: dört kanal durumunun dördü de "yapılmadı" mı, sıradaki hareket satırı boş mu, kayıt türü "aday" mı. Dört kanalı "yeni aday hazırlama" akışı dolduruyor, birkaç saniye sürebiliyor; hemen bakma, sayfayı bir kez yenile.
 7. Bir kaydı aday hattına ekle, aşaması "yeni" gelsin. Sonra elle "yazdım" yap ve ekranın o kaydı taşıdığını gör.
-8. Aynı dosyayı ikinci kez yükle. CRM aynı kişiyi gördüğünde yeni kayıt açmıyor, mevcut kaydı güncelliyor. 10 kayıt 10 kalmalı. 20 olduysa eşlemeyi yanlış yapmışsın, geri al ve tekrarla.
-9. Test kayıtlarını sil. Yarın gerçek liste gelecek.
 
-Bu adımlar üçüncü günün beş yüz kişilik yüklemesini garantiye alıyor. Aynı adayın iki kere girmemesi önemli, çünkü ikinci ayda listeyi yenilediğinde aynı işletmeler tekrar çıkıyor ve arka arkaya aranan numara seni engelliyor.
+Aynı adayın iki kere girmemesi yükleme ekranının kendi işi: aynı numarayı görünce yeni kayıt açmaz, olanı günceller. Bu önemli, çünkü ikinci ayda listeyi yenilediğinde aynı işletmeler tekrar çıkıyor ve arka arkaya aranan numara seni engelliyor.
 
 ### Dokuzuncu iş, not kuralı (5 dakika)
 
@@ -210,9 +208,9 @@ Adayın söylediği cümle nota gidiyor, itirazı ise ayrıca "itiraz" satırın
 
 ### Onuncu iş, takvim linkini özel değerlere yaz (10 dakika)
 
-Ayarlarda "özel değerler" ekranı var. İkinci günde dördünü doldurmuştun: adın, şehrin, telefonun, e-postan. Bugün bir satır daha doluyor.
+Sol menünün en altında "Settings" (ayarlar), listede "Custom Values" (özel değerler). Sabah dördünü doldurdun: adın, şehrin, telefonun, e-postan. Şimdi bir satır daha doluyor.
 
-Takvimin linki bugün belli oldu; o linki "takvim linki" satırına yapıştırıyorsun. Bütün randevu mesajları ve e-posta takipleri o satırdan okuyor. Yanlış yazılan tek satır bütün mesajları bozuyor, o yüzden yapıştırdıktan sonra linke bir kez kendin tıkla.
+Takvimin linki bugün belli oldu; o linki "Takvim linki" satırına yapıştırıyorsun (satırın sağındaki kalem, yapıştır, "Save" (kaydet)). Bütün randevu mesajları ve e-posta takipleri o satırdan okuyor. Yanlış yazılan tek satır bütün mesajları bozuyor, o yüzden yapıştırdıktan sonra linke bir kez kendin tıkla.
 
 ### Süre ve bölünme
 
@@ -236,12 +234,12 @@ Kanal satırlarını fazla bulursa: "Dört kanaldan ulaşacaksın ve aynı adaya
 Ekranın İngilizce olmasına takılırsa: "Ekran İngilizce ve öyle kalacak, Türkçesi yok. Sen İngilizce okumuyorsun, ben hangi düğme nerede duruyor söylüyorum. Bulamadığın yerde ekranın görüntüsünü at."
 Satır eklemek isterse: "Elle satır ekleme. Adı birebir tutmazsa o satırı hiçbir modül bulamıyor ve sayım bozuluyor. Ne lazımsa söyle, ben ekliyorum."
 Not almayı atlamak isterse: "Arama biter bitmez tek satır, adayın kendi cümlesi. Akşama bırakırsan yazmıyorsun, yazmadığın temas olmamış sayılıyor."
-İki temasta vazgeçmek isterse: "Satışların çoğu beşinci ile yedinci temas arasında oluyor. Zincir üç adımlı ve o günü sana kendiliğinden hatırlatıyor."
+İki temasta vazgeçmek isterse: "Cevapların çoğu ilk mesajda gelmiyor. Zincir üç adımlı ve o günü sana kendiliğinden hatırlatıyor."
 Satır sayısını fazla bulursa: "Her satırı bir modül okuyor. Gözlem satırını mesajın yazıyor, itiraz satırını haftanın kararı sayıyor, en güçlü bulguyu mesajın ilk cümlesi okuyor, arama testi sonucunu görüşmedeki kanıtın kullanıyor. Boş duran satır yok."
 Sabah listesini kendi sıralamak isterse: "Sıralamayı sen yapmıyorsun. 'Gün' yazıyorsun, en üstten başlıyorsun. Kimi önce arayacağını düşünmek günde yirmi dakika yiyor ve o yirmi dakika beş arama demek."
 Günün listesini CRM'de arıyorsa: "O listeyi CRM'de arama, orada yok. Sıralamayı ben kuruyorum çünkü dört kademeli sıralama CRM'in liste ekranından çıkmıyor. Sen 'gün' yazıyorsun, liste geliyor."
 Oran sorarsa: "Bugün oran yok. Cevap oranına iki yüz temasta bakıyoruz, karar üç yüzde. Gelme oranı otuz randevuda, kapanış oranı otuz görüşmede."
-Bitince: "Sistem hazır. Sırada paranın yolu: ödeme linki ve evrak listesi."
+Bitince: "Sistem hazır. Sırada sayfanın yayını; yarın liste."
 
 ## 7. Ne yazar
 

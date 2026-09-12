@@ -67,6 +67,25 @@ En güçlü üç itiraz: keşfi de telefonu da ben yapıyorum, keşif olmadan fi
 
 "WhatsApp'tan zaten dönüyorum." Şikayetlerde tekrarlanan tema "sürekli oyalandım, kimse gelmedi"; yazılı dönüş sistemsiz yürüyor, unutuluyor.
 
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+
+Açılış sorusu: "Geçen ay keşfe gidip teklif verdiğiniz de dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa telefonda öyle mi duruyorlar?"
+
+İşleyiş sorusu: "Ekip montajdayken, siz keşifteyken WhatsApp'tan ya da siteden 'cam balkon kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, başka bayiye de mi yazıyor?"
+
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, hangi ürün, kaç metrekare ya da kaç pencere, kaçıncı kat ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip dönmeyen müşteriye ve garantisi süren eski işe de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+
+Çalışan açarsa: "Usta keşifteyken ya da montajdayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
+
+Karşı taraf bunu söylerse:
+
+- "Ben zaten ücretsiz keşif veriyorum, telefonu ben açarım." Söyle: "Güzel, çoğu bayi açamıyor. Siz merdivende ölçü alırken ya da montajdayken çalan telefonu ve gelen mesajı da anında karşılayabiliyor musunuz, yoksa akşama mı kalıyor?" Ne için: keşfe gitmekle telefona anında dönmeyi ayırmak; kartta aynı havuzdan beslenen bayinin çok olduğu ve ilk dönenin kazandığı yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "anında" derse teşekkür et, "yoğun dönemde değişirse bir kez daha arayabilir miyim" de, kapat; FounderOS "sonra" yazar. "Akşama kalıyor" derse: "İşte o aradaki müşteri için kuruyorum" de ve saat iste.
+- "Fiyatı telefonda veremem, keşif lazım." Söyle: "Vermiyor, haklısınız; ölçü alınmadan bu işte fiyat söylenmez. Sistem hangi ürün, kaç metrekare ya da kaç pencere, kaçıncı kat olduğunu soruyor, fotoğraf isteyip kayda ekliyor ve size uygun güne keşif randevusu yazıyor; fiyatı ölçüyü alınca siz söylüyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
+- "Teklif verdiğim kişi zaten kararsız, aramanın anlamı yok." Söyle: "Kararsız, doğru; o yüzden başka bayiden de teklif almıştır ve kimden son haber aldıysa onu hatırlar. Geçen ay teklif verip dönmeyenlere sizin adınıza bir hatırlatma gitse ters olur mu?" Ne için: kararsızlığı tartışmamak; kartta müşterinin birden fazla bayiden teklif alıp karşılaştırdığı yazıyor, kaybolan havuzun kendisi bu. Sonra: "ters olmaz" derse saat iste; "gerek yok, dönen döner" derse teşekkür et, kapat; FounderOS "sonra" yazar.
+- "Apartmanda izin işi bizim işimiz değil." Söyle: "Sistemin de işi değil; komşu izni, kat maliki gibi konularda tek kelime söylemiyor, soruyu size bırakıyor. Sadece ürünü, ölçüyü, katı ve fotoğrafı alıp keşif gününü yazıyor. Böyle olsa sizin için sorun olur mu?" Ne için: hukuki konuyu sistemin sahibine devrettiğini kartın asistan kuralıyla söylemek. Sonra: "olmaz" derse saat iste; "istemem" derse teşekkür et ve kapat.
+- "Zaten işim var, yetişemiyorum." Söyle: "Yeni müşteri getirmiyorum zaten; ben boşa giden montaj günü için değil, cevapsız kalan teklif için arıyorum. Bugün size fiyat soranların hepsine akşam dönülüyor mu, yoksa bir kısmı öyle mi kalıyor?" Ne için: doluluğun kârlılık olmadığını kartın diliyle söylemek; kartta günlük montaj kapasitesinin bir iki ev olduğu ve asıl kaybın cevapsız teklif olduğu yazıyor, bunu sen söylemezsin. Sonra: "bir kısmı kalıyor" derse "o kalan kısım için kuruyorum" de ve saat iste; "hepsine dönüyorum" derse teşekkür et, kapat; FounderOS "sonra" yazar.
+- "Garanti zaten iki yıl bizim sorumluluğumuzda, aramaya gerek yok." Söyle: "Sorumluluk sizde, o yüzden meşru bir sebep; iki yıl içinde 'nasıl çalışıyor, conta ve mekanizma yerinde mi' diye giden bir mesaj satış değil, bakım. Geçen yıl taktığınız cam balkonların sahiplerine sizden böyle bir mesaj gidiyor mu?" Ne için: garantinin arama sebebi olduğunu kartın yasal sınırıyla söylemek; satış değil bakım hatırlatması. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
+
 **Sahadan dolacak.** Gerçek keşif-satış kapanma oranı, dönüş süreleri, çalışan açılış cümlesi, hangi kademenin satıldığı, ilk vaka çalışması, kim karar veriyor (sahibi mi satış temsilcisi mi), telefonun açık/kapalı olduğu saatler, işletmecinin kendi ağzından dertleri, Türkiye geneli toplam işletme sayısı, bayilik yatırım tutarı.
 
 **Kaynaklar.**

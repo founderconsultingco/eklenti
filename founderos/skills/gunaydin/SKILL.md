@@ -21,7 +21,9 @@ Sırayla:
 
    Hazırlık kapanmadıysa (on dördüncü bölümde "Hazırlık tamamlandı: tamam" satırı yoksa) günün sırasını ana yöneticinin beş bloğundan ve öğrencinin çalışma düzeninden okursun: tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün. Gün sayacına bakarak "hazırlık bitti" demezsin; işin yanında çalışan biri yedinci günde hâlâ dördüncü bloktadır. Öğrenciye blok numarası söylemezsin, bugün ne yapacağını söylersin.
 
-   Dün başlangıç görüşmesi yapıldıysa ya da öğrenci "CRM hesabım açıldı" diyorsa, o günün ilk işi `founderos:araclari-kur` modülünün "CRM açıldığı gün" adımıdır ve günün planının önüne geçer.
+   CRM hesabı başlangıç görüşmesinde açılır, sabit bir güne bağlı değildir. Öğrenci "CRM hesabım açıldı", "görüşmeyi yaptık" dediği günün ilk işi `founderos:araclari-kur` modülünün "CRM açıldığı gün" bölümüdür ve günün planının önüne geçer.
+
+   Öğrenci iki günden uzun aradan sonra geliyorsa ana yöneticinin "Ara verince" bölümü uygulanır: ilk cümle arayı okur, ilk gün küçültülmüş tek iş.
 
    Hazırlık kapandıysa `founderos:gunu-planla` modülünü çalıştırırsın. CRM bağlı değilse plan aday aracıyla kurulur (`bugun --planla`, aday-listesi-dosyasi) ve öğrenciye sayfanın Saha modu sekmesi gösterilir; "CRM çalışmıyor" demezsin, "bugünün listesi sayfada" dersin. Öğrenci "kimse cevap vermedi" derse `founderos:cevap-gelmiyor` modülünü açarsın. O günün tek işini, sayılarını ve sırasını ver.
 
@@ -43,7 +45,7 @@ Doğrulamayı ekranda anlatmazsın. Öğrenci teknik bir işlem görmez.
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.23.0
+Bu paketin sürümü: 0.24.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
 

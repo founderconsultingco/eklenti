@@ -76,7 +76,7 @@ Tabloyu FounderOS doldurur, sağlayıcıları yan yana koyar, adı sen yazarsın
 
 Bu mesaj ne zaman gider: "evet" gelir gelmez, sen telefonu kapatmadan, sözleşme ve karşılama formuyla aynı mesajda. "Aynı gün" yok, "beş dakika içinde" var. Link yolunda da sıra aynı.
 
-Fatura ne zaman kesilir: bunu mali müşavirin söyler. Şirketin yoksa havale yolunu ancak müşavirine sorduktan ve belgeyi ne zaman keseceğini öğrendikten sonra kullanırsın. Cevap gelmeden müşteriye tarih sözü verilmez. Müşteri sorarsa tek cümle: "Belgeyi mali müşavirim çıkarıyor, tarihini size yazılı bildireceğim." Uydurma tarih yok, "birkaç güne" gibi lastikli söz yok, "faturasız olur mu" pazarlığı yok.
+Fatura ne zaman kesilir: bunu mali müşavirin söyler. Şirketin yoksa havale yolunu ancak müşavirine sorduktan ve belgeyi ne zaman keseceğini öğrendikten sonra kullanırsın; o soruyu birinci günde aradığın müşavire bugün sorarsın, cevap İş Beyni'ne yazılır ve erken gelen "evet" beklemez. Cevap gelmeden müşteriye tarih sözü verilmez. Müşteri sorarsa tek cümle: "Belgeyi mali müşavirim çıkarıyor, tarihini size yazılı bildireceğim." Uydurma tarih yok, "birkaç güne" gibi lastikli söz yok, "faturasız olur mu" pazarlığı yok.
 
 **Sözleşme şablonu.** Şablon hazır geliyor, dosyada duruyor. Sen sözleşme yazmıyorsun, yapay zekaya da yazdırmıyorsun; hazır metni alıp köşeli parantezleri dolduruyorsun.
 

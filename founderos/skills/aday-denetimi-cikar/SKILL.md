@@ -100,7 +100,7 @@ Hızlı denetimin beş satırının üstüne beş şey daha eklenir.
 
 **9. İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle iş ilanı sitelerine, işletmenin Instagram'ına ve sitesinin kariyer sayfasına bakılır. Yazılan: ilan var mı, tarihi, başlığı. "Resepsiyonist arıyoruz" ilanı veren işletme telefonu kaçırdığını kendisi söylüyor; bu bulgu varsa en güçlü bulgu sırasında canlı arama testinin hemen ardına girer ve e-posta açılışı bu ilandan kurulur.
 
-**10. Kim karar veriyor.** Kartın "kim karar veriyor" bölümünün söylediği kişinin adı. Üç yere bakılır: sitenin hakkımızda ve iletişim sayfası, Instagram biyografisi, Google yorumlarına verilen cevapların altındaki imza. Bulunamazsa "bulunamadı" yazılır ve o aday telefon sırasına girmez, yazı sırasına düşer.
+**10. Kim karar veriyor.** Kartın "kim karar veriyor" bölümünün söylediği kişinin adı. Üç yere bakılır: sitenin hakkımızda ve iletişim sayfası, Instagram biyografisi, Google yorumlarına verilen cevapların altındaki imza. Bulunamazsa "bulunamadı" yazılır; aday yine aranır, açılış "işletme sahibi siz misiniz" olur ve ad ilk aramada öğrenilip karta yazılır. Adı bulunanlar sırada önde gelir.
 
 ### Denetim kartının kendisi
 
@@ -126,9 +126,11 @@ SIRADAKİ KANAL: [telefon / e-posta / Instagram / video]
 
 **En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve iş ilanı varsa o ("resepsiyonist arıyorsunuz" cümlesi). O da yoksa yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi. Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gider; bu adayın sırası listenin sonundadır.
 
-**Lira karşılığı** tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
+**Kanca sütunu** telefonda sesli söylenecek tam cümledir, bulgunun kendisi değil: bulgu "11 Eylül salı 19.05'te aradın, dört çalışta açılmadı, geri arayan olmadı" diye kaydedilir; kanca "Salı akşamı yediye doğru sizi bir kere aradım, açılmadı" olur. Kanca günün adını taşır, bir haftadan eskiyse FounderOS yeniler ya da boşaltır. Gözlem yoksa kanca boştur, sayfa "gözlem yok" gösterir ve kartın açılış sorusu kullanılır. Tek gözlemden "sürekli", "her akşam" gibi genelleme yazılmaz.
 
-**Sıradaki kanal** nasıl seçilir: karar verenin adı bulunduysa ve kartın kanal yolu telefonsa telefon. Ad bulunamadıysa e-posta. Nişin ana kanalı yazıysa ve Instagram hesabı canlıysa Instagram. Sızıntı puanı dörtten yüksekse ve aday en çok istenen yüzdeyse video. Bu seçimi FounderOS yapar, sen seçmezsin.
+**Lira karşılığı** telefonda söylenmez; sayfanın Saha modu kartında görünmez, görüşme özet ekranında durur. Tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
+
+**Sıradaki kanal** nasıl seçilir: kartın kanal yolu telefonsa telefon, ad bulunsun bulunmasın. Ad bulunamamış ve e-postası varsa önce e-posta, üçüncü gün telefon. Nişin ana kanalı yazıysa ve Instagram hesabı canlıysa Instagram. Sızıntı puanı dörtten yüksekse ve aday en çok istenen yüzdeyse video. Bu seçimi FounderOS yapar, sen seçmezsin.
 
 ### Denetimden mesaja
 

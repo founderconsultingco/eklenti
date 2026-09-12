@@ -11,8 +11,8 @@ description: "Aday listesinin kurallari: adaylar.csv'nin otuz sekiz sutunu, aday
 ## Klasördeki dosyalar
 
 - `adaylar.csv`: kayıtların kendisi, tek kaynak. UTF-8, virgülle ayrılmış, başlık bir kere.
-- `adaylar.html`: öğrencinin çift tıklayıp tarayıcıda açtığı sayfa. Araç her yazıştan sonra yeniden üretir; veri sayfanın içinde gömülüdür, yanına başka dosya gerekmez. İki sekmesi var: Liste (bütün havuz, arama, süzgeç, sıralama, satıra tıklayınca ayrıntı) ve Saha modu (bugün sırada olanlar kart kart: telefon, sahibi, bulgu, kanca, açılış cümlesi ve itirazlar; her kartta sonuç düğmeleri; sonunda "Sonuçları kopyala").
-- `.founderos/`: gizli çalışma klasörü, öğrenci görmez. İçinde `adaylar-arac.py` (araç), `adaylar-sablon.html` (sayfa şablonu), `sayfa.json` (niş adı, açılış cümlesi, itirazlar), `gelen.csv` (servisten son inen ham sayfa), `sonuc.txt` (öğrencinin yapıştırdığı son saha sonuçları), `yedek/` (son on csv yedeği). Klasör kuralının üçüncü istisnasıdır; başka bir şey buraya yazılmaz.
+- `adaylar.html`: öğrencinin çift tıklayıp tarayıcıda açtığı sayfa. Araç her yazıştan sonra yeniden üretir; veri sayfanın içinde gömülüdür, yanına başka dosya gerekmez. İki sekmesi var: Liste (bütün havuz, arama, süzgeç, sıralama, satıra tıklayınca ayrıntı) ve Saha modu (bugün sırada olanlar kart kart). Saha kartının üç parçası var: "Önce oku" (kim, ilçe, bağlayan, doğrulanmış gözlem, kanca, geçmiş, not; lira karşılığı burada görünmez), "Söyle" (adaya göre doldurulmuş arama metni; dört hal: sahibi açtı, çalışan açtı, açılmadı, ikinci arama; ikinci arama geçmişi olan adayda kendiliğinden seçilir) ve altta kanal, sonuç düğmeleri, kısa not. "Karşı taraf bunu söylerse" düğmesi sağdan bir çekmece açar: önce nişe özel itirazlar, sonra her nişte geçerli olanlar, her biri söyle / ne için / sonra; en altta ton kuralları. Sonunda "Sonuçları kopyala".
+- `.founderos/`: gizli çalışma klasörü, öğrenci görmez. İçinde `adaylar-arac.py` (araç), `adaylar-sablon.html` (sayfa şablonu), `sayfa.json` (senaryo: niş adı, öğrencinin adı ve şehri, kartın telefonda söylenecekleri), `telefon.md` (niş kartının "Telefonda söylenecekler" bölümünün kopyası), `gelen.csv` (servisten son inen ham sayfa), `sonuc.txt` (öğrencinin yapıştırdığı son saha sonuçları), `yedek/` (son on csv yedeği). Klasör kuralının üçüncü istisnasıdır; başka bir şey buraya yazılmaz.
 
 Öğrenci csv'yi Excel'de açmaz, açmak isterse sayfaya yönlendirilir. Yer tarifi çıplak yol değil, adım adım: "Masaüstü, sonra FounderOS klasörü, `adaylar.html` dosyası; üstüne çift tıkla, tarayıcıda açılır."
 
@@ -20,7 +20,7 @@ description: "Aday listesinin kurallari: adaylar.csv'nin otuz sekiz sutunu, aday
 
 1. `aday-listesi-araci` becerisini aç. Beceri açıldığında klasör yolu görünür; `adaylar-arac.py` ve `adaylar-sablon.html` orada durur. İkisini öğrencinin klasöründeki `.founderos/` altına kopyala (kopyalama komutuyla; olmazsa beceride gömülü duran iki metni aynı adlarla birebir yaz).
 2. Öğrencinin klasörünün içinde `python3 .founderos/adaylar-arac.py surum` çalıştır; sürüm numarası gelmeli. Gelmiyorsa dosya eksik ya da kesik kopyalanmıştır, yeniden kopyala. `python3` yoksa `python` dene.
-3. Niş bilgisini sayfaya yaz: `python3 .founderos/adaylar-arac.py sayfa --nis "Klima servisi" --acilis "<niş kartındaki açılış cümlesi>" --itiraz "<itiraz 1 ve karşılığı>" --itiraz "<itiraz 2>" --itiraz "<itiraz 3>"`. Saha modunda kartların üstünde bunlar durur.
+3. Senaryoyu sayfaya yaz. Niş kartının "**Telefonda söylenecekler.**" bölümünü, ilk satırından son itiraz maddesine kadar olduğu gibi `.founderos/telefon.md` dosyasına kopyala (ilk satıra `# <nişin adı>` koy), sonra: `python3 .founderos/adaylar-arac.py sayfa --kart .founderos/telefon.md --ogrenci-ad "<öğrencinin adı>" --sehir "<şehri>"`. Sistemin adı varsa `--sistem-adi "<ad>"` eklenir. Araç bölümü okur; açılış sorusu, işleyiş sorusu, ne yaptığın, çalışan açarsa satırları ve nişe özel itirazlar Saha modu kartına girer, genel arama sırası ve genel itirazlar şablonda hazırdır. Öğrencinin adı ve şehri İş Beyni'nin birinci bölümünden alınır; verilmezse sayfa "[adın]" ve "[şehir]" gösterir ve uyarır. Kartta bu bölüm yoksa sayfa genel metinle çalışır, uydurmaz. Niş değişirse ya da kart güncellenirse aynı komut yeniden çalışır.
 4. Öğrenciye tek cümle: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır."
 
 Beceri her sürümde araçla birlikte güncellenir. `surum` çıktısı becerideki sürümden küçükse iki dosyayı yeniden kopyala; csv'ye dokunma, araç eski dosyayı okur ve eksik sütunu kendisi ekler.
@@ -33,7 +33,7 @@ Kalan yirmi dördü FounderOS'un aracıyla doldurduğu sütunlar:
 - `eklenme_tarihi`: kaydın listeye girdiği gün, araç yazar, sonra değişmez.
 - `kaynak`: haritalar, iş ilanı, elle, tanıdık, referans. `baglayan`: tanıdık ya da referansta kimin bağladığı.
 - `yuz`: en çok istenen yüz işletmedeyse evet.
-- Denetim: `sahibi` (karar veren), `uygunluk` (0-15; sayfa A 10 ve üstü, B 6-9, C 5 ve altı), `sizinti` (0-5), `bulgu` (en güçlü bulgu, tek cümle), `kanca` (o adaya söylenecek tek cümle), `lira` (lira karşılığı, tek satır hesap), `denetim_tarihi`.
+- Denetim: `sahibi` (karar veren), `uygunluk` (0-15; sayfa A 10 ve üstü, B 6-9, C 5 ve altı), `sizinti` (0-5), `bulgu` (en güçlü bulgu, tek cümle), `kanca` (o adaya telefonda olduğu gibi söylenecek tek cümle, gün adıyla: "Salı akşamı yediye doğru sizi bir kere aradım, açılmadı."; Saha kartı bunu üçüncü adım olarak gösterir, yoksa kartın açılış sorusunu koyar), `lira` (lira karşılığı, tek satır hesap; görüşme özet ekranı için, Saha modunda görünmez), `denetim_tarihi`.
 - Temas: `asama` (yeni, temasta, cevap verdi, randevu, görüşüldü, sonra, kapandı, müşteri; tek değer), `telefon_durumu`, `eposta_durumu`, `instagram_durumu`, `video_durumu` (her biri yapılmadı, yapıldı, cevap geldi, kapandı), `temas_sayisi`, `son_temas_tarihi`, `son_temas_kanali` (telefon, e-posta, instagram, video), `siradaki_hareket` (tek satır, adayın tek sonraki adımı), `siradaki_tarih` (o adımın günü; bugünse sayfada yeşil, geçmişse turuncu; günün listesi buradan çıkar), `randevu_tarihi` (YYYY-AA-GG SS:DD), `not` (kısa; araç her notun başına günü koyar).
 
 Tarihler `YYYY-AA-GG`. Boş bilgi boş kalır, "yok" yazılmaz. Kim doldurur: 1-14 ve eklenme tarihi araç (cek, ekle); kaynak, bağlayan, yüz aday-listesi-cikar ve tanidik-listesi-cikar; denetim sütunları aday-denetimi-cikar; temas sütunları saha sonuçlarıyla (sonuclar) ve adaya-mesaj-yaz, gorusmeye-getir, gorusmeyi-analiz-et, gunu-planla, rakamlari-oku.
@@ -60,7 +60,7 @@ Hepsi öğrencinin klasörünün içinden: `cd "<klasör>" && python3 .founderos
 
 **bul "<metin>"** Ada, sahibine, semte ya da telefona göre satırları basar. Öğrenci bir adayı sorunca.
 
-**sayfa [--nis ...] [--acilis ...] [--itiraz ...]** Sayfayı yeniden üretir; niş bilgisi verilirse önce onu kaydeder. Her yazış zaten sayfayı yeniler; bu komut "listemi göster", "listemi yenile" dendiğinde ve niş bilgisi değiştiğinde çalışır.
+**sayfa [--kart telefon.md] [--nis AD] [--ogrenci-ad AD --sehir S --sistem-adi AD]** Sayfayı yeniden üretir; senaryo bilgisi verilirse önce `sayfa.json`'a kaydeder. `--kart` niş kartının "Telefonda söylenecekler" bölümünü okur (kurulum 3. adım). Elle yazılmış JSON vermek gerekirse `--dosya senaryo.json` (alanlar: ad, ogrenci{ad, sehir, sistem_adi}, acilis_sorusu, isleyis_sorusu, vaat, calisan, itirazlar[{durum, soyle, neden, sonra}]). Komut sonunda eksik senaryo bilgisi varsa söyler. Her yazış zaten sayfayı yeniler; bu komut "listemi göster", "listemi yenile" dendiğinde ve senaryo değiştiğinde çalışır.
 
 **surum** Aracın sürümü.
 
@@ -69,7 +69,7 @@ Hepsi öğrencinin klasörünün içinden: `cd "<klasör>" && python3 .founderos
 - Çekim bitince: `cek --ozet`, onay, `cek`. Sonra kurulum adımları (ilk kezse) ve öğrenciye sayfa cümlesi.
 - Yüz işletme seçilince: her biri için `guncelle ... yuz=evet`.
 - Hızlı ve derin denetim bitince: her aday için tek `guncelle` (sahibi, uygunluk, sızıntı, bulgu, kanca, lira, denetim tarihi).
-- Sabah, günün planı kurulurken: `bugun --planla`. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her aramadan sonra düğmeye bas, akşam Sonuçları kopyala."
+- Sabah, günün planı kurulurken: `bugun --planla`. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her kartta ne söyleyeceğin yazıyor, her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Öğrencinin adı, şehri ya da niş kartı değiştiyse önce `sayfa --kart ...` yeniden.
 - Gün içinde öğrenci bir temas anlatırsa: `temas`.
 - Öğrenci saha sonuçlarını yapıştırınca: `sonuclar`.
 - Akşam kapanışında: `ozet`; sayılar İş Beyni'ne ve `olcum_yaz`'a.

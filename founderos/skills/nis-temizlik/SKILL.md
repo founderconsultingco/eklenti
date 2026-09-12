@@ -79,6 +79,25 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, kâr düşük yazılıma
 
 "Ev temizliğinde güven meselesi var, botla olmaz." Doğru, asistan sadece randevu ve hatırlatma yapıyor, eve giren kişi değişmiyor; güven konusu mevcut süreçte olduğu gibi kalıyor.
 
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+
+Açılış sorusu: "Geçen ay size ulaşıp da aynı gün dönüş alamayan müşteriler sonra tekrar aradı mı, yoksa öyle mi kaldı?"
+
+İşleyiş sorusu: "Ekip sahadayken, iki ev arasında telefon çalınca ya da WhatsApp'tan fiyat sorulunca ne oluyor, siz mi bakıyorsunuz, akşama mı kalıyor?"
+
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: ekip sahadayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, ev mi ofis mi inşaat sonrası mı, kaç metrekare, kaç personel, hangi gün ve adres bilgisini alıp teklif için size iletiyor; haftalıktan aylığa düşen ya da geçen yıl bahar temizliği yaptıran müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+
+Çalışan açarsa: "Ekip sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap verip bilgileri toplayan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
+
+Karşı taraf bunu söylerse:
+
+- "Zaten telefonu ben açıyorum, elimde." Söyle: "Güzel, çoğu firma açamıyor. Ekip iki ev arasındayken, siz de o sırada bir müşteriyle uğraşırken gelen arama ve mesaj anında mı karşılanıyor, yoksa akşama mı kalıyor?" Ne için: telefonun elde olmasıyla anında dönülmesini ayırmak; kartta şikayetlerin çoğunun "aradım açmadılar, geç döndüler" üstüne olduğu yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "anında" derse teşekkür et, "bahar yoğunluğunda değişirse bir kez daha arayabilir miyim" de, kapat; FounderOS "sonra, bahar" yazar. "Akşama kalıyor" derse: "İşte o aradaki müşteri için kuruyorum" de ve saat iste.
+- "Müşterim WhatsApp'tan yazıyor, oradan dönüyorum." Söyle: "İyi, kanal doğru. Yazan müşteriye dönüş dakikalar içinde mi gidiyor, yoksa ekip işten çıkınca toplu mu dönülüyor?" Ne için: kanalı tartışmamak, dönüş hızını sormak; kartta aynı kanalda gecikme ve "hiçbir alternatif üretmedi" şikayeti var, bunu sen söylemezsin. Sonra: "dakikalar içinde" derse teşekkür et ve kapat; "toplu, akşam" derse görüşme iste.
+- "Ucuz iş, kâr düşük, yazılıma para yok." Söyle: "Kâr düşükken kaçan iş daha çok acıtıyor, onun için arıyorum. Rakamı görüşmede konuşuruz; kaçan tek bir ev temizliği sizde bir ekibin yarım günü mü eder, daha fazlası mı?" Ne için: fiyatı görüşmeye bırakmak; kartın "kaçan ev temizliği bir ekip yarım günü, kaçan inşaat sonrası iş bir işin tamamı" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de para yok" derse teşekkür et ve kapat.
+- "Elemanım az, büyümek istemiyorum." Söyle: "Büyütmüyorum zaten, yeni müşteri getirmiyorum. Şu an size zaten yazan müşteriden cevapsız kalıp başka firmaya gideni oluyor mu, yoksa hepsine yetişiliyor mu?" Ne için: sistemin talep üretmediğini söylemek; kartta personel bulmanın zor olduğu ve talebin seyrekleştiği yazıyor, bunu sen söylemezsin. Sonra: "hepsine yetişiyoruz" derse teşekkür et ve kapat; "gideni oluyor" derse görüşme iste.
+- "Fiyatı görmeden veremem, WhatsApp'tan pazarlık ediyorum." Söyle: "Vermiyor, haklısınız; metrekaresine, kirine, kaç personel istendiğine göre değişir. Sistem ev mi ofis mi inşaat sonrası mı, kaç metrekare, kaç personel, hangi gün ve adresi alıp size iletiyor; fiyatı ve pazarlığı yine siz yapıyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
+- "Ev temizliğinde güven meselesi var, botla olmaz." Söyle: "Doğru, eve giren kişiye güven sistemle olmaz, sistem eve girmiyor. Yalnız mesaja cevap veriyor, bilgiyi alıyor ve gün veriyor; kimin gideceği, ekip, hepsi sizde kalıyor. Sizce müşteri güveni ilk nerede kaybediyor, yazıp cevap alamadığında mı, yoksa ekip kapıya geldiğinde mi?" Ne için: güven kaygısını kabul edip sistemin eve giren kişiyi değiştirmediğini söylemek; kartta şikayetlerin ilk temasının gelmeme ve dönmeme olduğu yazıyor, bunu ona söyletirsin. Sonra: "cevap alamadığında" derse görüşme iste; "yine de istemem" derse teşekkür et ve kapat.
+
 **Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat/gün içinde geri dönülüyor), telefonu kimin açtığı (sahip mi eleman mı), günde/haftada gerçekte kaç iş çıkarılabildiği, hangi kademenin (1/2/3) bu segmentte daha çok satıldığı, ilk vaka çalışması, çalışan açılış cümlesi, kapatma oranı, Meta Reklam Kütüphanesi'nde gerçekte ne görüldüğü.
 
 **Kaynaklar.**

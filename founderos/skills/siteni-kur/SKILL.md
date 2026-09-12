@@ -198,11 +198,13 @@ Birinci günde burada durulur. Sayfa hazır, öğrencinin klasöründe ve ekran�
 
 Sıra şu:
 
-1. Yayın servisinde ücretsiz hesap aç. Giriş ekranında "Continue with GitHub" (kod deposu hesabıyla devam et) yazan düğme var; kod deposu hesabın yoksa e-postayla girme seçeneği aynı ekranda.
-2. Sağ üstte "Add New" (yeni ekle), açılan listeden "Project" (proje). Sayfanın dosyasını FounderOS hazırlar, sen sürükleyip bırakırsın.
-3. Altta "Deploy" (yayına al). Bir iki dakika.
-4. Bitince "Visit" (siteyi aç). Canlı adres açılır.
-5. Sol menüde "Settings", içinde "Domains" (internet adresleri): adresini ekle. Servis birkaç satır verir; satırları FounderOS okur, alan adını aldığın yerde nereye yazacağını tek tek söyler.
+1. Yayın servisinde ücretsiz hesap aç: app.netlify.com adresi. Giriş ekranında "Sign up" (kaydol); açılan listede kod deposu seçeneklerini geçip "Email" (e-posta) ile kaydol, e-postana gelen doğrulama bağlantısına tıkla. Takım adı sorarsa iş adını yaz.
+2. Giriş yapınca "Sites" (siteler) sayfasındasın. Sağ üstteki "Add new site" (yeni site ekle) düğmesine bas, açılan listede "Deploy manually" (elle yayına al). Ortada "Drag and drop your project folder here" (proje klasörünü buraya sürükle bırak) yazan kutu çıkar.
+3. Klasöründeki `site` klasörünü FounderOS bugün hazırladı; o klasörü Finder'dan ya da Dosya Gezgini'nden tutup o kutuya bırak. Bir dakika sürer, bitince sayfanın canlı adresi görünür; üstüne tıkla, sayfan açılır.
+4. Kendi adresini bağlamak için sol menüde "Domain management" (adres yönetimi), "Add a domain" (adres ekle); alan adını yaz, "Verify" (doğrula), sonra "Add domain" (adresi ekle). Servis sana iki satır gösterir (kayıt türü ve değeri); o iki satırı alan adını aldığın satıcının "DNS" (adres kayıtları) ekranına yazacaksın. Satırları ben okuyup hangi kutuya ne yazacağını tek tek söylerim; ekran görüntüsünü at, satıcının ekranı Türkçe.
+5. Bağlantı birkaç dakikadan birkaç saate kadar sürer; hazır olunca adresin yanındaki yazı "Netlify DNS" ya da "External DNS" altında yeşil görünür, ben kontrol ederim. O güne kadar sayfa servisin kendi adresinde açık kalır, mesajlarına o adres girer.
+
+Dördüncü blokta demo dosyası aynı yere gidince yine "Deploys" (yayınlar) sayfasında aynı sürükle bırak kutusuna klasörün yeni hali bırakılır; eski sayfa yerinde kalır, üstüne yenisi gelir.
 
 Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsApp'a gidiyor mu, telefonda düzgün mü. Düğme bugün WhatsApp'a gider; CRM açıldığı gün gorusmeye-getir takvimi kurunca düğmeler oraya bağlanır, o güne kadar bu İş Beyni'nde yazılıdır.
 
@@ -220,11 +222,11 @@ Neden ayrı sayfa: randevu almış aday ile hiç tanımadığın aday aynı şey
 
 Bu bölüm bütçe merdiveninin hangi basamağında olduğuna göre değişiyor. Basamak birinci günde yazıldı; ben okuyorum, sen bir şey yapmıyorsun.
 
-**Orta ve üst basamakta.** Alan adı bugün alınır. İş adının sade hali, tire yok, rakam yok, uzun değil. FounderOS iki seçenek verir.
+**Orta ve üst basamakta.** Alan adı bugün alınır. İş adının sade hali, tire yok, rakam yok, uzun değil. FounderOS iki seçenek verir. Nereden: Türkçe arayüzlü, lira ile ödeme alan bir alan adı satıcısından; satıcının adını ve ekranını o gün FounderOS söyler, banka ya da kredi kartıyla ödenir, yıllık tutar masraf tablosuna girer. Alırken "DNS" (adres kayıtları) ekranının nerede olduğunu öğrenirsin; yayın adımında oraya iki satır yazacaksın.
 
 Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve saha açıldıktan sonra her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
 
-CRM açıldığı gün bir iş daha var ve atlanırsa anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** CRM açılana kadar e-postaları kendi iş e-postandan tek tek sen gönderiyorsun, hatırlatmaları da; CRM açılınca takip e-postaları ve randevu hatırlatmalarının e-posta tarafı CRM'den gidiyor ve adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıp büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menüde "Settings", içinde "Email Services" (e-posta ayarları), oradan gönderen alan adını ekleyip alan adını aldığın yere birkaç satır giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
+CRM açıldığı gün bir iş daha var ve atlanırsa anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** CRM açılana kadar e-postaları kendi iş e-postandan tek tek sen gönderiyorsun, hatırlatmaları da; CRM açılınca takip e-postaları ve randevu hatırlatmalarının e-posta tarafı CRM'den gidiyor ve adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıp büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menünün en altında "Settings" (ayarlar), listede "Email Services" (e-posta servisleri), sayfada "Dedicated Domain" (kendi alan adın) bölümünde "Add Domain" (alan adı ekle); alan adını yaz, servis birkaç satır verir, o satırları alan adını aldığın satıcının "DNS" (adres kayıtları) ekranına giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
 
 Alt basamaktaysan bu iş de alan adıyla birlikte erteleniyor. O zamana kadar takip e-postaları gitmiyor; takibi telefondan ve Instagram'dan yapıyorsun, adres gelince e-posta kanalı açılıyor.
 

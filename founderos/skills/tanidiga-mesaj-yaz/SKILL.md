@@ -74,9 +74,9 @@ A listesindeki kişi zaten senin nişinde işletme işletiyor. Ona referans sorm
 
 Hazır metin:
 
-"Selam [ad], nasılsın. Yeni bir iş kurdum ve ilk aklıma gelenlerden birisin, çünkü sen [nişteki işi] yapıyorsun. [Tek cümlelik sonuç] yapan bir sistem kuruyorum. Sende [nişin tipik sızıntısı] oluyor mu bilmiyorum. Oluyorsa on beş dakikalık bir görüşme ayarlayalım, ne olduğunu göstereyim. Olmuyorsa hiç mesele değil."
+"Selam [ad], nasılsın. Yeni bir iş kurdum ve ilk aklıma gelenlerden birisin, çünkü sen [nişteki işi] yapıyorsun. [Tek cümlelik sonuç] yapan bir sistem kuruyorum. Sende [nişin tipik sızıntısı] oluyor mu bilmiyorum. Oluyorsa yirmi dakikalık bir görüşme ayarlayalım, ne olduğunu anlatayım. Olmuyorsa hiç mesele değil."
 
-Doldurulmuş hali: "Selam Kemal abi, nasılsın. Yeni bir iş kurdum ve ilk aklıma gelenlerden birisin, çünkü sen klima servisi işletiyorsun. Servislerin kaçırdığı aramaları randevuya çeviren bir sistem kuruyorum. Sende de sezonda açamadığın aramalar oluyor mu bilmiyorum. Oluyorsa on beş dakikalık bir görüşme ayarlayalım, ne olduğunu göstereyim. Olmuyorsa hiç mesele değil."
+Doldurulmuş hali: "Selam Kemal abi, nasılsın. Yeni bir iş kurdum ve ilk aklıma gelenlerden birisin, çünkü sen klima servisi işletiyorsun. Servislerin kaçırdığı aramaları randevuya çeviren bir sistem kuruyorum. Sende de sezonda açamadığın aramalar oluyor mu bilmiyorum. Oluyorsa yirmi dakikalık bir görüşme ayarlayalım, ne olduğunu anlatayım. Olmuyorsa hiç mesele değil."
 
 Sondaki "olmuyorsa hiç mesele değil" cümlesi tanıdıklarda özellikle duruyor. Tanıdığına satarken en büyük risk onun hayır diyememesi. Hayır demenin yolunu sen açıyorsun.
 
@@ -102,7 +102,7 @@ Biri "şu arkadaşımla konuş" dediğinde iş orada bitmiyor. Tanıştırmalar�
 
 **İkincisi doğrudan tanıştırılan kişiye, senin ağzından.** Numarası sana geldiyse bunu sen yazıyorsun:
 
-"Merhaba, [tanıdığının adı] sizi bana bağladı. Ben [adın], [niş] için [tek cümlelik sonuç] yapıyorum. On beş dakikada ne yaptığımı göstereyim, işinize yaramazsa orada anlarız."
+"Merhaba, [tanıdığının adı] sizi bana bağladı. Ben [adın], [niş] için [tek cümlelik sonuç] yapıyorum. Yirmi dakikada ne yaptığımı anlatayım, işinize yaramazsa orada anlarız."
 
 Tanıştırılan kişi kayıt yerine (CRM ya da `adaylar.csv`) aday olarak giriyor, "sıcak" işaretiyle, ve kimin bağladığı yazılıyor. O kayıt sonra lazım oluyor: iş çıkarsa bağlayan kişiye haber veriyorsun.
 

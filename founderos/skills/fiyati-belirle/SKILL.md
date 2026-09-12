@@ -172,7 +172,7 @@ Rakamı yazışmada tek başına vermezsin. Bağlamsız rakam her zaman pahalı 
 
 ## 6. Ne söyler
 
-Rakamı verirken: "Fiyatın şu: kurulum [rakam], aylık [rakam], yani kurulumun beşte biri. Sen daha önce satış yapmadın, o yüzden ilk iki müşteride kurulum yarısı, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
+Rakamı verirken (deneme fiyatı yalnız hazırlık seviyesi düşükse, yani satış tecrübesi, sektör bilgisi ve güvenin üçü de yoksa): "Fiyatın şu: kurulum [rakam], aylık [rakam], yani kurulumun beşte biri. Hazırlık seviyen düşük, o yüzden ilk iki müşteride kurulum yarısı, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
 Matematiği gösterirken: "Rakamı tartışmıyoruz, matematiği gösteriyorum. Bu sektörde kaçan bir müşteri [kart rakamı] ediyor, ayda [sayı] tanesi kaçıyor: ayda [aylık kayıp], yılda [yıllık]. Kurulum yıllığın onda biri: [kurulum]. Aylık kurulumun beşte biri: [aylık]. İlk yıl toplam ödediği, kaybettiğinin yaklaşık üçte biri; ikinci yıldan itibaren dörtte birinden azı."
 Prova: "Şimdi rakamı sesli söyle ve sus. Ben saymaya başlayacağım. Otuz saniye konuşmayacaksın."
 "Çok yüksek" derse: "Matematiği bir daha bakalım. Deneme fiyatın zaten var. Fiyatı sen değil, ilk otuz görüşme belirleyecek. Şimdilik bu."

@@ -48,7 +48,7 @@ Her görüşmede, görüşme saatinden on dakika önce açılır ve görüşme �
   - "Yasal sınırlar".
   - "Asistan kuralları".
   - "İşletmecinin gerçek dertleri" ve iç sesi.
-- Sabit kurallar: bütün modüllerin uyduğu ortak kurallar 1-10.
+- Sabit kurallar: bütün modüllerin uyduğu ortak kurallar.
 
 ## 4. Ne sorar
 
@@ -121,13 +121,13 @@ Kanıt üç tane. Birincisi tarayıcı demosu: "Şimdi şu linki açın, bir mü
 - Bağlantı sorusu: "Bu, anlattığınız sorunu çözer mi? Neden öyle düşünüyorsunuz?" Sebebi işletmeci kendi söyler. "Rakam dışında sorunuz var mı?" Sorusu varsa fiyattan önce cevaplanır. Cevap "emin değilim" ise fiyata geçilmez: "Neyi görseniz emin olurdunuz?"
 - Fiyat tek paket, sonuca bağlı, sonra sus: "Ayda [kayıp birimi cinsinden sayı] geri almak için kurulum [rakam], aylık [rakam], kurulumun beşte biri. Yılda kaybettiğinizin onda biri." Rakam, soru bölümünde işletmecinin verdiği sayıyla formülden çıkar (fiyati-belirle, görüşmedeki rakam). Deneme fiyatı işareti varsa hepsi tek nefeste, "indirim" kelimesi yok: "Kurulum normalde [rakam]; ilk iki müşterimle deneme fiyatı yapıyorum: yarısı, karşılığında üç şey istiyorum, rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video. Aylık aynı, [rakam]." Üç kademe görüşmede menü değil. Kademe 1 sadece gerçek para itirazı tek başına bırakılınca, kapsamı küçültmek için söylenir. Kademe 3 hiç söylenmez.
 - Sus. İçinden otuza kadar say. Hâlâ sessizse açık soru: "Nasıl ilerleyelim?" Başta karar istedin, burada soru açık uçlu. Cevabı evet, hayır ya da itiraz getirir.
-- Fatura konusunu işletmeci sormadan sen söyle: "Faturasını şirketimden kesiyorum".
+- Fatura konusunu işletmeci sormadan sen söyle. Şirketin varsa: "Faturasını şirketimden kesiyorum". Şirketin henüz yoksa: "Belgeyi mali müşavirim çıkarıyor, tarihini size yazılı bildireceğim"; tarih sözü yok.
 
 **F. İtirazlar.** Önce itirazı tek başına bırak: "Bunu bir kenara koysak, yapar mıydınız? Neden?" "Çok haklısınız, anlıyorum" yok. "Tamam" de, soruya geç. İkna değil, soru. Görüşmede itiraz aşıp durmak niteleme sorunudur, yani aday baştan yanlış seçilmiştir; bu bir işarettir.
 - "Pahalı." Ayırıcı soru: "Sonucun kesin olacağını bilseniz bu rakam mantıklı gelir miydi?" Evet derse inanç sorunu, kanıta dön: kanıt cümlen, kart rakamı, tarayıcı demosu, rapor günü raporu, güvence. Hayır derse fiyat sorunu: "Neye göre pahalı?" ve "Ayda sekiz boş güne göre mi?" Sonra Kademe 1 ile kapsamı küçült, indirim yapma. Gerçekten parası yoksa görüşme burada biter, "sonra" aşamasına gider.
 - "Düşüneyim." "Elbette. Neyi düşüneceksiniz: çalışır mı, rakam mı, kararı başkası mı veriyor?" Nedenini söyleyemeyen ciddi alıcı değil, "sonra". Gecikmenin bedeli: "Düşünürken bu hafta yine üç arama kaçacak, bunu görmeyeceksiniz, tehlike bu". Yine düşüneyim derse: yirmi dakikalık karar görüşmesi, iki üç gün sonrasına, şimdi, sen hattayken takvime yazılır. "Ben size yazarım", "e-posta atın" yolu kapalıdır; tarih hattayken alınmazsa görüşme olmaz. Karar görüşmesinin sırası sabittir: onun kendi cümleleriyle dertler yeniden okunur, rakamı yeniden söylenir, tek soru: "nasıl ilerleyelim?" Bir defa; ikinci erteleme "sonra"dır.
 - "Ortağıma/eşime sorayım." "Anladım. Tek karar verici siz olsaydınız bugün başlar mıydınız?" Evet derse: "Ortağınız ne sorar? Şimdi cevaplayayım, tam resmi anlatın". Gerçekten ortak kararıysa ortaklı karar görüşmesi şimdi, sen hattayken takvime girer, iki üç gün sonrasına, ortak da hatta; kendisi ortağına anlatmasın, çünkü anlatan satamaz. Bu görüşme yirmi dakikadır: dertler onun cümleleriyle, tarayıcı demosu, rakam, "nasıl ilerleyelim?"
-- "Zaten telefonu ben açıyorum / elemanım bakıyor." Kartın kanıtı: "Günde elli servise yetişirken telefon çaldığında araç altındasınız; haziranda şikayetler yüzde üç yüz yirmi arttı".
+- "Zaten telefonu ben açıyorum / elemanım bakıyor." Kartın kanıtıyla, kartın kendi cümlesi okunarak; modül burada rakam taşımaz. Kanıt yoksa tek soru: "En yoğun saatte siz sahadayken telefona kim bakıyor?"
 - "Bot müşterimi soğutur / fiyat veremez / güvenmiyorum." "Haklısınız, kötü kurulmuş kendiliğinden giden mesaj hiç olmamasından beter. Bu fiyat vermez, pazarlık yapmaz, bilgi toplar, size getirir; siz onaylarsınız. Şimdi şu linki açın, bir müşteri gibi yazın, nasıl cevap verdiğini görün".
 - "Telefonum elimden gider mi?" "Hayır. Numaranıza dokunmuyorum, yeni numara alıyorum, yönlendirmeyi siz istediğinizde açıyoruz".
 - "Denedik, olmadı / ajans / yazılım / zaten yapay zeka teklifi aldık." "Ne oldu?" Dinle. "Tam bunu istemiyoruz." Farkı tek cümleyle söyle: "Ben bot satmıyorum, kaçan aramanın randevuya dönmesini satıyorum, rapor gününde raporla".
