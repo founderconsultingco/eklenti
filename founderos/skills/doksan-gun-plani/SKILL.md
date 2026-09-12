@@ -51,7 +51,7 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - Öğrencinin takvimi beş bloktur, gün değil. Tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün; çalışma düzenini İş Beyni'nden okur, tarihleri başlangıç tarihinden sayar ve planda gerçek tarihle yazarsın. Birinci bloğun akşamı kurulmuş bir iş vardır; üçüncü bloğun akşamı tanıdıklara ilk mesaj gider; şirket beşinci blokta kuruluşa hazır hâle gelir ve ilk "evet"te kurulur; beşinci bloğun akşamı ilk on soğuk temas, ertesi gün tam saha: günde yüz temas, işin yanında çalışıyorsa kırk.
 - CRM hesabı başlangıç görüşmesinde açılır, hazırlık bloklarında değil. O güne kadar adaylar ve randevular İş Beyni'nin "Bugünün listesi" bölümünde tutulur; bu bir eksiklik değil, varsayılan yoldur.
 - Müşterinin teslimatı [21/28] gün; öğrenci işin yanında çalışıyorsa takvim yirmi sekiz güne yazılır. Hangisi olduğunu çalışma düzeninden okur, planda o sayıyı kullanırsın.
-- Günde yüz temas, telefon yolunda: elli arama, otuz e-posta, yirmi Instagram. Yazı yolunda: on arama, kırk yeni e-posta, otuz yeni Instagram mesajı, beş video mesaj ve o günün takip mesajları; toplam yine yüz temas. İşin yanında çalışanda hepsi kırka göre orantılanır.
+- Günde yüz temas, telefon yolunda: elli arama, otuz e-posta, yirmi Instagram. Yazı yolunda: on arama, otuz yeni e-posta, kırk yeni Instagram mesajı, beş video mesaj ve o günün takip mesajları; toplam yine yüz temas. İşin yanında çalışanda hepsi kırka göre orantılanır.
 - WhatsApp'tan soğuk mesaj yok.
 - Sahibinin adı yoksa arama yok.
 - Üç yüz temas dolmadan hiçbir şey değişmez. İki yüz temasta sadece bakılır.

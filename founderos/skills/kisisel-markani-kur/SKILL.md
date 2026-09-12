@@ -53,9 +53,9 @@ Profil dört parçadan oluşur:
 - **Biyografi:** üç satır. Birinci satır kime ne yaptığın, Dönüşüm Cümlesi'nin kısaltılmış hali. İkinci satır kanıt; ilk müşteriden önce niş kartındaki rakam, sonra kendi rakamın. Müşterin yokken "çalıştığım klinikler", "müşterilerim" gibi çoğul kullanılmaz; doğrusu ne yaptığını yazmak ve elindeki çalışan örneği göstermektir. Biyografideki her bağlantının açılıyor olması şart; açılmayan bağlantı, profiline bakan adayı bir kerede kaybettiriyor. Üçüncü satır tek çağrı ve link. Instagram tek link alıyor ve o link siten oluyor; sayfanın düğmesi WhatsApp'ına, CRM açılınca takvimine gider. Site ikinci blokta yayına girdiği için üçüncü satır bugün dolu yazılır.
 - **Öne çıkanlar bugün boş kalır.** Elinde gösterecek bir şey yokken açılan öne çıkan, boş bir raf gibi duruyor ve boş raf yeni açılmış izlenimi veriyor. Ne zaman dolacağı belli: demo ekran kaydı çıktığı gün, aşağıda yazıyor.
 
-Hesap yeniyse: hemen mesaj atmaya başlamazsın. Yeni açılmış bir hesaptan gelen mesaj daha kolay engelleniyor. Altıncı güne kadar hesabı normal kullanırsın; nişindeki işletmeleri takip edersin, gördüğün gönderilere gerçek yorum yazarsın. Bu, mesaj atmadan önce hesabın canlı görünmesini sağlıyor.
+Hesap yeniyse kanal kapanmaz, yavaş açılır. Yeni açılmış ve hiç kullanılmamış bir hesaptan gelen mesaj hem karşı tarafta hem platformda şüpheli duruyor. Saha açılana kadar hesabı normal kullanırsın; nişindeki işletmeleri takip edersin, gördüğün gönderilere gerçek yorum yazarsın. Saha açılınca rampa işler: ilk hafta günde beş mesaj, sonra on, sonra yirmi, dördüncü haftadan sonra yolun kendi sayısı. Rampanın sayıları ve durma işaretleri adaya-mesaj-yaz'da.
 
-Adaya mesaj atmadan önce onun bir gönderisine gerçek bir yorum yazma kuralı da buradan geliyor ve saha açılınca adaya-mesaj-yaz'da işliyor.
+Adaya mesaj atmadan önce onun bir gönderisine gerçek bir yorum yazma kuralı da buradan geliyor. Saha açılınca o kural yalnız en çok istenen yüz işletmede zorunlu olarak işliyor; kalan adaylarda mesaj doğrudan gidiyor, sebebi adaya-mesaj-yaz'da yazılı.
 
 ### Öne çıkanlar, demo ekran kaydı çıkınca
 
@@ -117,7 +117,7 @@ Takipçi satın alınmaz, takipleşme yapılmaz.
 Açılışta: "Bir saat. Dört profil dolduracağız: Instagram, WhatsApp, e-posta imzası, YouTube. Paylaşım yok, içerik yok. Bugün sadece doldurma günü."
 Fotoğraf için: "Profil fotoğrafına logo koyma, yüzünü koy. Tek kişilik bir işte logo koyan kişi şirket taklidi yapıyor gibi duruyor ve işletmeci bunu anlıyor. Telefonla, düz duvar önünde, gün ışığında çek. On dakika."
 Biyografi için: "Üç satır. Ne yaptığın, kanıtın, linkin. Dördüncü satır yazmak istiyorsan yazma. Link sitenin adresi, altıncı bölümde yazıyor; ben koyuyorum."
-Hesabı yeniyse: "Hesabın iki aylık. Saha açılana kadar mesaj atmıyoruz, çünkü yeni hesaptan gelen mesaj daha kolay engelleniyor. O güne kadar nişindeki işletmeleri takip et, gördüğün gönderilere gerçek yorum yaz. Günde beş dakika."
+Hesabı yeniyse: "Hesabın iki aylık. Saha açıldığında Instagram'ı günde beş mesajla açıyoruz, üç haftada tam hıza çıkıyoruz; yeni ve hiç kullanılmamış hesaptan gelen mesaj hem karşı tarafta hem platformda şüpheli duruyor. O güne kadar nişindeki işletmeleri takip et, gördüğün gönderilere gerçek yorum yaz. Günde beş dakika."
 İçerik üretmek isterse: "Bugün paylaşım yok. İçerik ikinci ayın işi ve şu an elinde paylaşacak kanıt yok. Saha açılınca kim aradın diye soracağım, kaç gönderi attın diye değil."
 LinkedIn sorarsa: "LinkedIn'de senin müşterin yok. Klima servisi sahibi LinkedIn'de değil, telefonun ucunda."
 Şirket gibi görünmek isterse: "Logo koyma, yüzünü koy. Küçük işletmeye satarken senin adın şirketin adından güçlü; adam adamla çalışmak istiyor. Şirket adı biyografinin ikinci satırında durur, orası yeter."
@@ -145,7 +145,7 @@ Siteye: bugün çekilen fotoğraf sayfanın Kim bölümüne konur ve sayfa yenid
 Sıradaki: aynı blokta kanıt, mesaj metinleri ve ilk beş prova; beşinci blokta kalan provalar ve videolar.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Instagram hesabı üç aydan yeni: mesaj başlangıcı ve günlük mesaj sayısı buna göre ayarlanır.
+- Instagram hesabı bir yıldan yeni ya da yüz takipçiden az: günlük mesaj sayısı rampaya bağlanır, kanal kapanmaz.
 - Profil fotoğrafı bir gün içinde eklenmedi: sabah planının ilk işi olur.
 - Dördüncü gün bitti, profiller yarım: beşinci gün ertelenmez, eksik profil ertesi sabah on dakikada tamamlanır.
 - Demo ekran kaydı alındı: öne çıkanlar aynı gün doldurulur, on beş dakika.

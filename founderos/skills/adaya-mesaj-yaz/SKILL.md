@@ -70,7 +70,7 @@ Sahte kişiselleştirme yok: görmediğin şey mesaja girmez. Tam adı ve şirke
 
 - Sahibinin adı yoksa arama yine yapılır; açılış "işletme sahibi siz misiniz" olur, ad ilk aramada öğrenilip karta yazılır. Adı bulunmuş aday sırada önde gelir.
 - WhatsApp'tan soğuk mesaj yok, numara kapanır.
-- Bir yıldan yeni ya da yüz takipçiden az Instagram hesabından soğuk mesaj yok. Instagram günlük sınır koyuyor ve hesabı kısıtlıyor.
+- Yeni Instagram hesabından ilk gün tam hacimle mesaj gitmez; rampa vardır (aşağıda, Hacim ve zaman). Instagram'ın açıklanmış bir günlük mesaj sınırı yok; internette dolaşan sayıların hiçbiri resmi değil ve biz de sayı söylerken bunu platform kuralı diye anlatmayız.
 - Instagram profili ve öne çıkanları bitmeden Instagram kanalı açılmaz. Adayın ilk işi profile bakmak; yarım profille atılan mesaj o adayı bir kere harcıyor.
 - Instagram mesajları güne yayılır, bir saatte beşten fazlası arka arkaya gitmez.
 - E-postada ilk mesajda link yok, görsel yok, ek dosya yok, düz metin.
@@ -264,7 +264,11 @@ Kurallar:
 
 *Profil.* Instagram'da mesajın tek başına çalışmıyor. Adam mesajı görüyor, adına dokunuyor, profiline bakıyor ve kararı orada veriyor. Profil yarımsa en iyi mesaj bile boşa gidiyor. O yüzden kural şu: profil ve öne çıkanlar bitmeden Instagram kanalı hiç açılmaz. Profilin nasıl kurulduğu kisisel-markani-kur'da; burada yalnız şartı var.
 
-*Etkileşim.* Mesajdan önce adayın bir gönderisine gerçek bir yorum yaz, program yorumu değil. Kabul ve cevap oranı böyle artıyor, çünkü mesaj kutusuna düşmeden önce adın bir kere görünmüş oluyor.
+*Etkileşim.* Mesajdan önce adayın bir gönderisine gerçek bir yorum yazmak kabul ve cevap oranını artırıyor, çünkü mesaj kutusuna düşmeden önce adın bir kere görünmüş oluyor. Ama bu iş adaya iki üç dakika mal oluyor ve günde kırk mesajın kırkında yapılamıyor; yapılmaya zorlanınca yorumlar üçüncü onda "güzel paylaşım"a düşüyor ve o yorum hiçbir işe yaramıyor, hatta zarar veriyor.
+
+Bu yüzden kural ikiye ayrıldı: **en çok istenen yüz işletmede yorum zorunlu**, kalan adaylarda değil. Sebebi basit; emek zaten o yüz işletmede yoğunlaşıyor, kalanı hacim. Kalan adaylarda mesaj doğrudan gider ve kabul oranının bir miktar düşmesini kabul ederiz. Ne kadar düştüğünü bilmiyoruz; öğrencinin kendi `adaylar.csv` dosyası bunu üç haftada söyleyebiliyor, çünkü `yuz` sütunu ile Instagram kanal durumu aynı satırda duruyor. Üç hafta sonunda iki grubun cevap oranı karşılaştırılır ve kural sahadan gelen sayıyla yeniden kesilir.
+
+Yorum, mesaj gönderme izni değildir. Yorum yazdın diye o kişiye yazma hakkın doğmuyor; yorum sadece adını tanıdık hale getiriyor.
 
 *Mesaj.* Kısa özel mesaj: bulgu soruya çevrilir, arkasına tek soru. Uzunluk en fazla üç satır. Lira karşılığı hiç geçmez; rakam Instagram'da ağır duruyor ve mesaj satış gibi görünüyor. Yasak: rakam, link, sistemin adı, satış cümlesi, yeni hesaptan mesaj.
 
@@ -285,7 +289,15 @@ Doğru: "Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor mu
 
 **Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistemin tamamı anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
 
-**Hacim ve zaman.** Günde yirmi otuz mesaj, eski hesapla. Bu sayı güne yayılır: bir saatte beşten fazlası arka arkaya gitmez, mesajların arasına boşluk girer. Yirmi mesajı yarım saatte gönderen hesap kısıtlanıyor ve kısıtlanan hesabın mesajları karşı tarafın istek kutusuna düşüyor, yani hiç görülmüyor. Yeni hesapta bu bölüm hiç çalışmaz.
+**Hacim ve zaman.** Günlük sayı iki şeye bağlı: kanal yolun ve hesabının yaşı.
+
+Kanal yoluna göre: telefon yolunda günde yirmi Instagram mesajı, yazı yolunda kırk. Telefon yolunda bu sayı yükseltilmez, çünkü yükseltmek aramadan kesmek demek ve arama bu sistemdeki en yüksek getirili kanal.
+
+Hesabına göre, rampa: hesabın bir yıldan yeniyse ya da yüz takipçiden azsa ilk hafta günde beş, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan sonra yolun kendi sayısı. Rampanın sebebi bir limiti aşmak değil, hesabın gerçekten kullanılıyor olması: yeni açılmış ve hiç kullanılmamış bir hesaptan gelen mesaj hem karşı tarafta hem platformda şüpheli duruyor. Hesabı hiç yoksa ilk gün açılır ve rampa o gün başlar; Instagram kanalı kapanmaz, yavaş açılır.
+
+Sayı güne yayılır: bir saatte beşten fazlası arka arkaya gitmez.
+
+Durma işareti sayıdan değil davranıştan okunur. Üçünden biri olursa o hesaptan bir hafta soğuk mesaj gitmez: mesajlar istek kutusunda kalmaya başladı, platformdan uyarı geldi, cevap oranı bir hafta içinde yarıya düştü. İkinci hesap açmak çözüm değil; yeni hesap zaten rampanın en başında.
 
 **Takip, iki gün sonra, tek.** Önce sesli mesaj: "Merhaba, geçen gün yazmıştım, görmüş müydünüz diye sordum, görmediyseniz sorun değil." Sesli mesaj tutmazsa ya da hesap sesli mesaja kapalıysa tek yazılı takip gider ve o takip yeni bir şey taşır: senin kendi ölçümün ya da denetim kartındaki ikinci bulgu. "Geçen hafta [şehir]de otuz [niş] aradım, yirmi ikisi açmadı; sizi de aradım, o saatte açılmadı. Bunu soruyorum çünkü..." Taşımayacak bir şey yoksa takip atılmaz.
 
@@ -358,7 +370,7 @@ Sırayla bak, ilk uyan satır senin satırın.
 10. Video gitti, iki gün cevap yok → Instagram'dan sesli mesaj takibi.
 11. Video gitti, yedi gün cevap yok → e-postadan ayrılık mesajı, sonra "sonra" aşaması.
 12. Instagram mesajı bir takiple cevapsız → Instagram "kapandı", aday "sonra" aşamasına.
-13. Senin Instagram hesabın yeni, adayın hesabı yok ya da senin profilin yarım → Instagram hiç açılmaz, satır "kapandı". Profil yarımsa satır kapanmaz, "yapılmadı"da bekler; profil bitince açılır.
+13. Adayın Instagram hesabı yok → Instagram "kapandı". Senin profilin yarım ya da hesabın rampada ve o günün payı dolmuş → satır kapanmaz, "yapılmadı"da bekler; profil bitince ya da ertesi gün açılır.
 14. Herhangi bir kanaldan cevap geldi → beş dakika içinde aynı kanaldan cevap konuşması. Diğer kanallar durur.
 15. Aday "arama, yazma" dedi → dört satır da "kapandı", aday listeden çıkar.
 
@@ -494,7 +506,7 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.
-- Saha bloğu: aramalar ve yeni mesajlar. Telefon yolu: elli arama, otuz e-posta, yirmi Instagram, takipler bu sayının içinde. Yazı yolu: on arama, e-posta sınırın kadar yeni e-posta (on beş, yirmi, sonra otuz), yirmi beş yeni Instagram mesajı, beş video ve o günün takipleri; toplam yine yüz.
+- Saha bloğu: aramalar ve yeni mesajlar. Telefon yolu: elli arama, otuz e-posta, yirmi Instagram, takipler bu sayının içinde. Yazı yolu: on arama, e-posta sınırın kadar yeni e-posta (on beş, yirmi, sonra otuz), kırk yeni Instagram mesajı, beş video ve o günün takipleri; toplam yine yüz. Instagram hesabın rampadaysa o günkü payı rampanın basamağıdır, eksik kalan sayı e-postaya geçer.
 - Akşam bloğu: kanal durumu ekranı, kayıt kontrolü, ertesi günün onayı.
 
 **İşin yanında: günde kırk temas.**
@@ -548,7 +560,7 @@ Onay: e-posta metni "tamam" deyince sıraya girer; arama sonucu sen söyleyince 
 - Kartta lira karşılığı boşsa: e-posta üç cümleye iner, telefon zaten rakam söylemiyor, Instagram değişmiyor.
 - Kanal durumu ekranı açılmıyorsa: durumlar o akşam tek tek adayın kaydından okunur, ekran ertesi gün düzeltilir. Kayıt tutulmayan gün olmaz.
 - E-posta adresin henüz alışmamışsa e-posta sınırı düşer, telefon artar. Eski bir Gmail adresin varsa yirmi e-posta oradan gider.
-- Instagram hesabın yeniyse özel mesaj sıfır, Instagram satırı bütün adaylarda "kapandı" yazılır, e-posta artar.
+- Instagram hesabın yeniyse kanal kapanmaz, rampanın ilk basamağından başlar (günde beş) ve eksik kalan temas sayısı e-postaya ve telefona dağılır. Hesabın hiç yoksa o gün açılır, aynı rampa işler.
 - Instagram profilin ya da öne çıkanların yarımsa: o gün Instagram yok, sayı telefona ve e-postaya dağılır; profil kisisel-markani-kur'da on beş dakikada bitirilir, ertesi gün kanal açılır.
 - Instagram hesabın kısıtlandıysa (mesajlar istek kutusuna düşüyor, gönderim engellendi uyarısı geliyor): o hesaptan bir hafta soğuk mesaj yok, sayı e-postaya geçer. Yeni hesap açmak çözüm değil; yeni hesap zaten mesaj atamıyor.
 - O gün telefon yapamıyorsan ("sesim yok") yazı yolu rakamları geçerli, ertesi gün geri dönülür. Telefon satırlarının tarihi bir gün kayar.
