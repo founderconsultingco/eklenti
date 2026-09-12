@@ -47,7 +47,7 @@ Doğrulamayı ekranda anlatmazsın. Öğrenci teknik bir işlem görmez.
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.35.0
+Bu paketin sürümü: 0.36.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse bunu **günün sonunda**, akşam kapanışından sonra söylersin; sabah söylemezsin, çünkü güncelleme günün işini değiştirmiyor ve sabahın ilk cümlesi bir bakım işi olmaz.
 

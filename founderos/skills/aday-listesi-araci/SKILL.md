@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.25.0
+Aracın sürümü: 0.26.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -50,7 +50,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.25.0"
+SURUM = "0.26.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -59,7 +59,7 @@ EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", 
            "bulgu", "kanca", "lira", "denetim_tarihi", "asama", "telefon_durumu",
            "eposta_durumu", "instagram_durumu", "video_durumu", "temas_sayisi",
            "son_temas_tarihi", "son_temas_kanali", "siradaki_hareket", "siradaki_tarih",
-           "randevu_tarihi", "not"]
+           "randevu_tarihi", "eposta_konu", "eposta_metni", "dm_metni", "not"]
 SUTUNLAR = SERVIS + EKLENEN
 ASAMALAR = ["yeni", "temasta", "cevap verdi", "randevu", "görüşüldü", "sonra", "kapandı", "müşteri"]
 DURUMLAR = ["yapılmadı", "yapıldı", "cevap geldi", "kapandı"]
@@ -156,6 +156,8 @@ def yukle():
         bilinmeyen = [b for b in (okuyucu.fieldnames or []) if b and b not in SUTUNLAR]
         if bilinmeyen:
             hata("adaylar.csv'de tanınmayan sütun var: %s. Sütunlar aday-listesi-dosyasi'nda sabittir." % ", ".join(bilinmeyen))
+        # Eksik sutun hata degil: eski dosya yeni sutunlarla acilir, bos gelir
+        # ve ilk kayitta dosyaya yazilir.
         satirlar = []
         for s in okuyucu:
             satirlar.append({k: (s.get(k) or "").strip() for k in SUTUNLAR})
@@ -242,11 +244,12 @@ def satir_bul(satirlar, anahtar, semt=None):
 
 
 def ozet_satir(s):
+    _b, _k, _kaynak = gozlem(s)
     return " | ".join([s["kisa_ad"] or s["ad"], s["telefon"] or "telefon yok", s["sahibi"] or "sahibi ?",
                        "sızıntı " + (s["sizinti"] or "-"), s["asama"] or "yeni",
                        ("son " + s["son_temas_tarihi"] + " " + s["son_temas_kanali"]).strip() if s["son_temas_tarihi"] else "temas yok",
                        ("sıradaki " + s["siradaki_tarih"] + " " + s["siradaki_hareket"]).strip() if s["siradaki_tarih"] else "sıradaki yok",
-                       s["bulgu"] or ""]).rstrip(" |")
+                       (_b + (" (profilden)" if _kaynak == "profil" else "")) if _b else ""]).rstrip(" |")
 
 
 # ---------- komutlar ----------
@@ -491,6 +494,26 @@ def temas_uygula(satirlar, s, kanal, sonuc, durum=None, asama=None, siradaki=Non
     if s["asama"] == "kapandı":
         s["siradaki_hareket"] = ""
         s["siradaki_tarih"] = ""
+    # Acik kalan hicbir adayin sirasi bos kalamaz. Bos kalirsa aday gunun
+    # listesinden tamamen dusuyor ve bir daha hic gorunmuyor: ne takipte, ne
+    # "hic aranmamis"ta. Cagiran komut sira vermediyse zincirden hesaplanir.
+    # Randevu alindiysa sıradaki adim gorusmenin kendisidir.
+    if s["asama"] == "randevu" and s["randevu_tarihi"] and not s["siradaki_tarih"]:
+        s["siradaki_hareket"] = "randevu hazırlığı"
+        s["siradaki_tarih"] = s["randevu_tarihi"][:10]
+    eski_sira = (s["siradaki_tarih"] or "")[:10]
+    if acik(s) and not tarih and s["asama"] != "randevu" \
+       and (not eski_sira or eski_sira <= bugun().isoformat()):
+        # temas_sayisi bu fonksiyonun basinda artti; zincirde bu gonderim kacinci
+        # ise onu veriyoruz, yoksa bir fazla sayip adimi atliyor.
+        g = takip_gunu(s, int(s["temas_sayisi"] or 1))
+        if g:
+            s["siradaki_hareket"] = "%s, %s" % (kanal, g[1])
+            s["siradaki_tarih"] = tarih_coz("+%d" % g[0], "sıradaki tarih")
+        else:
+            s["asama"] = "sonra"
+            s["siradaki_hareket"] = "zincir bitti, yeniden bak"
+            s["siradaki_tarih"] = tarih_coz("+90", "sıradaki tarih")
     if sonuc:
         not_ekle(s, "%s: %s" % (kanal, sonuc))
     if notu:
@@ -505,10 +528,11 @@ def kmt_temas(a):
     print("temas işlendi: " + ozet_satir(s))
 
 
-def takip_gunu(s):
+def takip_gunu(s, kacinci=None):
     """Yazılı kanal zinciri: ilk mesajdan 3, 7 ve 14 gün sonra takip. Bu gönderim kaçıncıysa sıradaki takibin
-    kaç gün sonra olduğunu ve adını verir; dördüncü gönderimden sonra zincir biter."""
-    n = int(s["temas_sayisi"] or 0) + 1
+    kaç gün sonra olduğunu ve adını verir; dördüncü gönderimden sonra zincir biter.
+    kacinci verilmezse sayaçtan hesaplanır (temas henüz işlenmemiş kabul edilir)."""
+    n = kacinci if kacinci is not None else int(s["temas_sayisi"] or 0) + 1
     return {1: (3, "3. gün takibi"), 2: (4, "7. gün takibi"), 3: (7, "14. gün takibi")}.get(n)
 
 
@@ -600,6 +624,49 @@ def kmt_sil(a):
     print("listeden çıkarıldı (satır duruyor, elenme=%s): %s" % (a.sebep, s["kisa_ad"]))
 
 
+# Veri servisinin her kayit icin cikardigi isaretlerden kurulan gozlem.
+# Bunlar tahmin degil: Google isletme profilinde gorulen seyler. Elle yapilan
+# derin denetimin yerine gecmez, ama denetimi yapilmamis adayin mesaji
+# gozlemsiz gitmesin diye var. Sira guclu olandan zayifa.
+IPUCU_GOZLEM = [
+ ("yorum_sikayet", "Son yorumlarda aranıp ulaşılamadığını yazan bir müşteri var",
+  "Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"),
+ ("profil_sahipsiz", "Google işletme profili sahiplenilmemiş görünüyor",
+  "Google'daki işletme sayfanız sahiplenilmemiş görünüyor"),
+ ("aksam_kapali", "Google'da hafta içi kapanış saati 18.00 ve öncesi",
+  "Google'da saatleriniz akşam altıda kapanıyor görünüyor"),
+ ("saat_yok", "Google profilinde çalışma saati yazmıyor",
+  "Google'da çalışma saatiniz yazmıyor"),
+ ("site_yok", "Google profilinde site bağlantısı yok",
+  "Google'da site bağlantınız görünmüyor"),
+ ("hafta_sonu_kapali", "Google'da cumartesi ve pazar kapalı yazıyor",
+  "Google'da hafta sonu kapalı görünüyorsunuz"),
+ ("instagram_yok", "Sitede ve profilde Instagram hesabı bulunamadı",
+  "Instagram hesabınızı bulamadım"),
+]
+
+
+def ipucu_gozlem(s):
+    """Elle bulgu yoksa isaretlerden tek gozlem cumlesi kurar.
+    Doner: (bulgu, kanca) ya da None."""
+    ip = set((s.get("ipuclari") or "").split())
+    for kod, bulgu, kanca in IPUCU_GOZLEM:
+        if kod in ip:
+            return bulgu, kanca
+    return None
+
+
+def gozlem(s):
+    """Adayin mesajina girecek gozlem ve nereden geldigi.
+    Doner: (bulgu, kanca, kaynak) kaynak: 'denetim' | 'profil' | ''."""
+    if s.get("bulgu"):
+        return s["bulgu"], s.get("kanca") or "", "denetim"
+    g = ipucu_gozlem(s)
+    if g:
+        return g[0], g[1], "profil"
+    return "", "", ""
+
+
 def acik(s):
     return not s["elenme"] and s["asama"] not in ("kapandı", "müşteri")
 
@@ -622,8 +689,10 @@ def kmt_bugun(a):
     denetsiz.sort(key=lambda s: (-int(bool(s["yuz"])), -puan(s)[1]))
     n = a.sayi
     liste = (cevap + takip + hazir + denetsiz)[:n]
-    print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetimsiz %d; ilk %d gösteriliyor" %
-          (g, len(cevap), len(takip), len(hazir), len(denetsiz), len(liste)))
+    gozlemsiz = sum(1 for s in liste if not gozlem(s)[0])
+    print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetimsiz %d; ilk %d gösteriliyor%s" %
+          (g, len(cevap), len(takip), len(hazir), len(denetsiz), len(liste),
+           (", %d adayda gözlem yok" % gozlemsiz) if gozlemsiz else ", hepsinde gözlem var"))
     if a.planla:
         kanal = "telefon" if (a.kanal or "telefon") == "telefon" else "yazı"
         sayac = 0
@@ -654,6 +723,12 @@ def kmt_ozet(a):
     for s in canli:
         dag[s["asama"] or "yeni"] = dag.get(s["asama"] or "yeni", 0) + 1
     print("aşama: " + ", ".join("%s %d" % (k, dag[k]) for k in ASAMALAR if k in dag))
+    kaynaklar = {"denetim": 0, "profil": 0, "": 0}
+    for s in canli:
+        if acik(s):
+            kaynaklar[gozlem(s)[2]] += 1
+    print("gözlem: denetimden %d, profilden %d, gözlemsiz %d" %
+          (kaynaklar["denetim"], kaynaklar["profil"], kaynaklar[""]))
     bugun_temas = say(lambda s: s["son_temas_tarihi"] == g)
     print("bugün temas edilen %d, toplam temas %d" % (bugun_temas, sum(int(s["temas_sayisi"] or 0) for s in canli)))
     n = nis_oku()
@@ -982,6 +1057,14 @@ body.cekmece-acik main{filter:none}
 .kart .ek{display:flex;gap:6px;flex-wrap:wrap}
 .kart .ek input[type=text]{flex:1;min-width:200px}
 textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace;padding:8px;border:1px solid var(--l);border-radius:8px;margin-top:8px}
+.yazikutu{border:1px solid var(--l);border-radius:8px;background:#fafafa;padding:10px 12px;margin:6px 0;
+ white-space:pre-wrap;font:14px/1.6 inherit}
+.yazibas{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
+.yazibas span{color:var(--g);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+.yazibas button{font:inherit;font-size:12px;padding:4px 10px;border:1px solid var(--l);
+ border-radius:6px;background:#fff;cursor:pointer}
+.yazibas button.ok{background:#166534;color:#fff;border-color:#166534}
+.yazieksik{color:var(--g);font-size:13px;font-style:italic;padding:6px 0}
 .mesaj{background:#dcfce7;color:#166534;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:13px}
 @media (max-width:760px){.kart{grid-template-columns:1fr;grid-template-areas:"oku" "soyle" "sonuc"}.kart .soyle-alani{border-left:0;padding-left:0;border-top:1px solid var(--l);padding-top:8px}.modlar button.itiraz-ac{margin-left:0}}
 @media print{header{position:static}.arac,.cip,.sekme,.saha-ust,.sonuc,.kanal,.ek,.modlar,.cekmece{display:none}tr.detay{display:none}}
@@ -1021,7 +1104,24 @@ if(!s.length)return[];var b=s[0].map(function(x){return x.trim()});
 return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'').trim()});return o})}
 
 // --- sözlükler ---
-var IPUCU={profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+// Veri servisinin cikardigi isaretlerden kurulan gozlem cumlesi.
+// Tahmin degil: Google isletme profilinde gorunen sey. Elle yapilan derin
+// denetimin yerine gecmez; denetimi yapilmamis adayin mesaji gozlemsiz
+// gitmesin diye var. Sira guclu olandan zayifa.
+var IPUCU_KANCA=[
+ ['yorum_sikayet',"Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"],
+ ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
+ ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
+ ['saat_yok',"Google'da çalışma saatiniz yazmıyor"],
+ ['site_yok',"Google'da site bağlantınız görünmüyor"],
+ ['hafta_sonu_kapali',"Google'da hafta sonu kapalı görünüyorsunuz"],
+ ['instagram_yok',"Instagram hesabınızı bulamadım"]
+];
+function profilKancasi(r){
+ for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
+ return '';
+}
+var IPUCU={yorum_sikayet:['Yorumda "ulaşamadım"','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}
@@ -1147,14 +1247,49 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
   a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki arama gerçek gözlemdir; uydurma yok</span>']);}
  else{a.push(['Tanış ve kaynağı söyle','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' '+kim+' <span class="kucuk">bekle</span>']);
   a.push(['Rahatlat','Sizi tanımıyorum, kısa tutacağım.']);
-  a.push([r.kanca?'Gözlem (doğrulanmış)':'Açılış sorusu',r.kanca?kac(r.kanca)+' Onun için arıyorum.':(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>')]);}
+  var pk=r.kanca?'':profilKancasi(r);
+  a.push([r.kanca?'Gözlem (doğrulanmış)':(pk?'Gözlem (profilden)':'Açılış sorusu'),
+    r.kanca?kac(r.kanca)+' Onun için arıyorum.'
+    :(pk?kac(pk)+' Onun için arıyorum. <span class="kucuk">Google profilinde görülen şey; denetim yapılmadı, uydurma yok</span>'
+       :(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>'))]);}
  a.push(['İşleyiş sorusu, tek soru',kac(doldur(NIS.isleyis_sorusu||GENEL.isleyis))+' <span class="kucuk">bekle, araya girme</span>']);
  a.push(['Ne yaptığın, kapsam içinde',kac(doldur(NIS.vaat||GENEL.vaat))+(OSIS?' Adı '+kac(OSIS)+'.':'')]);
  a.push(['Randevu',kac(GENEL.randevu)+' <span class="kucuk">kırk sekiz saatten uzağa alma; onay için e-posta ya da WhatsApp izni telefondayken</span>']);
  return a}
-function soylePanel(r,mod){var M=[['sahibi','Sahibi açtı'],['calisan','Çalışan açtı'],['acilmadi','Açılmadı'],['ikinci','İkinci arama']];
- var h='<div class="modlar">'+M.map(function(m){return'<button data-mod="'+m[0]+'" class="'+(m[0]===mod?'aktif':'')+'">'+m[1]+'</button>'}).join('')+'<button class="itiraz-ac" data-itiraz>Karşı taraf bunu söylerse</button></div><ol class="adimlar">';
+// Yazili kanal paneli: adaya ozel metin CSV'de duruyor, burada kopyalaniyor.
+// Sohbete donup metin istemek yok; gonderim ogrencinin elinde kaliyor.
+function yaziPanel(r,mod){
+ if(mod==='eposta'){
+  if(!r.eposta) return '<div class="yazieksik">Bu adayın e-posta adresi yok. Telefon ya da Instagram kullan.</div>';
+  if(!r.eposta_metni) return '<div class="yazieksik">E-posta metni henüz yazılmadı. FounderOS\'a "bugünün e-postalarını yaz" de.</div>';
+  return '<div class="yazibas"><span>Kime</span><button data-kop="'+kac(r.eposta)+'">Adresi kopyala</button></div>'
+   +'<div class="yazikutu">'+kac(r.eposta)+'</div>'
+   +(r.eposta_konu?'<div class="yazibas"><span>Konu</span><button data-kop="'+kac(r.eposta_konu)+'">Kopyala</button></div><div class="yazikutu">'+kac(r.eposta_konu)+'</div>':'')
+   +'<div class="yazibas"><span>Metin</span><button class="ok" data-kop="'+kac(r.eposta_metni)+'">Metni kopyala</button></div>'
+   +'<div class="yazikutu">'+kac(r.eposta_metni)+'</div>'
+   +'<div class="kucuk">Kendi iş e-postandan gönder. Gönderdikten sonra aşağıdan kanalı e-posta seçip sonucu işaretle.</div>';
+ }
+ if(!r.instagram) return '<div class="yazieksik">Bu adayın Instagram hesabı bulunamadı. Telefon ya da e-posta kullan.</div>';
+ if(!r.dm_metni) return '<div class="yazieksik">Mesaj metni henüz yazılmadı. FounderOS\'a "bugünün mesajlarını yaz" de.</div>';
+ return '<div class="yazibas"><span>Hesap</span><button data-kop="'+kac(r.instagram)+'">Kopyala</button></div>'
+  +'<div class="yazikutu">'+kac(r.instagram)+'</div>'
+  +'<div class="yazibas"><span>Mesaj</span><button class="ok" data-kop="'+kac(r.dm_metni)+'">Mesajı kopyala</button></div>'
+  +'<div class="yazikutu">'+kac(r.dm_metni)+'</div>'
+  +'<div class="kucuk">Önce son gönderisine yorum yaz, sonra mesajı gönder. Gönderdikten sonra kanalı Instagram seçip sonucu işaretle.</div>';
+}
+function soylePanel(r,mod){
+ var M=[['sahibi','Sahibi açtı'],['calisan','Çalışan açtı'],['acilmadi','Açılmadı'],['ikinci','İkinci arama']];
+ if(r.eposta) M.push(['eposta','E-posta']);
+ if(r.instagram) M.push(['dm','Instagram']);
+ var h='<div class="modlar">'+M.map(function(m){return'<button data-mod="'+m[0]+'" class="'+(m[0]===mod?'aktif':'')+'">'+m[1]+'</button>'}).join('')+'<button class="itiraz-ac" data-itiraz>Karşı taraf bunu söylerse</button></div>';
+ if(mod==='eposta'||mod==='dm') return h+yaziPanel(r,mod);
+ h+='<ol class="adimlar">';
  adimlar(r,mod).forEach(function(x){h+='<li><span class="e">'+x[0]+'</span>'+x[1]+'</li>'});return h+'</ol>'}
+function yedekKopya(t,bitti){
+ var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
+ document.body.appendChild(a);a.select();try{document.execCommand('copy');bitti()}catch(e){}
+ document.body.removeChild(a);
+}
 function itirazCekmece(){var ozel=nisItirazlar();var h='<div class="cekmece-ust"><b>Karşı taraf bunu söylerse</b><button class="dugme" data-kapat>Kapat</button></div>';
  function madde(x,tur){return'<details'+(tur?' class="'+tur+'"':'')+'><summary>"'+kac(x.durum)+'"</summary>'+(x.soyle?'<div class="soyle">Söyle: "'+kac(doldur(x.soyle))+'"</div>':'')+(x.neden?'<div class="neden"><span>Ne için</span>'+kac(x.neden)+'</div>':'')+(x.sonra?'<div class="neden"><span>Sonra</span>'+kac(doldur(x.sonra))+'</div>':'')+'</details>'}
  if(ozel.length)h+='<div class="kucuk baslik">'+kac(NIS.ad||'Bu niş')+' için</div>'+ozel.map(function(x){return madde(x,'ozel')}).join('');
@@ -1180,7 +1315,9 @@ function sahaCiz(){
    +(r.sahibi?'<div><span>Kim</span>'+kac(r.sahibi)+'</div>':'<div><span>Kim</span><i class="kucuk">adı bulunamadı; "işletme sahibi siz misiniz" ile başla, adı öğrenince nota yaz</i></div>')
    +(r.semt?'<div><span>İlçe</span>'+kac(r.semt)+(r.yorum_sayisi?' · '+kac(r.yorum_sayisi)+' yorum':'')+'</div>':'')
    +(r.baglayan?'<div><span>Bağlayan</span>'+kac(r.baglayan)+'</div>':'')
-   +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>':'<div><span>Doğrulanmış gözlem</span><i class="kucuk">yok; kartın açılış sorusuyla başla, "sürekli kaçırıyorsunuz" deme</i></div>')
+   +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>'
+      :(profilKancasi(r)?'<div><span>Profilden gözlem</span>'+kac(profilKancasi(r))+' <i class="kucuk">denetim yapılmadı; bu satır Google profilinden geliyor</i></div>'
+        :'<div><span>Doğrulanmış gözlem</span><i class="kucuk">yok; kartın açılış sorusuyla başla, "sürekli kaçırıyorsunuz" deme</i></div>'))
    +(r.kanca?'<div><span>Kanca</span>'+kac(r.kanca)+'</div>':'')
    +(r.siradaki_hareket?'<div><span>Bugün</span>'+kac(r.siradaki_hareket)+'</div>':'')
    +(r.son_temas_tarihi?'<div><span>Geçmiş</span>'+tarihTr(r.son_temas_tarihi)+(r.son_temas_kanali?', '+kac(KANAL[r.son_temas_kanali]||r.son_temas_kanali):'')+(r.temas_sayisi?' ('+kac(r.temas_sayisi)+'. temas)':'')+'</div>':'<div><span>Geçmiş</span>ilk temas</div>')
@@ -1199,6 +1336,12 @@ function bagla(){
  saha.querySelectorAll('.kart').forEach(function(k){var ad=k.dataset.k;
   k.querySelectorAll('.sonuc button').forEach(function(b){b.addEventListener('click',function(){var d=durum[ad]||{};d.sonuc=(d.sonuc===b.dataset.s)?'':b.dataset.s;d.kanal=k.querySelector('[data-kanal]').value;if(d.sonuc==='sonra'&&!d.sonra)d.sonra=gunEkle(7);durum[ad]=d;durumYaz(durum);sahaCiz()})});
   k.querySelectorAll('.modlar button[data-mod]').forEach(function(b){b.addEventListener('click',function(){var d=durum[ad]||{};d.mod=b.dataset.mod;durum[ad]=d;durumYaz(durum);sahaCiz()})});
+  k.querySelectorAll('button[data-kop]').forEach(function(b){b.addEventListener('click',function(){
+    var t=b.dataset.kop, e=b.textContent;
+    function bitti(){b.textContent='Kopyalandı';setTimeout(function(){b.textContent=e},1400)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(bitti,function(){yedekKopya(t,bitti)})}
+    else yedekKopya(t,bitti);
+  })});
   k.querySelector('[data-kanal]').addEventListener('change',function(e){var d=durum[ad]||{};d.kanal=e.target.value;durum[ad]=d;durumYaz(durum);sahaCiz()});
   k.querySelectorAll('[data-not],[data-randevu],[data-sonra]').forEach(function(i){i.addEventListener('input',function(e){var d=durum[ad]||{};if(i.hasAttribute('data-not'))d.not=e.target.value;else if(i.hasAttribute('data-randevu'))d.randevu=e.target.value;else d.sonra=e.target.value;durum[ad]=d;durumYaz(durum)})});
  });

@@ -24,7 +24,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.25.0"
+SURUM = "0.26.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -33,7 +33,7 @@ EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", 
            "bulgu", "kanca", "lira", "denetim_tarihi", "asama", "telefon_durumu",
            "eposta_durumu", "instagram_durumu", "video_durumu", "temas_sayisi",
            "son_temas_tarihi", "son_temas_kanali", "siradaki_hareket", "siradaki_tarih",
-           "randevu_tarihi", "not"]
+           "randevu_tarihi", "eposta_konu", "eposta_metni", "dm_metni", "not"]
 SUTUNLAR = SERVIS + EKLENEN
 ASAMALAR = ["yeni", "temasta", "cevap verdi", "randevu", "görüşüldü", "sonra", "kapandı", "müşteri"]
 DURUMLAR = ["yapılmadı", "yapıldı", "cevap geldi", "kapandı"]
@@ -130,6 +130,8 @@ def yukle():
         bilinmeyen = [b for b in (okuyucu.fieldnames or []) if b and b not in SUTUNLAR]
         if bilinmeyen:
             hata("adaylar.csv'de tanınmayan sütun var: %s. Sütunlar aday-listesi-dosyasi'nda sabittir." % ", ".join(bilinmeyen))
+        # Eksik sutun hata degil: eski dosya yeni sutunlarla acilir, bos gelir
+        # ve ilk kayitta dosyaya yazilir.
         satirlar = []
         for s in okuyucu:
             satirlar.append({k: (s.get(k) or "").strip() for k in SUTUNLAR})
@@ -216,11 +218,12 @@ def satir_bul(satirlar, anahtar, semt=None):
 
 
 def ozet_satir(s):
+    _b, _k, _kaynak = gozlem(s)
     return " | ".join([s["kisa_ad"] or s["ad"], s["telefon"] or "telefon yok", s["sahibi"] or "sahibi ?",
                        "sızıntı " + (s["sizinti"] or "-"), s["asama"] or "yeni",
                        ("son " + s["son_temas_tarihi"] + " " + s["son_temas_kanali"]).strip() if s["son_temas_tarihi"] else "temas yok",
                        ("sıradaki " + s["siradaki_tarih"] + " " + s["siradaki_hareket"]).strip() if s["siradaki_tarih"] else "sıradaki yok",
-                       s["bulgu"] or ""]).rstrip(" |")
+                       (_b + (" (profilden)" if _kaynak == "profil" else "")) if _b else ""]).rstrip(" |")
 
 
 # ---------- komutlar ----------
@@ -465,6 +468,26 @@ def temas_uygula(satirlar, s, kanal, sonuc, durum=None, asama=None, siradaki=Non
     if s["asama"] == "kapandı":
         s["siradaki_hareket"] = ""
         s["siradaki_tarih"] = ""
+    # Acik kalan hicbir adayin sirasi bos kalamaz. Bos kalirsa aday gunun
+    # listesinden tamamen dusuyor ve bir daha hic gorunmuyor: ne takipte, ne
+    # "hic aranmamis"ta. Cagiran komut sira vermediyse zincirden hesaplanir.
+    # Randevu alindiysa sıradaki adim gorusmenin kendisidir.
+    if s["asama"] == "randevu" and s["randevu_tarihi"] and not s["siradaki_tarih"]:
+        s["siradaki_hareket"] = "randevu hazırlığı"
+        s["siradaki_tarih"] = s["randevu_tarihi"][:10]
+    eski_sira = (s["siradaki_tarih"] or "")[:10]
+    if acik(s) and not tarih and s["asama"] != "randevu" \
+       and (not eski_sira or eski_sira <= bugun().isoformat()):
+        # temas_sayisi bu fonksiyonun basinda artti; zincirde bu gonderim kacinci
+        # ise onu veriyoruz, yoksa bir fazla sayip adimi atliyor.
+        g = takip_gunu(s, int(s["temas_sayisi"] or 1))
+        if g:
+            s["siradaki_hareket"] = "%s, %s" % (kanal, g[1])
+            s["siradaki_tarih"] = tarih_coz("+%d" % g[0], "sıradaki tarih")
+        else:
+            s["asama"] = "sonra"
+            s["siradaki_hareket"] = "zincir bitti, yeniden bak"
+            s["siradaki_tarih"] = tarih_coz("+90", "sıradaki tarih")
     if sonuc:
         not_ekle(s, "%s: %s" % (kanal, sonuc))
     if notu:
@@ -479,10 +502,11 @@ def kmt_temas(a):
     print("temas işlendi: " + ozet_satir(s))
 
 
-def takip_gunu(s):
+def takip_gunu(s, kacinci=None):
     """Yazılı kanal zinciri: ilk mesajdan 3, 7 ve 14 gün sonra takip. Bu gönderim kaçıncıysa sıradaki takibin
-    kaç gün sonra olduğunu ve adını verir; dördüncü gönderimden sonra zincir biter."""
-    n = int(s["temas_sayisi"] or 0) + 1
+    kaç gün sonra olduğunu ve adını verir; dördüncü gönderimden sonra zincir biter.
+    kacinci verilmezse sayaçtan hesaplanır (temas henüz işlenmemiş kabul edilir)."""
+    n = kacinci if kacinci is not None else int(s["temas_sayisi"] or 0) + 1
     return {1: (3, "3. gün takibi"), 2: (4, "7. gün takibi"), 3: (7, "14. gün takibi")}.get(n)
 
 
@@ -574,6 +598,49 @@ def kmt_sil(a):
     print("listeden çıkarıldı (satır duruyor, elenme=%s): %s" % (a.sebep, s["kisa_ad"]))
 
 
+# Veri servisinin her kayit icin cikardigi isaretlerden kurulan gozlem.
+# Bunlar tahmin degil: Google isletme profilinde gorulen seyler. Elle yapilan
+# derin denetimin yerine gecmez, ama denetimi yapilmamis adayin mesaji
+# gozlemsiz gitmesin diye var. Sira guclu olandan zayifa.
+IPUCU_GOZLEM = [
+ ("yorum_sikayet", "Son yorumlarda aranıp ulaşılamadığını yazan bir müşteri var",
+  "Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"),
+ ("profil_sahipsiz", "Google işletme profili sahiplenilmemiş görünüyor",
+  "Google'daki işletme sayfanız sahiplenilmemiş görünüyor"),
+ ("aksam_kapali", "Google'da hafta içi kapanış saati 18.00 ve öncesi",
+  "Google'da saatleriniz akşam altıda kapanıyor görünüyor"),
+ ("saat_yok", "Google profilinde çalışma saati yazmıyor",
+  "Google'da çalışma saatiniz yazmıyor"),
+ ("site_yok", "Google profilinde site bağlantısı yok",
+  "Google'da site bağlantınız görünmüyor"),
+ ("hafta_sonu_kapali", "Google'da cumartesi ve pazar kapalı yazıyor",
+  "Google'da hafta sonu kapalı görünüyorsunuz"),
+ ("instagram_yok", "Sitede ve profilde Instagram hesabı bulunamadı",
+  "Instagram hesabınızı bulamadım"),
+]
+
+
+def ipucu_gozlem(s):
+    """Elle bulgu yoksa isaretlerden tek gozlem cumlesi kurar.
+    Doner: (bulgu, kanca) ya da None."""
+    ip = set((s.get("ipuclari") or "").split())
+    for kod, bulgu, kanca in IPUCU_GOZLEM:
+        if kod in ip:
+            return bulgu, kanca
+    return None
+
+
+def gozlem(s):
+    """Adayin mesajina girecek gozlem ve nereden geldigi.
+    Doner: (bulgu, kanca, kaynak) kaynak: 'denetim' | 'profil' | ''."""
+    if s.get("bulgu"):
+        return s["bulgu"], s.get("kanca") or "", "denetim"
+    g = ipucu_gozlem(s)
+    if g:
+        return g[0], g[1], "profil"
+    return "", "", ""
+
+
 def acik(s):
     return not s["elenme"] and s["asama"] not in ("kapandı", "müşteri")
 
@@ -596,8 +663,10 @@ def kmt_bugun(a):
     denetsiz.sort(key=lambda s: (-int(bool(s["yuz"])), -puan(s)[1]))
     n = a.sayi
     liste = (cevap + takip + hazir + denetsiz)[:n]
-    print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetimsiz %d; ilk %d gösteriliyor" %
-          (g, len(cevap), len(takip), len(hazir), len(denetsiz), len(liste)))
+    gozlemsiz = sum(1 for s in liste if not gozlem(s)[0])
+    print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetimsiz %d; ilk %d gösteriliyor%s" %
+          (g, len(cevap), len(takip), len(hazir), len(denetsiz), len(liste),
+           (", %d adayda gözlem yok" % gozlemsiz) if gozlemsiz else ", hepsinde gözlem var"))
     if a.planla:
         kanal = "telefon" if (a.kanal or "telefon") == "telefon" else "yazı"
         sayac = 0
@@ -628,6 +697,12 @@ def kmt_ozet(a):
     for s in canli:
         dag[s["asama"] or "yeni"] = dag.get(s["asama"] or "yeni", 0) + 1
     print("aşama: " + ", ".join("%s %d" % (k, dag[k]) for k in ASAMALAR if k in dag))
+    kaynaklar = {"denetim": 0, "profil": 0, "": 0}
+    for s in canli:
+        if acik(s):
+            kaynaklar[gozlem(s)[2]] += 1
+    print("gözlem: denetimden %d, profilden %d, gözlemsiz %d" %
+          (kaynaklar["denetim"], kaynaklar["profil"], kaynaklar[""]))
     bugun_temas = say(lambda s: s["son_temas_tarihi"] == g)
     print("bugün temas edilen %d, toplam temas %d" % (bugun_temas, sum(int(s["temas_sayisi"] or 0) for s in canli)))
     n = nis_oku()

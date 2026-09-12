@@ -104,6 +104,14 @@ body.cekmece-acik main{filter:none}
 .kart .ek{display:flex;gap:6px;flex-wrap:wrap}
 .kart .ek input[type=text]{flex:1;min-width:200px}
 textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace;padding:8px;border:1px solid var(--l);border-radius:8px;margin-top:8px}
+.yazikutu{border:1px solid var(--l);border-radius:8px;background:#fafafa;padding:10px 12px;margin:6px 0;
+ white-space:pre-wrap;font:14px/1.6 inherit}
+.yazibas{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
+.yazibas span{color:var(--g);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+.yazibas button{font:inherit;font-size:12px;padding:4px 10px;border:1px solid var(--l);
+ border-radius:6px;background:#fff;cursor:pointer}
+.yazibas button.ok{background:#166534;color:#fff;border-color:#166534}
+.yazieksik{color:var(--g);font-size:13px;font-style:italic;padding:6px 0}
 .mesaj{background:#dcfce7;color:#166534;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:13px}
 @media (max-width:760px){.kart{grid-template-columns:1fr;grid-template-areas:"oku" "soyle" "sonuc"}.kart .soyle-alani{border-left:0;padding-left:0;border-top:1px solid var(--l);padding-top:8px}.modlar button.itiraz-ac{margin-left:0}}
 @media print{header{position:static}.arac,.cip,.sekme,.saha-ust,.sonuc,.kanal,.ek,.modlar,.cekmece{display:none}tr.detay{display:none}}
@@ -143,7 +151,24 @@ if(!s.length)return[];var b=s[0].map(function(x){return x.trim()});
 return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'').trim()});return o})}
 
 // --- sözlükler ---
-var IPUCU={profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+// Veri servisinin cikardigi isaretlerden kurulan gozlem cumlesi.
+// Tahmin degil: Google isletme profilinde gorunen sey. Elle yapilan derin
+// denetimin yerine gecmez; denetimi yapilmamis adayin mesaji gozlemsiz
+// gitmesin diye var. Sira guclu olandan zayifa.
+var IPUCU_KANCA=[
+ ['yorum_sikayet',"Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"],
+ ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
+ ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
+ ['saat_yok',"Google'da çalışma saatiniz yazmıyor"],
+ ['site_yok',"Google'da site bağlantınız görünmüyor"],
+ ['hafta_sonu_kapali',"Google'da hafta sonu kapalı görünüyorsunuz"],
+ ['instagram_yok',"Instagram hesabınızı bulamadım"]
+];
+function profilKancasi(r){
+ for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
+ return '';
+}
+var IPUCU={yorum_sikayet:['Yorumda "ulaşamadım"','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}
@@ -269,14 +294,49 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
   a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki arama gerçek gözlemdir; uydurma yok</span>']);}
  else{a.push(['Tanış ve kaynağı söyle','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' '+kim+' <span class="kucuk">bekle</span>']);
   a.push(['Rahatlat','Sizi tanımıyorum, kısa tutacağım.']);
-  a.push([r.kanca?'Gözlem (doğrulanmış)':'Açılış sorusu',r.kanca?kac(r.kanca)+' Onun için arıyorum.':(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>')]);}
+  var pk=r.kanca?'':profilKancasi(r);
+  a.push([r.kanca?'Gözlem (doğrulanmış)':(pk?'Gözlem (profilden)':'Açılış sorusu'),
+    r.kanca?kac(r.kanca)+' Onun için arıyorum.'
+    :(pk?kac(pk)+' Onun için arıyorum. <span class="kucuk">Google profilinde görülen şey; denetim yapılmadı, uydurma yok</span>'
+       :(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>'))]);}
  a.push(['İşleyiş sorusu, tek soru',kac(doldur(NIS.isleyis_sorusu||GENEL.isleyis))+' <span class="kucuk">bekle, araya girme</span>']);
  a.push(['Ne yaptığın, kapsam içinde',kac(doldur(NIS.vaat||GENEL.vaat))+(OSIS?' Adı '+kac(OSIS)+'.':'')]);
  a.push(['Randevu',kac(GENEL.randevu)+' <span class="kucuk">kırk sekiz saatten uzağa alma; onay için e-posta ya da WhatsApp izni telefondayken</span>']);
  return a}
-function soylePanel(r,mod){var M=[['sahibi','Sahibi açtı'],['calisan','Çalışan açtı'],['acilmadi','Açılmadı'],['ikinci','İkinci arama']];
- var h='<div class="modlar">'+M.map(function(m){return'<button data-mod="'+m[0]+'" class="'+(m[0]===mod?'aktif':'')+'">'+m[1]+'</button>'}).join('')+'<button class="itiraz-ac" data-itiraz>Karşı taraf bunu söylerse</button></div><ol class="adimlar">';
+// Yazili kanal paneli: adaya ozel metin CSV'de duruyor, burada kopyalaniyor.
+// Sohbete donup metin istemek yok; gonderim ogrencinin elinde kaliyor.
+function yaziPanel(r,mod){
+ if(mod==='eposta'){
+  if(!r.eposta) return '<div class="yazieksik">Bu adayın e-posta adresi yok. Telefon ya da Instagram kullan.</div>';
+  if(!r.eposta_metni) return '<div class="yazieksik">E-posta metni henüz yazılmadı. FounderOS\'a "bugünün e-postalarını yaz" de.</div>';
+  return '<div class="yazibas"><span>Kime</span><button data-kop="'+kac(r.eposta)+'">Adresi kopyala</button></div>'
+   +'<div class="yazikutu">'+kac(r.eposta)+'</div>'
+   +(r.eposta_konu?'<div class="yazibas"><span>Konu</span><button data-kop="'+kac(r.eposta_konu)+'">Kopyala</button></div><div class="yazikutu">'+kac(r.eposta_konu)+'</div>':'')
+   +'<div class="yazibas"><span>Metin</span><button class="ok" data-kop="'+kac(r.eposta_metni)+'">Metni kopyala</button></div>'
+   +'<div class="yazikutu">'+kac(r.eposta_metni)+'</div>'
+   +'<div class="kucuk">Kendi iş e-postandan gönder. Gönderdikten sonra aşağıdan kanalı e-posta seçip sonucu işaretle.</div>';
+ }
+ if(!r.instagram) return '<div class="yazieksik">Bu adayın Instagram hesabı bulunamadı. Telefon ya da e-posta kullan.</div>';
+ if(!r.dm_metni) return '<div class="yazieksik">Mesaj metni henüz yazılmadı. FounderOS\'a "bugünün mesajlarını yaz" de.</div>';
+ return '<div class="yazibas"><span>Hesap</span><button data-kop="'+kac(r.instagram)+'">Kopyala</button></div>'
+  +'<div class="yazikutu">'+kac(r.instagram)+'</div>'
+  +'<div class="yazibas"><span>Mesaj</span><button class="ok" data-kop="'+kac(r.dm_metni)+'">Mesajı kopyala</button></div>'
+  +'<div class="yazikutu">'+kac(r.dm_metni)+'</div>'
+  +'<div class="kucuk">Önce son gönderisine yorum yaz, sonra mesajı gönder. Gönderdikten sonra kanalı Instagram seçip sonucu işaretle.</div>';
+}
+function soylePanel(r,mod){
+ var M=[['sahibi','Sahibi açtı'],['calisan','Çalışan açtı'],['acilmadi','Açılmadı'],['ikinci','İkinci arama']];
+ if(r.eposta) M.push(['eposta','E-posta']);
+ if(r.instagram) M.push(['dm','Instagram']);
+ var h='<div class="modlar">'+M.map(function(m){return'<button data-mod="'+m[0]+'" class="'+(m[0]===mod?'aktif':'')+'">'+m[1]+'</button>'}).join('')+'<button class="itiraz-ac" data-itiraz>Karşı taraf bunu söylerse</button></div>';
+ if(mod==='eposta'||mod==='dm') return h+yaziPanel(r,mod);
+ h+='<ol class="adimlar">';
  adimlar(r,mod).forEach(function(x){h+='<li><span class="e">'+x[0]+'</span>'+x[1]+'</li>'});return h+'</ol>'}
+function yedekKopya(t,bitti){
+ var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
+ document.body.appendChild(a);a.select();try{document.execCommand('copy');bitti()}catch(e){}
+ document.body.removeChild(a);
+}
 function itirazCekmece(){var ozel=nisItirazlar();var h='<div class="cekmece-ust"><b>Karşı taraf bunu söylerse</b><button class="dugme" data-kapat>Kapat</button></div>';
  function madde(x,tur){return'<details'+(tur?' class="'+tur+'"':'')+'><summary>"'+kac(x.durum)+'"</summary>'+(x.soyle?'<div class="soyle">Söyle: "'+kac(doldur(x.soyle))+'"</div>':'')+(x.neden?'<div class="neden"><span>Ne için</span>'+kac(x.neden)+'</div>':'')+(x.sonra?'<div class="neden"><span>Sonra</span>'+kac(doldur(x.sonra))+'</div>':'')+'</details>'}
  if(ozel.length)h+='<div class="kucuk baslik">'+kac(NIS.ad||'Bu niş')+' için</div>'+ozel.map(function(x){return madde(x,'ozel')}).join('');
@@ -302,7 +362,9 @@ function sahaCiz(){
    +(r.sahibi?'<div><span>Kim</span>'+kac(r.sahibi)+'</div>':'<div><span>Kim</span><i class="kucuk">adı bulunamadı; "işletme sahibi siz misiniz" ile başla, adı öğrenince nota yaz</i></div>')
    +(r.semt?'<div><span>İlçe</span>'+kac(r.semt)+(r.yorum_sayisi?' · '+kac(r.yorum_sayisi)+' yorum':'')+'</div>':'')
    +(r.baglayan?'<div><span>Bağlayan</span>'+kac(r.baglayan)+'</div>':'')
-   +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>':'<div><span>Doğrulanmış gözlem</span><i class="kucuk">yok; kartın açılış sorusuyla başla, "sürekli kaçırıyorsunuz" deme</i></div>')
+   +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>'
+      :(profilKancasi(r)?'<div><span>Profilden gözlem</span>'+kac(profilKancasi(r))+' <i class="kucuk">denetim yapılmadı; bu satır Google profilinden geliyor</i></div>'
+        :'<div><span>Doğrulanmış gözlem</span><i class="kucuk">yok; kartın açılış sorusuyla başla, "sürekli kaçırıyorsunuz" deme</i></div>'))
    +(r.kanca?'<div><span>Kanca</span>'+kac(r.kanca)+'</div>':'')
    +(r.siradaki_hareket?'<div><span>Bugün</span>'+kac(r.siradaki_hareket)+'</div>':'')
    +(r.son_temas_tarihi?'<div><span>Geçmiş</span>'+tarihTr(r.son_temas_tarihi)+(r.son_temas_kanali?', '+kac(KANAL[r.son_temas_kanali]||r.son_temas_kanali):'')+(r.temas_sayisi?' ('+kac(r.temas_sayisi)+'. temas)':'')+'</div>':'<div><span>Geçmiş</span>ilk temas</div>')
@@ -321,6 +383,12 @@ function bagla(){
  saha.querySelectorAll('.kart').forEach(function(k){var ad=k.dataset.k;
   k.querySelectorAll('.sonuc button').forEach(function(b){b.addEventListener('click',function(){var d=durum[ad]||{};d.sonuc=(d.sonuc===b.dataset.s)?'':b.dataset.s;d.kanal=k.querySelector('[data-kanal]').value;if(d.sonuc==='sonra'&&!d.sonra)d.sonra=gunEkle(7);durum[ad]=d;durumYaz(durum);sahaCiz()})});
   k.querySelectorAll('.modlar button[data-mod]').forEach(function(b){b.addEventListener('click',function(){var d=durum[ad]||{};d.mod=b.dataset.mod;durum[ad]=d;durumYaz(durum);sahaCiz()})});
+  k.querySelectorAll('button[data-kop]').forEach(function(b){b.addEventListener('click',function(){
+    var t=b.dataset.kop, e=b.textContent;
+    function bitti(){b.textContent='Kopyalandı';setTimeout(function(){b.textContent=e},1400)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(bitti,function(){yedekKopya(t,bitti)})}
+    else yedekKopya(t,bitti);
+  })});
   k.querySelector('[data-kanal]').addEventListener('change',function(e){var d=durum[ad]||{};d.kanal=e.target.value;durum[ad]=d;durumYaz(durum);sahaCiz()});
   k.querySelectorAll('[data-not],[data-randevu],[data-sonra]').forEach(function(i){i.addEventListener('input',function(e){var d=durum[ad]||{};if(i.hasAttribute('data-not'))d.not=e.target.value;else if(i.hasAttribute('data-randevu'))d.randevu=e.target.value;else d.sonra=e.target.value;durum[ad]=d;durumYaz(durum)})});
  });

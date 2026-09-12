@@ -124,7 +124,11 @@ LİRA KARŞILIĞI: [kayıp birimi × kartın sızıntı rakamı, tek satır hesa
 SIRADAKİ KANAL: [telefon / e-posta / Instagram / video]
 ```
 
-**En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve iş ilanı varsa o ("resepsiyonist arıyorsunuz" cümlesi). O da yoksa yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi. Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gider; bu adayın sırası listenin sonundadır.
+**En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve iş ilanı varsa o ("resepsiyonist arıyorsunuz" cümlesi). O da yoksa yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi.
+
+Denetim hiç yapılmadıysa **profil gözlemi** devreye girer ve mesaj yine gözlemsiz gitmez. Bu gözlem veri servisinin her kayıt için çıkardığı işaretlerden kuruluyor, yani tahmin değil, Google işletme profilinde görünen şey. Sırası şu: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site bağlantısı yok, hafta sonu kapalı, Instagram bulunamadı. Aday listesi sayfası bu satırı "profilden gözlem" diye ayrı etiketle gösteriyor, denetimden gelenle karıştırmıyor; öğrenci hangisinin ne olduğunu görüyor. Profil gözlemi derin denetimin yerine geçmez, sırası onun altındadır, ama beş yüz adayın hepsinde var ve denetim kotası günde beş kişiyle sınırlı.
+
+Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gider; bu adayın sırası listenin sonundadır.
 
 **Kanca sütunu** telefonda sesli söylenecek tam cümledir, bulgunun kendisi değil: bulgu "11 Eylül salı 19.05'te aradın, dört çalışta açılmadı, geri arayan olmadı" diye kaydedilir; kanca "Salı akşamı yediye doğru sizi bir kere aradım, açılmadı" olur. Kanca günün adını taşır, bir haftadan eskiyse FounderOS yeniler ya da boşaltır. Gözlem yoksa kanca boştur, sayfa "gözlem yok" gösterir ve kartın açılış sorusu kullanılır. Tek gözlemden "sürekli", "her akşam" gibi genelleme yazılmaz.
 

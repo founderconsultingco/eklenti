@@ -388,6 +388,12 @@ Zincirin içinde kanal değişir, karar tablosuna göre: e-postayla başlayan ad
 
 Yazı yolunda en çok istenen yüz işletmede sıra video zinciriyle yürür; takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. İlk temas günde beş adayla yayılır.
 
+**Yazılı kanalın metni adayın satırında durur, sohbette değil.** Bu, günün en çok zaman yiyen yeriydi: yazı yolunda günde yetmiş mesaj, yetmiş ayrı sohbet turu demekti. Artık FounderOS sabah bloğunda o günün bütün yazılı mesajlarını tek seferde yazıyor ve aday aracıyla satırlara işliyor: `eposta_konu`, `eposta_metni`, `dm_metni`. Aday listesi sayfasının Saha modu kartında E-posta ve Instagram düğmeleri çıkıyor, metin orada hazır duruyor, yanında kopyalama düğmesi var. Öğrenci kopyalıyor, kendi hesabından gönderiyor, aynı kartta sonucu işaretliyor.
+
+Metin adaya özeldir ve gözlemden kurulur: denetim yapılmışsa en güçlü bulgudan, yapılmamışsa profil gözleminden. İkisi de yoksa o adaya yazılı mesaj yazılmaz, telefona bırakılır; gözlemsiz e-posta ve gözlemsiz mesaj çöp kutusuna gidiyor. Sayfa metni olmayan adayda "metin henüz yazılmadı" diyor, boş kutu göstermiyor.
+
+Metin bir kere yazılır ve gönderilene kadar durur. Takip metni de aynı yere yazılır, öncekinin üstüne; geçmiş metinler notta kalır.
+
 E-posta takiplerini sen sabah bloğunda onaylarsın; CRM açıksa gün içinde sırayla CRM gönderir, CRM açılmadıysa kendi iş e-postandan tek tek sen gönderirsin (metin hazır gelir, kopyala yapıştır). CRM'den gitmesi "göndermek senin elinde" kuralının istisnasıdır ve yalnız onayladığın şablon metinler için geçerlidir: e-posta takipleri ve gorusmeye-getir'in randevu hatırlatmaları. İlk mesajlar ve Instagram her zaman senin elinden çıkar. Telefon takibi sadece cevap verenlere.
 
 Her takip tazedir, aynı metin tekrarlanmaz. Zincirin sebebi: cevapların çoğu ilk mesajda gelmiyor; bizim kaçıncı temasta geldiği sahadan dolacak.
@@ -545,7 +551,9 @@ Akşam: "Kırk üç arama, on yedisi açtı, beşi konuştu, bir randevu. Yirmi 
 
 ## 7. Ne yazar
 
-Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): her temas kaydı, kanalı, tarihi ve sonucu. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (yeni, yazdım, cevap verdi, görüşme ayarlandı, "sonra"). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi. CRM açılmadıysa o ekran klasördeki `adaylar.html`, Saha modu sekmesi; öğrencinin akşam yapıştırdığı saha sonuçlarını aday aracı işler, sohbette tek tek anlatılan temaslar da araçla yazılır (aday-listesi-dosyasi: sonuclar, temas).
+**Hiçbir açık adayın sırası boş kalmaz.** Bu bir kural değil, aracın kendi kontrolü: temas işlendiğinde sıradaki tarih verilmediyse zincirden hesaplanır (üçüncü, yedinci, on dördüncü gün), zincir bittiyse aday "sonra"ya düşer ve doksan gün sonrasına yazılır. Sebebi şu: sırası boş kalan aday günün listesinden tamamen düşüyor, ne takipte ne "hiç aranmamış"ta görünüyor, ve bir daha hiç aranmıyor. Randevu alındıysa sıradaki adım görüşmenin kendisidir.
+
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): her temas kaydı, kanalı, tarihi ve sonucu. Yazılı kanal metinleri adayın kendi satırına: e-postanın konusu ve metni, Instagram mesajı. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (yeni, yazdım, cevap verdi, görüşme ayarlandı, "sonra"). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi. CRM açılmadıysa o ekran klasördeki `adaylar.html`, Saha modu sekmesi; öğrencinin akşam yapıştırdığı saha sonuçlarını aday aracı işler, sohbette tek tek anlatılan temaslar da araçla yazılır (aday-listesi-dosyasi: sonuclar, temas).
 
 İş Beyni'ne: mesaj sürümü ve tarihi, hangi bulgu tipi hangi kanalda cevap alıyor, kanal başına cevap oranı, en sık üç itiraz.
 

@@ -53,7 +53,7 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - Müşterinin teslimatı [21/28] gün; öğrenci işin yanında çalışıyorsa takvim yirmi sekiz güne yazılır. Hangisi olduğunu çalışma düzeninden okur, planda o sayıyı kullanırsın.
 - Günde yüz temas, telefon yolunda: elli arama, otuz e-posta, yirmi Instagram. Yazı yolunda: on arama, otuz yeni e-posta, kırk yeni Instagram mesajı, beş video mesaj ve o günün takip mesajları; toplam yine yüz temas. İşin yanında çalışanda hepsi kırka göre orantılanır.
 - WhatsApp'tan soğuk mesaj yok.
-- Sahibinin adı yoksa arama yok.
+- Sahibinin adı yoksa arama yine yapılır; açılış "işletme sahibi siz misiniz" olur ve ad ilk aramada öğrenilip karta yazılır. Adı bulunmuş aday sırada önde gelir. Veri servisi sahip adı vermiyor, o yüzden listenin çoğunda bu satır boş geliyor; boş diye aday atlanmaz.
 - Üç yüz temas dolmadan hiçbir şey değişmez. İki yüz temasta sadece bakılır.
 - Niş doksan gün ya da beş müşteri boyunca değişmez.
 - Türkiye'de bütün müşteri mesajları WhatsApp'tan gider; SMS yolu kapalı.
