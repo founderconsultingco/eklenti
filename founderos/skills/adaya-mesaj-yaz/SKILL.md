@@ -71,6 +71,8 @@ Sahte kişiselleştirme yok: görmediğin şey mesaja girmez. Tam adı ve şirke
 - Sahibinin adı yoksa arama yine yapılır; açılış "işletme sahibi siz misiniz" olur, ad ilk aramada öğrenilip karta yazılır. Adı bulunmuş aday sırada önde gelir.
 - WhatsApp'tan soğuk mesaj yok, numara kapanır.
 - Bir yıldan yeni ya da yüz takipçiden az Instagram hesabından soğuk mesaj yok. Instagram günlük sınır koyuyor ve hesabı kısıtlıyor.
+- Instagram profili ve öne çıkanları bitmeden Instagram kanalı açılmaz. Adayın ilk işi profile bakmak; yarım profille atılan mesaj o adayı bir kere harcıyor.
+- Instagram mesajları güne yayılır, bir saatte beşten fazlası arka arkaya gitmez.
 - E-postada ilk mesajda link yok, görsel yok, ek dosya yok, düz metin.
 - CRM'den Türkiye'ye SMS'te link yasak. Bu modül SMS kullanmıyor.
 - Aynı numara bir günde art arda iki kez aranır, üç değil.
@@ -134,11 +136,36 @@ Kurallar:
 - Kopyala yapıştır şablon kısa süre çalışır, sonra ölür. Her mesajı denetim kartı değiştirir.
 - Kartta rakam yoksa lira karşılığı cümlesi yazılmaz, mesaj üç cümleye iner. Uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
-**Instagram.** İki parça: önce etkileşim, sonra mesaj. Mesajdan önce adayın bir gönderisine gerçek bir yorum yaz, program yorumu değil; kabul ve cevap oranı böyle artıyor. Sonra kısa özel mesaj: bulgu soruya çevrilir, arkasına tek soru. Lira karşılığı hiç geçmez, rakam Instagram'da ağır duruyor ve mesaj satış gibi görünüyor. Uzunluk: en fazla üç satır. Yasak: rakam, link, sistemin adı, satış cümlesi, yeni hesaptan mesaj.
+**Instagram.** Üç parça: önce profil, sonra etkileşim, sonra mesaj.
 
-"Seramik kaplama paylaşımınız iyi, bir şey sormak istiyorum: geçen yıl kaplama yaptırdığınız müşterileri bakım için geri arıyor musunuz?"
+*Profil.* Instagram'da mesajın tek başına çalışmıyor. Adam mesajı görüyor, adına dokunuyor, profiline bakıyor ve kararı orada veriyor. Profil yarımsa en iyi mesaj bile boşa gidiyor. O yüzden kural şu: profil ve öne çıkanlar bitmeden Instagram kanalı hiç açılmaz. Profilin nasıl kurulduğu kisisel-markani-kur'da; burada yalnız şartı var.
 
-İlk mesajda sistem anlatılmaz; satış konuşması olacak ama ilk mesajda değil. Cevap gelince üç adımlı cevap konuşmasına geçilir. Günde yirmi otuz mesaj, eski hesapla. Takip iki gün sonra sesli mesajla: "Merhaba, geçen gün yazmıştım, görmüş müydünüz diye sordum, görmediyseniz sorun değil."
+*Etkileşim.* Mesajdan önce adayın bir gönderisine gerçek bir yorum yaz, program yorumu değil. Kabul ve cevap oranı böyle artıyor, çünkü mesaj kutusuna düşmeden önce adın bir kere görünmüş oluyor.
+
+*Mesaj.* Kısa özel mesaj: bulgu soruya çevrilir, arkasına tek soru. Uzunluk en fazla üç satır. Lira karşılığı hiç geçmez; rakam Instagram'da ağır duruyor ve mesaj satış gibi görünüyor. Yasak: rakam, link, sistemin adı, satış cümlesi, yeni hesaptan mesaj.
+
+**İlk beş kelime kuralı.** Instagram mesaj kutusunda adam mesajın tamamını görmüyor, ilk satırının başını görüyor. Kararı orada veriyor: açar ya da kaydırır. Bu yüzden mesajın ilk beş kelimesi işin konusunu taşır. "Merhaba, nasılsınız", "Umarım iyisinizdir", "Rahatsız ediyorum ama" gibi açılışlar o beş kelimeyi yakıyor ve mesaj açılmadan ölüyor. Adayın adıyla başlamak da aynı şey; adı kutuda zaten yazıyor.
+
+Yanlış: "Merhaba Ahmet Bey, nasılsınız? Sizinle bir konuda konuşmak istiyordum..."
+Doğru: "Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor musunuz? Sorumun sebebi..."
+
+Örnek mesajlar, karttan çıkar:
+
+"Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor musunuz? Geçen yılın listesi çoğu yerde duruyor, kimse aramıyor. Sizde nasıl işliyor?"
+
+"Mesai dışında gelen randevu mesajlarına ertesi gün mü dönülüyor? Bunu soruyorum çünkü o mesajların gittiği yeri kuruyorum. Bakmak ister misiniz?"
+
+**Kapanış sorusu küçük olur.** Son cümle randevu istemez, saat istemez, telefon numarası istemez. Cevabı tek kelime olan bir soru olur: "Bakmak ister misiniz?", "Göstereyim mi?", "Sizde nasıl işliyor?" Sebebi basit: ilk mesajda büyük şey isteyen kişi cevap almıyor, küçük şey isteyen alıyor. Büyük istek konuşma başladıktan sonra geliyor.
+
+**Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistem anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
+
+**Hacim ve zaman.** Günde yirmi otuz mesaj, eski hesapla. Bu sayı güne yayılır: bir saatte beşten fazlası arka arkaya gitmez, mesajların arasına boşluk girer. Yirmi mesajı yarım saatte gönderen hesap kısıtlanıyor ve kısıtlanan hesabın mesajları karşı tarafın istek kutusuna düşüyor, yani hiç görülmüyor. Yeni hesapta bu bölüm hiç çalışmaz.
+
+**Takip, iki gün sonra, tek.** Önce sesli mesaj: "Merhaba, geçen gün yazmıştım, görmüş müydünüz diye sordum, görmediyseniz sorun değil." Sesli mesaj tutmazsa ya da hesap sesli mesaja kapalıysa tek yazılı takip gider ve o takip yeni bir şey taşır: senin kendi ölçümün ya da denetim kartındaki ikinci bulgu. "Geçen hafta [şehir]de otuz [niş] aradım, yirmi ikisi açmadı; sizi de aradım, o saatte açılmadı. Bunu soruyorum çünkü..." Taşımayacak bir şey yoksa takip atılmaz.
+
+Takipte olmayacaklar: "Sadece kontrol etmek istedim", "yukarıdaki mesajı görebildiniz mi", "hâlâ ilgileniyor musunuz". Bunlar yeni bir şey taşımıyor ve karşı tarafa cevap vermemesini hatırlatıyor. Yapmadığın işin sonucu da anılmaz: başka bir işletmede aldığın sonuç yoksa o cümle yazılmaz, uydurulmaz.
+
+Bir takip cevapsız kalırsa Instagram satırı "kapandı" olur ve aday "sonra" aşamasına geçer. İkinci takip yok.
 
 **Video.** Metni burada yazılmaz, video-mesaj-cek yazar ve çektirir. Burada üç şey yazılı.
 
@@ -190,7 +217,7 @@ Sırayla bak, ilk uyan satır senin satırın.
 10. Video gitti, iki gün cevap yok → Instagram'dan sesli mesaj takibi.
 11. Video gitti, yedi gün cevap yok → e-postadan ayrılık mesajı, sonra "sonra" aşaması.
 12. Instagram mesajı bir takiple cevapsız → Instagram "kapandı", aday "sonra" aşamasına.
-13. Senin Instagram hesabın yeni ya da adayın hesabı yok → Instagram hiç açılmaz, satır "kapandı".
+13. Senin Instagram hesabın yeni, adayın hesabı yok ya da senin profilin yarım → Instagram hiç açılmaz, satır "kapandı". Profil yarımsa satır kapanmaz, "yapılmadı"da bekler; profil bitince açılır.
 14. Herhangi bir kanaldan cevap geldi → beş dakika içinde aynı kanaldan cevap konuşması. Diğer kanallar durur.
 15. Aday "arama, yazma" dedi → dört satır da "kapandı", aday listeden çıkar.
 
@@ -311,6 +338,10 @@ Bir seferde tek şey değişir: ya sadece açılış cümlesi ya sadece kanal.
 
 ## 6. Ne söyler
 
+Instagram mesajı yazarken: "İlk beş kelimen işin konusunu söyleyecek. Adam kutuda mesajın tamamını görmüyor, ilk satırın başını görüyor ve orada açıp açmamaya karar veriyor. 'Merhaba, nasılsınız' o beş kelimeyi yakıyor."
+Son cümleyi büyütmek isterse: "Son soruyu küçük tut. İlk mesajda randevu isteyen cevap almıyor. 'Bakmak ister misiniz' yeter; saat konuşmayı başlattıktan sonra geliyor."
+Instagram'da fiyat ya da sistem anlatmak isterse: "Yazışmada anlatılan sistem ikna etmiyor. Adam görüşmede kendi telefonundan deneyince ikna oluyor. Mesajın tek işi o görüşmeyi açmak."
+Takipte sonuç uydurmak isterse: "Yapmadığın işin sonucunu yazmıyoruz. Elinde senin kendi sayımın var, onu yazıyoruz; o gerçek ve o daha güçlü."
 Sabah: "Bugün elli arama, otuz e-posta, yirmi Instagram; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
 Arama öncesi: "Yılmaz Isı, Ahmet Kaya. En güçlü bulgu: dün akşam yedide aradın, açan olmadı. Kanca bu. Lira karşılığını söyleme, görüşmeye saklıyoruz. Ara."
 Kapattıktan sonra: "Ne oldu? Tek kelime yeter." Sen "açmadı" dersin: "Yazdım. Telefon satırı yapıldı, ikinci deneme perşembe. Sıradaki hareket bu, başka bir şey açmıyoruz. Sonraki aday."
@@ -336,6 +367,8 @@ Onay: e-posta metni "tamam" deyince sıraya girer; arama sonucu sen söyleyince 
 - Kanal durumu ekranı açılmıyorsa: durumlar o akşam tek tek adayın kaydından okunur, ekran ertesi gün düzeltilir. Kayıt tutulmayan gün olmaz.
 - E-posta adresin henüz alışmamışsa e-posta sınırı düşer, telefon artar. Eski bir Gmail adresin varsa yirmi e-posta oradan gider.
 - Instagram hesabın yeniyse özel mesaj sıfır, Instagram satırı bütün adaylarda "kapandı" yazılır, e-posta artar.
+- Instagram profilin ya da öne çıkanların yarımsa: o gün Instagram yok, sayı telefona ve e-postaya dağılır; profil kisisel-markani-kur'da on beş dakikada bitirilir, ertesi gün kanal açılır.
+- Instagram hesabın kısıtlandıysa (mesajlar istek kutusuna düşüyor, gönderim engellendi uyarısı geliyor): o hesaptan bir hafta soğuk mesaj yok, sayı e-postaya geçer. Yeni hesap açmak çözüm değil; yeni hesap zaten mesaj atamıyor.
 - O gün telefon yapamıyorsan ("sesim yok") yazı yolu rakamları geçerli, ertesi gün geri dönülür. Telefon satırlarının tarihi bir gün kayar.
 - CRM açıksa ama o an girilemiyorsa: temaslar ve kanal durumları `adaylar.csv`'ye yazılır, akşam aktarılır. CRM henüz açılmadıysa bu bir aksaklık değil; `adaylar.csv` zaten kayıt yeridir.
 - Sahibinin adı bulunamayan işletmeler e-posta ve Instagram listesine düşer. Ad sonradan öğrenilirse telefon satırı "yapılmadı" olarak açılır.
@@ -351,6 +384,8 @@ Randevu alınınca gorusmeye-getir devralır: e-posta ve takvim daveti daha tele
 - Bir kanal satırı üç gün "yapıldı"da kalmış, sıradaki tarihi geçmiş: o aday sıranın başına alınır.
 - İki yüz temasta yüzde ikinin altı cevap (teşhis), üç yüzde karar.
 - Bir kanalın cevap oranı diğer üçünün yarısından az: o kanal sıralamada geriye düşer, sebebi degisiklige-karar-ver'e gider.
+- Instagram mesajları bir saatin içine sıkışmış: ertesi gün sayı güne yayılır, sıkışma tekrarlarsa günlük Instagram sayısı düşer.
+- Instagram'da cevap gelmiyor ama profil ziyareti artıyor: sorun mesajda değil profilde; kisisel-markani-kur'a not gider.
 - Fiyat itirazı görüşmelerin yarısından fazlasında: teklifi anlatış sorunu, fiyat sorunu değil.
 - On aramada on itiraz: ton sorunu, gorusme-provasi-yap'a gider.
 
