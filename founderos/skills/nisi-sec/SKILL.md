@@ -34,6 +34,7 @@ Pazarlamadaki karşılığı: bir sektörü seçen kişi, o sektörün dilini ko
 
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, şehrin, kanal yolun, çalışma düzenin, günlük temas sayın.
 On dokuz niş kartından (bir sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon, gerçek fiyatlar ve kapasite, kanal ve zaman, rekabetin şekli, yasal sınırlar.
+Kart listesinin içindekiler bölümünden: her kartın masa puanı ve açık sayısı.
 Takvimden: hangi aydayız.
 Gelir planından: bir müşterinin sana ayda getireceği rakam.
 
@@ -142,11 +143,20 @@ Eşik buradan çıkıyor:
 
 Kanal yolun yazıysa, telefon ağırlıklı nişler geriye gider ve Instagram ağırlıklı nişler öne gelir. Hangi nişte hangisinin açık olduğu kartın "kanal ve zaman" bölümünde yazıyor.
 
+### Beşinci eleme: kartın hazırlığı
+
+Her kartın bir masa puanı var, sıfır ile on arası, kart listesinin içindekiler bölümünde yazılı. Puan kartın telefonda ve teklifte kullanılan on parçasının dolu olup olmadığını sayar: müşteri yolculuğu, kayıp birimi, fiyatlar, sızıntı kanıtı, işletmecinin sözlüğü, karar verici, en güçlü üç itiraz, telefon satırlarının dördü, en az beş telefon itirazı, yasal sınırların teyitli olması. Yanındaki açık sayısı kartta kaç yerde "sahadan dolacak" yazdığıdır.
+
+Masa puanı sekizin altında olan kart, sistemin ilk müşterisi çıkana kadar önerilmez. Sekizin altı, on maddeden ikiden fazlasının eksik olması demek; o kartla öğrenci telefonda yarım metinle kalıyor ve sonuç gelmeyince sorunun nişte mi metinde mi olduğu anlaşılmıyor.
+
+Bu eleme puanı öğrenciye söylemez ve elenen kartı ona saymaz. Öğrenciye yalnız seçilen nişin gerekçesi anlatılır; eleme sebebi İş Beyni'ne yazılır.
+
 ### Kalanlar arasından seçim
 
 Sırayla:
 1. Kalanlardan içeriden tanıdığın bir sektör varsa o birinci adaydır. Sebebi: o sektörün kelimelerini biliyorsun ve işletmeci bunu ilk otuz saniyede anlıyor. Bilmediğin bir sektörde aynı yere gelmen haftalar sürer.
 2. Yoksa şehrinde işletme sayısı en yüksek üç niş alınır.
+3. İşletme sayısı birbirine yakın iki niş kaldıysa masa puanı yüksek olan öne geçer; o da eşitse açığı az olan.
 
 Üç aday çıkar. Bu üçü doğrulamaya gider.
 
@@ -188,6 +198,7 @@ Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 - Üç aday da elemelerden geçemezse: en az eleme yiyen niş seçilir ve hangi elemede takıldığı İş Beyni'ne yazılır. Bu, o nişte hangi konuda zorlanacağını önceden bilmen demek.
 - Şehrinde hiçbir nişte 500 işletme yoksa: bütün nişler Türkiye geneline açılır ve bu İş Beyni'ne yazılır. Mesajlardan "sizin şehirde" cümlesi çıkar, kanıt cümlesi ülke geneline döner.
 - Kartta kapasite bilgisi yoksa: para elemesi o niş için atlanır, "ölçülemedi" yazılır.
+- Elemelerden sonra masa puanı sekiz ve üstü kart kalmazsa: en yüksek puanlı üç kart alınır ve hangi maddelerinin eksik olduğu İş Beyni'ne yazılır. Öğrenci durmaz; eksik kartla çalışıldığı biliniyor olur.
 
 ## 9. Sıradaki adım ve işaretler
 
@@ -195,6 +206,7 @@ Sıradaki: "Şimdi bu pazarın içinden sana para verecek tek kişiyi çıkarıy
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üç adaydan hiçbiri para elemesini geçemedi: eşik değil kart eksiktir, kapasite bilgisi olmayan kartlar işaretlenir.
+- Kalan kartların masa puanı sekizin altında: kart eksikliği işaretlenir, seçim en yüksek puanlıyla yapılır.
 - Şehirde 500 işletme yok: coğrafya Türkiye geneline açılır, mesaj metinleri buna göre yazılır.
 - Rakip sütunu dolu: teklifi-yaz ve adaya-mesaj-yaz'a not gider, açılış cümlesi değişir.
 - Seçilen nişin mevzuat kısıtı var (sağlık nişleri): teklifi-yaz, yazili-asistani-kur ve sesli-ajani-kur o kısıtı baştan okur.

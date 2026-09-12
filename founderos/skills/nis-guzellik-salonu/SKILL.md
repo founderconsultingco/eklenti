@@ -69,6 +69,8 @@ En güçlü üç itiraz: kendim cevap veriyorum, fiyatı ben söylemeliyim, bot 
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Epilasyon ya da cilt bakımı paketi alıp seansını yarıda bırakan müşterileri siz mi arıyorsunuz, yoksa kalan seans hakları öylece mi duruyor?"
 
 İşleyiş sorusu: "Akşam saatlerinde salon doluyken, siz müşterinin başındayken WhatsApp'tan ya da Instagram'dan randevu isteyen müşteri ne yapıyor, cevabı bekliyor mu, başka salona mı yazıyor?"

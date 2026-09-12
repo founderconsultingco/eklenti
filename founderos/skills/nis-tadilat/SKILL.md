@@ -73,6 +73,8 @@ En güçlü üç itiraz: gelip görmeden fiyat söyleyemem, ben zaten dönerim u
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Keşfe gidip teklif verdiğiniz de 'bir düşüneyim' deyip bir daha dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa o teklifler telefonunuzda öyle mi duruyor?"
 
 İşleyiş sorusu: "Siz keşifteyken ya da imalattayken WhatsApp'tan ya da siteden 'mutfak dolabı kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, üç dört firmaya birden mi yazıyor?"

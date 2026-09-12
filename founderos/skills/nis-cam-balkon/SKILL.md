@@ -69,6 +69,8 @@ En güçlü üç itiraz: keşfi de telefonu da ben yapıyorum, keşif olmadan fi
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen ay keşfe gidip teklif verdiğiniz de dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa telefonda öyle mi duruyorlar?"
 
 İşleyiş sorusu: "Ekip montajdayken, siz keşifteyken WhatsApp'tan ya da siteden 'cam balkon kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, başka bayiye de mi yazıyor?"

@@ -75,6 +75,8 @@ En güçlü üç itiraz: şirket zaten yenileme mesajı atıyor, müşterim bana
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Bitiş tarihi yaklaşan trafik ve kasko poliçeleri için müşteriyi önceden siz mi arıyorsunuz, yoksa yenileme günü geldiğinde mi bakılıyor?"
 
 İşleyiş sorusu: "Gün içinde bir müşterinin hasar dosyasıyla uğraşırken ya da telefondayken WhatsApp'tan kasko fiyatı soran müşteri ne yapıyor, cevabı bekliyor mu, internetten teklif alıp gidiyor mu?"

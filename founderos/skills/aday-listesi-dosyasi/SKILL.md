@@ -72,7 +72,7 @@ Hepsi öğrencinin klasörünün içinden: `cd "<klasör>" && python3 .founderos
 - Sabah, günün planı kurulurken: `bugun --planla`. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her kartta ne söyleyeceğin yazıyor, her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Öğrencinin adı, şehri ya da niş kartı değiştiyse önce `sayfa --kart ...` yeniden.
 - Gün içinde öğrenci bir temas anlatırsa: `temas`.
 - Öğrenci saha sonuçlarını yapıştırınca: `sonuclar`.
-- Akşam kapanışında: `ozet`; sayılar İş Beyni'ne ve `olcum_yaz`'a.
+- Akşam kapanışında: `ozet`; sayılar İş Beyni'ne ve `olcum_yaz`'a. `sonuclar` iş bitince "gün dökümü" satırını basar (niş, açılış sürümü, temas, sonuçların sayısı); o satır olduğu gibi `olcum_yaz`'a gider, öğrenciye gösterilmez.
 - Öğrenci "listem nerede", "listemi göster", "kimi arayacağım" derse: `sayfa`, sonra sayfayı tarif et; satırları sohbete dökme. Belli bir adayı sorarsa `bul`.
 - Öğrenci "Excel'de açayım mı" derse: hayır, sayfa; sebebini tek cümleyle söyle (ipuçları Türkçe, bugün sırada olan yeşil, satırda arama kartı).
 

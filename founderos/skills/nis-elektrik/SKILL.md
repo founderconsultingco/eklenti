@@ -71,6 +71,8 @@ En güçlü üç itiraz: WhatsApp'a ben bakıyorum, zaten iş var yetiştiremiyo
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen yıl yaptığınız işlerde garanti ya da periyodik bakım zamanı gelen müşterileri siz mi arıyorsunuz, yoksa onlar arıza çıkınca mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz sahada, elinizde alet, tavanda ya da makinenin başındayken telefon çalınca ya da WhatsApp'a yazılınca ne oluyor, müşteri bekliyor mu, başka ustaya mı geçiyor?"

@@ -87,6 +87,8 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, bot fiyat veremez, tekno
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen yıl seramik kaplama yaptırdığınız müşterileri bakım zamanı gelince siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Gün içinde eliniz araçtayken Instagram'dan ya da WhatsApp'tan fiyat soran müşteriye ne oluyor, akşama mı kalıyor, başka yere de mi yazıyor?"

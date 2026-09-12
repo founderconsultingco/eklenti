@@ -60,6 +60,8 @@ En güçlü üç itiraz: telefona ve yazışmalara zaten biz dönüyoruz, tarih 
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Bu sezon fiyat sorup kaporaya kadar gelmeyen çiftleri siz mi geri arıyorsunuz, yoksa o liste telefonda öyle mi duruyor?"
 
 İşleyiş sorusu: "Cumartesi düğün varken, siz salonda koşuştururken Instagram'dan ya da WhatsApp'tan fiyat soran çift ne yapıyor, cevabı bekliyor mu, sıradaki mekana mı yazıyor?"

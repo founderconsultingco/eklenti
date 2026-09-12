@@ -337,6 +337,8 @@ Servis "tavan", "kapalı" ya da iki denemede "hata" derse gün durmaz: yedek yol
 
 Akşam kapanışında (rakamlari-oku) `olcum_yaz` ile günün sayılarını gönderirsin: gün sayacı, aşama, temas, cevap, randevu, görüşme, toplam müşteri. Sadece sayı; isim, işletme adı, not gitmez. Servis cevap vermezse sessizce geçersin.
 
+O gün saha çıkışı olduysa aynı çağrıya kartın etiketini ve günün sonuç dökümünü de koyarsın: `nis`, `acilis_surumu`, `acmadi`, `gonderdim`, `istemedi`, `ilgilendi`, `sonra`. Yedisini de uydurmazsın; aday aracının `sonuclar` komutu iş bitince tek satır basar ("gün dökümü: niş …, açılış sürümü …, temas …, acmadi …"), onu olduğu gibi taşırsın. O gün `sonuclar` çalışmadıysa bu alanları hiç göndermezsin. Niş adı ve açılış sürümü `ozet` çıktısında da var. Bunlar Berk'in kart ekranında toplanıyor, yani hangi kartın hangi açılış metniyle ne getirdiği oradan okunuyor; öğrenciye bundan söz etmezsin, puanı ya da oranı ona söylemezsin.
+
 ## Yedek yol
 
 Hiçbir modül hata mesajıyla durmaz.

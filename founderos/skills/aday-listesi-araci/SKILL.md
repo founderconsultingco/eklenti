@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.24.0
+Aracın sürümü: 0.25.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -50,7 +50,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.24.0"
+SURUM = "0.25.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -523,6 +523,7 @@ def kmt_sonuclar(a):
         hata("dosya yok: %s" % a.dosya)
     metin = p.read_text(encoding="utf-8-sig")
     islenen, bulunamayan, anlasilmayan = [], [], []
+    dokum = {}
     for satir in metin.splitlines():
         satir = satir.strip()
         if not satir or satir.lower().startswith("founderos"):
@@ -571,8 +572,13 @@ def kmt_sonuclar(a):
             t = ek.get("tarih", "+7")
             temas_uygula(satirlar, s, kanal, "sonra ara dedi", "yapıldı", "sonra", kanal + ", tekrar ara", t, None, notu)
         islenen.append(ozet_satir(s))
+        dokum[kod] = dokum.get(kod, 0) + 1
     kaydet(satirlar)
     print("işlenen %d, bulunamayan %d, anlaşılmayan %d" % (len(islenen), len(bulunamayan), len(anlasilmayan)))
+    n = nis_oku()
+    print("gün dökümü: niş %s, açılış sürümü %s, temas %d, %s" % (
+        n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", len(islenen),
+        ", ".join("%s %d" % (k, dokum[k]) for k in ("acmadi", "gonderdim", "istemedi", "ilgilendi", "randevu", "sonra") if dokum.get(k))))
     for x in islenen:
         print("  " + x)
     if bulunamayan:
@@ -650,6 +656,9 @@ def kmt_ozet(a):
     print("aşama: " + ", ".join("%s %d" % (k, dag[k]) for k in ASAMALAR if k in dag))
     bugun_temas = say(lambda s: s["son_temas_tarihi"] == g)
     print("bugün temas edilen %d, toplam temas %d" % (bugun_temas, sum(int(s["temas_sayisi"] or 0) for s in canli)))
+    n = nis_oku()
+    if n.get("ad"):
+        print("niş %s, açılış sürümü %s" % (n["ad"], n.get("acilis_surumu") or "1"))
     if canli:
         print("son eklenme %s, kaynaklar: %s" % (max(s["eklenme_tarihi"] for s in canli), ", ".join(sorted({s["kaynak"] for s in canli if s["kaynak"]}))))
 
@@ -664,7 +673,7 @@ def kmt_bul(a):
         print(ozet_satir(s) + (" | ELENDİ: " + s["elenme"] if s["elenme"] else "") + (" | not: " + s["not"] if s["not"] else ""))
 
 
-SENARYO_ALANLAR = ["ad", "ogrenci", "acilis_sorusu", "isleyis_sorusu", "vaat", "calisan", "itirazlar"]
+SENARYO_ALANLAR = ["ad", "acilis_surumu", "ogrenci", "acilis_sorusu", "isleyis_sorusu", "vaat", "calisan", "itirazlar"]
 ITIRAZ_ALANLAR = ["durum", "soyle", "neden", "sonra"]
 
 
@@ -705,7 +714,8 @@ def kart_oku(metin):
         if t.startswith("# ") and "ad" not in n:
             n["ad"] = t[2:].strip()
             continue
-        for etiket, alan in (("Açılış sorusu:", "acilis_sorusu"), ("İşleyiş sorusu:", "isleyis_sorusu"),
+        for etiket, alan in (("Açılış sürümü:", "acilis_surumu"), ("Açılış sorusu:", "acilis_sorusu"),
+                             ("İşleyiş sorusu:", "isleyis_sorusu"),
                              ("Ne yaptığın:", "vaat"), ("Çalışan açarsa:", "calisan")):
             if t.startswith(etiket):
                 n[alan] = t[len(etiket):].strip().strip('"').strip()

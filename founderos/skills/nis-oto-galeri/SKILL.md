@@ -77,6 +77,8 @@ En güçlü üç itiraz: telefonu hiç elimden düşürmem, fiyat zaten ilanda y
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Bu ay fiyat sorup pazarlık edip almadan giden alıcıları bir yere yazıyor musunuz, yoksa telefonda isim olarak mı duruyorlar?"
 
 İşleyiş sorusu: "Siz test sürüşündeyken ya da vitrinde bir alıcıyla pazarlığın ortasındayken ilan sitesinden ya da WhatsApp'tan yazan ikinci alıcı ne yapıyor, cevabı bekliyor mu, sonraki ilana mı geçiyor?"

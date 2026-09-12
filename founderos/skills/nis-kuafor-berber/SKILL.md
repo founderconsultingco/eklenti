@@ -67,6 +67,8 @@ En güçlü üç itiraz: randevu yazılımımız zaten var, WhatsApp'a ben bakı
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Randevusu olan müşteriye önceden bir hatırlatma gidiyor mu, yoksa haber vermeden gelmeyen çıkınca koltuk öyle mi boş kalıyor?"
 
 İşleyiş sorusu: "Siz koltukta müşterinin saçındayken, elinizde boya varken WhatsApp'tan ya da Instagram'dan randevu isteyen müşteri ne yapıyor, cevabı bekliyor mu, başka salona mı yazıyor?"

@@ -59,6 +59,8 @@ En güçlü üç itiraz: telefonu sekreterim açıyor, yeni yönetmelikten sonra
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Altı ayda bir kontrole gelin dediğiniz hastaları zamanı gelince klinikten biri mi arıyor, yoksa hasta aklına gelince mi arıyor?"
 
 İşleyiş sorusu: "Siz hastanın başındayken, ünitte elinizde işken telefona ve WhatsApp'a yetişilemeyince diş ağrısıyla yazan hasta ne yapıyor, cevabı bekliyor mu, başka kliniğe mi yazıyor?"

@@ -12,25 +12,27 @@ Durum: 19 kartın 19'u şablona göre yazıldı (kart başına 5 ile 47 kaynak; 
 
 ## İçindekiler
 
-- Oto kuaför, seramik kaplama, araç kaplama
-- Güzellik salonu ve güzellik merkezi
-- Klima ve kombi servisi
-- Temizlik şirketi
-- Oto servis ve cam filmi
-- Cam balkon, PVC pencere, panjur
-- Mutfak-banyo tadilat ve iç mimarlık
-- Emlak ofisi
-- Düğün organizasyon ve mekan
-- Randevulu kuaför ve berber
-- Haşere ilaçlama
-- Oto galeri
-- Sigorta acentesi
-- Elektrik ve teknik bakım
-- Fotoğraf stüdyosu
-- Diş kliniği
-- Pilates, PT ve butik stüdyo
-- Estetik cerrahi ve medikal estetik
-- Yetişkinlere yönelik dil ve mesleki eğitim kursları
+- Oto kuaför, seramik kaplama, araç kaplama (masa puanı 8/10, 5 açık)
+- Güzellik salonu ve güzellik merkezi (masa puanı 9/10, 5 açık)
+- Klima ve kombi servisi (masa puanı 8/10, 15 açık)
+- Temizlik şirketi (masa puanı 9/10, 19 açık)
+- Oto servis ve cam filmi (masa puanı 10/10, 7 açık)
+- Cam balkon, PVC pencere, panjur (masa puanı 9/10, 12 açık)
+- Mutfak-banyo tadilat ve iç mimarlık (masa puanı 10/10, 10 açık)
+- Emlak ofisi (masa puanı 7/10, 13 açık)
+- Düğün organizasyon ve mekan (masa puanı 9/10, 16 açık)
+- Randevulu kuaför ve berber (masa puanı 8/10, 17 açık)
+- Haşere ilaçlama (masa puanı 8/10, 16 açık)
+- Oto galeri (masa puanı 9/10, 13 açık)
+- Sigorta acentesi (masa puanı 9/10, 9 açık)
+- Elektrik ve teknik bakım (masa puanı 8/10, 6 açık)
+- Fotoğraf stüdyosu (masa puanı 8/10, 14 açık)
+- Diş kliniği (masa puanı 9/10, 14 açık)
+- Pilates, PT ve butik stüdyo (masa puanı 9/10, 11 açık)
+- Estetik cerrahi ve medikal estetik (masa puanı 9/10, 16 açık)
+- Yetişkinlere yönelik dil ve mesleki eğitim kursları (masa puanı 9/10, 7 açık)
+
+Masa puanı, kartın telefonda ve teklifte kullanılan on parçasının dolu olup olmadığını sayar: müşteri yolculuğu, kayıp birimi, fiyatlar, sızıntı kanıtı, sözlüğü, karar verici, en güçlü üç itiraz, telefon satırlarının dördü, en az beş telefon itirazı, yasal sınırların teyitli olması. Açık sayısı kartta kaç yerde "sahadan dolacak" ya da "bilinmiyor" yazdığıdır. İkisini `founderos-plugin/araclar/kart-puani.py` hesaplar; kart değişince `--yaz` ile bu satırlar yenilenir. nisi-sec bu iki sayıyı okur: masa puanı sekizin altındaki kart ilk müşteri çıkana kadar önerilmez. Sahada ne olduğu burada durmaz, sunucudaki kart ekranında durur.
 
 ---
 
@@ -94,6 +96,7 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 
 **Telefonda söylenecekler.** Öğrencinin telefonda sesli okuyacağı satırlar; aday sayfasının Saha modu kartı bu bölümü olduğu gibi gösterir. Genel arama sırası (tanış, rahatlat, gözlem ya da açılış sorusu, işleyiş sorusu, ne yaptığın, randevu) ve genel itirazlar (müsait değilim, ne için arıyorsunuz, WhatsApp'tan gönderin, kendimiz ilgileniyoruz, bot istemiyoruz, pahalı, ilgilenmiyorum) adaya-mesaj-yaz modülünde durur, karta yazılmaz. Karta yalnız bu nişe özel olan girer. Bölümün yapısı sabit, satır adları değişmez:
 
+- `Açılış sürümü: [sayı]` Bölümün ilk satırı. Yeni kartta 1. Açılış sorusu ya da Ne yaptığın satırı değiştiğinde bir artar; itiraz eklemek ya da yazım düzeltmek sürümü değiştirmez. Sahadan gelen sonuçlar bu sayıyla etiketlenir, eski ve yeni metin yan yana okunabilsin diye.
 - `Açılış sorusu: "…"` Kartın açılış cümlesinin telefonda sorulan hali. Tek soru, işletmecinin bir cümleyle cevaplayabileceği, zaten yapması gerektiğini bildiği bir şeyi hatırlatan. Sınav sorusu değil ("kaç arama kaçırdığınızı biliyor musunuz" yazılmaz).
 - `İşleyiş sorusu: "…"` Yoğunken telefona ya da mesaja yetişemeyince müşterinin ne yaptığını soran tek soru, nişin diliyle (sahada, koltukta, ameliyatta, keşifte).
 - `Ne yaptığın: "…"` Sistemin bu nişte ne yaptığı, tek cümle, kapsam içi: yazan müşteriye dakikalar içinde cevap, bilgiyi alıp randevuya ya da teklife yazma, eski müşteriye zamanı gelince hatırlatma. Teslim edilmeyen parça (cevapsız aramayı geri arama, telefonu açan sesli asistan) yazılmaz. Sonu sabit: "[Şehir]'de bu ay ilk üç [işletme türü] ile başlıyorum."

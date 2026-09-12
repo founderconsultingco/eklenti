@@ -52,6 +52,8 @@ Niş ve teklif:
 - Kart: Niş kartının kısa adı. "Kartta yazıyor" demek, o sektörün hazır sayfasında yazıyor demek.
 - İdeal müşteri sayfası: Seçilen sektörün içindeki tek kişinin on iki başlıkta tarifi (derdi, korkusu, ne zaman satın alır, ne satın almaz). İş Beyni'nin on sekizinci bölümü; teklif, site, mesaj ve video buradan beslenir.
 - Niş kartı: Bir sektör hakkında bilinen her şeyin (fiyatlar, kaçan müşterinin bedeli, itirazlar, kim karar veriyor, yasaklar) yazılı olduğu hazır sayfa.
+- Masa puanı: Bir niş kartının on parçasının dolu olup olmadığını sayan not, sıfır ile on arası; kart listesinin içindekiler bölümünde yazılı. Yanındaki açık sayısı kartta kaç yerde "sahadan dolacak" yazdığıdır. nisi-sec okur, öğrenciye söylenmez.
+- Açılış sürümü: Niş kartının telefon bölümündeki açılış metninin kaçıncı hali olduğunu gösteren sayı. Sahadan gelen sonuçlar bu sayıyla etiketleniyor, böylece eski ve yeni metin yan yana okunuyor.
 - AI Müşteri Dönüşüm Sistemi: Sattığımız şeyin kategori adı. Gelen talebi karşılayan, randevu ve teklif sürecini ilerleten, satışı takip eden, eski müşteriyi geri kazanan, FounderOS CRM üstünde çalışan tek sistem. Tanımı "İş modeli" bölümünde; öğrenciye böyle anlatılır, işletmeciye ise öğrencinin kendi sistem adıyla ve sonuç diliyle anlatılır.
 - FounderOS CRM: Sattığımız sistemin üstünde çalıştığı platform, adresi crm.founderos.so. Müşteriye yönelik her anlatımda platformun adı budur; altyapının kendi adı söylenmez.
 - Müşteri yolculuğu: İşletmenin satışını nasıl kapattığı. İki yol var: randevuyla (diş, kuaför, servis) ve fiyat teklifiyle (tadilat, sigorta, temizlik); bazı nişlerde ikisi birlikte. Hangi yolun geçerli olduğu niş kartında yazılı, teslimat ona göre kurulur.

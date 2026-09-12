@@ -71,6 +71,8 @@ En güçlü üç itiraz: telefona zaten ben bakıyorum, aracı görmeden fiyat v
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen sezon lastiğini değiştirdiğiniz ya da bakımını yaptığınız müşterileri bu sezon siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz aracın altındayken, elleriniz yağlıyken telefon çalınca ne oluyor, çırak mı açıyor, müşteri tekrar mı arıyor?"

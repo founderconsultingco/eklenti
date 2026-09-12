@@ -53,6 +53,8 @@ En güçlü üç itiraz: müşteri zaten telefonla arıyor, fiyatı görmeden ve
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "İlaçlama yaptırıp garantisi devam eden müşterileri kontrol zamanı gelince siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz sahada, müşterinin evinde ilaçlarken WhatsApp'tan ya da sitenizin formundan fiyat soran müşteri ne yapıyor, cevabı bekliyor mu, sıradaki firmaya mı yazıyor?"

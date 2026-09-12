@@ -67,6 +67,8 @@ En güçlü üç itiraz: telefonum zaten yanımda, fiyatı görmeden veremem, se
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Yazın en yoğun haftada siz sahadayken telefon çalınca ne oluyor, müşteri tekrar mı arıyor, WhatsApp'tan mı yazıyor?"

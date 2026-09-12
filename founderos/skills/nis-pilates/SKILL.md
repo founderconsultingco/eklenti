@@ -89,6 +89,8 @@ En güçlü üç itiraz: WhatsApp'a ben cevap veriyorum, müşterim zaten sadık
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Paketi bitip yenilemeyen üyeleri sonradan stüdyodan biri mi arıyor, yoksa dönerse kendisi mi dönüyor?"
 
 İşleyiş sorusu: "Siz derste, reformerın başında üyeyle ilgilenirken WhatsApp'tan ya da Instagram'dan 'deneme dersi var mı, fiyat ne' diye yazan kişi ne yapıyor, cevabı bekliyor mu, başka stüdyoya mı yazıyor?"

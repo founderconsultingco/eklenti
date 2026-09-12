@@ -81,6 +81,8 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, kâr düşük yazılıma
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen ay size ulaşıp da aynı gün dönüş alamayan müşteriler sonra tekrar aradı mı, yoksa öyle mi kaldı?"
 
 İşleyiş sorusu: "Ekip sahadayken, iki ev arasında telefon çalınca ya da WhatsApp'tan fiyat sorulunca ne oluyor, siz mi bakıyorsunuz, akşama mı kalıyor?"

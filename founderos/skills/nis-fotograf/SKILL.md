@@ -83,6 +83,8 @@ En güçlü üç itiraz: Instagram'a ben bakıyorum, sezonda gecikme normal, tek
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Geçen sene teslim ettiğiniz işlerde albümün hangi aşamada olduğunu müşteriye siz mi haber verdiniz, yoksa müşteri arayıp mı sordu?"
 
 İşleyiş sorusu: "Siz çekimdeyken, sezonun en dolu haftasında Instagram'dan ya da WhatsApp'tan 'düğün paketiniz ne kadar' diye yazan çift ne yapıyor, cevabı bekliyor mu, başka stüdyoya mı yazıyor?"

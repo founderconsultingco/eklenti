@@ -75,6 +75,8 @@ En güçlü üç itiraz: mesajlara zaten kendim bakıyorum, bağlı olduğum zin
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "İlan sitesinden yazıp aynı gün cevap alamayan alıcıyı ertesi gün siz mi arıyorsunuz, yoksa o mesaj bildirimlerin arasında mı kalıyor?"
 
 İşleyiş sorusu: "Yer gösterimindeyken, müşteriyle dairenin içindeyken ilan sitesinden ya da WhatsApp'tan yazan alıcı ne yapıyor, cevabı bekliyor mu, bir sonraki ilana mı geçiyor?"

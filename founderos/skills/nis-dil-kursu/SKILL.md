@@ -58,6 +58,8 @@ En güçlü üç itiraz: eğitim danışmanımız var, merkez yazılım veriyor,
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "Eylül dalgasında bilgi isteyip seviye tespitine gelmeyen kişileri sonradan kurumdan biri mi arıyor, yoksa o başvurular danışmanın telefonunda mı kalıyor?"
 
 İşleyiş sorusu: "Kayıt haftasında danışman görüşmedeyken, ön büro telefondayken akşam Instagram'dan ya da WhatsApp'tan 'kur ne zaman açılıyor, fiyat ne' diye yazan kişi ne yapıyor, cevabı bekliyor mu, başka kursa mı yazıyor?"

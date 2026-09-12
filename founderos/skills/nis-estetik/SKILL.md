@@ -51,6 +51,8 @@ En güçlü üç itiraz: yeni yönetmelik yüzünden temkinliyiz, kontrolü dan�
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
+Açılış sürümü: 1
+
 Açılış sorusu: "İşlem yaptığınız hastaların kontrol muayenesi zamanı gelince klinikten biri mi arıyor, yoksa hasta kendisi mi arıyor?"
 
 İşleyiş sorusu: "Siz ameliyatta ya da işlemdeyken WhatsApp'tan ya da Instagram'dan konsültasyon isteyen kişi ne yapıyor, cevabı bekliyor mu, başka kliniğe mi yazıyor?"
