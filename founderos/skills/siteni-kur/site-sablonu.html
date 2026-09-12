@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="tr" data-yon="ikili">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FounderOS tanıtım sayfası</title>
+<meta name="description" content="">
+<style>
+/* FounderOS tanıtım sayfası şablonu.
+   Bu dosya elle düzenlenmez. FounderOS yalnız aşağıdaki veri bloğunu doldurur;
+   biçim, yerleşim ve ölçüler burada sabittir. Sebebi: her öğrencide sayfayı
+   sıfırdan üretmek ortalama bir sayfa çıkarıyordu. */
+
+/* --- kitten gelen değerler; sayfa.json'daki renk ve yazı tipi buraya basılır --- */
+:root{
+  --zemin:#ffffff; --yazi:#111418; --soluk:#5b6470; --cizgi:#e6e8ec;
+  --koyu:#0d0f12; --koyu-yazi:#f4f5f7; --koyu-soluk:#a2a9b4;
+  --vurgu:#c8a465; --vurgu-yazi:#14161a;
+  --yuvarlak:14px; --olcu:1120px; --dar:680px;
+  --baslik:'Georgia',serif; --govde:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--zemin);color:var(--yazi);font:400 17px/1.65 var(--govde);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--vurgu);color:var(--vurgu-yazi)}
+:focus-visible{outline:2px solid var(--vurgu);outline-offset:3px;border-radius:4px}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.kap{width:100%;max-width:var(--olcu);margin:0 auto;padding:0 22px}
+.dar{max-width:var(--dar)}
+section{padding:clamp(56px,8vw,104px) 0}
+.gizli{display:none !important}
+
+/* --- yazı ölçeği --- */
+h1,h2,h3{font-family:var(--baslik);font-weight:600;letter-spacing:-.02em;margin:0}
+h1{font-size:clamp(31px,5.2vw,54px);line-height:1.1;margin-bottom:20px}
+h2+.iri,h2+p{margin-top:14px}
+h2{font-size:clamp(25px,3.6vw,38px);line-height:1.18}
+h3{font-size:clamp(18px,2vw,21px);line-height:1.3;letter-spacing:-.01em}
+p{margin:0 0 1.05em}
+.iri{font-size:clamp(19px,2.2vw,22px);line-height:1.55;color:var(--soluk)}
+.vur{color:var(--vurgu)}
+.kucuk{font-size:14px;line-height:1.5;color:var(--soluk)}
+
+/* --- koyu bant: düz kutu değil, malzemeli --- */
+.bant{background:var(--koyu);color:var(--koyu-yazi);position:relative;overflow:hidden}
+.bant::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(120% 80% at 50% -20%, color-mix(in srgb,var(--vurgu) 16%, transparent), transparent 62%),
+    radial-gradient(80% 60% at 100% 100%, color-mix(in srgb,var(--vurgu) 8%, transparent), transparent 58%)}
+.bant::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+  background-image:linear-gradient(color-mix(in srgb,var(--koyu-yazi) 5%,transparent) 1px,transparent 1px),
+                   linear-gradient(90deg,color-mix(in srgb,var(--koyu-yazi) 5%,transparent) 1px,transparent 1px);
+  background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(70% 60% at 50% 0%,#000,transparent 75%);
+  mask-image:radial-gradient(70% 60% at 50% 0%,#000,transparent 75%)}
+.bant .kap{position:relative;z-index:1}
+.bant .iri,.bant .kucuk{color:var(--koyu-soluk)}
+
+/* --- etiket hapı --- */
+.hap{display:inline-block;font:600 12px/1.35 var(--govde);letter-spacing:.09em;text-transform:uppercase;
+  padding:8px 15px;max-width:100%;border-radius:999px;border:1px solid color-mix(in srgb,var(--vurgu) 45%,transparent);
+  color:var(--vurgu);background:color-mix(in srgb,var(--vurgu) 10%,transparent);margin-bottom:20px}
+
+/* --- düğme --- */
+.dug{display:inline-flex;align-items:center;gap:9px;font:600 16px/1 var(--govde);
+  padding:17px 30px;border-radius:var(--yuvarlak);border:0;cursor:pointer;text-decoration:none;
+  background:var(--vurgu);color:var(--vurgu-yazi);transition:transform .12s ease,filter .12s ease}
+.dug:hover{filter:brightness(1.06)}
+.dug:active{transform:translateY(1px)}
+.dug.ikinci{background:transparent;color:inherit;border:1px solid color-mix(in srgb,currentColor 28%,transparent)}
+.dugler{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 14px}
+
+/* --- üst çubuk --- */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--koyu) 88%,transparent);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid color-mix(in srgb,var(--koyu-yazi) 10%,transparent)}
+header .kap{display:flex;align-items:center;justify-content:space-between;height:66px;color:var(--koyu-yazi)}
+.marka{display:flex;align-items:center;gap:10px;font:600 16px/1 var(--govde);letter-spacing:-.005em}
+.marka img{height:28px;width:auto}
+header .dug{padding:12px 20px;font-size:15px}
+
+/* --- sonuç şeridi --- */
+.serit{background:color-mix(in srgb,var(--vurgu) 14%,var(--koyu));color:var(--koyu-yazi);
+  text-align:center;padding:13px 22px;font-size:15px;position:relative;z-index:21}
+.serit b{color:var(--vurgu)}
+
+/* --- açılış --- */
+.acilis{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+#b-acilis{padding-top:clamp(44px,6vw,76px);padding-bottom:clamp(44px,6vw,76px)}
+.guven{display:flex;align-items:flex-start;gap:10px;font-size:14.5px;color:var(--koyu-soluk)}
+.guven::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--vurgu);flex:0 0 auto;margin-top:8px}
+
+/* --- telefon çerçevesi: sayfanın ana görseli --- */
+.tel{width:100%;max-width:330px;margin-inline:auto;border-radius:30px;padding:11px;
+  background:color-mix(in srgb,var(--koyu-yazi) 9%,transparent);
+  border:1px solid color-mix(in srgb,var(--koyu-yazi) 14%,transparent);
+  box-shadow:0 30px 70px -28px rgba(0,0,0,.85)}
+.tel-ic{background:var(--koyu);color:var(--koyu-yazi);border-radius:22px;overflow:hidden}
+.tel-ust{display:flex;align-items:center;gap:9px;padding:13px 15px;
+  border-bottom:1px solid color-mix(in srgb,var(--koyu-yazi) 10%,transparent);font-size:14px}
+.tel-ust .nokta{width:26px;height:26px;border-radius:50%;background:var(--vurgu);color:var(--vurgu-yazi);
+  display:grid;place-items:center;font:700 12px/1 var(--govde);flex:0 0 auto}
+.tel-saat{margin-left:auto;font-size:12px;color:var(--koyu-soluk)}
+.tel-govde{padding:15px;display:flex;flex-direction:column;gap:9px;min-height:190px}
+.tel.uzun .tel-govde{min-height:330px}
+.bal{max-width:83%;padding:11px 14px;border-radius:16px;font-size:14.5px;line-height:1.45;
+  opacity:0;transform:translateY(7px);animation:gel .45s ease forwards}
+.bal.gelen{align-self:flex-start;background:color-mix(in srgb,var(--koyu-yazi) 11%,transparent);
+  border-bottom-left-radius:5px}
+.bal.giden{align-self:flex-end;background:var(--vurgu);color:var(--vurgu-yazi);border-bottom-right-radius:5px}
+@keyframes gel{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.bal{opacity:1;transform:none;animation:none}}
+
+/* --- dert: düz yazı, dar sütun --- */
+.cekme{font-family:var(--baslik);font-size:clamp(21px,2.8vw,27px);line-height:1.4;
+  border-left:3px solid var(--vurgu);padding-left:20px;margin:30px 0;color:var(--yazi)}
+
+/* --- bedel: solda rakamlar, sağda sonuç --- */
+.bedel{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,4vw,54px);align-items:start}
+.hesap{list-style:none;margin:0;padding:0;border-top:1px solid var(--cizgi)}
+.hesap li{display:flex;justify-content:space-between;gap:18px;padding:15px 0;
+  border-bottom:1px solid var(--cizgi);font-size:16px}
+.hesap li b{font-family:var(--baslik);font-size:19px;white-space:nowrap}
+
+/* --- video alanı --- */
+.video{position:relative;border-radius:calc(var(--yuvarlak) + 6px);overflow:hidden;
+  border:1px solid color-mix(in srgb,var(--koyu-yazi) 14%,transparent);
+  box-shadow:0 40px 90px -40px rgba(0,0,0,.8);aspect-ratio:16/9;background:#000}
+.video iframe,.video video{width:100%;height:100%;border:0;display:block}
+
+/* --- üç an: telefon ekranları yan yana --- */
+.anlar{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,34px)}
+.anlar .an{display:flex;flex-direction:column}
+.anlar .tel{height:100%}
+.anlar .tel-ic{height:100%;display:flex;flex-direction:column}
+.anlar .tel-govde{flex:1}
+.an p{margin:14px 0 0;font-size:15.5px;line-height:1.5}
+
+/* --- nasıl çalışır: üç adım --- */
+.adimlar{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,38px);counter-reset:a}
+.adim{counter-increment:a}
+.adim::before{content:counter(a);display:block;font:600 15px/1 var(--govde);color:var(--vurgu);
+  border-top:2px solid var(--vurgu);padding-top:13px;width:34px;margin-bottom:13px}
+.adim p{margin:9px 0 0;font-size:15.5px;color:var(--soluk)}
+
+/* --- neden biz: üç satırlık karşılaştırma --- */
+.kars{border-top:1px solid var(--cizgi)}
+.kars .satir{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,44px);
+  padding:19px 0;border-bottom:1px solid var(--cizgi)}
+.kars .sol{color:var(--soluk)}
+.kars .sag{font-weight:600}
+
+/* --- yorumlar ve vakalar --- */
+.kartlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.kart{border:1px solid var(--cizgi);border-radius:var(--yuvarlak);padding:24px;background:var(--zemin)}
+.kart .ad{margin-top:16px;font-size:14.5px;color:var(--soluk)}
+.vaka{border:1px solid var(--cizgi);border-radius:var(--yuvarlak);padding:26px;margin-bottom:16px}
+.vaka dl{display:grid;grid-template-columns:104px 1fr;gap:9px 18px;margin:14px 0 0;font-size:15.5px}
+.vaka dt{font-weight:600;color:var(--vurgu)}
+.vaka dd{margin:0}
+
+/* --- kim --- */
+.kim{display:grid;grid-template-columns:300px 1fr;gap:clamp(24px,4vw,52px);align-items:center}
+.kim img{border-radius:var(--yuvarlak);aspect-ratio:4/5;object-fit:cover;width:100%}
+
+/* --- güvence --- */
+.guvence{border:1px solid color-mix(in srgb,var(--vurgu) 55%,transparent);border-radius:var(--yuvarlak);
+  padding:clamp(24px,4vw,38px);background:color-mix(in srgb,var(--vurgu) 6%,var(--zemin))}
+
+/* --- sorular --- */
+.soru{border-bottom:1px solid var(--cizgi)}
+.soru summary{list-style:none;cursor:pointer;padding:21px 40px 21px 0;position:relative;
+  font-family:var(--baslik);font-size:clamp(17px,2vw,19px);font-weight:600}
+.soru summary::-webkit-details-marker{display:none}
+.soru summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  font:400 26px/1 var(--govde);color:var(--vurgu)}
+.soru[open] summary::after{content:"\2013"}
+.soru p{margin:0 0 21px;color:var(--soluk);max-width:62ch}
+
+/* --- takvim --- */
+.takvim{border-radius:var(--yuvarlak);overflow:hidden;border:1px solid color-mix(in srgb,var(--koyu-yazi) 14%,transparent);min-height:640px;background:var(--zemin)}
+.takvim iframe{width:100%;height:680px;border:0;display:block}
+
+/* --- alt bölüm --- */
+footer{border-top:1px solid color-mix(in srgb,var(--koyu-yazi) 12%,transparent);
+  padding:34px 0;font-size:14.5px;color:var(--koyu-soluk)}
+footer .kap{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:space-between}
+footer a{text-decoration:none}
+footer a:hover{color:var(--vurgu)}
+
+/* --- telefonda sabit düğme --- */
+.sabit{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--koyu) 92%,transparent);backdrop-filter:blur(10px);
+  border-top:1px solid color-mix(in srgb,var(--koyu-yazi) 12%,transparent);display:none}
+.sabit .dug{width:100%;justify-content:center}
+
+/* --- 900 altı --- */
+@media (max-width:900px){
+  .acilis,.bedel,.kim{grid-template-columns:1fr}
+  .kim img{max-width:250px}
+  .anlar,.adimlar{grid-template-columns:1fr}
+  .anlar .tel{max-width:290px}
+  header .dug{display:none}
+  .sabit{display:block}
+  body{padding-bottom:78px}
+  .kars .satir{grid-template-columns:1fr;gap:5px}
+  .vaka dl{grid-template-columns:1fr}
+}
+@media print{header,.sabit,.takvim{display:none}}
+</style>
+</head>
+<body>
+
+<div class="serit gizli" id="serit"></div>
+
+<header>
+  <div class="kap">
+    <div class="marka" id="marka"></div>
+    <a class="dug" href="#gorusme" id="ust-dug"></a>
+  </div>
+</header>
+
+<!-- 1. Açılış: ICP etiketi, sonuç başlığı, iki düğme, güven satırı, ürünün kendisi -->
+<section class="bant" id="b-acilis">
+  <div class="kap acilis">
+    <div>
+      <span class="hap" id="etiket"></span>
+      <h1 id="baslik"></h1>
+      <p class="iri" id="acik"></p>
+      <div class="dugler">
+        <a class="dug" href="#gorusme" id="ana-dug"></a>
+        <a class="dug ikinci gizli" href="#vakalar" id="ikinci-dug"></a>
+      </div>
+      <div class="guven" id="guven"></div>
+    </div>
+    <div><div class="tel uzun" id="tel1"></div></div>
+  </div>
+</section>
+
+<!-- 2. Tanıtım videosu; yoksa bölüm hiç görünmez -->
+<section class="bant gizli" id="b-video">
+  <div class="kap" style="text-align:center;max-width:840px">
+    <h2 id="video-baslik"></h2>
+    <p class="iri" id="video-acik" style="margin-bottom:30px"></p>
+    <div class="video" id="video"></div>
+  </div>
+</section>
+
+<!-- 3. Dert: düz yazı, dar sütun -->
+<section id="b-dert"><div class="kap dar">
+  <h2 id="dert-baslik"></h2>
+  <div id="dert"></div>
+</div></section>
+
+<!-- 4. Bedel: solda hesap, sağda tek cümle -->
+<section class="gizli" id="b-bedel"><div class="kap bedel">
+  <ul class="hesap" id="hesap"></ul>
+  <div><h2 id="bedel-baslik"></h2><p class="iri" id="bedel-sonuc"></p></div>
+</div></section>
+
+<!-- 5. Ne yapıyoruz: üç an, üç telefon ekranı -->
+<section id="b-ne"><div class="kap">
+  <div class="dar" style="margin-bottom:38px">
+    <h2 id="ne-baslik"></h2>
+    <p class="iri" id="ne-acik"></p>
+  </div>
+  <div class="anlar" id="anlar"></div>
+  <div class="dar" style="margin-top:34px" id="kalanlar"></div>
+</div></section>
+
+<!-- 6. Nasıl çalışır: üç adım -->
+<section class="bant gizli" id="b-nasil"><div class="kap">
+  <div class="dar" style="margin-bottom:36px"><h2 id="nasil-baslik"></h2></div>
+  <div class="adimlar" id="adimlar"></div>
+</div></section>
+
+<!-- 7. Müşteri yorumları; gerçek yorum yoksa görünmez -->
+<section class="gizli" id="b-yorumlar"><div class="kap">
+  <div class="dar" style="margin-bottom:32px"><h2 id="yorum-baslik"></h2></div>
+  <div class="kartlar" id="yorumlar"></div>
+</div></section>
+
+<!-- 8. Örnek çalışmalar: sorun, çözüm, sonuç; gerçek vaka yoksa görünmez -->
+<section class="gizli" id="b-vakalar"><div class="kap">
+  <div class="dar" style="margin-bottom:32px"><h2 id="vaka-baslik"></h2></div>
+  <div id="vakalar"></div>
+</div></section>
+
+<!-- 9. Neden biz -->
+<section class="gizli" id="b-neden"><div class="kap dar">
+  <h2 id="neden-baslik" style="margin-bottom:26px"></h2>
+  <div class="kars" id="neden"></div>
+</div></section>
+
+<!-- 10. Kim -->
+<section id="b-kim"><div class="kap kim">
+  <div id="kim-foto"></div>
+  <div><h2 id="kim-baslik"></h2><div id="kim"></div></div>
+</div></section>
+
+<!-- 11. Güvence -->
+<section class="gizli" id="b-guvence"><div class="kap dar">
+  <div class="guvence"><h2 id="guvence-baslik" style="margin-bottom:14px"></h2><div id="guvence"></div></div>
+</div></section>
+
+<!-- 12. Sorular -->
+<section id="b-sorular"><div class="kap dar">
+  <h2 id="soru-baslik" style="margin-bottom:18px"></h2>
+  <div id="sorular"></div>
+</div></section>
+
+<!-- 13. Görüşme planlama: takvim gömülüyse takvim, değilse düğme -->
+<section class="bant" id="gorusme"><div class="kap">
+  <div class="dar" style="margin-bottom:32px">
+    <h2 id="gorusme-baslik"></h2>
+    <p class="iri" id="gorusme-acik"></p>
+  </div>
+  <div class="takvim gizli" id="takvim"></div>
+  <div id="gorusme-dug"></div>
+</div></section>
+
+<!-- 14. Son çağrı ve alt bölüm -->
+<section class="bant" style="padding-bottom:0"><div class="kap dar" style="text-align:center">
+  <h2 id="son"></h2>
+  <div class="dugler" style="justify-content:center">
+    <a class="dug" href="#gorusme" id="son-dug"></a>
+  </div>
+</div>
+<footer><div class="kap" id="alt"></div></footer>
+</section>
+
+<div class="sabit"><a class="dug" href="#gorusme" id="sabit-dug"></a></div>
+
+<script>
+/*FOUNDEROS-SITE*/
+(function(){
+var S = window.SITE || {};
+function $(i){return document.getElementById(i)}
+function kac(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function yaz(i,v){var e=$(i);if(e)e.textContent=(v==null?'':v)}
+function html(i,v){var e=$(i);if(e)e.innerHTML=v}
+function ac(i){var e=$(i);if(e)e.classList.remove('gizli')}
+function dolu(x){return x!=null && x!=='' && !(Array.isArray(x)&&x.length===0)}
+/* Bir bölüm ancak verisi varsa görünür. Boş bölüm sayfada durmaz. */
+function bolum(id,kosul){if(kosul)ac(id)}
+
+/* --- kitin değerleri --- */
+var r = S.renk||{}, f = S.yazi_tipi||{};
+var kok = document.documentElement.style;
+if(r.zemin)kok.setProperty('--zemin',r.zemin);
+if(r.yazi)kok.setProperty('--yazi',r.yazi);
+if(r.soluk)kok.setProperty('--soluk',r.soluk);
+if(r.cizgi)kok.setProperty('--cizgi',r.cizgi);
+if(r.koyu)kok.setProperty('--koyu',r.koyu);
+if(r.koyu_yazi)kok.setProperty('--koyu-yazi',r.koyu_yazi);
+if(r.vurgu)kok.setProperty('--vurgu',r.vurgu);
+if(r.vurgu_yazi)kok.setProperty('--vurgu-yazi',r.vurgu_yazi);
+if(S.yuvarlak)kok.setProperty('--yuvarlak',S.yuvarlak);
+if(f.baslik)kok.setProperty('--baslik',f.baslik);
+if(f.govde)kok.setProperty('--govde',f.govde);
+if(S.yon)document.documentElement.setAttribute('data-yon',S.yon);
+
+var is = S.is||{};
+document.title = (is.ad||'')+(is.ad&&is.sehir?' · '+is.sehir:'');
+var md = document.querySelector('meta[name=description]');
+if(md && S.acilis && S.acilis.aciklama) md.setAttribute('content', S.acilis.aciklama);
+
+/* --- üst çubuk ve marka --- */
+html('marka',(is.logo?'<img src="'+kac(is.logo)+'" alt="">':'')+'<span>'+kac(is.ad||'')+'</span>');
+var dugMetni = (S.acilis&&S.acilis.dugme)||'Ücretsiz görüşme planla';
+['ust-dug','ana-dug','son-dug','sabit-dug'].forEach(function(i){yaz(i,dugMetni)});
+
+/* --- sonuç şeridi: yalnız gerçek müşteri sonucu varsa --- */
+if(dolu(S.serit)){html('serit',S.serit);ac('serit')}
+
+/* --- açılış --- */
+var a = S.acilis||{};
+yaz('etiket',a.etiket); if(!dolu(a.etiket))$('etiket').classList.add('gizli');
+html('baslik', a.vurgu ? kac(a.baslik||'').replace(kac(a.vurgu),'<span class="vur">'+kac(a.vurgu)+'</span>') : kac(a.baslik||''));
+yaz('acik',a.aciklama);
+yaz('guven',a.guven); if(!dolu(a.guven))$('guven').classList.add('gizli');
+if(dolu(a.ikinci_dugme)&&dolu(S.vakalar)){yaz('ikinci-dug',a.ikinci_dugme);ac('ikinci-dug')}
+
+/* --- telefon çerçevesi: sayfanın ana görseli, kod ile çizilir --- */
+function telefon(kon,baslikMetni,saat){
+  if(!dolu(kon))return '';
+  var h='<div class="tel-ic"><div class="tel-ust"><span class="nokta">'+
+    kac((baslikMetni||'?').trim().charAt(0).toLocaleUpperCase('tr'))+'</span><span>'+kac(baslikMetni||'')+
+    '</span><span class="tel-saat">'+kac(saat||'')+'</span></div><div class="tel-govde">';
+  kon.forEach(function(b,i){
+    h+='<div class="bal '+(b.kim==='sistem'?'giden':'gelen')+'" style="animation-delay:'+(i*0.22+0.15).toFixed(2)+'s">'+kac(b.metin)+'</div>';
+  });
+  return h+'</div></div>';
+}
+var kon = S.konusma||{};
+html('tel1', telefon(kon.baloncuklar, kon.isletme, kon.saat));
+
+/* --- video --- */
+var v = S.video||{};
+if(dolu(v.gomme)){
+  yaz('video-baslik',v.baslik); yaz('video-acik',v.aciklama);
+  html('video', v.gomme);
+  ac('b-video');
+}
+
+/* --- dert --- */
+var d = S.dert||{};
+yaz('dert-baslik',d.baslik);
+html('dert',(d.paragraflar||[]).map(function(p,i){
+  return (d.cekme && i===d.cekme_sonra) ? '<p>'+kac(p)+'</p><div class="cekme">'+kac(d.cekme)+'</div>' : '<p>'+kac(p)+'</p>';
+}).join(''));
+
+/* --- bedel --- */
+var b = S.bedel||{};
+if(dolu(b.satirlar)){
+  html('hesap',b.satirlar.map(function(s){return '<li><span>'+kac(s.ad)+'</span><b>'+kac(s.deger)+'</b></li>'}).join(''));
+  yaz('bedel-baslik',b.baslik); yaz('bedel-sonuc',b.sonuc);
+  ac('b-bedel');
+}
+
+/* --- ne yapıyoruz: üç an --- */
+var n = S.ne||{};
+yaz('ne-baslik',n.baslik); yaz('ne-acik',n.aciklama);
+html('anlar',(n.anlar||[]).map(function(x){
+  return '<div class="an"><div class="tel">'+telefon(x.baloncuklar,x.isletme||kon.isletme,x.saat||kon.saat)+'</div><p>'+kac(x.cumle)+'</p></div>';
+}).join(''));
+html('kalanlar',(n.kalanlar||[]).map(function(x){return '<p>'+kac(x)+'</p>'}).join(''));
+
+/* --- nasıl çalışır --- */
+if(dolu(S.nasil)){
+  yaz('nasil-baslik',(S.nasil_baslik||'Nasıl çalışır?'));
+  html('adimlar',S.nasil.map(function(x){return '<div class="adim"><h3>'+kac(x.baslik)+'</h3><p>'+kac(x.metin)+'</p></div>'}).join(''));
+  ac('b-nasil');
+}
+
+/* --- yorumlar: yalnız gerçek ve izinli --- */
+if(dolu(S.yorumlar)){
+  yaz('yorum-baslik',(S.yorum_baslik||'Müşteriler ne diyor'));
+  html('yorumlar',S.yorumlar.map(function(y){
+    return '<div class="kart"><p>'+kac(y.metin)+'</p><div class="ad">'+kac(y.ad)+(y.isletme?' · '+kac(y.isletme):'')+'</div></div>'}).join(''));
+  ac('b-yorumlar');
+}
+
+/* --- örnek çalışmalar: sorun, çözüm, sonuç --- */
+if(dolu(S.vakalar)){
+  yaz('vaka-baslik',(S.vaka_baslik||'Örnek çalışmalar'));
+  html('vakalar',S.vakalar.map(function(x){
+    return '<div class="vaka"><h3>'+kac(x.baslik)+'</h3><dl>'+
+      '<dt>Sorun</dt><dd>'+kac(x.sorun)+'</dd>'+
+      '<dt>Çözüm</dt><dd>'+kac(x.cozum)+'</dd>'+
+      '<dt>Sonuç</dt><dd>'+kac(x.sonuc)+'</dd></dl></div>'}).join(''));
+  ac('b-vakalar');
+}
+
+/* --- neden biz --- */
+if(dolu(S.neden)){
+  yaz('neden-baslik',(S.neden_baslik||'Neden böyle kuruyoruz'));
+  html('neden',S.neden.map(function(x){
+    return '<div class="satir"><div class="sol">'+kac(x.boyle)+'</div><div class="sag">'+kac(x.biz)+'</div></div>'}).join(''));
+  ac('b-neden');
+}
+
+/* --- kim --- */
+var k = S.kim||{};
+yaz('kim-baslik',k.baslik);
+html('kim',(k.paragraflar||[]).map(function(p){return '<p>'+kac(p)+'</p>'}).join(''));
+if(dolu(k.foto)) html('kim-foto','<img src="'+kac(k.foto)+'" alt="'+kac(is.kurucu||'')+'">');
+else $('b-kim').querySelector('.kim').style.gridTemplateColumns='1fr';
+
+/* --- güvence --- */
+var g = S.guvence||{};
+if(dolu(g.paragraflar)){
+  yaz('guvence-baslik',g.baslik);
+  html('guvence',g.paragraflar.map(function(p){return '<p>'+kac(p)+'</p>'}).join(''));
+  ac('b-guvence');
+}
+
+/* --- sorular --- */
+yaz('soru-baslik',(S.soru_baslik||'Sık sorulanlar'));
+html('sorular',(S.sorular||[]).map(function(s){
+  return '<details class="soru"><summary>'+kac(s.soru)+'</summary><p>'+kac(s.cevap)+'</p></details>'}).join(''));
+
+/* --- görüşme: takvim gömülüyse takvim, değilse düğme --- */
+var t = S.takvim||{};
+yaz('gorusme-baslik',t.baslik||'Görüşme planlayın');
+yaz('gorusme-acik',t.aciklama);
+if(dolu(t.gomme)){html('takvim',t.gomme);ac('takvim')}
+else html('gorusme-dug','<div class="dugler"><a class="dug" href="'+kac(t.baglanti||is.whatsapp||'#')+'">'+kac(dugMetni)+'</a></div>');
+
+/* --- son çağrı ve alt bölüm --- */
+yaz('son',S.son||'');
+var alt=[];
+if(is.ad)alt.push('<span>'+kac(is.ad)+(is.sehir?' · '+kac(is.sehir):'')+'</span>');
+var bag=[];
+if(is.telefon)bag.push('<a href="tel:'+kac(is.telefon.replace(/\s/g,''))+'">'+kac(is.telefon)+'</a>');
+if(is.whatsapp)bag.push('<a href="'+kac(is.whatsapp)+'">WhatsApp</a>');
+if(is.eposta)bag.push('<a href="mailto:'+kac(is.eposta)+'">'+kac(is.eposta)+'</a>');
+if(bag.length)alt.push('<span>'+bag.join(' &nbsp;·&nbsp; ')+'</span>');
+html('alt',alt.join(''));
+})();
+</script>
+</body>
+</html>
