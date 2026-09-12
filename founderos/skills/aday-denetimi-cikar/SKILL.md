@@ -23,6 +23,23 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 
 **Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Üçüncü blokta en çok istenen yüz işletmenin ilk otuzuna, dördüncü blokta kalan yetmişine yapılır; sığmayanı beşinci bloğun sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
 
+### Araştırma üç katmanda yapılır, üçü de aynı yükü taşımaz
+
+Bu modülün en büyük tuzağı şu: her adayı tek tek araştırmaya kalkmak. İşletme başına sekiz dakika, günde yüz temas, sekiz yüz dakika. Olmuyor. Ama araştırmadan gönderilen mesaj da işe yaramıyor. Çözüm, araştırmayı sorunun kaynağına göre üçe ayırmak.
+
+**Birinci katman, kayıtla birlikte gelen.** Veri servisi her kayıt için sekiz işaret çıkarıyor: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site yok, hafta sonu kapalı, Instagram yok, yorumu az, ve son yorumlarda "aradım açan olmadı" yazıyor. Bunlar beş yüz kaydın hepsinde var, sıfır iş gerektiriyor ve tahmin değil: Google işletme profilinde görünen şeyler. Gözlem sırasının tabanı bu.
+
+**İkinci katman, toplu araştırma.** Bazı soruların cevabı aday başına değil, niş ve şehir başına aynı yerden geliyor. "Bu şehirde bu nişte kim eleman arıyor" sorusu için yüz ayrı arama yapmanın anlamı yok; tek arama yapılır, çıkan işletme adları listeye dağıtılır. İki soru böyle:
+
+- **İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle şehir ve niş için tek arama. Çıkan işletme adları `isaret --isaret is_ilani` ile listeye yazılır. "Resepsiyonist arıyorsunuz, ilanınızı gördüm" cümlesi profil gözlemlerinin en güçlüsüdür, çünkü işletmeci telefonu kaçırdığını kendisi ilan etmiş oluyor.
+- **Reklam.** Reklam kütüphanesinde niş ve şehir için tek bakış, çıkanlar `isaret --isaret reklam_veriyor` ile yazılır. Tek başına sızıntı değildir; akşam kapalı ya da yorumda şikayet işaretiyle birleşince olur: "Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor."
+
+Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı da reklam da gün içinde değişmiyor.
+
+**Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de telefon istiyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor. Bu ikisi günde beş işletmeyle sınırlı kalıyor ve o beş, listenin en başındaki beş oluyor.
+
+Sonuç şu: beş yüz adayın hepsinde gözlem var, en iyi otuzunda toplu araştırmadan gelen güçlü gözlem var, günün ilk beşinde gerçekten yapılmış test var. Gözlemsiz mesaj gitmiyor.
+
 **Derin denetim.** İşletme başına sekiz dakika, canlı testler dahil. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
 
 Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin denetim her sabah sıranın başındakileri açar.

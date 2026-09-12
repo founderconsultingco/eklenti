@@ -409,6 +409,10 @@ Her takip tazedir, aynı metin tekrarlanmaz. Zincirin sebebi: cevapların çoğu
 - Şüpheci ("denedik olmadı", "pahalı görünüyor"): savunmaya geçme. Önce haklı olduğu yeri kabul et, sonra farklı bir açı ver.
 - Hazır: karmaşıklaştırma, hemen takvime al.
 
+**Gelen kutusu iki kez açılır, saati bellidir.** FounderOS senin e-postanı ve Instagram'ını göremiyor; bu kalıcı bir sınır ve gizlenmiyor. Ama "cevap gelince söyle" demek de işe yaramıyor, çünkü öğrenci sahadayken bakmıyor ve akşam unutuyor. O yüzden bakma anı sabitlendi ve günün planında duruyor: **öğlen, aramaların arasında beş dakika; akşam, sonuçları yapıştırırken.** İkisinde de tek iş var: gelen kutusunu aç, cevapları olduğu gibi yapıştır.
+
+Yapıştırma biçimi yok. Cevabın kendisini, gönderenin adresiyle birlikte yapıştırman yeter; hangi adaya ait olduğunu FounderOS bulur. Aday aracı artık e-posta adresinden ve Instagram kullanıcı adından da aday buluyor, isim yazman gerekmiyor. Dalı da FounderOS seçer, sen seçmezsin.
+
 **Gelen cevap kayda girer, sohbette kalmaz.** Cevap geldiğinde öğrenci cevabın kendisini söyler ya da yapıştırır; aday aracının `cevap` kodu onu adayın satırına yazar (`son_cevap`), hangi dala girdiğini işaretler (`cevap_dali`) ve adayı aynı güne "yanıt yaz" diye planlar. FounderOS yanıtı o dalın metninden kurar ve yazılı kanal metnine yazar; öğrenci kopyalayıp gönderir.
 
 Bunun tek sebebi kolaylık değil. Hangi dalın randevuya döndüğü ancak dal kaydedilirse sayılabiliyor. Kaydedilmeyen cevap, otuz görüşme sonra "hangi itiraz bizi öldürüyor" sorusuna cevap veremiyor.

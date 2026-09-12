@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.27.0
+Aracın sürümü: 0.28.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -43,6 +43,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
                             sonuç: açmadı, gönderdim, istemedi, ilgilendi, randevu, sonra, cevap
                             cevapta: metin: "gelen cevabın kendisi" ve dal: fiyat|bilgi|mesgul|...
   ogren [--esik N]          (hangi gözlem ve hangi kanal cevap getiriyor; eşik altı sayılmaz)
+  isaret DOSYA --isaret A   (toplu araştırmanın sonucu: is_ilani, reklam_veriyor; her satır bir işletme adı)
   sil ANAHTAR --sebep "..."  (satırı elenme ile işaretler, silmez)
   bugun [--sayi N] [--planla] [--kanal telefon|yazı]
   ozet
@@ -54,7 +55,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.27.0"
+SURUM = "0.28.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -233,6 +234,17 @@ def satir_bul(satirlar, anahtar, semt=None):
     tel = rakam(a) if re.fullmatch(r"[+\d\s()-]{7,}", a) else ""
     if tel:
         adaylar = [s for s in satirlar if rakam(s["telefon"]).endswith(tel[-10:])]
+    elif "@" in a and "." in a.split("@")[-1]:
+        # e-posta adresi: gelen cevap yapistirilinca gonderenden bulunur
+        k = kucult(a)
+        adaylar = [s for s in satirlar if kucult(s["eposta"]) == k]
+        if not adaylar:
+            alan = k.split("@")[-1]
+            adaylar = [s for s in satirlar if alan and (alan in kucult(s["eposta"]) or alan in kucult(s["site"]))]
+    elif a.startswith("@"):
+        # instagram kullanici adi
+        k = kucult(a).lstrip("@")
+        adaylar = [s for s in satirlar if kucult(s["instagram"]).lstrip("@") == k]
     else:
         k = kucult(a)
         adaylar = [s for s in satirlar if kucult(s["kisa_ad"]) == k or kucult(s["ad"]) == k]
@@ -636,6 +648,44 @@ def kmt_sonuclar(a):
             print("  " + x)
 
 
+def kmt_isaret(a):
+    """Toplu arastirmanin sonucunu listeye dagitir.
+
+    Bazi arastirmalar aday basina degil, nis ve sehir basina yapiliyor:
+    "bu sehirde bu niste kim eleman ariyor", "kim reklam veriyor". Tek arama
+    yapilir, cikan isletme adlari bu komutla listeye isaretlenir. Aday basina
+    yuz ayri arama yapmanin anlami yok; ayni sorunun cevabi hepsi icin ayni
+    yerden geliyor."""
+    p = Path(a.dosya)
+    if not p.exists():
+        hata("dosya yok: %s" % a.dosya)
+    adlar = [x.strip() for x in p.read_text(encoding="utf-8-sig").splitlines() if x.strip()]
+    if a.isaret not in TOPLU_ISARET:
+        hata("işaret şunlardan biri olmalı: " + ", ".join(TOPLU_ISARET))
+    satirlar = yukle()
+    bulunan, bulunamayan = [], []
+    for ad in adlar:
+        k = kucult(ad)
+        esler = [s for s in satirlar if kucult(s["kisa_ad"]) == k or kucult(s["ad"]) == k]
+        if not esler:
+            esler = [s for s in satirlar if k and (k in kucult(s["ad"]) or kucult(s["kisa_ad"]) in k)]
+        if len(esler) != 1:
+            bulunamayan.append(ad + ("" if not esler else " (%d eşleşme)" % len(esler)))
+            continue
+        s = esler[0]
+        ip = (s["ipuclari"] or "").split()
+        if a.isaret not in ip:
+            ip.append(a.isaret)
+            s["ipuclari"] = " ".join(ip)
+        bulunan.append(s["kisa_ad"])
+    kaydet(satirlar)
+    print("işaret %s: %d adaya yazıldı, %d eşleşmedi" % (a.isaret, len(bulunan), len(bulunamayan)))
+    if bulunan:
+        print("  " + ", ".join(bulunan[:20]) + (" ..." if len(bulunan) > 20 else ""))
+    if bulunamayan:
+        print("eşleşmeyen (elle bak): " + "; ".join(bulunamayan[:10]))
+
+
 def kmt_sil(a):
     satirlar = yukle()
     s = satir_bul(satirlar, a.anahtar, a.semt)
@@ -651,7 +701,13 @@ def kmt_sil(a):
 # Bunlar tahmin degil: Google isletme profilinde gorulen seyler. Elle yapilan
 # derin denetimin yerine gecmez, ama denetimi yapilmamis adayin mesaji
 # gozlemsiz gitmesin diye var. Sira guclu olandan zayifa.
+# Toplu arastirmadan gelen isaretler. Aday basina degil, nis ve sehir basina
+# tek arama ile bulunuyor ve listeye dagitiliyor.
+TOPLU_ISARET = ["is_ilani", "reklam_veriyor"]
+
 IPUCU_GOZLEM = [
+ ("is_ilani", "İş ilanı var: telefona bakacak kişi arıyor",
+  "Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"),
  ("yorum_sikayet", "Son yorumlarda aranıp ulaşılamadığını yazan bir müşteri var",
   "Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"),
  ("profil_sahipsiz", "Google işletme profili sahiplenilmemiş görünüyor",
@@ -669,10 +725,25 @@ IPUCU_GOZLEM = [
 ]
 
 
+# Iki isaretin birlikte anlam kazandigi hal: reklama para veriyor ama
+# aramaya bakan yok. Tek basina "reklam veriyorsunuz" bir sizinti degil.
+IPUCU_BIRLESIK = [
+ (("reklam_veriyor", "aksam_kapali"),
+  "Reklam veriyor ama Google'da akşam altıda kapanıyor",
+  "Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"),
+ (("reklam_veriyor", "yorum_sikayet"),
+  "Reklam veriyor ve yorumlarda ulaşılamadığı yazıyor",
+  "Reklam veriyorsunuz ama yorumlarınızdan birinde 'aradım açan olmadı' yazıyor"),
+]
+
+
 def ipucu_gozlem(s):
     """Elle bulgu yoksa isaretlerden tek gozlem cumlesi kurar.
     Doner: (bulgu, kanca) ya da None."""
     ip = set((s.get("ipuclari") or "").split())
+    for kodlar, bulgu, kanca in IPUCU_BIRLESIK:
+        if all(k in ip for k in kodlar):
+            return bulgu, kanca
     for kod, bulgu, kanca in IPUCU_GOZLEM:
         if kod in ip:
             return bulgu, kanca
@@ -1001,6 +1072,7 @@ def ana():
     t.add_argument("--semt")
 
     s = alt.add_parser("ogren"); s.add_argument("--esik", type=int, default=30)
+    s = alt.add_parser("isaret"); s.add_argument("dosya"); s.add_argument("--isaret", required=True)
     s = alt.add_parser("sonuclar")
     s.add_argument("dosya")
 
@@ -1043,7 +1115,7 @@ def ana():
     if not KLASOR.exists():
         hata("klasör yok: %s" % KLASOR)
     calisma().mkdir(parents=True, exist_ok=True)
-    {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar, "ogren": kmt_ogren,
+    {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar, "ogren": kmt_ogren, "isaret": kmt_isaret,
      "sil": kmt_sil, "bugun": kmt_bugun, "ozet": kmt_ozet, "bul": kmt_bul, "sayfa": kmt_sayfa}[a.komut](a)
 
 
@@ -1211,7 +1283,12 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // Tahmin degil: Google isletme profilinde gorunen sey. Elle yapilan derin
 // denetimin yerine gecmez; denetimi yapilmamis adayin mesaji gozlemsiz
 // gitmesin diye var. Sira guclu olandan zayifa.
+var IPUCU_BIRLESIK=[
+ [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
+ [['reklam_veriyor','yorum_sikayet'],"Reklam veriyorsunuz ama yorumlarınızdan birinde 'aradım açan olmadı' yazıyor"]
+];
 var IPUCU_KANCA=[
+ ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
  ['yorum_sikayet',"Google yorumlarınızdan birinde 'aradım, açan olmadı' yazıyor"],
  ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
  ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
@@ -1221,10 +1298,15 @@ var IPUCU_KANCA=[
  ['instagram_yok',"Instagram hesabınızı bulamadım"]
 ];
 function profilKancasi(r){
+ for(var j=0;j<IPUCU_BIRLESIK.length;j++){
+  var k=IPUCU_BIRLESIK[j][0], hepsi=true;
+  for(var m=0;m<k.length;m++) if(r._ipucu.indexOf(k[m])<0) hepsi=false;
+  if(hepsi) return IPUCU_BIRLESIK[j][1];
+ }
  for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
  return '';
 }
-var IPUCU={yorum_sikayet:['Yorumda "ulaşamadım"','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda "ulaşamadım"','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}
