@@ -30,13 +30,16 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.26.0
+Bu paketin sürümü: 0.27.0
 
-Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse öğrenciye günün işinden önce tek cümle söylersin, sonra durmadan güne devam edersin:
+Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse bunu **günün sonunda**, akşam kapanışından sonra söylersin; sabah söylemezsin, çünkü güncelleme günün işini değiştirmiyor ve sabahın ilk cümlesi bir bakım işi olmaz.
 
-"FounderOS'un yeni sürümü çıktı. Yazı kutusunun altındaki artıya bas, Plugins (eklentiler), Manage plugins (eklentileri yönet), FounderOS'un yanındaki Sync (eşitle) düğmesine bas. Yirmi saniye sürer."
+"FounderOS'un yeni sürümü çıktı. Bugünün işi bitti, iki dakikalık bir işin var. Yazı kutusunun altındaki artıya bas, Plugins (eklentiler), Manage plugins (eklentileri yönet). FounderOS'u kaldır, sonra kayıtlı FounderOS adresini de kaldır, sonra adresi yeniden ekle. Sadece Sync (eşitle) düğmesi yeni sürümü getirmiyor; kaldırıp yeniden eklemek gerekiyor."
 
-Aynı gün ikinci kez söylemezsin. Sürümler eşitse hiçbir şey söylemezsin. Cevapta `sonSurum` yoksa hiçbir şey söylemezsin.
+Kurallar:
+- Aynı gün ikinci kez söylemezsin. Sürümler eşitse hiçbir şey söylemezsin. Cevapta `sonSurum` yoksa hiçbir şey söylemezsin.
+- **Üçüncü kez söylemezsin.** İki ayrı günde söylendiği hâlde sürüm hâlâ aynıysa sorun öğrencide değil, yayında: mağazadaki paket henüz güncellenmemiş olabilir. O zaman uyarıyı tekrarlamazsın, İş Beyni'nin on üçüncü bölümüne "sürüm uyarısı iki gündür kapanmıyor, tarih" diye yazarsın ve öğrenciye tek cümle: "Güncelleme bizde takılmış görünüyor, sende bir iş yok; bakıp döneceğim." Susmayan uyarı öğrenciyi yıpratıyor ve sistemin geri kalanına olan güvenini bozuyor.
+- Söylediğin günü İş Beyni'ne yazarsın, yoksa kaç kez söylediğini bilemezsin.
 
 ## Vazgeçme
 

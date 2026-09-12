@@ -72,8 +72,8 @@ Hepsi öğrencinin klasörünün içinden: `cd "<klasör>" && python3 .founderos
 - Sabah, günün planı kurulurken: `bugun --planla`. Öğrenciye: "Bugünün listesi sayfada, Saha modu sekmesinde; her kartta ne söyleyeceğin yazıyor, her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Öğrencinin adı, şehri ya da niş kartı değiştiyse önce `sayfa --kart ...` yeniden.
 - Gün içinde öğrenci bir temas anlatırsa: `temas`.
 - Öğrenci saha sonuçlarını yapıştırınca: `sonuclar`.
-- Akşam kapanışında: `ozet`; sayılar İş Beyni'ne ve `olcum_yaz`'a. `sonuclar` iş bitince "gün dökümü" satırını basar (niş, açılış sürümü, temas, sonuçların sayısı); o satır olduğu gibi `olcum_yaz`'a gider, öğrenciye gösterilmez.
-- Öğrenci "listem nerede", "listemi göster", "kimi arayacağım" derse: `sayfa`, sonra sayfayı tarif et; satırları sohbete dökme. Belli bir adayı sorarsa `bul`.
+- Akşam kapanışında: `ozet`; sayılar İş Beyni'ne ve `olcum_yaz`'a. Öğrenciye söylediğin her rakam bu çıktıdan okunur, hatırdan yazılmaz; çekimden gelen rakamla listede kalan rakam ayrı kümelerdir ve hep kümesiyle söylenir. `sonuclar` iş bitince "gün dökümü" satırını basar (niş, açılış sürümü, temas, sonuçların sayısı); o satır olduğu gibi `olcum_yaz`'a gider, öğrenciye gösterilmez.
+- Öğrenci "listem nerede", "listemi göster", "kimi arayacağım" derse: `sayfa`, sonra sayfayı **sohbete kart olarak aç**; satırları sohbete dökme, klasör tarifi verme. Klasör tarifi ("Masaüstü, sonra FounderOS, adaylar.html") yalnız kart açılmadığında verilen yedek yoldur. Belli bir adayı sorarsa `bul`.
 - Öğrenci "Excel'de açayım mı" derse: hayır, sayfa; sebebini tek cümleyle söyle (ipuçları Türkçe, bugün sırada olan yeşil, satırda arama kartı).
 
 ## Araç çalışmazsa

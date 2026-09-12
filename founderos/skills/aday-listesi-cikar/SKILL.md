@@ -101,6 +101,8 @@ Ham listede sana yaramayacak kayıtlar var. Altı eleme var; ilk üçünü servi
 
 **Dört: kategoriye uymayan.** Haritalar kategori karıştırıyor; klima servisi ararken beyaz eşya bayisi de geliyor. FounderOS kayıttaki kategoriyi kartınla karşılaştırır, uymayanları listeler, sen onaylarsın.
 
+Buradaki ayrım satan ile servis verendir ve kural yazılıdır, her nişte aynı işler: **ürünü satan çıkar, ürüne servis veren kalır.** Mağaza, bayi, showroom, market satar; servis, teknik servis, tamir, bakım, montaj hizmet verir. İkisini birden yapan kalır ama kaydına "satış da yapıyor" notu düşer, çünkü onda kaçan talep hem randevu hem satış tarafında ve görüşme farklı gidiyor. Ad ve kategori bu ayrımı çoğu zaman kendisi söylüyor; söylemiyorsa FounderOS satırı sana sorar, sen karar verirsin. Aynı eleme raporunda hangi kelimeye bakıldığı yazılır, böylece yanlış eleneni görürsün.
+
 **Beş: nişin yasal sınırına takılan.** Kartın yasal sınırlar bölümü hangi işletme tipinin listeye girmeyeceğini söylüyor; FounderOS bakar, sen onaylarsın.
 
 **Altı: dün sıcak listeye giren işletmeler.** A listen beş on kişi, FounderOS ona bakıp bu listede varsa çıkarır. Tanıdığına bu akşam mesaj gidecek; aynı kişiye iki gün sonra soğuk arama metniyle dönmüyorsun. Bu elemede numaraya güvenilmez: tanıdığının kaydında cep numarası var, buradakinde işletmenin sabit hattı, ikisi tutmuyor; ada bakılır.
@@ -111,7 +113,7 @@ Elemeden sonra beş yüzün altına düştüysen Adım 1'e dönüp aramayı geni
 
 ### Adım 4: işletme adını kısalt (5 dakika)
 
-Ham listede adlar "Yılmaz Isı Sistemleri San. Tic. Ltd. Şti." gibi geliyor; aramada ve mesajda bu ad kullanılırsa toplu gönderim gibi duruyor. Servis kısa adı zaten yazmış: "Yılmaz Isı Sistemleri". Kırptığı ekler: Ltd. Şti., A.Ş., Limited, Anonim Şirketi, San., Sanayi, Tic., Ticaret, Paz., Pazarlama, İnş., İnşaat, Hizmet, Hizmetleri ve aradaki "ve". Dört kelimeden uzun adı dörtte keser.
+Ham listede adlar "Yılmaz Isı Sistemleri San. Tic. Ltd. Şti." gibi geliyor; aramada ve mesajda bu ad kullanılırsa toplu gönderim gibi duruyor. Servis kısa adı zaten yazmış: "Yılmaz Isı Sistemleri". Kırptığı ekler: Ltd. Şti., A.Ş., Limited, Anonim Şirketi, San., Sanayi, Tic., Ticaret, Paz., Pazarlama, İnş., İnşaat, Hizmet, Hizmetleri ve aradaki "ve". Ad bu eklerden sonra hâlâ uzunsa kelime sınırında kesilir, ortadan değil; "Bursa Uzman Teknik Beyaz Eşya" adı "Bursa Uzman Teknik Beyaz" diye kesilmez, çünkü telefonda okunduğunda ne olduğu anlaşılmaz hale gelir. Tamamı büyük harf yazılmış adlar da düzeltilir: "ANADOLU DOĞALGAZ MÜHENDİSLİK" listede bağırarak duruyor ve okuması zor.
 
 FounderOS kısa adlara göz gezdirir, yanlış kırpılmış olanı düzeltir. Kayıt yerine giden sütun bu oluyor, uzun olan değil.
 
@@ -121,11 +123,13 @@ Kalan listenin içinden yüz tanesini işaretliyorsun: müşterin olmasını en 
 
 Dört seçim ölçütü var ve sırası şu:
 1. **İlan verenler.** Adım 2b'deki iş ilanı kaynağından gelenler yüzün başına girer, sıra sormaz.
-2. **Büyük olanlar.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor.
+2. **Büyük olanlar, ama üst sınırla.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor. Üst sınır İş Beyni'nin ideal müşteri tanımından gelir: hedef büyüklük üç ile on kişi ve karar tek kişide olacak. Yorum sayısı listenin en üstündeki birkaç işletme çoğu zaman bu sınırın dışında kalıyor; sahibi telefona çıkmıyor, karar bir kişide değil. Bunlar listeden atılmaz, yüzün **sonuna** konur ve kaydına tek satır yazılır: "büyük, karar tek kişide olmayabilir". İlk aramalar bunlarla yapılmaz.
 3. **Ulaşılabilir olanlar.** Web sitesi ve Instagram hesabı dolu gelenler.
 4. **Nişin içinde kalanlar.** Kategori tam uyanlar.
 
-İlanı olanlar artı kalan üçünü birden taşıyan ilk yüz satırı işaretliyorsun. Emin olamadığını da işaretle, ay sonunda değiştireceksin. İşin yanında çalışıyorsan yüz değil kırk işletme seçiyorsun; onlara ayrı emek vereceksin ve günün kırk temasa yetiyor.
+İlanı olanlar artı kalan üçünü birden taşıyan ilk yüz satırı işaretliyorsun. Emin olamadığını da işaretle, ay sonunda değiştireceksin. İşin yanında çalışıyorsan yüz değil kırk işletme seçiyorsun; onlara ayrı emek vereceksin ve günün kırk temasa yetiyor. Sayfadaki "En çok istenen" kutusunda görünen sayı budur; kırk seçildiyse kırk yazar ve bu eksiklik değildir.
+
+Listenin en büyüğünü yüzün sonuna koyduğunda bunu öğrenciye tek cümleyle söylersin, yoksa "en iyileri neden en sona koydun" diye sorar: "Yorumu en çok olan beş işletmeyi listenin sonuna koydum. Onlar en değerli olanlar ama en zor olanlar da; sahibi telefona çıkmıyor, karar tek kişide değil. İlk aramaların olmasınlar, ilk randevunu aldıktan sonra onlara döneriz." 
 
 Yüz işletmenin farkı emek, mesaj sayısı değil. Kalan dört yüz hızlı denetimle ve kartın gözlemiyle gidiyor; yüz işletme derin denetimden geçiyor (on satır, karar verenin adı, lira karşılığı), mesajı o işletmede gerçekten görülmüş bulguyla açılıyor, yazı yolunda video mesaj alıyor, telefon yolunda ilk aranan onlar oluyor ve ilk temas günde beş adayla yayılıyor ki her biri hazırlıklı gitsin. Denetim kartı adaya belge olarak gönderilmiyor; bulgu görüşmede ve videoda söyleniyor. Kâğıt gönderen satıcı, konuşan satıcının gerisinde kalıyor.
 
@@ -190,9 +194,14 @@ Açılışta: "Bugün üç saat. Çıktı: beş yüz kişilik liste ve içinden 
 Daha az kayıt çekmek isterse: "800 çekiyoruz çünkü eleyeceğiz. Her işletmeye ilk temas ve üç takip gidiyor; beş yüzün altında kalırsan üçüncü haftada arayacak kimsen kalmıyor."
 Tavan dolduysa: "Bu ayın tavanı doldu; servis gelecek ay yeniden açılıyor. Bugün tarayıcı eklentisiyle elle devam ediyoruz, yüz işletme çıkar."
 Yorumları da çekelim derse: "Hayır. Yorumlara hızlı denetimde gözünle bakıyorsun, yüz işletme için yetiyor."
+
+**Rakam kuralı.** Bu modülde iki ayrı küme var ve karıştırılırsa öğrenci sayıya güvenmiyor. Birincisi çekimden geleni anlatır (kaç kayıt geldi, kaçı işaretlendi), ikincisi listede kalanı anlatır (kaç aday var, kaçı aranabilir). Aynı rakam iki kümeye birden takılmaz. Kural üç maddeli:
+- Çekim rakamlarını `cek --ozet` çıktısından, liste rakamlarını `ozet` çıktısından alırsın. İkisini de kendi cümlenden üretmezsin, araçtan okursun. Bir rakamı hatırından yazarsan önceki mesajla çelişir.
+- Her rakamın yanında hangi kümeye ait olduğu söylenir: "servisten 677 kayıt geldi, 323'ünü işaretledim" ve "listende 354 aday var, 265'i aranabilir". "265'inde telefon var" cümlesi tek başına iki kümeye de yakışıyor, o yüzden hep kümesiyle söylenir.
+- Günü kapatan başlık cümlesi, kanal yolunun gerçekten kullanabileceği sayıyla kurulur. Kanal yolu telefonsa "354 kayıtla sahaya çıkıyorsun" yanlıştır, doğrusu "354 aday, bunların 265'i aranabilir". Yazı yolunda aynı cümle e-postalı ve Instagramlı sayıyla kurulur.
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
-Liste ilk kez yazılınca: "Listen klasörde `adaylar.html` dosyasında, çift tıkla açılır. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her kartta ne söyleyeceğin yazıyor; her aramadan sonra düğmeye bas."
-Listeyi görmek isteyince: "Veriyi yeniledim. `adaylar.html` dosyasını aç; açıksa sayfayı yenile."
+Liste ilk kez yazılınca sayfa sohbete kart olarak açılır, sonra tek cümle: "Listen hazır, işte burada. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her kartta ne söyleyeceğin yazıyor; her aramadan sonra düğmeye bas." Arkasından ikinci cümle: "Klasöründe de duruyor, adı `adaylar.html`; istediğin zaman oradan da açarsın." Klasör tarifi ancak kart açılmazsa verilir.
+Listeyi görmek isteyince: sayfa yeniden kart olarak açılır, tek cümle: "Veriyi yeniledim, işte liste."
 Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?"
 
 ## 7. Ne yazar

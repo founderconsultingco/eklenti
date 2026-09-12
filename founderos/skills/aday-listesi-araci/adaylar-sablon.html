@@ -120,6 +120,7 @@ textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Cons
     <div id="cipler"></div>
   </div>
   <div class="aciklama">Satıra tıklayınca ayrıntı açılır. Sütun başlığına tıklayınca sıralanır.<i style="background:#dcfce7"></i>bugün sırada<i style="background:#ffedd5"></i>günü geçmiş<i style="background:#ede9fe"></i>İlk 100: en çok istenen yüz işletme</div>
+  <div class="aciklama">Uygunluk: denetimden çıkan 0-15 arası puan, A 10 ve üstü, B 6-9, C 5 ve altı. Sızıntı: kaç sızıntı görüldüğü, 0-5. İkisi de denetim yapılmadan boş durur. En çok istenen: derin denetimden geçen işletmeler; tam zamanlı çalışanda yüz, işin yanında çalışanda kırk tane seçilir.</div>
   </div>
 </header>
 <main>
@@ -168,7 +169,7 @@ alt.textContent=(enCok?enCok+' · ':'')+satirlar.length+' aday'+(tarih?' · Son 
 
 // --- özet kutuları ---
 var say=function(f){return satirlar.filter(f).length};
-var OZET=[['Toplam',satirlar.length],['Telefonu olan',say(function(r){return r.telefon})],['E-postası olan',say(function(r){return r.eposta})],['Denetlenmiş',say(function(r){return r.sizinti!==''})],['En çok istenen yüz',say(function(r){return r._yuz})],['Bugün sırada',say(function(r){return r._bugun})],['Gecikmiş',say(function(r){return r._gecmis})],['Cevap verdi',say(function(r){return /cevap verdi/.test(r.asama||'')})],['Randevu',say(function(r){return /randevu/.test(r.asama||'')||r.randevu_tarihi})]];
+var OZET=[['Toplam',satirlar.length],['Telefonu olan',say(function(r){return r.telefon})],['E-postası olan',say(function(r){return r.eposta})],['Denetlenmiş',say(function(r){return r.sizinti!==''})],['En çok istenen',say(function(r){return r._yuz})],['Bugün sırada',say(function(r){return r._bugun})],['Gecikmiş',say(function(r){return r._gecmis})],['Cevap verdi',say(function(r){return /cevap verdi/.test(r.asama||'')})],['Randevu',say(function(r){return /randevu/.test(r.asama||'')||r.randevu_tarihi})]];
 document.getElementById('ozet').innerHTML=OZET.map(function(k){return'<div class="kutu"><b>'+k[1]+'</b><span>'+k[0]+'</span></div>'}).join('');
 
 // --- filtreler ---
