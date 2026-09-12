@@ -43,7 +43,7 @@ Birinci günde tek soru sorar: fotoğrafın var mı (aşağıda). İkinci blokta
 
 Bunu merdivenin alt basamağındaki öğrenciye sormaz. O basamakta bugün alan adı alınmıyor ve sebebi aşağıda yazılı.
 
-Alan adı seçimi sorulmaz. FounderOS iş adından türetir ve iki seçenek verir. Uzun düşünülecek bir konu değil.
+Alan adı seçimi burada sorulmaz ve yeniden yapılmaz. Adres birinci günde, iş adıyla birlikte markani-kur'da seçildi ve o gün boş olduğu kontrol edildi; İş Beyni'nin altıncı bölümünde yedeğiyle birlikte duruyor. Bu modülün işi onu satın aldırmak ve bağlamak.
 
 
 ## 4b. Birinci gün
@@ -255,7 +255,17 @@ Neden ayrı sayfa: randevu almış aday ile hiç tanımadığın aday aynı şey
 
 Bu bölüm bütçe merdiveninin hangi basamağında olduğuna göre değişiyor. Basamak birinci günde yazıldı; ben okuyorum, sen bir şey yapmıyorsun.
 
-**Orta ve üst basamakta.** Alan adı bugün alınır. İş adının sade hali, tire yok, rakam yok, uzun değil. FounderOS iki seçenek verir. Nereden: Türkçe arayüzlü, lira ile ödeme alan bir alan adı satıcısından; satıcının adını ve ekranını o gün FounderOS söyler, banka ya da kredi kartıyla ödenir, yıllık tutar masraf tablosuna girer. Alırken "DNS" (adres kayıtları) ekranının nerede olduğunu öğrenirsin; yayın adımında oraya iki satır yazacaksın.
+**Orta ve üst basamakta.** Alan adı bugün alınır. Hangi adres olduğu dün belli oldu, bugün sadece satın alınıyor. Nereden: godaddy.com. Ekranı İngilizce, ödeme kartla, yıllık tutar masraf tablosuna girer.
+
+Adımlar, ekranda yazan metinleriyle:
+1. godaddy.com adresini aç. Ortadaki arama kutusuna dün seçtiğimiz adresi uzantısıyla birlikte yaz ve "Search Domain" (alan adı ara) düğmesine bas.
+2. Adres boşsa yanında fiyatı ve "Add to Cart" (sepete ekle) düğmesi çıkar; ona bas. "Taken" (alınmış) yazıyorsa bana söyle, yedek adrese geçiyoruz, kendin yeni ad aramaya kalkma.
+3. Sepete ekledikten sonra ekran sana ek ürünler önerir: gizlilik koruması, e-posta, site kurucu, yedekleme. Hiçbirini alma. "No Thanks" (hayır teşekkürler) ya da "Continue to Cart" (sepete devam et) ile geç. Bunlar yıllık masrafı iki katına çıkarıyor ve hiçbiri bugün sana lazım değil.
+4. Sepette süreyi kontrol et. "1 Year" (1 yıl) yeterli; ekran bazen iki ya da üç yılı seçili getiriyor, bir yıla indir.
+5. Hesabın yoksa "Create Account" (hesap oluştur) ile iş e-postanla aç, sonra kartla öde.
+6. Ödeme bitince sol üstten hesabına gir, "My Products" (ürünlerim) listesinde alan adını göreceksin. Yanındaki "DNS" (adres kayıtları) düğmesinin nerede olduğunu bana söyle; yayın adımında oraya iki satır yazacağız.
+
+Takılırsan ekran görüntüsünü at, hangi düğme olduğunu söylerim. Tarayıcı çevirisini açma.
 
 Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve saha açıldıktan sonra her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
 
@@ -268,6 +278,8 @@ Bu adım randevu hatırlatmalarının e-posta tarafını da açıyor. Randevu al
 **Alt basamakta.** Bugün kendi internet adresini almıyorsun ve iş e-postası kurmuyorsun. Site, yayın servisinin verdiği ücretsiz adresle yayına çıkıyor ve bugünkü işini o adres görüyor: aradığın işletmeci adını Google'a yazınca sayfa çıkıyor, mesajındaki link bir yere gidiyor, ilgilenen adaya göndereceğin tek adres oluyor. Sayfanın kendisi diğer basamaklardakiyle aynı, tek fark adresin.
 
 Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin rapor günü raporu çıkıp kanıt hikâyen yazıldığı zaman. O gün hem para girmiş oluyor hem de sitede gösterecek bir sonucun oluyor. O gün alan adı alınır, ücretsiz adres yenisine yönlendirilir, iş e-postası kurulur ve site adresi İş Beyni'nde ve e-posta imzasında güncellenir. Bu, sayfanın müşteri rakamıyla güncellendiği günün aynısı; ikisi tek işte yapılır.
+
+Hangi adres olduğu o gün aranmaz, birinci günde seçilmişti. Aradan iki ay geçtiği için önce boş mu diye bakılır; kapılmışsa İş Beyni'ndeki yedek adres alınır ve iş adı değişmez. Alt basamakta bu risk kabul edilmiş bir risktir: adres için bugün para çıkmaması, iki ay sonra ikinci tercihe düşme ihtimalinden daha önemli.
 
 O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki saha açılınca şaşırma.
 
@@ -293,12 +305,13 @@ Bitince, ikinci blok: "Sayfa yayında. Linkini artık mesajına koyabilirsin."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: alan adı ve nereden alındığı, alan adı bugün alınmadıysa hangi basamak yüzünden ertelendiği ve hangi güne ertelendiği, canlı site adresi (alt basamakta ücretsiz adres), ön görüşme sayfasının adresi, sayfanın dosya yolu, sayfanın metin sürümü ve tarihi, her bölümün metninin nereden geldiği, iş e-postası ve alıştırma başlangıç tarihi, müşteri gelince değişecek bölümler, açılış görselinin kaynağı.
+İş Beyni'ne: alınan alan adı ve nereden alındığı, birinci günde seçilen adresle aynı mı yoksa yedeğe mi geçildiği, alan adı bugün alınmadıysa hangi basamak yüzünden ertelendiği ve hangi güne ertelendiği, canlı site adresi (alt basamakta ücretsiz adres), ön görüşme sayfasının adresi, sayfanın dosya yolu, sayfanın metin sürümü ve tarihi, her bölümün metninin nereden geldiği, iş e-postası ve alıştırma başlangıç tarihi, müşteri gelince değişecek bölümler, açılış görselinin kaynağı.
 Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-posta imzasına, ön görüşme sayfasının boş hali gorusmeye-getir'e, iş e-postası adaya-mesaj-yaz'a, müşteri gelince değişecek bölümlerin listesi ve ertelenmiş alan adı ilk kanıt hikâyesi çıktığında birlikte güncellenmek üzere kanitini-hazirla'ya.
 
 ## 8. Yedek yol
 
 - Alan adı alınamazsa: site yayın servisinin verdiği ücretsiz adreste yayına alınır, alan adı gelince bağlanır. Gün durmaz. Alt basamakta bu zaten normal yol, aksama sayılmaz.
+- Dün seçilen adres bu arada kapıldıysa: İş Beyni'ndeki yedek adres alınır. İş adı değişmez, marka kiti değişmez, sadece sitenin ve imzanın adresi değişir. Yedek de doluysa aynı ada beşinci uzantıya kadar bakılır; o da tutmazsa markani-kur'un ad adımı tek turluk yeniden açılır.
 - Yayına alma takılırsa: site bilgisayarında çalışıyordur, yayın ertesi günün sabah bloğuna kalır. Üçüncü günün işi ertelenmez.
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
 - Birinci günde sayfa bir saati aşarsa: ikinci düzeltme turu atlanır, ilk turun haliyle kapanır. Cümle düzeltmeleri yarın sabaha kalır; sayfa yine tam kurulmuş olur.

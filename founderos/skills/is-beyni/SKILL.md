@@ -55,7 +55,7 @@ Yazan: hizmet-akisini-ciz.
 ### 6. Marka ve varlıklar
 Marka kitinin yeri, renkler, yazı tipleri, logo ve en küçük boyutu, görsel yön. Dosya haritası: `marka/` altındaki her dosyanın adı, ne işe yaradığı, nerede durduğu; modüller logoyu ve görselleri buradan bulur. Eksik gerçek bilgiler satırı: henüz olmayan telefon, e-posta ya da adres ve hangi dosyayı beklettiği. Açılış görseli hangi kaynaktan (video kapağı, kurucu fotoğrafı, marka görseli).
 Instagram kullanıcı adı ve hesap yaşı, profil fotoğrafının yeri, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, biyografi metni ve sürümü.
-Alan adı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, sayfanın metin sürümü ve tarihi, müşteri gelince değişecek bölümler.
+Seçilen alan adı ve uzantısı, boş olduğunun kontrol edildiği tarih, yedek alan adı, alınıp alınmadığı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, sayfanın metin sürümü ve tarihi, müşteri gelince değişecek bölümler.
 Video adresleri: ön görüşme videosu, üç itiraz videosu, deneme videosu, kanıt ekran kaydı.
 Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-sayfasini-yaz, isini-kur.
 

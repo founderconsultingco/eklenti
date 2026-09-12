@@ -33,7 +33,7 @@ Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine p
 
 ## 3. Ne okur
 
-İş Beyni'nden: geçici iş adı, şehir, kanal yolu, hazırlık seviyesi, gelir planı.
+İş Beyni'nden: kendi adın, şehir, kanal yolu, hazırlık seviyesi, gelir planı, bütçe merdiveninin basamağı.
 Niş kartından: sektörün dili, işletmecinin dertleri, rekabetin şekli, yasal sınırlar.
 Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin içeriği, fiyat.
 İş Beyni'nin on sekizinci bölümünden: ideal müşteri (Doksan Gün Planı aynı anda arka planda yazılıyor olabilir, beklenmez).
@@ -41,8 +41,10 @@ Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin i
 ## 4. Ne sorar
 
 İki şey sorar:
-1. Kesin iş adı. Tek ad önerir, gerekçesiyle; beğenmezsen ikincisi gelir, en fazla üç tur. Adı bulmak senin işin değil, onaylamak senin işin.
+1. Kesin iş adı. Tek ad önerir, gerekçesiyle ve adresi boş olarak; beğenmezsen ikincisi gelir, en fazla üç tur. Adı bulmak senin işin değil, onaylamak senin işin.
 2. Elinde kullanmak istediğin bir renk ya da bir görsel var mı. Yoksa yoluna devam eder.
+
+Alan adı seçimi sorulmaz. FounderOS adı önerirken adresini de seçmiş ve kontrol etmiş oluyor; sana gelen tek karar addır.
 
 Görsel yön sorulmaz. FounderOS nişe göre kendisi seçer ve sebebini söyler.
 
@@ -53,7 +55,15 @@ Marka birinci günün işi ve tamamı bugün çıkar. Kısaltılmış hali yok.
 
 Sırası şu: iş adı, konumlandırma cümlesi, sonra on panoluk kit.
 
-**İş adı.** Pazardan ve teklifden türetirsin. Tek ad üretir, gerekçesiyle önerir, son sözü öğrenciye bırakırsın; beğenmezse ikincisi gelir. Uzun düşündürmezsin; ad değiştirilebilir bir şeydir ve ilk müşteriye kadar kimse duymaz.
+**İş adı ve adresi birlikte konur.** Ad pazardan ve teklifden türer. Ama ad tek başına önerilmez: önerilmeden önce adresi kontrol edilir. Sebebi şu: ad birinci günde konuyor, logo o adla çiziliyor, on pano o adla basılıyor; adres ilk kez günler ya da haftalar sonra aranırsa ve doluysa elinde iki kötü seçenek kalıyor, ya kiti çöpe atacaksın ya tireli rakamlı bir adres alacaksın. O yüzden kontrol adın önüne alınıyor.
+
+Kontrol sırası, beş uzantı: `.com`, `.com.tr`, `.co`, `.ai`, `.io`. İlk boş çıkan o adın adresi olur. Beşi de doluysa ad önerilmez, sıradaki ada geçilir. Tire, rakam ve uzun birleşik yazım yok; adres telefonda dikte edilebilecek kadar kısa olacak.
+
+Kontrolü FounderOS yapar, godaddy.com'un arama kutusundan. Öğrenci bu adımda hiçbir şey açmaz. Boş adresin yanında fiyat görünür, dolu olanın yanında "Taken" (alınmış) yazar. Kesin cevap satın alma ekranının kendisidir; FounderOS kontrolü yaptıktan sonra da adres alınana kadar "boştu" der, "senin" demez.
+
+Öğrenciye tek cümlede iner: ad, sebebi, adres. Üç turdan sonra karar verilir.
+
+Yedek adres de aynı anda seçilir ve İş Beyni'ne yazılır. Alt basamaktaki öğrenci adresi iki ay sonra alacak; o arada kapılırsa yedeğe geçilir ve iş adı değişmez. Marka kitinin hiçbir dosyası adrese bağlı değil; adres yalnız siteye ve e-posta imzasına giriyor.
 
 **Konumlandırma cümlesi.** Dönüşüm Cümlesi'nin kısa hali. Sitede, kartvizitte ve profillerde aynısı durur.
 
@@ -61,7 +71,7 @@ Sırası şu: iş adı, konumlandırma cümlesi, sonra on panoluk kit.
 
 Kit çıkınca öğrenciye gösterir, tek soru sorarsın: "Bu senin işin gibi duruyor mu?" Değişiklik isterse tahtada değiştirirsin. Renk kodlarını ve yazı tipi adlarını İş Beyni'ne yazarsın.
 
-Alan adı, sunucu ve yayın birinci günde konuşulmaz. Bugün marka kimliği çıkar, yayın işi sonraki günlerin konusu.
+Adres bugün seçilir ama bugün alınmaz. Sunucu, yayın servisi ve hesap açma birinci günde hiç konuşulmaz; bugün marka kimliği çıkar, satın alma ve yayın sonraki günlerin konusu.
 
 ## 5. Ne yapar
 
@@ -320,7 +330,9 @@ Dördü de geçmeden kit tamamlanmış sayılmaz. Bir dosyanın nasıl üretilec
 
 Açılışta: "Şimdi marka. Bir saat, tek oturuş; yarına sarkarsa yayın günü kayar. Ad, kimlik ve dosyalar bugün çıkıyor."
 Görsel yönü söylerken: "Nişin klima ve kombi servisi. Yön sağlam ve yüksek kontrastlı: koyu zemin, kalın başlık, tek vurgu rengi. Sebebi şu: bu sektörde güven, işini bilen ve lafı uzatmayan görüntüden geliyor. Bunu tartışmıyoruz."
-Ad önerirken: "Adın şu: [ad]. Sebebi: [tek cümle]. Bulmak benim işim, onaylamak senin. Uzun düşünme, iki hafta sonra zaten alışacaksın. Olmadıysa söyle, ikincisini getiririm."
+Ad önerirken: "Adın şu: [ad]. Sebebi: [tek cümle]. Adresi de baktım, [adres] boş. Bulmak benim işim, onaylamak senin. Uzun düşünme, iki hafta sonra zaten alışacaksın. Olmadıysa söyle, ikincisini getiririm."
+Adres soran öğrenciye: "Adresi bugün almıyoruz, bugün seçiyoruz. Alma günü [orta ve üst basamakta yarın, alt basamakta ilk kanıttan sonra]. Bugün cebinden para çıkmıyor."
+Alt basamaktaki öğrenci kapılmaktan çekinirse: "Kapılabilir, o yüzden yedeğini de seçtim. Kapılırsa yedeğe geçeriz, adın değişmez. Adres sitede ve imzada duruyor, logonda değil."
 Tahtayı üretmeden önce: "Şimdi görsel sistemini üretiyorum: on sayfa, tek ekranda yan yana. On beş yirmi dakika sürer, bitince göstereceğim. Beğenmediğin yazıyı söylersin, düzeltirim."
 Öğrenci beğenmezse: "Kaç kere baştan yaptırdığını sayıyorum. İkinci denemeden sonra durursun. Mükemmel logo diye bir şey yok, işini yapan logo var. İki hafta sonra hâlâ rahatsızsan o zaman bakarız."
 Klişe çıkarsa: "Bu panoda devre kartı var, çıkar. Sen teknoloji satmıyorsun, kaçan aramanın randevuya dönmesini satıyorsun."
@@ -328,16 +340,18 @@ Rakam ile görüntü uyuşmazsa: "[Kurulum bandının üst ucu] kurulum istiyors
 
 ## 7. Ne yazar
 
-İş Beyni'nin altıncı bölümüne: kesin iş adı, seçilen görsel yön ve sebebi, renk kodları, yazı tipi adları, en küçük logo boyutu, marka klasörünün yeri, kit tarihi ve sürümü.
+İş Beyni'nin altıncı bölümüne: kesin iş adı, seçilen alan adı ve uzantısı, kontrol tarihi, yedek alan adı, seçilen görsel yön ve sebebi, renk kodları, yazı tipi adları, en küçük logo boyutu, marka klasörünün yeri, kit tarihi ve sürümü.
 Ayrıca aynı bölüme **dosya haritası**: hangi dosya hangi kullanım için ve nerede duruyor. Bunu öğrenci okumaz; sonraki modüller okur. siteni-kur logoyu buradan bulur, kisisel-markani-kur profil görselini, onay-belgesini-hazirla belge kapağını. Harita tutmazsa modüller dosya arar ve öğrenciye sorar; sorulmaması gereken tek şey de budur.
 Ve **eksik gerçek bilgiler satırı**: henüz olmayan telefon, e-posta ya da adres, hangi dosyayı beklettiğiyle birlikte. Bilgi geldiği gün o dosyalar yeniden üretilir.
-Bir sonraki modüllere: sayfa düzeni panosu siteni-kur'a, kanal şablonları kisisel-markani-kur'a, belge şablonları onay-belgesini-hazirla'ya.
+Bir sonraki modüllere: sayfa düzeni panosu ve seçilen alan adı siteni-kur'a, kanal şablonları kisisel-markani-kur'a, belge şablonları onay-belgesini-hazirla'ya.
 
 ## 8. Yedek yol
 
 - Claude Design açılmazsa: kit sade hali kurulur. Renk, yazı tipi ve tek sayfalık hızlı referans yazıyla çıkarılır, görsel panolar ertesi güne kalır. Birinci gün kapanır, ikinci gün ertelenmez.
 - Yazı tipi Türkçe karakteri bozuyorsa: talimat yenilenir ve Türkçe destekleyen bir tipe geçilir. Bu tartışma konusu değil.
 - Adı beğenmezsen: ikincisi gelir, sonra üçüncüsü; üçüncü turda karar verilir, dördüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
+- Beğendiğin adın beş uzantısı da doluysa: o ad önerilmez, sıradaki ada geçilir. Tireli ya da rakamlı adres alınmaz; adresi olmayan adla marka kurulmaz.
+- Alan adı kontrolü yapılamazsa (satıcının ekranı açılmazsa): ad yine de konur ve kit basılır, İş Beyni'ne "adres kontrolü bekliyor" satırı yazılır. Gün durmaz; kontrol satın alma günü ekranın kendisinde yapılır, dolu çıkarsa yedeğe geçilir.
 - Elinde hazır logo varsa: kit onun etrafına kurulur, logo yeniden yapılmaz.
 - Kit süreyi aşarsa: sıra bellidir ve baştan kısaltılır. Bugün mutlaka biten dört şey var: logo dosyaları, profil görseli, renk ve yazı tipi kararı, marka kartı. Sosyal kareler ve kurumsal belgeler ikinci bloğa kalabilir. Sebebi şu: yarın sayfa yayına çıkıyor ve hesaplar açılıyor, ikisi de logoyu ve profil görselini istiyor.
 - Bir dosya biçimi üretilemezse: üretilebilen hali verilir ve sınır açıkça söylenir. "Bunu ben üretemiyorum, şu hali elinde" demek dürüsttür; üretilmemiş dosyayı listede "hazır" göstermek değil.
