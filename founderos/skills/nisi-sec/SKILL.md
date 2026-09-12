@@ -183,7 +183,7 @@ Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 
 ## 8. Yedek yol
 
-- nisi-dogrula sonuç veremezse: elle sayım listesiyle devam edilir, on beş dakika sürer, tablo aynıdır.
+- nisi-dogrula sonuç veremezse: tarayıcı eklentisiyle bir semtte sayılır, on beş dakika sürer, tablo aynıdır ve "500 var mı" sorusu "ölçülemedi" kalır.
 - Sen üç adayı da reddedersen: FounderOS bunu işaret sayar ve günü seçim bitmeden kapatmaz. Reddetme sebebini yazar, o sebep kalan kartlara uygulanır ve üç yeni aday çıkarılır.
 - Üç aday da elemelerden geçemezse: en az eleme yiyen niş seçilir ve hangi elemede takıldığı İş Beyni'ne yazılır. Bu, o nişte hangi konuda zorlanacağını önceden bilmen demek.
 - Şehrinde hiçbir nişte 500 işletme yoksa: bütün nişler Türkiye geneline açılır ve bu İş Beyni'ne yazılır. Mesajlardan "sizin şehirde" cümlesi çıkar, kanıt cümlesi ülke geneline döner.

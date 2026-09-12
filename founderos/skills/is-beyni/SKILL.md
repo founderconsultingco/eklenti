@@ -61,7 +61,7 @@ Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-
 
 ### 7. Araçlar ve hesaplar
 CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, sesli mesaj metni.
-Apify hesabı, programın anahtarı, kalan kredi, harcanan kredi, on kayıtlık denemenin dosyası ve tarihi.
+Veri servisi: bu ay alınan kayıt sayısı ve tavan; sayım çekimleri (tarih, üç nişin iş kimlikleri, ilk nişten gelen kayıt sayısı); son liste çekiminin tarihi, kategorisi, şehri ve iş kimliği; yedek yola geçildiyse tarihi.
 Claude aboneliğinin aylık tutarı.
 Tarayıcı demosunun adresi, dosyası, test tarihi ve demo kaydının yeri.
 Ödeme sağlayıcı ve link adresleri, şirket ve vergi levhası durumu, sözleşmenin sürümü ve doldurulma tarihi.
@@ -70,7 +70,7 @@ Yazan: araclari-kur, musteri-takip-sistemini-kur, aday-listesi-cikar, kanitini-h
 
 ### 8. Listeler
 Sıcak çevre: A listesindeki kişi sayısı, B listesindeki kişi sayısı, listenin çıkarıldığı tarih, hangi kaynaklardan tarandığı.
-Soğuk liste: çıkarılma tarihi, ham kayıt sayısı, elenen sayı, kalan sayı, kaç işletmenin sahibinin adı bulundu, kullanılan kategori adı ve kapsanan semtler.
+Soğuk liste: çıkarılma tarihi, ham kayıt sayısı, elenen sayı, kalan sayı, kaç işletmenin sahibinin adı bulundu, kullanılan kategori adı ve kapsanan ilçeler.
 En çok istenen yüz işletme: seçim tarihi, kaç kişi, hangi ölçütlerle seçildi.
 Yazan: tanidik-listesi-cikar, aday-listesi-cikar.
 
@@ -268,8 +268,8 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Çalışma saatleri:
 - Arama yapılacak numara:
 - Sesli mesaj metni:
-- Aday listesi programı, anahtar, kalan kredi, harcanan kredi:
-- On kayıtlık denemenin dosyası ve tarihi:
+- Veri servisi: bu ay alınan kayıt / tavan, son çekim (tarih, kategori, şehir, iş kimliği), yedek yol kullanıldı mı:
+- Sayım çekimleri (tarih, üç nişin iş kimlikleri, ilk nişten gelen kayıt sayısı):
 - Yapay zeka aboneliğinin aylık tutarı:
 - Tarayıcı demosunun adresi, dosyası, test tarihi ve demo kaydının yeri:
 - Ödeme sağlayıcı ve link adresleri:
@@ -280,7 +280,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 ## 8. Listeler
 
 - Sıcak çevre: A listesi kişi sayısı, B listesi kişi sayısı, çıkarılma tarihi, taranan kaynaklar:
-- Soğuk liste: çıkarılma tarihi, ham kayıt, elenen, kalan, sahibinin adı bulunan sayısı, kategori adı, kapsanan semtler:
+- Soğuk liste: çıkarılma tarihi, ham kayıt, elenen, kalan, sahibinin adı bulunan sayısı, kategori adı, kapsanan ilçeler:
 - Havuzun yeri (CRM açılana kadar `adaylar.csv`, sonra CRM; taşınma tarihi):
 - En çok istenen yüz işletme: seçim tarihi, kaç kişi, ölçütler:
 

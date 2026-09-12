@@ -332,7 +332,7 @@ Dört bölüm halinde yazarız, çünkü dördü farklı zamanlarda başlıyor.
 Bugünden itibaren:
 - Claude aboneliği. Claude, FounderOS'un üzerinde çalıştığı yapay zeka programı.
 - CRM ücretsiz. FounderOS'u aldığın için CRM de seninle geliyor, ayrıca ödeme yok.
-- Aday listesi çıkaran program (Apify). Ücretsiz planda ayda 5 dolar kredi veriyor. İletişim bilgisi veren araçta 1.000 kayıt 1,5 dolardan başlıyor; üçüncü blokta 800 kayıt çekiyorsun, yani 1,2 dolar. Kredinin içinde kalıyor, cebinden çıkmıyor.
+- Aday listesi ücretsiz. Listeyi FounderOS'un veri servisi çekiyor, FounderOS'u aldığın için seninle geliyor; bu satıra rakam girmez.
 
 İkinci bloktan itibaren:
 - İnternet adresi, yılda 10 ile 60 dolar arası.
@@ -352,7 +352,7 @@ Bölümlerin toplamı ayrı ayrı yazılır, çünkü hangi ay cebinden ne çık
 
 On ikinci sorunun cevabı bu tabloyu karşılamıyorsa liste kısılır. Nasıl kısılacağı bugün yazılır, o güne bırakılmaz. Üç basamak var ve hangisinde olduğunu senin verdiğin rakam belirler, ben sormam.
 
-**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Sadece iki kalem alınır: Claude aboneliği ve aday listesi çıkaran programın ücretsiz planı. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
+**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
 
 **Orta basamak: üç ile altı aylık masrafı karşılıyor.** Tablonun ilk iki bölümü alınır, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
 

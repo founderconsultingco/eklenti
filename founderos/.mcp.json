@@ -3,6 +3,10 @@
     "crm": {
       "type": "http",
       "url": "https://services.leadconnectorhq.com/mcp/anthropic/v2"
+    },
+    "veri": {
+      "type": "http",
+      "url": "https://founderos.so/mcp"
     }
   }
 }

@@ -13,7 +13,7 @@ Bu dosya FounderOS'un modüllerinin ne yaptığını anlatır; her modül aynı 
 Sistem ve dosyalar:
 - FounderOS: Berk'in kurduğu, doksan gün boyunca sana her sabah ne yapacağını söyleyen sistem. Bu dosyadaki her modülü o çalıştırır.
 - Modül: FounderOS'un belli bir işi yapan parçası (niş seçmek, mesaj yazmak, görüşmeyi yönetmek gibi). Sen modül adlarını bilmek zorunda değilsin; her sabah FounderOS'a "günaydın" yazarsın, o günün planı gelir, gerisini FounderOS seçer.
-- Arka plan yardımcısı: FounderOS'un ağır işleri (internetten canlı niş sayımı, görüşme kaydını okuma, aylık rapor) verdiği yardımcı; sen onu görmezsin, sonucu FounderOS anlatır. Aday listesini sen kendin çıkarıyorsun, o iş arka planda yapılmıyor.
+- Arka plan yardımcısı: FounderOS'un ağır işleri (niş doğrulama tablosunun kurulması ve rakip taraması, ideal müşteri araştırması, görüşme kaydını okuma, aylık rapor) verdiği yardımcı; sen onu görmezsin, sonucu FounderOS anlatır. Aday listesini yardımcı değil veri servisi çeker.
 - İş Beyni: Senin hakkında bilinen her şeyin yazıldığı tek dosya, senin bilgisayarında. On sekiz bölümü var: kurucu, hedef ve para, niş, teklif ve fiyat, teslimat, marka ve varlıklar, araçlar ve hesaplar, listeler, mesajlar ve kanıt, sayılar, kararlar, müşteriler, açık işler, aşama ve tamamlanma, bugünün listesi, taslaklar, takılmalar ve destek, ideal müşteri. Hiçbir satır silinmiyor; değişen bilginin yenisi tarihiyle altına yazılıyor.
 - Kurucu bölümü: İş Beyni'nde seni anlatan dört satır: seni ne motive eder, ne durdurur, daha önce nerede bıraktın, nerede düşme riskin var.
 - Marka kiti: İşinin nasıl görüneceğini tek yerde toplayan dosya: ad, logo, renkler, yazı tipleri, kullanım kuralları ve hazır şablonlar. Birinci gün kurulur, on panodan oluşur.
@@ -32,7 +32,7 @@ Sistem ve dosyalar:
 - Özel değerler: Senin ve her müşterinin CRM bölümünde ad, telefon, takvim linki gibi bilgilerin yazıldığı tek ekran; bütün mesajları ve sayfaları o satırlar doldurur.
 - Üç sorulu test: Müşterinin beşinci günündeki test: çalışıyor mu, kullanması iyi mi, randevuya çeviriyor mu.
 - Claude: FounderOS'un üzerinde çalıştığı yapay zeka programı; aylık ücreti maliyet tablosunda.
-- Aday listesi çıkaran program (Apify): İnternetten işletme listesi çeken program.
+- Veri servisi: FounderOS'un aday listesini senin yerine çeken parçası. Sunucuda çalışır; sen hesap açmazsın, anahtar görmezsin, para ödemezsin. Kategori ve şehir söylenir, temizlenmiş ve işaretlenmiş liste gelir. Aylık tavanı var.
 - Google Haritalar ve Meta Reklam Kütüphanesi: İşletmeleri saydığımız harita; Facebook ve Instagram'da kimin reklam verdiğini gösteren açık sayfa.
 - İYS: İleti Yönetim Sistemi; bir işletmenin insanlara toplu mesaj gönderebilmesi için gereken resmi izin kaydı.
 - KVKK: Kişisel Verilerin Korunması Kanunu; birinin adını, telefonunu ve bilgisini hangi izinle tutup kullanabileceğini söyleyen kanun. Formlardaki onay kutusu ve aydınlatma metni bu kanun için var.
@@ -95,7 +95,8 @@ Niş ve teklif:
 - İş bitti tarihi: Müşterinin kaydında, işletmenin iç bildirime "geldi" ve "bitti" demesiyle dolan tarih; yorum isteği, tekrar randevu ve ek hizmet zincirleri buradan sayar.
 - Kâr marjı: Kârın gelire bölümü; kari-hesapla her ay okur.
 - Tekrar eden gelir: Kurulum ücretleri hariç, her ay yeniden gelen aylık ücretlerin toplamı; sabit gideri bunun karşılaması gerekir.
-- Liste yolu: Aday listesini hangi programla çıkaracağın: liste çıkaran program ya da tarayıcı eklentisi; ikinci blokta sen seçersin, çünkü cebinden para çıkabilir.
+- Liste yolu: Aday listesinin nereden geldiği. Ana yol veri servisidir; servis kapalıysa ya da aylık tavan dolduysa yedek yol Claude'un tarayıcı eklentisidir. Seçim yok, sıra var.
+- Aylık tavan: Veri servisinin bir lisansa bir ayda verdiği en çok kayıt sayısı ve en çok çekim sayısı; ikisinden biri dolunca servis "tavan" der, gelecek ay açılır, o güne kadar yedek yol. Sayım çekimi kayıt tavanından düşmez ama çekim sayısına girer.
 - Parti: Eski müşteri listesine mesajların günde en çok doksan kişilik gruplar halinde gönderilmesi; bir gün bir parti.
 - Bugünün listesi: CRM açılana kadar CRM'in yerine geçen İş Beyni bölümü: günün adayları, sıradaki hareket, cevap bekleyenler, takip günü gelenler. CRM açıldığı gün bir kerede oraya taşınır.
 - Havuz: Arayabileceğin işletme sayısı; "havuz doksan güne yeter" demek, listede doksan gün boyunca arayacak kadar işletme var demek.
@@ -211,7 +212,7 @@ Prova ve analiz:
 - Saha bloğu: Aramanın ve mesajın yapıldığı pencere. Tam zamanlıda 10.00-12.00 ve 14.00-17.00; işin yanında çalışanda 18.00-20.30 ve cumartesi 10.00-13.00.
 - Akşam bloğu: Kaydın, sayı okumanın, analizin ve provanın penceresi. Tam zamanlıda 17.00-18.30; işin yanında çalışanda 21.00-22.00.
 - Kurulum bloğu: Müşteriyle yapılan görüşmelerin penceresi; saatini müşteri belirler, işin yanında çalışanda akşam ya da hafta sonu olur ve bu müşteriye baştan söylenir.
-- Bütçe merdiveni: Birinci günde belirlenen üç basamak; elindeki paraya göre hangi aracın hangi güne kadar bekleyeceğini söyler. Alt basamakta sadece iki kalem alınır, saha yine beşinci bloğun sonunda açılır.
+- Bütçe merdiveni: Birinci günde belirlenen üç basamak; elindeki paraya göre hangi aracın hangi güne kadar bekleyeceğini söyler. Alt basamakta tek kalem alınır (Claude aboneliği), saha yine beşinci bloğun sonunda açılır.
 - Havale yolu: Şirketin henüz yokken parayı tahsil etme yolu. Hesap bilgisi, tutar ve açıklama satırı tek mesajda gider. Ödeme linkiyle eşit derecede geçerlidir, yedek değildir.
 - İnanç değişimi: Öğrencinin vazgeçmesine yol açan bir cümleyi çürüten hazır karşılık. On sekizi bir bankada duruyor, ana yönetici gerektiğinde birini öğrencinin kendi rakamıyla söyler.
 - Aday denetimi: Bir işletmeye ulaşmadan önce, o işletmenin müşterisini nerede kaçırdığını dışarıdan bakarak çıkarma işi. İki hâli var: iki dakikalık hızlı denetim ve sekiz dakikalık derin denetim.
@@ -224,9 +225,7 @@ Prova ve analiz:
 - Bugünün sahası: FounderOS'un her sabah hazırladığı, o gün temas edilecek adayların sıralı listesi. Sıralamayı FounderOS kuruyor; CRM'de hazır böyle bir ekran yok.
 - Ara rapor: Teslimin sekizinci ve on dördüncü gününün akşamında müşteriye giden üç satırlık durum mesajı: kaç kişiye ulaşıldı, kaç cevap geldi, kaç randevu yazıldı.
 - Ekran görüntüsü yolu: İngilizce bir ekranda tarif edilen düğme bulunamadığında kullanılan yol; öğrenci ekranın görüntüsünü atar, FounderOS bakıp hangi düğme olduğunu söyler.
-- Google Haritalar aracı: Aday listesini çıkaran program. İşletme adı, telefon, e-posta, site, sosyal medya hesabı, puan ve yorum sayısı veriyor.
-- Instagram aracı: Instagram'daki işletmeleri bulup listeleyen program. Telefon ve e-posta vermiyor, o yüzden çıkardığı liste yazı yolu listesidir.
-- Tarayıcı eklentisi: Apify kullanmak istemeyen öğrencinin Google Haritalar'ı elle taramak için kullandığı yol. Daha yavaş, ama parasız.
+- Tarayıcı eklentisi: Veri servisi çalışmadığında Google Haritalar'ı elle taramak için kullanılan yedek yol. Daha yavaş, e-posta gelmiyor, ama yolu açık tutuyor.
 
 ## Kalıp (her modül için sabit)
 

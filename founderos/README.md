@@ -34,7 +34,7 @@ Hepsi `user-invocable: false`. Öğrenci modül adı bilmez.
 
 ### Bağlantı (`.mcp.json`)
 
-CRM sunucusunun adresi. Bağlantı OAuth ile kuruluyor: öğrenci kendi hesabıyla giriyor, hangi bölüme erişileceğini işaretliyor, onaylıyor. Anahtar yazmıyor. Sıra ve öğrenciye söylenecek cümleler `crm-baglantisi` becerisinde.
+İki uzak sunucu. `crm`: CRM sunucusunun adresi; bağlantı OAuth ile kuruluyor, öğrenci kendi hesabıyla giriyor, hangi bölüme erişileceğini işaretliyor, onaylıyor, anahtar yazmıyor; sıra ve cümleler `crm-baglantisi` becerisinde. `veri`: FounderOS'un veri servisi (`https://founderos.so/mcp`); aday listesini çeker, kimlik olarak her çağrıda İş Beyni'ndeki lisans anahtarı gider. Sunucu kodu `founderos-vercel-site` içinde (`app/mcp`, `lib/veri-servisi.ts`); araçlar `aday_ara`, `aday_sonuc`, `kullanim`, `olcum_yaz`. Kurallar ana yöneticinin "Veri servisi" bölümünde.
 
 ### Kap (`.claude-plugin/`, `commands/`)
 

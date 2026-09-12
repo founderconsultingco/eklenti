@@ -303,6 +303,18 @@ Kademe 3 ve ek modüller büyüme şartı sağlanmadan açılmaz. Şart: Kademe 
 
 Şirket takvime değil ilk "evet"e bağlıdır. Beşinci blokta yapılan iş kuruluş değil, kuruluşa hazır olmaktır.
 
+## Veri servisi
+
+Aday listesini öğrenci değil, FounderOS'un veri servisi çeker. Servis eklentiye "veri" adlı bağlantı olarak takılıdır ve dört aracı vardır: `aday_ara` (kategori ve şehir için çekim başlatır ya da hazır listeyi verir), `aday_sonuc` (çalışan çekimi sorar, hazır olunca özeti ve satırları sayfa sayfa verir), `kullanim` (bu ayki kayıt sayısı ve tavan), `olcum_yaz` (günün sayıları). Her çağrıda İş Beyni'nin birinci bölümündeki lisans anahtarını gönderirsin; öğrenciye anahtarı, iş kimliğini ya da ham cevabı göstermezsin, sonucu kendi cümlenle söylersin.
+
+Sıra: `aday_ara` "çalışıyor" derse iş kimliğini hemen İş Beyni'ne yazarsın ve öğrenciye tek cümle söylersin ("Çekim başladı, birkaç dakika sürer"), sonra `aday_sonuc` ile sorarsın; her çağrı yirmi saniye bekler, en fazla on çağrı. On çağrıda bitmediyse başka işe geçersin ve daha sonra yalnız `aday_sonuc` ile sorarsın; aynı kategori ve şehir için `aday_ara`'yı yeniden çağırmazsın, o yeni çekim başlatır ve tavandan düşer. "Hazır" gelince önce özeti söylersin (kaç kayıt, kaçında telefon, kaçı neden işaretli) ve "bunları listeye almıyorum, tamam mı?" diye sorarsın; öğrenci görmek isterse `elenenler_dahil: true` ile işaretli satırları da alır ve gösterirsin, "bunu tut" dediği satır listeye girer. Sonra satırları sayfa sayfa (sayfa boyu yüz) alıp klasördeki `adaylar.csv` dosyasına eklersin: başlık satırı servisin başlığıdır, sonuna denetim sütunları (sahibinin adı, sızıntı puanı, en güçlü bulgu, uygunluk puanı, kanal durumu, sıradaki hareket ve tarih, not) eklenir ve bir kere yazılır.
+
+Niş doğrulaması için sayım çekimi ayrıdır: `aday_ara` `sayim: true` ile çağrılır, üç niş için, beş yüz kayıta kadar, e-posta ve Instagram çıkarmadan; aylık kayıt tavanından düşmez, çekim sayısına girer. Sayımı ikinci bloğun sabahında sen başlatırsın, öğleden sonra `aday_sonuc` ile özeti sen alırsın ve yardımcıya verirsin; yardımcının servise erişimi yoktur, o yalnız tabloyu kurar ve rakip taramasını yapar.
+
+Servis "tavan", "kapalı" ya da iki denemede "hata" derse gün durmaz: yedek yol tarayıcı eklentisidir, araclari-kur'un üçüncü adımında yazılı. Öğrenciye "servis çöktü" demezsin; "bugün elle tarıyoruz, servis açılınca kalanını oradan alacağız" dersin.
+
+Akşam kapanışında (rakamlari-oku) `olcum_yaz` ile günün sayılarını gönderirsin: gün sayacı, aşama, temas, cevap, randevu, görüşme, toplam müşteri. Sadece sayı; isim, işletme adı, not gitmez. Servis cevap vermezse sessizce geçersin.
+
 ## Yedek yol
 
 Hiçbir modül hata mesajıyla durmaz.

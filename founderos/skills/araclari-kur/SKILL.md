@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: araclari-kur
-description: "İkinci gün. Hesaplar, e-posta, alan adı, randevu yolu, liste çıkaran program. CRM açıldığı gün son kez çalışır. Bir araç bağlanmadığında da buraya bakılır."
+description: "İkinci gün. Hesaplar, e-posta, alan adı, randevu yolu, veri servisinin ilk çalıştırılması. CRM açıldığı gün son kez çalışır. Bir araç bağlanmadığında da buraya bakılır."
 ---
 
 # araclari-kur
@@ -20,13 +20,13 @@ Neden bu kadar az program: bir kişilik işi öldüren şey program eksikliği d
 - Sayfanın yayına alınması (siteni-kur, bugün, araçlardan sonra).
 - Parayı senin adına tahsil edecek şirketin seçimi (onay-belgesini-hazirla, üçüncü blok). Başvuru şirket kurulup vergi levhası gelince gidiyor, yani ilk "evet"ten sonra.
 - Tarayıcı demosu (kanitini-hazirla, dördüncü blok; FounderOS kurar, ücretsiz).
-- Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok). Bugün sadece o listeyi hangi yolla çıkaracağını seçiyor ve seçtiğin yolu deniyoruz.
+- Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok). Bugün sadece listeyi çeken servisi çalıştırıp on kaydı görüyoruz.
 - Müşterinin sistemi (musteri-sistemini-kur, müşteri geldiğinde).
 
 Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını deniyor. Bizimki dört araç.
 
 ## 2. Ne zaman çalışır
-- İkinci blok, sabah bloğu, üç saat. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan iki oturuş. Bugün açılan hesaplar: WhatsApp iş hesabı, alan adı ve yayın servisi (siteni-kur'un yayın adımında), iş e-postası, liste çıkaran program, takvim. Liste çıkaran programın anahtarı bugün İş Beyni'ne yazılır ki yarınki çekim yirmi dakikada bitsin.
+- İkinci blok, sabah bloğu, üç saat. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan iki oturuş. Bugün açılan hesaplar: WhatsApp iş hesabı, alan adı ve yayın servisi (siteni-kur'un yayın adımında), iş e-postası, takvim. Aday listesi için hesap açılmıyor: liste FounderOS'un veri servisinden geliyor; bugün üç niş için sayım çekimi başlatılır ve on kayıt ekranda görülünce yolun açık olduğu anlaşılır.
 - Aynı gün, sırayla: dün hazırlanan sayfanın yayına alınması, randevu yolu, takip hattı.
 - **CRM bugün kurulmuyor.** Hesap başlangıç görüşmesinde açılıyor; o güne kadar CRM'siz mod varsayılan yoldur, yedek yol değil. İş Beyni'nin "Bugünün listesi" bölümü bugün açılır ve adayların, randevuların, takiplerin yeri orasıdır. Öğrenciye "CRM yok" denmez; "CRM'in görüşmede açılınca listeni oraya taşıyacağız" denir ve geçilir.
 - **CRM açıldığı gün** bu modül son bir kez çalışır: bağlantı kurulur, randevu takvimi açılır, özel değerler doldurulur ve İş Beyni'ndeki liste bir kerede aktarılır. Bir saat sürer, o günün ilk işidir ve o günün planının önüne geçer. Sonra musteri-takip-sistemini-kur çalışır.
@@ -36,17 +36,15 @@ Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını den
 
 İş Beyni'nden: kendi adın, şehrin, telefon numaran, şu an kullandığın kişisel e-posta adresin, çalışma düzenin, aylık masraf tablosu, bütçe merdiveninin hangi basamağında olduğun, gelir planındaki günlük temas hedefin.
 
-Bir de üçüncü bölümden nişini ve şehrini; liste yolunun denemesi onlarla yapılır. Kesin fiyat bir sonraki blokta; bugünün işi ondan bağımsız.
+Bir de üçüncü bölümden nişini, iki yedek nişi ve şehrini; sayım çekimi onlarla yapılır. Kesin fiyat bir sonraki blokta; bugünün işi ondan bağımsız.
 
 ## 4. Ne sorar
 
-Dört şey sorar:
-- Bilgisayarın Mac mi Windows mu. Kurulum dosyası ikisinde farklı.
+İki şey sorar:
 - Arama yapacağın numara hangisi: her gün kullandığın hattın mı, yoksa ayrı bir hattın mı var. Ayrı hattın varsa iş aramaları oradan gider ve numara CRM'e o yazılır.
 - Kredi kartın var mı.
-- Yarınki aday listesini hangi yolla çıkaracaksın: liste çıkaran programla mı, Claude'un tarayıcı eklentisiyle mi. Bu soruyu bugün soruyorum çünkü birinci yolda senin cebinden para çıkıyor ve o kararı senin adına vermiyorum.
 
-Başka bir şey sormaz. Hangi programın kurulacağı, hangisinin kurulmayacağı sorulmaz, söylenir. Tek istisna liste yolu, sebebi de para.
+Başka bir şey sormaz. Hangi programın kurulacağı, hangisinin kurulmayacağı sorulmaz, söylenir. Aday listesinin nereden geleceği de sorulmaz: veri servisinden gelir, seçenek yok.
 
 ## 5. Ne yapar
 
@@ -56,7 +54,7 @@ Başka bir şey sormaz. Hangi programın kurulacağı, hangisinin kurulmayacağ�
 
 **İki: senin CRM bölümün.** CRM'in içinde sana ayrılan yer; bugün açılmıyor, başlangıç görüşmende birlikte açılacak. FounderOS'u aldığın için ücretsiz, ayrı ödeme yok. Kiminle konuştuğun, ne konuştuğun, kimin randevusu ne zaman, o günden sonra hepsi orada tutulacak; o güne kadar İş Beyni'nin "Bugünün listesi" bölümünde. Müşteri kazandığında her müşteri için ayrı bir bölüm daha açılacak; onlara müşteri bölümü diyoruz, karıştırma.
 
-**Üç: aday listesini çıkaracağın yol.** İki seçenek var ve bugün birini seçiyorsun: liste çıkaran program (Apify) ya da Claude'un tarayıcı eklentisi. Yarının listesi seçtiğin yoldan çıkacak. Seçimi ve kurulumu üçüncü adımda yapıyorsun.
+**Üç: veri servisi.** Aday listesini senin yerine çeken parça. FounderOS'un içinde, sunucuda çalışıyor; hesap açmıyorsun, anahtar görmüyorsun, para ödemiyorsun. Kategori ve şehir söyleniyor, temizlenmiş liste geliyor. Bugün üçüncü adımda çalıştırıp on kaydı gözünle görüyorsun. Servisin aylık bir tavanı var; dolarsa ya da servis kapalıysa yedek yol Claude'un tarayıcı eklentisidir, o da üçüncü adımda yazılı.
 
 **Dört: kendi telefonun ve şu an kullandığın Google hesabın.** İkisi de zaten var, yenisi alınmıyor.
 
@@ -116,52 +114,28 @@ Türkiye notu: CRM'in numara verdiği ülkeler listesinde Türkiye yok, yani bur
 
 İkinci Türkiye notu: mesajlar SMS'ten gitmiyor. Sebebi bizim tercihimiz değil: Türkiye'de yurt dışından gelen ve içinde link olan SMS'ler engelleniyor. Bu yüzden yazılı her şey WhatsApp'tan ve e-postadan gidiyor.
 
-### Adım 3: liste yolunu seç ve kur (1 saat)
+### Adım 3: veri servisini çalıştır (15 dakika)
 
-Yarın beş yüz kişilik aday listesi çıkaracaksın. O liste iki yoldan biriyle çıkıyor ve hangisi olduğuna bugün karar veriyorsun. Kararı sen veriyorsun çünkü birinci yolda cebinden para çıkıyor; bunun dışında bugün hiçbir şeyi sana sormuyorum.
+Yarın beş yüz kişilik aday listesi çıkacak ve o listeyi FounderOS'un veri servisi çekecek. Bugün iki şey oluyor: servisin senin için çalıştığını gözünle görüyorsun ve öğleden sonraki pazar doğrulaması için üç nişin sayım çekimi başlıyor.
 
-**Birinci yol: liste çıkaran program (Apify).** Google Haritalar'a senin yerine bakan ve bulduklarını tabloya yazan program. Bir kategori ve bir şehir yazıyorsun; işletme adı, adres, telefon, web sitesi, e-posta, sosyal medya hesapları, puan, yorum sayısı, kategoriler ve çalışma saatleri geliyor. Yirmi dakikada sekiz yüz kayıt çıkıyor.
+Senin yaptığın bir şey yok. Hesap açmıyorsun, anahtar kopyalamıyorsun, İngilizce ekran görmüyorsun. Sıra şu:
 
-**İkinci yol: Claude'un tarayıcı eklentisi.** Hesap açmıyorsun, para harcamıyorsun. Google Haritalar'ı sen açıyorsun, eklenti işletme kartlarındaki bilgiyi tabloya yazıyor. Üç saatte yaklaşık yüz işletme çıkıyor ve e-posta gelmiyor; o sütunu sonradan elle dolduruyorsun.
+1. FounderOS üç niş için sayım çekimini başlatır: birinci nişin ve iki yedeğin kartındaki Haritalar kategori adı, İş Beyni'ndeki şehrin. Sayım çekimi beş yüz kayıta kadar sayar, e-posta ve Instagram çıkarmaz; aylık kayıt tavanından düşmez, yalnız çekim sayısına girer.
+2. Çekim birkaç dakika sürer. FounderOS bekleme cümlesini söyler ve bu sırada bir sonraki adıma geçer; sonucu öğleden sonra pazar doğrulamasında okur.
+3. İlk niş hazır olduğunda FounderOS on kaydı ekrana getirir: kısa ad, telefon, site. Telefon sütunu doluysa yol açık. Bu on kayıt liste değil, kanıt; liste yarın çıkıyor.
 
-Verimli olan birincisi ve sebebi tek cümle: üç saatlik elle tarama yerine yirmi dakika, üstüne e-posta ve sosyal medya hesabı. Saha açılınca her gün e-posta atacaksın; ikinci yolda o sütunu elinle dolduruyorsun. Ama para senin cebinden çıkıyor, o yüzden son sözü sen söylüyorsun. Seçtiğin yol İş Beyni'ne yazılıyor ve üçüncü gün o yoldan yürüyor.
+Aylık tavanı şimdi söylüyorum ki sonra sürpriz olmasın: servis bir ayda belli sayıda kayıt veriyor, yarınki sekiz yüz kayıt ve ay içindeki genişletmeler bu tavanın içinde kalıyor. Tavan dolarsa FounderOS söyler ve o ayın kalanında yedek yol çalışır; gelecek ay servis yeniden açılır.
 
-Para tarafı, birinci yolu seçersen:
-- Ücretsiz plan ayda 5 dolar kredi veriyor ve kredi kartı istemiyor.
-- Google Haritalar aracında 1.000 kayıt 1,5 dolardan başlıyor. Üçüncü blokta 800 kayıt çekiyorsun, yani o günün tutarı 1,2 dolar.
-- Nişin yazı yolundan yürüyorsa aynı gün Instagram aracı da kullanılıyor: ücretsiz planda 1.000 sonuç 2,70 dolar.
-- İkisi birlikte 3,90 dolar. Aylık 5 dolarlık ücretsiz kredinin içinde kalıyor, cebinden para çıkmıyor.
-- Fiyat "başlıyor" diyor, bazı ayarlarda üstüne çıkabiliyor. Çıksa da beş doların yanında küçük kalıyor.
-- Ekranda yorumları da çekme seçeneği göreceksin. İşaretleme. Yorum çekmek maliyeti artırıyor ve ne kadar artıracağını kesin söyleyemem: fiyat çekilen yorum sayısına göre işliyor, her işletmenin yorumu farklı ve bilmediğim rakamı sana söylemem. Yorumlara üçüncü blokta gözünle bakıyorsun.
+**Yedek yol: Claude'un tarayıcı eklentisi (yalnız servis kapalıysa ya da tavan dolduysa)**
 
-Bu tutarlar dolar. Masraf tablosuna yazarken yanına o günkü Merkez Bankası kuruyla TL karşılığını sen yazıyorsun.
-
-**Birinci yolu seçtiysen: hesap ve 10 kayıtlık deneme**
-
-Bu programın ekranı İngilizce ve öyle kalacak. Sana hiçbir zaman "İngilizce ekranı oku" demeyeceğim; her düğmede ekranda yazan metni, ne demek olduğunu ve nerede durduğunu birlikte vereceğim. Tarif ettiğim düğmeyi ekranda bulamazsan tek yol var ve o yol her zaman açık: ekranın görüntüsünü al, buraya at, hangisi olduğunu söylerim. Bunu bir kez söylüyorum, her adımda tekrarlamayacağım. Tarayıcının çeviri özelliğini açma; çeviri düğme adlarını değiştiriyor ve bir sonraki adımda tarif ettiğim yazı ekranda kalmıyor.
-
-1. apify.com adresine git. Sağ üstte "Sign up" yazan düğmeye bas, ücretsiz hesabı aç.
-2. Sol menüde "Store" (araç mağazası) yazan bölümü aç. Mağaza, hazır programların durduğu yer.
-3. Üstteki arama kutusuna şunu yaz: Google Maps Scraper. Çıkan sonuçlardan geliştiricisi Compass olanı seç; adresi apify.com/compass/crawler-google-places.
-4. Araç sayfasında ayar ekranını açan düğmeye bas; sayfanın üst tarafında durur ve üstünde "Try for free" (ücretsiz dene) yazar.
-5. Ayarları gir: arama kelimesi olarak kendi şehrin ve nişin ("Bursa klima servisi" gibi; nişin dün seçildi, üçüncü bölümde yazıyor), ülke Türkiye, dil Türkçe, sonuç sayısı 10. Kutuların adları İngilizce; hangi kutunun hangisi olduğunu çıkaramazsan ekran görüntüsünü at.
-6. Sağ altta "Start" yazan düğmeye bas. Bir iki dakika sürer.
-7. Bitince sonuç ekranında "Export" yazan düğmeye bas ve Excel'i seç. CSV seçersen Türkçe harfler bozuk görünüyor.
-8. Dosyayı aç. Telefon sütunu dolu mu, web sitesi sütunu dolu mu, ona bak.
-9. Programın anahtarını al: sol menünün altındaki "Settings" içinde "Integrations" yazan bölüm. Anahtar orada "Personal API tokens" (kişisel bağlantı anahtarları) başlığının altında duruyor, kopyala. Anahtar, bu programı FounderOS'un senin yerine çalıştırabilmesi için gereken şifredir.
-
-Amaç liste toplamak değil, programın çalıştığını gözünle görmek. 10 kayıt kredinden fark edilmeyecek kadar az düşüyor.
-
-**İkinci yolu seçtiysen: tarayıcı eklentisinin kurulumu**
-
-Bu yolda bugün hesap açmıyorsun, kart vermiyorsun ve masraf tablosuna liste kalemi girmiyor.
+Bu yolda hesap açmıyorsun, kart vermiyorsun. Google Haritalar'ı sen açıyorsun, eklenti işletme kartlarındaki bilgiyi tabloya yazıyor. Üç saatte yaklaşık yüz işletme çıkıyor ve e-posta gelmiyor; o sütunu hızlı denetimde elle dolduruyorsun. Yavaş yol, o yüzden yalnız servis çalışmadığında.
 
 1. Chrome tarayıcısını aç. Eklenti Chrome için çalışıyor; bilgisayarında yoksa önce Chrome'u kur.
 2. Tarayıcının eklenti mağazasında Claude'un tarayıcı eklentisini bul ve tarayıcına ekle.
 3. Eklentiyi aç ve Claude hesabınla gir. FounderOS'u kullandığın hesabın aynısı.
 4. Eklenti hangi sitelerde çalışacağını soruyor. Google Haritalar'a izin ver. İzin vermediğin sitede eklenti hiçbir şey yapmıyor.
 5. Denemesi: Google Haritalar'ı aç, kendi şehrinde kendi nişini arat ("Bursa klima servisi" gibi), eklentiye ilk on işletmenin adını, telefonunu ve web sitesini bir tabloya yazdır. Tablo geldiyse yol açık.
-6. Bu ekranların bir kısmı İngilizce. Aynı kural burada da geçerli: tarif ettiğim yeri bulamazsan ekran görüntüsünü at, bakarım. Çeviriyi açma.
+6. Bu ekranların bir kısmı İngilizce. Tarif ettiğim yeri bulamazsan ekran görüntüsünü at, bakarım. Tarayıcının çeviri özelliğini açma; çeviri düğme adlarını değiştiriyor.
 
 ### Adım 4: kalan yarım saat
 
@@ -188,17 +162,15 @@ Bu beşine uyduğun sürece bu konuyu bir daha düşünmene gerek yok.
 
 Birinci günde bütçe merdiveninin hangi basamağında olduğunu yazdık. Hangi kalemin hangi gün alınacağını o basamak söylüyor, ben o satırı okuyorum, sen bir şey yapmıyorsun.
 
-**Alt basamak.** Bugün sadece iki kalem: Claude aboneliği ve liste çıkaran programın ücretsiz planı. Ücretsiz kredinin dışına çıkan hiçbir şey yapılmıyor; kredi biterse ay dolana kadar tarayıcı eklentisi yolundan yürüyorsun. Bugün internet adresi ve iş e-postası alınmıyor, site ücretsiz adresle yayına çıkıyor ve kendi adresin ilk kanıttan sonra alınıyor. Tarayıcı demosu ücretsiz, dördüncü blokta FounderOS kurar. Sahaya çıkış yine beşinci bloğun sonunda.
+**Alt basamak.** Bugün tek kalem: Claude aboneliği. Aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. Bugün internet adresi ve iş e-postası alınmıyor, site ücretsiz adresle yayına çıkıyor ve kendi adresin ilk kanıttan sonra alınıyor. Tarayıcı demosu ücretsiz, dördüncü blokta FounderOS kurar. Sahaya çıkış yine beşinci bloğun sonunda.
 
-**Orta basamak.** Bugün aynı iki kalem. Bugün internet adresi ve iş e-postası alınıyor. Sistemin varsaydığı normal yol bu.
+**Orta basamak.** Bugün aynı tek kalem. Bugün internet adresi ve iş e-postası alınıyor. Sistemin varsaydığı normal yol bu.
 
 **Üst basamak.** Sıra değişmiyor. Fazla para hiçbir kalemi öne çekmiyor, erken alınan araç sahaya çıkışı hızlandırmıyor. Değişen tek şey beşinci blokta şirket belgelerinin tamamen hazır durması.
 
-Üç basamakta da liste yolu senin kararın. Alt basamaktaki öğrenci de birinci yolu seçebilir, çünkü o yolun tutarı ücretsiz kredinin içinde kalıyor ve cebinden para çıkmıyor.
-
 ### Bugün cebinden ne çıkıyor
 
-Liste yolu 0. Birinci yolu seçtiysen ücretsiz planda kalıyorsun ve kart istemiyor; ikinci yolu seçtiysen zaten ödeme yok. Telefon ve Google hesabı zaten var.
+Aday listesi 0. Veri servisi FounderOS'un içinde, ayrı ödeme yok. Telefon ve Google hesabı zaten var.
 
 CRM de ücretsiz. FounderOS'u aldığın için CRM seninle geliyor, ayrı ödeme yok.
 
@@ -206,30 +178,30 @@ Geriye tek kalem kalıyor: Claude aboneliği. Tutarını ödeme ekranında göre
 
 ## 6. Ne söyler
 
-Açılışta: "Bugün üç saat, dört araç. Alet almıyoruz. Dün kurduğun işin hesaplarını açıyoruz ve öğleden sonra sayfan internete çıkıyor. Bir sonraki blokta aday listesini çıkaracaksın; o listeyi hangi yolla çıkaracağını bugün seçip deniyoruz."
+Açılışta: "Bugün üç saat, dört araç. Alet almıyoruz. Dün kurduğun işin hesaplarını açıyoruz ve öğleden sonra sayfan internete çıkıyor. Bir sonraki blokta aday listesini çıkaracaksın; listeyi çeken servisi bugün çalıştırıp on kaydı gözünle görüyorsun."
 Daha çok program isterse: "Hayır. Yedi program alan kişi haftalarca o programları birbirine bağlamakla uğraşıyor ve o sürede kimseyi aramıyor. Dört araç yeter."
 Programları birbirine bağlayan araç isterse: "Müşterin yok. Müşterin yokken bunu kurmak, boş dükkânın kasasını süslemek. CRM'in kendi akışları zaten var."
 İnternet adresi almak isterse: "Bugün, araçların arkasından. Merdivenin alt basamağındaysan bugün almıyorsun; site ücretsiz adresle çıkıyor, kendi adresini ilk kanıttan sonra alıyorsun."
-Liste yolunu seçerken: "İki yol var. Liste çıkaran program yirmi dakikada sekiz yüz kayıt veriyor, e-posta ve sosyal medya hesabı da geliyor, tutarı 1,2 dolar ve kredin ayda 5 dolar. Tarayıcı eklentisi üç saatte yüz işletme veriyor, para gitmiyor ama e-posta da gelmiyor. Sana soruyorum çünkü para senin cebinden çıkıyor. Hangisi?"
-Liste programı ücretli mi derse: "Ücretsiz planda kalıyorsun ve kart istemiyor. Üçüncü bloğun 800 kaydı 1,2 dolar, Instagram'ı da kullanırsan üstüne 2,70 dolar; ayda 5 dolarlık kredin var, ikisi de içinde kalıyor."
+Listeyi nereden çektiğimi sorarsa: "Google Haritalar'dan, FounderOS'un kendi veri servisiyle. Hesap açmıyorsun, anahtar yok, ücret yok. Servisin aylık bir tavanı var; dolarsa söylerim, o ayın kalanında tarayıcı eklentisiyle elle devam ederiz."
+Listeyi kendisi çekmek isterse: "Gerek yok. Servis birkaç dakikada sekiz yüz kayıt çekiyor, tekrarları ve kapalı işletmeleri işaretliyor, siteden e-posta ve Instagram çıkarıyor. Senin işin silme onayı vermek."
 İngilizce ekranda takılırsa: "Ekranın görüntüsünü at, hangi düğme olduğunu söylerim. Tarayıcının çevirisini açma; çeviri düğme adlarını değiştiriyor ve bir sonraki adımda tarif ettiğim yazıyı ekranda bulamıyorsun."
 Türkiye numarası isterse: "CRM'in numara verdiği ülkelerde Türkiye yok. Sen zaten kendi telefonundan arıyorsun, bu bir eksik değil."
 Bugün eksik hissederse: "Eksik değil, erken. Bugün üç saat; yarın kesin fiyat ve aday listesi."
-Bitince: "Üç araç kurulu, CRM bölümün görüşmede açılacak, liste yolun belli. Şimdi sayfan yayına çıkıyor; akşam tanıdık listeni çıkarıyoruz. Devam edelim mi?"
+Bitince: "Üç araç kurulu, CRM bölümün görüşmede açılacak, veri servisi çalışıyor. Şimdi sayfan yayına çıkıyor; akşam tanıdık listeni çıkarıyoruz. Devam edelim mi?"
 
 ## 7. Ne yazar
 
-İş Beyni'ne: CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, seçtiğin liste yolu ve seçim tarihi, birinci yolu seçtiysen hesabın ve kalan kredi ile liste çıkaran programın anahtarı, ikinci yolu seçtiysen eklentinin kurulduğu tarayıcı ve verilen izinler, denemenin dosyası ve tarihi, sesli mesaj metni, WhatsApp iş hesabının numarası ve karşılama metni, Claude aboneliğinin aylık tutarı, bütçe merdiveninin bu basamağında hangi kalemin hangi güne ertelendiği.
+İş Beyni'ne: CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, veri servisinin sayım çekimleri (tarih, üç nişin iş kimlikleri, ilk nişten gelen kayıt sayısı), yedek yola geçildiyse eklentinin kurulduğu tarayıcı ve verilen izinler, sesli mesaj metni, WhatsApp iş hesabının numarası ve karşılama metni, Claude aboneliğinin aylık tutarı, bütçe merdiveninin bu basamağında hangi kalemin hangi güne ertelendiği.
 
-Aylık masraf tablosuna: Claude aboneliğinin tutarı ve yanına o günkü kurla TL karşılığı. Liste yolu için bugün rakam girmiyorsun: birinci yolda kalem 0, tutar ücretsiz kredinin içinde kalıyor; ikinci yolda kalem hiç açılmıyor. Ertelenen kalemler tabloda kendi bölümlerinde duruyor ve hangi güne ertelendikleri yanlarına yazılıyor.
+Aylık masraf tablosuna: Claude aboneliğinin tutarı ve yanına o günkü kurla TL karşılığı. Aday listesi için kalem açılmıyor; veri servisi FounderOS'un içinde. Ertelenen kalemler tabloda kendi bölümlerinde duruyor ve hangi güne ertelendikleri yanlarına yazılıyor.
 
 ## 8. Yedek yol
 
 - CRM açıldığı gün giriş tutmazsa: gün durmaz, CRM'siz mod devam eder ve ertesi gün tekrar denenir. Aktarma bir kere yapılıyor, acelesi yok.
-- Liste programının hesabı açılmazsa ya da deneme boş dönerse: ikinci yola geçilir, tarayıcı eklentisi bugün kurulur. Bu bir aksama değil, zaten iki yoldan biri.
+- Veri servisi "kapalı" ya da "tavan" derse ya da sayım çekimi iki denemede de hata verirse: yedek yol, tarayıcı eklentisi bugün kurulur. Servis açılınca liste yine servisten çekilir.
 - Tarayıcı eklentisi de kurulmazsa: üçüncü bloğa kadar vaktin var, o gün elle yazma yoluna düşülür. Bir tabloya beş sütun açarsın (işletme adı, telefon, web sitesi, semt, not), Google Haritalar'da kategoriyi ve semti aratırsın, çıkan her işletmeden bu bilgileri tabloya yazarsın. 100 işletme yaklaşık üç saat sürüyor.
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
-- Kredi kartın yoksa: liste çıkaran program ücretsiz planda kart istemiyor, tarayıcı eklentisi zaten istemiyor, CRM ücretsiz. Geriye Claude aboneliği kalıyor; bankaların çoğu mobil uygulamasından sanal kart veriyor, hesabın olan bankadan başla. Hesabın yoksa ön ödemeli kart alıp yükleyebiliyorsun.
+- Kredi kartın yoksa: aday listesi ve CRM FounderOS'la geliyor, kart istemiyor. Geriye Claude aboneliği kalıyor; bankaların çoğu mobil uygulamasından sanal kart veriyor, hesabın olan bankadan başla. Hesabın yoksa ön ödemeli kart alıp yükleyebiliyorsun.
 - Bilgisayarın yoksa: bugünün işlerinin çoğu telefondan yapılabiliyor ama siteyi yayına almak için bilgisayar şart. Yayın bir gün kayarsa saha yine açılır.
 - İnternetin kesikse: modül ertesi güne kayar, blok bir gün uzar, saha yine açılır.
 
@@ -239,11 +211,10 @@ Sıradaki: aynı gün, sayfanın yayını (siteni-kur), sonra pazar doğrulamas�
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Başlangıç görüşmesi yapıldı ama CRM hâlâ açılmadı: bu bir destek konusudur, öğrencinin işi değil. Desteğe aktarılır, öğrenci CRM'siz modda devam eder.
-- Liste yolu seçilmedi: üçüncü bloğun ilk yarım saati buna gider ve o günün akışı kayar.
-- Birinci yol seçildi ama deneme yapılmadı ya da anahtar alınmadı: niş doğrulaması elle sayım yoluna düşer, işaret üçüncü bloğa kadar açık kalır.
-- İkinci yol seçildi ama eklenti kurulmadı ya da Google Haritalar'a izin verilmedi: aynı işaret açılır, kurulum üçüncü bloktan önceki ilk boş saate yazılır.
+- Sayım çekimi başlatılmadı: niş doğrulaması elle sayım yoluna düşer; çekim üçüncü bloktan önceki ilk boş saatte başlatılır.
+- Servis kapalıyken tarayıcı eklentisi kurulmadı ya da Google Haritalar'a izin verilmedi: kurulum üçüncü bloktan önceki ilk boş saate yazılır.
 - Google takvimine çalışma saatleri işaretlenmedi: ertesi sabahın ilk beş dakikası.
 - Masraf tablosuna Claude aboneliğinin tutarı girilmedi: gelir planı eksik hesaplıyor demektir, ilk kâr hesabında sorulur.
 - İkinci blokta üç saat aşıldı ve hâlâ program araştırılıyor: modül kapanır, kalan ne varsa üçüncü bloğun ilk yarım saatine yazılır.
 
-Beş kural: boş sayfa yok (dört adımın sırası ve ayarları hazır gelir) · sessiz bitiş yok (akşam araçlar kurulu, sayfa yayında) · onay (abonelik tutarını sen görürsün, tabloya senin söylediğin girer) · sahadan güncelleme (bir hesap kilitlenince modül ikinci kez açılır) · sormaz söyler (hangi programların kurulacağını, hangilerinin kurulmayacağını FounderOS söyler; tek istisna liste yolu, çünkü orada cebinden para çıkıyor).
+Beş kural: boş sayfa yok (dört adımın sırası ve ayarları hazır gelir) · sessiz bitiş yok (akşam araçlar kurulu, sayfa yayında) · onay (abonelik tutarını sen görürsün, tabloya senin söylediğin girer) · sahadan güncelleme (bir hesap kilitlenince modül ikinci kez açılır) · sormaz söyler (hangi programların kurulacağını, hangilerinin kurulmayacağını FounderOS söyler; aday listesinin nereden geleceği de sorulmaz).
