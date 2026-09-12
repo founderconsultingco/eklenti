@@ -281,7 +281,9 @@ Doğru: "Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor mu
 
 **Kapanış sorusu küçük olur.** Son cümle randevu istemez, saat istemez, telefon numarası istemez. Cevabı tek kelime olan bir soru olur: "Bakmak ister misiniz?", "Göstereyim mi?", "Sizde nasıl işliyor?" Sebebi basit: ilk mesajda büyük şey isteyen kişi cevap almıyor, küçük şey isteyen alıyor. Büyük istek konuşma başladıktan sonra geliyor.
 
-**Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistem anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
+**Belirsiz olma, ama satma.** İlk mesajda ne yaptığını tek kısa cümleyle söylersin: "Ben [hedef işletme] için [somut iş] yapıyorum." Hiç söylemeyip sonra teklife dönmek en çok cevap kaybettiren yol; adam iki mesaj boyunca senin müşteri olduğunu sanıyor, üçüncüde satış gelince kayboluyor ve haklı olarak kızıyor. Müşteri taklidiyle ("fiyatınız ne kadar") açılış yasaktır. Söylenen tek cümle ne yaptığındır; fiyat, kademe adı, sistemin adı ve link girmez.
+
+**Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistemin tamamı anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
 
 **Hacim ve zaman.** Günde yirmi otuz mesaj, eski hesapla. Bu sayı güne yayılır: bir saatte beşten fazlası arka arkaya gitmez, mesajların arasına boşluk girer. Yirmi mesajı yarım saatte gönderen hesap kısıtlanıyor ve kısıtlanan hesabın mesajları karşı tarafın istek kutusuna düşüyor, yani hiç görülmüyor. Yeni hesapta bu bölüm hiç çalışmaz.
 
@@ -388,6 +390,38 @@ Her takip tazedir, aynı metin tekrarlanmaz. Zincirin sebebi: cevapların çoğu
 - Meraklı: bilgiyle boğma, merak bırak.
 - Şüpheci ("denedik olmadı", "pahalı görünüyor"): savunmaya geçme. Önce haklı olduğu yeri kabul et, sonra farklı bir açı ver.
 - Hazır: karmaşıklaştırma, hemen takvime al.
+
+**Yazılı kanalda on iki cevap dalı.** Telefonda itirazın cevabını sesinle yumuşatabiliyorsun; yazıda o yok, o yüzden cevap kısa, net ve tek soruyla biter. Her dal iki üç cümleyi geçmez. Instagram'da mesaj üç satırı, e-postada beş satırı aşmaz.
+
+1. **"Fiyat ne kadar?"** Fiyatı saklamak görüşme kazandırmıyor, konuşmayı bitiriyor. Bandın belliyse bandı verirsin: "Kurulum [band], aylık [band]. Rakamı işletmenin büyüklüğü ve kaç kanal bağlanacağı değiştiriyor. Sizde talepler sadece Instagram'a mı geliyor, WhatsApp'a da mı?" Band belli değilse neyin belirlediğini söylersin, uydurmazsın. Kesin rakam görüşmede netleşir ve bunu da söylersin.
+2. **"Daha önce kime yaptınız?"** Kanıt yoksa yalan söylemezsin: "Bu hizmette paylaşabileceğim müşteri sonucu henüz yok. Temsili verilerle çalışan bir örneğim var, nasıl işlediğini gösterebilirim." Kanıt varsa izinli olanı, adıyla. Adam "referanssız çalışmam" derse zorlamazsın: "Anladım, kararınıza saygı duyuyorum." Kapat. "Herkes bir yerden başlıyor" cümlesi kurulmaz, baskıdır.
+3. **"Şu an yoğunum, sonra yazın."** Tek soru: "Tabii, hangi gün dönmem uygun olur?" Tarih verirse o tarihe yazılır ve o tarihe kadar hiçbir mesaj gitmez. Tarih vermezse: "Belirli bir gün yoksa şimdilik burada bırakalım, ihtiyaç olursa buradan yazabilirsiniz." Belirsizliğe günlük mesaj eklenmez.
+4. **"Zaten bir sistemimiz var."** Telefondaki soruyla aynı: "Mevcut düzende eksik bulduğunuz bir yer var mı, yoksa ihtiyacınızı karşılıyor mu?" Eksik söylerse yalnız o kısma bakılır, çalışan düzen değiştirilmez. Memnunsa kapat. Mevcut sağlayıcıyı ya da çalışanı küçümseme.
+5. **"Bize yeni müşteri lazım, takip değil."** Bu bir itiraz değil, yanlış eşleşme: "Anladım, öncelik yeni talep. Benim kurduğum sistem mevcut talepleri takip ediyor, tek başına yeni talep yaratmıyor." Kapsamın bunu karşılamıyorsa konuşma biter. Kapsamını o an genişletip reklam ya da yeni müşteri sözü vermezsin.
+6. **"İlgilenmiyorum" ya da "bir daha yazmayın".** "Anladım, tekrar yazmayacağım. İyi çalışmalar." Tek cümle, tek satır. "Son bir şey" yok. Başka hesaptan, yorumdan ya da başka kanaldan aynı teklif sürdürülmez. "Bir daha yazmayın" açıkça söylendiyse kayıt "iletişim istemiyor" olur.
+7. **"İhtiyacımız yok."** "Anladım, mevcut düzen işinizi görüyorsa ek bir sistem gerekmeyebilir. Vaktiniz için teşekkürler." Gerekçeyi kaydet, kapat. Sessizliğe uzayan takip görevi açma.
+8. **"Ben bakmıyorum, patron ilgilenir."** "Teşekkürler. Bu konuyla ilgilenen kişiye ulaşmam için hangi kanal uygun olur?" Yönlendirme gerçekten geldiyse ikinci mesajda söylersin; gelmediyse "beni size yönlendirdiler" yazılmaz. Özel numara istemeye zorlamazsın.
+9. **"Yapay zekâya güvenmiyorum."** Sınırı söyleyerek cevap verilir: "Anlıyorum. Sınır şu: [sistemin yaptığı iş] sistemde, [insanın onaylayacağı iş] sizde kalıyor. İsterseniz yalnız o devir kısmını göstereyim." Denenmemiş bir entegrasyon ya da kapsam varmış gibi anlatılmaz.
+10. **"Bilgi gönderin."** İstenen bilgi verilir, önce toplantı şartı koşulmaz. "Tabii, [istenen şey] burada: [gerçek bağlantı]." Hangi bilgi istendiği belirsizse sorulur: "Çalışma şeklini mi, kapsam ve ücreti mi görmek istersiniz?" Gönderilmemiş bir şey gönderildi diye yazılmaz.
+11. **"Görüşmeye gerek yok, buradan anlatın."** Görüşme istememek ret değildir. Kapsam ve fiyat yazıyla açıklanabiliyorsa açıklanır: "Olur. Kapsam şu: [somut iş]. [İnsanın görevi] sizde kalır. Eksik tek bilgi: [soru]?" Aynı görüşme daveti tekrarlanmaz.
+12. **"Pahalı."** Önce hangi pahalı olduğu ayrılır: "Toplam bütçe mi aşıyor, yoksa karşılığında ne alacağınız mı net değil?" Bütçeyse dar kapsam konuşulur (Kademe 1). Değerse ölçü sorulur. Her itirazda indirim ya da bedava iş teklif edilmez; küçük işletmede etki maliyeti karşılamıyorsa yedinci dala geçilir ve kapatılır.
+
+**Takip ne zaman gider, ne zaman gitmez.** Yazılı kanalda en sık yapılan hata, cevap gelmemiş bir mesajın üstüne otomatik zincir başlatmak. Kural tablosu:
+
+| Durum | Karar |
+|---|---|
+| Mesaj isteği kabul edilmedi ya da hiç cevap yok | Yeni mesaj dizisi başlatılmaz. E-postada üç günlük zincir işler, Instagram'da tek sesli mesaj takibi, sonra kapanır. |
+| Sadece beğeni ya da emoji geldi | Ticari takip izni sayılmaz. Açık bir talep yoksa beklenir. |
+| "Gönderin" dedi | Söz verilen şey aynı gün teslim edilir. Bu bir takip değil, sözün tutulmasıdır. |
+| "Sonra yazın" dedi | Tarih sorulur, o tarihe kadar hiçbir mesaj gitmez. |
+| Aktif konuşmada örnek istendi ve teslim edildi | İki iş günü sonra tek ilgili kontrol. |
+| Görüşmek istedi, saat netleşmedi | Saat netleştirilir, aynı davet tekrarlanmaz. |
+| Görüşme oluştu | Yazılı satış takibi kapanır, gorusmeye-getir devralır. |
+| Açık ret ya da iletişim istememe | Gönderim ve bekleyen görevler durur. |
+
+Her gönderimden önce altı kontrol: son cevabı okudum mu, kararlaştırılan tarihi bekledim mi, önceki sözümü tuttum mu, başka bir görev aynı mesajı gönderiyor mu, kişi reddetti mi, aynı soruyu yeniden mi soruyorum. Biri bile takılıyorsa mesaj gitmez.
+
+**Yazılı kanalda aramanın sonucu.** Telefondaki sekiz ayrımın aynısı işler (yukarıda). İki ek: adayın Instagram ve varsa başka profili aynı aday satırına bağlanır, aynı kişiye iki kanaldan aynı anda ayrı zincir çalıştırılmaz; ve bir kanalda gelen ret bütün kanalları kapatır, başka kanaldan aynı teklif sürdürülmez.
 
 Niteleme, yani adayın gerçekten alıcı olup olmadığını anlama, soru yağmuru değil; sohbetin içine gömülüdür. "Bütçeniz ne" değil: "sizin büyüklüğünüzde işletmelerde kurulum şu aralıkta oluyor, uygun mu". "Karar verici siz misiniz" değil: "böyle bir şeye karar verirken süreç nasıl işliyor". Görüşme ayarlanmadan üç şey net olmalı: sorunun farkında mı, parası var mı, kararı kim veriyor. Üçü yoksa o randevuya gelmez.
 
