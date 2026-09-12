@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: markani-kur
-description: "Birinci gün. İş adı, konumlandırma, logo, renk, yazı tipi; on panoluk görsel sistem ve marka klasörüne yazılan gerçek dosyalar."
+description: "Birinci gün. İş adı, alan adı kontrolü, konumlandırma, logo, renk, yazı tipi; on iki panoluk kit ve marka klasörüne yazılan yirmi iki gerçek dosya."
 ---
 
 # markani-kur
@@ -27,7 +27,7 @@ Bir uyarı da baştan: bu iş bir gün sürer. İki günden fazla sürerse bir s
 Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine para verecek insanın ilk baktığı şey.
 
 ## 2. Ne zaman çalışır
-- Birinci gün, teklif ve fiyat bandından sonra. Ad ve konumlandırma yarım saat, on panoluk sistem on beş yirmi dakika, dosyaların üretilmesi on dakika. Tek oturuşta biter.
+- Birinci gün, teklif ve fiyat bandından sonra. Ad ve konumlandırma yarım saat, kitin doldurulması on dakika, dosyaların üretilmesi bir dakika. Tek oturuşta biter.
 - İlk kanıt hikâyesi çıkınca ikinci kez, kısa bir güncelleme için: kanıt satırı ve rakam kite girer.
 - Başka zaman çalışmaz. "Logoyu değiştirsem" isteği degisiklige-karar-ver'e gider.
 
@@ -53,9 +53,9 @@ Görsel yön sorulmaz. FounderOS nişe göre kendisi seçer ve sebebini söyler.
 
 Marka birinci günün işi ve tamamı bugün çıkar. Kısaltılmış hali yok.
 
-Sırası şu: iş adı, konumlandırma cümlesi, sonra on panoluk kit.
+Sırası şu: iş adı, konumlandırma cümlesi, sonra on iki panoluk kit.
 
-**İş adı ve adresi birlikte konur.** Ad pazardan ve teklifden türer. Ama ad tek başına önerilmez: önerilmeden önce adresi kontrol edilir. Sebebi şu: ad birinci günde konuyor, logo o adla çiziliyor, on pano o adla basılıyor; adres ilk kez günler ya da haftalar sonra aranırsa ve doluysa elinde iki kötü seçenek kalıyor, ya kiti çöpe atacaksın ya tireli rakamlı bir adres alacaksın. O yüzden kontrol adın önüne alınıyor.
+**İş adı ve adresi birlikte konur.** Ad pazardan ve teklifden türer. Ama ad tek başına önerilmez: önerilmeden önce adresi kontrol edilir. Sebebi şu: ad birinci günde konuyor, logo o adla çiziliyor, bütün panolar o adla basılıyor; adres ilk kez günler ya da haftalar sonra aranırsa ve doluysa elinde iki kötü seçenek kalıyor, ya kiti çöpe atacaksın ya tireli rakamlı bir adres alacaksın. O yüzden kontrol adın önüne alınıyor.
 
 Kontrol sırası, beş uzantı: `.com`, `.com.tr`, `.co`, `.ai`, `.io`. İlk boş çıkan o adın adresi olur. Beşi de doluysa ad önerilmez, sıradaki ada geçilir. Tire, rakam ve uzun birleşik yazım yok; adres telefonda dikte edilebilecek kadar kısa olacak.
 
@@ -67,7 +67,7 @@ Yedek adres de aynı anda seçilir ve İş Beyni'ne yazılır. Alt basamaktaki �
 
 **Konumlandırma cümlesi.** Dönüşüm Cümlesi'nin kısa hali. Sitede, kartvizitte ve profillerde aynısı durur.
 
-**Kit.** On panoyu tek tahtada üretirsin. On beş yirmi dakika sürer ve öğrenci beklerken ekranda tasarımların çıktığını görür. Bu bekleme boş bir bekleme değil; günün en görünür anı, çünkü sabah adı bile olmayan işin rengi, yazısı ve logosu gözünün önünde beliriyor.
+**Kit.** Şablonu doldurup dosyaları üretirsin. On dakika sürer ve sonunda öğrenci ekranda on iki panoyu görür. Günün en görünür anı budur: sabah adı bile olmayan işin rengi, yazısı, logosu, sitesinin başlığı ve üç Instagram gönderisi gözünün önünde duruyor.
 
 Kit çıkınca öğrenciye gösterir, tek soru sorarsın: "Bu senin işin gibi duruyor mu?" Değişiklik isterse tahtada değiştirirsin. Renk kodlarını ve yazı tipi adlarını İş Beyni'ne yazarsın.
 
@@ -95,85 +95,77 @@ Seçilen yazı tipi Türkçe karakterleri eksiksiz taşıyacak: ı, İ, ğ, ş, 
 
 Arial, Helvetica, Times New Roman, Roboto ve Inter seçilmez. Bunlar varsayılan görünüyor ve marka kurmuyor.
 
-### İki aşama: önce sistem, sonra dosyalar
+### Şablon doldurulur, tasarım yapılmaz
 
-Burada en sık yapılan hata şu: marka kiti diye bir **resim** teslim edilir. Öğrenci güzel bir tahtaya bakar, "vay" der, sonra sitesine logo koyması gerektiğinde elinde kullanabileceği tek dosya yoktur. Tahtadan kendi kırpmasını isteyemezsin; kırpmayı bilse zaten marka kitine ihtiyacı olmazdı.
+Burada en sık yapılan iki hata var ve ikisini de kapatıyoruz.
 
-O yüzden bu modül iki aşamalıdır ve ikincisi olmadan biten kit teslim sayılmaz.
+Birincisi: marka kiti diye bir **resim** teslim edilir. Öğrenci güzel bir tahtaya bakar, "vay" der, sonra sitesine logo koyması gerektiğinde elinde kullanabileceği tek dosya yoktur. Tahtadan kendi kırpmasını isteyemezsin; kırpmayı bilse zaten marka kitine ihtiyacı olmazdı.
 
-**Birinci aşama: görsel sistem.** Claude Design on panoyu üretir. Bu, markanın nasıl görüneceğine karar verildiği yerdir; öğrenci bakar, beğenmediğini tıklayıp değiştirir.
+İkincisi: kit her öğrencide sıfırdan doğaçlanır. Model her seferinde yerleşimi, ölçüleri ve kuralları yeniden icat eder, yeniden icat edilen tasarım ortalama çıkar. Bu problemi bu sistemde iki kez zaten çözdük: aday listesi ekranı ve tanıtım sayfası birer şablon dosyası oldu, model yalnız veriyi dolduruyor. Marka da aynı yoldan gidiyor.
 
-**İkinci aşama: gerçek dosyalar.** FounderOS o sistemden çıkan dosyaları öğrencinin `marka/` klasörüne kendisi yazar. Adları, boyutları ve biçimleri belli; öğrenci hiçbirini kırpmaz, dönüştürmez, yeniden boyutlandırmaz.
+**Şablon:** bu becerinin klasöründeki `marka-sablonu.html`. On iki pano, bütün ölçüler, bütün kurallar ve her varlığın tam piksel boyu onun içinde. FounderOS o dosyayı olduğu gibi kopyalar, içindeki `/*FOUNDEROS-MARKA*/` işaretinin üstüne tek bir `window.MARKA` bloğu yazar. Şablonun HTML ve CSS kısmına dokunulmaz: pano eklenmez, ölçü değiştirilmez, yeni renk kuralı yazılmaz. Şablonda bir eksik görülürse öğrencinin dosyasında yamanmaz, açık iş olarak not edilir ve şablon bir kere düzeltilir.
 
-Bu ikinci aşamada birkaç işlem satırı ekranda görünür ve bunu öğrenciye **önceden** söylersin, yoksa korkuyor: "Şimdi dosyaları üretiyorum. Ekranda birkaç işlem satırı göreceksin, normal; ben logonun farklı boylarını hazırlıyorum." Ana yöneticinin "dosya yazarken komut çalıştırma" kuralının tek istisnası burasıdır (görsel dosyaları üretmek için) ve haber vermeden kullanılmaz.
+**Üretim:** aynı klasördeki `marka-uret.py`. Şablon her varlığı `#v-<ad>` adresinde tam ölçüsünde çiziyor; betik bir tarayıcıyı görünmez kipte açıp her adresi o ölçüde kaydediyor. Yirmi iki dosya, yaklaşık on beş saniye. Öğrenci terminale girmez, komutu FounderOS çalıştırır ve önceden haber verir: "Şimdi dosyaları üretiyorum, ekranda birkaç işlem satırı göreceksin, normal." Ana yöneticinin "dosya yazarken komut çalıştırma" kuralının tek istisnası burasıdır.
 
-### Birinci aşama: Claude Design'da sistemi üretme
+### On iki pano
 
-Claude Design, Claude'un içinde çalışan tasarım tahtası. Tek bir sayfada birçok tasarımı yan yana koyuyor, üstünde tıklayıp yazıyı ve rengi değiştirebiliyorsun. Bu tahtadaki her bir tasarıma pano diyoruz.
+Kit on iki panodur, fazlası üretilmez. Sırayla: kapak, marka temeli, logo ve alternatifleri, logo kuralları ve yanlış kullanım, renk paleti, tipografi, grafik dil, site başlığı önizlemesi, sosyal medya, içerik örnekleri, kurumsal set, hızlı referans.
 
-Adımlar:
+Öğrencinin "bütün markam çıktı" demesi için gereken şey bu on ikide var: logonun beş farklı hali ve nerede kullanılacağı, altı rengin kodu ve kullanım oranı, iki yazı tipinin ölçeği ve Türkçe karakter kontrolü, sekiz ikonluk set, sitesinin başlığının gerçek görüntüsü, Instagram profili ve kapak bandı, gerçek metinle dolu üç içerik örneği, kartvizit ve antetli kâğıt, tek sayfalık hızlı referans. Bunların hiçbiri yer tutucu metinle çıkmaz.
 
-1. FounderOS aşağıdaki talimatı senin adın, nişin, cümlen ve rakamlarınla doldurur ve tasarım tahtasını bu sohbetin içinde kendisi üretir. Sen hiçbir şey kopyalamaz, yapıştırmaz, yeni sohbet açmazsın.
-2. On pano tek tahtada çıkar. On beş yirmi dakika sürer; FounderOS başlamadan "on beş yirmi dakika sürer, bitince göstereceğim" der ve aynı mesajda üretir.
-3. Tahta gelince FounderOS slop kontrolünü kendisi yapar, sonra sana gösterir. Sen üstünden geçersin: beğenmediğin yazıyı söylersin, düzeltilir.
-4. Renk kodlarını ve yazı tipi adlarını FounderOS tahtadan okur, sen söylemezsin; İş Beyni'nin altıncı bölümüne yazar.
-5. "Tamam" deyince ikinci aşamaya, dosyaların üretilmesine geçilir.
+### Veri sözleşmesi: `window.MARKA`
 
-### On pano
+Şablonun tek girdisi bu. Uydurma yok: her alanın kaynağı belli.
 
-1. Kapak: iş adı, tek cümlelik ne yaptığın, şehir ve yıl.
-2. Marka temeli: Dönüşüm Cümlesi, kime ne söz veriyorsun, üç madde "biz buyuz", üç madde "biz bu değiliz".
-3. Logo sistemi: kelime markası esas. Ana yatay logo, dikey hali, tek renk hali, çok küçük hali. Her birinin altında nerede kullanılacağı.
-4. Logo kuralları ve yanlış kullanımlar tek panoda: boşluk, en küçük boyut, açık zemin, koyu zemin, fotoğraf üstü; altında en az altı hatalı örnek kırmızı çarpıyla.
-5. Renk ve tipografi tek panoda: renkler nişin kendi dünyasından, her biri için kod ve kullanım oranı, yazının zeminde okunup okunmadığı. Başlık ve metin yazı tipleri, punto ölçeği. Türkçe deneme satırı: "İşini kur, doğru müşteriye ulaş. Çözümünü geliştir; öğrendiğini ölç." Kontrol edilecekler: ğĞüÜşŞıİöÖçÇ, ₺ ve yüzde işareti.
-6. Grafik dil ve fotoğraf: köşe yarıçapı, çizgi kalınlığı, sekiz ikon, ızgara. Bu panoda en az iki gerçek iş fotoğrafı kompozisyonu olacak.
-7. Sayfa düzeni: tanıtım sayfasının başlık bölümü ve bölüm araları. Bu pano siteni-kur'a girdi olur.
-8. Sosyal medya: üç Instagram karesi ve bir hikâye düzeni, profil görseli.
-9. Satış materyali ve kurumsal set: onay belgesi kapağı, kartvizit ön ve arka, e-posta imzası. Kurucunun adı imza biçiminde bir yerde geçer.
-10. Hızlı referans: renk kodları, yazı tipi adları, en küçük logo boyutu, beş yapılacak, beş yapılmayacak.
+```js
+window.MARKA = {
+  ad: "Sezon Çağrı",              // markani-kur'un koyduğu kesin iş adı
+  kisa: "SÇ",                     // sembol harfi, bir ya da iki harf
+  konum: "Kaçan aramayı randevuya çeviriyoruz.",   // konumlandırma cümlesi
+  sehir: "Bursa", yil: "2026", kurucu: "Ahmet Yılmaz",
+  nis: "klima ve kombi servisi",
+  yon: "saglam",                  // saglam | sakin | olculu, nişe göre FounderOS seçer
+  yuvarlak: "10px",
+  renk: { koyu, acik, vurgu, vurgu_yazi, yazi, soluk, cizgi, koyu_yazi },
+  yazi_tipi: { baslik: "...", govde: "..." },
+  biz:   ["...", "...", "..."],   // üç madde, teklifin kendisinden
+  degil: ["...", "...", "..."],   // üç madde, "ne satmıyoruz"dan
+  iletisim: { telefon, eposta, site, instagram },
+  site_basligi: { etiket, baslik, vurgu, aciklama, dugme },   // siteni-kur ile aynı metin
+  sosyal: {
+    biyografi: "üç satır",
+    banner:  { ustyazi, baslik, alt },
+    hikaye:  { ustyazi, baslik, alt },
+    kareler: [ { ustyazi, baslik, alt } x3 ]   // gerçek metin, yer tutucu değil
+  }
+};
+```
 
-### İkinci aşama: dört klasör, gerçek dosyalar
+Alanların kaynağı: `konum` ve `site_basligi` İş Beyni'nin dördüncü bölümünden (Dönüşüm Cümlesi, sistemin adı), `biz` ve `degil` teklifin kendisinden, `sosyal.kareler` niş kartının sızıntı kanıtından ve işletmeci sözlüğünden, `kurucu` ve `sehir` birinci bölümden, renk ve yazı tipi seçilen görsel yönden. Rakam geçecekse kaynağıyla geçer; kaynağı olmayan rakam panoya da varlığa da yazılmaz.
 
-Öğrencinin dört gerçek ihtiyacı var ve klasörler bunlara göre. Süslü ad yok, kullanım adı var.
+### Yirmi iki gerçek dosya
 
-**`marka/logo/`**
-- `logo-yatay-acik.svg` ve `.png`: açık zeminli sitenin üst bölümüne.
-- `logo-yatay-koyu.svg` ve `.png`: koyu zemine, ters renk.
-- `sembol.svg` ve `sembol-seffaf.png`: başka bir görselin üstüne.
-- `sosyal-profil.png`, 1000x1000: Instagram ve WhatsApp profili. Daire kırpımına güvenli. Uzun iş adı küçük daireye sıkıştırılmaz; sembol ya da kısa hal kullanılır, hangisi okunuyorsa.
-- `favicon.svg`, `favicon-32.png`: tarayıcı sekmesi.
-- `eposta-logo.png`, genişlik 240: e-posta imzası. Bu dosya yalnız burada durur, kurumsal klasöründe kopyası yoktur.
-- `logo-tek-renk.svg`: siyah beyaz baskı ve damga.
+Üretim bitince `marka/` klasöründe şunlar durur. Adlar ne işe yaradıklarını söyler; `gorsel-04-final-v2` diye bir dosya olmaz.
 
-**`marka/site-gorselleri/`** (sayfanın kendisi `site/` klasöründedir; ikisi karışmasın diye bu klasörün adı farklıdır)
-- `ana-gorsel.png` ve mobil hali: sayfanın ilk ekranı.
-- `baglanti-onizlemesi-1200x630.png`: link paylaşıldığında görünen kare. Bu dosya olmadan paylaşılan link boş bir kutu gösteriyor ve amatör duruyor.
-- Sekiz ikon, `ikon-` önekiyle aynı klasörde, alt klasör yok.
-- `gorsel-aciklamalari.md`: her görsel için tek satır Türkçe açıklama. Görme engelli ziyaretçi ve arama motoru bunu okuyor.
+**`marka/`** klasöründe `marka-kiti.html`: on iki panonun kendisi. Öğrenci ekranda kart olarak açıp görüyor; tek dosya, taşınabilir.
 
-**`marka/sosyal/`**
-- Üç Instagram karesi, 1080x1350, gerçek metinleriyle dolu.
-- Bir hikâye, 1080x1920.
-- `whatsapp-profil.png` ve `whatsapp-aciklama.txt`: işletme açıklaması metni.
-- `instagram-biyografi.txt`: üç satırlık biyografi metni. "Biyografi hazır" demek bu dosyanın klasörde durması demek; dosyasız "hazır" denmez.
+**`marka/logo/`** klasöründe: `logo-yatay-acik.png` (açık zeminli sitenin üst çubuğu), `logo-yatay-koyu.png` (koyu bant), `logo-dikey.png` (kare alanlar, kapak), `sembol.png` (saydam zeminli, başka bir görselin üstüne), `sosyal-profil.png` 1000x1000 (Instagram profili, daire kırpımına güvenli), `favicon.png` ve `favicon-32.png` (tarayıcı sekmesi), `eposta-logo.png` (imza).
 
-**`marka/kurumsal/`**
-- `marka-karti.pdf`: tek sayfada logo, renk kodları, yazı tipi adları, temel kurallar. Kitin kendisi değil, cebe giren hali.
-- `kartvizit-on.pdf`, `kartvizit-arka.pdf`: baskı ölçüsüyle.
-- `eposta-imzasi.html` ve görünüşü.
-- `onay-belgesi-kapak.pdf`: müşteriye giden belgenin başlığı. Tek sayfa, bir megabayttan küçük; büyük çıkarsa görsel sıkıştırılıp yeniden yazılır.
+**`marka/site-gorselleri/`** klasöründe: `ana-gorsel.png` (sayfanın ilk ekranının görüntüsü), `baglanti-onizlemesi.png` 1200x630 (link paylaşıldığında görünen kare; bu dosya olmadan paylaşılan link boş bir kutu gösteriyor ve amatör duruyor).
 
-Üç kural bu klasörler için:
+**`marka/sosyal/`** klasöründe: `instagram-1.png`, `instagram-2.png`, `instagram-3.png` (1080x1350, gerçek metinle dolu), `hikaye.png` (1080x1920), `kapak-banner.png`, `whatsapp-profil.png`.
 
-**Dosya adında ne işe yaradığı yazar.** `gorsel-04-final-v2` diye bir dosya olmaz; öğrenci dosya adından anlam çıkarmaya çalışmaz.
+**`marka/kurumsal/`** klasöründe: `marka-karti.pdf` (tek sayfada logo, renk kodları, yazı tipleri, kurallar; kitin cebe giren hali), `kartvizit-on.pdf` ve `kartvizit-arka.pdf` (85x55 mm, baskı ölçüsünde), `antetli.pdf` (A4), `onay-belgesi-kapak.pdf` (müşteriye giden belgenin kapağı), `eposta-imzasi.png`.
 
-**Logo ve renkler bütün belgelere baştan uygulanmış gelir.** Hiçbir dosyada "buraya logonu ekle" yazmaz.
+Baskıya giden dosyalar PDF'tir ve gerçek kâğıt ölçüsündedir; yazı tipi PDF'in içine gömülüdür, matbaa açtığında bozulmaz. Ekrana giden dosyalar PNG'dir ve logo dosyaları iki katı çözünürlükte üretilir.
 
-**Gerçek vektör gerçek vektördür.** Bir PNG'yi SVG'nin içine gömmek vektör teslimi değildir; büyütünce bozuluyorsa iş yapılmamıştır.
+### Tarayıcı bulunamazsa
+
+Betik bir tarayıcı bulamazsa uydurmaz ve sessizce geçmez: hangi dosyaların üretilemediğini söyler. O zaman kit panolarıyla teslim edilir (`marka-kiti.html` her durumda çalışıyor, tek dosya, tarayıcıda açılıyor), İş Beyni'nin altıncı bölümüne "görsel dosyalar üretilemedi, sebep: tarayıcı bulunamadı" satırı yazılır ve öğrenciye tek cümleyle söylenir. Sonraki modüller o satırı okuyor: siteni-kur logoyu bulamazsa sayfayı logosuz kurar ve boş kutu koymaz.
 
 ### "Hangi dosyayı kullanacağım" sorusu hiç sorulmaz
 
-Bu sorunun bilinen çözümü bir kullanım rehberi yazmaktır: hangi dosya nereye, önizlemeleriyle. Biz onu yazmıyoruz, çünkü bu sistemde öğrenciye okuma ödevi verilmiyor ve on iki dosya arasından seçim yapmak zaten onun işi değil.
+Bu sorunun bilinen çözümü bir kullanım rehberi yazmaktır: hangi dosya nereye, önizlemeleriyle. Biz onu yazmıyoruz, çünkü bu sistemde öğrenciye okuma ödevi verilmiyor ve yirmi iki dosya arasından seçim yapmak zaten onun işi değil.
 
 Bunun yerine **dosyayı FounderOS yerleştirir.** Site kurulurken logoyu o koyar. Instagram hesabı açılırken profil görselini o verir. E-posta imzası kurulurken imzayı o hazırlar. Öğrenci hiçbir aşamada klasöre girip dosya seçmez.
 
@@ -233,99 +225,6 @@ Sektör klişesi ayrı, sektör gerçeği ayrı. Dişli çark klişedir, servis 
 
 Okuma yüzeyinde en az üç yerde insan eli görünecek: gerçek bir iş fotoğrafı kompozisyonu, kurucunun adının imza biçiminde duruşu, ve şehir damgası ("Bursa, 2026" gibi). Kimlik yüzeyinde insan izi malzemedir: kumaş, cam, metal, ışık. Her yer büyük harf olmaz; büyük harf vurgu içindir, varsayılan değildir.
 
-### Pano sayısı
-
-Kit on panodur, fazlası üretilmez. Gerçekten kullanılacak **on pano** şunlar: kapak, marka temeli, logo sistemi, logo kuralları ve yanlış kullanımlar (tek panoda), renk ve tipografi (tek panoda), sayfa düzeni, sosyal medya, satış materyali, hızlı referans. Kalanlar istenirse sonradan üretilir. Dolu görünen kit iyi kit değildir; on altı panonun on beşini kimse açmıyor.
-
-### Claude Design talimatı
-
-FounderOS bu talimatı köşeli parantezleri senin bilgilerinle doldurur ve tahtayı bu sohbette kendisi üretir. Sen hiçbir şey yapıştırmazsın.
-
-```
-Sen kıdemli bir marka kimliği tasarımcısısın. Tek bir tasarım tahtası üzerinde, çok panolu, eksiksiz bir marka kiti kuracaksın. Panoları tek tahtaya numaralı ve mantıklı bir düzende yerleştir.
-
-MARKA
-İsim: [iş adı]
-İş: [nişin adı] için, kaçan talebi randevuya çeviren sistemi kuran ve işleten tek kişilik iş.
-Tek cümlelik pozisyon: [Dönüşüm Cümlesi]
-Sistemin adı: [sistemin adı]
-Sistem parçaları: [Kademe 2'nin bu nişteki içeriği]
-Hedef müşteri: [ideal müşteri tanımı], karar verici [kartın karar verici satırı]
-Pazar ve dil: Türkiye, Türkçe. Şehir: [şehir]
-Satılan şey teknoloji değil sonuç. Marka bir yazılım şirketi gibi değil, sistemi kuran ve işleten operatör gibi durmalı. Tek kişilik bir iş bu; büyük ajans taklidi yapma, güvenilir ve işini bilen bir usta gibi dur.
-Kullanım alanları: Instagram, WhatsApp Business, e-posta, satış sayfası, onay belgesi ve sunum, kartvizit.
-
-GÖRSEL YÖN (bu kilitli, kendi zevkine kaymayacaksın)
-Yön: [seçilen yönün adı]
-Kurallar: [o yönün kuralları: zemin, kontrast, başlık yazısının karakteri, vurgu rengi sayısı, köşe yarıçapı, boşluk kullanımı]
-Sebebi: [yönün gerekçesi]
-Bu yönü bütün panolarda birebir uygula. Aynı ızgara, aynı ölçek, aynı köşe yarıçapı, aynı gölge dili her yerde. Sekiz noktalık ızgara kullan.
-
-İKİ YÜZEY
-Kimlik yüzeyi (kapak, logo panoları, sosyal, kartvizit): koyu zemin, tek doygun renk [kartın rengi, HEX], zeminde gerçek malzeme hissi. Malzemeyi düz siyah kutuyla değil, rengin bir yerden vuran ışığıyla ve dokuyla kur: katmanlı ışık, ince tane, tek yönden gelen parlama. Mor mavi geçiş yok, iki renk yok.
-Okuma yüzeyi (sayfa düzeni, belge, e-posta): aynı renk ve yazı tipi, açık zemin. Koyu kimlik burada yalnızca açılış bandı ve alt bölümdür.
-
-LOGO
-Önce kelime markası: kalın geometrik sans, sıkı aralık, tek özel kesim (bir harfin köşesi, bir kare harf, bir nokta; yalnızca bir tane). Sonra işaret: tek kelimeyle anlatılabilen bir şekil (ok, yıldız, harf, kapı, dalga). Kare ızgara, altıgen, iç içe halka, kesik daire yasak. İşareti 32 ve 16 pikselde de göster.
-
-PANOLAR (bu sırayla, on tane; daha fazlasını üretme)
-01 Kapak: marka adı, tek cümlelik pozisyon, şehir ve yıl damgası, sürüm.
-02 Marka temeli: pozisyon cümlesi, kime ne söz veriliyor, marka kişiliği beş sıfat, üç madde "biz buyuz", üç madde "biz bu değiliz".
-03 Logo sistemi: kelime markası esas alınacak. Ana logo, yatay hali, dikey hali, tek renk hali, çok küçük hali. Soyut geometrik işaret kullanma; kare ızgara, altıgen, iç içe halka ve kesik daire yasak. İşaret kullanacaksan vaadi kodlayacak ve anlatmadan okunacak (dolu takvim, teyit işareti, çalan telefon gibi).
-04 Logo kuralları ve yanlış kullanımlar tek panoda: boşluk, en küçük boyut, açık zemin, fotoğraf üstü; altında en az altı hatalı örnek kırmızı çarpıyla.
-05 Renk ve tipografi tek panoda: renkler [kartın sektöründen gelen gerçek renkler] üstünden, her biri için HEX ve kullanım oranı, metin-zemin kontrast kontrolü. Başlık ve metin aileleri Google Fonts'tan, Türkçe karakterleri tam: ğĞüÜşŞıİöÖçÇ test satırıyla. Punto ölçeği ve satır yüksekliği.
-06 Grafik dil ve fotoğraf: köşe yarıçapı, çizgi kalınlığı, ızgara, sekiz örnek ikon. Bu panoda en az iki gerçek iş fotoğrafı kompozisyonu olacak: işin yapılırken göründüğü kare, ve aracın ya da aletin yakın planı. Fotoğraf kuralını yazmakla yetinme, panonun kendisinde göster.
-07 Sayfa düzeni: satış sayfasının başlık bölümü ve bölüm araları. Büyük başlık artı üç kart artı düğme düzenini kullanma; bölümler farklı genişlikte ve farklı ritimde olacak, en az biri fotoğrafla tam genişlikte.
-08 Sosyal medya: Instagram 1080x1350 üç kare (kanca, kanıt, çağrı) ve dikey video kapağı artı altyazı stili. Hepsi büyük harf olmayacak.
-09 Satış materyali ve kurumsal set: onay belgesi kapağı, kanıt sayfası düzeni, kartvizit ön ve arka, e-posta imzası üç satır. Kurucunun adı imza biçiminde bir yerde geçecek.
-10 Hızlı referans: renk kodları, yazı tipi adları, en küçük logo boyutu, beş yapılacak, beş yapılmayacak.
-
-METİN KURALLARI
-Bütün örnek metinler gerçek olacak, yer tutucu metin kullanma. Cümleler [nişin adı] sahibinin diliyle yazılacak, onun kelimeleriyle: [kartın işletmeci sözlüğünden dört beş kelime].
-Türkçe metinlerde çeviri kokan kalıp yok. Kısa fiil cümleleri, konuşma diline yakın. Uzun çizgi kullanma.
-Sayı sözü verme. "Ayda şu kadar randevu" gibi bir cümle hiçbir panoda geçmeyecek.
-İngilizce kelime kullanma.
-
-KAÇINILACAKLAR
-Yapay zeka görünümü, en önemlisi bu. Şu beşini yapma: koyu antrasit zemin artı tek neon vurgu; soyut geometrik logo ("bu bir telefon uygulaması simgesi olabilir mi" testini geçemiyorsa kullanma); bütün panoların aynı şablonun tekrarı olması; hiç fotoğraf ve hiç doku olmaması; büyük başlık artı üç kart artı düğme sayfa düzeni.
-Kimlik yüzeyinde koyu zemin malzemesiz olmaz; okuma yüzeyi açık olur.
-[Nişe özel klişeler: kartın sektörüne göre yasak görseller]
-Yapay zeka klişeleri: devre kartı, robot kafası, mor mavi neon geçiş, beyin ikonu, parlayan kıvılcım ya da yıldız.
-Şablon estetiği: sebepsiz renk geçişi, üç sütunlu boş kart dizisi, her şeyin ortalanması, gereksiz gölge.
-Dekoratif olsun diye konulmuş hiçbir eleman. Her eleman bir iş yapacak.
-[Sağlık nişindeyse ek: tedavi sözü, hasta görseli, öncesi sonrası düzeni, "kesin sonuç" ve "en iyi" iddiaları hiçbir panoda geçmeyecek.]
-
-ÇIKTI
-Her panonun kendi başlığı ve tek satırlık açıklaması olsun.
-Her kararın gerekçesini kısa notla yaz: rengi, yazı tipini, boşluğu neden seçtin.
-Kontrast ve okunabilirliği her panoda kontrol et.
-Logoyu 32 ve 16 piksel boyutunda da göster; küçükken okunmuyorsa sadeleştir.
-En sonda şunları tek tek yaz, çünkü dosyalar bunlardan üretilecek: ana ve koyu zemin logo çizimleri, sembolün tek başına hali, profil görseli için seçilen hal, renk kodları, yazı tipi adları ve ağırlıkları, en küçük logo boyutu.
-En sonda ayrıca kısa bir not: hangi kararı neden verdin, hangi noktada benim tercihime ihtiyaç var.
-```
-
-### Kontrol
-
-Önce sistem, dört bakışta:
-
-1. Türkçe karakterler bozuk mu. ğ, ş, ı, İ, ö, ç, ₺. Yazı tipi bunları taşımıyorsa değişir.
-2. Yazı zeminde okunuyor mu. Açık gri zeminde açık gri yazı en sık yapılan hata.
-3. Panolar aynı sistemi mi kullanıyor. Bir panoda köşeler yuvarlak, diğerinde keskinse tahta bozulmuş demektir.
-4. Slop kontrolü: koyu zemin artı tek neon var mı, logo soyut şekil mi, bütün panolar aynı kalıp mı, tek fotoğraf yok mu, sayfa düzeni başlık artı üç kart mı. İkisi "evet"se yön yeniden kurulur ve kit yeniden üretilir. Bu kontrolü öğrenciye sormadan sen yaparsın; sonucu tek cümleyle söylersin.
-
-**Küçük boyut kontrolü ayrı yapılır ve atlanmaz.** Logoyu 32 ve 16 piksel açarsın, profil görselini daire kırpımında görürsün. Büyükken güzel duran logonun küçükken lekeye dönmesi en sık kaçan hata ve öğrenci bunu ilk kez Instagram'da fark ediyor.
-
-### Teslim kontrolü: dört senaryo
-
-Dosyalar "hazır" demek için listeyi saymak yetmez. Teslimi öğrencinin yapacağı işlerden kontrol edersin:
-
-1. **Koyu zemine logo koyacak.** Doğru dosya var mı, arkası gerçekten şeffaf mı, yazı okunuyor mu?
-2. **Instagram profilini açacak.** Profil görseli doğrudan yüklenebiliyor mu, daire kırpımında bir şey kesiliyor mu, biyografi metni hazır mı?
-3. **Linkini paylaşacak.** Bağlantı önizleme görseli var mı, üstündeki yazı küçük ekranda okunuyor mu?
-4. **Müşteriye onay belgesi gönderecek.** Logo ve renkler uygulanmış mı, PDF düzgün açılıyor mu, doldurulacak alanlar belli mi?
-
-Dördü de geçmeden kit tamamlanmış sayılmaz. Bir dosyanın nasıl üretileceğini anlatmak o dosyayı üretmek değildir; ortam bir dosyayı üretemiyorsa bu açıkça söylenir ve "tamam" diye işaretlenmez.
-
 ## 6. Ne söyler
 
 Açılışta: "Şimdi marka. Bir saat, tek oturuş; yarına sarkarsa yayın günü kayar. Ad, kimlik ve dosyalar bugün çıkıyor."
@@ -347,7 +246,7 @@ Bir sonraki modüllere: sayfa düzeni panosu ve seçilen alan adı siteni-kur'a,
 
 ## 8. Yedek yol
 
-- Claude Design açılmazsa: kit sade hali kurulur. Renk, yazı tipi ve tek sayfalık hızlı referans yazıyla çıkarılır, görsel panolar ertesi güne kalır. Birinci gün kapanır, ikinci gün ertelenmez.
+- Tarayıcı bulunamazsa: panolar yine çıkar (`marka-kiti.html` tek dosya, tarayıcıda açılıyor), görsel dosyalar üretilemez. Eksik olanlar İş Beyni'ne yazılır ve öğrenciye tek cümleyle söylenir. Birinci gün kapanır, ikinci güne ertelenmez.
 - Yazı tipi Türkçe karakteri bozuyorsa: talimat yenilenir ve Türkçe destekleyen bir tipe geçilir. Bu tartışma konusu değil.
 - Adı beğenmezsen: ikincisi gelir, sonra üçüncüsü; üçüncü turda karar verilir, dördüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
 - Beğendiğin adın beş uzantısı da doluysa: o ad önerilmez, sıradaki ada geçilir. Tireli ya da rakamlı adres alınmaz; adresi olmayan adla marka kurulmaz.
@@ -369,4 +268,4 @@ Sıradaki: aynı gün tanıtım sayfası (siteni-kur). Profil ve fotoğraf dörd
 - İlk kanıt hikâyesi çıktı: kit ikinci kez çalışır, kanıt satırı ve rakam girer.
 - "Logoyu değiştirsem" isteği: degisiklige-karar-ver'e gider, tek başına açılmaz.
 
-Beş kural: boş sayfa yok (görsel yön, on panonun listesi ve Claude Design talimatı hazır gelir) · sessiz bitiş yok (akşam dosyalar marka klasöründe ve dosya haritası İş Beyni'nde; tahta resmi teslim sayılmaz) · onay (adı FounderOS önerir, sen onaylarsın) · sahadan güncelleme (ilk kanıt hikâyesi çıkınca kit ikinci kez çalışır, kanıt satırı ve rakam girer) · sormaz söyler (görsel yönü ve kaçınılacakları FounderOS söyler, tartışılmaz).
+Beş kural: boş sayfa yok (görsel yön, on iki pano ve bütün ölçüler şablonda hazır gelir) · sessiz bitiş yok (akşam yirmi iki dosya marka klasöründe ve dosya haritası İş Beyni'nde; panoların resmi tek başına teslim sayılmaz) · onay (adı FounderOS önerir, sen onaylarsın) · sahadan güncelleme (ilk kanıt hikâyesi çıkınca kit ikinci kez çalışır, kanıt satırı ve rakam girer) · sormaz söyler (görsel yönü ve kaçınılacakları FounderOS söyler, tartışılmaz).

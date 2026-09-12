@@ -1,30 +1,32 @@
 ---
 user-invocable: false
 name: tanidik-listesi-cikar
-description: "İkinci günün akşamı. Tanıdık listesinin çıkarılması ve sıralanması."
+description: "Üçüncü günün öğleden sonrası, kesin fiyattan sonra. Tanıdık listesinin çıkarılması ve sıralanması."
 ---
 
 # tanidik-listesi-cikar
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-İkinci günün akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ilk adımı: müşteri bul.
+Üçüncü günün öğleden sonra modülü, kesin fiyattan hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ilk adımı: müşteri bul.
 
-Bu modül seni tanıyan herkesin listesini çıkarıyor. O listeye ne yazacağını bir sonraki bloğun akşamı, kesin fiyat konunca yazıyoruz.
+Bu modül seni tanıyan herkesin listesini çıkarıyor. Listeye ne yazacağını aynı günün akşamı yazıyoruz; liste ve mesaj arka arkaya, aynı oturuşta.
 
 Neden soğuk listeden önce: seni zaten tanıyan ya da bir tanıdık üzerinden gelen kişide kapanış oranı, hiç tanımadığın birine göre belirgin şekilde yüksek. Aynı teklif, aynı sen, aynı fiyat. Tek fark, araya giren isim.
 
-İkinci sebep zamanlama. Saha üç blok sonra açılıyor. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
+İkinci sebep zamanlama. Saha üç gün sonra açılıyor. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
+
+Neden bugün, dün değil: tanıdığın ertesi sabah "tamam, yapalım" diyebiliyor. O cümle geldiğinde fiyatın, sözleşmen ve ödeme yolun hazır olmak zorunda; üçü de bu sabah kuruldu. Liste dün çıksaydı mesaj yine bugünü bekleyecekti ve arada bir gün boşa duracaktı.
 
 Şunlar bu modülün işi değildir:
-- Mesajın metni (tanidiga-mesaj-yaz, yarın akşam; bugün liste çıkar, mesaj yarın gider).
-- Soğuk aday listesi (aday-listesi-cikar, üçüncü blok).
+- Mesajın metni (tanidiga-mesaj-yaz, aynı günün akşamı; bu modül listeyi çıkarır, mesajı o yazar).
+- Soğuk aday listesi (aday-listesi-cikar, aynı gün, sabah).
 - Müşteri olduktan sonra referans istemek (musteriyi-elde-tut). O ayrı bir iş ve referans dönemi geldiğinde açılıyor.
 
 Pazarlamadaki karşılığı: sıcak çevre. Seni zaten tanıyan insanlar.
 
 ## 2. Ne zaman çalışır
-- İkinci bloğun akşam bloğu, bir saat. Fiyat bandı birinci günden belli; kesin fiyat yarın gelecek, liste onu beklemez.
+- Üçüncü günün öğleden sonrası, bir saat. Kesin fiyat, sözleşme ve ödeme yolu bu sabah kuruldu; liste onların arkasından çıkar.
 - İkinci kez: her ay bir kere, listeye yeni girenler eklenir.
 
 ## 3. Ne okur

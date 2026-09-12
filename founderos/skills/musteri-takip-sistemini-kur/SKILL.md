@@ -120,7 +120,7 @@ Bizim beş klasörümüzde toplam elli beş satır duruyor. Hepsini ezberlemiyor
 
 Dört satır hakkında ayrıca bilgin olsun:
 
-**"Kayıt türü" ne işe yarıyor.** İki değeri var: aday ve bağlantı. Aday, senin nişinde işletmesi olan kişi. Bağlantı, sana birini bağlayabilecek kişi; ikinci günün akşamında çıkardığın B listesi buraya giriyor. Günün listesi sadece "aday" işaretlileri getiriyor, yani bağlantılar akşamki sayıları bozmuyor.
+**"Kayıt türü" ne işe yarıyor.** İki değeri var: aday ve bağlantı. Aday, senin nişinde işletmesi olan kişi. Bağlantı, sana birini bağlayabilecek kişi; üçüncü günde çıkardığın B listesi buraya giriyor. Günün listesi sadece "aday" işaretlileri getiriyor, yani bağlantılar akşamki sayıları bozmuyor.
 
 **"Sıcak mı soğuk mu" ne zaman doluyor.** Görüşmede değil, kayıt açıldığında. Tanıdıkların ve onların bağladığı kişiler "sıcak", listeden çıkan işletmeler "soğuk".
 

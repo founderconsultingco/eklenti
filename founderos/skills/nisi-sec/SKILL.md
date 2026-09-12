@@ -116,7 +116,7 @@ Düşen nişler yok olmuyor, ikinci ay listesine gidiyor. Sezonu açıldığınd
 
 ### İkinci eleme: para (müşteri değeri)
 
-Fiyat değerden hesaplandığı için niş seçimi de değerden başlar: hangi nişte en çok değer üretebilirsin, en çok orada kazanırsın. Müşterisi başına az para dönen işletme (tek koltuklu berber, küçük spor salonu, restoran) değer formülünü taşımaz; bunlara "en iyi niş hangisi" diye değil "hangi nişte kaçan bir müşteri en pahalı" diye bakılır. Kural: kartın kayıp birimi ve aylık kaçan olay sayısı, formülle çıkan kurulum ücretinin teslim maliyetini karşılamasına yetmiyorsa o niş ya yalnız büyük işletmeleriyle geçer ya düşer. Teslim maliyeti birinci ve ikinci blokta kaba ölçüyle alınır, çünkü saat tablosu henüz yok: [21/28] günlük teslim yaklaşık elli saat, çarpı senin saatinin değeri (aylık hedefin bölü ayda çalışacağın saat; ikisi de İş Beyni'nde). Saat tablosu üçüncü blokta çıkınca aynı eleme gerçek rakamla tekrarlanır.
+Fiyat değerden hesaplandığı için niş seçimi de değerden başlar: hangi nişte en çok değer üretebilirsin, en çok orada kazanırsın. Müşterisi başına az para dönen işletme (tek koltuklu berber, küçük spor salonu, restoran) değer formülünü taşımaz; bunlara "en iyi niş hangisi" diye değil "hangi nişte kaçan bir müşteri en pahalı" diye bakılır. Kural, dört müşteri kuralı: kartın rakamlarından çıkan aylık ücretin dört katı senin aylık hedefine ulaşmıyorsa o niş ya yalnız büyük işletmeleriyle geçer ya düşer. Dört sayısının sebebi çıkış hesabı: tek kişilik işte dört aktif müşteri güvenli çıkış noktası, beşincide iş ağırlaşıyor. Hesabın iki girdisi de yazılı bir yerden geliyor, hiçbiri tahmin değil: aylık hedef İş Beyni'nde, aylık ücret kartın rakamlarından formülle çıkıyor.
 
 Burada dikkat edilecek bir şey var: müşteri sana tek bir kurtarılan müşteriden ödemiyor, bir ayda kurtarılanların toplamından ödüyor. O yüzden "kaçan bir müşteri kurulum ücretini karşılıyor mu" diye bakmak yanlış olur.
 
@@ -124,7 +124,7 @@ Hesabın iki rakamı da nişin kartından çıkar, hiçbiri buradan uydurulmaz. 
 
 Sonra kurulum ve aylık çıkar: aylık kayıp çarpı on iki, yıllık; kurulum yıllığın yüzde onu; aylık kurulumun yüzde yirmisi. Bu, o nişin taşıyabileceği fiyattır (formül fiyati-belirle'de).
 
-Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; × 12 = yıllık; kurulum = yıllığın onda biri; aylık = kurulumun beşte biri. Müşteri değeri elemesi: bu kurulum rakamı teslim maliyetini (bugün kaba ölçü: elli saat çarpı senin saatinin değeri; üçüncü blokta saat tablosu) karşılamıyorsa niş yalnız büyük işletmeleriyle (çok koltuk, çok şube, çok ekip) geçer, kartın Kapsam bölümüne bu şart yazılır; büyük işletmesi de taşımıyorsa niş düşer. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
+Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; × 12 = yıllık; kurulum = yıllığın onda biri; aylık = kurulumun beşte biri. Müşteri değeri elemesi: aylık ücret çarpı dört senin aylık hedefine ulaşmıyorsa niş yalnız büyük işletmeleriyle (çok koltuk, çok şube, çok ekip) geçer, kartın Kapsam bölümüne bu şart yazılır; büyük işletmesi de taşımıyorsa niş düşer. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve niş bu elemeden "ölçülemedi" işaretiyle geçer.
 
 Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Hesap isini-kur'daki zincirle yapılır (hedef bölü nişin aylık ücreti, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı). Aynı hesap günde 10 arama yapan biri için çok daha uzun çıkar; o yüzden işin yanında çalışanda bu eleme hedef üzerinden değil, tek müşteri üzerinden yapılır. Bu hesap içeride yapılır; "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta verilir.
 
@@ -164,12 +164,6 @@ Sırayla:
 
 Doğrulama ikinci blokta: üç aday nisi-dogrula'ya verilir, tablo o gün geri gelir. Tablo canlı sayılara bakar: gerçekten kaç işletme var, telefonları açık mı, reklam veren var mı. Birinci günde kartın rakamıyla karar verilir ve öğrenciye "canlı sayım yarın" denir.
 
-Tabloda bir sütun rakipleri gösterir: o şehirde aynı nişe yapay zeka asistanı satan biri var mı. Rakip varsa niş DÜŞMEZ. İkisini karıştırmamak lazım:
-- Sektörde çok işletme olması iyidir. Talep orada demektir.
-- Sektöre aynı şeyi satan çok kişi olması ayrı bir şeydir ve sadece açılış cümleni değiştirir.
-
-Rakip varsa teklifi-yaz'a "rakip var" notu gider. O zaman açılış cümlen "biz de yapıyoruz" olmaz, "sizde şu an kaçan şu" olur. Sattığın şeyi anlatmazsın, onun kaybını anlatırsın.
-
 ### Karar ve kayıt
 
 Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici müşteri değerini kartın bandının ortasıyla günceller ve "geçici" etiketi kalır; kesin rakam üçüncü blokta girer.
@@ -187,7 +181,7 @@ Niş değiştirmek isterse: "Üç yüz temasa gelmeden niş değişmez. Şu an k
 
 ## 7. Ne yazar
 
-İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi), rakip notu. Doğrulama tablosu ikinci blokta nisi-dogrula yazar.
+İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi). Doğrulama tablosu ikinci blokta nisi-dogrula yazar.
 Klasöre: `nis-karti.md`, seçilen kartın tamamı.
 Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 
@@ -208,7 +202,6 @@ Sıradaki: "Şimdi bu pazarın içinden sana para verecek tek kişiyi çıkarıy
 - Üç adaydan hiçbiri para elemesini geçemedi: eşik değil kart eksiktir, kapasite bilgisi olmayan kartlar işaretlenir.
 - Kalan kartların masa puanı sekizin altında: kart eksikliği işaretlenir, seçim en yüksek puanlıyla yapılır.
 - Şehirde 500 işletme yok: coğrafya Türkiye geneline açılır, mesaj metinleri buna göre yazılır.
-- Rakip sütunu dolu: teklifi-yaz ve adaya-mesaj-yaz'a not gider, açılış cümlesi değişir.
 - Seçilen nişin mevzuat kısıtı var (sağlık nişleri): teklifi-yaz, yazili-asistani-kur ve sesli-ajani-kur o kısıtı baştan okur.
 - 300 temas doldu ve hiç görüşme çıkmadı: niş değiştirme isteği degisiklige-karar-ver'e açılır.
 - Beş müşteri kazanıldı: niş kilidi açılır, ikinci niş konuşulabilir.

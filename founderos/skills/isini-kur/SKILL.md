@@ -107,7 +107,7 @@ Niş kararının en ağır girdisi budur. Hiçbirini tanımamasını eksiklik gi
 
 **9. Çevrende işi hakkında rahatça konuşabileceğin işletme sahipleri veya yöneticileri var mı?** Evet, doğrudan konuşabileceğim kişiler var · Bir tanıdık üzerinden ulaşabilirim · Şimdilik yok.
 
-Varsa hangi işletme türü olduğunu öğrenirsin. İsim ve telefon istemezsin; o liste ikinci günün akşamının işi.
+Varsa hangi işletme türü olduğunu öğrenirsin. İsim ve telefon istemezsin; o liste üçüncü günün işi.
 
 **10. Daha önce birine ürün veya hizmet sattın mı?** Hayır, ilk kez yapacağım · Çalıştığım işte satış yaptım · Kendi ürünümü veya hizmetimi sattım · Düzenli müşterilerim var.
 
@@ -178,7 +178,7 @@ Bugün bitmeden üç şey elinde olacak: kime satacağın, ne satacağın ve ka�
 
 Sattığın şey şu: işletmelerin kaçırdığı müşteriyi geri kazandıran bir sistem. Küçük bir işletme telefonu açamadığında, mesaja saatler sonra döndüğünde ya da eski müşterisini hiç aramadığında para kaybediyor. Sen o kaybı durduran sistemi kuruyorsun. Bugün bunun senin sektöründeki tam karşılığını yazacağız.
 
-İlk beş günün planı, Yol Haritası'nın aşamalarına göre. Birinci gün pazarını seçer, teklifini yazar, fiyat bandını koyar, markanı kurar ve sayfanı hazırlarız; akşam kurulmuş bir işin olur. İkinci gün araçlarını kurar, randevu yolunu WhatsApp'ına bağlar, sayfanı yayına alır, pazarını canlı sayımla doğrularız; CRM hesabın başlangıç görüşmende açılır; akşam tanıdık listen çıkar. Üçüncü gün teslimat akışını çizer, fiyatını kesinleştirir, sözleşmeni ve ödeme yolunu hazırlar, beş yüz kişilik aday listeni çıkarırız; aynı akşam tanıdıklarına ilk mesajı atarsın, sistemin ilk mesajı o gün gider. Dördüncü gün elinde göstereceğin kanıt hazırlanır, ilk yüz mesajın metni yazılır, profillerin kurulur ve provalar başlar; prova, sahaya çıkmadan önce yaptığın sesli alıştırmadır. Beşinci gün provaları bitirir, videoları çeker, şirketini kuruluşa hazır hale getirir ve sahaya çıkış kontrolünü yaparsın; akşam ilk on soğuk temas gider. Altıncı gün tam sahadasın.
+İlk beş günün planı, Yol Haritası'nın aşamalarına göre. Birinci gün pazarını seçer, teklifini yazar, fiyat bandını koyar, markanı kurar ve sayfanı hazırlarız; akşam kurulmuş bir işin olur. İkinci gün araçlarını kurar, randevu yolunu WhatsApp'ına bağlar, sayfanı yayına alır, pazarını canlı sayımla doğrularız; CRM hesabın başlangıç görüşmende açılır. Üçüncü gün teslimat akışını çizer, fiyatını kesinleştirir, sözleşmeni ve ödeme yolunu hazırlar, beş yüz kişilik aday listeni çıkarırız; öğleden sonra tanıdık listen çıkar ve aynı akşam onlara ilk mesajı atarsın, sistemin ilk mesajı o gün gider. Dördüncü gün elinde göstereceğin kanıt hazırlanır, ilk yüz mesajın metni yazılır, profillerin kurulur ve provalar başlar; prova, sahaya çıkmadan önce yaptığın sesli alıştırmadır. Beşinci gün provaları bitirir, videoları çeker, şirketini kuruluşa hazır hale getirir ve sahaya çıkış kontrolünü yaparsın; akşam ilk on soğuk temas gider. Altıncı gün tam sahadasın.
 
 Beşinci bloğun akşamına kadar tanımadığın kimseye ulaşmıyorsun. Sebebi şu: ne sattığını bilmeden yazdığın mesaj işe yaramıyor, üstelik o işletme sahibi seni bir daha ciddiye almıyor. Tanıdıklarına üçüncü günde yazacağız, o ayrı.
 

@@ -16,34 +16,35 @@ Neden bu video: randevu alan adayların bir kısmı gelmiyor. Gelmeyenlerin ço�
 
 Bu sayfa kurulu değilse hem gelme oranın hem kapanış oranın düşüyor, çünkü aday görüşmeye ne beklediğini bilmeden geliyor.
 
-### Neden siteye koyduğumuz uzun satış videosunu bugün çekmiyoruz
+### Siteye iki video girmiyor, bir video giriyor
 
 Bunu açıkça yazıyorum, çünkü "satış videosu" denince akla o geliyor.
 
-Siteye konan uzun satış videosunun işi ikna etmek değil, elemek. Reklamdan gelen, seni hiç tanımayan kalabalığı süzüyor. O video kanıt biriktikten ve reklam bütçen oluştuktan sonra kuruluyor. Sebebi şu: elemek için önce elenecek kadar çok yabancının sayfaya gelmesi gerekiyor, o da ancak her gün reklam parası harcamaya başlayınca oluyor. İkincisi, o videonun içine koyacağın kanıt ilk müşteriden sonra çıkıyor; kanıtsız çekilen video kimseyi elemiyor, sadece bir günü yiyor.
+Sitenin video bölümü yarın sahaya çıktığında dolu olmak zorunda. Mesajındaki linke tıklayan işletmeci boş bir sayfa değil, seni görecek. O yüzden site videosu bugün çekiliyor.
 
-Senin beşinci gününde ne kanıtın var ne reklam bütçen. O videoyu bugün çekersen elemek için değil, boşluğu doldurmak için çekmiş olursun.
+Ama ayrı bir senaryo yazılmıyor ve güne yeni bir iş eklenmiyor. Site videosu, az önce çektiğin ön görüşme videosunun kısaltılmış hali: yedi parçanın ilk beşi, kapanış ve "senden istediklerim" bölümü çıkarılmış hali. İki ile üç dakika, aynı oturuşta, aynı kıyafetle, aynı yerde. Farkı şu: ön görüşme videosu randevu almış adama gidiyor ve ondan bir şeyler istiyor; site videosu seni hiç tanımayana gidiyor ve ondan tek bir şey istiyor, görüşme planlamak.
 
-O yüzden sıra şu: bugün ön görüşme videosu, ilk müşteriden sonra site videosu. Site videosunu satis-sayfasini-yaz kurar.
+Siteye konan uzun satış videosu ayrı bir iştir ve bugün çekilmez. Onun işi ikna etmek değil, reklamdan gelen kalabalığı elemek. İki şartı var ve ikisi de bugün yok: elenecek kadar çok yabancının sayfaya gelmesi için her gün reklam parası harcaman gerekiyor, ve videonun içine koyacağın kanıt ilk müşteriden sonra çıkıyor. Kanıtsız çekilen uzun video kimseyi elemiyor, sadece bir günü yiyor. Onu satis-sayfasini-yaz kurar.
 
 Şunlar bu modülün işi değildir:
 - Landing page (siteni-kur, birinci blok; ikinci blokta yayında).
 - Ön görüşme sayfasının kurulması ve randevu akışı (gorusmeye-getir, CRM açıldığı gün). Bu modül videoyu üretir, o sayfaya koyar.
 - Video mesaj (video-mesaj-cek). O bir dakika ve adaya özel.
-- Siteye konan uzun satış videosu (satis-sayfasini-yaz, ilk müşteriden sonra).
+- Siteye konan uzun satış videosu ve satış sayfası (satis-sayfasini-yaz, ilk müşteriden sonra). Sitenin kısa tanıtım videosu bu modülün işi.
 
 Sistemdeki videolar, karıştırma:
 - **Ön görüşme videosu:** bu modül. Üç ile beş dakika, herkese aynı, randevu alana gider.
 - **İtiraz videoları:** bu modül. Üç tane, her biri bir iki dakika, aynı sayfada durur.
 - **Video mesaj:** bir dakika, adaya özel, yazı yolunda en çok istenen yüz işletmeye.
 - **Deneme videosu:** beşinci gün, kimseye gitmez.
-- **Site videosu:** ilk müşteriden sonra.
+- **Site videosu:** bu modül, aynı gün. Ön görüşme videosunun kısaltılmış hali, iki ile üç dakika; sitenin video bölümüne girer. Ayrı senaryo yazılmaz.
+- **Uzun satış videosu:** ilk müşteriden sonra, satış sayfasıyla birlikte.
 - **Rapor günü videosu:** müşterinin çektiği kısa video.
 
 Pazarlamadaki karşılığı: görüşmeden önce seni izlemiş aday, görüşmeye yabancı gelmiyor.
 
 ## 2. Ne zaman çalışır
-- Beşinci günün ikinci yarısında, bir buçuk saat. Provaların yapıldığı gün; kameraya konuşmakla prova aynı kası çalıştırıyor, ikisi arka arkaya daha iyi gidiyor.
+- Beşinci günün ikinci yarısında, bir buçuk saat. Üç video aynı oturuşta: ön görüşme videosu, onun kısaltılmış site hali, üç itiraz videosu. Provaların yapıldığı gün; kameraya konuşmakla prova aynı kası çalıştırıyor, ikisi arka arkaya daha iyi gidiyor.
 - İlk kanıt hikâyesi çıkınca ikinci kez: kanıt parçası gerçek müşteriyle değişir.
 - Elli görüşme dolmadan metin değişmez.
 
@@ -144,7 +145,7 @@ Ama geçici: ilk beş görüşmeni yaptıktan sonra videoyu yüzünle yeniden ç
 ## 6. Ne söyler
 
 Açılışta: "Bir buçuk saat. Bir tane üç dakikalık video, üç tane bir dakikalık video. Telefonla, tek çekim, montaj yok. Bu videoyu görüşmeye gelen herkes izleyecek."
-Site videosunu sorarsa: "Siteye konan uzun videoyu bugün çekmiyoruz. O videonun işi seni hiç tanımayan kalabalığı elemek ve senin şu an ne kanıtın var ne reklamın. İlk müşteriden sonra çekiyoruz."
+Site videosunu sorarsa: "Siteye giren kısa videoyu bugün çekiyoruz, ayrı senaryo yok: az önce çektiğin videonun ilk beş parçası, iki üç dakika. Yarın sahaya çıkıyorsun ve mesajındaki linke tıklayan adam seni görsün istiyoruz. Siteye konan uzun satış videosu ayrı bir iş, onu ilk müşteriden sonra çekiyoruz; çünkü onun işi kalabalığı elemek ve bugün ne kanıtın var ne reklamın."
 Metni verirken: "Yedi parça. Ezberleme, bil. Şimdi bir kez sesli oku; ağzına oturmayan cümleyi söyle, değiştireyim."
 Dördüncü parçada: "Bu cümleyi rahat söyle, çünkü doğru. Her görüşmeden önce o işletmeyi gerçekten inceliyorsun. Bunu söyleyene insanlar geliyor."
 Kanıt parçasında: "Buraya kendi deneme aramanın sonucunu koyuyoruz, gerçek sayıyla. Uydurma rakam koymuyoruz; ilk soruda çöker."

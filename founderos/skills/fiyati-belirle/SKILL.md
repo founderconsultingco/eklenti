@@ -33,7 +33,7 @@ Pazarlamadaki karşılığı: fiyat matematik değil, kendini nereye koyduğun.
 
 ## 3. Ne okur
 
-İş Beyni'nden: hazırlık seviyen, gelir planın, kanal yolun, nişin, bu sabah çıkan saat tablosu (yalnız kurulum ücreti teslim maliyetini karşılıyor mu kontrolü için; fiyat saatten hesaplanmıyor).
+İş Beyni'nden: hazırlık seviyen, gelir planın, kanal yolun, nişin, aylık hedefin (dört müşteri kontrolü için; fiyat saatten hesaplanmıyor).
 Niş kartından: gerçek fiyatlar ve kapasite, duran havuz, yasal sınırlar.
 Kilitli formül ve oranlardan: aşağıda.
 
@@ -54,7 +54,7 @@ Fiyat iki parçadır ve ikisi de değerden hesaplanır, senin saatinden değil: 
 - **Aylık ücret:** kurulum ücretinin yüzde yirmisi. Karşılığı: sistemin bakımı, metin ve ayar düzeltmeleri, bozulanın onarılması, haftalık kontrol, ara raporlar ve aylık rapor. Kısa hali: "aylık, kurulumun beşte biri."
 - **Deneme fiyatı:** hazırlık seviyesi düşükse ilk iki müşteride kurulum ücretinin yarısı. Aylık ücret değişmez, çünkü aylık kurulumdan hesaplanır ve tam kurulumdan hesaplanmaya devam eder.
 - **Karşılaştırma fiyatı:** Kademe 2'nin üç aylık peşin paketi (kurulum artı üç aylık). Ön görüşme sayfasında durur (sitede fiyat yoktur), görüşmede söylenmez.
-- **Taban:** kurulum ücreti saat tablosundaki kurulum saatlerinin maliyetini (kurulum saatleri çarpı senin saatinin değeri, yani aylık hedefin bölü ayda çalışacağın saat; bu ölçü sistemin kendi kararıdır) karşılamıyorsa o işletme sana küçük demektir; fiyat yukarı yuvarlanmaz, aday uygunluk puanında düşer ve nişte bu sık oluyorsa nisi-sec'in müşteri değeri elemesine işaret gider.
+- **Taban:** aylık ücretin dört katı senin aylık hedefine ulaşmıyorsa o işletme sana küçük demektir; fiyat yukarı yuvarlanmaz, aday uygunluk puanında düşer ve nişte bu sık oluyorsa nisi-sec'in müşteri değeri elemesine işaret gider.
 
 Neden saat değil değer: birinin daha iyi olduğu bir işi daha hızlı yapıyor diye daha az kazanması saçma. Saatten hesaplayan herkes kendini ucuzlatıyor; değerden hesaplayan rakamın arkasında veri taşıyor ve görüşmede "neden bu kadar" sorusuna rakamla cevap veriyor.
 
@@ -65,7 +65,7 @@ Neden saat değil değer: birinin daha iyi olduğu bir işi daha hızlı yapıyo
 2. Ciddi olmayanı eliyor. Kurulum ücretini peşin ödeyen kişi fiyat sormaya gelmemiş demektir.
 3. Seni erken ayrılıktan koruyor. Kurulum en ağır emeğin harcandığı yer; müşteri ikinci ay ayrılsa bile o emeğin karşılığı ödenmiş oluyor.
 
-Şunu aklında tut: kurulum ücreti teslim maliyetini karşılar ve değerin ilk dilimidir; aylık ücret kârın yaşadığı yerdir, çünkü tekrar eder.
+Şunu aklında tut: kurulum ücreti değerin ilk dilimidir ve bir kere alınır; aylık ücret kârın yaşadığı yerdir, çünkü tekrar eder.
 
 ### Fiyat nasıl hesaplanır: dört adım
 
@@ -79,7 +79,7 @@ Kalıp, rakamlar karttan: kartın kayıp biriminin ortası alınır; kartın sı
 
 **Dördüncü adım, sayıya girmeyenleri söyle, rakama katma.** Sistem gece de çalışıyor, hastalanmıyor, takibi unutmuyor, gece ikide gelen mesaja cevap veriyor. Kartın ikinci ve üçüncü sızıntısı da burada (karttan okunur). Bunların lira karşılığı kartta yoksa çarpıma girmiyor; ama fiyatı savunurken söylenir, rakamın arkasındaki fazlayı bunlar taşır.
 
-**Hesap küçük çıkarsa.** Kurulum ücreti teslim maliyetinin altında kalıyorsa fiyat yukarı yuvarlanmaz, hesap doğru kabul edilir. Sırayla üç şey yapılır. Bir: kartın ikinci ve üçüncü sızıntısının lira karşılığı sahadan biliniyorsa aylık kayba eklenir ve hesap tekrarlanır. İki: yine altındaysa bu niş için hedeflenen işletme büyüklüğü yükseltilir (çok koltuklu, çok şubeli, çok ekipli) ve ideal müşteri sayfası buna göre daraltılır; küçük işletmeler uygunluk puanında C'ye düşer. Üç: nişin çoğu işletmesi bu hesabı taşımıyorsa niş düşer ve birinci günün ikinci sırasındaki nişe geçilir. Bu sıra hiçbir zaman atlanmaz; fiyatı yukarı yuvarlayarak niş kurtarılmaz.
+**Hesap küçük çıkarsa.** Aylık ücretin dört katı senin aylık hedefinin altında kalıyorsa fiyat yukarı yuvarlanmaz, hesap doğru kabul edilir. Sırayla üç şey yapılır. Bir: kartın ikinci ve üçüncü sızıntısının lira karşılığı sahadan biliniyorsa aylık kayba eklenir ve hesap tekrarlanır. İki: yine altındaysa bu niş için hedeflenen işletme büyüklüğü yükseltilir (çok koltuklu, çok şubeli, çok ekipli) ve ideal müşteri sayfası buna göre daraltılır; küçük işletmeler uygunluk puanında C'ye düşer. Üç: nişin çoğu işletmesi bu hesabı taşımıyorsa niş düşer ve birinci günün ikinci sırasındaki nişe geçilir. Bu sıra hiçbir zaman atlanmaz; fiyatı yukarı yuvarlayarak niş kurtarılmaz.
 
 Bu hesabı telefonda iki cümlede söyleyebilirsin: "Ayda kaçırdığınız [aylık kayıp], yılda [yıllık]. Kurulum bunun onda biri, aylık da kurulumun beşte biri."
 
@@ -160,7 +160,7 @@ Bu bir sayı sözü değildir ve olmamalıdır. "Ayda otuz randevu" diye söz ve
 
 Güvencenin şartları da yazılır: müşteri giriş izinlerini kurulum görüşmesinde verir, karşılama formunu ve duran havuz onayını yedinci güne kadar verir. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Bir parça mevzuat yüzünden ya da müşterinin kendi adımını atmaması yüzünden kurulamıyorsa o parça güvencenin sonucuna sayılmaz.
 
-Güvence konusunda bir rahatlatıcı bilgi: bu tip güvenceleri kullanan müşteri onda birden az çıkıyor. Güvence iade için değil, kararı kolaylaştırmak için var.
+Güvence nerede söylenir, nerede söylenmez. Sözleşmede yazılıdır ve onay belgesinde durur; görüşmede "garanti veriyor musunuz" sorusuna cevap olarak söylenir. Teklifin başlığında, sitenin açılışında, telefon açılışında ve ilk mesajlarda geçmez. Sebebi şu: iade sözü kimseyi ikna etmiyor, hatta "demek ki çalışmama ihtimali var" diye okunuyor. İkna eden şey kanıt: deneme aramalarının rakamı ve adayın kendi telefonundan arayabileceği çalışan demo. Güvence kararı kolaylaştırmak için var, kararı kurmak için değil.
 
 ### Aday ilk mesajda "fiyat ne" diye sorarsa
 

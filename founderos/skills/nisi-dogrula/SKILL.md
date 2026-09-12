@@ -59,21 +59,13 @@ Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 2. Türkiye'de en az 2.000 işletme var mı? Şehirde 500 çıkmazsa niş Türkiye geneline açılıyor, o zaman bu sayı devreye giriyor. Ülke çapında büyük bir pazar aranmıyor; dört müşteri için 2.000 yeter. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
 4. Telefonu dolu olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın. Instagram bu sayımda ölçülmüyor, oran yalnız telefonla kurulur.
-5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; kurulum teslim maliyetini karşılamalı (ikinci blokta kaba ölçü: elli saat çarpı öğrencinin saatinin değeri; saat tablosu üçüncü blokta).
-
-### Altıncı sütun: rakip
-
-Bu sütun eleme yapmaz, bilgi verir. Sorusu şu: bu şehirde bu nişe WhatsApp botu, yapay zeka asistanı ya da kendiliğinden giden mesaj sistemi satan biri var mı.
-
-Nasıl bakılır: Google'da ve Instagram'da "şehir adı, niş adı, whatsapp botu" ve "şehir adı, niş adı, yapay zeka asistan" aranır. On dakika sürer. Böyle biri varsa adı ve ne vaat ettiği yazılır.
-
-Bu bilgi teklifi-yaz ve adaya-mesaj-yaz modüllerine gider. Rakip varsa niş düşmez, sadece açılış cümlesi değişir.
+5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; aylık ücretin dört katı öğrencinin aylık hedefine ulaşmalı.
 
 ### Sonuç
 
-nisi-sec'e üç satır ve altı sütunluk bir tablo döner. Her hücrede rakam ve o rakamın nereden geldiği yazar. Tablonun altında tek satır: birinci aday şu, sebebi şu.
+nisi-sec'e üç satır ve beş sütunluk bir tablo döner. Her hücrede rakam ve o rakamın nereden geldiği yazar. Tablonun altında tek satır: birinci aday şu, sebebi şu.
 
-**Bulunamayan hücreye "ölçülemedi" yazılır ve boş bırakılmaz.** Altı sütunun hepsi her nişte dolmuyor; reklam veren oranı ve rakip sayısı en sık boş kalanlar. Boş bırakılan hücre öğrenciye "bakılmadı mı, sıfır mı" diye okunuyor. nisi-sec kararı anlatırken ölçülemeyen sütunu da söyler: "Reklam veren oranını ölçemedim, o yüzden bu karar diğer dört ölçüye dayanıyor." Eksik ölçü kararı durdurmuyor, ama saklanmıyor.
+**Bulunamayan hücreye "ölçülemedi" yazılır ve boş bırakılmaz.** Beş sütunun hepsi her nişte dolmuyor; reklam veren oranı en sık boş kalanı. Boş bırakılan hücre öğrenciye "bakılmadı mı, sıfır mı" diye okunuyor. nisi-sec kararı anlatırken ölçülemeyen sütunu da söyler: "Reklam veren oranını ölçemedim, o yüzden bu karar diğer dört ölçüye dayanıyor." Eksik ölçü kararı durdurmuyor, ama saklanmıyor.
 
 **Rakamın kaynağı hem tabloda hem sohbette adlandırılır.** "Bursa'da 409 servis" yetmiyor; nereden sayıldığı söyleniyor. Kaynağı söylenmeyen rakam, öğrencinin müşteriye tekrarlayamayacağı rakamdır ve o rakam ilk görüşmede onu zor durumda bırakıyor.
 
@@ -107,7 +99,6 @@ CRM'e: hiçbir şey. Aday listesi üçüncü blokta çıkar.
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üç nişten hiçbiri beş sorudan üçünü geçemiyor: "aday havuzu zayıf" denir ve nisi-sec üç yeni niş çıkarır.
 - Üç nişin de şehir sayısı 500'ün altında: coğrafya Türkiye geneline açılır.
-- Rakip sütunu dolu: teklifi-yaz ve adaya-mesaj-yaz'a not gider.
 - Kartın Türkiye geneli sayısı ile canlı sayım arasında büyük fark var: kart eskimiş demektir, işaretlenir ve güncellenir.
 
 Beş kural: boş sayfa yok (kartın kelimeleri ve beş soru hazır gelir) · sessiz bitiş yok (tablo ve tek satırlık sonuç) · onay (kayıt yapmaz, onay gerekmez) · sahadan güncelleme (canlı sayım kartın sahadan dolacak bölümüne yazılır) · sormaz söyler (öğrenciye hiç konuşmaz, sonucu FounderOS anlatır).

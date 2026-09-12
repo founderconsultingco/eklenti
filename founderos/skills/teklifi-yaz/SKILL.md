@@ -33,7 +33,7 @@ Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelim
 ## 3. Ne okur
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sızıntı nerede, açılış cümlesi, duran havuz, gerçek fiyatlar ve kapasite, işletmecinin gerçek dertleri ve iç sesi, asistan kuralları, rekabetin şekli, yasal sınırlar.
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, doğrulama tablosundaki rakip notu, şehir.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, şehir.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, üç korku, satın alma tetikleyicisi, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar, ne satın almaz (nitelik cümlesi buradan çıkar). Teklifin her cümlesi bu başlıklardan birine bağlanır ve hangisine bağlandığı öğrenciye gösterilir.
 İş modelinden: ne sattığımız, üç ajan, on üç işlev, iki müşteri yolculuğu, kademeler ve sınırlar. Sabit teklif metninden: dört sızıntı, üç kademe.
 Niş kartından: bu nişin müşteri yolculuğu (randevu, teklif ya da ikisi). Dönüşüm Cümlesi ona göre kurulur: randevu nişinde "randevuya dönmesini", teklif nişinde "teklife dönüp kapanmasını" der.
@@ -55,7 +55,7 @@ Gövdenin beş parçası var:
 1. Dönüşüm Cümlesi, beş parçasıyla: kime, hangi kayıp, hangi yöntemle, hangi sonuç, sonunda hangi duygu.
 2. Sistemin adı.
 3. Bu nişin ne kaybettiği. Kartın kayıp birimi. Rakam kartta yoksa "sahadan dolacak" der, uydurmazsın.
-4. Sistemin o kaybı nasıl durduğu. Teslimat uygunluk kontrolünden geçmiş parçalar, sadece onlar.
+4. Sistemin o kaybı nasıl durduğu. Nişin kartındaki müşteri yolculuğunun getirdiği parçalar, sadece onlar.
 5. Karşı tarafın riski. Ödeme sırası, deneme, çıkış şartı. Bir işletme sahibinin "peki ya olmazsa" sorusunun cevabı.
 
 ### Güçlü teklif, dolu teklif değildir
@@ -133,17 +133,17 @@ Dönüşüm Cümlesi telefonda söylediğin kısa haldir. Görüşmede, sitede v
 1. **Sonuç.** İşletmecinin gerçekten istediği şey, senin yönteminin adı değil. Sonucun somutluk basamağı var ve ne kadar yukarıdaysan o kadar iyi: başvuru bir isimdir, kolay küçümsenir; randevu gerçektir, takvimde biri var; teklif kabulü daha gerçek; kapanmış iş tartışılmaz. Teklif, sistemin gerçekten ölçebildiği en yukarıdaki basamağı söyler: randevu nişinde "yazılan ve gelen randevu", teklif nişinde "cevap alınan ve kabul edilen teklif". Rakam sözü verilmez; olay sözü verilir.
 2. **Süre.** Sonucun ne zaman görüneceği. Bizimki sabit: sistem [21/28] günde kurulur ve rapor gününde üç sayı önüne konur. Gün yazılır, ay değil; "[21/28] gün" "üç hafta"dan sert okunuyor.
 3. **Yöntem.** Sistemin adı ve üç ile beş adımı, çocuk anlayacak kadar sade. "Telefon açılmayınca otuz saniyede mesaj gidiyor, cevap gelince sistem üç soru soruyor, randevu takvime düşüyor, gelmeyeni ertesi gün arıyor." Araç adı yok.
-4. **Güvence.** Riskin sende olduğu cümle: rapor günü raporundaki üç sayı sıfırsa ikinci ay ücretsiz; deneme fiyatı varsa o da burada. Güvence sayı garantisi değil, "sistem çalışıyor mu" garantisidir.
+4. **Kanıt.** Adayın "bu gerçekten çalışıyor mu" sorusuna verilen cevap. İki parçası var ve ikisi de gösterilir, anlatılmaz: sorunun kanıtı, senin kendi yaptığın deneme aramalarının sayısı ("geçen hafta otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı"); çözümün kanıtı, adayın kendi telefonundan arayabileceği çalışan demo. İlk müşteriden sonra üçüncü parça ekleniyor: kanıt hikâyesi, gerçek rakamla. Güvence bu parçanın yerine geçmiyor; güvence "garanti var mı" sorulduğunda söylenen cevap, teklifin başlığı değil. Sebebi şu: iade sözü inandırmıyor, çalışan bir demo inandırıyor.
 5. **Fiyat.** Tam teklifte fiyatın yeri var ama telefonda ve sitede yok; görüşmede matematiğiyle söylenir. Kural fiyati-belirle'de.
 6. **Nitelik.** Kime satıyorsun ve **kime satmıyorsun**. "Yalnızca iki ve daha çok hekimli klinikler", "günde yirmi çağrıdan az alan işletmeyle çalışmıyorum" gibi. Kimseyi elemeyen teklif kimseye özel değildir; nitelik cümlesi ideal müşteri sayfasının "ne satın almaz" başlığından çıkar.
 
 Bir de yedinci şey var, parça değil kaldıraç: **işletmecinin yapması gereken tek şey.** İyi tekliflerin hepsinde şu cümle var: "her şeyi sizin için biz yapıyoruz", "ek personel almadan", "mevcut düzeninizi değiştirmeden". Teklifte işletmecinin ne yapacağı tek cümleyle yazılır ve o cümle kısa olur: "Siz bize telefon hattınızı ve WhatsApp'ınızı bağlarsınız, gerisi bizde."
 
-**Tam teklif cümlesi, kalıp:** "[Nitelik] için. [Sistemin adı] ile [süre] içinde [sonuç]; olmazsa [güvence]. Siz [tek şey] yaparsınız, gerisini biz kuruyoruz."
+**Tam teklif cümlesi, kalıp:** "[Nitelik] için. [Sistemin adı] ile [süre] içinde [sonuç]. Siz [tek şey] yaparsınız, gerisini biz kuruyoruz." Güvence bu cümleye girmez; sorulduğunda söylenir.
 
-Randevu nişine örnek: "Bursa'da iki ve daha çok teknisyeni olan klima servisleri için. Sezon Çağrı Sistemi ile [21/28] gün içinde açılmayan her arama aynı dakika mesajla yakalanıyor ve randevuya çevriliyor; rapor gününün raporunda üç sayı sıfırsa ikinci ay ücretsiz. Siz hattınızı bağlarsınız, gerisini biz kuruyoruz."
+Randevu nişine örnek: "Bursa'da iki ve daha çok teknisyeni olan klima servisleri için. Sezon Çağrı Sistemi ile [21/28] gün içinde açılmayan her arama aynı dakika mesajla yakalanıyor ve randevuya çevriliyor. Siz hattınızı bağlarsınız, gerisini biz kuruyoruz."
 
-Teklif nişine örnek: "Ekibi olan mutfak ve banyo tadilat firmaları için. Keşif Takip Sistemi ile [21/28] gün içinde her keşif talebi randevuya, verdiğiniz her teklif cevaba bağlanıyor; cevapsız teklif kalmıyor. Rapor gününün raporunda üç sayı sıfırsa ikinci ay ücretsiz. Siz teklifi hazırlarsınız, göndermeyi ve takibi biz yapıyoruz."
+Teklif nişine örnek: "Ekibi olan mutfak ve banyo tadilat firmaları için. Keşif Takip Sistemi ile [21/28] gün içinde her keşif talebi randevuya, verdiğiniz her teklif cevaba bağlanıyor; cevapsız teklif kalmıyor. Siz teklifi hazırlarsınız, göndermeyi ve takibi biz yapıyoruz."
 
 ### Dört kaldıraç: teklifin değeri nereden geliyor
 
@@ -193,7 +193,7 @@ Görüşmede tek paket ve tek rakam söylenir, o da Kademe 2'dir. Üç kademe ve
 
 ### İtirazlar
 
-Üç itiraz ve cevapları karttan alınır, senin ağzına uyarlanır. Rakip notu varsa dördüncü itiraz eklenir: "zaten yapay zeka teklifi aldık". Cevabı şu: "Güzel, o zaman ne kaçırdığınızı biliyorsunuz. Onlar ne söz verdi? Ben bot satmıyorum, kaçan aramanın randevuya dönmesini satıyorum, rapor gününde raporla."
+Üç itiraz ve cevapları karttan alınır, senin ağzına uyarlanır. Dördüncü itiraz her nişte ekleniyor, çünkü bu teklifi duymuş aday her şehirde çıkıyor: "zaten yapay zeka teklifi aldık". Cevabı şu: "Güzel, o zaman ne kaçırdığınızı biliyorsunuz. Onlar ne söz verdi? Ben bot satmıyorum, kaçan aramanın randevuya dönmesini satıyorum, rapor gününde raporla."
 
 İtirazın kendisi kötü haber değil. İtiraz eden aday, hiç ses çıkarmadan kaybolan adaydan daha ciddidir. İtiraz reddetme değil, bilgi isteme biçimidir.
 
@@ -231,7 +231,6 @@ Sıradaki, birinci günde: "Ne sattığını yazdık. Şimdi kartından fiyat ba
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - On görüşme birikti ve aynı işaret beşinde çıktı: teklif yeniden yazılır.
-- Rakip notu var: dördüncü itiraz eklenir, açılış cümlesi değişir.
 - Nişin mevzuat kısıtı var: Kademe 3 "yok" yazılır, sonuç cümlesi kısıtlara göre yeniden kurulur.
 - Bir dakikalık anlatım iki denemede söylenemedi: prova sayacına eklenir.
 - İlk on görüşmede işletmeciler aynı cümleyi kurdu: o cümle Dönüşüm Cümlesi'ne ve karta geçer.

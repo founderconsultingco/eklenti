@@ -139,7 +139,7 @@ Bunlar teklifin dışında kalır ve teklifi-yaz ile hizmet-sozlesmesi bunları 
 - Mesajlaşma pencereleri, onaylı şablonlar ve iletişimden çıkma tercihine uyulur; İYS kuralı burada.
 - Randevu alınınca eski randevu davetinin takibi durur; satın alma gerçekleşince eski satış takibi durur.
 - Çalışan konuşmayı devralınca asistan aynı anda cevap vermeye devam etmez.
-- Platformda bir özelliğin bulunması, her müşteride etkin ve çalışıyor olduğu anlamına gelmez; hizmet-akisini-ciz'in teslimat uygunluk kontrolü bunun için var.
+- Platformda bir özelliğin bulunması, her müşteride etkin ve çalışıyor olduğu anlamına gelmez; nişin kartındaki müşteri yolculuğu ve yasal sınır satırları hangi parçanın o nişte kurulmayacağını söyler.
 
 ## FounderOS içindeki yeri
 

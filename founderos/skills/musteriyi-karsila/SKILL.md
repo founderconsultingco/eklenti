@@ -219,7 +219,7 @@ Sistemde dört kilit var ve dördü de gün sayısıyla değil, sayıyla açıl�
 - Mesaj metni: üç yüz temasta karar verilir, iki yüz temasta sadece bakılır.
 - Teklifin kelimeleri: on görüşme birikecek.
 - Fiyatın rakamı: otuz görüşme birikecek.
-- Niş: doksan gün ya da beş müşteri. Tek istisnası üç yüz temas yapılmış ve hiç görüşme çıkmamış olması.
+- Niş: doksan gün ya da beş müşteri. Tek istisnası beş yüz temas yapılmış ve hiç görüşme çıkmamış olması.
 
 Şimdi senin hesabın. İşin yanında çalışan günde kırk temas yapıyor. Teslim sürecinde bu yirmiye iniyor. Yani teslim yürürken kilitlerin sayacı yarı hızda işliyor.
 

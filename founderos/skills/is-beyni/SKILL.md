@@ -49,7 +49,7 @@ Kilitli satırlar: teklifin kelimeleri on görüşmede, fiyatın rakamı otuz g�
 Yazan: teklifi-yaz, fiyati-belirle, gorusmeyi-analiz-et.
 
 ### 5. Teslimat
-Müşteriye gösterilecek beş satır, saat tablosu ve tahmin oldukları notu, kapasite bölmesi ve ölçülecek satırlar, görüşmede söylenecek üç cümle, müşteriden istenecekler listesi, dört dosyanın adı ve durumu.
+Müşteriye gösterilecek beş satır, ölçüm satırları ve doldukları tarih, kapasite hesabı (ilk müşteriden sonra), görüşmede söylenecek üç cümle, müşteriden istenecekler listesi, dört dosyanın adı ve durumu.
 Yazan: hizmet-akisini-ciz.
 
 ### 6. Marka ve varlıklar

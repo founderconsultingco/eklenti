@@ -17,7 +17,7 @@ Dün akşam çıkardığın iki listeye gidecek mesajları yazıyor ve gönderme
 Bu ayrımı bozarsan gerisi çalışmıyor. Tanıdığa satmaya çalışan kişi karşısındakini kaçırıyor, çünkü karşısındaki hem satın almak zorunda hissediyor hem hayır demenin yolunu bulamıyor. Referans soran kişi kimseyi sıkıştırmıyor ve "hayır" cevabı ilişkiyi bozmuyor.
 
 Şunlar bu modülün işi değildir:
-- Listeyi çıkarmak (tanidik-listesi-cikar, ikinci bloğun akşamı).
+- Listeyi çıkarmak (tanidik-listesi-cikar, aynı günün öğleden sonrası).
 - Soğuk mesajlar (adaya-mesaj-yaz, dördüncü blokta yazılır, saha açılınca gider). Metin bambaşka.
 - Randevu ayarlamak (gorusmeye-getir). Cevap gelip randevu çıkınca o modül devralıyor.
 

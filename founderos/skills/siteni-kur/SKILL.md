@@ -118,7 +118,7 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **11. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından. Fotoğrafı yanında, dikey, gerçek; yoksa bölüm fotoğrafsız kurulur. Müşteri gelmeden önce sayfanın en güçlü kanıtı budur, çünkü tek gerçek olan şey kurucunun kendisi.
 
-**12. Güvence.** Rapor günü raporu ve şartı, fiyati-belirle'deki tam metinle. Sayı sözü yok.
+**12. Güvence.** Rapor günü raporu ve şartı, fiyati-belirle'deki tam metinle. Sayı sözü yok. Bu bölüm sayfanın alt tarafında durur ve açılışa taşınmaz; sayfanın ikna eden yeri kanıt bölümleridir, bu bölüm yalnız aklına takılana cevap verir.
 
 **13. Sorular.** Kartın en güçlü üç itirazı, soru biçiminde, açılır kapanır. Cevaplar teklifi-yaz'daki itiraz cevapları, sayfa diline çevrilmiş.
 
@@ -140,7 +140,7 @@ Google yorumu ekran görüntüsü yok. Hizmeti almamış kişi de yorum yazabild
 
 İletişim formu yok. Form dolduran cevap bekliyor ve sen sahadayken cevap veremiyorsun. Tek yol takvim, takvim yoksa WhatsApp.
 
-Hakkımızda, blog, hizmetler sayfası yok. Canlı destek kutusu yok. Boş video kutusu yok: video yoksa video yeri de yok.
+Hakkımızda, blog, hizmetler sayfası yok. Canlı destek kutusu yok. Boş video kutusu yok: video bölümü beşinci günde video çekilince açılır, o güne kadar sayfada hiç görünmez.
 
 "Yapay zekâ destekli", "otomasyon", "sistem entegrasyonu" yok. Adam ne kazanacağını okuyacak, hangi teknolojiyle olduğunu değil.
 
@@ -298,7 +298,7 @@ Başlığı yazarken: "Başlıkta ne sattığını değil, onun ne kazanacağın
 Fiyat sorarsa: "Sayfaya fiyat koymuyoruz. Rakam görüşmede, matematiğiyle birlikte söyleniyor. Sayfada tek başına duran rakam her zaman pahalı görünüyor."
 Form isterse: "Form koymuyoruz. Formu dolduran aday cevap bekliyor ve sen dört saat aramadayken cevap veremezsin. Tek yol takvim; takvim seni beklemiyor."
 Yorum eklemek isterse: "Google yorumunun ekran görüntüsünü koymuyoruz, o kanıt sayılmıyor. Müşterinin sana yazdığı söz ayrı, o girer."
-Video sorarsa: "Boş video kutusu koymuyoruz; video çekilince açılış görseli video olacak. O güne kadar açılışta fotoğrafın ya da markanın görseli var."
+Video sorarsa: "Bugün video yok, o yüzden video bölümü de yok; boş kutu koymuyoruz. Beşinci günde iki üç dakikalık tanıtım videonu çekiyoruz, o gün bölüm açılıyor ve sayfaya giriyor. Sahaya çıktığında sitende videon olacak."
 Sayfayı büyütmek isterse: "Uzatma. Aday sayfada kırk saniye kalıyor. Uzattığın her cümle, okunmayan bir cümle."
 Üçüncü düzeltme turu isterse: "İki tur yaptık, sayfa hazır. Bundan sonrası cümle zevki, o da yarın sabah bir daha bakınca değişir. Şimdi kapatıyoruz."
 Bitince, ikinci blok: "Sayfa yayında. Linkini artık mesajına koyabilirsin."
