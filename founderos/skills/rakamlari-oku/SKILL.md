@@ -117,6 +117,10 @@ CRM açılmadıysa: öğrencinin yapıştırdığı saha sonuçları aday aracı
 
 **Günde iki gelen kutusu anı var ve planın içinde duruyor.** Öğlen, aramaların arasında beş dakika: e-posta ve Instagram açılır, gelen cevaplar olduğu gibi yapıştırılır, FounderOS yanıtları yazar ve öğrenci öğleden sonra gönderir. Akşam, sonuçlar yapıştırılırken aynı şey tekrarlanır. Sebebi şu: cevap veren aday en değerli aday ve yirmi dört saat sonra cevap veren kişi soğuyor. "Cevap gelince söyle" demek yetmiyor, saha günü buna yer bırakmıyor; o yüzden saat sabit.
 
+**Günde iki deneme anı var ve ikisi de planın içinde.** Sabah yirmi beş dakika: ertesi gün yazılı temas edilecek adayların formu doldurulur, WhatsApp'ına gerçek bir müşteri sorusu yazılır. Tam zamanlıda yirmi aday, işin yanında on. Akşam yarım saat, yedi ile yedi buçuk arası: ertesi gün telefonla aranacak adaylar aranır, kimin açtığı sayılır. Tam zamanlıda kırk aday, işin yanında yirmi. İkisi de temas sayılmıyor ve günlük temas sayısından düşülmüyor; kuralları kanitini-hazirla'da.
+
+Sebebi tek cümle: test edilmiş adaya "dün akşam aradım, açan olmadı" denir, edilmemişe kartın sorusu sorulur. Birincisi ikincisinden güçlü, o yüzden testin sayısı günün planından geliyor, sabit bir rakamdan değil.
+
 Haftada bir de toplu araştırma var, pazartesi sabahı on dakika: nişin iş ilanı araması. Tek arama, sonucu bütün listeye dağılıyor. Bu, gözlemi olmayan adayların gözlem kazandığı yer. Reklam bakışı buraya girmiyor, onu veri servisi çekimle birlikte kendisi yapıyor.
 
 **Liste stoğu her sabah ozet'in son satırında görünür ve takvimle değil stokla tetiklenir.** Araç dokunulmamış aday sayısını günlük temposuna bölüyor ve kaç gün kaldığını yazıyor. Beş günün altına inince "yeni ilçe çekilmeli" uyarısı çıkıyor ve o gün FounderOS yeni bir ilçe için çekim başlatıyor; öğrenciye sorulmuyor, söyleniyor. Aylık kayıt tavanı 2.500, beş yüzlük bir tazeleme rahat sığıyor. Takvime bağlı bir yenileme yok: listenin ne zaman biteceği tempoya bağlı, aya değil.

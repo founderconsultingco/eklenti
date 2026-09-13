@@ -136,7 +136,8 @@ Ulaşma:
 - Kanca: İşletmecinin zaten bildiği ama yapmadığı şeyi hatırlatan tek cümle; mesajın ve aramanın açılışı.
 - Yaşanmış kanca: Senin gerçekten yaşadığın olay: "dün akşam yedide aradım, açan olmadı".
 - Deneme araması: Adayı gerçek müşteri gibi denemen: akşam arayıp açıyor mu bakmak, mesaj yazıp kaç saatte döndüğünü ölçmek, formunu doldurup dönüş var mı görmek. Dördüncü blokta hızlı denetimle birlikte ilk kez yapılır, saha açıldıktan sonra her akşam yarım saat; yaşanmış kancanın kaynağı.
-- Akşam testi: Saha açıldıktan sonra her akşam yedi ile yedi buçuk arası, ertesi gün aranacak ilk yirmi adayın telefon testi.
+- Akşam testi: Saha açıldıktan sonra her akşam yedi ile yedi buçuk arası, ertesi gün telefonla aranacak adayların telefon testi. Sayı plandan gelir, tavanı tam zamanlıda kırk, işin yanında yirmi.
+- Sabah yazılı testi: Her sabah, ertesi gün yazılı temas edilecek adayların formunu doldurma ve WhatsApp mesajı testi. Cevabı ertesi sabah okunur. Tam zamanlıda yirmi, işin yanında on.
 - Kanıt cümlesi: Deneme aramalarının toplu sayımından çıkan tek cümle: "Geçen hafta otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Senin saydığın, yuvarlanmayan rakam; her pazartesi güncellenir. Kanıt hikâyesinden ayrıdır.
 - Öne çıkanlar: Instagram profilinde sabit duran iki bölüm. Biri demo ekran kaydından yirmi otuz saniye (Sistem), biri gerçek hayatından üç beş kare (Ben). Demo ekran kaydı çıkınca doldurulur, ondan önce boş kalır; ilk müşteriden sonra üçüncü bölüm (Sonuç) açılır. Demonun linki değil videosu konur.
 - İlk beş kelime kuralı: Instagram mesaj kutusunda karşı taraf mesajın tamamını değil ilk satırının başını görüyor, kararı orada veriyor. Bu yüzden mesajın ilk beş kelimesi işin konusunu taşır; selamlama ve nezaket cümlesi o beş kelimeyi yakıyor.

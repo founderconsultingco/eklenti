@@ -41,11 +41,15 @@ Reklam bakışı eskiden bu katmandaydı, artık değil: veri servisi reklam kü
 
 Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı gün içinde değişmiyor.
 
-**Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de telefon istiyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor. Bu ikisi günde beş işletmeyle sınırlı kalıyor ve o beş, listenin en başındaki beş oluyor.
+**Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de senin elinle yapılıyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor.
+
+Bu ikisi derin denetimin içinde tek tek yapılmıyor, **toplu yapılıyor ve denetimden ayrı duruyor**. Sebebi zaman: derin denetim işletme başına sekiz dakika ve günde beşle sınırlı, ama tek bir test araması kırk saniye. Testi denetime bağlamak günde beş adayla sınırlıyordu; ayırınca günde altmışa çıkıyor.
+
+Sayılar kanitini-hazirla'da yazılı ve çalışma düzenine bağlı. Tam zamanlıda akşam kırk telefon testi, sabah yirmi yazılı ve form testi. İşin yanında yirmi ve on. Kimin test edileceğini gün planı söylüyor: ertesi gün temas edilecek adaylar. Sonuçlar denetim kartının altıncı ve yedinci satırına düşüyor, denetim o satırları kendi yapmıyor, buradan okuyor.
 
 Sonuç şu: beş yüz adayın hepsinde gözlem var, en iyi otuzunda toplu araştırmadan gelen güçlü gözlem var, günün ilk beşinde gerçekten yapılmış test var. Gözlemsiz mesaj gitmiyor.
 
-**Derin denetim.** İşletme başına sekiz dakika, canlı testler dahil. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
+**Derin denetim.** İşletme başına sekiz dakika. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Canlı testler bu sekiz dakikanın içinde değil: onlar bir gün önceden toplu yapılıyor ve karta hazır geliyor. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
 
 Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin denetim her sabah sıranın başındakileri açar.
 
@@ -112,13 +116,13 @@ Toplam sıfırla on beş arası. Üç kademeye bölünür:
 
 ### Derin denetim, denetim kartı, sekiz dakika
 
-Hızlı denetimin beş satırının üstüne beş şey daha eklenir.
+Hızlı denetimin beş satırının üstüne beş şey daha eklenir. Beşinin üçü hazır geliyor (arama testi, yazılı test, reklam izi), ikisi burada yapılıyor (iş ilanı, kim karar veriyor). Sekiz dakikanın çoğu bu ikisine ve kartı yazmaya gidiyor.
 
-**6. Canlı arama testi.** kanitini-hazirla'nın kuralıyla, o modülün metnindeki sınırlar aynen geçerli. Kartın "kanal ve zaman" bölümünün söylediği yoğun saatin dışında bir arama. Yazılan: aradığın saat, açıldı mı, kaç çalışta açıldı, sesli mesaj çıktı mı, geri döndüler mi ve ne kadar sonra. Açılmadıysa bu senin en güçlü bulgun oluyor ve mesajın ilk cümlesi bu.
+**6. Canlı arama testi.** Bu satır denetim sırasında doldurulmaz, bir gün önceki akşam testinden hazır gelir. Denetim onu okur. Testi kanitini-hazirla yönetir, sınırları orada yazılı; kartın "kanal ve zaman" bölümünün söylediği yoğun saatin dışında bir arama. Yazılan: aradığın saat, açıldı mı, kaç çalışta açıldı, sesli mesaj çıktı mı, geri döndüler mi ve ne kadar sonra. Açılmadıysa bu senin en güçlü bulgun oluyor ve mesajın ilk cümlesi bu.
 
-**7. Yazılı test.** Kartın söylediği ana yazılı kanaldan, gerçek bir müşteri sorusu. Yazılan: yazdığın saat, cevap geldi mi, kaç saat sonra, cevabın içinde soru soruldu mu yoksa tek kelime mi. Bu testin sınırları kanitini-hazirla'da yazılı ve aynen geçerli: sahte isim yok, sahte işletme yok, randevu almak yok, fiyat pazarlığı yok.
+**7. Yazılı test.** Bu satır da hazır gelir: bir gün önceki sabah yazılı testinden. Kartın söylediği ana yazılı kanaldan, gerçek bir müşteri sorusu. Yazılan: yazdığın saat, cevap geldi mi, kaç saat sonra, cevabın içinde soru soruldu mu yoksa tek kelime mi. Bu testin sınırları kanitini-hazirla'da yazılı ve aynen geçerli: sahte isim yok, sahte işletme yok, randevu almak yok, fiyat pazarlığı yok.
 
-**8. Reklam izi.** Meta reklam kütüphanesinde işletmenin adı aratılır. Yazılan: aktif reklam var mı, kaç tanesi, ne zamandır yayında, hangi kelimeler geçiyor. Reklam veren işletme para harcıyor demektir ve gelen talebi kaçırıyorsa kaybı iki katı; bu, mesajın en sert cümlesini üretir. Kütüphaneye ulaşılamazsa "bakılamadı" yazılır.
+**8. Reklam izi.** Bu satır da elle doldurulmaz, listenin `reklam` sütunundan gelir: aktif reklam var mı, kaç tanesi, biri ne zamandan beri yayında. Reklam veren işletme para harcıyor demektir ve gelen talebi kaçırıyorsa kaybı iki katı; bu, mesajın en sert cümlesini üretir. Sütun boşsa "bakılamadı" yazılır ve puana girmez.
 
 **9. İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle iş ilanı sitelerine, işletmenin Instagram'ına ve sitesinin kariyer sayfasına bakılır. Yazılan: ilan var mı, tarihi, başlığı. "Resepsiyonist arıyoruz" ilanı veren işletme telefonu kaçırdığını kendisi söylüyor; bu bulgu varsa en güçlü bulgu sırasında canlı arama testinin hemen ardına girer ve e-posta açılışı bu ilandan kurulur.
 
