@@ -37,7 +37,7 @@ Bu katmanın ne kadar dolduğunu ölçtük, tahmin etmedik. İki gerçek çekim,
 
 - **İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle şehir ve niş için tek arama. Çıkan işletme adları `isaret --isaret is_ilani` ile listeye yazılır. "Resepsiyonist arıyorsunuz, ilanınızı gördüm" cümlesi profil gözlemlerinin en güçlüsüdür, çünkü işletmeci telefonu kaçırdığını kendisi ilan etmiş oluyor.
 
-Reklam bakışı eskiden bu katmandaydı, artık değil: veri servisi reklam kütüphanesini kendisi tarıyor ve her kayda reklam sütununu dolduruyor. Tek başına sızıntı sayılmıyor; akşam kapalı ya da yorumda şikayet işaretiyle birleşince oluyor: "05.01.2026 tarihinden beri iki reklamınız yayında ama Google'da saatleriniz akşam altıda kapanıyor."
+Reklam bakışı eskiden bu katmandaydı, artık değil: veri servisi reklam kütüphanesini kendisi tarıyor ve her kayda reklam sütununu dolduruyor. Tek başına sızıntı sayılmıyor; akşam kapalı ya da yorumda şikayet işaretiyle birleşince oluyor: "İki reklamınız yayında, biri 05.01.2026 tarihinden beri ama Google'da saatleriniz akşam altıda kapanıyor."
 
 Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı gün içinde değişmiyor.
 

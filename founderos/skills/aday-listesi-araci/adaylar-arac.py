@@ -820,17 +820,19 @@ def ipucu_gozlem(s):
 
 
 def reklam_cumlesi(reklam):
-    """'2 reklam, 05.01.2026 tarihinden beri' -> 'Ocak ayindan beri iki reklaminiz yayinda'
-    biciminde, telefonda soylenebilir tek cumle parcasi."""
-    m = re.match(r"^(\d+) reklam(?:, (\d{2})\.(\d{2})\.(\d{4}) tarihinden beri)?$", reklam)
+    """'2 aktif reklam, biri 05.01.2026 tarihinden beri' -> telefonda
+    soylenebilir tek cumle parcasi."""
+    m = re.match(r"^(\d+) aktif reklam(?:, biri (\d{2})\.(\d{2})\.(\d{4}) tarihinden beri)?$", reklam)
     if not m:
         return "Reklam veriyorsunuz"
     adet = int(m.group(1))
     sayi = {1: "bir", 2: "iki", 3: "üç", 4: "dört", 5: "beş"}.get(adet, str(adet))
     parca = "%s reklamınız yayında" % sayi
     if m.group(4):
-        parca = "%s.%s.%s tarihinden beri %s" % (m.group(2), m.group(3), m.group(4), parca)
-    return parca[0].upper() + parca[1:]
+        parca = "%s, biri %s.%s.%s tarihinden beri" % (parca, m.group(2), m.group(3), m.group(4))
+    # Turkce buyuk harf: "i" -> "I" degil "İ".
+    bas = "İ" if parca[0] == "i" else parca[0].upper()
+    return bas + parca[1:]
 
 
 def gozlem(s):

@@ -76,13 +76,13 @@ Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki ge
 
 İkinci kaynağın işi yeni isim bulmak değil, sıralamayı ve açılış cümlesini düzeltmek. Reklam veren işletme üç şeyi birden kanıtlıyor: parası var, talep akışı var, ve gelen talebi kaçırıyorsa kaybı iki katı. Bu, ideal müşteri tanımının kendisi. Birleşme üç şekilde oluyor:
 
-- Reklam veren işletme Haritalar listesinde zaten varsa satırına `reklam` sütunu doluyor ("2 reklam, 05.01.2026 tarihinden beri") ve ipuçlarına `reklam_veriyor` giriyor.
+- Reklam veren işletme Haritalar listesinde zaten varsa satırına `reklam` sütunu doluyor ("2 aktif reklam, biri 05.01.2026 tarihinden beri") ve ipuçlarına `reklam_veriyor` giriyor.
 - Haritalar'da yoksa listeye yeni satır olarak giriyor, kaynağı `reklam` ve ipuçlarında `sadece_reklam` yazıyor. Telefonu genelde boş; numarasını adından aratarak buluyorsun. Bu satırlar Haritalar'ın kaçırdığı, sadece Instagram'dan yürüyen işletmelerdir ve bazı nişlerde en iyi adaylar onlardır.
 - Ulusal marka ve ajans gürültüsü listeye hiç girmiyor: beğenisi iki yüz bini geçen sayfa ve altmıştan çok aktif reklamı olan sayfa eleniyor.
 
 Reklam kaynağı ikinci ve isteğe bağlı kaynaktır. Bozulursa, kapalıysa ya da süresinde bitmezse liste yine çıkıyor, sadece reklam sütunu boş kalıyor. Liste hiçbir zaman bu kaynağı bekleyip durmuyor.
 
-On iki arama, çekim başına yaklaşık yedi yüz reklam. Bu tavan bilerek düşük tutuldu: sahadan gerçek sayı gelmeden yükseltilmiyor. Kelime sayısı ve arama başına çekilen reklam sayısı ayarlanabilir; ayar deploy gerektirmiyor.
+On iki arama, çekim başına en çok dört yüz **reklam veren**. Buradaki birim önemli: reklam sayısı değil işletme sayısı. Servis her sayfadan tek kayıt alıyor ve o sayfanın kaç aktif reklamı olduğunu ayrıca soruyor; yoksa tek klinik yüz reklamıyla listeyi de maliyeti de şişiriyordu. Bu haliyle bir çekim birkaç kuruş tutuyor. Tavan ve kelime sayıları ayarlanabilir, ayar deploy gerektirmiyor.
 
 Kaç kayıt gelir, bilinmiyor, sahadan dolacak. Beklenti şu: Instagram'dan satan nişlerde (güzellik, estetik, düğün, oto kuaför, fotoğraf, pilates) çok, telefondan yürüyen nişlerde az. Sıfır çıkması sorun değil, liste zaten Haritalar'dan doluyor.
 
@@ -155,7 +155,7 @@ Kalan listenin içinden yüz tanesini işaretliyorsun: müşterin olmasını en 
 
 Beş seçim ölçütü var ve sırası şu:
 1. **İlan verenler.** Adım 2b'deki iş ilanı kaynağından gelenler yüzün başına girer, sıra sormaz.
-2. **Reklam verenler.** Reklam sütunu dolu olanlar. Reklam veren işletme üç şeyi birden kanıtlıyor: parası var, talep akışı var, ve gelen talebi kaçırıyorsa kaybı iki katı. Yüzün ikinci sırası bunlar.
+2. **Reklam verenler.** Reklam sütunu dolu olanlar ("2 aktif reklam, biri 05.01.2026 tarihinden beri"). Reklam veren işletme üç şeyi birden kanıtlıyor: parası var, talep akışı var, ve gelen talebi kaçırıyorsa kaybı iki katı. Yüzün ikinci sırası bunlar.
 3. **Büyük olanlar, ama üst sınırla.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor. Üst sınır İş Beyni'nin ideal müşteri tanımından gelir: hedef büyüklük üç ile on kişi ve karar tek kişide olacak. Yorum sayısı listenin en üstündeki birkaç işletme çoğu zaman bu sınırın dışında kalıyor; sahibi telefona çıkmıyor, karar bir kişide değil. Bunlar listeden atılmaz, yüzün **sonuna** konur ve kaydına tek satır yazılır: "büyük, karar tek kişide olmayabilir". İlk aramalar bunlarla yapılmaz.
 4. **Ulaşılabilir olanlar.** Web sitesi ve Instagram hesabı dolu gelenler.
 5. **Nişin içinde kalanlar.** Kategori tam uyanlar.
