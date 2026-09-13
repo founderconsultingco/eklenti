@@ -60,14 +60,14 @@ Kontrol sırası, beş uzantı: `.com`, `.com.tr`, `.co`, `.ai`, `.io`. İlk bo�
 
 **İsim nasıl bulunur: dört aile, üçü listede.** Dört aile var; nişe göre üçü seçilir ve her seçenek farklı bir aileden gelir. Böylece öğrenci sadece kelimeyi değil kelimenin türünü de seçmiş oluyor.
 
-1. **Sistem adı.** Nişin kökü artı mekanizma artı sistem eki: DentFlowOS, ClinicPulse, ChairSync, RenoFlowOS, StudioLoop, PortföySync. En çok "kurulmuş bir sistem satıyorum" hissi veren aile budur ve yapay zekâ işine en yakışanı. Üç kuralı var: en fazla üç parça ve on iki harf, sistem eki bir kez kullanılır (DentFlowSystemOS olmaz), ve Türk ağzında takılmadan okunur.
+1. **Sistem adı.** Nişin kökü artı mekanizma artı sistem eki: KlinikFlowOS, ClinicPulse, ChairSync, RenoFlowOS, StudioLoop, PortföySync. En çok "kurulmuş bir sistem satıyorum" hissi veren aile budur ve yapay zekâ işine en yakışanı. Üç kuralı var: en fazla üç parça ve on iki harf, sistem eki bir kez kullanılır (KlinikFlowSystemOS olmaz), ve Türk ağzında takılmadan okunur.
 2. **Kısa uydurma.** İki hece, Türkçe okunuşu kolay, anlamı yok: Ravin, Nexa, Volta, Kavion, Sentro. Modern duruyor ve sektöre bağlı kalmıyor; işini ikinci nişe taşırsan ad seninle geliyor.
 3. **Kısa gerçek Türkçe kelime.** Somut, tek kelime: Kavis, Devir, Rota, Ayar, Ölçü. Usta ve servis işlerinde kulakta iyi duruyor; kimse "bu ne demek" diye sormuyor. Bu ailenin kendi riski var, aşağıda.
 4. **Kurucunun soyadı.** Yılmaz Sistem gibi değil, tek başına soyadı: Yılmaz, Aksoy. Kurucunun yüzünün öne çıktığı nişlerde en kolay güvenilen ad.
 
 **Hangi üçü listeye girer, kart söylüyor.** Bunu FounderOS kendi kararıyla vermiyor. Her niş kartının "Marka yönü" bölümünde üç satır yazılı: o nişin isim kökleri, hangi üç ailenin listeye gireceği, ve sebebi. Kural şu: müşterisi eğitimli ve İngilizce kelimeye alışık olan nişlerde liste sistem adı, kısa uydurma ve soyadı; müşterisi usta ve esnaf olan nişlerde kısa uydurma, kısa Türkçe kelime ve soyadı. İkinci grupta sistem adı yine kurulabilir ama kökü Türkçe olur: ServisOS, KeşifSync gibi; İngilizce kökle kurulan ad o müşteriye yabancı geliyor.
 
-**Sistem adı nasıl kurulur.** Kart nişin üç kökünü veriyor (diş kliniğinde Dent, Koltuk, Klinik; klima servisinde Sezon, Servis, Hat; tadilatta Keşif, Proje, Reno). Köke bir mekanizma kelimesi ekleniyor (Flow, Sync, Loop, Pulse, Track, Link, Core) ve gerekiyorsa bir sistem eki (OS, HQ). DentFlowOS, KoltukSync, SezonLoop, KeşifSync böyle çıkıyor. Kökü FounderOS uydurmuyor, karttan okuyor; uydurulan kök her öğrencide farklı tutuyor ve bazıları tutmuyor.
+**Sistem adı nasıl kurulur.** Kart nişin üç kökünü veriyor (diş kliniğinde Dent, Koltuk, Klinik; klima servisinde Sezon, Servis, Hat; tadilatta Keşif, Proje, Reno). Köke bir mekanizma kelimesi ekleniyor (Flow, Sync, Loop, Pulse, Track, Link, Core) ve gerekiyorsa bir sistem eki (OS, HQ). KlinikFlowOS, KoltukSync, SezonLoop, KeşifSync böyle çıkıyor. Kökü FounderOS uydurmuyor, karttan okuyor; uydurulan kök her öğrencide farklı tutuyor ve bazıları tutmuyor.
 
 **Adın önünde iki kontrol var ve ikisi de mekanik.**
 

@@ -25,7 +25,7 @@ Sistem ve dosyalar:
 - Palet: Markanın renk takımı. On tanesi şablonda hazır duruyor; her biri koyu kimlik yüzeyi, vurgu rengi ve iki atmosfer rengi taşıyor.
 - Atmosfer: Koyu yüzeyin arkasındaki bulanık ışık. Markayı düz siyah kutudan ayıran şey budur; paletle birlikte geliyor, ayrıca ayarlanmıyor.
 - Marka yönü seçimi: Birinci günde öğrenciye açılan ekran. Seçilen isimle üç kilit yan yana durur, öğrenci birini seçer, kitin tamamı onunla kurulur. Tek tur; ikinci tur yok.
-- İsim aileleri: Adın kuruluş biçimi. Dört aile var, nişe göre üçü öğrenciye sunulur: sistem adı (DentFlowOS gibi, nişin kökü artı mekanizma artı sistem eki), kısa uydurma (Ravin, Nexa), kısa gerçek Türkçe kelime (Kavis, Rota), kurucunun soyadı.
+- İsim aileleri: Adın kuruluş biçimi. Dört aile var, nişe göre üçü öğrenciye sunulur: sistem adı (KlinikFlowOS gibi, nişin kökü artı mekanizma artı sistem eki), kısa uydurma (Ravin, Nexa), kısa gerçek Türkçe kelime (Kavis, Rota), kurucunun soyadı.
 - Çağrışım kontrolü: Bir ad önerilmeden önce internette aranması. Adın bir tarikat, siyasi hareket, futbol kulübü ya da tanınmış bir marka adı olup olmadığına bakılır; sözlükteki anlamı temiz olan kelimenin ülkedeki çağrışımı temiz olmayabiliyor. Atlanamaz.
 - Slop (yapay zekâ çıktısı görünümü): Herkesinkine benzeyen, düz koyu kutu, neon vurgu, aynı boy üç kart, dev büyük harf gibi kalıplarla dolu tasarım. Kit ve sayfa gösterilmeden önce FounderOS bu kontrolü kendisi yapar; öğrenciye "kalıp kontrolü" diye anlatılır.
 - Görsel yön: Marka kitinin bütün panolarında uyulan sabit görünüm kuralı. İki yüzeyi var: kimlik yüzeyi (logo, sosyal, kartvizit; koyu zemin, tek doygun renk, malzeme hissi) ve okuma yüzeyi (sayfa gövdesi, belge, e-posta; açık zemin). Renk ve yazı tipi ikisinde aynıdır.
