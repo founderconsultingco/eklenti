@@ -58,11 +58,11 @@ Plan her gün aynı şekilde gelir ve üç parçadan oluşur:
 
 ### Pencereler
 
-Plan hiçbir zaman "sabah dokuzda" demez. Pencere adı söyler ve o pencerenin saatini senin çalışma düzenin belirler. Aynı plan tam zamanlı çalışanla işin yanında çalışanda iki ayrı saate düşer. Dört pencere var.
+Plan hiçbir zaman "sabah dokuzda" demez. Pencere adı söyler ve o pencerenin saatini senin çalışma düzenin belirler. Aynı plan tam zamanlı çalışanla işin yanında çalışanda iki ayrı saate düşer. Dört pencere var ve hiçbiri diğeriyle kesişmez; pencerelerin içine ne sığdığı İş modeli bölümündeki gün tablosunda yazılı.
 
-**Sabah bloğu.** Tam zamanlıda 09.00-12.00. İşin yanında çalışıyorsan işe gitmeden önceki bir saat ya da öğle arası.
-**Saha bloğu**, yani aramanın ve mesajın yapıldığı saatler. Tam zamanlıda 10.00-12.00 ve 14.00-17.00. İşin yanında 18.00-20.30 ve cumartesi 10.00-13.00.
-**Akşam bloğu**, yani kaydın, sayıların, analizin ve provanın saati. Tam zamanlıda 17.00-18.30. İşin yanında 21.00-22.00.
+**Sabah bloğu.** Tam zamanlıda 09.00-10.30. İşin yanında çalışıyorsan işe gitmeden önceki bir saat ya da öğle arası.
+**Saha bloğu**, yani aramanın ve mesajın yapıldığı saatler. Tam zamanlıda 10.30-12.30 ve 14.00-17.00. İşin yanında 18.00-20.30 ve cumartesi 10.00-13.00.
+**Akşam bloğu**, yani kaydın, sayıların, analizin ve provanın saati. Tam zamanlıda 17.00-18.00. İşin yanında 21.00-22.00.
 **Kurulum bloğu**, yani müşteriyle yapılan görüşmeler. İkisinde de müşterinin uygun olduğu saat; işin yanında akşam ya da hafta sonu.
 
 Plan "sabah" diyorsa sabah bloğunu kastediyor. Nişin kanal ve zaman bölümü saha bloğunun içinde bir daraltma yapıyorsa, yani o işletmelerin telefonunun açık olduğu saatler daha darsa, o daraltma üstündür. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir ve plan sebebini söyler.

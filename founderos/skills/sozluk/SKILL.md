@@ -219,7 +219,7 @@ Randevu ve görüşme:
 - Bağ-Kur: Kendi işini kuranların her ay ödediği sigorta primi. Şirketin açıldığı tarihten itibaren başlar.
 
 Prova ve analiz:
-- Hazırlık (beş blok): Sahaya çıkmadan önceki beş iş bloğu, Yol Haritası'nın ilk dört aşaması. Tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün. Beşinci bloğun akşamı ilk on soğuk temas, ertesi gün tam saha: tam zamanlıda günde yüz temas, işin yanında kırk.
+- Hazırlık (beş blok): Sahaya çıkmadan önceki beş iş bloğu, Yol Haritası'nın ilk dört aşaması. Tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün. Beşinci bloğun öğleden sonrası kontrol listesi, akşam bloğunun başında ilk on soğuk temas, ertesi gün tam saha: tam zamanlıda günde yüz temas, işin yanında kırk.
 - Blok: Hazırlığın beş parçasından biri. Modüllerde "birinci gün, ikinci gün" diye geçen yerler bu blokları sayar; işin yanında çalışan biri için her biri iki güne yayılır.
 - Sabah planı: Sabah bloğunun başında FounderOS'un hazırladığı, o gün ne yapacağını söyleyen plan.
 - Prova: FounderOS'un işletme sahibini oynadığı alıştırma. Sahaya çıkmadan on iki prova yapılır, sonra ilk yirmi görüşmenin her birinden önce on dakika.
@@ -231,9 +231,9 @@ Prova ve analiz:
 - Kayıt: Görüşmenin ses kaydı; izni görüşmenin başında herkesten tek tek alınır.
 - Döküm: Kaydın yazıya çevrilmiş, konuşmacı ayrımlı ve zaman damgalı hali; akşam analiz ondan yapılır. Döküm bu haliyle gelmezse süre, oran ve ton "ölçülemedi" yazılır.
 - Kopma noktası: Görüşmede işletmecinin soğuduğu an; dört yerden biri: sorular sorgu gibi geldi, söylenmeyen korku kaldı, sunuma erken ya da geç geçildi, fiyattan sonra konuşuldu.
-- Sabah bloğu: Günün ilk penceresi; denetim, plan ve hazırlık burada yapılır. (Bu "blok" hazırlığın beş bloğuyla aynı kelime ama başka şey: bu bir günün içindeki saat penceresi.) Tam zamanlıda 09.00-12.00; işin yanında çalışanda işe gitmeden önceki bir saat ya da öğle arası.
-- Saha bloğu: Aramanın ve mesajın yapıldığı pencere. Tam zamanlıda 10.00-12.00 ve 14.00-17.00; işin yanında çalışanda 18.00-20.30 ve cumartesi 10.00-13.00.
-- Akşam bloğu: Kaydın, sayı okumanın, analizin ve provanın penceresi. Tam zamanlıda 17.00-18.30; işin yanında çalışanda 21.00-22.00.
+- Sabah bloğu: Günün ilk penceresi; denetim, plan ve hazırlık burada yapılır. (Bu "blok" hazırlığın beş bloğuyla aynı kelime ama başka şey: bu bir günün içindeki saat penceresi.) Tam zamanlıda 09.00-10.30; işin yanında çalışanda işe gitmeden önceki bir saat ya da öğle arası.
+- Saha bloğu: Aramanın ve mesajın yapıldığı pencere. Tam zamanlıda 10.30-12.30 ve 14.00-17.00; işin yanında çalışanda 18.00-20.30 ve cumartesi 10.00-13.00.
+- Akşam bloğu: Kaydın, sayı okumanın, analizin ve provanın penceresi. Tam zamanlıda 17.00-18.00; işin yanında çalışanda 21.00-22.00.
 - Kurulum bloğu: Müşteriyle yapılan görüşmelerin penceresi; saatini müşteri belirler, işin yanında çalışanda akşam ya da hafta sonu olur ve bu müşteriye baştan söylenir.
 - Bütçe merdiveni: Birinci günde belirlenen üç basamak; elindeki paraya göre hangi aracın hangi güne kadar bekleyeceğini söyler. Alt basamakta tek kalem alınır (Claude aboneliği), saha yine beşinci bloğun sonunda açılır.
 - Havale yolu: Şirketin henüz yokken parayı tahsil etme yolu. Hesap bilgisi, tutar ve açıklama satırı tek mesajda gider. Ödeme linkiyle eşit derecede geçerlidir, yedek değildir.
@@ -276,8 +276,40 @@ FounderOS Berk'in sesiyle konuşur: net, önden giden, harekete geçiren, gerçe
 4. Sayı sözü ile gerçek rakam ayrı. Satışta sayı sözü verilmez. Teslimden sonra yazılan kanıt hikâyesinde ise gerçek rakam şart; rakamsız kanıt hikâyesi işe yaramaz.
 5. Değişiklik eşikleri. Tek görüşmeden çıkan bilgi not olur, hiçbir metni değiştirmez. Üç ayrı eşik var. Teklifin kelimeleri, yani Dönüşüm Cümlesi ve sistemin adı: en az on görüşme birikecek ve aynı işaret o onun en az beşinde görülecek. Fiyatın rakamı: en az otuz görüşme; kapanış bir orandır ve on görüşmede ölçülemez. Mesaj metni: iki yüz temasta sadece bakılır (sorun nişte mi, mesajda mı, listede mi), üç yüz temasta karar verilir. Üçünün de kararını degisiklige-karar-ver verir ve haftada tek şey değişir.
 6. Büyüme şartı. Kademe 3 ve ek hizmetler takvime değil sonuca bağlı: Kademe 2 ilk müşteride sorunsuz teslim edilmeden ve rapor günü raporu çıkmadan ne reklam satılır ne ek hizmet açılır. En erken ikinci ay.
-7. Çalışma düzeni. FounderOS birinci gün tanışmadan senin tam zamanlı mı, işin yanında mı çalıştığını anlar, sormaz. Tam zamanlı günde yüz temas; işin yanında günde kırk. İşin yanında çalışanda hedef şu iki dönemde yarıya iner ve garanti şartı bu günleri hariç tutar: ilk müşterinin bütün teslim süresi (sıfırıncı günden rapor gününe) ve şirket kuruluş günü. Sebebi rakamda: [21/28] günlük teslim bir kişinin elli saatini alıyor, o saatler akşamdan çıkıyor. Gelir planı, garanti şartı ve günlük plan bu rakama göre yazılır. İşi bırakma hesabı gelir planında: ilk müşteri kanıt, dördüncü müşteri güvenli çıkış.
-   Saat yerine pencere. Hiçbir modül "sabah dokuzda" demez, pencere adı söyler ve pencerenin saatini çalışma düzeni belirler. Dört pencere var. Sabah bloğu: tam zamanlıda 09.00-12.00, işin yanındakinde işe gitmeden önceki bir saat ya da öğle arası. Saha bloğu, yani aramanın ve mesajın yapıldığı saatler: tam zamanlıda 10.00-12.00 ve 14.00-17.00, işin yanındakinde 18.00-20.30 ve cumartesi 10.00-13.00. Akşam bloğu, yani kaydın, analizin ve provanın saati: tam zamanlıda 17.00-18.30, işin yanındakinde 21.00-22.00. Kurulum bloğu, yani müşteriyle yapılan görüşmeler: ikisinde de müşterinin uygun olduğu saat, işin yanındakinde akşam ya da hafta sonu ve bu kurulum görüşmesinde en baştan söylenir. Bir modül "sabah" yazıyorsa sabah bloğunu kastediyor. Nişin kanal ve zaman bölümü saha bloğunun içinde daraltma yapıyorsa (işletmenin telefonunun açık olduğu saatler) o daraltma üstündür; iki pencere hiç kesişmiyorsa modül yazılı kanala geçer ve sebebini söyler.
+7. Çalışma düzeni. FounderOS birinci gün tanışmadan senin tam zamanlı mı, işin yanında mı çalıştığını anlar, sormaz. Tam zamanlı günde yüz temas ve günde yaklaşık altı saat; işin yanında günde kırk temas ve yaklaşık üç saat. Günde üç saatin altını ayırabiliyorsan bu takvim sana uymuyor ve bunu birinci günde söylüyoruz: yirmi temas yaparsın, doksan gün yüz yirmi güne uzar. İşin yanında çalışanda hedef şu iki dönemde yarıya iner ve garanti şartı bu günleri hariç tutar: ilk müşterinin bütün teslim süresi (sıfırıncı günden rapor gününe) ve şirket kuruluş günü. Sebebi rakamda: [21/28] günlük teslim bir kişinin elli saatini alıyor, o saatler akşamdan çıkıyor. Gelir planı, garanti şartı ve günlük plan bu rakama göre yazılır. İşi bırakma hesabı gelir planında: ilk müşteri kanıt, dördüncü müşteri güvenli çıkış.
+   Saat yerine pencere. Hiçbir modül "sabah dokuzda" demez, pencere adı söyler ve pencerenin saatini çalışma düzeni belirler. Dört pencere var ve **hiçbiri diğeriyle kesişmez**; eskiden sabah bloğu ile saha bloğu iki saat üst üste biniyordu ve günün bütçesi o iki saati iki kere sayıyordu. Sabah bloğu: tam zamanlıda 09.00-10.30, işin yanındakinde işe gitmeden önceki bir saat ya da öğle arası. Saha bloğu, yani aramanın ve mesajın yapıldığı saatler: tam zamanlıda 10.30-12.30 ve 14.00-17.00, işin yanındakinde 18.00-20.30 ve cumartesi 10.00-13.00. Akşam bloğu, yani kaydın, analizin ve provanın saati: tam zamanlıda 17.00-18.00, işin yanındakinde 21.00-22.00. Bunların dışında tek bir pencere daha var ve iki düzende ayrı yerde duruyor: akşam testi, tam zamanlıda 19.00-19.30, işin yanındakinde saha bloğunun içinde. Kurulum bloğu, yani müşteriyle yapılan görüşmeler: ikisinde de müşterinin uygun olduğu saat, işin yanındakinde akşam ya da hafta sonu ve bu kurulum görüşmesinde en baştan söylenir. Bir modül "sabah" yazıyorsa sabah bloğunu kastediyor. Nişin kanal ve zaman bölümü saha bloğunun içinde daraltma yapıyorsa (işletmenin telefonunun açık olduğu saatler) o daraltma üstündür; iki pencere hiç kesişmiyorsa modül yazılı kanala geçer ve sebebini söyler.
+7b. **Günün saat bütçesi (tek kaynak).** Aşağıdaki iki tablo bütün modüllerin süre kaynağıdır. Bir modül kendi içinde süre yazmaz, buradan okur. Sayılar tahmindir ve ilk üç haftada öğrencinin kendi kaydıyla değişir; değişirse burada değişir, modüllerde değil.
+
+Tam zamanlı, müşterisiz gün:
+
+| Pencere | Saat | İçi | Süre |
+|---|---|---|---|
+| Sabah bloğu | 09.00-10.30 | günün planı (5 dk), beş adayın derin denetimi (25 dk), yirmi yazılı ve form testi (25 dk), dün cevap verenlere dönüş ve takip onayı (25 dk) | 80 dk |
+| Saha bloğu | 10.30-12.30, 14.00-17.00 | yetmiş telefon teması (120 dk), yirmi beş yazılı temas (40 dk), beş video mesaj (40 dk) | 200 dk |
+| Akşam bloğu | 17.00-18.00 | kanal durumu ekranı, kayıt kontrolü, günün beş sayısı, görüşme analizi, yarının provası ve onayı | 60 dk |
+| Akşam testi | 19.00-19.30 | kırk telefon testi | 30 dk |
+
+Toplam altı saat on dakika iş, on buçuk saate yayılmış. Saha bloğunun beş saatinin üç saat yirmi dakikası dolu; kalan bir saat kırk dakika tampon ve o tampon bilerek var, çünkü açılan bir telefon konuşmaya dönüyor ve plan o gün kaymıyor.
+
+İşin yanında, müşterisiz gün:
+
+| Pencere | Saat | İçi | Süre |
+|---|---|---|---|
+| Sabah bloğu | işe gitmeden önce ya da öğle arası, 1 saat | günün planı (5 dk), üç adayın derin denetimi (15 dk), on yazılı ve form testi (12 dk), cevaplara dönüş (15 dk) | 47 dk |
+| Saha bloğu | 18.00-20.30, cumartesi 10.00-13.00 | yirmi telefon testi (15 dk), yirmi sekiz telefon teması (48 dk), on yazılı temas (16 dk), iki video mesaj (16 dk) | 95 dk |
+| Akşam bloğu | 21.00-22.00 | kayıt, sayılar, prova | 40 dk |
+
+Toplam üç saat iki dakika iş.
+
+**Üçüncü tempo: günde üç saatin altı.** Bunun için ayrı bir tablo yok, tek bir kural var ve bütün sayılar ondan çıkar: **işin yanında düzeninin bütün sayıları yarıya iner, takvim bir buçuk katına çıkar.** Yani günde yirmi temas (on dört ana kanal, beş diğer yazılı, bir video), sabah bloğunda iki derin denetim ve beş yazılı test, akşam on telefon testi, günde yaklaşık bir buçuk saat. Doksan gün yüz yirmi güne uzar, beş yüzlük liste iki ay gider, üç yüz temas eşiği on beş iş gününde değil otuzunda dolar. Bunu birinci günde açık söylüyoruz, üçüncü haftada fark etmiyoruz. Hiçbir modül bu tempoyu ayrıca anlatmaz; "yarısı ve bir buçuk katı" kuralı her yerde geçerlidir.
+
+**Müşteri varken.** Teslimat iki düzende iki ayrı rakam tutuyor, çünkü pencereler farklı:
+
+- Tam zamanlıda günde iki buçuk saat, yirmi bir günde elli iki saat. Bu saat saha bloğundan çıkıyor ve temas yüzden altmışa iniyor (kırk iki ana kanal, on beş diğer yazılı, üç video).
+- İşin yanında hafta içi her gün yaklaşık bir buçuk saat (akşam bloğundan yirmi dakika, saha bloğundan bir saat on beş dakika), cumartesi iki saat, **pazar sabahı iki saat**. Haftada on iki saat, dört haftada elli saat. Pazar sabahı bilerek eklendi: onsuz hafta on saat kalıyor ve teslim yirmi sekiz güne sığmıyordu. Müşteriye söylenen yirmi sekiz günün gerçekten yirmi sekiz gün olması buna bağlı. Temas kırktan yirmiye iniyor.
+
+İkisinde de aynı anda tek aktif teslimat var.
+
 8. Kanıt güncelleme. İlk kanıt hikâyesi çıktığında FounderOS siteni-kur ve adaya-mesaj-yaz modüllerini yeniden çalıştırır: site, e-posta imzası, yedinci gün takibi ve Instagram profili yeni kanıtla güncellenir. Site birinci gün taslağında kalmaz.
 9. Görüşme süresi. Açılışta tek ayırma sorusu: "Başlamadan önce, ne yaptığımız hakkında ne biliyorsunuz?" Soru bölümü en fazla on iki dakika (bilen adayda beş); ilk soru duygusal: "Bu iş sizi en çok nerede yoruyor?" Görüşmenin tamamı yirmi beş dakikayı geçmez.
 10. İnternetten satış yapan mağazalara (e-ticaret) satmıyoruz; sebebi birinci gün söylenir: satış yaptıkları sitelere bağımlılar, fiyat yarışındalar, sahibine ulaşılmıyor. Dışarıdan gelen "e-ticarette de olur" cümlesine cevap hazır.

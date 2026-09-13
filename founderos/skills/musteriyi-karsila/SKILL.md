@@ -207,7 +207,7 @@ Hangi iş hangi pencereye giriyor:
 
 Hafta sonuna kayan üç iş bunlar: beşinci günün testi, haftalık kontrol, rapor hazırlığı. Bunları hafta içi akşamına sıkıştırmaya çalışırsan yarım yaparsın.
 
-Kaç güne uzuyor: hesap açık. Hafta içi beş gün, her gün yaklaşık iki saat (akşam bloğunun bir saati, artı temas kırktan yirmiye indiği için saha bloğunda boşalan süre). Cumartesi üç saat. Haftada on üç saat eder. Elli saat bölü on üç, yaklaşık dört hafta. Yani teslim [21/28] günde değil, yirmi sekiz günde biter.
+Kaç güne uzuyor: hesap açık ve önceki sürümde iyimserdi, düzelttim. Hafta içi beş gün, her gün yaklaşık iki saat: akşam bloğunun kırk beş dakikası (bloğun bir saatinin on beş dakikası kayıt ve sayıma gidiyor, o iş devredilemiyor), artı temas kırktan yirmiye indiği için saha bloğunda boşalan yaklaşık bir saat on beş dakika. Cumartesi iki saat; cumartesinin üç saatlik saha bloğunun tamamı teslimata verilmiyor, çünkü o gün de temas var. Haftada on iki saat eder. Elli saat bölü on iki, yaklaşık dört hafta. Yani teslim [21/28] günde değil, yirmi sekiz günde biter.
 
 Bunun karşılığı şu: teslim takvimini [21/28] güne değil yirmi sekiz güne yazarsın, rapor günü o takvimin son günüdür ve güvence o günden ölçülür. Müşteriye söylenme anı bellidir: kurulum görüşmesinin birinci maddesinde, takvimi ekranda gösterirken. Gecikince değil, baştan. "[21/28] gün" deyip sonra kaydırmak, baştan yirmi sekiz demekten çok daha pahalıya patlar.
 

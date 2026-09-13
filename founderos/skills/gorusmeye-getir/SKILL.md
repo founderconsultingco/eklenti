@@ -41,7 +41,7 @@ Takvim ayarları (bunları FounderOS kurar, sen dokunmazsın):
 
 **Randevu saatleri hangi pencereden verilir.** Saat söylenmez, pencere söylenir; pencerenin kaça denk geldiğini çalışma düzenin belirler.
 
-- Tam zamanlı çalışıyorsan görüşmeler saha bloğunun içine girer, yani 10.00-12.00 ve 14.00-17.00 arasına. Adaya iki saat teklif edilir, üçüncüsü söylenmez: "Yarın on birde mi, üçte mi?"
+- Tam zamanlı çalışıyorsan görüşmeler saha bloğunun içine girer, yani 10.30-12.30 ve 14.00-17.00 arasına. Adaya iki saat teklif edilir, üçüncüsü söylenmez: "Yarın on birde mi, üçte mi?"
 - İşin yanında çalışıyorsan görüşme saha bloğunun içine konmaz. Sebebi tek: o pencere aramanın penceresi. Görüşme oraya girerse o akşamın aramaları düşer ve günlük kırk temas tutmaz. Üç yer var, üçü de saha bloğunun dışında:
   1. Hafta içi 20.30. Saha bloğu biter, akşam bloğu başlamadan önceki yarım saat. Varsayılan yer burasıdır.
   2. Öğle arası, yani sabah bloğunun ikinci hali. İş yerinden çıkabiliyorsan ve nişin telefon saati öğleye izin veriyorsa.

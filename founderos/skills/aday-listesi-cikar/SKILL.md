@@ -29,7 +29,7 @@ Neden bugün: bir sonraki blokta kanıtını hazırlıyorsun ve mesajlarını ya
 Pazarlamadaki karşılığı: aday listesi.
 
 ## 2. Ne zaman çalışır
-- Üçüncü gün, üç saat. Çekimi veri servisi yapar, birkaç dakika sürer. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan çekim ve temizlik sabah bloğunda, geri kalanı akşam bloğunda.
+- Üçüncü gün, bir saat. Çekimi veri servisi yapar, birkaç dakika sürer. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan çekim ve temizlik sabah bloğunda, geri kalanı akşam bloğunda.
 - Her gün: günün saha listesi sabah bloğunda kendiliğinden hazırlanır. Senin bir işin yok, açtığında sıralanmış duruyor.
 - İkinci kez: her ay bir kere, ayın ilk iş günü. Yeni ilçe çekilir (ana kanal telefonsa üç ilçe, yazıysa bir), o listeden yeni yüz işletme seçilir, hızlı denetimleri yapılır.
 - Üçüncü kez: liste beş yüzün altına düştüğünde ya da pazar değiştiğinde. O zaman yeni çekim yapılır.

@@ -13,12 +13,12 @@ Bu modül provayı yapar. Prova, FounderOS'un işletme sahibini oynadığı alı
 ## 2. Ne zaman çalışır
 Dördüncü gün: FounderOS ile beş prova, akşam bloğunda. Sabah bloğunun ilk işi şu: "Yarın için daha önce satış yapmış bir tanıdık ayarla, ona vereceğin rol kartı hazır." Beşinci gün: senden iyi biriyle iki sesli prova, FounderOS ile beş prova. On iki prova dolmadan soğuk saha açılmaz. Tek istisna sıcak çevreden erken gelen randevu: dördüncü günden sonra randevu çıkarsa görüşmeden önce E maddesindeki sıkıştırılmış prova yapılır, o prova on ikiye sayılmaz ve soğuk saha yine beşinci günün akşamı açılır. Eksik varsa beşinci günün akşamında, soğuk temastan önce tamamlanır. On iki erken dolarsa aynı gün ek prova istenmez. Birinci ve üçüncü gün arasındaki sabah tekrarları ("teklif provası", "fiyat provası") aynı sayaca tür etiketiyle yazılır ama on ikiye sayılmaz. Sayaç on ikide kilitlenir. Altıncı günden sonraki provalar "görüşme provası" türüyle ayrı sayılır, on ikiye sayılmaz.
 
-Provanın saati pencere adıyla söylenir: prova akşam bloğunda yapılır. Akşam bloğu tam zamanlıda 17.00-18.30, işin yanında çalışanda 21.00-22.00. Yani aynı prova birinde on yedide, diğerinde dokuzda oluyor; sayaç ve konu değişmiyor, sadece saat çalışma düzeninden çıkıyor.
+Provanın saati pencere adıyla söylenir: prova akşam bloğunda yapılır. Akşam bloğu tam zamanlıda 17.00-18.00, işin yanında çalışanda 21.00-22.00. Yani aynı prova birinde on yedide, diğerinde dokuzda oluyor; sayaç ve konu değişmiyor, sadece saat çalışma düzeninden çıkıyor.
 
 Altıncı günden sonra provayı üç durum başlatır, üçü de geçerlidir, çakışınca tek prova yeter:
 - Görüşme yapılan gün akşam bloğunda, o günün analizinden çıkan konuyla on dakikalık prova.
 - Sonraki görüşmeden önceki gün akşam bloğunda, o görüşme için prova. Randevu akşam bloğu kapandıktan sonra alındıysa prova hemen yapılır, ertesi güne bırakılmaz. Görüşme ertesi güne denk geliyorsa aynı prova ikisini karşılar.
-- Aynı gün görüşme varsa görüşmeden bir saat önce on dakika. İşin yanında çalışanda görüşme akşam sekiz buçukta olduğu için bu on dakika saha bloğunun sonundan çıkar ve o akşamın arama sayısından düşülür; prova atlanmaz, arama düşer.
+- Bir prova on dakika sürer; on iki provanın toplamı iki saat eder ve gün tablosu bu rakamı okur. Aynı gün görüşme varsa görüşmeden bir saat önce on dakika. İşin yanında çalışanda görüşme akşam sekiz buçukta olduğu için bu on dakika saha bloğunun sonundan çıkar ve o akşamın arama sayısından düşülür; prova atlanmaz, arama düşer.
 
 İlk yirmi görüşmede bu prova atlanamaz. İlk görüşmenin konusu: ilk beş günde en çok "tekrar" alan konu. İşaretle gelen prova her zaman geçerlidir ve ilk yirmi görüşmede zorunlu provanın yerine geçer. İşaretler şunlar: aynı hata on görüşmedir sürüyorsa senden iyi biriyle sesli prova. Soru bölümü uzuyor, kapanış, ton ya da üç küçük söz işareti geldiyse o konuda tek prova.
 

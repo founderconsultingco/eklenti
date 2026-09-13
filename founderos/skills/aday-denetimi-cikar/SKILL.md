@@ -21,7 +21,7 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 ## 2. Ne zaman çalışır
 İki hâli var ve ikisi ayrı işler.
 
-**Hızlı denetim.** İşletme başına iki dakika, dışarıdan bakılır, canlı test yok. Üçüncü blokta en çok istenen yüz işletmenin ilk otuzuna, dördüncü blokta kalan yetmişine yapılır; sığmayanı beşinci bloğun sabahına kalır. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
+**Hızlı denetim.** Beş satırın dördü veri servisinden hazır geliyor (profil sahipsiz, site yok, Instagram yok, yorum az, saatler); öğrencinin işi okumak ve onaylamak. İşletme başına yaklaşık yirmi saniye, yüz işletme için yarım saat. Tamamı dördüncü blokta, tek oturuşta yapılır; eskiden otuzu üçüncü bloğa bölünüyordu ve o bölme iki günü birden şişiriyordu. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
 
 ### Araştırma üç katmanda yapılır, üçü de aynı yükü taşımaz
 

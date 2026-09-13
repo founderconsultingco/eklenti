@@ -25,7 +25,7 @@ Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altınc�
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 
-Günlük süre dört saat: ana kanalın yetmiş teması iki saat, diğer iki kanalın yirmi beşi yarım saat, beş video mesaj yarım saat, takip onayı ve cevaplar bir saat.
+Günlük süre üç saat yirmi dakika, gün tablosundaki dökümle: ana kanalın yetmiş teması iki saat, diğer iki kanalın yirmi beşi kırk dakika, beş video mesaj kırk dakika. Takip onayı ve gelen cevaplara dönüş saha bloğunda değil sabah bloğunda, yirmi beş dakika.
 
 ## 3. Ne okur
 
@@ -417,7 +417,7 @@ Takip, cevap gelmeyen adaya sonraki günlerde gönderilen mesajdır ve temas say
 
 Zincirin içinde kanal değişir, karar tablosuna göre: e-postayla başlayan aday üçüncü gün aranır (ad bilinmiyorsa "işletme sahibi siz misiniz" ile), telefonla ulaşılamayan aday yedinci gün e-posta alır. Farklı adaylar farklı kanala cevap veriyor.
 
-En çok istenen yüz işletmede sıra video zinciriyle yürür: ilk temas video, iki gün sonra sesli mesaj, dördüncü gün arama, yedinci gün ayrılık. Takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. Video ilk temasları günde beş adayla yayılır, çünkü beş video çekmek doksan dakika alıyor ve yüz işletme dört haftada bitiyor.
+En çok istenen yüz işletmede sıra video zinciriyle yürür: ilk temas video, iki gün sonra sesli mesaj, dördüncü gün arama, yedinci gün ayrılık. Takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. Video ilk temasları günde beş adayla yayılır, çünkü beş video çekmek kırk dakika alıyor ve yüz işletme dört haftada bitiyor.
 
 **Yazılı kanalın metni adayın satırında durur, sohbette değil.** Bu, günün en çok zaman yiyen yeriydi: günde elli mesaj, elli ayrı sohbet turu demekti. Artık FounderOS sabah bloğunda o günün bütün yazılı mesajlarını tek seferde yazıyor ve aday aracıyla satırlara işliyor: `eposta_konu`, `eposta_metni`, `dm_metni`. Aday listesi sayfasının Saha modu kartında E-posta ve Instagram düğmeleri çıkıyor, metin orada hazır duruyor, yanında kopyalama düğmesi var. Öğrenci kopyalıyor, kendi hesabından gönderiyor, aynı kartta sonucu işaretliyor.
 
@@ -553,13 +553,13 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.
-- Saha bloğu: ana kanaldan yetmiş temas, diğer iki kanaldan yirmi beş, beş video mesaj; o günün takipleri bu yüzün içinde. Hesabın rampadaysa o günkü payı rampanın basamağıdır ve eksik kalan sayı aramaya geçer. Bloğun son yarım saati video bloğudur.
+- Saha bloğu: ana kanaldan yetmiş temas, diğer iki kanaldan yirmi beş, beş video mesaj; o günün takipleri bu yüzün içinde. Teslimat sürerken aynı oran altmışa iner: kırk iki ana kanal, on beş diğer yazılı, üç video. Hesabın rampadaysa o günkü payı rampanın basamağıdır ve eksik kalan sayı aramaya geçer. Bloğun son kırk beş dakikası video bloğudur.
 - Akşam bloğu: kanal durumu ekranı, kayıt kontrolü, ertesi günün onayı.
 
 **İşin yanında: günde kırk temas.**
 - Sabah bloğu, yani işe gitmeden önceki bir saat ya da öğle arası: dünkü cevaplara dönüş, e-posta takiplerinin onayı, beş adayın denetim kartı.
-- Saha bloğu, yani akşam ve cumartesi öğleden önce: yirmi sekiz ana kanaldan, on diğer iki yazılı kanaldan, iki video mesaj; o günün takipleri bu kırkın içinde. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
-- Akşam bloğu: kanal durumu ekranı ve kayıt kontrolü, on beş dakika.
+- Saha bloğu, yani akşam ve cumartesi öğleden önce: önce on beş dakikada yirmi telefon testi, sonra yirmi sekiz temas ana kanaldan, on diğer iki yazılı kanaldan, iki video mesaj; o günün takipleri bu kırkın içinde. Toplam bir saat kırk dakika, pencerenin iki buçuk saatine sığıyor ve elli dakika tampon kalıyor. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
+- Akşam bloğu: kanal durumu ekranı ve kayıt kontrolü on beş dakika, günün sayıları ve yarının provası yirmi beş dakika; toplam kırk dakika.
 
 İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas: on dört ana kanaldan, beş diğer iki yazılı kanaldan, bir video mesaj. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor, o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
 

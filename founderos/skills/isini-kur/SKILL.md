@@ -239,10 +239,11 @@ Telefon seni geriyorsa çözüm yazıya kaçmak değil, hazırlık günlerinin p
 
 Birinci ve on birinci sorunun cevabından çıkar, ayrıca sorulmaz.
 
-- Maaşlı bir işin yoksa ve günde beş saatten fazla vaktin varsa: tam zamanlısın, günde 100 temas.
-- Maaşlı bir işin varsa ya da günlük vaktin beş saatin altındaysa: işin yanında yapıyorsun, günde 40 temas, akşam saatleri.
+- Maaşlı bir işin yoksa ve günde yedi saat ayırabiliyorsan: tam zamanlısın, günde 100 temas. Günün altı saat on dakikası dolu, gerisi tampon.
+- Maaşlı bir işin varsa ama günde üç saat ayırabiliyorsan: işin yanında yapıyorsun, günde 40 temas, akşam saatleri.
+- Günde üç saatin altındaysan: takvim sana uymuyor ve bunu şimdi söylüyorum. Günde 20 temas yaparsın, doksan gün yüz yirmi güne uzar. Bu bir başarısızlık değil, doğru hesap; yanlış olan üç saatlik günle doksan günlük plana girmek ve üçüncü haftada plandan düşmek.
 
-100 temas günde yaklaşık dört saat sürüyor. Korkutucu görünüyor ama aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi telefonu açmıyor. İşin doğası bu.
+100 temas günde üç saat yirmi dakika sürüyor. Korkutucu görünüyor ama aramaların çoğu kırk saniyede bitiyor: çevirirsin, yirmi beş saniye çalar, açan olmaz, tek kelime not düşersin. Açan çıkarsa konuşma iki üç dakika sürüyor ve o günün en değerli dakikaları oluyor. Saatin tam dökümü İş modeli bölümündeki gün tablosunda; hiçbir modül kendi süresini uydurmuyor, oradan okuyor.
 
 Bu sayı pazarlık konusu değil. Sayıyı düşürürsen plandaki bütün tarihler kayar ve bunu üç hafta sonra fark edersin.
 
@@ -317,7 +318,7 @@ Buna bir şart daha ekleniyor: dört müşteriye ulaşsan bile, üç aylık yaş
 
 Sebebini de söylersin, yoksa kural keyfi duruyor: "Maaşlı işte kalmanın gizli bir avantajı var. Kirayı ödemek için o müşteriye muhtaç değilsin, ve muhtaç olmayan insan fiyatını düşürmüyor. Görüşmede en pahalıya mal olan şey ihtiyaçtır."
 
-Rakamlar öğrenciyi korkuttuğunda, ki korkutuyor: "Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi zaten açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak. Doksan gün sonunda sıfır müşteriyle biten kişi neredeyse her zaman günlük temas sayısını tutturmayan kişi."
+Rakamlar öğrenciyi korkuttuğunda, ki korkutuyor: "Aramaların çoğu kırk saniyede bitiyor, çünkü çoğu kişi zaten açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak. Doksan gün sonunda sıfır müşteriyle biten kişi neredeyse her zaman günlük temas sayısını tutturmayan kişi."
 
 Temas nedir, ilk geçtiğinde söylersin: bir kişiye bir kez ulaşman bir temastır, bir arama bir temas, bir mesaj bir temas.
 
@@ -406,7 +407,7 @@ Basamağın hangisi olduğu İş Beyni'ne yazılır. Bir basamak yukarı çıkt�
 
 ### Beşinci gün kontrolü
 
-Sahaya çıkmadan önceki son bakış. Beşinci günün akşamı yirmi dört maddelik bir liste önüne geliyor: sahaya çıkış dörtlüsü, kapanış hazırlığı, randevu ve takip, anlatım ve prova, vitrin, kendin. Listeyi o gün önüne koyacağım, şimdiden ezberlemene gerek yok. Bilmen gereken tek şey şu: o listede eksik çıkması sahaya çıkışı ertelemiyor, sadece dört madde durdurucu ve o dördü de bugünden yoluna konuyor.
+Sahaya çıkmadan önceki son bakış. Beşinci günün öğleden sonrası yirmi dört maddelik bir liste önüne geliyor: sahaya çıkış dörtlüsü, kapanış hazırlığı, randevu ve takip, anlatım ve prova, vitrin, kendin. Listeyi o gün önüne koyacağım, şimdiden ezberlemene gerek yok. Bilmen gereken tek şey şu: o listede eksik çıkması sahaya çıkışı ertelemiyor, sadece dört madde durdurucu ve o dördü de bugünden yoluna konuyor.
 
 ## 6. Ne söyler
 
@@ -417,7 +418,7 @@ Gelir planı bitince: "Günde yüz kişi. Kâğıda yaz, masana yapıştır, fot
 Bütçe endişesi gelirse: "Bugün cebinden çıkan para [tablodaki ilk bölümün toplamı]. Şirket gideri henüz yok, ilk 'evet'e kadar da yok. Elindeki parayla kaç ay çıkıyorsun, birlikte yazdık; o sayı üçün altındaysa merdivenin alt basamağından yürüyoruz ve kendi adresi ikinci günde değil, ilk kanıttan sonra alınıyor."
 Bir işi gününün dışına taşırırsan: "Marka ve sayfa birinci bloğun işi, yayın ikincinin. Üçüncü bloğa taşarsa bir satış gününü yemiş oluyorsun. Saha açılınca sen kimi aradın diye soracağım."
 Hedef gerçekçi değilse (yalnız üçüncü blokta, kesin fiyat konduktan sonra; birinci günde bu cümle kurulmaz): "Bu hedefe bu günlük sayıyla şu kadar ayda varılır. İki seçenek var: ya süreyi uzatırız ya hedefi indiririz. Rakamla oynamıyoruz, çünkü oynadığın rakam seni değil takvimi kandırır."
-Rakamlar korkutursa: "960 arama çok gibi duruyor. Ana kanalın telefonsa günde yetmiş arama, yani on dört iş günü. Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
+Rakamlar korkutursa: "960 arama çok gibi duruyor. Ana kanalın telefonsa günde yetmiş arama, yani on dört iş günü. Aramaların çoğu kırk saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
 
 ## 7. Ne yazar
 

@@ -85,7 +85,7 @@ Haftada bir tek zayıf adım bulunur. Mesaj, randevu, görüşme: bu üç adımd
 - Niş kartına: Otuz görüşmede bir "sahadan dolacak" kısmı doldurulur: çalışan açılış, gerçek itiraz, kapanış oranı.
 - Kurucu bölümüne: Öğrencinin görüşme sonrası cümleleri ("bana göre değil", "bu adamlar anlamıyor") vazgeçme işareti olarak yazılır.
 
-**F. Sabah ve akşam.** Akşam bloğunda: günün en kötü görüşmesine bakılır; öğrenme oradadır. Sabah bloğunda: ilk kapanış geldikten sonra, görüşme günlerinde sabah planı o kapanış kaydının ilk beş dakikasını dinletir. Bu, kendini iyi hissetmen için yapılır, öğrenme için değil. Kötü görüşmeden sonra: üç nefes, üç kelime, sıradaki arama. Akşam bloğu tam zamanlıda 17.00-18.30, işin yanında çalışanda 21.00-22.00; analiz ve prova o pencerenin içindedir.
+**F. Sabah ve akşam.** Akşam bloğunda: günün en kötü görüşmesine bakılır; öğrenme oradadır. Sabah bloğunda: ilk kapanış geldikten sonra, görüşme günlerinde sabah planı o kapanış kaydının ilk beş dakikasını dinletir. Bu, kendini iyi hissetmen için yapılır, öğrenme için değil. Kötü görüşmeden sonra: üç nefes, üç kelime, sıradaki arama. Akşam bloğu tam zamanlıda 17.00-18.00, işin yanında çalışanda 21.00-22.00; analiz ve prova o pencerenin içindedir.
 
 **G. Denetim bulgusu görüşmede işe yaradı mı.** Görüşmeden önce elinde denetim kartı vardı ve mesajın ilk cümlesi oradan çıkmıştı. Burada ölçülen şey denetimin kendisi değil, bulgunun görüşmede tuttuğu yer. Her görüşmeden sonra dört satır doldurulur:
 1. Bulgu görüşmede söylendi mi, nerede? Açılışta mı, soru bölümünde mi, hiç mi söylenmedi? Yazılı kayıttan bakılır, hatırlamaya bırakılmaz.

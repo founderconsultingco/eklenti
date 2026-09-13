@@ -6,7 +6,7 @@ description: "Sahaya cikmadan onceki yirmi dort maddelik kontrol listesi. Sadece
 
 # Sahaya çıkış kontrol listesi
 
-Sahaya çıkmadan önceki son bakış. Beşinci bloğun akşamı FounderOS bu listeyi önüne koyar ve tek tek sorar. Her madde iki cevaptan birini alır: tamam, ya da eksik. "Sanırım" cevabı kabul edilmez; her maddenin bir kanıtı var ve kanıt ekranda gösterilir.
+Sahaya çıkmadan önceki son bakış. Beşinci bloğun öğleden sonrası FounderOS bu listeyi önüne koyar ve tek tek sorar. Liste bilerek akşamdan alındı: eskiden akşam bloğuna hem kontrol listesi hem ilk on soğuk temas konuyordu ve ilk temas kimsenin açmayacağı saate kalıyordu. Her madde iki cevaptan birini alır: tamam, ya da eksik. "Sanırım" cevabı kabul edilmez; her maddenin bir kanıtı var ve kanıt ekranda gösterilir.
 
 Süre bir saat. Amaç eksikleri bugün bitirmek değil, sahanın hangi eksikle açılacağını bilmek. Liste bittiğinde iki şey yazılır: saha açılıyor mu, ve açılıyorsa hangi maddeler açık kalarak açılıyor.
 
