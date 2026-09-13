@@ -82,7 +82,7 @@ Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki ge
 
 Reklam kaynağı ikinci ve isteğe bağlı kaynaktır. Bozulursa, kapalıysa ya da süresinde bitmezse liste yine çıkıyor, sadece reklam sütunu boş kalıyor. Liste hiçbir zaman bu kaynağı bekleyip durmuyor.
 
-Beş arama, arama başına altmış reklam, çekim başına en çok üç yüz reklam. Bu tavan bilerek düşük: sahadan gerçek sayı gelmeden yükseltilmiyor.
+On iki arama, çekim başına yaklaşık yedi yüz reklam. Bu tavan bilerek düşük tutuldu: sahadan gerçek sayı gelmeden yükseltilmiyor. Kelime sayısı ve arama başına çekilen reklam sayısı ayarlanabilir; ayar deploy gerektirmiyor.
 
 Kaç kayıt gelir, bilinmiyor, sahadan dolacak. Beklenti şu: Instagram'dan satan nişlerde (güzellik, estetik, düğün, oto kuaför, fotoğraf, pilates) çok, telefondan yürüyen nişlerde az. Sıfır çıkması sorun değil, liste zaten Haritalar'dan doluyor.
 
@@ -93,9 +93,18 @@ Kaç kayıt gelir, bilinmiyor, sahadan dolacak. Beklenti şu: Instagram'dan sata
 FounderOS o satırı okur, temiz bir liste çıkarır ve servise verir. Kural üç satır:
 - Açıklama cümleleri alınmaz. Kartta "şehir adıyla", "erişilemedi", "doğrulanmadı" gibi notlar var; onlar kelime değil.
 - Birbirini içeren kelimelerden biri alınır. "Gülüş tasarımı" varken "dijital gülüş tasarımı" ayrı bir arama hak etmiyor, aynı reklamları getiriyor.
-- İlk beşi alınır, kartta yazdığı sırayla. Sıra kartta güçlüden zayıfa yazılı: nişin kendi adı, sonra en çok reklam edilen hizmetler.
+- İlk sekizi alınır, kartta yazdığı sırayla. Sıra kartta güçlüden zayıfa yazılı: nişin kendi adı, sonra en çok reklam edilen hizmetler.
 
-Diş kliniğinde servise giden beş arama şu oluyor: "diş kliniği Bursa", "implant fiyatları Bursa", "gülüş tasarımı Bursa", "ortodonti Bursa", "şeffaf plak tedavisi Bursa". Klima servisinde: "klima bakımı", "klima montajı", "klima gaz dolumu", "kombi bakımı", "kombi arıza". Şehir her aramanın içine giriyor, ilçe girmiyor: reklam metni ilçe adı geçirmiyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
+**Arama iki koldan yapılır, biri dar biri geniş.** Sebebi kütüphanenin kendi mantığı: kütüphane reklamın hedeflediği şehri göstermiyor, reklamın **metninde** ve **sayfanın adında** arıyor. Yani "implant fiyatları Bursa" araması ancak şehrini yazan reklamı buluyor, ki yerel işletmelerin çoğu yazmıyor.
+
+- **Dar kol:** ilk sekiz kelime, her biri şehirle. "implant fiyatları Bursa", "gülüş tasarımı Bursa". Kesin sonuç verir, az getirir.
+- **Geniş kol:** ilk dört kelime, şehirsiz. "implant fiyatları", "gülüş tasarımı". Şehrini hiç yazmayan yerel reklamcıyı da getirir, yanında bütün ülkenin gürültüsünü de getirir.
+
+Gürültüyü arama elemiyor, birleştirme eliyor. Kural tek: **Haritalar listesiyle eşleşmeyen ve adında, adresinde ya da sitesinde şehir veya ilçe geçmeyen reklamcı listeye hiç girmiyor.** Yani geniş kolun getirdiği yüzlerce ulusal reklam listeyi şişirmiyor; işi, şehirdeki gerçek işletmeyi bulup satırına işaret koymak.
+
+Üç sonuç çıkıyor. İstanbul'daki bir zincir klinik geniş kolda çıkıyor ama listeye girmiyor, çünkü ne Haritalar listesinde var ne adında Bursa geçiyor. Bursa'daki bir klinik Haritalar listesinde varsa sitesinden ya da adından eşleşiyor ve satırına reklam sütunu doluyor. "Nilüfer Ağız ve Diş Sağlığı" gibi adında semtini yazan, Haritalar'da hiç çıkmayan bir işletme ise yeni satır olarak listeye giriyor.
+
+Şehir her aramanın içine giriyor, ilçe girmiyor: reklam metni ilçe adı geçirmiyor. İlçe yalnız eleme aşamasında, adında semt yazan işletmeyi kurtarmak için kullanılıyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
 2. Servis "çalışıyor" der. FounderOS iş kimliğini hemen İş Beyni'ne yazar ve sana tek cümle söyler: "Çekim başladı, birkaç dakika sürer." Sonucu yirmi saniyede bir sorar, en fazla on kez; on sorguda bitmediyse başka işe geçer ve daha sonra yalnız sonucu sorar, çekimi yeniden başlatmaz. Çekim sunucuda sürdüğü için ekranı kapatsan da bozulmaz.
 3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı reklam veriyor, kaçı yalnız reklamdan bilindi, kaçı hangi sebeple işaretli. Sen "tamam" deyince listeyi klasöre kendi aracıyla indirir (aday-listesi-dosyasi); satırlar sohbete dökülmez, çift kayıt olmaz.
 4. Ay başında bu çekim ilk çekimdir; genişletme ve aylık yenileme aynı yoldan yürür, hepsi aylık tavanın içinde.
