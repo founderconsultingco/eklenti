@@ -46,6 +46,42 @@ Haftada kaç saatini teslimata ayırabileceğini sormuyor, çünkü çalışma d
 
 ## 5. Ne yapar
 
+### Parçanın adını değil, çözdüğü anı öğren
+
+Sattığın sistemin yirmi iki parçası var ve adlarını ezberlemenin sana hiçbir faydası yok. İşletmeciye parça adı söyleyen satıcı kaybediyor, çünkü adam o adı duymamış ve duyduğu anda "bu bana bir şey satıyor" diye kapanıyor. Öğrenmen gereken şey şu: hangi parça, işletmede yaşanan hangi anı çözüyor.
+
+Tablo bu ve ezberlenecek tek tablo bu:
+
+| İşletmede yaşanan an | Onu çözen parça |
+|---|---|
+| Telefon çaldı, kimse açamadı | Cevapsız Arama Sonrası Mesaj |
+| Gece ya da hafta sonu yazdı | Yazılı Asistan |
+| Formu doldurdu, saatler sonra dönüldü | Hızlı Dönüş |
+| Fiyat sordu, asistan uydurmadı | İşletme Bilgi Bankası |
+| "Yetkiliyle konuşayım" dedi | Çalışana Devretme |
+| Teklif verildi, "düşüneyim" dedi | Teklif Takibi |
+| Randevuya gelmedi | Hatırlatma ve Gelmeyeni Geri Kazanma |
+| Aylar önceki müşteri bir daha gelmedi | Eski Müşteriyi Geri Kazanma |
+| Memnun ayrıldı ama yorum yazmadı | Yorum İsteme |
+| Hepsi tek ekranda görünsün | Müşteri ve Satış Takibi |
+| Ay sonunda rakam | Sonuç Ekranı ve Rapor |
+
+Görüşmede bu tablonun sağ sütunu hiç söylenmez, sol sütunu anlatılır. Sol sütun işletmecinin kendi haftası; o yüzden anlıyor.
+
+### Bir günü anlat, liste okuma
+
+Sistemi anlatmanın tek doğru yolu işletmecinin bir gününü ona geri anlatmaktır. Nişin kartındaki kayıp birimi ve dört sızıntı zaten o günün içinde duruyor. Kalıp şu: saat, olay, şimdi ne oluyor, sistemle ne oluyor. Beş altı an yeter, hepsi değil.
+
+Diş kliniği için örnek, kısaltılmış hali:
+
+"Saat ikide telefon çalıyor, sekreter koltuğun yanında, eldiven takılı. Telefon çalıp susuyor. O kişi implant fiyatı soracaktı, şimdi ikinci kliniği arıyor. Bizim kurduğumuz sistemde telefon açılmadığı anda o numaraya aynı dakika mesaj gidiyor, konuşma başlıyor, uygun saat soruluyor, randevu takvime yazılıyor. Sekreter koltuktan kalktığında iş bitmiş oluyor.
+
+Akşam dokuzda Instagram'dan yazıyor, 'zirkonyum yapıyor musunuz' diye. Siz kapalısınız. Sabah dokuz buçukta görüyorsunuz, o çoktan gitmiş. Sistemde mesaj geldiği anda cevap gidiyor; fiyat vermiyor, çünkü fiyat muayeneye bağlı ve öyle söylüyor, muayene için saat teklif ediyor.
+
+Salı muayene oldu, implant teklifi verildi, 'düşüneyim' dedi. Kimse dönmedi, üç hafta sonra başka klinikte yaptırdı. Sistemde o hastaya sizin onayladığınız metinle üç kere hatırlatma gidiyor."
+
+Kurallar: her an gerçek olacak, uydurulmayacak. Rakam söylenecekse işletmecinin kendi söylediği rakam olacak. "Yapay zeka" ve "bot" kelimeleri geçmeyecek. Parça adı geçmeyecek. Sonunda tek cümle: "Size gelen ilginin hiçbirini yere düşürmüyoruz. Yeni hasta bulmuyoruz, gelen hastayı kaçırmıyoruz."
+
 ### Önce yolculuk, sonra beş soru
 
 Teslimat kurulmadan önce tek karar: bu işletme randevuyla mı satıyor, teklifle mi, ikisiyle mi. Niş kartının "Kapsam" bölümünde yazılı; karttaki yol esas alınır, işletme görüşmede tersini söylerse kartın "sahadan dolacak" bölümüne not düşülür ve o müşteride görüşmedeki yol kurulur. Yolculuk, sistemin hangi parçalarının açılacağını ve raporun hangi sayıları göstereceğini belirler; onsuz kurulum başlamaz.

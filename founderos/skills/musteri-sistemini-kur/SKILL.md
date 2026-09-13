@@ -20,6 +20,8 @@ Bir de dil ayrımı: "müşteri" senin paranı ödeyen işletmedir. Onun kendi m
 
 Kurduğun şeyin listesi "İş modeli" bölümünde duruyor ve buradaki liste onun kurulum sırasına dizilmiş halidir; 17. ve 22. satırlar işlev değil, altyapının (ödeme ve rapor) bu listedeki yeridir, sayım yine üç ajan, on üç işlev, yedi altyapı. Her satır ayrı bir ürün değil; bir kısmı asistanın yürüttüğü iş, bir kısmı asistanla birlikte çalışan otomasyon. Müşteriye anlatırken parça saymazsın, yolculuğu anlatırsın: "Biri yazdığında, aradığında, geldiğinde ya da gelmediğinde ne oluyor."
 
+Hangi parçanın işletmede hangi anı çözdüğü hizmet-akisini-ciz'in tablosunda duruyor ve öğrencinin ezberlediği tek tablo odur. Buradaki numaralı liste kurulum sırasıdır, anlatım sırası değil.
+
 **Hangi parçalar açılır, yolculuk söyler.** Randevu nişinde takvim, hatırlatma ve gelmeyeni geri kazanma açılır; teklif takibi kapalı kalabilir. Teklif nişinde teklif takibi, görüşme sonrası takip ve kapora yolu açılır; takvim ancak keşif randevusu varsa. İkisi birlikte olan nişte ikisi de açılır. Açılmayan parça sessizce düşmez; kurulum görüşmesinde söylenir ve teslim paketinde "bu işletmede kapalı, sebebi şu" diye yazar.
 
 **Altyapı, önce (birinci dalga, ilk gün):**
