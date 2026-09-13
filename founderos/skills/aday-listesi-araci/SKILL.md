@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.31.0
+Aracın sürümü: 0.32.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -46,6 +46,8 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
   isaret DOSYA --isaret A   (toplu araştırmanın sonucu: is_ilani, reklam_veriyor; her satır bir işletme adı)
   sil ANAHTAR --sebep "..."  (satırı elenme ile işaretler, silmez)
   bugun [--sayi N] [--planla] [--kanal telefon|yazı]
+  yuz-sec [--sayi N]        (en çok istenen yüzü listeden seçer: önce reklam verenler,
+                             sonra sızıntı puanı ve yorum sayısı; elle işaretlenmişlere dokunmaz)
   ozet
   bul METIN
   sayfa [--kart TELEFON.md | --dosya SENARYO.json] [--nis AD] [--ogrenci-ad AD --sehir S --sistem-adi AD] [--acilis "..."] [--itiraz "..."]...
@@ -55,12 +57,12 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.31.0"
+SURUM = "0.32.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
-          "yorum_sayisi", "puan", "kategori", "ipuclari", "yorum_alinti", "elenme",
-          "harita"]
+          "yorum_sayisi", "puan", "kategori", "ipuclari", "yorum_alinti", "reklam",
+          "elenme", "harita"]
 EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", "sizinti",
            "bulgu", "kanca", "lira", "denetim_tarihi", "asama", "telefon_durumu",
            "eposta_durumu", "instagram_durumu", "video_durumu", "temas_sayisi",
@@ -77,7 +79,9 @@ VIDEO_DURUMLAR = DURUMLAR + ["izlendi"]
 KANALLAR = ["telefon", "e-posta", "instagram", "video"]
 KANAL_SUTUN = {"telefon": "telefon_durumu", "e-posta": "eposta_durumu",
                "instagram": "instagram_durumu", "video": "video_durumu"}
-KAYNAKLAR = ["haritalar", "iş ilanı", "elle", "tanıdık", "referans"]
+# "reklam": Meta reklam kutuphanesinden gelen satir. Veri servisi bu kaynagi
+# Haritalar cekimiyle ayni listeye koyuyor; ogrenci tek liste goruyor.
+KAYNAKLAR = ["haritalar", "reklam", "iş ilanı", "elle", "tanıdık", "referans"]
 TARIH_SUTUN = ["eklenme_tarihi", "denetim_tarihi", "son_temas_tarihi", "siradaki_tarih"]
 SAYI_SUTUN = ["uygunluk", "sizinti", "temas_sayisi"]
 KILITLI = ["elenme", "eklenme_tarihi"]  # guncelle ile değişmez
@@ -773,7 +777,8 @@ def kmt_sil(a):
 # derin denetimin yerine gecmez, ama denetimi yapilmamis adayin mesaji
 # gozlemsiz gitmesin diye var. Sira guclu olandan zayifa.
 # Toplu arastirmadan gelen isaretler. Aday basina degil, nis ve sehir basina
-# tek arama ile bulunuyor ve listeye dagitiliyor.
+# tek arama ile bulunuyor ve listeye dagitiliyor. reklam_veriyor artik veri
+# servisinden kendiliginden geliyor; is_ilani hala elle bakiliyor.
 TOPLU_ISARET = ["is_ilani", "reklam_veriyor"]
 
 IPUCU_GOZLEM = [
@@ -800,9 +805,19 @@ IPUCU_GOZLEM = [
 ]
 
 
+# Reklam kaynagindan gelen, tek basina anlam tasiyan isaret. Bu isletme
+# Google Haritalar'da hic cikmadi, sadece reklam verdigi icin biliniyor.
+IPUCU_GOZLEM.append(
+ ("sadece_reklam", "Reklam veriyor ama Google Haritalar'da bulunamadı",
+  "Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"))
+
+
 # Iki isaretin birlikte anlam kazandigi hal: reklama para veriyor ama
 # aramaya bakan yok. Tek basina "reklam veriyorsunuz" bir sizinti degil.
 IPUCU_BIRLESIK = [
+ (("reklam_veriyor", "sikayet_gelmedi"),
+  "Reklam veriyor ve yorumlarda söz verilen gün gelinmediği yazıyor",
+  "Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"),
  (("reklam_veriyor", "aksam_kapali"),
   "Reklam veriyor ama Google'da akşam altıda kapanıyor",
   "Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"),
@@ -830,6 +845,20 @@ def ipucu_gozlem(s):
     return None
 
 
+def reklam_cumlesi(reklam):
+    """'2 reklam, 05.01.2026 tarihinden beri' -> 'Ocak ayindan beri iki reklaminiz yayinda'
+    biciminde, telefonda soylenebilir tek cumle parcasi."""
+    m = re.match(r"^(\d+) reklam(?:, (\d{2})\.(\d{2})\.(\d{4}) tarihinden beri)?$", reklam)
+    if not m:
+        return "Reklam veriyorsunuz"
+    adet = int(m.group(1))
+    sayi = {1: "bir", 2: "iki", 3: "üç", 4: "dört", 5: "beş"}.get(adet, str(adet))
+    parca = "%s reklamınız yayında" % sayi
+    if m.group(4):
+        parca = "%s.%s.%s tarihinden beri %s" % (m.group(2), m.group(3), m.group(4), parca)
+    return parca[0].upper() + parca[1:]
+
+
 def gozlem(s):
     """Adayin mesajina girecek gozlem ve nereden geldigi.
     Doner: (bulgu, kanca, kaynak) kaynak: 'denetim' | 'profil' | ''."""
@@ -848,11 +877,49 @@ def gozlem(s):
         kisa = alinti if len(alinti) <= 140 else alinti[:137].rstrip() + "..."
         bulgu = "Yorumda yazıyor: " + kisa
         kanca = "Google yorumlarınızdan birinde şöyle yazıyor: \"%s\"" % kisa
+    # Reklam sutunu doluysa genel "reklam veriyorsunuz" yerine adet ve tarih
+    # soylenir. Rakam tahmin degil, kutuphanenin kendi kaydi.
+    reklam = (s.get("reklam") or "").strip()
+    if reklam and "reklam_veriyor" in ip:
+        kanca = kanca.replace("Reklam veriyorsunuz", reklam_cumlesi(reklam), 1)
+        if "reklam" not in bulgu.lower():
+            bulgu = (bulgu + " · " + reklam) if bulgu else reklam
     return bulgu, kanca, "profil"
 
 
 def acik(s):
     return not s["elenme"] and s["asama"] not in ("kapandı", "müşteri")
+
+
+def kmt_yuz_sec(a):
+    """En cok istenen yuzu listeden secer.
+    Sira: reklam veren, sonra sizinti puani, sonra yorum sayisi. Elle 'evet'
+    yazilmis satirlar korunur; secim onlarin ustune yenisini ekler.
+    Reklam veren once geliyor cunku parasini zaten harciyor ve talep akisi var."""
+    satirlar = yukle()
+    acik_satirlar = [s for s in satirlar if acik(s)]
+    zaten = [s for s in acik_satirlar if s["yuz"]]
+    aday = [s for s in acik_satirlar if not s["yuz"]]
+
+    def anahtar(s):
+        ip = (s.get("ipuclari") or "").split()
+        return (
+            -(1 if "reklam_veriyor" in ip else 0),
+            -int(s["sizinti"] or 0),
+            -int(s["yorum_sayisi"] or 0),
+        )
+
+    aday.sort(key=anahtar)
+    kalan = max(0, a.sayi - len(zaten))
+    secilen = aday[:kalan]
+    for s in secilen:
+        s["yuz"] = "evet"
+    kaydet(satirlar)
+    reklamli = sum(1 for s in secilen if "reklam_veriyor" in (s.get("ipuclari") or "").split())
+    print("en çok istenen yüz: zaten işaretli %d, yeni seçilen %d (reklam veren %d), toplam %d"
+          % (len(zaten), len(secilen), reklamli, len(zaten) + len(secilen)))
+    if kalan and len(secilen) < kalan:
+        print("liste yetmedi: %d kişilik yer boş kaldı, yeni çekim gerekiyor" % (kalan - len(secilen)))
 
 
 def kmt_bugun(a):
@@ -863,14 +930,19 @@ def kmt_bugun(a):
     def puan(s):
         return (int(s["sizinti"] or 0), int(s["yorum_sayisi"] or 0))
 
+    # Reklam veren isletme parasini zaten harciyor ve talep akisi var. Denetimi
+    # yapilmamis adaylar arasinda once onunla konusulur.
+    def reklamli(s):
+        return 1 if "reklam_veriyor" in (s.get("ipuclari") or "").split() else 0
+
     cevap = [s for s in acik_satirlar if s["asama"] in ("cevap verdi", "randevu") and (not s["siradaki_tarih"] or s["siradaki_tarih"][:10] <= g)]
     takip = [s for s in acik_satirlar if s not in cevap and s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g]
     hazir = [s for s in acik_satirlar if s not in cevap and s not in takip and s["sizinti"] != "" and not s["son_temas_tarihi"]]
     denetsiz = [s for s in acik_satirlar if s not in cevap and s not in takip and s not in hazir and s["sizinti"] == "" and not s["son_temas_tarihi"]]
     cevap.sort(key=lambda s: s["siradaki_tarih"] or "")
     takip.sort(key=lambda s: (s["siradaki_tarih"], -puan(s)[0]))
-    hazir.sort(key=lambda s: (-int(bool(s["yuz"])), -puan(s)[0], -puan(s)[1]))
-    denetsiz.sort(key=lambda s: (-int(bool(s["yuz"])), -puan(s)[1]))
+    hazir.sort(key=lambda s: (-int(bool(s["yuz"])), -puan(s)[0], -reklamli(s), -puan(s)[1]))
+    denetsiz.sort(key=lambda s: (-int(bool(s["yuz"])), -reklamli(s), -puan(s)[1]))
     n = a.sayi
     liste = (cevap + takip + hazir + denetsiz)[:n]
     gozlemsiz = sum(1 for s in liste if not gozlem(s)[0])
@@ -1176,6 +1248,9 @@ def ana():
     b.add_argument("--planla", action="store_true")
     b.add_argument("--kanal")
 
+    ys = alt.add_parser("yuz-sec")
+    ys.add_argument("--sayi", type=int, default=100)
+
     alt.add_parser("ozet")
     f = alt.add_parser("bul")
     f.add_argument("metin")
@@ -1206,7 +1281,8 @@ def ana():
         hata("klasör yok: %s" % KLASOR)
     calisma().mkdir(parents=True, exist_ok=True)
     {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar, "ogren": kmt_ogren, "isaret": kmt_isaret,
-     "sil": kmt_sil, "bugun": kmt_bugun, "ozet": kmt_ozet, "bul": kmt_bul, "sayfa": kmt_sayfa}[a.komut](a)
+     "sil": kmt_sil, "bugun": kmt_bugun, "yuz-sec": kmt_yuz_sec, "ozet": kmt_ozet,
+     "bul": kmt_bul, "sayfa": kmt_sayfa}[a.komut](a)
 
 
 if __name__ == "__main__":
@@ -1375,9 +1451,11 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // gitmesin diye var. Sira guclu olandan zayifa.
 var IPUCU_BIRLESIK=[
  [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
- [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"]
+ [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
+ [['reklam_veriyor','sikayet_gelmedi'],"Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"]
 ];
 var IPUCU_KANCA=[
+ ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
  ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
  ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
@@ -1404,7 +1482,7 @@ function profilKancasi(r){
  for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
  return '';
 }
-var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda şikayet','uyari'],sikayet_ulasilamiyor:['Yorumda "ulaşamadım"','uyari'],sikayet_gelmedi:['Yorumda "gelmediler"','uyari'],kapanmis_olabilir:['Kapanmış olabilir','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor','iyi'],sadece_reklam:['Haritalarda yok','uyari'],yorum_sikayet:['Yorumda şikayet','uyari'],sikayet_ulasilamiyor:['Yorumda "ulaşamadım"','uyari'],sikayet_gelmedi:['Yorumda "gelmediler"','uyari'],kapanmis_olabilir:['Kapanmış olabilir','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}

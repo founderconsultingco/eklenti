@@ -27,18 +27,19 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 
 Bu modülün en büyük tuzağı şu: her adayı tek tek araştırmaya kalkmak. İşletme başına sekiz dakika, günde yüz temas, sekiz yüz dakika. Olmuyor. Ama araştırmadan gönderilen mesaj da işe yaramıyor. Çözüm, araştırmayı sorunun kaynağına göre üçe ayırmak.
 
-**Birinci katman, kayıtla birlikte gelen.** Veri servisi her kayıt için işaretleri çıkarıyor: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site yok, hafta sonu kapalı, Instagram yok, yorumu az, işletme kapanmış olabilir, ve yorumlarda kaçan talebi anlatan bir cümle var. Bunlar beş yüz kaydın hepsinde var, sıfır iş gerektiriyor ve tahmin değil: Google işletme profilinde görünen şeyler. Gözlem sırasının tabanı bu.
+**Birinci katman, kayıtla birlikte gelen.** Veri servisi her kayıt için işaretleri çıkarıyor: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site yok, hafta sonu kapalı, Instagram yok, yorumu az, işletme kapanmış olabilir, yorumlarda kaçan talebi anlatan bir cümle var, ve aktif reklamı var. Bunlar beş yüz kaydın hepsinde var, sıfır iş gerektiriyor ve tahmin değil: Google işletme profilinde görünen şeyler. Gözlem sırasının tabanı bu.
 
 Yorum işaretinin iki türü ayrı duruyor, çünkü ikisi aynı şeyi söylemiyor: telefona ulaşılamadığını yazan yorum ile söz verilen gün gelinmediğini yazan yorum. Birincisi doğrudan sattığımız şeyi anlatıyor, ikincisi ona komşu. Servis işaretin yanında yorumun kendi cümlesini de getiriyor ve mesaja o cümle giriyor: "Google yorumlarınızdan birinde şöyle yazıyor: 'Telefonları açmıyor.'" Genel cümle yerine müşterisinin kendi cümlesi. "Kapanmış olabilir" işareti kanca değil, uyarı: o aday aranmadan önce doğrulanır, çünkü yorumda "bina yıkılmış" yazan işletme Google'da hâlâ açık görünüyor.
 
 Bu katmanın ne kadar dolduğunu ölçtük, tahmin etmedik. İki gerçek çekim, kırk kayıt: telefon kırkta otuz sekiz, site kırkta otuz iki, e-posta kırkta on sekiz, Instagram kırkta on dokuz, yorum şikayeti yirmi kayıtta dört ila beş. Bundan çıkan iki sonuç plana yazıldı: yazılı kanal tek başına listenin yarısına yetmiyor, telefon ana kanal kalıyor; ve güçlü gözlem her adayda çıkmıyor, dört kayıttan birinde çıkıyor, kalanı toplu araştırma ile insan testine kalıyor.
 
-**İkinci katman, toplu araştırma.** Bazı soruların cevabı aday başına değil, niş ve şehir başına aynı yerden geliyor. "Bu şehirde bu nişte kim eleman arıyor" sorusu için yüz ayrı arama yapmanın anlamı yok; tek arama yapılır, çıkan işletme adları listeye dağıtılır. İki soru böyle:
+**İkinci katman, toplu araştırma.** Bazı soruların cevabı aday başına değil, niş ve şehir başına aynı yerden geliyor. "Bu şehirde bu nişte kim eleman arıyor" sorusu için yüz ayrı arama yapmanın anlamı yok; tek arama yapılır, çıkan işletme adları listeye dağıtılır. Geriye tek soru kaldı:
 
 - **İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle şehir ve niş için tek arama. Çıkan işletme adları `isaret --isaret is_ilani` ile listeye yazılır. "Resepsiyonist arıyorsunuz, ilanınızı gördüm" cümlesi profil gözlemlerinin en güçlüsüdür, çünkü işletmeci telefonu kaçırdığını kendisi ilan etmiş oluyor.
-- **Reklam.** Reklam kütüphanesinde niş ve şehir için tek bakış, çıkanlar `isaret --isaret reklam_veriyor` ile yazılır. Tek başına sızıntı değildir; akşam kapalı ya da yorumda şikayet işaretiyle birleşince olur: "Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor."
 
-Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı da reklam da gün içinde değişmiyor.
+Reklam bakışı eskiden bu katmandaydı, artık değil: veri servisi reklam kütüphanesini kendisi tarıyor ve her kayda reklam sütununu dolduruyor. Tek başına sızıntı sayılmıyor; akşam kapalı ya da yorumda şikayet işaretiyle birleşince oluyor: "05.01.2026 tarihinden beri iki reklamınız yayında ama Google'da saatleriniz akşam altıda kapanıyor."
+
+Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı gün içinde değişmiyor.
 
 **Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de telefon istiyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor. Bu ikisi günde beş işletmeyle sınırlı kalıyor ve o beş, listenin en başındaki beş oluyor.
 

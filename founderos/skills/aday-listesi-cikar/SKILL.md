@@ -72,9 +72,21 @@ Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki ge
 
 ### Adım 1: çekim (FounderOS yapar, birkaç dakika)
 
+**Çekim iki kaynaktan yapılıyor, liste tek çıkıyor.** Birincisi Google Haritalar: şehirdeki bütün işletmeleri, telefonuyla, adresiyle, saatleriyle ve yorumlarıyla veriyor. İkincisi Meta reklam kütüphanesi: aynı nişte o şehirde aktif reklam veren sayfaları veriyor. İkisi aynı anda çalışıyor ve tek listede birleşiyor.
+
+İkinci kaynağın işi yeni isim bulmak değil, sıralamayı ve açılış cümlesini düzeltmek. Reklam veren işletme üç şeyi birden kanıtlıyor: parası var, talep akışı var, ve gelen talebi kaçırıyorsa kaybı iki katı. Bu, ideal müşteri tanımının kendisi. Birleşme üç şekilde oluyor:
+
+- Reklam veren işletme Haritalar listesinde zaten varsa satırına `reklam` sütunu doluyor ("2 reklam, 05.01.2026 tarihinden beri") ve ipuçlarına `reklam_veriyor` giriyor.
+- Haritalar'da yoksa listeye yeni satır olarak giriyor, kaynağı `reklam` ve ipuçlarında `sadece_reklam` yazıyor. Telefonu genelde boş; numarasını adından aratarak buluyorsun. Bu satırlar Haritalar'ın kaçırdığı, sadece Instagram'dan yürüyen işletmelerdir ve bazı nişlerde en iyi adaylar onlardır.
+- Ulusal marka ve ajans gürültüsü listeye hiç girmiyor: beğenisi iki yüz bini geçen sayfa ve altmıştan çok aktif reklamı olan sayfa eleniyor.
+
+Reklam kaynağı ikinci ve isteğe bağlı kaynaktır. Bozulursa, kapalıysa ya da süresinde bitmezse liste yine çıkıyor, sadece reklam sütunu boş kalıyor. Liste hiçbir zaman bu kaynağı bekleyip durmuyor.
+
+Kaç kayıt gelir, bilinmiyor, sahadan dolacak. Beklenti şu: Instagram'dan satan nişlerde (güzellik, estetik, düğün, oto kuaför, fotoğraf, pilates) çok, telefondan yürüyen nişlerde az. Sıfır çıkması sorun değil, liste zaten Haritalar'dan doluyor.
+
 1. FounderOS kartındaki Haritalar kategori adını ve İş Beyni'ndeki şehrini alır, servise ilçe başına sekiz yüz kayıt ister; eleme sonrası elde yaklaşık beş yüz kalıyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
 2. Servis "çalışıyor" der. FounderOS iş kimliğini hemen İş Beyni'ne yazar ve sana tek cümle söyler: "Çekim başladı, birkaç dakika sürer." Sonucu yirmi saniyede bir sorar, en fazla on kez; on sorguda bitmediyse başka işe geçer ve daha sonra yalnız sonucu sorar, çekimi yeniden başlatmaz. Çekim sunucuda sürdüğü için ekranı kapatsan da bozulmaz.
-3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı hangi sebeple işaretli. Sen "tamam" deyince listeyi klasöre kendi aracıyla indirir (aday-listesi-dosyasi); satırlar sohbete dökülmez, çift kayıt olmaz.
+3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı reklam veriyor, kaçı yalnız reklamdan bilindi, kaçı hangi sebeple işaretli. Sen "tamam" deyince listeyi klasöre kendi aracıyla indirir (aday-listesi-dosyasi); satırlar sohbete dökülmez, çift kayıt olmaz.
 4. Ay başında bu çekim ilk çekimdir; genişletme ve aylık yenileme aynı yoldan yürür, hepsi aylık tavanın içinde.
 
 Şehrinde 800 çıkmıyorsa sıra şu: kartındaki diğer kategori adları (aynı şehir), sonra komşu iller. Her il ayrı bir çekimdir ve aylık tavan ilk listeyle birlikte üç çekime yetiyor; hangi ilin ekleneceğini haftanın kararı seçer. "Türkiye geneli" ayrı bir çekim değildir, il il açılmak demektir; o zaman mesajlardan "sizin şehirde" cümlesi çıkıyor.
@@ -121,13 +133,16 @@ FounderOS kısa adlara göz gezdirir, yanlış kırpılmış olanı düzeltir. K
 
 Kalan listenin içinden yüz tanesini işaretliyorsun: müşterin olmasını en çok istediğin işletmeler. Sıradaki adımda sadece onlar denetimden geçiyor.
 
-Dört seçim ölçütü var ve sırası şu:
+Beş seçim ölçütü var ve sırası şu:
 1. **İlan verenler.** Adım 2b'deki iş ilanı kaynağından gelenler yüzün başına girer, sıra sormaz.
-2. **Büyük olanlar, ama üst sınırla.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor. Üst sınır İş Beyni'nin ideal müşteri tanımından gelir: hedef büyüklük üç ile on kişi ve karar tek kişide olacak. Yorum sayısı listenin en üstündeki birkaç işletme çoğu zaman bu sınırın dışında kalıyor; sahibi telefona çıkmıyor, karar bir kişide değil. Bunlar listeden atılmaz, yüzün **sonuna** konur ve kaydına tek satır yazılır: "büyük, karar tek kişide olmayabilir". İlk aramalar bunlarla yapılmaz.
-3. **Ulaşılabilir olanlar.** Web sitesi ve Instagram hesabı dolu gelenler.
-4. **Nişin içinde kalanlar.** Kategori tam uyanlar.
+2. **Reklam verenler.** Reklam sütunu dolu olanlar. Reklam veren işletme üç şeyi birden kanıtlıyor: parası var, talep akışı var, ve gelen talebi kaçırıyorsa kaybı iki katı. Yüzün ikinci sırası bunlar.
+3. **Büyük olanlar, ama üst sınırla.** Yorum sayısına göre büyükten küçüğe sırala. Yorumu çok olan işletme çok iş yapıyor, çok iş yapan çok da kaçırıyor. Üst sınır İş Beyni'nin ideal müşteri tanımından gelir: hedef büyüklük üç ile on kişi ve karar tek kişide olacak. Yorum sayısı listenin en üstündeki birkaç işletme çoğu zaman bu sınırın dışında kalıyor; sahibi telefona çıkmıyor, karar bir kişide değil. Bunlar listeden atılmaz, yüzün **sonuna** konur ve kaydına tek satır yazılır: "büyük, karar tek kişide olmayabilir". İlk aramalar bunlarla yapılmaz.
+4. **Ulaşılabilir olanlar.** Web sitesi ve Instagram hesabı dolu gelenler.
+5. **Nişin içinde kalanlar.** Kategori tam uyanlar.
 
-İlanı olanlar artı kalan üçünü birden taşıyan ilk yüz satırı işaretliyorsun. Emin olamadığını da işaretle, ay sonunda değiştireceksin. İşin yanında çalışıyorsan yüz değil kırk işletme seçiyorsun; onlara ayrı emek vereceksin ve günün kırk temasa yetiyor. Sayfadaki "En çok istenen" kutusunda görünen sayı budur; kırk seçildiyse kırk yazar ve bu eksiklik değildir.
+Seçimi FounderOS yapıyor, sen onaylıyorsun: aday aracının `yuz-sec` komutu listeyi bu sıraya dizip yüzü işaretliyor, elle işaretlediklerine dokunmuyor. Sonra gözden geçiriyorsun.
+
+İlanı olanlar artı kalan dördünü birden taşıyan ilk yüz satırı işaretliyorsun. Emin olamadığını da işaretle, ay sonunda değiştireceksin. İşin yanında çalışıyorsan yüz değil kırk işletme seçiyorsun; onlara ayrı emek vereceksin ve günün kırk temasa yetiyor. Sayfadaki "En çok istenen" kutusunda görünen sayı budur; kırk seçildiyse kırk yazar ve bu eksiklik değildir.
 
 Listenin en büyüğünü yüzün sonuna koyduğunda bunu öğrenciye tek cümleyle söylersin, yoksa "en iyileri neden en sona koydun" diye sorar: "Yorumu en çok olan beş işletmeyi listenin sonuna koydum. Onlar en değerli olanlar ama en zor olanlar da; sahibi telefona çıkmıyor, karar tek kişide değil. İlk aramaların olmasınlar, ilk randevunu aldıktan sonra onlara döneriz." 
 
@@ -147,7 +162,7 @@ Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adım
 
 ### Adım 7: listeyi kayıt yerine koy (15 dakika)
 
-**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır. Sütunlar ve değerler aday-listesi-dosyasi'nda sabittir: ilk on beş sütun servisin başlığı (kısa ad, ad, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, puan, kategori, ipuçları, yorum alıntısı, elenme, harita), kalan yirmi sekizi FounderOS'un eklediği eklenme tarihi, kaynak ve bağlayan, yüz işareti, denetim sütunları (sahibinin adı, uygunluk puanı, sızıntı puanı, en güçlü bulgu, kanca, lira karşılığı, denetim tarihi) ve temas sütunları (aşama, dört kanalın durumu, temas sayısı, son temas, sıradaki hareket ve tarihi, randevu tarihi, e-posta konusu ve metni, Instagram mesajı, not). Her kayda eklenme tarihi o günün tarihiyle yazılır. Kaynak tek: Haritalar. Başlık satırı bir kere yazılır, servisin sayfaları altına eklenir. Dosyayı ve yanındaki `adaylar.html` sayfasını FounderOS'un aday aracı yazar (aday-listesi-dosyasi); FounderOS csv'yi elle düzenlemez, her yazıştan sonra sayfa kendiliğinden yenilenir. Sayfanın iki sekmesi var: Liste ve Saha modu. Listeyi oradan görürsün, Excel açmazsın. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
+**CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir):** liste klasöre `adaylar.csv` adıyla yazılır. Sütunlar ve değerler aday-listesi-dosyasi'nda sabittir: ilk on altı sütun servisin başlığı (kısa ad, ad, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, puan, kategori, ipuçları, yorum alıntısı, reklam, elenme, harita), kalan yirmi sekizi FounderOS'un eklediği eklenme tarihi, kaynak ve bağlayan, yüz işareti, denetim sütunları (sahibinin adı, uygunluk puanı, sızıntı puanı, en güçlü bulgu, kanca, lira karşılığı, denetim tarihi) ve temas sütunları (aşama, dört kanalın durumu, temas sayısı, son temas, sıradaki hareket ve tarihi, randevu tarihi, e-posta konusu ve metni, Instagram mesajı, not). Her kayda eklenme tarihi o günün tarihiyle yazılır. Kaynak iki: Haritalar ve reklam. Satırın çoğu Haritalar'dan gelir; reklam kaynaklı satır, o işletmenin Haritalar'da hiç çıkmadığı, yalnız reklam verdiği için bilindiği anlamına gelir ve ipuçlarında "sadece_reklam" yazar. Liste yine tektir, ayrı dosya açılmaz. Başlık satırı bir kere yazılır, servisin sayfaları altına eklenir. Dosyayı ve yanındaki `adaylar.html` sayfasını FounderOS'un aday aracı yazar (aday-listesi-dosyasi); FounderOS csv'yi elle düzenlemez, her yazıştan sonra sayfa kendiliğinden yenilenir. Sayfanın iki sekmesi var: Liste ve Saha modu. Listeyi oradan görürsün, Excel açmazsın. Bu dosya havuzdur ve CRM açılana kadar CRM'in yerine geçer: denetim puanları buraya yazılır, temaslar buraya işlenir, günün listesi buradan seçilir. İş Beyni'nin sekizinci bölümüne dosyanın adı ve kayıt sayısı, on beşinci bölümüne o günün adayları yazılır; beş yüz kayıt İş Beyni'ne kopyalanmaz. CRM açıldığı gün bu dosya bir kerede yüklenir, aşağıdaki yedi adımla, ve `adaylar.csv` "CRM'e taşındı, tarih" notuyla kapanır.
 
 **CRM açıldıysa:** aşağıdaki yedi adım, gerçek listeyle.
 

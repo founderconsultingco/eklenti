@@ -157,9 +157,11 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // gitmesin diye var. Sira guclu olandan zayifa.
 var IPUCU_BIRLESIK=[
  [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
- [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"]
+ [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
+ [['reklam_veriyor','sikayet_gelmedi'],"Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"]
 ];
 var IPUCU_KANCA=[
+ ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
  ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
  ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
@@ -186,7 +188,7 @@ function profilKancasi(r){
  for(var i=0;i<IPUCU_KANCA.length;i++){ if(r._ipucu.indexOf(IPUCU_KANCA[i][0])>=0) return IPUCU_KANCA[i][1]; }
  return '';
 }
-var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor',''],yorum_sikayet:['Yorumda şikayet','uyari'],sikayet_ulasilamiyor:['Yorumda "ulaşamadım"','uyari'],sikayet_gelmedi:['Yorumda "gelmediler"','uyari'],kapanmis_olabilir:['Kapanmış olabilir','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
+var IPUCU={is_ilani:['İş ilanı var','uyari'],reklam_veriyor:['Reklam veriyor','iyi'],sadece_reklam:['Haritalarda yok','uyari'],yorum_sikayet:['Yorumda şikayet','uyari'],sikayet_ulasilamiyor:['Yorumda "ulaşamadım"','uyari'],sikayet_gelmedi:['Yorumda "gelmediler"','uyari'],kapanmis_olabilir:['Kapanmış olabilir','uyari'],profil_sahipsiz:['Profili sahipsiz','uyari'],site_yok:['Sitesi yok','uyari'],instagram_yok:['Instagram yok',''],yorum_az:['Yorumu az',''],aksam_kapali:['Akşam kapalı','uyari'],hafta_sonu_kapali:['Hafta sonu kapalı','uyari'],pazar_kapali:['Pazar kapalı',''],saat_yok:['Saati yazmıyor','']};
 var ASAMA={yeni:['Yeni',''],temasta:['Temasta','mavi'],'cevap verdi':['Cevap verdi','iyi'],randevu:['Randevu','iyi'],'görüşüldü':['Görüşüldü','mor'],sonra:['Sonra',''],'kapandı':['Kapandı','kotu'],'müşteri':['Müşteri','iyi']};
 var KANAL={telefon:'Telefon',eposta:'E-posta','e-posta':'E-posta',instagram:'Instagram',video:'Video'};
 function rozet(m,t){return '<span class="rozet '+(t||'')+'">'+m+'</span>'}

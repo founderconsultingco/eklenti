@@ -40,7 +40,9 @@ Sistem ve dosyalar:
 - Üç sorulu test: Müşterinin beşinci günündeki test: çalışıyor mu, kullanması iyi mi, randevuya çeviriyor mu.
 - Claude: FounderOS'un üzerinde çalıştığı yapay zeka programı; aylık ücreti maliyet tablosunda.
 - Veri servisi: FounderOS'un aday listesini senin yerine çeken parçası. Sunucuda çalışır; sen hesap açmazsın, anahtar görmezsin, para ödemezsin. Kategori ve şehir söylenir, temizlenmiş ve işaretlenmiş liste gelir. Aylık tavanı var.
-- Google Haritalar ve Meta Reklam Kütüphanesi: İşletmeleri saydığımız harita; Facebook ve Instagram'da kimin reklam verdiğini gösteren açık sayfa.
+- Google Haritalar ve Meta Reklam Kütüphanesi: İşletmeleri saydığımız harita; Facebook ve Instagram'da kimin reklam verdiğini gösteren açık sayfa. İkisi de aday listesinin kaynağı; liste tek, kaynak iki.
+- Reklam sütunu: Aday listesindeki her satırda duran, o işletmenin kaç aktif reklamı olduğunu ve ne zamandan beri yayında olduğunu söyleyen satır. Boşsa aktif reklamı görülmedi demektir.
+- Sadece reklam: Google Haritalar'da bulunamayan, yalnız reklam verdiği için bilinen işletme. Telefonu genelde yok; numarası adından aranarak bulunuyor.
 - İYS: İleti Yönetim Sistemi; bir işletmenin insanlara toplu mesaj gönderebilmesi için gereken resmi izin kaydı.
 - KVKK: Kişisel Verilerin Korunması Kanunu; birinin adını, telefonunu ve bilgisini hangi izinle tutup kullanabileceğini söyleyen kanun. Formlardaki onay kutusu ve aydınlatma metni bu kanun için var.
 
