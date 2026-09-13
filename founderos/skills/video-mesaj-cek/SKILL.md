@@ -190,7 +190,7 @@ Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
 
 ### Günün akışı, pencerelere göre
 
-**Tam zamanlı.** Sabah bloğu: günün denetim kartları okunur, video listesi hazır gelir. Saha bloğu: otuz beş arama, otuz Instagram, yirmi e-posta; bloğun son yarım saati video bloğudur, ilk hafta üç video bir saat, sonra beş video doksan dakika (senaryo, üç çekim, Loom linki, gönderim). Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaçı izlendi, kaç cevap geldi.
+**Tam zamanlı.** Sabah bloğu: günün denetim kartları okunur, video listesi hazır gelir. Saha bloğu: ana kanaldan yetmiş, diğer iki kanaldan yirmi beş; bloğun son yarım saati video bloğudur, ilk hafta üç video bir saat, sonra beş video doksan dakika (senaryo, üç çekim, Loom linki, gönderim). Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaçı izlendi, kaç cevap geldi.
 
 **İşin yanında.** Sabah bloğu, yani işe gitmeden önceki bir saat ya da öğle arası: beş adayın denetim kartı okunur. Saha bloğunun sonu: iki video, kırk dakika. Akşam bloğu: kanal durumu ekranı, on beş dakika. İlk müşterinin teslim süresinde ve şirket kuruluş gününde bir video, yirmi dakika.
 

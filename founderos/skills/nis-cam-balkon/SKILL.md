@@ -41,6 +41,8 @@ Sözlüğü: keşif, ücretsiz keşif, ölçü, teklif, montaj, bayi, peşinat, 
 
 **Asistan kuralları.** Sektör "ücretsiz keşif" ile çalıştığı için asistan fiyat vermez, zaten sektörün kendisi de telefonla net fiyat vermiyor (Armut'taki 1.000-150.000 TL gibi devasa aralık bunun kanıtı). Asistan bilgi toplar: hangi ürün, kaç metrekare/kaç pencere, kat ve bina yüksekliği, fotoğraf, ne zaman keşif istendiği; sonra randevu verir. Apartmanda komşu izni gibi hukuki konularda görüş bildirmez, sahibine devreder (bkz. mevzuat notu). Ton konusunda doğrudan yorum analizi yapılamadı, sahadan dolacak.
 
+**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Hemen her firma sitesinde telefon ve WhatsApp öne çıkarılmış, form sonrası dönüş sorunu var (Armut'taki "100 teklife çoğu mesajı görmedi" örneği). Adayın kendi talep kanalı büyük olasılıkla telefon/WhatsApp ve form karışımı. Hangi saat müsait, hangi saat değil, doğrudan kanıt bulunamadı, bilinmiyor, sahadan dolacak.
 
 **Reklam kütüphanesi kelimeleri.** cam balkon, katlanır cam balkon, sürgülü cam balkon, giyotin cam balkon, pvc pencere, pimapen, ısıcam pencere, panjur, motorlu panjur, kepenk, sineklik, pileli sineklik, menteşeli sineklik, ücretsiz keşif, cam balkon fiyatları.

@@ -25,7 +25,7 @@ Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altınc�
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 
-Günlük süre dört saat: otuz beş arama bir buçuk saat, Instagram ve e-posta bir saat, beş video mesaj yarım saat, takip onayı ve cevaplar bir saat.
+Günlük süre dört saat: ana kanalın yetmiş teması iki saat, diğer iki kanalın yirmi beşi yarım saat, beş video mesaj yarım saat, takip onayı ve cevaplar bir saat.
 
 ## 3. Ne okur
 
@@ -289,7 +289,7 @@ Doğru: "Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor mu
 
 **Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistemin tamamı anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
 
-**Hacim ve zaman.** Günde otuz Instagram mesajı, işin yanında çalışanda on iki. Instagram yazılı kolların en büyüğü; e-postanın üstünde duruyor, çünkü mesaj doğrudan sahibinin telefonuna düşüyor ve günlük gönderim sınırı yok. Bu sayı yükseltilmez, çünkü yükseltmek aramadan kesmek demek ve arama hâlâ en yüksek getirili kol: gerçek çekimde kırk kayıttan otuz sekizinde telefon numarası doluydu, on sekizinde e-posta vardı.
+**Hacim ve zaman.** Instagram ana kanalsa günde yetmiş mesaj, değilse yirmi beşin içinden payına düşen. Instagram e-postanın üstünde duruyor, çünkü mesaj doğrudan sahibinin telefonuna düşüyor ve günlük gönderim sınırı yok; gerçek çekimde de kırk kayıttan on dokuzunda Instagram hesabı vardı, on sekizinde e-posta.
 
 Hesabına göre, rampa: hesabın bir yıldan yeniyse ya da yüz takipçiden azsa ilk hafta günde beş, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan sonra yolun kendi sayısı. Rampanın sebebi bir limiti aşmak değil, hesabın gerçekten kullanılıyor olması: yeni açılmış ve hiç kullanılmamış bir hesaptan gelen mesaj hem karşı tarafta hem platformda şüpheli duruyor. Hesabı hiç yoksa ilk gün açılır ve rampa o gün başlar; Instagram kanalı kapanmaz, yavaş açılır.
 
@@ -391,7 +391,7 @@ Bu sorunun cevabı yazılı olmazsa öğrenci ikinci ayın başında boşluğa d
 
 | | Her ay | Nereden |
 |---|---|---|
-| Yeni kayıt | 500, yeni bir ilçe | aday-listesi-cikar, ayın ilk günü |
+| Yeni kayıt | Ana kanal telefonsa 1.400 (üç ilçe), yazıysa 500 (bir ilçe) | aday-listesi-cikar, ayın ilk günü |
 | Yeni en çok istenen yüz | 100, o yeni listeden | aday-listesi-cikar seçer, hızlı denetim aday-denetimi-cikar |
 | Temas | 2.000, yirmi iş günü | 100 temas × 20 gün |
 | Video mesaj | 100, yüz işletmenin hepsine | günde beş |
@@ -399,7 +399,7 @@ Bu sorunun cevabı yazılı olmazsa öğrenci ikinci ayın başında boşluğa d
 
 En çok istenen yüz işletme tek seferlik bir açılış hamlesi değil, **her ay yenilenen bir dilim**. Ay sonunda o yüz bitiyor, yeni ilçenin listesinden yeni yüz seçiliyor ve video sırası kaldığı yerden devam ediyor. Video hiç durmuyor.
 
-Beş yüz kayıt, iki bin temas ve dört dokunuşluk zincir birbirine oturuyor: beş yüz aday çarpı dört dokunuş, iki bin temas. Yani günlük sayı keyfi değil, listenin boyuyla ve zincirin uzunluğuyla aynı hesaptan çıkıyor. Günlük sayıyı yükseltmek listeyi de büyütmek demek; aylık çekim tavanı beş ilçeye kadar izin veriyor.
+Liste boyu ana kanala göre değişiyor ve sebebi basit. Yazılı kanalda bir adaya dört dokunuş yapılıyor (ilk mesaj artı üç takip), yani beş yüz aday iki bin temas ediyor ve bir ay gidiyor. Telefonda ise bir adaya ortalama bir buçuk dokunuş düşüyor, çünkü açmayan adayın satırı iki denemede kapanıyor; o yüzden telefon ana kanalken ayda üç ilçe çekiliyor. Aylık çekim tavanı beş ilçeye kadar izin veriyor, yani ikisi de sığıyor.
 
 Ayın dört yeni işi şunlar ve hepsi aynı güne konur, ayın ilk iş günü: yeni ilçenin çekimi, yeni yüzün seçimi ve hızlı denetimi, geçen ayın kanıt cümlesinin güncellenmesi, ve `ogren` tablosunun aylık uzun okuması. Yarım gün sürüyor ve o gün temas sayısı yarıya iniyor; bu tek istisna plana yazılıdır.
 
@@ -547,7 +547,7 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.
-- Saha bloğu: aramalar, yeni mesajlar ve videolar. Otuz beş arama, otuz Instagram mesajı, e-posta sınırın kadar yeni e-posta (on beş, sonra yirmi), beş video mesaj ve o günün takipleri; toplam yüz. Instagram hesabın rampadaysa o günkü payı rampanın basamağıdır ve eksik kalan sayı aramaya geçer; e-posta sınırın yirminin altındaysa eksik pay Instagram'a geçer. Bloğun son yarım saati video bloğudur.
+- Saha bloğu: ana kanaldan yetmiş temas, diğer iki kanaldan yirmi beş, beş video mesaj; o günün takipleri bu yüzün içinde. Hesabın rampadaysa o günkü payı rampanın basamağıdır ve eksik kalan sayı aramaya geçer. Bloğun son yarım saati video bloğudur.
 - Akşam bloğu: kanal durumu ekranı, kayıt kontrolü, ertesi günün onayı.
 
 **İşin yanında: günde kırk temas.**
@@ -577,7 +577,7 @@ Instagram mesajı yazarken: "İlk beş kelimen işin konusunu söyleyecek. Adam 
 Son cümleyi büyütmek isterse: "Son soruyu küçük tut. İlk mesajda randevu isteyen cevap almıyor. 'Bakmak ister misiniz' yeter; saat konuşmayı başlattıktan sonra geliyor."
 Instagram'da fiyat ya da sistem anlatmak isterse: "Yazışmada anlatılan sistem ikna etmiyor. Adam görüşmede kendi telefonundan deneyince ikna oluyor. Mesajın tek işi o görüşmeyi açmak."
 Takipte sonuç uydurmak isterse: "Yapmadığın işin sonucunu yazmıyoruz. Elinde senin kendi sayımın var, onu yazıyoruz; o gerçek ve o daha güçlü."
-Sabah: "Bugün otuz beş arama, otuz Instagram, yirmi e-posta, beş video; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
+Sabah: "Bugün yetmiş [ana kanal], yirmi beş diğer iki kanal, beş video; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
 Arama öncesi: "Yılmaz Isı, Ahmet Kaya. En güçlü bulgu: dün akşam yedide aradın, açan olmadı. Kanca bu. Lira karşılığını söyleme, görüşmeye saklıyoruz. Ara."
 Kapattıktan sonra: "Ne oldu? Tek kelime yeter." Sen "açmadı" dersin: "Yazdım. Telefon satırı yapıldı, ikinci deneme perşembe. Sıradaki hareket bu, başka bir şey açmıyoruz. Sonraki aday."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, aramıyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."

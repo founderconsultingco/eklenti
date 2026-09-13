@@ -116,21 +116,17 @@ Bir sayı normal aralığındaysa ona dokunulmaz. İyi giden şeyi düzeltmeye �
 
 Bir de sabır meselesi var. Yeni bir şeyi başlattığın hafta sonuç ölçülmez. En az bir hafta çalışsın, veri biriksin, sonra bak. İlk kötü günde müdahale eden kişi hiçbir zaman hangisinin çalıştığını öğrenemiyor.
 
-### Kanal payları üç yüz temasta yeniden dağıtılır
+### Ana kanal değişir mi
 
-Günlük yüz temasın dağılımı sabit değil, ölçülen orana göre kayıyor. Başlangıç dağılımı bir tahmindir: otuz beş arama, otuz Instagram, yirmi e-posta, beş video, on takip. Üç yüz temas birikince tahmin bırakılır ve `ogren` tablosunun kanal kırılımı konuşur.
+Ana kanalı nişin kartı seçiyor ve üç yüz temas boyunca kilitli. Üç yüz temas dolunca tek bir soru sorulur: **ikinci kanal, randevu başına ana kanaldan daha az temas harcadı mı.** Cevap evetse ikisi yer değiştirir; yetmiş ona geçer, ana kanal yirmi beşin içine iner. Cevap hayırsa hiçbir şey değişmez ve sonraki üç yüz temas ölçülür.
 
-Kural şu: o üç yüz temasta randevu başına en az temas harcayan kanalın payı on artar, en çok harcayanın payı on azalır. Tek hamlede tek kanal artar, tek kanal azalır; iki değişiklik aynı hafta yapılmaz, çünkü sonra hangisinin işe yaradığı anlaşılmıyor. Sonra sayaç sıfırlanır ve sonraki üç yüz temas ölçülür.
+Bir kanalda üç yüz temasın içinde otuzdan az temas varsa o kanalın oranı okunmaz; az sayıdan çıkan oran yanıltır.
 
-Tabanlar var ve altına inilmez: arama on beş, Instagram on, e-posta on, video üç. Sebebi şu: kapanan kanal bir daha ölçülemiyor ve iki ay sonra o kanalın gerçekten çalışıp çalışmadığını kimse bilmiyor. Kör nokta, kötü kanaldan pahalıdır. Tavan da var: tek kanal altmışı geçmez.
-
-Video kanalının payı artarsa liste de büyür, yoksa artan pay boşa gider: video günde beşten sekize çıkıyorsa o ay en çok istenen yüz yerine yüz altmış işletme seçilir. Video payı düşerse serbest kalan süre aramaya gider, çünkü arama randevuya en yakın kanal.
-
-Eşik altı satır karara girmez. Bir kanalda o üç yüz temasın içinde otuzdan az temas varsa o kanalın oranı okunmaz; az sayıdan çıkan oran yanıltır.
+Video bu karara girmez. Beş video her gün çekilir, ana kanal ne olursa olsun. Sebebi şu: video en çok istenen yüz işletmeye giden tek dokunuş ve o yüz işletme bu işin en değerli yüz işletmesi.
 
 ### Tavan yükselir, taban yükselmez
 
-Günde yüz temas tabandır ve pazarlık konusu değildir. Ama beş iş günü üst üste yüzü tutturan öğrencide tavan açılır: kazanan kanala on eklenir, günlük yüz yirmiye kadar. Bunu FounderOS teklif eder, öğrenci istemezse yüzde kalır.
+Günde yüz temas tabandır ve pazarlık konusu değildir. Beş iş günü üst üste yüzü tutturan öğrencide tavan açılır: ana kanala on eklenir, günlük yüz yirmiye kadar. Bunu FounderOS teklif eder, öğrenci istemezse yüzde kalır.
 
 Bunun tersi yok. Sayı tutturulamıyorsa çözüm sayıyı düşürmek değil, günün sırasını düzeltmek: saha bloğunun ilk yarım saatinde ilk yirmi temas gitmiyorsa gün zaten kaymış oluyor.
 

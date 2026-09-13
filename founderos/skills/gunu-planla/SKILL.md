@@ -148,7 +148,7 @@ Gün sayacı bunun için var. Her sabah planın başında duruyor: kaçıncı g�
 
 ## 6. Ne söyler
 
-Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: otuz beş arama, otuz Instagram, yirmi e-posta, beş video mesaj. Saha bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Akşam bana tek satır yazacaksın: kaç temas, kaç cevap, kaç randevu."
+Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: yetmiş [ana kanal], yirmi beş diğer iki kanal, beş video mesaj. Saha bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Akşam bana tek satır yazacaksın: kaç temas, kaç cevap, kaç randevu."
 Normal bir sabah (işin yanında): "Gün [sayı]. Sabah bloğun bir saat: üç adayın denetimi ve dünkü cevaplar. Saha bloğun akşam. Günün sayısı kırk. İlk otuz dakikada on temas. Akşam tek satır."
 Denetimden önce: "Plan hazır, beş dakika sürdü. Şimdi bugünün adaylarının denetimi. Denetim bitmeden liste kilitlenmiyor; ilk aramalar bu adaylara, gerisi hızlı denetimle."
 Öğrenci araç kurcalamaya başlarsa: "Bugün saha bloğunun temas kısmı bitmedi. O bitmeden başka bir şey açılmıyor. Kurcaladığın şey akşam da orada duruyor, aramadığın işletme akşam orada durmuyor."

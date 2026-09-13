@@ -55,6 +55,8 @@ Sözlüğü: ekip, personel, gündelikçi, randevu, metrekare, inşaat sonrası,
 
 **Asistan kuralları.** Sektör bazen fiyat yayınlıyor (Armut, Doğu Temizlik gibi) ama alan, kirlilik durumu ve personel sayısına göre fiyat çok değişiyor. Asistanın net fiyat vermesi riskli, aralık verilebilir ama kesin fiyat keşif/telefon görüşmesine bırakılmalı. Toplanacak bilgiler: hizmet türü (ev, ofis, inşaat sonrası, koltuk, halı), metrekare veya oda sayısı, kaç personel istendiği, tarih ve saat tercihi, adres. Ton konusunda şikayetlerde "ilgisizlik", "ciddiyetsizlik" gibi kelimeler öne çıkıyor (SCT Temizlik şikayeti), bu yüzden asistan hızlı yanıt vermeli ve net, nazik konuşmalı.
 
+**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Doğrudan kaynaklı saat/kanal verisi bulunamadı (bilinmiyor, sahadan dolacak). İncelenen firma sitelerinin çoğu telefon ve WhatsApp'ı öne çıkarıyor, form daha arka planda. Ev temizliği kararını genelde evdeki kişi (çoğunlukla gündüz), ofis temizliği kararını ofis yöneticisi mesai saatinde veriyor olabilir; bu bir varsayım, sahada doğrulanmalı.
 
 **Reklam kütüphanesi kelimeleri.** ev temizliği, ofis temizliği, işyeri temizliği, inşaat sonrası temizlik, boş ev temizliği, koltuk yıkama, halı yıkama, yerinde halı yıkama, gündelikçi, temizlikçi, apartman temizliği, cam silme, detaylı temizlik, taşınma temizliği, temizlik şirketi.

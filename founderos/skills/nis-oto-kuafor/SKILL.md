@@ -61,6 +61,8 @@ Yenileme zamanı gelenler. Kaplama iki üç yılda yenileniyor.
 
 Ton: bu sektörde nezaket satın alma kriteri. Övgüler "detayları güzelce anlatıyor", "çok nezaket sahibi" üstüne; şikayetler "üslup" üstüne. Asistan robot gibi konuşursa reddedilir, ustanın kendi diliyle konuşur. Teklif yolculuğu parçası: fiyat sorup kaybolan kişi bu nişin en büyük kaybıdır; ustanın verdiği fiyatın ardından tekliften satışa takip zinciri açılır, ilk mesaj "fotoğrafları usta gördü, şu tarihe kadar yer var" diye gider.
 
+**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Talep ağırlıkla Instagram DM ve WhatsApp'tan geliyor; işin kendisi görsel olduğu için fotoğraf paylaşımı ve "önce sonra" gönderileri talebi başlatıyor. Telefon ikinci kanal. Gün içinde ustanın eli araçta, telefona bakamıyor; talebin hangi saatte yoğunlaştığı kartta yok, sahadan dolacak. Sezon bölümüne göre bahar ve yaz öncesi yoğun, kış ölü; kış aylarında duran havuz ve teklif takibi işin çoğunu taşıyor.
 
 **Reklam kütüphanesi kelimeleri.** "seramik kaplama", "boya koruma filmi", "PPF", "cam filmi", "pasta cila", "detaylı temizlik", "araç kaplama", şehir adı ile birlikte. Reklam veren işletme reklamdan gelen DM'i kaçırıyorsa ilk aday odur.

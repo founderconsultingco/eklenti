@@ -45,6 +45,8 @@ Sözlüğü: usta, çırak, sanayi, dükkan, parçacı, balata, balans, periyodi
 
 **Asistan kuralları.** Fiyat vermez; bu sektörde arıza görülmeden, araca bakılmadan fiyat verilemeyeceği hem forumda hem şikayet örneklerinde (yanlış teşhis vakaları) açık. Asistan araç bilgisi toplar: marka, model, yıl, km, arızanın belirtisi (ses, ışık, koku), varsa fotoğraf/video, ne zaman getirebileceği. Sonra randevuya çevirir, fiyatı usta söyler. Ton: Ekşi Sözlük'te övgüler "arızayı açık ve net anlatan", "sabit ve insaflı fiyat veren" ustalar üzerine; şikayetler yanlış teşhis ("akü ölmüş deyip mutlu akü satmak isterken asıl arıza benzin pompasıymış") ve gereksiz parça değişimi üzerine yoğunlaşıyor (eksisozluk.com). Asistan bunu taklit etmemeli, net ve dürüst bilgi toplamalı, teşhis ve fiyat konusunda hiçbir şey iddia etmemeli.
 
+**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Telefon ana kanal gibi görünüyor (şikayetlerin çoğu telefon/iletişim eksikliği temalı), ama ustanın günün hangi saatinde müsait olmadığı (araç altında, elleri kirli) konusunda doğrudan kaynaklı kanıt bulunamadı, bilinmiyor. Adayın kendi talep kanalı (form/DM/WhatsApp/telefon) sahadan doldurulacak.
 
 **Reklam kütüphanesi kelimeleri.** periyodik bakım, yağ değişimi, kış lastiği değişimi, yaz lastiği değişimi, lastik balans, rot balans, akü değişimi, oto elektrik arıza, marş dinamo, cam filmi, motor arıza tespit, fren balata, triger seti, klima bakımı, egzoz tamiri.

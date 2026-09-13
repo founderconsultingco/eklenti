@@ -53,6 +53,8 @@ Bu cümle yedi şikayetin ortak kalıbına (müşteri arıyor, işletme cevap ve
 
 **Asistan kuralları.** Bu oturumun en önemli çıkarımı: yedi şikayetin yedisinde de sorun ilk temasta değil, satış SONRASI süreçte. Asistanın işi randevu almakla bitmiyor; çekim sonrası "albümünüz şu aşamada, tahmini teslim tarihi şu" gibi düzenli otomatik durum bildirimi göndermesi, sektörün en kanıtlı şikayet temasını doğrudan hedefliyor. Fiyat konusunda asistan net rakam vermemeli, çekim türü, tarih, mekan, kişi sayısını toplayıp randevuya yönlendirmeli; fiyat uçurumu (1.200-250.000 TL) bunu zorunlu kılıyor. Övgü ya da kabalık teması öne çıkmadı, baskın tema hep gecikme ve sessizlik; asistanın en çok önemsemesi gereken şey sessiz kalmamak.
 
+**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Instagram, Stüdyo Mod şikayetinde ve İzmir Düğün Hikayesi/Aşk Hikayesi'nin marka adlandırmasında ilk temas ve marka kanalı olarak doğrulandı. Saatlik müsaitlik bilgisi bulunamadı, sahadan dolacak.
 
 **Reklam kütüphanesi kelimeleri.** Düğün fotoğrafçısı, nişan fotoğrafçısı, hamile fotoğraf çekimi, bebek fotoğraf çekimi, yenidoğan fotoğrafçısı, doğum günü fotoğrafçısı, aile fotoğrafçısı, ürün fotoğrafçısı, e-ticaret fotoğrafçılığı, fotoğraf stüdyosu, düğün albümü, dış çekim, stüdyo çekimi, kına fotoğrafçısı, sünnet fotoğrafçısı. Meta Reklam Kütüphanesi'nde bu oturumda da doğrudan aranamadı, erişilemedi.

@@ -61,6 +61,8 @@ Toplayacağı bilgi: hangi hizmet (reformer, mat, PT, EMS), daha önce deneyim v
 
 Ton uyarısı: rezervasyon anında iptal ve telafi kuralını açık ve yazılı hatırlatmalı. Aylarca cevap verilmeyen iade talepleri (sikayetvar.com/playstudyo/... sikayetvar.com/nova-pilates-studyo/...), bu belirsizliğin işletmecinin kendi kontrolünde olduğunu gösteriyor.
 
+**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** SunFizyo Pazartesi-Cumartesi 09.00-22.00 çalışıyor (sunfizyo.com), Fitamine Pazartesi-Cuma 09.00-21.00 (fitamine.com.tr). Taranan stüdyoların hepsi talebi aynı üç kanala yönlendiriyor: telefon, WhatsApp, Instagram. Instagram DM yoğunluğu bu oturumda da doğrudan ölçülemedi, bilinmiyor, sahadan dolacak; ama sitelerin sistematik olarak buraya yönlendirmesi bunun birincil talep noktası olduğunu dolaylı ama tutarlı şekilde gösteriyor.
 
 **Reklam kütüphanesi kelimeleri.** reformer pilates, pilates stüdyosu, EMS antrenman, kişisel antrenör, PT dersi, deneme dersi pilates, ücretsiz deneme EMS, prenatal pilates, mat pilates, klinik pilates, butik spor stüdyosu, pilates franchise, 25 dakika EMS, vücut şekillendirme, duruş bozukluğu pilates, grup dersi pilates.

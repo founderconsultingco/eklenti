@@ -82,6 +82,8 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 
 **Asistan kuralları.** Yazılı/sesli asistanın bu sektörde ne söyleyeceği, ne SÖYLEMEYECEĞİ (fiyat verir mi, hangi bilgileri toplar, hangi konuda sahibine devreder). Ton (yorumlarda övgü ve şikayet neye odaklanıyor).
 
+**Ana kanal.** telefon ya da Instagram, tek kelime. Günün yüz temasının yetmişi bu kanaldan gider. Kartın kanıtına dayanır, yazanın tercihine değil: talebin ve şikayetin hangi kanalda toplandığı neyse odur.
+
 **Kanal ve zaman.** İşletmeciye nereden ulaşılır (telefon/Instagram/e-posta açıklığı; kanıt), günün hangi saati müsait, hangi saat kesinlikle değil. Adayın kendi talep kanalı hangisi (form, IG DM, WhatsApp, telefon): demo için talep nereye bırakılır.
 
 **Reklam kütüphanesi kelimeleri.** Meta Reklam Kütüphanesi'nde aranacak 8-15 Türkçe anahtar kelime (hizmet adları, kampanya kelimeleri, yan hizmetler).

@@ -49,6 +49,8 @@ Eski alıcılar. Araç değiştirme, kredi bitişi gibi meşru bir sebeple tekra
 
 **Asistan kuralları.** Fiyatı bot vermiyor ama gerekçe farklı: fiyat zaten ilanda yazılı, itiraz "fiyat söyleyemezsin" değil "pazarlık benim işim" oluyor. Asistan topluyor: hangi ilan/araç, ne zaman gelip görmek veya test sürmek istiyor, takas var mı, nakit mi kredi mi, satmaya mı almaya mı geldi. Pazarlığa girmiyor, randevuya çeviriyor. Güven algısı düşük bir sektörde (yukarıdaki "dolandırıcılar" yorumu) asistanın abartılı güven telkini yapan cümlelerden kaçınması mantıklı; bu çıkarım, kanıtlanmış kural değil.
 
+**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Sahibinden.com ve arabam.com üzerinden gelen mesaj/arama ana kanal, ilanlarda telefon açık olduğu için WhatsApp da yaygın uzantı. Bu platformların kendisiyle ilgili ayrı şikayetler var, örneğin ilan sayısı sınırlaması: "1 ayda 10 araba paylaşmanız lazımmış" (sikayetvar.com/sahibinden/oto-galeri/satis, 16 Ekim 2024). Galericinin gün içinde ne zaman müsait olmadığı konusunda doğrudan kaynak yok; bilinmiyor, sahadan dolacak.
 
 **Reklam kütüphanesi kelimeleri.** ikinci el araç, ikinci el otomobil, oto galeri, galeriden araç, kredi ile araç, takaslı araç, hasarsız araç, ekspertizli araç, sıfır ayarında ikinci el, araç alım satım, oto ekspertiz, araç değerleme, spot al, araç kredisi, taşıt kredisi, tramer sorgulama.

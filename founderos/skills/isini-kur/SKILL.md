@@ -204,7 +204,9 @@ Bir kişiye bir kez ulaşmana temas diyoruz: bir arama bir temas, bir mesaj bir 
 
 Dört kol var ve dördünü de yapıyorsun: arama, Instagram mesajı, e-posta, video mesaj. Kol seçmiyorsun, sıra ve sayı değişiyor. Sebebi basit: farklı işletmeci farklı kola cevap veriyor ve hangisinin cevap verdiğini önceden bilmiyorsun. Dördünü birden yürüten kişi üç haftada hangi kolun kendi nişinde çalıştığını görüyor; tek kola yatıran kişi yanlış kola yatırdığını üç hafta sonra anlıyor.
 
-Niş kartının "kanal ve zaman" bölümü kolları kapatmaz, saatlerini söyler: o sektöre hangi saatte ulaşıldığı orada yazıyor. Kuaförü öğlen aramazsın, klimacıyı yaz ortasında telefonda bulamazsın. Kart bir kolu öne çıkarıyorsa o kolun sayısı o nişte biraz yukarı gider, diğerleri kapanmaz.
+Hangisinin ana kanal olduğunu nişin kartı söylüyor, kartın "Ana kanal" satırında tek kelimeyle yazıyor: telefon ya da Instagram. Klimacı telefonda, güzellik salonu Instagram'da. Kartın "kanal ve zaman" bölümü de saatleri veriyor: kuaförü öğlen aramazsın, klimacıyı yaz ortasında telefonda bulamazsın.
+
+Ana kanal diğerlerini kapatmıyor. Günün yetmişi ana kanaldan, yirmi beşi diğer iki yazılı kanaldan, beşi video mesajdan. Yani dördü de her gün çalışıyor, ağırlık tek yerde.
 
 Telefon seni geriyorsa çözüm yazıya kaçmak değil, hazırlık günlerinin provaları. Yazıya kaçan kişi aynı randevu için kat kat fazla temas yapıyor ve bunu fark etmesi haftalar alıyor. Korkuyu prova çözer, kol değiştirmek çözmez.
 
@@ -247,17 +249,17 @@ Zincir 11b'nin cevabından, yani senin hedefinden başlar:
 6. Kaç arama gerekiyor: telefonda 33 aramada bir randevu çıkıyor.
 7. Kaç gün sürüyor: gereken arama bölü senin günlük arama sayın.
 
-Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama demek değil. Yüzün dağılımı şöyle:
+Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama demek değil. Günün tek bir kuralı var ve ezberlenecek üç sayı:
 
-| Kol | Tam zamanlı | İşin yanında |
-|---|---|---|
-| Arama | 35 | 14 |
-| Instagram mesajı | 30 | 12 |
-| E-posta | 20 | 8 |
-| Video mesaj | 5 | 2 |
-| O günün takipleri | 10 | 4 |
+**70, 25, 5.**
 
-E-posta ilk üç hafta bu sayıya çıkmıyor, çünkü yeni bir alan adının günlük gönderim sınırı on beşten başlıyor; eksik kalan pay Instagram'a geçiyor. Instagram hesabın yeniyse onun da rampası var ve o hafta eksik kalan pay aramaya geçiyor. Sayı hep yüz kalıyor, içi haftaya göre değişiyor.
+- **70 ana kanaldan.** Ana kanalı nişin kartı söylüyor, kartın "Ana kanal" satırında yazıyor. Klimacı telefonda, güzellik salonu Instagram'da. Günün ağırlığı hep tek bir kanalda; iki kanalı birden yarım yapan kişi ikisinde de kaybediyor.
+- **25 diğer iki yazılı kanaldan.** Ana kanal telefonsa bu yirmi beş Instagram ve e-posta arasında bölünür. Ana kanal Instagram'sa arama ve e-posta arasında.
+- **5 video mesaj.** Her gün, en çok istenen yüz işletmeye, hiç değişmez.
+
+O günün takipleri yüzün içindedir. İşin yanında çalışıyorsan aynı kural kırkla çalışır: 28, 10, 2.
+
+Ana kanal yazılıysa ilk hafta yetmişe çıkılmaz: yeni hesap rampaya girer (beş, on, yirmi, kırk, sonra yetmiş) ve eksik kalan pay aramaya geçer. Telefonun rampası yoktur, ilk günden yetmiştir.
 
 Doldurulmuş örnek, tam zamanlı biri için:
 
@@ -390,7 +392,7 @@ Gelir planı bitince: "Günde yüz kişi. Kâğıda yaz, masana yapıştır, fot
 Bütçe endişesi gelirse: "Bugün cebinden çıkan para [tablodaki ilk bölümün toplamı]. Şirket gideri henüz yok, ilk 'evet'e kadar da yok. Elindeki parayla kaç ay çıkıyorsun, birlikte yazdık; o sayı üçün altındaysa merdivenin alt basamağından yürüyoruz ve kendi adresi ikinci günde değil, ilk kanıttan sonra alınıyor."
 Bir işi gününün dışına taşırırsan: "Marka ve sayfa birinci bloğun işi, yayın ikincinin. Üçüncü bloğa taşarsa bir satış gününü yemiş oluyorsun. Saha açılınca sen kimi aradın diye soracağım."
 Hedef gerçekçi değilse (yalnız üçüncü blokta, kesin fiyat konduktan sonra; birinci günde bu cümle kurulmaz): "Bu hedefe bu günlük sayıyla şu kadar ayda varılır. İki seçenek var: ya süreyi uzatırız ya hedefi indiririz. Rakamla oynamıyoruz, çünkü oynadığın rakam seni değil takvimi kandırır."
-Rakamlar korkutursa: "960 arama çok gibi duruyor. Günde otuz beş arama yaparsan yirmi sekiz iş günü, ve arama tek kolun değil. Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
+Rakamlar korkutursa: "960 arama çok gibi duruyor. Ana kanalın telefonsa günde yetmiş arama, yani on dört iş günü. Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
 
 ## 7. Ne yazar
 

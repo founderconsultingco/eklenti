@@ -155,7 +155,7 @@ Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gide
 
 **Lira karşılığı** telefonda söylenmez; sayfanın Saha modu kartında görünmez, görüşme özet ekranında durur. Tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
-**Sıradaki kanal** nasıl seçilir: aday en çok istenen yüzdeyse ve sahibinin adı biliniyorsa video, ilk temas olarak. Değilse ve karar verenin adı bulunmuşsa telefon. Ad bulunamamış ve e-postası varsa önce e-posta, üçüncü gün telefon. Kart Instagram'ı öne çıkarıyor ve hesabı canlıysa Instagram. Sızıntı puanı dörtten yüksek olup üçüncü günde hâlâ cevap vermemiş adayda video, bu kez takip olarak. Bu seçimi FounderOS yapar, sen seçmezsin.
+**Sıradaki kanal** nasıl seçilir: aday en çok istenen yüzdeyse ve sahibinin adı biliniyorsa video, ilk temas olarak. Değilse kartın ana kanalı. Ana kanal telefonsa ve karar verenin adı bulunamamışsa yine telefon, "işletme sahibi siz misiniz" ile. Ana kanal Instagram'sa ve adayın hesabı yoksa e-posta, o da yoksa telefon. Sızıntı puanı dörtten yüksek olup üçüncü günde hâlâ cevap vermemiş adayda video, bu kez takip olarak. Bu seçimi FounderOS yapar, sen seçmezsin.
 
 ### Denetimden mesaja
 

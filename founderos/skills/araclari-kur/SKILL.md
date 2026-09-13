@@ -41,7 +41,7 @@ Bir de üçüncü bölümden nişini, iki yedek nişi ve şehrini; sayım çekim
 ## 4. Ne sorar
 
 İki şey sorar:
-- Arama yapacağın numara hangisi: her gün kullandığın hattın mı, yoksa ayrı bir hattın mı var. Varsayılan ayrı hat: sahada her gün otuz beş arama yapan bir numara kişisel numaran olmamalı, arayanlar seni geri arayacak ve o numara sitede, WhatsApp'ta, e-posta imzasında duracak. Ayrı hattın yoksa bugün ikinci bir hat alırsın (operatörden ek numara ya da eSIM; aylık tutarı masraf tablosuna girer, alt basamakta bu kalem ilk kanıta ertelenir ve o güne kadar kendi numaranla ararsın). İş aramaları ve WhatsApp iş hesabı o hattan yürür, numara CRM'e o yazılır.
+- Arama yapacağın numara hangisi: her gün kullandığın hattın mı, yoksa ayrı bir hattın mı var. Varsayılan ayrı hat: sahada her gün onlarca arama yapan bir numara kişisel numaran olmamalı, arayanlar seni geri arayacak ve o numara sitede, WhatsApp'ta, e-posta imzasında duracak. Ayrı hattın yoksa bugün ikinci bir hat alırsın (operatörden ek numara ya da eSIM; aylık tutarı masraf tablosuna girer, alt basamakta bu kalem ilk kanıta ertelenir ve o güne kadar kendi numaranla ararsın). İş aramaları ve WhatsApp iş hesabı o hattan yürür, numara CRM'e o yazılır.
 - Kredi kartın var mı.
 
 Başka bir şey sormaz. Hangi programın kurulacağı, hangisinin kurulmayacağı sorulmaz, söylenir. Aday listesinin nereden geleceği de sorulmaz: veri servisinden gelir, seçenek yok.

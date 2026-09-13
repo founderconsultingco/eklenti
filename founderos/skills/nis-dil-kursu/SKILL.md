@@ -34,6 +34,8 @@ Kayıp birimi: 8.000 ile 40.000 lira (bir kaçan kayıt; kartın kur fiyat aral�
 
 **Asistan kuralları.** Kur fiyatını bilgi bankasında varsa söyler, yoksa "seviye tespitinden sonra size uygun kur ve ödeme planını danışmanınız iletsin" der. Seviye tespiti randevusu yazar. En fazla üç soru: hangi dil ya da alan, hedef (iş, sınav, yurt dışı), tercih edilen gün ve saat. "Kesin başarı", "garanti geçersiniz", "iki ayda konuşursunuz" demez; bu MEB kuralı. Kayıtlı öğrencinin ders, devamsızlık ve sınav bilgisini vermez, danışmana aktarır. Takip zinciri bu nişte sert sınırlı: üç mesajdan sonra susar ve "aramayın" gelirse kapanır, çünkü sektörün şikayeti aşırı aramadan.
 
+**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+
 **Kanal ve zaman.** Başvuru site formu, Instagram DM, WhatsApp ve telefon; zincirlerde form ve çağrı merkezi ağır basıyor, yerel kurumda WhatsApp. Talebin yoğun saati sahadan dolacak; kayıt dalgası Eylül-Ekim ve Ocak-Şubat.
 
 **Reklam kütüphanesi kelimeleri.** "İngilizce kursu", "dil kursu", "seviye tespit", "yeni dönem kayıt", "kur fiyatı", "mesleki eğitim", "sertifika programı", şehir adıyla.
