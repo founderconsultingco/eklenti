@@ -17,11 +17,14 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
                             sonuç: açmadı, gönderdim, istemedi, ilgilendi, randevu, sonra, cevap
                             cevapta: metin: "gelen cevabın kendisi" ve dal: fiyat|bilgi|mesgul|...
   ogren [--esik N]          (hangi gözlem ve hangi kanal cevap getiriyor; eşik altı sayılmaz)
-  isaret DOSYA --isaret A   (toplu araştırmanın sonucu: is_ilani, reklam_veriyor; her satır bir işletme adı)
+  isaret DOSYA --isaret A   (toplu araştırmanın sonucu: is_ilani; her satır bir işletme adı.
+                             reklam_veriyor elle yazılmaz, veri servisinden gelir)
   sil ANAHTAR --sebep "..."  (satırı elenme ile işaretler, silmez)
   bugun [--sayi N] [--planla] [--kanal telefon|yazı]
-  yuz-sec [--sayi N]        (en çok istenen yüzü listeden seçer: önce reklam verenler,
-                             sonra sızıntı puanı ve yorum sayısı; elle işaretlenmişlere dokunmaz)
+  yuz-sec [--sayi N] [--yorum-ust-siniri N]
+                            (en çok istenen yüzü listeden seçer. Sıra: ilan verenler, reklam verenler,
+                             sızıntı puanı, yorum sayısı, ulaşılabilir olanlar. Yorum sayısı üst sınırın
+                             üstündekiler listenin sonuna konur. Elle işaretlenmişlere dokunmaz)
   ozet
   bul METIN
   sayfa [--kart TELEFON.md | --dosya SENARYO.json] [--nis AD] [--ogrenci-ad AD --sehir S --sistem-adi AD] [--acilis "..."] [--itiraz "..."]...
@@ -31,7 +34,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.32.0"
+SURUM = "0.33.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -751,9 +754,11 @@ def kmt_sil(a):
 # derin denetimin yerine gecmez, ama denetimi yapilmamis adayin mesaji
 # gozlemsiz gitmesin diye var. Sira guclu olandan zayifa.
 # Toplu arastirmadan gelen isaretler. Aday basina degil, nis ve sehir basina
-# tek arama ile bulunuyor ve listeye dagitiliyor. reklam_veriyor artik veri
-# servisinden kendiliginden geliyor; is_ilani hala elle bakiliyor.
-TOPLU_ISARET = ["is_ilani", "reklam_veriyor"]
+# tek arama ile bulunuyor ve listeye dagitiliyor. Sadece is_ilani elle yaziliyor;
+# reklam_veriyor veri servisinden geliyor ve elle yazilmasi yasak, cunku elle
+# yazilan isaretin yaninda "reklam" sutunu bos kaliyor ve kanca dogrulanmamis
+# bir cumleyle gidiyor.
+TOPLU_ISARET = ["is_ilani"]
 
 IPUCU_GOZLEM = [
  ("is_ilani", "İş ilanı var: telefona bakacak kişi arıyor",
@@ -877,12 +882,21 @@ def kmt_yuz_sec(a):
     zaten = [s for s in acik_satirlar if s["yuz"]]
     aday = [s for s in acik_satirlar if not s["yuz"]]
 
+    # Metindeki bes olcut, ayni sirayla. Yorum sayisi ust sinirin ustundeyse
+    # aday listeden atilmaz, yuzun sonuna konur: buyuk isletmede karar tek
+    # kiside olmuyor ve ilk aramalar onlarla yapilmiyor.
+    ust_sinir = a.yorum_ust_siniri
+
     def anahtar(s):
         ip = (s.get("ipuclari") or "").split()
+        yorum = int(s["yorum_sayisi"] or 0)
         return (
-            -(1 if "reklam_veriyor" in ip else 0),
+            1 if yorum > ust_sinir else 0,          # buyukler sona
+            -(1 if "is_ilani" in ip else 0),        # 1. ilan verenler
+            -(1 if "reklam_veriyor" in ip else 0),  # 2. reklam verenler
             -int(s["sizinti"] or 0),
-            -int(s["yorum_sayisi"] or 0),
+            -yorum,                                 # 3. buyukler, sinirin altinda
+            0 if (s["site"] and s["instagram"]) else 1,  # 4. ulasilabilir olanlar
         )
 
     aday.sort(key=anahtar)
@@ -891,9 +905,16 @@ def kmt_yuz_sec(a):
     for s in secilen:
         s["yuz"] = "evet"
     kaydet(satirlar)
-    reklamli = sum(1 for s in secilen if "reklam_veriyor" in (s.get("ipuclari") or "").split())
-    print("en çok istenen yüz: zaten işaretli %d, yeni seçilen %d (reklam veren %d), toplam %d"
-          % (len(zaten), len(secilen), reklamli, len(zaten) + len(secilen)))
+    def say(kod):
+        return sum(1 for s in secilen if kod in (s.get("ipuclari") or "").split())
+
+    buyuk = sum(1 for s in secilen if int(s["yorum_sayisi"] or 0) > ust_sinir)
+    print("en çok istenen yüz: zaten işaretli %d, yeni seçilen %d (ilan veren %d, reklam veren %d), toplam %d"
+          % (len(zaten), len(secilen), say("is_ilani"), say("reklam_veriyor"),
+             len(zaten) + len(secilen)))
+    if buyuk:
+        print("bunlardan %d tanesi yorum sayısı %d üstü: listenin sonuna konuldu, ilk aramalar onlarla yapılmaz"
+              % (buyuk, ust_sinir))
     if kalan and len(secilen) < kalan:
         print("liste yetmedi: %d kişilik yer boş kaldı, yeni çekim gerekiyor" % (kalan - len(secilen)))
 
@@ -1226,6 +1247,7 @@ def ana():
 
     ys = alt.add_parser("yuz-sec")
     ys.add_argument("--sayi", type=int, default=100)
+    ys.add_argument("--yorum-ust-siniri", dest="yorum_ust_siniri", type=int, default=300)
 
     alt.add_parser("ozet")
     f = alt.add_parser("bul")

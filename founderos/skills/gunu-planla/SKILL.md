@@ -117,7 +117,7 @@ Bazı işler her gün değil, tek seferde yapılır:
 
 Bunları güne yaymak zaman kaybı. Bir işe her gün baştan başlamak, o işi her gün yeniden öğrenmek demek.
 
-Derin denetim bu listede yok. O toplu yapılmıyor, her sabah o günün adayları için yapılıyor; sekiz dakikalık iş yüz adaya toplu yapılırsa o gün hiç arama yapılmıyor.
+Derin denetim bu listede yok. O toplu yapılmıyor, her sabah o günün adayları için yapılıyor; beş dakikalık iş yüz adaya toplu yapılırsa o gün hiç arama yapılmıyor.
 
 ### Kötü gün
 

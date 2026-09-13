@@ -25,7 +25,7 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 
 ### Araştırma üç katmanda yapılır, üçü de aynı yükü taşımaz
 
-Bu modülün en büyük tuzağı şu: her adayı tek tek araştırmaya kalkmak. İşletme başına sekiz dakika, günde yüz temas, sekiz yüz dakika. Olmuyor. Ama araştırmadan gönderilen mesaj da işe yaramıyor. Çözüm, araştırmayı sorunun kaynağına göre üçe ayırmak.
+Bu modülün en büyük tuzağı şu: her adayı tek tek araştırmaya kalkmak. İşletme başına beş dakika, günde yüz temas, beş yüz dakika. Olmuyor. Ama araştırmadan gönderilen mesaj da işe yaramıyor. Çözüm, araştırmayı sorunun kaynağına göre üçe ayırmak.
 
 **Birinci katman, kayıtla birlikte gelen.** Veri servisi her kayıt için işaretleri çıkarıyor: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site yok, hafta sonu kapalı, Instagram yok, yorumu az, işletme kapanmış olabilir, yorumlarda kaçan talebi anlatan bir cümle var, ve aktif reklamı var. Bunlar beş yüz kaydın hepsinde var, sıfır iş gerektiriyor ve tahmin değil: Google işletme profilinde görünen şeyler. Gözlem sırasının tabanı bu.
 
@@ -43,13 +43,13 @@ Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğin
 
 **Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de senin elinle yapılıyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor.
 
-Bu ikisi derin denetimin içinde tek tek yapılmıyor, **toplu yapılıyor ve denetimden ayrı duruyor**. Sebebi zaman: derin denetim işletme başına sekiz dakika ve günde beşle sınırlı, ama tek bir test araması kırk saniye. Testi denetime bağlamak günde beş adayla sınırlıyordu; ayırınca günde altmışa çıkıyor.
+Bu ikisi derin denetimin içinde tek tek yapılmıyor, **toplu yapılıyor ve denetimden ayrı duruyor**. Sebebi zaman: derin denetim işletme başına beş dakika ve günde beşle sınırlı, ama tek bir test araması kırk saniye. Testi denetime bağlamak günde beş adayla sınırlıyordu; ayırınca günde altmışa çıkıyor.
 
 Sayılar kanitini-hazirla'da yazılı ve çalışma düzenine bağlı. Tam zamanlıda akşam kırk telefon testi, sabah yirmi yazılı ve form testi. İşin yanında yirmi ve on. Kimin test edileceğini gün planı söylüyor: ertesi gün temas edilecek adaylar. Sonuçlar denetim kartının altıncı ve yedinci satırına düşüyor, denetim o satırları kendi yapmıyor, buradan okuyor.
 
-Sonuç şu: beş yüz adayın hepsinde gözlem var, en iyi otuzunda toplu araştırmadan gelen güçlü gözlem var, günün ilk beşinde gerçekten yapılmış test var. Gözlemsiz mesaj gitmiyor.
+Sonuç şu: beş yüz adayın hepsinde gözlem var, en iyi otuzunda toplu araştırmadan gelen güçlü gözlem var, günün altmış adayında (işin yanında otuzunda) gerçekten yapılmış test var. Gözlemsiz mesaj gitmiyor.
 
-**Derin denetim.** İşletme başına sekiz dakika. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü. Canlı testler bu sekiz dakikanın içinde değil: onlar bir gün önceden toplu yapılıyor ve karta hazır geliyor. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
+**Derin denetim.** İşletme başına beş dakika. Testler denetimden çıkınca sekiz dakika beşe indi: geriye iki elle bakış (iş ilanı, karar verenin adı) ve kartın yazılması kaldı. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü; sabah bloğunda yirmi beş dakika tutuyor. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
 
 Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin denetim her sabah sıranın başındakileri açar.
 
@@ -114,9 +114,9 @@ Toplam sıfırla on beş arası. Üç kademeye bölünür:
 
 **Puanlar CRM'e iki ayrı alan olarak yazılır.** Tek alanda toplanmaz. İlk otuz aramadan sonra hangi kademenin gerçekten randevu verdiğine bakılır; kademe eşikleri ancak o zaman değişir, kulaktan değil.
 
-### Derin denetim, denetim kartı, sekiz dakika
+### Derin denetim, denetim kartı, beş dakika
 
-Hızlı denetimin beş satırının üstüne beş şey daha eklenir. Beşinin üçü hazır geliyor (arama testi, yazılı test, reklam izi), ikisi burada yapılıyor (iş ilanı, kim karar veriyor). Sekiz dakikanın çoğu bu ikisine ve kartı yazmaya gidiyor.
+Hızlı denetimin beş satırının üstüne beş şey daha eklenir. Beşinin üçü hazır geliyor (arama testi, yazılı test, reklam izi), ikisi burada yapılıyor (iş ilanı, kim karar veriyor). Beş dakikanın çoğu bu ikisine ve kartı yazmaya gidiyor.
 
 **6. Canlı arama testi.** Bu satır denetim sırasında doldurulmaz, bir gün önceki akşam testinden hazır gelir. Denetim onu okur. Testi kanitini-hazirla yönetir, sınırları orada yazılı; kartın "kanal ve zaman" bölümünün söylediği yoğun saatin dışında bir arama. Yazılan: aradığın saat, açıldı mı, kaç çalışta açıldı, sesli mesaj çıktı mı, geri döndüler mi ve ne kadar sonra. Açılmadıysa bu senin en güçlü bulgun oluyor ve mesajın ilk cümlesi bu.
 
@@ -190,7 +190,7 @@ Bir de şu: denetim kartı adayın kendisine gönderilmez. Gönderilirse iki şe
 Sabah, derin denetim başlarken: "Bugünün beş adayı hazır, sıra sızıntı puanına göre. İlkinden başlıyoruz: [ad], puan dört. Şimdi tek şey senden: saat [saat]'te bu numarayı ara, açılıyor mu bak, sonucu söyle. Gerisini ben dolduruyorum."
 Denetim bitince: "[Ad] için en güçlü bulgu şu: [bulgu]. Lira karşılığı [rakam]. Sıradaki kanal telefon. Arama kartın hazır, kanca bu bulgudan yazıldı."
 Öğrenci denetimi atlamak isterse: "Yurt dışı satış verisi başlangıç rakamı olarak şunu söylüyor: denetimsiz mesaj yüzde bir cevap alıyor, denetimli mesaj yüzde yedi; kendi oranın otuz temasta belli olur. Beş dakikayı burada harcamazsan yirmi mesajı boşa harcıyorsun. Hangisi daha uzun sürüyor?"
-Öğrenci yüz işletmenin hepsine derin denetim yapmak isterse: "Yüz işletmeye sekiz dakika on üç saat eder ve o gün hiç arama yapmazsın. Derin denetim sadece o gün arayacaklarına. Kalanların hızlı denetimi zaten var ve sırayı o belirliyor."
+Öğrenci yüz işletmenin hepsine derin denetim yapmak isterse: "Yüz işletmeye beş dakika sekiz saat eder ve o gün hiç arama yapmazsın. Derin denetim sadece o gün arayacaklarına. Kalanların hızlı denetimi zaten var ve sırayı o belirliyor."
 Bulgu çıkmazsa: "Bu işletmede dışarıdan görünen sızıntı yok. Bu 'sorunu yok' demek değil, 'göremiyoruz' demek. Listenin sonuna gidiyor, kartın açılış cümlesiyle aranıyor. Sıradaki."
 Öğrenci uydurmaya kalkarsa: "Bunu görmedin. Görmediğin bulgu mesaja girmez; ilk soruda çöker ve o adayı bir daha arayamazsın. Bakılamadı yazıyoruz, geçiyoruz."
 

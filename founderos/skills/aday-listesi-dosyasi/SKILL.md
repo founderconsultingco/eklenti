@@ -25,18 +25,20 @@ description: "Aday listesinin kurallari: adaylar.csv'nin otuz sekiz sutunu, aday
 
 Beceri her sürümde araçla birlikte güncellenir. `surum` çıktısı becerideki sürümden küçükse iki dosyayı yeniden kopyala; csv'ye dokunma, araç eski dosyayı okur ve eksik sütunu kendisi ekler.
 
-## Sütunlar (sıra ve ad sabittir, otuz sekiz sütun)
+## Sütunlar (sıra ve ad sabittir, kırk altı sütun)
 
 İlk on altı sütun veri servisinin başlığıdır: `kisa_ad` (aramada ve mesajda kullanılan kısa ad), `ad` (Haritalar'daki tam ad), `telefon` (+90 ile tek biçim), `eposta`, `instagram`, `site`, `adres`, `semt`, `yorum_sayisi`, `puan`, `kategori` (Haritalar'ın verdiği; kartla karşılaştırma bundan), `ipuclari` (boşlukla ayrılmış kodlar: profil_sahipsiz, site_yok, instagram_yok, yorum_az, aksam_kapali, hafta_sonu_kapali, pazar_kapali, saat_yok, yorum_sikayet, sikayet_ulasilamiyor, sikayet_gelmedi, kapanmis_olabilir, reklam_veriyor, sadece_reklam), `yorum_alinti` (şikayet cümlesinin kendisi), `reklam` ("2 aktif reklam, biri 05.01.2026 tarihinden beri"; boşsa aktif reklam görülmedi), `elenme` (dolu satır listede yoktur: servisin sebebi ya da "aday istemedi" gibi sonradan yazılan sebep; satır silinmez), `harita`.
 
-Kalan yirmi dördü FounderOS'un aracıyla doldurduğu sütunlar:
+Kalan otuzu FounderOS'un aracıyla doldurduğu sütunlar:
 - `eklenme_tarihi`: kaydın listeye girdiği gün, araç yazar, sonra değişmez.
 - `kaynak`: haritalar, reklam, iş ilanı, elle, tanıdık, referans. `reklam` olan satır Google Haritalar'da bulunamamış, yalnız reklam kütüphanesinden bilinen işletmedir; telefonu genelde boştur. `baglayan`: tanıdık ya da referansta kimin bağladığı.
 - `yuz`: en çok istenen yüz işletmedeyse evet.
 - Denetim: `sahibi` (karar veren), `uygunluk` (0-15; sayfa A 10 ve üstü, B 6-9, C 5 ve altı), `sizinti` (0-5), `bulgu` (en güçlü bulgu, tek cümle), `kanca` (o adaya telefonda olduğu gibi söylenecek tek cümle, gün adıyla: "Salı akşamı yediye doğru sizi bir kere aradım, açılmadı."; Saha kartı bunu üçüncü adım olarak gösterir, yoksa kartın açılış sorusunu koyar), `lira` (lira karşılığı, tek satır hesap; görüşme özet ekranı için, Saha modunda görünmez), `denetim_tarihi`.
 - Temas: `asama` (yeni, temasta, cevap verdi, randevu, görüşüldü, sonra, kapandı, müşteri; tek değer), `telefon_durumu`, `eposta_durumu`, `instagram_durumu`, `video_durumu` (her biri yapılmadı, yapıldı, cevap geldi, kapandı), `temas_sayisi`, `son_temas_tarihi`, `son_temas_kanali` (telefon, e-posta, instagram, video), `siradaki_hareket` (tek satır, adayın tek sonraki adımı), `siradaki_tarih` (o adımın günü; bugünse sayfada yeşil, geçmişse turuncu; günün listesi buradan çıkar), `randevu_tarihi` (YYYY-AA-GG SS:DD), `not` (kısa; araç her notun başına günü koyar).
+- Yazılı metinler: `eposta_konu`, `eposta_metni`, `dm_metni` (o adaya gidecek metinler, adaya-mesaj-yaz yazar).
+- Cevap ve zincir: `son_cevap` (adayın kendi cümlesi, olduğu gibi), `cevap_dali` (fiyat, bilgi, meşgul gibi), `zincir_adimi` (yazılı takip zincirinin kaçıncı adımı; açılmayan telefon bu sayacı ilerletmez), `acmadi_sayisi` (telefon üst üste kaç kez açılmadı; üçüncüde kanal kapanır ve aday yazılıya geçer).
 
-Tarihler `YYYY-AA-GG`. Boş bilgi boş kalır, "yok" yazılmaz. Kim doldurur: 1-14 ve eklenme tarihi araç (cek, ekle); kaynak, bağlayan, yüz aday-listesi-cikar ve tanidik-listesi-cikar; denetim sütunları aday-denetimi-cikar; temas sütunları saha sonuçlarıyla (sonuclar) ve adaya-mesaj-yaz, gorusmeye-getir, gorusmeyi-analiz-et, gunu-planla, rakamlari-oku.
+Tarihler `YYYY-AA-GG`. Boş bilgi boş kalır, "yok" yazılmaz. Kim doldurur: 1-16 ve eklenme tarihi araç (cek, ekle); kaynak, bağlayan, yüz aday-listesi-cikar ve tanidik-listesi-cikar; denetim sütunları aday-denetimi-cikar; temas sütunları saha sonuçlarıyla (sonuclar) ve adaya-mesaj-yaz, gorusmeye-getir, gorusmeyi-analiz-et, gunu-planla, rakamlari-oku.
 
 ## Komutlar
 
@@ -54,7 +56,11 @@ Hepsi öğrencinin klasörünün içinden: `cd "<klasör>" && python3 .founderos
 
 **sil "<işletme>" --sebep "aday istemedi"** Satırı listeden çıkarır (elenme dolar, satır durur, sayfada görünmez). Onayla silinen servis satırları için de bu kullanılır.
 
-**yuz-sec [--sayi 100]** En çok istenen yüzü listeden seçer ve `yuz` sütununa "evet" yazar. Sıra: önce reklam verenler, sonra sızıntı puanı, sonra yorum sayısı. Elle işaretlenmiş satırlara dokunmaz, eksiği tamamlar. Liste yetmezse kaç kişilik yerin boş kaldığını söyler.
+**isaret DOSYA --isaret is_ilani** Toplu araştırmanın sonucu: dosyanın her satırı bir işletme adı, eşleşen adayların `ipuclari` sütununa o işaret yazılır. Tek kabul edilen işaret `is_ilani`. `reklam_veriyor` elle yazılmaz, veri servisinden gelir ve `reklam` sütunuyla birlikte gelir.
+
+**ogren [--esik N]** Hangi gözlemin ve hangi kanalın cevap getirdiğini sayar. Eşiğin altındaki gözlem sayılmaz, çünkü az sayıda oran yanıltır. Haftanın kararında ve ayın uzun okumasında çalışır.
+
+**yuz-sec [--sayi 100] [--yorum-ust-siniri 300]** En çok istenen yüzü listeden seçer ve `yuz` sütununa "evet" yazar. Sıra: ilan verenler, reklam verenler, sızıntı puanı, yorum sayısı, ulaşılabilir olanlar. Yorum sayısı üst sınırın üstündeki işletmeler listeden atılmaz, yüzün sonuna konur; büyük işletmede karar tek kişide olmuyor ve ilk aramalar onlarla yapılmıyor. Elle işaretlenmiş satırlara dokunmaz, eksiği tamamlar. Liste yetmezse kaç kişilik yerin boş kaldığını söyler.
 
 **bugun [--planla --kanal telefon|yazı] [--sayi 100]** Günün listesini basar, dört grup sırasıyla: cevap verenler, takibi bugüne düşenler, denetimi hazır olanlar (yüz işletme önce, sızıntı puanı yüksek önce), denetimsizler. `--planla` ile sıradaki tarihi olmayan seçilenlere bugünü ve "ilk temas" hareketini yazar; sayfanın Saha modu o anda dolar. Sabah gunu-planla bunu çalıştırır: tam zamanlıda `--sayi 100`, işin yanında `--sayi 40`. Sekiz yüz satırı sohbete almazsın, bu çıktı yeter.
 

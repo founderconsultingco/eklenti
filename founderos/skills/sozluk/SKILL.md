@@ -238,7 +238,7 @@ Prova ve analiz:
 - Bütçe merdiveni: Birinci günde belirlenen üç basamak; elindeki paraya göre hangi aracın hangi güne kadar bekleyeceğini söyler. Alt basamakta tek kalem alınır (Claude aboneliği), saha yine beşinci bloğun sonunda açılır.
 - Havale yolu: Şirketin henüz yokken parayı tahsil etme yolu. Hesap bilgisi, tutar ve açıklama satırı tek mesajda gider. Ödeme linkiyle eşit derecede geçerlidir, yedek değildir.
 - İnanç değişimi: Öğrencinin vazgeçmesine yol açan bir cümleyi çürüten hazır karşılık. On sekizi bir bankada duruyor, ana yönetici gerektiğinde birini öğrencinin kendi rakamıyla söyler.
-- Aday denetimi: Bir işletmeye ulaşmadan önce, o işletmenin müşterisini nerede kaçırdığını dışarıdan bakarak çıkarma işi. İki hâli var: iki dakikalık hızlı denetim ve sekiz dakikalık derin denetim.
+- Aday denetimi: Bir işletmeye ulaşmadan önce, o işletmenin müşterisini nerede kaçırdığını dışarıdan bakarak çıkarma işi. İki hâli var: iki dakikalık hızlı denetim ve beş dakikalık derin denetim.
 - Denetim kartı: Aday denetiminin çıktısı olan tek sayfa. On satır bulgu (iş ilanı dahil), artı en güçlü bulgu, lira karşılığı ve sıradaki kanal.
 - İş ilanı sinyali: İşletmenin resepsiyonist, sekreter ya da çağrı karşılama elemanı ilanı vermesi; telefonu kaçırdığını kendisinin söylemesi demek. Listede öne alınır, e-posta açılışı ondan kurulur. Adayın kendisine gönderilmez.
 - En güçlü bulgu: Denetim kartındaki bulgulardan mesaja girecek olanı; tek cümle ve gördüğün şey. Dört kanal da bundan beslenir ama aynı cümleyi kullanmaz.
