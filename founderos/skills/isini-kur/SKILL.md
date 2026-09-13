@@ -14,7 +14,7 @@ Neden bu iş var: sıfırdan başlayan biri ilk gününü şu iki şeyden birine
 
 Bu modül birinci günü tek bir şeye bağlar. Akşam yattığında elinde bir rakam olacak: günde kaç kişiye ulaşacaksın ve kaç müşteride bu iş senin geçimini karşılayacak. O rakamı bilmeyen insan ikinci hafta vazgeçiyor, çünkü ilerlediğini göremiyor.
 
-Birinci günün sonunda elinde olacaklar: bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu, şirket konusunda ne zaman ne yapacağını gösteren net bir kural; ve günün diğer modüllerinden pazar, ideal müşteri, teklif, fiyat bandı, iş adı, marka kiti ve tanıtım sayfası.
+Birinci günün sonunda elinde olacaklar: ne sattığını söyleyen ezberlenmiş iki cümle, bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu, şirket konusunda ne zaman ne yapacağını gösteren net bir kural; ve günün diğer modüllerinden pazar, ideal müşteri, teklif, fiyat bandı, iş adı, marka kiti ve tanıtım sayfası.
 
 Şunlar bu modülün işi değildir:
 - Kime satacağına karar vermek (nisi-sec, aynı gün, bu modülden hemen sonra).
@@ -197,6 +197,31 @@ Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bu
 İş Beyni'ne dört satır yazarız: seni ne motive eder, seni ne durdurur, daha önce nerede bıraktın, nerede zorlanma riskin var.
 
 Dördüncü satır altıncı sorunun cevabından çıkar. Herkesin zorlandığı bir yer var. Seninkini şimdiden yazıyoruz ki o gün geldiğinde seni yalnız bırakmayayım.
+
+### Ne sattığın: birinci günün tek cümlesi
+
+Bu, birinci günde öğrendiğin ve doksan gün değişmeyen cümle. Nişini seçmeden önce de geçerli, çünkü teklif bütün nişlerde aynı.
+
+**"İşletmelerin kaçırdığı müşteriyi yakalayan sistemi kuruyorum."**
+
+Biri "ne iş yapıyorsun" diye sorduğunda söylediğin şey bu. Bir cümle daha isterlerse:
+
+**"Telefonu açamadıklarında, mesaja geç döndüklerinde, formu geç gördüklerinde iş çoktan gitmiş oluyor. Ben o kaçanı yakalayan sistemi kuruyorum."**
+
+Bu iki cümleyi bugün ezberliyorsun. Üçüncü günde nişine özel Dönüşüm Cümlesi'ni yazacağız; o daha keskin olacak ama bu ikisi o güne kadarki cevabın ve tanıdık listesinde de bu işine yarayacak.
+
+**Hangi sorunu çözüyoruz: dört sızıntı, dördü de aynı yara.**
+
+1. Açılmayan telefon.
+2. Geç dönülen mesaj.
+3. Dönülmeyen form.
+4. Geri aranmayan eski müşteri.
+
+Dördü tek cümlede toplanıyor: işletmeye ilgi zaten geliyor, yere düşüyor. Biz o ilgiyi yerde bırakmıyoruz.
+
+**Çözmediğimiz şey, aynı netlikte.** Yeni müşteri üretmiyoruz, reklam vermiyoruz, site yapmıyoruz, işletmenin numarasına dokunmuyoruz. Sızıntıyı kapatıyoruz, musluğu açmıyoruz. Bunu bilmek satarken işine yarıyor: "Ben size yeni hasta bulmuyorum, gelen hastayı kaçırmamanızı sağlıyorum" cümlesi işletmeciyi rahatlatıyor, çünkü ona reklamcı gibi görünmüyorsun.
+
+**Şu kelimeleri kullanmıyorsun:** bot, chatbot, yapay zeka, otomasyon, entegrasyon, "WhatsApp botu kuruyorum". Bunlar senin mutfağın. İşletmeci mutfağı satın almıyor, önüne gelen randevuyu satın alıyor. Hangi parçanın hangi anı çözdüğü üçüncü günün tablosunda, onu o gün öğreneceksin.
 
 ### Temasın dört kolu
 
