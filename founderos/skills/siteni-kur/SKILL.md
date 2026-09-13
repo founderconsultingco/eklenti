@@ -32,7 +32,7 @@ Pazarlamadaki karşılığı: sitenin işi seni satmak değil, şüpheyi kaldır
 ## 3. Ne okur
 
 Marka kitinden, İş Beyni'nin altıncı bölümündeki dosya haritası üzerinden: renk kodları, yazı tipleri, logo dosyalarının yolu, `ana-gorsel`, bağlantı önizlemesi. Öğrenci hiçbir şey yüklemez; FounderOS dosyaları haritadan bulur.
-İş Beyni'nden: iş adı, Dönüşüm Cümlesi, sistemin adı, şehir, kanal yolu, bütçe merdiveninin hangi basamağında olduğun, alan adı, WhatsApp numarası, varsa takvim adresi. Takvim adresi CRM açılana kadar İş Beyni'nde boş durur; o güne kadar düğme WhatsApp'a gider, CRM açıldığı gün gorusmeye-getir adresi verir ve düğme değişir.
+İş Beyni'nden: iş adı, Dönüşüm Cümlesi, sistemin adı, şehir, günlük temas dağılımı, bütçe merdiveninin hangi basamağında olduğun, alan adı, WhatsApp numarası, varsa takvim adresi. Takvim adresi CRM açılana kadar İş Beyni'nde boş durur; o güne kadar düğme WhatsApp'a gider, CRM açıldığı gün gorusmeye-getir adresi verir ve düğme değişir.
 Niş kartından: sızıntı kanıtı, işletmecinin sözlüğü, üç itiraz, yasal sınırlar.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, müşterinin müşterisi, üç korku. Sayfanın başlığı birinci başlıktan, ilk bölüm üçüncü başlıktan, kanıt bölümü onuncu başlıktan çıkar. Hangi cümlenin hangi başlıktan geldiği öğrenciye söylenir.
 Doksan Gün Planı'ndan: kancalar ve sonuç tanımı.
@@ -267,7 +267,7 @@ Adımlar, ekranda yazan metinleriyle:
 
 Takılırsan ekran görüntüsünü at, hangi düğme olduğunu söylerim. Tarayıcı çevirisini açma.
 
-Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve saha açıldıktan sonra her gün e-posta atacaksın: yazı yolundaysan günde kırk, telefon yolundaysan günde otuz.
+Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz posta hesabından atılan e-posta çöp kutusuna daha kolay düşüyor ve saha açıldıktan sonra her gün e-posta atacaksın: günde yirmi, artı o günün takipleri.
 
 CRM açıldığı gün bir iş daha var ve atlanırsa anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** CRM açılana kadar e-postaları kendi iş e-postandan tek tek sen gönderiyorsun, hatırlatmaları da; CRM açılınca takip e-postaları ve randevu hatırlatmalarının e-posta tarafı CRM'den gidiyor ve adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıp büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menünün en altında "Settings" (ayarlar), listede "Email Services" (e-posta servisleri), sayfada "Dedicated Domain" (kendi alan adın) bölümünde "Add Domain" (alan adı ekle); alan adını yaz, servis birkaç satır verir, o satırları alan adını aldığın satıcının "DNS" (adres kayıtları) ekranına giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
 

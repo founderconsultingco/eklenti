@@ -41,7 +41,7 @@ Pazarlamadaki karşılığı: ideal müşteri profili ve müşteri avatarı.
 
 Niş kartından: işletmecinin gerçek dertleri bölümü, sözlüğü ve iç sesi, kim karar veriyor bölümü, gerçek itirazlar ve karşılıkları, duran havuz tipleri, sızıntı nerede, kanal ve zaman, sezon, gerçek fiyatlar ve kapasite, reklam kütüphanesi kelimeleri, yasal sınırlar.
 
-İş Beyni'nden: seçilen niş ve coğrafya, senin şehrin, içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, gelir planındaki müşteri değeri, kanal yolun.
+İş Beyni'nden: seçilen niş ve coğrafya, senin şehrin, içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, gelir planındaki müşteri değeri, günlük temas dağılımın.
 
 Sahadan, varsa: görüşme analizlerinde geçen cümleler, cevap alan ve almayan açılış cümleleri, en çok çıkan itirazlar.
 

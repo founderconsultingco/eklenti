@@ -32,7 +32,7 @@ Pazarlamadaki karşılığı: sabah ne yapacağını bilen kişi öğlene kadar 
 
 ## 3. Ne okur
 
-İş Beyni'nden: gün sayacı, çalışma düzeni ve günlük temas sayın, kanal yolu, haftanın kararı, ertelenen işler, kurucu bölümündeki zorlanma riskin.
+İş Beyni'nden: gün sayacı, çalışma düzeni ve günlük temas sayın, günlük temas dağılımı, haftanın kararı, ertelenen işler, kurucu bölümündeki zorlanma riskin.
 Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): bugünün randevuları, cevap bekleyen adaylar, takip günü gelenler, gelmedi işaretli randevular. Dünkü sayılar ve günün sıralanmış saha listesi CRM'de hazır durmuyor; FounderOS kayıtlardan çıkarıp sıraya koyuyor.
 Denetim tarafından: hangi adayların denetim kartı hazır, sızıntı puanları, her birinin sıradaki kanalı, bugün derin denetimi yapılacak adayların sırası.
 Teslimat tarafından: aktif müşterilerin hangi günde olduğu ve o günün işi.
@@ -73,7 +73,7 @@ Gün şu sırayla geçer ve bu sıra değişmez:
 
 **Sabah bloğu: önce denetim, sonra liste.** Plan beş dakikada verilir, hemen ardından o günün derin denetimleri yapılır. Tam zamanlıda beş aday, işin yanında üç; bunlar günün ilk aramaları. Kalan temaslar hızlı denetimle gider, hızlı denetimi olmayan aday listeye girmez. Denetim bitmeden aranacak liste kilitlenmez. Denetimler bitince bugünün saha listesi açılır: üstte dün cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda denetimsizler. Sen sıralamıyorsun, sıra hazır geliyor. Dünkü cevaplara dönüş ve e-posta takiplerinin onayı da bu blokta biter.
 
-**Önce satış.** Saha bloğunun ilk yarım saati temasa ayrılır. Telefon yolundaysan aramalar nişin söylediği yoğun saatte yapılır, çoğu nişte bu sabahın ve öğlenin içine düşüyor. Bu blok bitmeden başka bir şey açılmaz.
+**Önce satış.** Saha bloğunun ilk yarım saati temasa ayrılır. Aramalar nişin söylediği yoğun saatte yapılır, çoğu nişte bu sabahın ve öğlenin içine düşüyor. Bu blok bitmeden başka bir şey açılmaz.
 
 **Sonra cevaplar.** Gün içinde gelen cevaplara dönülür, randevular yazılır. Bu iş saha bloğunun içindedir, sonrasına bırakılmaz; cevap veren adayın ilgisi bir günde soğuyor.
 
@@ -113,7 +113,7 @@ Bazı işler her gün değil, tek seferde yapılır:
 
 - Aday listesi ve yüz işletmenin hızlı denetimi: ayda bir, listenin yenilendiği gün.
 - Mesaj metinlerinin o haftaki kişiselleştirmesi: tek oturuşta, haftalık.
-- Video mesaj çekimi (yazı yolundaysan): günde beş, arka arkaya, tek oturuşta.
+- Video mesaj çekimi: günde beş, arka arkaya, tek oturuşta, saha bloğunun son yarım saatinde.
 
 Bunları güne yaymak zaman kaybı. Bir işe her gün baştan başlamak, o işi her gün yeniden öğrenmek demek.
 
@@ -148,7 +148,7 @@ Gün sayacı bunun için var. Her sabah planın başında duruyor: kaçıncı g�
 
 ## 6. Ne söyler
 
-Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: elli arama, otuz e-posta, yirmi Instagram. Saha bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Akşam bana tek satır yazacaksın: kaç temas, kaç cevap, kaç randevu."
+Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: otuz beş arama, otuz Instagram, yirmi e-posta, beş video mesaj. Saha bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Akşam bana tek satır yazacaksın: kaç temas, kaç cevap, kaç randevu."
 Normal bir sabah (işin yanında): "Gün [sayı]. Sabah bloğun bir saat: üç adayın denetimi ve dünkü cevaplar. Saha bloğun akşam. Günün sayısı kırk. İlk otuz dakikada on temas. Akşam tek satır."
 Denetimden önce: "Plan hazır, beş dakika sürdü. Şimdi bugünün adaylarının denetimi. Denetim bitmeden liste kilitlenmiyor; ilk aramalar bu adaylara, gerisi hızlı denetimle."
 Öğrenci araç kurcalamaya başlarsa: "Bugün saha bloğunun temas kısmı bitmedi. O bitmeden başka bir şey açılmıyor. Kurcaladığın şey akşam da orada duruyor, aramadığın işletme akşam orada durmuyor."

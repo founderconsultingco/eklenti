@@ -198,15 +198,15 @@ Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bu
 
 Dördüncü satır altıncı sorunun cevabından çıkar. Herkesin zorlandığı bir yer var. Seninkini şimdiden yazıyoruz ki o gün geldiğinde seni yalnız bırakmayayım.
 
-### Kanal yolu
+### Temasın dört kolu
 
-Bir kişiye bir kez ulaşmana temas diyoruz: bir arama bir temas, bir mesaj bir temas.
+Bir kişiye bir kez ulaşmana temas diyoruz: bir arama bir temas, bir mesaj bir temas, bir video bir temas.
 
-Hiçbir gün tek koldan çalışmıyorsun. Temasın üç kolu var: arama, e-posta, Instagram. Günlük sayının içinde üçü birden var; kanal yolu bunlardan hangisinin ağır bastığını söyler, diğerlerini kapatmaz.
+Dört kol var ve dördünü de yapıyorsun: arama, Instagram mesajı, e-posta, video mesaj. Kol seçmiyorsun, sıra ve sayı değişiyor. Sebebi basit: farklı işletmeci farklı kola cevap veriyor ve hangisinin cevap verdiğini önceden bilmiyorsun. Dördünü birden yürüten kişi üç haftada hangi kolun kendi nişinde çalıştığını görüyor; tek kola yatıran kişi yanlış kola yatırdığını üç hafta sonra anlıyor.
 
-Kanal yolu nişin kartından çıkar, senin korkundan değil. Kararı FounderOS verir ve niş kararının hemen ardından tek cümleyle söyler: "Kanal yolun telefon; kart bu sektörde sahibinin öğleden sonra telefonu açtığını söylüyor." Dosyaya yazılıp sohbette söylenmeyen kanal yolu olmaz. Her niş kartının "kanal ve zaman" bölümü var: o sektöre hangi saatte, hangi yoldan ulaşıldığı orada yazıyor. Kuaförü öğlen aramazsın, klimacıyı yaz ortasında telefonda bulamazsın. Kart ne diyorsa o.
+Niş kartının "kanal ve zaman" bölümü kolları kapatmaz, saatlerini söyler: o sektöre hangi saatte ulaşıldığı orada yazıyor. Kuaförü öğlen aramazsın, klimacıyı yaz ortasında telefonda bulamazsın. Kart bir kolu öne çıkarıyorsa o kolun sayısı o nişte biraz yukarı gider, diğerleri kapanmaz.
 
-Kartın söylediği yol senin rahat ettiğin yolla çakışırsa kart üstündür, ama bunu tek başına bırakmam: o yolun provası hazırlık günlerine yazılır. Telefon seni geriyorsa çözüm yazıya kaçmak değil, dördüncü ve beşinci bloğun provaları. "Hangisini istersin" diye sormamamın sebebi şu: sorulan kişi neredeyse her zaman yazıyı seçiyor ve yazı yolu aynı randevu için kat kat fazla temas istiyor. Korkuyu prova çözer, kanal değiştirmek çözmez.
+Telefon seni geriyorsa çözüm yazıya kaçmak değil, hazırlık günlerinin provaları. Yazıya kaçan kişi aynı randevu için kat kat fazla temas yapıyor ve bunu fark etmesi haftalar alıyor. Korkuyu prova çözer, kol değiştirmek çözmez.
 
 ### Çalışma düzeni ve günlük sayı
 
@@ -247,11 +247,23 @@ Zincir 11b'nin cevabından, yani senin hedefinden başlar:
 6. Kaç arama gerekiyor: telefonda 33 aramada bir randevu çıkıyor.
 7. Kaç gün sürüyor: gereken arama bölü senin günlük arama sayın.
 
-Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama demek değil. Telefon yolunda o yüzün 50'si arama, 30'u e-posta, 20'si Instagram mesajı. İşin yanında çalışıyorsan günde 40 temasın 10'u arama.
+Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama demek değil. Yüzün dağılımı şöyle:
+
+| Kol | Tam zamanlı | İşin yanında |
+|---|---|---|
+| Arama | 35 | 14 |
+| Instagram mesajı | 30 | 12 |
+| E-posta | 20 | 8 |
+| Video mesaj | 5 | 2 |
+| O günün takipleri | 10 | 4 |
+
+E-posta ilk üç hafta bu sayıya çıkmıyor, çünkü yeni bir alan adının günlük gönderim sınırı on beşten başlıyor; eksik kalan pay Instagram'a geçiyor. Instagram hesabın yeniyse onun da rampası var ve o hafta eksik kalan pay aramaya geçiyor. Sayı hep yüz kalıyor, içi haftaya göre değişiyor.
 
 Doldurulmuş örnek, tam zamanlı biri için:
 
-Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 50 arama yaparsan 20 iş günü, yani bir ay. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın sonunda çıkıyor.
+Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 35 arama yaparsan 28 iş günü, yani bir buçuk ay.
+
+Zincir yalnız aramayla kuruluyor, çünkü elimizde oranı olan tek kol o. Instagram, e-posta ve video mesaj bu sayının üstüne çalışıyor; onların randevu oranını kendi rakamınla üç yüzüncü temasta yazacağız. Yani plan en kötü hali gösteriyor, gerçek büyük ihtimalle daha erken çıkıyor. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın içinde çıkıyor.
 
 Aynı hesap işin yanında çalışan biri için başka bir yere çıkıyor. Günde 10 arama yapan birinde aynı zincir çok daha uzun sürüyor; o yüzden işin yanında çalışan birinin doksan günlük hedefi dört müşteri değil, bir ya da iki müşteri. Bir müşteri bu işin çalıştığının kanıtı ve doksan gün için yeterli.
 
@@ -338,6 +350,9 @@ Bugünden itibaren:
 - İnternet adresi, yılda 10 ile 60 dolar arası.
 - İş e-posta hesabı, ilk ay 20 dolar, sonra 12 dolara düşürülür.
 
+Sahaya çıktıktan bir hafta sonra:
+- Video kaydı için Loom. Ücretsiz planı kişi başına yirmi beş video, video başına beş dakika; günde beş video çektiğin için beşinci günde doluyor. Ücretli planı aylık 18 dolar, yıllık ödemede yüzde on yediye kadar indirimli. İlk hafta sıfır, sonra bu kalem giriyor. Kaynak: Loom'un kendi fiyat sayfası, Eylül 2026.
+
 CRM açıldığı gün (başlangıç görüşmesinden sonra):
 - Sesli dakika: müşterinin sesli asistanı kurulursa konuşma dakikası; ilk müşteriye kadar sıfır, rakamı CRM'in ücret ekranından okunur.
 
@@ -352,7 +367,7 @@ Bölümlerin toplamı ayrı ayrı yazılır, çünkü hangi ay cebinden ne çık
 
 On ikinci sorunun cevabı bu tabloyu karşılamıyorsa liste kısılır. Nasıl kısılacağı bugün yazılır, o güne bırakılmaz. Üç basamak var ve hangisinde olduğunu senin verdiğin rakam belirler, ben sormam.
 
-**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
+**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Loom'un ücretli planı da ilk kanıta ertelenir; o güne kadar ücretsiz planın yirmi beş videosu kullanılır, sonra video mesaj günde ikiye iner ve videolar Instagram'dan sohbete yüklenerek gider. Video hiç durmaz, sayısı iner. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
 
 **Orta basamak: üç ile altı aylık masrafı karşılıyor.** Tablonun ilk iki bölümü alınır, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
 
@@ -375,11 +390,11 @@ Gelir planı bitince: "Günde yüz kişi. Kâğıda yaz, masana yapıştır, fot
 Bütçe endişesi gelirse: "Bugün cebinden çıkan para [tablodaki ilk bölümün toplamı]. Şirket gideri henüz yok, ilk 'evet'e kadar da yok. Elindeki parayla kaç ay çıkıyorsun, birlikte yazdık; o sayı üçün altındaysa merdivenin alt basamağından yürüyoruz ve kendi adresi ikinci günde değil, ilk kanıttan sonra alınıyor."
 Bir işi gününün dışına taşırırsan: "Marka ve sayfa birinci bloğun işi, yayın ikincinin. Üçüncü bloğa taşarsa bir satış gününü yemiş oluyorsun. Saha açılınca sen kimi aradın diye soracağım."
 Hedef gerçekçi değilse (yalnız üçüncü blokta, kesin fiyat konduktan sonra; birinci günde bu cümle kurulmaz): "Bu hedefe bu günlük sayıyla şu kadar ayda varılır. İki seçenek var: ya süreyi uzatırız ya hedefi indiririz. Rakamla oynamıyoruz, çünkü oynadığın rakam seni değil takvimi kandırır."
-Rakamlar korkutursa: "960 arama çok gibi duruyor. Günde elli arama yaparsan yirmi iş günü. Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
+Rakamlar korkutursa: "960 arama çok gibi duruyor. Günde otuz beş arama yaparsan yirmi sekiz iş günü, ve arama tek kolun değil. Aramaların çoğu on beş saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: kimlik satırları (ad, şehir, telefon numarası), on sekiz sorunun cevabı kısa haliyle (birinci bölüme, "tanışma cevapları" altına), kurucu bölümünün dört satırı, içeriden tanıdığı sektör ve telefonundaki işletme sahipleri (üçüncü bölüme), kanal yolu, çalışma düzeni ve günlük sayı, hazırlık seviyesi, e-posta ve Instagram yaşı, motivasyon satırı, gelir planının bütün basamakları, özgürlük bölümü ve çıkış hesabı, aylık masraf tablosunun dört bölümü, bütçe merdiveninin hangi basamağında olduğun, mali müşavirin adı ve beş sorunun cevabı, şirket kuralı (ilk "evet"te kurulur), başlangıç tarihi olarak bugünün tarihi, gün sayacı 1.
+İş Beyni'ne: kimlik satırları (ad, şehir, telefon numarası), on sekiz sorunun cevabı kısa haliyle (birinci bölüme, "tanışma cevapları" altına), kurucu bölümünün dört satırı, içeriden tanıdığı sektör ve telefonundaki işletme sahipleri (üçüncü bölüme), günlük temas dağılımı, çalışma düzeni ve günlük sayı, hazırlık seviyesi, e-posta ve Instagram yaşı, motivasyon satırı, gelir planının bütün basamakları, özgürlük bölümü ve çıkış hesabı, aylık masraf tablosunun dört bölümü, bütçe merdiveninin hangi basamağında olduğun, mali müşavirin adı ve beş sorunun cevabı, şirket kuralı (ilk "evet"te kurulur), başlangıç tarihi olarak bugünün tarihi, gün sayacı 1.
 CRM'e bugün bir şey yazılmıyor, çünkü hesabın başlangıç görüşmende açılıyor. O güne kadar adaylar, randevular ve temaslar İş Beyni'nin "Bugünün listesi" bölümünde duruyor; arama sonucunu sen söylüyorsun, FounderOS yazıyor. Hesap açıldığı gün hepsi bir kerede oraya taşınıyor.
 
 ## 8. Yedek yol
@@ -423,11 +438,11 @@ Sıradaki: "Yarın araçları kuruyoruz ve sayfan yayına çıkıyor. Bugünkü 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Hedef gelir, günlük sayıyla makul sürede çıkmıyor: gelir planında düzeltilir, tartışma açılmaz.
 - Maaşlı işi var ya da günlük vakti beş saatin altında: çalışma düzeni "işin yanında" yazılır, takvim uzatılır.
-- Kartın kanal ve zaman bölümü yazıyı işaret ediyor: kanal yolu "yazı" yazılır, günlük temas hedefi aynı kalır ama randevu beklentisi ona göre kurulur.
+- Kartın kanal ve zaman bölümü yazıyı işaret ediyor: Instagram ve e-postanın payı o nişte biraz yukarı yazılır, arama kapanmaz, günlük temas hedefi aynı kalır.
 - Altıncı sorunun cevabında bir bırakma noktası varsa: o güne yaklaşırken FounderOS ayrıca döner.
 - Maaşlı bir işi var: Bağ-Kur sorusu mali müşavire sorulacakların ilk maddesi olur.
 - Beşinci blokta mali müşavir ya da belgeler eksik: havale yolu ilk kapanışta hazır tutulur, saha ertelenmez.
 - Üçüncü gün fiyat kesinleşti: gelir planı güncellenir.
 - Üç yüzüncü temas tamamlandı: oranlar öğrencinin kendi rakamıyla değiştirilir.
 
-Beş kural: boş sayfa yok (sorular, oranlar ve tablo hazır gelir) · sessiz bitiş yok (gün, ertesi günün işiyle kapanır) · onay (İş Beyni kişiseldir, CRM'e hiçbir şey yazılmaz) · sahadan güncelleme (gelir planı üçüncü günde ve üç yüzüncü temasta güncellenir) · sormaz söyler (sadece bilinemeyeni sorar; kanal yolunu, çalışma düzenini ve hazırlık seviyesini kendisi işaretler).
+Beş kural: boş sayfa yok (sorular, oranlar ve tablo hazır gelir) · sessiz bitiş yok (gün, ertesi günün işiyle kapanır) · onay (İş Beyni kişiseldir, CRM'e hiçbir şey yazılmaz) · sahadan güncelleme (gelir planı üçüncü günde ve üç yüzüncü temasta güncellenir) · sormaz söyler (sadece bilinemeyeni sorar; günlük temas dağılımını, çalışma düzenini ve hazırlık seviyesini kendisi işaretler).

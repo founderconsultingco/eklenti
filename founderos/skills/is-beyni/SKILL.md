@@ -25,7 +25,7 @@ Dosya öğrencinin bilgisayarında duruyor, tek dosya, on sekiz bölüm. Bölüm
 ## Bölümler
 
 ### 1. Kurucu
-Kim olduğu ve nasıl çalıştığı. Lisans anahtarı (ilk mesajda sohbete yazdırılır, buraya yazılır, bir daha sorulmaz), ad, şehir, telefon, e-posta, çalışma düzeni (tam zamanlı ya da işin yanında), haftalık teslimat saati, hazırlık seviyesi, kanal yolu (telefon ya da yazı), klasörün tam yolu, başlangıç tarihi.
+Kim olduğu ve nasıl çalıştığı. Lisans anahtarı (ilk mesajda sohbete yazdırılır, buraya yazılır, bir daha sorulmaz), ad, şehir, telefon, e-posta, çalışma düzeni (tam zamanlı ya da işin yanında), haftalık teslimat saati, hazırlık seviyesi, günlük temas dağılımı (arama, Instagram, e-posta, video), klasörün tam yolu, başlangıç tarihi.
 Birinci günün tanışma konuşmasından gelenler: ne motive ediyor, ne durduruyor, daha önce ne denedi ve neden bıraktı, düşme riski nerede.
 Mali müşavirin adı ve beş sorunun cevabı.
 Yazan: isini-kur (birinci gün), hizmet-akisini-ciz.

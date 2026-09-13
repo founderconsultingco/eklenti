@@ -36,7 +36,7 @@ Kanıt hikâyesi ile karıştırma: kanıt hikâyesi, ilk müşterinde çıkan g
 
 Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): üçüncü blokta yazılan aday listesi, en çok istenen yüz işletme işareti, sahibinin adı, telefon, WhatsApp, Instagram, sitesinde form var mı, reklam veriyor mu işareti. Kartta kararı sahibinden başkası veriyorsa o kişinin adı yazılır.
 Niş kartından: telefon saatleri (çoğu kartta bu satır boştur, sahadan dolar), telefonu kim açıyor, sezon, yasal sınırlar, "aradım açmadılar" tipi gerçek şikâyetler.
-İş Beyni'nden: iş adın, sistemin adı, Dönüşüm Cümlesi, kayıp birimi, kanal yolu, çalışma düzeni, şehir, canlı site adresi (demo aynı adrese `/demo` olarak konur).
+İş Beyni'nden: iş adın, sistemin adı, Dönüşüm Cümlesi, kayıp birimi, günlük temas dağılımı, çalışma düzeni, şehir, canlı site adresi (demo aynı adrese `/demo` olarak konur).
 Hazır kurulum paketinden: nişin asistan kuralları (fiyat vermez, numaraya dokunmaz, mevzuat cümleleri).
 Canlı doğrulama tablosundan (ikinci gün nişin şehirdeki sayılarının internetten sayıldığı tablo): reklam veren oranı. "Görülemedi" yazıyorsa reklam testi yapılmaz.
 

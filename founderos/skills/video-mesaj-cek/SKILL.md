@@ -1,28 +1,30 @@
 ---
 user-invocable: false
 name: video-mesaj-cek
-description: "Kurulum beşinci gün, sonra yazı yolunda her gün. En çok istenen yüz işletmeye kişisel video mesaj."
+description: "Kurulum beşinci gün, sonra her gün. En çok istenen yüz işletmeye Loom ile kişisel video mesaj, ilk temas olarak."
 ---
 
 # video-mesaj-cek
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Yazı yolundaki öğrencinin modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır; bu modül, en çok istenen yüz işletmeden seçilmiş adaya, o adayın denetim kartından çıkan bulguyu ekranda göstererek bir dakikalık video mesaj çektirir ve gönderdirir. Yazmak değil çekmek olduğu için ayrı modül.
+Her öğrencinin modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır; bu modül, en çok istenen yüz işletmeden seçilmiş adaya, o adayın denetim kartından çıkan bulguyu ekranda göstererek bir dakikalık video mesaj çektirir ve gönderdirir. Yazmak değil çekmek olduğu için ayrı modül.
+
+Bu sistemin en güçlü ilk dokunuşu bu. O yüzden en çok istenen yüz işletmede video **ilk temastır**, takip değil: o adaya giden ilk şey bir dakikalık, kendi ekranı açık video oluyor.
 
 Şöyle düşün: yazı okunmaz, geçilir. Yüz ve ses geçilmez. Ekranda kendi işletmesinin sayfası açıkken hiç geçilmez. Video emek gösterir, şüpheyi düşürür, işletmeciye "bu bana çekilmiş" dedirtir. Yerel işletmeci büyük şirketlerden yanmıştır, karşısında insan ister. "Ben de bu şehirdeyim" demek seni bir e-posta adresinden yakındaki gerçek bir insana çevirir.
 
 **Bu modül denetim yapmaz, denetimi okur.** Videonun omurgası aday-denetimi-cikar'ın çıkardığı denetim kartıdır. Ekranda gösterilen şey EN GÜÇLÜ BULGU'nun kendisidir; senaryo o bulgunun etrafına kurulur. Kart yoksa video da yok. **Denetimsiz adaya video çekilmez**, istisnası da yoktur: sabah listesinde denetimi olmayan bir aday görünürse o satır atlanır, yerine listenin altındaki denetimi hazır aday gelir.
 
-Videoya kimin gireceğini de bu modül seçmez. Seçimi adaya-mesaj-yaz'daki karar tablosu yapar: sızıntı puanı dörtten yüksek, aday en çok istenen yüz işletmeden, yazı yolu, ilk yazılı temasın üçüncü günü ve hâlâ cevap yok. Bu satır uyduğu gün o aday video listesine düşer, burası da çeker.
+Videoya kimin gireceğini de bu modül seçmez. Seçimi adaya-mesaj-yaz'daki karar tablosu yapar ve iki satırla yapar. Birincisi: aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı biliniyor; o zaman video o adayın ilk temasıdır. İkincisi: aday listenin kalanından, sızıntı puanı dörtten yüksek, ilk temasın üçüncü günü ve hâlâ cevap yok; orada video takiptir. İki satırdan biri uyduğu gün aday video listesine düşer, burası da çeker.
 
 Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kendi elinle uğraşmak. Doğru yüz kişi, yanlış yüz bin takipçiden değerlidir.
 
-Şunlar bu modülün işi değildir: denetimin kendisi (aday-denetimi-cikar), hangi adaya hangi gün hangi kanalın geleceği kararı (adaya-mesaj-yaz), ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, ön görüşme sayfasında durur), kendi sisteminin demo ekran kaydı (kanitini-hazirla), rapor günü müşteri videosu, yazılı mesajlar (adaya-mesaj-yaz). Telefon yolunda video yok; orada en çok istenen yüz işletme aranır.
+Şunlar bu modülün işi değildir: denetimin kendisi (aday-denetimi-cikar), hangi adaya hangi gün hangi kanalın geleceği kararı (adaya-mesaj-yaz), ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, ön görüşme sayfasında durur), kendi sisteminin demo ekran kaydı (kanitini-hazirla), rapor günü müşteri videosu, yazılı mesajlar (adaya-mesaj-yaz).
 
 ## 2. Ne zaman çalışır
-- Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: ekran kaydı programı ve YouTube bir kez ayarlanır. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı, video oraya yükleniyor.
-- Altıncı günden itibaren, yazı yolunda, her gün. En çok istenen yüz işletmeye ilk yazılı temas günde beş adayla yayılır; bu beş, günün kırk e-postası ve otuz Instagram mesajının içindedir. Video, o ilk temasın üçüncü günü, cevap gelmediyse, iki kanaldan aynı gün gider. Yani her gün beş yeni ilk temas, beş video.
+- Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: Loom hesabı, tarayıcı eklentisi, mikrofon ve ekran izinleri, bir deneme linki. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin.
+- Altıncı günden itibaren her gün. En çok istenen yüz işletmeden günde beş adaya video ile ilk temas edilir; bu beş, günün yüz temasının beşidir. Listenin kalanında üçüncü gününe gelmiş cevapsız adaylar varsa onlar da aynı oturumda çekilir ve günün video sayısı beşi geçerse fazlası ertesi güne kalır: video hep beş, sırası önce yüz işletme.
 - Videonun yeri saha bloğunun son yarım saatidir; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
 - İlk hafta ilk temas da video da günde üç, bir saat; ikinci haftadan itibaren ikisi de beş, doksan dakika. İşin yanında çalışıyorsan ilk temas da video da günde iki, saha bloğunun sonunda, kırk dakika; en çok istenen listen kırk işletme.
 - İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde iki değil bir video çekilir, süre yirmi dakikaya iner. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor ve o saatler akşamdan çıkıyor. Sıfır video günü yine olmaz.
@@ -113,13 +115,15 @@ Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit
 
 Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. Fiyat, deneme fiyatı ve kademe videoda söylenmez, görüşmeye kalır. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
 
-### Kayıt: ekran kaydı, tek çekim, montaj yok
+### Kayıt: Loom, tek çekim, montaj yok
 
-Kayıt bilgisayarın kendi ekran kaydıyla yapılır: ekran açık, sesin kayıtta, yüzün yok. Program indirilmiyor, hesap açılmıyor, ücretsiz. Yüzün olmadığı için ses her şey: mikrofon açık, sessiz oda. Tek çekim, montaj yok.
+Kayıt Loom ile yapılır (loom.com). Bilgisayarın kendi ekran kaydı da video üretir ama üç şeyi yapamıyor ve o üç şey bu işin tamamı: gönderilecek tek bir link, videonun **izlenip izlenmediğinin** bildirimi, ve e-postanın içinde oynatılıyormuş gibi duran hareketli önizleme. Dosya olarak gönderilen video açılmıyor; link olarak gönderilen video açılıyor.
 
-Mac'te: "Shift", "Command" ve "5" tuşlarına birlikte bas; ekranın altında bir çubuk çıkar. Çubukta ekranı çerçeveleyen ikinci simge "Record Entire Screen" (bütün ekranı kaydet); yanındaki "Options" (seçenekler) listesinde "Microphone" (mikrofon) altında bilgisayarın mikrofonunu seç. "Record" (kaydet) düğmesine bas, konuş; bitince üst çubuktaki kare "Stop" (durdur) düğmesine bas. Video masaüstüne düşer.
+Kurulum, bir kere, on dakika: loom.com'da hesap aç, tarayıcı eklentisini kur, mikrofon ve ekran izinlerini ver. Kayıt düğmesine bastığında üç şey seçiyorsun: "Screen + Cam" (ekran ve kamera) değil, **"Screen only"** (yalnız ekran) ya da yüzün köşede küçük baloncukta duracaksa "Screen + Cam"; ses için bilgisayarın mikrofonu; ve kaydedilecek alan olarak tarayıcı sekmesi. Bitince "Stop" (durdur) dersin, Loom linki kendiliğinden kopyalanır.
 
-Windows'ta: "Windows" tuşu ile "Shift" ve "S" tuşlarına birlikte bas, üstte küçük çubuk çıkar; çubuktaki kamera simgesi "Record" (kaydet) yazar, ona bas, kaydedilecek alanı seç, mikrofon simgesinin açık olduğuna bak, "Start" (başla) de. Bitince "Stop" (durdur). Video "Videos" (Videolar) klasörüne düşer. Bu çubuk yoksa Windows'un eski sürümündedir; "Windows" tuşu ile "G" oyun çubuğunu açar, oradaki "Record" (kaydet) düğmesi aynı işi görür.
+Ücretsiz plan bu iş için ilk haftayı çıkarıyor: kişi başına yirmi beş video ve video başına beş dakika sınırı var. Günde beş video çekiyorsun, yani ücretsiz plan beşinci günde doluyor. Doluncaya kadar ücret ödemiyorsun; dolduğu gün ücretli plana geçiyorsun ve bu aylık masraf tablosunun "sahaya çıktıktan sonra" bölümünde duruyor. Ücretsiz planla devam etmenin yolu eski videoları silmek; onu yapmıyoruz, çünkü izlendi bildirimi silinen videoda kayboluyor ve adayın hangi videoyu açtığını bir daha göremiyorsun.
+
+Linki gönderdikten sonra Loom sana "izlendi" bildirimi düşürüyor. Bunu her akşam kanal durumu ekranına yazıyorsun: video gitti mi, izlendi mi. İzlenme, cevap gelmeden önce elindeki tek işarettir ve dördüncü günün aramasının sırasını o belirliyor.
 
 Ekran senin gördüğünle uyuşmuyorsa ekranın görüntüsünü al, buraya at, hangi düğme olduğunu söylerim.
 
@@ -148,19 +152,15 @@ Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutars
 
 ### Gönderim: iki kanal, aynı gün, senin elinden
 
-**Instagram** (hesabın bir yıldan eski ve yüz takipçiden çoksa): videoyu galeriden sohbete yüklersin, sohbette oynar, link yok. Üstüne tek satır: "Ahmet Bey, size özel kısa bir video çektim, bir dakika." Gönderdikten sonra sohbette oynadığını gör, sonra "gitti" de; oynamıyorsa videoyu altmış saniyeye kısalt.
+**Instagram** (hesabın bir yıldan eski ve yüz takipçiden çoksa): videoyu Loom'dan indirip galeriden sohbete yüklersin, sohbette oynar. Üstüne tek satır: "Ahmet Bey, size özel kısa bir video çektim, bir dakika." Sohbette oynayan video linkten daha çok açılıyor, ama izlendi bildirimi vermiyor; o yüzden Instagram'dan giden videoda izlenme takibi yok, e-postadan giden videoda var. İkisi birden gidiyorsa bildirim e-posta tarafından okunur.
 
-**E-posta** (adres varsa): video YouTube'a "liste dışı" yüklenir; liste dışı videoyu linki olan herkes izler, hesap gerekmez, aramada çıkmaz.
-
-Kurulum bir kez, beşinci gün:
-1. İkinci günün iş e-postasıyla açılmış Google hesabına gir (yoksa o e-postayla aç).
-2. O hesapla YouTube'a gir; kanal dördüncü blokta kisisel-markani-kur ile açılmıştı, videolar oraya yüklenir.
+**E-posta** (adres varsa): Loom linki konur. Kayıt bitince link kendiliğinden kopyalanıyor, ayrı yükleme adımı yok. Loom'un linki e-postanın içinde hareketli bir önizleme olarak görünüyor ve tıklanma oranını bu yükseltiyor; ek dosya ya da kapak görseli koyma.
 
 Her gün, her video için:
-1. YouTube uygulamasını aç, alttaki artı işaretine bas, "video yükle" de.
-2. Videoyu galeriden ya da bilgisayardan seç, başlığa "[Ad] Bey için" yaz.
-3. Görünürlük sorusu gelince "liste dışı" seç, yükle.
-4. Yüklenen videoda "paylaş" deyip linki kopyala.
+1. Kaydı bitir, Loom linki kopyalanmış olur.
+2. Loom'da videonun başlığına "[Ad] Bey için" yaz; başlık linkin önizlemesinde görünüyor.
+3. Linki e-posta metnine yapıştır.
+4. Akşam Loom'da hangi videonun izlendiğine bak, sonucu kanal durumuna yaz.
 
 E-postaya ek değil link konur; kapak görseli yok, düz metin ve link. Sebebi: yeni e-posta adresinde görsel ve süslü içerik istenmeyen posta kutusuna düşürür; adres alışınca da görsel yok, basit kalır. Metin üç beş cümle, sonunda adın ve şehrin. Konu: "Ahmet Bey, size bir video çektim." Gövde: "Salı yazmıştım. Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim: [link]. Uymazsa sorun değil. Ahmet Kaya, Bursa." Metni FounderOS hazırlar, linki sen yapıştırırsın, "tamam" dersin, CRM'den gider.
 
@@ -190,7 +190,7 @@ Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
 
 ### Günün akışı, pencerelere göre
 
-**Tam zamanlı, yazı yolu.** Sabah bloğu: günün denetim kartları okunur, video listesi hazır gelir. Saha bloğu: kırk e-posta, otuz Instagram, on arama; bloğun son yarım saati video bloğudur, ilk hafta üç video bir saat, sonra beş video doksan dakika (senaryo, üç çekim, YouTube yükleme, iki kanala gönderim). Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaç cevap geldi.
+**Tam zamanlı.** Sabah bloğu: günün denetim kartları okunur, video listesi hazır gelir. Saha bloğu: otuz beş arama, otuz Instagram, yirmi e-posta; bloğun son yarım saati video bloğudur, ilk hafta üç video bir saat, sonra beş video doksan dakika (senaryo, üç çekim, Loom linki, gönderim). Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaçı izlendi, kaç cevap geldi.
 
 **İşin yanında.** Sabah bloğu, yani işe gitmeden önceki bir saat ya da öğle arası: beş adayın denetim kartı okunur. Saha bloğunun sonu: iki video, kırk dakika. Akşam bloğu: kanal durumu ekranı, on beş dakika. İlk müşterinin teslim süresinde ve şirket kuruluş gününde bir video, yirmi dakika.
 

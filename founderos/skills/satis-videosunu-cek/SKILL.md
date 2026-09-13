@@ -35,7 +35,7 @@ Siteye konan uzun satış videosu ayrı bir iştir ve bugün çekilmez. Onun iş
 Sistemdeki videolar, karıştırma:
 - **Ön görüşme videosu:** bu modül. Üç ile beş dakika, herkese aynı, randevu alana gider.
 - **İtiraz videoları:** bu modül. Üç tane, her biri bir iki dakika, aynı sayfada durur.
-- **Video mesaj:** bir dakika, adaya özel, yazı yolunda en çok istenen yüz işletmeye.
+- **Video mesaj:** bir dakika, adaya özel, Loom ile; en çok istenen yüz işletmeye ilk temas olarak, listenin kalanına üçüncü gün takip olarak.
 - **Deneme videosu:** beşinci gün, kimseye gitmez.
 - **Site videosu:** bu modül, aynı gün. Ön görüşme videosunun kısaltılmış hali, iki ile üç dakika; sitenin video bölümüne girer. Ayrı senaryo yazılmaz.
 - **Uzun satış videosu:** ilk müşteriden sonra, satış sayfasıyla birlikte.

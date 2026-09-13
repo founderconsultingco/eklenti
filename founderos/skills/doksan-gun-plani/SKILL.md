@@ -19,7 +19,7 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - ad, şehir, günlük çalışma saati
 - çalışma düzeni: tam zamanlı mı, işin yanında mı; günlük temas sayısı (tam zamanlıda yüz, işin yanında kırk)
 - başlangıç tarihi (birinci bölüm); takvimi bundan hesaplarsın
-- kanal yolu: ağırlıklı ulaşma biçimi, telefon mu yazı mı
+- günlük temas dağılımı: aramanın, Instagram'ın, e-postanın ve video mesajın payı
 - hazırlık seviyesi: satış tecrübesi, sektör bilgisi ve güveni var mı; deneme fiyatı mı, tam fiyat mı
 - içeriden tanıdığı sektör
 - telefonundaki işletme sahipleri
@@ -51,7 +51,7 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - Öğrencinin takvimi beş bloktur, gün değil. Tam zamanlıda bir blok bir gün, işin yanında çalışanda bir blok iki gün; çalışma düzenini İş Beyni'nden okur, tarihleri başlangıç tarihinden sayar ve planda gerçek tarihle yazarsın. Birinci bloğun akşamı kurulmuş bir iş vardır; üçüncü bloğun akşamı tanıdıklara ilk mesaj gider; şirket beşinci blokta kuruluşa hazır hâle gelir ve ilk "evet"te kurulur; beşinci bloğun akşamı ilk on soğuk temas, ertesi gün tam saha: günde yüz temas, işin yanında çalışıyorsa kırk.
 - CRM hesabı başlangıç görüşmesinde açılır, hazırlık bloklarında değil. O güne kadar adaylar ve randevular İş Beyni'nin "Bugünün listesi" bölümünde tutulur; bu bir eksiklik değil, varsayılan yoldur.
 - Müşterinin teslimatı [21/28] gün; öğrenci işin yanında çalışıyorsa takvim yirmi sekiz güne yazılır. Hangisi olduğunu çalışma düzeninden okur, planda o sayıyı kullanırsın.
-- Günde yüz temas, telefon yolunda: elli arama, otuz e-posta, yirmi Instagram. Yazı yolunda: on arama, otuz yeni e-posta, kırk yeni Instagram mesajı, beş video mesaj ve o günün takip mesajları; toplam yine yüz temas. İşin yanında çalışanda hepsi kırka göre orantılanır.
+- Günde yüz temas: otuz beş arama, otuz Instagram mesajı, yirmi e-posta, beş video mesaj ve o günün takipleri. İşin yanında çalışanda kırka göre orantılanır: on dört arama, on iki Instagram, sekiz e-posta, iki video, dört takip. E-posta ve Instagram rampadaysa eksik pay diğer kola geçer, toplam değişmez.
 - WhatsApp'tan soğuk mesaj yok.
 - Sahibinin adı yoksa arama yine yapılır; açılış "işletme sahibi siz misiniz" olur ve ad ilk aramada öğrenilip karta yazılır. Adı bulunmuş aday sırada önde gelir. Veri servisi sahip adı vermiyor, o yüzden listenin çoğunda bu satır boş geliyor; boş diye aday atlanmaz.
 - Üç yüz temas dolmadan hiçbir şey değişmez. İki yüz temasta sadece bakılır.

@@ -34,7 +34,7 @@ Pazarlamadaki karşılığı: aday listesi.
 
 ## 3. Ne okur
 
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): nişin, şehrin, kanal yolun, çalışma düzenin, lisans anahtarın (veri servisine kimlik), veri servisinin bu ayki kullanımı, yedek yola geçildiyse tarihi.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): nişin, şehrin, günlük temas dağılımın, çalışma düzenin, lisans anahtarın (veri servisine kimlik), veri servisinin bu ayki kullanımı, yedek yola geçildiyse tarihi.
 Niş kartından (seçtiğin sektörün bütün bilgisinin durduğu dosya): Google Haritalar'daki kategori adları, kanal ve zaman bölümü, kim karar veriyor bölümü, yasal sınırlar.
 aday-denetimi-cikar'dan: hızlı denetimin beş satırı ve sızıntı puanı. Denetim orada yürür, bu modül puanı okur ve sıralamada kullanır.
 Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): cevap veren adaylar, takip günü bugüne düşenler, denetimi hazır olanlar. Günün saha listesi bunlardan çıkıyor.
@@ -81,7 +81,7 @@ Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki ge
 
 ### Adım 2: Instagram hesapları (yazı nişlerinde)
 
-Nişinin ana kanalı yazıysa, yani kartın kanal ve zaman bölümü o sektörün Instagram'dan yürüdüğünü söylüyorsa, listedeki Instagram sütunu önemli. Servis o sütunu işletmenin sitesinden çıkarıyor; sitesi olmayan ya da sitesinde Instagram bağlantısı olmayan işletmede sütun boş geliyor. Boş kalanları hızlı denetimde, yalnız en çok istenen yüz işletme için, elle buluyorsun: Instagram'da işletme adını aratmak bir dakika sürüyor. Ayrı bir Instagram taraması bu sürümde yok; yazı yolunun Instagram tarafı böyle doluyor.
+Kartın kanal ve zaman bölümü o sektörün Instagram'dan yürüdüğünü söylüyorsa listedeki Instagram sütunu daha da önemli, ama her nişte Instagram mesajı atıyorsun. Servis o sütunu işletmenin sitesinden çıkarıyor; sitesi olmayan ya da sitesinde Instagram bağlantısı olmayan işletmede sütun boş geliyor. Boş kalanları hızlı denetimde, yalnız en çok istenen yüz işletme için, elle buluyorsun: Instagram'da işletme adını aratmak bir dakika sürüyor. Ayrı bir Instagram taraması bu sürümde yok; Instagram sütunu böyle doluyor.
 
 Bir kural: kişisel hesap listeye girmiyor, işletme olarak açılmış hesap giriyor.
 
@@ -131,7 +131,7 @@ Dört seçim ölçütü var ve sırası şu:
 
 Listenin en büyüğünü yüzün sonuna koyduğunda bunu öğrenciye tek cümleyle söylersin, yoksa "en iyileri neden en sona koydun" diye sorar: "Yorumu en çok olan beş işletmeyi listenin sonuna koydum. Onlar en değerli olanlar ama en zor olanlar da; sahibi telefona çıkmıyor, karar tek kişide değil. İlk aramaların olmasınlar, ilk randevunu aldıktan sonra onlara döneriz." 
 
-Yüz işletmenin farkı emek, mesaj sayısı değil. Kalan dört yüz hızlı denetimle ve kartın gözlemiyle gidiyor; yüz işletme derin denetimden geçiyor (on satır, karar verenin adı, lira karşılığı), mesajı o işletmede gerçekten görülmüş bulguyla açılıyor, yazı yolunda video mesaj alıyor, telefon yolunda ilk aranan onlar oluyor ve ilk temas günde beş adayla yayılıyor ki her biri hazırlıklı gitsin. Denetim kartı adaya belge olarak gönderilmiyor; bulgu görüşmede ve videoda söyleniyor. Kâğıt gönderen satıcı, konuşan satıcının gerisinde kalıyor.
+Yüz işletmenin farkı emek, mesaj sayısı değil. Kalan dört yüz hızlı denetimle ve kartın gözlemiyle gidiyor; yüz işletme derin denetimden geçiyor (on satır, karar verenin adı, lira karşılığı), mesajı o işletmede gerçekten görülmüş bulguyla açılıyor, ilk teması video mesajla gidiyor ve o ilk temas günde beş adayla yayılıyor ki her biri hazırlıklı gitsin. Denetim kartı adaya belge olarak gönderilmiyor; bulgu görüşmede ve videoda söyleniyor. Kâğıt gönderen satıcı, konuşan satıcının gerisinde kalıyor.
 
 ### Adım 6: yüz işletmenin hızlı denetimi (60 dakika)
 
@@ -154,7 +154,7 @@ Puan ve en güçlü bulgu tabloya iki sütun olarak yazılıyor, sıradaki adım
 1. `adaylar.csv` dosyasını olduğu gibi kullan; CRM'in yükleme ekranı CSV kabul ediyor (kabul etmezse FounderOS aynı tabloyu CRM'in istediği biçimde yeniden yazar).
 2. CRM'de yükleme ekranını aç, dosyayı seç, yüklemeye ad ver: kayıt sayısı ve tarih. "512 aday, 6 Eylül" gibi.
 3. Eşleme ekranında sütunları işaretle: kısa ad, sahibinin adı, telefon, e-posta, Instagram, site, adres, semt, yorum sayısı, sızıntı puanı, en güçlü bulgu. Eşleşmeyeni alma; ipuçları, elenme ve harita sütunları CRM'e girmiyor. Form ve reklam işaretleri için ayrı sütun açmıyorsun, onlar denetimden geliyor.
-4. "Nereden bulundu" satırına Haritalar yazılır. Hangi adayın telefonla, hangisinin yazıyla gideceğini kaynak değil, sahibinin adının bulunup bulunmadığı ve kanal yolu belirliyor.
+4. "Nereden bulundu" satırına Haritalar yazılır. Hangi adaya hangi kolun önce gideceğini kaynak değil, adayın kendi satırı belirliyor: en çok istenen yüzde mi, sahibinin adı bulunmuş mu, e-postası ve Instagram'ı var mı.
 5. Kayıtta ad alanı boş kabul edilmiyor. Sahibinin adı bulunmayan kayıtlarda o alana işletme adı yazılıyor.
 6. Yükle, sonra yüklenen sayıyı dosyadakiyle karşılaştır. Numara tekrarı temizlendiği için ikisi tutuyor olmalı; büyük fark varsa eşleme yanlış, geri al ve tekrarla.
 7. Hepsinin aşaması "yeni" ve üstlerinde "soğuk" işareti var; aşama, adayın işin neresinde olduğunu gösteren etiket. En çok istenen yüz işletmeye ayrı işaret koy. Denetimi bugün yapılmayanlarda sızıntı puanı boş kalıyor, dördüncü blokta doluyor.
@@ -198,7 +198,7 @@ Yorumları da çekelim derse: "Hayır. Yorumlara hızlı denetimde gözünle bak
 **Rakam kuralı.** Bu modülde iki ayrı küme var ve karıştırılırsa öğrenci sayıya güvenmiyor. Birincisi çekimden geleni anlatır (kaç kayıt geldi, kaçı işaretlendi), ikincisi listede kalanı anlatır (kaç aday var, kaçı aranabilir). Aynı rakam iki kümeye birden takılmaz. Kural üç maddeli:
 - Çekim rakamlarını `cek --ozet` çıktısından, liste rakamlarını `ozet` çıktısından alırsın. İkisini de kendi cümlenden üretmezsin, araçtan okursun. Bir rakamı hatırından yazarsan önceki mesajla çelişir.
 - Her rakamın yanında hangi kümeye ait olduğu söylenir: "servisten 677 kayıt geldi, 323'ünü işaretledim" ve "listende 354 aday var, 265'i aranabilir". "265'inde telefon var" cümlesi tek başına iki kümeye de yakışıyor, o yüzden hep kümesiyle söylenir.
-- Günü kapatan başlık cümlesi, kanal yolunun gerçekten kullanabileceği sayıyla kurulur. Kanal yolu telefonsa "354 kayıtla sahaya çıkıyorsun" yanlıştır, doğrusu "354 aday, bunların 265'i aranabilir". Yazı yolunda aynı cümle e-postalı ve Instagramlı sayıyla kurulur.
+- Günü kapatan başlık cümlesi, gerçekten ulaşılabilir sayıyla kurulur. "354 kayıtla sahaya çıkıyorsun" yanlıştır; doğrusu "354 aday: 265'i aranabilir, 121'inin e-postası var, 98'inin Instagram'ı var". Üç sayı birden verilir, çünkü üç kol birden çalışıyor.
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
 Liste ilk kez yazılınca sayfa sohbete kart olarak açılır, sonra tek cümle: "Listen hazır, işte burada. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her kartta ne söyleyeceğin yazıyor; her aramadan sonra düğmeye bas." Arkasından ikinci cümle: "Klasöründe de duruyor, adı `adaylar.html`; istediğin zaman oradan da açarsın." Klasör tarifi ancak kart açılmazsa verilir.
 Listeyi görmek isteyince: sayfa yeniden kart olarak açılır, tek cümle: "Veriyi yeniledim, işte liste."

@@ -50,7 +50,7 @@ Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin dene
 
 ## 3. Ne okur
 
-İş Beyni'nden: nişin, şehrin, kanal yolun, çalışma düzenin, sistemin adı, Dönüşüm Cümlesi.
+İş Beyni'nden: nişin, şehrin, günlük temas dağılımın, çalışma düzenin, sistemin adı, Dönüşüm Cümlesi.
 
 Niş kartından: kayıp birimi ve rakamı, sızıntı nerede bölümünün üç sızıntısı, duran havuz tipleri, kanal ve zaman, işletmecinin sözlüğü ve iç sesi, açılış cümlesi, yasal sınırlar.
 
@@ -155,7 +155,7 @@ Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gide
 
 **Lira karşılığı** telefonda söylenmez; sayfanın Saha modu kartında görünmez, görüşme özet ekranında durur. Tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
-**Sıradaki kanal** nasıl seçilir: kartın kanal yolu telefonsa telefon, ad bulunsun bulunmasın. Ad bulunamamış ve e-postası varsa önce e-posta, üçüncü gün telefon. Nişin ana kanalı yazıysa ve Instagram hesabı canlıysa Instagram. Sızıntı puanı dörtten yüksekse ve aday en çok istenen yüzdeyse video. Bu seçimi FounderOS yapar, sen seçmezsin.
+**Sıradaki kanal** nasıl seçilir: aday en çok istenen yüzdeyse ve sahibinin adı biliniyorsa video, ilk temas olarak. Değilse ve karar verenin adı bulunmuşsa telefon. Ad bulunamamış ve e-postası varsa önce e-posta, üçüncü gün telefon. Kart Instagram'ı öne çıkarıyor ve hesabı canlıysa Instagram. Sızıntı puanı dörtten yüksek olup üçüncü günde hâlâ cevap vermemiş adayda video, bu kez takip olarak. Bu seçimi FounderOS yapar, sen seçmezsin.
 
 ### Denetimden mesaja
 

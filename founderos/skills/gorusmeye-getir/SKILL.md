@@ -17,7 +17,7 @@ Bir şeyi baştan söyleyeyim. Tanıdıklara ilk mesaj üçüncü günün akşam
 
 ## 3. Ne okur
 
-CRM'den okur: randevu kaydı (aday, saat, kanal, sahibinin adı, işletme), adayın aşaması, önceki temaslar ve söylediği itiraz, en çok istenen yüz işletme işareti, kanitini-hazirla modülünün ölçümü ve kanıt cümlesi. İş Beyni'nden okur: Dönüşüm Cümlesi, sistemin adı, bir dakikalık anlatım, kanal yolu, şehir, ön görüşme sayfasının adresi, senin takvim adresin. Niş kartından okur: "Kanal ve zaman" ve "Kim karar veriyor" bölümleri. Kartların ortak bulgusu şu: bu işletmeciler kendi müşterilerine karşı randevuya sadık olmayan taraf. Klima servisi "geleceğiz" deyip gelmez. Diş kliniği hastanın randevusunu haber vermeden iptal eder. Estetik merkezi bir gün önceden iptal eder. Emlakçıya günde onlarca bildirim düşer, kartta sayısı yazar. Teyit ve hatırlatma olmadan görüşmeye gelmezler.
+CRM'den okur: randevu kaydı (aday, saat, kanal, sahibinin adı, işletme), adayın aşaması, önceki temaslar ve söylediği itiraz, en çok istenen yüz işletme işareti, kanitini-hazirla modülünün ölçümü ve kanıt cümlesi. İş Beyni'nden okur: Dönüşüm Cümlesi, sistemin adı, bir dakikalık anlatım, günlük temas dağılımı, şehir, ön görüşme sayfasının adresi, senin takvim adresin. Niş kartından okur: "Kanal ve zaman" ve "Kim karar veriyor" bölümleri. Kartların ortak bulgusu şu: bu işletmeciler kendi müşterilerine karşı randevuya sadık olmayan taraf. Klima servisi "geleceğiz" deyip gelmez. Diş kliniği hastanın randevusunu haber vermeden iptal eder. Estetik merkezi bir gün önceden iptal eder. Emlakçıya günde onlarca bildirim düşer, kartta sayısı yazar. Teyit ve hatırlatma olmadan görüşmeye gelmezler.
 
 ## 4. Ne sorar
 

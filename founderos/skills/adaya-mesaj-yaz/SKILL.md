@@ -25,7 +25,7 @@ Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altınc�
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 
-Günlük süre dört saat: elli arama iki saat, e-posta ve Instagram bir saat, takip onayı ve cevaplar bir saat.
+Günlük süre dört saat: otuz beş arama bir buçuk saat, Instagram ve e-posta bir saat, beş video mesaj yarım saat, takip onayı ve cevaplar bir saat.
 
 ## 3. Ne okur
 
@@ -36,7 +36,7 @@ Günlük süre dört saat: elli arama iki saat, e-posta ve Instagram bir saat, t
 
 Bu üç satır yoksa mesaj yazılmaz, aday aranmaz.
 
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): niş, kanal yolu (telefon mu, yazı mı), Dönüşüm Cümlesi (ne sattığını tek cümlede söyleyen cümle), sistemin adı, bir dakikalık anlatım, fiyat aralığı ve "fiyat ne" sorusunun cevabı, şehir, e-posta adresinin ve Instagram hesabının kaç yaşında olduğu.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): niş, günlük temas dağılımı, Dönüşüm Cümlesi (ne sattığını tek cümlede söyleyen cümle), sistemin adı, bir dakikalık anlatım, fiyat aralığı ve "fiyat ne" sorusunun cevabı, şehir, e-posta adresinin ve Instagram hesabının kaç yaşında olduğu.
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): açılış cümlesi, işletmecinin kullandığı kelimeler, hangi kanal hangi saatte, fiyat gizli mi, sızıntı kanıtı, itirazlar, yasal sınırlar.
 
@@ -289,9 +289,7 @@ Doğru: "Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor mu
 
 **Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistemin tamamı anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
 
-**Hacim ve zaman.** Günlük sayı iki şeye bağlı: kanal yolun ve hesabının yaşı.
-
-Kanal yoluna göre: telefon yolunda günde yirmi Instagram mesajı, yazı yolunda kırk. Telefon yolunda bu sayı yükseltilmez, çünkü yükseltmek aramadan kesmek demek ve arama bu sistemdeki en yüksek getirili kanal.
+**Hacim ve zaman.** Günde otuz Instagram mesajı, işin yanında çalışanda on iki. Instagram yazılı kolların en büyüğü; e-postanın üstünde duruyor, çünkü mesaj doğrudan sahibinin telefonuna düşüyor ve günlük gönderim sınırı yok. Bu sayı yükseltilmez, çünkü yükseltmek aramadan kesmek demek ve arama hâlâ en yüksek getirili kol: gerçek çekimde kırk kayıttan otuz sekizinde telefon numarası doluydu, on sekizinde e-posta vardı.
 
 Hesabına göre, rampa: hesabın bir yıldan yeniyse ya da yüz takipçiden azsa ilk hafta günde beş, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan sonra yolun kendi sayısı. Rampanın sebebi bir limiti aşmak değil, hesabın gerçekten kullanılıyor olması: yeni açılmış ve hiç kullanılmamış bir hesaptan gelen mesaj hem karşı tarafta hem platformda şüpheli duruyor. Hesabı hiç yoksa ilk gün açılır ve rampa o gün başlar; Instagram kanalı kapanmaz, yavaş açılır.
 
@@ -307,13 +305,18 @@ Bir takip cevapsız kalırsa Instagram satırı "kapandı" olur ve aday "sonra" 
 
 **Video.** Metni burada yazılmaz, video-mesaj-cek yazar ve çektirir. Burada üç şey yazılı.
 
-Kime gider: yazı yolunda, en çok istenen yüz işletmeden, sızıntı puanı dörtten yüksek, sahibinin adı bilinen, üçüncü günde hâlâ cevap vermemiş aday. Telefon yolunda video yok; orada en çok istenen yüz işletme aranır.
+Kime gider, iki halde:
 
-Ne zaman gider: ilk yazılı temasın üçüncü günü. Aynı video hem e-postadan hem Instagram'dan gidiyorsa bu tek harekettir. Video giden adayın üçüncü, yedinci ve on dördüncü gün takip zinciri kapanır.
+- **En çok istenen yüz işletmeye ilk temas olarak.** Denetim kartı hazır ve sahibinin adı biliniyorsa o adayın ilk teması videodur. Yazılı mesaj beklemez, arama beklemez. Sebebi şu: bu yüz işletme senin en çok istediğin yüz işletme ve onlara giden ilk dokunuşun en güçlü dokunuş olması gerekiyor. Bir dakikalık video, kendi ekranı açıkken, yazılı mesajın yapamayacağı şeyi yapıyor.
+- **Listenin kalanında takip olarak.** Sızıntı puanı dörtten yüksek, sahibinin adı bilinen, ilk temasın üçüncü gününde hâlâ cevap vermemiş aday. Orada video ikinci dokunuş.
 
-Videodan sonra hangi kanal gelir: iki gün sonra Instagram'dan sesli mesaj takibi, yedi gün sonra e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer. Adayın Instagram'ı yoksa ikinci gün takibi e-postadan tek satır gider; e-postası yoksa ayrılık mesajı Instagram'dan gider.
+Ne zaman gider: yüz işletmede ilk temas günü, kalan listede ilk temasın üçüncü günü. Video linki e-postası varsa e-postadan, yoksa Instagram'dan gider; ikisi de varsa ikisinden gider ve bu tek harekettir. Video giden adayın üçüncü, yedinci ve on dördüncü gün yazılı takip zinciri kapanır, yerine video zinciri gelir.
 
-Videoda gösterilen şey bulgunun kendisidir. Aynı adaya hem e-posta hem video gittiyse video, e-postanın söylemediği ikinci bulguyu gösterir.
+Videodan sonra hangi kanal gelir: iki gün sonra Instagram'dan sesli mesaj takibi, dördüncü gün arama, yedinci gün e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer. Adayın Instagram'ı yoksa ikinci gün takibi e-postadan tek satır gider; e-postası yoksa ayrılık mesajı Instagram'dan gider.
+
+Loom'un izlendi bildirimi sırayı değiştirir. Video izlendiyse aday açmış demektir ve dördüncü günün araması ilk sıraya geçer, açılışı da değişir: "Geçen gün gönderdiğim videoyu açmışsınız." Video hiç izlenmediyse dördüncü günün araması yine yapılır, ama açılış videoya hiç değinmez; açılmamış videoyu hatırlatmak karşı tarafı borçlu duruma sokuyor ve kapatıyor.
+
+Videoda gösterilen şey bulgunun kendisidir. Aynı adaya hem yazılı mesaj hem video gittiyse video, yazılı mesajın söylemediği ikinci bulguyu gösterir.
 
 ### Aramanın sonucu nereye yazılır
 
@@ -330,6 +333,8 @@ Her aramadan sonra tek kelimelik sonucu sen söylersin, kaydı FounderOS yazar. 
 
 Bu sekizinin dışında bir sonuç yazma ihtiyacı duyuyorsan kaydedilecek şey sonuç değil nottur; nota yazılır.
 
+**Videonun dokuzuncu sonucu: izlendi.** Loom videonun açıldığını söylüyor ve bu sonuç yalnız video kanalında var. Akşam Loom'a bakarsın, izlenmiş videoları "izlendi" diye geçersin. İzlenme temas sayılmaz, çünkü yeni bir şey göndermedin; yaptığı tek şey o adayın ertesi gün aranacaklar listesinin başına geçmesi. Karşılığı arama açılışında görünüyor: "Geçen gün gönderdiğim videoyu açmışsınız." İzlenmemiş video hatırlatılmaz.
+
 ### Kanal durumu takibi
 
 Her adayın kaydında dört kanal için ayrı bir durum satırı var, altında da tek bir sıradaki hareket satırı.
@@ -339,7 +344,7 @@ Aday: [kısa ad] · Sızıntı puanı: [0-5] · Aşama: [aşama]
 Telefon:   [durum] · [tarih] · [sonuç]
 E-posta:   [durum] · [tarih] · [sonuç]
 Instagram: [durum] · [tarih] · [sonuç]
-Video:     [durum] · [tarih] · [sonuç]
+Video:     [durum: yapılmadı, yapıldı, izlendi, cevap geldi, kapandı] · [tarih] · [sonuç]
 SIRADAKİ HAREKET: [tek kanal] · [tarih]
 Kapanma sebebi: [boş ya da üç sebepten biri]
 ```
@@ -358,21 +363,23 @@ Akşam sayılarını söylediğinde kimin hangi kanalda durduğunu tek listede g
 
 Sırayla bak, ilk uyan satır senin satırın.
 
-1. Denetim bitti, karar verenin adı var, kanal yolu telefon → telefon, aynı gün.
-2. Denetim bitti, karar verenin adı yok → e-posta, aynı gün. Telefon satırı "kapandı" olur.
-3. Nişin ana kanalı yazı, adayın Instagram hesabı canlı → Instagram, aynı gün.
-4. Telefonu açan başkası çıktı, sahibi yok → yine telefon, sana söylenen gün.
-5. Telefon üç ayrı günde açılmadı → telefon "kapandı", e-posta, ertesi gün.
-6. Telefon açıldı, "mail atın" dendi → e-posta, aynı gün ilk saat.
-7. E-posta iki takipte cevapsız → e-posta "kapandı", Instagram, ertesi gün.
-8. E-posta adresi yok ya da mesaj geri döndü → e-posta "kapandı", Instagram, aynı gün.
-9. Sızıntı puanı dörtten yüksek, aday en çok istenen yüzde, yazı yolu, üçüncü gün ve cevap yok → video, o gün.
-10. Video gitti, iki gün cevap yok → Instagram'dan sesli mesaj takibi.
-11. Video gitti, yedi gün cevap yok → e-postadan ayrılık mesajı, sonra "sonra" aşaması.
-12. Instagram mesajı bir takiple cevapsız → Instagram "kapandı", aday "sonra" aşamasına.
-13. Adayın Instagram hesabı yok → Instagram "kapandı". Senin profilin yarım ya da hesabın rampada ve o günün payı dolmuş → satır kapanmaz, "yapılmadı"da bekler; profil bitince ya da ertesi gün açılır.
-14. Herhangi bir kanaldan cevap geldi → beş dakika içinde aynı kanaldan cevap konuşması. Diğer kanallar durur.
-15. Aday "arama, yazma" dedi → dört satır da "kapandı", aday listeden çıkar.
+1. Aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı var → **video mesaj, ilk temas olarak**. Video gittiği gün aynı adaya yazılı mesaj gitmez; video linkinin gittiği kanal e-posta varsa e-posta, yoksa Instagram'dır.
+2. Denetim bitti, karar verenin adı var → telefon, aynı gün.
+3. Denetim bitti, karar verenin adı yok → e-posta, aynı gün. Telefon satırı "kapandı" olur.
+4. Adayın Instagram hesabı canlı ve nişin kartı Instagram'ı öne çıkarıyor → Instagram, aynı gün.
+5. Telefonu açan başkası çıktı, sahibi yok → yine telefon, sana söylenen gün.
+6. Telefon üç ayrı günde açılmadı → telefon "kapandı", e-posta, ertesi gün.
+7. Telefon açıldı, "mail atın" dendi → e-posta, aynı gün ilk saat.
+8. E-posta iki takipte cevapsız → e-posta "kapandı", Instagram, ertesi gün.
+9. E-posta adresi yok ya da mesaj geri döndü → e-posta "kapandı", Instagram, aynı gün.
+10. Aday yüz işletmede değil, sızıntı puanı dörtten yüksek, ilk temasın üçüncü günü ve hâlâ cevap yok → video mesaj, o gün. Listenin kalanında video takip olarak çalışıyor; yüz işletmede ilk temas olarak.
+11. Video gitti, iki gün cevap yok → Instagram'dan sesli mesaj takibi.
+12. Video gitti, dört gün cevap yok → telefon, çünkü video izlendi bildirimi geldiyse adam senin adını biliyor. Loom "izlendi" dediyse arama açılışı değişir: "Geçen gün gönderdiğim videoyu açmışsınız, bir dakikanızı alacağım."
+13. Video gitti, yedi gün cevap yok → e-postadan ayrılık mesajı, sonra "sonra" aşaması.
+14. Instagram mesajı bir takiple cevapsız → Instagram "kapandı", aday "sonra" aşamasına.
+15. Adayın Instagram hesabı yok → Instagram "kapandı". Senin profilin yarım ya da hesabın rampada ve o günün payı dolmuş → satır kapanmaz, "yapılmadı"da bekler; profil bitince ya da ertesi gün açılır.
+16. Herhangi bir kanaldan cevap geldi → beş dakika içinde aynı kanaldan cevap konuşması. Diğer kanallar durur.
+17. Aday "arama, yazma" dedi → dört satır da "kapandı", aday listeden çıkar.
 
 Dört kanalı da "kapandı" olan aday altı ayda bir yeniden taranır; tarama gününü FounderOS hatırlatıyor, CRM kendiliğinden açmıyor. Kapanma sebebi "aday istemedi" olan kayıt bu taramaya girmiyor.
 
@@ -386,9 +393,9 @@ Takip, cevap gelmeyen adaya sonraki günlerde gönderilen mesajdır ve temas say
 
 Zincirin içinde kanal değişir, karar tablosuna göre: e-postayla başlayan aday üçüncü gün aranır (ad bilinmiyorsa "işletme sahibi siz misiniz" ile), telefonla ulaşılamayan aday yedinci gün e-posta alır. Farklı adaylar farklı kanala cevap veriyor.
 
-Yazı yolunda en çok istenen yüz işletmede sıra video zinciriyle yürür; takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. İlk temas günde beş adayla yayılır.
+En çok istenen yüz işletmede sıra video zinciriyle yürür: ilk temas video, iki gün sonra sesli mesaj, dördüncü gün arama, yedinci gün ayrılık. Takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. Video ilk temasları günde beş adayla yayılır, çünkü beş video çekmek doksan dakika alıyor ve yüz işletme dört haftada bitiyor.
 
-**Yazılı kanalın metni adayın satırında durur, sohbette değil.** Bu, günün en çok zaman yiyen yeriydi: yazı yolunda günde yetmiş mesaj, yetmiş ayrı sohbet turu demekti. Artık FounderOS sabah bloğunda o günün bütün yazılı mesajlarını tek seferde yazıyor ve aday aracıyla satırlara işliyor: `eposta_konu`, `eposta_metni`, `dm_metni`. Aday listesi sayfasının Saha modu kartında E-posta ve Instagram düğmeleri çıkıyor, metin orada hazır duruyor, yanında kopyalama düğmesi var. Öğrenci kopyalıyor, kendi hesabından gönderiyor, aynı kartta sonucu işaretliyor.
+**Yazılı kanalın metni adayın satırında durur, sohbette değil.** Bu, günün en çok zaman yiyen yeriydi: günde elli mesaj, elli ayrı sohbet turu demekti. Artık FounderOS sabah bloğunda o günün bütün yazılı mesajlarını tek seferde yazıyor ve aday aracıyla satırlara işliyor: `eposta_konu`, `eposta_metni`, `dm_metni`. Aday listesi sayfasının Saha modu kartında E-posta ve Instagram düğmeleri çıkıyor, metin orada hazır duruyor, yanında kopyalama düğmesi var. Öğrenci kopyalıyor, kendi hesabından gönderiyor, aynı kartta sonucu işaretliyor.
 
 Metin adaya özeldir ve gözlemden kurulur: denetim yapılmışsa en güçlü bulgudan, yapılmamışsa profil gözleminden. İkisi de yoksa o adaya yazılı mesaj yazılmaz, telefona bırakılır; gözlemsiz e-posta ve gözlemsiz mesaj çöp kutusuna gidiyor. Sayfa metni olmayan adayda "metin henüz yazılmadı" diyor, boş kutu göstermiyor.
 
@@ -520,7 +527,7 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.
-- Saha bloğu: aramalar ve yeni mesajlar. Telefon yolu: elli arama, otuz e-posta, yirmi Instagram, takipler bu sayının içinde. Yazı yolu: on arama, e-posta sınırın kadar yeni e-posta (on beş, yirmi, sonra otuz), kırk yeni Instagram mesajı, beş video ve o günün takipleri; toplam yine yüz. Instagram hesabın rampadaysa o günkü payı rampanın basamağıdır, eksik kalan sayı e-postaya geçer.
+- Saha bloğu: aramalar, yeni mesajlar ve videolar. Otuz beş arama, otuz Instagram mesajı, e-posta sınırın kadar yeni e-posta (on beş, sonra yirmi), beş video mesaj ve o günün takipleri; toplam yüz. Instagram hesabın rampadaysa o günkü payı rampanın basamağıdır ve eksik kalan sayı aramaya geçer; e-posta sınırın yirminin altındaysa eksik pay Instagram'a geçer. Bloğun son yarım saati video bloğudur.
 - Akşam bloğu: kanal durumu ekranı, kayıt kontrolü, ertesi günün onayı.
 
 **İşin yanında: günde kırk temas.**
@@ -550,7 +557,7 @@ Instagram mesajı yazarken: "İlk beş kelimen işin konusunu söyleyecek. Adam 
 Son cümleyi büyütmek isterse: "Son soruyu küçük tut. İlk mesajda randevu isteyen cevap almıyor. 'Bakmak ister misiniz' yeter; saat konuşmayı başlattıktan sonra geliyor."
 Instagram'da fiyat ya da sistem anlatmak isterse: "Yazışmada anlatılan sistem ikna etmiyor. Adam görüşmede kendi telefonundan deneyince ikna oluyor. Mesajın tek işi o görüşmeyi açmak."
 Takipte sonuç uydurmak isterse: "Yapmadığın işin sonucunu yazmıyoruz. Elinde senin kendi sayımın var, onu yazıyoruz; o gerçek ve o daha güçlü."
-Sabah: "Bugün elli arama, otuz e-posta, yirmi Instagram; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
+Sabah: "Bugün otuz beş arama, otuz Instagram, yirmi e-posta, beş video; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
 Arama öncesi: "Yılmaz Isı, Ahmet Kaya. En güçlü bulgu: dün akşam yedide aradın, açan olmadı. Kanca bu. Lira karşılığını söyleme, görüşmeye saklıyoruz. Ara."
 Kapattıktan sonra: "Ne oldu? Tek kelime yeter." Sen "açmadı" dersin: "Yazdım. Telefon satırı yapıldı, ikinci deneme perşembe. Sıradaki hareket bu, başka bir şey açmıyoruz. Sonraki aday."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, aramıyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."
@@ -579,7 +586,7 @@ Onay: e-posta metni "tamam" deyince sıraya girer; arama sonucu sen söyleyince 
 - Instagram hesabın yeniyse kanal kapanmaz, rampanın ilk basamağından başlar (günde beş) ve eksik kalan temas sayısı e-postaya ve telefona dağılır. Hesabın hiç yoksa o gün açılır, aynı rampa işler.
 - Instagram profilin ya da öne çıkanların yarımsa: o gün Instagram yok, sayı telefona ve e-postaya dağılır; profil kisisel-markani-kur'da on beş dakikada bitirilir, ertesi gün kanal açılır.
 - Instagram hesabın kısıtlandıysa (mesajlar istek kutusuna düşüyor, gönderim engellendi uyarısı geliyor): o hesaptan bir hafta soğuk mesaj yok, sayı e-postaya geçer. Yeni hesap açmak çözüm değil; yeni hesap zaten mesaj atamıyor.
-- O gün telefon yapamıyorsan ("sesim yok") yazı yolu rakamları geçerli, ertesi gün geri dönülür. Telefon satırlarının tarihi bir gün kayar.
+- O gün telefon yapamıyorsan ("sesim yok") aramanın payı Instagram ve e-postaya dağılır, video yine çekilir çünkü videoda yüzün değil ekranın konuşuyor. Ertesi gün geri dönülür, telefon satırlarının tarihi bir gün kayar.
 - CRM açıksa ama o an girilemiyorsa: temaslar ve kanal durumları `adaylar.csv`'ye yazılır, akşam aktarılır. CRM henüz açılmadıysa bu bir aksaklık değil; `adaylar.csv` zaten kayıt yeridir.
 - Sahibinin adı bulunamayan işletmeler e-posta ve Instagram listesine düşer. Ad sonradan öğrenilirse telefon satırı "yapılmadı" olarak açılır.
 

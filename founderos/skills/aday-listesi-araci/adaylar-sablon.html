@@ -264,7 +264,7 @@ function durumOku(){try{return JSON.parse(localStorage.getItem(ANAHTAR)||'{}')}c
 function durumYaz(d){try{localStorage.setItem(ANAHTAR,JSON.stringify(d))}catch(e){}}
 var durum=durumOku();
 function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');if(/instagram/.test(h))return'instagram';if(/e-?posta|mail/.test(h))return'e-posta';if(/video/.test(h))return'video';if(/yazı|mesaj/.test(h))return r.instagram?'instagram':r.eposta?'e-posta':'telefon';return'telefon'}
-var SONUC=[['acmadi','Açmadı','kotu','telefon'],['gonderdim','Gönderdim','','yazi'],['istemedi','İstemedi','kotu',''],['ilgilendi','İlgilendi','iyi',''],['randevu','Randevu','iyi',''],['sonra','Sonra ara','','']];
+var SONUC=[['acmadi','Açmadı','kotu','telefon'],['gonderdim','Gönderdim','','yazi'],['izlendi','Videoyu izledi','iyi','video'],['istemedi','İstemedi','kotu',''],['ilgilendi','İlgilendi','iyi',''],['randevu','Randevu','iyi',''],['sonra','Sonra ara','','']];
 document.getElementById('saha-sayi').textContent=gunluk.length?gunluk.length:'';
 
 // --- söyle metni: modülün genel sırası + niş kartının "Telefonda söylenecekler" bölümü (sayfa.json) ---
@@ -373,7 +373,7 @@ function sahaCiz(){
  if(!gunluk.length){h+='<div class="bos">Bugün sırada kimse yok. Sabah FounderOS\'a "günaydın" yaz, günün listesi kurulunca burası dolar.</div>';saha.innerHTML=h;bagla();return}
  gunluk.forEach(function(r){
   var d=durum[r.kisa_ad]||{};var kanal=d.kanal||kanalTahmin(r);var yazi=kanal!=='telefon';var mod=d.mod||modTahmin(r);
-  var dug=SONUC.filter(function(s){return !s[3]||(s[3]==='telefon'&&!yazi)||(s[3]==='yazi'&&yazi)}).map(function(s){return'<button data-s="'+s[0]+'" class="'+(d.sonuc===s[0]?'secili '+s[2]:'')+'">'+s[1]+'</button>'}).join('');
+  var dug=SONUC.filter(function(s){return !s[3]||(s[3]==='telefon'&&!yazi)||(s[3]==='yazi'&&yazi)||(s[3]==='video'&&kanal==='video')}).map(function(s){return'<button data-s="'+s[0]+'" class="'+(d.sonuc===s[0]?'secili '+s[2]:'')+'">'+s[1]+'</button>'}).join('');
   h+='<div class="kart'+(r._gecmis?' gecmis':'')+(d.sonuc?' bitti':'')+'" data-k="'+kac(r.kisa_ad)+'"><div class="oku"><div class="kucuk baslik">Önce oku</div>'
    +'<div class="ad">'+kac(r.kisa_ad||r.ad)+etiketler(r)+(r._gecmis?' '+rozet('günü geçmiş: '+tarihTr(r.siradaki_tarih),'uyari'):'')+'</div>'
    +'<div class="tel">'+telLink(r.telefon)+'</div><div class="satirlar">'
@@ -419,7 +419,7 @@ function bagla(){
   else if(!ok)document.getElementById('kopya-mesaj').textContent='Aşağıdaki metni seçip kopyala, FounderOS\'a yapıştır.'});
  if(tem)tem.addEventListener('click',function(){if(tem.dataset.onay==='1'){durum={};durumYaz(durum);sahaCiz();return}tem.dataset.onay='1';tem.textContent='Evet, bugünün sonuçlarını sil';setTimeout(function(){tem.dataset.onay='';tem.textContent='Temizle'},4000)});
 }
-function sonucMetni(){var s=[];gunluk.forEach(function(r){var d=durum[r.kisa_ad];if(!d||!d.sonuc)return;var p=[r.kisa_ad,d.kanal||kanalTahmin(r),({acmadi:'açmadı',gonderdim:'gönderdim',istemedi:'istemedi',ilgilendi:'ilgilendi',randevu:'randevu',sonra:'sonra'})[d.sonuc]];
+function sonucMetni(){var s=[];gunluk.forEach(function(r){var d=durum[r.kisa_ad];if(!d||!d.sonuc)return;var p=[r.kisa_ad,d.kanal||kanalTahmin(r),({acmadi:'açmadı',gonderdim:'gönderdim',izlendi:'izlendi',istemedi:'istemedi',ilgilendi:'ilgilendi',randevu:'randevu',sonra:'sonra'})[d.sonuc]];
  if(d.sonuc==='randevu'&&d.randevu)p.push('randevu: '+d.randevu.replace('T',' '));if(d.sonuc==='sonra'&&d.sonra)p.push('tarih: '+d.sonra);if(d.not)p.push('not: '+d.not.replace(/\|/g,'/'));s.push(p.join(' | '))});
  return s.length?'FounderOS saha sonuçları '+BUGUN+'\n'+s.join('\n'):''}
 // --- sekmeler ---

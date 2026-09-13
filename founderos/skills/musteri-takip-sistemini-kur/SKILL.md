@@ -14,7 +14,7 @@ Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, adaylar�
 
 Müşterinin sistemiyle karıştırma. O, müşteri kazandığında CRM'de ayrı bir bölümde kuruluyor.
 
-Neden bu iş var: saha açılınca günde yüz temas yapacaksın. Telefon yolunda elli arama, otuz e-posta, yirmi Instagram mesajı; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
+Neden bu iş var: saha açılınca günde yüz temas yapacaksın. Otuz beş arama, otuz Instagram mesajı, yirmi e-posta, beş video mesaj; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
 
 Üçüncüsü bugünün asıl işi: aynı adaya dört ayrı kanaldan ulaşacaksın. Telefon, e-posta, Instagram, video. Kimin hangi kanalda nerede kaldığını bilmezsen ya aynı kişiye üst üste yazarsın ya da cevap vereni unutursun. İkisi de adayı kaybettiriyor.
 
@@ -39,7 +39,7 @@ Bir saat: kurmuyorsun, tanıyorsun. İşin yanında çalışıyorsan bu saat iki
 
 ## 3. Ne okur
 
-İş Beyni'nden: çalışma düzenin, kanal yolun, gelir planındaki günlük temas hedefin, CRM bölümünün adresi.
+İş Beyni'nden: çalışma düzenin, günlük temas dağılımın, gelir planındaki günlük temas hedefin, CRM bölümünün adresi.
 Niş kartından: kanal ve zaman. Niş kartı, seçtiğin sektörün bütün bilgisinin durduğu dosyadır.
 Kanal düzeninden: dört kanalın adı ve dört durum değeri. Aynı tanım adaya-mesaj-yaz'da da geçerli; iki yerde tek tanım var, ikisi birbirinden farklı olamaz.
 Denetim düzeninden: aday-denetimi-cikar'ın ürettiği alanların listesi, yani sızıntı puanı, en güçlü bulgu, lira karşılığı ve karar verenin adı.
@@ -80,7 +80,7 @@ Aday: [kısa ad] · Sızıntı puanı: [0-5] · Aşama: [aşama]
 Telefon:   [durum] · [tarih] · [sonuç]
 E-posta:   [durum] · [tarih] · [sonuç]
 Instagram: [durum] · [tarih] · [sonuç]
-Video:     [durum] · [tarih] · [sonuç]
+Video:     [durum: yapılmadı, yapıldı, izlendi, cevap geldi, kapandı] · [tarih] · [sonuç]
 SIRADAKİ HAREKET: [tek kanal] · [tarih]
 Kapanma sebebi: [boş ya da üç sebepten biri]
 ```
@@ -156,7 +156,7 @@ Mesajı zincir göndermiyor, sen gönderiyorsun. Zincir sadece o günü sana hat
 
 Sebebi şu: cevapların çoğu ilk temasta gelmiyor; iki temasta bırakan kişi işin çoğunu görmeden bırakıyor. Bizde kaçıncı temasta geldiği sahadan dolacak.
 
-Zincirin istisnası yok, herkeste aynı çalışıyor. Bu bilerek böyle: dallanan akış bozulduğunda sessizce bozuluyor, tek yollu akış bozulduğunda hemen görülüyor. Yazı yolundaki yüz işletmede video sırası ayrı yürüyor; zincir o adayları sadece listende gösteriyor, ne yapacağını video sırası söylüyor.
+Zincirin istisnası yok, herkeste aynı çalışıyor. Bu bilerek böyle: dallanan akış bozulduğunda sessizce bozuluyor, tek yollu akış bozulduğunda hemen görülüyor. Tek ayrı sıra en çok istenen yüz işletmede: orada ilk temas video olduğu için video sırası yürüyor; zincir o adayları sadece listende gösteriyor, ne yapacağını video sırası söylüyor.
 
 Doğrulaması şöyle: bir test kaydında telefon durumunu "yapıldı" yap. Akışın kayıt listesinde o adayın adı birkaç saniye içinde görünecek. Görmüyorsan buraya yaz.
 

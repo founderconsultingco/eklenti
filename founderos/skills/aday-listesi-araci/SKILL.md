@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.29.0
+Aracın sürümü: 0.30.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -55,7 +55,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.29.0"
+SURUM = "0.30.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -70,6 +70,10 @@ EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", 
 SUTUNLAR = SERVIS + EKLENEN
 ASAMALAR = ["yeni", "temasta", "cevap verdi", "randevu", "görüşüldü", "sonra", "kapandı", "müşteri"]
 DURUMLAR = ["yapılmadı", "yapıldı", "cevap geldi", "kapandı"]
+# Video kanalinin bir durumu fazla: Loom videonun izlenip izlenmedigini
+# soyluyor. Izlenme cevap degil ama cevaptan once elimizdeki tek isaret ve
+# dorduncu gunun aramasinin sirasini o belirliyor.
+VIDEO_DURUMLAR = DURUMLAR + ["izlendi"]
 KANALLAR = ["telefon", "e-posta", "instagram", "video"]
 KANAL_SUTUN = {"telefon": "telefon_durumu", "e-posta": "eposta_durumu",
                "instagram": "instagram_durumu", "video": "video_durumu"}
@@ -436,8 +440,10 @@ def deger_dogrula(sutun, deger):
         hata("%s guncelle ile değişmez (silmek için sil komutu)" % sutun)
     if sutun == "asama" and deger and deger not in ASAMALAR:
         hata("aşama şunlardan biri olmalı: " + ", ".join(ASAMALAR))
-    if sutun in KANAL_SUTUN.values() and deger and deger not in DURUMLAR:
-        hata("kanal durumu şunlardan biri olmalı: " + ", ".join(DURUMLAR))
+    if sutun in KANAL_SUTUN.values() and deger:
+        izin = VIDEO_DURUMLAR if sutun == "video_durumu" else DURUMLAR
+        if deger not in izin:
+            hata("kanal durumu şunlardan biri olmalı: " + ", ".join(izin))
     if sutun == "son_temas_kanali" and deger and deger not in KANALLAR:
         hata("kanal şunlardan biri olmalı: " + ", ".join(KANALLAR))
     if sutun == "kaynak" and deger and deger not in KAYNAKLAR:
@@ -494,8 +500,9 @@ def kmt_guncelle(a):
 def temas_uygula(satirlar, s, kanal, sonuc, durum=None, asama=None, siradaki=None, tarih=None, randevu=None, notu=None):
     if kanal not in KANALLAR:
         hata("kanal şunlardan biri olmalı: " + ", ".join(KANALLAR))
-    if durum and durum not in DURUMLAR:
-        hata("durum şunlardan biri olmalı: " + ", ".join(DURUMLAR))
+    izin = VIDEO_DURUMLAR if kanal == "video" else DURUMLAR
+    if durum and durum not in izin:
+        hata("durum şunlardan biri olmalı: " + ", ".join(izin))
     if asama and asama not in ASAMALAR:
         hata("aşama şunlardan biri olmalı: " + ", ".join(ASAMALAR))
     s[KANAL_SUTUN[kanal]] = durum or "yapıldı"
@@ -562,7 +569,8 @@ def takip_gunu(s, kacinci=None):
 
 SONUC_KELIME = {"açmadı": "acmadi", "acmadi": "acmadi", "gönderdim": "gonderdim", "gonderdim": "gonderdim",
                 "istemedi": "istemedi", "ilgilendi": "ilgilendi", "randevu": "randevu", "sonra": "sonra",
-                "cevap": "cevap"}
+                "cevap": "cevap", "izlendi": "izlendi", "izledi": "izlendi",
+                "acildi": "izlendi", "açıldı": "izlendi"}
 
 # Yazili kanalda gelen cevabin hangi dala girdigi. Dal adi kaydediliyor ki
 # hangi dalin gorusmeye dondugu sonradan sayilabilsin.
@@ -622,6 +630,17 @@ def kmt_sonuclar(a):
                 anlasilmayan.append(satir + "  (randevu tarihi yok)")
                 continue
             temas_uygula(satirlar, s, kanal, "randevu alındı", "cevap geldi", "randevu", "randevu hazırlığı", r[:10], r, notu)
+        elif kod == "izlendi":
+            # Loom bildirimi. Temas sayilmaz, cunku yeni bir sey gondermedin;
+            # sadece adayin videoyu actigi yaziliyor ve arama one aliniyor.
+            if kanal != "video":
+                anlasilmayan.append(satir + "  (izlendi yalnız video kanalında)")
+                continue
+            s["video_durumu"] = "izlendi"
+            s["siradaki_hareket"] = "telefon, videoyu açmış, ara"
+            s["siradaki_tarih"] = tarih_coz("+1", "sıradaki tarih")
+            if notu:
+                s["not"] = ((s["not"] + " | ") if s["not"] else "") + notu
         elif kod == "sonra":
             t = ek.get("tarih", "+7")
             temas_uygula(satirlar, s, kanal, "sonra ara dedi", "yapıldı", "sonra", kanal + ", tekrar ara", t, None, notu)
@@ -644,7 +663,7 @@ def kmt_sonuclar(a):
     n = nis_oku()
     print("gün dökümü: niş %s, açılış sürümü %s, temas %d, %s" % (
         n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", len(islenen),
-        ", ".join("%s %d" % (k, dokum[k]) for k in ("acmadi", "gonderdim", "istemedi", "ilgilendi", "randevu", "sonra", "cevap") if dokum.get(k))))
+        ", ".join("%s %d" % (k, dokum[k]) for k in ("acmadi", "gonderdim", "izlendi", "istemedi", "ilgilendi", "randevu", "sonra", "cevap") if dokum.get(k))))
     for x in islenen:
         print("  " + x)
     if bulunamayan:
@@ -1418,7 +1437,7 @@ function durumOku(){try{return JSON.parse(localStorage.getItem(ANAHTAR)||'{}')}c
 function durumYaz(d){try{localStorage.setItem(ANAHTAR,JSON.stringify(d))}catch(e){}}
 var durum=durumOku();
 function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');if(/instagram/.test(h))return'instagram';if(/e-?posta|mail/.test(h))return'e-posta';if(/video/.test(h))return'video';if(/yazı|mesaj/.test(h))return r.instagram?'instagram':r.eposta?'e-posta':'telefon';return'telefon'}
-var SONUC=[['acmadi','Açmadı','kotu','telefon'],['gonderdim','Gönderdim','','yazi'],['istemedi','İstemedi','kotu',''],['ilgilendi','İlgilendi','iyi',''],['randevu','Randevu','iyi',''],['sonra','Sonra ara','','']];
+var SONUC=[['acmadi','Açmadı','kotu','telefon'],['gonderdim','Gönderdim','','yazi'],['izlendi','Videoyu izledi','iyi','video'],['istemedi','İstemedi','kotu',''],['ilgilendi','İlgilendi','iyi',''],['randevu','Randevu','iyi',''],['sonra','Sonra ara','','']];
 document.getElementById('saha-sayi').textContent=gunluk.length?gunluk.length:'';
 
 // --- söyle metni: modülün genel sırası + niş kartının "Telefonda söylenecekler" bölümü (sayfa.json) ---
@@ -1527,7 +1546,7 @@ function sahaCiz(){
  if(!gunluk.length){h+='<div class="bos">Bugün sırada kimse yok. Sabah FounderOS\'a "günaydın" yaz, günün listesi kurulunca burası dolar.</div>';saha.innerHTML=h;bagla();return}
  gunluk.forEach(function(r){
   var d=durum[r.kisa_ad]||{};var kanal=d.kanal||kanalTahmin(r);var yazi=kanal!=='telefon';var mod=d.mod||modTahmin(r);
-  var dug=SONUC.filter(function(s){return !s[3]||(s[3]==='telefon'&&!yazi)||(s[3]==='yazi'&&yazi)}).map(function(s){return'<button data-s="'+s[0]+'" class="'+(d.sonuc===s[0]?'secili '+s[2]:'')+'">'+s[1]+'</button>'}).join('');
+  var dug=SONUC.filter(function(s){return !s[3]||(s[3]==='telefon'&&!yazi)||(s[3]==='yazi'&&yazi)||(s[3]==='video'&&kanal==='video')}).map(function(s){return'<button data-s="'+s[0]+'" class="'+(d.sonuc===s[0]?'secili '+s[2]:'')+'">'+s[1]+'</button>'}).join('');
   h+='<div class="kart'+(r._gecmis?' gecmis':'')+(d.sonuc?' bitti':'')+'" data-k="'+kac(r.kisa_ad)+'"><div class="oku"><div class="kucuk baslik">Önce oku</div>'
    +'<div class="ad">'+kac(r.kisa_ad||r.ad)+etiketler(r)+(r._gecmis?' '+rozet('günü geçmiş: '+tarihTr(r.siradaki_tarih),'uyari'):'')+'</div>'
    +'<div class="tel">'+telLink(r.telefon)+'</div><div class="satirlar">'
@@ -1573,7 +1592,7 @@ function bagla(){
   else if(!ok)document.getElementById('kopya-mesaj').textContent='Aşağıdaki metni seçip kopyala, FounderOS\'a yapıştır.'});
  if(tem)tem.addEventListener('click',function(){if(tem.dataset.onay==='1'){durum={};durumYaz(durum);sahaCiz();return}tem.dataset.onay='1';tem.textContent='Evet, bugünün sonuçlarını sil';setTimeout(function(){tem.dataset.onay='';tem.textContent='Temizle'},4000)});
 }
-function sonucMetni(){var s=[];gunluk.forEach(function(r){var d=durum[r.kisa_ad];if(!d||!d.sonuc)return;var p=[r.kisa_ad,d.kanal||kanalTahmin(r),({acmadi:'açmadı',gonderdim:'gönderdim',istemedi:'istemedi',ilgilendi:'ilgilendi',randevu:'randevu',sonra:'sonra'})[d.sonuc]];
+function sonucMetni(){var s=[];gunluk.forEach(function(r){var d=durum[r.kisa_ad];if(!d||!d.sonuc)return;var p=[r.kisa_ad,d.kanal||kanalTahmin(r),({acmadi:'açmadı',gonderdim:'gönderdim',izlendi:'izlendi',istemedi:'istemedi',ilgilendi:'ilgilendi',randevu:'randevu',sonra:'sonra'})[d.sonuc]];
  if(d.sonuc==='randevu'&&d.randevu)p.push('randevu: '+d.randevu.replace('T',' '));if(d.sonuc==='sonra'&&d.sonra)p.push('tarih: '+d.sonra);if(d.not)p.push('not: '+d.not.replace(/\|/g,'/'));s.push(p.join(' | '))});
  return s.length?'FounderOS saha sonuçları '+BUGUN+'\n'+s.join('\n'):''}
 // --- sekmeler ---

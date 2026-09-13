@@ -33,7 +33,7 @@ Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine p
 
 ## 3. Ne okur
 
-İş Beyni'nden: kendi adın, şehir, kanal yolu, hazırlık seviyesi, gelir planı, bütçe merdiveninin basamağı.
+İş Beyni'nden: kendi adın, şehir, günlük temas dağılımı, hazırlık seviyesi, gelir planı, bütçe merdiveninin basamağı.
 Niş kartından: sektörün dili, işletmecinin dertleri, rekabetin şekli, yasal sınırlar.
 Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin içeriği, fiyat.
 İş Beyni'nin on sekizinci bölümünden: ideal müşteri (Doksan Gün Planı aynı anda arka planda yazılıyor olabilir, beklenmez).

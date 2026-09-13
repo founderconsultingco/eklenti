@@ -33,7 +33,7 @@ Pazarlamadaki karşılığı: fiyat matematik değil, kendini nereye koyduğun.
 
 ## 3. Ne okur
 
-İş Beyni'nden: hazırlık seviyen, gelir planın, kanal yolun, nişin, aylık hedefin (dört müşteri kontrolü için; fiyat saatten hesaplanmıyor).
+İş Beyni'nden: hazırlık seviyen, gelir planın, günlük temas dağılımın, nişin, aylık hedefin (dört müşteri kontrolü için; fiyat saatten hesaplanmıyor).
 Niş kartından: gerçek fiyatlar ve kapasite, duran havuz, yasal sınırlar.
 Kilitli formül ve oranlardan: aşağıda.
 

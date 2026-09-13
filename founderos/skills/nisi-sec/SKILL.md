@@ -32,7 +32,7 @@ Pazarlamadaki karşılığı: bir sektörü seçen kişi, o sektörün dilini ko
 
 ## 3. Ne okur
 
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, şehrin, kanal yolun, çalışma düzenin, günlük temas sayın.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, şehrin, günlük temas dağılımın, çalışma düzenin, günlük temas sayın.
 On dokuz niş kartından (bir sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon, gerçek fiyatlar ve kapasite, kanal ve zaman, rekabetin şekli, yasal sınırlar.
 Kart listesinin içindekiler bölümünden: her kartın masa puanı ve açık sayısı.
 Takvimden: hangi aydayız.
@@ -141,7 +141,7 @@ Eşik buradan çıkıyor:
 
 ### Dördüncü eleme: kanal
 
-Kanal yolun yazıysa, telefon ağırlıklı nişler geriye gider ve Instagram ağırlıklı nişler öne gelir. Hangi nişte hangisinin açık olduğu kartın "kanal ve zaman" bölümünde yazıyor.
+Telefonda konuşmak seni çok geriyorsa Instagram ağırlıklı nişler biraz öne gelir, ama telefon ağırlıklı nişler listeden çıkmaz: hangi niş seçilirse seçilsin dört kolu da yapıyorsun. Hangi nişte hangi kolun daha açık olduğu kartın "kanal ve zaman" bölümünde yazıyor.
 
 ### Beşinci eleme: kartın hazırlığı
 
