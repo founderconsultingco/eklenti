@@ -49,17 +49,19 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 
 5.2. Müşteri, kurulum döneminin 3. gününde istenen eski müşteri listesini en geç 7. güne kadar teslim eder ve bu listeye gönderilecek mesaj metinlerini yazılı olarak onaylar.
 
-5.3. Müşteri, sisteme gelen randevuları karşılamak ve kendi ekibini bilgilendirmekle yükümlüdür.
+5.3. Müşteri, kurulum görüşmesinden sonra gönderilen karşılama formunu en geç 7. güne kadar doldurur.
 
-5.4. Müşteri'nin bu maddedeki yükümlülüklerini geç yerine getirmesi halinde kurulum dönemi, yükümlülüğün yerine getirildiği günden itibaren yeniden işlemeye başlar ve aylık ücretin ilk tahsilatı aynı süre kadar ötelenir.
+5.4. Müşteri, sisteme gelen randevuları karşılamak ve kendi ekibini bilgilendirmekle yükümlüdür. Bu yükümlülük madde 6'daki güvencenin şartı değildir.
+
+5.5. Müşteri'nin bu maddedeki yükümlülüklerini geç yerine getirmesi halinde kurulum dönemi, yükümlülüğün yerine getirildiği günden itibaren yeniden işlemeye başlar ve aylık ücretin ilk tahsilatı aynı süre kadar ötelenir.
 
 ### 6. Güvence
 
 6.1. Hizmet Veren, kurulum döneminin son gününde ([21/28]. gün) Müşteri'ye raporu verir.
 
-6.2. Raporda Ek-2'de sayılan sayıların tamamının sıfır olması halinde Hizmet Veren, izleyen ay için aylık ücret talep etmez ve sistemi ücretsiz olarak yürütmeye devam eder.
+6.2. Raporda Ek-2'de sayılan sayıların tamamının sıfır olması halinde Hizmet Veren, izleyen ay için aylık ücret talep etmez. Ücretsiz geçen o ayda sistem kurulu kalır ve çalışmaya devam eder; Hizmet Veren'in o ay için ek bir geliştirme ya da yeni parça kurma yükümlülüğü doğmaz.
 
-6.3. Bu güvence, Müşteri'nin madde 5'teki yükümlülüklerini süresinde yerine getirmiş olması şartına bağlıdır.
+6.3. Bu güvence, Müşteri'nin 5.1, 5.2 ve 5.3'teki yükümlülüklerini süresinde yerine getirmiş olması şartına bağlıdır. Bir parça mevzuat nedeniyle ya da Müşteri'nin kendi adımını atmaması nedeniyle hiç kurulamazsa, o parçaya ait satır Ek-2'deki sayıma dahil edilmez.
 
 6.4. Hizmet Veren, belirli bir müşteri sayısı, ciro ya da randevu sayısı taahhüt etmez. Bu sözleşme bir sonuç taahhüdü içermez; Hizmet Veren'in yükümlülüğü sistemin kurulması ve yürütülmesidir.
 
@@ -152,17 +154,17 @@ Bu sözleşme 17 (on yedi) maddeden ve 3 (üç) ekten oluşur, taraflarca okunar
 
 [Seçilen kademeye ve işletmenin müşteri yolculuğuna göre "İş modeli" bölümünden doldurulur. Randevuyla çalışan işletme için örnek:]
 - Gelen yazılı mesajları karşılayan, ihtiyacı belirleyen ve randevu yazan asistanın kurulması ve yürütülmesi
-- Yeni başvuruya hızlı dönüş ve cevapsız aramaya kendiliğinden dönüş mesajı
+- Yeni başvuruya hızlı dönüş; [WhatsApp hattı bağlanabiliyorsa] cevapsız aramaya kendiliğinden dönüş mesajı
 - Randevu takvimi, onay ve hatırlatma mesajları; randevuya gelmeyenle yeniden iletişim
 - Konuşmayı yarıda bırakanın ve görüşüp karar vermeyenin takibi
 - Eski müşteri listesine dönüş turu; hizmet sonrası tekrar randevu, ek hizmet ve referans mesajları
-- Google değerlendirme isteme akışı
+- [Sağlık, diş ve estetik nişlerinde hukukçu onayı geldiyse] Google değerlendirme isteme akışı
 - Rapor günü ([21/28]. gün) raporu ve aylık rapor
 - [Telefon altyapısı uygunsa] Gelen aramayı karşılayan sesli asistan ve cevapsız aramanın Müşteri adına alınan 0850 numaraya yönlendirilmesi
 [Teklifle çalışan işletmede "randevu" satırlarının yerine: işletmenin onayladığı teklifin gönderilmesi, cevabının ve kabulünün takibi, kabulde kapora ya da ödeme bağlantısı.]
 
 Kapsam dışı olanlar, her sözleşmede açıkça yazılır:
-- Reklam yönetimi, sosyal medya içeriği ve site yapımı
+- Reklam bütçesi, sosyal medya içeriği ve site yapımı. Reklam yönetimi bu sözleşmenin kapsamı dışındadır; ayrı bir kademe olarak ancak ayrıca yazılı anlaşmayla eklenir.
 - İşletmenin asıl hizmetinin yerine getirilmesi
 - Fiyat, kampanya ve hizmet koşulu belirleme; asistan yalnızca Müşteri'nin onayladığı bilgiyi kullanır
 - Telefonla dış arama, yalnızca numara, hesap ve iletişim izni uygunsa ve ayrıca yazılı anlaşmayla

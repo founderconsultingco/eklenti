@@ -263,7 +263,14 @@ var ANAHTAR='founderos-saha-'+BUGUN;
 function durumOku(){try{return JSON.parse(localStorage.getItem(ANAHTAR)||'{}')}catch(e){return{}}}
 function durumYaz(d){try{localStorage.setItem(ANAHTAR,JSON.stringify(d))}catch(e){}}
 var durum=durumOku();
-function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');if(/instagram/.test(h))return'instagram';if(/e-?posta|mail/.test(h))return'e-posta';if(/video/.test(h))return'video';if(/yazı|mesaj/.test(h))return r.instagram?'instagram':r.eposta?'e-posta':'telefon';return'telefon'}
+function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');
+ // Satir '<kanal>, ...' bicimindeyse bastaki kanal esastir: 'telefon, videoyu acmis, ara'
+ // satiri once video sanilıyordu ve telefon temasi video kanalina isleniyordu.
+ if(/^\s*telefon\b/.test(h))return'telefon';
+ if(/^\s*instagram\b/.test(h))return'instagram';
+ if(/^\s*e-?posta\b/.test(h))return'e-posta';
+ if(/^\s*video\b/.test(h))return'video';
+ if(/instagram/.test(h))return'instagram';if(/e-?posta|mail/.test(h))return'e-posta';if(/video/.test(h))return'video';if(/yazı|mesaj/.test(h))return r.instagram?'instagram':r.eposta?'e-posta':'telefon';return'telefon'}
 var SONUC=[['acmadi','Açmadı','kotu','telefon'],['gonderdim','Gönderdim','','yazi'],['izlendi','Videoyu izledi','iyi','video'],['istemedi','İstemedi','kotu',''],['ilgilendi','İlgilendi','iyi',''],['randevu','Randevu','iyi',''],['sonra','Sonra ara','','']];
 document.getElementById('saha-sayi').textContent=gunluk.length?gunluk.length:'';
 

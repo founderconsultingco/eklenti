@@ -312,7 +312,7 @@ Kime gider, iki halde:
 
 Ne zaman gider: yüz işletmede ilk temas günü, kalan listede ilk temasın üçüncü günü. E-postadan doğrudan gider, hareketli önizlemeyle. Instagram'dan küçük bir evetten sonra gider: geri takip, yoruma cevap ya da tek satırlık izin mesajına cevap. İkisinden de gidiyorsa bu tek harekettir. Video giden adayın üçüncü, yedinci ve on dördüncü gün yazılı takip zinciri kapanır, yerine video zinciri gelir.
 
-Videodan sonra hangi kanal gelir: iki gün sonra Instagram'dan sesli mesaj takibi, dördüncü gün arama, yedinci gün e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer. Adayın Instagram'ı yoksa ikinci gün takibi e-postadan tek satır gider; e-postası yoksa ayrılık mesajı Instagram'dan gider.
+Videodan sonra hangi kanal gelir: iki gün sonra Instagram'dan sesli mesaj takibi, dördüncü gün arama, beşinci gün yeni bir soru taşıyan tek satır, yedinci gün e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer. Adayın Instagram'ı yoksa ikinci gün takibi e-postadan tek satır gider; e-postası yoksa ayrılık mesajı Instagram'dan gider.
 
 Loom'un izlendi bildirimi sırayı değiştirir. Video izlendiyse aday açmış demektir ve dördüncü günün araması ilk sıraya geçer, açılışı da değişir: "Geçen gün gönderdiğim videoyu açmışsınız." Video hiç izlenmediyse dördüncü günün araması yine yapılır, ama açılış videoya hiç değinmez; açılmamış videoyu hatırlatmak karşı tarafı borçlu duruma sokuyor ve kapatıyor.
 
@@ -376,6 +376,7 @@ Sırayla bak, ilk uyan satır senin satırın.
 10. Aday yüz işletmede değil, sızıntı puanı dörtten yüksek, ilk temasın üçüncü günü ve hâlâ cevap yok → video mesaj, o gün. Listenin kalanında video takip olarak çalışıyor; yüz işletmede ilk temas olarak.
 11. Video gitti, iki gün cevap yok → Instagram'dan sesli mesaj takibi.
 12. Video gitti, dört gün cevap yok → telefon, çünkü video izlendi bildirimi geldiyse adam senin adını biliyor. Loom "izlendi" dediyse arama açılışı değişir: "Geçen gün gönderdiğim videoyu açmışsınız, bir dakikanızı alacağım."
+12b. Video gitti, beş gün cevap yok → tek satır, yeni bir soru taşıyarak. Boş hatırlatma gitmez.
 13. Video gitti, yedi gün cevap yok → e-postadan ayrılık mesajı, sonra "sonra" aşaması.
 14. Instagram mesajı bir takiple cevapsız → Instagram "kapandı", aday "sonra" aşamasına.
 15. Adayın Instagram hesabı yok → Instagram "kapandı". Senin profilin yarım ya da hesabın rampada ve o günün payı dolmuş → satır kapanmaz, "yapılmadı"da bekler; profil bitince ya da ertesi gün açılır.
@@ -390,6 +391,8 @@ Doksan günlük havuz sürekli halin en ucuz kaynağıdır: ikinci ayın sonunda
 
 Bu sorunun cevabı yazılı olmazsa öğrenci ikinci ayın başında boşluğa düşüyor. Sürekli hal şöyle, her ay aynı:
 
+Aşağıdaki tablo tam zamanlı içindir. İşin yanında çalışanda temas 800'e, video 40'a, en çok istenen liste kırk işletmeye iner; kayıt sayısı aynı kalır, çünkü liste daha yavaş tükeniyor.
+
 | | Her ay | Nereden |
 |---|---|---|
 | Yeni kayıt | Ana kanal telefonsa 1.400 (üç ilçe), yazıysa 500 (bir ilçe) | aday-listesi-cikar, ayın ilk günü |
@@ -400,7 +403,7 @@ Bu sorunun cevabı yazılı olmazsa öğrenci ikinci ayın başında boşluğa d
 
 En çok istenen yüz işletme tek seferlik bir açılış hamlesi değil, **her ay yenilenen bir dilim**. Ay sonunda o yüz bitiyor, yeni ilçenin listesinden yeni yüz seçiliyor ve video sırası kaldığı yerden devam ediyor. Video hiç durmuyor.
 
-Liste boyu ana kanala göre değişiyor ve sebebi basit. Yazılı kanalda bir adaya dört dokunuş yapılıyor (ilk mesaj artı üç takip), yani beş yüz aday iki bin temas ediyor ve bir ay gidiyor. Telefonda ise bir adaya ortalama bir buçuk dokunuş düşüyor, çünkü açmayan adayın satırı iki denemede kapanıyor; o yüzden telefon ana kanalken ayda üç ilçe çekiliyor. Aylık çekim tavanı beş ilçeye kadar izin veriyor, yani ikisi de sığıyor.
+Liste boyu ana kanala göre değişiyor ve sebebi basit. Yazılı kanalda bir adaya dört dokunuş yapılıyor (ilk mesaj artı üç takip), yani beş yüz aday iki bin temas ediyor ve bir ay gidiyor. Telefonda ise bir adaya ortalama bir buçuk dokunuş düşüyor, çünkü açmayan adayın satırı iki denemede kapanıyor; o yüzden telefon ana kanalken ayda üç ilçe çekiliyor. Aylık tavan iki şeyle sınırlı ve ikisi birlikte geçerli: ayda en fazla 2.500 ham kayıt ve en fazla 12 çekim. İlçe başına sekiz yüz ham kayıt istendiği için üç ilçe tavanın içinde kalıyor.
 
 Ayın dört yeni işi şunlar ve hepsi aynı güne konur, ayın ilk iş günü: yeni ilçenin çekimi, yeni yüzün seçimi ve hızlı denetimi, geçen ayın kanıt cümlesinin güncellenmesi, ve `ogren` tablosunun aylık uzun okuması. Yarım gün sürüyor ve o gün temas sayısı yarıya iniyor; bu tek istisna plana yazılıdır.
 
@@ -555,10 +558,10 @@ Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma d
 
 **İşin yanında: günde kırk temas.**
 - Sabah bloğu, yani işe gitmeden önceki bir saat ya da öğle arası: dünkü cevaplara dönüş, e-posta takiplerinin onayı, beş adayın denetim kartı.
-- Saha bloğu, yani akşam ve cumartesi öğleden önce: on arama, on beş e-posta, beş Instagram, on takip. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
+- Saha bloğu, yani akşam ve cumartesi öğleden önce: yirmi sekiz ana kanaldan, on diğer iki yazılı kanaldan, iki video mesaj; o günün takipleri bu kırkın içinde. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
 - Akşam bloğu: kanal durumu ekranı ve kayıt kontrolü, on beş dakika.
 
-İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas: beş arama, sekiz e-posta, iki Instagram, beş takip. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor, o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
+İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas: on dört ana kanaldan, beş diğer iki yazılı kanaldan, bir video mesaj. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor, o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
 
 Günlük e-posta sınırı yeni adresi alıştırma sürecine bağlı: önce on beş, sonra yirmi, sonra otuz. Hangi saatte hangi kanalın açık olduğunu nişin kanal ve zaman bölümü söylüyor: güzellik salonu akşam yoğun, pazartesi ve salı sabahı sakin; oto serviste öğle ve mesai sonu uygun. Mesai sonrası "telefonu kim açıyor" ölçümü denetimin altıncı satırında yapılıyor.
 
@@ -585,13 +588,13 @@ Arama öncesi: "Yılmaz Isı, Ahmet Kaya. En güçlü bulgu: dün akşam yedide 
 Kapattıktan sonra: "Ne oldu? Tek kelime yeter." Sen "açmadı" dersin: "Yazdım. Telefon satırı yapıldı, ikinci deneme perşembe. Sıradaki hareket bu, başka bir şey açmıyoruz. Sonraki aday."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, aramıyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."
 Kanal değişince: "Yılmaz Isı üç gündür açmıyor. Telefonu kapattım, yarın e-posta gidiyor. Bulgu aynı, cümle değişiyor: telefonda kanca olan şey e-postada birinci cümle, altına lira karşılığı geliyor."
-Akşam: "Kırk üç arama, on yedisi açtı, beşi konuştu, bir randevu. Yirmi beş e-posta gitti. Kanal durumu ekranı: yedi aday telefonda, on ikisi e-postada, dördü Instagram'da, üçü kapandı. Yarının sırası hazır. Üç yüz temasa yüz seksen üç kaldı, ondan önce hiçbir şeyi değiştirmiyoruz."
+Akşam: "Hedef yetmiş aramaydı, altmış sekiz yapıldı; on yedisi açtı, beşi konuştu, bir randevu. Yirmi beş yazılı mesaj ve beş video gitti. Kanal durumu ekranı: yedi aday telefonda, on ikisi e-postada, dördü Instagram'da, üçü kapandı. Yarının sırası hazır. Üç yüz temasa yüz seksen üç kaldı, ondan önce hiçbir şeyi değiştirmiyoruz."
 
 ## 7. Ne yazar
 
 **Hiçbir açık adayın sırası boş kalmaz.** Bu bir kural değil, aracın kendi kontrolü: temas işlendiğinde sıradaki tarih verilmediyse zincirden hesaplanır (üçüncü, yedinci, on dördüncü gün), zincir bittiyse aday "sonra"ya düşer ve doksan gün sonrasına yazılır. Sebebi şu: sırası boş kalan aday günün listesinden tamamen düşüyor, ne takipte ne "hiç aranmamış"ta görünüyor, ve bir daha hiç aranmıyor. Randevu alındıysa sıradaki adım görüşmenin kendisidir.
 
-Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): her temas kaydı, kanalı, tarihi ve sonucu. Yazılı kanal metinleri adayın kendi satırına: e-postanın konusu ve metni, Instagram mesajı. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (yeni, yazdım, cevap verdi, görüşme ayarlandı, "sonra"). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi. CRM açılmadıysa o ekran klasördeki `adaylar.html`, Saha modu sekmesi; öğrencinin akşam yapıştırdığı saha sonuçlarını aday aracı işler, sohbette tek tek anlatılan temaslar da araçla yazılır (aday-listesi-dosyasi: sonuclar, temas).
+Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): her temas kaydı, kanalı, tarihi ve sonucu. Yazılı kanal metinleri adayın kendi satırına: e-postanın konusu ve metni, Instagram mesajı. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (araçta: yeni, temasta, cevap verdi, randevu, görüşüldü, sonra; CRM'de karşılıkları sözlükte). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi. CRM açılmadıysa o ekran klasördeki `adaylar.html`, Saha modu sekmesi; öğrencinin akşam yapıştırdığı saha sonuçlarını aday aracı işler, sohbette tek tek anlatılan temaslar da araçla yazılır (aday-listesi-dosyasi: sonuclar, temas).
 
 İş Beyni'ne: mesaj sürümü ve tarihi, hangi bulgu tipi hangi kanalda cevap alıyor, kanal başına cevap oranı, en sık üç itiraz.
 

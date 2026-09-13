@@ -142,7 +142,7 @@ Sayfada olmayanlar tanıtım sayfasındakiyle aynı: fiyat yok, iletişim formu 
 
 Bu sayfa tanıtım sayfanın yerine geçmiyor. Tanıtım sayfası adını Google'a yazana, bu sayfa reklamdan gelene açılıyor. İki ayrı adres, iki ayrı iş.
 
-Video ikisinde de aynı. Yedinci günde tanıtım sayfasında boş bıraktığın kutu bugün bu videoyla doluyor. Sayfalar farklı, video tek.
+Video ikisinde de aynı. Birinci günde tanıtım sayfasında boş bıraktığın kutu bugün bu videoyla doluyor. Sayfalar farklı, video tek.
 
 ## 6. Ne söyler
 

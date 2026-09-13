@@ -61,7 +61,7 @@ Sözlüğü: portföy, prim, tecdit, poliçe, basamak, taban komisyon, hasarsız
 
 En güçlü üç itiraz: şirket zaten yenileme mesajı atıyor, müşterim bana bağlı tanıdık, yenileme takibimiz Excel'de var
 
-"Sigorta şirketi zaten yenileme zamanı SMS atıyor." O SMS kanuni bir bilgilendirme, kişisel arama değil; hangi mesajın onaylı sayılacağı İYS açısından hâlâ net değil, bizim aramamız buna bağlı kalmıyor.
+"Sigorta şirketi zaten yenileme zamanı SMS atıyor." O SMS kanuni bir bilgilendirme, acentenin kendi müşterisine dönüşü değil. Bizim gönderdiğimiz her mesaj İYS izinli numaraya gider; izinli numara yoksa o kişiye mesaj gitmez ve bu güvencenin sonucuna da sayılmaz. Kural değişmiyor, mesajın içeriği değişmiyor, izin şart.
 
 "Fiyatı ben veremem, şirkete bağlı." Doğru, zaten asistan fiyat vermiyor; sadece araç veya kişi bilgisini toplayıp size ya da teklife yönlendiriyor.
 

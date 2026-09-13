@@ -155,7 +155,7 @@ Para hesabına geçtikten sonra en geç bir saat içinde, e-postayla ve WhatsApp
 3. Kurulum döneminin takvimi: sıfırıncı günden [21/28]. güne, gün gün ne olacağı.
 4. Sizden ne bekliyorum, tarihli: giriş izinleri kurulum görüşmesinde; eski müşteri listesi üçüncü günde; karşılama formu ve duran havuz onayı yedinci güne kadar. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Kararı kimin vereceği ve ne kadar sürede cevap geleceği de burada yazar.
 5. Güvence ve şartı: sözleşmedeki cümlenin aynısı.
-6. Neyi yapmıyorum: reklam bütçesi benden çıkmaz, yeni site yapmıyorum, mevcut numaranıza dokunmuyorum, nişin yasakladığı vaatleri vermiyorum.
+6. Neyi yapmıyorum: reklam vermiyorum ve reklam yönetimi bu pakette yok, yeni site yapmıyorum, mevcut numaranıza dokunmuyorum, nişin yasakladığı vaatleri vermiyorum.
 7. Rapor gününde raporda ne olacak: İş modeli'ndeki güvence cümlesi, nişin yolculuğuna göre (randevu ya da teklif sürümü) buraya aynen girer; arkasına şu eklenir: "O ay bittiğinde kapsamı daraltarak devam, normal ücretle devam ya da yazılı bildirimle ayrılma yollarından biri seçilir." Sayı sözü yok.
 8. Sıradaki adım: kurulum görüşmesinin günü ve saati, o görüşmeye ne getireceği. Karşılama formunu henüz doldurmadıysa linki burada bir kez daha durur.
 
@@ -168,7 +168,7 @@ Sessiz çalışır: kart kayıtlı, her ay kendiliğinden çekilir. Müşteriye 
 
 İlk tahsilat [31/38]. gündür. Rapor gününde sonuç çıkmadıysa tahsilat çekilmeden durdurulur, ikinci ay ücretsiz çalışır. Müşteri kendi şartını geç yerine getirdiyse (izinleri ya da listeyi geç verdiyse) [21/28] gün onun verdiği günden başlar; tahsilat da aynı kadar ötelenir.
 
-İlk iki ayda tahsilattan üç gün önce, bir gece önce ve sabahı kısa mesaj gider. Metni FounderOS hazırlar, sen gönderirsin. Sebebi şu: tanımadığı bir tahsilatı gören müşteri "bu kişi beni dolandırıyor mu" diye düşünür.
+İlk iki ayda tahsilattan üç gün önce, bir gece önce ve sabahı WhatsApp mesajı gider. Metni FounderOS hazırlar, sen gönderirsin. Sebebi şu: tanımadığı bir tahsilatı gören müşteri "bu kişi beni dolandırıyor mu" diye düşünür.
 
 ### Havale yolunun ayrıntısı
 

@@ -219,7 +219,7 @@ Bu iki cümleyi bugün ezberliyorsun. Üçüncü günde nişine özel Dönüşü
 
 Dördü tek cümlede toplanıyor: işletmeye ilgi zaten geliyor, yere düşüyor. Biz o ilgiyi yerde bırakmıyoruz.
 
-**Çözmediğimiz şey, aynı netlikte.** Yeni müşteri üretmiyoruz, reklam vermiyoruz, site yapmıyoruz, işletmenin numarasına dokunmuyoruz. Sızıntıyı kapatıyoruz, musluğu açmıyoruz. Bunu bilmek satarken işine yarıyor: "Ben size yeni hasta bulmuyorum, gelen hastayı kaçırmamanızı sağlıyorum" cümlesi işletmeciyi rahatlatıyor, çünkü ona reklamcı gibi görünmüyorsun.
+**Çözmediğimiz şey, aynı netlikte.** Yeni müşteri üretmiyoruz, reklam vermiyoruz, site yapmıyoruz, işletmenin numarasına dokunmuyoruz. (Reklam yönetimi ileride, ilk müşteri sorunsuz teslim edildikten sonra ayrı bir kademe olarak açılıyor; bu ilk doksan günde satılan şeyin içinde değil.) Sızıntıyı kapatıyoruz, musluğu açmıyoruz. Bunu bilmek satarken işine yarıyor: "Ben size yeni hasta bulmuyorum, gelen hastayı kaçırmamanızı sağlıyorum" cümlesi işletmeciyi rahatlatıyor, çünkü ona reklamcı gibi görünmüyorsun.
 
 **Şu kelimeleri kullanmıyorsun:** bot, chatbot, yapay zeka, otomasyon, entegrasyon, "WhatsApp botu kuruyorum". Bunlar senin mutfağın. İşletmeci mutfağı satın almıyor, önüne gelen randevuyu satın alıyor. Hangi parçanın hangi anı çözdüğü üçüncü günün tablosunda, onu o gün öğreneceksin.
 
@@ -288,11 +288,11 @@ Ana kanal yazılıysa ilk hafta yetmişe çıkılmaz: yeni hesap rampaya girer (
 
 Doldurulmuş örnek, tam zamanlı biri için:
 
-Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Günde 35 arama yaparsan 28 iş günü, yani bir buçuk ay.
+Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Ana kanalın telefonsa günde yetmiş arama, yani on dört iş günü, yani üç hafta.
 
 Zincir yalnız aramayla kuruluyor, çünkü elimizde oranı olan tek kol o. Instagram, e-posta ve video mesaj bu sayının üstüne çalışıyor; onların randevu oranını kendi rakamınla üç yüzüncü temasta yazacağız. Yani plan en kötü hali gösteriyor, gerçek büyük ihtimalle daha erken çıkıyor. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın içinde çıkıyor.
 
-Aynı hesap işin yanında çalışan biri için başka bir yere çıkıyor. Günde 10 arama yapan birinde aynı zincir çok daha uzun sürüyor; o yüzden işin yanında çalışan birinin doksan günlük hedefi dört müşteri değil, bir ya da iki müşteri. Bir müşteri bu işin çalıştığının kanıtı ve doksan gün için yeterli.
+Aynı hesap işin yanında çalışan biri için başka bir yere çıkıyor. Günde yirmi sekiz arama yapan birinde aynı zincir iki buçuk katı sürüyor; o yüzden işin yanında çalışan birinin doksan günlük hedefi dört müşteri değil, bir ya da iki müşteri. Bir müşteri bu işin çalıştığının kanıtı ve doksan gün için yeterli.
 
 Bu cümle üçüncü günde, gerçek fiyatla söylenir. Birinci günde söylenmez.
 
@@ -394,7 +394,7 @@ Bölümlerin toplamı ayrı ayrı yazılır, çünkü hangi ay cebinden ne çık
 
 On ikinci sorunun cevabı bu tabloyu karşılamıyorsa liste kısılır. Nasıl kısılacağı bugün yazılır, o güne bırakılmaz. Üç basamak var ve hangisinde olduğunu senin verdiğin rakam belirler, ben sormam.
 
-**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Loom'un ücretli planı da ilk kanıta ertelenir; o güne kadar ücretsiz planın yirmi beş videosu kullanılır, sonra video mesaj günde ikiye iner ve videolar Instagram'dan sohbete yüklenerek gider. Video hiç durmaz, sayısı iner. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
+**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Loom'un ücretli planı da ilk kanıta ertelenir; o güne kadar ücretsiz planın yirmi beş videosu kullanılır, sonra video mesaj günde ikiye iner ve videolar Instagram'dan sohbete yüklenerek gider. Eksik kalan üç temas diğer iki yazılı kanala geçer, toplam yüz kalır. Video hiç durmaz, sayısı iner. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
 
 **Orta basamak: üç ile altı aylık masrafı karşılıyor.** Tablonun ilk iki bölümü alınır, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
 

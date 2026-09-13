@@ -36,7 +36,7 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - Sattığımız şey: AI Müşteri Dönüşüm Sistemi. İşletmeye gelen talebi karşılayan, randevu ya da fiyat teklifi sürecini ilerleten, satın almayanı takip eden, eski müşteriyi geri kazanan, FounderOS CRM üstünde çalışan tek sistem. Talebin nereden geldiği önemli değil; kaybolmasını engelliyoruz. Reklamı biz vermiyoruz, reklamın karşılığını alıyoruz. Ayrı ayrı bot satmıyoruz.
 - Dört sızıntı: açılmayan telefon, geç dönülen mesaj, dönülmeyen form, geri aranmayan eski müşteri.
 - İki müşteri yolculuğu: randevuyla çalışan işletme (başvuru, konuşma, randevu, hatırlatma, katılım) ve fiyat teklifiyle çalışan işletme (başvuru, bilgi toplama, keşif, teklif, takip, kabul). Bazı nişlerde ikisi birlikte. Hangisi olduğu kartta yazar.
-- Kademe 1 Temel Kapsam: gelen tarafın karşılanması (mesaj asistanı; telefon altyapısı uygunsa gelen aramayı karşılayan sesli asistan), randevu ya da teklif takibi, hatırlatma.
+- Kademe 1 Temel Kapsam: gelen tarafın karşılanması (mesaj asistanı; sesli asistan şarta bağlıdır, telefon altyapısı uygunsa kurulur ve görüşmede söz verilmez, "kurulumda bakıp size söyleyeceğim" denir), randevu ya da teklif takibi, hatırlatma.
 - Kademe 2 Tam Kapsam, asıl satılan: üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor.
 - Kademe 3 Genişletilmiş Kapsam: üstüne dış arama ve reklam. Yasal sınırı olan sağlık nişlerinde Kademe 3 yok. Şartı: Kademe 2 ilk müşteride sorunsuz teslim edilmiş ve rapor çıkmış olacak. En erken ikinci ay.
 - Kademeler aynı sistemin üç kapsamıdır, üç ürün değil. Görüşmede tek paket, tek rakam: Kademe 2. Karşılaştırma fiyatı, yani pahalı seçenek, ön görüşme sayfasında durur; sitede fiyat yoktur, görüşmede söylenmez.

@@ -29,7 +29,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.30.0"
+SURUM = "0.31.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -40,7 +40,7 @@ EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", 
            "eposta_durumu", "instagram_durumu", "video_durumu", "temas_sayisi",
            "son_temas_tarihi", "son_temas_kanali", "siradaki_hareket", "siradaki_tarih",
            "randevu_tarihi", "eposta_konu", "eposta_metni", "dm_metni",
-           "son_cevap", "cevap_dali", "not"]
+           "son_cevap", "cevap_dali", "zincir_adimi", "acmadi_sayisi", "not"]
 SUTUNLAR = SERVIS + EKLENEN
 ASAMALAR = ["yeni", "temasta", "cevap verdi", "randevu", "görüşüldü", "sonra", "kapandı", "müşteri"]
 DURUMLAR = ["yapılmadı", "yapıldı", "cevap geldi", "kapandı"]
@@ -509,11 +509,15 @@ def temas_uygula(satirlar, s, kanal, sonuc, durum=None, asama=None, siradaki=Non
     eski_sira = (s["siradaki_tarih"] or "")[:10]
     if acik(s) and not tarih and s["asama"] != "randevu" \
        and (not eski_sira or eski_sira <= bugun().isoformat()):
-        # temas_sayisi bu fonksiyonun basinda artti; zincirde bu gonderim kacinci
-        # ise onu veriyoruz, yoksa bir fazla sayip adimi atliyor.
-        g = takip_gunu(s, int(s["temas_sayisi"] or 1))
+        # Zincir adimi kanal basina degil aday basina sayiliyor, ama yalniz
+        # gercekten giden bir sey adim yiyor. Video kendi zincirini yuruyor.
+        zincir_sifirla_gerekirse(s, kanal)
+        adim = int(s["zincir_adimi"] or 0) + 1
+        s["zincir_adimi"] = str(adim)
+        g = video_gunu(adim) if kanal == "video" else takip_gunu(s, adim)
         if g:
-            s["siradaki_hareket"] = "%s, %s" % (kanal, g[1])
+            onek = "" if kanal == "video" else "%s, " % kanal
+            s["siradaki_hareket"] = onek + g[1]
             s["siradaki_tarih"] = tarih_coz("+%d" % g[0], "sıradaki tarih")
         else:
             s["asama"] = "sonra"
@@ -534,11 +538,28 @@ def kmt_temas(a):
 
 
 def takip_gunu(s, kacinci=None):
-    """Yazılı kanal zinciri: ilk mesajdan 3, 7 ve 14 gün sonra takip. Bu gönderim kaçıncıysa sıradaki takibin
-    kaç gün sonra olduğunu ve adını verir; dördüncü gönderimden sonra zincir biter.
-    kacinci verilmezse sayaçtan hesaplanır (temas henüz işlenmemiş kabul edilir)."""
-    n = kacinci if kacinci is not None else int(s["temas_sayisi"] or 0) + 1
+    """Yazili kanal zinciri: ilk mesajdan 3, 7 ve 14 gun sonra takip. Gunler goreli veriliyor
+    (3, sonra 4, sonra 7), toplami 3/7/14 ediyor. Ucuncu takipten sonra zincir biter.
+    Sayac temas_sayisi DEGIL zincir_adimi: acilmayan telefon zincirden adim yemiyor,
+    yoksa uc kez acmayan adayin ilk e-postasi zinciri bitirmis sayiliyordu."""
+    n = kacinci if kacinci is not None else int(s["zincir_adimi"] or 0) + 1
     return {1: (3, "3. gün takibi"), 2: (4, "7. gün takibi"), 3: (7, "14. gün takibi")}.get(n)
+
+
+def zincir_sifirla_gerekirse(s, kanal):
+    """Video kendi zincirini yuruyor ve yazili zinciri kapatiyor. Video ilk kez
+    gidiyorsa sayac sifirlanir, yoksa video zinciri ortadan basliyor."""
+    if kanal == "video" and s.get("son_temas_kanali") != "video":
+        s["zincir_adimi"] = "0"
+
+
+# Video zinciri yazili zincirden ayri: video, +2 sesli mesaj, +4 arama,
+# +5 tek satir, +7 ayrilik. Gunler burada da goreli.
+def video_gunu(kacinci):
+    return {1: (2, "Instagram sesli mesaj takibi"),
+            2: (2, "telefon, ara"),
+            3: (1, "tek satır, yeni soru taşısın"),
+            4: (2, "ayrılık mesajı")}.get(kacinci)
 
 
 SONUC_KELIME = {"açmadı": "acmadi", "acmadi": "acmadi", "gönderdim": "gonderdim", "gonderdim": "gonderdim",
@@ -587,11 +608,35 @@ def kmt_sonuclar(a):
             continue
         notu = ek.get("not", "")
         if kod == "acmadi":
+            # Telefon uc ayri gunde acilmazsa hat kapanir ve sira yaziya gecer.
+            # Once sonsuza kadar "tekrar ara" yaziyordu, aday hic kapanmiyordu.
+            if kanal == "telefon":
+                n_ac = int(s["acmadi_sayisi"] or 0) + 1
+                s["acmadi_sayisi"] = str(n_ac)
+                if n_ac >= 3:
+                    if s["eposta"]:
+                        temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), telefon kapandı", "kapandı",
+                                     None, "e-posta, ilk mesaj", "+1", None, notu)
+                    elif s["instagram"]:
+                        temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), telefon kapandı", "kapandı",
+                                     None, "instagram, ilk mesaj", "+1", None, notu)
+                    else:
+                        temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), başka kanal yok", "kapandı",
+                                     "sonra", "doksan gün sonra yeniden bak", "+90", None, notu)
+                    islenen.append(ozet_satir(s))
+                    dokum[kod] = dokum.get(kod, 0) + 1
+                    continue
             temas_uygula(satirlar, s, kanal, "açmadı", "yapıldı", None, kanal + ", tekrar ara", "+1", None, notu)
         elif kod == "gonderdim":
-            g = takip_gunu(s)
+            # Zincir adimi burada elle artiyor, cunku tarih verildigi icin
+            # temas_uygula'nin zincir blogu calismiyor.
+            zincir_sifirla_gerekirse(s, kanal)
+            adim = int(s["zincir_adimi"] or 0) + 1
+            s["zincir_adimi"] = str(adim)
+            g = video_gunu(adim) if kanal == "video" else takip_gunu(s, adim)
             if g:
-                temas_uygula(satirlar, s, kanal, "gönderildi", "yapıldı", None, "%s, %s" % (kanal, g[1]), "+%d" % g[0], None, notu)
+                onek = "" if kanal == "video" else "%s, " % kanal
+                temas_uygula(satirlar, s, kanal, "gönderildi", "yapıldı", None, onek + g[1], "+%d" % g[0], None, notu)
             else:
                 temas_uygula(satirlar, s, kanal, "gönderildi, zincir bitti", "yapıldı", "sonra", "", "+90", None, notu)
         elif kod == "istemedi":
