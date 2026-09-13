@@ -363,7 +363,8 @@ Akşam sayılarını söylediğinde kimin hangi kanalda durduğunu tek listede g
 
 Sırayla bak, ilk uyan satır senin satırın.
 
-1. Aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı var → **video mesaj, ilk temas olarak**. Video gittiği gün aynı adaya yazılı mesaj gitmez; video linkinin gittiği kanal e-posta varsa e-posta, yoksa Instagram'dır.
+0. Aday en çok istenen yüz işletmeden ve Instagram hesabı var → **ısınma**: takip et, son gönderisine tek samimi yorum. Bu bir temas sayılmaz, ertesi gün ya da iki gün sonra video gider.
+1. Aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı var → **video mesaj, ilk temas olarak**. Kanıt hikâyen yoksa yardım kampanyası, varsa teklif kampanyası; seçimi FounderOS yapar. Video gittiği gün aynı adaya yazılı mesaj gitmez; video linkinin gittiği kanal e-posta varsa e-posta, yoksa Instagram'dır.
 2. Denetim bitti, karar verenin adı var → telefon, aynı gün.
 3. Denetim bitti, karar verenin adı yok → e-posta, aynı gün. Telefon satırı "kapandı" olur.
 4. Adayın Instagram hesabı canlı ve nişin kartı Instagram'ı öne çıkarıyor → Instagram, aynı gün.

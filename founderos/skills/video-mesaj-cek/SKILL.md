@@ -26,7 +26,7 @@ Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kend
 - Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: Loom hesabı, tarayıcı eklentisi, mikrofon ve ekran izinleri, bir deneme linki. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin.
 - Altıncı günden itibaren her gün. En çok istenen yüz işletmeden günde beş adaya video ile ilk temas edilir; bu beş, günün yüz temasının beşidir. Listenin kalanında üçüncü gününe gelmiş cevapsız adaylar varsa onlar da aynı oturumda çekilir ve günün video sayısı beşi geçerse fazlası ertesi güne kalır: video hep beş, sırası önce yüz işletme.
 - Videonun yeri saha bloğunun son yarım saatidir; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
-- İlk hafta ilk temas da video da günde üç, bir saat; ikinci haftadan itibaren ikisi de beş, doksan dakika. İşin yanında çalışıyorsan ilk temas da video da günde iki, saha bloğunun sonunda, kırk dakika; en çok istenen listen kırk işletme.
+- İlk hafta günde üç video, bir saat; ikinci haftadan itibaren beş, doksan dakika. Beş sabit bir tavan değil taban: üçüncü haftadan sonra, senaryoya alıştıysan ve günün diğer sayıları tutuyorsa video sekize, sonra ona çıkar ve o pay diğer iki yazılı kanaldan alınır (yetmiş ana kanal sabit kalır, yirmi beş yirmiye ve on beşe iner). Tavan günde on beş. Üstüne çıkma: kaynağın kendisi günde kırk video çekip üç haftada tükenmiş ve bırakmak zorunda kalmış. Bu bir maraton, her gün beş video atan kişi bir gün kırk atıp iki hafta hiç atmayandan fazla müşteri buluyor. İşin yanında çalışıyorsan ilk temas da video da günde iki, saha bloğunun sonunda, kırk dakika; en çok istenen listen kırk işletme.
 - İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde iki değil bir video çekilir, süre yirmi dakikaya iner. Sebebi rakamda: [21/28] günlük teslim elli saat alıyor ve o saatler akşamdan çıkıyor. Sıfır video günü yine olmaz.
 - Yüz işletme yaklaşık dört haftada biter; ilk hafta üçle başladığın için birkaç gün fazlasıyla. Ay sonunda aday-listesi-cikar yeni yüz işletme seçer, aday-denetimi-cikar onların hızlı denetimini yapar.
 - Cevap gelirse o adaya video durur; konuşma adaya-mesaj-yaz'ın üç adımlı cevap konuşmasıyla sürer. Üç adım: önce dinlediğini belli edersin, sonra göremediği şeyi söylersin, sonra saat teklif edersin.
@@ -81,7 +81,47 @@ Kartın en güçlü bulgusu hangi satırdan geldiyse ekranda o sayfa açık duru
 
 Ekranda görünmeyecekler: denetim kartı, kendi e-postan ve bildirimler, başka adayların sekmeleri, CRM ekranı, kendi sisteminin demosu. Çekimden önce diğer sekmeleri ve bildirimleri kapatırsın; bu tek adım videonun yarısını kurtarıyor.
 
-### Senaryo: altı parça, altmış saniye
+### Isınma: videodan önce iki dokunuş
+
+Kaynağın yönteminde video gitmeden önce bir adım var: bağlantı isteği ve gönderisine yorum. Sebebi mecburiyet, çünkü orada bağlantı kurmadan mesaj gidemiyor. Bizde öyle bir duvar yok, Instagram'dan da e-postadan da doğrudan yazabiliyorsun. Ama adımın kendisi mecburiyet olmasa da işe yarıyor, o yüzden kalıyor ve şu hale geliyor.
+
+Video gideceği günden bir ya da iki gün önce, sadece en çok istenen yüz işletme için, iki dokunuş:
+
+1. **Instagram'da takip et.** Hesabı varsa. Bildirim gider, adını görür.
+2. **Son gönderisine tek samimi yorum.** Yapay zekânın yazdığı belli olan yorum değil, bir cümle: "Bu işi görmek güzel, bizim mahallede de aynısını arıyorlar." Emoji ve "harika paylaşım" yok. Bir gönderiye bir yorum, ikinci yorum yok.
+
+Bunun iki faydası var ve ikisi de ölçülebilir. Video geldiğinde adın tanıdık geliyor, yani mesaj tamamen yabancıdan gelmiyor. Ve Instagram mesajı, takip ettiğin ve etkileşim kurduğun hesapta istek kutusu yerine ana kutuya düşme ihtimalini yükseltiyor.
+
+Adayın Instagram'ı yoksa ısınma adımı atlanır, video doğrudan e-postadan gider. Isınma zorunlu değil, video onu beklemez; hesabı olan adayda yapılır, olmayanda yapılmaz.
+
+Kalan dört yüz adayda ısınma yok. Yüz işletmenin farkı emek, ısınma o emeğin ilk adımı.
+
+### İki kampanya var, ikisi aynı şeyi söylemiyor
+
+Video mesajın iki ayrı hali var ve hangisini kullanacağını kanıtın belirliyor, tercihin değil.
+
+**Yardım kampanyası.** İlk müşterin yoksa, yani elinde kanıt hikâyesi yok. O zaman video satmıyor, soru soruyor. Cümlesi şu: "Bu sektöre girmek istiyorum, sektörü içeriden bilmiyorum, o yüzden gerçekten bilen insanlara sormanın daha doğru olacağını düşündüm." Sonunda tek istek var ve satış değil: yirmi dakikalık bir konuşma.
+
+**Teklif kampanyası.** İlk müşteride kanıt hikâyesi çıktıysa. O zaman video ne yaptığını söylüyor: kime yardım ediyorsun, hangi sorunu çözüyorsun, kaç günde, kanıtın ne. Sonunda tek somut saat teklifi var.
+
+Seçimi FounderOS yapar ve tek satıra bakar: İş Beyni'nde kanıt hikâyesi var mı. Yoksa yardım kampanyası, varsa teklif kampanyası. Öğrenciye sorulmaz.
+
+Bunu neden böyle ayırıyoruz: kanıtı olmayan kişinin teklif kampanyası yapması, olmayan sonucu ima etmek zorunda bırakıyor. Yardım kampanyası ise acemiliği zayıflık değil sebep haline getiriyor ve sıfır kanıtla çalışan tek video biçimi bu. Kanıt çıkınca yardım kampanyası bırakılır; o cümle artık doğru değil.
+
+### Yardım kampanyasının senaryosu, altmış saniye
+
+Aynı ekran düzeni: adayın kendi sayfası açık, yüzün köşede.
+
+1. **Kişiye özel giriş, sıfırdan sekizinci saniye.** Adıyla başla ve ekranda ne gördüğünü söyle. İşle ilgisi olmayan bir ayrıntı da olur, hatta daha iyi çalışıyor: son gönderisinde gördüğün bir şey, dükkânın önündeki tabela, on yıllık olduğu yazan satır.
+2. **Niye yazdığını söyle, sekizinci saniyeden yirminci saniyeye.** "Söz veriyorum size bir şey satmaya çalışmıyorum, aslında yardımınızı isteyeceğim." Bu cümle olduğu gibi söylenir, yumuşatılmaz.
+3. **Neden sen, yirminci saniyeden otuz beşinci saniyeye.** "[Şehir]de [niş] işletmeleriyle çalışacak bir sistem kuruyorum. Ama sektörü içeriden bilmiyorum. Bilmiyormuşum gibi davranıp kimsenin istemediği bir şey kurmak yerine gerçekten bu işi yapan insanlara sormayı seçtim."
+4. **Neden özellikle o, otuz beşinci saniyeden kırk beşinci saniyeye.** Denetim kartından çıkan tek somut şey: "Sizi aradım çünkü [gerçekten görülmüş şey]." Burada bulgu suçlama gibi söylenmez, merak gibi söylenir: "Akşam yedide aradım, açan olmadı. Bunu niye soruyorum, o saatte gelen aramalar size nasıl ulaşıyor onu anlamak istiyorum."
+5. **Tek istek, kırk beşinci saniyeden elli beşinci saniyeye.** "Yirmi dakika ayırabilirseniz çok sevinirim. Şu an size bir şey önermiyorum, gerçekten sadece öğrenmek istiyorum."
+6. **Çıkış kapısı ve kapanış, elli beşinci saniyeden altmışıncı saniyeye.** "Yoğunsanız tamamen anlarım, zamanlama uygun değilse hiç sorun değil. Her türlü teşekkür ederim [Ad] Bey."
+
+Yardım kampanyasında olmayacaklar: fiyat, kademe adı, sistemin adı, "size şunu kurabilirim", indirim, süre sözü, kanıt cümlesi. Bu videoda hiçbir şey satılmıyor ve satılmadığı için çalışıyor. Yalan da yok: gerçekten öğrenmek istiyorsun ve görüşmede gerçekten soru soruyorsun.
+
+### Teklif kampanyasının senaryosu: altı parça, altmış saniye
 
 FounderOS senaryoyu altı parça yazar, her parçanın yanında kaç saniye olduğu ve o saniyede ekranda ne açık olduğu yazar. Sen okumazsın, söylersin. Kayıt boyunca ekran açık, yüzün köşede küçük bir baloncukta.
 
@@ -154,15 +194,17 @@ Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutars
 
 **Instagram** (hesabın bir yıldan eski ve yüz takipçiden çoksa): videoyu Loom'dan indirip galeriden sohbete yüklersin, sohbette oynar. Üstüne tek satır: "Ahmet Bey, size özel kısa bir video çektim, bir dakika." Sohbette oynayan video linkten daha çok açılıyor, ama izlendi bildirimi vermiyor; o yüzden Instagram'dan giden videoda izlenme takibi yok, e-postadan giden videoda var. İkisi birden gidiyorsa bildirim e-posta tarafından okunur.
 
-**E-posta** (adres varsa): Loom linki konur. Kayıt bitince link kendiliğinden kopyalanıyor, ayrı yükleme adımı yok. Loom'un linki e-postanın içinde hareketli bir önizleme olarak görünüyor ve tıklanma oranını bu yükseltiyor; ek dosya ya da kapak görseli koyma.
+**E-posta** (adres varsa): metnin içine Loom'un **hareketli önizlemesi** konur, düz link değil. Fark küçük görünüyor ama bütün iş burada: hareketli önizlemede kendi işletme sayfası açık ve senin konuşurken hareket ettiğin görünüyor. Karşı taraf tıklamadan önce videonun kendisi için çekildiğini anlıyor.
 
 Her gün, her video için:
-1. Kaydı bitir, Loom linki kopyalanmış olur.
-2. Loom'da videonun başlığına "[Ad] Bey için" yaz; başlık linkin önizlemesinde görünüyor.
-3. Linki e-posta metnine yapıştır.
+1. Kaydı bitir. Loom'da videonun başlığına elle "[Ad] Bey için" ya da "[Ad] Bey, bunu sizin için hazırladım" yaz. Başlığı Loom'un yapay zekâsına bırakma, önizlemede o başlık görünüyor.
+2. Loom'da videonun üstünde "Share" (paylaş), içinde "Embed" (yerleştir), oradan **"Copy GIF thumbnail"** (hareketli önizlemeyi kopyala).
+3. E-posta metnini yaz, imzanın üstüne önizlemeyi yapıştır. Yapıştırınca fazladan gelen satır varsa sil.
 4. Akşam Loom'da hangi videonun izlendiğine bak, sonucu kanal durumuna yaz.
 
-E-postaya ek değil link konur; kapak görseli yok, düz metin ve link. Sebebi: yeni e-posta adresinde görsel ve süslü içerik istenmeyen posta kutusuna düşürür; adres alışınca da görsel yok, basit kalır. Metin üç beş cümle, sonunda adın ve şehrin. Konu: "Ahmet Bey, size bir video çektim." Gövde: "Salı yazmıştım. Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim: [link]. Uymazsa sorun değil. Ahmet Kaya, Bursa." Metni FounderOS hazırlar, linki sen yapıştırırsın, "tamam" dersin, CRM'den gider.
+Konu satırı kısa ve dürüst: "Ahmet Bey, size bir video çektim." Gövde üç beş cümle, sonunda adın ve şehrin: "Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim. İzlemek için iki dakikanızı ayırabilirseniz sevinirim, uymazsa hiç sorun değil. Ahmet Kaya, Bursa." Metni FounderOS hazırlar, önizlemeyi sen yapıştırırsın, "tamam" dersin.
+
+E-posta iş adresinden gider, ücretsiz posta hesabından değil. Kişisel adresten giden video mesajı istenmeyen postaya daha kolay düşüyor ve tuhaf duruyor. İş adresi henüz yoksa kişisel adresten gider, ama alan adı alındığı gün bu değişir.
 
 WhatsApp'tan video yok.
 
@@ -178,11 +220,15 @@ SIRADAKİ HAREKET: Instagram sesli mesaj takibi · [iki gün sonrası]
 Aynı video hem e-postadan hem Instagram'dan gittiyse bu tek harekettir, iki temas değil. Video giden adayın üçüncü, yedinci ve on dördüncü gün takip zinciri kapanır; yerini video zinciri alır.
 
 Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
-- **İki gün sonra, cevap yok:** Instagram'dan sesli mesaj takibi. "Geçen gün bir video göndermiştim, görmüş müydünüz? Görmediyseniz sorun değil." Adayın Instagram'ı yoksa bu takip e-postadan tek satır gider.
-- **Yedi gün sonra, cevap yok:** e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer ve altı ay sonra yeniden taranır. Adayın e-postası yoksa ayrılık mesajı Instagram'dan gider.
+- **İki gün sonra, cevap yok:** Instagram'dan sesli mesaj takibi, telefondan kaydedilir. "Merhaba [Ad] Bey, iki gün önce bir video göndermiştim, izleme fırsatınız oldu mu diye sormak istedim. Olmadıysa hiç sorun değil, gözünüzden kaçmasın diye yazdım." Sesli mesaj yazılı mesajdan güçlü, çünkü dinlemek için açmak gerekiyor ve sesin karşı tarafa insan olduğunu hatırlatıyor. Adayın Instagram'ı yoksa bu takip e-postadan tek satır gider.
+- **Dördüncü gün:** arama. Video izlendiyse arama ilk sıraya geçer ve açılış değişir.
+- **Beşinci gün, cevap yok:** tek satır, yeni bir şey taşıyarak. "Videodaki konu şu an gündeminizde değilse sorun değil, tek bir şey sorayım: mesai dışı gelen aramalar şu an nereye düşüyor?" Boş hatırlatma ("görebildiniz mi") gitmez.
+- **Yedinci gün, cevap yok:** e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer ve doksan gün sonra yeniden sıraya girer. Adayın e-postası yoksa ayrılık mesajı Instagram'dan gider.
 - **Cevap gelirse:** beş dakika içinde aynı kanaldan üç adımlı cevap konuşması. Diğer kanalların sıradaki hareketi durur. Kayıt yerinde cevabın videodan sonra geldiği işaretlenir.
 
-Şaka ve hareketli görsel takibi yok. İkinci video yok; bir adaya bir video.
+İkinci video yok; bir adaya bir video.
+
+Hareketli görsel ve şaka takibi kaynakta var ve orada çalışıyor, bizde yok. Sebebi kültür ve sektör: yerel işletmeciye gönderilen komik görsel, senin ciddiyetini düşürüyor ve karşı taraf yaş olarak da senden büyük oluyor. Onun yerine beşinci günün tek satırı var ve o satır yeni bir soru taşıyor. Aynı işi yapıyor: cevap vermemesi kolay olan bir mesaj yerine cevap vermesi kolay olan bir soru.
 
 ### Ölçüm
 
