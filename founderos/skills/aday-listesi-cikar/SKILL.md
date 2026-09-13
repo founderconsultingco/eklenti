@@ -35,7 +35,7 @@ Pazarlamadaki karşılığı: aday listesi.
 ## 3. Ne okur
 
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): nişin, şehrin, günlük temas dağılımın, çalışma düzenin, lisans anahtarın (veri servisine kimlik), veri servisinin bu ayki kullanımı, yedek yola geçildiyse tarihi.
-Niş kartından (seçtiğin sektörün bütün bilgisinin durduğu dosya): Google Haritalar'daki kategori adları, kanal ve zaman bölümü, kim karar veriyor bölümü, yasal sınırlar.
+Niş kartından (seçtiğin sektörün bütün bilgisinin durduğu dosya): Google Haritalar'daki kategori adları, reklam kütüphanesi kelimeleri satırı, kanal ve zaman bölümü, kim karar veriyor bölümü, yasal sınırlar.
 aday-denetimi-cikar'dan: hızlı denetimin beş satırı ve sızıntı puanı. Denetim orada yürür, bu modül puanı okur ve sıralamada kullanır.
 Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): cevap veren adaylar, takip günü bugüne düşenler, denetimi hazır olanlar. Günün saha listesi bunlardan çıkıyor.
 İkinci günün sıcak listesinden: A listesindeki işletmeler.
@@ -82,9 +82,20 @@ Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki ge
 
 Reklam kaynağı ikinci ve isteğe bağlı kaynaktır. Bozulursa, kapalıysa ya da süresinde bitmezse liste yine çıkıyor, sadece reklam sütunu boş kalıyor. Liste hiçbir zaman bu kaynağı bekleyip durmuyor.
 
+Beş arama, arama başına altmış reklam, çekim başına en çok üç yüz reklam. Bu tavan bilerek düşük: sahadan gerçek sayı gelmeden yükseltilmiyor.
+
 Kaç kayıt gelir, bilinmiyor, sahadan dolacak. Beklenti şu: Instagram'dan satan nişlerde (güzellik, estetik, düğün, oto kuaför, fotoğraf, pilates) çok, telefondan yürüyen nişlerde az. Sıfır çıkması sorun değil, liste zaten Haritalar'dan doluyor.
 
-1. FounderOS kartındaki Haritalar kategori adını ve İş Beyni'ndeki şehrini alır, servise ilçe başına sekiz yüz kayıt ister; eleme sonrası elde yaklaşık beş yüz kalıyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
+1. FounderOS kartındaki Haritalar kategori adını ve İş Beyni'ndeki şehrini alır, servise ilçe başına sekiz yüz kayıt ister; eleme sonrası elde yaklaşık beş yüz kalıyor.
+
+**Reklam araması kategori adıyla yapılmaz, kartın kelimeleriyle yapılır.** Bu ayrım kritik: hiçbir diş kliniği "diş kliniği" diye reklam vermiyor, "implant fiyatları" ve "gülüş tasarımı" diye veriyor. Kategori adıyla aranırsa o şehirdeki reklam verenlerin neredeyse hepsi kaçar. Kartın **reklam kütüphanesi kelimeleri** satırı tam bunun için yazıldı ve on dokuz kartın hepsinde dolu.
+
+FounderOS o satırı okur, temiz bir liste çıkarır ve servise verir. Kural üç satır:
+- Açıklama cümleleri alınmaz. Kartta "şehir adıyla", "erişilemedi", "doğrulanmadı" gibi notlar var; onlar kelime değil.
+- Birbirini içeren kelimelerden biri alınır. "Gülüş tasarımı" varken "dijital gülüş tasarımı" ayrı bir arama hak etmiyor, aynı reklamları getiriyor.
+- İlk beşi alınır, kartta yazdığı sırayla. Sıra kartta güçlüden zayıfa yazılı: nişin kendi adı, sonra en çok reklam edilen hizmetler.
+
+Diş kliniğinde servise giden beş arama şu oluyor: "diş kliniği Bursa", "implant fiyatları Bursa", "gülüş tasarımı Bursa", "ortodonti Bursa", "şeffaf plak tedavisi Bursa". Klima servisinde: "klima bakımı", "klima montajı", "klima gaz dolumu", "kombi bakımı", "kombi arıza". Şehir her aramanın içine giriyor, ilçe girmiyor: reklam metni ilçe adı geçirmiyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
 2. Servis "çalışıyor" der. FounderOS iş kimliğini hemen İş Beyni'ne yazar ve sana tek cümle söyler: "Çekim başladı, birkaç dakika sürer." Sonucu yirmi saniyede bir sorar, en fazla on kez; on sorguda bitmediyse başka işe geçer ve daha sonra yalnız sonucu sorar, çekimi yeniden başlatmaz. Çekim sunucuda sürdüğü için ekranı kapatsan da bozulmaz.
 3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı reklam veriyor, kaçı yalnız reklamdan bilindi, kaçı hangi sebeple işaretli. Sen "tamam" deyince listeyi klasöre kendi aracıyla indirir (aday-listesi-dosyasi); satırlar sohbete dökülmez, çift kayıt olmaz.
 4. Ay başında bu çekim ilk çekimdir; genişletme ve aylık yenileme aynı yoldan yürür, hepsi aylık tavanın içinde.
