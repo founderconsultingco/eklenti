@@ -256,7 +256,7 @@ Niş kartının Sahadan dolacak bölümüne: bu nişte işe yarayan geri çağı
 
 - İYS sonucu gelmediyse: gönderim başlamaz, liste bekler, müşteriye yazılı bildirilir. [21/28] gün müşterinin verdiği günden başlar.
 - Müşteri İYS'ye kayıtlı değilse ya da kaydını bilmiyorsa: muhasebecisine sorar, cevabı yazılı getirir. Yedinci güne kadar cevap gelmezse bu parça ilk turda kapsam dışıdır ve güvencenin sonucuna sayılmaz.
-- İYS sonucu boş geldiyse (hiç izinli numara yok): bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Bu ihtimali kurulum görüşmesinin ikinci maddesinde, güvencenin şartını söylerken zaten söyledin; söylemediysen bugün söylenir.
+- İYS sonucu boş geldiyse (hiç izinli numara yok): bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz. Bu ihtimali kurulum görüşmesinin ikinci maddesinde, güvencenin şartını söylerken zaten söyledin; söylemediysen bugün söylenir.
 - İzinli liste elliden azsa: tek parti, tek gönderim, konuşmaları elle okursun. Oran hesaplanmaz, rapora sayı yazılır.
 - Şablon onayı gelmediyse: gönderim bekler. Başka kanaldan yazılmaz.
 - Numaranın notu kırmızıya düşerse: gönderim durur, metin sadeleşir, not yeşile dönünce elli kişilik yeni parti denenir.

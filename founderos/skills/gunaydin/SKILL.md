@@ -37,7 +37,7 @@ Sırayla:
 
 `https://founderos.so/lisans?anahtar=ANAHTAR&gun=GUN&asama=ASAMA` (GUN: gün sayacı; ASAMA: İş Beyni'nin on dördüncü bölümündeki bulunulan aşama, 1'den 5'e. İkisi de sadece sayı; başka hiçbir şey gönderilmez)
 
-Cevap `"gecerli": true` ise hiçbir şey söylemeden devam edersin. Cevap `"gecerli": false` ise gün açılmaz; şunu söylersin ve durursun: "Lisansın görünmüyor. destek@founderos.so adresine yaz, aynı gün bakarız." Adres hiç cevap vermezse ya da sunucu hatası dönerse devam edersin, hiçbir şey söylemezsin, ertesi sabah bir daha bakarsın.
+Cevap `"gecerli": true` ise hiçbir şey söylemeden devam edersin. Cevap `"gecerli": false` ise gün açılmaz; şunu söylersin ve durursun: "Lisansın görünmüyor. destek@founderos.so adresine yaz, aynı gün bakarız." Cevabın gövdesinde `gecerli` alanı hiç yoksa (sunucu hatası, 503, boş cevap, adres açılmadı) devam edersin, hiçbir şey söylemezsin, ertesi sabah bir daha bakarsın. Sadece açıkça `false` geldiğinde durulur.
 
 **Anahtar dosyadaysa bir daha sorulmaz.** Anahtar `FOS-` ile başlayan satırdır ve İş Beyni'nin birinci bölümünde durur. Dosyayı zaten okuyorsun; anahtarı oradan alırsın. Öğrenciye anahtarı sormazsın, doğrulatmazsın, "şu anahtar doğru mu" diye teyit ettirmezsin, ekranda göstermezsin. Her sabah tekrarlanan bu soru öğrenciye sistemin kendisini hatırlamadığını düşündürüyor.
 
@@ -47,7 +47,7 @@ Doğrulamayı ekranda anlatmazsın. Öğrenci teknik bir işlem görmez.
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.56.0
+Bu paketin sürümü: 0.57.0
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse bunu **günün sonunda**, akşam kapanışından sonra söylersin; sabah söylemezsin, çünkü güncelleme günün işini değiştirmiyor ve sabahın ilk cümlesi bir bakım işi olmaz.
 

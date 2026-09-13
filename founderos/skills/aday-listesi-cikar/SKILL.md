@@ -12,7 +12,11 @@ description: "Üçüncü gün ve her ay. Beş yüz kişilik soğuk aday listesi 
 
 Bu modül üç şey çıkarıyor: beş yüz kişilik aday listesi, içinden seçilen en çok istenen yüz işletme ve her sabah kendiliğinden hazırlanan günün saha listesi. Aday, henüz müşterin olmayan ama olabilecek işletmedir.
 
-Neden beş yüz: her işletmeye ilk temas ve üç takip gidiyor, günde yüz temasla beş yüz işletme doksan günü ancak dolduruyor. Liste beş yüzün altındaysa üçüncü haftada arayacak kimsen kalmıyor.
+**Neden beş yüz: bir aylık liste, doksan günlük değil.** Matematiği açık yazıyorum, çünkü bu sayı yanlış anlaşılınca üçüncü haftada arayacak kimse kalmıyor. Yazılı yolda bir adaya dört dokunuş gidiyor (ilk mesaj artı üç takip): 500 × 4 = 2.000 temas, günde yüz temasla yirmi iş günü. Telefon yolunda bir adaya ortalama bir buçuk dokunuş düşüyor, çünkü açmayan adayın satırı üçüncü denemede kapanıyor: 500 × 1,5 = 750 arama, günde yetmiş aramayla on bir iş günü.
+
+Yani beş yüz bir ayın listesidir ve **liste her ay yenilenir**. Doksan gün için gereken toplam: yazılı yolda yaklaşık bin beş yüz, telefon yolunda yaklaşık dört bin iki yüz aday. Bu sayı bir kerede çekilmiyor, ayın ilk iş gününde bir ilçe daha açılarak dolduruluyor; telefon yolunda ayda üç ilçe, yazılı yolda bir.
+
+Liste beş yüzün altına düşerse ay dolmadan biter. Stok uyarısı bunun için var: dokunulmamış aday sayısı günlük temposuna bölünüp beş günün altına inince yeni ilçe kendiliğinden çekilir.
 
 Neden bugün: bir sonraki blokta kanıtını hazırlıyorsun ve mesajlarını yazıyorsun, iki blok sonra sahaya çıkıyorsun. O bloğun deneme aramaları bu listeden yapılıyor.
 

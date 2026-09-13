@@ -246,7 +246,7 @@ Birinci ve on birinci sorunun cevabından çıkar, ayrıca sorulmaz.
 
 Bu sayı pazarlık konusu değil. Sayıyı düşürürsen plandaki bütün tarihler kayar ve bunu üç hafta sonra fark edersin.
 
-Tek istisna var ve yalnız işin yanında çalışan için: ilk müşterinin bütün teslim süresinde (sıfırıncı günden rapor gününe) günlük hedef kırktan yirmiye iner, çünkü teslimat akşamlardan çıkıyor. Tam zamanlıda hedef düşmez.
+Tek istisna teslimat: bir müşterinin bütün teslim süresinde (sıfırıncı günden rapor gününe) günlük hedef iner, çünkü teslimat günde iki buçuk saat alıyor ve o saat sahadan çıkıyor. Tam zamanlıda yüzden altmışa, işin yanında kırktan yirmiye. Bu ilk müşteriye özel değil, her teslimatta geçerli.
 
 ### Hazırlık seviyesi
 

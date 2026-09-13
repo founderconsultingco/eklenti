@@ -53,7 +53,7 @@ CRM'den (adayların ve müşterilerin kaydedildiği takip programı): son otuz g
 Sözleşmeden: işi bitirme, iade ve haber verme maddeleri. FounderOS sözleşmeyi yorumlamaz, sadece hangi maddeye bakacağını söyler.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): o sektörde konuşulması yasak olan konular.
 
-Güvence şudur: rapor gününde rapor, yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Şartı var, o da onay belgesinde yazılı.
+Güvence şudur: rapor gününde rapor, sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz. Şartı var, o da onay belgesinde yazılı.
 
 ## 4. Ne sorar
 
@@ -225,7 +225,7 @@ Rapor görüşmesinin beş adımlık sırası aylik-raporu-hazirla'da ve aynen u
 
 Bu modülün eklediği tek şey ücret cümlesidir ve onu sen söylersin, müşteri hatırlatmadan:
 
-"Yazılan satırların hepsi sıfır. İkinci ay ücretini almıyorum."
+"Sistemin yazdığı randevu sıfır. İkinci ay ücretini almıyorum."
 
 Dikkat edilecek ayrım: kurulamayan bir parçanın satırı boş kalır ve sayılmaz. Boş satır güvenceyi tetiklemez. Güvenceyi tetikleyen şey, yazılan satırların hepsinin sıfır olmasıdır. Kapsam dışı kaldığı için tutmayan bir parça yüzünden ücretten vazgeçmezsin; o durumda ödeme normal çekilir ve sen bunu görüşmede açıkça söylersin.
 
@@ -398,7 +398,7 @@ Sıradaki: kriz kapandıysa haftalık bakım (sistemi-kontrol-et) ve aylık düz
 - Müşteri kızgın aradı: o gün rakamlar yazıyla gönderilir, gönderilmediyse akşam bloğunda sorulur.
 - Ödeme geçmedi: dört adımlı sıra başlar.
 - İki mesaja cevap gelmedi ve tahsilat yaklaşıyor: önce konuşma, sonra tahsilat.
-- Rapor günü raporunda yazılan satırların hepsi sıfır: görüşme telefonla değil, yüz yüze ya da görüntülü yapılır.
+- Rapor günü raporunda sistemin yazdığı randevu sıfır: görüşme telefonla değil, yüz yüze ya da görüntülü yapılır.
 - Bir müşteride açık kriz var ve üç gündür ondan hiç söz etmedin: sorulur.
 
 Beş kural: boş sayfa yok (kriz anında kuracağın cümle hazır gelir) · sessiz bitiş yok (her zor konuşma bir kayıtla ve tarihli bir sözle biter) · onay (müşteriye giden her mesaj senin elinden çıkar) · sahadan güncelleme (krizde işe yarayan cümle niş kartına yazılır) · sormaz söyler (hangi konuşmanın yapılacağını FounderOS söyler).

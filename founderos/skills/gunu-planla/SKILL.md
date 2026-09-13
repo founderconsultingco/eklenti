@@ -87,7 +87,7 @@ Akşam bloğunun içi de sabittir: kayıt kontrolü, günün sayılarının okun
 
 ### Teslimat ve çalışma düzeni
 
-Tam zamanlı çalışıyorsan ilk müşterinin teslimi günlük temas hedefini düşürmez. Teslim işi akşam bloğuna ve kurulum bloğuna sığıyor, saha bloğuna taşınmıyor.
+**Teslimat süresince günlük temas hedefi düşer, ikisinde de.** Tam zamanlıda yüzden altmışa, işin yanında kırktan yirmiye. Eskiden tam zamanlıda "hedef düşmez, teslim akşam bloğuna sığar" yazıyordu ve bu yanlıştı: teslimat elli saat, akşam bloğu yirmi bir günde otuz bir saat ve o otuz bir saat zaten kayıt, sayım, analiz ve provayla dolu. Aradaki fark sessizce saha bloğundan kapanıyordu; öğrenci sebebini bilmeden sayı tutturamıyordu. Şimdi açık: günde iki buçuk saat teslimata gidiyor ve o saat saha bloğunun içinden çıkıyor. Teslim bitip rapor günü geldiğinde hedef kendiliğinden geri yükseliyor.
 
 İşin yanında çalışıyorsan hedef sadece kurulum haftasında değil, ilk müşterinin **bütün teslim süresinde** yarıya iniyor: sıfırıncı günden rapor gününe kadar, her gün. Kırk temas o dönemde yirmi oluyor. Bir gün daha aynı şekilde yarılanıyor, o da şirket kuruluş günü.
 

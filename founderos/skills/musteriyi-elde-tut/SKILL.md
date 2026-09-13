@@ -202,7 +202,7 @@ Bir şey daha: tahsilat konuşmasının içinde itirazla uğraşmazsın. İtiraz
 
 ### Ücretsiz ay bitiyorsa
 
-Rapor günü raporunda yazılan satırların hepsi sıfır çıktıysa ikinci ay ücreti alınmamıştı. O ay açık uçlu değildir.
+Rapor günü raporunda sistemin yazdığı randevu sıfır çıktıysa ikinci ay ücreti alınmamıştı. O ay açık uçlu değildir.
 
 Ayın son haftasında bir görüşme yaparsın ve üç yoldan biri seçilir:
 1. Kapsamı daraltıp devam. Kademe 2'den Kademe 1'e inilir, rakam fiyati-belirle'nin aralığından okunur. Parça çıkarıp yeni ücret uydurulmaz.

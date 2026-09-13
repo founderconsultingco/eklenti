@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.33.0
+Aracın sürümü: 0.34.0
 
 ## `adaylar-arac.py` (birebir)
 
@@ -60,7 +60,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.33.0"
+SURUM = "0.34.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -165,37 +165,127 @@ def telefon_normalize(t):
 
 # ---------- dosya ----------
 
+def _metni_oku(p):
+    """Dosyayi kodlamasi ne olursa olsun metne cevirir.
+    Ogrenci csv'yi Excel'de acip kaydederse dosya Turkce Windows'ta cp1254
+    oluyor ve utf-8 okuma coker. Coken arac gunu durduruyor; o yuzden sirayla
+    denenir ve son care hatali baytlar atlanir."""
+    ham = p.read_bytes()
+    for kod in ("utf-8-sig", "utf-8", "cp1254", "latin-1"):
+        try:
+            return ham.decode(kod), kod
+        except UnicodeDecodeError:
+            continue
+    return ham.decode("utf-8", "replace"), "bozuk"
+
+
+def uyar(m):
+    print("UYARI: " + m)
+
+
 def yukle():
     p = KLASOR / "adaylar.csv"
     if not p.exists():
         return []
-    with io.open(p, encoding="utf-8-sig", newline="") as f:
-        okuyucu = csv.DictReader(f)
-        bilinmeyen = [b for b in (okuyucu.fieldnames or []) if b and b not in SUTUNLAR]
-        if bilinmeyen:
-            hata("adaylar.csv'de tanınmayan sütun var: %s. Sütunlar aday-listesi-dosyasi'nda sabittir." % ", ".join(bilinmeyen))
-        # Eksik sutun hata degil: eski dosya yeni sutunlarla acilir, bos gelir
-        # ve ilk kayitta dosyaya yazilir.
-        satirlar = []
-        for s in okuyucu:
-            satirlar.append({k: (s.get(k) or "").strip() for k in SUTUNLAR})
+    metin, kodlama = _metni_oku(p)
+    # Excel Turkce yerelde noktali virgulle kaydediyor. Basligi ayirici icin
+    # ornekleyip dogru ayiriciyi seciyoruz.
+    ilk = metin.split("\n", 1)[0]
+    ayirici = ";" if ilk.count(";") > ilk.count(",") else ","
+    okuyucu = csv.DictReader(io.StringIO(metin), delimiter=ayirici)
+    basliklar = [b for b in (okuyucu.fieldnames or []) if b]
+    bilinmeyen = [b for b in basliklar if b not in SUTUNLAR]
+    if bilinmeyen:
+        # Eskiden burada duruyorduk ve o gun hicbir komut calismiyordu. Artik
+        # tanimadigimiz sutun yok sayilir; kendi sutunlarimizin hicbiri kaybolmaz.
+        uyar("adaylar.csv'de tanınmayan sütun var, yok sayıldı: %s" % ", ".join(bilinmeyen))
+    if basliklar and not any(b in SUTUNLAR for b in basliklar):
+        hata("adaylar.csv okunamadı: başlık satırı tanınmıyor. Dosya başka bir programda değiştirilmiş olabilir; "
+             ".founderos/yedek klasöründeki son kopyayı geri al.")
+    # Eksik sutun hata degil: eski dosya yeni sutunlarla acilir, bos gelir
+    # ve ilk kayitta dosyaya yazilir.
+    satirlar = []
+    for s in okuyucu:
+        satirlar.append({k: (s.get(k) or "").strip() for k in SUTUNLAR})
+    if kodlama not in ("utf-8-sig", "utf-8") or ayirici == ";":
+        uyar("adaylar.csv başka bir programda kaydedilmiş görünüyor (%s, ayırıcı '%s'); düzeltilmiş hâliyle yeniden yazılacak."
+             % (kodlama, ayirici))
     return satirlar
+
+
+def _kilit_al(bekle=10):
+    """Ayni klasorde iki komut ayni anda yazarsa biri otekinin yazdigini siliyor.
+    Basit kilit: dosya varsa bekle, on saniyede acilmazsa devam et (kilit dosyasi
+    bir cokmeden kalmis olabilir, gunun durmasindan iyidir)."""
+    k = calisma() / "kilit"
+    for _ in range(int(bekle * 10)):
+        try:
+            fd = os.open(str(k), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            os.close(fd)
+            return k
+        except FileExistsError:
+            try:
+                if datetime.datetime.now().timestamp() - k.stat().st_mtime > 60:
+                    k.unlink()
+                    continue
+            except OSError:
+                pass
+            import time as _t
+            _t.sleep(0.1)
+    return None
+
+
+def _kilit_birak(k):
+    if k:
+        try:
+            k.unlink()
+        except OSError:
+            pass
 
 
 def kaydet(satirlar, sayfa_da=True):
     p = KLASOR / "adaylar.csv"
+    kilit = _kilit_al()
+    try:
+        _kaydet_gercek(p, satirlar, sayfa_da)
+    finally:
+        _kilit_birak(kilit)
+
+
+def _kaydet_gercek(p, satirlar, sayfa_da):
     yedek = calisma() / "yedek"
     yedek.mkdir(parents=True, exist_ok=True)
     if p.exists():
-        shutil.copyfile(p, yedek / ("adaylar-" + datetime.datetime.now(IST).strftime("%Y%m%d-%H%M%S") + ".csv"))
+        # Yedek yalnizca icerik degisiyorsa alinir. Eskiden yazmayan komutlar da
+        # yedek uretiyordu ve on komutluk bir oturum butun iyi kopyalari siliyordu.
+        simdi = datetime.datetime.now(IST)
         eskiler = sorted(yedek.glob("adaylar-*.csv"))
-        for e in eskiler[:-10]:
+        son = eskiler[-1] if eskiler else None
+        ayni = False
+        try:
+            ayni = bool(son) and son.read_bytes() == p.read_bytes()
+        except OSError:
+            ayni = False
+        if not ayni:
+            shutil.copyfile(p, yedek / ("adaylar-" + simdi.strftime("%Y%m%d-%H%M%S") + ".csv"))
+        # Gunun ilk kopyasi ayri saklanir ve silinmez: otuz gun geri donulebilir.
+        gunluk = yedek / ("gun-" + simdi.strftime("%Y%m%d") + ".csv")
+        if not gunluk.exists():
+            shutil.copyfile(p, gunluk)
+        for e in sorted(yedek.glob("adaylar-*.csv"))[:-30]:
+            try:
+                e.unlink()
+            except OSError:
+                pass
+        for e in sorted(yedek.glob("gun-*.csv"))[:-30]:
             try:
                 e.unlink()
             except OSError:
                 pass
     gecici = p.with_suffix(".csv.tmp")
-    with io.open(gecici, "w", encoding="utf-8", newline="") as f:
+    # utf-8-sig: BOM'suz yazilan dosyayi Turkce Windows'ta Excel bozuk gosteriyor
+    # ve ogrenci kaydedince dosya cp1254'e donuyordu.
+    with io.open(gecici, "w", encoding="utf-8-sig", newline="") as f:
         y = csv.DictWriter(f, SUTUNLAR, lineterminator="\n")
         y.writeheader()
         for s in satirlar:
@@ -215,13 +305,33 @@ def nis_oku():
     return {}
 
 
+def _csv_metni(satirlar):
+    """Satirlari temiz csv metnine cevirir. Sayfa uretimi bozuk dosyada da calissin diye."""
+    c = io.StringIO()
+    y = csv.DictWriter(c, SUTUNLAR, lineterminator="\n")
+    y.writeheader()
+    for s in satirlar:
+        y.writerow({k: s.get(k, "") for k in SUTUNLAR})
+    return c.getvalue()
+
+
 def sayfa_uret(satirlar=None):
     sablon = Path(__file__).resolve().parent / "adaylar-sablon.html"
     if not sablon.exists():
         print("UYARI: sayfa şablonu bulunamadı (%s); sayfa yenilenmedi." % sablon)
         return
     p = KLASOR / "adaylar.csv"
-    ham = io.open(p, encoding="utf-8-sig").read() if p.exists() else ""
+    # Kodlama ve ayirici bozuk olabilir (Excel). Sayfa da bu yuzden cokmesin:
+    # satirlar yukle() ile okunup temiz csv'ye cevriliyor.
+    ham = ""
+    if p.exists():
+        try:
+            ham = _metni_oku(p)[0]
+            ilk = ham.split("\n", 1)[0]
+            if ilk.count(";") > ilk.count(","):
+                ham = _csv_metni(yukle())
+        except Exception:
+            ham = _csv_metni(yukle())
     veri = ("window.ADAYLAR=" + json.dumps(ham, ensure_ascii=False) +
             ";window.ADAYLAR_TARIH=" + json.dumps(simdi_metin()) +
             ";window.ADAYLAR_NIS=" + json.dumps(nis_oku(), ensure_ascii=False) + ";")
@@ -615,101 +725,108 @@ def kmt_sonuclar(a):
     islenen, bulunamayan, anlasilmayan = [], [], []
     dokum = {}
     for satir in metin.splitlines():
-        satir = satir.strip()
-        if not satir or satir.lower().startswith("founderos"):
-            continue
-        parca = [x.strip() for x in satir.split("|")]
-        if len(parca) < 3:
-            anlasilmayan.append(satir)
-            continue
-        ad, kanal, sonuc = parca[0], kucult(parca[1]), kucult(parca[2])
-        kod = SONUC_KELIME.get(sonuc)
-        if kanal == "eposta":
-            kanal = "e-posta"
-        if not kod or kanal not in KANALLAR:
-            anlasilmayan.append(satir)
-            continue
-        ek = {}
-        for x in parca[3:]:
-            if ":" in x:
-                k, v = x.split(":", 1)
-                ek[kucult(k)] = v.strip()
         try:
-            s = satir_bul(satirlar, ad)
-        except SystemExit:
-            bulunamayan.append(ad)
-            continue
-        notu = ek.get("not", "")
-        if kod == "acmadi":
-            # Telefon uc ayri gunde acilmazsa hat kapanir ve sira yaziya gecer.
-            # Once sonsuza kadar "tekrar ara" yaziyordu, aday hic kapanmiyordu.
-            if kanal == "telefon":
-                n_ac = int(s["acmadi_sayisi"] or 0) + 1
-                s["acmadi_sayisi"] = str(n_ac)
-                if n_ac >= 3:
-                    if s["eposta"]:
-                        temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), telefon kapandı", "kapandı",
-                                     None, "e-posta, ilk mesaj", "+1", None, notu)
-                    elif s["instagram"]:
-                        temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), telefon kapandı", "kapandı",
-                                     None, "instagram, ilk mesaj", "+1", None, notu)
-                    else:
-                        temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), başka kanal yok", "kapandı",
-                                     "sonra", "doksan gün sonra yeniden bak", "+90", None, notu)
-                    islenen.append(ozet_satir(s))
-                    dokum[kod] = dokum.get(kod, 0) + 1
+            satir = satir.strip()
+            if not satir or satir.lower().startswith("founderos"):
+                continue
+            parca = [x.strip() for x in satir.split("|")]
+            if len(parca) < 3:
+                anlasilmayan.append(satir)
+                continue
+            ad, kanal, sonuc = parca[0], kucult(parca[1]), kucult(parca[2])
+            kod = SONUC_KELIME.get(sonuc)
+            if kanal == "eposta":
+                kanal = "e-posta"
+            if not kod or kanal not in KANALLAR:
+                anlasilmayan.append(satir)
+                continue
+            ek = {}
+            for x in parca[3:]:
+                if ":" in x:
+                    k, v = x.split(":", 1)
+                    ek[kucult(k)] = v.strip()
+            try:
+                s = satir_bul(satirlar, ad)
+            except SystemExit:
+                bulunamayan.append(ad)
+                continue
+            notu = ek.get("not", "")
+            if kod == "acmadi":
+                # Telefon uc ayri gunde acilmazsa hat kapanir ve sira yaziya gecer.
+                # Once sonsuza kadar "tekrar ara" yaziyordu, aday hic kapanmiyordu.
+                if kanal == "telefon":
+                    n_ac = int(s["acmadi_sayisi"] or 0) + 1
+                    s["acmadi_sayisi"] = str(n_ac)
+                    if n_ac >= 3:
+                        if s["eposta"]:
+                            temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), telefon kapandı", "kapandı",
+                                         None, "e-posta, ilk mesaj", "+1", None, notu)
+                        elif s["instagram"]:
+                            temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), telefon kapandı", "kapandı",
+                                         None, "instagram, ilk mesaj", "+1", None, notu)
+                        else:
+                            temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), başka kanal yok", "kapandı",
+                                         "sonra", "doksan gün sonra yeniden bak", "+90", None, notu)
+                        islenen.append(ozet_satir(s))
+                        dokum[kod] = dokum.get(kod, 0) + 1
+                        continue
+                temas_uygula(satirlar, s, kanal, "açmadı", "yapıldı", None, kanal + ", tekrar ara", "+1", None, notu)
+            elif kod == "gonderdim":
+                # Zincir adimi burada elle artiyor, cunku tarih verildigi icin
+                # temas_uygula'nin zincir blogu calismiyor.
+                zincir_sifirla_gerekirse(s, kanal)
+                adim = int(s["zincir_adimi"] or 0) + 1
+                s["zincir_adimi"] = str(adim)
+                g = video_gunu(adim) if kanal == "video" else takip_gunu(s, adim)
+                if g:
+                    onek = "" if kanal == "video" else "%s, " % kanal
+                    temas_uygula(satirlar, s, kanal, "gönderildi", "yapıldı", None, onek + g[1], "+%d" % g[0], None, notu)
+                else:
+                    temas_uygula(satirlar, s, kanal, "gönderildi, zincir bitti", "yapıldı", "sonra", "", "+90", None, notu)
+            elif kod == "istemedi":
+                temas_uygula(satirlar, s, kanal, "istemedi", "kapandı", "kapandı", "", "", None, notu)
+            elif kod == "ilgilendi":
+                temas_uygula(satirlar, s, kanal, "ilgilendi", "cevap geldi", "cevap verdi", kanal + ", 3. gün takibi", "+3", None, notu)
+            elif kod == "randevu":
+                r = ek.get("randevu", "")
+                if not r:
+                    anlasilmayan.append(satir + "  (randevu tarihi yok)")
                     continue
-            temas_uygula(satirlar, s, kanal, "açmadı", "yapıldı", None, kanal + ", tekrar ara", "+1", None, notu)
-        elif kod == "gonderdim":
-            # Zincir adimi burada elle artiyor, cunku tarih verildigi icin
-            # temas_uygula'nin zincir blogu calismiyor.
-            zincir_sifirla_gerekirse(s, kanal)
-            adim = int(s["zincir_adimi"] or 0) + 1
-            s["zincir_adimi"] = str(adim)
-            g = video_gunu(adim) if kanal == "video" else takip_gunu(s, adim)
-            if g:
-                onek = "" if kanal == "video" else "%s, " % kanal
-                temas_uygula(satirlar, s, kanal, "gönderildi", "yapıldı", None, onek + g[1], "+%d" % g[0], None, notu)
-            else:
-                temas_uygula(satirlar, s, kanal, "gönderildi, zincir bitti", "yapıldı", "sonra", "", "+90", None, notu)
-        elif kod == "istemedi":
-            temas_uygula(satirlar, s, kanal, "istemedi", "kapandı", "kapandı", "", "", None, notu)
-        elif kod == "ilgilendi":
-            temas_uygula(satirlar, s, kanal, "ilgilendi", "cevap geldi", "cevap verdi", kanal + ", 3. gün takibi", "+3", None, notu)
-        elif kod == "randevu":
-            r = ek.get("randevu", "")
-            if not r:
-                anlasilmayan.append(satir + "  (randevu tarihi yok)")
-                continue
-            temas_uygula(satirlar, s, kanal, "randevu alındı", "cevap geldi", "randevu", "randevu hazırlığı", r[:10], r, notu)
-        elif kod == "izlendi":
-            # Loom bildirimi. Temas sayilmaz, cunku yeni bir sey gondermedin;
-            # sadece adayin videoyu actigi yaziliyor ve arama one aliniyor.
-            if kanal != "video":
-                anlasilmayan.append(satir + "  (izlendi yalnız video kanalında)")
-                continue
-            s["video_durumu"] = "izlendi"
-            s["siradaki_hareket"] = "telefon, videoyu açmış, ara"
-            s["siradaki_tarih"] = tarih_coz("+1", "sıradaki tarih")
-            if notu:
-                s["not"] = ((s["not"] + " | ") if s["not"] else "") + notu
-        elif kod == "sonra":
-            t = ek.get("tarih", "+7")
-            temas_uygula(satirlar, s, kanal, "sonra ara dedi", "yapıldı", "sonra", kanal + ", tekrar ara", t, None, notu)
-        elif kod == "cevap":
-            # Gelen cevabin kendisi kaydediliyor: yaniti FounderOS bundan yaziyor
-            # ve hangi dal oldugu sayilabiliyor. Cevap gelen aday ayni gun donulur.
-            metin = ek.get("metin") or ek.get("cevap") or ""
-            dal = kucult(ek.get("dal", ""))
-            if dal and dal not in CEVAP_DALLARI:
-                dal = ""
-            s["son_cevap"] = metin[:500]
-            if dal:
-                s["cevap_dali"] = dal
-            temas_uygula(satirlar, s, kanal, "cevap geldi" + (" (%s)" % dal if dal else ""),
-                         "cevap geldi", "cevap verdi", kanal + ", yanıt yaz", bugun().isoformat(), None, notu)
-        islenen.append(ozet_satir(s))
-        dokum[kod] = dokum.get(kod, 0) + 1
+                temas_uygula(satirlar, s, kanal, "randevu alındı", "cevap geldi", "randevu", "randevu hazırlığı", r[:10], r, notu)
+            elif kod == "izlendi":
+                # Loom bildirimi. Temas sayilmaz, cunku yeni bir sey gondermedin;
+                # sadece adayin videoyu actigi yaziliyor ve arama one aliniyor.
+                if kanal != "video":
+                    anlasilmayan.append(satir + "  (izlendi yalnız video kanalında)")
+                    continue
+                s["video_durumu"] = "izlendi"
+                s["siradaki_hareket"] = "telefon, videoyu açmış, ara"
+                s["siradaki_tarih"] = tarih_coz("+1", "sıradaki tarih")
+                if notu:
+                    s["not"] = ((s["not"] + " | ") if s["not"] else "") + notu
+            elif kod == "sonra":
+                t = ek.get("tarih", "+7")
+                temas_uygula(satirlar, s, kanal, "sonra ara dedi", "yapıldı", "sonra", kanal + ", tekrar ara", t, None, notu)
+            elif kod == "cevap":
+                # Gelen cevabin kendisi kaydediliyor: yaniti FounderOS bundan yaziyor
+                # ve hangi dal oldugu sayilabiliyor. Cevap gelen aday ayni gun donulur.
+                metin = ek.get("metin") or ek.get("cevap") or ""
+                dal = kucult(ek.get("dal", ""))
+                if dal and dal not in CEVAP_DALLARI:
+                    dal = ""
+                s["son_cevap"] = metin[:500]
+                if dal:
+                    s["cevap_dali"] = dal
+                temas_uygula(satirlar, s, kanal, "cevap geldi" + (" (%s)" % dal if dal else ""),
+                             "cevap geldi", "cevap verdi", kanal + ", yanıt yaz", bugun().isoformat(), None, notu)
+            islenen.append(ozet_satir(s))
+            dokum[kod] = dokum.get(kod, 0) + 1
+        except SystemExit:
+            # Tek bozuk satir butun gunu cope atmasin: o satir "anlasilmayan"
+            # listesine gider, kalanlar islenir ve dosya yine kaydedilir.
+            anlasilmayan.append(satir + "  (işlenemedi)")
+        except Exception as e:
+            anlasilmayan.append(satir + ("  (işlenemedi: %s)" % e))
     kaydet(satirlar)
     print("işlenen %d, bulunamayan %d, anlaşılmayan %d" % (len(islenen), len(bulunamayan), len(anlasilmayan)))
     n = nis_oku()

@@ -132,12 +132,13 @@ Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı ner
 
 ### Üçüncü eleme: pazar büyüklüğü
 
-Üçüncü blokta 500 kişilik bir aday listesi çıkaracaksın. Her işletmeye ilk temas ve üç takip gidiyor; beş yüz işletme doksan günü ancak dolduruyor. Liste dolmazsa üçüncü haftada arayacak kimsen kalmıyor.
+Üçüncü blokta 500 kişilik bir aday listesi çıkaracaksın ve o liste bir ay gidiyor, doksan gün değil. Doksan gün için gereken toplam havuz ana kanala göre değişiyor, çünkü telefonda bir aday bir buçuk dokunuşta tükeniyor, yazıda dört dokunuşta.
 
-Eşik buradan çıkıyor:
-- Şehrinde 500 işletme varsa niş geçer.
-- Yoksa aynı niş Türkiye geneline açılır. Hizmet uzaktan teslim ediliyor, niş değişmiyor, sadece coğrafya büyüyor. Bu durumda "sizin şehirde" cümlesi mesajlardan çıkar ve kanıt cümlesi ülke geneline döner.
-- Türkiye genelinde de 2.000 işletme yoksa niş düşer.
+Eşik buradan çıkıyor ve ana kanala bağlı:
+- **Ana kanal telefonsa:** şehrinde en az 1.500 işletme olacak. Doksan günün ihtiyacı dört bin iki yüz; şehirde bin beş yüz varsa kalanı komşu ilçe ve illerle tamamlanıyor ve bu ayda bir yapılan normal iş. Bin beş yüzün altında şehir tek başına ikinci ayı taşımıyor.
+- **Ana kanal yazılıysa:** şehrinde en az 600 işletme olacak. Doksan günün ihtiyacı bin beş yüz, aylık yenileme bunu karşılıyor.
+- Eşik tutmuyorsa aynı niş önce komşu illere, sonra Türkiye geneline açılır. Hizmet uzaktan teslim ediliyor, niş değişmiyor, sadece coğrafya büyüyor. Bu durumda "sizin şehirde" cümlesi mesajlardan çıkar ve kanıt cümlesi ülke geneline döner.
+- Türkiye genelinde de telefon yolunda 5.000, yazılı yolda 2.000 işletme yoksa niş düşer.
 
 ### Dördüncü eleme: kanal
 

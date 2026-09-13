@@ -59,9 +59,11 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 
 6.1. Hizmet Veren, kurulum döneminin son gününde ([21/28]. gün) Müşteri'ye raporu verir.
 
-6.2. Raporda Ek-2'de sayılan sayıların tamamının sıfır olması halinde Hizmet Veren, izleyen ay için aylık ücret talep etmez. Ücretsiz geçen o ayda sistem kurulu kalır ve çalışmaya devam eder; Hizmet Veren'in o ay için ek bir geliştirme ya da yeni parça kurma yükümlülüğü doğmaz.
+6.2. Raporda Ek-2'de sayılan "sistemin yazdığı randevu" sayısının sıfır olması halinde Hizmet Veren, izleyen ay için aylık ücret talep etmez. (Müşteri yolculuğu teklif üzerine kurulu işlerde bu sayı "sistemin takip ettiği teklif" sayısıdır; hangisinin geçerli olduğu Ek-1'de yazılıdır.) Ücretsiz geçen o ayda sistem kurulu kalır ve çalışmaya devam eder; Hizmet Veren'in o ay için ek bir geliştirme ya da yeni parça kurma yükümlülüğü doğmaz.
 
 6.3. Bu güvence, Müşteri'nin 5.1, 5.2 ve 5.3'teki yükümlülüklerini süresinde yerine getirmiş olması şartına bağlıdır. Bir parça mevzuat nedeniyle ya da Müşteri'nin kendi adımını atmaması nedeniyle hiç kurulamazsa, o parçaya ait satır Ek-2'deki sayıma dahil edilmez.
+
+6.3.1. Kurulamayan her parça için aylık ücret, o parçanın kurulmadığı her ay için yüzde yirmi oranında indirilir. İndirim en çok aylık ücretin yüzde altmışı kadar uygulanır. Parça kurulduğu ayı izleyen aydan itibaren aylık ücret tam olarak uygulanır. Bu indirim, Müşteri'nin kendi adımını atmaması nedeniyle kurulamayan parçalar için uygulanmaz.
 
 6.4. Hizmet Veren, belirli bir müşteri sayısı, ciro ya da randevu sayısı taahhüt etmez. Bu sözleşme bir sonuç taahhüdü içermez; Hizmet Veren'in yükümlülüğü sistemin kurulması ve yürütülmesidir.
 

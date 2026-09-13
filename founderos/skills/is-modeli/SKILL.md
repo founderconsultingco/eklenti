@@ -98,9 +98,13 @@ Bütün işlevler aynı kayıtlar ve aynı satış süreci üstünde çalışır
 
 Rapor günü ve güvence her yerde aynı cümleyle yazılır; sözleşme, onay belgesi, site, görüşme ve rapor bu cümleyi buradan alır. Rapor günü öğrencinin çalışma düzenine göre [21/28]. gündür: tam zamanlıda yirmi bir, işin yanında çalışanda yirmi sekiz; hangisi olduğu İş Beyni'nden okunur ve belgeye o sayı yazılır.
 
-Randevu yolunda: "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz."
+Randevu yolunda: "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz."
 
 Teklif yolunda ikinci sayı değişir: "sistemin takip ettiği teklif sayısı". İkisi birlikte olan nişte ikinci sayı "sistemin yazdığı randevu ve takip ettiği teklif sayısı" olur. Gerisi aynı. Hangi sürümün geçerli olduğunu niş kartının "Müşteri yolculuğu" satırı söyler.
+
+**Şart neden üç sayıya değil tek sayıya bağlı.** Eskiden "yazılan satırların hepsi sıfırsa" yazıyordu ve bu güvence pratikte hiç tetiklenmiyordu: yirmi bir günde tek bir WhatsApp mesajı gelse "sisteme gelen talep" sıfır olmuyor ve şart düşüyordu. Yani müşteriye risk paylaşımı diye anlatılan şey gerçekte müşterinin üstündeydi. Şimdi şart tek sayıya bağlı ve o sayı bizim işimiz: sistemin yazdığı randevu. Gelen talep işletmenin kendi pazarlamasına bağlı, ulaşılan eski müşteri listenin İYS durumuna bağlı; ikisi de bizim elimizde değil. Randevu yazmak bizim elimizde.
+
+**Kapsam dışı kalan parça aylık ücretten düşer.** Bir parça mevzuat yüzünden ya da müşterinin adımını atmaması yüzünden on sekizinci güne kadar kurulamazsa o satır rapordan düşüyordu ama ücretten düşmüyordu. Artık düşüyor: kurulamayan her parça için o ayın aylık ücreti yüzde yirmi iner, parça kurulduğu ay tam ücrete döner. Sebebi dürüstlük: fiyat kaçan aramadan hesaplanıyor, aramayı karşılayan parça kurulmadıysa o fiyatın tamamı istenmez. Bu satır sözleşmede ve onay belgesinde yazılı.
 
 ## Tek sistem, iki müşteri yolculuğu
 

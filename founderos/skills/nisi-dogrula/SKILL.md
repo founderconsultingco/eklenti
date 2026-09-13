@@ -55,8 +55,8 @@ Reklam sütunu "görülemedi" kaldığında o niş yorum sayısına göre puanla
 
 Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 
-1. Bu şehirde en az 500 işletme var mı? Sayım çekimi beş yüze ulaştıysa cevap evet; altında kaldıysa gelen sayı yazılır. Üçüncü blokta 500 kişilik aday listesi çıkacak; her işletmeye ilk temas ve üç takip gittiği için beş yüzün altında liste bir ayı doldurmuyor; listenin her ay yenilendiğini de unutma.
-2. Türkiye'de en az 2.000 işletme var mı? Şehirde 500 çıkmazsa niş Türkiye geneline açılıyor, o zaman bu sayı devreye giriyor. Ülke çapında büyük bir pazar aranmıyor; dört müşteri için 2.000 yeter. Gerekçe tabloya yazılır.
+1. Bu şehirde yeterli işletme var mı? Eşik ana kanala bağlı: telefon nişinde 1.500, yazılı nişinde 600. Sayım çekimi eşiğe ulaştıysa cevap evet; altında kaldıysa gelen sayı yazılır. Sebebi: üçüncü blokta çıkan 500 kişilik liste bir ay gidiyor, doksan günün ihtiyacı telefon yolunda dört bin iki yüz, yazılı yolda bin beş yüz; liste her ay yeni ilçeyle yenileniyor ve şehir bu yenilemeyi taşıyacak kadar derin olmalı.
+2. Türkiye'de yeterli işletme var mı? Eşik yine kanala bağlı: telefonda 5.000, yazılıda 2.000. Şehirde eşik çıkmazsa niş önce komşu illere, sonra Türkiye geneline açılıyor ve bu sayı devreye giriyor. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
 4. Telefonu dolu olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın. Instagram bu sayımda ölçülmüyor, oran yalnız telefonla kurulur.
 5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; aylık ücretin dört katı öğrencinin aylık hedefine ulaşmalı.

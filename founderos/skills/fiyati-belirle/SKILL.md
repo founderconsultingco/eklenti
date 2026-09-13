@@ -71,7 +71,13 @@ Neden saat değil değer: birinin daha iyi olduğu bir işi daha hızlı yapıyo
 
 **Birinci adım, işletmenin aylık kaybını hesapla.** İki rakam kartın kendisinden çıkar, ikisi de senden çıkmaz. Birincisi kayıp birimi: kartın "gerçek fiyatlar ve kapasite" bölümünün son satırında yazıyor. İkincisi aylık kaçan olay sayısı: kartın "sızıntı nerede" bölümünde birinci sızıntının rakamı. İkisini çarparsın. Kartta hangisi yoksa hesap o kalemsiz yapılır ve eksik olduğu yazılır; rakam uydurulmaz.
 
-Kalıp, rakamlar karttan: kartın kayıp biriminin ortası alınır; kartın sızıntı bölümündeki günlük kaçan olay sayısının temkinli alt ucu, ayda yirmi iki iş günüyle çarpılır; çıkan aylık kaçan olay sayısı kayıp birimiyle çarpılır. Bu, o işletmenin bir ayda sadece o sızıntıdan kaybettiği para. Kartta günlük sayı yoksa çarpım yapılmaz, tasarruf formülüne geçilir; o da yoksa "sahadan dolacak" yazılır.
+Kalıp, rakamlar karttan: kartın kayıp biriminin ortası alınır, kartın verdiği **aylık** kaçan olay sayısının temkinli alt ucuyla çarpılır. Bu, o işletmenin bir ayda sadece o sızıntıdan kaybettiği para.
+
+**Sayı aylıktır, günlük değil, ve yirmi iki iş günüyle çarpılmaz.** Bu satır bilerek böyle yazılı: eskiden iki okuma birden duruyordu ve aynı kart aynı nişte yirmi iki kat farklı fiyat üretiyordu. Diş kliniğinde kurulum ya on dört bin ya üç yüz on altı bin lira çıkıyordu. Tek tanım kaldı, aylık.
+
+**Hesap büyük çıkarsa tavan var.** Kartlardaki kayıp birimlerinin çoğu zaten bir dönemin cirosu: "bir boş gün", "bir hafta sonu", "bir ayın işi". Bunları büyük sayılarla çarpınca işletmenin bütün cirosunu aşan rakamlar çıkıyor ve görüşmede söylenen her rakam ters tepiyor. Kural: **aylık kayıp, kartın kapasite bölümünden çıkan aylık cironun yüzde otuzunu geçemez.** Geçiyorsa hesap o tavana oturur ve karta "tavana oturdu" notu düşülür. Sebebi basit: hiçbir işletme cirosunun yarısını kaçan telefondan kaybetmiyor, kaybetse kapanırdı.
+
+Kartta aylık kaçan olay sayısı yoksa çarpım yapılmaz, tasarruf formülüne geçilir; o da yoksa fiyat **bant** olarak kalır ve kesin rakam görüşmede kurulur. Bant: kayıp biriminin ortası çarpı dört ile çarpı on iki arası, yıla çevrilip onda biri alınarak. Bu bant sahaya çıkmak için yeterli; görüşmenin altı veri sorusu rakamı işletmecinin kendi ağzından alıyor ve fiyat orada kesinleşiyor. Öğrenci fiyatsız sahaya çıkmaz, bantla çıkar.
 
 **İkinci adım, yıla çevir ve kurulumu koy.** Aylık kayıp çarpı on iki, yıllık kayıp. Kurulum ücreti bunun yüzde onu. Tasarruf formülündeysen haftalık saat çarpı saat maliyeti çarpı elli iki, kurulum bunun yüzde yirmisi ile yirmi beşi.
 
@@ -108,7 +114,7 @@ Fiyatın tavanı işletmecinin kazancından çıkar, senin hedefinden değil. Fo
 
 Sıfırdan başlayan herkesin yaptığı hata: kulağa iyi geldiği için formülün üstünde bir kurulum ücreti istemek. Çırak ilk gün büyük işe konur, iş bozulur, müşteri parasını geri ister, çırak daha başlamadan biter. Formülün üstündeki kurulum ücretinde üç şey olur: ilk kurulum hatasında iade istenir ve ilk izlenim gider; rakamı haklı çıkarmak için olmayan kanıt uydurulur; para cebe girince teslimat baskısı kalkar ve sonuç düşer.
 
-Bu yüzden ilk iki müşteride deneme fiyatı var ve güvence sözleşmede yazılı: riskin bir kısmı sende kalıyor, bu seni daha hızlı öğrenmeye zorluyor ve satışta dürüstlük olarak okunuyor. "Sadece işe yararsa ödersiniz" cümlesinin bizdeki hali "rapor gününde sayılar sıfırsa ikinci ay ücretsiz"dir. Kurulum ücreti tamamen sıfırlanmaz; sıfır olan iş ciddiye alınmıyor ve işletmeci takip etmiyor.
+Bu yüzden ilk iki müşteride deneme fiyatı var ve güvence sözleşmede yazılı. Riskin ne kadarının sende kaldığını olduğu gibi söylüyorum, çünkü bunu abartmak satışta bir kere işe yarıyor ve rapor gününde patlıyor: risk altındaki tutar bir aylık ücret, yani kurulumun beşte biri, artı kurulamayan her parça için o ayın yüzde yirmisi. Kurulum ücreti tamamen sıfırlanmaz; sıfır olan iş ciddiye alınmıyor ve işletmeci takip etmiyor. "Sadece işe yararsa ödersiniz" cümlesinin bizdeki hali "sistemin yazdığı randevu sıfırsa ikinci ay ücretsiz"dir. Bunu müşteriye "riskin çoğu bende" diye anlatmazsın, olduğu gibi anlatırsın; sözleşmeyi okuyan işletmeci farkı zaten görüyor.
 
 Randevu başına ya da gelen müşteri başına ücret modeli bizim işe uymuyor ve sebebini bil: o model reklamla dışarıdan talep üreten ajanslar içindir, talep onların. Bizim sistem işletmenin zaten gelen talebini kurtarıyor; "bu randevu sistemden mi geldi yoksa zaten gelecek miydi" tartışması her ay çıkar. O yüzden bizde kurulum artı sabit aylık ücret artı olaya bağlı güvence var.
 
@@ -154,7 +160,7 @@ Tek bir ayırıcı soru var ve provası yapılır: "Sonucun kesin olacağını b
 
 ### Güvence
 
-Güvence, müşteriye verdiğin sözdür: rapor gününde ([21/28]. gün) rapor, yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz. Cümlenin tam metni İş modeli bölümünde, iki sürümüyle (randevu yolu, teklif yolu); İş Beyni'nin dördüncü bölümüne nişin yolculuğuna uyan sürüm yazılır ve her belge oradan okur.
+Güvence, müşteriye verdiğin sözdür: rapor gününde ([21/28]. gün) rapor, sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz. Cümlenin tam metni İş modeli bölümünde, iki sürümüyle (randevu yolu, teklif yolu); İş Beyni'nin dördüncü bölümüne nişin yolculuğuna uyan sürüm yazılır ve her belge oradan okur.
 
 Bu bir sayı sözü değildir ve olmamalıdır. "Ayda otuz randevu" diye söz verirsen kontrol edemediğin bir şeyi taahhüt etmiş olursun. Güvencenin ölçüsü sistemin çalışıp çalışmadığıdır, müşterinin satış yapıp yapmadığı değil.
 

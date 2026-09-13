@@ -23,7 +23,7 @@ Her görüşmede, görüşme saatinden on dakika önce açılır ve görüşme �
   - Teslimat için hazırlanmış üç cümle (hizmet-akisini-ciz'den). "Nasıl teslim ediyorsunuz" sorusuna bu üç cümleyle cevap verilir; gün işaretleri onay belgesindeki takvimle aynıdır.
   - Üç kademenin nişe özel içeriği. Kademe, aynı sistemin kapsamıdır: Temel, Tam, Genişletilmiş. Bu bilgi içindir, görüşmede menü gibi sunulmaz.
   - Fiyat: kurulum, aylık, deneme fiyatı işareti, üç karşılık. Deneme fiyatı, hazırlık seviyen düşükse ilk iki müşteride kurulum ücretinin yarısıdır. Üç karşılık, bu fiyat karşılığında müşteriden alınan üç şeydir.
-  - Güvence cümlesi ve nişe özel "sonuç" tanımı. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz.
+  - Güvence cümlesi ve nişe özel "sonuç" tanımı. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz.
   - Hazırlık seviyesi: satış tecrüben, sektör bilgin ve güvenin var mı.
   - Kurucu bölümü: seni ne motive eder, ne durdurur, nerede bıraktın, nerede düşme riskin var.
   - "Bu görüşme için prova yapıldı" işareti. İlk yirmi görüşmede bu işaret yoksa önce gorusme-provasi-yap'ın üç dakikalık kısa provası yapılır, sonra açılışa geçilir.

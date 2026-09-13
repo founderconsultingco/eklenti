@@ -55,7 +55,7 @@ Anahtar İş Beyni'nin birinci bölümüne yazılır ve bir daha sorulmaz. Sonra
 
 Eklenti ayar ekranındaki alan KULLANILMIYOR. Denendi: değer kaydediliyor ama çalışma anında okunamıyor, yani her oturum "anahtar yok" diyor. Sohbete yazdırma yolu hem çalışıyor hem de başka platforma aynen taşınıyor.
 
-Sunucu kontrolü var. Anahtar `https://founderos.so/lisans?anahtar=ANAHTAR` adresine sorulur; cevap `gecerli` alanını taşır, geçerliyse `ad` ve yayındaki eklenti sürümü de gelir. Kontrol birinci günde ve her sabah yapılır. `gecerli` yanlışsa gün açılmaz. Adres cevap vermezse öğrenci cezalandırılmaz, gün açılır ve ertesi sabah tekrar bakılır.
+Sunucu kontrolü var. Anahtar `https://founderos.so/lisans?anahtar=ANAHTAR` adresine sorulur; cevap `gecerli` alanını taşır, geçerliyse `ad` ve yayındaki eklenti sürümü de gelir. Kontrol birinci günde ve her sabah yapılır. Kural tek: cevapta `"gecerli": false` **açıkça** geldiyse gün açılmaz. Cevabın gövdesinde `gecerli` alanı hiç yoksa (sunucu hatası, 503, boş cevap, adres açılmadı) öğrenci cezalandırılmaz, gün açılır ve ertesi sabah tekrar bakılır. Geçici arıza ile "bu anahtar yok" birbirine karıştırılmaz.
 
 İkinci kilit CRM hesabıdır: anahtarı olmayan kişinin hesabı da yoktur, hesabı olmayan sistem hiçbir işini yapamaz.
 

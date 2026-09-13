@@ -78,7 +78,7 @@ Güvence, müşteriye verdiğin sözdür: rapor gününde rapor, sonuç yoksa ik
 
 Sonuç cümlesi sözleşmede ve onay belgesinde hazır durur, her müşteride aynıdır:
 
-Cümle İş modeli bölümündeki "Güvence cümlesi"dir, iki sürümü ve "ikisi birlikte" hali oradadır; teklif yolunda ikinci sayı "sistemin takip ettiği teklif sayısı"dır. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz; rapor gerçekleşen olayı yazar. Bir parça kurulamadıysa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay ücreti alınmaz.
+Cümle İş modeli bölümündeki "Güvence cümlesi"dir, iki sürümü ve "ikisi birlikte" hali oradadır; teklif yolunda ikinci sayı "sistemin takip ettiği teklif sayısı"dır. Randevu satış sayılmaz, teklif kabulü ödeme sayılmaz; rapor gerçekleşen olayı yazar. Bir parça kurulamadıysa o satır boş kalır ve sayılmaz. Sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz.
 
 Bu cümle üç işi birden yapıyor:
 1. Rakam sözü vermiyor. "Şu kadar randevu" demiyor, sıfır olmamasını istiyor. Satışta sayı sözü verilmez, bu kurala uyuyor.
@@ -177,7 +177,7 @@ Kötü ay raporsuz geçmez. En kötü şey rapor göndermemektir. İlk hafta det
 
 Sonuç cümlesi tutmadıysa üç yol var:
 1. Kapsam dışı bir parça yüzünden tutmadıysa: güvenceye sayılmaz, sebebi raporun üstündeki kutuda yazılıdır. Tahsilat kart kaydından kendiliğinden çekilir, sen bir şey yapmazsın.
-2. Sistem çalıştı ama yazılan satırların hepsi sıfırsa: ikinci ay ücreti alınmaz, sistem çalışmaya devam eder. Bu bir ücretsiz aydır, açık uçlu değildir. Ayın sonunda üç yol var: kapsamı daraltıp devam, normal ücretle devam, ya da sözleşmedeki yazılı bildirimle ayrılma. Bildirimin kaç gün önce yapılacağı senin sözleşmende yazar; o rakamı müşteriye oradan okursun, kendin uydurmazsın. Süresiz bedava çalışmak yok.
+2. Sistem çalıştı ama sistemin yazdığı randevu sıfırsa: ikinci ay ücreti alınmaz, sistem çalışmaya devam eder. Bu bir ücretsiz aydır, açık uçlu değildir. Ayın sonunda üç yol var: kapsamı daraltıp devam, normal ücretle devam, ya da sözleşmedeki yazılı bildirimle ayrılma. Bildirimin kaç gün önce yapılacağı senin sözleşmende yazar; o rakamı müşteriye oradan okursun, kendin uydurmazsın. Süresiz bedava çalışmak yok.
 3. Müşteri parasını geri isterse: hiçbir teslimat yapılmadıysa kurulum ücretini iade edersin, tartışma açmazsın. Teslimat başladıysa güvence maddesi işler.
 
 Sayı düşük diye erken karar verilmez. Talep dalgalar halinde gelir; beş gün sıfır, sonra bir günde dört tane olabilir.
@@ -232,7 +232,7 @@ Gelme oranı ölçütü yüzde yetmiştir. Altındaysa sorun randevuda değil, h
 
 ## 6. Ne söyler
 
-Kurulum görüşmesinde: "Rapor gününde ne göreceğini şimdi söylüyorum. Raporda üç sayı olacak: gelen talep, yazılan randevu, ulaşılan eski müşteri. Kuramadığımız bir parça olursa o satır boş kalır ve sayılmaz. Yazılan satırların hepsi sıfırsa ikinci ay parayı almam. O ay bittiğinde birlikte karar veririz: ya kapsamı daraltıp devam ederiz, ya normal ücretle devam ederiz, ya da sözleşmedeki yazılı bildirimle ayrılırız. Sana şu kadar randevu getiririm demiyorum, öyle diyen yalan söylüyor."
+Kurulum görüşmesinde: "Rapor gününde ne göreceğini şimdi söylüyorum. Raporda üç sayı olacak: gelen talep, yazılan randevu, ulaşılan eski müşteri. Kuramadığımız bir parça olursa o satır boş kalır ve sayılmaz. Sistemin yazdığı randevu sıfırsa ikinci ay parayı almam. O ay bittiğinde birlikte karar veririz: ya kapsamı daraltıp devam ederiz, ya normal ücretle devam ederiz, ya da sözleşmedeki yazılı bildirimle ayrılırız. Sana şu kadar randevu getiririm demiyorum, öyle diyen yalan söylüyor."
 Sekizinci gün akşamı: "Bugün üç satır gidiyor. Ulaşılan, cevap veren, randevu. Sayılar düşükse de gidiyor; müşteri kötü sayıyı kaldırır, sessizliği kaldıramaz. Parayı verip iki hafta ses duymayan adam sistemin çalışmadığını düşünür."
 Yirminci gün: "Yarın rapor. Bugün senden tek bir sayı istiyorum: bu randevulardan kaçı işe döndü. Bu sayıyı ben bilemem, sistem parayı görmüyor. Söylersen rapora yazarım, söylemezsen para satırı boş kalır."
 Öğrenciye, rapordan önce: "Kötü haberi ilk sen söyleyeceksin. Yirmi dakikalık görüşmenin ilk iki dakikası bu. Müşteri sorunu senden önce bulursa sonucu düzeltsen bile güveni kaybedersin."
@@ -249,7 +249,7 @@ Niş kartının Sahadan dolacak bölümüne: bu nişte [21/28] günde çıkan ge
 
 - Müşteri işe dönme sayısını vermezse: aynı günün akşam bloğunda bir kez daha sorarsın. Sonraki aylarda da aynı. Yine vermezse para satırı ve ücret satırı boş kalır, yerine kayıp birimi cümlesi yazılır.
 - Kapsam dışı parça varsa: raporun üstündeki kutuda sebebiyle yazılır, sonuç cümlesi kalan satırlardan ölçülür, güvenceye sayılmaz.
-- Yazılan satırların hepsi sıfırsa: ikinci ay ücreti alınmaz, sistem çalışır, ayın sonunda kapsamı daraltma, normal ücretle devam ya da ayrılma yollarından biri seçilir.
+- Sistemin yazdığı randevu sıfırsa: ikinci ay ücreti alınmaz, sistem çalışır, ayın sonunda kapsamı daraltma, normal ücretle devam ya da ayrılma yollarından biri seçilir.
 - Müşteri hiçbir teslimat yapılmadan ayrılmak isterse: kurulum ücreti iade edilir, tartışma açılmaz.
 - Rapor kendiliğinden hazırlanamıyorsa: tek sayfayı elle hazırlarsın. Rapor gitmemesi seçenek değil.
 - Ara raporun üç sayısı sistemden gelmiyorsa: sayıları elle sayar, yine gönderirsin. Üç satırlık mesajın atlanması seçenek değil.
