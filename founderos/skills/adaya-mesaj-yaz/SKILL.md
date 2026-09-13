@@ -381,7 +381,27 @@ Sırayla bak, ilk uyan satır senin satırın.
 16. Herhangi bir kanaldan cevap geldi → beş dakika içinde aynı kanaldan cevap konuşması. Diğer kanallar durur.
 17. Aday "arama, yazma" dedi → dört satır da "kapandı", aday listeden çıkar.
 
-Dört kanalı da "kapandı" olan aday altı ayda bir yeniden taranır; tarama gününü FounderOS hatırlatıyor, CRM kendiliğinden açmıyor. Kapanma sebebi "aday istemedi" olan kayıt bu taramaya girmiyor.
+Kapanan adayın geri dönüş süresi sebebine göre değişir, üç ayrı süre var ve karıştırılmaz. Zincir bitti, yani dört takip gitti ve hiç cevap gelmedi: doksan gün sonra yeniden sıraya giriyor, çünkü cevap vermemek "istemiyorum" demek değil, o hafta yoğun olmak da demek. Aday açıkça "şu an ilgilenmiyorum" dedi: altı ay. Aday "bir daha yazmayın" dedi: hiç, satır listeden çıkıyor. Tarama gününü FounderOS hatırlatıyor, CRM kendiliğinden açmıyor.
+
+Doksan günlük havuz sürekli halin en ucuz kaynağıdır: ikinci ayın sonunda birinci ayın cevapsızları geri geliyor ve onlara giden ikinci tur ilk turdan daha iyi çalışıyor, çünkü elinde artık kanıt cümlesi ve muhtemelen bir kanıt hikâyesi var.
+
+### Sürekli hal: ilk aydan sonra ne oluyor
+
+Bu sorunun cevabı yazılı olmazsa öğrenci ikinci ayın başında boşluğa düşüyor. Sürekli hal şöyle, her ay aynı:
+
+| | Her ay | Nereden |
+|---|---|---|
+| Yeni kayıt | 500, yeni bir ilçe | aday-listesi-cikar, ayın ilk günü |
+| Yeni en çok istenen yüz | 100, o yeni listeden | aday-listesi-cikar seçer, hızlı denetim aday-denetimi-cikar |
+| Temas | 2.000, yirmi iş günü | 100 temas × 20 gün |
+| Video mesaj | 100, yüz işletmenin hepsine | günde beş |
+| Geri gelen havuz | birinci ayın cevapsızları, doksan günlük süreyle | zinciri bitmiş adaylar |
+
+En çok istenen yüz işletme tek seferlik bir açılış hamlesi değil, **her ay yenilenen bir dilim**. Ay sonunda o yüz bitiyor, yeni ilçenin listesinden yeni yüz seçiliyor ve video sırası kaldığı yerden devam ediyor. Video hiç durmuyor.
+
+Beş yüz kayıt, iki bin temas ve dört dokunuşluk zincir birbirine oturuyor: beş yüz aday çarpı dört dokunuş, iki bin temas. Yani günlük sayı keyfi değil, listenin boyuyla ve zincirin uzunluğuyla aynı hesaptan çıkıyor. Günlük sayıyı yükseltmek listeyi de büyütmek demek; aylık çekim tavanı beş ilçeye kadar izin veriyor.
+
+Ayın dört yeni işi şunlar ve hepsi aynı güne konur, ayın ilk iş günü: yeni ilçenin çekimi, yeni yüzün seçimi ve hızlı denetimi, geçen ayın kanıt cümlesinin güncellenmesi, ve `ogren` tablosunun aylık uzun okuması. Yarım gün sürüyor ve o gün temas sayısı yarıya iniyor; bu tek istisna plana yazılıdır.
 
 ### Takip düzeni, üç takip
 

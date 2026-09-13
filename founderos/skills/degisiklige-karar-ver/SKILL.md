@@ -116,16 +116,38 @@ Bir sayı normal aralığındaysa ona dokunulmaz. İyi giden şeyi düzeltmeye �
 
 Bir de sabır meselesi var. Yeni bir şeyi başlattığın hafta sonuç ölçülmez. En az bir hafta çalışsın, veri biriksin, sonra bak. İlk kötü günde müdahale eden kişi hiçbir zaman hangisinin çalıştığını öğrenemiyor.
 
+### Kanal payları üç yüz temasta yeniden dağıtılır
+
+Günlük yüz temasın dağılımı sabit değil, ölçülen orana göre kayıyor. Başlangıç dağılımı bir tahmindir: otuz beş arama, otuz Instagram, yirmi e-posta, beş video, on takip. Üç yüz temas birikince tahmin bırakılır ve `ogren` tablosunun kanal kırılımı konuşur.
+
+Kural şu: o üç yüz temasta randevu başına en az temas harcayan kanalın payı on artar, en çok harcayanın payı on azalır. Tek hamlede tek kanal artar, tek kanal azalır; iki değişiklik aynı hafta yapılmaz, çünkü sonra hangisinin işe yaradığı anlaşılmıyor. Sonra sayaç sıfırlanır ve sonraki üç yüz temas ölçülür.
+
+Tabanlar var ve altına inilmez: arama on beş, Instagram on, e-posta on, video üç. Sebebi şu: kapanan kanal bir daha ölçülemiyor ve iki ay sonra o kanalın gerçekten çalışıp çalışmadığını kimse bilmiyor. Kör nokta, kötü kanaldan pahalıdır. Tavan da var: tek kanal altmışı geçmez.
+
+Video kanalının payı artarsa liste de büyür, yoksa artan pay boşa gider: video günde beşten sekize çıkıyorsa o ay en çok istenen yüz yerine yüz altmış işletme seçilir. Video payı düşerse serbest kalan süre aramaya gider, çünkü arama randevuya en yakın kanal.
+
+Eşik altı satır karara girmez. Bir kanalda o üç yüz temasın içinde otuzdan az temas varsa o kanalın oranı okunmaz; az sayıdan çıkan oran yanıltır.
+
+### Tavan yükselir, taban yükselmez
+
+Günde yüz temas tabandır ve pazarlık konusu değildir. Ama beş iş günü üst üste yüzü tutturan öğrencide tavan açılır: kazanan kanala on eklenir, günlük yüz yirmiye kadar. Bunu FounderOS teklif eder, öğrenci istemezse yüzde kalır.
+
+Bunun tersi yok. Sayı tutturulamıyorsa çözüm sayıyı düşürmek değil, günün sırasını düzeltmek: saha bloğunun ilk yarım saatinde ilk yirmi temas gitmiyorsa gün zaten kaymış oluyor.
+
 ### Kapasite: kaç müşteri taşıyabilirsin
 
 Bu karar da burada verilir ve iki işaretten biriyle açılır: dördüncü aktif müşteri geldiğinde, ya da haftalık bakım toplamı bir iş gününü aştığında. Hangisi önce olursa.
 
 Kaynaklarda "tek kişi kaç müşteri taşır" diye bir rakam yok, o yüzden sana bir sayı söylemiyorum. Ölçü sende: bakım ve raporlar bir günden fazla sürüyorsa ve o yüzden satış günlerin eksiliyorsa tavana gelmişsin demektir.
 
-Tavana gelince üç yol var ve biri seçilir:
+Tavana gelince ilk hareket temas sayısını indirmektir: günlük yüz, kırka iner ve serbest kalan saatler teslimata gider. Sebebi şu: taşıyamadığın müşteriyi bulmak kâr değil zarar, çünkü kaybedilen müşteri parayı geri götürüyor ve referansı da götürüyor. Bu indirim geçicidir ve tek şarta bağlıdır: haftalık bakım toplamı bir iş gününün altına inince yüze geri dönülür.
+
+Aynı anda üç yoldan biri seçilir:
 1. Kapsamı daralt. Yeni müşterilere daha küçük paket sat.
 2. Daha büyük işletmeye sat. Rakamı sen yükseltmezsin, formül ve oranlar sabittir; yıllık kaybı büyük işletmede aynı formül daha yüksek kurulum ve aylık verir, aynı para daha az müşteriyle gelir.
 3. Yardım al. İlk devredilecek iş satış değil, tekrar eden ve seni yıpratan iştir: bakım kontrolleri, rapor hazırlığı, liste temizliği.
+
+Sıra önemli: fiyat yükseltmek tavan hareketidir, satış hızını artırmak değil. Tavana gelmiş kişi daha çok aramaz, daha pahalı satar.
 
 Satışı devretmek en son yapılır. Satışı bırakan kişi işini bırakmış oluyor.
 
