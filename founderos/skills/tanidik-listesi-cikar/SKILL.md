@@ -26,7 +26,7 @@ Neden bugün, dün değil: tanıdığın ertesi sabah "tamam, yapalım" diyebili
 Pazarlamadaki karşılığı: sıcak çevre. Seni zaten tanıyan insanlar.
 
 ## 2. Ne zaman çalışır
-- Üçüncü günün öğleden sonrası, bir saat. Kesin fiyat, sözleşme ve ödeme yolu bu sabah kuruldu; liste onların arkasından çıkar.
+- Üçüncü günün akşam bloğu, kırk beş dakika. Kesin fiyat, sözleşme ve ödeme yolu bu sabah kuruldu; liste onların arkasından çıkar.
 - İkinci kez: her ay bir kere, listeye yeni girenler eklenir.
 
 ## 3. Ne okur

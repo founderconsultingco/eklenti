@@ -172,9 +172,9 @@ Listenin en büyüğünü yüzün sonuna koyduğunda bunu öğrenciye tek cümle
 
 Yüz işletmenin farkı emek, mesaj sayısı değil. Kalan dört yüz hızlı denetimle ve kartın gözlemiyle gidiyor; yüz işletme derin denetimden geçiyor (on satır, karar verenin adı, lira karşılığı), mesajı o işletmede gerçekten görülmüş bulguyla açılıyor, ilk teması video mesajla gidiyor ve o ilk temas günde beş adayla yayılıyor ki her biri hazırlıklı gitsin. Denetim kartı adaya belge olarak gönderilmiyor; bulgu görüşmede ve videoda söyleniyor. Kâğıt gönderen satıcı, konuşan satıcının gerisinde kalıyor.
 
-### Adım 6: yüz işletmenin hızlı denetimi (60 dakika)
+### Adım 6: yüz işletmenin hızlı denetimi (30 dakika)
 
-Bu adımı bu modül tarif etmiyor. Yüz işletmenin hızlı denetimi bu adımda yapılır, nasıl yapıldığı aday-denetimi-cikar'da yazılı, çıktısı sızıntı puanıdır. İşletme başına iki dakika. Puan yüz işletmeyi sıraya diziyor ve sahaya çıktığında kimi önce arayacağını o sıra söylüyor.
+Bu adımı bu modül tarif etmiyor. Yüz işletmenin hızlı denetimi bu adımda yapılır, nasıl yapıldığı aday-denetimi-cikar'da yazılı, çıktısı sızıntı puanıdır. İşletme başına yaklaşık yirmi saniye; beş satırın dördü veri servisinden hazır geliyor, senin işin okuyup onaylamak. Puan yüz işletmeyi sıraya diziyor ve sahaya çıktığında kimi önce arayacağını o sıra söylüyor.
 
 Eskiden bu adımda her işletme için tek cümlelik gözlem satırı yazılıyordu; artık yazılmıyor. Yerini denetimin en güçlü bulgusu aldı. Fark şu: gözlem satırı "gördüğüm bir şey", en güçlü bulgu "kaçırdığın müşteri".
 
@@ -209,7 +209,7 @@ Liste ayda bir tamamen yenileniyor ama her gün yeniden sıralanıyor. İkisi ay
 1. **Cevap verenler.** Mesajına dönmüş, telefonu açmış, "sonra ara" demiş herkes. En başta duruyorlar, çünkü cevap veren adayın ilgisi bir günde soğuyor.
 2. **Takip günü gelenler.** Üçüncü, yedinci ve on dördüncü gün zincirinde bugüne düşenler.
 3. **Denetimi hazır, sızıntı puanı yüksek adaylar.** Puanı yüksek olan önce; eşitlik yorum sayısıyla bozuluyor.
-4. **Hızlı denetimi olmayanlar.** Sıranın sonu; bunlara ulaşılmadan önce iki dakikalık hızlı denetim yapılıyor, hızlı denetimsiz adaya hiçbir kanaldan ulaşılmıyor. Derin denetim ayrı: her sabah sıranın başındaki üç beş aday için, ilk aramalar onlara.
+4. **Hızlı denetimi olmayanlar.** Sıranın sonu; bunlara ulaşılmadan önce yirmi saniyelik hızlı denetim yapılıyor, hızlı denetimsiz adaya hiçbir kanaldan ulaşılmıyor. Derin denetim ayrı: her sabah sıranın başındaki üç beş aday için, ilk aramalar onlara.
 
 **Kaç kayıt:** çalışma düzenine göre günlük temas sayın kadar. Tam zamanlıysan yüz kayıt, işin yanında kırk. Fazlası hazırlanmıyor; ekranda gördüğün sayı o gün bitirilecek sayı.
 

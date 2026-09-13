@@ -23,7 +23,7 @@ Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kend
 Şunlar bu modülün işi değildir: denetimin kendisi (aday-denetimi-cikar), hangi adaya hangi gün hangi kanalın geleceği kararı (adaya-mesaj-yaz), ön görüşme videosu ve üç itiraz videosu (satis-videosunu-cek, ön görüşme sayfasında durur), kendi sisteminin demo ekran kaydı (kanitini-hazirla), rapor günü müşteri videosu, yazılı mesajlar (adaya-mesaj-yaz).
 
 ## 2. Ne zaman çalışır
-- Beşinci gün, sabah bloğu, kırk dakika. Yirmi beş dakika kurulum: Loom hesabı, tarayıcı eklentisi, mikrofon ve ekran izinleri, bir deneme linki. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin.
+- Beşinci gün, sabah bloğu, yirmi beş dakika. On dakika kurulum: Loom hesabı, tarayıcı eklentisi, mikrofon ve ekran izinleri, bir deneme linki. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin.
 - Altıncı günden itibaren her gün. En çok istenen yüz işletmeden günde beş adaya video ile ilk temas edilir; bu beş, günün yüz temasının beşidir. Listenin kalanında üçüncü gününe gelmiş cevapsız adaylar varsa onlar da aynı oturumda çekilir ve günün video sayısı beşi geçerse fazlası ertesi güne kalır: video hep beş, sırası önce yüz işletme.
 - Videonun yeri saha bloğunun son kırk beş dakikasıdır; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
 - Video başına süre tek rakam: **ilk hafta on iki dakika, sonra sekiz dakika.** İlk haftada uzun, çünkü senaryoya alışıyorsun ve ikinci çekim yapıyorsun; sonra tek çekimde bitiyor. Bir dakikalık video için on sekiz dakika harcanmıyor, bulgu zaten denetim kartından hazır geliyor. İlk hafta günde üç video, otuz altı dakika; eksik kalan iki temas o hafta diğer iki yazılı kanala geçer. İkinci haftadan itibaren beş video, kırk dakika, ve beş taban olur. Beş sabit bir tavan değil taban: üçüncü haftadan sonra, senaryoya alıştıysan ve günün diğer sayıları tutuyorsa video sekize, sonra ona, en fazla on beşe çıkar. Artan pay diğer iki yazılı kanaldan alınır, ana kanalın yetmişi sabit kalır: video sekizse yazılı yirmi iki, video onsa yirmi, video on beşse on beş. Toplam hep yüz.
@@ -234,7 +234,7 @@ Bir de sıra kuralı: önce işe yaradığı kanıtlanır, sonra çoğaltılır.
 
 **Tam zamanlı.** Sabah bloğu: günün denetim kartları okunur, video listesi hazır gelir. Saha bloğu: ana kanaldan yetmiş, diğer iki kanaldan yirmi beş; bloğun son kırk beş dakikası video bloğudur: ilk hafta üç video otuz altı dakika, sonra beş video kırk dakika (senaryo, çekim, Loom linki, gönderim). Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaçı izlendi, kaç cevap geldi.
 
-**İşin yanında.** Sabah bloğu, yani işe gitmeden önceki bir saat ya da öğle arası: beş adayın denetim kartı okunur. Saha bloğunun sonu: iki video, kırk dakika. Akşam bloğu: kanal durumu ekranı, on beş dakika. İlk müşterinin teslim süresinde ve şirket kuruluş gününde bir video, yirmi dakika.
+**İşin yanında.** Sabah bloğu, yani işe gitmeden önceki bir saat ya da öğle arası: üç adayın denetim kartı okunur. Saha bloğunun sonu: iki video, on altı dakika. Akşam bloğu: kanal durumu ekranı, on beş dakika. Teslim süresinde ve şirket kuruluş gününde bir video, sekiz dakika.
 
 ## 6. Ne söyler
 

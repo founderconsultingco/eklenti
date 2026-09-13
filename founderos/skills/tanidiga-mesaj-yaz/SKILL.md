@@ -24,7 +24,7 @@ Bu ayrımı bozarsan gerisi çalışmıyor. Tanıdığa satmaya çalışan kişi
 Pazarlamadaki karşılığı: sıcak temas ve referans isteği.
 
 ## 2. Ne zaman çalışır
-- Üçüncü bloğun akşam bloğu, bir saat. Metinler yazılıyor ve ilk mesajlar gidiyor. Sistemin ilk mesajı bu; bu günden önce hiçbir yere hiçbir şey gitmiyor, bu günden sonra her gün gidiyor.
+- Üçüncü bloğun akşam bloğu, otuz dakika. Metinler yazılıyor ve ilk mesajlar gidiyor. Sistemin ilk mesajı bu; bu günden önce hiçbir yere hiçbir şey gitmiyor, bu günden sonra her gün gidiyor.
 - Ertesi günden itibaren her gün, liste bitene kadar. Günlük sayı aşağıda.
 - Cevap geldiğinde: aynı gün.
 
