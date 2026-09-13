@@ -96,32 +96,7 @@ Adayın Instagram'ı yoksa ısınma adımı atlanır, video doğrudan e-postadan
 
 Kalan dört yüz adayda ısınma yok. Yüz işletmenin farkı emek, ısınma o emeğin ilk adımı.
 
-### İki kampanya var, ikisi aynı şeyi söylemiyor
-
-Video mesajın iki ayrı hali var ve hangisini kullanacağını kanıtın belirliyor, tercihin değil.
-
-**Yardım kampanyası.** İlk müşterin yoksa, yani elinde kanıt hikâyesi yok. O zaman video satmıyor, soru soruyor. Cümlesi şu: "Bu sektöre girmek istiyorum, sektörü içeriden bilmiyorum, o yüzden gerçekten bilen insanlara sormanın daha doğru olacağını düşündüm." Sonunda tek istek var ve satış değil: yirmi dakikalık bir konuşma.
-
-**Teklif kampanyası.** İlk müşteride kanıt hikâyesi çıktıysa. O zaman video ne yaptığını söylüyor: kime yardım ediyorsun, hangi sorunu çözüyorsun, kaç günde, kanıtın ne. Sonunda tek somut saat teklifi var.
-
-Seçimi FounderOS yapar ve tek satıra bakar: İş Beyni'nde kanıt hikâyesi var mı. Yoksa yardım kampanyası, varsa teklif kampanyası. Öğrenciye sorulmaz.
-
-Bunu neden böyle ayırıyoruz: kanıtı olmayan kişinin teklif kampanyası yapması, olmayan sonucu ima etmek zorunda bırakıyor. Yardım kampanyası ise acemiliği zayıflık değil sebep haline getiriyor ve sıfır kanıtla çalışan tek video biçimi bu. Kanıt çıkınca yardım kampanyası bırakılır; o cümle artık doğru değil.
-
-### Yardım kampanyasının senaryosu, altmış saniye
-
-Aynı ekran düzeni: adayın kendi sayfası açık, yüzün köşede.
-
-1. **Kişiye özel giriş, sıfırdan sekizinci saniye.** Adıyla başla ve ekranda ne gördüğünü söyle. İşle ilgisi olmayan bir ayrıntı da olur, hatta daha iyi çalışıyor: son gönderisinde gördüğün bir şey, dükkânın önündeki tabela, on yıllık olduğu yazan satır.
-2. **Niye yazdığını söyle, sekizinci saniyeden yirminci saniyeye.** "Söz veriyorum size bir şey satmaya çalışmıyorum, aslında yardımınızı isteyeceğim." Bu cümle olduğu gibi söylenir, yumuşatılmaz.
-3. **Neden sen, yirminci saniyeden otuz beşinci saniyeye.** "[Şehir]de [niş] işletmeleriyle çalışacak bir sistem kuruyorum. Ama sektörü içeriden bilmiyorum. Bilmiyormuşum gibi davranıp kimsenin istemediği bir şey kurmak yerine gerçekten bu işi yapan insanlara sormayı seçtim."
-4. **Neden özellikle o, otuz beşinci saniyeden kırk beşinci saniyeye.** Denetim kartından çıkan tek somut şey: "Sizi aradım çünkü [gerçekten görülmüş şey]." Burada bulgu suçlama gibi söylenmez, merak gibi söylenir: "Akşam yedide aradım, açan olmadı. Bunu niye soruyorum, o saatte gelen aramalar size nasıl ulaşıyor onu anlamak istiyorum."
-5. **Tek istek, kırk beşinci saniyeden elli beşinci saniyeye.** "Yirmi dakika ayırabilirseniz çok sevinirim. Şu an size bir şey önermiyorum, gerçekten sadece öğrenmek istiyorum."
-6. **Çıkış kapısı ve kapanış, elli beşinci saniyeden altmışıncı saniyeye.** "Yoğunsanız tamamen anlarım, zamanlama uygun değilse hiç sorun değil. Her türlü teşekkür ederim [Ad] Bey."
-
-Yardım kampanyasında olmayacaklar: fiyat, kademe adı, sistemin adı, "size şunu kurabilirim", indirim, süre sözü, kanıt cümlesi. Bu videoda hiçbir şey satılmıyor ve satılmadığı için çalışıyor. Yalan da yok: gerçekten öğrenmek istiyorsun ve görüşmede gerçekten soru soruyorsun.
-
-### Teklif kampanyasının senaryosu: altı parça, altmış saniye
+### Senaryo: altı parça, altmış saniye
 
 FounderOS senaryoyu altı parça yazar, her parçanın yanında kaç saniye olduğu ve o saniyede ekranda ne açık olduğu yazar. Sen okumazsın, söylersin. Kayıt boyunca ekran açık, yüzün köşede küçük bir baloncukta.
 
@@ -138,7 +113,7 @@ LİRA KARŞILIĞI tek cümlede ve tek yerde geçer, ekran açıkken. Hesap gör�
 Kime yardım ettiğin ve ne yaptığın, iki cümle. Şehirle birlikte: "[Şehir]de klima servisleriyle çalışıyorum, telefon çaldığında araç altında olanlarla." Sonra Dönüşüm Cümlesi'nin konuşma hali ve sistemin adı. "Yapay zeka", "bot" ve araç adı geçmez.
 
 **5. parça, kırk beşinci saniyeden elli beşinci saniyeye. Ekran aynı.**
-İki şey olabilir, ikisi de varsa söylenir: kanıt cümlesi ve neden şimdi görüşmek gerektiği. Toplu kanıt cümlesi varsa "ben saydım" diye söylenir. Neden şimdi sorusunun cevabı gerçek ve fiyatsız olur: "İlk müşterilerimle kanıt topluyorum, bu ay [şehir]de birkaç işletmeyle çalışacağım." Fiyat ve deneme fiyatı görüşmede söylenir, videoda değil. Sonuç yoksa sonuçtan söz edilmez.
+İki şey olabilir, ikisi de varsa söylenir: kanıt cümlesi ve neden şimdi görüşmek gerektiği. İlk müşterin yoksa kanıt cümlesi senin kendi sayımındır ("geçen hafta otuz servisi akşam yedide aradım, yirmi ikisi açmadı, ben saydım") ve neden şimdi cümlesi dürüsttür: "Bu ay [şehir]de ilk işletmelerle başlıyorum, kanıt topluyorum." Sektörü bilmediğini söylemezsin; kartı okudun, saydın, gördün, biliyorsun. Bilmediğin şey sonucun ne olacağı ve onu da söylemezsin, ölçersin. Toplu kanıt cümlesi varsa "ben saydım" diye söylenir. Neden şimdi sorusunun cevabı gerçek ve fiyatsız olur: "İlk müşterilerimle kanıt topluyorum, bu ay [şehir]de birkaç işletmeyle çalışacağım." Fiyat ve deneme fiyatı görüşmede söylenir, videoda değil. Sonuç yoksa sonuçtan söz edilmez.
 
 **6. parça, elli beşinci saniyeden altmışıncı saniyeye. Ekran kapanmaz, sen kameraya bakarsın.**
 Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yarın on birde on beş dakika konuşalım, uymazsa siz saat söyleyin. Görüşürüz Ahmet Bey." İki tarih vermek videoda karar geciktiriyor; telefonda iki seçenek verilir, videoda bir.
@@ -159,7 +134,7 @@ Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit
 
 Kayıt Loom ile yapılır (loom.com). Bilgisayarın kendi ekran kaydı da video üretir ama üç şeyi yapamıyor ve o üç şey bu işin tamamı: gönderilecek tek bir link, videonun **izlenip izlenmediğinin** bildirimi, ve e-postanın içinde oynatılıyormuş gibi duran hareketli önizleme. Dosya olarak gönderilen video açılmıyor; link olarak gönderilen video açılıyor.
 
-Kurulum, bir kere, on dakika: loom.com'da hesap aç, tarayıcı eklentisini kur, mikrofon ve ekran izinlerini ver. Kayıt düğmesine bastığında üç şey seçiyorsun: "Screen + Cam" (ekran ve kamera) değil, **"Screen only"** (yalnız ekran) ya da yüzün köşede küçük baloncukta duracaksa "Screen + Cam"; ses için bilgisayarın mikrofonu; ve kaydedilecek alan olarak tarayıcı sekmesi. Bitince "Stop" (durdur) dersin, Loom linki kendiliğinden kopyalanır.
+Kurulum, bir kere, on dakika: loom.com'da hesap aç, tarayıcı eklentisini kur, mikrofon ve ekran izinlerini ver. Kayıt düğmesine bastığında üç şey seçiyorsun: **"Screen + Cam"** (ekran ve kamera), yüzün köşede küçük baloncukta durur ve bu tercih değil kural, çünkü bu videonun bütün gücü karşı tarafın seni görmesinden geliyor; ses için bilgisayarın mikrofonu; ve kaydedilecek alan olarak tarayıcı sekmesi. Baloncuğu çok büyük ya da çok küçük yapma, Loom'un verdiği boy yeter. Bitince "Stop" (durdur) dersin, Loom linki kendiliğinden kopyalanır.
 
 Ücretsiz plan bu iş için ilk haftayı çıkarıyor: kişi başına yirmi beş video ve video başına beş dakika sınırı var. Günde beş video çekiyorsun, yani ücretsiz plan beşinci günde doluyor. Doluncaya kadar ücret ödemiyorsun; dolduğu gün ücretli plana geçiyorsun ve bu aylık masraf tablosunun "sahaya çıktıktan sonra" bölümünde duruyor. Ücretsiz planla devam etmenin yolu eski videoları silmek; onu yapmıyoruz, çünkü izlendi bildirimi silinen videoda kayboluyor ve adayın hangi videoyu açtığını bir daha göremiyorsun.
 
@@ -202,7 +177,7 @@ Her gün, her video için:
 3. E-posta metnini yaz, imzanın üstüne önizlemeyi yapıştır. Yapıştırınca fazladan gelen satır varsa sil.
 4. Akşam Loom'da hangi videonun izlendiğine bak, sonucu kanal durumuna yaz.
 
-Konu satırı kısa ve dürüst: "Ahmet Bey, size bir video çektim." Gövde üç beş cümle, sonunda adın ve şehrin: "Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim. İzlemek için iki dakikanızı ayırabilirseniz sevinirim, uymazsa hiç sorun değil. Ahmet Kaya, Bursa." Metni FounderOS hazırlar, önizlemeyi sen yapıştırırsın, "tamam" dersin.
+Konu satırı kısa ve dürüst: "Ahmet Bey, size bir video çektim." Gövde üç beş cümle, sonunda adın ve şehrin: "Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim. Bir dakikanızı ayırabilirseniz sevinirim, uymazsa hiç sorun değil. Ahmet Kaya, Bursa." Metni FounderOS hazırlar, önizlemeyi sen yapıştırırsın, "tamam" dersin.
 
 E-posta iş adresinden gider, ücretsiz posta hesabından değil. Kişisel adresten giden video mesajı istenmeyen postaya daha kolay düşüyor ve tuhaf duruyor. İş adresi henüz yoksa kişisel adresten gider, ama alan adı alındığı gün bu değişir.
 

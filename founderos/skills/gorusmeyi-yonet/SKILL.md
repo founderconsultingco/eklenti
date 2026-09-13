@@ -79,20 +79,6 @@ Ekranın üst yarısı denetim kartından besleniyor: bulgu, lira karşılığı
 
 Öğrenci ekranı bir kez okur, görüşmede bakmaz. Görüşmede yalnız üç şey yazılır: işletmecinin sebep cümlesi, kayıp rakamı, itiraz kelimesi. Gerisi kayıttan çıkar. Üç derin nefes, üç kelime: sakin, meraklı, net.
 
-**A2. Yardım görüşmesi: aday "satmayacağım" denerek geldiyse.**
-
-Video mesajın yardım kampanyasıyla gelen adayda görüşme farklı açılır, çünkü sen o adaya "size bir şey satmaya çalışmıyorum, yardımınızı isteyeceğim" dedin. O sözü tutuyorsun. Tutmazsan görüşmeyi kaybetmekten kötüsü olur: adam haklı olarak kandırıldığını düşünür ve bunu anlatır.
-
-Bu görüşmenin yapısı şu ve yirmi dakikadır.
-
-1. **Teşekkür ve sözü tekrarla, bir dakika.** "Vakit ayırdığınız için teşekkür ederim. Videoda dediğim gibi, size bir şey satmaya gelmedim. Sektörü içeriden anlamak istiyorum, o yüzden çoğunlukla ben soracağım."
-2. **Soru bölümü, on beş dakika.** Görüşme özet ekranındaki altı veri sorusunun aynısı sorulur, ama satış niyetiyle değil öğrenme niyetiyle: ayda kaç talep geliyor, kaçı cevapsız kalıyor, gelen talebin kaçı işe dönüyor, bir müşteri ortalama ne getiriyor, telefona kim bakıyor ve haftada kaç saat, takip nasıl yapılıyor. Üstüne iki soru daha: bu işte sizi en çok ne yoruyor, ve bugüne kadar bunun için ne denediniz.
-3. **Kapanmadan önce tek soru, bir dakika.** İşletmeci neredeyse her zaman "sen ne yapıyorsun" diye soruyor. Sormazsa sen sorarsın ve şöyle sorarsın: "Anlattıklarınızın içinde bir tane şey var ki ben tam olarak onu çözüyorum. İki dakika anlatmamı ister misiniz?" İzin istiyorsun; izin verilmeden anlatmıyorsun.
-4. **İzin verirse iki dakika, tek parça.** Onun kendi cümlelerini ve kendi rakamlarını kullanarak anlatırsın: "Ayda otuz talep geliyor dediniz, sekizine dönemiyorsunuz, bir müşteri size ortalama şu kadar getiriyor. Yani ayda şu kadar para cevapsız kalıyor. Ben bunu kapatıyorum." Sonra tek soru: "Bunu sizin için kurmayı konuşmak ister misiniz?"
-5. **İsterse normal görüşmeye geçilir**, yani aşağıdaki akış aynı şekilde işler ve fiyat orada söylenir. İstemezse görüşme teşekkürle biter, aday "sonra" aşamasına geçer ve doksan gün sonra sıraya girer. Bu görüşmede ısrar yok; ısrar yardım sözünü yalan yapıyor.
-
-Bu görüşmenin öğrenciye en büyük faydası satış değil, cephane. On görüşmeden sonra o nişin gerçek rakamlarını, gerçek dertlerini ve gerçek kelimelerini biliyorsun; teklifin ve mesajların o günden sonra çok daha iyi yazılıyor. Kayda her yardım görüşmesinin altı veri cevabı yazılır, niş kartının "sahadan dolacak" satırları bu cevaplarla doluyor.
-
 **B. Açılış, iki dakika, üç iş.**
 1. Ses ve kayıt tek cümlede. Görüntülüyse: "Beni görüyor musunuz, duyuyor musunuz? Notlarım için kaydediyorum, uygun mu?" Telefonsa: "Ahmet Bey, ben [ad], on birde arayacağımı söylemiştim; notlarım için kaydediyorum, uygun mu?" Hava durumu ve şehir sohbeti yok.
 2. Gündem ve karar isteği tek nefeste: "Şöyle yapalım: birkaç soru soracağım, sizde talebin nerede kaçtığını anlayacağım; yardımcı olabileceğimi görürsem ne yaptığımı ve rakamı söyleyeceğim, olmazsa onu da söylerim. Sonunda evet ya da hayır diyeceksiniz, ikisi de olur. On beş dakika, olur mu?" Öğrenci bunu kendi ağzıyla söyler, ezberden okumaz. "İlginizi çekerse" tonu yok.
