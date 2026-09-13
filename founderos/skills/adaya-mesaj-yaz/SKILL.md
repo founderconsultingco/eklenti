@@ -437,7 +437,9 @@ Her takip tazedir, aynı metin tekrarlanmaz. Zincirin sebebi: cevapların çoğu
 - Şüpheci ("denedik olmadı", "pahalı görünüyor"): savunmaya geçme. Önce haklı olduğu yeri kabul et, sonra farklı bir açı ver.
 - Hazır: karmaşıklaştırma, hemen takvime al.
 
-**Gelen kutusu iki kez açılır, saati bellidir.** FounderOS senin e-postanı ve Instagram'ını göremiyor; bu kalıcı bir sınır ve gizlenmiyor. Ama "cevap gelince söyle" demek de işe yaramıyor, çünkü öğrenci sahadayken bakmıyor ve akşam unutuyor. O yüzden bakma anı sabitlendi ve günün planında duruyor: **öğlen, aramaların arasında beş dakika; akşam, sonuçları yapıştırırken.** İkisinde de tek iş var: gelen kutusunu aç, cevapları olduğu gibi yapıştır.
+**Gelen kutusu iki kez açılır, saati bellidir; ama cevap bildirimi bloğu keser.** FounderOS senin e-postanı ve Instagram'ını göremiyor; bu kalıcı bir sınır ve gizlenmiyor. "Cevap gelince söyle" demek de tek başına işe yaramıyor, çünkü öğrenci sahadayken bakmıyor ve akşam unutuyor. O yüzden bakma anı sabitlendi ve günün planında duruyor: **öğlen, aramaların arasında beş dakika; akşam, sonuçları yapıştırırken.** İkisinde de tek iş var: gelen kutusunu aç, cevapları olduğu gibi yapıştır.
+
+Tek istisna ve önemli: telefona bir cevap bildirimi düşerse (e-posta cevabı, Instagram mesajı, Loom "izlendi") saha bloğu kesilir ve **on dakika içinde** dönülür. Sebebi rakamla: cevap veren aday günün en değerli olayı ve ilgi saatle soğuyor; on dakikada dönen kişiyle iki saat sonra dönen kişi aynı randevuyu almıyor. Soğuk gönderim bekleyebilir, sıcak cevap bekleyemez. Bildirimler bunun için açık tutulur: iş e-postasının ve Instagram'ın bildirimi saha bloğunda kapatılmaz, kişisel hesaplarınki kapatılır.
 
 Yapıştırma biçimi yok. Cevabın kendisini, gönderenin adresiyle birlikte yapıştırman yeter; hangi adaya ait olduğunu FounderOS bulur. Aday aracı artık e-posta adresinden ve Instagram kullanıcı adından da aday buluyor, isim yazman gerekmiyor. Dalı da FounderOS seçer, sen seçmezsin.
 

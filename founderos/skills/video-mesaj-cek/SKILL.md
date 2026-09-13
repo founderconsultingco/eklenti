@@ -169,7 +169,7 @@ Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutars
 
 **Instagram: kapıdan sonra.** Kaynakta video, bağlantı isteği kabul edildikten sonra gidiyor; kabul küçük bir evet. Instagram'da bağlantı yok ama istek kutusu var: takip etmediğin hesaptan gelen video "istek" kutusuna düşüyor ve orada çoğu zaman açılmıyor. O yüzden Instagram'da video küçük bir evetten sonra gider. Küçük evet üç şeyden biridir: ısınmadan sonra geri takip etti, yorumuna cevap verdi, ya da kısa mesaja cevap verdi.
 
-Kısa mesaj tek satır ve izin ister: "Ahmet Bey, merhaba. Size özel kısa bir video çektim, göndermemi ister misiniz?" İstek kutusuna düşse de okunması iki saniye. "Evet", "gönder", "olur", hatta "?" gelince video gider ve artık ana kutudadır, çünkü yazışıyorsunuz. Cevap gelmezse video Instagram'dan gitmez; e-postadan zaten gitti, e-postası da yoksa aday kısa mesajın cevabını bekler ve diğer kanallar çalışmaya devam eder.
+Kısa mesaj tek satır ve izin ister: "Ahmet Bey, merhaba. Size özel kısa bir video çektim, göndermemi ister misiniz?" İstek kutusuna düşse de okunması iki saniye. Bu satır ancak video gerçekten çekilmişse gider; çekilmemiş videoyu "çektim" diye yazmak yalan ve karşı taraf "gönder" deyince iki saat sonra gelen video bunu belli ediyor. Bizde sorun yok, çünkü video o sabah çekildi ve e-postadan zaten gitti. "Evet", "gönder", "olur", hatta "?" gelince video gider ve artık ana kutudadır, çünkü yazışıyorsunuz. Cevap gelmezse video Instagram'dan gitmez; e-postadan zaten gitti, e-postası da yoksa aday kısa mesajın cevabını bekler ve diğer kanallar çalışmaya devam eder.
 
 Video giderken: Loom'dan indirip galeriden sohbete yüklersin, sohbette oynar. Üstüne tek satır: "Buyurun, bir dakika." Sohbette oynayan video linkten daha çok açılıyor, ama izlendi bildirimi vermiyor; izlenme takibi e-postadan giden videoda var.
 
@@ -209,9 +209,24 @@ Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
 
 Hareketli görsel ve şaka takibi kaynakta var ve orada çalışıyor, bizde yok. Sebebi kültür ve sektör: yerel işletmeciye gönderilen komik görsel, senin ciddiyetini düşürüyor ve karşı taraf yaş olarak da senden büyük oluyor. Onun yerine beşinci günün tek satırı var ve o satır yeni bir soru taşıyor. Aynı işi yapıyor: cevap vermemesi kolay olan bir mesaj yerine cevap vermesi kolay olan bir soru.
 
-### Ölçüm
+### Ölçüm: altı basamak, her basamağın kendi tamiri var
 
-İzlenme sayacı yok, tek işaret cevap. Yirmi videoda bir bakılır: video sonrası cevap oranı ve hangi bulgu tipiyle çekilen videonun cevap aldığı. Elli videodan önce senaryonun iskeleti değişmez, altı parça yerinde kalır. Yurt dışı oranları sana hedef diye söylenmez.
+Video bir huni ve hunide altı basamak var. Her akşam altı sayı yazılır, haftada bir hangi basamağın kestiği bulunur. "Video çalışmıyor" diye bir teşhis yok; hangi basamak, o var.
+
+| Basamak | Sayı | Kesiyorsa sorun nerede | Tamiri |
+|---|---|---|---|
+| Gönderildi | kaç video gitti | | |
+| İzlendi | Loom kaçını "izlendi" dedi | paket: konu satırı, önizlemede görünen ilk kare, başlık, gönderen adı ve fotoğrafı | konu satırını değiştir, önizlemenin ilk karesinde adayın kendi sayfası net görünsün, e-posta hesabında fotoğrafın olsun |
+| Cevap geldi | kaçı yazdı ya da aradı | videonun içi: kişiselleştirme, bulgu, teklif cümlesi, çıkış kapısı | ilk sekiz saniyeyi ve bulguyu değiştir; kanıt cümlesi ekle; istek küçük kalsın |
+| Randevu | kaçı saat verdi | randevu almanın zorluğu ve cevap hızın | cevaba on dakika içinde dön, tek somut saat teklif et, takvim linki değil saat |
+| Geldi | kaçı görüşmeye geldi | teyit ve hatırlatma, adayın uygunluğu | gorusmeye-getir'in zinciri, üç küçük söz |
+| Kapandı | kaçı müşteri oldu | görüşmenin kendisi | gorusmeyi-yonet, prova |
+
+Kural şu: en üstteki kesen basamak tamir edilir, altındakilere dokunulmaz. İzlenme düşükken senaryoyu değiştirmek boşuna, çünkü senaryoyu kimse görmüyor. Cevap düşükken görüşmeyi düzeltmek boşuna, çünkü görüşme yok.
+
+Şöyle düşün: bir araştırmacısın. "İzlenme yüzde otuz beş, bunu elliye nasıl çıkarırım." Tek değişken değiştirilir, yirmi videoda ölçülür, sonra sıradaki. Yirmi videodan az sayıyla karar verilmez; elli videodan önce senaryonun altı parçalık iskeleti değişmez, içi değişir. Yurt dışı oranları sana hedef diye söylenmez; kendi oranın ilk yirmi videoda çıkar ve sonraki hedef onun üstüdür.
+
+Bir de sıra kuralı: önce işe yaradığı kanıtlanır, sonra çoğaltılır. İlk hedef yüz video değil, ilk yüz videodan çıkan ilk randevu. O randevu geldiğinde video kanalının çalıştığı kanıtlanmış olur ve ondan sonra sayı artar. Kanıtlanmadan sayıyı artırmak, çalışmayan bir şeyi daha çok yapmak.
 
 ### Günün akışı, pencerelere göre
 
