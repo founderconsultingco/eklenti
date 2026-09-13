@@ -167,7 +167,11 @@ Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutars
 
 ### Gönderim: iki kanal, aynı gün, senin elinden
 
-**Instagram** (hesabın bir yıldan eski ve yüz takipçiden çoksa): videoyu Loom'dan indirip galeriden sohbete yüklersin, sohbette oynar. Üstüne tek satır: "Ahmet Bey, size özel kısa bir video çektim, bir dakika." Sohbette oynayan video linkten daha çok açılıyor, ama izlendi bildirimi vermiyor; o yüzden Instagram'dan giden videoda izlenme takibi yok, e-postadan giden videoda var. İkisi birden gidiyorsa bildirim e-posta tarafından okunur.
+**Instagram: kapıdan sonra.** Kaynakta video, bağlantı isteği kabul edildikten sonra gidiyor; kabul küçük bir evet. Instagram'da bağlantı yok ama istek kutusu var: takip etmediğin hesaptan gelen video "istek" kutusuna düşüyor ve orada çoğu zaman açılmıyor. O yüzden Instagram'da video küçük bir evetten sonra gider. Küçük evet üç şeyden biridir: ısınmadan sonra geri takip etti, yorumuna cevap verdi, ya da kısa mesaja cevap verdi.
+
+Kısa mesaj tek satır ve izin ister: "Ahmet Bey, merhaba. Size özel kısa bir video çektim, göndermemi ister misiniz?" İstek kutusuna düşse de okunması iki saniye. "Evet", "gönder", "olur", hatta "?" gelince video gider ve artık ana kutudadır, çünkü yazışıyorsunuz. Cevap gelmezse video Instagram'dan gitmez; e-postadan zaten gitti, e-postası da yoksa aday kısa mesajın cevabını bekler ve diğer kanallar çalışmaya devam eder.
+
+Video giderken: Loom'dan indirip galeriden sohbete yüklersin, sohbette oynar. Üstüne tek satır: "Buyurun, bir dakika." Sohbette oynayan video linkten daha çok açılıyor, ama izlendi bildirimi vermiyor; izlenme takibi e-postadan giden videoda var.
 
 **E-posta** (adres varsa): metnin içine Loom'un **hareketli önizlemesi** konur, düz link değil. Fark küçük görünüyor ama bütün iş burada: hareketli önizlemede kendi işletme sayfası açık ve senin konuşurken hareket ettiğin görünüyor. Karşı taraf tıklamadan önce videonun kendisi için çekildiğini anlıyor.
 

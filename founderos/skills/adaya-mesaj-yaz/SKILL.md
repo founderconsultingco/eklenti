@@ -310,7 +310,7 @@ Kime gider, iki halde:
 - **En çok istenen yüz işletmeye ilk temas olarak.** Denetim kartı hazır ve sahibinin adı biliniyorsa o adayın ilk teması videodur. Yazılı mesaj beklemez, arama beklemez. Sebebi şu: bu yüz işletme senin en çok istediğin yüz işletme ve onlara giden ilk dokunuşun en güçlü dokunuş olması gerekiyor. Bir dakikalık video, kendi ekranı açıkken, yazılı mesajın yapamayacağı şeyi yapıyor.
 - **Listenin kalanında takip olarak.** Sızıntı puanı dörtten yüksek, sahibinin adı bilinen, ilk temasın üçüncü gününde hâlâ cevap vermemiş aday. Orada video ikinci dokunuş.
 
-Ne zaman gider: yüz işletmede ilk temas günü, kalan listede ilk temasın üçüncü günü. Video linki e-postası varsa e-postadan, yoksa Instagram'dan gider; ikisi de varsa ikisinden gider ve bu tek harekettir. Video giden adayın üçüncü, yedinci ve on dördüncü gün yazılı takip zinciri kapanır, yerine video zinciri gelir.
+Ne zaman gider: yüz işletmede ilk temas günü, kalan listede ilk temasın üçüncü günü. E-postadan doğrudan gider, hareketli önizlemeyle. Instagram'dan küçük bir evetten sonra gider: geri takip, yoruma cevap ya da tek satırlık izin mesajına cevap. İkisinden de gidiyorsa bu tek harekettir. Video giden adayın üçüncü, yedinci ve on dördüncü gün yazılı takip zinciri kapanır, yerine video zinciri gelir.
 
 Videodan sonra hangi kanal gelir: iki gün sonra Instagram'dan sesli mesaj takibi, dördüncü gün arama, yedinci gün e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer. Adayın Instagram'ı yoksa ikinci gün takibi e-postadan tek satır gider; e-postası yoksa ayrılık mesajı Instagram'dan gider.
 
@@ -363,8 +363,8 @@ Akşam sayılarını söylediğinde kimin hangi kanalda durduğunu tek listede g
 
 Sırayla bak, ilk uyan satır senin satırın.
 
-0. Aday en çok istenen yüz işletmeden ve Instagram hesabı var → **ısınma**: takip et, son gönderisine tek samimi yorum. Bu bir temas sayılmaz, ertesi gün ya da iki gün sonra video gider.
-1. Aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı var → **video mesaj, ilk temas olarak**. Kanıt hikâyen yoksa videonun kanıt parçası boş kalır, video on saniye kısalır; senaryo değişmez. Video gittiği gün aynı adaya yazılı mesaj gitmez; video linkinin gittiği kanal e-posta varsa e-posta, yoksa Instagram'dır.
+0. Aday en çok istenen yüz işletmeden ve Instagram hesabı var → **ısınma**: takip et, son gönderisine tek samimi yorum. Bu bir temas sayılmaz.
+1. Aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı var → **video mesaj, ilk temas olarak**, e-postadan hareketli önizlemeyle. Instagram'da aynı gün tek satırlık izin mesajı gider ("size özel kısa bir video çektim, göndermemi ister misiniz"); geri takip, yoruma cevap ya da bu mesaja cevap gelince video Instagram'dan da gider. Gelmezse Instagram'dan gitmez. Kanıt hikâyen yoksa videonun kanıt parçası boş kalır, video on saniye kısalır; senaryo değişmez. Video gittiği gün aynı adaya yazılı mesaj gitmez; video linkinin gittiği kanal e-posta varsa e-posta, yoksa Instagram'dır.
 2. Denetim bitti, karar verenin adı var → telefon, aynı gün.
 3. Denetim bitti, karar verenin adı yok → e-posta, aynı gün. Telefon satırı "kapandı" olur.
 4. Adayın Instagram hesabı canlı ve nişin kartı Instagram'ı öne çıkarıyor → Instagram, aynı gün.
