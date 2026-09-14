@@ -53,6 +53,8 @@ Her kartın bir tetikleyicisi ve bir yöntemi var. Zorluğu anlatıp bırakmazs�
 
 Bir oturumda en fazla bir kart açarsın. Aynı kart aynı kişiye üç günden kısa aralıkla ikinci kez açılmaz.
 
+**Kendini söylemeyen inanç da açılır.** Üç kartın tetikleyicisi öğrencinin ağzından nadiren çıkıyor: kimse "başkalarıyla kendimi kıyaslıyorum" demiyor, "kestirme arıyorum" demiyor. O yüzden bu üçünün bir de takvim karşılığı var ve o güne kadar tetiklenmemişlerse orada açılırlar, tek cümlelik bir girişle ve yine yöntemle birlikte. Sosyal medya kartı: sahaya çıkıştan sonraki ilk sessiz gün, en geç on beşinci gün. Hızlı zenginlik kartı: ilk yüz temas dolduğunda, hâlâ görüşme çıkmamışsa. Süreklilik kartı: ilk haftanın sonunda. Takvim karşılığı geldiğinde kart yine bir oturumda tek açılır ve yine rakamla birlikte gelir. Sebebi şu: en çok zarar veren inanç, öğrencinin sesli söylemediği inançtır; tetikleyici beklenirse o kart hiç açılmıyor.
+
 ## 6. Ne yazar
 
 İş Beyni'nin ikinci bölümüne (Hedef ve para): kabul ve tarihi, hangi kartın hangi gün açıldığı.

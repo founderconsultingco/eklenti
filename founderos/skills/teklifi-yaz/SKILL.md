@@ -58,6 +58,8 @@ Gövdenin beş parçası var:
 4. Sistemin o kaybı nasıl durduğu. Nişin kartındaki müşteri yolculuğunun getirdiği parçalar, sadece onlar.
 5. Karşı tarafın riski. Ödeme sırası, deneme, çıkış şartı. Bir işletme sahibinin "peki ya olmazsa" sorusunun cevabı.
 
+**Beşinci parça birinci günde taslaktır ve öyle işaretlenir.** Güvencenin kesin metni, şartları ve hangi sayının tetiklediği fiyati-belirle'de, üçüncü blokta yazılıyor; teklif ondan önce yazıldığı için buradaki cümle geçicidir. Metnin içine tek satır konur ve İş Beyni'nin dördüncü bölümüne "güvence sürümü: taslak, [tarih]" diye geçer: "Bu cümle üçüncü blokta kesinleşecek." Öğrenciye de bir kez söylenir. Taslak cümle sayfaya da aynı işaretle gider; kesin metin çıkınca teklif ve sayfa aynı oturumda güncellenir. Sebebi şu: öğrenci birinci günde kesin sandığı bir güvenceyi ezberliyor, üçüncü blokta cümle değişince hangisinin geçerli olduğunu bilmiyor ve görüşmede ikisini karıştırıyor.
+
 ### Güçlü teklif, dolu teklif değildir
 
 Bir teklifi güçlendirmenin kolay yolu içine daha fazla sistem, bonus, destek ve garanti koymaktır. Bu yol yanlış ve tek kişilik bir işte tehlikeli: her eklenen parça teslimat yükü, bakım yükü ve söz verilmiş bir iş demek.

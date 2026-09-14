@@ -89,6 +89,8 @@ Sayfa "hazır" demek için güzel görünmesi yetmez:
 5. Sen sayfayı okudun ve "bu kişiyi tanıyorum" dedin.
 6. Sayfa İş Beyni'nin on sekizinci bölümüne yazıldı ve teklifi-yaz onu okuyabiliyor.
 
+**Ayrı dosya açılmaz.** İdeal müşteri sayfasının tek yeri İş Beyni'nin on sekizinci bölümüdür. Klasöre `ideal-musteri.md` diye ikinci bir dosya yazılmaz; yazılırsa iki kopya oluşuyor, modüllerin hangisini okuyacağı belirsizleşiyor ve biri güncellenip diğeri kalıyor. Öğrencinin klasöründe birinci günün sonunda duran dosyalar bellidir: `is-beyni.md`, `doksan-gun-plani.md`, `nis-karti.md`, artı `marka/` ve `site/` klasörleri. Sayfayı öğrenciye gösterirken ekrana yazarsın, dosya vermezsin.
+
 ## 5. Ne yapar
 
 Araştırmayı arka planda yürütür, sonra tek sayfa yazar. Sayfanın on iki başlığı sabittir:

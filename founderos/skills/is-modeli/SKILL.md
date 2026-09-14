@@ -98,6 +98,8 @@ Bütün işlevler aynı kayıtlar ve aynı satış süreci üstünde çalışır
 
 Rapor günü ve güvence her yerde aynı cümleyle yazılır; sözleşme, onay belgesi, site, görüşme ve rapor bu cümleyi buradan alır. Rapor günü öğrencinin çalışma düzenine göre [21/28]. gündür: tam zamanlıda yirmi bir, işin yanında çalışanda yirmi sekiz; hangisi olduğu İş Beyni'nden okunur ve belgeye o sayı yazılır.
 
+**Köşeli parantez iç notasyondur, dışarı çıkmaz.** `[21/28]` ve `[31/38]` bu dosyanın kendi yazım kısaltmasıdır; öğrenciye, müşteriye ya da herhangi bir belgeye bu haliyle **asla** yazılmaz. Öğrencinin çalışma düzeni birinci günde on birinci soruda öğreniliyor; o an sayı kesinleşir, İş Beyni'nin beşinci bölümüne "rapor günü: 21" ya da "rapor günü: 28" diye tek sayı olarak yazılır ve bundan sonra teklif, sayfa, sözleşme, onay belgesi, görüşme ve rapor o tek sayıyı okur. Bir metinde köşeli parantez görürsen orada bir iş yarım kalmış demektir: sayıyı İş Beyni'nden alır, yerine koyar, öyle gösterirsin. Aynı kural metindeki bütün köşeli parantezli yerler için geçerli ([iş adı], [tarih], [şehir]); hiçbiri doldurulmadan ekrana çıkmaz.
+
 Randevu yolunda: "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz."
 
 Teklif yolunda ikinci sayı değişir: "sistemin takip ettiği teklif sayısı". İkisi birlikte olan nişte ikinci sayı "sistemin yazdığı randevu ve takip ettiği teklif sayısı" olur. Gerisi aynı. Hangi sürümün geçerli olduğunu niş kartının "Müşteri yolculuğu" satırı söyler.

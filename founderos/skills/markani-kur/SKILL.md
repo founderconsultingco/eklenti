@@ -198,11 +198,15 @@ Bunlar şablonun içinde sabit durur ve değiştirilmez. FounderOS'un işi seçm
 
 **On palet.** gece, murekkep, orman, koz, celik, bordo, kum, derin, mor, kiremit. Her palet koyu bir kimlik yüzeyi, bir vurgu rengi ve iki atmosfer rengi taşıyor. Atmosfer, koyu yüzeyin arkasındaki bulanık ışıktır; markayı düz siyah kutudan ayıran şey odur. Palet nişe göre seçilir, her nişe mor verilmez.
 
+**Atmosfer degrade değildir, kural onu kapsamaz.** Kitin kuralı "gölge ve degrade yok" der; bu kural işaretin, yazının ve düğmenin üstünü kastediyor. Koyu yüzeyin arkasındaki atmosfer ışığı başka şeydir ve kalır. İkisini ayıran tek ölçü şu: **atmosferin iki rengi aynı renk ailesinden olur**, biri açık biri derin. Mavi ile mor, lacivert ile camgöbeği, mor ile magenta arasında geçiş yapan bir atmosfer artık ışık değil süstür ve tam olarak modülün yasakladığı "yapay zekâ uygulaması" görüntüsünü verir. On paletin onunda da atmosfer tek ailededir; yeni palet eklenirse aynı kurala uyar.
+
 ### Yirmi iki gerçek dosya
 
 Üretim bitince `marka/` klasöründe şunlar durur. Adlar ne işe yaradıklarını söyler; `gorsel-04-final-v2` diye bir dosya olmaz.
 
 **`marka/`** klasöründe `marka-kiti.html`: on iki panonun kendisi. Öğrenci ekranda kart olarak açıp görüyor; tek dosya, taşınabilir.
+
+**Kit ekranda çizilmiş haliyle açılır, dosya olarak değil.** Öğrenciye giden şey panoların görüntüsüdür: tıklıyor, tasarımı görüyor. "Code", "HTML", dosya boyutu, dosya simgesi görünen bir kart olmaz; öğrenci kod görürse günün en görünür anı teknik bir ekrana dönüşüyor ve "bu benim işim değil" diyor. Aynı kural tanıtım sayfası ve aday listesi için de geçerli: üçü de aynı biçimde, çizilmiş haliyle gelir. Kart açılmıyorsa yedek yol Türkçe yer tarifidir ("Masaüstü, sonra FounderOS klasörü, `marka` klasörü, `marka-kiti.html`; üstüne çift tıkla, tarayıcıda açılır"), çıplak dosya yolu değil.
 
 **`marka/logo/`** klasöründe: `logo-yatay-acik.png` (açık zeminli sitenin üst çubuğu), `logo-yatay-koyu.png` (koyu bant), `logo-dikey.png` (kare alanlar, kapak), `sembol.png` (saydam zeminli, başka bir görselin üstüne), `sosyal-profil.png` 1000x1000 (Instagram profili, daire kırpımına güvenli), `favicon.png` ve `favicon-32.png` (tarayıcı sekmesi), `eposta-logo.png` (imza).
 

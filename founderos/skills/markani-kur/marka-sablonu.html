@@ -277,15 +277,15 @@ var TIPO = {
 
 /* On palet. Her biri koyu kimlik yüzeyi, açık okuma yüzeyi ve iki atmosfer rengi. */
 var PALET = {
- gece:    {ad:'Gece',     koyu:'#06070B', vurgu:'#6E7BFF', atm:['#3B4BFF','#7A3BFF']},
- murekkep:{ad:'Mürekkep', koyu:'#06080F', vurgu:'#3BA3FF', atm:['#1B3BFF','#00C2FF']},
+ gece:    {ad:'Gece',     koyu:'#06070B', vurgu:'#6E7BFF', atm:['#3B4BFF','#1B2270']},
+ murekkep:{ad:'Mürekkep', koyu:'#06080F', vurgu:'#3BA3FF', atm:['#2E6FD9','#0E2A5C']},
  orman:   {ad:'Orman',    koyu:'#04090A', vurgu:'#2ED9A0', atm:['#00B37E','#0A6B5C']},
  koz:     {ad:'Köz',      koyu:'#0A0706', vurgu:'#FF6B3D', atm:['#FF5A2B','#FFB020']},
  celik:   {ad:'Çelik',    koyu:'#090B10', vurgu:'#9FB0C7', atm:['#7A889C','#C9D3E0']},
  bordo:   {ad:'Bordo',    koyu:'#0A0507', vurgu:'#E8394F', atm:['#C0203F','#6B0E2A']},
  kum:     {ad:'Kum',      koyu:'#0B0906', vurgu:'#E0B93C', atm:['#C9A227','#6B5412']},
  derin:   {ad:'Derin',    koyu:'#04070C', vurgu:'#2E7BFF', atm:['#0B3B8C','#062449']},
- mor:     {ad:'Mor',      koyu:'#08060D', vurgu:'#9B5BFF', atm:['#6B2BFF','#B02BFF']},
+ mor:     {ad:'Mor',      koyu:'#08060D', vurgu:'#9B5BFF', atm:['#6B2BFF','#2E1266']},
  kiremit: {ad:'Kiremit',  koyu:'#0A0806', vurgu:'#D9613C', atm:['#B24A2B','#5C2413']}
 };
 
@@ -436,7 +436,7 @@ P.push(pano('04','Logo kuralları ve yanlış kullanım',
  '<li>Fotoğraf üstünde yalnız tek renk hali kullanılır.</li>'+
  '<li>Yalnız iki zemin: açık ve koyu. Üçüncü zemin yok.</li>'+
  '<li>Yazı tipi değiştirilmez, harf aralığı oynatılmaz.</li>'+
- '<li>Gölge, kontur, eğim ve degrade uygulanmaz.</li></ul></div>'+
+ '<li>Gölge, kontur, eğim ve degrade uygulanmaz. Koyu yüzeyin arkasındaki atmosfer ışığı degrade değildir: tek renk ailesinde, bulanık, işaretin ve yazının arkasında kalır.</li></ul></div>'+
  '<div><h3>Bunlar yanlış</h3><div class="yanlis">'+
  ['e1|Oranı bozulmuş','e2|Fazla küçük','e3|Marka dışı renk','e4|Karışık fotoğraf üstünde','e5|Harf aralığı açılmış','e6|Sembol döndürülmüş']
  .map(function(x){var a=x.split('|');
@@ -517,7 +517,7 @@ P.push(pano('12','Hızlı referans',
  '<dd>köşe '+k(M.yuvarlak||'10px')+'</dd><dd>en küçük logo 11px</dd></dl>'+
  '<dl><dt>Yap</dt><dd>Tek vurgu rengi</dd><dd>Gerçek fotoğraf</dd><dd>Cümle düzeninde başlık</dd>'+
  '<dd>Koyu açılış, açık gövde</dd><dd>Aynı köşe yarıçapı</dd></dl>'+
- '<dl><dt>Yapma</dt><dd>Tamamı büyük harf başlık</dd><dd>Gölge ve degrade</dd><dd>Stok fotoğraf</dd>'+
+ '<dl><dt>Yapma</dt><dd>Tamamı büyük harf başlık</dd><dd>Gölge, iki renk arasında geçiş</dd><dd>Stok fotoğraf</dd>'+
  '<dd>Yan yana üç aynı kart</dd><dd>İkinci vurgu rengi</dd></dl>'+
  '</div>'));
 
@@ -564,7 +564,7 @@ var V = {
      '<div style="margin-top:30px" class="renkler">'+['koyu','acik','vurgu','yazi','soluk','cizgi'].map(function(n){
        return '<div class="renk"><i style="background:'+RENK[n]+';height:56px"></i><b>'+n+'</b><s>'+RENK[n].toUpperCase()+'</s></div>'}).join('')+'</div>'+
      '<div class="gr g2" style="margin-top:30px"><div><h3>Yazı tipi</h3><ul class="im"><li>Başlık: '+k(tp.baslik)+'</li><li>Gövde: '+k(tp.govde)+'</li><li>Köşe: '+k(M.yuvarlak||'10px')+'</li><li>En küçük logo: 11px</li></ul></div>'+
-     '<div><h3>Kural</h3><ul class="im"><li>Tek vurgu rengi, sayfanın onda birini geçmez</li><li>Gölge ve degrade yok</li><li>Tamamı büyük harf başlık yok</li><li>Fotoğraf gerçek olur</li></ul></div></div>'+
+     '<div><h3>Kural</h3><ul class="im"><li>Tek vurgu rengi, sayfanın onda birini geçmez</li><li>Gölge yok, iki renk arası geçiş yok</li><li>Tamamı büyük harf başlık yok</li><li>Fotoğraf gerçek olur</li></ul></div></div>'+
      '<div style="position:absolute;bottom:56px;left:56px;right:56px;border-top:1px solid var(--cizgi);padding-top:14px;color:var(--soluk)">'+
      [IL.telefon,IL.eposta,IL.site].filter(Boolean).map(k).join(' &nbsp;·&nbsp; ')+'</div></div>'}],
  'onay-belgesi-kapak'   : [794,1123, function(){
