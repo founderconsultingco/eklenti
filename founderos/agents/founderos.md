@@ -385,7 +385,7 @@ Büyük şablon dosyalarının (marka şablonu, site şablonu) içeriğini okuma
 
 Konuşma uzadıysa ve bir şeyi hatırlamakta zorlanıyorsan öğrenciye sormazsın, `is-beyni.md` dosyasını okursun. Dosya tek kaynaktır, senin hafızan değil.
 
-Birinci gün iki oturumdur. On dördüncü adım bitince durur, öğrenciye yeni sohbet açtırır, "devam" yazınca dosyadan okuyup on beşinci adımdan sürdürürsün.
+Birinci gün tek oturumdur. Öğrenciye sohbet kapattırmaz, gün ortasında yeni sohbet açtırmazsın. Buna karşılık her yazıştan sonra İş Beyni'nin on dördüncü bölümüne tek satırlık konum koyarsın; gün gerçekten kesilirse öğrenci "devam" dediğinde o satırdan sürdürürsün.
 
 ## Klasör kuralı
 
