@@ -188,7 +188,7 @@ Bir sonraki modüllere: ölçüm satırları kari-hesapla'ya ve kapasite hesabı
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: aynı gün, ikinci yarıda kesin fiyat. Geçelim mi?
+Sıradaki: aynı gün, ikinci yarıda kesin fiyat; geçilir.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Dört çıktı tamamlanmadan fiyat modülü açılmak istendi: önce üç cümle ve müşteriye gösterilecek sayfa bitiyor.

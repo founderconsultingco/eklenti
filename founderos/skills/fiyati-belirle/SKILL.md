@@ -201,7 +201,7 @@ CRM'e (açıldığı gün): kurulum ve aylık ücret satırları kayıtta hazır
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki, birinci günde (bant): "Şimdi hesap, sonra marka. Devam edelim mi?" Üçüncü blokta (kesin fiyat): "Aynı günün ikinci yarısında paranın yolunu, sözleşmeni ve aday listeni kuruyoruz; akşam tanıdıklara ilk mesaj gidiyor. Geçelim mi?"
+Sıradaki, birinci günde (bant): "Şimdi hesap, sonra marka." ve hesaba geçilir. Üçüncü blokta (kesin fiyat): "Aynı günün ikinci yarısında paranın yolunu, sözleşmeni ve aday listeni kuruyoruz; akşam tanıdıklara ilk mesaj gidiyor. Geçelim mi?"
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Fiyatı sesli söylerken üç denemede rakam düşüyor: prova sayacına "fiyat provası" yazılır.

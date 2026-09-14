@@ -173,7 +173,7 @@ Niş kartına: elli görüşmeden sonra hangi itirazın videoya rağmen soruldu�
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: bu videolar ön görüşme sayfasına CRM açıldığı gün giriyor; o güne kadar WhatsApp'tan gidiyor. Aynı blokta video mesaj kurulumu ve şirket hazırlığı, öğleden sonra sahaya çıkış kontrol listesi. Geçelim mi?
+Sıradaki: bu videolar ön görüşme sayfasına CRM açıldığı gün giriyor; o güne kadar WhatsApp'tan gidiyor. Aynı blokta video mesaj kurulumu ve şirket hazırlığı, öğleden sonra sahaya çıkış kontrol listesi.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Beşinci gün bitti, video yok: altıncı sabahın ilk işi olur.

@@ -241,7 +241,7 @@ Yorumları da çekelim derse: "Hayır. Yorumlara hızlı denetimde gözünle bak
 Günlük liste hakkında: "Listeyi sen sıralamıyorsun. Sabah açtığında bugünün kayıtları sırada: önce cevap verenler, sonra takibi gelenler, sonra puanı yüksek olan denetimi hazır adaylar."
 Liste ilk kez yazılınca sayfa sohbete kart olarak açılır, sonra tek cümle: "Listen hazır, işte burada. Liste sekmesinde yeşil satır bugün sırada, turuncu satır günü geçmiş; Saha modu sekmesinde bugün arayacakların kart kart, her kartta ne söyleyeceğin yazıyor; her aramadan sonra düğmeye bas." Arkasından ikinci cümle: "Klasöründe de duruyor, adı `adaylar.html`; istediğin zaman oradan da açarsın." Klasör tarifi ancak kart açılmazsa verilir.
 Listeyi görmek isteyince: sayfa yeniden kart olarak açılır, tek cümle: "Veriyi yeniledim, işte liste."
-Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?"
+Bitince: "Liste kayıt yerinde, yüz işletme işaretli, otuzunun denetimi bitti. Bu akşam tanıdıklara ilk mesaj; bir sonraki blokta kanıt ve mesaj metinleri."
 
 ## 7. Ne yazar
 
@@ -261,7 +261,7 @@ Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, 
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: bu akşam tanıdıklara ilk mesaj (tanidiga-mesaj-yaz); bir sonraki blokta kanıt ve mesaj metinleri. Geçelim mi?
+Sıradaki: bu akşam tanıdıklara ilk mesaj (tanidiga-mesaj-yaz); bir sonraki blokta kanıt ve mesaj metinleri.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üçüncü gün bitti, liste yüklenmedi: dördüncü günün ilk işi olur ve o günün akışı bir saat kayar.
