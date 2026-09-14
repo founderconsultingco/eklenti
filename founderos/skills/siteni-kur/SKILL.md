@@ -96,9 +96,9 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **0. Sonuç şeridi.** Sayfanın en üstünde ince bant, tek cümle, gerçek bir müşteri sonucuyla: "Bir klima servisinde 21 günde 46 kaçan çağrı randevuya döndü." Müşteri yokken bu şerit **yoktur**. İlk kanıt hikâyesi çıkınca açılır.
 
-**1. Üst çubuk.** Logo ve tek düğme. Menü yok, gidilecek başka sayfa yok.
+**1. Üst çubuk.** Logo, sayfa içi kısa menü (Dert, Sistem, Kanallar, Süreç, Kim; yalnız sayfada gerçekten olan bölümler, şablon kendisi kurar) ve tek düğme. Gidilecek başka sayfa yok; menünün her satırı aynı sayfanın bir bölümüne iner.
 
-**2. Açılış.** Başlığın üstünde ICP etiketi: "[Şehir]'deki [sektör] işletmeleri için". Sonra başlık: adayın elde edeceği sonuç, onun kelimeleriyle, tek kelime ya da öbek vurgulu. İki satırı geçmeyen açıklama, Dönüşüm Cümlesi'nin sadeleşmiş hali. Sonra ana düğme ("Ücretsiz görüşme planla"). İkinci düğme ("Örnek çalışmaları gör") **yalnız gerçek örnek çalışma varsa** görünür; yoksa hiç çizilmez, çünkü boşa giden düğme sayfanın en hızlı güven kırıcısıdır. Düğmenin altında güven satırı. Yanında (telefonda altında) ürünün kendisi: telefon çerçevesi içinde gerçek bir konuşma.
+**2. Açılış.** Başlığın üstünde ICP etiketi: "[Şehir]'deki [sektör] işletmeleri için". Sonra başlık: adayın elde edeceği sonuç, onun kelimeleriyle, tek kelime ya da öbek vurgulu. İki satırı geçmeyen açıklama, Dönüşüm Cümlesi'nin sadeleşmiş hali. Sonra ana düğme ("Ücretsiz görüşme planla"). İkinci düğme ("Örnek çalışmaları gör") **yalnız gerçek örnek çalışma varsa** görünür; yoksa hiç çizilmez, çünkü boşa giden düğme sayfanın en hızlı güven kırıcısıdır. Düğmenin altında güven satırı. Yanında (telefonda altında) ürünün kendisi: telefon çerçevesi içinde gerçek bir konuşma; çerçevenin altında konuşmanın sonucu tek satır ("Randevu yazıldı"). Bütün bunlar nişin açılış fotoğrafının üstünde durur: fotoğraf pakette niş başına hazır, koyu örtüyle sayfanın kimlik rengine boyanır, sayfa açılınca yavaşça netleşir; başlık kelime kelime belirir. Açılışın en altında üç sayı şeridi: üç kısa rakam ve altında birer satır açıklama. Rakamlar ya sistemin kendi kuralıdır ("1 dk": açılamayan aramadan sonra mesajın gitme süresi; "3 soru": randevudan önce sorulan en fazla soru; "28. gün": rapor günü) ya da niş kartının kaynaklı rakamıdır. Ölçülmüş gibi görünen uydurma rakam yazılmaz.
 
 **3. Tanıtım videosu.** Sayfanın ortasına giren video alanı; başlık, tek satır açıklama ve gömülü oynatıcı. Video çekilmeden bu bölüm **yoktur**, boş kara kutu durmaz. Videonun ne zaman çekildiği ve neden bugün çekilmediği satis-videosunu-cek'te yazılı.
 
@@ -108,7 +108,13 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **6. Ne yapıyoruz.** Sistemin adı ve teslimat kontrolünden geçmiş parçalar. Üç an, üç telefon ekranı yan yana (telefonda alt alta): mesaj geldi ve cevap gitti; sistem sordu ve saat verdi; randevu yazıldı ve hatırlatma gitti. Her ekranın altında tek cümle, sonuç diliyle. Araç adı yok, "yapay zekâ" kelimesi yok. Kalan parçalar üç ekranın altında düz yazı üç satır.
 
-**7. Nasıl çalışır.** Üç adım, numaralı: kurulum görüşmesi, kurulum ve deneme, rapor günü. Her adım bir başlık ve iki satır. Bu bölüm adayın kafasındaki "peki ben ne yapacağım" sorusunu kapatıyor.
+**5b. Sistem çalışırken.** Koyu bant üstünde haftalık bir liste: beş gün, her günde üç dört satır iş, sistemin yazdığı satırlar kimlik renginde, işletmenin zaten aldığı işler gri, bir de boş kalan saat. Solda başlık, iki satır açıklama ve iki üç madde. İş adları niş kartının hizmet listesinden ("kombi bakım", "implant", "saç kesimi"); müşteri adı yazılmaz. Bu bir örnek haftadır ve öyle görünür; "doluluk yüzdesi" ve saniyeli ölçüm rozetleri gerçek müşteri rakamı gelmeden boş bırakılır. Adayın sorusu "benim haftam nasıl görünecek"; bölüm o soruyu gösteriyor, anlatmıyor.
+
+**6b. Kanallar.** Üç kart yan yana: telefon, WhatsApp, form (Google işletme profili ya da site formu). Her kartta o kanalın ekran taklidi (cevapsız arama listesi, sohbet baloncukları, doldurulmuş form), altında iki satır: "Bugün: ..." ve "Sistemle: ...". Kartın rekabet şeklinden ve dört sızıntıdan çıkar. Kartların altında tek cümle sonuç ve düğme ("Kanallarımı bağlayalım"); sonuç cümlesindeki rakam kaynaklı kart rakamıdır. Bu bölüm doluysa "Neden biz" karşılaştırması ayrıca kurulmaz, aynı şeyi iki kez söylemiş olursun.
+
+**6c. Neden hızlı.** Yanıt süresiyle müşteriye ulaşma ihtimalini gösteren çubuk grafik. **Yalnız kaynaklı rakam varsa kurulur**; niş kartında kaynaklı bir dönüş süresi araştırması yoksa bölüm yoktur ve olmaması eksiklik değildir.
+
+**7. Nasıl çalışır.** Süreç çizelgesi: dikey çizgi üstünde üç dört adım, her adımın solunda etiketi ("GÜN 01 · KURULUM GÖRÜŞMESİ", "GÜN 02–06 · KURULUM", "GÜN 07–27 · CANLI", "GÜN 28 · RAPOR"), sağında başlık ve iki satır. Gün sayıları teslimat takviminden. Bu bölüm adayın kafasındaki "peki ben ne yapacağım" sorusunu kapatıyor.
 
 **8. Müşteri yorumları.** Gerçek, izinli, adıyla. Tek yorum bile olsa konur. Yorum yoksa bölüm **yoktur**; uydurma yorum, "memnun müşterilerimiz" yazısı, yıldız sırası konmaz.
 
@@ -116,7 +122,7 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **10. Neden biz.** İki sütunlu tablo değil, üç satırlık karşılaştırma: solda nasıl yapılıyor, sağda biz nasıl yapıyoruz. Kartın "rekabetin şekli" bölümünden. Rakip adı geçmez.
 
-**11. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından. Fotoğrafı yanında, dikey, gerçek; yoksa bölüm fotoğrafsız kurulur. Müşteri gelmeden önce sayfanın en güçlü kanıtı budur, çünkü tek gerçek olan şey kurucunun kendisi.
+**11. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından; ilk paragraf büyük puntoyla, tek cümle. Fotoğrafı yanında dikey bir kart olarak, altında adı ve şehri; gerçek fotoğraf, yoksa bölüm fotoğrafsız ve dar sütunda kurulur. Müşteri gelmeden önce sayfanın en güçlü kanıtı budur, çünkü tek gerçek olan şey kurucunun kendisi.
 
 **12. Güvence.** Rapor günü raporu ve şartı, fiyati-belirle'deki tam metinle. Sayı sözü yok. Bu bölüm sayfanın alt tarafında durur ve açılışa taşınmaz; sayfanın ikna eden yeri kanıt bölümleridir, bu bölüm yalnız aklına takılana cevap verir.
 
@@ -152,7 +158,7 @@ Sebebi şu: görünüş düz yazıyla tarif edilince model her öğrencide HTML'
 
 **Şablona dokunulmaz.** CSS'e satır eklenmez, sınıf adı değiştirilmez, bölüm sırası oynatılmaz, şablonda olmayan bölüm uydurulmaz, dışarıdan yazı tipi ya da kütüphane çağrılmaz. Sayfanın kimliği kitten `window.SITE.renk`, `window.SITE.yazi_tipi` ve `window.SITE.yuvarlak` üzerinden geliyor; renk değiştirmek demek CSS yazmak değil, o üç satırı doldurmak demek. Şablonun kendisinde bir eksik görülürse öğrencinin dosyasında yamanmaz, FounderOS bunu açık iş olarak not eder ve şablon bir kere düzeltilir.
 
-**Şablonda hazır duranlar.** Üst çubuk ve tek düğme metni; koyu açılış bandı (düz kutu değil, dokulu zemin) ve koyu son çağrı bandı, arada açık okuma yüzeyi; kodla çizilen telefon çerçevesi ve sırayla beliren baloncuklar; çekme cümle; hesap listesi; numaralı adımlar; üç satırlık karşılaştırma; açılır kapanır sorular; takvim yuvası; telefonda alta yapışan düğme; hareket azaltma tercihi; 360 ve 390 pikselde taşmasız yerleşim. Bunların hiçbiri yeniden yazılmaz.
+**Şablonda hazır duranlar.** Kayan üst çubuk, sayfa içi menü ve düğme; tam ekran açılış (nişin fotoğrafı, koyu örtü, kelime kelime beliren başlık, üç sayı şeridi); kodla çizilen telefon çerçevesi ve sırayla beliren baloncuklar; numaralı bölüm başlıkları ("01 — DERT"; numaralar görünen bölümlere göre kendiliğinden sayılır); çekme cümle ve kaynağı; hesap listesi; haftalık iş listesi; üç kanal ekranı (arama listesi, sohbet, form) ve bugün/sistemle satırları; çubuk grafik; süreç çizelgesi; üç satırlık karşılaştırma; fotoğraflı kurucu kartı; güvence kutusu; açılır kapanır sorular; takvim yuvası; masaüstünde yüzen WhatsApp düğmesi, telefonda alta yapışan düğme; görünür olunca beliren bölümler; hareket azaltma tercihi; 360 ve 390 pikselde taşmasız yerleşim. Bunların hiçbiri yeniden yazılmaz. Yazı tipleri ve fotoğraf dışarıdan çağrılmaz, `site-uret.py` ile dosyanın içine gömülür.
 
 #### Veri sözleşmesi: `window.SITE`
 
@@ -174,17 +180,28 @@ window.SITE = {
     ikinci_dugme: "Örnek çalışmaları gör",        // yalnız gerçek vaka varsa görünür
     guven: "..."                                  // güvencenin özeti ya da gerçek sayı
   },
-  konusma: { isletme, saat, baloncuklar: [ { kim: "musteri"|"sistem", metin } ] },
+  sayilar: [ { deger: "1 dk", aciklama: "..." } ],   // açılışın altındaki üç sayı; sistemin kuralı ya da kaynaklı kart rakamı, yoksa boş dizi
+  konusma: { isletme, saat, baloncuklar: [ { kim: "musteri"|"sistem", metin } ], sonuc: "Randevu yazıldı" },
   video:  { baslik, aciklama, gomme: "" },        // gomme boşsa video bölümü yok
-  dert:   { baslik, paragraflar: [], cekme: "", cekme_sonra: 1 },
+  dert:   { baslik, paragraflar: [], cekme: "", cekme_sonra: 1, cekme_kaynak: "Bursa, Google yorumu, Ağustos" },
   bedel:  { baslik, satirlar: [ { ad, deger } ], sonuc },
+  urun:   { baslik, aciklama, maddeler: [], etiket: "BU HAFTA · USTA 1", doluluk: "",   // doluluk gerçek müşteri rakamı gelmeden boş
+            gunler: [ { ad: "PZT", isler: [ { ad, saat, sistem: true } , { ad: "Boş", saat, bos: true } ] } ],  // beş gün
+            lejant_sistem: "Sistemin yazdığı", lejant_mevcut: "Mevcut iş", rozetler: [] },   // rozetler ölçülmüş rakam ister, gelmeden boş
+  kanallar: { baslik, aciklama, sonuc, dugme,
+            liste: [ { ad: "Telefon", tip: "telefon"|"whatsapp"|"form", aciklama, bugun, sistemle,
+                       ekran: { /* telefon: saat, numara, altyazi, olaylar:[{ad,saat,tur:""|"sistem"|"iyi"}] */
+                                /* whatsapp: isletme, durum, baloncuklar:[{kim,metin}] */
+                                /* form: isletme, etiket, baslik, aciklama, alanlar:[], dugme */
+                                sonuc, sure } } ] },   // sure: sistemin kuralı ("1 dk içinde"), ölçülmüş saniye değil
+  grafik: { baslik, aciklama, not, sayilar: [ { deger, aciklama } ], cubuklar: [ { etiket, oran: 0-100, deger } ], maddeler: [ { baslik, metin } ] },  // yalnız kaynaklı rakamla; yoksa boş
   ne:     { baslik, aciklama, anlar: [ { baloncuklar, cumle, isletme, saat } ], kalanlar: [] },
-  nasil_baslik: "Nasıl çalışır?",
-  nasil:  [ { baslik, metin } ],                  // üç adım
+  nasil_baslik: "Nasıl çalışır?", nasil_aciklama: "",
+  nasil:  [ { etiket: "GÜN 01 · KURULUM GÖRÜŞMESİ", baslik, metin } ],   // üç dört adım, süreç çizelgesi
   yorum_baslik, yorumlar: [ { metin, ad, isletme } ],   // gerçek ve izinli olan; yoksa boş dizi
   vaka_baslik,  vakalar:  [ { baslik, sorun, cozum, sonuc } ],  // gerçek müşteri; yoksa boş dizi
   neden_baslik, neden:    [ { boyle, biz } ],      // sol "böyle yapılıyor", sağ "biz böyle"
-  kim:    { baslik, paragraflar: [], foto: "" },   // foto yoksa bölüm tek sütuna düşer
+  kim:    { baslik, paragraflar: [], foto: "", unvan: "Kurucu · Bursa" },   // foto yoksa bölüm dar sütuna düşer
   guvence:{ baslik, paragraflar: [] },
   soru_baslik, sorular: [ { soru, cevap } ],
   takvim: { baslik, aciklama, gomme: "", baglanti: "" },  // gomme varsa takvim, yoksa düğme
@@ -192,7 +209,7 @@ window.SITE = {
 };
 ```
 
-Alanların içi uydurulmaz. `acilis.etiket` şehir ve niş adından, `konusma.baloncuklar` niş kartından ve yazılı asistanın kurallarından, `bedel.satirlar` kartın kayıp biriminden ve rakamından kaynağıyla, `dert.paragraflar` on sekizinci bölümdeki üç dertten, `neden` kartın rekabet şeklinden, `kim.paragraflar` kurucu bölümündeki gerçek geçmişten gelir. `konusma.saat` kartın kapanış saatinden sonrası, tarih bugünün tarihi. Rakam varsa kaynağıyla; kaynağı olmayan rakam sayfaya yazılmaz.
+Alanların içi uydurulmaz. `acilis.etiket` şehir ve niş adından, `konusma.baloncuklar` niş kartından ve yazılı asistanın kurallarından, `bedel.satirlar` kartın kayıp biriminden ve rakamından kaynağıyla, `dert.paragraflar` on sekizinci bölümdeki üç dertten, `neden` kartın rekabet şeklinden, `kim.paragraflar` kurucu bölümündeki gerçek geçmişten gelir. `konusma.saat` kartın kapanış saatinden sonrası, tarih bugünün tarihi. `urun.gunler` kartın hizmet adlarından, müşteri adı yok. `kanallar.liste` üç kanal, her birinin bugün/sistemle satırı kartın rekabet şeklinden. Rakam varsa kaynağıyla; kaynağı olmayan rakam sayfaya yazılmaz. Ekran taklitlerindeki süre satırları ("4 dk", "41 sn") ölçüm gibi durur; gerçek müşteri ölçümü gelmeden buraya sistemin kuralı yazılır ("1 dk içinde"), saniyeli rakam yazılmaz. `grafik` ve `urun.doluluk` kaynaksızsa boş kalır.
 
 **Kontrol: veri kontrolü, göz kontrolü değil.** Sayfa gösterilmeden önce FounderOS şablonun dışına çıkılmadığına ve verinin dürüst olduğuna bakar. Aşağıdakilerden biri bile doğruysa sayfa yeniden kurulur, öğrenciye gösterilmez:
 1. Şablonun HTML ya da CSS kısmında bir değişiklik var mı; `window.SITE` bloğunun dışına bir satır yazılmış mı?
@@ -202,6 +219,8 @@ Alanların içi uydurulmaz. `acilis.etiket` şehir ve niş adından, `konusma.ba
 5. Sayfada kaynağı olmayan bir rakam ya da bir sayı sözü var mı; fiyat yazılmış mı?
 6. `is.whatsapp` ya da `takvim.baglanti` boş bir bağlantı mı; düğmelerden biri hiçbir yere gitmiyor mu?
 7. `kim.paragraflar` gerçek geçmiş yerine genel cümle mi?
+8. `urun.doluluk`, `urun.rozetler`, `kanallar` ekranlarındaki `sure` ya da `grafik` içinde ölçülmüş gibi duran kaynaksız bir rakam var mı?
+9. `kanallar` doluyken `neden` de dolu mu (aynı şey iki kez)?
 
 Bunlar bittiğinde sayfaya bir de bakılır: telefon ve masaüstü görüntüsü, Türkçe karakterler (ı, İ, ğ, ş, ç, ö, ü, ₺), taşma var mı, telefon çerçevesindeki konuşma okunuyor mu, kitin logosu gerçekten sayfada mı. Bakış şablonun çalışıp çalışmadığını doğrulamak için; tasarımı yeniden yapmak için değil.
 
@@ -211,7 +230,9 @@ Sayfa bir kere kurulur, bir kere bakılır, bir kere düzeltilir ve biter. Sonsu
 
 **1. Malzeme toplanır, tek soru sorulur.** Tek soru: "Telefonunda düz duvar önünde, gün ışığında çekilmiş bir fotoğrafın var mı? Varsa klasöre at, Kim bölümüne koyuyorum; yoksa sorun değil, dördüncü blokta çekiyoruz." Gerisi sorulmaz. İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur.
 
-**2. Şablon kopyalanır ve doldurulur.** Şablon bu becerinin klasöründe `site-sablonu.html` adıyla duruyor (beceri açıldığında klasör yolu görünür). Olduğu gibi `site/[is-adi].html` olarak öğrencinin klasörüne kopyalanır. Kopyalama tek satırlık bir dosya kopyalama komutudur; komut çalışmazsa ikinci kez denenir, gerekirse `python3` ile kopyalanır. **Şablonun içeriği okunmaz ve elle yeniden yazılmaz.** Dosya büyüktür; içeriğini konuşmaya taşımak günün geri kalanında erken konuşulanların kaybolmasına sebep olur. Üç denemede de kopyalanamazsa sayfa o gün kurulmaz, açık iş olarak yazılır ve gün devam eder. FounderOS dosyanın içindeki `/*FOUNDEROS-SITE*/` işaretinin üstüne `window.SITE` bloğunu yazar; dosyanın başka hiçbir yerine dokunmaz. Bütün alanlar tek seferde doldurulur, yarım bırakılıp "devamı sonra" denmez. Kitin dosyaları gerçekten kullanılır: `is.logo` üst çubuktaki logo, `kim.foto` öğrencinin fotoğrafı, renkler ve yazı tipleri kitin kodları; görseller sayfanın içine gömülür ki tek dosya olarak taşınsın. Kitte olmayan görselin alanı boş bırakılır, boş kutu konmaz. `is.whatsapp` İş Beyni'ndeki telefon numarasıyla doludur; boş bağlantı yazılmaz, numara yoksa önce sorulur.
+**2. Şablon kopyalanır ve doldurulur.** Şablon bu becerinin klasöründe `site-sablonu.html` adıyla duruyor (beceri açıldığında klasör yolu görünür). Olduğu gibi `site/[is-adi].html` olarak öğrencinin klasörüne kopyalanır. Kopyalama tek satırlık bir dosya kopyalama komutudur; komut çalışmazsa ikinci kez denenir, gerekirse `python3` ile kopyalanır. **Şablonun içeriği okunmaz ve elle yeniden yazılmaz.** Dosya büyüktür; içeriğini konuşmaya taşımak günün geri kalanında erken konuşulanların kaybolmasına sebep olur. Üç denemede de kopyalanamazsa sayfa o gün kurulmaz, açık iş olarak yazılır ve gün devam eder. FounderOS dosyanın içindeki `/*FOUNDEROS-SITE*/` işaretinin üstüne `window.SITE` bloğunu yazar; dosyanın başka hiçbir yerine dokunmaz. Bütün alanlar tek seferde doldurulur, yarım bırakılıp "devamı sonra" denmez.
+
+**2b. Yazı tipi ve fotoğraf gömülür.** Blok yazıldıktan sonra, aynı beceri klasöründeki betik sessizce çalıştırılır: `python3 <beceri klasörü>/site-uret.py site/[is-adi].html --nis <niş slug>`. Niş slug'ı niş kartının dosya adıdır (`klima-kombi`, `dis-klinigi`, `guzellik-salonu` gibi). Betik kitin yazı tiplerini ve nişin açılış fotoğrafını dosyanın içine gömer, iki satır rapor basar. Öğrenciye söylenen tek cümle: "Sayfayı kuruyorum, birkaç saniye." Python yoksa ya da betik hata verirse sayfa yine çalışır: sistem yazı tipiyle ve fotoğrafsız, dokulu koyu zeminle açılır; bu bir açık iş olarak İş Beyni'ne yazılır, gün durmaz. Betik hiçbir zaman öğrenciye gösterilmez, çıktısı sohbete yapıştırılmaz. Kitin dosyaları gerçekten kullanılır: `is.logo` üst çubuktaki logo, `kim.foto` öğrencinin fotoğrafı, renkler ve yazı tipleri kitin kodları; görseller sayfanın içine gömülür ki tek dosya olarak taşınsın. Kitte olmayan görselin alanı boş bırakılır, boş kutu konmaz. `is.whatsapp` İş Beyni'ndeki telefon numarasıyla doludur; boş bağlantı yazılmaz, numara yoksa önce sorulur.
 
 **3. Önizleme ve tek bakış.** Önce veri kontrolünün yedi sorusu cevaplanır. Sonra sayfa ekranda kart olarak açılır (öğrenci tıklar, görür) ve FounderOS aynı sayfaya iki genişlikte bakar: telefon ve masaüstü. Baktığı şeyler: Türkçe karakterler, taşma, telefon çerçevesindeki konuşma okunuyor mu, kitin logosu ve görselleri gerçekten sayfada mı, boş kalan bölüm gerçekten gizlenmiş mi. Bulduğu her şeyi tek listede toplar.
 
