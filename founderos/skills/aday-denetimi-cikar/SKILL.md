@@ -39,6 +39,8 @@ Bu katmanın ne kadar dolduğunu ölçtük, tahmin etmedik. İki gerçek çekim,
 
 Reklam bakışı eskiden bu katmandaydı, artık değil: veri servisi reklam kütüphanesini kendisi tarıyor ve her kayda reklam sütununu dolduruyor. Tek başına sızıntı sayılmıyor; akşam kapalı ya da yorumda şikayet işaretiyle birleşince oluyor: "İki reklamınız yayında, biri 05.01.2026 tarihinden beri ama Google'da saatleriniz akşam altıda kapanıyor."
 
+Başka hiçbir gözlem çıkmayan adayda reklam tek başına kullanılıyor, ama iddia olarak değil soru olarak: "İki reklamınız yayında, biri 05.01.2026 tarihinden beri; o reklamdan gelen aramaya kim bakıyor?" Bu bir sızıntı iddiası değil, cevabı işletmecinin ağzından alan bir soru. Bu satır olmadan, en çok istenen yüzün başındaki reklam verenler gözlemsiz aranıyordu: sıralama onları öne alıyordu ama söylenecek cümleleri yoktu.
+
 Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı gün içinde değişmiyor.
 
 **Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de senin elinle yapılıyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor.

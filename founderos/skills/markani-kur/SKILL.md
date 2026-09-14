@@ -214,7 +214,11 @@ Bunlar şablonun içinde sabit durur ve değiştirilmez. FounderOS'un işi seçm
 
 Baskıya giden dosyalar PDF'tir ve gerçek kâğıt ölçüsündedir; yazı tipi PDF'in içine gömülüdür, matbaa açtığında bozulmaz. Ekrana giden dosyalar PNG'dir ve logo dosyaları iki katı çözünürlükte üretilir.
 
-### Tarayıcı bulunamazsa
+### Python ya da tarayıcı bulunamazsa
+
+Bu adım öğrencinin bilgisayarındaki iki şeye bağlı: `python3` ve bir tarayıcı. İkisi de yoksa gün durmaz, kit panolarıyla teslim edilir.
+
+FounderOS dosya üretimine başlamadan önce `python3 --version` ile bakar. Çıkmıyorsa öğrenciye tek cümle söyler ve geçer: "Görsel dosyaları şimdilik üretemiyorum, kitin kendisi hazır ve tarayıcıda açılıyor; dosyaları ilk müşterin gelmeden önce üretiriz." İş Beyni'nin altıncı bölümüne "görsel dosyalar üretilemedi, sebep: python yok" satırı yazılır ve on üçüncü bölüme açık iş olarak düşer. Öğrenciye python kurdurulmaz; birinci günün ortasında kurulum yaptırmak günü öldürüyor ve o dosyalara birinci günde ihtiyaç yok.
 
 Betik bir tarayıcı bulamazsa uydurmaz ve sessizce geçmez: hangi dosyaların üretilemediğini söyler. O zaman kit panolarıyla teslim edilir (`marka-kiti.html` her durumda çalışıyor, tek dosya, tarayıcıda açılıyor), İş Beyni'nin altıncı bölümüne "görsel dosyalar üretilemedi, sebep: tarayıcı bulunamadı" satırı yazılır ve öğrenciye tek cümleyle söylenir. Sonraki modüller o satırı okuyor: siteni-kur logoyu bulamazsa sayfayı logosuz kurar ve boş kutu koymaz.
 

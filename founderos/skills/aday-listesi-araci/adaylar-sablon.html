@@ -162,6 +162,7 @@ var IPUCU_BIRLESIK=[
 ];
 var IPUCU_KANCA=[
  ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
+ ['reklam_veriyor',"Reklam veriyorsunuz; o reklamdan gelen aramaya kim bakıyor?"],
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
  ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
  ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
@@ -283,6 +284,10 @@ var ANAHTAR='founderos-saha-'+BUGUN;
 function durumOku(){try{return JSON.parse(localStorage.getItem(ANAHTAR)||'{}')}catch(e){return{}}}
 function durumYaz(d){try{localStorage.setItem(ANAHTAR,JSON.stringify(d))}catch(e){}}
 var durum=durumOku();
+// Ayni kisa ad listede birden fazla olabiliyor (zincir, sube, benzer ad).
+// Durum anahtari ada degil, ad+telefon ciftine bagli; yoksa iki isletme ayni
+// dugmeyi paylasiyor ve biri digerinin sonucunu eziyordu.
+function kayitAnahtari(r){return (r.kisa_ad||'')+'\u00a7'+((r.telefon||r.semt||'').trim())}
 function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');
  // Satir '<kanal>, ...' bicimindeyse bastaki kanal esastir: 'telefon, videoyu acmis, ara'
  // satiri once video sanilıyordu ve telefon temasi video kanalina isleniyordu.
@@ -394,14 +399,14 @@ cekmece.addEventListener('click',function(e){if(e.target.closest('[data-kapat]')
 document.addEventListener('keydown',function(e){if(e.key==='Escape')cekmeceAc(false)});
 
 function sahaCiz(){
- var giren=gunluk.filter(function(r){return durum[r.kisa_ad]&&durum[r.kisa_ad].sonuc}).length;
+ var giren=gunluk.filter(function(r){return durum[kayitAnahtari(r)]&&durum[kayitAnahtari(r)].sonuc}).length;
  var h='<div class="saha-ust"><span class="kucuk">'+(gunluk.length?gunluk.length+' aday sırada · '+giren+' sonuç girildi · '+(gunluk.length-giren)+' kaldı':'')+((OAD==='[adın]'||OSEHIR==='[şehir]')?' · <span class="rozet uyari">adın ve şehrin sayfaya yazılmamış, FounderOS\'a söyle</span>':'')+'</span>'
   +'<button class="dugme" data-itiraz>Karşı taraf bunu söylerse</button><button class="dugme ana" id="kopyala">Sonuçları kopyala</button><button class="dugme kirmizi" id="temizle">Temizle</button></div><div id="kopya-alani"></div>';
  if(!gunluk.length){h+='<div class="bos">Bugün sırada kimse yok. Sabah FounderOS\'a "günaydın" yaz, günün listesi kurulunca burası dolar.</div>';saha.innerHTML=h;bagla();return}
  gunluk.forEach(function(r){
-  var d=durum[r.kisa_ad]||{};var kanal=d.kanal||kanalTahmin(r);var yazi=kanal!=='telefon';var mod=d.mod||modTahmin(r);
+  var d=durum[kayitAnahtari(r)]||{};var kanal=d.kanal||kanalTahmin(r);var yazi=kanal!=='telefon';var mod=d.mod||modTahmin(r);
   var dug=SONUC.filter(function(s){return !s[3]||(s[3]==='telefon'&&!yazi)||(s[3]==='yazi'&&yazi)||(s[3]==='video'&&kanal==='video')}).map(function(s){return'<button data-s="'+s[0]+'" class="'+(d.sonuc===s[0]?'secili '+s[2]:'')+'">'+s[1]+'</button>'}).join('');
-  h+='<div class="kart'+(r._gecmis?' gecmis':'')+(d.sonuc?' bitti':'')+'" data-k="'+kac(r.kisa_ad)+'"><div class="oku"><div class="kucuk baslik">Önce oku</div>'
+  h+='<div class="kart'+(r._gecmis?' gecmis':'')+(d.sonuc?' bitti':'')+'" data-k="'+kac(kayitAnahtari(r))+'"><div class="oku"><div class="kucuk baslik">Önce oku</div>'
    +'<div class="ad">'+kac(r.kisa_ad||r.ad)+etiketler(r)+(r._gecmis?' '+rozet('günü geçmiş: '+tarihTr(r.siradaki_tarih),'uyari'):'')+'</div>'
    +'<div class="tel">'+telLink(r.telefon)+'</div><div class="satirlar">'
    +(r.sahibi?'<div><span>Kim</span>'+kac(r.sahibi)+'</div>':'<div><span>Kim</span><i class="kucuk">adı bulunamadı; "işletme sahibi siz misiniz" ile başla, adı öğrenince nota yaz</i></div>')
@@ -446,8 +451,8 @@ function bagla(){
   else if(!ok)document.getElementById('kopya-mesaj').textContent='Aşağıdaki metni seçip kopyala, FounderOS\'a yapıştır.'});
  if(tem)tem.addEventListener('click',function(){if(tem.dataset.onay==='1'){durum={};durumYaz(durum);sahaCiz();return}tem.dataset.onay='1';tem.textContent='Evet, bugünün sonuçlarını sil';setTimeout(function(){tem.dataset.onay='';tem.textContent='Temizle'},4000)});
 }
-function sonucMetni(){var s=[];gunluk.forEach(function(r){var d=durum[r.kisa_ad];if(!d||!d.sonuc)return;var p=[r.kisa_ad,d.kanal||kanalTahmin(r),({acmadi:'açmadı',gonderdim:'gönderdim',izlendi:'izlendi',istemedi:'istemedi',ilgilendi:'ilgilendi',randevu:'randevu',sonra:'sonra'})[d.sonuc]];
- if(d.sonuc==='randevu'&&d.randevu)p.push('randevu: '+d.randevu.replace('T',' '));if(d.sonuc==='sonra'&&d.sonra)p.push('tarih: '+d.sonra);if(d.not)p.push('not: '+d.not.replace(/\|/g,'/'));s.push(p.join(' | '))});
+function sonucMetni(){var s=[];gunluk.forEach(function(r){var d=durum[kayitAnahtari(r)];if(!d||!d.sonuc)return;var p=[r.kisa_ad,d.kanal||kanalTahmin(r),({acmadi:'açmadı',gonderdim:'gönderdim',izlendi:'izlendi',istemedi:'istemedi',ilgilendi:'ilgilendi',randevu:'randevu',sonra:'sonra'})[d.sonuc]];
+ if(d.sonuc==='randevu'&&d.randevu)p.push('randevu: '+d.randevu.replace('T',' '));if(d.sonuc==='sonra'&&d.sonra)p.push('tarih: '+d.sonra);if(d.not)p.push('not: '+d.not.replace(/\|/g,'/'));if(r.telefon)p.push('telefon: '+r.telefon);s.push(p.join(' | '))});
  return s.length?'FounderOS saha sonuçları '+BUGUN+'\n'+s.join('\n'):''}
 // --- sekmeler ---
 var sekListe=document.getElementById('sek-liste'),sekSaha=document.getElementById('sek-saha'),listeUst=document.getElementById('liste-ust');

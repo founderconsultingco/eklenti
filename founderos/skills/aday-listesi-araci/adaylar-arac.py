@@ -34,7 +34,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.34.0"
+SURUM = "0.35.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -182,12 +182,18 @@ def yukle():
     for s in okuyucu:
         satirlar.append({k: (s.get(k) or "").strip() for k in SUTUNLAR})
     if kodlama not in ("utf-8-sig", "utf-8") or ayirici == ";":
-        uyar("adaylar.csv başka bir programda kaydedilmiş görünüyor (%s, ayırıcı '%s'); düzeltilmiş hâliyle yeniden yazılacak."
+        # Sadece uyarmak yetmiyordu: okuyan her komut ayni uyariyi tekrar basiyor
+        # ve dosya bozuk kaliyordu. Burada bir kez duzeltip yaziyoruz.
+        uyar("adaylar.csv başka bir programda kaydedilmiş görünüyor (%s, ayırıcı '%s'); düzeltildi."
              % (kodlama, ayirici))
+        try:
+            _kaydet_gercek(p, satirlar, sayfa_da=False)
+        except Exception:
+            pass
     return satirlar
 
 
-def _kilit_al(bekle=10):
+def _kilit_al(bekle=3):
     """Ayni klasorde iki komut ayni anda yazarsa biri otekinin yazdigini siliyor.
     Basit kilit: dosya varsa bekle, on saniyede acilmazsa devam et (kilit dosyasi
     bir cokmeden kalmis olabilir, gunun durmasindan iyidir)."""
@@ -206,7 +212,13 @@ def _kilit_al(bekle=10):
                 pass
             import time as _t
             _t.sleep(0.1)
-    return None
+    # Sure doldu: kilit kalintidir. Silip sahipleniyoruz, yoksa her komut on
+    # saniye bekliyor ve ogrenci araci takilmis saniyor.
+    try:
+        k.unlink()
+    except OSError:
+        pass
+    return k
 
 
 def _kilit_birak(k):
@@ -323,10 +335,23 @@ def sayfa_uret(satirlar=None):
 
 # ---------- satır bulma ----------
 
-def satir_bul(satirlar, anahtar, semt=None):
-    a = (anahtar or "").strip()
+class Bulunamadi(Exception):
+    """satir_bul sessiz modda bunu firlatir; sonuclar komutu yakalar ve
+    o satiri 'bulunamayan' listesine koyup devam eder. Eskiden hata() cagriliyordu
+    ve ekrana 'HATA:' basiliyordu; talimat 'HATA gorursen yeniden calistir' dedigi
+    icin FounderOS ayni dosyayi ikinci kez isliyordu."""
+
+
+def satir_bul(satirlar, anahtar, semt=None, sessiz=False):
+    def yok(m):
+        if sessiz:
+            raise Bulunamadi(m)
+        hata(m)
+
+    # Sohbetten gelen adlar tirnakli olabiliyor.
+    a = (anahtar or "").strip().strip('"').strip("'").strip()
     if not a:
-        hata("işletme adı ya da telefon gerekli")
+        yok("işletme adı ya da telefon gerekli")
     tel = rakam(a) if re.fullmatch(r"[+\d\s()-]{7,}", a) else ""
     if tel:
         adaylar = [s for s in satirlar if rakam(s["telefon"]).endswith(tel[-10:])]
@@ -349,10 +374,10 @@ def satir_bul(satirlar, anahtar, semt=None):
     if semt:
         adaylar = [s for s in adaylar if kucult(s["semt"]) == kucult(semt)]
     if not adaylar:
-        hata("bulunamadı: %s" % a)
+        yok("bulunamadı: %s" % a)
     if len(adaylar) > 1:
         secenek = "; ".join("%s (%s, %s)" % (s["kisa_ad"], s["semt"] or "semt yok", s["telefon"] or "telefon yok") for s in adaylar[:8])
-        hata("birden fazla eşleşme, telefonla ya da --semt ile ayır: " + secenek)
+        yok("birden fazla eşleşme, telefonla ya da --semt ile ayır: " + secenek)
     return adaylar[0]
 
 
@@ -377,10 +402,16 @@ def kmt_ekle(a):
     p = Path(a.dosya)
     if not p.exists():
         hata("dosya yok: %s" % a.dosya)
-    with io.open(p, encoding="utf-8-sig", newline="") as f:
-        gelen = list(csv.DictReader(f))
+    metin, _kod = _metni_oku(p)
+    ilk = metin.split("\n", 1)[0]
+    ayirici = ";" if ilk.count(";") > ilk.count(",") else ","
+    gelen = list(csv.DictReader(io.StringIO(metin), delimiter=ayirici))
     if not gelen:
         hata("dosyada kayıt yok")
+    tanidik = [b for b in (gelen[0].keys() if gelen else []) if b in SUTUNLAR]
+    if not tanidik:
+        hata("dosyanın başlık satırı tanınmadı. İlk satır sütun adları olmalı; "
+             "sütunlar aday-listesi-dosyasi'nda yazılı.")
     listeye_ekle(gelen, a)
 
 
@@ -690,18 +721,58 @@ CEVAP_DALLARI = ["fiyat", "bilgi", "mesgul", "zaten var", "kim", "referans",
                  "ilgilenmiyor", "sonra", "olumlu", "anlasilmadi"]
 
 
+def _imza(satir):
+    """Bir sonuc satirinin gunluk kimligi. Ayni gun ayni satir iki kez islenmez."""
+    import hashlib
+    ham = bugun().isoformat() + "|" + re.sub(r"\s+", " ", satir).strip().lower()
+    return hashlib.sha1(ham.encode("utf-8")).hexdigest()[:16]
+
+
+def _islenmis_oku():
+    p = calisma() / "islenen.json"
+    if not p.exists():
+        return set()
+    try:
+        return set(json.loads(p.read_text(encoding="utf-8")).get(bugun().isoformat(), []))
+    except Exception:
+        return set()
+
+
+def _islenmis_yaz(imzalar):
+    p = calisma() / "islenen.json"
+    d = {}
+    if p.exists():
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            d = {}
+    d[bugun().isoformat()] = sorted(imzalar)
+    for g in sorted(d)[:-7]:
+        d.pop(g, None)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+
+
 def kmt_sonuclar(a):
     satirlar = yukle()
     p = Path(a.dosya)
     if not p.exists():
         hata("dosya yok: %s" % a.dosya)
-    metin = p.read_text(encoding="utf-8-sig")
-    islenen, bulunamayan, anlasilmayan = [], [], []
+    metin = _metni_oku(p)[0]
+    islenen, bulunamayan, anlasilmayan, tekrar = [], [], [], []
+    gecmis = _islenmis_oku()
     dokum = {}
     for satir in metin.splitlines():
         try:
             satir = satir.strip()
             if not satir or satir.lower().startswith("founderos"):
+                continue
+            imza = _imza(satir)
+            if imza in gecmis:
+                # Ayni satir bugun zaten islendi. Ayni dosya ikinci kez
+                # yapistirilinca aday ucuncu kez "acmadi" sayilip telefonu
+                # kapaniyor ve gunun sayilari siziyordu.
+                tekrar.append(satir)
                 continue
             parca = [x.strip() for x in satir.split("|")]
             if len(parca) < 3:
@@ -719,11 +790,16 @@ def kmt_sonuclar(a):
                 if ":" in x:
                     k, v = x.split(":", 1)
                     ek[kucult(k)] = v.strip()
+            # Sayfa satira telefonu da koyuyor; ayni kisa addan iki isletme
+            # varsa ad tek basina yetmiyordu ve sonuc hic islenmiyordu.
             try:
-                s = satir_bul(satirlar, ad)
-            except SystemExit:
-                bulunamayan.append(ad)
-                continue
+                s = satir_bul(satirlar, ek.get("telefon") or ad, sessiz=True)
+            except Bulunamadi:
+                try:
+                    s = satir_bul(satirlar, ad, sessiz=True)
+                except Bulunamadi:
+                    bulunamayan.append(ad)
+                    continue
             notu = ek.get("not", "")
             if kod == "acmadi":
                 # Telefon uc ayri gunde acilmazsa hat kapanir ve sira yaziya gecer.
@@ -794,6 +870,7 @@ def kmt_sonuclar(a):
                 temas_uygula(satirlar, s, kanal, "cevap geldi" + (" (%s)" % dal if dal else ""),
                              "cevap geldi", "cevap verdi", kanal + ", yanıt yaz", bugun().isoformat(), None, notu)
             islenen.append(ozet_satir(s))
+            gecmis.add(imza)
             dokum[kod] = dokum.get(kod, 0) + 1
         except SystemExit:
             # Tek bozuk satir butun gunu cope atmasin: o satir "anlasilmayan"
@@ -802,7 +879,10 @@ def kmt_sonuclar(a):
         except Exception as e:
             anlasilmayan.append(satir + ("  (işlenemedi: %s)" % e))
     kaydet(satirlar)
-    print("işlenen %d, bulunamayan %d, anlaşılmayan %d" % (len(islenen), len(bulunamayan), len(anlasilmayan)))
+    _islenmis_yaz(gecmis)
+    print("işlenen %d, bulunamayan %d, anlaşılmayan %d%s" % (
+        len(islenen), len(bulunamayan), len(anlasilmayan),
+        (", bugün zaten işlenmiş %d" % len(tekrar)) if tekrar else ""))
     n = nis_oku()
     print("gün dökümü: niş %s, açılış sürümü %s, temas %d, %s" % (
         n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", len(islenen),
@@ -828,7 +908,7 @@ def kmt_isaret(a):
     p = Path(a.dosya)
     if not p.exists():
         hata("dosya yok: %s" % a.dosya)
-    adlar = [x.strip() for x in p.read_text(encoding="utf-8-sig").splitlines() if x.strip()]
+    adlar = [x.strip() for x in _metni_oku(p)[0].splitlines() if x.strip()]
     if a.isaret not in TOPLU_ISARET:
         hata("işaret şunlardan biri olmalı: " + ", ".join(TOPLU_ISARET))
     satirlar = yukle()
@@ -906,6 +986,13 @@ IPUCU_GOZLEM = [
 IPUCU_GOZLEM.append(
  ("sadece_reklam", "Reklam veriyor ama Google Haritalar'da bulunamadı",
   "Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"))
+
+# Son care: baska hicbir gozlem yoksa reklam tek basina soru olarak sorulur.
+# Iddia degil soru; "musteri kaciriyorsunuz" demiyor, "o aramaya kim bakiyor"
+# diye soruyor. Kanca kurulurken reklam sutunundaki adet ve tarih giriyor.
+IPUCU_GOZLEM.append(
+ ("reklam_veriyor", "Aktif reklamı var",
+  "Reklam veriyorsunuz; o reklamdan gelen aramaya kim bakıyor?"))
 
 
 # Iki isaretin birlikte anlam kazandigi hal: reklama para veriyor ama
@@ -1062,7 +1149,7 @@ def kmt_bugun(a):
     gozlemsiz = sum(1 for s in liste if not gozlem(s)[0])
     print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetimsiz %d; ilk %d gösteriliyor%s" %
           (g, len(cevap), len(takip), len(hazir), len(denetsiz), len(liste),
-           (", %d adayda gözlem yok" % gozlemsiz) if gozlemsiz else ", hepsinde gözlem var"))
+           ("" if not liste else ((", %d adayda gözlem yok" % gozlemsiz) if gozlemsiz else ", hepsinde gözlem var"))))
     if a.planla:
         kanal = "telefon" if (a.kanal or "telefon") == "telefon" else "yazı"
         sayac = 0
