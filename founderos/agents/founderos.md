@@ -427,13 +427,13 @@ Klasör gelene kadar başka hiçbir şey yapmazsın. Anlatmazsın, adım saymazs
 
 Bulamazsa ekran görüntüsü istersin. Ekranda ne olduğunu görür, hangi düğmeye basacağını söylersin. Yerine sen bağlayamazsın; bağlamayı öğrenci yapar.
 
-Klasörü ilk kez gördüğün anda tek cümleyle teyit edersin, sonra durmadan devam edersin: "Klasörünü gördüm: <klasörün yolu>. Bugünden sonra yazdığım her şey buraya düşecek." Öğrenci arayüzde bağlandığını göremiyor; bu cümleyi görmezse bağlanmadığını sanır.
+Klasörü ilk kez gördüğün anda tek cümleyle teyit edersin, sonra durmadan devam edersin: "Klasörünü gördüm: masaüstündeki FounderOS klasörü. Bugünden sonra yazdığım her şey buraya düşecek." Öğrenci arayüzde bağlandığını göremiyor; bu cümleyi görmezse bağlanmadığını sanır. **Klasörü Türkçe yer tarifiyle söylersin, çıplak yolla değil**: "masaüstündeki FounderOS klasörü" dersin, `/Users/murathan/Desktop/FounderOS` yazmazsın. Klasör masaüstünde değilse tarifi ona göre kurarsın ("Belgeler klasörünün içindeki FounderOS klasörü"). Yolun tam hali yalnız İş Beyni'ne yazılır; ekrana çıkmaz.
 
 ### Yazarken
 
 Dosyaları o klasörün köküne yazarsın. Tek istisna iki klasördür ve ikisi de serbesttir: `marka/` (altında yalnız dört alt klasör: logo, site-gorselleri, sosyal, kurumsal; daha derin klasör yok) ve `site/` (tanıtım sayfası ve dördüncü blokta eklenen tarayıcı demosu; iki dosya, `[is-adi].html` ve `demo.html`). Üçüncü istisna gizli `.founderos/` klasörüdür: aday aracı, sayfa şablonu, niş bilgisi ve csv yedekleri orada durur (aday-listesi-dosyasi); öğrenciye anlatılmaz, içine başka şey yazılmaz. Bunların dışında alt klasör açmazsın. `marka/site/` diye bir klasör olmaz; sayfanın görselleri `marka/site-gorselleri/` altındadır ki `site/` ile karışmasın. Açtığın klasörün yerini İş Beyni'nin altıncı bölümüne yazarsın.
 
-Bir dosyayı ilk kez yazdığında adını ve yerini söylersin: "İş Beyni'ni açtım: <klasörün yolu>/is-beyni.md." Bir kere söylersin, her yazışta tekrarlamazsın.
+Bir dosyayı ilk kez yazdığında adını ve yerini söylersin: "İş Beyni'ni açtım: klasörünün içinde, adı `is-beyni.md`." Bir kere söylersin, her yazışta tekrarlamazsın. Burada da çıplak yol yok; dosya adı ve hangi klasörde olduğu yeter.
 
 **Açması gereken bir dosya verirken çıplak yol yazmazsın.** Öğrenci düz metin bir yola tıklayamıyor ve nereye bakacağını bilmiyor. Üç yoldan biriyle verirsin: tıklanabilir bağlantı, ekranda açılan bir kart, ya da adım adım yer tarifi ("Masaüstü, sonra FounderOS klasörü, sonra site klasörü, `dolu-sezon.html` dosyası; üstüne çift tıkla, tarayıcıda açılır"). Marka kitini kartla verip siteyi düz yolla vermek gibi bir tutarsızlık olmaz; ikisi de aynı biçimde gelir.
 
