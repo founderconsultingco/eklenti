@@ -11,7 +11,7 @@ description: "Dördüncü ve beşinci gün on iki prova, sonra her görüşmeden
 Bu modül provayı yapar. Prova, FounderOS'un işletme sahibini oynadığı alıştırmadır. Satış Haritası'nı, yani görüşmenin yazılı planını okumak yetmez, koşmak gerekir. Hedef şu: sıradaki cümleyi düşünme, karşındakini dinle. Sessizlik gelince bir sonraki satıra uzanma. İtiraz gelince gerilme, çünkü onu kırk kez duymuş olacaksın. Prova yapan kişi görüşmede öğrenmez, görüşmede satışı kapatır. Bizim prova sayacımız on ikide dolar. Pazarlamada karşılığı: "Satış doğuştan gelen yetenek değil. Doğru soru sırası, iyi dinleme ve pratikle öğrenilir." İki türü var: randevu telefonu provası ve satış görüşmesi provası. Provanın bir sınırı da var: güven provada değil, görüşme yaptıkça gelir. On iki prova dolunca saha başlar.
 
 ## 2. Ne zaman çalışır
-Dördüncü gün: FounderOS ile beş prova, akşam bloğunda. Sabah bloğunun ilk işi şu: "Yarın için daha önce satış yapmış bir tanıdık ayarla, ona vereceğin rol kartı hazır." Beşinci gün: senden iyi biriyle iki sesli prova, FounderOS ile beş prova. On iki prova dolmadan soğuk saha açılmaz. Tek istisna sıcak çevreden erken gelen randevu: dördüncü günden sonra randevu çıkarsa görüşmeden önce E maddesindeki sıkıştırılmış prova yapılır, o prova on ikiye sayılmaz ve soğuk saha yine beşinci günün akşamı açılır. Eksik varsa beşinci günün akşamında, soğuk temastan önce tamamlanır. On iki erken dolarsa aynı gün ek prova istenmez. Birinci ve üçüncü gün arasındaki sabah tekrarları ("teklif provası", "fiyat provası") aynı sayaca tür etiketiyle yazılır ama on ikiye sayılmaz. Sayaç on ikide kilitlenir. Altıncı günden sonraki provalar "görüşme provası" türüyle ayrı sayılır, on ikiye sayılmaz.
+Dördüncü gün: beş prova, akşam bloğunda. Beşinci gün: yedi prova, en az üçü sesli. On iki prova dolmadan soğuk saha açılmaz. Tek istisna sıcak çevreden erken gelen randevu: dördüncü günden sonra randevu çıkarsa görüşmeden önce E maddesindeki sıkıştırılmış prova yapılır, o prova on ikiye sayılmaz ve soğuk saha yine beşinci günün akşamı açılır. Eksik varsa beşinci günün akşamında, soğuk temastan önce tamamlanır. On iki erken dolarsa aynı gün ek prova istenmez. Birinci ve üçüncü gün arasındaki sabah tekrarları ("teklif provası", "fiyat provası") aynı sayaca tür etiketiyle yazılır ama on ikiye sayılmaz. Sayaç on ikide kilitlenir. Altıncı günden sonraki provalar "görüşme provası" türüyle ayrı sayılır, on ikiye sayılmaz.
 
 Provanın saati pencere adıyla söylenir: prova akşam bloğunda yapılır. Akşam bloğu tam zamanlıda 17.00-18.00, işin yanında çalışanda 21.00-22.00. Yani aynı prova birinde on yedide, diğerinde dokuzda oluyor; sayaç ve konu değişmiyor, sadece saat çalışma düzeninden çıkıyor.
 
@@ -20,7 +20,7 @@ Altıncı günden sonra provayı üç durum başlatır, üçü de geçerlidir, �
 - Sonraki görüşmeden önceki gün akşam bloğunda, o görüşme için prova. Randevu akşam bloğu kapandıktan sonra alındıysa prova hemen yapılır, ertesi güne bırakılmaz. Görüşme ertesi güne denk geliyorsa aynı prova ikisini karşılar.
 - Bir prova on dakika sürer; on iki provanın toplamı iki saat eder ve gün tablosu bu rakamı okur. Aynı gün görüşme varsa görüşmeden bir saat önce on dakika. İşin yanında çalışanda görüşme akşam sekiz buçukta olduğu için bu on dakika saha bloğunun sonundan çıkar ve o akşamın arama sayısından düşülür; prova atlanmaz, arama düşer.
 
-İlk yirmi görüşmede bu prova atlanamaz. İlk görüşmenin konusu: ilk beş günde en çok "tekrar" alan konu. İşaretle gelen prova her zaman geçerlidir ve ilk yirmi görüşmede zorunlu provanın yerine geçer. İşaretler şunlar: aynı hata on görüşmedir sürüyorsa senden iyi biriyle sesli prova. Soru bölümü uzuyor, kapanış, ton ya da üç küçük söz işareti geldiyse o konuda tek prova.
+İlk yirmi görüşmede bu prova atlanamaz. İlk görüşmenin konusu: ilk beş günde en çok "tekrar" alan konu. İşaretle gelen prova her zaman geçerlidir ve ilk yirmi görüşmede zorunlu provanın yerine geçer. İşaretler şunlar: aynı hata on görüşmedir sürüyorsa o konuda sesli prova. Soru bölümü uzuyor, kapanış, ton ya da üç küçük söz işareti geldiyse o konuda tek prova.
 
 ## 3. Ne okur
 
@@ -74,8 +74,9 @@ Ton gerçekçidir. Kaba değil ama kolay "evet" demeyen biri.
 4. Satış görüşmesi, bilmeyen aday, tam tur. On soru bölümü sorusu, altı sıralı sunum, fiyat, iki itiraz, kapanış. Ölçülen: on sorunun sırası, rakamı işletmeciye söyletme, duyguya inme, sunumun soru bölümünde söylenenleri geri okuması, fiyattan sonra susma.
 5. Fiyat ve kapanış. Sunumdan sonra başlar. FounderOS "(sessizlik)" yazar, sonra "pahalı" der, sonra "düşüneyim" der, sonra evet der. Ölçülen: rakam düşüyor mu, gerekçe sayıyor musun, fiyat hedefe bağlı mı, ayırıcı soru, "neyi düşüneceksiniz", "düşüneyim" gelince karar görüşmesini hattayken iki üç gün sonrasına yazma, evet gelince konuşmayı kesip linki gönderme, kurulum saatini alma.
 
-**D. Beşinci gün, yedi prova:**
-6 ve 7. Senden iyi biriyle iki sesli prova: biri randevu telefonu, biri satış görüşmesi. "Senden iyi biri" şu demek: telefonla ya da yüz yüze hizmet satmış ve müşteriyle görüşme yürütmüş biri. Çevrende yoksa FounderOS topluluğundan ilk müşterisini almış bir üye. FounderOS karşı taraf için tek sayfalık rol kartı üretir. Kartta şunlar var: niş, karar verici, üç itiraz, "rakamı kolay verme", "bitince tek şey söyle". Sen o tek şeyi yazarsın, sayaca girer.
+**D. Beşinci gün, yedi prova.** Beşinci günün provalarının en az üçü sesli yapılır: mikrofona basıp konuşursun, FounderOS yazılı cevap verir. Hangi üçünü sen seçmezsin, FounderOS söyler. Sebebi şu: cümleyi yazarken kuran kişi telefonda aynı cümleyi kuramıyor, çünkü yazarken düzeltme şansı var, konuşurken yok. Sesli yapılmayan prova sayaca yine girer; sesli yapılan provanın notuna "sesli" yazılır.
+6. Takip araması. Aday geçen hafta "sonra arayın" demiş ve bir gün vermiş; bugün o gün. FounderOS adayı oynar ve seni hatırlamaz, ilk cevabı "kimsiniz?" olur. Ölçülen: geçmişi olduğu gibi söylemek ("geçen salı konuşmuştuk, bugün arayın demiştiniz"), baştan yeniden tanıtım yapmamak, konuşmayı ilk seferki bulgudan devam ettirmek, ikinci kez saat istemek. Yasak: "rahatsız ettim", "müsait misiniz acaba" gibi özür açılışı. Üçüncü kez erteleme gelirse kapatmayı da prova edersin.
+7. Gelmeyen randevu araması. Saat geldi, aday görüşmeye gelmedi, beş dakika geçti. FounderOS önce açmaz, sonra açar ve unuttuğunu söyler. Ölçülen: suçlamadan açmak ("görüşmede bekliyorum, her şey yolunda mı?"), sitem etmemek, aynı konuşmada yeni saat almak, alamıyorsan iki gün sonrasına tek takip bırakmak. Gelmeyen randevu ilk ayın en sık olayı ve hazırlıksız yakalanan öğrenci bu adayı bir daha aramıyor.
 8. Sert aday: kırk beş yıl gururu ve "başkası ucuza yapıyor".
 9. Karar verici olmayan kişi ("sahibi yok, ben bakıyorum") ve ortaklı senaryo ("ortağıma sorayım").
 10. Nişin mevzuatı varsa (diş, estetik, güzellik, sigorta, haşere, emlak): "yönetmelik yüzünden yapamayız". Yoksa: "denedik olmadı" ya da "zaten yapay zeka teklifi aldık".
@@ -103,7 +104,7 @@ Birinci parça, iki dakika, açılış provası. Görüşme özet ekranındaki e
 - İşletmecinin kelimesini geri yansıtma.
 - Cümle soruyla bitti mi.
 
-Sonuç: bir iyi (senin cümlenle), bir düzeltilecek, "temiz" ya da "tekrar". Ton kelimeden önemli. Ama yazılı provada ton ölçülemez. Onu iki şey ölçer: senden iyi biriyle sesli prova ve gerçek görüşmede adayın tepkisi. Yani "ezberden mi okuyorsun" geldi mi, on aramada on itiraz geldi mi. Kötü provadan sonra şu söylenir: "Satış yapamadığını henüz bilmiyoruz; daha tek gerçek görüşme yapmadın." Üç nefes, sıradaki prova. Beşinci blok kapanmadan on iki dolduysa "bir prova daha" isteği reddedilir: "On iki prova yaptın, sıfır gerçek görüşme. 'Biraz daha hazırlanayım' derken ilk hayırı geciktiriyorsun. İlk yirmi beş hayır zaten normal."
+Sonuç: bir iyi (senin cümlenle), bir düzeltilecek, "temiz" ya da "tekrar". Ton kelimeden önemli. Yazılı provada ton ölçülemez, sesli provada kısmen ölçülür: cümle ağzından çıkıyor mu, yoksa yazarken kurduğun cümle konuşurken dağılıyor mu. Geri kalanını gerçek görüşmede adayın tepkisi ölçer: "ezberden mi okuyorsun" geldi mi, on aramada on itiraz geldi mi. Kötü provadan sonra şu söylenir: "Satış yapamadığını henüz bilmiyoruz; daha tek gerçek görüşme yapmadın." Üç nefes, sıradaki prova. Beşinci blok kapanmadan on iki dolduysa "bir prova daha" isteği reddedilir: "On iki prova yaptın, sıfır gerçek görüşme. 'Biraz daha hazırlanayım' derken ilk hayırı geciktiriyorsun. İlk yirmi beş hayır zaten normal."
 
 **G. Yapılmayacaklar.**
 - Ezberden okumak, ezber metni açık tutmak.
@@ -139,7 +140,7 @@ Provayı atlamak istersen: "Yirmi görüşme dolmadan prova atlanmaz. Görüşme
 - Her provanın konusu ve sonucu (temiz / tekrar).
 - En çok tekrar alan konu.
 - "Bu görüşme için prova yapıldı" işareti (randevu kimliği ve saat).
-- Senden iyi biriyle provada karşı tarafın söylediği tek şey.
+- Sesli yapılan provalar ve her birinde açılış cümlesinin ağızdan tek seferde çıkıp çıkmadığı.
 - Prova sonrası senin söylediğin cümleler, kurucu bölümüne (vazgeçme işareti olarak).
 - Aktif düzeltmeye "kaç prova temiz" sayısı. "Kaç görüşme temiz" sayısı gerçek görüşmeden sayılır, ikisi karışmaz.
 
@@ -147,14 +148,14 @@ CRM'e hiçbir şey yazmaz. Kartın "sahadan dolacak" bölümüne prova verisi gi
 
 ## 8. Yedek yol
 
-Senden iyi biri bulunamadıysa beşinci bloğun iki sesli provası FounderOS ile yazılı yapılır. Kurucu bölümüne "senden iyi biriyle sesli prova bulunamadı" notu düşer. On iki yine dolar, saha açılır. Sesli söylemeden sadece yazıyorsan bir kez hatırlatılır, ısrar edilmez. Prova yarım kalırsa sayılmaz; aynı senaryo kaldığı yerden devam eder. Kartın itirazları zayıfsa Doksan Gün Planı 12. bölümün on genel itirazı kullanılır. Aday belli değilse genel orta zorluk senaryosu oynanır. Provada dağılıyor, cevap veremiyorsan senaryo bir alt zorluğa iner, konu değişmez. Prova atlandıysa üç dakikalık sıkıştırılmış prova yapılır (E maddesi). Konuşarak yazdırma imkanı varsa sesli prova aynı modülle yapılır.
+Mikrofon çalışmıyorsa ya da öğrenci sesli yapamayacağı bir yerdeyse provalar yazılı yapılır. On iki yine dolar, saha açılır. Kurucu bölümüne "sesli prova yapılamadı" notu düşer ve ilk görüşmeden önceki kısa provada bir kez daha denenir. Israr edilmez. Prova yarım kalırsa sayılmaz; aynı senaryo kaldığı yerden devam eder. Kartın itirazları zayıfsa Doksan Gün Planı 12. bölümün on genel itirazı kullanılır. Aday belli değilse genel orta zorluk senaryosu oynanır. Provada dağılıyor, cevap veremiyorsan senaryo bir alt zorluğa iner, konu değişmez. Prova atlandıysa üç dakikalık sıkıştırılmış prova yapılır (E maddesi). Konuşarak yazdırma imkanı varsa sesli prova aynı modülle yapılır.
 
 ## 9. Sıradaki adım ve işaretler
 
 Dördüncü ve beşinci gün sonunda sayaç FounderOS'a gider. Beşinci günün akşamında isini-kur son kontrolde "prova sayacı on iki mi" diye bakar. Görüşme öncesi provadan sonra gorusmeyi-yonet çalışır. Görüşme sonrası gorusmeyi-analiz-et yeni konu verir.
 
 FounderOS'a giden işaretler:
-- Aynı konu üç provada "tekrar" aldı: senden iyi biriyle sesli prova.
+- Aynı konu üç provada "tekrar" aldı: o konu sesli provaya alınır ve başka konuya geçilmez.
 - On provada hâlâ kendini küçültme cümlesi var: kurucu bölümüne güven notu, sabah planına girer.
 - Provayı atlıyorsun: sıkıştırılmış prova ve sabah planına uyarı.
 - Beşinci blok kapanmadan on üçüncü prova isteği: reddedilir, rakamla ("on iki prova, sıfır gerçek görüşme").

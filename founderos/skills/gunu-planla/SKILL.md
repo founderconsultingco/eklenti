@@ -140,6 +140,28 @@ O gün plan yerine şu olur: durumun rakamla gösterilir, o güne küçültülm�
 
 Küçültülmüş iş gerçekten küçüktür: yirmi temas, ya da tek arama. Amaç o günü sıfırla kapatmamak.
 
+### Günün kapanış notu, dört sayı
+
+Akşam tek satır yetmiyor, çünkü "kaç temas" sorusunun cevabı kolayca şişiyor. Kapanış notu dört satırdır ve her satırın ne sayıldığı yazılı:
+
+- Tarih.
+- İlk kez ulaşmaya çalıştığım farklı işletme: kaç ayrı işletmeye ilk kez gidildi.
+- İnsan yanıtı aldığım farklı işletme: kaç ayrı işletmeden gerçek bir insan cevap verdi.
+- Bugün ilerleyen iş: örnek gönderildi, görüşme yapıldı, teklif gitti gibi gerçekten olan şey.
+- Yarın ilk yapacağım iş ve saati.
+
+Sayma kuralları, hepsi tek yönde çalışıyor: kendini kandırmayı zorlaştırmak için.
+
+Aynı işletmeye iki kanaldan gitmek iki işletme değildir, bir işletmedir. Beğeni, takip ve profil ziyareti temas değildir. Otomatik cevap insan yanıtı değildir. Video izlenmesi cevap değildir. Video hazırlamakla göndermek, görüşme planlamakla görüşmeyi yapmak, teklifin beğenilmesiyle paranın gelmesi ayrı sonuçlardır ve ayrı satırlara yazılır.
+
+İlk günlerde yalnız satışa bakılmaz. Doğru kişiye ulaşmak, söz verilen şeyi zamanında göndermek ve takibi unutmamak da ilerlemedir ve kapanış notunda görünür.
+
+### Haftada bir, tek yeri düzelt
+
+Haftanın sonunda son konuşmalara bakılır ve tek bir yer düzeltilir. Sırası şu: yetkiliye ulaşılamıyorsa arama saati ve doğru kişiyi sorma cümlesi; ne satıldığı anlaşılmıyorsa açılış cümlesi; örnek gönderilince konuşma duruyorsa gönderilen şeyin gerçekten konuşulan derdi gösterip göstermediği; görüşmeden sonra ilerlemiyorsa adayın kendi söylediği sebep.
+
+Bir seferde bir şey değişir. Aynı hafta hem niş, hem mesaj, hem kanal değişirse hangisinin işe yaradığı bir daha anlaşılmıyor. Tek retle yöntem değiştirilmez; kilitlerin eşiği degisiklige-karar-ver'de yazılı. Hatalı adres ve çalışmayan bağlantı bu kuralın dışındadır, beklemeden düzeltilir.
+
 ### Süreklilik
 
 Bu işte yoğunluk değil, süreklilik kazanıyor. İki hafta günde iki yüz temas yapıp üçüncü hafta duran kişi, on iki hafta boyunca günde seksen yapan kişinin çok gerisinde kalıyor.

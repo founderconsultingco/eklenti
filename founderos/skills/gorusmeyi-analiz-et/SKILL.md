@@ -163,7 +163,7 @@ Kayıt yoksa öğrencinin beş dakikalık notu kullanılır. On sorudan cevaplan
 Her analiz gorusme-provasi-yap modülüne konu verir; ilk yirmi görüşmede prova zorunludur. On görüşmede teklifi-yaz modülünün birikim kontrolü yapılır. Otuz görüşmede niş kartı ve kapanış oranı güncellenir; degisiklige-karar-ver modülüne zayıf adım teşhisi gider. Akşam rakamlari-oku modülü sayıları buradan alır.
 
 FounderOS'a giden işaretler:
-- Aynı hata on görüşmedir sürüyor: senden iyi biriyle sesli prova. Senden iyi biri, daha önce hizmet satmış ve müşteriyle görüşme yürütmüş bir tanıdıktır.
+- Aynı hata on görüşmedir sürüyor: o konuda sesli prova, üst üste üç tur, aynı akşam.
 - On aramada on itiraz: ton sorunu, prova.
 - Her görüşmede itiraz: niteleme.
 - On görüşmenin altısında fiyata gelinmiyor: soru bölümü uzuyor, prova.

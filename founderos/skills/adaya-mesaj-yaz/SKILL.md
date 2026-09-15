@@ -77,6 +77,10 @@ Sahte kişiselleştirme yok: görmediğin şey mesaja girmez. Tam adı ve şirke
 - CRM'den Türkiye'ye SMS'te link yasak. Bu modül SMS kullanmıyor.
 - Aynı numara bir günde art arda iki kez aranır, üç değil.
 - Soğuk temasta "neden şimdi ilgilendiniz" sorusu yasak. O seni aramadı.
+- Instagram'da mesaj isteği kabul edilmeden fotoğraf, video ve sesli not gönderilemez; uygulama izin vermiyor. İlk temas düz yazıdır. İstek kabul edilmediyse peş peşe mesaj denenmez, beklenir.
+- E-postadan teslim hatası dönerse (adres yok, kutu dolu) o adrese takip gönderilmez. Adres listeden düzeltilir; adayda başka kanal varsa iletişim oradan açılır.
+- Takip günleri işletmenin açık olduğu güne göre sayılır. Kapalı olduğu güne denk gelen takip, açtığı ilk güne kayar; pazar günü giden mesaj gitmemiş sayılır.
+- Otomatik cevap cevap değildir. "Ofis dışındayım", "mesajınız alındı" gibi bir dönüş insan yanıtı sayılmaz; içinde bir dönüş tarihi varsa o tarih sıradaki hareket olur, yoksa aday takip zincirinde kaldığı yerden devam eder.
 
 ### Adayın ne kadar bildiği, açılışı belirler
 
@@ -469,7 +473,10 @@ Bunun tek sebebi kolaylık değil. Hangi dalın randevuya döndüğü ancak dal 
 
 | Durum | Karar |
 |---|---|
-| Mesaj isteği kabul edilmedi ya da hiç cevap yok | Yeni mesaj dizisi başlatılmaz. E-postada üç günlük zincir işler, Instagram'da tek sesli mesaj takibi, sonra kapanır. |
+| Instagram'da mesaj isteği kabul edilmedi | Hiçbir şey gönderilmez, beklenir. Sesli not ve video zaten gitmiyor. İkinci bir yazılı mesaj da denenmez. |
+| İstek kabul edildi ama cevap yok | Yeni mesaj dizisi başlatılmaz. E-postada üç günlük zincir işler, Instagram'da tek takip, sonra kapanır. |
+| E-postadan teslim hatası döndü | O adrese takip yok. Adres düzeltilir, varsa başka kanal açılır. |
+| Otomatik cevap geldi ("ofis dışındayım") | İnsan yanıtı sayılmaz. Dönüş tarihi yazıyorsa o tarihe yazılır, yazmıyorsa zincir kaldığı yerden sürer. |
 | Sadece beğeni ya da emoji geldi | Ticari takip izni sayılmaz. Açık bir talep yoksa beklenir. |
 | "Gönderin" dedi | Söz verilen şey aynı gün teslim edilir. Bu bir takip değil, sözün tutulmasıdır. |
 | "Sonra yazın" dedi | Tarih sorulur, o tarihe kadar hiçbir mesaj gitmez. |
@@ -481,6 +488,8 @@ Bunun tek sebebi kolaylık değil. Hangi dalın randevuya döndüğü ancak dal 
 Her gönderimden önce altı kontrol: son cevabı okudum mu, kararlaştırılan tarihi bekledim mi, önceki sözümü tuttum mu, başka bir görev aynı mesajı gönderiyor mu, kişi reddetti mi, aynı soruyu yeniden mi soruyorum. Biri bile takılıyorsa mesaj gitmez.
 
 **Yazılı kanalda aramanın sonucu.** Telefondaki sekiz ayrımın aynısı işler (yukarıda). İki ek: adayın Instagram ve varsa başka profili aynı aday satırına bağlanır, aynı kişiye iki kanaldan aynı anda ayrı zincir çalıştırılmaz; ve bir kanalda gelen ret bütün kanalları kapatır, başka kanaldan aynı teklif sürdürülmez.
+
+**Kanal değişirse konuşma baştan başlamaz.** Aday "e-postayla gönderin" derse o kanala geçilir, ama yeni bir tanışma mesajı yazılmaz; gönderdikten sonra önceki konuşmaya tek satır bırakılır: "İstediğiniz özeti [adres] adresine gönderdim." Kanalı sen değiştiriyorsan bu, sıradaki takibin yerine geçer, üstüne eklenmez: "[tarih] kurumsal e-postanıza kısa bir not göndermiştim, ulaşmadıysa buradan da bırakayım. Bu konuyla ilgilenen kişiye hangi kanaldan yazmam uygun olur?" Aynı kişiye arama, e-posta ve Instagram'dan üç ayrı takip dizisi açılmaz; zincir tektir, kanalı değişir.
 
 Niteleme, yani adayın gerçekten alıcı olup olmadığını anlama, soru yağmuru değil; sohbetin içine gömülüdür. "Bütçeniz ne" değil: "sizin büyüklüğünüzde işletmelerde kurulum şu aralıkta oluyor, uygun mu". "Karar verici siz misiniz" değil: "böyle bir şeye karar verirken süreç nasıl işliyor". Görüşme ayarlanmadan üç şey net olmalı: sorunun farkında mı, parası var mı, kararı kim veriyor. Üçü yoksa o randevuya gelmez.
 

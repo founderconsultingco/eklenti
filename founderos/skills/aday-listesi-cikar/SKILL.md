@@ -67,12 +67,7 @@ Dördü tamam olmadan liste "hazır" sayılmaz ve on dördüncü bölüme yazıl
 
 Listeyi FounderOS'un veri servisi çekiyor. Sen hesap açmıyorsun, anahtar görmüyorsun, program ekranı açmıyorsun, Excel'de satır silmiyorsun. FounderOS servise kategoriyi ve şehri söylüyor; servis Google Haritalar'dan kayıtları çekiyor, kapalı işletmeleri, tekrarları, iletişimi olmayanları ve zincirleri işaretliyor, işletme adını kısaltıyor, telefonu tek biçime getiriyor, siteden e-posta ve Instagram hesabını çıkarıyor ve listeyi sayfa sayfa FounderOS'a veriyor. FounderOS satırları klasöründeki `adaylar.csv` dosyasına yazıyor; sen listeyi yanındaki `adaylar.html` sayfasından görüyorsun, Excel açmıyorsun. Senin yaptığın tek şey silme onayı.
 
-Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki genişletmeler tavanın içinde. Tavan dolarsa ya da servis kapalıysa yedek yol Claude'un tarayıcı eklentisi; kurulumu araclari-kur'un üçüncü adımında yazılı. Yedek yol üç saatte yaklaşık yüz işletme veriyor ve e-posta getirmiyor; o gün sıra şu:
-
-1. Claude'un tarayıcı eklentisini ve Google Haritalar'ı aç.
-2. Arama kelimesi: kartındaki kategori adı artı semt adı ("Nilüfer klima servisi" gibi). Şehri tek seferde aratmıyorsun, Haritalar belli bir sayıdan sonrasını göstermiyor; semt semt gidiyorsun ve taradıklarını bir kenara yazıyorsun.
-3. Eklenti her işletme kartından altı şeyi tabloya yazıyor: işletme adı, telefon, web sitesi, semt, yorum sayısı ve puan, varsa Instagram hesabı. E-posta bu yolda gelmiyor; siteyi açıp aramayı sadece yüz işletme için, hızlı denetim sırasında yapıyorsun.
-4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün kayıt yerine yazıyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci bloğun sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor. Servis açılır açılmaz kalan kayıt servisten çekilir.
+Servisin aylık bir tavanı var; sekiz yüz kayıtlık çekim ve ay içindeki genişletmeler tavanın içinde. Tavan dolarsa ya da servis kapalıysa yedek yol devreye giriyor ve sekizinci bölümde yazılı. **Servis çalışırken yedek yoldan, tarayıcıdan ve eklentiden söz edilmez**; öğrenci o gün Google Haritalar açmıyor, liste kendiliğinden geliyor. Yedek yola geçmenin dört şartı ortak kurallarda yazılı: servis gerçekten çağrılacak, iki kez denenecek, kalan hakka bakılacak, sebep öğrenciye söylenecek. Kalan hak varken elle liste çıkarılmaz.
 
 ### Adım 1: çekim (FounderOS yapar, birkaç dakika)
 
@@ -252,7 +247,12 @@ Bir sonraki modüllere: yüz işletme ve seçim sırası aday-denetimi-cikar'a, 
 
 ## 8. Yedek yol
 
-- Veri servisi kapalıysa, çekim iki denemede de hata verirse ya da aylık tavan dolduysa: tarayıcı eklentisi yoluna geçiliyor; günün içinde geçiliyor ve bugünün çıktısı yüz işletme oluyor. Servis açılınca kalan kayıt servisten çekiliyor.
+- Veri servisi kapalıysa, çekim iki denemede de hata verirse ya da aylık tavan dolduysa: tarayıcı eklentisi yoluna geçiliyor; günün içinde geçiliyor ve bugünün çıktısı yüz işletme oluyor. Servis açılınca kalan kayıt servisten çekiliyor. O günün sırası şu:
+
+  1. Claude'un tarayıcı eklentisini ve Google Haritalar'ı aç. Eklenti kurulu değilse kurulumu araclari-kur'un sekizinci bölümünde.
+  2. Arama kelimesi: kartındaki kategori adı artı semt adı ("Nilüfer klima servisi" gibi). Şehri tek seferde aratmıyorsun, Haritalar belli bir sayıdan sonrasını göstermiyor; semt semt gidiyorsun ve taradıklarını bir kenara yazıyorsun.
+  3. Eklenti her işletme kartından altı şeyi tabloya yazıyor: işletme adı, telefon, web sitesi, semt, yorum sayısı ve puan, varsa Instagram hesabı. E-posta bu yolda gelmiyor; siteyi açıp aramayı sadece yüz işletme için, hızlı denetim sırasında yapıyorsun.
+  4. Bugün üç saatte yaklaşık yüz işletme çıkarıyorsun, aynı gün kayıt yerine yazıyorsun, yüz işletme seçimini bu kayıtlardan yapıyorsun. Kalanı dördüncü ve beşinci bloğun sabah bloklarına yayıyorsun: sahaya çıkarken elinde üç yüz kayıt oluyor, liste ilk hafta içinde beş yüze tamamlanıyor. Servis açılır açılmaz kalan kayıt servisten çekilir.
 - Tarayıcı eklentisi de çalışmazsa: elle yazma, en son çare. Bir tabloya altı sütun açıyorsun (işletme adı, telefon, web sitesi, semt, yorum sayısı, Instagram) ve Haritalar'da çıkan her işletmeyi yazıyorsun. Yavaş yol, o yüzden önce diğer ikisi deneniyor. Yedek yoldan gelen kayıtlar da aynı dosyaya aracın ekle komutuyla girer (aday-listesi-dosyasi).
 - Şehrinde 500 çıkmazsa: kartın diğer kategori adları, sonra komşu iller, sonra Türkiye geneli. Üçü de yetmezse niş kararı haftanın kararına gidiyor.
 - Hızlı denetim bugün otuza ulaşmazsa: yarının deneme aramaları kaç işletme denetlendiyse o kadarıyla yapılıyor. Kalan denetim dördüncü bloğa kayıyor, saha ertelenmiyor.

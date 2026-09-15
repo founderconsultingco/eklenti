@@ -117,6 +117,10 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
   Hatırlatmayı ilk suçlamak, yanlış yere müdahale.
 - Gelmeyenlerin ortak özelliği CRM'de görülürse işaret degisiklige-karar-ver modülüne gider. Üç yüz temas kilidi randevu ayarlarını kapsamaz; bu modülün ayarları (saat penceresi, mesaj metni) otuz randevudan sonra değişebilir.
 
+**Kendi takvimine not düşmek davet göndermek değildir.** Randevu ancak adaya giden davetle randevudur. Sende görünüp onda görünmeyen saat, gelmeyen randevudur ve sayaçlarda randevu diye durur. Kural: saat netleştiği anda davet gider, katılım bağlantısı adayın eline geçer ve kayda üç şey yazılır: gün, saat, bağlantı. Davet gitmeden aday "görüşme ayarlandı" aşamasına geçmez.
+
+**Görüşmek isteyen aday hazırlıkla bekletilmez.** Aday "görüşelim" dediyse ona özel bir örnek, video ya da sunum hazırlamak için saat verilmesi ertelenmez. Önce saat alınır ve davet gider; hazırlık o saate kadar yapılır. Hazırlık yetişmezse görüşmeye elindeki genel örnekle girilir ve bunun genel örnek olduğu söylenir. Sırası bozulduğunda kaybedilen şey hazırlık değil, adayın o günkü ilgisi.
+
 ## 6. Ne söyler
 
 Randevu düşünce sana: "Randevun var: Ahmet Bey, yarın on birde. Üç şey gitti: davet, video, EVET isteği. Senin işin tek. Bu akşam Ahmet Bey EVET ya da 'tamam' yazdıysa dokunma. Yazmadıysa sabah bloğunda ara: 'Bugün on birde görüşüyoruz, hazır mısınız? Şu iki rakamı yanınıza alın.' İki saat öncesi mesajı CRM açıksa kendiliğinden gider, açılmadıysa sen gönderirsin. Prova bugün akşam bloğunda."

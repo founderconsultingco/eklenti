@@ -124,16 +124,16 @@ Senin yaptığın bir şey yok. Hesap açmıyorsun, anahtar kopyalamıyorsun, İ
 
 Aylık tavanı şimdi söylüyorum ki sonra sürpriz olmasın: servis bir ayda belli sayıda kayıt veriyor, yarınki sekiz yüz kayıt ve ay içindeki genişletmeler bu tavanın içinde kalıyor. Tavan dolarsa FounderOS söyler ve o ayın kalanında yedek yol çalışır; gelecek ay servis yeniden açılır.
 
-**Yedek yol: Claude'un tarayıcı eklentisi (yalnız servis kapalıysa ya da tavan dolduysa)**
+**Yedek yola geçmenin dört şartı var, dördü birden olmadan geçilmez.** Bu kural ortak kuraldır, her modülde aynı işler.
 
-Bu yolda hesap açmıyorsun, kart vermiyorsun. Google Haritalar'ı sen açıyorsun, eklenti işletme kartlarındaki bilgiyi tabloya yazıyor. Üç saatte yaklaşık yüz işletme çıkıyor ve e-posta gelmiyor; o sütunu hızlı denetimde elle dolduruyorsun. Yavaş yol, o yüzden yalnız servis çalışmadığında.
+1. Servis gerçekten çağrılmış olacak. Çağrılmadan "servis çalışmıyor" denmez. Çağrıldığının kanıtı dönen cevaptır: ya bir iş kimliği ya bir hata.
+2. İki kez denenmiş olacak. İlk hatadan sonra otuz saniye beklenir ve aynı çekim bir kez daha başlatılır. Geçici hatalar birinci denemede çıkıp ikincisinde geçiyor.
+3. Kalan hakka bakılmış olacak. Kullanım aracı bu ayki kalan kaydı veriyor. Kalan varken yedek yola geçilmez; kalan varsa sorun tavanda değildir ve elle liste çıkarmak o sorunu çözmez, sadece öğrencinin üç saatini alır.
+4. Sebep öğrenciye tek cümleyle söylenmiş olacak: hangi hata, kaçıncı denemede. "Bir sorun var" yetmez.
 
-1. Chrome tarayıcısını aç. Eklenti Chrome için çalışıyor; bilgisayarında yoksa önce Chrome'u kur.
-2. Tarayıcının eklenti mağazasında Claude'un tarayıcı eklentisini bul ve tarayıcına ekle.
-3. Eklentiyi aç ve Claude hesabınla gir. FounderOS'u kullandığın hesabın aynısı.
-4. Eklenti hangi sitelerde çalışacağını soruyor. Google Haritalar'a izin ver. İzin vermediğin sitede eklenti hiçbir şey yapmıyor.
-5. Denemesi: Google Haritalar'ı aç, kendi şehrinde kendi nişini arat ("Bursa klima servisi" gibi), eklentiye ilk on işletmenin adını, telefonunu ve web sitesini bir tabloya yazdır. Tablo geldiyse yol açık.
-6. Bu ekranların bir kısmı İngilizce. Tarif ettiğim yeri bulamazsan ekran görüntüsünü at, bakarım. Tarayıcının çeviri özelliğini açma; çeviri düğme adlarını değiştiriyor.
+Dördü de sağlanmadan eklentiden söz edilmez. Sağlandığında da kayıt düşer: İş Beyni'nin açık işler bölümüne tarih, hata metni ve kaç kayıt hakkı kaldığı yazılır. Bu kayıt Berk'in servisi tamir edebilmesi için duruyor; sessizce elle devam etmek hatayı görünmez yapıyor ve aynı hata bütün öğrencilerde tekrarlıyor.
+
+**Bu adımda tarayıcıdan, eklentiden ve Chrome'dan söz edilmez.** Servisin bir yedek yolu var ama o yol sekizinci bölümde duruyor ve yalnız servis gerçekten hata verdiğinde açılıyor. Servis çalışırken öğrenciye eklentiyi anlatmak, olmayan bir işi yapılacak iş gibi gösteriyor ve on beş dakikalık adımı bir saate çıkarıyor. Servis üç çekimi de sorunsuz yaptıysa bu adım biter, sıradaki adıma geçilir.
 
 ### Adım 4: kalan yarım saat
 
@@ -196,7 +196,18 @@ Aylık masraf tablosuna: Claude aboneliğinin tutarı ve yanına o günkü kurla
 ## 8. Yedek yol
 
 - CRM açıldığı gün giriş tutmazsa: gün durmaz, CRM'siz mod devam eder ve ertesi gün tekrar denenir. Aktarma bir kere yapılıyor, acelesi yok.
-- Veri servisi "kapalı" ya da "tavan" derse ya da sayım çekimi iki denemede de hata verirse: yedek yol, tarayıcı eklentisi bugün kurulur. Servis açılınca liste yine servisten çekilir.
+- Veri servisi "kapalı" ya da "tavan" derse ya da sayım çekimi iki denemede de hata verirse: yedek yol bugün kurulur. Öncesinde değil. Öğrenciye önce sebebi tek cümleyle söylenir ("veri servisi şu an cevap vermiyor, bugün elle devam ediyoruz"), sonra aşağıdaki altı adım verilir.
+
+  **Yedek yol: Claude'un tarayıcı eklentisi.** Bu yolda hesap açmıyorsun, kart vermiyorsun. Google Haritalar'ı sen açıyorsun, eklenti işletme kartlarındaki bilgiyi tabloya yazıyor. Üç saatte yaklaşık yüz işletme çıkıyor ve e-posta gelmiyor; o sütunu hızlı denetimde elle dolduruyorsun.
+
+  1. Chrome tarayıcısını aç. Eklenti Chrome için çalışıyor; bilgisayarında yoksa önce Chrome'u kur.
+  2. Tarayıcının eklenti mağazasında Claude'un tarayıcı eklentisini bul ve tarayıcına ekle.
+  3. Eklentiyi aç ve Claude hesabınla gir. FounderOS'u kullandığın hesabın aynısı.
+  4. Eklenti hangi sitelerde çalışacağını soruyor. Google Haritalar'a izin ver. İzin vermediğin sitede eklenti hiçbir şey yapmıyor.
+  5. Denemesi: Google Haritalar'ı aç, kendi şehrinde kendi nişini arat ("Bursa klima servisi" gibi), eklentiye ilk on işletmenin adını, telefonunu ve web sitesini bir tabloya yazdır. Tablo geldiyse yol açık.
+  6. Bu ekranların bir kısmı İngilizce. Tarif ettiğim yeri bulamazsan ekran görüntüsünü at, bakarım. Tarayıcının çeviri özelliğini açma; çeviri düğme adlarını değiştiriyor.
+
+  Servis yeniden açılınca bu yol bırakılır, liste yine servisten çekilir.
 - Tarayıcı eklentisi de kurulmazsa: üçüncü bloğa kadar vaktin var, o gün elle yazma yoluna düşülür. Bir tabloya beş sütun açarsın (işletme adı, telefon, web sitesi, semt, not), Google Haritalar'da kategoriyi ve semti aratırsın, çıkan her işletmeden bu bilgileri tabloya yazarsın. 100 işletme yaklaşık üç saat sürüyor.
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
 - Kredi kartın yoksa: aday listesi ve CRM FounderOS'la geliyor, kart istemiyor. Geriye Claude aboneliği kalıyor; bankaların çoğu mobil uygulamasından sanal kart veriyor, hesabın olan bankadan başla. Hesabın yoksa ön ödemeli kart alıp yükleyebiliyorsun.

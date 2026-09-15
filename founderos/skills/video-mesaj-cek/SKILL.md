@@ -140,6 +140,10 @@ Kurulum, bir kere, on dakika: loom.com'da hesap aç, tarayıcı eklentisini kur,
 
 Ücretsiz plan bu iş için ilk haftayı çıkarıyor: kişi başına yirmi beş video ve video başına beş dakika sınırı var. Günde beş video çekiyorsun, yani ücretsiz plan beşinci günde doluyor. Doluncaya kadar ücret ödemiyorsun; dolduğu gün ücretli plana geçiyorsun ve bu aylık masraf tablosunun "sahaya çıktıktan sonra" bölümünde duruyor. Ücretsiz planla devam etmenin yolu eski videoları silmek; onu yapmıyoruz, çünkü izlendi bildirimi silinen videoda kayboluyor ve adayın hangi videoyu açtığını bir daha göremiyorsun.
 
+**Link gönderilmeden önce bir kez dışarıdan açılır.** Loom'un paylaşım ayarı bazen videoyu yalnız kendi hesabına açık bırakıyor; o linki alan aday boş sayfa görüyor ve bir daha da uğraşmıyor. Kontrol on saniye: linki kopyala, tarayıcının gizli penceresinde, Loom'a giriş yapmadan aç, oynuyor mu bak. Oynamıyorsa paylaşım ayarı "bağlantıya sahip herkes" yapılır. Bu kontrol ilk videoda yapılır, ayar bir kez düzelince her videoda tekrarlanmaz.
+
+Videonun başlığı da gönderilmeden önce yazılır: "[işletme adı] için kısa video". Loom'un verdiği tarihli ad adaya hiçbir şey söylemiyor ve açılma oranını düşürüyor.
+
 Linki gönderdikten sonra Loom sana "izlendi" bildirimi düşürüyor. Bunu her akşam kanal durumu ekranına yazıyorsun: video gitti mi, izlendi mi. İzlenme, cevap gelmeden önce elindeki tek işarettir ve dördüncü günün aramasının sırasını o belirliyor.
 
 Ekran senin gördüğünle uyuşmuyorsa ekranın görüntüsünü al, buraya at, hangi düğme olduğunu söylerim.
