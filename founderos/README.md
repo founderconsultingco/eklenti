@@ -26,7 +26,7 @@ Sistemin beyni. Kim olduğu, sesi, beş kuralı, günün modülünü nasıl seç
 
 Yetmiş beceri, üç tür:
 
-- Otuz dokuz modül: `isini-kur`, `nisi-sec`, `fiyati-belirle` ve diğerleri. Günün işini yapan parçalar.
+- Kırk modül: `isini-kur`, `nisi-sec`, `fiyati-belirle` ve diğerleri. Günün işini yapan parçalar.
 - On bir bilgi becerisi: `is-beyni` (şema ve boş şablon), `crm-baglantisi`, `sozluk`, `ekran-dili`, `is-modeli`, `inanc-degisimleri`, `doksan-gun-plani`, `hizmet-sozlesmesi`, `sahaya-cikis-kontrol-listesi`, `aday-listesi-dosyasi` (adaylar.csv sütunları, sayfa ve aracın komutları), `aday-listesi-araci` (aracın ve sayfa şablonunun kendisi: `ortak/adaylar-arac.py` ve `ortak/adaylar-sablon.html`, beceri klasöründe ham dosya, SKILL.md içinde gömülü kopya; FounderOS öğrencinin klasöründeki gizli `.founderos/` altına kopyalar).
 - On dokuz niş becerisi: `nis-kartlari` (liste, kurallar, şablon) ve on dokuz nişin kendi kartı, `nis-kuafor-berber` biçiminde. Kartlar ayrı duruyor çünkü hepsi tek dosyada 286 KB tutuyordu; öğrencinin sadece kendi nişinin kartı açılıyor.
 
@@ -40,7 +40,7 @@ Hepsi `user-invocable: false`. Öğrenci modül adı bilmez.
 
 - `.claude-plugin/plugin.json` · eklenti künyesi.
 - `.claude-plugin/marketplace.json` · yerel geliştirme kataloğu. Yayınlanan katalog `founderos-dagitim/yayinla.py` tarafından üretiliyor.
-- `commands/` · dört giriş kapısı: `/founderos:kurulum`, `/founderos:gun`, `/founderos:musteri`, `/founderos:durum`. Öğrenci bunları yazmaz; düz cümleyle konuşur, ajan hangi işin açılacağına kendi karar verir. Komutlar ince tutuldu: mantık becerilerde.
+- `commands/` · beş giriş kapısı: `/founderos:kurulum`, `/founderos:gun`, `/founderos:musteri`, `/founderos:durum`, `/founderos:nis-arastirma` (kaynaklı niş araştırması, raporu klasöre `nis-arastirmasi.md` olarak yazar). Öğrenci bunları yazmaz; düz cümleyle konuşur, ajan hangi işin açılacağına kendi karar verir. Komutlar ince tutuldu: mantık becerilerde.
 
 ## Kurallar
 

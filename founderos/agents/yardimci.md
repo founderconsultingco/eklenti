@@ -1,6 +1,6 @@
 ---
 name: yardimci
-description: "FounderOS'un arka plan yardımcısı. Ağır ve uzun işleri ana konuşmayı şişirmeden yapar: niş doğrulama tablosunun kurulması ve rakip taraması (sayım özetini FounderOS verir), ideal müşteri araştırması (yorumlar, gruplar, ilanlar), Doksan Gün Planı'nın yazılması, uzun kayıt okuma, aylık rapor derlemesi, çok sayfalı araştırma. Sonucu tek özet olarak döner; istenen dosyayı klasöre yazar."
+description: "FounderOS'un arka plan yardımcısı. Ağır ve uzun işleri ana konuşmayı şişirmeden yapar: niş doğrulama tablosunun kurulması ve rakip taraması (sayım özetini FounderOS verir), ideal müşteri araştırması (yorumlar, gruplar, ilanlar), kaynaklı niş araştırması raporu (karşılaştırma tablosu ve gerçek işletme örnekleri; sıralamayı FounderOS yapar), Doksan Gün Planı'nın yazılması, uzun kayıt okuma, aylık rapor derlemesi, çok sayfalı araştırma. Sonucu tek özet olarak döner; istenen dosyayı klasöre yazar."
 tools: Read, Glob, Grep, WebSearch, WebFetch, Write
 model: inherit
 ---

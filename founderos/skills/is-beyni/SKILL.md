@@ -37,9 +37,9 @@ Aylık kâr hesapları buraya tarihiyle ekleniyor: ayın geliri kurulum ve aylı
 Yazan: isini-kur, zihniyet, vizyon-belgesi, araclari-kur, nisi-sec, kari-hesapla.
 
 ### 3. Niş
-Seçilen niş, seçim tarihi, coğrafya (şehir mi Türkiye geneli mi), doğrulama tablosu ve tarihi, ikinci ve üçüncü aday niş, sezon durumu. İdeal müşterinin tek cümlelik tanımı ve hedeflenen işletme büyüklüğü (ayrıntısı on sekizinci bölümde).
+Seçilen niş, seçim tarihi, coğrafya (şehir mi Türkiye geneli mi), doğrulama tablosu ve tarihi, ikinci ve üçüncü aday niş, sezon durumu. Niş araştırması yapıldıysa: dosyanın adı, önerilen başlangıç nişi, ilk üç ve seçili nişle çelişen bulgu, tarihiyle. İdeal müşterinin tek cümlelik tanımı ve hedeflenen işletme büyüklüğü (ayrıntısı on sekizinci bölümde).
 Niş kilidi: doksan gün ya da beş müşteri, hangisi önce gelirse. Kilidin başlangıç tarihi burada yazılı.
-Yazan: nisi-sec, nisi-dogrula.
+Yazan: nisi-sec, nisi-dogrula, nis-arastirmasi.
 
 ### 4. Teklif ve fiyat
 Dönüşüm Cümlesi beş parçasıyla, sistemin adı, bir dakikalık anlatım, üç kademenin nişe özel içeriği.
@@ -197,6 +197,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Seçim tarihi:
 - Coğrafya:
 - Doğrulama tablosu ve tarihi:
+- Niş araştırması (tarih, dosya, önerilen başlangıç nişi, ilk üç, seçili nişle çelişen bulgu):
 - İçeriden tanıdığı sektör:
 - Telefonundaki işletme sahipleri (sektör, kaç kişi):
 - Rakip notu:
