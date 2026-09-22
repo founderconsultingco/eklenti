@@ -119,6 +119,8 @@ Araştırmayı arka planda yürütür, sonra tek sayfa yazar. Sayfanın on iki b
 
 **12. FounderOS'un yorumu.** Ayrı ve işaretli. Bulgulardan çıkan ama hiçbir yerde yazılı olmayan sonuç. En fazla beş cümle ve her cümlenin başında "yorum" yazıyor. Sahada tutup tutmadığı on görüşme sonra işaretleniyor.
 
+Sızıntı sırası: sayfayı anlatırken asıl sızıntı teklifin başlığıyla aynı söylenir (kaçan arama, cevapsız form, fiyat sorup kaybolan). Araştırmadan başka bir sızıntı çıkarsa (estetikte işlem sonrası rötuş ve kontrol için muhatap bulamayan hasta gibi) "ek sızıntı" diye ayrı söylenir, teklifin başlığına geçmez. Hedef daraltma pazarın kendi eğilimiyle anlatılır (medikal estetikte ameliyatsız işlemler gibi). Başka işletmeleri kötüleyen ifade kullanılmaz.
+
 Sonra sayfayı sana gösterir ve üç yerden bağlar: teklifin hangi cümlesi hangi başlıktan çıkacak, sitenin hangi bölümü hangi başlıktan çıkacak, soğuk mesajın ilk satırı hangi başlıktan çıkacak. Bağlamayı göstermeden sayfayı kapatmaz, çünkü bağlanmayan sayfa okunmuş ve unutulmuş sayfadır.
 
 ## 6. Ne söyler

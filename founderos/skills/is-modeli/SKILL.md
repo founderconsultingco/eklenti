@@ -16,6 +16,8 @@ Girişimci, işletmelere tek tek bot satmak yerine; gelen talepleri karşılayan
 
 İşletmelere, müşteri iletişimi ile satış takibini birbirine bağlayan bir sistem. Sistem gelen mesajları ve uygun telefon altyapısında aramaları karşılar, yeni başvuruya hızlı döner, müşterinin ne istediğini öğrenir, randevu ya da fiyat teklifi sürecini ilerletir ve satın almayanı takip eder. Hizmet bittikten sonra da yorum, referans, tekrar randevu, ek satış ve eski müşteriyi geri kazanma işlerini yürütür.
 
+**Satılan sistemin çekirdeği üç akış, başlığı sesli resepsiyonist** (22 Eylül 2026): (1) mesai dışında ve yoğunlukta aramayı karşılayan yapay zekâ resepsiyonisti, (2) reklam ya da site formunu dolduranı beş dakika içinde arayan hızlı dönüş, (3) fiyat sorup kaybolan eski adayları arayıp yeniden canlandırma. Yazılı asistan yanında durur, başlık olmaz. Konumlandırma ve teklif kalıpları konumlandir ve teklifi-yaz modüllerinde.
+
 **Ayrı ayrı chatbot, telefon botu ya da otomasyon satmıyoruz.** İşletmenin müşteri yolculuğuna göre çalışan tek bir sistem satıyoruz. Öğrenci "WhatsApp botu kuruyorum" demez; "kaçan müşteriyi yakalayan sistemi kuruyorum" der.
 
 ## Kime satıyoruz
@@ -52,7 +54,7 @@ Adlar görevleri tanımlar. Her biri platformda aynı adla duran ayrı bir ürü
 | AI Voice Receptionist | AI Telefon Karşılama Asistanı | Gelen telefonu karşılar, bilgi verir, randevu yazar, gerekince çalışana aktarır | Voice AI |
 | AI Outbound Calling | AI Dış Arama | Uygun yeni başvuruyu ya da eski müşteriyi sistem arar, görüşmeyi randevuya ya da çalışana yönlendirir | Voice AI, giden arama |
 
-AI Dış Arama, cevapsız aramayı geri çevirmek değildir; sistemin kendisinin arama başlatmasıdır. Şarta bağlıdır: ülke, numara, hesap ve iletişim izni. Türkiye'de ilk müşteride vaat edilmez, sınandıktan sonra açılır.
+AI Dış Arama, cevapsız aramayı geri çevirmek değildir; sistemin kendisinin arama başlatmasıdır. Şarta bağlıdır: ülke, numara, hesap ve iletişim izni. Teklifin üçüncü akışıdır ve teklifte yazar; kurulumu ülke, numara, hesap ve iletişim izni uygunsa yapılır. Uygun değilse o parça kurulamayan parça sayılır, güvencedeki kural işler (o ayın ücreti yüzde yirmi iner). Sağlık nişlerinde yalnız açık rızası olan kişiyle kurulur.
 
 Karşılama, ön eleme ve randevu yazma için ayrı ayrı botlar şart değil; aynı mesaj asistanı üçünü birlikte yürütür. Uygun ayarla aynı sesli ajan gelen ve giden aramada kullanılır.
 

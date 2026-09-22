@@ -130,6 +130,8 @@ Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla 
 
 Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı nerede" bölümlerinden çıkar. Kartta ikisinden biri yoksa niş elenmez, "ölçülemedi" işaretiyle geçer ve karar diğer elemelere kalır.
 
+Kayıp birimi uyarısı (22 Eylül 2026): kartın kayıp birimi işlemin liste fiyatıysa işletmenin kaybı gibi söylenmez; "kaçan bir kişi, işlemine göre X ile Y arası liste fiyatı; işletmenin elinde kalanı bilinmiyor" denir. "Hedefini taşıyabilecek tek fiyat seviyesi" gibi kıyaslanmamış iddia kurulmaz. Yüksek ciro ya da yüksek işlem fiyatı hizmete ödeme yapılacağının kanıtı sayılmaz; kanıt, işletmenin bu işe zaten ödediği paradır (personel maaşı, yazılım, ajans).
+
 ### Üçüncü eleme: pazar büyüklüğü
 
 Üçüncü blokta 500 kişilik bir aday listesi çıkaracaksın ve o liste bir ay gidiyor, doksan gün değil. Doksan gün için gereken toplam havuz ana kanala göre değişiyor, çünkü telefonda bir aday bir buçuk dokunuşta tükeniyor, yazıda dört dokunuşta.

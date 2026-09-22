@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: sesli-ajani-kur
-description: "Müşterinin ikinci dalgası. Gelen aramayı karşılayan sesli ajan."
+description: "Müşterinin birinci dalgası, teklifin başlığı. Gelen aramayı karşılayan yapay zekâ resepsiyonisti ve aynı ajanın giden hali."
 ---
 
 # sesli-ajani-kur
@@ -26,7 +26,7 @@ Pazarlamadaki karşılığı: sattığımız şey telefona bakan robot değil, k
 
 ## 2. Ne zaman çalışır
 
-Sesli taraf kurulumun ikinci dalgasında canlıya alınıyor, sebebi hattın dışarıdan gelmesi. Metinler ise birinci dalgada, yazılı asistanla aynı gün hazırlanıyor.
+Teklifin başlığı sesli resepsiyonist olduğu için (22 Eylül 2026) sesli taraf birinci dalganın parçasıdır: metinler yazılı asistanla aynı gün hazırlanır ve hat gelir gelmez canlıya alınır. Hat dışarıdan geldiği için canlıya alma yedinci ile on dördüncü gün arasına düşebilir; bu gecikme müşteriye kurulum görüşmesinde söylenir.
 
 - İkinci gün: kart okunur, ajanın konuşma metni ve üç kuralı çıkarılır. Metin tek sayfada müşteriye gider ve yazılı onayı istenir. Bu sayfa yazılı asistanın sayfasıyla birlikte gider; müşteri iki metni bir oturumda onaylar.
 - Hat bağlandığı gün (yedinci günden on dördüncü güne): asistanın metni ve cevap listesi Voice AI ekranına yüklenir, Türkçe ses seçilir.

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: teklifi-yaz
-description: "Birinci gün teklifin gövdesi, üçüncü gün kademeler. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk. Teklif metni ya da ne satıldığı konuşulduğunda."
+description: "Birinci gün teklifin gövdesi (konumlandırmanın üstüne, sesli resepsiyonist başlıklı, tek cümle ve mekanizmalı iki kalıp), üçüncü gün kademeler. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk. Teklif metni ya da ne satıldığı konuşulduğunda."
 ---
 
 # teklifi-yaz
@@ -19,6 +19,7 @@ Doğrusu şu: özellik bilgi verir, sonuç satar. İşletmeci "yapay zeka asista
 Şunlar bu modülün işi değildir:
 - Fiyatı koymak (fiyati-belirle: bant bugün, teklifin hemen ardından; kesin rakam üçüncü blokta).
 - İş adını, logoyu ve marka kitini kurmak (birinci gün, markani-kur).
+- Konumlandırma cümlesini yazmak (konumlandir, hemen önce). Bu modül onu İş Beyni'nin dördüncü bölümünden okur ve teklifi onun üstüne kurar.
 - Mesaj metni yazmak (adaya-mesaj-yaz). Bu modül ne sattığını yazar, oraya nasıl yazacağını değil.
 - Görüşmede itirazı yönetmek (gorusmeyi-yonet). Buradan çıkan cevaplar oraya girdi olur.
 
@@ -33,7 +34,7 @@ Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelim
 ## 3. Ne okur
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sızıntı nerede, açılış cümlesi, duran havuz, gerçek fiyatlar ve kapasite, işletmecinin gerçek dertleri ve iç sesi, asistan kuralları, rekabetin şekli, yasal sınırlar.
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, şehir.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): niş, kurucu bölümü, şehir, dördüncü bölümdeki konumlandırma cümlesi.
 İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): tek cümlelik tanım, üç dert, üç korku, satın alma tetikleyicisi, daha önce ne denedi ve neden bıraktı, itiraz olmayan itirazlar, ne satın almaz (nitelik cümlesi buradan çıkar). Teklifin her cümlesi bu başlıklardan birine bağlanır ve hangisine bağlandığı öğrenciye gösterilir.
 İş modelinden: ne sattığımız, üç ajan, on üç işlev, iki müşteri yolculuğu, kademeler ve sınırlar. Sabit teklif metninden: dört sızıntı, üç kademe.
 Niş kartından: bu nişin müşteri yolculuğu (randevu, teklif ya da ikisi). Dönüşüm Cümlesi ona göre kurulur: randevu nişinde "randevuya dönmesini", teklif nişinde "teklife dönüp kapanmasını" der.
@@ -127,6 +128,24 @@ Beşinci parça iş anlatmaz, duygu anlatır ve karttaki "işletmecinin iç sesi
 FounderOS cümleyi kartın açılış tipine göre kurar. Üç tip var: geri çağırma, kaçan arama, teklif alıp kaybolan. Hangisinin bu nişte en güçlü olduğu kartta yazılı.
 
 Bir test var: cümleyi sesli söyle. Ağzından çıkarken tuhaf ya da bulanık geliyorsa adaya da öyle gelecek. Tuhaf gelmeyene kadar yeniden yazılır.
+
+### Teklifin başlığı: sesli resepsiyonist ve üç akış
+
+Satılan sistemin çekirdeği üç akış, tek sistem. Teklifin başlığı her zaman sesli resepsiyonisttir:
+
+1. Mesai dışında ve yoğunlukta yapay zekâ resepsiyonisti: kaçan aramayı karşılar, genel soruları cevaplar, kaydı günceller, randevuyu kendisi yazar, gerekince çalışana aktarır.
+2. Yeni talebe hızlı dönüş: reklam ya da site formu dolduran kişiyi sistem beş dakika içinde arar, ihtiyacını sorar, randevu ya da görüşme saatini belirler.
+3. Eski talepleri yeniden canlandırma: fiyat sorup karar vermemiş eski adayları sistem tek tek arar, hâlâ ilgilenene randevu açar. Ülke, numara ve iletişim izni uygunsa; sağlık nişlerinde yalnız açık rızası olan kişiyle.
+
+Yazılı asistan (WhatsApp, Instagram) bu üç akışın yanında durur, başlık olmaz.
+
+Teklif iki kalıptan kurulur ve ikisi de yazılır:
+
+Tek cümle: "[Şehir]'deki [niş]in tek bir müşteri aramasını bile kaçırmamasını sağlıyoruz. 7/24 çalışan yapay zekâ resepsiyonistini kuruyoruz, aramayı o karşılıyor ve işi kendisi [randevuya / teklife] bağlıyor. [gün] günde yayında, kurulumun tamamını biz yapıyoruz."
+
+Mekanizmalı (üç akışı birden kapsar): "[Şehir]'deki [niş]in kaçan aramalarını, cevapsız kalan reklam formlarını ve [fiyat alıp kaybolan müşterilerini / randevu alıp gelmeyenlerini] [Sistem Adı] ile [randevuya / teklife] çeviriyoruz. [gün] günde kurulu, her şeyi biz yapıyoruz."
+
+Sistemin adı nişe özel ve sahiplenilebilir olur, "kaçan / kurtarma / geri kazanma" ekseninde kurulur. Köşeli parantezler İş Beyni'nden doldurulmadan gösterilmez.
 
 ### Teklifin altı parçası ve tam teklif
 

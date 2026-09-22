@@ -42,11 +42,11 @@ Niş kilidi: doksan gün ya da beş müşteri, hangisi önce gelirse. Kilidin ba
 Yazan: nisi-sec, nisi-dogrula, nis-arastirmasi.
 
 ### 4. Teklif ve fiyat
-Dönüşüm Cümlesi beş parçasıyla, sistemin adı, bir dakikalık anlatım, üç kademenin nişe özel içeriği.
+Konumlandırma cümlesi (uzun, kısa, itiraz cevabı). Dönüşüm Cümlesi beş parçasıyla, sistemin adı, bir dakikalık anlatım, üç kademenin nişe özel içeriği.
 Kurulum ücreti, aylık ücret, karşılaştırma fiyatı, deneme fiyatı işareti ve üç karşılık, güvence cümlesinin tam metni ve şartları, "fiyat ne" sorusunun cevabı.
 En sık çıkan üç itiraz ve cevapları. Kartın kaçan müşteri rakamı ve o rakamdan çıkan kurtarma tahmini.
 Kilitli satırlar: teklifin kelimeleri on görüşmede, fiyatın rakamı otuz görüşmede açılıyor. Her sürüm tarihiyle duruyor.
-Yazan: teklifi-yaz, fiyati-belirle, gorusmeyi-analiz-et.
+Yazan: konumlandir, teklifi-yaz, fiyati-belirle, gorusmeyi-analiz-et.
 
 ### 5. Teslimat
 Müşteriye gösterilecek beş satır, ölçüm satırları ve doldukları tarih, kapasite hesabı (ilk müşteriden sonra), görüşmede söylenecek üç cümle, müşteriden istenecekler listesi, dört dosyanın adı ve durumu.
@@ -210,6 +210,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 
 ## 4. Teklif ve fiyat
 
+- Konumlandırma cümlesi (uzun, kısa, itiraz cevabı):
 - Dönüşüm Cümlesi (beş parça):
 - Sistemin adı:
 - Bir dakikalık anlatım:

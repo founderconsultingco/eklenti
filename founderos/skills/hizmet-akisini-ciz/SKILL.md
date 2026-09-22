@@ -184,7 +184,8 @@ Bir sonraki modüllere: ölçüm satırları kari-hesapla'ya ve kapasite hesabı
 - Doksan Gün Planı'nın beşinci bölümü eksikse: modül durur ve önce o bölüm tamamlanır. On beş dakika sürer.
 - Saat tahminleri yapılamazsa: FounderOS'un başlangıç rakamları girilir, hepsi tahmin diye işaretlenir. Fiyat günün ikinci yarısında yine hesaplanır.
 - İki saat aşılırsa: dört dosya dördüncü günün ilk boş saatine kayar. Sayfa, ölçüm satırları ve üç cümle bugün bitiyor.
-- Sağlık nişindeysen: kartın yasal sınırlar bölümü müşteriye gösterilecek sayfaya da uygulanır. Kurulamayacak parça sayfada gösterilmez.
+- Sağlık nişindeysen: kartın yasal sınırlar bölümü müşteriye gösterilecek sayfaya da uygulanır. Kurulamayacak parça sayfada gösterilmez. Teklifin dışında kalanlar: rızasız eski adaya ya da hastaya mesaj veya arama, fiyat söyleyen asistan, hasta yorumu toplayıp paylaşma (hukuki teyide kadar). Kontrol hatırlatmasının "tanıtım" sayılıp sayılmadığı ilk satıştan önce bir sağlık hukukçusuna sorulur.
+- İşletme WhatsApp'ı ve telefonu aynı cep hattında kullanıyorsa: WhatsApp Business uygulaması ile API'nin aynı numarada birlikte çalışması (coexistence) 2026'da açık ve CRM altyapısı destekliyor. İlk müşteride test edilir; tutmazsa ayrı iş numarası açılır.
 
 ## 9. Sıradaki adım ve işaretler
 

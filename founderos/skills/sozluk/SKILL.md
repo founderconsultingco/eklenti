@@ -93,7 +93,7 @@ Niş ve teklif:
 - Garanti: FounderOS'un sana verdiği söz; müşteriye verdiğin güvenceden ayrıdır, görüşmede hiç anılmaz.
 - Başlangıç görüşmesi: Paketle gelen altmış dakikalık bire bir görüşme; kurulum sayfasındaki takvimden birinci gün alınır, iki üç güne konur. CRM bölümün orada açılır, birinci günde kurulan her şey gözden geçirilir.
 - Lisans anahtarı: Kurulum sayfasında duran, FounderOS'un seni tanımasını sağlayan tek satırlık kod. Birinci gün bir kere yazılır, İş Beyni'nde durur; her sabah sessizce doğrulanır.
-- Konumlandırma cümlesi: Marka kitinde duran, işinin kime ne yaptığını tek cümlede söyleyen cümle; Dönüşüm Cümlesi'nin markaya bakan kısa hali.
+- Konumlandırma cümlesi: İşletme sahibinin "neden senden alayım" sorusunun cevabı; birinci günde ideal müşteriden sonra, tekliften önce yazılır. Uzun hali, telefonda söylenen kısa hali ve "zaten yapay zekâ teklifi aldık" itirazının cevabı var; kısa hali marka kitinde de durur.
 - Aşama (üç anlamı var): adayın kayıt yerindeki durumu (yeni, yazdım, cevap verdi, görüşme ayarlandı, görüşme yaptım, teklif verdim, kazandım, kaybettim, sonra); Yol Haritası'nın dokuz aşaması; ve İş Beyni'nin on dördüncü bölümündeki beş ilerleme aşaması (hazırlık tamamlandı, ilk işletmeyle görüştün, ilk satışını yaptın, hizmeti teslim ettin, müşterin kullanıyor). Hangisi olduğu cümleden anlaşılır.
 - Sıkıştırılmış prova: Üç dakikalık kısa prova; on iki prova dolmadan erken randevu çıkarsa görüşmeden hemen önce yapılır.
 - Kapora: Teklif yolunda işin başlaması için müşterinin ödediği ön ödeme; ödemenin tamamı değil, işin garantisi.

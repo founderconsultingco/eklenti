@@ -92,7 +92,7 @@ Hangi işaretin, hangi paletin ve hangi tipografinin kullanılacağı da karttan
 
 Her seçeneğin altında tek satır açıklama olur ve açıklama tasarım dili konuşmaz. "Minimalist ve sofistike" denmez. "Teknik ve net, işaret kaçan sinyali gösteriyor" denir.
 
-**Konumlandırma cümlesi.** Dönüşüm Cümlesi'nin kısa hali. Sitede, kartvizitte ve profillerde aynısı durur. Seçimlerden sonra yazılır, çünkü ismin ritmine oturması gerekiyor.
+**Konumlandırma cümlesi.** Burada yazılmaz; konumlandir modülü birinci günde yazdı ve İş Beyni'nin dördüncü bölümünde duruyor. Kite kısa hali girer, gerekirse ismin ritmine oturacak kadar kısaltılır ama anlamı değişmez. Sitede, kartvizitte ve profillerde aynısı durur.
 
 **Kit.** Seçilen kilitle şablon doldurulur ve dosyalar üretilir. On dakika sürer ve sonunda öğrenci ekranda on iki panoyu görür. Günün en görünür anı budur: sabah adı bile olmayan işin rengi, yazısı, logosu, sitesinin başlığı ve üç Instagram gönderisi gözünün önünde duruyor.
 
