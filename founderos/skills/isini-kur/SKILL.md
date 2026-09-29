@@ -275,7 +275,7 @@ Bu plan iki kez güncellenir: üçüncü gün fiyatın kesinleşince bir kez, ü
 
 ### Özgürlük bölümü
 
-Gelir planının altına üç satır yazarız: aylık zorunlu giderin ne kadar, kaç müşteride bu gider karşılanıyor, maaşlı bir işin varsa kaç müşteride maaşın çıkıyor. Rakamları sen veriyorsun, hesabı ben yapıyorum. Kaç müşteri gerektiği hesaplanırken şirket ve muhasebe gideri de tek satır olarak eklenir: ayda yaklaşık 14-16 bin TL, ilk müşteriyle başlar; ayrıntısı anlatılmaz.
+Gelir planının altına üç satır yazarız: aylık zorunlu giderin ne kadar, kaç müşteride bu gider karşılanıyor, maaşlı bir işin varsa kaç müşteride maaşın çıkıyor. Rakamları sen veriyorsun, hesabı ben yapıyorum. Kaç müşteri gerektiği hesaplanırken şirket ve muhasebe gideri de tek satır olarak eklenir: ayda yaklaşık 14-16 bin TL, ilk müşteriyle başlar; ayrıntısı anlatılmaz. İkinci satırın sayısı (kaç müşteride gider karşılanıyor, yukarı yuvarlanmış tam sayı, 1 ile 60 arası) durum kaydına `gecim_musteri` olarak yazılır; panelde geçim hedefi olarak görünür, her yeni müşteride bir kutu dolar.
 
 Maaşlı bir işin varsa sonra ondan ne zaman ayrılabileceğin gelir. Dört satır:
 
@@ -384,7 +384,7 @@ Senin yaptıkların. Sistemin ürettiklerini saydıktan sonra öğrencinin kendi
 
 Dosyalarla senin işin yok. "Klasördeki dosyaları açmak zorunda değilsin; ben yazarım, ben okurum. Merak edersen çift tıklayınca açılır, o kadar."
 
-Bu mesajdan önce İş Beyni'ne iki şey yazılmış olur: on üçüncü bölüme açık işler (üç ile beş madde: bugün yarım kalan ne varsa ve hangi blokta), on altıncı bölüme bugünkü taslaklar (sayfa metni sürümü, teklif sürümü). Konum İş Beyni'ne değil durum kaydına yazılır: birinci blok tamam, sıradaki blok iki. Kapanıştan önce hatırlatmalar açılır, bir dakikalık iş: lisans cevabında panel linki ve `hatirlatma` alanı varsa öğrenci paneli telefonunda açar, ana ekrana ekler (iPhone'da Safari'de Paylaş, yeni Safari'de alttaki üç noktanın içinde; sonra Ana Ekrana Ekle), paneli ana ekrandaki simgeden açar ve "Hatırlatmaları aç"a basar; telefon izin sorarsa izin verir. Deneme bildirimi birkaç saniyede düşer; düştüyse tamam. Panel linki ya da `hatirlatma` alanı yoksa ya da telefon bildirim göstermiyorsa bugün zorlanmaz, ikinci blokta yedek yol kurulur.
+Bu mesajdan önce İş Beyni'ne iki şey yazılmış olur: on üçüncü bölüme açık işler (üç ile beş madde: bugün yarım kalan ne varsa ve hangi blokta), on altıncı bölüme bugünkü taslaklar (sayfa metni sürümü, teklif sürümü). Konum İş Beyni'ne değil durum kaydına yazılır: birinci blok tamam, sıradaki blok iki. Kapanıştan önce hatırlatmalar açılır, bir dakikalık iş: lisans cevabında panel linki ve `hatirlatma` alanı varsa öğrenci paneli telefonunda açar, ana ekrana ekler (iPhone'da Safari'de Paylaş, yeni Safari'de alttaki üç noktanın içinde; sonra Ana Ekrana Ekle), paneli ana ekrandaki simgeden açar ve "Hatırlatmalar" satırındaki anahtarı açar; telefon izin sorarsa izin verir. Deneme bildirimi birkaç saniyede düşer; düştüyse tamam. Panel linki ya da `hatirlatma` alanı yoksa ya da telefon bildirim göstermiyorsa bugün zorlanmaz, ikinci blokta yedek yol kurulur.
 
 Mesaj tek soruyla biter: "Bunlardan bakmak istediğin bir şey var mı, yoksa yarını anlatayım?"
 

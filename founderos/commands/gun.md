@@ -10,9 +10,9 @@ Sırayla:
 2. **Oku:** `.founderos/durum.json` ve `is-beyni.md`. Kaçıncı gün `gun_baslangic`tan çıkar; gün sayacı tutmuyorsa tarih üstündür. Durum kaydı yoksa İş Beyni'nden kurarsın (`founderos:gunaydin`'deki gibi), öğrenciye sormazsın.
 3. **Lisans:** aşağıda. Doğrulamadan gün açılmaz.
 4. **Birinci blok bitmediyse** kaldığı oturuş `founderos:kurulum` sırasıyla sürer: "Kaldığın yer yazılıydı, şuradan devam ediyoruz: <iş>." Açılış, lisans ve yazılı cevaplar tekrar edilmez.
-5. **Önce kapanmamış günler, sonra ilk cümle düne bağlanır:** saha açıksa ilk mesajdan önce aday aracının `kapat` komutu; akşam kapanışı atlanan günlerin saha sonuçları işlenir ve ölçümleri gider, `son_kapanis` durum kaydına yazılır (`founderos:gunaydin`, adım 6). Sonra: "Dün iki işletmeden cevap aldın; önce görüşme isteyene hazırlanıyoruz." Dün bir şey olmadıysa süslemeden söylenir. İki günden uzun aradan sonra çekirdeğin ara kuralı.
+5. **Önce kapanmamış günler, sonra ilk cümle düne bağlanır:** saha açıksa ilk mesajdan önce aday aracının `kapat` komutu; akşam kapanışı atlanan günlerin saha sonuçları işlenir ve ölçümleri gider, `son_kapanis` durum kaydına yazılır (`founderos:gunaydin`, adım 6). İş Beyni'nde panel linki yazılıysa ilk mesajın ilk satırı `[Panelini aç](link)`; yerleşik tarayıcı araçları varsa ilk mesajdan sonra paneli yanda açarsın (`founderos:gunaydin`, ilk satır panel). Sonra: "Dün iki işletmeden cevap aldın; önce görüşme isteyene hazırlanıyoruz." Dün bir şey olmadıysa süslemeden söylenir. İki günden uzun aradan sonra çekirdeğin ara kuralı.
 6. **Bekleyen soru:** en fazla bir tane, anı gelmişse ve cevabı bugünün işini değiştirecekse (anlar `founderos:gunaydin`'de). Cevap "Tanışma cevapları" satırına, soru listeden düşer.
-7. **Günün işi:** hazırlıkta çekirdeğin blok sırasından ve düzeninden (tam zamanlıda bir blok bir gün, işin yanında ikişer gün); blok numarası söylenmez. Saha açıksa `founderos:gunu-planla`, günün listesi, `saha-paketi` ve `saha_yukle`; dönen bağlantı öğrenciye: "Bugünün listesi telefonunda: bu bağlantıyı aç, aramayı oradan yap, her aramadan sonra sonucuna bas." "CRM hesabım açıldı" günü ilk iş `founderos:araclari-kur`'un "CRM açıldığı gün" bölümü. "Kimse cevap vermedi" gelirse `founderos:cevap-gelmiyor`.
+7. **Günün işi:** hazırlıkta çekirdeğin blok sırasından ve düzeninden (tam zamanlıda bir blok bir gün, işin yanında ikişer gün); blok numarası söylenmez. Saha açıksa `founderos:gunu-planla`, günün listesi, `saha-paketi` ve `saha_yukle`; dönen bağlantı öğrenciye: "Bugünün listesi hazır: [bağlantı]. Telefonunda aç (panelindeki 'Sahaya çık' da aynı yere gider), aramayı oradan yap, her aramadan sonra ne olduğuna bas; ekran kendisi sıradakine geçer." "CRM hesabım açıldı" günü ilk iş `founderos:araclari-kur`'un "CRM açıldığı gün" bölümü. "Kimse cevap vermedi" gelirse `founderos:cevap-gelmiyor`.
 8. Günün işi hangi modüle düşüyorsa sen seçer, çalıştırırsın; menü sunmazsın.
 9. **Akşam** `founderos:rakamlari-oku`: saha açıksa önce `kapat`, sonra iş günü kapanır (ilk satırdaki iş günü; gece yarısından sonra, sabah beşe kadar önceki gün). Sonra durum kaydı güncellenir (`son_kapanis` iş günü), bağlantı açıksa `durum_yaz`; sürüm uyarısı varsa en son.
 
@@ -22,7 +22,7 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.69.0
+Bu paketin sürümü: 0.70.0
 
 Lisans cevabındaki `sonSurum` yukarıdakinden büyükse bunu **günün sonunda**, akşam kapanışından sonra söylersin; sabah söylemezsin, sabahın ilk cümlesi bir bakım işi olmaz.
 

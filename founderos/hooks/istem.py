@@ -24,7 +24,7 @@ KURALLAR = [
      "FounderOS: takılma. Takılma yöntemini uygula: nerede kaldı, türü ne (bilgi, erişim, teknik, uygulama), işi küçült; aynı açıklamayı tekrarlama; iki denemede çözülmezse destek özeti."),
     ("cevap_yok", re.compile(r"(kimse cevap vermedi|cevap gelmiyor|hi[çc] d[öo]n[üu][şs] yok|kimse a[çc]m[ıi]yor|kimse d[öo]nmedi)"),
      "FounderOS: founderos:cevap-gelmiyor modülünü aç. Motivasyon konuşması yok, beş kontrol ve tek gerekçeli değişiklik."),
-    ("randevu", re.compile(r"(randevu ald[ıi]m|yar[ıi]n g[öo]r[üu][şs]me|g[öo]r[üu][şs]me ayarlad[ıi]m|randevu verdi)"),
+    ("randevu", re.compile(r"(randevu ald[ıi]m|yar[ıi]n g[öo]r[üu][şs]me|g[öo]r[üu][şs]me ayarlad[ıi]m|randevu verdi|g[öo]r[üu][şs]mem var(?!d)|g[öo]r[üu][şs]meye haz[ıi]rlan)"),
      "FounderOS: randevu. founderos:gorusmeye-getir, ardından founderos:gorusme-provasi-yap."),
     ("gorusme_bitti", re.compile(r"(g[öo]r[üu][şs]me bitti|g[öo]r[üu][şs]t[üu]k|g[öo]r[üu][şs]meyi yapt[ıi]m|[şs][öo]yle ge[çc]ti)"),
      "FounderOS: görüşme bitti. founderos:gorusmeyi-analiz-et."),

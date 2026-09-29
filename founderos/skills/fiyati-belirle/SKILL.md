@@ -125,7 +125,7 @@ Randevu başına ya da gelen müşteri başına ücret modeli bizim işe uymuyor
 
 ### Süre hükmü (yalnız üçüncü blokta, kesin fiyatla)
 
-Kesin rakam konunca gelir planı isini-kur'daki zincirle yeniden hesaplanır (hedef bölü müşteri değeri, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, arama bölü günlük arama sayısı eşittir gün). Çıkan gün doksanı geçiyorsa bugün, ilk kez, söylenir ve iki yoldan biri seçilir: hedef doksan güne indirilir ya da doksan gün sonrası için ikinci hedef yazılır. Bu cümle birinci günde kurulmaz; birinci günde yalnız tempo gösterilir. Moral bozmadan söylenir, rakamla: "Bu fiyatla hedefin doksan güne değil yüz yirmi güne sığıyor. Doksan günde dört müşteri, sonrası ikinci hedef." Karar İş Beyni'nin ikinci bölümüne tarihle yazılır.
+Kesin rakam konunca gelir planı isini-kur'daki zincirle yeniden hesaplanır (hedef bölü müşteri değeri, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, arama bölü günlük arama sayısı eşittir gün). Gider satırı da yeni aylık ücretle yeniden hesaplanır ve durum kaydındaki `gecim_musteri` güncellenir (yukarı yuvarlanmış tam sayı, 1 ile 60 arası). Çıkan gün doksanı geçiyorsa bugün, ilk kez, söylenir ve iki yoldan biri seçilir: hedef doksan güne indirilir ya da doksan gün sonrası için ikinci hedef yazılır. Bu cümle birinci günde kurulmaz; birinci günde yalnız tempo gösterilir. Moral bozmadan söylenir, rakamla: "Bu fiyatla hedefin doksan güne değil yüz yirmi güne sığıyor. Doksan günde dört müşteri, sonrası ikinci hedef." Karar İş Beyni'nin ikinci bölümüne tarihle yazılır.
 
 ### Deneme fiyatı
 
