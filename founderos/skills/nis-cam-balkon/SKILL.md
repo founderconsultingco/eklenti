@@ -6,6 +6,8 @@ description: "Sadece cam balkon, PVC pencere ve panjur nisinin karti: rakamlar, 
 
 # Cam balkon, PVC pencere, panjur
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Cam balkon (sürme, katlanır/akordiyon, giyotin sistemler), PVC pencere (pimapen), panjur (manuel ve motorlu), sineklik (menteşeli, pileli/plise, sürgülü) satan, keşif ve montaj yapan yerel bayiler. Google Haritalar'da "cam balkon", "pvc doğrama", "panjur", "sineklik" kategorileriyle geçiyorlar. Sahadaki firmaların çoğu bu dört işi birlikte yapıyor, tek ürünle sınırlı kalan az. Kapsam dışı: sadece fabrika üretimi yapan sanayiciler (PAGEV/PÜKAD üyesi imalatçılar), sadece cam kesim/tamir ustaları, mantolama ve yalıtım firmaları.
 
@@ -47,7 +49,7 @@ Sözlüğü: keşif, ücretsiz keşif, ölçü, teklif, montaj, bayi, peşinat, 
 
 **Reklam kütüphanesi kelimeleri.** cam balkon, katlanır cam balkon, sürgülü cam balkon, giyotin cam balkon, pvc pencere, pimapen, ısıcam pencere, panjur, motorlu panjur, kepenk, sineklik, pileli sineklik, menteşeli sineklik, ücretsiz keşif, cam balkon fiyatları.
 
-**Yasal sınırlar.** İki önemli nokta var. Birincisi, kapı ve pencere sistemleri, cam balkonlar ve elektrikli panjurlar Garanti Belgesi Yönetmeliği'nin 18. maddesi gereği 2 yıl garantiyle satılmak zorunda (tuketici.ticaret.gov.tr). Bu, asistanın garanti/bakım hatırlatma mesajlarını meşrulaştıran güçlü bir dayanak. İkincisi, cam balkon ortak alanda değişiklik sayıldığından 634 sayılı Kat Mülkiyeti Kanunu madde 19 gereği kat maliklerinin 4/5'inin yazılı izni gerekiyor; bir Yargıtay kararı (18. HD, 2015/6244-2016/2299) izinsiz yapılan cam balkonun sökülmesine hükmedebiliyor (kocaelibarisgazetesi.com). 2026'da bu konuda yeni bir taslak düzenleme gündemde, tüm kat maliklerinden ıslak imzalı muvafakatname istenmesi öngörülüyor (birgun.net, 30 Temmuz 2026). Bu, asistanın vermeyeceği bir hukuki konu ama işletmeciye "müşteri bunu bilmeyebilir" notu olarak eklenebilir. Reklam/mesajlaşma (İYS) açısından sektöre özel ayrı bir kısıt bulunamadı, yok.
+**Yasal sınırlar.** İki önemli nokta var. Birincisi, kapı ve pencere sistemleri, cam balkonlar ve elektrikli panjurlar Garanti Belgesi Yönetmeliği'nin 18. maddesi gereği 2 yıl garantiyle satılmak zorunda (tuketici.ticaret.gov.tr). Bu, asistanın garanti/bakım hatırlatma mesajlarını meşrulaştıran güçlü bir dayanak. İkincisi, cam balkon ortak alanda değişiklik sayıldığından 634 sayılı Kat Mülkiyeti Kanunu madde 19 gereği kat maliklerinin 4/5'inin yazılı izni gerekiyor; bir Yargıtay kararı (18. HD, 2015/6244-2016/2299) izinsiz yapılan cam balkonun sökülmesine hükmedebiliyor (kocaelibarisgazetesi.com). 2026'da bu konuda yeni bir taslak düzenleme gündemde, tüm kat maliklerinden ıslak imzalı muvafakatname istenmesi öngörülüyor (birgun.net, 30 Temmuz 2026). Bu, asistanın vermeyeceği bir hukuki konu; soru gelirse asistan işletme sahibine devreder. FounderOS bunu öğrenciye ya da işletmeciye not olarak iletmez. Reklam/mesajlaşma (İYS) açısından sektöre özel ayrı bir kısıt bulunamadı, yok.
 
 **Yoğun şehirler.** İstanbul, Ankara, İzmir (Armut'ta en çok firma listelenen şehirler); şikayetlerde Kayseri, Bursa, Samsun, Eskişehir, Gaziantep de sık geçiyor. Kesin sıralama için ayrı bir kaynak bulunamadı, kaba çıkarım.
 
@@ -61,23 +63,23 @@ En güçlü üç itiraz: keşfi de telefonu da ben yapıyorum, keşif olmadan fi
 
 "Teklif verdiğim kişi zaten kararsız, aramanın anlamı yok." O kişi başka firmadan da teklif almıştır, aramazsan iş rakibe gider; bu tam da kaybedilen havuzun kendisi.
 
-"Apartmanda izin işi bizim işimiz değil." Doğru, asistan bunu sormaz, hukuki konuda söz söylemez.
+"Apartmanda izin işi bizim işimiz değil." Doğru, asistan bunu sormaz, bu konuda tek kelime söylemez; soruyu sana bırakır.
 
 "Zaten işim var, yetişemiyorum." Doluluk kârlılık değil, günlük montaj kapasitesi bir ile iki ev; boşa giden asıl şey cevapsız kalan teklif zamanı.
 
-"Garanti zaten iki yıl bizim sorumluluğumuzda, aramaya gerek yok." Tam tersi, yasal iki yıllık garanti asistan için meşru bir arama sebebi, satış değil bakım hatırlatması.
+"Garanti zaten iki yıl bizim sorumluluğumuzda, aramaya gerek yok." Tam tersi, iki yıllık garanti asistan için meşru bir arama sebebi, satış değil bakım hatırlatması.
 
 "WhatsApp'tan zaten dönüyorum." Şikayetlerde tekrarlanan tema "sürekli oyalandım, kimse gelmedi"; yazılı dönüş sistemsiz yürüyor, unutuluyor.
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen ay keşfe gidip teklif verdiğiniz de dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa telefonda öyle mi duruyorlar?"
 
 İşleyiş sorusu: "Ekip montajdayken, siz keşifteyken WhatsApp'tan ya da siteden 'cam balkon kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, başka bayiye de mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, hangi ürün, kaç metrekare ya da kaç pencere, kaçıncı kat ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip dönmeyen müşteriye ve garantisi süren eski işe de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; hangi ürün, kaç metrekare ya da kaç pencere, kaçıncı kat ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip dönmeyen müşteriye ve garantisi süren eski işe de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Usta keşifteyken ya da montajdayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 
@@ -86,9 +88,9 @@ Karşı taraf bunu söylerse:
 - "Ben zaten ücretsiz keşif veriyorum, telefonu ben açarım." Söyle: "Güzel, çoğu bayi açamıyor. Siz merdivende ölçü alırken ya da montajdayken çalan telefonu ve gelen mesajı da anında karşılayabiliyor musunuz, yoksa akşama mı kalıyor?" Ne için: keşfe gitmekle telefona anında dönmeyi ayırmak; kartta aynı havuzdan beslenen bayinin çok olduğu ve ilk dönenin kazandığı yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "anında" derse teşekkür et, "yoğun dönemde değişirse bir kez daha arayabilir miyim" de, kapat; FounderOS "sonra" yazar. "Akşama kalıyor" derse: "İşte o aradaki müşteri için kuruyorum" de ve saat iste.
 - "Fiyatı telefonda veremem, keşif lazım." Söyle: "Vermiyor, haklısınız; ölçü alınmadan bu işte fiyat söylenmez. Sistem hangi ürün, kaç metrekare ya da kaç pencere, kaçıncı kat olduğunu soruyor, fotoğraf isteyip kayda ekliyor ve size uygun güne keşif randevusu yazıyor; fiyatı ölçüyü alınca siz söylüyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
 - "Teklif verdiğim kişi zaten kararsız, aramanın anlamı yok." Söyle: "Kararsız, doğru; o yüzden başka bayiden de teklif almıştır ve kimden son haber aldıysa onu hatırlar. Geçen ay teklif verip dönmeyenlere sizin adınıza bir hatırlatma gitse ters olur mu?" Ne için: kararsızlığı tartışmamak; kartta müşterinin birden fazla bayiden teklif alıp karşılaştırdığı yazıyor, kaybolan havuzun kendisi bu. Sonra: "ters olmaz" derse saat iste; "gerek yok, dönen döner" derse teşekkür et, kapat; FounderOS "sonra" yazar.
-- "Apartmanda izin işi bizim işimiz değil." Söyle: "Sistemin de işi değil; komşu izni, kat maliki gibi konularda tek kelime söylemiyor, soruyu size bırakıyor. Sadece ürünü, ölçüyü, katı ve fotoğrafı alıp keşif gününü yazıyor. Böyle olsa sizin için sorun olur mu?" Ne için: hukuki konuyu sistemin sahibine devrettiğini kartın asistan kuralıyla söylemek. Sonra: "olmaz" derse saat iste; "istemem" derse teşekkür et ve kapat.
+- "Apartmanda izin işi bizim işimiz değil." Söyle: "Sistemin de işi değil; komşu izni, kat maliki gibi konularda tek kelime söylemiyor, soruyu size bırakıyor. Sadece ürünü, ölçüyü, katı ve fotoğrafı alıp keşif gününü yazıyor. Böyle olsa sizin için sorun olur mu?" Ne için: izin konusunu sistemin sahibine bıraktığını kartın asistan kuralıyla söylemek. Sonra: "olmaz" derse saat iste; "istemem" derse teşekkür et ve kapat.
 - "Zaten işim var, yetişemiyorum." Söyle: "Yeni müşteri getirmiyorum zaten; ben boşa giden montaj günü için değil, cevapsız kalan teklif için arıyorum. Bugün size fiyat soranların hepsine akşam dönülüyor mu, yoksa bir kısmı öyle mi kalıyor?" Ne için: doluluğun kârlılık olmadığını kartın diliyle söylemek; kartta günlük montaj kapasitesinin bir iki ev olduğu ve asıl kaybın cevapsız teklif olduğu yazıyor, bunu sen söylemezsin. Sonra: "bir kısmı kalıyor" derse "o kalan kısım için kuruyorum" de ve saat iste; "hepsine dönüyorum" derse teşekkür et, kapat; FounderOS "sonra" yazar.
-- "Garanti zaten iki yıl bizim sorumluluğumuzda, aramaya gerek yok." Söyle: "Sorumluluk sizde, o yüzden meşru bir sebep; iki yıl içinde 'nasıl çalışıyor, conta ve mekanizma yerinde mi' diye giden bir mesaj satış değil, bakım. Geçen yıl taktığınız cam balkonların sahiplerine sizden böyle bir mesaj gidiyor mu?" Ne için: garantinin arama sebebi olduğunu kartın yasal sınırıyla söylemek; satış değil bakım hatırlatması. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
+- "Garanti zaten iki yıl bizim sorumluluğumuzda, aramaya gerek yok." Söyle: "Sorumluluk sizde, o yüzden meşru bir sebep; iki yıl içinde 'nasıl çalışıyor, conta ve mekanizma yerinde mi' diye giden bir mesaj satış değil, bakım. Geçen yıl taktığınız cam balkonların sahiplerine sizden böyle bir mesaj gidiyor mu?" Ne için: garantinin arama sebebi olduğunu söylemek; satış değil bakım hatırlatması. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
 İsim kökleri: Cephe, Kat, Profil. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.

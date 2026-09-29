@@ -1,10 +1,12 @@
 ---
 user-invocable: false
 name: musteri-sistemini-kur
-description: "Müşterinin ikinci gününden itibaren. AI Müşteri Dönüşüm Sistemi'nin kurulması: yedi altyapı parçası, üç ajan, on üç işlev; hangi parçaların açılacağını nişin müşteri yolculuğu (randevu ya da teklif) belirler."
+description: "Müşterinin ikinci gününden itibaren. AI Müşteri Dönüşüm Sistemi'nin kurulması: yedi altyapı parçası, üç ajan, on üç işlev; hangi parçaların açılacağını nişin müşteri yolculuğu (randevu ya da teklif) belirler. Müşteri bölümü açıldığı gün CRM bağlantısı yenilenir ve iki bölüm birlikte işaretlenir."
 ---
 
 # musteri-sistemini-kur
+
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -35,9 +37,9 @@ Hangi parçanın işletmede hangi anı çözdüğü hizmet-akisini-ciz'in tablos
 
 **Gelen taraf (birinci dalga, yazılı; ikinci dalga, sesli):**
 8. AI Mesajlaşma ve Randevu Asistanı (AI Chat & Appointment Setter). Yazana anında cevap verir, ihtiyacı öğrenir, ölçüte uygunluğuna bakar, randevuya ya da çalışana yönlendirir. Adayı Değerlendirme ve Yönlendirme (Lead Qualification & Routing) bu asistanın içindedir. Metni ve kuralları: yazili-asistani-kur.
-9. Yeni Başvuruya Hızlı Dönüş (Speed-to-Lead). Form, karekod ya da mesaj gelince ilk iletişim altmış saniye içinde çıkar; ölçülür, kaçarsa bildirim yükselir. Formdan gelen başvuruya giden ilk mesajın şablonu hazır pakette gelir ve müşteri onaylar: "Merhaba [ad], [işletme adı]'na formunuz ulaştı. [Hizmet] için size en uygun saati bulalım: bugün mü, yarın mı?" Metin işletmecinin sözlüğüyle nişe uyarlanır, fiyat geçmez.
+9. Yeni Başvuruya Hızlı Dönüş (Speed-to-Lead). Form, karekod ya da mesaj gelince ilk iletişim altmış saniye içinde yazılı çıkar; hat ve izin hazırsa sesli asistan beş dakika içinde arar da (19. madde); ölçülür, kaçarsa bildirim yükselir. Formdan gelen başvuruya giden ilk mesajın şablonu hazır pakette gelir ve müşteri onaylar: "Merhaba [ad], [işletme adı]'na formunuz ulaştı. [Hizmet] için size en uygun saati bulalım: bugün mü, yarın mı?" Metin işletmecinin sözlüğüyle nişe uyarlanır, fiyat geçmez.
 10. Cevapsız Arama Sonrası Mesaj (Missed-Call Text Back). Açılmayan aramanın ardından aynı dakika WhatsApp'tan yazılı dönüş.
-11. AI Telefon Karşılama Asistanı (AI Voice Receptionist). İkinci dalga. İşletme açmadığında hattı karşılar, bilgi verir, randevu yazar, gerekince çalışana aktarır.
+11. AI Telefon Karşılama Asistanı (AI Voice Receptionist). İkinci dalga. Ayrı sesli ajan servisinde çalışır; ekip kurar ve CRM'e bağlar. İşletme açmadığında hattı karşılar, bilgi verir, randevu yazar, gerekince işi çalışana bırakır (şimdilik geri arama sözüyle; sesli-ajani-kur).
 
 **Randevu ve satış (yolculuğa göre):**
 12. Randevu Hatırlatmaları (Appointment Reminders). Onay mesajı, bir gün ve bir saat kala hatırlatma.
@@ -49,7 +51,7 @@ Hangi parçanın işletmede hangi anı çözdüğü hizmet-akisini-ciz'in tablos
 
 **Geri kazanma ve itibar (Kademe 2):**
 18. Eski Müşteri ve Başvuruyu Yeniden Kazanma (Database Reactivation). Duran havuzun mesajla geri çağrılması; izin ve altyapı uygunsa dış aramayla.
-19. AI Dış Arama (AI Outbound Calling). Şarta bağlı, ilk müşteride vaat edilmez; sebebi aşağıda.
+19. AI Dış Arama (AI Outbound Calling). Formu dolduranı beş dakika içinde arama ve eski adayları arama. Teklifte yazar, kurulumu şarta bağlı; şartı ve kurulamazsa ne olacağı aşağıda.
 20. Müşteri Yorumu İsteme ve Referans İsteme (Review Requests, Referral Requests). İşi bitenden yorum, memnun olandan tavsiye.
 21. Tekrar Randevu Alma ve Ek Hizmet Satışı (Rebooking, Upsell). Bakım ve kontrol zamanı gelince ulaşma; işletmenin önceden belirlediği ek hizmeti sunma. Bu ikisinin ve referans isteğinin metni: kaybolanlari-geri-getir, "Üç devam zinciri".
 
@@ -66,11 +68,12 @@ Pazarlamadaki karşılığı hazır kurulum paketidir: adını yazınca çalış
 
 Kurulum iki dalgada yapılır. Sebebi tek: yazılı taraf senin elinde, sesli taraf dışarıdan gelen bir hatta ve bir numaraya bağlı. İkisini aynı güne yığarsan sesli tarafın gecikmesi bütün teslimi durdurur.
 
-- Kurulum görüşmesi biter bitmez, aynı gün: WhatsApp şablon onayları, telefon hattı başvurusu ve numara talebi başlatılır. İzinler o görüşmede alındığı için daha önce başlatılamaz. Gecikme de buradan çıkar.
+- Kurulum görüşmesi biter bitmez, aynı gün: telefon hattı başvurusu ve numara talebi başlatılır. İzinler o görüşmede alındığı için daha önce başlatılamaz. Gecikme de buradan çıkar.
+- İkinci gün, müşterinin WhatsApp hattı CRM'e bağlandığı gün: şablonlar Meta'nın onayına gönderilir. Daha önce gönderilemez, çünkü şablon ancak hattı bağlı hesapta açılabiliyor. Onay gelene kadar akışlardaki mesaj adımları e-postayla çalışır. Canlıya alma günü bu yüzden kaymaz: altıncı güne kadar onayı gelmeyen şablonun mesajı e-postadan gider, onay geldiği gün WhatsApp'a çevrilir.
 - İkinci, üçüncü ve dördüncü gün: birinci dalga. Yazılı tarafın tamamı, takvim, formlar, ödeme, yorum, pano.
 - Beşinci gün: birinci dalganın üç sorulu testi.
 - Altıncı gün: birinci dalga canlıya alınır, teslim paketi gider.
-- Yedinci günden on dördüncü güne: ikinci dalga. Hat gelince sesli ajan, cevapsız aramaya dönüş ve varsa giden arama kurulur, test edilir, canlıya alınır.
+- Yedinci günden on dördüncü güne: ikinci dalga. Hat gelince ekip sesli ajanı bağlar; sen on aramayı ve ikinci dalganın testini yaparsın, sesli taraf cevapsız aramaya dönüşle birlikte canlıya alınır. Giden arama şimdilik yok (aşağıda).
 - Her canlıya almadan sonraki yirmi dört saat izlenir.
 - On beşinci günden on sekizinci güne: kalan eksikler. İkinci dalga bu pencereye kayabilir, rapor gününün raporu kaymaz.
 - Sonrasında sistem çalışır, haftalık kontrolü sistemi-kontrol-et devralır.
@@ -83,7 +86,7 @@ Hangi işin hangi pencereye sığdığı ve işin yanında çalışanda takvimin
 
 ## 3. Ne okur
 
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; musteriyi-karsila'nın tuttuğu dosya): çalışma saatleri ve randevu saatleri, randevu uzunluğu, hizmet bölgesi, ortalama iş bedeli, talepleri arayacak kişi, bildirimlerin gideceği e-posta ve telefon, alınan izinler, müşterinin mevcut numarası, vergi ya da MERSİS numarası, ödeme almak istediği yol.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; musteriyi-karsila açar): çalışma saatleri ve randevu saatleri, randevu uzunluğu, hizmet bölgesi, ortalama iş bedeli, talepleri arayacak kişi, bildirimlerin gideceği e-posta ve telefon, alınan izinler, müşterinin mevcut numarası, vergi ya da MERSİS numarası, ödeme almak istediği yol.
 Niş kartından: asistanın toplayacağı bilgiler, işi insana devretme kuralları, asistanın söylemeyecekleri, "Sezon" bölümü, yoğun saatler için "Kanal ve zaman" bölümü, teklif verilen bir iş mi yoksa fiyatı sabit mi, yasal sınırlar.
 yazili-asistani-kur'dan: asistanın ayar listesi (cevap gecikmesi, mesaj uzunluğu sınırı, asistanın kullanmayacağı kelimeler, sinirlenme algılanınca insana devir, mesai dışı davranışı).
 sesli-ajani-kur'dan: sesli ajanın karşılama cümlesi, soru sırası, insana devir eşiği, konuşma sonunda dolduracağı alanlar.
@@ -111,11 +114,11 @@ Beşi tamam olmadan dördüncü aşama kapanmaz. Beşinci aşama, "müşterin ku
 
 ### Sıra
 
-Birinci dalganın sırası sabittir: şablon onayları ve hat başvurusu, hazır paketin yüklü geldiğinin kontrolü, müşterinin kendi girişi, kanallar, formlar, takvim, ödeme, akışlar, özel değerler, bildirimler, sonuç ekranı, test.
+Birinci dalganın sırası sabittir: hat başvurusu (kurulum görüşmesi günü), hazır paketin yüklü geldiğinin kontrolü, CRM bağlantısının iki bölüme yenilendiğinin kontrolü, müşterinin kendi girişi, kanallar (WhatsApp bağlandığı gün şablon başvurusu), formlar, takvim, ödeme, akışlar, özel değerler, bildirimler, sonuç ekranı, test.
 
 Müşterinin girişi neden bu kadar başta: takvim ona bağlanıyor, asistanın insana devri ona bağlanıyor, müşterinin kendi bildirimleri ona bağlanıyor. Giriş bir gün gecikirse üç iş birden bekliyor.
 
-İkinci dalganın sırası da sabittir: numara gelir, hat bilgileri desteğe gider, "hat bağlandı" gelir, sesli asistanın metni ve cevap listesi Voice AI ekranına yüklenir, çağrı olayı akışa bağlanır, on arama testi, yönlendirme müşterinin telefonundan açılır.
+İkinci dalganın sırası da sabittir: sesli ajanın onaylı metni ve cevap listesi destek adresine gider (müşteri onaylar onaylamaz sen gönderirsin), numara gelir, müşteri hat bilgilerini destek adresine kendisi gönderir, ekip hattı bağlar, ajanı sesli ajan servisine kurar, CRM'e ve çağrı akışına bağlar ve "bağlandı" yazar, on arama testi, ikinci dalganın testi, en son yönlendirme müşterinin telefonundan açılır.
 
 Akış, bir olay olunca kendiliğinden çalışan adım zinciridir; mesajı o gönderir.
 
@@ -144,9 +147,9 @@ Bu parça en çok soru çıkaran parça, o yüzden zinciri olduğu gibi yazıyor
 
 Birinci halka, numara. Müşteri adına Türkiye'den 0850 ile başlayan bir numara alınır. Numara müşterinin kendi aboneliğinde durur, faturası ona gider, işi biterse numara onda kalır. Müşterinin mevcut numarasına dokunulmaz; ilan ettiği numara aynı kalır.
 
-İkinci halka, hat. Bu numara sağlayıcının ses hizmeti üzerinden dışarıya açılır. Sağlayıcının panelinde bir bölüm var, hattın adresi, kullanıcı adı ve şifresi orada yazılı. O üç bilgiyi sen sohbete yazmazsın, ekranda göstermezsin, hiçbir yere kopyalamazsın: müşteri sağlayıcının panelinden o bilgileri müşteri bölümünün adıyla destek@founderos.so adresine kendisi gönderir (ya da sen onun yanında gönderirsin), FounderOS ekibi hattı müşteri bölümündeki sesli asistana aynı gün bağlar ve sana "hat bağlandı" yazar. Senin işin başvuruyu başlatmak, bilgilerin gittiğini teyit etmek ve testi yapmak.
+İkinci halka, hat. Bu numara sağlayıcının ses hizmeti üzerinden dışarıya açılır. Sağlayıcının panelinde bir bölüm var, hattın adresi, kullanıcı adı ve şifresi orada yazılı. O üç bilgiyi sen görmezsin, sohbete yazmazsın, hiçbir yere girmezsin: müşteri sağlayıcının panelinden o bilgileri müşteri bölümünün adıyla destek@founderos.so adresine kendisi gönderir, FounderOS ekibi hattı sesli ajan servisindeki ajana aynı gün bağlar ve sana "bağlandı" yazar. Senin işin başvuruyu müşteriyle başlatmak, bilgilerin gittiğini müşteriye sorup teyit etmek ve ekip "bağlandı" deyince testi yapmak.
 
-Üçüncü halka, ajan. Sesli ajan CRM'in kendi telefon karşılama asistanıdır (ekranda Voice AI), müşteri bölümünün içinde durur; ayrı bir servis hesabı açılmaz, bağlantı anahtarı yok. Türkçe konuşur, karşılama cümlesini söyler, niş kartındaki soruları sorar ve takvimde boş saat görüp randevu yazar; metni sesli-ajani-kur'dan gelir ve Voice AI ekranına yazılır. Hat bağlanınca ajan kişiyi tanır, randevu yazar, erteler, iptal eder, kayda not düşer.
+Üçüncü halka, ajan. Sesli ajan CRM'in içinde değil, ayrı bir sesli ajan servisinde çalışır ve müşterinin CRM bölümüne bağlanır. Ajanı servise FounderOS ekibi kurar, CRM'e de o bağlar; bağlantının anahtarını ve hat bilgisini sen görmezsin, girmezsin. Türkçe konuşur, karşılama cümlesini söyler, niş kartındaki soruları sorar ve takvimde boş saat görüp randevu yazar. Konuşma metnini sen FounderOS'la hazırlarsın, müşteriye onaylatırsın, destek adresine gönderirsin; ekip ajana yükler (sesli-ajani-kur). Bağlantı kurulunca ajan kişiyi tanır, randevu yazar, erteler, iptal eder, kayda not düşer.
 
 Dördüncü halka, yönlendirme. Müşterinin kendi telefonu, cevap verilmeyen aramayı bu 0850 numaraya yönlendirir. Bunu operatör kurar, müşteri kendi telefonundan yapar, adımları ekran paylaşımıyla birlikte yaparsınız. Yönlendirme üç durumda ayrı ayrı açılır: cevap verilmedi, meşgul, ulaşılamıyor. Üçü de açılmazsa aramaların bir kısmı kaybolur.
 
@@ -158,15 +161,15 @@ Dikkat: 0850 numaranın kendi yönlendirmesi kapalı kalır. İkisini birden aç
 
 Google işletme profilindeki numara değiştirilmez. CRM'in Google profiline kendi numarasını koyan bir özelliği var; onu açarsan müşterinin asıl numarası geri plana düşer. Müşteriye "numaranıza dokunmuyorum" dedin, o yüzden açmıyoruz.
 
-Giden arama ayrı bir mesele ve şarta bağlı. CRM'in sesli asistanı giden aramayı destekliyor, ama telefon sağlayıcısı giden aramayı bu hat üzerinden resmi belgede anlatmıyor. Sadece gelen arama belgeli. Bu yüzden giden arama ajanı ilk müşteride kurulmaz; sağlayıcıya sorulur, çalıştığı doğrulanırsa sonraki müşterilerde varsayılan olur. Doğrulanana kadar duran havuz yazılı gider, sesli gitmez. Bunu müşteriye ihtimal diye anlatma; sistemde şu an yazılı geri kazanma var, o kadar.
+Giden arama teklifte yazar ama şarta bağlıdır ve şimdilik yok: telefon sağlayıcısının bu hat üzerinden sesli ajanla giden aramayı desteklediği resmi belgede yazmıyor, sadece gelen arama belgeli. Sağlayıcıdan doğrulanana kadar sıra şöyle: formdan gelene ilk mesaj altmış saniyede yazılı gider, eski adaylara geri kazanma yazılı gider, giden arama ajanı kurulmaz. Bu durumda iki akışın sesli kısmı kurulamayan parçadır: müşteriye kurulum görüşmesinde tek cümleyle söylenir ("Telefonla arama tarafı şu an hattınızda açılmıyor; açılana kadar bu iki akış yazılı çalışıyor ve açılmadığı her ay ücretten yüzde yirmi düşüyorum") ve kurulamayan parça kuralı işler. Giden arama doğrulandığı gün ekip müşterilerde sırayla açar, ücret açıldığı ayı izleyen aydan itibaren tam ücrete döner.
 
-Telefon tarafının parası. Müşterinin cebinden çıkan: aylık hat paketi, numaranın yıllık kullanım ücreti ve giden arama yapılırsa dakika ücreti; rakamlar sağlayıcının o günkü tarifesinden, abonelik açılırken müşteriyle birlikte okunur ve bilgi dosyasına yazılır, buraya sabit rakam yazılmaz. 0850'ye gelen arama arayana ücretsizdir. Senin cebinden çıkan: sesli asistanın konuşma dakikası. CRM dakika başına ücretlendiriyor; rakamı müşteri bölümünün ücret ekranından okur, kâr hesabına "sesli dakika" satırı olarak yazarsın; ilk müşteride ölçülür, sahadan dolacak.
+Telefon tarafının parası. Müşterinin cebinden çıkan: aylık hat paketi, numaranın yıllık kullanım ücreti ve giden arama yapılırsa dakika ücreti; rakamlar sağlayıcının o günkü tarifesinden, abonelik açılırken müşteriyle birlikte okunur ve bilgi dosyasına yazılır, buraya sabit rakam yazılmaz. 0850'ye gelen arama arayana ücretsizdir. Senin cebinden çıkan: sesli ajanın konuşma dakikası. Ajan ekibin yönettiği sesli ajan servisinde çalıştığı için bu ücreti bir ekrandan sen okumazsın: dakika ücretini ekip bağlantı gününde sana yazılı söyler, ay sonunda o müşterinin dakikasını yazar. Kâr hesabına "sesli dakika" satırı olarak girer; ilk müşteride ölçülür, sahadan dolacak.
 
-Tasarım kararı: hat müşterinin adına, ajan müşterinin CRM bölümünde. Sebebi iki taraflı. Numara müşterinin işine ait, ilişki biterse onda kalmalı. Ajan müşterinin bölümünde, çünkü müşterinin kayıtları, takvimi ve akışları orada; sen bütün müşteri bölümlerini kendi hesabından görüyor ve yönetiyorsun. Konuşma dakikasının parası senin aylık ücretinden çıkıyor; fiyat verirken bunu hesaba katarsın.
+Tasarım kararı: hat müşterinin adına, ajan sesli ajan servisinde ve müşterinin CRM bölümüne bağlı. Numara müşterinin işine ait, ilişki biterse onda kalmalı. Ajan müşterinin CRM bölümüne bağlanır, çünkü müşterinin kayıtları, takvimi ve akışları orada. Hattı, ajanı ve bağlantıyı ekip kurar, çünkü anahtar ve hat bilgisi taşıyan iş tek elde ve senin ekranının dışında durmalı. Konuşma dakikasının parası senin aylık ücretinden çıkıyor; fiyat verirken bunu hesaba katarsın.
 
 ### SMS neden hiç yok
 
-Sistemde SMS yok. Yedek olarak da yok. Üç sebebi var ve üçü de kalıcı: CRM'in numara verdiği ülkeler listesinde Türkiye görünmüyor, Türkiye'ye giden uluslararası kısa mesajlar link taşıyamıyor, ve gönderici kaydı zorunlu. Randevu hatırlatması bile link taşıdığı için bu yasak bizim işimizi doğrudan vuruyordu. Bütün yazılı iletişim WhatsApp'tan gidiyor. CRM'in hazır cevapsız arama özelliği de SMS attığı için kullanılmıyor; onun yerine yukarıdaki akış kuruluyor.
+Sistemde SMS yok. Yedek olarak da yok. Sebebi kalıcı: CRM'in numara verdiği ülkeler listesinde Türkiye görünmüyor ve Türkiye'ye giden uluslararası kısa mesajlar link taşıyamıyor. Randevu hatırlatması bile link taşıdığı için SMS bizim işimize yaramıyor. Bütün yazılı iletişim WhatsApp'tan gidiyor. CRM'in hazır cevapsız arama özelliği de SMS attığı için kullanılmıyor; onun yerine yukarıdaki akış kuruluyor.
 
 ### Kanallar
 
@@ -325,6 +328,11 @@ Bir parça kurulamadıysa (izin yok, onay gelmedi, hat açılmadı) o parça kap
 
 Kural şu: kurulamayan parça kapsam dışıdır ve güvencenin sonucuna sayılmaz. Raporda o satır boş kalır, sıfır yazılmaz. Bunun sebebi kaçamak değil dürüstlük: kurulmamış bir parçanın sonucu ölçülemez.
 
+Ücret kuralı da tektir ve müşterinin onayladığı belgelerde aynı dille yazar. Sebep dışarıdansa (resmi bir kural, hat ya da sağlayıcı; platform kuralı dahil) parçanın kurulmadığı her ay aylık ücret yüzde yirmi iner. İndirim parça başınadır, toplamda en çok yüzde altmış olur; parça kurulduğu ayı izleyen aydan ücret tama döner. Sebep müşterinin kendi adımıysa indirim yok; parça yine kapsam dışıdır ve güvenceye sayılmaz.
+- Dışarıdan sayılanlar: numara başvurusu reddedildi, operatör yönlendirmeye izin vermiyor, hat giden aramayı desteklemiyor, Meta şablonu ya da bağlantıyı reddetti, eski listede mesaj izni kayıtlı numara çıkmadı, müşteri kendi danışmanının görüşüyle yazılı olarak "olmaz" dedi.
+- Müşterinin kendi adımı sayılanlar: izin vermedi; liste, form, vergi levhası ya da mesaj izni cevabı gelmedi; metinlere onay vermedi; yönlendirmeyi açmadı; karekodu asmadı.
+Hangisi olduğunu aynı gün bilgi dosyasına yazarsın. Aylık tahsilat bu satırdan ayarlanır; nasıl ayarlandığı onay-belgesini-hazirla'da.
+
 Söylenme anı ikiye ayrılır ve ikisi de kaçırılmaz.
 
 Birincisi, ihtimalin söylendiği an: kurulum görüşmesi. Güvencenin şartını anlatırken bu ihtimal sesli söylenir ve onay belgesinin "neyi yapmıyorum" başlığında yazılı durur. Yani müşteri bunu ilk kez kötü haberle duymaz.
@@ -332,6 +340,8 @@ Birincisi, ihtimalin söylendiği an: kurulum görüşmesi. Güvencenin şartın
 İkincisi, gerçekten olduğu an: o parçanın kurulamadığını anladığın gün, beklemeden. Ertesi güne bırakmazsın, canlıya alma gününü beklemezsin, rapora saklamazsın. Cümle şudur ve bundan uzun yazılmaz:
 
 "Bugün [şu parça] kurulamadı. Sebebi [şu]. Bu parça ilk turda kapsam dışında kalıyor, rapor gününün raporunda o satır boş görünecek ve güvencenin hesabına girmeyecek. Kalan parçalar takvimde, tarih kaymıyor. [Şu] tamamlanırsa ikinci turda kurarım."
+
+Sebep dışarıdansa mesajın sonuna tek cümle eklenir: "Kurulmadığı her ay aylık ücretten yüzde yirmi düşüyorum; kurulduğu ayın ardından ücret tama döner." Sebep müşterinin kendi adımıysa ücret cümlesi yazılmaz; müşteri sorarsa tek cümleyle cevap verirsin: "Bu parça sizin taraftaki adım tamamlanınca kuruluyor; bu durumda ücrette indirim olmuyor."
 
 Köşeli parantezleri sen doldurursun. Üç şey yazmazsın: bahane, suçlama, ve "belki olur" diye açık kalan bir söz. Sebep müşterinin kendi adımıysa (izin vermedi, liste gelmedi) bunu suçlar gibi değil, tabloyu okur gibi yazarsın.
 
@@ -351,9 +361,9 @@ Yorum yanıtlama: itibar bölümü, yapay zeka yanıtları, önce öneri modu, y
 Çakışma takvimi: takvim ayarlarında bağlı takvim seçilir, müşterinin Google takvimi işaretlenir.
 Ödeme: ödemeler bölümü, tahsilat hesabı bağlanır, ürün olarak hizmet açılır, link üretilir.
 Sohbet kutusu: siteler bölümü, sohbet kutusu, kodu kopyala, müşterinin sitesine yapıştır. Site müşterinin elinde değilse kutunun kodu sitesini yapan kişiye gider.
-Sesli hat: hat bilgileri sağlayıcının panelinde; müşteri o bilgileri müşteri bölümünün adıyla destek@founderos.so adresine gönderir, FounderOS ekibi hattı müşteri bölümündeki sesli asistana bağlar ve sana "hat bağlandı" yazar. Sen bilgileri görmez, yazmaz, kopyalamazsın.
-Ajanın CRM bağlantısı: alt hesap ayarları, bağlantı anahtarı açılır (kişiler, fırsatlar, alanlar, takvim yetkileriyle), anahtar ve alt hesap kimliği ajan servisine girilir.
-Çağrı olayının CRM'e düşmesi: akışta gelen bağlantı tetikleyicisi kurulur, ajan servisinden gelen olay oraya bağlanır, akış önce kişiyi telefondan bulur ya da açar, sonra çağrıyı kayda yazar.
+Sesli hat: hat bilgileri sağlayıcının panelinde; müşteri o bilgileri müşteri bölümünün adıyla destek@founderos.so adresine gönderir, FounderOS ekibi hattı sesli ajan servisindeki ajana bağlar ve sana "bağlandı" yazar. Sen bilgileri görmez, yazmaz, kopyalamazsın.
+Ajanın CRM bağlantısı: ekip kurar. Bu ekranı sen açmazsın; bağlantının anahtarını görmez, hiçbir yere girmezsin.
+Çağrı olayının CRM'e düşmesi: ekip ajanı bağlarken kurar (ajanın gönderdiği olay, kişiyi telefondan bulan ya da açan ve çağrıyı kayda yazan akış). Sen on arama testinde çağrının kayda düştüğünü görürsün; düşmüyorsa destek adresine yazarsın.
 İç bildirim: akışa iç bildirim adımı eklenir, alıcı olarak müşteri ve talepleri arayacak kişi, kanal uygulama ve e-posta.
 Müşterinin bildirimleri: müşteri alt hesaba girer, ayarlar, kendi profili, bildirimler; yeni mesaj, yeni randevu ve yorum bildirimlerini açar. Sonra telefonuna CRM uygulamasını kurar ve aynı hesapla girer.
 
@@ -369,7 +379,7 @@ Dört şey daha kurulumda yapılır ve haftalık bakımın ön şartıdır:
 - Haftalık kontrol gününü belirler ve bilgi dosyasına yazarsın: ilk ayda haftalık görüşmeden bir gün öncesi.
 
 Bir de WhatsApp bağlantısının bir tuzağı var: bağlantı kurulduktan sonra yirmi dört saatlik bir eşleşme süresi işliyor. O süre kaçarsa numara sistemden çıkarılıp bağlantı baştan kurulmak zorunda kalıyor. Bu yüzden WhatsApp bağlandığı gün test edilir, ertesi güne bırakılmaz.
-WhatsApp şablonu: metin hazır pakette gelir, müşteri yazılı onaylar, CRM'den Meta onayına gönderilir. Onayın kaç gün süreceği belli değildir; o yüzden kurulum görüşmesinin yapıldığı gün gönderilir. Reddedilirse metin sadeleştirilip aynı gün yeniden gönderilir.
+WhatsApp şablonu: metin hazır pakette gelir, müşteri yazılı onaylar, CRM'den Meta onayına gönderilir. Onayın kaç gün süreceği belli değildir; o yüzden WhatsApp hattı CRM'e bağlandığı gün (ikinci gün) beklemeden gönderilir. Daha önce gönderilemez: şablon ancak hattı bağlı hesapta açılıyor. Onay gelene kadar akıştaki mesaj adımı e-postayla çalışır. Reddedilirse metin sadeleştirilip aynı gün yeniden gönderilir.
 Mesaj adımını WhatsApp'a çevirme: akışı aç, "(WhatsApp'a çevrilecek)" yazan adımın altına WhatsApp adımı ekle, onaylı şablonu seç, sonra e-posta adımını kapat. Şablon listesi boş görünüyorsa şablon henüz onaylanmamıştır; adımı kurmadan önce onayı bekle.
 Canlıya alma: alt hesapta akışların listesi, her akışın yanındaki anahtar açılır. Kapatmak için aynı anahtar kapatılır.
 Yönlendirme: müşterinin telefonundan operatör ayarıyla kurulur. Üç durum ayrı ayrı açılır: cevapsız, meşgul, ulaşılamıyor. Kodları operatör veriyor, müşteriyle birlikte operatörün uygulamasından yaparsınız.
@@ -380,24 +390,26 @@ Fazla kurma, paketin dışına çıkma. Yeni araç ekleme; elle yapılan her dev
 
 ## 6. Ne söyler
 
-İkinci gün: "Bugün birinci dalga: kanallar, formlar, takvim, ödeme, akışlar, özel değerler, bildirimler, sonuç ekranı. Sesli taraf ikinci dalgada, çünkü hat dışarıdan geliyor. Şablon onaylarını ve hat başvurusunu dün başlattık. Paketin dışına çıkma; senin işin ekleme yapmak değil, çalıştırmak."
+İkinci gün: "Bugün birinci dalga: kanallar, formlar, takvim, ödeme, akışlar, özel değerler, bildirimler, sonuç ekranı. Sesli taraf ikinci dalgada, çünkü hat dışarıdan geliyor. Hat başvurusunu dün başlattık. WhatsApp'ı bugün bağlıyoruz ve şablonları aynı gün onaya gönderiyoruz; onay gelene kadar mesajlar e-postadan gider. Paketin dışına çıkma; senin işin ekleme yapmak değil, çalıştırmak."
 Beşinci gün: "Bugün üç soru var. Çalışıyor mu, kullanması iyi mi, randevuya çeviriyor mu. Üçüncüsü en çok atlanan soru: asistan her şeyi güzel anlatıp randevu almıyorsa sistem satışı engelliyor demektir."
 Test bitince: "Tek soru: müşteriye, söz verdiğin sonucu bu sistemin nasıl getirdiğini anlatabiliyor musun? Hayırsa canlıya almıyoruz."
 Altıncı gün: "Birinci dalgayı canlıya alıyoruz. Bugünden sonra ayarla oynamak yok. Yirmi dört saat izliyoruz; bozulursa saatler içinde haber verir, aynı gün düzeltirsin."
-Hat gelince: "Hat bağlandı. Sıra sabit: asistanın metni, çağrı olayı, on arama testi, en son yönlendirme. Yönlendirmeyi müşteri 'açalım' yazınca açıyorsun."
-Bir parça kurulamayınca: "Bugün o parçayı kuramadık, sebebi belli. Aynı gün müşteriye yazacaksın: kurulamadı, sebebi bu, raporda satırı boş kalacak, güvencenin hesabına girmeyecek, tarih kaymıyor. Bunu ihtimal olarak kurulum görüşmesinde zaten söylemiştin; bugün olan şeyi söylüyorsun, yeni bir kötü haber vermiyorsun."
+Ekip "bağlandı" yazınca: "Hat ve sesli ajan bağlandı. Sıra sabit: on arama testi, ikinci dalganın testi, en son yönlendirme. Yönlendirmeyi müşteri 'açalım' yazınca açıyorsun."
+Bir parça kurulamayınca: "Bugün o parçayı kuramadık, sebebi belli. Aynı gün müşteriye yazacaksın: kurulamadı, sebebi bu, raporda satırı boş kalacak, güvencenin hesabına girmeyecek, tarih kaymıyor. Sebep dışarıdansa kurulmadığı her ay ücretten yüzde yirmi düştüğünü de yazacaksın; sebep müşterinin kendi adımıysa ücret değişmiyor. Bunu ihtimal olarak kurulum görüşmesinde zaten söylemiştin; bugün olan şeyi söylüyorsun, yeni bir kötü haber vermiyorsun."
 Müşteri parça çıkarmak isterse: "Sen tek tek parça satmıyorsun, sistem satıyorsun. Bir parçayı çıkarınca fiyat düşmüyor, sonuç düşüyor. Bütçe konuşacaksak kademeyi konuşuruz, parçayı değil."
 
 ## 7. Ne yazar
 
-Bilgi dosyasına: kurulan parçalar ve tarihleri, 0850 numara, başvuru tarihi ve "hat bağlandı" tarihi (kullanıcı adı, şifre, adres asla), aylık telefon maliyeti ve teyit tarihi, yönlendirmenin hangi durumlar için açıldığı, onaylanan şablonlar, takvim ayarları, ödeme yolu, iki dalganın test sonuçları (hangi senaryo kaç turda temiz çıktı), kapsam dışı kalan parçalar ve sebepleri, canlıya alma saatleri, teslim paketinin yeri.
+Bilgi dosyasına: kurulan parçalar ve tarihleri, 0850 numara, başvuru tarihi ve ekibin "bağlandı" dediği tarih (kullanıcı adı, şifre, adres asla), aylık telefon maliyeti ve teyit tarihi, yönlendirmenin hangi durumlar için açıldığı, onaylanan şablonlar, takvim ayarları, ödeme yolu, iki dalganın test sonuçları (hangi senaryo kaç turda temiz çıktı), kapsam dışı kalan parçalar ve sebepleri, canlıya alma saatleri, teslim paketinin yeri.
 CRM'e: teslimat aşaması (kurulum, test, canlı), randevu ve mesaj sayıları.
 Niş kartının Sahadan dolacak bölümüne: bu nişte randevu süresi, yoğun saatler, asistanın en sık takıldığı soru, sesli ajanın en sık takıldığı istek, hatırlatma saatlerinin gelme oranı, teklif takibinin kaçıncı dokunuşta cevap getirdiği.
 Her kurulum gününün tek satırı ve tek görüntüsü musteriyi-karsila'ya teslim edilir; müşteriye onu o modül gönderir.
 
 ## 8. Yedek yol
 
-- Şablon onayı gecikirse: kurulum devam eder, canlıya alma o parça olmadan yapılır, parça onay gelince açılır. [21/28] gün durmaz.
+Her kapsam dışı halde ücret kuralı yukarıdaki "Kapsam dışı bırakılan her parça" bölümündekidir: sebep dışarıdansa indirim var, müşterinin kendi adımıysa yok.
+
+- Şablon onayı gecikirse: kurulum devam eder, canlıya alma yapılır, o mesaj e-postadan gider ve onay gelince WhatsApp'a çevrilir. [21/28] gün durmaz.
 - Hat ya da numara gecikirse: birinci dalga zaten canlıda, ikinci dalga on beşinci güne kayar. Müşteriye kayma gününde yazılı bildirilir.
 - Hat hiç açılamazsa (abonelik reddi, belge eksiği): sesli ajan ve cevapsız aramaya dönüş kapsam dışı kalır, müşteriye yazılı bildirilir. Gelen kanallar sistemi yine taşır.
 - Yönlendirme kurulamıyorsa: sesli ajan yalnız 0850 numarayı doğrudan arayanları karşılar, bu numara da ilanda kullanılmaz; pratikte parça kapsam dışıdır ve öyle bildirilir.
@@ -418,7 +430,7 @@ Sıradaki: yedinci gün duran havuz onayı, sekizinci gün kaybolanlari-geri-get
 - Testte aynı senaryo iki kez düştü: o dalganın canlıya alması durur.
 - Canlıya alındı, ilk yirmi dört saatte hiç mesaj gelmedi: yönlendirme ve kanal bağlantısı kontrol edilir.
 - On dördüncü gün bitti, hat gelmedi: ikinci dalga on beşinci güne yazılır, müşteriye aynı gün bildirilir.
-- Sesli ajan açtı ama randevu yazmıyor: iş sesli-ajani-kur'a döner, ajanın takvim bağlantısı ve görev bölümü kontrol edilir.
+- Sesli ajan açtı ama randevu yazmıyor: iş sesli-ajani-kur'a döner, görev bölümü düzeltilir, takvim bağlantısını ekip kontrol eder.
 - Hatırlatma akışı kurulu ama gelme oranı yüzde yetmişin altında: akış düzeltilir.
 - Altmış saniye işareti bir haftada üç kez düştü: eleme sorusu ve bildirim yükseltmesi kontrol edilir.
 - Müşteri bildirimleri görmüyor: kullanıcı, profil bildirimi ve uygulama üçlüsü kontrol edilir.

@@ -6,6 +6,8 @@ description: "Sadece temizlik sirketi nisinin karti: rakamlar, itirazlar, yasal 
 
 # Temizlik şirketi
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Ev temizliği (günlük, haftalık, aylık gündelikçi veya profesyonel ekip), ofis/işyeri temizliği, inşaat sonrası temizlik, koltuk ve halı yıkama, bazen ek olarak cam silme. Zincir olmayan, tek şubeli, genelde birkaç kişilik ekiple çalışan yerel firmalar. Google Haritalar ve ilan sitelerinde genelde birleşik kategori adlarıyla geçiyorlar: "Ev Temizleme, Temizlik ve İlaçlama Hizmetleri", "İşyeri Temizleme, Temizlik ve İlaçlama Hizmetleri", "Apartman Temizliği, Temizlik ve İlaçlama Hizmetleri" (sahibinden.com kategori sayfaları). Kapsam dışı: büyük ölçekli kurumsal tesis yönetimi (AVM, fabrika, hastane ihalesi alan şirketler), sadece ilaçlama/haşere mücadelesi yapan firmalar (ayrı ruhsat gerektiriyor, ayrı niş), oto kuaför/detaylı araç bakımı.
 
@@ -83,13 +85,13 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, kâr düşük yazılıma
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen ay size ulaşıp da aynı gün dönüş alamayan müşteriler sonra tekrar aradı mı, yoksa öyle mi kaldı?"
 
 İşleyiş sorusu: "Ekip sahadayken, iki ev arasında telefon çalınca ya da WhatsApp'tan fiyat sorulunca ne oluyor, siz mi bakıyorsunuz, akşama mı kalıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: ekip sahadayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, ev mi ofis mi inşaat sonrası mı, kaç metrekare, kaç personel, hangi gün ve adres bilgisini alıp teklif için size iletiyor; haftalıktan aylığa düşen ya da geçen yıl bahar temizliği yaptıran müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: ekip sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; ev mi ofis mi inşaat sonrası mı, kaç metrekare, kaç personel, hangi gün ve adres bilgisini alıp teklif için size iletiyor; haftalıktan aylığa düşen ya da geçen yıl bahar temizliği yaptıran müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Ekip sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap verip bilgileri toplayan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

@@ -47,7 +47,7 @@ p{margin:0 0 1.05em}
 .vur{color:var(--vurgu)}
 .kucuk{font-size:14px;line-height:1.5;color:var(--soluk)}
 
-/* bölüm numarası: "01 — DERT" */
+/* bölüm numarası: "01 · DERT" */
 .no{display:flex;align-items:center;gap:12px;font:600 12.5px/1 var(--mono);letter-spacing:.14em;
   text-transform:uppercase;color:var(--vurgu);margin-bottom:22px}
 .no::after{content:"";flex:0 0 40px;height:1px;background:currentColor;opacity:.6}
@@ -833,7 +833,7 @@ var menuAd={dert:'Dert',urun:'Sistem',kanallar:'Kanallar',nasil:'Süreç',sorula
 sira.forEach(function(x){
   var sec=$('b-'+x[0]); if(!sec||sec.classList.contains('gizli'))return;
   sayac++;
-  var e=$('no-'+x[0]); if(e)e.textContent=(sayac<10?'0':'')+sayac+' — '+(x[1]);
+  var e=$('no-'+x[0]); if(e)e.textContent=(sayac<10?'0':'')+sayac+' · '+(x[1]);
   if(menuAd[x[0]]&&menu.length<5)menu.push('<a href="#b-'+x[0]+'">'+menuAd[x[0]]+'</a>');
 });
 html('menu',menu.join(''));

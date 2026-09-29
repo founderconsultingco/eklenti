@@ -36,7 +36,7 @@ Ayar ve hesap: Settings (ayarlar) · Account (hesap) · Profile (profil) · Bill
 
 Uyarı ve durum: Error (hata) · Failed (başarısız) · Success (başarılı) · Pending (bekliyor) · Active (etkin) · Inactive, Disabled (kapalı) · Required (zorunlu) · Optional (isteğe bağlı) · Loading (yükleniyor) · Try again (tekrar dene) · Are you sure? (emin misin?) · This action cannot be undone (bu işlem geri alınamaz).
 
-Sözleşme ekranları: Terms of Service (kullanım şartları) · Privacy Policy (gizlilik politikası) · I agree, Accept (kabul ediyorum) · Decline (kabul etmiyorum) · Cookie (çerez) · Accept all (hepsini kabul et) · Reject all, Necessary only (hepsini reddet, sadece gerekli olanlar). Çerez sorusunda her zaman "sadece gerekli olanlar" seçilir.
+Şartlar ve çerez ekranları: Terms of Service (kullanım şartları) · Privacy Policy (gizlilik politikası) · I agree, Accept (kabul ediyorum) · Decline (kabul etmiyorum) · Cookie (çerez) · Accept all (hepsini kabul et) · Reject all, Necessary only (hepsini reddet, sadece gerekli olanlar). Çerez sorusunda her zaman "sadece gerekli olanlar" seçilir.
 
 Adres ve kimlik alanları: First name (ad) · Last name (soyad) · Full name (ad soyad) · Phone number (telefon numarası) · Country (ülke) · City (şehir) · Address (adres) · Postal code, ZIP (posta kodu) · Company name (şirket adı) · Website (internet sitesi).
 
@@ -52,6 +52,6 @@ Bir modül İngilizce ekranlı bir programda adım anlatıyorsa:
 
 ## Hangi programlar İngilizce
 
-İkinci blokta: siteyi yayına alan servis, WhatsApp iş hesabının yönetim ekranı. Üçüncü blokta: ödeme sağlayıcısının bir bölümü. Beşinci blokta: YouTube'un yükleme ekranı. CRM başlangıç görüşmesinde açılıyor, o yüzden onun ekranları sabit bir bloğa bağlı değil. Bunların hangi ekranında hangi düğmeye basılacağı ilgili modülün kendi metninde yazılı; burada sadece dilin nasıl ele alınacağı yazıyor.
+İkinci blokta: siteyi yayına alan servis, WhatsApp iş hesabının yönetim ekranı. Ödeme linki açılırken: ödeme sağlayıcısının bir bölümü. Beşinci blokta: YouTube'un yükleme ekranı. CRM başlangıç görüşmesinde açılıyor, o yüzden onun ekranları sabit bir bloğa bağlı değil. Bunların hangi ekranında hangi düğmeye basılacağı ilgili modülün kendi metninde yazılı; burada sadece dilin nasıl ele alınacağı yazıyor.
 
 Türkçe olan ve bu bölümün ilgilenmediği ekranlar: Google işletme profili, e-Devlet, banka uygulamaları, WhatsApp'ın kendisi. CRM bu listede değil: onun ekranı İngilizce ve düğme adları her adımda birlikte veriliyor.

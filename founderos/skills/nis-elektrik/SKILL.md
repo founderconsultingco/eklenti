@@ -6,6 +6,8 @@ description: "Sadece elektrik ve teknik bakim nisinin karti: rakamlar, itirazlar
 
 # Elektrik ve teknik bakım
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Ev ve iş yeri elektrik arızası/tesisatı yapan elektrikçiler, su ve sıhhi tesisat işi yapan tesisatçılar, beyaz eşya (buzdolabı, çamaşır makinesi, klima) tamiri yapan bağımsız servisler, jeneratör bakım firmaları ve asansör periyodik bakım firmaları dahil. Büyük marka yetkili servisleri (Arçelik, Samsung/Siemens gibi) ve büyük asansör markaları (Schindler) dışarıda; hedef bunların altında çalışan bağımsız usta ve küçük firmalar. Google Haritalar'a bu araştırmada da erişilemedi, kategori adları ("Elektrikçi", "Tesisatçı", "Beyaz eşya tamircisi", "Asansör bakım firması") hâlâ doğrulanmadı, sahadan teyit edilecek.
 
@@ -49,7 +51,7 @@ Sözlüğü: usta, arıza, çağrı, tesisat, kaçak, tıkanıklık, periyodik b
 
 **Reklam kütüphanesi kelimeleri.** elektrikçi, acil elektrikçi, elektrik arıza, elektrik tesisatı, su tesisatçısı, tesisatçı, acil tesisatçı, kaçak su tespiti, tıkanıklık açma, beyaz eşya servisi, beyaz eşya tamiri, kombi tamiri, yetkili servis, jeneratör bakımı, jeneratör servisi, asansör bakımı, asansör periyodik kontrol, sözleşmeli bakım.
 
-**Yasal sınırlar.** Elektrik Tesisleri Kabul Yönetmeliği'nin kapsamı üretim, iletim ve dağıtım tesisleri; "Elektrik İç Tesisleri Yönetmeliği kapsamına giren elektrik tesisleri" (yani konut/işyeri iç tesisatı) bu yönetmelikten istisna tutulmuş (emo.org.tr/mevzuat/mevzuat_detay.php?kod=106). Elektrik İç Tesisleri Yönetmeliği'nin kendisine bu oturumda da erişilemedi (mevzuat.gov.tr ve emo.org.tr ilgili sayfaları robots engeline takıldı), bu yüzden konut/işyeri iç tesisatı için resmi periyodik kontrol/topraklama ölçümü zorunluluğunun tam kapsamı hâlâ doğrulanamadı. İkincil bir kaynak, elektrik taahhüt/proje firması kurmak için "ilgili meslek odalarından (EMO) yetki belgesi alınması gerektiğini" söylüyor (ehizmet.co) ve NACE kodunun 43.21 (elektrik tesisatı) olduğunu belirtiyor (elektrikfirmalari.com); SMM (Serbest Müşavir Mühendislik) belgesinin ayrıntıları ve zorunluluğu bu oturumda emo.org.tr'nin ilgili SSS sayfası erişilemediği için doğrulanamadı. Asansör periyodik kontrol yönetmeliğinin resmi metnine ve iş yerlerinde topraklama ölçümünü düzenleyen İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği'ne bu oturumda erişim denemeleri de başarısız oldu (bağlantı zaman aşımı/SSL hatası). Bilinmiyor, sahadan veya doğrudan mevzuat.gov.tr üzerinden doğrulanacak. Pazarlama mesajı (İYS) kısıtı diğer nişlerle aynı, nişe özel ek kısıt bulunamadı.
+**Yasal sınırlar.** Elektrik Tesisleri Kabul Yönetmeliği'nin kapsamı üretim, iletim ve dağıtım tesisleri; "Elektrik İç Tesisleri Yönetmeliği kapsamına giren elektrik tesisleri" (yani konut/işyeri iç tesisatı) bu yönetmelikten istisna tutulmuş (emo.org.tr/mevzuat/mevzuat_detay.php?kod=106). Elektrik İç Tesisleri Yönetmeliği'nin kendisine bu oturumda da erişilemedi (mevzuat.gov.tr ve emo.org.tr ilgili sayfaları robots engeline takıldı), bu yüzden konut/işyeri iç tesisatı için resmi periyodik kontrol/topraklama ölçümü zorunluluğunun tam kapsamı hâlâ doğrulanamadı. İkincil bir kaynak, elektrik taahhüt/proje firması kurmak için "ilgili meslek odalarından (EMO) yetki belgesi alınması gerektiğini" söylüyor (ehizmet.co) ve NACE kodunun 43.21 (elektrik tesisatı) olduğunu belirtiyor (elektrikfirmalari.com); SMM (Serbest Müşavir Mühendislik) belgesinin ayrıntıları ve zorunluluğu bu oturumda emo.org.tr'nin ilgili SSS sayfası erişilemediği için doğrulanamadı. Asansör periyodik kontrol yönetmeliğinin resmi metnine ve iş yerlerinde topraklama ölçümünü düzenleyen İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği'ne bu oturumda erişim denemeleri de başarısız oldu (bağlantı zaman aşımı/SSL hatası). Bilinmiyor; teyit ekip tarafında yapılır (mevzuat.gov.tr), öğrenciye iş olarak verilmez. Pazarlama mesajı (İYS) kısıtı diğer nişlerle aynı, nişe özel ek kısıt bulunamadı.
 
 **Yoğun şehirler.** Armut il bazlı dağılım paylaşmıyor. Dolaylı gösterge olarak iş ilanı yoğunluğu: kariyer.net'te elektrik ustası ilanları İstanbul 214, Ankara 83, İzmir 28 (kariyer.net); eleman.net platformunda çalışma alanları İstanbul, Ankara, İzmir, Denizli, Kocaeli olarak listeleniyor (eleman.net). Bu, işletme yoğunluğunun doğrudan ölçümü değil, personel talebinin yoğunlaştığı şehirler; nüfus ve sanayi yoğunluğuyla örtüşüyor ama doğrulanmış bir işletme sayımı değil.
 
@@ -73,13 +75,13 @@ En güçlü üç itiraz: WhatsApp'a ben bakıyorum, zaten iş var yetiştiremiyo
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen yıl yaptığınız işlerde garanti ya da periyodik bakım zamanı gelen müşterileri siz mi arıyorsunuz, yoksa onlar arıza çıkınca mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz sahada, elinizde alet, tavanda ya da makinenin başındayken telefon çalınca ya da WhatsApp'a yazılınca ne oluyor, müşteri bekliyor mu, başka ustaya mı geçiyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, arızayı, adresi ve varsa fotoğrafı alıp arıza çağrısını servis randevusuna yazıyor, tesisat ya da proje işinde keşif için bilgileri alıp size iletiyor; periyodik bakım ya da sözleşmeli bakım zamanı gelen eski müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; arızayı, adresi ve varsa fotoğrafı alıp arıza çağrısını servis randevusuna yazıyor, tesisat ya da proje işinde keşif için bilgileri alıp size iletiyor; periyodik bakım ya da sözleşmeli bakım zamanı gelen eski müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
 
 Çalışan açarsa: "Usta sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde arıza için yazan müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
 
@@ -100,7 +102,7 @@ Karşı taraf bunu söylerse:
 Paletler: murekkep, celik, koz.
 Tipografi: teknik, saglam.
 
-**Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademenin satıldığı, elektrikçi/tesisatçının kendi ağzından dert ve kelime dağarcığı (iki oturumdur zayıf kaldı), Elektrik İç Tesisleri Yönetmeliği'nin konut/işyeri için periyodik kontrol ve topraklama ölçümü maddelerinin tam metni, SMM belgesinin zorunluluk kapsamı, asansör periyodik kontrol yönetmeliğinin tam metni ve cezaları, iş yerlerinde topraklama ölçümü zorunluluğunu düzenleyen İSG yönetmeliğinin ilgili maddesi, meslek koluna göre esnaf sayısı kırılımı (Ticaret Bakanlığı'ndan özel talep gerekebilir), telefonu kimin açtığı, hangi kanaldan (telefon/WhatsApp/Instagram) daha kolay ulaşılıyor, site/apartman yönetiminde bakım firması seçimini kimin (yönetici mi, yönetim kurulu mu) yaptığı.
+**Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademenin satıldığı, elektrikçi/tesisatçının kendi ağzından dert ve kelime dağarcığı (iki oturumdur zayıf kaldı), meslek koluna göre esnaf sayısı kırılımı (Ticaret Bakanlığı'ndan özel talep gerekebilir), telefonu kimin açtığı, hangi kanaldan (telefon/WhatsApp/Instagram) daha kolay ulaşılıyor, site/apartman yönetiminde bakım firması seçimini kimin (yönetici mi, yönetim kurulu mu) yaptığı. Yönetmelik metinleri (iç tesisatta periyodik kontrol ve topraklama ölçümü, SMM belgesinin zorunluluk kapsamı, asansör periyodik kontrolü ve cezaları, işyerinde topraklama ölçümü) sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://www.armut.com/elektrikci

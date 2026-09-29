@@ -6,15 +6,17 @@ description: "Müşteri kazanıldıktan sonra sürekli. Haftalık görünür iş
 
 # musteriyi-elde-tut
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Rapor günü raporundan sonrasını yöneten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. İkinci ay planı, düzenli temas, referans, üst pakete geçiş ve gerekirse ayrılık bu modülün işidir.
 
 Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil.
 
-Neden bu iş var: müşteri çoğunlukla kötü sonuç yüzünden değil, unutulduğunu hissettiği için ayrılır. Ayrılanların yaklaşık üçte ikisi sebep olarak bunu söylüyor. Kötü sonuç yüzünden ayrılan onda bir ile yedide bir arası.
+Neden bu iş var: müşteri çoğunlukla kötü sonuç yüzünden değil, unutulduğunu hissettiği için ayrılır.
 
-İkinci sebep para: yeni müşteri bulmak, eldekini tutmaktan kabaca dokuz kat pahalı. On iki ay kalan bir müşteri, üç ay kalandan dört ila altı kat değerli.
+İkinci sebep para: yeni müşteri bulmak, eldekini tutmaktan pahalıdır. On iki ay kalan müşteri, üç ay kalanın dört katı aylık ücret öder.
 
 Üçüncü sebep: ikinci müşterini getirecek en güçlü kanal birinci müşterinin ağzı. Ama kendiliğinden olmaz.
 
@@ -44,7 +46,7 @@ Pazarlamada tek cümle: satış bittiğinde iş bitmez, asıl para ikinci ayda k
 ## 3. Ne okur
 
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): son görüşme tarihi, son mesaj tarihi, tahsilat günü ve durumu, çözülmemiş arıza, randevu sayıları.
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): rapor sayıları, müşterinin verdiği işe dönme sayısı, kayıp birimi, beklenti cümleleri, kanıt hikâyesi izni, güvencenin sonucu ve ücretsiz ay durumu, müşterinin kişisel ayrıntıları.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya): rapor sayıları, müşterinin verdiği işe dönme sayısı, kayıp birimi, beklenti cümleleri, kanıt hikâyesi izni, güvencenin sonucu ve ücretsiz ay durumu, müşterinin kişisel ayrıntıları.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): büyüme şartı sağlandı mı, kaç aktif müşterin var, gelir planı. Büyüme şartı şu: görüşmede satılan tam sistem, yani Kademe 2, ilk müşteride sorunsuz teslim edilmiş ve rapor günü raporu çıkmış olacak.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): sezon.
 Doksan Gün Planı'nın ikinci bölümünden: bu nişte Kademe 3 var mı, ikinci ayda ne değişir.
@@ -78,13 +80,13 @@ Dört küçük şey daha:
 
 Müşteriye söylenen: ikinci ay yeni bir şey ekleme ayı değil, çalışanı büyütme ayı.
 
-Başlangıç noktası müşterinin kendi cümlesidir: rapor günü görüşmesinde sorulan "sıradaki en büyük baş ağrısı ne" sorusunun cevabı bilgi dosyasında duruyor. İkinci ayın teklifi o cümleden kurulur; müşteri kendi derdini söylediği için burada satış yok, dinleyip çözüm var. Cevap sistemin kapsamındaysa (yorum, geri kazanma, teklif takibi) kapsamı açarsın; Kademe 3'ün işiyse (dış arama, reklam) büyüme şartını beklersin; hiçbirine girmiyorsa (yeni site, içerik, muhasebe) kapsam dışı dersin ve o derdi kimin çözebileceğini söylersin. Sırayı şöyle tut: önce daha fazlası, sonra daha iyisi, en son yenisi. Çalışan bir şey varsa onu büyüt. Bozuk bir şey varsa onu düzelt. Yeniye kaçmak çalışan işi bırakmaktır.
+Başlangıç noktası müşterinin kendi cümlesidir: rapor günü görüşmesinde sorulan "sıradaki en büyük baş ağrısı ne" sorusunun cevabı bilgi dosyasında duruyor. İkinci ayın teklifi o cümleden kurulur; müşteri kendi derdini söylediği için burada satış yok, dinleyip çözüm var. Cevap sistemin kapsamındaysa (yorum, geri kazanma, teklif takibi) kapsamı açarsın; Kademe 3'ün işiyse (reklam, ek hizmet) büyüme şartını beklersin; hiçbirine girmiyorsa (yeni site, içerik, muhasebe) kapsam dışı dersin ve o derdi kimin çözebileceğini söylersin. Sırayı şöyle tut: önce daha fazlası, sonra daha iyisi, en son yenisi. Çalışan bir şey varsa onu büyüt. Bozuk bir şey varsa onu düzelt. Yeniye kaçmak çalışan işi bırakmaktır.
 
 İkinci ayda somut olarak yapılanlar:
 - Eski müşteri listesinde birinci aya sığmayan kişilere mesaj gönderilir. Metni müşteri onaylar, gönderimi sen başlatırsın (kaybolanlari-geri-getir).
 - Asistanın takıldığı sorular cevap listesine eklenir.
 - Randevu hatırlatmalarını gelme oranına göre ayarlarsın. Gelme oranı, randevu alanların kaçının gerçekten geldiğidir.
-- İlk ayda kurulamayan parçalar: eksik olan şey tamamlandıysa, yani izin geldiyse, İYS izni çıktıysa ya da Google profili doğrulandıysa, o parçayı ikinci ayda kurarsın.
+- İlk ayda kurulamayan parçalar: eksik olan şey tamamlandıysa, yani izin geldiyse, eski listede mesaj izni kayıtlı numara çıktıysa ya da Google profili doğrulandıysa, o parçayı ikinci ayda kurarsın.
 
 Altıncı ile sekizinci hafta arasında bir dokunuş yaparsın. Cümle şu: "[Şu rakamın] iyileştiğini fark ettim, bunu bir kazanım olarak işaretlemek istedim. Bir de aklıma küçük bir iyileştirme geldi, konuşmak istersen haber ver."
 
@@ -108,7 +110,7 @@ Bunun için üç belge hazırlarsın ve müşteriye verirsin. Raporun çıktığ
 
 Bu üçünü verirken söylediğin cümle: "Başarın hakkında bir sayfa hazırladım, kendi tanıtımında kullanabilirsin. Bir de biri sorarsa diye kısa bir özet ve hazır bir tanıştırma metni koydum." Bir şey vermiş oluyorsun, istememiş oluyorsun. Bütün gariplik böyle kalkıyor.
 
-İki kilit var. Birincisi izin: müşterinin adı, işletme adı, logosu ya da rakamı kullanılacaksa yazılı izin gerekir, o izin rapor görüşmesinde alınmıştı. İkincisi sağlık: diş, estetik ve güzellik salonunun tıbbi işlemlerinde kanıt hikâyesi isim, logo ya da rakamla dağıtılmadan önce müşterinin hukukçusundan yazılı görüş alınır. Bu nişlerde tanıtım kuralları sert ve ceza müşteriye kesiliyor. Görüş gelmezse hikâye yalnız niş ve şehirle yazılır.
+İki kilit var. Birincisi izin: müşterinin adı, işletme adı, logosu ya da rakamı kullanılacaksa yazılı izin gerekir, o izin rapor görüşmesinde alınmıştı. İkincisi sağlık: diş, estetik ve güzellik salonunun tıbbi işlemlerinde kanıt hikâyesi varsayılan olarak yalnız niş ve şehirle yazılır. İsim, logo ya da rakam ancak klinik bunları yazılı onaylarsa girer; kliniğin "onaylıyorum"u yeter, kliniğin kendi danışmanına sorması kliniğin işidir. Öğrenciye sebebi anlatılmaz.
 
 Bu belgeler niye işe yarıyor: referans dört anda doğuyor ve dördü de senin orada olmadığın anlar.
 - Şikâyet anı: biri müşterinin yanında dert yanar.
@@ -119,7 +121,7 @@ Bu anları üretemezsin. Ama belgeleri verdiysen müşteri o anda otuz saniyede 
 
 Üç konuşma anı ve cevapları:
 - Müşteri "sana nasıl yardımcı olabilirim" derse: "En çok işime yarayacak şey şu: [çözdüğün sorun] yaşayan birini duyarsan beni aklında tut. Beni anlatmana gerek yok, sadece tanıştır, gerisini ben hallederim."
-- İş sürerken tohum ekmek için: "Müşterilerimin çoğu senin gibi insanlardan geliyor. Memnun kalıp tanıdığına benden bahseden işletme sahiplerinden. Benim için en değerlisi bu."
+- Tohum ekmek için, rapor günü görüşmesinde kazanım konuşulurken bir kez. Müşterilerinin yarısından fazlası referansla geldiyse: "Müşterilerimin çoğu senin gibi insanlardan geliyor. Memnun kalıp tanıdığına benden bahseden işletme sahiplerinden. Benim için en değerlisi bu." Gelmediyse, ilk müşterilerde her zaman: "Benim işim de seninki gibi tavsiyeyle yürüyecek. O yüzden senin memnun kalman benim için rakamdan önemli." İstek değildir; isim sorulmaz, belge verilmez.
 - Müşteri kendisi "seni tavsiye edeyim mi" derse: "Çok isterim. Sana işini kolaylaştıracak bir şey göndereyim, hazır bir tanıştırma metni, böylece ne yaptığımı anlatmak zorunda kalmazsın."
 
 Sıklık: referans dönemi açıkken her görüşmede bir kez, ve belgeleri gönderdikten iki hafta sonra bir kez daha. Bir kere söylemek yetmiyor.
@@ -143,7 +145,7 @@ O konuşmanın sırası üçtür:
 
 Çekim öncesi mesaj: "Üç gün sonra aylık ödemen çekilecek. Yapman gereken bir şey yok, kartına bir şey düşmeden önce haberin olsun istedim." Sürpriz olmaz, güven sarsılmaz.
 
-Kart geçmezse: aynı gün tek cümleyle haber verirsin, suçlama yok. Üç gün içinde tek hatırlatma, sonra ararsın. Hizmeti durdurmadan önce yazılı bildirim yapılır; bildirimin süresi ve yolu sözleşme şablonunda yazar.
+Kart geçmezse: aynı gün tek cümleyle haber verirsin, suçlama yok. Üç gün içinde tek hatırlatma, sonra ararsın. Hizmeti durdurmadan önce yazılı bildirim gider. Süresini FounderOS sözleşme şablonundan okur ve metni hazır verir; sen gönderirsin, madde anlatmazsın.
 
 ### Ayrılma işaretleri
 
@@ -207,7 +209,7 @@ Rapor günü raporunda sistemin yazdığı randevu sıfır çıktıysa ikinci ay
 Ayın son haftasında bir görüşme yaparsın ve üç yoldan biri seçilir:
 1. Kapsamı daraltıp devam. Kademe 2'den Kademe 1'e inilir, rakam fiyati-belirle'nin aralığından okunur. Parça çıkarıp yeni ücret uydurulmaz.
 2. Normal ücretle devam.
-3. Sözleşmedeki yazılı bildirimle ayrılma. Bildirimin süresi ve yolu sözleşmede yazar, sen uydurmazsın.
+3. Yazılı bildirimle ayrılma. Bildirimin süresini ve yolunu FounderOS sözleşme şablonundan okur ve sana söyler; sen uydurmazsın.
 
 Bu görüşmenin sonucu ve tarihi bilgi dosyasına yazılır.
 
@@ -215,7 +217,7 @@ Bu görüşmenin sonucu ve tarihi bilgi dosyasına yazılır.
 
 Şart: büyüme şartı sağlanmış olacak. En erken ikinci ay.
 
-Üst paket, Kademe 3'tür. Yani dış arama ve reklam yönetimi: sistemin kendisinin eski müşteriyi ya da yeni başvuruyu araması, ülke, numara ve izin şartına bağlı; ve reklam. Doksan Gün Planı'nın ikinci bölümünde bu niş için Kademe 3'e "yok" yazıyorsa bu görüşme hiç yapılmaz; sağlık nişlerinde durum budur. Onun yerine kapsam içinde derinleşilir.
+Üst paket, Kademe 3'tür: reklam yönetimi ve ek hizmetler. Dış arama Kademe 2'nin içindedir; ilk kurulumda kurulamadıysa ve şartı sonradan sağlandıysa bu üst paket değil, kurulamayan parçanın kurulmasıdır; ücret, parça kurulduğu ayı izleyen aydan tam ücrete döner. Reklamın teslim modülü yazılana kadar Kademe 3'te reklam satılmaz; üst paket görüşmesi yalnız ek hizmet için yapılır. Doksan Gün Planı'nın ikinci bölümünde bu niş için Kademe 3'e "yok" yazıyorsa bu görüşme hiç yapılmaz; sağlık nişlerinde durum budur. Onun yerine kapsam içinde derinleşilir.
 
 Sıra yine aynı: önce daha fazlası, sonra daha iyisi, en son yenisi.
 
@@ -236,9 +238,9 @@ Ayrılmak isteyen müşteriyle mutlaka bir çıkış görüşmesi yaparsın. Ç�
 Nasıl kabul ettirirsin: para istemezsin, ceza koymazsın. Şöyle sorarsın: "Anlıyorum, sorun değil. Bir ricam var: yirmi dakika ayır ve bana nerede hata yaptığımı anlat. Bir dahakine daha iyi olmam için lazım." Bu cümleye çok az insan hayır diyor.
 
 Ayrılık gerçekleşirse:
-- Sözleşmedeki koruyucu maddeleri silah gibi kullanma.
-- Müşteri gerçekten hiçbir şey almadıysa ve parasını istiyorsa kurulum ücretini iade edersin, tartışma açmazsın. Teslimat başladıysa güvence maddesi işler.
-- Bir istisna: müşteri gerçekten kazandıysa ve küçük bir teknik ayrıntıya dayanarak iade istiyorsa, sözleşmedeki maddeler tam bunun için var.
+- Tartışma açma; kural ya da madde hatırlatma.
+- Müşteri gerçekten hiçbir şey almadıysa ve parasını istiyorsa kurulum ücretini iade edersin, tartışma açmazsın. Teslimat başladıysa iade yerine güvence işler; ne olacağını FounderOS sözleşme şablonundan okur ve müşteriye söyleyeceğin sade cümleyi verir.
+- Bir istisna: müşteri gerçekten kazandıysa ve küçük bir teknik ayrıntıya dayanarak iade istiyorsa iade yapılmaz. Sen madde açıklamazsın; FounderOS sözleşmede yazanı bilir ve sana sade cümleyi verir: "Kurulum ücretini iade etmiyoruz; kurulum tamamlandı ve sistem çalışıyor." Müşteri itirazı büyütürse tartışmazsın: "Not aldım, netleştirip size yazılı döneceğim." dersin, FounderOS destek adresine (destek@founderos.so) gidecek tek satırı hazır verir.
 - Temiz bir iade, kart itirazından her zaman iyidir. Kart itirazı, müşterinin bankasına başvurup parayı geri istemesidir; ödeme sağlayıcının gözünde sana iz bırakır.
 - İtibar, özellikle dar bir sektörde hızlı yayılır ve bir iadeden değerlidir.
 
@@ -254,18 +256,18 @@ Kişi listesini dışa aktarırken bir sınır var: notlar kısalıyor ve akış
 
 Ayrılık adımları: çıkış görüşmesini yaparsın, izinleri kaldırırsın, kişi listesini dışa aktarıp verirsin, sendeki kopyayı silersin, sonra hepsini tek mesajla yazılı bildirirsin.
 
-### Türkiye tarafı
+### Ayrılma bildirimi ve liste
 
-İki konu var. İkisini de hukukçuya soracağız, ama sistemi şimdiden buna göre kurduk.
+İki kural var. İkisi de sessizce uygulanır; öğrenciye kaynağı anlatılmaz.
 
-Birincisi fesih. Abonelikte tüketici sözleşmesini istediği zaman bitirebiliyor. Sebep göstermesi gerekmiyor, ceza da ödemiyor. Satıcı bu isteği yedi gün içinde yerine getirmek zorunda. Ayrılmak, üye olmaktan zor olamıyor. Bu kural tüketici için yazılmış; senin müşterin bir işletme, kural onu da kapsıyor mu belli değil. Kararımız şu: kapsasa da kapsamasa da biz aynı şekilde davranıyoruz. Müşteri yazılı bildirimle ayrılabilir. Bildirim geldiği gün tahsilatı durdurulmak üzere işaretlersin; sürenin ve sonuçlarının ne olacağı sözleşmedeki maddeden okunur.
+Birincisi ayrılmak kolaydır. Müşteri yazılı bildirimle istediği zaman ayrılabilir, sebep göstermesi gerekmez; ayrılmak, başlamaktan zor olmaz. Bildirim geldiği gün tahsilatı durdurulmak üzere işaretlersin. Sürenin ve sonuçlarının ne olacağını FounderOS sözleşme şablonundan okur ve sana tek cümleyle söyler; sen madde anlatmazsın.
 
-İkincisi veri. Bizim kuralımız zaten şu: liste müşterinindir, iş bitince silinir. Ayrılıkta da aynısı geçerli. Bunun sözleşmeye nasıl yazılacağını hukukçu belirler.
+İkincisi liste. Kural aynı: liste müşterinindir, iş bitince silinir. Ayrılıkta da aynısı geçerli; FounderOS silme gününü takvime koyar.
 
 ## 6. Ne söyler
 
 İkinci ayın başında: "İkinci ay yeni bir şey ekleme ayı değil, çalışanı büyütme ayı. Önce daha fazlası, sonra daha iyisi, en son yenisi. Bu ay tek hedefin var: birinci ayda çalışan parçayı iki katına çıkarmak."
-İş kanıtı için: "Haftada iki üç kez ekran fotoğrafı at, tek satır yaz. On saniye sürüyor. Ayrılan müşterilerin üçte ikisi sebep olarak unutulduğunu söylüyor; kötü sonuç yüzünden ayrılan çok daha az."
+İş kanıtı için: "Haftada iki üç kez ekran fotoğrafı at, tek satır yaz. On saniye sürüyor. Müşteri çoğu zaman kötü sonuçtan değil, unutulduğunu hissettiği için ayrılır."
 Referans döneminde: "Rapor çıktı, referans dönemi açıldı, üç ay sürecek. Tavsiye etmesini isteme; ona verecek üç belge hazırladım. İstemek yük bindirir, vermek yük kaldırır."
 Ayrılma işaretinde: "Şu işaret çıktı. Bekleme, bu hafta görüşme ayarla. Müşteri bir anda gitmez, haftalar önce haber verir; kaçıran sensin."
 Kurtarma anında: "Tahsilat üç gün sonra ve rakamlar kötü. Onun söylemesini bekleme, bugün sen ara. İndirim teklif etme; indirim değeri düşürür ve bir daha geri gelmez."
@@ -275,7 +277,7 @@ Ayrılmak isterse: "Çıkış görüşmesini yap, yirmi dakika sürüyor. İkisi
 
 Bilgi dosyasına: her görüşmenin tarihi ve tek satır özeti, müşterinin kişisel ayrıntıları, ayrılma işaretleri ve tarihleri, sıfırlama ya da kurtarma görüşmesi yapıldıysa ne konuşulduğu, tahsilat ertelendiyse tarihi, ücretsiz ayın üç yol görüşmesinin sonucu, referans belgelerinin gönderildiği tarih, gelen referanslar, üst pakete geçiş konuşuldu mu, müşteri durumu (devam, riskli, ayrılıyor), ayrılıkta verinin dışa aktarıldığı ve silindiği tarih.
 CRM'e: son temas tarihi, tahsilat durumu.
-İş Beyni'ne: aktif müşteri sayısı, referanstan gelen aday sayısı, kaybedilen müşteri ve sebebi.
+İş Beyni'ne: aktif müşteri sayısı ve referanstan gelen aday sayısı, son değerleriyle. O günün günlüğüne (`gunluk/YYYY-AA-GG.md`): kaybedilen müşteri ve sebebi, tek satır.
 Niş kartının Sahadan dolacak bölümüne: bu nişte ikinci ayda ne değişti, referansın hangi cümleyle geldiği.
 
 ## 8. Yedek yol
@@ -284,7 +286,7 @@ Niş kartının Sahadan dolacak bölümüne: bu nişte ikinci ayda ne değişti,
 - Ayrılma işareti görülüp görüşme ayarlanamıyorsa: kısa bir sesli mesaj gönderirsin ve sorunu adıyla söylersin.
 - Müşteri indirim isterse: fiyat düşmez, kapsam daralır. Kademe 2'den Kademe 1'e inilir, rakam fiyati-belirle'nin aralığından okunur.
 - Kanıt hikâyesi hazır değilse: tek sayfa özet ve tanıştırma metni yine gönderilir, kanıt hikâyesi sonra eklenir.
-- İzin ya da sağlık nişinde hukukçu görüşü yoksa: hikâye yalnız niş ve şehirle yazılır, isim, logo ve rakam kullanılmaz.
+- İzin ya da sağlık nişinde kliniğin yazılı onayı yoksa: hikâye yalnız niş ve şehirle yazılır, isim, logo ve rakam kullanılmaz.
 - Müşteri çıkış görüşmesini kabul etmezse: zorlamazsın. Son mesajında tek soru sorarsın: "Tek cümleyle, en çok neyi eksik buldun?"
 - Müşteri ayrıldıktan sonra fikrini değiştirirse: yeni müşteri gibi başlarsın, eski fiyat ve eski takvim geçerli değildir.
 
@@ -300,6 +302,6 @@ Sıradaki: aylık rapor (aylik-raporu-hazirla), haftalık bakım (sistemi-kontro
 - Referans döneminin son ayı geldi ve belgeler gönderilmedi: dönem kapanıyor.
 - Dört müşterin varken ayda bir müşteri kaybediyorsan: dörtte bir kayıp demektir, iş degisiklige-karar-ver'e gider.
 - Kaybettiğin müşteri sayısı referanstan gelenden fazla: iş kendi kendine büyümüyor, aynı yere gider.
-- Bir müşteri ayrıldı: çıkış görüşmesinin notu niş kartına ve İş Beyni'ne yazılır.
+- Bir müşteri ayrıldı: çıkış görüşmesinin notu niş kartına, müşterinin bilgi dosyasına ve o günün günlüğüne yazılır; İş Beyni'nde aktif müşteri sayısı güncellenir.
 
 Beş kural: boş sayfa yok (takvim, cümleler ve üç referans belgesinin kalıbı hazır gelir) · sessiz bitiş yok (haftalık iş kanıtı ve sesli mesaj atlanmaz) · onay (müşteriye giden her mesaj senin elinden çıkar) · sahadan güncelleme (ikinci ayda ne değiştiği ve referansın nasıl geldiği karta yazılır) · sormaz söyler (temas takvimini ve sırayı FounderOS verir).

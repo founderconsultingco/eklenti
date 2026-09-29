@@ -6,6 +6,8 @@ description: "Sadece klima ve kombi servisi nisinin karti: rakamlar, itirazlar, 
 
 # Klima ve kombi servisi
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Klima montajı, klima bakımı, klima gaz dolumu, kombi bakımı, kombi arıza/tamiri, kombi montajı. Hem marka yetkili servisleri (Baymak, Vaillant, ECA, DemirDöküm, Daikin, İklimsa, Airfel, Buderus, Warmhaus gibi markaların bayi ağları) hem bağımsız özel klima kombi ustaları dahil. Google Haritalar ve dizin sitelerinde "klima servisi", "kombi servisi" başlıkları altında listeleniyorlar (bulurum.com/dir/klima-servisi). Kapsam dışı: fabrika ve büyük bina ölçekli chiller/santral projeleri, sadece cihaz satan mağazalar, oto klima (ayrı bir niş).
 
@@ -69,13 +71,13 @@ En güçlü üç itiraz: telefonum zaten yanımda, fiyatı görmeden veremem, se
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Yazın en yoğun haftada siz sahadayken telefon çalınca ne oluyor, müşteri tekrar mı arıyor, WhatsApp'tan mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, cihazı ve adresi alıp servis randevusuna yazıyor; geçen sezonun bakım listesine de sezon başında sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; cihazı ve adresi alıp servis randevusuna yazıyor; geçen sezonun bakım listesine de sezon başında sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
 
 Çalışan açarsa: "Sezonda usta sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman serviste olur?"
 
@@ -96,7 +98,7 @@ Karşı taraf bunu söylerse:
 Paletler: murekkep, celik, koz.
 Tipografi: teknik, saglam.
 
-**Sahadan dolacak.** Türkiye genelinde toplam klima/kombi servisi işletme sayısı, Armut'taki 2.665-3.553 rakamı sadece bir platforma özel. Gerçek dönüş süreleri, kaç saat ya da gün içinde geri arandığı. Çalışan açılış cümlesinin gerçek kapatma oranı. Hangi kademenin (1, 2 ya da 3) bu nişte daha kolay satıldığı. Telefonun açık kaldığı gerçek saatler ve yetkili servislerin çağrı merkezi çalışma modeli. İlk vaka çalışması. Doğalgaz periyodik tesisat kontrolü yönetmeliğinin kombi bakım hizmetiyle pratikte nasıl bir ilişkisi olduğu.
+**Sahadan dolacak.** Türkiye genelinde toplam klima/kombi servisi işletme sayısı, Armut'taki 2.665-3.553 rakamı sadece bir platforma özel. Gerçek dönüş süreleri, kaç saat ya da gün içinde geri arandığı. Çalışan açılış cümlesinin gerçek kapatma oranı. Hangi kademenin (1, 2 ya da 3) bu nişte daha kolay satıldığı. Telefonun açık kaldığı gerçek saatler ve yetkili servislerin çağrı merkezi çalışma modeli. İlk vaka çalışması. Doğalgaz tesisat kontrolü kuralının kombi bakımıyla pratikteki ilişkisi sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://armut.com/fiyatlari/kombi-bakim_460

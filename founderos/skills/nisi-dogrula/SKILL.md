@@ -1,14 +1,16 @@
 ---
 user-invocable: false
 name: nisi-dogrula
-description: "nisi-sec'in yardımcısı, ikinci gün. Seçilen pazarın canlı verisini sayar: işletme sayısı, reklam veren oranı, sezon, rakip. Karar bozulursa o gün değiştirilir."
+description: "nisi-sec'in arka plan yardımcısı, birinci gün: pazar onaylanır onaylanmaz sayım başlar, sonucu teklife geçmeden okunur. Seçilen pazarın canlı verisini sayar: işletme sayısı, reklam veren oranı, sezon, rakip. Karar bozulursa aynı gün değiştirilir."
 ---
 
 # nisi-dogrula (arka plan yardımcısı)
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-İkinci bloğun arka plan yardımcısı. Arka plan yardımcısı, FounderOS'un ağır işleri verdiği yardımcıdır; sen onu görmezsin, sonucu FounderOS anlatır.
+Birinci günün arka plan yardımcısı: pazar onaylanır onaylanmaz çalışmaya başlar, sonucu markadan önce okunur. Arka plan yardımcısı, FounderOS'un ağır işleri verdiği yardımcıdır; sen onu görmezsin, sonucu FounderOS anlatır.
 
 İşi tek cümleyle: nisi-sec'in seçtiği üç nişin gerçekten satış yapılabilir bir pazar olup olmadığını canlı sayılarla kontrol etmek.
 
@@ -22,15 +24,15 @@ Pazarlamadaki karşılığı: bu kontrolün ekranı, FounderOS'un tanıtım sayf
 
 ## 2. Ne zaman çalışır
 
-- İkinci blokta, sayım çekimleri hazır olunca FounderOS çağırır; üç niş için birden. Yarım saat sürer.
+- Birinci günde, sayım çekimleri hazır olunca FounderOS çağırır; üç niş için birden. Öğrenci bu sırada ideal müşteri ve konumlandırmayla devam eder, sonuç teklife geçmeden, en geç markadan önce okunur. Yarım saat sürer. Servis birinci gün cevap vermediyse ikinci bloğun sabahında çağrılır.
 - Bir daha çalışmaz. Niş değiştirme konuşulursa yeniden çağrılır.
 
 ## 3. Ne okur
 
 nisi-sec'ten: üç nişin adı, şehir, tarih.
 Niş kartlarından: "reklam kütüphanesi kelimeleri" ve "rekabetin şekli" bölümleri.
-İş Beyni'nden: şehir, üç nişin adı, ikinci blokta başlatılan üç sayım çekiminin iş kimlikleri.
-Veri servisinden: her sayım çekiminin özeti: kaç kayıt geldi, kaçında telefon var, kaçında Instagram var, kaçında site yok, kaçının profili sahipsiz, kaçı akşam kapalı.
+İş Beyni'nden: şehir, üç nişin adı, birinci günde (servis cevap vermediyse ikinci blokta) başlatılan üç sayım çekiminin iş kimlikleri.
+Veri servisinden: her sayım çekiminin özeti: kaç kayıt geldi, kaçında telefon var, kaçında Instagram var, kaçında site yok, kaçının profili sahipsiz, kaçı akşam kapalı, kaçı reklam veriyor (`reklamli`).
 
 ## 4. Ne sorar
 
@@ -42,14 +44,14 @@ Sormaz, sana hiç konuşmaz. Veri servisi kapalıysa ya da sayım çekimi başla
 
 Her niş için sırayla:
 
-1. Sayımı veri servisi yapar. Üç niş için çekim ikinci bloğun sabahında, araclari-kur'un üçüncü adımında başlatılmıştır: kartın Haritalar kategori adı, senin şehrin, beş yüz kayıta kadar. Sonucu FounderOS alır (servise yalnız FounderOS sorar; yardımcının servise erişimi yok), özeti bu yardımcıya verir; servis hâlâ "çalışıyor" diyorsa FounderOS yirmi saniye bekleyip tekrar sorar, en fazla on kez.
+1. Sayımı veri servisi yapar. Üç niş için çekim birinci günde, pazar onaylanır onaylanmaz başlatılmıştır (servis o gün cevap vermediyse ikinci bloğun sabahında, araclari-kur'un üçüncü adımında): kartın Haritalar kategori adı, senin şehrin, beş yüz kayıta kadar. Sonucu FounderOS alır (servise yalnız FounderOS sorar; yardımcının servise erişimi yok), özeti bu yardımcıya verir; servis hâlâ "çalışıyor" diyorsa FounderOS yirmi saniye bekleyip tekrar sorar, en fazla on kez.
 2. Özetten üç sayı okunur: kaç kayıt geldi, kaçında telefon var, kaçının sitesi yok. Sayım çekimi siteden e-posta ve Instagram çıkarmadığı için Instagram bu sayımda ölçülmez. Profili sahipsiz ve akşam kapalı sayıları servis verebiliyorsa okunur, veremiyorsa "ölçülemedi". Sahibinin adı ve son yorumun tarihi de ölçülmez; o hücrelere "ölçülemedi" yazılır ve karar diğer ölçülere kalır.
-3. Reklam tarafı: Meta Reklam Kütüphanesi'ne (Facebook ve Instagram'da kimin reklam verdiğini gösteren açık sayfa) hangi yoldan bakılacağı henüz karara bağlanmadı; karar gelene kadar o sütuna "görülemedi" yazılır.
+3. Reklam tarafı: sayım çekimi Meta Reklam Kütüphanesi'ni (Facebook ve Instagram'da kimin reklam verdiğini gösteren açık sayfa) de tarar; FounderOS çekimi kartın reklam kütüphanesi kelimeleriyle başlatır. Reklam veren oranı özetten çıkar: `reklamli` bölü `kalan`. Özette reklam sayısı yoksa (reklam kaynağı o gün cevap vermedi ya da kelime verilmedi) o sütuna "görülemedi" yazılır.
 4. Türkiye geneli sayıyı kartın rekabet bölümünden alır; canlı sayılan yalnız şehirdir.
 
 Örnekleme yok: servis beş yüz kayıta kadar listenin tamamını sayıyor, oranlar bütünden çıkıyor.
 
-Reklam sütunu "görülemedi" kaldığında o niş yorum sayısına göre puanlanır. Sayı uydurulmaz.
+Reklam sütunu "görülemedi" kaldığında o soru elemez; karar diğer ölçülere kalır. Sayı uydurulmaz.
 
 ### Beş soru
 
@@ -57,7 +59,7 @@ Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 
 1. Bu şehirde yeterli işletme var mı? Eşik ana kanala bağlı: telefon nişinde 1.500, yazılı nişinde 600. Sayım çekimi eşiğe ulaştıysa cevap evet; altında kaldıysa gelen sayı yazılır. Sebebi: üçüncü blokta çıkan 500 kişilik liste bir ay gidiyor, doksan günün ihtiyacı telefon yolunda dört bin iki yüz, yazılı yolda bin beş yüz; liste her ay yeni ilçeyle yenileniyor ve şehir bu yenilemeyi taşıyacak kadar derin olmalı.
 2. Türkiye'de yeterli işletme var mı? Eşik yine kanala bağlı: telefonda 5.000, yazılıda 2.000. Şehirde eşik çıkmazsa niş önce komşu illere, sonra Türkiye geneline açılıyor ve bu sayı devreye giriyor. Gerekçe tabloya yazılır.
-3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez.
+3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez. Sağlık nişlerinde (diş, estetik) bu soru ne eler ne artı sayılır: o sektörde reklam az verilir, düşük oran beklenen şeydir. Tabloda bu hücreye "bu sektörde ölçü değil" yazılır; sebebi öğrenciye anlatılmaz.
 4. Telefonu dolu olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın. Instagram bu sayımda ölçülmüyor, oran yalnız telefonla kurulur.
 5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; aylık ücretin dört katı öğrencinin aylık hedefine ulaşmalı.
 
@@ -73,7 +75,7 @@ FounderOS bunu sana kendi cümlesiyle anlatır ve tabloyu gösterir.
 
 ### Veri konusunda bir not
 
-Bu tarama herkese açık yerlerden işletme bilgisi topluyor: harita kaydı, işletme telefonu, işletme hesabı. Şahıs işletmelerinde bu bilgilerin kişisel veri sayılıp sayılmadığı net değil. Çekimi FounderOS'un veri servisi yapıyor; aynı şehir ve kategori bir kere çekilip bir süre saklanıyor ki ikinci kişi için yeniden çekilmesin. Kişisel cep numarası ve kişisel hesap toplanmıyor. Kesin cevabı avukata soracağız; soru listesine bu da eklendi.
+Bu tarama yalnız herkese açık işletme bilgisini topluyor: harita kaydı, işletme telefonu, işletme hesabı. Kişisel cep numarası ve kişisel hesap toplanmıyor. Çekimi FounderOS'un veri servisi yapıyor; aynı şehir ve kategori bir kere çekilip bir süre saklanıyor ki ikinci kişi için yeniden çekilmesin. Bu konunun resmi tarafını ekip yürütür; öğrenciye anlatılmaz, ödev de olmaz.
 
 ## 6. Ne söyler
 

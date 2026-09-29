@@ -6,6 +6,8 @@ description: "Sadece sigorta acentesi nisinin karti: rakamlar, itirazlar, yasal 
 
 # Sigorta acentesi
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Yerel, tek şubeli sigorta acenteleri: kasko, trafik, konut (DASK dahil), sağlık (özel sağlık ve tamamlayıcı sağlık) sigortası satan, TOBB Levhasına kayıtlı, genelde birden fazla sigorta şirketini birden temsil eden küçük işletmeler. Kapsam dışı: sigorta şirketlerinin genel müdürlükleri, banka sigortacılığı, broker firmaları (2023 raporunda 109 broker var, acentelerden ayrı bir kanal, sbd.org.tr), sadece online satış yapan aracı kurumlar (Sigortam.net, Bulls gibi). Google Haritalar'da "Sigorta acentesi" ve "Sigorta şirketi" kategori adlarıyla listeleniyorlar.
 
@@ -41,7 +43,7 @@ Sözlüğü: portföy, prim, tecdit, poliçe, basamak, taban komisyon, hasarsız
 
 **Açılış cümlesi.** "Geçen yıl trafik veya kasko poliçenizi biz yaptık, bitiş tarihiniz yaklaşıyor, yeni fiyatı görmeden yenilenmesin diye önceden aramak istedik." Bu cümle itiraz üretmiyor çünkü trafik sigortası kanunen zorunlu, müşteri nasılsa yenileyecek, tek soru kimin arayacağı. acenteos.com'un kendi tespiti bu açıyı doğruluyor: yenileme takibi kişiye bağlı kaldığı için müşteri fark ettirmeden başka acenteye kayıyor.
 
-**Duran havuz.** Üç tip var, birincisi en güçlü. Poliçe bitiş tarihi yaklaşanlar: tarih zaten kayıtlarda var ama hatırlatma çoğu acentede otomatik değil, Excel veya ajandaya bağlı (acenteos.com). İkincisi, sadece trafik sigortası olup kaskosu, konutu, sağlığı olmayanlar: 31 milyon araçtan 7 milyonu kaskolu istatistiği burada somut kanıt (sigortacigazetesi.com.tr/koru-sigorta-arac-kontrollu-kasko-ile-sigortaya-erisimi-artiriyor). Üçüncüsü, bir kere fiyat sorup poliçe yaptırmadan kaybolanlar; acentenin telefonunda veya WhatsApp'ında duran ama bir daha aranmayan kayıtlar.
+**Duran havuz.** Üç tip var, birincisi en güçlü. Poliçe bitiş tarihi yaklaşanlar: tarih zaten kayıtlarda var ama hatırlatma çoğu acentede otomatik değil, Excel veya ajandaya bağlı (acenteos.com). İkincisi, sadece trafik sigortası olup kaskosu, konutu, sağlığı olmayanlar: 31 milyon araçtan 7 milyonu kaskolu istatistiği burada somut kanıt (sigortacigazetesi.com.tr/koru-sigorta-arac-kontrollu-kasko-ile-sigortaya-erisimi-artiriyor). Üçüncüsü, bir kere fiyat sorup poliçe yaptırmadan kaybolanlar; acentenin telefonunda veya WhatsApp'ında duran ama bir daha aranmayan kayıtlar. Üç listeye de yalnız mesaj izni kayıtlı numaralar girer; izni olmayan kişiye mesaj gitmez ve o kişi güvencenin sonucuna sayılmaz. Öğrenciye kural anlatılmaz; öğrenci yalnız sonucu duyar.
 
 **Asistan kuralları.** Asistan net fiyat vermez; kasko ve sağlıkta fiyat kişinin ve aracın risk bilgisine göre değiştiği için teklif ancak yetkili tarafından verilebilir. Araç bilgisi (plaka, marka, model, yıl, hasar geçmişi) veya kişi bilgisi toplar, randevu veya geri arama ayarlar. Sağlık teklifi için hastalık geçmişi gibi özel nitelikli veri istenecekse KVKK gereği açık rıza metni gösterilmeli. Hasar ve ödeme sürecine hiç girmez, sahibine devredilir; çünkü Allianz özelindeki şikayetler hasar, ödeme ve otomatik yenileme itirazında yoğunlaşıyor: "poliçemi otomatik olarak yenilemişler" (müşteri onay vermeden), "kredi kartımdan tahsilat yapılmış" (yenilendi mesajı gelmeden) (sikayetvar.com/allianz-sigorta/police/yenileme). Asistan hangi acenteye bağlı çalıştığını her görüşmede açıkça belirtmeli; Sigorta Acenteleri Yönetmeliği Madde 18 bunu zorunlu kılıyor (sigortagazetesi.com PDF; lexpera.com.tr).
 
@@ -53,7 +55,7 @@ Sözlüğü: portföy, prim, tecdit, poliçe, basamak, taban komisyon, hasarsız
 
 **Yasal sınırlar.** Sigorta Acenteleri Yönetmeliği Madde 19 (İlan, Reklam, Afiş ve Pano) iki bağımsız kaynaktan doğrulandı (resmigazete.gov.tr/eskiler/2014/04/20140422-3.htm; lexpera.com.tr/mevzuat/yonetmelikler/sigorta-acenteleri-yonetmeligi-2): acenteler antet, afiş, reklam, tabela ve internet sayfalarında acente unvanını kullanmak zorunda; "sigorta" kelimesi yanında "acenteliği" veya "aracılığı" ibaresi olmadan kullanılamaz; sigorta şirketi görünümü veya yanıltıcı kurumsal kimlik yasak; Levha kayıt numaralı tabela işyeri girişinde görülebilir asılmalı. Madde 18, teknik personelin satış sırasında sigortalıya hangi acenteye bağlı olduğunu açıkça belirtmesini şart koşuyor (sigortagazetesi.com PDF). Bu iki madde asistan tasarımını doğrudan etkiliyor: asistan hangi acentenin adına konuştuğunu göstermeli, sigorta şirketiymiş gibi görünmemeli.
 
-İYS konusunda mevcut müşteriye poliçe yenileme hatırlatmasının "ticari ileti" mi yoksa mevcut sözleşme kapsamında bilgilendirme mi sayılacağı iys.org.tr'nin SSS ve temel hizmetler sayfalarında açıklanmıyor (bilinmiyor, hukuki teyit gerekir). Sağlık teklifinde toplanan verilerde KVKK'nın (6698 sayılı Kanun) özel nitelikli veri hükümleri geçerli. mevzuat.gov.tr, SEDDK, TOBB ana sayfası, sigortaci.org, ilgili Facebook grubu ve mevzuattakip.com.tr SSL veya robots engeli yüzünden açılamadı; yönetmeliğin güncel tam metni resmi kaynaktan ayrıca teyit edilmeli.
+İYS konusunda mevcut müşteriye poliçe yenileme hatırlatmasının "ticari ileti" mi yoksa mevcut sözleşme kapsamında bilgilendirme mi sayılacağı iys.org.tr'nin SSS ve temel hizmetler sayfalarında açıklanmıyor (bilinmiyor; teyit gerekir ve ekip yapar). Sağlık teklifinde toplanan verilerde KVKK'nın (6698 sayılı Kanun) özel nitelikli veri hükümleri geçerli. mevzuat.gov.tr, SEDDK, TOBB ana sayfası, sigortaci.org, ilgili Facebook grubu ve mevzuattakip.com.tr SSL veya robots engeli yüzünden açılamadı; yönetmeliğin güncel tam metnini ekip resmi kaynaktan ayrıca teyit eder. Bu nişte işletmeye giden her metin kartın hazır cümleleriyle sınırlıdır; yeni bir iddia gerekiyorsa denetçi çıkarır ve ekip notu düşülür. Öğrenciye hukuk anlatılmaz.
 
 **Yoğun şehirler.** Doğrudan "en çok acente olan iller" listesi bulunamadı. Dolaylı kanıt: sigortam.net ve araclo.com'un trafik sigortası basamak tablolarında İstanbul en yüksek prim seviyesinde, yani araç ve trafik yoğunluğu en fazla olan il (sigortam.net/trafik-sigortasi; araclo.com). Nüfus ve araç sayısına bağlı olarak İstanbul, Ankara, İzmir, Bursa, Antalya büyük olasılıkla en yoğun şehirler ama bu bir çıkarım, kesin liste değil (bilinmiyor, sahadan dolacak).
 
@@ -61,7 +63,7 @@ Sözlüğü: portföy, prim, tecdit, poliçe, basamak, taban komisyon, hasarsız
 
 En güçlü üç itiraz: şirket zaten yenileme mesajı atıyor, müşterim bana bağlı tanıdık, yenileme takibimiz Excel'de var
 
-"Sigorta şirketi zaten yenileme zamanı SMS atıyor." O SMS kanuni bir bilgilendirme, acentenin kendi müşterisine dönüşü değil. Bizim gönderdiğimiz her mesaj İYS izinli numaraya gider; izinli numara yoksa o kişiye mesaj gitmez ve bu güvencenin sonucuna da sayılmaz. Kural değişmiyor, mesajın içeriği değişmiyor, izin şart.
+"Sigorta şirketi zaten yenileme zamanı SMS atıyor." O mesaj şirketin bilgilendirmesi, acentenin kendi müşterisine dönüşü değil. Bizim hatırlatmamız yalnız mesaj izni olan müşterinize gider; listeyi biz ayırırız.
 
 "Fiyatı ben veremem, şirkete bağlı." Doğru, zaten asistan fiyat vermiyor; sadece araç veya kişi bilgisini toplayıp size ya da teklife yönlendiriyor.
 
@@ -77,13 +79,13 @@ En güçlü üç itiraz: şirket zaten yenileme mesajı atıyor, müşterim bana
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Bitiş tarihi yaklaşan trafik ve kasko poliçeleri için müşteriyi önceden siz mi arıyorsunuz, yoksa yenileme günü geldiğinde mi bakılıyor?"
 
 İşleyiş sorusu: "Gün içinde bir müşterinin hasar dosyasıyla uğraşırken ya da telefondayken WhatsApp'tan kasko fiyatı soran müşteri ne yapıyor, cevabı bekliyor mu, internetten teklif alıp gidiyor mu?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz meşgulken WhatsApp'a ya da sitenizden yazan müşteriye dakikalar içinde, hangi acente adına konuştuğunu söyleyerek cevap veriyor, plaka, marka, model, yıl ve hasar geçmişi gibi bilgileri alıp teklif için size iletiyor ya da görüşme randevusuna yazıyor; poliçesinin bitiş tarihi yaklaşan müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç acenteyle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz meşgulken telefon çalarsa aramayı o açıyor, WhatsApp'a ya da sitenizden yazan müşteriye de dakikalar içinde, hangi acente adına konuştuğunu söyleyerek dönüyor; plaka, marka, model, yıl ve hasar geçmişi gibi bilgileri alıp teklif için size iletiyor ya da görüşme randevusuna yazıyor; poliçesinin bitiş tarihi yaklaşan müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç acenteyle başlıyorum."
 
 Çalışan açarsa: "Herkes hasar dosyasıyla ya da telefonla meşgulken WhatsApp'a yetişilemeyen saatlerde teklif isteyen müşteriye cevap verip bilgileri toplayan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 
@@ -104,7 +106,7 @@ Karşı taraf bunu söylerse:
 Paletler: derin, celik, murekkep.
 Tipografi: sade, saglam.
 
-**Sahadan dolacak.** TOBB Levhasına kayıtlı toplam acente sayısının kesin resmi rakamı (TÜSAF 20.000, 2023 raporu 15.500 diyor, fark netleşmeli). Bir acentenin günde veya haftada işleyebildiği ortalama teklif ve poliçe adedi. Yenileme hatırlatma aramalarının gerçek dönüş ve kapanış oranı. Acentelerin bugün fiilen kullandığı hatırlatma yöntemi, örnekleme yapılmalı. Konut sigortası fiyat aralığı, sektör yayınlamıyor. Yönetmeliğin güncel tam metni resmi kaynaktan (mevzuat.gov.tr veya SEDDK) doğrulanmalı, bu araştırmada erişim engellendi. İYS'nin yenileme hatırlatmasına uygulanıp uygulanmadığı, hukuki teyit gerekir. Hangi kademenin (1, 2 veya 3) bu nişte daha kolay satıldığı ve ilk vaka çalışması. Meta Reklam Kütüphanesi'nde bu nişin reklam verme durumu.
+**Sahadan dolacak.** TOBB Levhasına kayıtlı toplam acente sayısının kesin resmi rakamı (TÜSAF 20.000, 2023 raporu 15.500 diyor, fark netleşmeli). Bir acentenin günde veya haftada işleyebildiği ortalama teklif ve poliçe adedi. Yenileme hatırlatma aramalarının gerçek dönüş ve kapanış oranı. Acentelerin bugün fiilen kullandığı hatırlatma yöntemi, örnekleme yapılmalı. Konut sigortası fiyat aralığı, sektör yayınlamıyor. Hangi kademenin (1, 2 veya 3) bu nişte daha kolay satıldığı ve ilk vaka çalışması. Meta Reklam Kütüphanesi'nde bu nişin reklam verme durumu. Yönetmeliğin güncel tam metni (mevzuat.gov.tr ya da SEDDK) ve İYS'nin yenileme hatırlatmasına uygulanıp uygulanmadığı sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://www.sigortam.net/kasko-sigortasi

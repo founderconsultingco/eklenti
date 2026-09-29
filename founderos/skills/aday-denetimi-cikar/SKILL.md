@@ -6,6 +6,8 @@ description: "Dördüncü gün hızlı denetim, sonra her sabah derin denetim ve
 
 # aday-denetimi-cikar
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Bir işletmeye ulaşmadan önce, o işletmenin müşterisini nerede kaçırdığını dışarıdan bakarak tek sayfaya çıkaran modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Çıkardığı sayfanın adı **denetim kartı**.
@@ -21,7 +23,7 @@ Tek kural, karıştırma: denetim kartında sadece gördüğün şey yazar. Gör
 ## 2. Ne zaman çalışır
 İki hâli var ve ikisi ayrı işler.
 
-**Hızlı denetim.** Beş satırın dördü veri servisinden hazır geliyor (profil sahipsiz, site yok, Instagram yok, yorum az, saatler); öğrencinin işi okumak ve onaylamak. İşletme başına yaklaşık yirmi saniye, yüz işletme için yarım saat. Tamamı dördüncü blokta, tek oturuşta yapılır; eskiden otuzu üçüncü bloğa bölünüyordu ve o bölme iki günü birden şişiriyordu. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
+**Hızlı denetim.** Beş satırın dördü veri servisinden hazır geliyor (profil sahipsiz, site yok, Instagram yok, yorum az, saatler); öğrencinin işi okumak ve onaylamak. İşletme başına yaklaşık yirmi saniye, yüz işletme için yarım saat. Tamamı dördüncü bloğun sabahında, tek oturuşta yapılır; bölünmez. Sonra her ay listenin yenilenmesiyle tekrarlanır. Çıktısı beş satır ve bir puan.
 
 ### Araştırma üç katmanda yapılır, üçü de aynı yükü taşımaz
 
@@ -41,17 +43,19 @@ Reklam bakışı eskiden bu katmandaydı, artık değil: veri servisi reklam kü
 
 Başka hiçbir gözlem çıkmayan adayda reklam tek başına kullanılıyor, ama iddia olarak değil soru olarak: "İki reklamınız yayında, biri 05.01.2026 tarihinden beri; o reklamdan gelen aramaya kim bakıyor?" Bu bir sızıntı iddiası değil, cevabı işletmecinin ağzından alan bir soru. Bu satır olmadan, en çok istenen yüzün başındaki reklam verenler gözlemsiz aranıyordu: sıralama onları öne alıyordu ama söylenecek cümleleri yoktu.
 
+Sağlık nişlerinde (diş, estetik) reklam hiçbir cümleye girmez, ne iddia ne soru olarak; kliniğe reklamından söz edilmez. Reklam sütunu bu nişlerde yalnız sıralamada iç işarettir; başka gözlemi çıkmayan klinikte profil gözlemi kullanılır. Öğrenciye sebep anlatılmaz; sorarsa: "Bu sektörde reklamdan söz etmiyoruz, en güvenli yol bu."
+
 Toplu araştırma haftada bir yapılır, on dakika sürer ve liste yenilendiğinde tekrarlanır. Günlük değil: iş ilanı gün içinde değişmiyor.
 
 **Üçüncü katman, insan gerektiren.** Geriye iki şey kalıyor ve ikisi de senin elinle yapılıyor: canlı arama testi ve yazılı test. Bunlar otomatiğe alınamaz ve alınmamalı, çünkü değerleri tam da gerçekten yapılmış olmalarından geliyor.
 
-Bu ikisi derin denetimin içinde tek tek yapılmıyor, **toplu yapılıyor ve denetimden ayrı duruyor**. Sebebi zaman: derin denetim işletme başına beş dakika ve günde beşle sınırlı, ama tek bir test araması kırk saniye. Testi denetime bağlamak günde beş adayla sınırlıyordu; ayırınca günde altmışa çıkıyor.
+Bu ikisi derin denetimin içinde tek tek yapılmıyor, **toplu yapılıyor ve denetimden ayrı duruyor**. Sebebi zaman: derin denetim işletme başına beş dakika ve günde beşle sınırlı, ama tek bir test araması kırk saniye. Testi denetime bağlamak günde beş adayla sınırlıyordu; ayırınca tek test akşamında tam zamanlıda kırk, işin yanında yirmi adaya çıkıyor.
 
-Sayılar kanitini-hazirla'da yazılı ve çalışma düzenine bağlı. Tam zamanlıda akşam kırk telefon testi, sabah yirmi yazılı ve form testi. İşin yanında yirmi ve on. Kimin test edileceğini gün planı söylüyor: ertesi gün temas edilecek adaylar. Sonuçlar denetim kartının altıncı ve yedinci satırına düşüyor, denetim o satırları kendi yapmıyor, buradan okuyor.
+Sayılar ve günler kanitini-hazirla'da yazılı ve çalışma düzenine bağlı: sahanın ilk haftası her gün, sonra haftada iki gün. Bir test gününde tam zamanlıda akşam kırk telefon testi, sabah yirmi yazılı ve form testi; işin yanında yirmi ve on. Kimin test edileceğini gün planı söylüyor: sonraki günlerde ilk temas edilecek adaylar, önce en çok istenen yüz işletme. Sonuçlar denetim kartının altıncı ve yedinci satırına düşüyor, denetim o satırları kendi yapmıyor, buradan okuyor.
 
-Sonuç şu: beş yüz adayın hepsinde gözlem var, en iyi otuzunda toplu araştırmadan gelen güçlü gözlem var, günün altmış adayında (işin yanında otuzunda) gerçekten yapılmış test var. Gözlemsiz mesaj gitmiyor.
+Sonuç şu: beş yüz adayın hepsinde gözlem var, en iyi otuzunda toplu araştırmadan gelen güçlü gözlem var, test günlerinde denenen adaylarda gerçekten yapılmış test var: ilk hafta günün çoğu temasında, sonra en çok istenen yüz işletmede ve sıranın başında. Gözlemsiz mesaj gitmiyor.
 
-**Derin denetim.** İşletme başına beş dakika. Testler denetimden çıkınca sekiz dakika beşe indi: geriye iki elle bakış (iş ilanı, karar verenin adı) ve kartın yazılması kaldı. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü; sabah bloğunda yirmi beş dakika tutuyor. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
+**Derin denetim.** İşletme başına beş dakika. Testler denetimden çıkınca sekiz dakika beşe indi: geriye iki elle bakış (iş ilanı, karar verenin adı) ve kartın yazılması kaldı. Yüz işletmede Instagram sütunu boşsa hesap da burada aranır. Sadece o gün ilk aranacak adaylar için, her sabah, sabah bloğunda. Tam zamanlıda günde beş işletme, işin yanında çalışanda üçü; sabah bloğunda yirmi beş dakika tutuyor. Çıktısı tam denetim kartı. Günün kalan temasları (e-posta, Instagram ve sıradaki aramalar) hızlı denetimle gider; derin denetim kotası günün temas sayısını sınırlamaz.
 
 Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin denetim her sabah sıranın başındakileri açar.
 
@@ -61,19 +65,19 @@ Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin dene
 
 Niş kartından: kayıp birimi ve rakamı, sızıntı nerede bölümünün üç sızıntısı, duran havuz tipleri, kanal ve zaman, işletmecinin sözlüğü ve iç sesi, açılış cümlesi, yasal sınırlar.
 
-Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): adayın kaydı, önceki temaslar, hangi kanalların denendiği, kanal durumu satırları.
+Aday listesinden (`adaylar.csv`; soğuk adaylar CRM açıldıktan sonra da burada, cevap verip CRM'e geçen aday CRM'de): adayın kaydı, önceki temaslar, hangi kanalların denendiği, kanal durumu satırları.
 
 kanitini-hazirla'dan: o adaya yapılmış canlı arama ve yazılı test sonucu varsa.
 
 ## 4. Ne sorar
 
-Hiçbir şey sormaz. Neye bakılacağını, hangi sıraya bakılacağını ve neyin bulgu sayılacağını FounderOS söyler. İki yerde sen devreye giriyorsun ve ikisi de senin telefonunu gerektirdiği için: canlı arama ve yazılı test. Onları sen yapıyorsun, sonucu söylüyorsun, kart dolduruluyor.
+Hiçbir şey sormaz. Neye bakılacağını, hangi sıraya bakılacağını ve neyin bulgu sayılacağını FounderOS söyler. İki yerde sen devreye giriyorsun ve ikisi de senin telefonunu gerektirdiği için: canlı arama ve yazılı test. İkisi de denetimden önce, test gününde yapılır: arama testi önceki akşam, yazılı test önceki sabah. Sonucu sayıyla söylüyorsun, kart dolduruluyor.
 
 ## 5. Ne yapar
 
-### Hızlı denetim, beş satır, iki dakika
+### Hızlı denetim, beş satır, yirmi saniye
 
-Beşi de dışarıdan görünüyor, hiçbiri hesap açmayı gerektirmiyor.
+Beşi de dışarıdan görünüyor, hiçbiri hesap açmayı gerektirmiyor. Hızlı denetimde satırların dördü servisin işaretinden dolu gelir; sen kartı okur, yanlış olanı söylersin, beşinciye yorum tarihlerinden bakarsın. Siteyi ve Instagram'ı tek tek açıp bakmak derin denetimin işidir; aşağıdaki bakılacak yerler ikisinde de aynı.
 
 **1. Google işletme profili.** İşletmenin adını Google Haritalar'da aç. Bakılan dört şey: yorum sayısı ve puanı, son yorumun tarihi, yorumlara cevap veriliyor mu, son üç yorumda ne şikayet edilmiş. Bulgu sayılan haller: yorumlara hiç cevap verilmemiş; son yorum altı aydan eski; son üç yorumun içinde "aradım açmadılar", "dönmediler", "randevu verdiler gelmediler" gibi bir cümle var; puan 4,0'ın altında.
 
@@ -89,7 +93,7 @@ Her satır bir puan. Toplam sıfırla beş arası ve adı **sızıntı puanı**.
 
 Sıfır puan çıkan işletme listeden çıkmaz, listenin sonuna gider. Sıfır puan "sorunu yok" demek değil, "dışarıdan görülmüyor" demek.
 
-### Uygunluk puanı, aynı iki dakikada
+### Uygunluk puanı, aynı oturuşta
 
 Sızıntı puanı "bu işletmenin derdi var mı" diyor. Uygunluk puanı ayrı bir soruya bakıyor: **bu işletme sana para verebilir mi.** İkisi ayrı sayıdır ve karıştırılmaz; derdi olan ama ödeyemeyen işletmeye harcanan yüz arama, doksan gününü yakan şeydir.
 
@@ -103,7 +107,7 @@ Uygunluk puanı İş Beyni'nin on sekizinci bölümündeki ideal müşteri sayfa
 
 **Zayıf sinyal, bir puan, en fazla üç.** Genel canlılık işaretleri: düzenli paylaşım, güncel çalışma saati, doldurulmuş profil. Tek başına hiçbir şey söylemez, eşitlik bozar.
 
-**Eleme, puana bakılmaz.** İdeal müşteri sayfasının on birinci başlığındaki "ne satın almaz" listesindeki her madde burada elemedir. Buna ek olarak her nişte sabit dört eleme var: işletme kapanmış ya da devren ilanı var, zincirin şubesi (kararı başka şehirde veriliyor), aynı hizmeti zaten alıyor (sitede randevu ve otomatik cevap sistemi görünüyor), kartın yasal sınırları o işletmeyi kapsam dışı bırakıyor. Elenen işletme listede kalmaz, "elendi" ve sebebiyle işaretlenir.
+**Eleme, puana bakılmaz.** İdeal müşteri sayfasının on birinci başlığındaki "ne satın almaz" listesindeki her madde burada elemedir. Buna ek olarak her nişte sabit dört eleme var: işletme kapanmış ya da devren ilanı var, zincirin şubesi (kararı başka şehirde veriliyor), aynı hizmeti zaten alıyor (sitede randevu ve otomatik cevap sistemi görünüyor), kart o işletme tipini kapsam dışı bırakıyor (kayda sebep olarak "kapsam dışı" yazılır, kural anlatılmaz). Elenen işletme listede kalmaz, "elendi" ve sebebiyle işaretlenir.
 
 **Sert sınırlar, eleme değil sıraya koyma.** Çok küçük olan (yorum sayısı çok düşük, tek kişi, profil neredeyse boş) listenin sonuna gider: derdi olabilir ama ödeyemez. Çok büyük olan (kendi pazarlama ekibi olacak kadar kalabalık) da sonuna gider: kararı sen ulaşamayacağın bir masada veriliyor.
 
@@ -114,21 +118,21 @@ Toplam sıfırla on beş arası. Üç kademeye bölünür:
 
 **Sıralama iki sayıyla yapılır.** Önce uygunluk kademesi, sonra kademe içinde sızıntı puanı. Yani A kademesindeki beş sızıntılı işletme listenin en başında, B kademesindeki beş sızıntılı işletme ondan sonra duruyor. Sebebi şu: ödeyebilen ve derdi olan kişiyle konuşmak, derdi olan ama ödeyemeyen kişiyle konuşmaktan her zaman iyidir.
 
-**Puanlar CRM'e iki ayrı alan olarak yazılır.** Tek alanda toplanmaz. İlk otuz aramadan sonra hangi kademenin gerçekten randevu verdiğine bakılır; kademe eşikleri ancak o zaman değişir, kulaktan değil.
+**Puanlar kayda iki ayrı alan olarak yazılır.** Tek alanda toplanmaz. İlk otuz aramadan sonra hangi kademenin gerçekten randevu verdiğine bakılır; kademe eşikleri ancak o zaman değişir, kulaktan değil.
 
 ### Derin denetim, denetim kartı, beş dakika
 
 Hızlı denetimin beş satırının üstüne beş şey daha eklenir. Beşinin üçü hazır geliyor (arama testi, yazılı test, reklam izi), ikisi burada yapılıyor (iş ilanı, kim karar veriyor). Beş dakikanın çoğu bu ikisine ve kartı yazmaya gidiyor.
 
-**6. Canlı arama testi.** Bu satır denetim sırasında doldurulmaz, bir gün önceki akşam testinden hazır gelir. Denetim onu okur. Testi kanitini-hazirla yönetir, sınırları orada yazılı; kartın "kanal ve zaman" bölümünün söylediği yoğun saatin dışında bir arama. Yazılan: aradığın saat, açıldı mı, kaç çalışta açıldı, sesli mesaj çıktı mı, geri döndüler mi ve ne kadar sonra. Açılmadıysa bu senin en güçlü bulgun oluyor ve mesajın ilk cümlesi bu.
+**6. Canlı arama testi.** Bu satır denetim sırasında doldurulmaz, önceki akşamın testinden hazır gelir; test bir haftadan eskiyse kullanılmaz. Denetim onu okur. Testi kanitini-hazirla yönetir, sınırları orada yazılı; kartın "kanal ve zaman" bölümünün söylediği yoğun saatin dışında bir arama. Yazılan: aradığın saat, açıldı mı, kaç çalışta açıldı, sesli mesaj çıktı mı, geri döndüler mi ve ne kadar sonra. Açılmadıysa bu senin en güçlü bulgun oluyor ve mesajın ilk cümlesi bu.
 
 **7. Yazılı test.** Bu satır da hazır gelir: bir gün önceki sabah yazılı testinden. Kartın söylediği ana yazılı kanaldan, gerçek bir müşteri sorusu. Yazılan: yazdığın saat, cevap geldi mi, kaç saat sonra, cevabın içinde soru soruldu mu yoksa tek kelime mi. Bu testin sınırları kanitini-hazirla'da yazılı ve aynen geçerli: sahte isim yok, sahte işletme yok, randevu almak yok, fiyat pazarlığı yok.
 
-**8. Reklam izi.** Bu satır da elle doldurulmaz, listenin `reklam` sütunundan gelir: aktif reklam var mı, kaç tanesi, biri ne zamandan beri yayında. Reklam veren işletme para harcıyor demektir ve gelen talebi kaçırıyorsa kaybı iki katı; bu, mesajın en sert cümlesini üretir. Sütun boşsa "bakılamadı" yazılır ve puana girmez.
+**8. Reklam izi.** Bu satır da elle doldurulmaz, listenin `reklam` sütunundan gelir: aktif reklam var mı, kaç tanesi, biri ne zamandan beri yayında. Reklam veren işletme para harcıyor demektir ve gelen talebi kaçırıyorsa kaybı iki katı; bu, mesajın en sert cümlesini üretir. Sütun boşsa "bakılamadı" yazılır ve puana girmez. Sağlık nişlerinde bu satır yalnız sıralama için okunur; en güçlü bulgu olamaz, mesaja, aramaya, video mesaja ve görüşmeye girmez.
 
 **9. İş ilanı.** Kartın "iş ilanı kelimeleri" satırındaki kelimelerle iş ilanı sitelerine, işletmenin Instagram'ına ve sitesinin kariyer sayfasına bakılır. Yazılan: ilan var mı, tarihi, başlığı. "Resepsiyonist arıyoruz" ilanı veren işletme telefonu kaçırdığını kendisi söylüyor; bu bulgu varsa en güçlü bulgu sırasında canlı arama testinin hemen ardına girer ve e-posta açılışı bu ilandan kurulur.
 
-**10. Kim karar veriyor.** Kartın "kim karar veriyor" bölümünün söylediği kişinin adı. Üç yere bakılır: sitenin hakkımızda ve iletişim sayfası, Instagram biyografisi, Google yorumlarına verilen cevapların altındaki imza. Bulunamazsa "bulunamadı" yazılır; aday yine aranır, açılış "işletme sahibi siz misiniz" olur ve ad ilk aramada öğrenilip karta yazılır. Adı bulunanlar sırada önde gelir.
+**10. Kim karar veriyor.** Kartın "kim karar veriyor" bölümünün söylediği kişinin adı. Üç yere bakılır: sitenin hakkımızda ve iletişim sayfası, Instagram biyografisi, Google yorumlarına verilen cevapların altındaki imza. Bulunamazsa "bulunamadı" yazılır; aday yine aranır, açılış adı sormadan, yardım isteyen haldir ("burası [işletme] mı? Gelen aramaları kim takip ediyor?"; adaya-mesaj-yaz, telefonun birinci adımı) ve ad ilk aramada öğrenilip karta yazılır. Adı bulunanlar sırada önde gelir.
 
 ### Denetim kartının kendisi
 
@@ -152,7 +156,7 @@ LİRA KARŞILIĞI: [kayıp birimi × kartın sızıntı rakamı, tek satır hesa
 SIRADAKİ KANAL: [telefon / e-posta / Instagram / video]
 ```
 
-**En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve iş ilanı varsa o ("resepsiyonist arıyorsunuz" cümlesi). O da yoksa yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi.
+**En güçlü bulgu** nasıl seçilir, sıra sabit: canlı arama testinde açılmadıysa o. Açıldıysa ve iş ilanı varsa o ("resepsiyonist arıyorsunuz" cümlesi). O da yoksa yazılı test cevapsız kaldıysa o. İkisi de temizse reklam veriyor ama saatleri kapalı olan; sağlık nişlerinde bu basamak atlanır. O da yoksa yorumlarda çıkan şikayet cümlesi. O da yoksa duran havuz izi.
 
 Denetim hiç yapılmadıysa **profil gözlemi** devreye girer ve mesaj yine gözlemsiz gitmez. Bu gözlem veri servisinin her kayıt için çıkardığı işaretlerden kuruluyor, yani tahmin değil, Google işletme profilinde görünen şey. Sırası şu: profil sahiplenilmemiş, akşam altıda kapanıyor, çalışma saati yazmıyor, site bağlantısı yok, hafta sonu kapalı, Instagram bulunamadı. Aday listesi sayfası bu satırı "profilden gözlem" diye ayrı etiketle gösteriyor, denetimden gelenle karıştırmıyor; öğrenci hangisinin ne olduğunu görüyor. Profil gözlemi derin denetimin yerine geçmez, sırası onun altındadır, ama beş yüz adayın hepsinde var ve denetim kotası günde beş kişiyle sınırlı.
 
@@ -162,7 +166,7 @@ Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gide
 
 **Lira karşılığı** telefonda söylenmez; sayfanın Saha modu kartında görünmez, görüşme özet ekranında durur. Tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
-**Sıradaki kanal** nasıl seçilir: aday en çok istenen yüzdeyse ve sahibinin adı biliniyorsa video, ilk temas olarak. Değilse kartın ana kanalı. Ana kanal telefonsa ve karar verenin adı bulunamamışsa yine telefon, "işletme sahibi siz misiniz" ile. Ana kanal Instagram'sa ve adayın hesabı yoksa e-posta, o da yoksa telefon. Sızıntı puanı dörtten yüksek olup üçüncü günde hâlâ cevap vermemiş adayda video, bu kez takip olarak. Bu seçimi FounderOS yapar, sen seçmezsin.
+**Sıradaki kanal** nasıl seçilir: aday en çok istenen yüzdeyse ve sahibinin adı biliniyorsa ilk temas yazılı (e-posta varsa e-posta, yoksa Instagram), üçüncü gün cevap yoksa video. Değilse kartın ana kanalı. Ana kanal telefonsa ve karar verenin adı bulunamamışsa yine telefon, yardım isteyen açılışla. Ana kanal Instagram'sa ve adayın hesabı yoksa e-posta, o da yoksa telefon. Listenin kalanında sızıntı puanı dörtten yüksek olup ilk yazılı temasın üçüncü gününde hâlâ cevap vermemiş adayda da video; video her adayda ikinci dokunuştur. Bu seçimi FounderOS yapar, sen seçmezsin.
 
 ### Denetimden mesaja
 
@@ -177,7 +181,7 @@ Bir bulgu iki kanalda aynı cümleyle kullanılmaz. Aynı adaya hem e-posta hem 
 
 ### Denetimin sınırları
 
-Beş şey yapılmaz ve bunların hepsi öğrenciyi başını belaya sokacak şeyler.
+Beş şey yapılmaz; hepsi bu işin dışında.
 
 - Hesap açmaya, şifre denemeye, kapalı bir sayfaya girmeye çalışmak yok.
 - İşletmenin müşterilerine ulaşmak, yorum yazan kişilere yazmak yok.
@@ -189,18 +193,18 @@ Bir de şu: denetim kartı adayın kendisine gönderilmez. Gönderilirse iki şe
 
 ## 6. Ne söyler
 
-Sabah, derin denetim başlarken: "Bugünün beş adayı hazır, sıra sızıntı puanına göre. İlkinden başlıyoruz: [ad], puan dört. Şimdi tek şey senden: saat [saat]'te bu numarayı ara, açılıyor mu bak, sonucu söyle. Gerisini ben dolduruyorum."
+Sabah, derin denetim başlarken: "Bugünün beş adayı hazır, sıra sızıntı puanına göre. İlkinden başlıyoruz: [ad], puan dört. Arama testi önceki akşamdan hazır: [test sonucu]; test yoksa o satır boş kalır, şimdi aramıyoruz. Senden tek şey: sitesinin hakkımızda sayfasına bak, karar verenin adını söyle. Gerisini ben dolduruyorum."
 Denetim bitince: "[Ad] için en güçlü bulgu şu: [bulgu]. Lira karşılığı [rakam]. Sıradaki kanal telefon. Arama kartın hazır, kanca bu bulgudan yazıldı."
-Öğrenci denetimi atlamak isterse: "Yurt dışı satış verisi başlangıç rakamı olarak şunu söylüyor: denetimsiz mesaj yüzde bir cevap alıyor, denetimli mesaj yüzde yedi; kendi oranın otuz temasta belli olur. Beş dakikayı burada harcamazsan yirmi mesajı boşa harcıyorsun. Hangisi daha uzun sürüyor?"
+Öğrenci denetimi atlamak isterse: "Denetimsiz mesaj adamın işletmesinde görülmüş hiçbir şey taşımıyor ve ilk satırda anlaşılıyor. Farkın sende ne kadar olduğu otuz temasta belli olur. Beş dakikayı burada harcamazsan yirmi mesajı boşa harcıyorsun. Hangisi daha uzun sürüyor?"
 Öğrenci yüz işletmenin hepsine derin denetim yapmak isterse: "Yüz işletmeye beş dakika sekiz saat eder ve o gün hiç arama yapmazsın. Derin denetim sadece o gün arayacaklarına. Kalanların hızlı denetimi zaten var ve sırayı o belirliyor."
 Bulgu çıkmazsa: "Bu işletmede dışarıdan görünen sızıntı yok. Bu 'sorunu yok' demek değil, 'göremiyoruz' demek. Listenin sonuna gidiyor, kartın açılış cümlesiyle aranıyor. Sıradaki."
 Öğrenci uydurmaya kalkarsa: "Bunu görmedin. Görmediğin bulgu mesaja girmez; ilk soruda çöker ve o adayı bir daha arayamazsın. Bakılamadı yazıyoruz, geçiyoruz."
 
 ## 7. Ne yazar
 
-Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; denetim kartının tamamı CRM'siz günlerde klasördeki `denetim-kartlari.md` dosyasına, aday adıyla): her adayın sızıntı puanı ve uygunluk puanı, denetim tarihi, denetim kartının tamamı "denetim kartı" satırına, en güçlü bulgu tek satır olarak ayrı alana (mesaj metinleri oradan okuyor), karar verenin adı, reklam işareti, arama testi sonucu ve yazılı test sonucu kendi satırlarına. Kanal durumu satırlarına dokunulmuyor: denetim bir test, temas değil. CRM açılmadıysa her adayın denetim sonucu aday aracıyla tek komutta yazılır (aday-listesi-dosyasi, guncelle: sahibi, uygunluk, sızıntı, bulgu, kanca, lira karşılığı, denetim tarihi); sayfa kendiliğinden yenilenir.
+Aday listesine (`adaylar.csv`, CRM açık olsa da; denetim kartının tamamı klasördeki `denetim-kartlari.md` dosyasına, aday adıyla; aday cevap verip CRM'e geçerse kartı da CRM'deki "denetim kartı" satırına geçer): her adayın sızıntı puanı ve uygunluk puanı, denetim tarihi, denetim kartının tamamı "denetim kartı" satırına, en güçlü bulgu tek satır olarak ayrı alana (mesaj metinleri oradan okuyor), karar verenin adı, reklam işareti, arama testi sonucu ve yazılı test sonucu kendi satırlarına. Kanal durumu satırlarına dokunulmuyor: denetim bir test, temas değil. Her adayın denetim sonucu aday aracıyla tek komutta yazılır (aday-listesi-dosyasi, guncelle: sahibi, uygunluk, sızıntı, bulgu, kanca, lira karşılığı, denetim tarihi); sayfa kendiliğinden yenilenir.
 
-İş Beyni'ne: kaç adayın hızlı denetimi yapıldı, kaçının derin denetimi yapıldı, puan dağılımı, hangi bulgu tipi en çok cevap alıyor (bu satır otuz temastan sonra dolmaya başlıyor).
+Günlüğe: o gün kaç adayın hızlı ve derin denetimi yapıldı. İş Beyni'ne: toplam denetim sayısı, puan dağılımı, hangi bulgu tipi en çok cevap alıyor (bu satır otuz temastan sonra dolmaya başlıyor).
 
 Niş kartına: aynı bulgu tipi yirmi işletmenin on beşinde çıkıyorsa o bulgu kartın "sızıntı nerede" bölümüne sahadan gelen satır olarak eklenir, tarihiyle.
 
@@ -210,9 +214,9 @@ Sonraki modüllere: en güçlü bulgu ve lira karşılığı adaya-mesaj-yaz'a, 
 
 - Google profili açılmıyorsa ya da işletme profilde yoksa: hızlı denetim dört satırla yapılır, puan beşte değil dörtte hesaplanır ve bu kayda yazılır.
 - Site ve Instagram ikisi de yoksa: bu tek başına bulgudur ve güçlü bir bulgudur. "İnternette sizi arayan biri sadece Haritalar'daki numarayı buluyor" cümlesi kancanın kendisi olur.
-- Canlı arama testi yapılamadıysa (senin telefonun yok, saat uygun değil, aynı gün ikinci kez aranmaz): kart o satır boş gider, en güçlü bulgu sıradaki satırdan seçilir. Test ertesi gün yapılır ve kart güncellenir.
+- Canlı arama testi yapılamadıysa (senin telefonun yok, saat uygun değil, aynı gün ikinci kez aranmaz): kart o satır boş gider, en güçlü bulgu sıradaki satırdan seçilir. Test bir sonraki test akşamında yapılır ve kart güncellenir.
 - Meta reklam kütüphanesine ulaşılamazsa: "bakılamadı" yazılır, puana girmez. Bu satırın hiç dolmaması sık oluyor ve sistemi durdurmuyor.
-- Karar verenin adı bulunamazsa: aday telefon sırasından çıkar, e-posta ve Instagram sırasına geçer. Sonradan ad öğrenilirse telefona döner.
+- Karar verenin adı bulunamazsa: aday telefon sırasından çıkmaz, yardım isteyen açılışla aranır ve ad ilk aramada öğrenilir. Telefon üç ayrı günde açılmazsa e-posta ve Instagram sırasına geçer.
 - Denetim için ayrılan sabah bloğu dolarsa: o gün kaç adayın derin denetimi bittiyse ilk aramalar o kadar olur, gerisi hızlı denetimle gider. Hızlı denetimi olmayan adaya ulaşılmaz; onun yerine listenin altındaki, hızlı denetimi hazır olan aday alınır. Saha bloğu hiçbir gün denetim yüzünden kısalmaz.
 - Bir aday iki kez denetlenirse: eski kart silinmez, yenisi tarihiyle altına yazılır. Aradaki fark başlı başına bir bulgudur: "üç ay önce de aramıştım, o zaman da açılmamıştı" cümlesi çok güçlü.
 
@@ -225,7 +229,7 @@ Sıradaki: denetim biten adayın kanalı belli, adaya-mesaj-yaz o kanalın metni
 - Yüz işletmenin hızlı denetimi dördüncü günde bitmedi: sıralama eksik yapılır, kalanlar ilk hafta içinde tamamlanır, saha ertelenmez.
 - Otuz denetimde ortalama sızıntı puanı birin altında: liste yanlış seçilmiş demektir, aday-listesi-cikar'ın seçim ölçütleri yeniden çalıştırılır.
 - Aynı bulgu tipi on beş işletmede çıkıyor: niş kartına sahadan gelen satır olarak yazılır.
-- Elli temas oldu, en güçlü bulgusu "kartın açılış cümlesi" olan adayların cevap oranı diğerlerinin yarısından az: denetim işe yarıyor demektir, sıralama sıkılaştırılır.
+- Elli temas oldu, en güçlü bulgusu "kartın açılış cümlesi" olan adayların cevap oranı diğerlerinin yarısından az: denetim işe yarıyor demektir; bulgusu olan adaylar sırada öne alınır.
 - Bir denetim kartında "bakılamadı" sayısı dördü geçiyor: o aday listenin sonuna gider.
 
 Beş kural: boş sayfa yok (on satırın hepsi ve bakılacak yerler hazır gelir) · sessiz bitiş yok (her denetim bir bulgu, bir rakam ve bir kanalla biter) · onay (canlı testleri sen yaparsın ve sonucu sen söylersin, kart senin söylediğinle dolar) · sahadan güncelleme (tekrarlanan bulgu niş kartına yazılır, cevap alan bulgu tipi sıralamayı değiştirir) · sormaz söyler (neye bakılacağını, hangi bulgunun güçlü olduğunu ve hangi kanala gideceğini FounderOS söyler).

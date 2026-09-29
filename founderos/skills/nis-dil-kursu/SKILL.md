@@ -6,6 +6,8 @@ description: "Sadece yetiskinlere yonelik dil ve mesleki egitim kurslari nisinin
 
 # Yetişkinlere yönelik dil ve mesleki eğitim kursları
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 **Kapsam.** MEB ruhsatlı özel çeşitli kurslar: yabancı dil kursları, mesleki ve teknik kurslar, bilgisayar ve yazılım kursları, sınav hazırlık kursları (yetişkin: KPSS, YDS, ALES). Dahil olmayan: okul çağı çocuğuna yönelik etüt ve dershaneler (reklam ve veri kuralları çok daha sert), üniversite hazırlık, sürücü kursu (ayrı mevzuat). Google Haritalar'da "dil kursu", "İngilizce kursu", "mesleki eğitim kursu", "bilgisayar kursu" olarak geçiyorlar; MEB'in ruhsatlı kurum listesi il ve ilçe bazında aranabiliyor (ookgm.meb.gov.tr, kurum türü "Özel Çeşitli Kurslar"). İlk odak için en uygun büyüklük: düzenli başvuru alan, kayıt görüşmesi ve seviye tespiti yapan, birden fazla sınıfı olan kurum.
 
 Müşteri yolculuğu: ikisi birlikte (bilgi isteyen kişi seviye tespiti ya da danışmanlık görüşmesine çağrılır, sonra kur ve ödeme planı teklifi, sonra kayıt). Teslimat bu yola göre kurulur; sahada tersi görülürse "Sahadan dolacak" bölümüne yazılır.
@@ -30,7 +32,7 @@ Kayıp birimi: 8.000 ile 40.000 lira (bir kaçan kayıt; kartın kur fiyat aral�
 
 **Açılış cümlesi.** "Merhaba, ben [ad]. Dil kurslarıyla çalışıyorum. Eylül dalgasında bilgi isteyip seviye tespitine gelmeyen kişileri geri kazandırıyoruz; kurumunuzda bilgi isteyen her on kişiden kaçı kayıt oluyor, biliyor musunuz?" Sahadan doğrulanacak.
 
-**Duran havuz.** Kurumun elinde iki liste var: bilgi isteyip kayıt olmamış başvurular (en değerlisi, çoğu kurumda Excel'de ya da danışmanın telefonunda) ve kuru bitip devam etmeyen eski öğrenciler. İkincisine "bir sonraki kur" mesajı meşru bir tekrar randevu zinciridir; birincisine sezon başında "yeni dönem kontenjanı" mesajı. İki liste de İYS'ye tabidir.
+**Duran havuz.** Kurumun elinde iki liste var: bilgi isteyip kayıt olmamış başvurular (en değerlisi, çoğu kurumda Excel'de ya da danışmanın telefonunda) ve kuru bitip devam etmeyen eski öğrenciler. İkincisine "bir sonraki kur" mesajı meşru bir tekrar randevu zinciridir; birincisine sezon başında "yeni dönem kontenjanı" mesajı. İki listeye de yalnız mesaj izni kayıtlı numaralar girer; öğrenciye kural anlatılmaz, öğrenci yalnız sonucu duyar.
 
 **Asistan kuralları.** Kur fiyatını bilgi bankasında varsa söyler, yoksa "seviye tespitinden sonra size uygun kur ve ödeme planını danışmanınız iletsin" der. Seviye tespiti randevusu yazar. En fazla üç soru: hangi dil ya da alan, hedef (iş, sınav, yurt dışı), tercih edilen gün ve saat. "Kesin başarı", "garanti geçersiniz", "iki ayda konuşursunuz" demez; bu MEB kuralı. Kayıtlı öğrencinin ders, devamsızlık ve sınav bilgisini vermez, danışmana aktarır. Takip zinciri bu nişte sert sınırlı: üç mesajdan sonra susar ve "aramayın" gelirse kapanır, çünkü sektörün şikayeti aşırı aramadan.
 
@@ -60,13 +62,13 @@ En güçlü üç itiraz: eğitim danışmanımız var, merkez yazılım veriyor,
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Eylül dalgasında bilgi isteyip seviye tespitine gelmeyen kişileri sonradan kurumdan biri mi arıyor, yoksa o başvurular danışmanın telefonunda mı kalıyor?"
 
 İşleyiş sorusu: "Kayıt haftasında danışman görüşmedeyken, ön büro telefondayken akşam Instagram'dan ya da WhatsApp'tan 'kur ne zaman açılıyor, fiyat ne' diye yazan kişi ne yapıyor, cevabı bekliyor mu, başka kursa mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: danışman görüşmedeyken ya da kurum kapalıyken WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye dakikalar içinde cevap veriyor, hangi dil ya da alan, hedefi ne, hangi gün uygun diye sorup seviye tespiti randevusuna yazıyor, kur ve ödeme planı için bilgileri danışmana iletiyor; bilgi isteyip kayıt olmayana ve kuru bitip devam etmeyen eski öğrenciye de dönem başında sizin adınıza, en fazla üç mesajla hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç kursla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: danışman görüşmedeyken ya da kurum kapalıyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye de dakikalar içinde dönüyor; hangi dil ya da alan, hedefi ne, hangi gün uygun diye sorup seviye tespiti randevusuna yazıyor, kur ve ödeme planı için bilgileri danışmana iletiyor; bilgi isteyip kayıt olmayana ve kuru bitip devam etmeyen eski öğrenciye de dönem başında sizin adınıza, en fazla üç mesajla hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç kursla başlıyorum."
 
 Çalışan açarsa: "Danışman görüşmedeyken ve kurum kapalıyken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde bilgi isteyen kişiye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman kurumda olur?"
 
@@ -76,7 +78,7 @@ Karşı taraf bunu söylerse:
 - "Merkez bize yazılım veriyor." Söyle: "Anladım, merkezin yazılımı varsa üstüne bir şey koymam. Tek şunu sorayım: o yazılım akşam Instagram'a ya da WhatsApp'a yazan kişiye dakikalar içinde cevap veriyor mu, yoksa sabah danışman gelince mi dönülüyor?" Ne için: zincir şubesinde merkez yazılımının ne yaptığını öğrenmek; kartta zincir şubesinin ilk aday olmadığı, yerel tek şubeli kurumun önde olduğu yazıyor. Sonra: "cevap veriyor" derse teşekkür et ve kapat; FounderOS uygunluk sütununa "merkez yazılımı" yazar. "Sabah dönülüyor" derse görüşme iste; franchise sahibinin merkeze sorması gerekebilir, bunu görüşmede sor.
 - "Kayıt sezonluk, sistem yılın yarısı boş durur." Söyle: "Dalga eylülde ve ocakta geliyor, doğru; sistemin sezon dışı işi de o dalgaya hazırlık: bilgi isteyip kayıt olmayanların listesi ve kuru bitip devam etmeyen eski öğrenciler. Geçen dönem bilgi isteyip kayıt olmayanların listesi şu an kurumda duruyor mu, yoksa danışmanın telefonuyla birlikte mi gitti?" Ne için: sezonu tartışmamak, sezon dışı iki listenin var olup olmadığını sormak; kartta bu iki listeyi sezon başında arayan kurumun dalgayı önde karşıladığı yazıyor. Sonra: "duruyor" derse "o listeye dönem başında sizin adınıza yazan tam bu" de ve saat iste; "yok" derse "o zaman bu dönemden itibaren birikmesi için kuruyorum" de ve saat iste; görüşmeye hayır derse teşekkür et, kapat; FounderOS "sonra, sezon başı" yazar.
 - "Fiyatı danışman söyler, sistem söyleyemez." Söyle: "Söylemiyor zaten; hangi dil ya da alan, hedef ne, hangi gün uygun diye soruyor, seviye tespiti randevusuna yazıyor, kur ve ödeme planını tespitten sonra danışman veriyor. Böyle olsa kurumunuzda işe yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını ve nerede durduğunu kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
-- "Öğrenci verisi hassas." Söyle: "Doğru, o yüzden sistem kayıtlı öğrencinin ders, devamsızlık ve sınav bilgisine hiç dokunmuyor; yalnız başvuru aşamasında çalışıyor, hangi dil, hedef ne, hangi gün uygun, o kadar. 'Kesin başarı', 'garanti' gibi bir cümle de kurmuyor. Başvuru formunuzda açık rıza satırı şu an var mı?" Ne için: veri kaygısını kabul edip sistemin nerede durduğunu kartın asistan ve yasal kurallarıyla söylemek. Sonra: "var" derse görüşme iste; "yok" derse "görüşmede onu da birlikte ekleriz" de ve saat iste; "yine de istemem" derse teşekkür et ve kapat.
+- "Öğrenci verisi hassas." Söyle: "Doğru, o yüzden sistem kayıtlı öğrencinin ders, devamsızlık ve sınav bilgisine hiç dokunmuyor; yalnız başvuru aşamasında çalışıyor, hangi dil, hedef ne, hangi gün uygun, o kadar. 'Kesin başarı', 'garanti' gibi bir cümle de kurmuyor. Bu sınırlarla kurumunuzda işe yarar mı?" Ne için: veri kaygısını kabul edip sistemin nerede durduğunu kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "yine de istemem" derse teşekkür et ve kapat.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
 İsim kökleri: Seviye, Kademe, Lingo. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.

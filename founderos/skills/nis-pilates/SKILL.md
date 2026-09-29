@@ -6,6 +6,8 @@ description: "Sadece pilates, PT ve butik studyo nisinin karti: rakamlar, itiraz
 
 # Pilates, PT ve butik stüdyo
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Reformer ve mat pilates stüdyoları, bağımsız çalışan kişisel antrenörler (PT), EMS (elektrostimülasyon) stüdyoları, butik yoga stüdyoları. Büyük zincir spor salonları (klasik gym) hariç. Google Haritalar'da "Pilates stüdyosu", "Spor kulübü", "Fitness merkezi", "Yoga stüdyosu" kategorileri altında geçiyorlar. EMS tarafında Fitamine kendini "EMS antrenman merkezi" olarak tanımlıyor (fitamine.com.tr). İlk odak için en uygun büyüklük: özel ders ya da çok seanslı paket satan, birden fazla eğitmeni olan stüdyo; deneme dersinden üyeliğe geçiş ve yenileme takibi sistemin asıl işi. Müşteri değeri şartı: tek eğitmenli küçük stüdyo ve klasik spor salonu formülü taşımıyor, kapsam dışı; paket fiyatı yüksek ve üye sayısı çok olan stüdyolar ilk odak.
 
@@ -91,13 +93,13 @@ En güçlü üç itiraz: WhatsApp'a ben cevap veriyorum, müşterim zaten sadık
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Paketi bitip yenilemeyen üyeleri sonradan stüdyodan biri mi arıyor, yoksa dönerse kendisi mi dönüyor?"
 
 İşleyiş sorusu: "Siz derste, reformerın başında üyeyle ilgilenirken WhatsApp'tan ya da Instagram'dan 'deneme dersi var mı, fiyat ne' diye yazan kişi ne yapıyor, cevabı bekliyor mu, başka stüdyoya mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz derste ya da üyenin başındayken WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye dakikalar içinde cevap veriyor, reformer mı mat mı PT mi EMS mi istediğini, daha önce yapıp yapmadığını ve uygun gün saatini sorup deneme dersi randevusuna yazıyor; paketi biten ya da yazın düşüp dönmeyen üyeye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz derste ya da üyenin başındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye de dakikalar içinde dönüyor; reformer mı mat mı PT mi EMS mi istediğini, daha önce yapıp yapmadığını ve uygun gün saatini sorup deneme dersi randevusuna yazıyor; paketi biten ya da yazın düşüp dönmeyen üyeye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
 
 Çalışan açarsa: "Eğitmen derste, herkes üyenin başındayken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde deneme dersi isteyene cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman stüdyoda olur?"
 

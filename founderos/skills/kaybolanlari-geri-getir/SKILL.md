@@ -6,9 +6,11 @@ description: "Müşterinin duran havuzu: eski müşteri listesinin uyandırılma
 
 # kaybolanlari-geri-getir
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Müşterinin elindeki eski müşteri listesine mesaj gönderip randevu ya da teklif çıkaran modül; iş modelindeki adıyla Eski Müşteri ve Başvuruyu Yeniden Kazanma (Database Reactivation). Aynı modül, hizmet bittikten sonraki üç devam zincirinin de sahibidir: tekrar randevu, ek hizmet, referans. Teslimatın yedinci gününden on yedinci gününe kadar çalışır. Hazırlığı daha erken başlar: mesaj metinleri kurulum görüşmesinin yapıldığı gün onaya gönderilir. Modül, FounderOS'un belli bir işi yapan parçasıdır.
+Müşterinin elindeki eski müşteri listesine mesaj gönderip randevu ya da teklif çıkaran modül; iş modelindeki adıyla Eski Müşteri ve Başvuruyu Yeniden Kazanma (Database Reactivation). Aynı modül, hizmet bittikten sonraki üç devam zincirinin de sahibidir: tekrar randevu, ek hizmet, referans. Teslimatın yedinci gününden on yedinci gününe kadar çalışır. Hazırlığı daha erken başlar: mesaj metinlerini müşteri kurulum görüşmesinde onaylar, Meta'nın onayına ikinci gün, hat CRM'e bağlandığı gün gider. Modül, FounderOS'un belli bir işi yapan parçasıdır.
 
 Buradaki gün numaraları müşterinin teslimat takvimindendir, senin doksan gününden değil.
 
@@ -29,7 +31,7 @@ Pazarlamadaki karşılığı: dört sızıntının dördüncüsü. Dört sızın
 
 ## 2. Ne zaman çalışır
 
-- Kurulum görüşmesinin yapıldığı gün: bu modülün üç mesaj metni de hazır kurulum paketinden çıkar ve diğer şablonlarla birlikte onaya gönderilir. Bu işi musteri-sistemini-kur yürütür.
+- Kurulum görüşmesinin yapıldığı gün: bu modülün üç mesaj metni de hazır kurulum paketinden çıkar ve müşteri onaylar. İkinci gün, hat CRM'e bağlanınca diğer şablonlarla birlikte Meta'nın onayına gider. Bu işi musteri-sistemini-kur yürütür.
 - Yedinci gün: sahibin onayı elinde olur. Aynı gün listeyi FounderOS ikiye ayırır ve temizler, sen sonucu onaylarsın.
 - Sekizinci gün: ilk elli kişi. Bu parti aynı zamanda bir testtir.
 - Dokuzuncu günden on ikinci güne: günde en çok doksan yeni kişi.
@@ -42,14 +44,14 @@ Pazarlamadaki karşılığı: dört sızıntının dördüncüsü. Dört sızın
 
 ## 3. Ne okur
 
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): duran havuz listesi, sahibin yazılı onayı, İYS sorgusunun yazılı sonucu, müşterinin çalışma saatleri, devri alacak kişinin adı. İYS, bir işletmenin insanlara toplu mesaj gönderebilmesi için gereken izinlerin tutulduğu devlet sistemidir.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya): duran havuz listesi, sahibin yazılı onayı, karşılama formundaki mesaj izni sorusunun cevabı ve müşterinin yazılı verdiği izinli numara listesi, müşterinin çalışma saatleri, devri alacak kişinin adı. Mesaj izni kaydı, işletmenin toplu mesaj izinlerini tuttuğu resmi kayıttır; öğrenciye kendiliğinden anlatılmaz.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): Duran havuz bölümündeki kimlerin geri çağrılacağı ve uyandırma sebebi; tekrar aralığı orada yazılı değilse Sahadan dolacak bölümüne bakılır. Ayrıca yasal sınırlar, işletmecinin kendi kullandığı cümleler, sezon.
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): yüklenen kayıtlar, gönderim ve cevap sayıları, numaranın kalite notu.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): [21/28] günün takvimi, sistemin adı.
 
 ## 4. Ne sorar
 
-Sormaz. Kimin listeye gireceğini İYS sonucundan, mesajın sebebini karttan çıkarır.
+Sormaz. Kimin listeye gireceğini müşterinin izin cevabından, mesajın sebebini karttan çıkarır.
 
 Senden aldığı üç şey: müşterinin metne yazılı onayı; ilk elli kişilik partinin sonucu; kızgın cevap geldiyse haberi. Son ikisini CRM'de göreceksin. Dokuzuncu günün sabah bloğunda birinci partinin sayıları önüne gelir; kızgın işaretlenen her konuşma da ayrı bildirim olarak düşer.
 
@@ -57,23 +59,23 @@ Senden aldığı üç şey: müşterinin metne yazılı onayı; ilk elli kişili
 
 ### Önce izin, sonra mesaj
 
-Sistemin en çok dikkat isteyen yeri burası. Yanlış yapılırsa müşteri ceza yer.
+Kural: listeye yalnız mesaj izni kayıtlı numaralar girer. Sağlık nişlerinde ayrıca kişinin bilgi kullanım onayı gerekir.
 
-Kural tek cümle: İYS izni olmayan numaraya bu mesaj gitmez.
+Bu kural FounderOS'un kendi işidir. Öğrenciye kural anlatılmaz; öğrenci yalnız sonucu duyar: "Eski listeden izni olan 212 kişiye mesaj gidecek." ya da "Bu parça bu müşteride şimdilik açılmıyor; ücreti ona göre ayarladım." Sayı örnektir, gerçeği ayrımdan gelir. Ücret cümlesi yalnız kurulamayan parça indirimi varsa söylenir.
 
-Sorguyu müşteri kendi hesabından yapar ve sonucu sana yazılı verir. Sen sorgulamazsın.
+Hangi numaraların izinli olduğunu müşteri kendi kaydından çıkarır ve yazılı verir. Öğrenci de FounderOS da sorgu yapmaz.
 
-### Müşteri İYS'ye kayıtlı değilse ya da kaydını bilmiyorsa
+### İzin cevabı nereden gelir
 
-Bu çok sık olur ve korkulacak bir şey değil. Küçük işletmelerin çoğu bu kaydı ya hiç açmamıştır ya da muhasebecisi açmıştır, kendisi bilmez. Müşteriye şunu dersin: "Bu kayıt olmadan eski listene mesaj göndermiyoruz, o kadar. Sistemin geri kalanı çalışmaya devam ediyor." Sonra tek işi verirsin: muhasebecisine ya da mali müşavirine sorsun, kaydı var mı, varsa giriş bilgisi kimde. Cevap çoğunlukla bir günde gelir. Kaydı yoksa açtırmak da onun kararı ve onun işi; sen bu işi onun adına yapmazsın, ücretini de sen ödemezsin. Ceza, denetim ya da kanun maddesi diye korkutmazsın; sadece "izinsiz numaraya göndermiyoruz" dersin ve konuyu kapatırsın. Yedinci güne kadar yazılı bir cevap gelmezse duran havuz bölümü ilk turda kapsam dışıdır, güvencenin sonucuna sayılmaz ve müşteriye o gün yazılı bildirilir. Kayıt sonradan çıkarsa parça ikinci turda kurulur.
+İzin cevabı karşılama formundaki sorudan gelir; FounderOS cevabı formdan okur. Formda cevap yoksa öğrenciye müşteriye gidecek tek cümle hazır verilir, öğrenci onu olduğu gibi gönderir ve açıklamaz: "Eski müşterilerinize toplu mesaj gönderme izni kaydınız (İYS) var mı? Bilmiyorsanız muhasebeciniz bilir." Kayıt varsa ve izinli numaralar listede işaretli gelmediyse ikinci hazır cümle gider: "Listede mesaj izni kayıtlı numaraları işaretleyip gönderebilir misiniz?" Öğrenci ne olduğunu sorarsa tek cümle yeter: "İşletmenin toplu mesaj izinlerini tuttuğu kayıt; cevabı müşteri biliyor, biz sonucu kullanıyoruz." Kaydı yoksa kayıt açtırmak müşterinin kendi işidir; öğrenci bunu müşteri adına yapmaz, ücretini ödemez, müşteriye konuyu anlatmaz. Yedinci güne kadar yazılı cevap gelmezse duran havuz ilk turda kapsam dışıdır, güvencenin sonucuna sayılmaz ve müşteriye o gün yazılı bildirilir; öğrenci yalnız sonucu duyar. Kayıt sonradan çıkarsa parça ikinci turda kurulur.
 
 Listeyi FounderOS ikiye ayırır:
 1. İzinli olanlar: mesaj buraya gider.
 2. İzni olmayanlar: sistem bunlara hiçbir mesaj göndermez, hiçbir arama listesi çıkarmaz. CRM'de işaretli kalırlar. Kendi kayıtlarıyla ne yapacağına müşteri karar verir, bu senin işin değil.
 
-Sağlık bilgisi taşıyan nişlerde (diş, estetik, güzellik salonunun tıbbi işlemleri, pilates) bir kontrol daha var: İYS izni tek başına yetmez, kişinin ayrıca açık rıza vermiş olması gerekir. Açık rıza, kişinin "bu bilgimi şu iş için kullanabilirsiniz" diye ayrıca verdiği izindir. Müşteri bunu yazılı teyit etmezse o kayıt listeye girmez.
+Sağlık bilgisi taşıyan nişlerde (diş, estetik, güzellik salonunun tıbbi işlemleri, pilates) bir kontrol daha var: mesaj izni tek başına yetmez, kişinin ayrıca bilgi kullanım onayı gerekir. Bu, kişinin "bu bilgimi şu iş için kullanabilirsiniz" diye ayrıca verdiği onaydır. Müşteri bunu yazılı teyit etmezse o kayıt listeye girmez. Teyit müşteriye giden hazır cümleyle alınır, öğrenci açıklamaz: "Bu listede, bilgilerinin bu tür hatırlatmalar için kullanılmasına onay vermiş kişileri işaretleyebilir misiniz?"
 
-Bu işin kanunu Ticari İletişim ve Ticari Elektronik İletiler Yönetmeliği'dir. Üç şey söylüyor. Birincisi: izni işletmenin kendisi alır, senin adına alınmış izin işe yaramaz. İkincisi: mevcut müşteriye gönderilecek bildirimler için dar bir istisna var, yalnız aldığı hizmetteki değişiklik, kullanım ve bakım için. Üçüncüsü: abonelik, ödeme, teslimat gibi bildirimlerin içinde hiçbir mal ya da hizmet özendirilemez.
+Üç sınır daha var; üçü de FounderOS'un kendi kuralıdır ve öğrenciye anlatılmaz. Birincisi: izin işletmenin kendi adına kayıtlı olmalı; öğrencinin adına alınmış izin sayılmaz. İkincisi: izni olmayan eski müşteriye "bakım bildirimi" diye istisna yolundan yazılmaz. Üçüncüsü: randevu, ödeme ya da teslimat bildiriminin içine hiçbir hizmetin tanıtımı konmaz.
 
 Bakım hatırlatması ile pazarlama arasındaki sınırın tam olarak nerede olduğu belli değil. Bu yüzden biz istisnaya güvenmiyoruz, izne bakıyoruz.
 
@@ -102,16 +104,16 @@ Kartta yazan dil uyarıları aynen uygulanır, tek kelimesi değişmez:
 - Haşerede "kesin çözüm" ve "garanti" kelimeleri geçmez.
 - Sigortada asistan hangi acente adına konuştuğunu yazar, sigorta şirketiymiş gibi görünmez.
 - Güzellik ve kuaförde tıbbi işlem tanıtımı, öncesi sonrası fotoğrafı ve "hasta" kelimesi yok.
-- Sağlıkta tanıtım kurallarına göre diş ve estetikte indirim, kampanya, hediye ve çekiliş yazılmaz. Fiyat da yazılmaz. Hatırlatma kişinin kendi tedavisine bağlanır. Bu sınırların son yorumunu kliniğin kendi hukukçusu yapar.
-- Elektrikte "düzenli kontrol zamanı geldi" cümlesinin kanuni bir dayanağı olup olmadığı belli değil. Bu nişte sebep sözleşmeli bakımdır; kanuni zorunlulukmuş gibi yazılmaz.
+- Diş ve estetikte indirim, kampanya, hediye ve çekiliş yazılmaz. Fiyat da yazılmaz. Hatırlatma kişinin kendi tedavisine bağlanır. Metni klinik yazılı onaylar; kliniğin "onaylıyorum"u yeter.
+- Elektrikte sebep sözleşmeli bakımdır. Mesaj bir zorunluluk varmış gibi yazılmaz; "düzenli kontrol zamanı geldi" gibi bir kural ima eden cümle kullanılmaz.
 
 ### Sağlık nişlerinin ayrı yolu
 
-Diş ve estetikte sağlık tanıtım yönetmeliği, iletişim kanallarıyla belirli bir hekime ya da kuruma yönlendirme yapılamayacağını söylüyor. Bu maddenin, kliniğin kendi kayıtlı hastasına gönderdiği tek tek hatırlatmayı da kapsayıp kapsamadığı belli değil.
+Diş ve estetikte mesajla belirli bir hekime ya da kliniğe yönlendiren tanıtım yapılmaz. Kliniğin kendi hastasına giden tek tek hatırlatmanın bu sınıra girip girmediği net değil; o yüzden en güvenli yol seçilir.
 
 Bu yüzden bu iki nişte ilk turda yalnız iki tip yazılır: işlemi ya da tedavisi yarıda kalanlar, ve kliniğin kendisinin verdiği kontrol tarihi gelmiş olanlar. Kliniğin verdiği bir tarih yoksa o kişiye yazılmaz.
 
-Mesaj kişinin kendi tedavisine bağlanır. Hizmet anlatılmaz, fiyat yazılmaz, kampanya olmaz. Metni klinik onaylar ve kendi hukukçusuna sorar. Onay gelmezse bu parça ilk turda kapsam dışıdır ve müşteriye yazılı bildirilir.
+Mesaj kişinin kendi tedavisine bağlanır. Hizmet anlatılmaz, fiyat yazılmaz, kampanya olmaz. Metni klinik yazılı onaylar; kliniğin "onaylıyorum"u yeter, kliniğin kendi danışmanına sorması kliniğin işidir. Onay gelmezse bu parça ilk turda kapsam dışıdır ve müşteriye yazılı bildirilir; öğrenci yalnız sonucu duyar.
 
 ### Üç mesaj, fazlası yok
 
@@ -119,7 +121,7 @@ Mesajlar müşterinin kendi WhatsApp hattından gider.
 
 Üçü de onaylı şablondur. Onaylı şablon, WhatsApp'ın sahibi Meta'nın önceden onayladığı hazır mesaj metnidir. Üçünde de buna gerek var, çünkü üçünde de karşı taraf son yirmi dört saatte yazmamış oluyor.
 
-Meta her şablonu bir kutuya koyar: ya "hizmet" ya "pazarlama". Bu seçim şablon onaya gönderilirken yapılır ve mesajın hangi sınırlara tabi olacağını belirler. Seçim nişe göre değişir: bakım ve kontrol hatırlatmasında hizmet kutusu denenir, reddedilirse gönderim durur ve metin sadeleşir; kampanya dili taşıyan nişlerde pazarlama kutusu seçilir. Bunu tek tip yapmıyoruz. Sebebi iki tane. Birincisi: sağlıkta mesajın "pazarlama" diye kaydedilmesi sonradan işletmenin aleyhine kanıt olur. İkincisi: kişi başına düşen pazarlama sınırı yalnız pazarlama mesajlarını sayıyor.
+Meta her şablonu bir kutuya koyar: ya "hizmet" ya "pazarlama". Bu seçim şablon onaya gönderilirken yapılır ve mesajın hangi sınırlara tabi olacağını belirler. Seçim nişe göre değişir: bakım ve kontrol hatırlatmasında hizmet kutusu denenir, reddedilirse gönderim durur ve metin sadeleşir; kampanya dili taşıyan nişlerde pazarlama kutusu seçilir. Bunu tek tip yapmıyoruz. Sebebi iki tane. Birincisi: sağlıkta mesaj bir hatırlatmadır, pazarlama kutusuna konmaz. İkincisi: kişi başına düşen pazarlama sınırı yalnız pazarlama mesajlarını sayıyor.
 
 Zamanlama:
 1. Gün sıfır: sebep ve tek soru.
@@ -134,7 +136,7 @@ Birinci mesaj: "Merhaba [ad], ben [iş adı]. [Sebep: geçen yıl bu dönemde ko
 
 Üçüncü mesaj: "Merhaba [ad], [iş adı]. Bu konuda son yazışım. İlgilenirseniz tek kelime yeterli; istemezseniz rahatsız etmeyeyim."
 
-Her mesajın altında tek satır bulunur: "[İş adı] · [MERSİS ya da vergi numarası] · Mesaj istemiyorsanız 'çıkar' yazın." MERSİS numarası, işletmenin ticaret sicilindeki kayıt numarasıdır; müşteri bunu kendi belgelerinden bulup sana verir, bulamazsa vergi numarası yazılır. Bu satır her mesajda var, çünkü kanun her ticari mesajda çıkma yolu ve işletmeyi tanıtan bilgi arıyor.
+Her mesajın altında tek satır bulunur: "[İş adı] · [MERSİS ya da vergi numarası] · Mesaj istemiyorsanız 'çıkar' yazın." Numara, kurulumda müşteriden alınan satırdan gelir; MERSİS numarası yoksa vergi numarası yazılır. Bu satır her mesajda durur ve hiç çıkarılmaz: işletmeyi tanıtır, kişiye çıkma yolunu gösterir.
 
 Mesaj kısa olur, yaklaşık yüz altmış harf, tek soru. Uzun mesaj okunmuyor.
 
@@ -165,7 +167,7 @@ Kişi başına düşen bir sınır daha var: WhatsApp bir kişinin ne kadar paza
 
 WhatsApp her hatta bir kalite notu veriyor: yeşil, sarı, kırmızı. Notu belirleyen şey son yedi günde kaç kişinin engellediği ve şikâyet ettiği.
 
-Not düşerse ne oluyor: hat önce işaretleniyor, yedi gün içinde düzelmezse günlük sınırı bir kademe iniyor. Sınır dolduğunda yeni sohbet açılamıyor, yalnız gelen mesaja cevap verilebiliyor. Şablon tarafında da ceza var: bir şablon üç saat, ikinci kez altı saat duraklatılıyor, üçüncüde tamamen kapanıyor. Hesap tarafında da kademe var. Önce uyarı gelir. Sonra bir ile üç gün arası engel. Sonra beş, yedi ya da otuz gün engel. En sonunda süresiz kilit.
+Not düşerse ne oluyor: hat önce işaretleniyor, yedi gün içinde düzelmezse günlük sınırı bir kademe iniyor. Sınır dolduğunda yeni sohbet açılamıyor, yalnız gelen mesaja cevap verilebiliyor. Şablon da duraklatılabiliyor: önce üç saat, ikinci kez altı saat, üçüncüde o şablon kapanıyor. Uyarılar sürerse hat günlerce, en sonunda süresiz olarak mesaj başlatamaz hale gelebiliyor. Bunlar FounderOS'un bilgisidir, öğrenciye tehdit olarak anlatılmaz; öğrenci yalnız o günün sayısını ve işini duyar ("Not sarı, bugün yarım parti gidiyor.").
 
 Üç durak kuralı:
 1. İlk elli kişi gittikten sonra yirmi dört saat beklenir.
@@ -186,7 +188,7 @@ Sırayla şunlar listeden çıkar:
 
 Sıra en yeni işten en eskiye. Kartın doğal tekrar aralığının iki katından eski kayıt birinci aya girmez, ikinci aya kalır. Örnek: altı ayda bir kontrol olan bir nişte, son işi bir yıldan eski olan kayıt bekler.
 
-Liste müşterinindir. Senin tarafında kural sabit: iş bitince listeyi silersin. Listeyi ne kadar saklayacağına müşteri karar verir; kanun bu süreyi ona bırakıyor. Saklama süresi sorusu gelirse müşterinin hukukçusuna gider.
+Liste müşterinindir. Senin tarafında kural sabit: iş bitince listeyi silersin; FounderOS silme gününü takvime koyar ve o gün hatırlatır. Listeyi ne kadar saklayacağına müşteri karar verir. Saklama süresiyle ilgili bir soru gelirse cevaplamazsın; FounderOS "Bunu ekip netleştiriyor." der ve destek adresine (destek@founderos.so) gidecek tek satırı müşterinin adıyla hazır verir, sen gönderirsin. İş durmaz.
 
 ### Cevap yönetimi
 
@@ -194,8 +196,8 @@ Gelen cevabı asistan karşılar. Beş hal var:
 1. İlgileniyor: asistan en fazla üç soru sorar ve randevuyu yazar.
 2. İlgilenmiyor: zincir durur, kayıt kapanır.
 3. Kızgın: asistanın öfke devri işler, iş insana geçer.
-4. "Bir daha yazmayın" diyor: devir yok, zincir durur. O numara çıkma talebi olarak işaretlenir ve müşteriye bildirilir; kanun ret talebinin üç iş günü içinde işlenmesini istiyor.
-   Burada bir tuzak var, bilerek yazıyorum. CRM'in "şu kelime gelirse listeden çıkar" diye çalışan hazır bir özelliği var ama İngilizce kelimelerle ve SMS için kurulmuş; Türkçe "çıkar" yazana kendiliğinden bir şey yapmıyor. Yani çıkma talebini yakalayan şey asistanın kendisi, hazır bir özellik değil. İkinci tuzak daha pahalı: kayda "çıkma talebi" diye işaret koymak o kişiye mesaj gitmesini DURDURMUYOR. İşaret sadece bir not; başka bir akış aynı kişiye pekâlâ yazar. Durduran tek şey kaydı mesaj almaya kapatmak, yani CRM'in kendi kapatma anahtarını açmak. O yüzden sıra hep aynı: aynı gün kaydı mesaj almaya kapat, sonra işareti koy, sonra müşteriye bildir. İlkini atlarsan üç iş günü kuralına uymuş sayılmazsın.
+4. "Bir daha yazmayın" diyor: devir yok, zincir durur. O numara çıkma talebi olarak işaretlenir ve müşteriye bildirilir; çıkma talebi en geç üç iş günü içinde işlenir, FounderOS bu süreyi takipte tutar.
+   Burada bir tuzak var, bilerek yazıyorum. CRM'in "şu kelime gelirse listeden çıkar" diye çalışan hazır bir özelliği var ama İngilizce kelimelerle ve SMS için kurulmuş; Türkçe "çıkar" yazana kendiliğinden bir şey yapmıyor. Yani çıkma talebini hazır özellik değil, kurulumda açılan bir akış yakalar: gelen mesajda şu kelimelerden biri geçerse akış kaydı mesaj almaya kapatır, işaret koyar, sana ve müşteriye bildirim düşürür. Kelimeler: çıkar, ÇIK, DUR, İPTAL, istemiyorum, rahatsız etmeyin, yazmayın, aramayın, mesaj atmayın, listeden çıkarın. Büyük harf, küçük harf ve Türkçe karaktersiz yazım (cik, iptal, rahatsiz etmeyin) ayrı ayrı yazılır; akış harf farkını kendisi tanımayabilir. Akış hazır pakette yoksa kurulumda FounderOS adım adım gösterir, sen kurarsın. Akışın kaçırdığını asistan yakalar. İkisinin de kaçırdığını bulmak için iki günde bir, sabah bloğunda, konuşmalar ekranında bu kelimeleri ararsın; üç iş günü sınırı haftalık kontrolü beklemez. İkinci tuzak daha pahalı: kayda "çıkma talebi" diye işaret koymak o kişiye mesaj gitmesini DURDURMUYOR. İşaret sadece bir not; başka bir akış aynı kişiye pekâlâ yazar. Durduran tek şey kaydı mesaj almaya kapatmak, yani CRM'in kendi kapatma anahtarını açmak. O yüzden sıra hep aynı: aynı gün kaydı mesaj almaya kapat, sonra işareti koy, sonra müşteriye bildir. İlkini atlarsan çıkma talebi işlenmemiş olur.
 5. Yanlış numara ya da hiç cevap yok: zincir kendi akışında biter.
 
 Cevaba geç dönme diye bir sorun burada yok. Cevabı asistan karşılıyor, saat kaç olursa olsun.
@@ -212,13 +214,13 @@ Randevuya gelmeyen kişi, randevudan bir saat sonra giden sonuç sorusuyla yakal
 
 ### Üç devam zinciri: tekrar randevu, ek hizmet, referans
 
-Duran havuz geçmişe yazar; bu üç zincir hizmeti bitmiş müşteriye yazar. Üçü de Kademe 2'nin parçasıdır, üçü de iş modelinde adıyla var, üçü de aynı izin kuralına tabidir: hizmet ilişkisi olan kişiye, İYS'ye uygun, tek zincir.
+Duran havuz geçmişe yazar; bu üç zincir hizmeti bitmiş müşteriye yazar. Üçü de Kademe 2'nin parçasıdır, üçü de iş modelinde adıyla var, üçü de aynı izin kuralına tabidir: hizmet ilişkisi olan kişiye, mesaj izni kayıtlıysa, tek zincir.
 
 **Tekrar Randevu Alma (Rebooking).** Tetik: hizmetin doğal tekrar aralığı doldu. Aralık karşılama formunun yeni sorusundan gelir: klima bakımı yılda bir, diş kontrolü altı ayda bir, kuaför altı haftada bir, araç kaplama koruma yenilemesi. Mesaj bir hatırlatmadır, kampanya değil: "Geçen bakımın üstünden bir yıl geçti, sezon başlamadan bir gün ayıralım mı." Bir mesaj, bir hatırlatma; cevap gelmezse kapanır, gelirse asistan devralır. Aralığı olmayan hizmette (düğün, tadilat) bu zincir açılmaz.
 
 **Ek Hizmet Satışı (Upsell).** Tetik: hizmet bitti ve işletmenin önceden belirlediği bir ek hizmet bu kişiye uyuyor. Ek hizmet listesi karşılama formunda işletmeden alınır; asistan kendi kafasından ek hizmet önermez. Tek mesaj, hizmet bittikten yedi gün sonra, işletmenin onayladığı cümleyle. Cevap gelirse asistan devralır, gelmezse kapanır; ikinci mesaj yok. Sağlık nişlerinde bu zincir yasal sınırlar bölümüne göre daralır ya da kapanır.
 
-**Referans İsteme (Referral Requests).** Tetik: yorum isteğine olumlu cevap geldi ya da hizmet sonrası memnuniyet mesajı geldi. Yalnızca memnun olduğunu yazana gider; herkese gitmez. Tek mesaj: "Çevrenizde aynı ihtiyacı olan biri varsa bu numarayı verebilirsiniz, ilk görüşme benden." Karşılık teklif edilmez, iyilik olarak istenmez, ikinci mesaj yok. Gelen referans normal aday hattına girer ve kaynağı "referans" yazılır.
+**Referans İsteme (Referral Requests).** Tetik: yorum isteğine olumlu cevap geldi ya da hizmet sonrası memnuniyet mesajı geldi. Yalnızca memnun olduğunu yazana gider; herkese gitmez. Tek mesaj: "Çevrenizde aynı ihtiyacı olan biri varsa bu numarayı verebilirsiniz, ilk görüşme benden." Karşılık teklif edilmez, iyilik olarak istenmez, ikinci mesaj yok. Gelen referans normal aday hattına girer ve kaynağı "referans" yazılır. Sağlık nişlerinde "ilk görüşme benden" cümlesi çıkar, çünkü ücretsiz hizmet sözü kampanya gibi okunur; mesaj "Çevrenizde aynı ihtiyacı olan biri varsa bu numarayı verebilirsiniz." diye biter. Metni klinik yazılı onaylar; onay yoksa bu zincir kurulmaz.
 
 Üç zincirin de metni hazır kurulum paketinde gelir, müşteri kurulum görüşmesinde onaylar. Üçü de raporun "eski müşteri listesinde ulaşılan kişi" satırına değil, ayrı bir satıra yazılır: hizmet sonrası temas ve ondan çıkan randevu ya da teklif.
 
@@ -232,33 +234,33 @@ Beklenen oran verilmez. Müşteriye "şu kadar randevu çıkarırım" denmez. Bu
 
 Rapor gününün raporundaki sayıların çoğu buradan çıkacak.
 
-### Bu bölümdeki kanun bilgileri için
+### Emin olunmayan yerde
 
-Buradaki kanun ve yönetmelik bilgileri yol göstermek içindir, hukuk görüşü değildir. Şüpheye düştüğün her yerde karar müşterinin hukukçusunundur ve o karar yazılı alınır.
+Kural net değilse FounderOS en güvenli yolu seçer: o kayda ya da o cümleye mesaj gitmez. Öğrenciden ya da müşteriden cevaplanamayan resmi bir soru gelirse öğrenciye "Bunu ekip netleştiriyor; destek adresine şu satırı gönder." denir ve destek adresine (destek@founderos.so) gidecek tek satır hazır verilir. İş durmaz.
 
 ## 6. Ne söyler
 
-Yedinci gün: "Liste geldi. Şimdi ikiye ayırıyorum: izni olanlar, olmayanlar. Mesaj sadece izinlilere gidiyor. Bu senin kararın değil, kanunun. İzinsizlere hiçbir şey göndermiyoruz, arama listesi de çıkarmıyoruz. İzinli kaç kişi çıkarsa birinci ayın işi o; dört yüz on kişiye kadar gidebiliriz, fazlası ikinci aya."
+Yedinci gün, ayrım bitince (sayı örnektir, gerçeği ayrımdan gelir): "Liste geldi, ayırdım. Eski listeden izni olan 212 kişiye mesaj gidecek. Birinci ay dört yüz on kişiye kadar gidebiliyoruz, fazlası ikinci aya kalıyor. Sonucu onaylarsan yarın ilk elli kişiyle başlıyoruz."
 Sekizinci gün: "Bugün elli kişi. Hepsini birden göndermiyoruz, ilk elli tepkiyi ölçmek için. Yarın sabah bloğunda engellenme ve şikâyet var mı bakacağız; temizse tam hız, günde doksan."
-Kırmızıya düşerse: "Dur. Numaranın notu kırmızı. Bir mesaj daha atarsak hattı riske atarız. Metni sadeleştiriyorum; not yeşile dönünce elli kişilik yeni bir parti deneriz. Bir hafta kaybederiz, hattı kaybedersek dört yüz on kişinin hepsini kaybederiz."
-Müşteri İYS kaydını bilmiyorsa: "Sorun değil, çok kişide böyle. Muhasebecine sor, kaydın var mı, varsa giriş kimde. Bu kayıt olmadan eski listene mesaj göndermiyoruz; sistemin kalanı çalışmaya devam ediyor. Korkacak bir şey yok, sadece izinsiz numaraya yazmıyoruz."
+Kırmızıya düşerse: "Numaranın notu kırmızı, gönderimi durdurdum. Metni sadeleştiriyorum; not yeşile dönünce elli kişilik yeni bir partiyle devam ediyoruz. Birkaç gün kayar, kalan liste sırasını korur."
+Formda izin cevabı boşsa: "Müşteriye şu tek cümleyi olduğu gibi gönder; cevap gelince listeyi ben ayırıyorum." Hemen altına, ayrı satırda ve çift tırnak içinde müşteriye gidecek cümle: "Eski müşterilerinize toplu mesaj gönderme izni kaydınız (İYS) var mı? Bilmiyorsanız muhasebeciniz bilir."
 Müşteri "rahatsız olurlar" derse: "Bu kampanya değil, hatırlatma. Kişinin kendi geçmiş işine bağlı. İzni olan numaraya gidiyor ve her mesajda çıkış satırı var. Elli kişiyle başlıyoruz; ilk ellide kötü giderse orada durduruyoruz."
 On ikinci gün: "Yeni mesaj işi bitti sayılır, dört yüz on kişiye yazdık. Bundan sonrası tek tek elden geçirme: cevap veren herkes ya randevu alacak ya net hayır diyecek. Ortada kalan bırakmıyoruz."
 
 ## 7. Ne yazar
 
-Bilgi dosyasına: izinli ve izinsiz sayıları, İYS sonucunun tarihi, müşterinin metin onayının tarihi, gönderim günleri ve sayıları, kalite notu kayıtları, çıkma talepleri ve müşteriye bildirildiği tarih, randevu sayısı, ikinci aya kalan kayıt sayısı.
+Bilgi dosyasına: izinli ve izinsiz sayıları, izin cevabının tarihi, müşterinin metin onayının tarihi, gönderim günleri ve sayıları, kalite notu kayıtları, çıkma talepleri ve müşteriye bildirildiği tarih, randevu sayısı, ikinci aya kalan kayıt sayısı.
 CRM'e: her kaydın izinli mi izinsiz mi olduğu, gönderim durumu, cevabın hangi hale girdiği, randevu, çıkma işareti.
 Bir uyarı, bu satırın en pahalı yeri: "izinsiz" ya da "çıktı" diye alana yazmak o kişiye mesaj gitmesini DURDURMUYOR. Alan sadece bir not; başka bir akış aynı kişiye pekâlâ yazar. Durduran tek şey kaydı CRM'in kendi kapatma anahtarıyla mesaj almaya kapatmak. O yüzden izinsiz çıkan her kayıt, listeye yüklendiği gün mesaj almaya kapatılır; alan işareti bunun üstüne, sebebi görünsün diye konur. Sıra hep bu: önce kapat, sonra işaretle.
 Niş kartının Sahadan dolacak bölümüne: bu nişte işe yarayan geri çağırma sebebi, en çok cevap alan ilk cümle, çıkma oranı, sahadan doğrulanan tekrar aralığı.
 
 ## 8. Yedek yol
 
-- İYS sonucu gelmediyse: gönderim başlamaz, liste bekler, müşteriye yazılı bildirilir. [21/28] gün müşterinin verdiği günden başlar.
-- Müşteri İYS'ye kayıtlı değilse ya da kaydını bilmiyorsa: muhasebecisine sorar, cevabı yazılı getirir. Yedinci güne kadar cevap gelmezse bu parça ilk turda kapsam dışıdır ve güvencenin sonucuna sayılmaz.
-- İYS sonucu boş geldiyse (hiç izinli numara yok): bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz. Bu ihtimali kurulum görüşmesinin ikinci maddesinde, güvencenin şartını söylerken zaten söyledin; söylemediysen bugün söylenir.
+- İzin cevabı gelmediyse: gönderim başlamaz, liste bekler, müşteriye yazılı bildirilir. [21/28] gün müşterinin verdiği günden başlar.
+- Müşterinin izin kaydı yoksa ya da müşteri bilmiyorsa: hazır soru olduğu gibi müşteriye gider, öğrenci konuyu açıklamaz. Yedinci güne kadar yazılı cevap gelmezse bu parça ilk turda kapsam dışıdır ve güvencenin sonucuna sayılmaz; öğrenci yalnız sonucu duyar.
+- Listede hiç izinli numara çıkmadıysa: bu parça ilk turda kapsam dışıdır, müşteriye yazılı bildirilir ve güvencenin sonucuna sayılmaz. Güvence, müşteriye verdiğin sözdür: rapor gününde rapor; raporda sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz. Bu ihtimali kurulum görüşmesinin ikinci maddesinde, güvencenin şartını söylerken zaten söyledin; söylemediysen bugün söylenir.
 - İzinli liste elliden azsa: tek parti, tek gönderim, konuşmaları elle okursun. Oran hesaplanmaz, rapora sayı yazılır.
-- Şablon onayı gelmediyse: gönderim bekler. Başka kanaldan yazılmaz.
+- Şablon onayı gelmediyse: gönderim bekler. Başka kanaldan yazılmaz; bu listede e-posta yedeği de kullanılmaz, çünkü e-posta için ayrı izin gerekir.
 - Numaranın notu kırmızıya düşerse: gönderim durur, metin sadeleşir, not yeşile dönünce elli kişilik yeni parti denenir.
 - Sağlık nişinde klinik metni onaylamazsa: bu parça ilk turda kapsam dışı, müşteriye yazılı bildirilir.
 - Liste kirliyse (yarıdan fazlası eksik satır): temizlenen kısımla başlanır, müşteriden ikinci bir döküm istenir.

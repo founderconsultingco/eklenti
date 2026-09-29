@@ -6,6 +6,8 @@ description: "Sadece dugun organizasyon ve mekan nisinin karti: rakamlar, itiraz
 
 # Düğün organizasyon ve mekan
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Düğün organizasyon firmaları (koordinasyon, planlama, dekorasyon hizmeti veren) ve düğün salonu ile kır düğünü mekanı işletmeleri (mekan kiralayan, çoğu zaman yemek de veren). Nişan, kına ve davet organizasyonu yapan işletmeler de kapsam içinde, genelde aynı firma bunları da yapıyor. Google Haritalar ve fiyat sitelerinde "düğün salonu", "düğün organizasyon şirketi", "kır düğünü mekanı", "event venue" gibi adlarla geçiyorlar (dugun.com, dugunbuketi.com). Haritalar'daki kategori sayımına doğrudan erişemedim, bu kısım bilinmiyor, sahadan dolacak.
 
@@ -45,7 +47,7 @@ Sözlüğü: boş tarih, kapora, sezon, revize, keşif, rezervasyon, doluluk, da
 
 **Reklam kütüphanesi kelimeleri.** düğün organizasyonu, düğün salonu, kır düğünü, kır düğünü mekanı, düğün paketi, kına organizasyonu, nişan organizasyonu, davet organizasyonu, düğün fiyatları, düğün mekanı fiyatları, gelin damat organizasyon, düğün koordinasyonu, açık hava düğünü, yemekli düğün, kokteyl düğün, wedding planner.
 
-**Yasal sınırlar.** Düğün salonları ve organizasyon firmaları "sıhhi işyeri" sınıfında sayılıyor ve belediyeden "Umuma Açık İstirahat ve Eğlence Yeri Açma ve Çalışma Ruhsatı" almaları gerekiyor (dugun.com'un iki ayrı rehberi, mekan açma ve organizasyon şirketi açma). Kapora ve iptal konusunda tüketici hukuku aktif: Yargıtay, sözleşmedeki "kapora iade edilmez" maddesini haksız şart sayabiliyor, tüketici hakem heyetine başvuru mümkün (erkayahukukburosu.com, hukukdestegi.com, memurlar.net). Eski müşteriye ticari içerikli SMS veya WhatsApp mesajı (kampanya, indirim) gönderirken İYS izni şart; sadece bilgilendirme veya randevu hatırlatma İYS dışında (iletimerkezi.com). Sektöre özel bir gürültü yönetmeliği bulamadım, genel gürültü yönetmeliği ve komşu şikayeti hakları geçerli görünüyor, kesin doğrulama sahadan gelecek.
+**Yasal sınırlar.** Düğün salonları ve organizasyon firmaları "sıhhi işyeri" sınıfında sayılıyor ve belediyeden "Umuma Açık İstirahat ve Eğlence Yeri Açma ve Çalışma Ruhsatı" almaları gerekiyor (dugun.com'un iki ayrı rehberi, mekan açma ve organizasyon şirketi açma). Kapora ve iptal konusunda tüketici hukuku aktif: Yargıtay, sözleşmedeki "kapora iade edilmez" maddesini haksız şart sayabiliyor, tüketici hakem heyetine başvuru mümkün (erkayahukukburosu.com, hukukdestegi.com, memurlar.net). Eski müşteriye ticari içerikli SMS veya WhatsApp mesajı (kampanya, indirim) gönderirken İYS izni şart; sadece bilgilendirme veya randevu hatırlatma İYS dışında (iletimerkezi.com). Sektöre özel bir gürültü yönetmeliği bulamadım, genel gürültü yönetmeliği ve komşu şikayeti hakları geçerli görünüyor; kesin teyit ekip tarafında yapılır, öğrenciye iş olarak verilmez.
 
 **Yoğun şehirler.** İstanbul, Ankara ve İzmir açıkça öne çıkıyor, bu şehirler için ayrı fiyat ve mekan rehberi sayfaları var (dugunnotu.com, dugunbuketi.com, karekod.org). Antalya, Bursa ve Mersin de kır düğünü mekanı rehberi bulunan şehirler arasında (kirdugunumekanlari.com.tr).
 
@@ -62,13 +64,13 @@ En güçlü üç itiraz: telefona ve yazışmalara zaten biz dönüyoruz, tarih 
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Bu sezon fiyat sorup kaporaya kadar gelmeyen çiftleri siz mi geri arıyorsunuz, yoksa o liste telefonda öyle mi duruyor?"
 
 İşleyiş sorusu: "Cumartesi düğün varken, siz salonda koşuştururken Instagram'dan ya da WhatsApp'tan fiyat soran çift ne yapıyor, cevabı bekliyor mu, sıradaki mekana mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz düğündeyken WhatsApp'a, Instagram'a ya da sitenizden yazan çifte dakikalar içinde cevap veriyor, düğün tarihini, tahmini davetli sayısını, mekan mı organizasyon mu arandığını, bütçe aralığını ve ilçeyi alıp keşif randevusuna yazıyor ya da teklif için size iletiyor; fiyat sorup kaporaya gelmeyen çifte de tarihi hâlâ boşsa sizin adınıza kampanyasız bir hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz düğündeyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan çifte de dakikalar içinde dönüyor; düğün tarihini, tahmini davetli sayısını, mekan mı organizasyon mu arandığını, bütçe aralığını ve ilçeyi alıp keşif randevusuna yazıyor ya da teklif için size iletiyor; fiyat sorup kaporaya gelmeyen çifte de tarihi hâlâ boşsa sizin adınıza kampanyasız bir hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Düğün günü herkes salondayken Instagram'a ve WhatsApp'a yetişilemeyen saatlerde fiyat soran çifte cevap verip tarihini alan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste ya da mekanda olur?"
 
@@ -88,7 +90,7 @@ Karşı taraf bunu söylerse:
 Paletler: bordo, kum, mor.
 Tipografi: editoryal, karakter.
 
-**Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat veya gün içinde cevap veriliyor), işletmecinin DM ve telefon yoğunluğunun gerçek saatleri, çalışan açılış cümlesinin kapatma oranı, hangi kademenin (1, 2 veya 3) bu nişte daha kolay satıldığı, ilk vaka çalışması, Meta Reklam Kütüphanesi'nde bu sektörün gerçek reklam durumu, fiyat sorup kaybolan havuzunun ortalama aylık büyüklüğü, kış aylarında gerçek doluluk oranı, İYS'nin bu sektörde pratikte ne kadar uygulandığı, kim karar veriyor sorusunun kesin cevabı.
+**Sahadan dolacak.** Gerçek dönüş süreleri (kaç saat veya gün içinde cevap veriliyor), işletmecinin DM ve telefon yoğunluğunun gerçek saatleri, çalışan açılış cümlesinin kapatma oranı, hangi kademenin (1, 2 veya 3) bu nişte daha kolay satıldığı, ilk vaka çalışması, Meta Reklam Kütüphanesi'nde bu sektörün gerçek reklam durumu, fiyat sorup kaybolan havuzunun ortalama aylık büyüklüğü, kış aylarında gerçek doluluk oranı, kim karar veriyor sorusunun kesin cevabı. İYS'nin bu sektörde pratikte nasıl uygulandığı sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://www.milliyet.com.tr/pembenar/dugun-salonu-fiyatlari-2026-yemekli-ve-yemeksiz-ortalama-dugun-mekanlari-fiyatlari-6334755

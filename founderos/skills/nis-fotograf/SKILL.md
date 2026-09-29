@@ -6,6 +6,8 @@ description: "Sadece fotograf studyosu nisinin karti: rakamlar, itirazlar, yasal
 
 # Fotoğraf stüdyosu
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Düğün ve nişan fotoğrafçıları, hamile, bebek ve yenidoğan çekimi yapan stüdyolar, e-ticaret için ürün çekimi yapan işletmeler. Google Haritalar'da hangi kategori adıyla geçtikleri bu oturumda da doğrulanamadı, bilinmiyor, sahadan dolacak.
 
@@ -85,13 +87,13 @@ En güçlü üç itiraz: Instagram'a ben bakıyorum, sezonda gecikme normal, tek
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen sene teslim ettiğiniz işlerde albümün hangi aşamada olduğunu müşteriye siz mi haber verdiniz, yoksa müşteri arayıp mı sordu?"
 
 İşleyiş sorusu: "Siz çekimdeyken, sezonun en dolu haftasında Instagram'dan ya da WhatsApp'tan 'düğün paketiniz ne kadar' diye yazan çift ne yapıyor, cevabı bekliyor mu, başka stüdyoya mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz çekimdeyken Instagram'a, WhatsApp'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, çekim türünü, tarihi, mekanı ve kişi sayısını alıp paket teklifi için size iletiyor ya da stüdyo çekimine randevu yazıyor; siz 'albüm baskıda' dediğinizde teslimi bekleyen müşteriye sizin adınıza haber veriyor, yenidoğan çekimi yaptırmış aileye de bir sonraki seans zamanı gelince hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz çekimdeyken telefon çalarsa aramayı o açıyor, Instagram'a, WhatsApp'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; çekim türünü, tarihi, mekanı ve kişi sayısını alıp paket teklifi için size iletiyor ya da stüdyo çekimine randevu yazıyor; siz 'albüm baskıda' dediğinizde teslimi bekleyen müşteriye sizin adınıza haber veriyor, yenidoğan çekimi yaptırmış aileye de bir sonraki seans zamanı gelince hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
 
 Çalışan açarsa: "Fotoğrafçı çekimdeyken Instagram'a ve WhatsApp'a yetişilemeyen saatlerde paket soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman stüdyoda olur?"
 
@@ -111,7 +113,7 @@ Karşı taraf bunu söylerse:
 Paletler: gece, kum, bordo.
 Tipografi: editoryal, yumusak.
 
-**Sahadan dolacak.** Gerçek DM/WhatsApp yanıt süreleri, DM'e ilk yanıtın kaç günde geldiği. Kapatma oranı, çalışan açılış cümlesi, hangi kademenin en çok satıldığı, ilk vaka çalışması. Kim karar veriyor sorusuna kaynaklı bir röportaj. Şehir bazlı yoğunluk sıralaması, İstanbul dışında. Zincir/franchise varlığı, Meta Reklam Kütüphanesi örnekleri. Fotoğrafçı esnafına özel sicil sayısı. Fiyat sorup kaybolan havuzunun büyüklüğü. Google Haritalar kategori adları. İYS'nin bu nişe özel uygulanışı. Sezon dışı (kasım-nisan) talep düşüşü.
+**Sahadan dolacak.** Gerçek DM/WhatsApp yanıt süreleri, DM'e ilk yanıtın kaç günde geldiği. Kapatma oranı, çalışan açılış cümlesi, hangi kademenin en çok satıldığı, ilk vaka çalışması. Kim karar veriyor sorusuna kaynaklı bir röportaj. Şehir bazlı yoğunluk sıralaması, İstanbul dışında. Zincir/franchise varlığı, Meta Reklam Kütüphanesi örnekleri. Fotoğrafçı esnafına özel sicil sayısı. Fiyat sorup kaybolan havuzunun büyüklüğü. Google Haritalar kategori adları. Sezon dışı (kasım-nisan) talep düşüşü. İYS'nin bu nişe özel uygulanışı sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 armut.com/dugun-fotografcisi

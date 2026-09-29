@@ -1,14 +1,16 @@
 ---
 user-invocable: false
 name: araclari-kur
-description: "İkinci gün. Hesaplar, e-posta, alan adı, randevu yolu, veri servisinin ilk çalıştırılması. CRM açıldığı gün son kez çalışır. Bir araç bağlanmadığında da buraya bakılır."
+description: "İkinci gün. Hesaplar, e-posta, alan adı, randevu yolu, veri servisinin ilk çalıştırılması, otomatik eşitleme ve birinci gün açılmadıysa telefon hatırlatmaları. CRM açıldığı gün son kez çalışır ve sesli örneği kurar. Bir araç bağlanmadığında da buraya bakılır."
 ---
 
 # araclari-kur
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-İkinci bloğun ilk modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın birinci aşamasının ikinci adımı: temeli kur.
+İkinci bloğun ilk modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşaması, satışa hazırlan: hesapların ve randevu yolun burada kurulur.
 
 Bugün hesap açıyorsun. Alet almıyorsun, sistem kurmuyorsun. Üç saat.
 
@@ -18,18 +20,18 @@ Neden bu kadar az program: bir kişilik işi öldüren şey program eksikliği d
 
 Şunlar bu modülün işi değildir:
 - Sayfanın yayına alınması (siteni-kur, bugün, araçlardan sonra).
-- Parayı senin adına tahsil edecek şirketin seçimi (onay-belgesini-hazirla, üçüncü blok). Başvuru şirket kurulup vergi levhası gelince gidiyor, yani ilk "evet"ten sonra.
-- Tarayıcı demosu (kanitini-hazirla, dördüncü blok; FounderOS kurar, ücretsiz).
+- Müşteriden ödemeyi alacağın yolun kurulması (onay-belgesini-hazirla, üçüncü blok). Bugün bununla ilgili yapacağın bir şey yok.
+- Tarayıcı demosu (kanitini-hazirla, ikinci blok, sayfanın yayınıyla; FounderOS kurar, ücretsiz).
 - Aday listesinin çıkarılması (aday-listesi-cikar, üçüncü blok). Bugün sadece listeyi çeken servisi çalıştırıp on kaydı görüyoruz.
 - Müşterinin sistemi (musteri-sistemini-kur, müşteri geldiğinde).
 
 Pazarlamadaki karşılığı: piyasada program topluluğuna araç yığını deniyor. Bizimki dört araç.
 
 ## 2. Ne zaman çalışır
-- İkinci blok, üç saat. Hazırlık günlerinde saha yok, o yüzden gün pencerelere bölünmüyor: sabah bloğunda başlar, öğleden sonra biter. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan iki oturuş. (Pencere adları altıncı günden itibaren, saha açılınca anlam kazanıyor; hazırlık günlerinde "sabah" ve "öğleden sonra" yeterli.) Bugün açılan hesaplar: WhatsApp iş hesabı, alan adı ve yayın servisi (siteni-kur'un yayın adımında), iş e-postası, takvim. Aday listesi için hesap açılmıyor: liste FounderOS'un veri servisinden geliyor; bugün üç niş için sayım çekimi başlatılır ve on kayıt ekranda görülünce yolun açık olduğu anlaşılır.
+- İkinci blok, üç saat. Hazırlık günlerinde saha yok, o yüzden gün pencerelere bölünmüyor: sabah bloğunda başlar, öğleden sonra biter. Tam zamanlıysan tek oturuş; işin yanında çalışıyorsan iki oturuş. (Pencere adları altıncı günden itibaren, saha açılınca anlam kazanıyor; hazırlık günlerinde "sabah" ve "öğleden sonra" yeterli.) Bugün açılan hesaplar: WhatsApp iş hesabı, alan adı ve yayın servisi (siteni-kur'un yayın adımında), iş e-postası, takvim. Bütçen yoksa alan adı ve iş e-postası bugün alınmaz: e-postaların şu an kullandığın Gmail adresinden gider, alan adlı e-posta ilk kanıttan sonra gelir. Aday listesi için hesap açılmıyor: liste FounderOS'un veri servisinden geliyor; bugün üç niş için sayım çekimi başlatılır ve on kayıt ekranda görülünce yolun açık olduğu anlaşılır.
 - Aynı gün, sırayla: WhatsApp iş hesabı ve telefon, randevu yolu, veri servisi, dün hazırlanan sayfanın yayına alınması, kalan yarım saat.
-- **CRM bugün kurulmuyor.** Senin CRM bölümün başlangıç görüşmende açılıyor: hesabın açılmasının elle yapılan bir tarafı var ve ekranı nasıl kullanacağın o görüşmede birlikte geziliyor. O güne kadar CRM'siz mod varsayılan yoldur, yedek yol değil. İş Beyni'nin "Bugünün listesi" bölümü bugün açılır ve adayların, randevuların, takiplerin yeri orasıdır. Öğrenciye "CRM yok" denmez; "CRM'in görüşmede açılınca listeni oraya taşıyacağız" denir ve geçilir.
-- **CRM açıldığı gün** bu modül son bir kez çalışır: bağlantı kurulur, işletme profili ve özel değerler tamamlanır, Google takvimi bağlanır ve İş Beyni'ndeki liste bir kerede aktarılır. Bir saat sürer, o günün ilk işidir ve o günün planının önüne geçer. Sonra musteri-takip-sistemini-kur çalışır.
+- **CRM bugün kurulmuyor.** Senin CRM bölümün başlangıç görüşmende açılıyor: hesabın açılmasının elle yapılan bir tarafı var ve ekranı nasıl kullanacağın o görüşmede birlikte geziliyor. O güne kadar CRM'siz mod varsayılan yoldur, yedek yol değil. İş Beyni'nin "Bugünün listesi" bölümü bugün açılır ve randevuların yeri orasıdır; üçüncü blokta aday listesi çıkınca soğuk adaylar ve takipleri aday listesinde durur. Öğrenciye "CRM yok" denmez; "CRM'in görüşmede açılınca cevap veren adayların ve randevuların oraya geçecek" denir ve geçilir.
+- **CRM açıldığı gün** bu modül son bir kez çalışır: bağlantı kurulur, işletme profili ve özel değerler tamamlanır, Google takvimi bağlanır, cevap vermiş adaylar ve randevular bir kerede aktarılır (soğuk havuz aday listesinde kalır) ve sesli örnek kurulur. Bir buçuk saat sürer, o günün ilk işidir ve o günün planının önüne geçer. Sonra musteri-takip-sistemini-kur çalışır.
 - İkinci kez: bir hesap kilitlendiğinde ya da bir program çalışmadığında.
 
 ## 3. Ne okur
@@ -52,7 +54,7 @@ Başka bir şey sormaz. Hangi programın kurulacağı, hangisinin kurulmayacağ�
 
 **Bir: Claude.** FounderOS burada çalışıyor, İş Beyni burada duruyor. Zaten kurulu, dün bütün günü burada geçirdin; bugün onunla ilgili iş yok.
 
-**İki: senin CRM bölümün.** CRM'in içinde sana ayrılan yer; bugün açılmıyor, başlangıç görüşmende birlikte açılacak ve ekranı orada birlikte gezeceksiniz. FounderOS'u aldığın için ücretsiz, ayrı ödeme yok. Kiminle konuştuğun, ne konuştuğun, kimin randevusu ne zaman, o günden sonra hepsi orada tutulacak; o güne kadar İş Beyni'nin "Bugünün listesi" bölümünde. Ekranı İngilizce; açıldığı gün her düğmeyi İngilizcesi, Türkçesi ve yeriyle söylüyorum, çeviri açmıyorsun. Müşteri kazandığında her müşteri için ayrı bir bölüm daha açılacak; onlara müşteri bölümü diyoruz, karıştırma.
+**İki: senin CRM bölümün.** CRM'in içinde sana ayrılan yer; bugün açılmıyor, başlangıç görüşmende birlikte açılacak ve ekranı orada birlikte gezeceksiniz. FounderOS'u aldığın için ücretsiz, ayrı ödeme yok. Sana cevap veren adaylar, onlarla ne konuştuğun, kimin randevusu ne zaman ve müşterilerin o günden sonra orada tutulacak; o güne kadar İş Beyni'nin "Bugünün listesi" bölümünde. Soğuk aday listen ve telefondaki saha ekranın CRM açıldıktan sonra da aday listesinde kalıyor. Ekranı İngilizce; açıldığı gün her düğmeyi İngilizcesi, Türkçesi ve yeriyle söylüyorum, çeviri açmıyorsun. Müşteri kazandığında her müşteri için ayrı bir bölüm daha açılacak; onlara müşteri bölümü diyoruz, karıştırma.
 
 **Üç: veri servisi.** Aday listesini senin yerine çeken parça. FounderOS'un içinde, sunucuda çalışıyor; hesap açmıyorsun, anahtar görmüyorsun, para ödemiyorsun. Kategori ve şehir söyleniyor, temizlenmiş liste geliyor. Bugün üçüncü adımda çalıştırıp on kaydı gözünle görüyorsun. Servisin aylık bir tavanı var; dolarsa ya da servis kapalıysa yedek yol Claude'un tarayıcı eklentisidir, o da üçüncü adımda yazılı.
 
@@ -64,9 +66,9 @@ Programları birbirine bağlayan ara programlar alınmıyor. Hiç. CRM'in kendi 
 
 Ayrı arama programı alınmıyor. Kendi telefonundan arıyorsun.
 
-Toplu e-posta gönderen program alınmıyor. E-postaların CRM açılınca oradan, o güne kadar kendi iş e-postandan gidiyor.
+Toplu e-posta gönderen program alınmıyor. Soğuk e-postaların hep kendi e-postandan, tek tek gidiyor (bütçen yoksa şu an kullandığın Gmail'den). CRM açılınca oradan yalnız randevu mesajları ve CRM'e geçmiş adaylara onayladığın şablonlar çıkıyor.
 
-Telefonu insan yerine açıp konuşan program senin için alınmıyor. O sattığın sistemin parçası; müşteri geldiğinde müşterinin bölümünde, müşterinin telefon altyapısı uygunsa kurulur. Kendi adaylarını sen arıyorsun.
+Telefonu insan yerine açıp konuşan program senin için alınmıyor. O sattığın sistemin parçası; müşteri geldiğinde müşterinin bölümünde, müşterinin telefon altyapısı uygunsa kurulur. Kendi adaylarını sen arıyorsun. Görüşmede dinleteceğin sesli örnek bundan ayrıdır: CRM açıldığı gün kendi bölümünde, hat açmadan kurulur.
 
 Logo tasarımcısı, kartvizit, hazır şablon paketi alınmıyor. Markan dün kuruldu.
 
@@ -94,32 +96,34 @@ CRM hesabın başlangıç görüşmende açılıyor, yani randevu takvimin henü
 3. Kendi telefonunun takvimine de koyuyorsun. Tek yer değil iki yer, çünkü telefonun seni uyarıyor.
 4. Hatırlatmayı sen gönderiyorsun: görüşmeden bir gün önce ve iki saat önce, kendi WhatsApp'ından. Metni ben veriyorum.
 
-Başlangıç görüşmende CRM açıldığı gün bu dört adım kendiliğinden yerini bırakıyor: takvim açılıyor, düğme takvim linkine dönüyor, hatırlatmaların e-posta tarafı otomatiğe geçiyor (WhatsApp tarafını sen göndermeye devam ediyorsun) ve buradaki liste CRM'e aktarılıyor. Ne kaybettiğini de bil: bu birkaç gün boyunca hatırlatmaları sen gönderiyorsun, o kadar.
+Başlangıç görüşmende CRM açıldığı gün bu dört adım kendiliğinden yerini bırakıyor: takvim açılıyor, düğme takvim linkine dönüyor, hatırlatmaların e-posta tarafı otomatiğe geçiyor (WhatsApp tarafını sen göndermeye devam ediyorsun) ve buradaki randevular CRM'e aktarılıyor; soğuk aday listesi taşınmaz, aday listesinde kalır. Ne kaybettiğini de bil: bu birkaç gün boyunca hatırlatmaları sen gönderiyorsun, o kadar.
 
-### CRM açıldığı gün (1 saat, o günün ilk işi)
+### CRM açıldığı gün (bir buçuk saat, o günün ilk işi)
 
 Bu bölüm başlangıç görüşmesinden sonraki ilk oturumda çalışır. Görüşmede hesabın açıldı, giriş yapıldı ve ekran birlikte gezildi; burada kalan ayarları bitiriyoruz ve listeyi taşıyoruz. Her düğmeyi üç parça veriyorum: ekranda yazan İngilizce metin tırnakta, Türkçesi parantezde, yeri sonda. Bulamazsan ekran görüntüsünü at, hangisi olduğunu söylerim. Tarayıcı çevirisini açma; çeviri düğme adlarını değiştiriyor.
 
 Kayıt satırları, aday hattı ve akışlar hesabınla birlikte hazır geldi; sen kurmuyorsun.
 
-1. **Bağlantı.** Şimdi ben CRM'e bağlanıyorum; ekranda bir giriş penceresi açılacak. Görüşmede belirlediğin şifreyle gir. Sonra "hangi bölüme erişim" diye soran bir ekran gelir; listede tek bölüm var, senin bölümün: kutusunu işaretle ve onayla. İşaretlemezsen bağlantı boş kurulur ve hiçbir şey görmem; o zaman pencereyi yeniden açarım, ikinci denemede olur. Bu pencere bir kere açılır, bir daha sorulmaz. Şifreyi sohbete yazma, İş Beyni'ne yazma.
+1. **Bağlantı.** Şimdi ben CRM'e bağlanıyorum; ekranda bir giriş penceresi açılacak. Görüşmede belirlediğin şifreyle gir. Sonra "hangi bölüme erişim" diye soran bir ekran gelir; bugün listede tek bölüm var, senin bölümün: kutusunu işaretle ve onayla. İşaretlemezsen bağlantı boş kurulur ve hiçbir şey görmem; o zaman pencereyi yeniden açarım, ikinci denemede olur. Bu pencere ilk müşterine kadar bir daha açılmaz. Müşterinin bölümü açıldığı gün bağlantıyı yenilerim; pencere bir kez daha gelir ve o gün iki bölümü birlikte işaretlersin: kendi bölümünü ve müşterinin bölümünü. Şifreyi sohbete yazma, İş Beyni'ne yazma.
 2. **İşletme profili.** Sol menünün en altında "Settings" (ayarlar), açılan listede "Business Profile" (işletme profili). Dolduracağın satırlar: "Friendly Business Name" (işletme adı) seçtiğin iş adı; "Business Email" (işletme e-postası) iş e-postan; "Business Phone" (telefon) arama yapacağın iş hattı; "Time Zone" (saat dilimi) listede "Turkey" ya da "Istanbul" yoksa "(GMT+03:00)" yazan bir seçenek, yaz saati olmayanı. Sağ altta "Update Information" (bilgileri güncelle) düğmesine bas. Kaydolduğunu üstte çıkan yeşil kutudan anlarsın. Görüşmede doldurulduysa kontrol edip geçiyoruz.
 3. **Google takvimi.** Sol menüde "Settings" (ayarlar), listede "Integrations" (bağlantılar); Google kutusunda "Connect" (bağlan) düğmesi. Google'ın izin sayfası açılır; şu an kullandığın Google hesabını seç, "Allow" (izin ver) de. Bağlandıktan sonra takvimin iki yönlü çalışır: CRM'e düşen randevu telefonundaki takvimde de görünür, telefonundaki dolu saatler CRM'de kapanır. Randevu takvimin hesabınla birlikte açıldı; çalışma saatlerini bugün ben senin düzenine göre kontrol ediyorum, sen bir şey kurmuyorsun. Takvimin linki gorusmeye-getir'in sayfasında ve özel değerlerde duracak.
 4. **Özel değerler.** Aynı ayarlar listesinde "Custom Values" (özel değerler). Özel değer, bir kere yazınca bütün mesajlarda kendiliğinden görünen bilgidir; satırlar hazır geldi, içleri "(doldurulmadi)" yazıyor. Bugün beşini doldur: "Ad soyad", "Şehir", "Telefon", "E-posta", "Site adresi". Her satırın sağındaki kalem simgesine bas, yaz, "Save" (kaydet) de. Kalan satırlar müşteri gelince dolar. Satırlardan birini boş bırakırsan mesajda "(doldurulmadi)" yazısı çıkar, o yüzden bugün beşi de dolu.
-5. **Listenin taşınması.** İş Beyni'nin "Bugünün listesi" bölümündeki her satır CRM'e aktarılır ve bölüm "CRM'e taşındı, tarih" satırıyla kapanır. Sayım tutmadan kapanmaz. Aday listen `adaylar.csv`'de hazırsa o da bugün yüklenir; yükleme ekranı musteri-takip-sistemini-kur'un işidir ve aynı gün çalışır.
+5. **Sıcak kayıtların taşınması.** CRM'e yalnız üç tür kayıt geçer: cevap vermiş adaylar, randevular ve müşteriler. İş Beyni'nin "Bugünün listesi" bölümündeki randevular ve aday listesinde cevap vermiş görünen adaylar bugün bir kerede aktarılır; bölüm "CRM'e taşındı, tarih" satırıyla kapanır, sayım tutmadan kapanmaz. Soğuk havuz (`adaylar.csv`) yüklenmez: günün listesi ve telefondaki saha ekranı CRM açıldıktan sonra da oradan çalışır. Aktarmanın ekranı musteri-takip-sistemini-kur'un işidir ve aynı gün çalışır.
 
-Kontrol: bir aday kaydını açıp kanal durumu satırlarını görüyorsun, takvim linkini bir kez kendin tıklıyorsun. İkisi de tamamsa bu gün bitti.
+6. **Sesli örnek (yarım saat).** Teklifinin başlığı telefonu açan resepsiyonist; görüşmede adaya dinleteceğin bir ses lazım ve ilk sesli asistanını parası ödenmiş bir müşterinin hesabında değil, kendi bölümünde kurman lazım. Bugün kendi bölümünde tek bir örnek sesli asistan kuruyoruz, adı "Örnek [niş] İşletmesi". Metnini ben yazıyorum, sesli-ajani-kur'un kalıbından ve nişinin kartından: karşılama ve kimlik cümlesi, kartın üç sorusu, insana devir, söylemeyecekleri. Hat alınmıyor, numara bağlanmıyor; sesli asistan ekranının kendi deneme görüşmesiyle bilgisayardan konuşuyorsun. Ekranda deneme düğmesini bulamazsan ekran görüntüsünü at, hangisi olduğunu söylerim. Dört senaryoyu sen denersin: normal randevu, fiyat sorusu, "insan mısınız", mesai dışı arama. Temiz ölçüsü: fiyat vermedi, uydurmadı, randevuyu doğru güne yazdı, adı ve saati doğru tekrarladı. En temiz görüşmenin kırk ile altmış saniyesini ekran kaydıyla alırsın; kaydın yeri İş Beyni'nin yedinci bölümüne "sesli örnek: kuruldu" diye yazılır. Sonra sesli demo: ekip aynı asistan için konuşma düğmesini açar ve kodunu sana gönderir; panelinde "Sesli demon" işi olarak görünür. Kod gelince buraya yapıştırırsın, ben demo sayfasına eklerim, sayfayı yeniden yayınlarsın ve kendi telefonundan bir kez konuşarak denersin. Görüşmede işletmeci bu düğmeyle asistanı kendi telefonunda canlı dener; kayıt yalnız düğme açılana kadar kullanılır. Kullanıldığı yerler: görüşmenin sunumu, ön görüşme videosunun kanıt bölümü, Instagram'daki "Sistem" öne çıkanı. Mesajda ve video mesajda gönderilmez. Türkçe ses kötü çıkarsa bunu ilk satıştan önce öğrenmiş oluyoruz; sesi kulakla birlikte seçeriz. Deneme görüşmesi ekranda yoksa kayıt ilk müşterinin on deneme aramasından biriyle, müşterinin yazılı izniyle alınır ve işletme adı geçen kısım kesilir.
+
+Kontrol: aktarılan bir kaydı açıp kanal durumu satırlarını görüyorsun, takvim linkini bir kez kendin tıklıyorsun, sesli örneğin kaydı klasörde. Üçü de tamamsa bu gün bitti.
 
 Tanıtım sayfandaki düğme bugün takvim linkine dönüyor; sayfayı ben güncelliyorum, sen bir şey yapmıyorsun.
 
 ### Adım 3: veri servisini çalıştır (15 dakika)
 
-Yarın beş yüz kişilik aday listesi çıkacak ve o listeyi FounderOS'un veri servisi çekecek. Bugün iki şey oluyor: servisin senin için çalıştığını gözünle görüyorsun ve öğleden sonraki pazar doğrulaması için üç nişin sayım çekimi başlıyor.
+Yarın beş yüz kişilik aday listesi çıkacak ve o listeyi FounderOS'un veri servisi çekecek. Bugün servisin senin için çalıştığını gözünle görüyorsun. Üç nişin sayım çekimi dün, pazar seçilir seçilmez başladı ve doğrulaması okundu; servis dün cevap vermediyse çekim bugün burada başlar ve doğrulama öğleden sonra okunur.
 
 Senin yaptığın bir şey yok. Hesap açmıyorsun, anahtar kopyalamıyorsun, İngilizce ekran görmüyorsun. Sıra şu:
 
-1. FounderOS üç niş için sayım çekimini başlatır: birinci nişin ve iki yedeğin kartındaki Haritalar kategori adı, İş Beyni'ndeki şehrin. Sayım çekimi beş yüz kayıta kadar sayar, e-posta ve Instagram çıkarmaz; aylık kayıt tavanından düşmez, yalnız çekim sayısına girer.
-2. Çekim birkaç dakika sürer. FounderOS bekleme cümlesini söyler ve bu sırada bir sonraki adıma geçer; sonucu öğleden sonra pazar doğrulamasında okur.
+1. Sayım çekimi dün başladıysa FounderOS sonucunu açar; başlamadıysa şimdi başlatır: birinci nişin ve iki yedeğin kartındaki Haritalar kategori adı, İş Beyni'ndeki şehrin. Sayım çekimi beş yüz kayıta kadar sayar, e-posta ve Instagram çıkarmaz; aylık kayıt tavanından düşmez, yalnız çekim sayısına girer.
+2. Yeni başladıysa çekim birkaç dakika sürer. FounderOS bekleme cümlesini söyler ve bu sırada bir sonraki adıma geçer; sonucu öğleden sonra pazar doğrulamasında okur.
 3. İlk niş hazır olduğunda FounderOS on kaydı ekrana getirir: kısa ad, telefon, site. Telefon sütunu doluysa yol açık. Bu on kayıt liste değil, kanıt; liste yarın çıkıyor.
 
 Aylık tavanı şimdi söylüyorum ki sonra sürpriz olmasın: servis bir ayda belli sayıda kayıt veriyor, yarınki sekiz yüz kayıt ve ay içindeki genişletmeler bu tavanın içinde kalıyor. Tavan dolarsa FounderOS söyler ve o ayın kalanında yedek yol çalışır; gelecek ay servis yeniden açılır.
@@ -137,7 +141,11 @@ Dördü de sağlanmadan eklentiden söz edilmez. Sağlandığında da kayıt dü
 
 ### Adım 4: kalan yarım saat
 
-Google takvimine çalışma saatlerini işaretle. Bir de her sabah için tek bir tekrarlayan hatırlatma koy: sabah bloğunun başına "FounderOS: günaydın yaz" adında, telefonundan bildirim gelen bir etkinlik. Sistem sana kendiliğinden bildirim gönderemiyor; bu etkinlik ve telefonundaki alarm onun yerini tutuyor. Bir kere kuruluyor, doksan gün çalışıyor.
+Google takvimine çalışma saatlerini işaretle.
+
+Sonra hatırlatmalar: her sabah sekizde günün işi telefonuna düşer; akşam yedi buçukta iş eksik kaldıysa tek hatırlatma gelir, pazartesi geçen haftanın özeti. Sen o bildirimle güne başlarsın. Birinci günün kapanışında açıldıysa burada yalnız bildirimin geldiğine bakılır. Açılmadıysa bugün açılır: panelini telefonunda aç, ana ekrana ekle (iPhone'da Safari'de Paylaş, yeni Safari'de alttaki üç noktanın içinde; sonra Ana Ekrana Ekle), paneli ana ekrandaki simgeden aç ve "Hatırlatmaları aç"a bas; telefon izin sorarsa izin ver. Deneme bildirimi birkaç saniyede düşer. Panelin sende yoksa, hatırlatmalar henüz açılmadıysa (lisans cevabında `hatirlatma` alanı yok; panelde kart görünmez) ya da telefonun bildirim göstermiyorsa yedek yol takvim alarmı: sabah bloğunun başına "FounderOS: günaydın yaz" adında, her gün tekrarlayan bir etkinlik. Bir kere kuruluyor, doksan gün çalışıyor.
+
+Bir de eklentinin kendini güncellemesini aç: sol menüde "Customize" (özelleştir), sonra "Plugins" (eklentiler); FounderOS'un geldiği adresin yanında "Sync automatically" (otomatik eşitle) anahtarını aç. Yeni sürüm kendiliğinden gelir. Bir gün sürüm uyarısı görürsen aynı yerde "Check for updates" (güncellemeleri denetle) düğmesine basarsın; kaldırıp yeniden eklemen gerekmez.
 
 Telefonunun sesli mesaj kutusunu aç. Telefon uygulamasının içinde sesli mesaj bölümü var; yoksa operatörünün uygulamasından açılıyor, iki yolla da olmazsa müşteri hizmetlerini arayıp bir dakikada açtırıyorsun. İçine tek cümle bırak: "Merhaba, ben [adın]. Şu an telefondayım, mesajınızı bırakın, bugün içinde döneceğim." Saha açılınca aradığın işletmeler seni geri arayacak ve o aramaların bir kısmı sen meşgulken gelecek.
 
@@ -145,26 +153,26 @@ Telefonunun sesli mesaj kutusunu aç. Telefon uygulamasının içinde sesli mesa
 
 Bunu bugün söylüyorum çünkü üçüncü blokta liste çıkaracaksın.
 
-İşin bu tarafı sandığından basit. Vergi kaydı olan işletmelere ulaşırken önceden izin almana gerek yok; kanun bunu telefonla arama için de böyle sayıyor. Yani bir işletmeyi arayabiliyorsun, yaptığın iş normal bir iş.
+İşin bu tarafı sandığından basit. İşletmeleri arıyor, onlara yazıyorsun; yaptığın iş normal bir iş.
 
-Karşılığında beş şeye dikkat ediyorsun ve beşi de zaten yapacağın şeyler:
+Beş şeye dikkat ediyorsun ve beşi de zaten yapacağın şeyler:
 - Listeye işletmenin genel numarası ve genel e-postası girer. Kişinin özel cep numarası girmez.
 - İlk temasta kim olduğunu ve numarayı nereden bulduğunu söylersin. "Google Haritalar'dan buldum" cümlesi baştan geçer.
 - Her aramanın ve her mesajın sonunda çıkış var: "İstemiyorsanız söyleyin, bir daha aramam."
 - İstemeyen kişi aynı gün listeden çıkar ve bir daha aranmaz. Kayıt yerinde (CRM ya da `adaylar.csv`) kapanma sebebi "aday istemedi" işaretlenir ve kayıt mesaj almaya kapatılır.
 - Kimden ne zaman ne istendiği kayıtlı duruyor.
 
-Bu beşine uyduğun sürece bu konuyu bir daha düşünmene gerek yok.
+Bu konuyu bir daha düşünmene gerek yok. Öğrenci sebebini sorarsa kaynak ya da kural adı anlatılmaz; tek cümle yeter: "Bu işte böyle yürüyor, en güvenli yol bu."
 
 ### Bütçe merdiveni bugüne ne diyor
 
 Birinci günde bütçe merdiveninin hangi basamağında olduğunu yazdık. Hangi kalemin hangi gün alınacağını o basamak söylüyor, ben o satırı okuyorum, sen bir şey yapmıyorsun.
 
-**Alt basamak.** Bugün tek kalem: Claude aboneliği. Aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. Bugün internet adresi ve iş e-postası alınmıyor, site ücretsiz adresle yayına çıkıyor ve kendi adresin ilk kanıttan sonra alınıyor. Tarayıcı demosu ücretsiz, dördüncü blokta FounderOS kurar. Sahaya çıkış yine beşinci bloğun sonunda.
+**Alt basamak.** Bugün tek kalem: Claude aboneliği. Aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. Bugün internet adresi ve iş e-postası alınmıyor, site ücretsiz adresle yayına çıkıyor ve kendi adresin ilk kanıttan sonra alınıyor. E-postaların o güne kadar şu an kullandığın Gmail adresinden gider; alan adlı e-posta ilk kanıttan sonra gelir. Tarayıcı demosu ücretsiz, ikinci blokta FounderOS kurar. Sahaya çıkış yine beşinci bloğun sonunda.
 
 **Orta basamak.** Bugün aynı tek kalem. Bugün internet adresi ve iş e-postası alınıyor. Sistemin varsaydığı normal yol bu.
 
-**Üst basamak.** Sıra değişmiyor. Fazla para hiçbir kalemi öne çekmiyor, erken alınan araç sahaya çıkışı hızlandırmıyor. Değişen tek şey beşinci blokta şirket belgelerinin tamamen hazır durması.
+**Üst basamak.** Sıra değişmiyor. Fazla para hiçbir kalemi öne çekmiyor, erken alınan araç sahaya çıkışı hızlandırmıyor.
 
 ### Bugün cebinden ne çıkıyor
 
@@ -189,7 +197,7 @@ Bitince: "Üç araç kurulu, CRM bölümün görüşmede açılacak, veri servis
 
 ## 7. Ne yazar
 
-İş Beyni'ne: CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, veri servisinin sayım çekimleri (tarih, üç nişin iş kimlikleri, ilk nişten gelen kayıt sayısı), yedek yola geçildiyse eklentinin kurulduğu tarayıcı ve verilen izinler, sesli mesaj metni, WhatsApp iş hesabının numarası ve karşılama metni, Claude aboneliğinin aylık tutarı, bütçe merdiveninin bu basamağında hangi kalemin hangi güne ertelendiği.
+İş Beyni'ne: CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, veri servisinin sayım çekimleri (tarih, üç nişin iş kimlikleri, ilk nişten gelen kayıt sayısı), yedek yola geçildiyse eklentinin kurulduğu tarayıcı ve verilen izinler, sesli mesaj metni, WhatsApp iş hesabının numarası ve karşılama metni, Claude aboneliğinin aylık tutarı, hatırlatmaların nasıl açıldığı (panelden telefon bildirimi ya da yedek yol olarak takvim alarmı), otomatik eşitlemenin açıldığı, bütçe merdiveninin bu basamağında hangi kalemin hangi güne ertelendiği.
 
 Aylık masraf tablosuna: Claude aboneliğinin tutarı ve yanına o günkü kurla TL karşılığı. Aday listesi için kalem açılmıyor; veri servisi FounderOS'un içinde. Ertelenen kalemler tabloda kendi bölümlerinde duruyor ve hangi güne ertelendikleri yanlarına yazılıyor.
 
@@ -223,6 +231,7 @@ Sıradaki: aynı gün, sayfanın yayını (siteni-kur), sonra pazar doğrulamas�
 - Sayım çekimi başlatılmadı: niş doğrulaması elle sayım yoluna düşer; çekim üçüncü bloktan önceki ilk boş saatte başlatılır.
 - Servis kapalıyken tarayıcı eklentisi kurulmadı ya da Google Haritalar'a izin verilmedi: kurulum üçüncü bloktan önceki ilk boş saate yazılır.
 - Google takvimine çalışma saatleri işaretlenmedi: ertesi sabahın ilk beş dakikası.
+- Hatırlatmalar açılmadı ya da bildirim telefona düşmüyor: ertesi sabahın ilk beş dakikası; olmazsa yedek yol takvim alarmı.
 - Masraf tablosuna Claude aboneliğinin tutarı girilmedi: gelir planı eksik hesaplıyor demektir, ilk kâr hesabında sorulur.
 - İkinci blokta üç saat aşıldı ve hâlâ program araştırılıyor: modül kapanır, kalan ne varsa üçüncü bloğun ilk yarım saatine yazılır.
 

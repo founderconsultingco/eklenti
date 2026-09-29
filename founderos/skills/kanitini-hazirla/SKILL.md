@@ -1,18 +1,20 @@
 ---
 user-invocable: false
 name: kanitini-hazirla
-description: "Dördüncü blok. Deneme araması ve tarayıcı demosu: sorunun ve çözümün kanıtı. Saha açıldıktan sonra her akşam yarım saat akşam testi."
+description: "Tarayıcı demosu ikinci blokta sayfayla birlikte, deneme araması ve kanıt cümlesi dördüncü blokta: sorunun ve çözümün kanıtı. Saha açılınca akşam testi ve sabah yazılı testi: ilk hafta her gün, sonra haftada iki gün."
 ---
 
 # kanitini-hazirla
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Dördüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır; bu modül, henüz tek müşterin yokken eline iki kanıt verir.
+Dördüncü günün modülü; tarayıcı demosu kısmı ikinci blokta, sayfanın yayınıyla aynı oturumda çalışır. Modül, FounderOS'un belli bir işi yapan parçasıdır; bu modül, henüz tek müşterin yokken eline iki kanıt verir.
 
 Birincisi sorunun kanıtı. Adayları gerçek bir müşteri gibi denersin: akşam ararsın, kaçı açmıyor sayarsın; mesaj yazarsın, kaç saatte döndüklerini ölçersin; formlarını doldurursun, dönen var mı bakarsın. Buna deneme araması diyoruz.
 
-İkincisi çözümün kanıtı. Sattığın sistemin küçük bir örneği tarayıcı demosunda çalışır: telefonda açılan tek bir sayfa, WhatsApp konuşması gibi; aday görüşmede kendi telefonundan bir müşteri gibi yazar, asistanın nasıl cevapladığını ve randevuyu nasıl yazdığını kendi gözüyle görür. Demoyu FounderOS bugün kurar, telefon araması yok.
+İkincisi çözümün kanıtı. Sattığın sistemin küçük bir örneği tarayıcı demosunda çalışır: telefonda açılan tek bir sayfa, WhatsApp konuşması gibi; aday görüşmede kendi telefonundan bir müşteri gibi yazar, asistanın nasıl cevapladığını ve randevuyu nasıl yazdığını kendi gözüyle görür. Demoyu FounderOS ikinci blokta kurar, telefon araması yok.
 
 Bu ikisinden iki cümle çıkar. Aday bazında yaşanmış kanca: "Dün akşam yedi onda aradım, açan olmadı." Toplu kanıt cümlesi: "Geçen hafta bu şehirde otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." İkisi de senin yaşadığın, senin saydığın şeydir.
 
@@ -22,32 +24,33 @@ Pazarlamada bunun adı şu: sorunun kanıtıyla gel, çözümün iddiasıyla de�
 
 Kanıt hikâyesi ile karıştırma: kanıt hikâyesi, ilk müşterinde çıkan gerçek rakamdır ve rapor gününde gelir. Buradaki iki kanıt daha önce, müşterin yokken elinde olur.
 
-**Bu testler denetim kartının içinde duruyor.** Canlı arama testi denetim kartının altıncı satırı, yazılı test yedinci satırı. İkisini de sen yaparsın, sonucu tek kelimeyle söylersin, sonuç o adayın denetim kartına yazılır. Kartın "en güçlü bulgu" satırı çoğu zaman buradan çıkıyor: arama açılmadıysa en güçlü bulgu odur; açıldıysa ve iş ilanı varsa o; o da yoksa yazılı test cevapsız kaldıysa o. Sıranın tamamı aday-denetimi-cikar'da. Testlerin nasıl yapılacağı, hangi saatte yapılacağı ve sınırları burada, bu metinde yazılıdır; denetim modülü bu metne bakar, kendi kuralını koymaz. Sınır burada değişirse denetimde de değişir. İki yerde iki ayrı kural olmaz.
+**Bu testler denetim kartının içinde duruyor.** Canlı arama testi denetim kartının altıncı satırı, yazılı test yedinci satırı. İkisini de sen yaparsın, sonucu test bitince tek mesajda sayıyla söylersin, sonuç o adayların denetim kartına yazılır. Kartın "en güçlü bulgu" satırı çoğu zaman buradan çıkıyor: arama açılmadıysa en güçlü bulgu odur; açıldıysa ve iş ilanı varsa o; o da yoksa yazılı test cevapsız kaldıysa o. Sıranın tamamı aday-denetimi-cikar'da. Testlerin nasıl yapılacağı, hangi saatte yapılacağı ve sınırları burada, bu metinde yazılıdır; denetim modülü bu metne bakar, kendi kuralını koymaz. Sınır burada değişirse denetimde de değişir. İki yerde iki ayrı kural olmaz.
 
 ## 2. Ne zaman çalışır
-- Dördüncü bloğun içinde: tam zamanlıda üç saat, işin yanında bir buçuk saat. Sabah bloğunda ilk toplu yazılı test ve form testi (tam zamanlıda yirmi aday, işin yanında on). Günün ikinci yarısında FounderOS tarayıcı demosunu kurar ve yayınlar, sen beş senaryoyu telefondan denersin ve ekran kaydını alırsın. Akşam yedi ile sekiz arası telefon testi. Gece adaya-mesaj-yaz ilk yüz teması hazırlar.
+- İkinci blokta, sayfanın yayınıyla aynı oturumda: FounderOS tarayıcı demosunu kurar ve sayfayla birlikte yayınlar (otuz dakika), sen beş senaryoyu telefondan denersin ve ekran kaydını alırsın.
+- Dördüncü bloğun içinde: tam zamanlıda iki buçuk saat, işin yanında bir saat. Sabah bloğunda ilk toplu yazılı test ve form testi (tam zamanlıda yirmi aday, işin yanında on). Akşam yedi ile sekiz arası telefon testi. Gece adaya-mesaj-yaz ilk yüz teması hazırlar.
 - Beşinci bloğun sabah bloğunda: bir önceki gün yapılan yazılı ve form testlerinin yirmi dört saati dolar, sonuçlar kesinleşir, kanıt cümlesi yazılır. On dakikada ön görüşme videosunun kanıt bölümünü çekersin; sayılar ve demo kaydı oraya girer. Hali ön görüşme sayfasına konur.
-- Beşinci günün akşamından itibaren her akşam yarım saat "akşam testi". Sayı sabit değil, plandan gelir: **ertesi gün telefonla aranacak adayların hepsi test edilir**, tavanı tam zamanlıda kırk, işin yanında yirmi. Yedi ile yedi buçuk arası. Kırk aday yarım saate sığıyor, çünkü tek deneme kırk saniye: çevirme, yirmi beş saniye çalma, tek kelime not. Açan çıkarsa konuşma başlatılmıyor, on beş saniyede kapanıyor. Bu yarım saat, günlük arama ve mesaj saatlerinin (üç saat yirmi dakika) üstüne gelir. İşin yanında çalışıyorsan bu yarım saat saha bloğunun içine düşer (18.00-20.30) ve o akşamın temas sayısından düşülmez, çünkü test aramaları temas sayılmaz. Tam zamanlıda saha bloğu on yedide bittiği için akşam testi saha bloğunun arkasına eklenen yarım saattir.
-- Beşinci günün sabahından itibaren her sabah yirmi beş dakika "sabah yazılı testi": ertesi gün yazılı temas edilecek adayların formu doldurulur ve WhatsApp'ına gerçek bir müşteri sorusu yazılır. Tam zamanlıda yirmi aday, işin yanında on. Bir form altmış saniye sürüyor ve cevabı beklenmiyor; sonuç ertesi sabah okunuyor, yani test bir gün önden yürüyor. Sınırları telefon testiyle aynı: sahte isim yok, sahte işletme yok, randevu almak yok, fiyat pazarlığı yok.
+- "Akşam testi", yarım saat. Sahanın ilk haftası her akşam (beşinci günün akşamından başlar); ikinci haftadan itibaren haftada iki akşam, günlerini plan söyler. Sayı plandan gelir: **sonraki günlerde telefonla ilk aranacak adaylar test edilir**, önce en çok istenen yüz işletme; tavanı tam zamanlıda kırk, işin yanında yirmi. Yedi ile yedi buçuk arası. Kırk aday yarım saate sığıyor, çünkü tek deneme kırk saniye: çevirme, yirmi beş saniye çalma, tek kelime not. Açan çıkarsa konuşma başlatılmıyor, on beş saniyede kapanıyor. Bu yarım saat, günlük arama ve mesaj saatlerinin (üç saat yirmi dakika) üstüne gelir. İşin yanında çalışıyorsan bu yarım saat saha bloğunun içine düşer (18.00-20.30) ve o akşamın temas sayısından düşülmez, çünkü test aramaları temas sayılmaz. Tam zamanlıda saha bloğu on yedide bittiği için akşam testi saha bloğunun arkasına eklenen yarım saattir.
+- "Sabah yazılı testi", yirmi beş dakika, akşam testiyle aynı günlerde: ilk hafta her sabah, sonra haftada iki sabah. Sonraki günlerde yazılı temas edilecek adayların formu doldurulur ve WhatsApp'ına gerçek bir müşteri sorusu yazılır. Tam zamanlıda yirmi aday, işin yanında on. Bir form altmış saniye sürüyor ve cevabı beklenmiyor; sonuç ertesi sabah okunuyor, yani test bir gün önden yürüyor. WhatsApp'tan soğuk mesaj yasağıyla çelişmez: bu bir satış mesajı değil, tek bir müşteri sorusudur, içinde satış yok ve cevabına satış yazılmıyor. Sınırları telefon testiyle aynı: sahte isim yok, sahte işletme yok, randevu almak yok, fiyat pazarlığı yok.
 
-**Hedef: günün temaslarının çoğunda yaşanmış kanca olsun.** Tam zamanlıda günde altmış aday test ediliyor, yüz temasın altmışında "ben yaşadım" cümlesi oluyor. İşin yanında otuz aday, kırk temasın otuzunda. Kalan adaylarda gözlem var ama yaşanmış değil: yorumdaki şikayet cümlesi, reklam sütunu, akşam altıda kapanan saatler. Yüzde yüz hedeflenmiyor, çünkü telefon testi ancak akşam saatinde anlamlı ve o saat günde iki buçuk saat; tavanı zorlamak testin kalitesini bozuyor.
+**Hedef: sahanın ilk haftası temasların çoğunda yaşanmış kanca olsun.** O hafta tam zamanlıda günde altmış aday test ediliyor, yüz temasın altmışında "ben yaşadım" cümlesi oluyor; işin yanında otuz aday, kırk temasın otuzunda. İkinci haftadan itibaren test haftada iki gün yapılır ve yaşanmış kanca en çok istenen yüz işletmeye ve sıranın başındaki adaylara gider. Kalan adaylarda gözlem var ama yaşanmış değil: yorumdaki şikayet cümlesi, reklam sütunu, akşam altıda kapanan saatler. Yüzde yüz hedeflenmiyor, çünkü telefon testi ancak akşam saatinde anlamlı ve o saat günde iki buçuk saat; tavanı zorlamak testin kalitesini bozuyor.
 
 **Bu sayılar sahadan gelen rakamla yeniden kesilir.** `ogren` komutu yaşanmış kancalı adayların cevap oranını gözlem kancalıların oranıyla karşılaştırıyor. Üç hafta sonunda fark küçük çıkarsa sayı iner, büyük çıkarsa test saati uzar. Karar sayıdan çıkar, fikirden değil.
 - Kanca gün adıyla söylenir: "geçen Salı akşam yedide aradım". Bir haftadan eski test kancada kullanılmaz.
-- Toplu kanıt cümlesi her pazartesi CRM'deki sayımla güncellenir.
+- Toplu kanıt cümlesi her pazartesi test kayıtlarının sayımıyla güncellenir.
 - İlk kanıt hikâyesi çıkınca demo senaryosuna gerçek rakam girer; kanıt cümlesi yerini kanıt hikâyesine bırakır.
 
 ## 3. Ne okur
 
-Kayıt yerinden (CRM açıldıysa CRM, açılmadıysa `adaylar.csv` ve İş Beyni'nin on beşinci bölümü): üçüncü blokta yazılan aday listesi, en çok istenen yüz işletme işareti, sahibinin adı, telefon, WhatsApp, Instagram, sitesinde form var mı, reklam veriyor mu işareti. Kartta kararı sahibinden başkası veriyorsa o kişinin adı yazılır.
+Aday listesinden (`adaylar.csv`; soğuk adaylar CRM açıldıktan sonra da burada): üçüncü blokta yazılan aday listesi, en çok istenen yüz işletme işareti, sahibinin adı, telefon, WhatsApp, Instagram, sitesinde form var mı, reklam veriyor mu işareti. Kartta kararı sahibinden başkası veriyorsa o kişinin adı yazılır.
 Niş kartından: telefon saatleri (çoğu kartta bu satır boştur, sahadan dolar), telefonu kim açıyor, sezon, yasal sınırlar, "aradım açmadılar" tipi gerçek şikâyetler.
 İş Beyni'nden: iş adın, sistemin adı, Dönüşüm Cümlesi, kayıp birimi, günlük temas dağılımı, çalışma düzeni, şehir, canlı site adresi (demo aynı adrese `/demo` olarak konur).
-Hazır kurulum paketinden: nişin asistan kuralları (fiyat vermez, numaraya dokunmaz, mevzuat cümleleri).
-Canlı doğrulama tablosundan (ikinci gün nişin şehirdeki sayılarının internetten sayıldığı tablo): reklam veren oranı. "Görülemedi" yazıyorsa reklam testi yapılmaz.
+Hazır kurulum paketinden: nişin asistan kuralları (fiyat vermez, numaraya dokunmaz, nişin sınır cümleleri).
+Canlı doğrulama tablosundan (birinci gün nişin şehirdeki sayılarının internetten sayıldığı tablo): reklam veren oranı. "Görülemedi" yazıyorsa reklam testi yapılmaz.
 
 ## 4. Ne sorar
 
-Sormaz. Hangi adayın hangi kanaldan, saat kaçta deneneceğini FounderOS karttan seçer. Senden aldığı iki şey var. Birincisi her denemenin sonucu, tek kelime: "açtı", "açmadı", "döndü 14.20", "dönmedi". İkincisi demo için "tamam".
+Sormaz. Hangi adayın hangi kanaldan, saat kaçta deneneceğini FounderOS karttan seçer. Senden aldığı iki şey var. Birincisi test bitince tek mesaj, sayıyla: kaç işletmeyi aradın, kaçı açtı ve açanların adları; yazılıda kaç kişiye yazdın, dönenlerin adı ve saati. Açanlar ve dönenler dışındaki herkes "açmadı" ya da "dönmedi" diye işlenir; sonuçları sohbete tek tek yazmazsın. İkincisi demo için "tamam".
 
 ## 5. Ne yapar
 
@@ -71,11 +74,11 @@ Yazılı testte de aynı kural: yirmi dört saatte dönmeyen "dönmedi".
 
 Sağlık ve tıbbi işlem nişlerinde (diş, estetik, güzellik salonunun tıbbi işlemleri) kural kesindir: hasta gibi yazmak yok, randevu istemek yok, tıbbi soru yok. Yazılı testin sorusu tıbbi olmayan bir sorudur: "Cumartesi açık mısınız?", "Otoparkınız var mı?" Form testi yok. Telefon testi var.
 
-Her niş için "kapalıydık" itirazına hazır cevap CRM'de kancanın yanında durur: "O saatte arayan müşteri sizin için kaçmış bir müşteri sayılmıyor mu?"
+Her niş için "kapalıydık" itirazına hazır cevap kayıtta kancanın yanında durur: "O saatte arayan müşteri sizin için kaçmış bir müşteri sayılmıyor mu?"
 
 Adayın sana verdiği cevabın ekran görüntüsü hiçbir yerde kullanılmaz. Kullanılan tek şey senin kendi ölçümün: gün, saat, süre.
 
-Kayıt: her sonucu tek kelimeyle söylersin, FounderOS CRM'e adayın notuna yazar: kanal, gün, saat, sonuç, dönüş süresi. Sen CRM'e elle bir şey girmezsin.
+Kayıt: sonuçları test bitince tek mesajda, sayıyla söylersin; FounderOS her adayın satırına aday aracıyla yazar: kanal, gün, saat, sonuç, dönüş süresi. Sen kayda elle bir şey girmezsin.
 
 Aynı satır o adayın denetim kartının altıncı ve yedinci satırına da düşer. İki yerde iki ayrı kayıt tutulmaz; aynı kayıt iki yerden okunur. Arama açılmadıysa o satır çoğu zaman kartın en güçlü bulgusu oluyor ve mesajın ilk cümlesi oradan çıkıyor. Test yapılmamış adayın kartında o iki satır "yapılmadı" yazar ve en güçlü bulgu sıradaki satırdan seçilir; kart o haliyle de çalışır, ama zayıf çalışır.
 
@@ -83,7 +86,7 @@ Aynı satır o adayın denetim kartının altıncı ve yedinci satırına da dü
 
 Yaşanmış kancayı FounderOS yazar, aday bazında, tek satır, gün, saat, kanal ve sonuçla: "Dün akşam yedi onda aradım, açan olmadı." "Salı on yirmide WhatsApp'tan yazdım, dörtte döndünüz." "Formunuzu Salı doldurdum, dönüş gelmedi." Kural: sadece yaşanmış olan; gün ve saat gerçek; "genelde açmıyorsunuz" gibi genelleme yok. Dördüncü bloğun elli denemesi o adayların kancası olur ve sahanın ilk günü "geçen Salı" diye söylenir. Diğer adayların kancası akşam testinden gelir.
 
-Toplu kanıt cümlesini FounderOS CRM sayımından yazar: "Geçen hafta [şehir]de otuz [niş] işletmesini akşam yedide aradım, yirmi ikisi açmadı." "On işletmenin formunu doldurdum, üçü döndü, en hızlısı dört saat." Kurallar: sayı yuvarlanmaz, yukarı çekilmez. Bir kanalda on denemeden az varsa o kanal için toplu cümle yok. Her pazartesi güncellenir. Görüşmede bu cümle kartın kanıtı değil, senin kendi sayımındır ve öyle söylenir: "Ben saydım." Kullanıldığı yerler: arama ve e-posta açılışı, video mesajın beşinci satırı, görüşme özet ekranı ve sunum, "kanıtla" itirazının cevabı, ön görüşme sayfası ve videosu, kanıt hikâyesi çıkana kadar e-posta imzasındaki kanıt satırı.
+Toplu kanıt cümlesini FounderOS test kayıtlarının sayımından yazar: "Geçen hafta [şehir]de otuz [niş] işletmesini akşam yedide aradım, yirmi ikisi açmadı." "On işletmenin formunu doldurdum, üçü döndü, en hızlısı dört saat." Kurallar: sayı yuvarlanmaz, yukarı çekilmez. Bir kanalda on denemeden az varsa o kanal için toplu cümle yok. Her pazartesi güncellenir. Görüşmede bu cümle kartın kanıtı değil, senin kendi sayımındır ve öyle söylenir: "Ben saydım." Kullanıldığı yerler: arama ve e-posta açılışı, video mesajın beşinci satırı, görüşme özet ekranı ve sunum, "kanıtla" itirazının cevabı, ön görüşme sayfası ve videosu, sitenin güven satırı, Kim bölümünün ilk cümlesi ve görüşme planlama bölümü, Instagram biyografisinin ikinci satırı, kanıt hikâyesi çıkana kadar e-posta imzasındaki kanıt satırı. Pazartesi güncellemesi bu yerlerin hepsine birden gider; iki yerde iki farklı sayı durmaz.
 
 Yurt dışında "müşteri ilk dönene gider, beş dakika içinde dönmeyen kaybeder" diye rakamlar dolaşır. Rakamları farklı farklı; hiçbiri senin metnine sayı olarak girmez. Görüşmede rakam vermeden tek cümle söylenir: "Müşteri ilk dönene gider."
 
@@ -91,30 +94,30 @@ Yurt dışında "müşteri ilk dönene gider, beş dakika içinde dönmeyen kayb
 
 Tarayıcı demosu: sattığın sistemin küçük, çalışan bir örneği; telefon araması değil, tarayıcıda açılan tek bir sayfa. Adayın telefonunda bir WhatsApp konuşması gibi açılır: üstte nişin tipik işletmesinin adı ("Örnek Klima Servisi" gibi; senin sistemin adı sayfanın başlığında), altında bir telefon çerçevesi. Aday bir müşteri gibi yazar ya da hazır cevaplardan birine dokunur; asistan kartın asistan kurallarıyla ve işletmecinin sözlüğüyle cevap verir, iki üç soru sorar, uygun saati verir ve "randevunuz yazıldı" der; arkasından hatırlatma mesajının önizlemesi görünür. İkinci sahne: "işletme telefonu açamadı" düğmesi; otuz saniye sayacı işler ve arayana giden mesaj düşer.
 
-Demoyu FounderOS yapar, sen yapmazsın: dördüncü blokta, kanitini-hazirla'nın ikinci yarısında, otuz dakika. Tek dosya, `site/demo.html`; görünüşü marka kitinden, ana sayfayla aynı; yapay zekâ bağlantısı, anahtar, sunucu yok. Cevaplar önceden yazılmış bir karar ağacından gelir: beş senaryo (randevu isteme, fiyat sorusu, mesai dışı mesaj, randevu değiştirme, "insan mısın"), serbest yazıda anahtar kelimeye göre en yakın senaryoya gidilir, tanımadığı şeye "bunu çalışana aktarıyorum" der; gerçek asistanın kuralı da budur. Fiyat vermez, marka ve model tavsiye etmez, nişin mevzuat cümlelerini söyler. Sayfa siteni-kur'un yayın adımıyla aynı adrese `/demo` olarak konur (alt basamakta ücretsiz adres); CRM'e ve başlangıç görüşmesine bağlı değildir, birinci müşteriden önce elindedir.
+Demoyu FounderOS yapar, sen yapmazsın: ikinci blokta, sayfa yayına çıkmadan hemen önce, otuz dakika. Tek dosya, `site/demo.html`; görünüşü marka kitinden, ana sayfayla aynı; yapay zekâ bağlantısı, anahtar, sunucu yok. Cevaplar önceden yazılmış bir karar ağacından gelir: beş senaryo (randevu isteme, fiyat sorusu, mesai dışı mesaj, randevu değiştirme, "insan mısın"), serbest yazıda anahtar kelimeye göre en yakın senaryoya gidilir, tanımadığı şeye "bunu çalışana aktarıyorum" der; gerçek asistanın kuralı da budur. Fiyat vermez, marka ve model tavsiye etmez, nişin sınır cümlelerini söyler. Sayfa siteni-kur'un yayın adımıyla aynı adrese `/demo` olarak konur (alt basamakta ücretsiz adres); CRM'e ve başlangıç görüşmesine bağlı değildir, birinci müşteriden önce elindedir.
 
 Demo nişe göre, adaya göre değil. Adaya özel demo, yani onun işletme adıyla kurulmuş bir sayfa, görüşmeden önce yapılmaz; kişiye özel olan şey adayın kendi deneme sonucudur. Onun adına kurulum ödemeden sonra yapılır.
 
-Demo bir şeyi doğrudan gösteriyor: yazan müşterinin kaybolmaması ve açılmayan telefonun mesaja dönmesi. Bunu anlatmıyorsun, denetiyorsun. Dürüstlük cümlesi sabittir ve demoyu açarken söylenir: "Bu bir örnek; sizin sisteminiz sizin bilgilerinizle kurulur ve her soruya sizin kurallarınızla cevap verir." Aday "telefonu da açıyor mu" derse: "Telefon altyapınız uygunsa evet; kurulumda bakıp söylüyorum." Sesli demo yok; telefon araması yaptırılmaz.
+Demo bir şeyi doğrudan gösteriyor: yazan müşterinin kaybolmaması ve açılmayan telefonun mesaja dönmesi. Bunu anlatmıyorsun, denetiyorsun. Dürüstlük cümlesi sabittir ve demoyu açarken söylenir: "Bu bir örnek; sizin sisteminiz sizin bilgilerinizle kurulur ve her soruya sizin kurallarınızla cevap verir." Aday "telefonu da açıyor mu" derse sesli demo: demo sayfasındaki konuşma düğmesi açıksa "Düğmeye basın, bir müşteri gibi konuşun" dersin ve susarsın; aday asistanla kendi telefonunda canlı konuşur. Düğme henüz yoksa sesli örneğin kaydını dinletirsin (CRM açıldığı gün kurulan örnek asistanın kaydı): "Evet, şöyle açıyor. Sizin hattınıza kurulumda bakıyorum." Kayıt da yoksa: "Evet; hattınıza kurulumda bakıyorum." Konuşma düğmesi gelince (araclari-kur, CRM açıldığı gün) demo sayfasına tek kod bloğu eklenir; sayfanın geri kalanı aynı kalır.
 
-Test, bugünün ikinci yarısında, demo yayına girer girmez: kendi telefonundan beş senaryoyu sırayla denersin. Fiyat verdiyse, saçmaladıysa, randevuyu yazmadıysa, bir senaryo yarım kaldıysa "tamam" yok; dosya klasöründe olduğu için FounderOS aynı oturumda düzeltir, tekrar denersin. Bozuk demo, hiç demo olmamasından kötüdür. Demo "tamam" almadan da görüşmeler yapılır; o zaman kanıtın deneme aramasıdır.
+Test, demo yayına girer girmez: kendi telefonundan beş senaryoyu sırayla denersin. Fiyat verdiyse, saçmaladıysa, randevuyu yazmadıysa, bir senaryo yarım kaldıysa "tamam" yok; dosya klasöründe olduğu için FounderOS aynı oturumda düzeltir, tekrar denersin. Bozuk demo, hiç demo olmamasından kötüdür. Demo "tamam" almadan da görüşmeler yapılır; o zaman kanıtın deneme aramasıdır.
 
 Demo kaydı: test temiz çıkınca telefonda demoyu kullanırken kırk ile altmış saniyelik ekran kaydı alırsın. Telefonun kendi ekran kaydı yeter: iPhone'da Denetim Merkezi'ndeki "Ekran Kaydı" düğmesi (yoksa Ayarlar, Denetim Merkezi'nden eklenir), Android'de hızlı ayarlardaki "Ekran kaydedici". Kayıt Fotoğraflar'a düşer. Sahne: mesaj yazılır, asistan cevaplar, saat verilir, "randevunuz yazıldı". Kullanım: ön görüşme videosunun kanıt bölümü bu kayıtla çekilir; kayıt videodan sonra gelirse kanıt bölümü o gün yeniden çekilir, üç dakika sürer. Mesajlarda ve video mesajda demo linki gönderilmez, aday sorsa da. Demo, görüşmeye gelme sebebidir; önceden gönderirsen sebebi harcamış olursun.
 
 Görüşmedeki yeri: soru bölümünden sonra, sunumda. Ekran paylaşımı ve sunum dosyası gerekmez: "Şimdi şu linki açın, bir müşteri gibi bir şey yazın." Aday kendi telefonunda dener. Görüntülüde ekranı paylaşıp adayın yerine sen yazabilirsin ama önce ona yazdırmayı denersin. Soru bölümünden önce gösterilmez.
 
-**Dördüncü blok akışı.** Sabah bloğunun başında FounderOS yazılı test sorularını ve form adaylarını verir · yazılı testler ve form testleri kartın yazdığı saatte, yani sabah on ile on bir arası · saha bloğunun içinde FounderOS tarayıcı demosunu kurar ve yayınlar (otuz dakika), sen beş senaryoyu telefondan denersin, hemen arkasından ekran kaydı · akşam yedi ile sekiz arası telefon testi, otuz arama (nişin saati farklıysa FounderOS söyler) · testin bitiminden on beş dakika sonra sonuçları söylersin, CRM'e ve o adayların denetim kartına yazılır; gece ilk yüz temas üretilir, form sonuçları ertesi günün sabah bloğunda kesinleşir. İşin yanında çalışıyorsan: yazılı ve form testleri öğle arasında, on ile on bir arası olmuyorsa FounderOS'un vereceği saatte (yirmi dakika); telefon testi 19.00-20.00, yani saha bloğunun içinde; demo testi dördüncü günün akşam bloğunda; ön görüşme videosunun kanıt bölümü beşinci günün sabah bloğunda çekilir. İşin yanında dördüncü gün toplam bir buçuk saat, tam zamanlıda üç saat.
+**Dördüncü blok akışı.** Sabah bloğunun başında FounderOS yazılı test sorularını ve form adaylarını verir · yazılı testler ve form testleri kartın yazdığı saatte, yani sabah on ile on bir arası · akşam yedi ile sekiz arası telefon testi, otuz arama (nişin saati farklıysa FounderOS söyler) · test bitince sonuçları tek mesajda, sayıyla söylersin (kaç arama, kaçı açtı, açanların adları); o adayların satırına ve denetim kartına yazılır; gece ilk yüz temas üretilir, form sonuçları ertesi günün sabah bloğunda kesinleşir. İşin yanında çalışıyorsan: yazılı ve form testleri öğle arasında, on ile on bir arası olmuyorsa FounderOS'un vereceği saatte (yirmi dakika); telefon testi 19.00-20.00, yani saha bloğunun içinde; ön görüşme videosunun kanıt bölümü beşinci günün sabah bloğunda çekilir. İşin yanında dördüncü gün toplam bir saat, tam zamanlıda iki buçuk saat.
 
 ## 6. Ne söyler
 
 Sabah bloğunda: "Bugün iki kanıt çıkarıyoruz. Sorunun kanıtı: kartın söylediği kapanış saatinden sonra otuz işletmeyi arayacaksın, kaçının açmadığını sayacağız. Çözümün kanıtı: günün ikinci yarısında sattığın sistemin çalışan örneğini telefonunda deneyeceksin; ben kuruyorum, sen müşteri gibi yazacaksın. Yarından sonra 'bana güvenin' demeyeceksin; 'dün akşam aradım, açan olmadı' diyeceksin."
-Test sırasında biri açarsa: "Konuşma başlatma. 'Kaça kadar açıksınız' de, teşekkür et, kapat. Bana 'açtı' de."
+Test sırasında biri açarsa: "Konuşma başlatma. 'Kaça kadar açıksınız' de, teşekkür et, kapat. Adını not al; test bitince bana kaç aradığını ve açanların adlarını tek mesajda yaz."
 Akşam bloğunda: "Otuz arama, yirmi ikisi açmadı. Yirmi ikisinin kartına altıncı satır olarak yazıldı; sahanın ilk günü onları bu cümleyle arıyorsun. Yazılı on sorudan şimdilik dördü döndü, en hızlısı bir saat; kalanı yarın sabah kesinleşir. Form sonuçları da yarın sabah. Kanıt cümlen yarın sabah hazır, içinde uydurma tek rakam yok."
 Demo bozuksa: "Fiyat verdi. Böyle demo gösterilmez. Dosya bende, düzeltiyorum, beş dakika sonra tekrar dene."
 
 ## 7. Ne yazar
 
-CRM'de adayın notuna: kanal, gün, saat, sonuç, dönüş süresi. Aynı sonuç adayın denetim kartının altıncı ve yedinci satırına düşer. CRM'de adayın kaydına: yaşanmış kanca tek satır ve "kapalıydık" cevabı. İş Beyni'ne: kanıt cümlesi (tarihli), tarayıcı demosunun adresi ve dosyası, demo durumu (beş senaryo, "tamam" tarihi), demo kaydının yeri. Doksan Gün Planı'nın dokuzuncu bölümüne (kancalar): yaşanmış kanca kalıbı. Niş kartına: telefon saati ve dönüş süresi ölçümleri, ilk elli denemeden sonra, "sahadan dolacak" satırlarına.
+Aday listesinde adayın satırına (aday aracıyla): kanal, gün, saat, sonuç, dönüş süresi, yaşanmış kanca tek satır. Aynı sonuç adayın denetim kartının altıncı ve yedinci satırına düşer; "kapalıydık" cevabı kartta kancanın yanında durur. Günlüğe: o günün test sayıları (kaç arama, kaçı açtı; kaç yazılı, kaçı döndü). İş Beyni'ne: kanıt cümlesi (tarihli), tarayıcı demosunun adresi ve dosyası, demo durumu (beş senaryo, "tamam" tarihi), demo kaydının yeri. Doksan Gün Planı'nın dokuzuncu bölümüne (kancalar): yaşanmış kanca kalıbı. Niş kartına: telefon saati ve dönüş süresi ölçümleri, ilk elli denemeden sonra, "sahadan dolacak" satırlarına.
 
 ## 8. Yedek yol
 
@@ -122,12 +125,12 @@ CRM'de adayın notuna: kanal, gün, saat, sonuç, dönüş süresi. Aynı sonuç
 - Otuz aramada yirmi beşten fazlası açtıysa: telefon kanıtı zayıf. Yazılı ve form testine ağırlık verilir; kanca kartın açılış cümlesi olur.
 - Yazılı testte aday satış sanıp kızarsa: tek satır "müşteri olarak sormuştum, teşekkürler"; aday "sonra" aşamasına.
 - Demo beş turda temiz çıkmadıysa: "tamam" yok, görüşmeler yine yapılır, kanıt deneme araması; her gün bir tur daha test.
-- CRM'e yazılamıyorsa ya da henüz açılmadıysa: sonuçlar `adaylar.csv`'ye ve `denetim-kartlari.md`'ye; CRM açıldığı gün aktarılır.
+- Test sonuçlarının yeri her zaman `adaylar.csv` ve `denetim-kartlari.md`; CRM açılınca oraya aktarılmaz, aday cevap verip CRM'e geçerse kartıyla birlikte geçer.
 - İşin yanında çalışıyorsan ve akşam testinden sonra ertesi gün mesai saatinde arayamıyorsan: açmayan adayı öğle arasında ararsın ya da kanca e-postayla gider.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: test sonuçları o adayların denetim kartına düşer, aday-denetimi-cikar kartı tamamlar ve en güçlü bulguyu seçer; aynı gece adaya-mesaj-yaz ilk yüz teması üretir, içinde dördüncü günün kancaları ve toplu cümle var. Dördüncü ve beşinci gün gorusme-provasi-yap; provada görüşme özet ekranındaki ölçüm satırı kullanılır. Beşinci günün akşamından itibaren her akşam yarım saat akşam testi, her sabah yirmi beş dakika sabah yazılı testi.
+Sıradaki: test sonuçları o adayların denetim kartına düşer, aday-denetimi-cikar kartı tamamlar ve en güçlü bulguyu seçer; aynı gece adaya-mesaj-yaz ilk yüz teması üretir, içinde dördüncü günün kancaları ve toplu cümle var. Dördüncü ve beşinci gün gorusme-provasi-yap; provada görüşme özet ekranındaki ölçüm satırı kullanılır. Beşinci günün akşamından itibaren, sahanın ilk haftası her gün, sonra haftada iki gün: akşam yarım saat akşam testi, sabah yirmi beş dakika sabah yazılı testi.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Otuz aramada yirmi beşten fazlası açtı: yazılı ve form testine geçilir, karta not düşülür.
@@ -138,4 +141,4 @@ Sıradaki: test sonuçları o adayların denetim kartına düşer, aday-denetimi
 - Bir adayın test sonucu denetim kartına düşmedi: kart eksik sayılır, o aday aranmaz, sonuç aynı gece kartın altıncı ya da yedinci satırına yazılır.
 - Görüşme analizinden "bulgu reddedildi" işareti geliyor, yani işletmeciler "biz açtık" diyor: test saati kartın yazdığı saatle karşılaştırılır, gerekirse saat değişir ve karta not düşer.
 
-Beş kural: boş sayfa yok (sorular, arama listesi, kurulum hazır gelir) · sessiz bitiş yok (akşam sayım, CRM kaydı, denetim kartının altıncı ve yedinci satırı, "yarın yüz temas") · onay (demo "tamam"ı senden; test aramalarını kendi elinle yaparsın; tek istisna yok) · sahadan güncelleme (ölçümler karta ve kanıt cümlesine yazılır) · sormaz söyler (kanal, saat, aday seçimi FounderOS'un).
+Beş kural: boş sayfa yok (sorular, arama listesi, kurulum hazır gelir) · sessiz bitiş yok (akşam sayım, adayın satırına kayıt, denetim kartının altıncı ve yedinci satırı, "yarın yüz temas") · onay (demo "tamam"ı senden; test aramalarını kendi elinle yaparsın; tek istisna yok) · sahadan güncelleme (ölçümler karta ve kanıt cümlesine yazılır) · sormaz söyler (kanal, saat, aday seçimi FounderOS'un).

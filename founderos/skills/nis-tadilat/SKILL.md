@@ -6,6 +6,8 @@ description: "Sadece mutfak-banyo tadilat ve ic mimarlik nisinin karti: rakamlar
 
 # Mutfak-banyo tadilat ve iç mimarlık
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Mutfak dolabı üreten atölye ve mağazalar, banyo tadilatı yapan usta/firmalar, anahtar teslim ev/daire tadilatı yapan küçük müteahhitler, küçük iç mimarlık ve dekorasyon ofisleri. Zincir bayiler de dahil (ör. Kelebek Mutfak-Banyo bayileri) ([sikayetvar.com/kelebek-mutfak](https://www.sikayetvar.com/kelebek-mutfak/soz-verilen-tarihte-teslim-edilmeyen-mutfak-dolaplari-ve-iletisimsizlik-nedeniyle-yasanan-magduriyet)). Dahil değil: büyük inşaat firmaları, toplu konut/şantiye işleri, sadece mobilya perakendecisi olup üretim/uygulama yapmayan mağazalar (Trendyol, Hepsiburada gibi e-ticaret kanalları). İlk odak için en uygun büyüklük: ekibi olan, yüksek tutarlı ve düzenli talep alan firma; tek ustalı işletmede keşif ve teklif zinciri usta sahadayken yürümüyor.
 
@@ -53,7 +55,7 @@ Sözlüğü: keşif, ölçü, teklif, boş teklif, "bir düşüneyim" diyip kapa
 
 **Reklam kütüphanesi kelimeleri.** mutfak dolabı, mutfak dolabı fiyatları, banyo tadilat, anahtar teslim tadilat, ev yenileme, iç mimar, iç mimarlık, dekorasyon, mutfak yenileme, banyo yenileme, mutfak tasarımı, hazır mutfak, özel ölçü mutfak, tadilat firması, daire tadilatı.
 
-**Yasal sınırlar.** Bu oturumda nişe özel bir reklam/tanıtım kısıtı bulunamadı; TMMOB İçmimarlar Odası'nın meslek etiği/reklam kuralları sayfası bu oturumda erişilip doğrulanamadı ([icmimarlarodasi.org.tr](https://www.icmimarlarodasi.org.tr/tr)). Sağlık sektöründeki gibi özel bir reklam yasağı görülmedi ama bu "yok" değil, "doğrulanamadı", sahadan/hukuki kaynaktan teyit edilmeli. Genel tüketici pazarlama mesajlarında geçerli olan İYS (İleti Yönetim Sistemi) onay kuralının bu niş için ayrıca bir istisnası olup olmadığı bu oturumda doğrulanamadı.
+**Yasal sınırlar.** Bu oturumda nişe özel bir reklam/tanıtım kısıtı bulunamadı; TMMOB İçmimarlar Odası'nın meslek etiği/reklam kuralları sayfası bu oturumda erişilip doğrulanamadı ([icmimarlarodasi.org.tr](https://www.icmimarlarodasi.org.tr/tr)). Sağlık sektöründeki gibi özel bir reklam yasağı görülmedi ama bu "yok" değil, "doğrulanamadı". Genel tüketici pazarlama mesajlarında geçerli olan İYS (İleti Yönetim Sistemi) onay kuralının bu niş için ayrıca bir istisnası olup olmadığı bu oturumda doğrulanamadı. İkisinin de teyidi ekip tarafında yapılır. Bu nişte işletmeye giden her metin kartın hazır cümleleriyle sınırlıdır; yeni bir iddia gerekiyorsa denetçi çıkarır ve ekip notu düşülür. Öğrenciye hukuk anlatılmaz.
 
 **Yoğun şehirler.** Fiyat örneklerinde en çok İstanbul ve Ankara öne çıkıyor (aletheia.studio İstanbul'u en pahalı, İzmir'i yüzde 15-25 daha ucuz gösteriyor; Armut'un anahtar teslim tadilat örnek projeleri İstanbul ve Ankara 120 m2 daireler) ([aletheia.studio](https://aletheia.studio/ic-mimar-fiyatlari-2026-istanbul-izmir-ve-turkiye-geneli-ucretler-ic-mimar-nasil-secilir/), [armut.com](https://armut.com/fiyatlari/anahtar-teslim-tadilat_4202)). Şehir bazlı işletme yoğunluğu sıralaması (ör. Ankara Siteler, İstanbul Masko/Modoko gibi bilinen mobilya merkezleri) bu oturumda kaynakla doğrulanamadı; bilinmiyor, sahadan dolacak.
 
@@ -71,17 +73,17 @@ En güçlü üç itiraz: gelip görmeden fiyat söyleyemem, ben zaten dönerim u
 
 "Instagram'ı ajansa verdim, oradan geliyor zaten." Ajans talebi üretiyor, DM/telefon cevabı ve keşif sonrası takip yine işletmede kalıyor; sistem ajansın rakibi değil tamamlayıcısı.
 
-"Ben oda üyesiyim, meslek kurallarına aykırı olur mu?" Bulunan kaynaklarda buna dair bir kısıt görülmedi (doğrulanamadı), sistemin kendisi tanıtım değil, mevcut talebi kaybetmeme aracı.
+"Ben oda üyesiyim, meslek kurallarına aykırı olur mu?" Sistem tanıtım yapmıyor; size zaten yazan müşteriye cevap veriyor ve keşif verdiğiniz kişiyi hatırlatıyor. Odanızın yazılı bir kuralı varsa not alırız, sistem ona göre kurulur.
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Keşfe gidip teklif verdiğiniz de 'bir düşüneyim' deyip bir daha dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa o teklifler telefonunuzda öyle mi duruyor?"
 
 İşleyiş sorusu: "Siz keşifteyken ya da imalattayken WhatsApp'tan ya da siteden 'mutfak dolabı kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, üç dört firmaya birden mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, mutfak mı banyo mu komple daire mi, kaç metrekare, bütçe aralığı ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip 'düşüneceğim' diyen müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; mutfak mı banyo mu komple daire mi, kaç metrekare, bütçe aralığı ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip 'düşüneceğim' diyen müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Usta keşifteyken ya da imalattayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 
@@ -92,7 +94,7 @@ Karşı taraf bunu söylerse:
 - "Ben zaten dönerim, unutmam." Söyle: "Güzel, çoğu dönemiyor. Keşif yapıp teklif verdiğiniz müşteriye 'şu gün arayacağım' dediğinizde o gün siz mi arıyorsunuz, yoksa o sırada başka bir işin ortasında mı kalıyor?" Ne için: niyeti tartışmamak, dönüşün gerçekte ne zaman gittiğini sormak; kartta şikayetlerin en büyük temasının "net tarih verilmiyor, dönüş yok" olduğu yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "ben arıyorum" derse teşekkür et, "yoğunluk artarsa bir kez daha arayabilir miyim" de, kapat; FounderOS "sonra" yazar. "Kalıyor" derse: "İşte o kalan arama için kuruyorum" de ve saat iste.
 - "Karar süresi zaten uzun, aceleye getirmek istemem." Söyle: "Acele ettirmiyor zaten, baskı yok; müşteri haftalarca düşünürken arada bir nazikçe 'sorunuz var mı, yardımcı olabilir miyim' diye soruyor. O haftalar boyunca müşteri sizden mi haber alıyor, yoksa teklif aldığı öbür firmadan mı?" Ne için: uzun karar süresinin sistemin tam işe yaradığı yer olduğunu kartın diliyle söylemek; rakibin de aynı süreyi beklediğini ve son hatırlatanın kazandığını ona sormak. Sonra: "bizden alır" derse teşekkür et ve kapat; "kimseden" ya da "bilmiyorum" derse görüşme iste.
 - "Instagram'ı ajansa verdim, oradan geliyor zaten." Söyle: "Ajans gönderiyi atıyor, talebi getiriyor; gönderinin altından 'mutfak kaç para' diye yazan müşteriye ve keşiften sonraki takibe kim bakıyor, ajans mı, siz mi?" Ne için: ajansın talep ürettiğini, cevabın ve keşif sonrası takibin işletmede kaldığını ayırmak; ajansın rakibi değil tamamlayıcısısın. Sonra: "ben" derse "ben tam o tarafı kuruyorum, ajansla işim yok" de ve saat iste; "ajans dönüyor" derse teşekkür et ve kapat.
-- "Ben oda üyesiyim, meslek kurallarına aykırı olur mu?" Söyle: "Baktığım kaynaklarda buna dair bir kural görmedim ama odayla teyit etmedim, o yüzden 'olmaz' demem. Sistem tanıtım yapmıyor, size zaten yazan müşteriye cevap veriyor ve keşif verdiğiniz kişiyi hatırlatıyor. Odanızın bu konuda yazılı bir kuralı var mı?" Ne için: doğrulanmamış şeyi kesin söylememek; kartın yasal sınırında bu konunun doğrulanamadığı yazıyor. Sonra: "yok" ya da "bilmiyorum" derse görüşme iste, görüşmeden önce oda kuralına bak; "var, yasak" derse teşekkür et ve kapat, FounderOS uygunluk sütununa "oda kuralı" yazar.
+- "Ben oda üyesiyim, meslek kurallarına aykırı olur mu?" Söyle: "Sistem tanıtım yapmıyor; size zaten yazan müşteriye cevap veriyor ve keşif verdiğiniz kişiyi hatırlatıyor. Odanızın bu konuda yazılı bir kuralı var mı?" Ne için: kesin bilmediğin bir şeye "olmaz" dememek; sistemin tanıtım değil cevap ve hatırlatma olduğunu söyleyip kuralı ona sormak. Sonra: "yok" ya da "bilmiyorum" derse görüşme iste; FounderOS ekip notu düşer. "Var, yasak" derse teşekkür et ve kapat, FounderOS uygunluk sütununa "oda kuralı" yazar.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
 İsim kökleri: Keşif, Proje, Reno. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.

@@ -6,6 +6,8 @@ description: "Sadece oto kuafor, seramik kaplama ve arac kaplama nisinin karti: 
 
 # Oto kuaför, seramik kaplama, araç kaplama
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Detaylı iç dış temizlik, pasta cila, seramik kaplama, boya koruma filmi, cam filmi. İlk odak için en uygun büyüklük: PPF ve seramik kaplama yapan, düzenli fiyat talebi alan merkez; fiyat sorup kaybolanın takibi en büyük fırsat.
 
@@ -89,13 +91,13 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, bot fiyat veremez, tekno
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen yıl seramik kaplama yaptırdığınız müşterileri bakım zamanı gelince siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Gün içinde eliniz araçtayken Instagram'dan ya da WhatsApp'tan fiyat soran müşteriye ne oluyor, akşama mı kalıyor, başka yere de mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz araç başındayken Instagram'a, WhatsApp'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, aracın markasını, modelini, hangi hizmeti istediğini ve fotoğrafını alıp randevuya yazıyor; geçen yılın seramik müşterilerine de bakım zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç oto kuaförle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz araç başındayken telefon çalarsa aramayı o açıyor, Instagram'a, WhatsApp'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; aracın markasını, modelini, hangi hizmeti istediğini ve fotoğrafını alıp randevuya yazıyor; geçen yılın seramik müşterilerine de bakım zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç oto kuaförle başlıyorum."
 
 Çalışan açarsa: "Usta araç başındayken Instagram'a ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
 

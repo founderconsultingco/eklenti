@@ -6,7 +6,9 @@ description: "Musteriyle imzalanacak hizmet sozlesmesinin sablonu. Sadece onay-b
 
 # Hizmet Sözleşmesi (modül değil, onay-belgesini-hazirla'nın kullandığı şablon)
 
-Bu şablon üçüncü blokta kurulur ve her müşteride yalnız köşeli parantezler değişir. Metne kendin madde ekleme, çıkarma. Kendi hukukçun varsa bir kere okutmanı öneririm; bir kere okutulur, sonra her müşteride aynı metin kullanılır.
+Bu şablon hazır gelir. Üçüncü blokta FounderOS köşeli parantezleri doldurur, öğrenci okur ve gönderir; her müşteride yalnız köşeli parantezler değişir. Madde eklenmez, çıkarılmaz, değiştirilmez. Bilgiler kayıttan gelir; öğrenciden yalnız eksik kişisel bilgisi (açık adresi, kimlik numarası) bir kere istenir. Şirket henüz açılmadıysa Hizmet Veren'in vergi dairesi alanına "-" yazılır, vergi numarası yerine kimlik numarası girer; öğrenciye vergi dairesi sorulmaz. Müşterinin fatura bilgileri kayıtta yoksa sözleşme o alanlar boş gitmez: kapanış mesajına müşteriye giden tek satır eklenir, "Sözleşmeye yazmam için fatura bilgilerinizi (unvan, adres, vergi dairesi ve numarası) buraya yazar mısınız?", cevap gelince FounderOS belgeyi tamamlar ve öğrenci gönderir; ödeme bunu beklemez. KDV alanı İş Beyni'nde fiyat cümlesinin yanındaki cevaptan dolar (varsayılan "hariç"), öğrenciye sorulmaz. Öğrenciye madde, hukuki terim ya da imza türü anlatılmaz; ona söylenen tek cümle: "Müşterinin onaylayacağı sözleşme hazır, mesajın içinde."
+
+Müşteri bir maddeyi sorarsa ya da değişiklik isterse onay-belgesini-hazirla'daki yol işler: öğrenci açıklamaz, pazarlık yapmaz, "Not aldım, netleştirip size yazılı döneceğim." der; FounderOS destek adresine (destek@founderos.so) gidecek tek satırı hazır verir. Ekibin cevabı gelmeden değişmiş metin gönderilmez; bu not öğrenciye söylenmez.
 
 ---
 
@@ -155,21 +157,21 @@ Bu sözleşme 17 (on yedi) maddeden ve 3 (üç) ekten oluşur, taraflarca okunar
 ### EK-1: Hizmetin kapsamı
 
 [Seçilen kademeye ve işletmenin müşteri yolculuğuna göre "İş modeli" bölümünden doldurulur. Randevuyla çalışan işletme için örnek:]
+- Gelen aramayı karşılayan, ihtiyacı soran ve randevu yazan sesli asistan (yapay zekâ resepsiyonisti); cevapsız aramanın Müşteri adına alınan 0850 numaraya yönlendirilmesi. Telefon altyapısı kurulumda kontrol edilir; uygun değilse madde 6.3.1 uygulanır
 - Gelen yazılı mesajları karşılayan, ihtiyacı belirleyen ve randevu yazan asistanın kurulması ve yürütülmesi
-- Yeni başvuruya hızlı dönüş; [WhatsApp hattı bağlanabiliyorsa] cevapsız aramaya kendiliğinden dönüş mesajı
+- Yeni başvuruya hızlı dönüş: formdan gelen kişiye altmış saniye içinde yazılı mesaj; [hat, sağlayıcı ve iletişim izni uygunsa] beş dakika içinde sesli arama; [WhatsApp hattı bağlanabiliyorsa] cevapsız aramaya kendiliğinden dönüş mesajı
 - Randevu takvimi, onay ve hatırlatma mesajları; randevuya gelmeyenle yeniden iletişim
 - Konuşmayı yarıda bırakanın ve görüşüp karar vermeyenin takibi
-- Eski müşteri listesine dönüş turu; hizmet sonrası tekrar randevu, ek hizmet ve referans mesajları
-- [Sağlık, diş ve estetik nişlerinde hukukçu onayı geldiyse] Google değerlendirme isteme akışı
+- Eski müşteri ve başvuru listesine dönüş turu: iletişim izni olan kişilere yazılı mesaj; [hat, sağlayıcı ve iletişim izni uygunsa] sesli arama; hizmet sonrası tekrar randevu, ek hizmet ve referans mesajları
+- [Sağlık, diş ve estetik nişlerinde kliniğin yazılı onayı geldiyse] Google değerlendirme isteme akışı
 - Rapor günü ([21/28]. gün) raporu ve aylık rapor
-- [Telefon altyapısı uygunsa] Gelen aramayı karşılayan sesli asistan ve cevapsız aramanın Müşteri adına alınan 0850 numaraya yönlendirilmesi
 [Teklifle çalışan işletmede "randevu" satırlarının yerine: işletmenin onayladığı teklifin gönderilmesi, cevabının ve kabulünün takibi, kabulde kapora ya da ödeme bağlantısı.]
 
 Kapsam dışı olanlar, her sözleşmede açıkça yazılır:
 - Reklam bütçesi, sosyal medya içeriği ve site yapımı. Reklam yönetimi bu sözleşmenin kapsamı dışındadır; ayrı bir kademe olarak ancak ayrıca yazılı anlaşmayla eklenir.
 - İşletmenin asıl hizmetinin yerine getirilmesi
 - Fiyat, kampanya ve hizmet koşulu belirleme; asistan yalnızca Müşteri'nin onayladığı bilgiyi kullanır
-- Telefonla dış arama, yalnızca numara, hesap ve iletişim izni uygunsa ve ayrıca yazılı anlaşmayla
+- İletişim izni kaydı olmayan kişilere telefonla ya da mesajla tanıtım; sağlık alanında açık rızası olmayan kişiye arama
 - Belirli bir randevu, satış ya da gelir miktarı; randevu satış sayılmaz, teklif kabulü ödeme sayılmaz
 
 ### EK-2: Raporda yer alan üç sayı

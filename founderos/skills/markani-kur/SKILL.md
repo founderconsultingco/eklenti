@@ -6,9 +6,11 @@ description: "Birinci gün. İş adı, alan adı kontrolü, konumlandırma, logo
 
 # markani-kur
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Birinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının ilk adımı: neden senden alsınlar.
+Birinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının ilk adımı: satışa hazırlan.
 
 Bu modül senin marka kitini kurar. Marka kiti, işinin nasıl görüneceğini tek yerde toplayan dosya: ad, logo, renkler, yazı tipleri, kullanım kuralları ve hazır şablonlar.
 
@@ -20,14 +22,14 @@ Bir uyarı da baştan: bu iş bir gün sürer. İki günden fazla sürerse bir s
 
 Şunlar bu modülün işi değildir:
 - Instagram, WhatsApp ve YouTube profillerinin doldurulması (kisisel-markani-kur, dördüncü blok).
-- Landing page (siteni-kur, aynı gün).
+- Tanıtım sayfası (siteni-kur, aynı oturuşta).
 - Ön görüşme videosu (satis-videosunu-cek, beşinci gün).
 - Adı bulmak. Ad burada konur.
 
 Pazarlamadaki karşılığı: marka güven kısayoludur; tanımadığı birine para verecek insanın ilk baktığı şey.
 
 ## 2. Ne zaman çalışır
-- Birinci gün, teklif ve fiyat bandından sonra. Ad ve konumlandırma yarım saat, kitin doldurulması on dakika, dosyaların üretilmesi bir dakika. Tek oturuşta biter.
+- Birinci bloğun üçüncü oturuşu, teklif ve fiyat bandından sonra. Ad ve marka yönü yarım saat, kitin doldurulması on dakika, dosyaların üretilmesi bir dakika. Tek oturuşta biter.
 - İlk kanıt hikâyesi çıkınca ikinci kez, kısa bir güncelleme için: kanıt satırı ve rakam kite girer.
 - Başka zaman çalışmaz. "Logoyu değiştirsem" isteği degisiklige-karar-ver'e gider.
 
@@ -46,7 +48,9 @@ Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin i
 
 **İkinci karar, marka yönü.** Seçilen isimle üç kilit üretirsin ve ekranda kart olarak açarsın. Üçü birbirinden gerçekten farklıdır: farklı işaret, farklı tipografi, farklı palet, farklı kilit biçimi. Öğrenci bir numarayı söyler. Burada ikinci tur yoktur; üçünden biri seçilir, çünkü üçü de kullanılabilir haldedir ve gün akşama kadar bitmek zorundadır.
 
-Üçüncü bir soru daha var ve tek satırdır: elinde kullanmak istediğin bir renk ya da hazır bir logo var mı. Varsa kit onun etrafına kurulur, yoksa yoluna devam edilir.
+Üçüncü bir soru daha var ve tek satırdır: elinde kullanmak istediğin bir renk ya da hazır bir logo var mı. Birinci oturuştaki hazır varlık sorusunda cevabı geldiyse sorulmaz. Varsa kit onun etrafına kurulur, yoksa yoluna devam edilir.
+
+Telefon numarası İş Beyni'nde yoksa (tanışmada sorulmuyor) kitten önce tek satırla istenir: kartvizit ve sayfanın görüşme düğmesi onu kullanıyor. Ayrı iş hattı varsa o, yoksa kendi numarası.
 
 Sorulmayanlar: alan adı seçimi (isim önerilirken kontrol edilmiş oluyor), yazı tipi, renk kodu, işaret biçimi. Bunlar seçeneklerin içinde geliyor; öğrenciye tek tek sorulmuyor. "Hangi yazı tipini istersin" sorusu cevaplanamayacak bir sorudur.
 
@@ -56,7 +60,7 @@ Marka birinci günün işi ve tamamı bugün çıkar. Kısaltılmış hali yok. 
 
 **Üç isim birlikte gelir, adresleriyle.** İsim tek başına önerilmez: önerilmeden önce adresi kontrol edilir. Sebebi şu: ad birinci günde konuyor, logo o adla çiziliyor, bütün panolar o adla basılıyor; adres ilk kez günler sonra aranırsa ve doluysa elinde iki kötü seçenek kalıyor, ya kiti çöpe atacaksın ya tireli rakamlı bir adres alacaksın.
 
-Kontrol sırası, beş uzantı: `.com`, `.com.tr`, `.co`, `.ai`, `.io`. İlk boş çıkan o adın adresi olur. Beşi de doluysa o isim listeye girmez. Tire, rakam ve uzun birleşik yazım yok; adres telefonda dikte edilebilecek kadar kısa olacak. Kontrolü FounderOS yapar, godaddy.com'un arama kutusundan; öğrenci bu adımda hiçbir şey açmaz. Kesin cevap satın alma ekranının kendisidir, o yüzden adres alınana kadar "boştu" denir, "senin" denmez.
+Kontrol sırası, iki uzantı: `.com` ve `.com.tr`. İlk boş çıkan o adın adresi olur. İkisi de doluysa o isim listeye girmez. Tire, rakam ve uzun birleşik yazım yok; adres telefonda dikte edilebilecek kadar kısa olacak. Kontrolü FounderOS yapar, godaddy.com'un arama kutusundan; öğrenci bu adımda hiçbir şey açmaz. Kesin cevap satın alma ekranının kendisidir, o yüzden adres alınana kadar "boştu" denir, "senin" denmez. Kontrol ekranı açılmazsa gün durmaz: ad yine önerilir, yanına "adres kontrolü bekliyor" yazılır ve kontrol satın alma günü yapılır.
 
 **İsim nasıl bulunur: dört aile, üçü listede.** Dört aile var; nişe göre üçü seçilir ve her seçenek farklı bir aileden gelir. Böylece öğrenci sadece kelimeyi değil kelimenin türünü de seçmiş oluyor.
 
@@ -71,7 +75,7 @@ Kontrol sırası, beş uzantı: `.com`, `.com.tr`, `.co`, `.ai`, `.io`. İlk bo�
 
 **Adın önünde iki kontrol var ve ikisi de mekanik.**
 
-Birincisi adres: beş uzantı sırayla bakılır, boş çıkmayan ad listeye girmez. Bu zaten yukarıda yazılı.
+Birincisi adres: iki uzantı sırayla bakılır, ikisi de dolu çıkan ad listeye girmez. Bu zaten yukarıda yazılı.
 
 İkincisi çağrışım kontrolü ve **atlanamaz**. Her aday ad, önerilmeden önce internette aranır. Sonuçların ilk sayfası işletme ve marka dışı bir şeyle doluysa o ad listeye girmez. Bakılan şey şudur: adın bir dini cemaat ya da tarikatın adı olup olmadığı, bir siyasi parti ya da hareketin adı olup olmadığı, bir futbol kulübü ya da taraftar grubunun adı olup olmadığı, Türkiye'de tanınan büyük bir markanın adı olup olmadığı, ve argoda ya da başka bir dilde kötü bir karşılığı olup olmadığı.
 
@@ -96,7 +100,7 @@ Her seçeneğin altında tek satır açıklama olur ve açıklama tasarım dili 
 
 **Kit.** Seçilen kilitle şablon doldurulur ve dosyalar üretilir. On dakika sürer ve sonunda öğrenci ekranda on iki panoyu görür. Günün en görünür anı budur: sabah adı bile olmayan işin rengi, yazısı, logosu, sitesinin başlığı ve üç Instagram gönderisi gözünün önünde duruyor.
 
-Kit çıkınca öğrenciye gösterir, tek soru sorarsın: "Bu senin işin gibi duruyor mu?" Bir cümleyi ya da bir rengi değiştirmek isterse değiştirirsin. Yeniden seçim turu açılmaz; seçim iki adım önce yapıldı.
+Kit çıkınca öğrenciye gösterirsin ve aynı mesajda sayfaya geçersin. Ayrı bir onay sorusu yoktur: birinci günün onay noktası iş adıdır, isim seçilirken alındı ve kit o onayın içindedir. Tek cümle eklenir: "Bir rengi ya da cümleyi değiştirmek istersen söyle, sayfayı kurarken de değiştirebilirim." Değiştirmek isterse değiştirirsin. Yeniden seçim turu açılmaz; seçim iki adım önce yapıldı.
 
 Adres bugün seçilir ama bugün alınmaz. Sunucu, yayın servisi ve hesap açma birinci günde hiç konuşulmaz; bugün marka kimliği çıkar, satın alma ve yayın sonraki günlerin konusu.
 
@@ -132,7 +136,7 @@ Birincisi: marka kiti diye bir **resim** teslim edilir. Öğrenci güzel bir tah
 
 **Şablon:** bu becerinin klasöründeki `marka-sablonu.html`. On iki pano, bütün ölçüler, bütün kurallar ve her varlığın tam piksel boyu onun içinde. FounderOS o dosyayı olduğu gibi kopyalar, içindeki `/*FOUNDEROS-MARKA*/` işaretinin üstüne tek bir `window.MARKA` bloğu yazar. Şablonun HTML ve CSS kısmına dokunulmaz: pano eklenmez, ölçü değiştirilmez, yeni renk kuralı yazılmaz. Şablonda bir eksik görülürse öğrencinin dosyasında yamanmaz, açık iş olarak not edilir ve şablon bir kere düzeltilir.
 
-**Üretim:** aynı klasördeki `marka-uret.py`. Şablon her varlığı `#v-<ad>` adresinde tam ölçüsünde çiziyor; betik bir tarayıcıyı görünmez kipte açıp her adresi o ölçüde kaydediyor. Yirmi iki dosya, yaklaşık on beş saniye. Öğrenci terminale girmez, komutu FounderOS çalıştırır ve önceden haber verir: "Şimdi dosyaları üretiyorum, ekranda birkaç işlem satırı göreceksin, normal." Ana yöneticinin "dosya yazarken komut çalıştırma" kuralının tek istisnası burasıdır.
+**Üretim:** aynı klasördeki `marka-uret.py`. Şablon her varlığı `#v-<ad>` adresinde tam ölçüsünde çiziyor; betik bir tarayıcıyı görünmez kipte açıp her adresi o ölçüde kaydediyor. Yirmi iki dosya, yaklaşık on beş saniye. Öğrenci terminale girmez, komutu FounderOS çalıştırır ve önceden haber verir: "Şimdi dosyaları üretiyorum, ekranda birkaç işlem satırı göreceksin, normal." Ana yöneticinin kabuk kuralı şudur: dosya yazmak için kabuk komutu kullanılmaz. İstisnası üçtür, marka, sayfa ve aday aracının betikleri; bu onlardan biridir ve çalışmadan önce "ekranda birkaç işlem satırı görünecek, normal" denir.
 
 ### On iki pano
 
@@ -291,7 +295,7 @@ Okuma yüzeyinde en az üç yerde insan eli görünecek: gerçek bir iş fotoğr
 ## 6. Ne söyler
 
 Açılışta: "Şimdi marka. Bir saat, tek oturuş; yarına sarkarsa yayın günü kayar. Ad, kimlik ve dosyalar bugün çıkıyor."
-Görsel yönü söylerken: "Nişin klima ve kombi servisi. Yön sağlam ve yüksek kontrastlı: koyu zemin, kalın başlık, tek vurgu rengi. Sebebi şu: bu sektörde güven, işini bilen ve lafı uzatmayan görüntüden geliyor. Bunu tartışmıyoruz."
+Görsel yönü söylerken: "Nişin klima ve kombi servisi. Yön sağlam ve yüksek kontrastlı: koyu zemin, kalın başlık, tek vurgu rengi. Sebebi şu: bu sektörde güven, işini bilen ve lafı uzatmayan görüntüden geliyor. Üç yön gösteriyorum, birincisi bu; seçim senin."
 İsimleri verirken: "Üç isim, üçü farklı türden: 1) [ad], [aile], adresi boş. 2) [ad], [aile], adresi boş. 3) [ad], [aile], adresi boş. Numarasını söyle yeter. Üçü de olmadıysa bir tur daha getiriyorum, sonra karar veriyoruz."
 Sistem adını açıklarken: "[Ad] senin nişinin kökü artı sistemin yaptığı iş artı sistem eki. Bu tür adlar kurulmuş bir sistem satan biri gibi gösteriyor, tek kişilik bir hizmet satan biri gibi değil. Görüşmede de işine yarıyor: adın kendisi ne sattığını söylüyor."
 Neden bu isimler diye sorarsa: "Adın ne yaptığını anlatması gerekmiyor, tanınması gerekiyor. Ne yaptığını tek cümlelik konumlandırman anlatıyor. 'Klima Asistan' gibi bir ad hem sıkıcı duruyor hem ikinci nişe geçtiğinde seninle gelmiyor."
@@ -318,14 +322,14 @@ Bir sonraki modüllere: sayfa düzeni panosu ve seçilen alan adı siteni-kur'a,
 - Tarayıcı bulunamazsa: panolar yine çıkar (`marka-kiti.html` tek dosya, tarayıcıda açılıyor), görsel dosyalar üretilemez. Eksik olanlar İş Beyni'ne yazılır ve öğrenciye tek cümleyle söylenir. Birinci gün kapanır, ikinci güne ertelenmez.
 - Yazı tipi Türkçe karakteri bozuyorsa: talimat yenilenir ve Türkçe destekleyen bir tipe geçilir. Bu tartışma konusu değil.
 - Adı beğenmezsen: ikincisi gelir, sonra üçüncüsü; üçüncü turda karar verilir, dördüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
-- Beğendiğin adın beş uzantısı da doluysa: o ad önerilmez, sıradaki ada geçilir. Tireli ya da rakamlı adres alınmaz; adresi olmayan adla marka kurulmaz.
+- Beğendiğin adın iki uzantısı da (.com ve .com.tr) doluysa: o ad önerilmez, sıradaki ada geçilir. Tireli ya da rakamlı adres alınmaz; adresi olmayan adla marka kurulmaz.
 - Çağrışım araması yapılamazsa (arama çalışmıyorsa): o tur için yalnız sistem adı, kısa uydurma ve soyadı aileleri kullanılır. Gerçek Türkçe kelime ailesi aramasız açılmaz, çünkü riski en yüksek olan ailedir.
 - Alan adı kontrolü yapılamazsa (satıcının ekranı açılmazsa): ad yine de konur ve kit basılır, İş Beyni'ne "adres kontrolü bekliyor" satırı yazılır. Gün durmaz; kontrol satın alma günü ekranın kendisinde yapılır, dolu çıkarsa yedeğe geçilir.
 - Elinde hazır logo varsa: kit onun etrafına kurulur, logo yeniden yapılmaz.
 - Kit süreyi aşarsa: sıra bellidir ve baştan kısaltılır. Bugün mutlaka biten dört şey var: logo dosyaları, profil görseli, renk ve yazı tipi kararı, marka kartı. Sosyal kareler ve kurumsal belgeler ikinci bloğa kalabilir. Sebebi şu: yarın sayfa yayına çıkıyor ve hesaplar açılıyor, ikisi de logoyu ve profil görselini istiyor.
 - Bir dosya biçimi üretilemezse: üretilebilen hali verilir ve sınır açıkça söylenir. "Bunu ben üretemiyorum, şu hali elinde" demek dürüsttür; üretilmemiş dosyayı listede "hazır" göstermek değil.
 - Öğrenci klasörü karıştırır ve "hangisini kullanacağım" derse: seçim ona bırakılmadı, cevabı sen verirsin ve dosyayı sen koyarsın. Rehber yazıp yollamazsın.
-- Sağlık nişindeysen: kartın yasal sınırlar bölümü okunur. Kendi markanda tedavi sözü, hasta görseli ve öncesi sonrası kullanılmaz; o kısıtlar müşterinin tanıtımı için ama senin kitinde de bulunmaz.
+- Sağlık nişlerinde: FounderOS kartın yasal sınırlar bölümünü okur ve kiti ona göre kurar: tedavi sözü, hasta görseli ve öncesi sonrası kullanılmaz. Öğrenciye kural anlatılmaz; sorarsa tek cümle: "Bu sektörde öncesi-sonrası fotoğrafı kullanmıyoruz; en güvenli yol bu."
 
 ## 9. Sıradaki adım ve işaretler
 

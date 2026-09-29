@@ -6,7 +6,7 @@ description: "On sekiz inanc degisimi cumlesi. Sadece vazgecme isareti geldigind
 
 # On sekiz inanç değişimi (bankası)
 
-Vazgeçme, bir gün aniden gelmiyor. Önce bir cümle geliyor. "Bu iş bana göre değil", "herkes reddediyor", "niş yanlış seçtim", "biraz daha hazırlanayım". Cümle sessizce doğru kabul ediliyor ve iki gün sonra CRM'de sıfır kayıt oluyor.
+Vazgeçme, bir gün aniden gelmiyor. Önce bir cümle geliyor. "Bu iş bana göre değil", "herkes reddediyor", "niş yanlış seçtim", "biraz daha hazırlanayım". Cümle sessizce doğru kabul ediliyor ve iki gün sonra kayıtta sıfır temas oluyor.
 
 İnanç değişimi, o cümlelerden birini çürüten hazır karşılıktır. Ana yönetici vazgeçme işaretini görünce o günün planını iptal eder ve buradan ilgili olanı seçer. Seçtiğini olduğu gibi okumaz: öğrencinin kendi rakamıyla ve kendi hikâyesiyle söyler. Rakamı İş Beyni'nden alır. Rakam yoksa inanç değişimi kullanılmaz, önce rakam çıkarılır; rakamsız yüreklendirme boş övgüdür ve yasaktır.
 
@@ -22,7 +22,7 @@ Kullanım kuralı: bir oturumda en fazla bir tane. Aynı inanç değişimi aynı
 
 **3. "Bana bir kere bile evet demediler, demek ki olmuyor."** İki farklı şey karıştırılıyor: senin satamaman ile senin henüz yeterince denememiş olman. Bunları ayıran tek şey rakam. Sende [şu kadar] görüşme var. Kararı yirmi dokuz görüşme sonra vereceğiz, bugün değil. Kullanım: "bu iş olmuyor" cümlesi geldiğinde.
 
-**4. "Sesimden anlıyorlar, acemi olduğumu."** Acemilik ses tonundan değil, hazırlıksızlıktan anlaşılıyor. Senin elinde görüşme özet ekranı, on soru, on dört itirazın karşılığı ve prova kaydı var. Acemi olan hazırlıksız girendir. Kaç prova yaptın: [rakam]. Kullanım: telefon korkusu.
+**4. "Sesimden anlıyorlar, acemi olduğumu."** Ton gerçekten ele veriyor; ama tonu yaş ya da sesin rengi bozmuyor, hazırlıksızlık bozuyor: acele, yutulan cümle sonu, sessizliği doldurmak. Bunların hepsi provada düzeliyor. Senin elinde görüşme özet ekranı, on soru, on dört itirazın karşılığı ve prova kaydı var. Kaç prova yaptın: [rakam]; kaçı temiz: [rakam]. Kullanım: telefon korkusu.
 
 ## İkinci küme: niş ve teklif
 
@@ -50,7 +50,7 @@ Kullanım kuralı: bir oturumda en fazla bir tane. Aynı inanç değişimi aynı
 
 **14. "Başkaları üç ayda yapmış, ben yapamadım."** Karşılaştırdığın kişinin günlük temas sayısını bilmiyorsun. Bu işte tek değişken o. Senin düzenin [tam zamanlı / işin yanında] ve günlük sayın [rakam]; plan da o sayıya göre kuruldu. İşin yanında çalışan birinin doksan günlük hedefi dört müşteri değil, bir ya da iki müşteri; bu bir eksiklik değil, planın kendisi. Kullanım: dışarıyla karşılaştırma.
 
-**15. "Biraz daha hazırlanayım, sonra ararım."** Hazırlık bir yere kadar hazırlık, ondan sonra erteleme. Ölçüsü şu: on iki prova yapıldıysa ve sıfır gerçek görüşme varsa hazırlık bitmiştir. Sende [prova sayacı] prova, [görüşme sayısı] görüşme var. Kullanım: prova sayacı dolduğunda.
+**15. "Biraz daha hazırlanayım, sonra ararım."** Hazırlık bir yere kadar hazırlık, ondan sonra erteleme. Ölçüsü şu: on iki prova yapıldıysa, son beşin en az üçü temizse ve sıfır gerçek görüşme varsa hazırlık bitmiştir. Sende [prova sayacı] prova, [temiz prova] temiz, [görüşme sayısı] görüşme var. Kullanım: prova sayacı dolduğunda.
 
 **16. "Sistemi daha iyi kurayım, sonra satarım."** Sattığın şey sistem değil, sonuç. Sistem ilk müşteride kuruluyor ve ilk müşteride öğreniliyor. Bugüne kadar yaptığın temas sayısı kayıtta: [temas sayısı]. Araç ekranında geçen saati kimse saymıyor ama o saat bu sayıya bir şey eklemedi. Kullanım: araç kurcalama.
 

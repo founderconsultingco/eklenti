@@ -6,11 +6,13 @@ description: "Ayda bir. Gelir, gider, kâr marjı, müşteri başına kâr."
 
 # kari-hesapla
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Ayda bir çalışan modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül cebine ne kaldığını hesaplar.
 
-Neden bu iş var: sıfırdan başlayan biri cirosuna bakıp kazandığını sanıyor. "Bu ay 70.000 TL geldi" diyor ama o paranın içinde mali müşavir, Bağ-Kur, vergi, araç abonelikleri ve ödeme komisyonu var. Hepsi çıkınca kalan bambaşka bir rakam.
+Neden bu iş var: sıfırdan başlayan biri cirosuna bakıp kazandığını sanıyor. "Bu ay 70.000 TL geldi" diyor ama o paranın içinde şirket ve muhasebe gideri, araç abonelikleri ve ödeme komisyonu var. Hepsi çıkınca kalan bambaşka bir rakam.
 
 İkinci sebep: para geldiği ay ile paranın harcandığı ay aynı değil. Kurulum ücreti bir kere geliyor, giderler her ay gidiyor. Üçüncü ayda "iyi gidiyorum" sanan kişi aslında ilk iki ayın kurulum paralarını yemiş oluyor.
 
@@ -19,7 +21,7 @@ Neden bu iş var: sıfırdan başlayan biri cirosuna bakıp kazandığını san�
 Şunlar bu modülün işi değildir:
 - Günlük ve haftalık sayılar (rakamlari-oku ve degisiklige-karar-ver).
 - Fiyatı belirlemek (fiyati-belirle). Bu modül üç ayda bir onu yeniden çalıştırır.
-- Vergi beyanı ve muhasebe. Onu mali müşavirin yapar; bu modül sadece senin kendi hesabın.
+- Şirketin resmi hesapları. Onları mali müşavirin yapar; bu modül sadece senin kendi hesabın.
 
 Pazarlamadaki karşılığı: ciro gurur, kâr geçim.
 
@@ -31,17 +33,17 @@ Pazarlamadaki karşılığı: ciro gurur, kâr geçim.
 
 ## 3. Ne okur
 
-İş Beyni'nden: müşteri sayısı, her müşterinin kurulum ve aylık ücreti, aylık masraf tablosu, geçen ayın hesabı, fiyat sürümü.
+İş Beyni'nden: müşteri sayısı, her müşterinin kurulum ve aylık ücreti, aylık masraf tablosu, fiyat sürümü. Günlükten: geçen ayın hesabı (geçen ayın son iş gününün kaydı). Müşterilerin bilgi dosyalarından: müşteri bölümünün aylık bedeli ve kurulamayan parça indirimi.
 CRM'den: müşteri kayıtlarındaki kurulum ücreti, aylık ücret, aylık tahsilat günü ve tahsilat durumu satırları. Bunlar ödeme kaydı değil, senin yazdığın satırlar; parayı gerçekten aldığını banka hesabından doğruluyorsun. Kaybedilen müşteri kayıp sebebi satırından çıkıyor.
-Mali müşavirinden gelen rakamlar: o ayki vergi ve prim tutarları.
+Mali müşavirinden gelen tek rakam: o ayki şirket ve muhasebe gideri (vergi, prim ve müşavirin ücreti bir arada).
 
 ## 4. Ne sorar
 
 İki soru sorar, ikisi de rakam ister:
-1. Bu ay mali müşavirin sana ne kadarlık vergi ve prim söyledi.
+1. Bu ay şirket ve muhasebe için toplam ne ödedin? Müşavirin söylediği rakam yeter. Şirket henüz açılmadıysa bu soru sorulmaz.
 2. Banka hesabında ay başında ne vardı, ay sonunda ne var.
 
-Sebebi şu: sistemde hiç para verisi yok. CRM tahsilatı görüyor ama vergiyi ve senin cebindekini görmüyor. Bu iki rakamı sen vereceksin.
+Sebebi şu: sistemde hiç para verisi yok. CRM tahsilatı görüyor ama şirket giderini ve senin cebindekini görmüyor. Bu iki rakamı sen vereceksin.
 
 ## 5. Ne yapar
 
@@ -58,11 +60,10 @@ Bu ayrım önemli. İki müşteriden gelen paranın büyük kısmı kurulum ücr
 ### Gider
 
 Kalemler sırayla:
-- Mali müşavir ücreti.
-- Bağ-Kur primi.
-- Vergi. Rakamı müşavirinden aldın.
-- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı. CRM ve tarayıcı demosu ücretsiz, bu satıra yazılmıyor.
-- Sesli dakika: müşterilerinin sesli asistanının konuştuğu dakikalar, CRM'in ücret ekranından okunur, müşteri başına ayrı. Sesli asistan kurulmadıysa sıfır.
+- Şirket ve muhasebe gideri. Tek satır: müşavirin o ay söylediği toplam (vergi, prim ve müşavirin ücreti bir arada). Şirket açılmadıysa bu satır boş durur.
+- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı. Senin kendi CRM bölümün FounderOS'la birlikte geliyor; ayrı bir fatura gelirse o ay bu satıra yazılır. Tarayıcı demosu ücretsiz.
+- Müşteri bölümü: her müşterinin CRM bölümünün aylık bedeli, müşteri başına ayrı. Rakamı ekip bölümü açtığı gün sana yazılı söyledi; o gün bu satıra girdi.
+- Müşteri başına kullanım giderleri, müşteri başına ayrı satırlar: yazılı asistan kullanımı, yorum yanıtları, akış tetikleyicileri (kullanım başına ücretli olanlar), sesli dakika. Sesli dakikanın rakamını ekip yazılı verir; sesli asistan kurulmadıysa sıfır. Bu dört satırın rakamı ilk müşteride ölçülür: sahadan dolacak. Ölçülene kadar satır boş geçilmez, "sahadan dolacak" diye durur ve kâr o ay "kullanım giderleri hariç" etiketiyle yazılır.
 - Ödeme komisyonu. Her tahsilattan kesilen yüzde.
 - Varsa reklam harcaması, varsa dışarıdan aldığın yardım.
 
@@ -72,7 +73,7 @@ Toplam çıkarılır.
 
 Gelir eksi gider, kalan kârın. Kârın bölü gelir, kâr marjın.
 
-Burada bir tuzak var: iki tür kâr hesabı dolaşıyor. Biri sadece araç masraflarını çıkarıp "yüzde doksan sekiz kâr" gösteriyor. O rakam gerçek değil, çünkü vergi, prim ve müşavir onun içinde yok. Bu modül her zaman hepsi çıktıktan sonraki rakamı gösterir.
+Burada bir tuzak var: iki tür kâr hesabı dolaşıyor. Biri sadece araç masraflarını çıkarıp "yüzde doksan sekiz kâr" gösteriyor. O rakam gerçek değil, çünkü şirket ve muhasebe gideri onun içinde yok. Bu modül her zaman hepsi çıktıktan sonraki rakamı gösterir.
 
 ### Müşteri başına kâr
 
@@ -118,7 +119,7 @@ Aynı zamanda karşılaştırma rakamları güncellenir. Yurt dışından alınm
 
 Ay sonu: "Bu ay hesabına [toplam] geçti. İki müşteri: [tutar] kurulum, yani bir kerelik; [tutar] aylık, yani tekrar edecek olan. Giderin [tutar]. Cebinde kalan [tutar], kâr marjın yüzde [oran]."
 Ciroya sevinirse: "[Ciro] ciro, [kâr] kâr, ama bunun [tutar]'i bir kerelik kurulum parası. Gelecek ay tekrar edecek olan [aylıkların toplamı]. Ciro gurur, kâr geçim. Bu ay konuşacağımız rakam ikincisi."
-Yüksek kâr marjı görürse: "O rakam vergiyi ve primi saymıyor. Hepsi çıktıktan sonrasına bakıyoruz, öbürü kendini kandırmak."
+Yüksek kâr marjı görürse: "O rakam şirket ve muhasebe giderini saymıyor. Hepsi çıktıktan sonrasına bakıyoruz, öbürü kendini kandırmak."
 Sabit gideri karşılamıyorsa: "Tekrar eden gelirin sabit giderini karşılamıyor. Şu an işi ayakta tutan şey kurulum paraları ve onlar tekrar etmiyor. Bu ay tek hedef: bir müşteri daha."
 Maaşlı işten ayrılmak isterse: "Dört müşterin var, evet. Üç aylık yaşam giderin birikti mi? Birikmediyse bu konuşmayı gelecek ay yaparız."
 Zam sorarsa: "Mevcut müşteriye aynı işe zam yapmıyoruz. En erken ikinci aydan sonra üst kademeye geçişi konuşuyoruz: aldığı iş büyür, ücreti de büyür. Yeni fiyat yeni müşterilere."
@@ -126,18 +127,19 @@ Reklam açmak isterse: "Reklam en son sırada. Önce üç aylık yaşam giderin 
 
 ## 7. Ne yazar
 
-İş Beyni'ne: ayın geliri kurulum ve aylık ayrımıyla, gider kalemleri tek tek, kâr, kâr marjı, müşteri başına kâr, üç kontrolün cevabı, banka hesabındaki değişim, karar.
+O günün günlüğüne (`gunluk/YYYY-AA-GG.md`, ayın son iş günü): ayın geliri kurulum ve aylık ayrımıyla, gider kalemleri tek tek, kâr, kâr marjı, müşteri başına kâr, üç kontrolün cevabı, banka hesabındaki değişim, karar.
+İş Beyni'nin hedef ve para bölümüne: yalnız son değerler; bu ayın kârı, kâr marjı, müşteri başına kâr ve tekrar eden aylık gelir. Eski değer yerinde güncellenir.
 Niş kartına: bu nişte gerçekleşen kurulum ve aylık rakamlar, üçüncü aydan sonra.
 
-Aylık hesaplar üst üste durur, silinmez. Kâr marjının üç ay boyunca nereye gittiği tek tek aylardan değil, sıradan görülür.
+Aylık hesaplar günlükte üst üste durur, silinmez. Kâr marjının üç ay boyunca nereye gittiği tek tek aylardan değil, sıradan görülür: FounderOS son üç ayın kaydını günlükten yan yana koyar.
 
 ## 8. Yedek yol
 
-- Mali müşavirinden rakam gelmediyse: vergi satırı "ölçülemedi" yazılır ve kâr rakamı "vergi hariç" etiketiyle kaydedilir. Etiketi olmayan rakam kullanılmaz.
+- Mali müşavirinden rakam gelmediyse: şirket ve muhasebe satırı "ölçülemedi" yazılır ve kâr rakamı "şirket gideri hariç" etiketiyle kaydedilir. Etiketi olmayan rakam kullanılmaz.
 - Henüz müşterin yoksa: modül yine çalışır ama sadece gider tarafını gösterir. Bu ayki masrafını bilmek de bir sonuçtur.
 - Ay içinde müşteri kaybettiysen: kayıp o ayın hesabına yazılır ve sebebi musteriyi-elde-tut'tan okunur.
 - Tahsilat iki kez düşmediyse: ay sonu beklenmez, aynı hafta bakılır. Bu bir fiyat sorunu değil, tahsilat sorunudur.
-- Şirketin henüz yoksa: müşavir ve prim satırları boş kalır, tabloda "şirket kurulmadı" yazar. Bu satırlar şirket kurulduğu ay dolar.
+- Şirketin henüz yoksa: şirket ve muhasebe satırı boş kalır, tabloda "şirket açılmadı" yazar. Bu satır şirket açıldığı ay dolar.
 - Rakamlar geçen ayla karşılaştırılamıyorsa (ilk ay): karşılaştırma yapılmaz, sadece o ayın rakamı yazılır.
 
 ## 9. Sıradaki adım ve işaretler

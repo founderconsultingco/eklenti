@@ -12,10 +12,16 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
   ekle DOSYA [--kaynak K] [--baglayan AD] [--tut AD ...] [--kategori-disi K ...] [--yuz]
   guncelle ANAHTAR sutun=deger ... [--semt S]
   temas ANAHTAR --kanal K --sonuc "..." [--durum D] [--asama A] [--siradaki "..."] [--tarih T] [--randevu "YYYY-AA-GG SS:DD"] [--not "..."]
-  sonuclar DOSYA            (sayfanın "Sonuçları kopyala" metni; her satırı temas olarak işler)
+  sonuclar DOSYA [--gun G]  (sayfanın "Sonuçları kopyala" metni; her satırı temas olarak işler.
+                             --gun: kapanışı yapılmayan günün sonuçları sonradan; bugün ya da son yedi gün)
                             satır: AD | kanal | sonuç [| anahtar: değer ...]
                             sonuç: açmadı, gönderdim, istemedi, ilgilendi, randevu, sonra, cevap
                             cevapta: metin: "gelen cevabın kendisi" ve dal: fiyat|bilgi|mesgul|...
+  kapat [--son-kapanis G] [--anahtar FOS-...] [--adres URL]
+                            (kapanışı yapılmayan günler: durum kaydındaki son_kapanis'ten dünü de içine alarak
+                             her günün saha sonuçlarını servisten alır, o günün tarihiyle işler, günün ölçümünü
+                             yazar. İlk satır iş günü (gece yarısından sabah beşe kadar önceki gün),
+                             son satır son_kapanis. En çok yedi gün geriye; aynı satır iki kez işlenmez)
   ogren [--esik N]          (hangi gözlem ve hangi kanal cevap getiriyor; eşik altı sayılmaz)
   isaret DOSYA --isaret A   (toplu araştırmanın sonucu: is_ilani; her satır bir işletme adı.
                              reklam_veriyor elle yazılmaz, veri servisinden gelir)
@@ -27,14 +33,19 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
                              üstündekiler listenin sonuna konur. Elle işaretlenmişlere dokunmaz)
   ozet
   bul METIN
-  sayfa [--kart TELEFON.md | --dosya SENARYO.json] [--nis AD] [--ogrenci-ad AD --sehir S --sistem-adi AD] [--acilis "..."] [--itiraz "..."]...
-                            (Saha modu kartının söyle metni: niş kartının "Telefonda söylenecekler" bölümü ve öğrencinin adı, şehri)
+  sayfa [--kart TELEFON.md | --dosya SENARYO.json] [--nis AD] [--ogrenci-ad AD --sehir S --sistem-adi AD] [--onay-linki URL] [--acilis "..."] [--itiraz "..."]...
+                            (Saha modu kartının söyle metni: niş kartının "Telefonda söylenecekler" bölümü ve öğrencinin adı, şehri.
+                             --onay-linki: ön görüşme sayfasının ya da videonun https adresi; saha ekranındaki randevu onay mesajı taşır)
+  saha-paketi [--yukle] [--anahtar FOS-...] [--adres URL] [--sayi N]
+                            (telefondaki saha ekranının paketi: günün listesi ve arama senaryosu.
+                             Paketi .founderos/saha-paketi.json'a yazar; --yukle ile servise kendisi yükler
+                             ve bağlantıyı basar. Servise ulaşamazsa FounderOS dosyayı saha_yukle ile yükler)
   surum
 """
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.35.0"
+SURUM = "0.39.0"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -70,8 +81,13 @@ def calisma():
     return KLASOR / ".founderos"
 
 
+# Gun: sonuclar --gun ile dunun sonuclari ertesi sabah islenirken "bugun" o gundur;
+# takip tarihleri, son temas tarihi, gunun dokumu ve islenmis satirlar o gune yazilir.
+_GUN = None
+
+
 def bugun():
-    return datetime.datetime.now(IST).date()
+    return _GUN or datetime.datetime.now(IST).date()
 
 
 def simdi_metin():
@@ -493,7 +509,11 @@ def anahtar_bul(verilen):
     hata("lisans anahtarı bulunamadı; --anahtar ile ver")
 
 
-def servis_cagir(adres, arac, argumanlar):
+class ServisHatasi(Exception):
+    """Veri servisine ulasilamadi ya da cevap anlasilmadi."""
+
+
+def servis_istegi(adres, arac, argumanlar):
     import urllib.request, urllib.error
     govde = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                         "params": {"name": arac, "arguments": argumanlar}}).encode("utf-8")
@@ -504,14 +524,27 @@ def servis_cagir(adres, arac, argumanlar):
         with urllib.request.urlopen(istek, timeout=45) as c:
             cevap = json.loads(c.read().decode("utf-8"))
     except (urllib.error.URLError, OSError, ValueError) as e:
-        print("HATA: veri servisine ulaşılamadı (%s). Yedek: aday_sonuc ile sayfaları al, .founderos/gelen.csv yaz, ekle komutunu çalıştır." % e.__class__.__name__)
-        sys.exit(2)
+        raise ServisHatasi("veri servisine ulaşılamadı (%s)" % e.__class__.__name__)
+    if not isinstance(cevap, dict):
+        raise ServisHatasi("servis cevabı anlaşılmadı")
     if "error" in cevap:
-        hata("servis: " + str(cevap["error"].get("message")))
+        hata_ = cevap.get("error")
+        raise ServisHatasi("servis: " + str(hata_.get("message") if isinstance(hata_, dict) else hata_))
     try:
         return json.loads(cevap["result"]["content"][0]["text"])
     except (KeyError, IndexError, TypeError, ValueError):
-        hata("servis cevabı anlaşılmadı")
+        raise ServisHatasi("servis cevabı anlaşılmadı")
+
+
+def servis_cagir(adres, arac, argumanlar):
+    try:
+        return servis_istegi(adres, arac, argumanlar)
+    except ServisHatasi as e:
+        m = str(e)
+        if m.startswith("veri servisine ulaşılamadı"):
+            print("HATA: %s. Yedek: aday_sonuc ile sayfaları al, .founderos/gelen.csv yaz, ekle komutunu çalıştır." % m)
+            sys.exit(2)
+        hata(m)
 
 
 def kmt_cek(a):
@@ -670,7 +703,7 @@ def temas_uygula(satirlar, s, kanal, sonuc, durum=None, asama=None, siradaki=Non
         else:
             s["asama"] = "sonra"
             s["siradaki_hareket"] = "zincir bitti, yeniden bak"
-            s["siradaki_tarih"] = tarih_coz("+90", "sıradaki tarih")
+            s["siradaki_tarih"] = tarih_coz("+45", "sıradaki tarih")
     if sonuc:
         not_ekle(s, "%s: %s" % (kanal, sonuc))
     if notu:
@@ -747,19 +780,55 @@ def _islenmis_yaz(imzalar):
         except Exception:
             d = {}
     d[bugun().isoformat()] = sorted(imzalar)
-    for g in sorted(d)[:-7]:
+    # Kapanis yedi gun geriye gidebiliyor; imzalar on gun tutulur.
+    for g in sorted(d)[:-10]:
         d.pop(g, None)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
 
 
-def kmt_sonuclar(a):
+def _dokum_oku():
+    p = calisma() / "dokum.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    except Exception:
+        return {}
+
+
+def _dokum_yaz(d):
+    for g in sorted(d)[:-14]:
+        d.pop(g, None)
+    p = calisma() / "dokum.json"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+
+
+# Kapanis penceresi: sunucu saha sonuclarini ve olcumu en cok yedi gun geriye
+# kabul ediyor; arac da ayni pencereyle calisir.
+KAPANIS_GERI = 7
+# Sabah ilk cumlenin okudugu sonuclar: cevap veren ve randevu isteyen.
+DIKKAT = ("ilgilendi", "randevu", "cevap")
+
+
+def gun_ayarla(ham):
+    """--gun: kapanisi yapilmayan gunun sonuclari sonradan islenirken "bugun" o gundur.
+    Bugun ya da son yedi gun; sunucu da bu pencereyi kabul ediyor."""
+    global _GUN
+    gercek = datetime.datetime.now(IST).date()
+    g = tarih_coz(ham, "gün")[:10]
+    d = datetime.date.fromisoformat(g)
+    if d > gercek or (gercek - d).days > KAPANIS_GERI:
+        hata("--gun bugün ya da son yedi gün olabilir: %s" % g)
+    _GUN = d
+
+
+def _sonuclari_isle(metin):
+    """Sonuc metnini bugun() gunune isler; listeyi, o gunun islenmis satirlarini ve
+    gun dokumunu yazar. Doner: islenen, bulunamayan, anlasilmayan, tekrar, gunun
+    toplam dokumu, dikkat isteyen adaylar (cevap veren, randevu isteyen) ve bu
+    calistirmanin dokumu (sayaclara yalniz bu eklenir)."""
     satirlar = yukle()
-    p = Path(a.dosya)
-    if not p.exists():
-        hata("dosya yok: %s" % a.dosya)
-    metin = _metni_oku(p)[0]
-    islenen, bulunamayan, anlasilmayan, tekrar = [], [], [], []
+    islenen, bulunamayan, anlasilmayan, tekrar, dikkat = [], [], [], [], []
     gecmis = _islenmis_oku()
     dokum = {}
     for satir in metin.splitlines():
@@ -816,8 +885,9 @@ def kmt_sonuclar(a):
                                          None, "instagram, ilk mesaj", "+1", None, notu)
                         else:
                             temas_uygula(satirlar, s, kanal, "açmadı (üçüncü), başka kanal yok", "kapandı",
-                                         "sonra", "doksan gün sonra yeniden bak", "+90", None, notu)
+                                         "sonra", "kırk beşinci gün yeniden bak", "+45", None, notu)
                         islenen.append(ozet_satir(s))
+                        gecmis.add(imza)
                         dokum[kod] = dokum.get(kod, 0) + 1
                         continue
                 temas_uygula(satirlar, s, kanal, "açmadı", "yapıldı", None, kanal + ", tekrar ara", "+1", None, notu)
@@ -832,9 +902,9 @@ def kmt_sonuclar(a):
                     onek = "" if kanal == "video" else "%s, " % kanal
                     temas_uygula(satirlar, s, kanal, "gönderildi", "yapıldı", None, onek + g[1], "+%d" % g[0], None, notu)
                 else:
-                    temas_uygula(satirlar, s, kanal, "gönderildi, zincir bitti", "yapıldı", "sonra", "", "+90", None, notu)
+                    temas_uygula(satirlar, s, kanal, "gönderildi, zincir bitti", "yapıldı", "sonra", "kırk beşinci gün yeniden bak", "+45", None, notu)
             elif kod == "istemedi":
-                temas_uygula(satirlar, s, kanal, "istemedi", "kapandı", "kapandı", "", "", None, notu)
+                temas_uygula(satirlar, s, kanal, "istemedi", "kapandı", "sonra", "altı ay sonra yeniden tara", "+180", None, notu)
             elif kod == "ilgilendi":
                 temas_uygula(satirlar, s, kanal, "ilgilendi", "cevap geldi", "cevap verdi", kanal + ", 3. gün takibi", "+3", None, notu)
             elif kod == "randevu":
@@ -860,16 +930,18 @@ def kmt_sonuclar(a):
             elif kod == "cevap":
                 # Gelen cevabin kendisi kaydediliyor: yaniti FounderOS bundan yaziyor
                 # ve hangi dal oldugu sayilabiliyor. Cevap gelen aday ayni gun donulur.
-                metin = ek.get("metin") or ek.get("cevap") or ""
+                cevap_metni = ek.get("metin") or ek.get("cevap") or ""
                 dal = kucult(ek.get("dal", ""))
                 if dal and dal not in CEVAP_DALLARI:
                     dal = ""
-                s["son_cevap"] = metin[:500]
+                s["son_cevap"] = cevap_metni[:500]
                 if dal:
                     s["cevap_dali"] = dal
                 temas_uygula(satirlar, s, kanal, "cevap geldi" + (" (%s)" % dal if dal else ""),
                              "cevap geldi", "cevap verdi", kanal + ", yanıt yaz", bugun().isoformat(), None, notu)
             islenen.append(ozet_satir(s))
+            if kod in DIKKAT:
+                dikkat.append("%s: %s" % (kod, islenen[-1]))
             gecmis.add(imza)
             dokum[kod] = dokum.get(kod, 0) + 1
         except SystemExit:
@@ -880,13 +952,41 @@ def kmt_sonuclar(a):
             anlasilmayan.append(satir + ("  (işlenemedi: %s)" % e))
     kaydet(satirlar)
     _islenmis_yaz(gecmis)
+    # Gün dökümü günün toplamıdır, bu çalıştırmanın değil: aynı gün ikinci kez
+    # çalışınca sıfır basıp akşamın ölçümünü ezmesin diye günlük toplam dosyada tutulur.
+    gun = _dokum_oku()
+    g = bugun().isoformat()
+    toplam = gun.get(g, {})
+    for k, v in dokum.items():
+        toplam[k] = toplam.get(k, 0) + v
+    gun[g] = toplam
+    _dokum_yaz(gun)
+    return islenen, bulunamayan, anlasilmayan, tekrar, toplam, dikkat, dokum
+
+
+def temas_toplami(toplam):
+    # Temas giden denemedir: izlendi (Loom bildirimi) ve cevap (gelen mesaj) sayılmaz.
+    return sum(toplam.get(k, 0) for k in ("acmadi", "gonderdim", "istemedi", "ilgilendi", "randevu", "sonra"))
+
+
+def dokum_satiri(toplam):
+    n = nis_oku()
+    parca = ", ".join("%s %d" % (k, toplam[k]) for k in ("acmadi", "gonderdim", "izlendi", "istemedi", "ilgilendi", "randevu", "sonra", "cevap") if toplam.get(k))
+    return "gün dökümü: niş %s, açılış sürümü %s, temas %d%s" % (
+        n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", temas_toplami(toplam), (", " + parca) if parca else "")
+
+
+def kmt_sonuclar(a):
+    if getattr(a, "gun", None):
+        gun_ayarla(a.gun)
+    p = Path(a.dosya)
+    if not p.exists():
+        hata("dosya yok: %s" % a.dosya)
+    islenen, bulunamayan, anlasilmayan, tekrar, toplam, _dikkat, _bu = _sonuclari_isle(_metni_oku(p)[0])
     print("işlenen %d, bulunamayan %d, anlaşılmayan %d%s" % (
         len(islenen), len(bulunamayan), len(anlasilmayan),
-        (", bugün zaten işlenmiş %d" % len(tekrar)) if tekrar else ""))
-    n = nis_oku()
-    print("gün dökümü: niş %s, açılış sürümü %s, temas %d, %s" % (
-        n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", len(islenen),
-        ", ".join("%s %d" % (k, dokum[k]) for k in ("acmadi", "gonderdim", "izlendi", "istemedi", "ilgilendi", "randevu", "sonra", "cevap") if dokum.get(k))))
+        (", %s zaten işlenmiş %d" % ("bugün" if _GUN is None else "o gün", len(tekrar))) if tekrar else ""))
+    print(dokum_satiri(toplam))
     for x in islenen:
         print("  " + x)
     if bulunamayan:
@@ -895,6 +995,165 @@ def kmt_sonuclar(a):
         print("anlaşılmayan satırlar (elle işle):")
         for x in anlasilmayan:
             print("  " + x)
+
+
+# ---------- kapanmamış günler ----------
+
+def is_gunu(simdi):
+    """Kapanisin ait oldugu gun. Gece yarisindan sonra sabah beşe kadar yapilan
+    kapanis onceki gunundur: 00.30'da "aksam" diyen ogrenci dunu kapatiyor."""
+    g = simdi.date()
+    return g - datetime.timedelta(days=1) if simdi.hour < 5 else g
+
+
+def kapanacak_gunler(son_kapanis, simdi):
+    """Kapanisi yapilmayan gunler, eskiden yeniye: son kapanis gununden (o gun de,
+    kapanistan sonra basilan sonuc icin) is gununden onceki gune kadar, en cok yedi
+    gun geriye. Son kapanis yazili degilse yalniz onceki gun."""
+    ig = is_gunu(simdi)
+    dun = ig - datetime.timedelta(days=1)
+    if son_kapanis is not None and son_kapanis >= ig:
+        return ig, []
+    bas = dun if son_kapanis is None else son_kapanis
+    bas = max(bas, simdi.date() - datetime.timedelta(days=KAPANIS_GERI))
+    gunler = []
+    while bas <= dun:
+        gunler.append(bas)
+        bas += datetime.timedelta(days=1)
+    return ig, gunler
+
+
+def _durum_kaydi():
+    p = calisma() / "durum.json"
+    try:
+        d = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    except (OSError, ValueError):
+        return {}
+    return d if isinstance(d, dict) else {}
+
+
+def _tarih_ya_da_bos(ham):
+    try:
+        return datetime.date.fromisoformat(str(ham or "").strip()[:10])
+    except ValueError:
+        return None
+
+
+def _servis_dene(adres, arac, argumanlar):
+    """Servis cagrisi, ama komutu durdurmaz: (cevap, None) ya da (None, sebep)."""
+    try:
+        c = servis_istegi(adres, arac, argumanlar)
+    except ServisHatasi as e:
+        return None, str(e)
+    if isinstance(c, dict) and c.get("durum") in ("hata", "lisans", "kapali", "tavan"):
+        return None, str(c.get("mesaj") or c.get("durum"))
+    return c, None
+
+
+def kmt_kapat(a):
+    """Kapanisi yapilmayan gunleri kapatir: sabah ilk mesajdan once, aksam kapanistan once.
+    Her gunun saha sonuclarini servisten alir, o gunun tarihiyle isler (takipler o gunden
+    sayilir), gunun olcumunu yazar ve son satirda son_kapanis'i basar. Ayni satir ayni gun
+    icin iki kez islenmez; komut iki kez calisirsa zarar vermez. Aksam sekizde kapanis
+    yapilip dokuzda basilan sonuc da boyle ertesi sabah islenir."""
+    global _GUN
+    simdi = datetime.datetime.now(IST)
+    if a.simdi:
+        simdi = datetime.datetime.fromisoformat(a.simdi.strip().replace(" ", "T")).replace(tzinfo=IST)
+    durum = _durum_kaydi()
+    son = _tarih_ya_da_bos(a.son_kapanis or durum.get("son_kapanis"))
+    ig, gunler = kapanacak_gunler(son, simdi)
+    print("iş günü: " + ig.isoformat())
+    if not gunler:
+        print("kapanacak gün yok")
+        if son:
+            print("son_kapanis: " + son.isoformat())
+        return
+    anahtar = anahtar_bul(a.anahtar)
+    adres = a.adres or "https://founderos.so/mcp"
+    baslangic = _tarih_ya_da_bos(durum.get("gun_baslangic"))
+    try:
+        asama = int(durum.get("ilerleme_asamasi"))
+    except (TypeError, ValueError):
+        asama = None
+    kapanan, durdu = son, False
+    bulunamayan_hepsi, anlasilmayan_hepsi = [], []
+    ek = {"temas": 0, "cevap": 0, "randevu": 0}
+    son_temas = None
+    for g in gunler:
+        _GUN = g
+        c, sebep = _servis_dene(adres, "saha_sonuclari", {"anahtar": anahtar, "tarih": g.isoformat()})
+        if c is None:
+            print("HATA: %s sonuçları alınamadı (%s); kalan günler bir sonraki kapanışta" % (g.isoformat(), sebep))
+            durdu = True
+            break
+        metin = (c.get("metin") if isinstance(c, dict) else "") or ""
+        if not metin.strip():
+            print("%s: sonuç yok" % g.isoformat())
+            kapanan = g
+            continue
+        islenen, bulunamayan, anlasilmayan, tekrar, toplam, dikkat, bu = _sonuclari_isle(metin)
+        kapanan = g
+        temas = temas_toplami(toplam)
+        cevap = toplam.get("ilgilendi", 0) + toplam.get("randevu", 0) + toplam.get("cevap", 0)
+        # Ekrana ve sayaclara bu calistirmada yeni islenenler; olcume gunun toplami.
+        yeni_temas = temas_toplami(bu)
+        yeni_cevap = bu.get("ilgilendi", 0) + bu.get("randevu", 0) + bu.get("cevap", 0)
+        if islenen:
+            print("%s: temas %d, cevap %d, randevu %d%s" % (
+                g.isoformat(), yeni_temas, yeni_cevap, bu.get("randevu", 0),
+                (" (zaten işlenmiş %d)" % len(tekrar)) if tekrar else ""))
+        else:
+            print("%s: yeni sonuç yok%s" % (g.isoformat(), (" (zaten işlenmiş %d)" % len(tekrar)) if tekrar else ""))
+        ek["temas"] += yeni_temas
+        ek["cevap"] += yeni_cevap
+        ek["randevu"] += bu.get("randevu", 0)
+        if yeni_temas:
+            son_temas = g
+        for x in dikkat:
+            print("  " + x)
+        bulunamayan_hepsi += ["%s (%s)" % (x, g.isoformat()) for x in bulunamayan]
+        anlasilmayan_hepsi += anlasilmayan
+        # Kapanisi yapilmis gun yalniz sonradan basilan sonuc icin yeniden okunur;
+        # o gunun temas, cevap ve randevusu aksam yazildi, burada ezilmez.
+        kapanmisti = son is not None and g <= son
+        if kapanmisti and not islenen:
+            continue
+        if not kapanmisti and not temas and not cevap:
+            continue
+        olcum = {"anahtar": anahtar, "tarih": g.isoformat()}
+        n = nis_oku()
+        if n.get("ad"):
+            olcum["nis"] = str(n["ad"])
+        try:
+            olcum["acilis_surumu"] = max(1, int(n.get("acilis_surumu") or 1))
+        except (TypeError, ValueError):
+            pass
+        for k in ("acmadi", "gonderdim", "istemedi", "ilgilendi", "sonra"):
+            olcum[k] = int(toplam.get(k, 0))
+        if not kapanmisti:
+            olcum.update({"temas": temas, "cevap": cevap, "randevu": int(toplam.get("randevu", 0))})
+            if baslangic and g >= baslangic:
+                olcum["gun_sayaci"] = (g - baslangic).days + 1
+            if asama and 1 <= asama <= 5:
+                olcum["asama"] = asama
+        _cevap, sebep = _servis_dene(adres, "olcum_yaz", olcum)
+        if sebep:
+            print("  %s ölçümü gitmedi (%s)" % (g.isoformat(), sebep))
+    _GUN = None
+    if bulunamayan_hepsi:
+        print("bulunamayan (elle bak): " + "; ".join(bulunamayan_hepsi))
+    if anlasilmayan_hepsi:
+        print("anlaşılmayan satırlar (elle işle):")
+        for x in anlasilmayan_hepsi:
+            print("  " + x)
+    if ek["temas"] or ek["cevap"] or ek["randevu"]:
+        print("sayaçlara eklenecek: temas %d, cevap %d, randevu %d%s" % (
+            ek["temas"], ek["cevap"], ek["randevu"], (" (son temas %s)" % son_temas.isoformat()) if son_temas else ""))
+    if kapanan:
+        print("son_kapanis: " + kapanan.isoformat())
+    if durdu:
+        sys.exit(2)
 
 
 def kmt_isaret(a):
@@ -1297,7 +1556,9 @@ def senaryo_dogrula(n):
         v = n[k]
         if k == "ogrenci":
             if isinstance(v, dict):
-                c[k] = {x: str(v.get(x, "")).strip() for x in ("ad", "sehir", "sistem_adi")}
+                c[k] = {x: str(v.get(x, "")).strip() for x in ("ad", "sehir", "sistem_adi", "onay_linki")}
+                if not c[k]["onay_linki"].lower().startswith("https://"):
+                    c[k]["onay_linki"] = ""
         elif k == "itirazlar":
             l = []
             for x in (v if isinstance(v, list) else []):
@@ -1362,14 +1623,19 @@ def kmt_sayfa(a):
         degisti = True
     if a.nis:
         n["ad"] = a.nis; degisti = True
-    if a.ogrenci_ad or a.sehir or a.sistem_adi:
-        o = n.get("ogrenci", {"ad": "", "sehir": "", "sistem_adi": ""})
+    if a.ogrenci_ad or a.sehir or a.sistem_adi or a.onay_linki is not None:
+        o = n.get("ogrenci", {"ad": "", "sehir": "", "sistem_adi": "", "onay_linki": ""})
         if a.ogrenci_ad:
             o["ad"] = a.ogrenci_ad
         if a.sehir:
             o["sehir"] = a.sehir
         if a.sistem_adi:
             o["sistem_adi"] = a.sistem_adi
+        if a.onay_linki is not None:
+            link = a.onay_linki.strip()
+            if link and not link.lower().startswith("https://"):
+                hata("onay linki https:// ile başlamalı")
+            o["onay_linki"] = link
         n["ogrenci"] = o; degisti = True
     if a.acilis:
         n["acilis_sorusu"] = a.acilis; degisti = True
@@ -1393,6 +1659,254 @@ def kmt_sayfa(a):
     print("sayfa yenilendi: adaylar.html (%d bayt), %s" % (h.stat().st_size, simdi_metin()))
     if eksik:
         print("eksik senaryo bilgisi: " + ", ".join(eksik) + " (sayfa --dosya ile ver; Saha modu o zamana kadar genel metinle çalışır)")
+
+
+# ---------- saha paketi: telefondaki saha ekranı ----------
+# Sayfanın Saha modu ile aynı listeyi ve aynı açılış cümlesini üretir; sunucu
+# (saha_yukle) bu paketi telefonda açılan bir sayfaya çevirir. Sözleşme sunucudaki
+# lib/saha-ortak.ts ile aynıdır; biri değişirse ikisi birlikte değişir.
+
+SAHA_EN_COK = 150
+SAHA_EN_COK_BAYT = 250 * 1024
+SAHA_GRUPLAR = ["cevap", "takip", "hazır", "denetimsiz"]
+# Kartın "Telefonda söylenecekler" bölümü yoksa sayfanın genel metni kullanılır.
+# Telefon kısmı yok: "telefon çalarsa aramayı o açıyor" ancak sesli örnek
+# kurulduktan sonra söylenir ve o cümle niş kartında durur.
+SAHA_GENEL = {
+    "isleyis_sorusu": "Yoğunken telefona yetişemediğinizde müşteri ne yapıyor, tekrar mı arıyor, mesaj mı yazıyor?",
+    "vaat": "Ben tam bunun için bir sistem kuruyorum: siz işteyken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, bilgiyi alıp randevuya yazıyor; eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç işletmeyle başlıyorum.",
+    "calisan": "Yoğunken telefona yetişemediğiniz saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?",
+}
+SAHA_SABIT = {
+    "rahatlat": "Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?",
+    "karar_sorusu": "Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz, yoksa görüşmede olması gereken biri daha var mı?",
+    "randevu": "Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin.",
+}
+
+
+def ek_tr(w, tur):
+    """Türkçe ek: ek_tr("Bursa", "den") -> "Bursa'dan", ek_tr("Kars", "den") -> "Kars'tan"."""
+    w = (w or "").strip()
+    if not w or w.startswith("["):
+        return w + "'" + tur
+    v = re.findall(r"[aeıioöuüAEIİOÖUÜ]", w)
+    son = kucult(v[-1]) if v else "e"
+    kalin = son in "aıou"
+    d = "t" if re.search(r"[pçtksşhfPÇTKSŞHF]$", w) else "d"
+    e = ("a" if kalin else "e") if tur in ("den", "de") else ""
+    if tur == "den":
+        return w + "'" + d + e + "n"
+    if tur == "de":
+        return w + "'" + d + e
+    return w + "'" + tur
+
+
+def soru_eki(w):
+    """Soru eki: "Kaya Kombi mi", "Yıldız Isı mı", "Ekol Oto mu", "Gül Kuaför mü"."""
+    v = re.findall(r"[aeıioöuüAEIİOÖUÜ]", w or "")
+    son = kucult(v[-1]) if v else "e"
+    return {"a": "mı", "ı": "mı", "e": "mi", "i": "mi", "o": "mu", "u": "mu", "ö": "mü", "ü": "mü"}.get(son, "mi")
+
+
+def de_da(w):
+    """Bağlaç de/da: "dün de", "geçen hafta da"."""
+    v = re.findall(r"[aeıioöuüAEIİOÖUÜ]", w or "")
+    return "da" if v and kucult(v[-1]) in "aıou" else "de"
+
+
+def saha_doldur(metin, ad, sehir):
+    """Senaryodaki [adın] ve [şehir] yer tutucularını doldurur; bilinmiyorsa dokunmaz."""
+    m = metin or ""
+    if ad:
+        m = m.replace("[adın]", ad)
+    if sehir:
+        m = re.sub(r"\[[Şş]ehir\]'(den|dan|de|da)", lambda x: ek_tr(sehir, "den" if x.group(1).endswith("n") else "de"), m)
+        m = re.sub(r"\[[Şş]ehir\]", sehir, m)
+    return m
+
+
+def kaynak_cumlesi(s):
+    k = kucult(s.get("kaynak"))
+    if k in ("iş ilanı", "is ilani"):
+        return "Numaranızı verdiğiniz iş ilanından aldım."
+    if k in ("tanıdık", "tanidik", "referans"):
+        return ("Numaranızı %s verdi." % s["baglayan"]) if s.get("baglayan") else "Numaranızı ortak bir tanıdığımızdan aldım."
+    if k in ("haritalar", ""):
+        return "Numaranızı Haritalar'daki işletme sayfanızdan aldım."
+    return "Numaranızı internetteki işletme sayfanızdan aldım."
+
+
+def ne_zaman(t):
+    if not t:
+        return "daha önce"
+    try:
+        g = (bugun() - datetime.date.fromisoformat(t[:10])).days
+    except ValueError:
+        return "daha önce"
+    if g <= 0:
+        return "bugün"
+    if g == 1:
+        return "dün"
+    if g == 2:
+        return "önceki gün"
+    if g < 7:
+        return ["üç", "dört", "beş", "altı"][g - 3] + " gün önce"
+    if g < 14:
+        return "geçen hafta"
+    return "bir süre önce"
+
+
+def son_telefon_acildi(s):
+    """Son telefon teması açıldı mı? Nottaki son "telefon: ..." kaydından okunur.
+    telefon_durumu yetmez: açılmayan arama da "yapıldı" yazar."""
+    kayit = re.findall(r"telefon: ([^;|]+)", s.get("not") or "")
+    return bool(kayit) and not kayit[-1].strip().startswith("açmadı")
+
+
+def saha_kanal(s):
+    """Sayfadaki kanalTahmin ile aynı: sıradaki hareketin başındaki kanal esastır."""
+    h = kucult(s.get("siradaki_hareket"))
+    for desen, kanal in ((r"^\s*telefon\b", "telefon"), (r"^\s*instagram\b", "instagram"),
+                         (r"^\s*e-?posta\b", "e-posta"), (r"^\s*video\b", "video")):
+        if re.search(desen, h):
+            return kanal
+    if "instagram" in h:
+        return "instagram"
+    if re.search(r"e-?posta|mail", h):
+        return "e-posta"
+    if "video" in h:
+        return "video"
+    if re.search(r"yazı|mesaj", h):
+        return "instagram" if s.get("instagram") else ("e-posta" if s.get("eposta") else "telefon")
+    return "telefon"
+
+
+def saha_grup(s):
+    if s["asama"] in ("cevap verdi", "randevu"):
+        return "cevap"
+    if s["son_temas_tarihi"]:
+        return "takip"
+    if s["sizinti"] != "":
+        return "hazır"
+    return "denetimsiz"
+
+
+def saha_acilis(s, ad, sehir):
+    """Telefonun ilk cümlesi, sayfanın Saha modu kartıyla aynı.
+    Sahibinin adı yoksa "işletme sahibi siz misiniz" sorulmaz; yardım istenir."""
+    sahibi = (s.get("sahibi") or "").strip()
+    isletme = s.get("kisa_ad") or s.get("ad") or ""
+    ben = "ben %s, %s arıyorum." % (ad or "[adın]", ek_tr(sehir, "den") if sehir else "[şehir]'den")
+    tel_onceki = int(rakam(s.get("temas_sayisi")) or 0) > 0 and kucult(s.get("son_temas_kanali")) == "telefon"
+    if tel_onceki:
+        nz = ne_zaman(s.get("son_temas_tarihi"))
+        gecmis = "kısa konuşmuştuk" if son_telefon_acildi(s) else "açılmamıştı"
+        return "Merhaba%s, ben %s, %s %s aramıştım, %s. Bir dakikanız var mı?" % (
+            (" " + sahibi) if sahibi else "", ad or "[adın]", nz, de_da(nz), gecmis)
+    if sahibi:
+        return "Merhaba, %s %s %s ile mi görüşüyorum?" % (ben, kaynak_cumlesi(s), sahibi)
+    return ("Merhaba, burası %s %s? Kısa bir konuda yardımcı olabilir misiniz? Gelen aramaları ve randevuları "
+            "kimin takip ettiğini öğrenmek istiyorum. (\"Ben ilgileniyorum\" derse: Tamamdır, doğru kişiye ulaşmışım. "
+            "B%s %s)" % (isletme, soru_eki(isletme), ben[1:], kaynak_cumlesi(s)))
+
+
+def saha_listesi(satirlar):
+    """Sayfanın Saha modunun gösterdiği liste: sıradaki tarihi bugün ya da geçmiş, açık adaylar."""
+    g = bugun().isoformat()
+    l = [s for s in satirlar if acik(s) and s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g]
+
+    def sira(s):
+        yuz = 1 if re.fullmatch(r"evet|1|x", kucult(s["yuz"])) else 0
+        gecmis = 1 if s["siradaki_tarih"][:10] < g else 0
+        return (SAHA_GRUPLAR.index(saha_grup(s)), -gecmis, -yuz,
+                -int(rakam(s["sizinti"]) or 0), -int(rakam(s["yorum_sayisi"]) or 0))
+    l.sort(key=sira)
+    return l
+
+
+def saha_paketi_kur(satirlar, en_cok=SAHA_EN_COK):
+    n = senaryo_dogrula(nis_oku())
+    og = n.get("ogrenci") or {}
+    ad, sehir = og.get("ad", ""), og.get("sehir", "")
+    senaryo = {}
+    for alan in ("acilis_sorusu", "isleyis_sorusu", "vaat", "calisan"):
+        senaryo[alan] = saha_doldur(n.get(alan) or SAHA_GENEL.get(alan, ""), ad, sehir)
+    for alan, metin in SAHA_SABIT.items():
+        senaryo[alan] = metin
+    senaryo["itirazlar"] = [{k: saha_doldur(x.get(k, ""), ad, sehir) for k in ITIRAZ_ALANLAR}
+                            for x in (n.get("itirazlar") or [])]
+    liste = saha_listesi(satirlar)
+    kesilen = max(0, len(liste) - en_cok)
+    adaylar = []
+    for s in liste[:en_cok]:
+        kanal = saha_kanal(s)
+        bulgu, kanca, kaynak = gozlem(s)
+        if kaynak == "profil" and bulgu:
+            bulgu += " (Google profilinden; denetim yapılmadı, uydurma yok)"
+        yazi = kanal != "telefon"
+        adaylar.append({
+            "kisa_ad": s["kisa_ad"] or s["ad"], "ad": s["ad"], "telefon": s["telefon"], "semt": s["semt"],
+            "sahibi": s["sahibi"], "kanal": kanal, "grup": saha_grup(s),
+            "bulgu": bulgu, "kanca": kanca, "siradaki": s["siradaki_hareket"],
+            "acilis": "" if yazi else saha_acilis(s, ad, sehir),
+            "instagram": s["instagram"], "eposta": s["eposta"],
+            "eposta_konu": s["eposta_konu"] if yazi else "",
+            "eposta_metni": s["eposta_metni"] if yazi else "",
+            "dm_metni": s["dm_metni"] if yazi else "",
+        })
+    paket = {"tarih": bugun().isoformat(),
+             "ogrenci": {"ad": ad, "sehir": sehir, "sistem_adi": og.get("sistem_adi", ""),
+                         "onay_linki": og.get("onay_linki", "")},
+             "nis": n.get("ad", ""), "acilis_surumu": n.get("acilis_surumu", "") or "1",
+             "senaryo": senaryo, "adaylar": adaylar}
+    # Sunucu 256 KB'tan büyük paketi almaz. Önce en sondaki adayların uzun
+    # metinleri düşer (sayfada duruyorlar), yine sığmazsa liste kısalır.
+    def boyut():
+        return len(json.dumps(paket, ensure_ascii=False).encode("utf-8"))
+    kirpilan = 0
+    for a in reversed(adaylar):
+        if boyut() <= SAHA_EN_COK_BAYT:
+            break
+        if a["eposta_metni"] or a["dm_metni"]:
+            a["eposta_metni"] = a["dm_metni"] = ""
+            kirpilan += 1
+    while boyut() > SAHA_EN_COK_BAYT and len(adaylar) > 1:
+        adaylar.pop()
+        kesilen += 1
+    return paket, kesilen, kirpilan
+
+
+def kmt_saha_paketi(a):
+    satirlar = yukle()
+    paket, kesilen, kirpilan = saha_paketi_kur(satirlar, max(1, min(SAHA_EN_COK, a.sayi)))
+    if not paket["adaylar"]:
+        print("boş: bugün sırada aday yok (önce bugun --planla); saha ekranı yüklenmedi")
+        return
+    dosya = calisma() / "saha-paketi.json"
+    dosya.write_text(json.dumps(paket, ensure_ascii=False, indent=1), encoding="utf-8")
+    sayim = {}
+    for x in paket["adaylar"]:
+        sayim[x["kanal"]] = sayim.get(x["kanal"], 0) + 1
+    eksik = []
+    if not paket["ogrenci"]["ad"] or not paket["ogrenci"]["sehir"]:
+        eksik.append("öğrencinin adı ve şehri")
+    if not nis_oku().get("acilis_sorusu") and not nis_oku().get("acilis"):
+        eksik.append("kartın açılış sorusu")
+    print("saha paketi: %d aday (%s), %s%s%s" % (
+        len(paket["adaylar"]), ", ".join("%s %d" % (k, v) for k, v in sorted(sayim.items())), dosya,
+        (", %d aday sığmadı (sayfada duruyor)" % kesilen) if kesilen else "",
+        (", %d adayın yazılı metni pakete girmedi" % kirpilan) if kirpilan else ""))
+    if eksik:
+        print("eksik senaryo bilgisi: " + ", ".join(eksik) + " (sayfa komutuyla ver; ekran o zamana kadar genel metinle çalışır)")
+    if not a.yukle:
+        return
+    anahtar = anahtar_bul(a.anahtar)
+    cevap = servis_cagir(a.adres or "https://founderos.so/mcp", "saha_yukle", {"anahtar": anahtar, "paket": paket})
+    if not isinstance(cevap, dict) or not cevap.get("adres"):
+        m = cevap.get("mesaj") if isinstance(cevap, dict) else ""
+        hata("saha ekranı yüklenmedi: %s (paket dosyada; veri bağlantısındaki saha_yukle ile yükle)" % (m or "servis cevabı boş"))
+    print("saha ekranı: %s (açık: %s tarihine kadar, %s aday)" % (
+        cevap["adres"], cevap.get("gecerlilik", "?"), cevap.get("aday_sayisi", len(paket["adaylar"]))))
 
 
 def ana():
@@ -1438,6 +1952,12 @@ def ana():
     s = alt.add_parser("isaret"); s.add_argument("dosya"); s.add_argument("--isaret", required=True)
     s = alt.add_parser("sonuclar")
     s.add_argument("dosya")
+    s.add_argument("--gun")
+    k = alt.add_parser("kapat")
+    k.add_argument("--son-kapanis", dest="son_kapanis")
+    k.add_argument("--anahtar")
+    k.add_argument("--adres")
+    k.add_argument("--simdi", help=argparse.SUPPRESS)
 
     d = alt.add_parser("sil")
     d.add_argument("anahtar")
@@ -1464,8 +1984,15 @@ def ana():
     y.add_argument("--ogrenci-ad", dest="ogrenci_ad")
     y.add_argument("--sehir")
     y.add_argument("--sistem-adi", dest="sistem_adi")
+    y.add_argument("--onay-linki", dest="onay_linki")
     y.add_argument("--acilis")
     y.add_argument("--itiraz", action="append")
+
+    sp = alt.add_parser("saha-paketi")
+    sp.add_argument("--yukle", action="store_true")
+    sp.add_argument("--anahtar")
+    sp.add_argument("--adres")
+    sp.add_argument("--sayi", type=int, default=SAHA_EN_COK)
 
     alt.add_parser("surum")
 
@@ -1482,9 +2009,9 @@ def ana():
     if not KLASOR.exists():
         hata("klasör yok: %s" % KLASOR)
     calisma().mkdir(parents=True, exist_ok=True)
-    {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar, "ogren": kmt_ogren, "isaret": kmt_isaret,
+    {"cek": kmt_cek, "ekle": kmt_ekle, "guncelle": kmt_guncelle, "temas": kmt_temas, "sonuclar": kmt_sonuclar, "kapat": kmt_kapat, "ogren": kmt_ogren, "isaret": kmt_isaret,
      "sil": kmt_sil, "bugun": kmt_bugun, "yuz-sec": kmt_yuz_sec, "ozet": kmt_ozet,
-     "bul": kmt_bul, "sayfa": kmt_sayfa}[a.komut](a)
+     "bul": kmt_bul, "sayfa": kmt_sayfa, "saha-paketi": kmt_saha_paketi}[a.komut](a)
 
 
 if __name__ == "__main__":

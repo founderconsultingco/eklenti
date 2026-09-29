@@ -6,6 +6,8 @@ description: "Sadece oto galeri nisinin karti: rakamlar, itirazlar, yasal sinir,
 
 # Oto galeri
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Bağımsız, tek şubeli ikinci el araç alım satım galerileri. Kapsam dışı: marka yetkili bayileri ve büyük zincir kurumsal ikinci el firmaları (Doğuş Oto, Otokoç 2.el gibi). Google Haritalar'da "Oto galerisi" veya "İkinci el araba galerisi" kategorisiyle geçiyorlar. Yönetmelik bu işi "yetki belgeli tacir, esnaf ve sanatkarlar" olarak tanımlıyor (ietts.gtb.gov.tr/Home/Yonetmelik, Madde 5).
 
@@ -79,13 +81,13 @@ En güçlü üç itiraz: telefonu hiç elimden düşürmem, fiyat zaten ilanda y
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Bu ay fiyat sorup pazarlık edip almadan giden alıcıları bir yere yazıyor musunuz, yoksa telefonda isim olarak mı duruyorlar?"
 
 İşleyiş sorusu: "Siz test sürüşündeyken ya da vitrinde bir alıcıyla pazarlığın ortasındayken ilan sitesinden ya da WhatsApp'tan yazan ikinci alıcı ne yapıyor, cevabı bekliyor mu, sonraki ilana mı geçiyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz pazarlıktayken WhatsApp'a, Instagram'a ya da sitenizden yazan alıcıya dakikalar içinde cevap veriyor, hangi araca baktığını, ne zaman gelip görmek ya da sürmek istediğini, takası var mı, nakit mi kredi mi, almaya mı satmaya mı geldiğini alıp araç görme randevusuna yazıyor; fiyat sorup pazarlık edip gelmeyen alıcıya da sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç galeriyle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz pazarlıktayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan alıcıya da dakikalar içinde dönüyor; hangi araca baktığını, ne zaman gelip görmek ya da sürmek istediğini, takası var mı, nakit mi kredi mi, almaya mı satmaya mı geldiğini alıp araç görme randevusuna yazıyor; fiyat sorup pazarlık edip gelmeyen alıcıya da sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç galeriyle başlıyorum."
 
 Çalışan açarsa: "Kendisi test sürüşündeyken ya da pazarlıktayken ilan sitesinden ve WhatsApp'tan yazan alıcıya cevap verip araç görme randevusuna yazan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman galeride olur?"
 
@@ -95,7 +97,7 @@ Karşı taraf bunu söylerse:
 - "Fiyat zaten ilanda yazıyor, bot ne iş yapacak?" Söyle: "Doğru, fiyatı sistem söylemiyor, ilanda zaten var. Sistemin işi fiyat değil: alıcının hangi araca baktığını, ne zaman geleceğini, takası olup olmadığını, nakit mi kredi mi alacağını alıp randevuya yazmak. Bugün fiyat sorup 'yarın gelirim' diyen alıcının kim olduğu ve gelip gelmediği bir yerde yazıyor mu, yoksa aklınızda mı?" Ne için: kaybın fiyat bilgisi değil kimin ne zaman geleceğinin takibi olduğunu kartın diliyle söylemek ve kaydın olmadığını ona söyletmek. Sonra: "aklımda" derse: "İşte o kaydı tutuyor" de ve saat iste; "yazıyor, takip ediyoruz" derse teşekkür et ve kapat.
 - "İlan sitesine zaten para veriyorum, bu neden ek maliyet?" Söyle: "İlan sitesi alıcıyı getiriyor, mesajı cevaplamıyor. Ödediğiniz o ilanın altından yazan alıcıya siz pazarlıktayken kim dönüyor, ilan sitesi mi, siz mi?" Ne için: ilan parasının talebi getirdiğini, cevabın galeride kaldığını ayırmak; kartta esnaf odası başkanının "dükkan kirası kadar sarı sayfalara ödeme yapıyoruz" sözü var, bunu kendi iddian gibi söylemezsin. Sonra: "ben, boşalınca" derse: "Ben tam o mesajın tarafını kuruyorum" de ve saat iste; "anında dönüyoruz" derse teşekkür et ve kapat.
 - "Bu iş güven işi, robot soğuk durur." Söyle: "Doğru, bu piyasada güven yüz yüze kurulur, sistem onu kurmaya kalkmıyor. Pazarlık yapmıyor, aracı övmüyor, sadece hangi araca baktığını ve ne zaman geleceğini soruyor; gerisi vitrinde size kalıyor. Sizce alıcıyı soğutan, kısa bir cevabın hemen gelmesi mi, yoksa akşam yazıp sabaha kadar cevap alamamak mı?" Ne için: güven kaygısını kabul edip sistemin abartılı güven cümlesi kurmadığını kartın asistan kurallarıyla söylemek; kartta sektörün imaj sorunu yazıyor, bunu işletmeciye söylemezsin. Sonra: "cevapsız kalmak" derse görüşmede kendi telefonundan denemesini teklif et ve saat iste; "yine de istemem" derse teşekkür et ve kapat.
-- "Yetki belgesi, mesleki yeterlilik derken zaten resmiyetle boğuluyorum, bir de yazılım mı." Söyle: "Belge ve yönetmelik tarafına hiç girmiyorum, o yük sizde kalıyor, ben azaltamam. Sistemin işi yalnız telefon ve mesaj tarafı; belge işiyle uğraştığınız bir öğleden sonra ilandan yazan alıcıya kim dönüyor, siz mi, sonra mı?" Ne için: sistemin mevzuat yükünü azaltmadığını dürüstçe söylemek ve sadece mesaj tarafındaki kaybı sormak; kartta esnaf odası başkanının mevzuat karmaşası şikayeti var, bunu tekrar etmezsin. Sonra: "sonra" derse görüşme iste; "yetişiyorum" derse teşekkür et ve kapat.
+- "Yetki belgesi, mesleki yeterlilik derken zaten resmiyetle boğuluyorum, bir de yazılım mı." Söyle: "Belge tarafına hiç girmiyorum, o yük sizde kalıyor, ben azaltamam. Sistemin işi yalnız telefon ve mesaj tarafı; belge işiyle uğraştığınız bir öğleden sonra ilandan yazan alıcıya kim dönüyor, siz mi, sonra mı?" Ne için: sistemin belge yükünü azaltmadığını dürüstçe söylemek ve sadece mesaj tarafındaki kaybı sormak; kartta esnaf odası başkanının bu konudaki şikayeti var, bunu tekrar etmezsin. Sonra: "sonra" derse görüşme iste; "yetişiyorum" derse teşekkür et ve kapat.
 - "Müşteri zaten pazarlık için geliyor, bot pazarlık yapamaz ki." Söyle: "Yapamaz, yapmıyor da; pazarlık sizin işiniz. Sistem sadece alıcının ne zaman geleceğini ve takası olup olmadığını alıp önünüze koyuyor. Pazarlığa oturmadan, mesajda kaybolan alıcı sizde ayda hiç oluyor mu, yoksa herkes vitrine kadar geliyor mu?" Ne için: pazarlığın galericide kaldığını kartın diliyle söylemek ve pazarlığa gelmeyen alıcıyı ona söyletmek. Sonra: "oluyor" derse saat iste; "herkes geliyor" derse teşekkür et ve kapat; FounderOS "sonra" yazar.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.

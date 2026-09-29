@@ -6,6 +6,8 @@ description: "Sadece oto servis ve cam filmi nisinin karti: rakamlar, itirazlar,
 
 # Oto servis ve cam filmi
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Bağımsız oto tamirhaneleri (motor, şanzıman, fren, süspansiyon arızaları), periyodik bakım yapan sanayi ustaları, lastikçiler (lastik satışı, değişim, balans, rot ayarı), oto elektrikçiler (akü, marş, alternatör, arıza tespit) ve araç cam filmi uygulayıcıları dahil. Yetkili bayi servisleri (marka bayii, plaza servisi) hariç. Google Haritalar'da genelde "oto tamirci", "lastikçi", "oto elektrikçi", "cam filmi" gibi ayrı işletme adları altında geçiyorlar; tek bir standart kategori adı bulunamadı, bu nokta sahadan doğrulanacak.
 
@@ -51,7 +53,7 @@ Sözlüğü: usta, çırak, sanayi, dükkan, parçacı, balata, balans, periyodi
 
 **Reklam kütüphanesi kelimeleri.** periyodik bakım, yağ değişimi, kış lastiği değişimi, yaz lastiği değişimi, lastik balans, rot balans, akü değişimi, oto elektrik arıza, marş dinamo, cam filmi, motor arıza tespit, fren balata, triger seti, klima bakımı, egzoz tamiri.
 
-**Yasal sınırlar.** Rekabet Kurumu'nun motorlu taşıtlar sektöründeki grup muafiyeti tebliği (2017/3), garantili araç sahiplerinin bağımsız serviste bakım yaptırma hakkını koruyor; tek şart OEM/TSE eşdeğeri parça kullanımı ve düzenli fatura/belgeleme, "bakımı bizde yaptırmadın" gerekçesiyle garanti düşürülemiyor (rekabet.gov.tr kılavuzu, sonhavadis.com özeti). Bu, "garantili araç bize gelmez" itirazına karşı kullanılabilecek bir bulgu. TSE Hizmet Yeterlilik Belgesi'nin oto tamir/bakım/lastik/elektrik işletmeleri için zorunlu olup olmadığı resmi kaynaktan (ticaret.gov.tr) net şekilde teyit edilemedi, sektör listesi ayrı bir ekte, sahadan doğrulanacak. İYS ve KVKK için sektöre özel ek bir kısıt bulunamadı, genel kurallar geçerli.
+**Yasal sınırlar.** Rekabet Kurumu'nun motorlu taşıtlar sektöründeki grup muafiyeti tebliği (2017/3), garantili araç sahiplerinin bağımsız serviste bakım yaptırma hakkını koruyor; tek şart OEM/TSE eşdeğeri parça kullanımı ve düzenli fatura/belgeleme, "bakımı bizde yaptırmadın" gerekçesiyle garanti düşürülemiyor (rekabet.gov.tr kılavuzu, sonhavadis.com özeti). Bu, "garantili araç bize gelmez" itirazına karşı kullanılabilecek bir bulgu. TSE Hizmet Yeterlilik Belgesi'nin oto tamir/bakım/lastik/elektrik işletmeleri için zorunlu olup olmadığı resmi kaynaktan (ticaret.gov.tr) net şekilde teyit edilemedi, sektör listesi ayrı bir ekte; teyit ekip tarafında yapılır, öğrenciye iş olarak verilmez. İYS ve KVKK için sektöre özel ek bir kısıt bulunamadı, genel kurallar geçerli.
 
 **Yoğun şehirler.** İstanbul, İzmir, Ankara, Antalya, Konya (esnafkoop.ticaret.gov.tr meslek kılavuzu). Kayseri de köklü bir oto sanatkarlar odasına ve büyük oto sanayi sitelerine sahip (koso.org.tr), ama bunun "yoğunluk" anlamında sayısal kaynağı bulunamadı.
 
@@ -69,17 +71,17 @@ En güçlü üç itiraz: telefona zaten ben bakıyorum, aracı görmeden fiyat v
 
 "Kış lastiği zaten zorunlu, insanlar kendiliğinden gelir." Yasal zorunluluk sadece ticari araçlarda var, binek araç sahibi için yok (hurriyet.com.tr); yani hatırlatma yapılmazsa bu talep kendiliğinden gelmeyebilir.
 
-"Garantili araç bize zaten gelmez, yetkili servise gider." Rekabet Kurumu tebliğine göre garanti kapsamındaki araç sahibi de OEM eşdeğeri parça ve fatura şartıyla bağımsız serviste bakım yaptırabilir, garanti bundan dolayı düşmez.
+"Garantili araç bize zaten gelmez, yetkili servise gider." Garanti kapsamındaki araç sahibi de eşdeğer parça ve faturayla bağımsız serviste bakım yaptırabilir, garanti bundan dolayı düşmez.
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Geçen sezon lastiğini değiştirdiğiniz ya da bakımını yaptığınız müşterileri bu sezon siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz aracın altındayken, elleriniz yağlıyken telefon çalınca ne oluyor, çırak mı açıyor, müşteri tekrar mı arıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz aracın altındayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, aracın markasını, modelini, kilometresini ve arızanın belirtisini alıp servis randevusuna yazıyor; geçen yılın bakım ve lastik müşterilerine de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz aracın altındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; aracın markasını, modelini, kilometresini ve arızanın belirtisini alıp servis randevusuna yazıyor; geçen yılın bakım ve lastik müşterilerine de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
 
 Çalışan açarsa: "Usta aracın altındayken telefona ve WhatsApp'a yetişilemeyen saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
 
@@ -90,7 +92,7 @@ Karşı taraf bunu söylerse:
 - "Zaten işim var, yetişemiyorum." Söyle: "Yeni müşteri getirmiyorum zaten. Dolu dükkanda sıraya giren işin içinden bakım, lastik seti ya da cam filmi soranı öne almak için arıyorum. Bugün arayanların içinden hangisi küçük iş, hangisi tam bakım, bunu kim ayırıyor?" Ne için: doluluğun kârlılık olmadığını kartın diliyle söylemek; düşük bileti eleyip yüksek bileti öne almayı ona sormak. Sonra: "ben, akşam" derse "o akşama kalan bakım sorusu için kuruyorum" de ve saat iste; "gerek yok" derse teşekkür et, kapat; FounderOS "sonra" yazar.
 - "Ustam yeter, telefonla kimse ilgilenmeyecek." Söyle: "İyi, o zaman şunu sorayım: usta da sizinle birlikte aracın altındayken WhatsApp'tan yazan müşteriye kim dönüyor?" Ne için: ustanın da araçta olduğu anı sormak; kartta iyi usta bulmanın zor olduğu ve güven sorunu yazıyor, bunu sen söylemezsin. Sonra: "çırak bakıyor" derse teşekkür et ve kapat; "o da altta" derse görüşme iste.
 - "Kış lastiği zaten zorunlu, insanlar kendiliğinden gelir." Söyle: "Ticari araçta zorunlu, binekte değil; binek müşterisi hava soğuyunca aklına gelirse geliyor. Geçen kış lastik değiştiren binek müşterilerine bu kış sizden bir hatırlatma gidiyor mu?" Ne için: zorunluluğun yalnız ticari araçta olduğunu kartın diliyle söylemek ve hatırlatmayı sormak. Sonra: "gitmiyor" derse saat iste; "biz arıyoruz" derse teşekkür et ve kapat.
-- "Garantili araç bize zaten gelmez, yetkili servise gider." Söyle: "Bildiğim kadarıyla garantili araç sahibi de eşdeğer parça ve faturayla bağımsız serviste bakım yaptırabiliyor, garantisi düşmüyor; bunu müşteri çoğu zaman bilmiyor. Size 'aracım garantide, gelemem' diyen müşteri oluyor mu?" Ne için: kartın yasal sınırındaki bulguyu tek cümleyle söylemek ve bu müşterinin kapıya gelip gelmediğini sormak. Sonra: "oluyor" derse görüşme iste; "hiç olmaz, bize garantisiz gelir" derse teşekkür et ve kapat.
+- "Garantili araç bize zaten gelmez, yetkili servise gider." Söyle: "Bildiğim kadarıyla garantili araç sahibi de eşdeğer parça ve faturayla bağımsız serviste bakım yaptırabiliyor, garantisi düşmüyor; bunu müşteri çoğu zaman bilmiyor. Size 'aracım garantide, gelemem' diyen müşteri oluyor mu?" Ne için: garantili aracın da bağımsız servise gelebildiğini tek cümleyle söylemek ve bu müşterinin kapıya gelip gelmediğini sormak. Sonra: "oluyor" derse görüşme iste; "hiç olmaz, bize garantisiz gelir" derse teşekkür et ve kapat.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
 İsim kökleri: Garaj, Rota, Servis. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.

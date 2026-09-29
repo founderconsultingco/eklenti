@@ -6,9 +6,11 @@ description: "Üçüncü günün akşamı, sistemin ilk mesajı. Sonra her gün:
 
 # tanidiga-mesaj-yaz
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Üçüncü günün akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ikinci adımı.
+Üçüncü günün akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşaması, satışa hazırlan: çevrene duyur. Sistemin ilk mesajı bu akşam gider.
 
 Dün akşam çıkardığın iki listeye gidecek mesajları yazıyor ve göndermeye başlıyorsun.
 
@@ -17,7 +19,7 @@ Dün akşam çıkardığın iki listeye gidecek mesajları yazıyor ve gönderme
 Bu ayrımı bozarsan gerisi çalışmıyor. Tanıdığa satmaya çalışan kişi karşısındakini kaçırıyor, çünkü karşısındaki hem satın almak zorunda hissediyor hem hayır demenin yolunu bulamıyor. Referans soran kişi kimseyi sıkıştırmıyor ve "hayır" cevabı ilişkiyi bozmuyor.
 
 Şunlar bu modülün işi değildir:
-- Listeyi çıkarmak (tanidik-listesi-cikar, aynı günün öğleden sonrası).
+- Listeyi çıkarmak (tanidik-listesi-cikar, dün akşam).
 - Soğuk mesajlar (adaya-mesaj-yaz, dördüncü blokta yazılır, saha açılınca gider). Metin bambaşka.
 - Randevu ayarlamak (gorusmeye-getir). Cevap gelip randevu çıkınca o modül devralıyor.
 
@@ -46,7 +48,7 @@ Sebebi şu: mesajın içinde bu sayı geçiyor ve doğru olmak zorunda. O sayıy
 
 Kişiyi nereden tanıyorsan oradan. Rehberindeki numaraya WhatsApp, Instagram'dan tanıdığına Instagram, eski iş arkadaşına e-posta.
 
-Bir uyarı: kendi numaranı koru. Soğuk mesajı WhatsApp'tan atmıyoruz, çünkü numara kapanıyor. Sıcak çevrede risk düşük, seni tanıyan kişi şikâyet etmiyor. Yine de günde otuzu geçme ve arka arkaya değil, gün içine yayarak gönder. Biri "beni rahatsız etme" derse o kişi listeden çıkıyor.
+WhatsApp'tan günde en çok otuz mesaj; arka arkaya değil, gün içine yayarak gönderiyorsun. Soğuk mesaj WhatsApp'tan gitmiyor, WhatsApp seni tanıyanların kanalı. Biri "beni rahatsız etme" derse o kişi listeden çıkıyor. Öğrenci sebebini sorarsa tek sakin cümle: "Numaran rahat çalışsın diye böyle yapıyoruz."
 
 ### B listesinin mesajı, üç parça
 
@@ -104,7 +106,7 @@ Biri "şu arkadaşımla konuş" dediğinde iş orada bitmiyor. Tanıştırmalar�
 
 "Merhaba, [tanıdığının adı] sizi bana bağladı. Ben [adın], [niş] için [tek cümlelik sonuç] yapıyorum. Yirmi dakikada ne yaptığımı anlatayım, işinize yaramazsa orada anlarız."
 
-Tanıştırılan kişi kayıt yerine (CRM ya da `adaylar.csv`) aday olarak giriyor, "sıcak" işaretiyle, ve kimin bağladığı yazılıyor. O kayıt sonra lazım oluyor: iş çıkarsa bağlayan kişiye haber veriyorsun.
+Tanıştırılan kişi aday listesine (`adaylar.csv`) aday olarak giriyor, "sıcak" işaretiyle, ve kimin bağladığı yazılıyor; cevap verince ya da randevu alınca CRM açıksa oraya da geçiyor. O kayıt sonra lazım oluyor: iş çıkarsa bağlayan kişiye haber veriyorsun.
 
 ### Yasaklar
 
@@ -149,8 +151,8 @@ Bitince: "İlk mesajlar gitti. Bir sonraki blokta adayların hızlı denetimi ve
 
 ## 7. Ne yazar
 
-Kayıt yerine (CRM açıldıysa CRM, açılmadıysa `adaylar.csv`; günün özeti İş Beyni'nin on beşinci bölümüne): A listesine ve tanıştırılanlara giden her mesaj temas olarak, kanal ve tarihle. Gelen cevaplar. Tanıştırılan kişiler, "sıcak" işaretiyle ve kimin bağladığı yazılı.
-B listesine (CRM'deki "B listesi" listesi ya da `baglantilar.csv`): B listesine giden mesajlar ve gelen cevaplar. Bu kayıtlar aday havuzuna ve akşam okunan sayılara karışmıyor.
+Aday listesine (`adaylar.csv`, aday aracıyla, CRM açık olsa da; günün özeti günlüğe): A listesine ve tanıştırılanlara giden her mesaj temas olarak, kanal ve tarihle. Gelen cevaplar; cevap veren ve randevu alan CRM açıksa CRM'e de geçer. Tanıştırılan kişiler, "sıcak" işaretiyle ve kimin bağladığı yazılı.
+B listesine (`baglantilar.csv`): B listesine giden mesajlar ve gelen cevaplar. Bu kayıtlar aday havuzuna ve akşam okunan sayılara karışmıyor.
 İş Beyni'ne: iki mesajın metni ve sürüm tarihi, mesajda geçen sayı, günlük gönderim sayısı, sıcak çevreden gelen cevap ve randevu sayısı.
 Bir sonraki modüllere: çıkan randevular gorusmeye-getir'e, sıcak sayılar rakamlari-oku'ya ayrı satır olarak, kimin bağladığı bilgisi musteriyi-karsila'ya (iş çıkarsa o kişiye haber veriyorsun).
 

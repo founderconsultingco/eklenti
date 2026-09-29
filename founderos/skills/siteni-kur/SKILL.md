@@ -6,9 +6,11 @@ description: "Birinci gün tanıtım sayfası İş Beyni'nden tam kurulur, iki g
 
 # siteni-kur
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Birinci ve ikinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının üçüncü adımı: satış sayfası.
+Birinci ve ikinci günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşaması, satışa hazırlan: tanıtım sayfası.
 
 Landing page, tek işi olan tek sayfalık site demek. Bizim sayfamızın tek işi şu: adayın randevu almasını sağlamak.
 
@@ -27,7 +29,8 @@ Pazarlamadaki karşılığı: sitenin işi seni satmak değil, şüpheyi kaldır
 ## 2. Ne zaman çalışır
 - Birinci gün: tanıtım sayfası tam olarak kurulur, iki genişlikte kontrol edilir, öğrenci gözüyle görür. Canlıya çıkmaz. Bir saat; yarısı kurmak, yarısı bakıp düzeltmek.
 - İkinci blok, araçlar kurulduktan sonra, bir saat: sayfa yayına alınır. Sayfayı FounderOS kurar, sen bu pencereden bakarsın; hiçbir adımda komut satırı yok.
-- İlk kanıt hikâyesi çıkınca üçüncü kez: güven satırı ve bedel bölümü gerçek rakama döner, müşterinin sözü ve örnek çalışma bölümleri eklenir. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa ikinci gün halinde kalmaz.
+- Kanıt cümlesi çıkınca üçüncü kez, on dakika: açılıştaki güven satırı kartın rakamından senin sayımına döner, Kim bölümünün ilk cümlesi bu işe neden başladığını bu sayımla söyler, görüşme planlama bölümünün başlığı altına kanıt cümlesinin kısa hali girer. Her pazartesi kanıt cümlesiyle birlikte güncellenir.
+- İlk kanıt hikâyesi çıkınca dördüncü kez: güven satırı ve bedel bölümü gerçek rakama döner, müşterinin sözü ve örnek çalışma bölümleri eklenir. Merdivenin alt basamağındaysan aynı gün kendi internet adresine ve iş e-postana geçilir. Sayfa ikinci gün halinde kalmaz.
 
 ## 3. Ne okur
 
@@ -39,7 +42,7 @@ Doksan Gün Planı'ndan: kancalar ve sonuç tanımı.
 
 ## 4. Ne sorar
 
-Birinci günde tek soru sorar: fotoğrafın var mı (aşağıda). İkinci blokta bir şey daha sorar: alan adını aldın mı. Almadıysan o gün alınır, on ile altmış dolar arası, yıllık.
+Birinci günde tek soru sorar: fotoğrafın var mı (aşağıda). Telefon numarası markadan önce alınmadıysa aynı mesajda o da istenir. İkinci blokta bir şey daha sorar: alan adını aldın mı. Almadıysan o gün alınır, on ile altmış dolar arası, yıllık.
 
 Bunu merdivenin alt basamağındaki öğrenciye sormaz. O basamakta bugün alan adı alınmıyor ve sebebi aşağıda yazılı.
 
@@ -114,7 +117,7 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **6c. Neden hızlı.** Yanıt süresiyle müşteriye ulaşma ihtimalini gösteren çubuk grafik. **Yalnız kaynaklı rakam varsa kurulur**; niş kartında kaynaklı bir dönüş süresi araştırması yoksa bölüm yoktur ve olmaması eksiklik değildir.
 
-**7. Nasıl çalışır.** Süreç çizelgesi: dikey çizgi üstünde üç dört adım, her adımın solunda etiketi ("GÜN 01 · KURULUM GÖRÜŞMESİ", "GÜN 02–06 · KURULUM", "GÜN 07–27 · CANLI", "GÜN 28 · RAPOR"), sağında başlık ve iki satır. Gün sayıları teslimat takviminden. Bu bölüm adayın kafasındaki "peki ben ne yapacağım" sorusunu kapatıyor.
+**7. Nasıl çalışır.** Süreç çizelgesi: dikey çizgi üstünde üç dört adım, her adımın solunda etiketi ("GÜN 01 · KURULUM GÖRÜŞMESİ", "GÜN 02-06 · KURULUM", "GÜN 07-27 · CANLI", "GÜN 28 · RAPOR"), sağında başlık ve iki satır. Gün sayıları teslimat takviminden. Bu bölüm adayın kafasındaki "peki ben ne yapacağım" sorusunu kapatıyor.
 
 **8. Müşteri yorumları.** Gerçek, izinli, adıyla. Tek yorum bile olsa konur. Yorum yoksa bölüm **yoktur**; uydurma yorum, "memnun müşterilerimiz" yazısı, yıldız sırası konmaz.
 
@@ -122,13 +125,13 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **10. Neden biz.** İki sütunlu tablo değil, üç satırlık karşılaştırma: solda nasıl yapılıyor, sağda biz nasıl yapıyoruz. Kartın "rekabetin şekli" bölümünden. Rakip adı geçmez.
 
-**11. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından; ilk paragraf büyük puntoyla, tek cümle. Fotoğrafı yanında dikey bir kart olarak, altında adı ve şehri; gerçek fotoğraf, yoksa bölüm fotoğrafsız ve dar sütunda kurulur. Müşteri gelmeden önce sayfanın en güçlü kanıtı budur, çünkü tek gerçek olan şey kurucunun kendisi.
+**11. Kim.** Kurucu bölümü. Öğrencinin gerçek geçmişi, tanışmanın cevaplarından; ilk paragraf büyük puntoyla, tek cümle. Kanıt cümlesi çıkınca bu tek cümle özgeçmiş olmaktan çıkar, bu işe neden başladığını söyler: "Bu işe, Bursa'da akşam yedide otuz klima servisini arayıp yirmi ikisine ulaşamadığım hafta başladım." Sayı senin sayımındır, öğrenci onaylamadan yayınlanmaz. Fotoğrafı yanında dikey bir kart olarak, altında adı ve şehri; gerçek fotoğraf, yoksa bölüm fotoğrafsız ve dar sütunda kurulur. Müşteri gelmeden önce sayfanın en güçlü kanıtı budur, çünkü tek gerçek olan şey kurucunun kendisi.
 
 **12. Güvence.** Rapor günü raporu ve şartı, fiyati-belirle'deki tam metinle. Sayı sözü yok. Bu bölüm sayfanın alt tarafında durur ve açılışa taşınmaz; sayfanın ikna eden yeri kanıt bölümleridir, bu bölüm yalnız aklına takılana cevap verir.
 
 **13. Sorular.** Kartın en güçlü üç itirazı, soru biçiminde, açılır kapanır. Cevaplar teklifi-yaz'daki itiraz cevapları, sayfa diline çevrilmiş.
 
-**14. Görüşme planlama.** Kendi başına bir bölüm: başlık, görüşmede ne olacağını söyleyen tek cümle, altında **gömülü takvim**. CRM açılmadan takvim yok; o güne kadar bu bölümde düğme durur ve WhatsApp'a gider. Takvim geldiği gün bölüm kendiliğinden takvime döner, sayfa yeniden yayınlanır.
+**14. Görüşme planlama.** Kendi başına bir bölüm: başlık, görüşmede ne olacağını söyleyen tek cümle ("Yirmi dakikada sizde kaç aramanın kaçtığını birlikte sayıyoruz"), kanıt cümlesi çıktıysa onun kısa hali, altında **gömülü takvim**. CRM açılmadan takvim yok; o güne kadar bu bölümde düğme durur ve WhatsApp'a gider. Takvim geldiği gün bölüm kendiliğinden takvime döner, sayfa yeniden yayınlanır.
 
 **15. Son çağrı ve alt bölüm.** Tek cümle, tek düğme. Altta iş adı, şehir, telefon, WhatsApp, iş e-postası.
 
@@ -158,7 +161,7 @@ Sebebi şu: görünüş düz yazıyla tarif edilince model her öğrencide HTML'
 
 **Şablona dokunulmaz.** CSS'e satır eklenmez, sınıf adı değiştirilmez, bölüm sırası oynatılmaz, şablonda olmayan bölüm uydurulmaz, dışarıdan yazı tipi ya da kütüphane çağrılmaz. Sayfanın kimliği kitten `window.SITE.renk`, `window.SITE.yazi_tipi` ve `window.SITE.yuvarlak` üzerinden geliyor; renk değiştirmek demek CSS yazmak değil, o üç satırı doldurmak demek. Şablonun kendisinde bir eksik görülürse öğrencinin dosyasında yamanmaz, FounderOS bunu açık iş olarak not eder ve şablon bir kere düzeltilir.
 
-**Şablonda hazır duranlar.** Kayan üst çubuk, sayfa içi menü ve düğme; tam ekran açılış (nişin fotoğrafı, koyu örtü, kelime kelime beliren başlık, üç sayı şeridi); kodla çizilen telefon çerçevesi ve sırayla beliren baloncuklar; numaralı bölüm başlıkları ("01 — DERT"; numaralar görünen bölümlere göre kendiliğinden sayılır); çekme cümle ve kaynağı; hesap listesi; haftalık iş listesi; üç kanal ekranı (arama listesi, sohbet, form) ve bugün/sistemle satırları; çubuk grafik; süreç çizelgesi; üç satırlık karşılaştırma; fotoğraflı kurucu kartı; güvence kutusu; açılır kapanır sorular; takvim yuvası; masaüstünde yüzen WhatsApp düğmesi, telefonda alta yapışan düğme; görünür olunca beliren bölümler; hareket azaltma tercihi; 360 ve 390 pikselde taşmasız yerleşim. Bunların hiçbiri yeniden yazılmaz. Yazı tipleri ve fotoğraf dışarıdan çağrılmaz, `site-uret.py` ile dosyanın içine gömülür.
+**Şablonda hazır duranlar.** Kayan üst çubuk, sayfa içi menü ve düğme; tam ekran açılış (nişin fotoğrafı, koyu örtü, kelime kelime beliren başlık, üç sayı şeridi); kodla çizilen telefon çerçevesi ve sırayla beliren baloncuklar; numaralı bölüm başlıkları ("01 · DERT"; numaralar görünen bölümlere göre kendiliğinden sayılır); çekme cümle ve kaynağı; hesap listesi; haftalık iş listesi; üç kanal ekranı (arama listesi, sohbet, form) ve bugün/sistemle satırları; çubuk grafik; süreç çizelgesi; üç satırlık karşılaştırma; fotoğraflı kurucu kartı; güvence kutusu; açılır kapanır sorular; takvim yuvası; masaüstünde yüzen WhatsApp düğmesi, telefonda alta yapışan düğme; görünür olunca beliren bölümler; hareket azaltma tercihi; 360 ve 390 pikselde taşmasız yerleşim. Bunların hiçbiri yeniden yazılmaz. Yazı tipleri ve fotoğraf dışarıdan çağrılmaz, `site-uret.py` ile dosyanın içine gömülür.
 
 #### Veri sözleşmesi: `window.SITE`
 
@@ -178,7 +181,7 @@ window.SITE = {
     aciklama: "...",                              // müşterinin elde edeceği sonuç, iki satır
     dugme: "Ücretsiz görüşme planla",
     ikinci_dugme: "Örnek çalışmaları gör",        // yalnız gerçek vaka varsa görünür
-    guven: "..."                                  // güvencenin özeti ya da gerçek sayı
+    guven: "..."                                  // birinci gün kartın kaynaklı rakamı, kanıt cümlesi çıkınca kendi sayımın (ay ve şehirle), müşteri gelince gerçek sayı; güvence burada yazmaz
   },
   sayilar: [ { deger: "1 dk", aciklama: "..." } ],   // açılışın altındaki üç sayı; sistemin kuralı ya da kaynaklı kart rakamı, yoksa boş dizi
   konusma: { isletme, saat, baloncuklar: [ { kim: "musteri"|"sistem", metin } ], sonuc: "Randevu yazıldı" },
@@ -228,11 +231,11 @@ Bunlar bittiğinde sayfaya bir de bakılır: telefon ve masaüstü görüntüsü
 
 Sayfa bir kere kurulur, bir kere bakılır, bir kere düzeltilir ve biter. Sonsuz düzeltme turu yoktur; her tur öğrencinin kotasını ve akşamını yiyor.
 
-**1. Malzeme toplanır, tek soru sorulur.** Tek soru: "Telefonunda düz duvar önünde, gün ışığında çekilmiş bir fotoğrafın var mı? Varsa klasöre at, Kim bölümüne koyuyorum; yoksa sorun değil, dördüncü blokta çekiyoruz." Gerisi sorulmaz. İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur.
+**1. Malzeme toplanır, tek soru sorulur.** Tek soru: "Telefonunda düz duvar önünde, gün ışığında çekilmiş bir fotoğrafın var mı? Varsa klasöre at, Kim bölümüne koyuyorum; yoksa sorun değil, dördüncü blokta çekiyoruz." Gerisi sorulmaz. İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur; telefon numarası markadan önce alınmadıysa fotoğraf sorusuyla aynı mesajda istenir, çünkü düğme onsuz boş bağlantı olur.
 
-**2. Şablon kopyalanır ve doldurulur.** Şablon bu becerinin klasöründe `site-sablonu.html` adıyla duruyor (beceri açıldığında klasör yolu görünür). Olduğu gibi `site/[is-adi].html` olarak öğrencinin klasörüne kopyalanır. Kopyalama tek satırlık bir dosya kopyalama komutudur; komut çalışmazsa ikinci kez denenir, gerekirse `python3` ile kopyalanır. **Şablonun içeriği okunmaz ve elle yeniden yazılmaz.** Dosya büyüktür; içeriğini konuşmaya taşımak günün geri kalanında erken konuşulanların kaybolmasına sebep olur. Üç denemede de kopyalanamazsa sayfa o gün kurulmaz, açık iş olarak yazılır ve gün devam eder. FounderOS dosyanın içindeki `/*FOUNDEROS-SITE*/` işaretinin üstüne `window.SITE` bloğunu yazar; dosyanın başka hiçbir yerine dokunmaz. Bütün alanlar tek seferde doldurulur, yarım bırakılıp "devamı sonra" denmez.
+**2. Şablon kopyalanır ve doldurulur.** Şablon bu becerinin klasöründe `site-sablonu.html` adıyla duruyor (beceri açıldığında klasör yolu görünür). Olduğu gibi `site/[is-adi].html` olarak öğrencinin klasörüne kopyalanır. Kopyalama tek satırlık bir dosya kopyalama komutudur ve kabuk kuralının sayfa istisnasıdır (istisnalar marka, sayfa ve aday aracının betikleri); komuttan önce öğrenciye bir kez "sayfayı kuruyorum, ekranda birkaç işlem satırı görünecek, normal" denir. Komut çalışmazsa ikinci kez denenir, gerekirse `python3` ile kopyalanır. **Şablonun içeriği okunmaz ve elle yeniden yazılmaz.** Dosya büyüktür; içeriğini konuşmaya taşımak günün geri kalanında erken konuşulanların kaybolmasına sebep olur. Üç denemede de kopyalanamazsa sayfa o gün kurulmaz, açık iş olarak yazılır ve gün devam eder. FounderOS dosyanın içindeki `/*FOUNDEROS-SITE*/` işaretinin üstüne `window.SITE` bloğunu yazar; dosyanın başka hiçbir yerine dokunmaz. Bütün alanlar tek seferde doldurulur, yarım bırakılıp "devamı sonra" denmez.
 
-**2b. Yazı tipi ve fotoğraf gömülür.** Blok yazıldıktan sonra, aynı beceri klasöründeki betik sessizce çalıştırılır: `python3 <beceri klasörü>/site-uret.py site/[is-adi].html --nis <niş slug>`. Niş slug'ı niş kartının dosya adıdır (`klima-kombi`, `dis-klinigi`, `guzellik-salonu` gibi). Betik kitin yazı tiplerini ve nişin açılış fotoğrafını dosyanın içine gömer, iki satır rapor basar. Öğrenciye söylenen tek cümle: "Sayfayı kuruyorum, birkaç saniye." Python yoksa ya da betik hata verirse sayfa yine çalışır: sistem yazı tipiyle ve fotoğrafsız, dokulu koyu zeminle açılır; bu bir açık iş olarak İş Beyni'ne yazılır, gün durmaz. Betik hiçbir zaman öğrenciye gösterilmez, çıktısı sohbete yapıştırılmaz. Kitin dosyaları gerçekten kullanılır: `is.logo` üst çubuktaki logo, `kim.foto` öğrencinin fotoğrafı, renkler ve yazı tipleri kitin kodları; görseller sayfanın içine gömülür ki tek dosya olarak taşınsın. Kitte olmayan görselin alanı boş bırakılır, boş kutu konmaz. `is.whatsapp` İş Beyni'ndeki telefon numarasıyla doludur; boş bağlantı yazılmaz, numara yoksa önce sorulur.
+**2b. Yazı tipi ve fotoğraf gömülür.** Blok yazıldıktan sonra, aynı beceri klasöründeki betik çalıştırılır: `python3 <beceri klasörü>/site-uret.py site/[is-adi].html --nis <niş slug>`. Niş slug'ı niş kartının dosya adıdır (`klima-kombi`, `dis-klinigi`, `guzellik-salonu` gibi). Betik kitin yazı tiplerini ve nişin açılış fotoğrafını dosyanın içine gömer, iki satır rapor basar. Öğrenciye kopyalamadan önce söylenen cümle yeter, ikinci kez söylenmez. Python yoksa ya da betik hata verirse sayfa yine çalışır: sistem yazı tipiyle ve fotoğrafsız, dokulu koyu zeminle açılır; bu bir açık iş olarak İş Beyni'ne yazılır, gün durmaz. Betik hiçbir zaman öğrenciye gösterilmez, çıktısı sohbete yapıştırılmaz. Kitin dosyaları gerçekten kullanılır: `is.logo` üst çubuktaki logo, `kim.foto` öğrencinin fotoğrafı, renkler ve yazı tipleri kitin kodları; görseller sayfanın içine gömülür ki tek dosya olarak taşınsın. Kitte olmayan görselin alanı boş bırakılır, boş kutu konmaz. `is.whatsapp` İş Beyni'ndeki telefon numarasıyla doludur; boş bağlantı yazılmaz, numara yoksa önce sorulur.
 
 **3. Önizleme ve tek bakış.** Önce veri kontrolünün yedi sorusu cevaplanır. Sonra sayfa ekranda kart olarak açılır (öğrenci tıklar, görür) ve FounderOS aynı sayfaya iki genişlikte bakar: telefon ve masaüstü. Baktığı şeyler: Türkçe karakterler, taşma, telefon çerçevesindeki konuşma okunuyor mu, kitin logosu ve görselleri gerçekten sayfada mı, boş kalan bölüm gerçekten gizlenmiş mi. Bulduğu her şeyi tek listede toplar.
 
@@ -244,7 +247,7 @@ Birinci günde burada durulur. Sayfa hazır, öğrencinin klasöründe ve ekran�
 
 ### Yayına alma: ikinci blok
 
-İki yol var ve hangisinin seçileceğini bütçe merdiveni söylüyor, öğrenci değil. Aynı yayın yeri dördüncü blokta bir dosya daha alır: `site/demo.html`, tarayıcı demosu (kanitini-hazirla kurar), aynı adresin altında `/demo` olarak durur ve ana sayfadan link verilmez; demo görüşmeye gelme sebebidir.
+İki yol var ve hangisinin seçileceğini bütçe merdiveni söylüyor, öğrenci değil. Aynı yayın bir dosya daha taşır: `site/demo.html`, tarayıcı demosu (kanitini-hazirla kurar), aynı adresin altında `/demo` olarak durur ve ana sayfadan link verilmez; demo görüşmeye gelme sebebidir.
 
 **Ücretsiz adres.** Sayfa, FounderOS'un ekranda açtığı kartın adresiyle paylaşılabilir hale gelir; hesap yok, İngilizce ekran yok, beş dakika. Alt basamaktaki öğrencinin yolu bu ve ilk kanıta kadar bu adres işini görüyor: aradığın işletmeci adını Google'a yazınca sayfa çıkıyor, mesajındaki link bir yere gidiyor. Kısıtı da açıkça söylenir: adres senin iş adını taşımıyor.
 
@@ -258,7 +261,7 @@ Sıra şu:
 4. Kendi adresini bağlamak için sol menüde "Domain management" (adres yönetimi), "Add a domain" (adres ekle); alan adını yaz, "Verify" (doğrula), sonra "Add domain" (adresi ekle). Servis sana iki satır gösterir (kayıt türü ve değeri); o iki satırı alan adını aldığın satıcının "DNS" (adres kayıtları) ekranına yazacaksın. Satırları ben okuyup hangi kutuya ne yazacağını tek tek söylerim; ekran görüntüsünü at, satıcının ekranı Türkçe.
 5. Bağlantı birkaç dakikadan birkaç saate kadar sürer; hazır olunca adresin yanındaki yazı "Netlify DNS" ya da "External DNS" altında yeşil görünür, ben kontrol ederim. O güne kadar sayfa servisin kendi adresinde açık kalır, mesajlarına o adres girer.
 
-Dördüncü blokta demo dosyası aynı yere gidince yine "Deploys" (yayınlar) sayfasında aynı sürükle bırak kutusuna klasörün yeni hali bırakılır; eski sayfa yerinde kalır, üstüne yenisi gelir.
+Demo dosyası sayfa yayına çıkmadan klasöre konur, ikisi tek sürükle bırakla çıkar. Demo sonradan değişirse "Deploys" (yayınlar) sayfasında aynı sürükle bırak kutusuna klasörün yeni hali bırakılır; eski sayfa yerinde kalır, üstüne yenisi gelir.
 
 Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsApp'a gidiyor mu, telefonda düzgün mü. Düğme bugün WhatsApp'a gider; CRM açıldığı gün gorusmeye-getir takvimi kurunca düğmeler oraya bağlanır, o güne kadar bu İş Beyni'nde yazılıdır.
 
@@ -292,7 +295,7 @@ Aynı gün iş e-postası da o alan adına bağlanır. Sebebi şu: ücretsiz pos
 
 CRM açıldığı gün bir iş daha var ve atlanırsa anlaşılıyor: **alan adını CRM'e gönderen adres olarak tanıtmak.** CRM açılana kadar e-postaları kendi iş e-postandan tek tek sen gönderiyorsun, hatırlatmaları da; CRM açılınca takip e-postaları ve randevu hatırlatmalarının e-posta tarafı CRM'den gidiyor ve adres tanıtılmazsa hepsi CRM'in ortak adresinden çıkıp büyük kısmı çöp kutusuna düşüyor. Ekran İngilizce, yol şu: sol menünün en altında "Settings" (ayarlar), listede "Email Services" (e-posta servisleri), sayfada "Dedicated Domain" (kendi alan adın) bölümünde "Add Domain" (alan adı ekle); alan adını yaz, servis birkaç satır verir, o satırları alan adını aldığın satıcının "DNS" (adres kayıtları) ekranına giriyorsun. Satırları FounderOS okuyup nereye yazacağını tek tek söylüyor. Doğrulama birkaç dakika ile birkaç saat arası sürüyor; yeşile dönmeden e-posta gönderilmiyor.
 
-Alt basamaktaysan bu iş de alan adıyla birlikte erteleniyor. O zamana kadar takip e-postaları gitmiyor; takibi telefondan ve Instagram'dan yapıyorsun, adres gelince e-posta kanalı açılıyor.
+Alt basamaktaysan bu iş de alan adıyla birlikte erteleniyor: CRM'in e-postaları (otomatik takip ve hatırlatmaların e-posta tarafı) adres gelene kadar açılmaz. E-posta kanalı yine kapanmaz; ilk e-postaları ve takipleri kendi kutundan elle gönderirsin, kuralı aşağıda, alt basamak kısmında.
 
 Bu adım randevu hatırlatmalarının e-posta tarafını da açıyor. Randevu alındığında giden onay e-postası, bir gün öncesi ve iki saat öncesi hatırlatmaları hep senin adresinden çıkıyor. Adres doğrulanmamışken denendi ve mesaj adayın gelen kutusuna değil çöp kutusuna düştü; yani doğrulama olmadan hatırlatma sistemi çalışıyor gibi görünür ama kimse görmez.
 
@@ -302,7 +305,7 @@ Kendi adresine ne zaman geçiyorsun: ilk kanıttan sonra. Yani ilk müşterinin 
 
 Hangi adres olduğu o gün aranmaz, birinci günde seçilmişti. Aradan iki ay geçtiği için önce boş mu diye bakılır; kapılmışsa İş Beyni'ndeki yedek adres alınır ve iş adı değişmez. Alt basamakta bu risk kabul edilmiş bir risktir: adres için bugün para çıkmaması, iki ay sonra ikinci tercihe düşme ihtimalinden daha önemli.
 
-O güne kadar mevcut e-postanla yazıyorsun ve günlük gönderim sayın yarıya iniyor. Bunu bugünden biliyorsun ki saha açılınca şaşırma.
+O güne kadar kendi e-posta kutundan yazıyorsun, eski bir Gmail de olur: takipler dahil günde en fazla yirmi e-posta, ilk e-postada bağlantı yok. Kendi kutunu korumanın yolu bu. Bunu bugünden biliyorsun ki saha açılınca şaşırma.
 
 Yeni alan adından hemen yüz e-posta atılmaz. Adres alıştırılır: ilk gün on beş, sonra yirmi, sonra otuz. Alıştırmanın başlayabilmesi için doğrulamanın yeşile dönmüş olması gerekiyor; dönmeden atılan her e-posta hem boşa gider hem de adresin itibarını düşürür. Bu sayı adaya-mesaj-yaz'da yazılı; orta ve üst basamakta alıştırma sahanın ilk günü başlar, alt basamakta alan adının alındığı gün başlar.
 
@@ -332,26 +335,26 @@ Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-po
 ## 8. Yedek yol
 
 - Alan adı alınamazsa: site yayın servisinin verdiği ücretsiz adreste yayına alınır, alan adı gelince bağlanır. Gün durmaz. Alt basamakta bu zaten normal yol, aksama sayılmaz.
-- Dün seçilen adres bu arada kapıldıysa: İş Beyni'ndeki yedek adres alınır. İş adı değişmez, marka kiti değişmez, sadece sitenin ve imzanın adresi değişir. Yedek de doluysa aynı ada beşinci uzantıya kadar bakılır; o da tutmazsa markani-kur'un ad adımı tek turluk yeniden açılır.
+- Dün seçilen adres bu arada kapıldıysa: İş Beyni'ndeki yedek adres alınır. İş adı değişmez, marka kiti değişmez, sadece sitenin ve imzanın adresi değişir. Yedek de doluysa aynı adın öbür uzantısına bakılır (.com ya da .com.tr); o da tutmazsa markani-kur'un ad adımı tek turluk yeniden açılır.
 - Yayına alma takılırsa: site bilgisayarında çalışıyordur, yayın ertesi günün sabah bloğuna kalır. Üçüncü günün işi ertelenmez.
 - İngilizce ekranda tarif edilen düğmeyi bulamazsan: ekran görüntüsünü atarsın, ben bakar ve hangisi olduğunu söylerim. Gün durmaz. Tarayıcı çevirisi açılmaz.
 - Birinci günde sayfa bir saati aşarsa: ikinci düzeltme turu atlanır, ilk turun haliyle kapanır. Cümle düzeltmeleri yarın sabaha kalır; sayfa yine tam kurulmuş olur.
 - Açılış görseli yoksa: sayfa görselsiz kurulur ve İş Beyni'ne "açılış görseli bekliyor: fotoğraf" yazılır. kisisel-markani-kur fotoğrafı getirince açılış yeniden kurulur.
 - CRM açıldığı gün takvim kurulamazsa: düğmeler WhatsApp'ta kalır, ertesi gün tekrar denenir ve bu İş Beyni'ne yazılır.
-- İş e-postası kurulamazsa: mevcut e-postanla devam edilir ve günlük gönderim sayısı yarıya iner.
-- Sağlık nişindeysen: kartın yasal sınırlar bölümü sayfaya uygulanır. Tedavi sözü, hasta görseli, öncesi sonrası düzeni ve "kesin sonuç" gibi iddialar sayfada geçmez.
+- İş e-postası kurulamazsa: kendi e-posta kutundan devam edilir, alt basamaktaki kuralla: takipler dahil günde en fazla yirmi, ilk e-postada bağlantı yok.
+- Sağlık nişlerinde: FounderOS kartın yasal sınırlar bölümünü sayfaya sessizce uygular. Tedavi sözü, hasta görseli, öncesi sonrası düzeni ve "kesin sonuç" gibi iddialar sayfada geçmez. Öğrenciye kural anlatılmaz; sorarsa tek cümle: "Bu sektörde öncesi-sonrası fotoğrafı kullanmıyoruz; en güvenli yol bu."
 - Ön görüşme sayfası bu modülün işi değil; CRM açıldığı gün gorusmeye-getir kurar.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: aynı gün, pazar doğrulaması (nisi-dogrula arka planda) ve akşam tanıdık listesi. Ön görüşme sayfası, takvim ve hatırlatma akışı CRM açıldığı gün.
+Sıradaki, birinci günde: birinci bloğun kapanışı. İkinci blokta, yayından sonra: canlı sayım birinci gün okunamadıysa o, akşam tanıdık listesi. Ön görüşme sayfası, takvim ve hatırlatma akışı CRM açıldığı gün.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - İkinci gün bitti, sayfa yayında değil: üçüncü günün sabah bloğunun ilk işi olur, sonrası ertelenmez.
 - Alan adı alınmadı ve basamak orta ya da üst: ücretsiz adres kullanılır, işaret açık kalır.
 - Alt basamaktasın ve alan adı alınmadı: bu işaret açılmaz, çünkü doğru olan bu. Alan adı işareti ilk kanıt hikâyesi çıktığı gün açılır.
 - İkinci blok bitti, sayfa yayına çıkmadı: üçüncü bloğun ilk on beş dakikası; saha ertelenmez.
-- İş e-postası kurulmadı: günlük e-posta hedefi yarıya iner.
+- İş e-postası kurulmadı: e-posta kendi kutusundan gider, takipler dahil günde en fazla yirmi.
 - İlk kanıt hikâyesi çıktı: açılıştaki güven satırı gerçek sayıya döner, bedel bölümü müşterinin raporuyla değişir, müşterinin sözü ve örnek çalışma bölümleri eklenir. Alt basamaktaysan aynı gün alan adı alınır, ücretsiz adres yenisine yönlendirilir ve iş e-postası kurulur.
 - Video çekildi: açılış görseli video kapağı olur.
 - Kurucu fotoğrafı geldi: açılış ve kim bölümü yeniden kurulur.

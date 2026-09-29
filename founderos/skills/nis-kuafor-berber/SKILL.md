@@ -6,6 +6,8 @@ description: "Sadece randevulu kuafor ve berber nisinin karti: rakamlar, itirazl
 
 # Randevulu kuaför ve berber
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Randevuyla çalışan kadın kuaförü salonları ve premium erkek berberleri. Saç kesimi, boya, fön, kalıp, gelin saçı, sakal tıraşı gibi klasik kuaförlük hizmetleri dahil. Botoks, dermapen, karbon peeling, lazer epilasyon gibi tıbbi/estetik işlem yapan "güzellik merkezleri" bu nişin dışında, çünkü onlar ayrı bir sağlık mevzuatına tabi (aşağıda mevzuat kısmında). Google Haritalar'da "Kuaför", "Bayan Kuaförü", "Erkek Kuaförü", "Berber", bazen "Güzellik Salonu" kategorisiyle geçiyorlar. Müşteri değeri şartı: bir koltuk saati bu nişte düşük kaldığı için kurulum ücreti formülü ancak çok koltuklu, birden fazla çalışanı olan, randevu defteri dolu salonlarda teslim maliyetini karşılıyor. İlk odak yalnız onlar; tek koltuklu berber ve küçük mahalle kuaförü kapsam dışı, uygunluk puanında C.
 
@@ -47,7 +49,7 @@ Sözlüğü: randevu, koltuk, usta, kesim, fön, dip boya, balayaj, gelin saçı
 
 **Reklam kütüphanesi kelimeleri.** kuaför randevu, bayan kuaförü, erkek kuaförü, berber randevu, saç kesimi fiyat, saç boyası kampanya, dip boya, balayaj, keratin bakım, fön kampanyası, sakal tıraşı, premium berber, gelin saçı, protez tırnak, saç bakım salonu.
 
-**Yasal sınırlar.** İki ayrı konu var. Birincisi Pazar günü zorunlu kapanış, il valiliği kararına göre değişiyor, yukarıda anlatıldı (salonmerkezi.com). İkincisi reklam: Reklam Kurulu, güzellik salonlarının botoks, dermapen, karbon peeling, lazer gibi TIBBİ işlem reklamı yapmasını ve öncesi-sonrası fotoğraf/"hasta" ifadesi kullanmasını "sağlık alanında faaliyet gösterdiği izlenimi" yarattığı için cezalandırıyor, örnek dosyalarda 347.128 TL idari para cezası ve reklam durdurma verilmiş (hukukihaber.net). Bu ceza sadece tıbbi/estetik iddialara yönelik; salt saç kesimi, boya, fön gibi klasik kuaförlük hizmetinin reklamı bu kapsamda değil (rebelmedya.com, hukukihaber.net). Sistem için önemli: eğer bir salon ek olarak cilt bakımı/lazer gibi hizmet sunuyorsa mesaj ve reklam metninde tıbbi terim ve öncesi-sonrası görsel kullanılmamalı. İYS (ticari elektronik ileti izni) randevu hatırlatma mesajlarını ne kadar kapsıyor, net hukuki ayrımı bu oturumda teyit edemedim (bilinmiyor, sahadan dolacak, hukuki teyit gerekir).
+**Yasal sınırlar.** İki ayrı konu var. Birincisi Pazar günü zorunlu kapanış, il valiliği kararına göre değişiyor, yukarıda anlatıldı (salonmerkezi.com). İkincisi reklam: Reklam Kurulu, güzellik salonlarının botoks, dermapen, karbon peeling, lazer gibi TIBBİ işlem reklamı yapmasını ve öncesi-sonrası fotoğraf/"hasta" ifadesi kullanmasını "sağlık alanında faaliyet gösterdiği izlenimi" yarattığı için cezalandırıyor, örnek dosyalarda 347.128 TL idari para cezası ve reklam durdurma verilmiş (hukukihaber.net). Bu ceza sadece tıbbi/estetik iddialara yönelik; salt saç kesimi, boya, fön gibi klasik kuaförlük hizmetinin reklamı bu kapsamda değil (rebelmedya.com, hukukihaber.net). Sistem için önemli: eğer bir salon ek olarak cilt bakımı/lazer gibi hizmet sunuyorsa mesaj ve reklam metninde tıbbi terim ve öncesi-sonrası görsel kullanılmamalı. İYS (ticari elektronik ileti izni) randevu hatırlatma mesajlarını ne kadar kapsıyor, net hukuki ayrımı bu oturumda teyit edemedim (bilinmiyor, sahadan dolacak bir bilgi değil; teyit gerekir ve ekip yapar). Bu nişte işletmeye giden her metin kartın hazır cümleleriyle sınırlıdır; yeni bir iddia gerekiyorsa denetçi çıkarır ve ekip notu düşülür. Öğrenciye hukuk anlatılmaz.
 
 **Yoğun şehirler.** Doğrudan sıralanmış bir kaynak bulamadım. Haber ve platform verilerinde en çok geçen şehirler İstanbul, Ankara, İzmir (armut.com, milliyet.com.tr tarife haberleri hep İstanbul odaklı). Bursa, Antalya gibi büyük şehirler mantıken yoğun ama bunu doğrulayan bir kaynak yok (sahadan dolacak).
 
@@ -69,13 +71,13 @@ En güçlü üç itiraz: randevu yazılımımız zaten var, WhatsApp'a ben bakı
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Randevusu olan müşteriye önceden bir hatırlatma gidiyor mu, yoksa haber vermeden gelmeyen çıkınca koltuk öyle mi boş kalıyor?"
 
 İşleyiş sorusu: "Siz koltukta müşterinin saçındayken, elinizde boya varken WhatsApp'tan ya da Instagram'dan randevu isteyen müşteri ne yapıyor, cevabı bekliyor mu, başka salona mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz koltuktayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, hangi hizmet istendiğini, saçın durumunu, tercih ettiği usta varsa adını ve saat tercihini alıp randevuya yazıyor; randevu günü gelince müşteriye hatırlatıyor, dip boya ya da bakım zamanı gelen eski müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz koltuktayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; hangi hizmet istendiğini, saçın durumunu, tercih ettiği usta varsa adını ve saat tercihini alıp randevuya yazıyor; randevu günü gelince müşteriye hatırlatıyor, dip boya ya da bakım zamanı gelen eski müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
 
 Çalışan açarsa: "Salon doluyken, usta koltukta müşterinin başındayken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde randevu isteyene cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman salonda olur?"
 
@@ -95,7 +97,7 @@ Karşı taraf bunu söylerse:
 Paletler: koz, bordo, gece.
 Tipografi: karakter, yumusak.
 
-**Sahadan dolacak.** Bu nişe özel, bağımsız kaynaklı no-show oranı yok, sadece satıcı iddiaları var. Randevu uygulamalarının gerçek kullanım/penetrasyon oranı (Türkiye'de kaç kuaför/berber hangi yazılımı kullanıyor) bulunamadı, uygulama mağazası yorum sayıları düşük (Kuaförüm Yanımda 67 yorum, başka bir uygulama 3 yorum), ama bu düşük kullanımın kanıtı değil, sadece zayıf bir işaret. Berberin/kuaförün günlük gerçek kapasitesi (kaç müşteri), kim karar veriyor, işletmecinin kendi ağzından "boş koltuk" tarzı ifadeler, İYS'nin randevu hatırlatma mesajını kapsayıp kapsamadığı, güncel (2024-2025) toplam kuaför sayısı, gerçek dönüş süreleri, çalışan açılış cümlesi ve kapatma oranı hâlâ bilinmiyor.
+**Sahadan dolacak.** Bu nişe özel, bağımsız kaynaklı no-show oranı yok, sadece satıcı iddiaları var. Randevu uygulamalarının gerçek kullanım/penetrasyon oranı (Türkiye'de kaç kuaför/berber hangi yazılımı kullanıyor) bulunamadı, uygulama mağazası yorum sayıları düşük (Kuaförüm Yanımda 67 yorum, başka bir uygulama 3 yorum), ama bu düşük kullanımın kanıtı değil, sadece zayıf bir işaret. Berberin/kuaförün günlük gerçek kapasitesi (kaç müşteri), kim karar veriyor, işletmecinin kendi ağzından "boş koltuk" tarzı ifadeler, güncel (2024-2025) toplam kuaför sayısı, gerçek dönüş süreleri, çalışan açılış cümlesi ve kapatma oranı hâlâ bilinmiyor. İYS'nin randevu hatırlatma mesajını kapsayıp kapsamadığı sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://www.milliyet.com.tr/ekonomi/istanbulda-berber-fiyatlari-degisti-sosyal-medya-bunu-konusuyor-1000-tllik-tarife-7516016

@@ -6,6 +6,8 @@ description: "Sadece guzellik salonu ve guzellik merkezi nisinin karti: rakamlar
 
 # Güzellik salonu ve güzellik merkezi
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Cilt bakımı, lazer epilasyon, kalıcı makyaj (microblading, dudak, eyeliner), manikür-pedikür, kaş-kirpik (laminasyon, lifting, boyama, ekstensiyon) yapan işletmeler. Botoks, dolgu, dermapen gibi hekim yetkisi gerektiren tıbbi işlemler bu nişin dışında, çünkü onları yapan yerler zaten farklı bir mevzuat rejimine (sağlık kuruluşu) tabi ve bu kartın konusu değil. Bu işletmeler İşyeri Açma ve Çalışma Ruhsatlarına İlişkin Yönetmelik kapsamında belediyeden ruhsat alan, "hijyenle ilgili işyerleri" grubunda sınıflanan yerler, sağlık kuruluşu değiller (kaynak: hukukegitim.com). Resmi NACE kodu 96.02, "Kuaförlük ve diğer güzellik salonlarının faaliyetleri" (kaynak: ticaret.satso.org.tr). Google Haritalar'da genelde "Güzellik salonu", "Güzellik merkezi", "Cilt bakım merkezi", "Kalıcı makyaj stüdyosu", "Manikür/pedikür salonu" adlarıyla geçiyorlar; tam liste sahada teyit edilmeli. İlk odak için en uygun büyüklük: birden fazla çalışanı olan, paket satan salon; seans devamlılığı ve paket yenilemesi tekrar randevu zincirinin işi.
 
@@ -67,17 +69,17 @@ En güçlü üç itiraz: kendim cevap veriyorum, fiyatı ben söylemeliyim, bot 
 
 "Ucuzcu müşteri var, ekstra ödemeye parası yok." Aylık ücret bir sekiz seanslık epilasyon paketi müşterisi kadar (tek seans 5.250 TL, paket tek seansın 5-6 katı); ay içinde kurtarılan ilk paket müşterisi aylığı öder, ikincisinden itibaren kâr. Ucuzcu müşteri (tek manikür, tek ağda) sistemin hedefi değil, asistan paket müşterisini öne alır.
 
-"Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Biz reklam üretmiyoruz, size zaten gelen talebi (arayan, yazan, eski müşteri) değerlendiriyoruz; reklam kurulu riski bizim mesaj dilimizi de bağlar ama iş modelimiz reklam değil.
+"Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Biz reklam üretmiyoruz, size zaten gelen talebi (arayan, yazan, eski müşteri) değerlendiriyoruz. Mesajlarımızda öncesi sonrası fotoğrafı, "tedavi" lafı, kampanya yok.
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "Epilasyon ya da cilt bakımı paketi alıp seansını yarıda bırakan müşterileri siz mi arıyorsunuz, yoksa kalan seans hakları öylece mi duruyor?"
 
 İşleyiş sorusu: "Akşam saatlerinde salon doluyken, siz müşterinin başındayken WhatsApp'tan ya da Instagram'dan randevu isteyen müşteri ne yapıyor, cevabı bekliyor mu, başka salona mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz müşterinin başındayken WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, hangi bölge ya da hangi bakım istendiğini, daha önce seans alınıp alınmadığını sorup randevuyu tek yere yazıyor; paketini yarıda bırakan ya da idame zamanı gelen müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz müşterinin başındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; hangi bölge ya da hangi bakım istendiğini, daha önce seans alınıp alınmadığını sorup randevuyu tek yere yazıyor; paketini yarıda bırakan ya da idame zamanı gelen müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
 
 Çalışan açarsa: "Salon doluyken, herkes müşterinin başındayken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde randevu isteyene cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman salonda olur?"
 
@@ -89,7 +91,7 @@ Karşı taraf bunu söylerse:
 - "Zaten doluyum, boş koltuğum yok." Söyle: "Dolu olmak iyi; ben boş koltuk doldurmak için değil, sıraya giren mesajın içinden epilasyon ya da kalıcı makyaj paketi soranı öne almak için arıyorum. Akşam gelen mesajların içinden hangisi tek manikür, hangisi paket, bunu kim ayırıyor?" Ne için: doluluğun kârlılık olmadığını kartın diliyle söylemek; yüksek bedelli paket müşterisini ayırmayı ona sormak. Sonra: "ben, ertesi gün" derse "o ertesi güne kalan paket sorusu için kuruyorum" de ve saat iste; "gerek yok" derse teşekkür et, kapat; FounderOS "sonra" yazar.
 - "Müşterim zaten geri geliyor, sadakat var." Söyle: "Geri gelen için bir şey yapmaya gerek yok zaten. Ben paketini yarıda bırakıp gelmeyenler ve epilasyon serisi bitip idame zamanı gelenler için arıyorum; onlara zamanı gelince sizin adınıza bir hatırlatma gitse ters olur mu?" Ne için: geri geleni tartışmamak, gelmeyeni sormak; kartta ödenmiş paket hakkı olan müşterinin bile kaçtığı örnek var, bunu sen söylemezsin. Sonra: "ters olmaz" derse saat iste; "hepsi gelir" derse teşekkür et, kapat; FounderOS "sonra" yazar.
 - "Ucuzcu müşteri var, ekstra ödemeye parası yok." Söyle: "Tek manikür, tek ağda soran sistemin hedefi değil zaten; paket soranı öne alıyor. Rakamı görüşmede konuşuruz; ay içinde kaçan tek bir epilasyon paketi müşterisi sizde bir koltuk saati mi eder, yoksa birkaç saat mi?" Ne için: fiyatı görüşmeye bırakmak; kartın "bir paket müşterisi üç boş koltuk saati" hesabını iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de para yok" derse teşekkür et ve kapat.
-- "Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Söyle: "Reklam yapmıyorum zaten; öncesi sonrası fotoğrafı yok, 'tedavi' lafı yok, kampanya yok. Sistem size zaten yazan ve zaten paket almış müşteriyle konuşuyor. Şu an size yazan müşteriye cevap dakikalar içinde mi gidiyor, yoksa müsait olunca mı?" Ne için: iş modelinin reklam değil mevcut talep olduğunu söylemek; kartın yasal sınırındaki dil kuralına uyulduğunu belirtmek. Sonra: "müsait olunca" derse görüşme iste; "hemen gidiyor" derse teşekkür et ve kapat.
+- "Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Söyle: "Reklam yapmıyorum zaten; öncesi sonrası fotoğrafı yok, 'tedavi' lafı yok, kampanya yok. Sistem size zaten yazan ve zaten paket almış müşteriyle konuşuyor. Şu an size yazan müşteriye cevap dakikalar içinde mi gidiyor, yoksa müsait olunca mı?" Ne için: iş modelinin reklam değil mevcut talep olduğunu söylemek; bu sektörde kullanılmayan dili (öncesi sonrası, "tedavi", kampanya) baştan dışarıda tutmak. Sonra: "müsait olunca" derse görüşme iste; "hemen gidiyor" derse teşekkür et ve kapat.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
 İsim kökleri: Ayna, Seans, Glow. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
@@ -98,7 +100,7 @@ Karşı taraf bunu söylerse:
 Paletler: bordo, kum, mor.
 Tipografi: editoryal, yumusak.
 
-**Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi versiyonu, kapatma oranı, hangi kademenin (1/2/3) daha çok satıldığı, ilk vaka çalışması, salon sahiplerinin bota karşı ilk tepkisi (güven mi şüphe mi), lazer epilasyon davasının güncel sonucu, Meta Reklam Kütüphanesi'nde bu niş için gerçek durum, adayın kendi talep kanalının hangisi olduğu.
+**Sahadan dolacak.** Gerçek dönüş süreleri, çalışan açılış cümlesi versiyonu, kapatma oranı, hangi kademenin (1/2/3) daha çok satıldığı, ilk vaka çalışması, salon sahiplerinin bota karşı ilk tepkisi (güven mi şüphe mi), Meta Reklam Kütüphanesi'nde bu niş için gerçek durum, adayın kendi talep kanalının hangisi olduğu. Lazer epilasyon davasının güncel sonucu sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://www.alomaliye.com/2025/11/12/saglik-hizmetlerinde-tanitim-ve-bilgilendirme-faaliyetleri-hakkinda-yonetmelik-2025/

@@ -331,18 +331,26 @@ var GENEL_ITIRAZ=[
 var TON=['Ayakta ve gezinerek konuş, telefon elde değil.','Gülümseyerek konuş, sesten anlaşılır.','Karşı tarafın tonuna ayak uydur.','Kendini küçültme yok: "bir şey satmaya çalışmıyorum" yasak.','Muhtaç görünme yok: ilgilenirsen ne güzel, ilgilenmezsen sorun değil.','Dolgu kelimesi yok.','İlk hayırda tek soru, ikinci soru yok. Israr yok.','Ne kadar konuşursan konuş, cümleni soruyla bitir.','Lira rakamı telefonda söylenmez, görüşmeye kalır.','Aksan, şive, genç ses: başta söyle, saklama.'];
 function ek(w,tur){if(!w||w.charAt(0)==='[')return w+"'"+tur;var v=(w.match(/[aeıioöuüAEIİOÖUÜ]/g)||[]);var son=v.length?v[v.length-1].toLocaleLowerCase('tr'):'e';var kalin=/[aıou]/.test(son);var sert=/[pçtksşhfPÇTKSŞHF]$/.test(w);var d=sert?'t':'d';var e=(tur==='den'||tur==='de')?(kalin?'a':'e'):'';var s=tur==='den'?d+e+'n':tur==='de'?d+e:tur;return w+"'"+s}
 function doldur(s){return String(s||'').replace(/\[adın\]/g,OAD).replace(/\[[Şş]ehir\]'(den|dan|de|da)/g,function(x,t){return ek(OSEHIR,/n$/.test(t)?'den':'de')}).replace(/\[[Şş]ehir\]/g,OSEHIR)}
+function soruEki(w){var v=(w||'').match(/[aeıioöuüAEIİOÖUÜ]/g);var son=v?v[v.length-1].toLocaleLowerCase('tr'):'e';return /[aı]/.test(son)?'mı':/[ei]/.test(son)?'mi':/[ou]/.test(son)?'mu':'mü'}
+function deDa(w){var v=(w||'').match(/[aeıioöuüAEIİOÖUÜ]/g);return v&&/[aıou]/.test(v[v.length-1].toLocaleLowerCase('tr'))?'da':'de'}
+// Son telefon temasi acildi mi: nottaki son "telefon: ..." kaydindan okunur.
+// telefon_durumu yetmez, acilmayan arama da "yapıldı" yaziyor.
+function sonTelefonAcildi(r){var m=(r.not||'').match(/telefon: [^;|]+/g);return !!m&&!/^telefon: açmadı/.test(m[m.length-1])}
 function neZaman(t){if(!t)return'daha önce';var a=new Date(t.slice(0,10)),b=new Date(BUGUN);var g=Math.round((b-a)/864e5);if(g<=0)return'bugün';if(g===1)return'dün';if(g===2)return'önceki gün';if(g<7)return['üç','dört','beş','altı'][g-3]+' gün önce';if(g<14)return'geçen hafta';return'bir süre önce'}
 function nisItirazlar(){var l=NIS.itirazlar||[];return l.map(function(x){return typeof x==='string'?{durum:x,soyle:'',neden:'',sonra:''}:x}).filter(function(x){return x&&x.durum})}
 function kaynakCumle(r){var k=(r.kaynak||'').toLocaleLowerCase('tr');if(k==='iş ilanı'||k==='is ilani')return'Numaranızı verdiğiniz iş ilanından aldım.';if(k==='tanıdık'||k==='referans')return r.baglayan?'Numaranızı '+r.baglayan+' verdi.':'Numaranızı ortak bir tanıdığımızdan aldım.';if(k==='haritalar'||!k)return'Numaranızı Haritalar\'daki işletme sayfanızdan aldım.';return'Numaranızı internetteki işletme sayfanızdan aldım.'}
 function modTahmin(r){var n=parseInt(r.temas_sayisi,10)||0;var tel=(r.son_temas_kanali||'').toLocaleLowerCase('tr')==='telefon';return (n>0&&tel)?'ikinci':'sahibi'}
-function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi görüşüyorum?':'İşletme sahibi siz misiniz?';var a=[];
+function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi görüşüyorum?':'';var isletme=kac(r.kisa_ad||r.ad||'');var a=[];
  if(mod==='calisan'){a.push(['Tanış','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+(s?s+' ile görüşebilir miyim?':'İşletme sahibiyle görüşebilir miyim?')]);
   a.push(['"Ne hakkında?" gelirse',kac(doldur(NIS.calisan||GENEL.calisan))]);
   a.push(['Kural','Konuyu saklama, "kendisi biliyor" deme. Not bıraktırma, saat al. "Bana anlatın" derse iki cümle anlat, yine saat iste; çalışana satış yok. Açanın adını nota yaz; sonraki aramada onunla başla.']);return a}
  if(mod==='acilmadi'){a.push(['Şimdi','Hemen bir kez daha ara. Yine açılmazsa bugün bırak, mesaj bırakma; "Açmadı" düğmesine bas.']);a.push(['Yarın','Başka bir saatte bir kez daha. İki günde açılmazsa e-posta, FounderOS karar tablosuna göre yazar.']);return a}
- if(mod==='ikinci'){var nz=neZaman(r.son_temas_tarihi);a.push(['Tanış ve geçmiş','Merhaba'+(s?' '+s:'')+', ben '+kac(OAD)+', '+nz+' de aramıştım'+(r.telefon_durumu==='yapıldı'?', kısa konuşmuştuk':', açılmamıştı')+'. Bir dakikanız var mı? <span class="kucuk">saat verdiyse: "'+(nz==='dün'?'Dün':'Geçen aramada')+' \'şu saatte ara\' demiştiniz, uygun mu?"</span>']);
-  a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki arama gerçek gözlemdir; uydurma yok</span>']);}
- else{a.push(['Tanış ve kaynağı söyle','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' '+kim+' <span class="kucuk">bekle</span>']);
+ if(mod==='ikinci'){var nz=neZaman(r.son_temas_tarihi);var ac=sonTelefonAcildi(r);a.push(['Tanış ve geçmiş','Merhaba'+(s?' '+s:'')+', ben '+kac(OAD)+', '+nz+' '+deDa(nz)+' aramıştım'+(ac?', kısa konuşmuştuk':', açılmamıştı')+'. Bir dakikanız var mı? <span class="kucuk">saat verdiyse: "'+(nz==='dün'?'Dün':'Geçen aramada')+' \'şu saatte ara\' demiştiniz, uygun mu?"</span>']);
+  if(r.kanca||!ac){a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki arama gerçek gözlemdir; uydurma yok</span>'])}
+  else{a.push(['Açılış sorusu',NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok; işleyiş sorusuna geç. Uydurma.</i>'])}}
+ else{if(s){a.push(['Tanış ve kaynağı söyle','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' '+kim+' <span class="kucuk">bekle</span>'])}
+  else{a.push(['Yardım iste (sahibinin adı yok)','Merhaba, burası '+isletme+' '+soruEki(r.kisa_ad||r.ad||'')+'? <span class="kucuk">bekle</span> Kısa bir konuda yardımcı olabilir misiniz? Gelen aramaları ve randevuları kimin takip ettiğini öğrenmek istiyorum. <span class="kucuk">bekle</span>']);
+   a.push(['"Ben ilgileniyorum" derse','Tamamdır, doğru kişiye ulaşmışım. Ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' <span class="kucuk">başkası derse: adını ve ne zaman ulaşılacağını sor, nota yaz; "işletme sahibi siz misiniz" diye sorma</span>'])}
   a.push(['Rahatlat','Sizi tanımıyorum, kısa tutacağım.']);
   var pk=r.kanca?'':kancaMetni(r);
   a.push([r.kanca?'Gözlem (doğrulanmış)':(pk?'Gözlem (profilden)':'Açılış sorusu'),
@@ -351,6 +359,7 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
        :(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>'))]);}
  a.push(['İşleyiş sorusu, tek soru',kac(doldur(NIS.isleyis_sorusu||GENEL.isleyis))+' <span class="kucuk">bekle, araya girme</span>']);
  a.push(['Ne yaptığın, kapsam içinde',kac(doldur(NIS.vaat||GENEL.vaat))+(OSIS?' Adı '+kac(OSIS)+'.':'')]);
+ a.push(['Karar vericiyi doğrula, tek soru','Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz, yoksa görüşmede olması gereken biri daha var mı? <span class="kucuk">bekle; "ortağım da var" derse ikisinin uygun olduğu saati iste</span>']);
  a.push(['Randevu',kac(GENEL.randevu)+' <span class="kucuk">kırk sekiz saatten uzağa alma; onay için e-posta ya da WhatsApp izni telefondayken</span>']);
  return a}
 // Yazili kanal paneli: adaya ozel metin CSV'de duruyor, burada kopyalaniyor.
@@ -409,7 +418,7 @@ function sahaCiz(){
   h+='<div class="kart'+(r._gecmis?' gecmis':'')+(d.sonuc?' bitti':'')+'" data-k="'+kac(kayitAnahtari(r))+'"><div class="oku"><div class="kucuk baslik">Önce oku</div>'
    +'<div class="ad">'+kac(r.kisa_ad||r.ad)+etiketler(r)+(r._gecmis?' '+rozet('günü geçmiş: '+tarihTr(r.siradaki_tarih),'uyari'):'')+'</div>'
    +'<div class="tel">'+telLink(r.telefon)+'</div><div class="satirlar">'
-   +(r.sahibi?'<div><span>Kim</span>'+kac(r.sahibi)+'</div>':'<div><span>Kim</span><i class="kucuk">adı bulunamadı; "işletme sahibi siz misiniz" ile başla, adı öğrenince nota yaz</i></div>')
+   +(r.sahibi?'<div><span>Kim</span>'+kac(r.sahibi)+'</div>':'<div><span>Kim</span><i class="kucuk">adı bulunamadı; "burası … mı, gelen aramaları kim takip ediyor" diye yardım isteyerek başla, adı öğrenince nota yaz</i></div>')
    +(r.semt?'<div><span>İlçe</span>'+kac(r.semt)+(r.yorum_sayisi?' · '+kac(r.yorum_sayisi)+' yorum':'')+'</div>':'')
    +(r.baglayan?'<div><span>Bağlayan</span>'+kac(r.baglayan)+'</div>':'')
    +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>'

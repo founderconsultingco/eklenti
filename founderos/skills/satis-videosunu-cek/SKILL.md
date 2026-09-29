@@ -1,14 +1,16 @@
 ---
 user-invocable: false
 name: satis-videosunu-cek
-description: "Beşinci günün ikinci yarısı, provalarla aynı gün. Ön görüşme videosu ve üç itiraz videosu."
+description: "Beşinci günün ikinci yarısı, provalarla aynı gün. Ön görüşme videosu, üç itiraz videosu ve site videosu."
 ---
 
 # satis-videosunu-cek
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Beşinci günün ikinci yarısının modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşamasının son adımı: satış videosu.
+Beşinci günün ikinci yarısının modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşaması, satışa hazırlan: satış videoları.
 
 Bu modül ön görüşme videosunu çektirir. Randevu alan adaya, görüşmeden önce izlettiğin video. Üstüne üç kısa itiraz videosu gelir.
 
@@ -22,7 +24,13 @@ Bunu açıkça yazıyorum, çünkü "satış videosu" denince akla o geliyor.
 
 Sitenin video bölümü yarın sahaya çıktığında dolu olmak zorunda. Mesajındaki linke tıklayan işletmeci boş bir sayfa değil, seni görecek. O yüzden site videosu bugün çekiliyor.
 
-Ama ayrı bir senaryo yazılmıyor ve güne yeni bir iş eklenmiyor. Site videosu, az önce çektiğin ön görüşme videosunun kısaltılmış hali: yedi parçanın ilk beşi, kapanış ve "senden istediklerim" bölümü çıkarılmış hali. İki ile üç dakika, aynı oturuşta, aynı kıyafetle, aynı yerde. Farkı şu: ön görüşme videosu randevu almış adama gidiyor ve ondan bir şeyler istiyor; site videosu seni hiç tanımayana gidiyor ve ondan tek bir şey istiyor, görüşme planlamak.
+Ayrı bir gün gerekmiyor: site videosu aynı oturuşta, aynı kıyafetle, aynı yerde, ön görüşme videosunun hemen arkasından çekilir. Ama onun kısaltması değil. Ön görüşme videosu randevu almış adama konuşuyor ("bu videoyu benimle görüşme ayarlayan herkes için çektim") ve ondan bir şeyler istiyor; site videosu seni hiç tanımayana gidiyor ve ondan tek bir şey istiyor, görüşme planlamak. Aynı malzeme tanımayana göre yeniden sıralanır, beş parça, iki dakika:
+1. Kanıtla aç, on beş saniye: "Geçen hafta Bursa'da otuz klima servisini akşam yedide aradım, yirmi ikisine ulaşamadım. O saatte arayan müşteri ne yapıyor? Sıradaki numarayı arıyor." Kanıt cümlen yoksa kartın kaynaklı rakamıyla açılır; kanıt cümlesi çıkınca bu parça yeniden çekilir.
+2. Tek sahne, yirmi saniye, hizmet akışındaki "bir günü anlat"tan: "Saat yedi kırk, usta kombinin başında, telefon cepte çalıyor. Bugün o arama kayboluyor. Sistemle aramayı resepsiyonist açıyor, ne istediğini soruyor, randevuyu yazıyor."
+3. Kim, on saniye: "Ben [ad]. [Şehir]'deki [niş] işletmelerine bu kaçan aramayı yakalayan sistemi kuruyorum."
+4. Ne yapıyorum, otuz saniye: sistemin adı ve üç akış, tek cümlelik adımlar, araç adı yok.
+5. Görüşme ve çağrı, otuz saniye: "Yirmi dakikalık görüşmede sizde kaç aramanın kaçtığını birlikte sayıyoruz. Size uygun değilse bunu da söylerim. Aşağıdan saat seçin."
+Kesme yok, müzik yok. Demo kaydı videoya gömülmez, demoya dair tek cümle yeter.
 
 Siteye konan uzun satış videosu ayrı bir iştir ve bugün çekilmez. Onun işi ikna etmek değil, reklamdan gelen kalabalığı elemek. İki şartı var ve ikisi de bugün yok: elenecek kadar çok yabancının sayfaya gelmesi için her gün reklam parası harcaman gerekiyor, ve videonun içine koyacağın kanıt ilk müşteriden sonra çıkıyor. Kanıtsız çekilen uzun video kimseyi elemiyor, sadece bir günü yiyor. Onu satis-sayfasini-yaz kurar.
 
@@ -35,16 +43,16 @@ Siteye konan uzun satış videosu ayrı bir iştir ve bugün çekilmez. Onun iş
 Sistemdeki videolar, karıştırma:
 - **Ön görüşme videosu:** bu modül. Üç ile beş dakika, herkese aynı, randevu alana gider.
 - **İtiraz videoları:** bu modül. Üç tane, her biri bir iki dakika, aynı sayfada durur.
-- **Video mesaj:** bir dakika, adaya özel, Loom ile; en çok istenen yüz işletmeye ilk temas olarak, listenin kalanına üçüncü gün takip olarak.
+- **Video mesaj:** bir dakika, adaya özel, Loom ile; ilk yazılı temastan sonra üçüncü gün cevap gelmediyse ikinci dokunuş olarak, önce en çok istenen yüz işletmeye.
 - **Deneme videosu:** beşinci gün, kimseye gitmez.
-- **Site videosu:** bu modül, aynı gün. Ön görüşme videosunun kısaltılmış hali, iki ile üç dakika; sitenin video bölümüne girer. Ayrı senaryo yazılmaz.
+- **Site videosu:** bu modül, aynı oturuş. Ön görüşme videosunun malzemesi seni hiç tanımayana göre yeniden sıralanır, beş parça, iki dakika; sitenin video bölümüne girer.
 - **Uzun satış videosu:** ilk müşteriden sonra, satış sayfasıyla birlikte.
 - **Rapor günü videosu:** müşterinin çektiği kısa video.
 
 Pazarlamadaki karşılığı: görüşmeden önce seni izlemiş aday, görüşmeye yabancı gelmiyor.
 
 ## 2. Ne zaman çalışır
-- Beşinci günün ikinci yarısında, bir buçuk saat. Üç video aynı oturuşta: ön görüşme videosu, onun kısaltılmış site hali, üç itiraz videosu. Provaların yapıldığı gün; kameraya konuşmakla prova aynı kası çalıştırıyor, ikisi arka arkaya daha iyi gidiyor.
+- Beşinci günün ikinci yarısında, bir buçuk saat. Beş video aynı oturuşta: ön görüşme videosu, site videosu, üç itiraz videosu. Her video tek parça çekilir ve telefondan doğrudan yüklenir. Provaların yapıldığı gün; kayda konuşmakla prova aynı kası çalıştırıyor, ikisi arka arkaya daha iyi gidiyor.
 - İlk kanıt hikâyesi çıkınca ikinci kez: kanıt parçası gerçek müşteriyle değişir.
 - Elli görüşme dolmadan metin değişmez.
 
@@ -70,7 +78,7 @@ Sıra sabit. Toplam üç ile beş dakika.
 
 **1. Kim olduğun ve videonun sebebi.** Otuz saniye. "Ben Ahmet. Bu videoyu, benimle görüşme ayarlayan herkes için çektim, ki yarın konuşurken ikimiz de hazır olalım."
 
-**2. Görüşmede ne olacağı.** Bu parça beklentiyi kuruyor ve gelme oranını en çok yükselten yer burası. "On beş dakika. Bu bir satış konuşması değil; size uyup uymadığımıza bakacağız. Uymuyorsa bunu size ben söyleyeceğim."
+**2. Görüşmede ne olacağı.** Bu parça beklentiyi kuruyor ve gelme oranını en çok yükselten yer burası. "Yirmi dakika. Bu bir satış konuşması değil; size uyup uymadığımıza bakacağız. Uymuyorsa bunu size ben söyleyeceğim."
 
 **3. Senden istediklerim.** Sessiz bir yerde ol, araba kullanırken bağlanma, yanında kâğıt kalem olsun. Sebebi de söylenir: "İşinizle ilgili sorular soracağım ve sistemi ekrandan göstereceğim."
 
@@ -78,7 +86,7 @@ Sıra sabit. Toplam üç ile beş dakika.
 
 **5. Ne yaptığın, kısaca.** Sistemin adı ve üç adım, tek cümlelik adımlar. Teknik kelime yok. Bu parça kısa kalır; asıl anlatım görüşmede.
 
-**6. Kanıt.** İlk müşteriden önce kanıt üç şeydir: niş kartındaki rakam, senin kendi deneme araman ve tarayıcı demosunun kırk ile altmış saniyelik ekran kaydı (dördüncü blokta çekilir; üstüne tek cümle: bu bir örnek, gerçek sistem işletmenin kendi kurallarıyla kurulur). "Geçen hafta şehrimizdeki otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Bu cümle gerçek olacak; sayı uydurulmuyor. İlk kanıt hikâyesi çıkınca bu parça onunla değişir ve video yeniden çekilir.
+**6. Kanıt.** İlk müşteriden önce kanıt dört şeydir: niş kartındaki rakam, senin kendi deneme araman, sesli örneğin kaydı (varsa) ve tarayıcı demosunun kırk ile altmış saniyelik ekran kaydı (ikinci blokta çekilir; üstüne tek cümle: bu bir örnek, gerçek sistem işletmenin kendi kurallarıyla kurulur). "Geçen hafta şehrimizdeki otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı." Bu cümle gerçek olacak; sayı uydurulmuyor. İlk kanıt hikâyesi çıkınca bu parça onunla değişir ve video yeniden çekilir.
 
 **7. Onaylama ve kapanış.** "Aşağıdaki EVET düğmesine basın, takvim davetini kabul edin. Görüşmeden önce iki hatırlatma göndereceğim. Yarın görüşürüz."
 
@@ -103,7 +111,7 @@ Bu üç videonun işi şu: aday bu soruları görüşmede sormuyor, çünkü cev
 
 ### Çekim
 
-Telefonla. Ön kamera. Tek çekim.
+Telefonla, tek çekim. İki yol var, ikisi de işliyor ve seçim senin: yüz yolu (ön kamera, sen konuşursun) ya da ses yolu (sesini kaydedersin, üstüne sitenin, demonun ve deneme aramanın ekran görüntüleri gelir). Kameraya çıkmak istemiyorsan ses yolu kalıcıdır; yüzle yeniden çekmek şart değil.
 
 Kurallar:
 - Işık pencereden gelsin, pencere karşında olsun.
@@ -118,7 +126,7 @@ Metni ezberleme, yedi parçayı bil ve kendi kelimelerinle anlat.
 
 ### Yükleme ve yerleştirme
 
-Videolar YouTube'a liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı. Yükleme yolu, bilgisayardan: youtube.com adresinde sağ üstteki kamera simgesi "Create" (oluştur), listede "Upload videos" (video yükle); açılan pencerede "Select files" (dosya seç) ile telefondan bilgisayara aldığın videoyu seç (telefondan bilgisayara geçirme: iPhone'da AirDrop ya da kabloyla Fotoğraflar, Android'de kabloyla ya da Google Fotoğraflar). Başlık kutusuna videonun adını yaz, "Next" (ileri) ile üç ekran geç, son ekranda "Visibility" (görünürlük) altında "Unlisted" (liste dışı) seç, "Save" (kaydet). Sağdaki "Video link" (video bağlantısı) satırındaki adresi kopyala, bana yapıştır. YouTube'un arayüzü hesabının diline göre Türkçe de olabilir; o zaman aynı düğmelerin Türkçesi ekranda yazıyor.
+Videolar YouTube'a liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler. Kanal dördüncü blokta kisisel-markani-kur ile açılmıştı. Yükleme telefondan, çektiğin anda; bilgisayara taşımak yok. Her video bir çekimdir: kesme, birleştirme, kurgu yok; üç denemenin en iyisi olduğu gibi yüklenir. Telefonundaki YouTube uygulamasında alttaki artı düğmesi, "Upload a video" (video yükle), videoyu seç; başlık kutusuna videonun adını yaz, görünürlükte "Unlisted" (liste dışı) seç, "Upload" (yükle). Yükleme bitince videonun yanındaki üç noktadan "Share" (paylaş), "Copy link" (bağlantıyı kopyala); bağlantıyı bana yapıştır. Uygulamanın dili Türkçeyse aynı düğmelerin Türkçesi ekranda yazıyor; ekran tarif ettiğimden farklıysa görüntüsünü at, hangi düğme olduğunu söylerim.
 
 Ön görüşme sayfasına şu sırayla konur: ön görüşme videosu en üstte, altında EVET düğmesi, altında üç itiraz videosu.
 
@@ -136,26 +144,24 @@ Bu yüzden hatırlatma mesajlarının işi videoyu izletmek. Randevudan sonra gi
 
 Video elli görüşme dolmadan değişmiyor. O zamana kadar aynı cümleleri elli kez canlı söylemiş olacaksın ve ikinci video kendiliğinden iyi olacak.
 
-### Kameraya çıkamıyorsan
+### Ses yolu
 
-İlk turda sesini kaydedersin, üstüne sitenin ve demonun ekran görüntülerini koyarsın. Bu yol işliyor.
-
-Ama geçici: ilk beş görüşmeni yaptıktan sonra videoyu yüzünle yeniden çekersin. Beş görüşme yapmış biri aynı cümleleri beş kere canlı söylemiş oluyor, kamera artık zor gelmiyor.
+Sesini kaydedersin, üstüne sitenin, demonun ve deneme aramanın ekran görüntülerini koyarsın; telefonun ekran kaydıyla tek parça çekersin. Kurallar aynı: sessiz oda, tek çekim, montaj yok. Bu yol işliyor ve kalıcıdır. İleride yüzünle çekmek istersen elli görüşmeden sonraki ikinci videoda çekersin; o noktada aynı cümleleri elli kez canlı söylemiş olacaksın. İstemezsen ses yolunda kalırsın.
 
 ## 6. Ne söyler
 
-Açılışta: "Bir buçuk saat. Bir tane üç dakikalık video, üç tane bir dakikalık video. Telefonla, tek çekim, montaj yok. Bu videoyu görüşmeye gelen herkes izleyecek."
-Site videosunu sorarsa: "Siteye giren kısa videoyu bugün çekiyoruz, ayrı senaryo yok: az önce çektiğin videonun ilk beş parçası, iki üç dakika. Yarın sahaya çıkıyorsun ve mesajındaki linke tıklayan adam seni görsün istiyoruz. Siteye konan uzun satış videosu ayrı bir iş, onu ilk müşteriden sonra çekiyoruz; çünkü onun işi kalabalığı elemek ve bugün ne kanıtın var ne reklamın."
+Açılışta: "Bir buçuk saat. Beş video: üç dakikalık ön görüşme videosu, iki dakikalık site videosu, üç tane bir dakikalık itiraz videosu. Telefonla, her biri tek parça, montaj yok; çektiğin anda telefondan yüklüyorsun. Yüzünle ya da sesinle, sen seçiyorsun. Ön görüşme videosunu görüşmeye gelen herkes izleyecek."
+Site videosunu sorarsa: "Siteye giren kısa videoyu bugün, aynı oturuşta çekiyoruz: ön görüşme videosunun malzemesi, seni hiç tanımayana göre beş parçada, iki dakika. Yarın sahaya çıkıyorsun ve mesajındaki linke tıklayan adam seni tanısın istiyoruz. Siteye konan uzun satış videosu ayrı bir iş, onu ilk müşteriden sonra çekiyoruz; çünkü onun işi kalabalığı elemek ve bugün ne kanıtın var ne reklamın."
 Metni verirken: "Yedi parça. Ezberleme, bil. Şimdi bir kez sesli oku; ağzına oturmayan cümleyi söyle, değiştireyim."
 Dördüncü parçada: "Bu cümleyi rahat söyle, çünkü doğru. Her görüşmeden önce o işletmeyi gerçekten inceliyorsun. Bunu söyleyene insanlar geliyor."
 Kanıt parçasında: "Buraya kendi deneme aramanın sonucunu koyuyoruz, gerçek sayıyla. Uydurma rakam koymuyoruz; ilk soruda çöker."
 Beğenmezse: "İlk videon ortalama olacak, herkesinki öyle. Üç çekim yaptın, en iyisini seç. Dördüncüyü çekme."
 İtiraz videolarını atlamak isterse: "Üç dakikalık iş. Bu üç video adayın görüşmede soracağı üç soruyu önceden cevaplıyor. Cevabı bilerek gelen aday hem daha çok geliyor hem daha kolay kapanıyor."
-Kameradan korkuyorsa: "İlk turda ses, üstüne ekran görüntüsü. Beş görüşmeden sonra yüzünle yeniden çekiyorsun. O noktada aynı cümleleri beş kere canlı söylemiş olacaksın."
+Kameraya çıkmak istemiyorsa: "Sorun değil. Ses yolu da işliyor: senin sesin, üstünde ekran görüntüleri. Yüzünü göstermek zorunda değilsin."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: ön görüşme videosunun adresi, üç itiraz videosunun adresleri, metnin sürümü ve tarihi, kaç çekimde alındığı, ses yolu kullanıldıysa yüzle yeniden çekim tarihi.
+İş Beyni'ne: ön görüşme videosunun adresi, üç itiraz videosunun adresleri, metnin sürümü ve tarihi, kaç çekimde alındığı, hangi yolla çekildiği (yüz ya da ses).
 
 CRM'e: ön görüşme videosunun adresi özel değerler ekranındaki "ön görüşme videosu linki" satırına yapıştırılır. Randevu alındığı anda giden e-posta o satırı okuyor; satır boşsa mesaj linksiz gidiyor ve adayın videoyu izlemesi için elinde bir şey kalmıyor.
 Bir sonraki modüllere: video adresleri gorusmeye-getir'in ön görüşme sayfasına ve hatırlatma metinlerine.
@@ -165,20 +171,21 @@ Niş kartına: elli görüşmeden sonra hangi itirazın videoya rağmen soruldu�
 
 - Bugün çekilemezse: ertesi sabah çekilir. Ön görüşme sayfası videosuz açılır, yerine üç cümlelik yazı konur ve gün durmaz.
 - Ses kötü çıkarsa: kulaklık mikrofonuyla tekrar. Kötü ses videoyu bitirir.
-- Kameraya çıkamıyorsan: ses yolu, yukarıdaki kuralla.
+- Kameraya çıkmak istemiyorsan: ses yolu, yukarıdaki kuralla; kalıcıdır.
 - Üç itiraz videosuna vakit kalmazsa: ön görüşme videosu bugün, itiraz videoları ertesi sabah. Sıra bu, tersi değil.
+- Telefondan yükleme olmuyorsa: video bilgisayara alınır ve youtube.com'dan yüklenir: sağ üstte "Create" (oluştur), "Upload videos" (video yükle), görünürlükte "Unlisted" (liste dışı).
 - YouTube'a yüklenemezse: video geçici olarak sayfaya doğrudan konur.
 - Üç çekimde de olmadıysa: en iyisi yüklenir. Dördüncü çekim yok.
-- Sağlık nişindeysen: kartın yasal sınırlar bölümü okunur. Metinde tedavi sözü, hasta görseli ve "kesin sonuç" gibi iddialar geçmez.
+- Sağlık nişindeysen: metinde tedavi sözü, hasta görseli ve "kesin sonuç" gibi iddialar geçmez. Metni FounderOS kartın yasal sınırlar bölümüne bakarak yazar; öğrenciye kural anlatılmaz.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: bu videolar ön görüşme sayfasına CRM açıldığı gün giriyor; o güne kadar WhatsApp'tan gidiyor. Aynı blokta video mesaj kurulumu ve şirket hazırlığı, öğleden sonra sahaya çıkış kontrol listesi.
+Sıradaki: bu videolar ön görüşme sayfasına CRM açıldığı gün giriyor; o güne kadar WhatsApp'tan gidiyor. Aynı blokta video mesaj kurulumu, öğleden sonra sahaya çıkış kontrol listesi.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Beşinci gün bitti, video yok: altıncı sabahın ilk işi olur.
 - Dördüncü çekim isteği: reddedilir, en iyisi yüklenir.
-- Ses yolu kullanıldı: beş görüşmeden sonra yüzle yeniden çekim takvime düşer.
+- Ses yolu kullanıldı: yüzle yeniden çekim şart değil; öğrenci isterse elli görüşmeden sonraki ikinci videoda yüzle çeker.
 - Otuz randevu doldu ve gelme oranı yüzde ellinin altında: videonun izlenip izlenmediğine bakılır, hatırlatma metinleri gözden geçirilir.
 - Elli görüşme doldu: metin gözden geçirilir, karar degisiklige-karar-ver'de verilir.
 - İlk kanıt hikâyesi çıktı: altıncı parça değişir, video yeniden çekilir. satis-sayfasini-yaz'ın üç şartı da sağlanıyorsa o modül açılır.

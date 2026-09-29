@@ -6,6 +6,8 @@ description: "Birinci gunun ikinci adimi. Maraton zihniyeti, sosyal medya illuzy
 
 # zihniyet
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Bu bir ders değil. Birinci günde bir dakika sürer, gerisi doksan güne dağılır.
@@ -21,7 +23,7 @@ Pazarlamadaki karşılığı: girişimcilik doğuştan gelen bir kimlik değil, 
 
 ## 3. Ne okur
 
-İş Beyni'nden: tanışmanın dördüncü, beşinci ve altıncı sorusunun cevabı.
+İş Beyni'nden: tanışma cevapları. Birinci gün sekiz zorunlu cevap var; "daha önce ne denedin" ve "seni en çok ne düşündürüyor" bekleyen sorulardır, sorulunca buradan okunur.
 
 ## 4. Ne sorar
 
@@ -57,7 +59,7 @@ Bir oturumda en fazla bir kart açarsın. Aynı kart aynı kişiye üç günden 
 
 ## 6. Ne yazar
 
-İş Beyni'nin ikinci bölümüne (Hedef ve para): kabul ve tarihi, hangi kartın hangi gün açıldığı.
+İş Beyni'nin ikinci bölümüne (Hedef ve para): kabul ve tarihi. Açılan kart o günün günlüğüne tek satır yazılır; üç gün kuralı için İş Beyni'nde her kartın yalnız son açılış tarihi durur. Yazım onay istemez.
 
 ## 7. Asla
 

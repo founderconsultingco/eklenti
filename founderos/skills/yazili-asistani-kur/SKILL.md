@@ -6,6 +6,8 @@ description: "Müşterinin ikinci ve üçüncü günü. WhatsApp ve Instagram me
 
 # yazili-asistani-kur
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Müşterinin WhatsApp ve Instagram hesabına gelen yazılı mesaja cevap veren asistanı kuran modül. Asistan en fazla üç soru sorar, randevuyu yazar, gerektiğinde işi insana devreder. Modül, FounderOS'un belli bir işi yapan parçasıdır.
@@ -25,8 +27,8 @@ Pazarlamadaki karşılığı: sattığımız şey sohbet robotu değil, cevapsı
 ## 2. Ne zaman çalışır
 
 - İkinci gün: kart okunur, asistanın üç kuralı çıkarılır, üretim talimatı yazılır, cevap listesi hazırlanır. Asistanın kendi metinleri (ilk mesaj, üç soru, devir cümlesi) tek sayfada müşteriye gönderilir ve yazılı onayı istenir.
-- Asistanın üç takip metni hazır kurulum paketinde gelir. Onları müşteri kurulum görüşmesinin yapıldığı gün onaylar, aynı gün WhatsApp'ın onayına gönderilir (onaylı şablon). Bu işi musteri-sistemini-kur yürütür; onayın kaç gün süreceği belli değil.
-- Üçüncü gün: müşterinin onayı geldikten sonra asistan kurulur. Sonra sen kendi telefonundan on senaryoyu denersin.
+- Asistanın üç takip metni hazır kurulum paketinde gelir. Onları müşteri kurulum görüşmesinde onaylar; WhatsApp'ın onayına ikinci gün, hat CRM'e bağlandığı gün gönderilir (onaylı şablon). Onay gelene kadar akışlardaki mesaj adımları e-postayla çalışır. Bu işi musteri-sistemini-kur yürütür; onayın kaç gün süreceği belli değil.
+- Üçüncü gün: müşterinin onayı geldikten sonra asistanı kurarsın. Talimatı ve cevap listesini FounderOS hazırlar, asistanın ekranında nereye yapıştıracağını adım adım gösterir; sen yapıştırıp kaydedersin. Sonra kendi telefonundan on senaryoyu denersin.
 - Dördüncü gün: şablon onaylarının durumu işaretlenir, eksikler tamamlanır.
 - Beşinci gün: üçüncü soruyu musteri-sistemini-kur ölçer. Geçemezse asistan burada düzeltilir.
 - Altıncı günden on ikinci güne: her gün bütün konuşmalar okunur, günde tek düzeltme yapılır. On üçüncü günden sonra haftalık kontrol sistemi-kontrol-et'e geçer.
@@ -37,7 +39,7 @@ Pencereler: kart okuma, talimatın yazılması ve şablon durumuna bakma sabah b
 ## 3. Ne okur
 
 Niş kartından: "Asistan kuralları" bölümü (toplanacak bilgiler, insana devir, söylenmeyecekler), işletmecinin kendi kullandığı cümleler, yasal sınırlar. Oto kuaför kartında bu bölüm yok; orada kurallar kurulum görüşmesindeki cevaplardan çıkarılır.
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü): çalışma saatleri, randevu uzunluğu, hizmet bölgesi, hizmet listesi, sık sorulan on soru ve cevabı, devri alacak kişinin adı, ortalama iş bedeli, alınan giriş izinleri ve hangi hesapta sorun çıktığı. Hizmet listesini ve sık sorulan on soruyu kurulum görüşmesinde sen sorarsın; ikisi de karşılama formunda yok.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`): çalışma saatleri, randevu uzunluğu, hizmet bölgesi, hizmet listesi, sık sorulan on soru ve cevabı, devri alacak kişinin adı, ortalama iş bedeli, alınan giriş izinleri ve hangi hesapta sorun çıktığı. Hizmet listesini ve sık sorulan on soruyu kurulum görüşmesinde sen sorarsın; ikisi de karşılama formunda yok.
 İş Beyni'nden: sistemin adı, Kademe 2'nin bu nişteki içeriği.
 Hazır kurulum paketinden: asistanın taslak talimatı ve takip metinleri.
 
@@ -161,7 +163,7 @@ Asistanın takibi dışında dört zincir daha var ve dördü de aynı asistanı
 
 **4. Görüşme Sonrası Satış Takibi (Post-Call Follow-Up).** Randevu yapıldı ya da keşif oldu, satın alma olmadı. Tetik: kayıt "görüşüldü, karar yok". Adımlar: ertesi gün teşekkür ve görüşmede konuşulan tek şeyin özeti (işletmeci görüşmeden sonra üç kelime yazıyor, asistan onu kullanıyor; uydurma özet yok); dört gün sonra "kararınızda size yardımcı olacak bir bilgi var mı"; on gün sonra son mesaj. Durma: karar geldi ya da "aramayın".
 
-**Tek zincir kuralı, Otomasyon ve Takip Kontrolleri (Workflow Controls).** Bir kişiye aynı anda tek zincir yazar. Randevu alınınca davet ve otomatik takip durur; teklif kabul edilince teklif takibi durur; satın alma gerçekleşince bütün satış zincirleri durur ve yalnızca hizmet sonrası zincirler (yorum, tekrar randevu) açılır. Çalışan konuşmayı devralınca asistan ve bütün zincirler o kayıtta susar. "İstemiyorum", "aramayın", "çıkar beni" gelince kayıt kapanır ve bir daha hiçbir zincir yazmaz; bu İYS kuralıdır, tartışılmaz.
+**Tek zincir kuralı, Otomasyon ve Takip Kontrolleri (Workflow Controls).** Bir kişiye aynı anda tek zincir yazar. Randevu alınınca davet ve otomatik takip durur; teklif kabul edilince teklif takibi durur; satın alma gerçekleşince bütün satış zincirleri durur ve yalnızca hizmet sonrası zincirler (yorum, tekrar randevu) açılır. Çalışan konuşmayı devralınca asistan ve bütün zincirler o kayıtta susar. "İstemiyorum", "aramayın", "çıkar beni" gelince kayıt kapanır ve bir daha hiçbir zincir yazmaz; bu kural hiçbir müşteride değişmez, öğrenciye kaynağı anlatılmaz.
 
 Dört zincirin metinleri hazır kurulum paketinde gelir, nişe ve yolculuğa göre; müşteri kurulum görüşmesinin yapıldığı gün onaylar. Onaylanmamış zincir çalışmaz.
 
@@ -197,7 +199,7 @@ Kim kurtarır: hesabın sahibi müşteri, kurtarmayı da o yapar. Sen yol göste
 
 Ne kadar beklenir: yedinci güne kadar. O güne kadar açılmazsa takvime yazma parçası ilk turda kurulmuyor demektir.
 
-Kapsam dışı sayılır mı: evet. Müşterinin kendi adımını atmaması yüzünden hiç kurulamayan parça kapsam dışıdır ve güvencenin sonucuna sayılmaz. Bunu kurulum görüşmesinde sesli söylüyorsun ve onay belgesinin "neyi yapmıyorum" başlığına yazıyorsun. Rapor günü raporunda o satır boş kalıyor; sıfır sayılmıyor.
+Kapsam dışı sayılır mı: evet. Müşterinin kendi adımını atmaması yüzünden hiç kurulamayan parça kapsam dışıdır ve güvencenin sonucuna sayılmaz. Sebep müşteriden geldiği için ücretten indirim de yoktur. Bunu kurulum görüşmesinde sesli söylüyorsun ve onay belgesinin "neyi yapmıyorum" başlığına yazıyorsun. Rapor günü raporunda o satır boş kalıyor; sıfır sayılmıyor.
 
 Bu sırada asistan durmuyor. Randevu saatini konuşup topluyor, sonucu devri alacak kişiye bırakıyor, takvime yazmayı o kişi elle yapıyor. Müşteri talebi kaybetmiyor, sadece bir adım elde yürüyor. Hesap sonradan açılırsa parça ikinci turda kuruluyor.
 
@@ -211,7 +213,7 @@ Bunu ayrı yazmamın sebebi şu: talimatta yalnız fiyat yasağı varsa asistan 
 
 Fiyat sorusunun cevabı nişe göre üç biçimde olur: kart aralık vermeye izin veriyorsa aralık söylenir; fiyat ilanda yazıyorsa oraya yönlendirilir; ikisi de değilse "fiyatı [devri alacak kişinin adı] söylüyor, sizi ona bağlayayım".
 
-Sağlık nişlerinde asistan şunları da yazmaz: fiyat, indirim, kampanya, hediye, çekiliş, hastaların teşekkür mesajları, tıbbi tavsiye, teşhis. Hatırlatma hastanın kendi tedavisine bağlanır. Bu sınırlar sağlık nişlerinin kartının yasal sınırlar bölümünde yazılıdır; müşterinin kendi bağlı olduğu kurallar için son sözü onun hukukçusu söyler.
+Sağlık nişlerinde asistan şunları da yazmaz: fiyat, indirim, kampanya, hediye, çekiliş, hastaların teşekkür mesajları, tıbbi tavsiye, teşhis. Hatırlatma hastanın kendi tedavisine bağlanır. Bu sınırlar sağlık nişlerinin kartının yasal sınırlar bölümünde yazılıdır ve asistanın talimatına olduğu gibi girer; öğrenciye sebebi anlatılmaz. Metne kliniğin yazılı "onaylıyorum"u yeter, kliniğin kendi danışmanına sorması kliniğin işidir.
 
 Kartın yasal sınırlar bölümünde yazdığı gibi: sigortada asistan hangi acente adına konuştuğunu mesajında yazar; haşerede kesin çözüm ve garanti sözü verilmez; oto galeride pazarlık yapılmaz ve "kesin memnun kalırsınız" gibi sözler verilmez.
 
@@ -223,7 +225,7 @@ Asistana bir cevap listesi verilir. Cevap listesi, asistanın bakıp cevap verec
 
 Bilmediği soruda uydurmaz: "Bunu tam bilmiyorum, [devri alacak kişinin adı]'na sorup döneyim" der ve devreder.
 
-Asistanın hiç kullanmayacağı kelimelerin listesini FounderOS hazırlar ve kurulum sırasında sisteme yazar. Sen bir şey yapmazsın.
+Asistanın hiç kullanmayacağı kelimelerin listesini FounderOS hazırlar. Listeyi asistanın ayar ekranına sen yapıştırırsın; FounderOS yerini adım adım gösterir.
 
 ### Deneme
 
@@ -245,7 +247,7 @@ Bu deneme yalnız asistanı ölçer. Beşinci günün on dört senaryoluk testi 
 
 ### Canlıda izleme ve düzeltme
 
-Altıncı günden on ikinci güne kadar her gün akşam bloğunda bütün konuşmaları okursun ve bana tek satır gözlem yazarsın. Düzeltmeyi ben yaparım, günde tek düzeltme. Hepsini birden değiştirirsek neyin işe yaradığını bilemeyiz. On üçüncü günden sonra bu iş haftalığa döner.
+Altıncı günden on ikinci güne kadar her gün akşam bloğunda bütün konuşmaları okursun ve bana tek satır gözlem yazarsın. Düzeltilmiş metni ben hazırlarım, sen asistanın ekranında eskisinin yerine koyarsın; günde tek düzeltme. Hepsini birden değiştirirsek neyin işe yaradığını bilemeyiz. On üçüncü günden sonra bu iş haftalığa döner.
 
 Düzeltme kurulum ayarlarında değil, talimatın kurallar bölümünde ve cevap listesinde yapılır. Kurulum ayarlarına yayına girdikten sonra dokunulmaz.
 
@@ -254,10 +256,10 @@ Aynı soru üç konuşmada takıldıysa cevap listesine eklenir. Devir oranı il
 ## 6. Ne söyler
 
 İkinci gün: "Bugün asistanın üç kuralını çıkarıyoruz: ne soracak, ne zaman insana devredecek, neyi asla söylemeyecek. Üçü de kartta yazıyor, ben çıkarıyorum. Metinleri bugün müşteriye gönder, yazılı onayını al. Onay gelmeden asistan kurulmaz."
-Üçüncü gün: "Onay geldiyse asistanı kuruyorum. Sonra kendi telefonundan on senaryoyu deneyeceksin. Onunu da deneyeceksin, güzel olanı seçmeyeceksin: fiyat sor, kız, alakasız bir şey yaz, 'insan mısın' de. Onu da temiz çıkmadan canlıya almıyoruz."
+Üçüncü gün: "Onay geldiyse asistanı kuruyoruz: talimat ve cevap listesi hazır, ekranda nereye yapıştıracağını adım adım gösteriyorum, sen yapıştırıp kaydediyorsun. Sonra kendi telefonundan on senaryoyu deneyeceksin. Onunu da deneyeceksin, güzel olanı seçmeyeceksin: fiyat sor, kız, alakasız bir şey yaz, 'insan mısın' de. Onu da temiz çıkmadan canlıya almıyoruz."
 Müşteri "asistan olduğu belli olmasın" derse: "Belli olmasın diyemeyiz. İnsan taklidi hem şikâyet getirir hem yakalandığında bütün güveni siler. Adı '[iş adı] asistanı' olacak; kimse aldatılmayacak, ama sizin gibi konuşacak."
-Üçüncü soru geçilemezse: "Asistan güzel konuşuyor ama randevu almıyor. Bu iyi asistan değil; bilgi veren asistan satışı öldürür. Görev bölümünü değiştiriyorum."
-Canlıdan sonra: "Altıncı günden on ikinci güne kadar, yedi gün, her akşam konuşmaları okuyacaksın. Bana tek satır yazacaksın, düzeltmeyi ben yapacağım. Günde tek düzeltme."
+Üçüncü soru geçilemezse: "Asistan güzel konuşuyor ama randevu almıyor. Bu iyi asistan değil; bilgi veren asistan satışı öldürür. Görev bölümünü yeniden yazıyorum; sen asistanın ekranında eskisinin yerine koyacaksın."
+Canlıdan sonra: "Altıncı günden on ikinci güne kadar, yedi gün, her akşam konuşmaları okuyacaksın. Bana tek satır yazacaksın, düzeltilmiş metni ben hazırlayacağım, sen yerine koyacaksın. Günde tek düzeltme."
 Müşteri Google şifresini bilmiyorsa: "Bu sık oluyor, sorun değil. İki soru: hesabı sizin adınıza kim açtı, o kişiye ulaşabiliyor musunuz? Ulaşamıyorsak kurtarmayı siz kendi telefonunuzdan yapacaksınız, ben yanınızda olacağım. Şifrenizi istemiyorum, hiçbir zaman da istemeyeceğim."
 Yedinci güne kadar hesap açılmazsa: "Takvime yazma parçası ilk turda kurulmuyor. Bunu şimdi söylüyorum: o parça kapsam dışında kalıyor ve raporda o satır boş duruyor, sıfır sayılmıyor. Asistan çalışmaya devam ediyor; randevu saatini konuşup topluyor, takvime yazmayı sizin taraf elle yapıyor."
 İngilizce ekranda takılırsa: "Ekranın görüntüsünü at, hangi düğme olduğunu söylerim. Tarayıcının çevirisini açma; çeviri düğme adlarını değiştiriyor ve bir sonraki adımda tarif ettiğim yazıyı ekranda bulamıyorsun."
@@ -273,7 +275,7 @@ musteri-sistemini-kur'a teslim edilen ayar listesi: cevap gecikmesi, mesaj uzunl
 
 - Kartta "Asistan kuralları" bölümü yoksa: kurallar kurulum görüşmesindeki cevaplardan ve benzer nişten çıkarılır, sonra karta yazılır.
 - Müşteri metinleri onaylamazsa: onaylamadığı cümle değiştirilir, asistan onaysız açılmaz.
-- Şablon onayı gelmediyse: birinci takip gider, çünkü o yirmi dört saatin içinde. İkinci ve üçüncü takip onay gelene kadar beklenir. Instagram'da üçü de gider.
+- Şablon onayı gelmediyse: birinci takip gider, çünkü o yirmi dört saatin içinde. İkinci ve üçüncü takip onay gelene kadar kişinin e-postası varsa e-postadan gider, yoksa bekler. Instagram'da üçü de gider.
 - Cevap listesi hazır değilse: asistan yalnız randevu alır, bütün soruları insana devreder.
 - Deneme temiz çıkmazsa: canlıya alınmaz, talimatın kurallar bölümü düzeltilir, tekrar denenir.
 - Asistan üç karşılıklı yazışmada anlaşamıyorsa: devir, konuşma insana geçer.

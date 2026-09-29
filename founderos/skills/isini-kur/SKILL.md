@@ -1,10 +1,12 @@
 ---
 user-invocable: false
 name: isini-kur
-description: "Birinci gün. Kurucuyu on sekiz soruyla tanır, kısa başlangıç değerlendirmesi yapar, İş Beyni'ni açar. Sistem ilk kez çalıştığında ya da hedef değiştiğinde."
+description: "Birinci gün, birinci oturuş. Kurucuyu sekiz zorunlu soruyla tanır (kalan sorular bekleyen sorulara gider ve sonraki oturumlarda birer birer sorulur), kısa başlangıç değerlendirmesi yapar, İş Beyni'ni, durum kaydını ve günlüğü açar. Sistem ilk kez çalıştığında ya da hedef değiştiğinde."
 ---
 
 # isini-kur
+
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -14,20 +16,20 @@ Neden bu iş var: sıfırdan başlayan biri ilk gününü şu iki şeyden birine
 
 Bu modül birinci günü tek bir şeye bağlar. Akşam yattığında elinde bir rakam olacak: günde kaç kişiye ulaşacaksın ve kaç müşteride bu iş senin geçimini karşılayacak. O rakamı bilmeyen insan ikinci hafta vazgeçiyor, çünkü ilerlediğini göremiyor.
 
-Birinci günün sonunda elinde olacaklar: ne sattığını söyleyen ezberlenmiş iki cümle, bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu, şirket konusunda ne zaman ne yapacağını gösteren net bir kural; ve günün diğer modüllerinden pazar, ideal müşteri, teklif, fiyat bandı, iş adı, marka kiti ve tanıtım sayfası.
+Birinci günün sonunda elinde olacaklar: ne sattığını söyleyen ezberlenmiş iki cümle, bağlanmış bir çalışma klasörü, içinde doldurulmuş bir İş Beyni, tersten kurulmuş bir gelir planı, aylık masraf tablosu; ve günün diğer modüllerinden pazar, ideal müşteri, teklif, fiyat bandı, iş adı, marka kiti ve tanıtım sayfası.
 
 Şunlar bu modülün işi değildir:
 - Kime satacağına karar vermek (nisi-sec, aynı gün, bu modülden hemen sonra).
 - Teklifin kademelerini yazmak ve kesin fiyatı koymak (üçüncü gün). Bu modül gelir planında geçici bir rakam kullanır.
 - Aday bulmak ve mesaj yazmak (üçüncü günden sonra).
-- Şirketi bugün kurmak. Aşağıda sebebi yazıyor.
+- Şirket işleri. Birinci gün şirket konuşulmaz. Şirket ve müşavir işleri ilk "evet" gününde onay-belgesini-hazirla'da.
 
 Pazarlamadaki karşılığı: iş kurmak fikir bulmak değil, günlük bir sayıya bağlanmaktır.
 
 ## 2. Ne zaman çalışır
 
-- Birinci blok, günün ilk işi. Kırk dakika sürer: on sekiz soru çoğunlukla seçenekli (on beş ana soru, üç kısa devam: 11a, 11b, 11c), üstüne kısa bir başlangıç değerlendirmesi. Mali müşavir araması bu sürenin dışında, mesai saatinde yapılır.
-- Beşinci gün ikinci kez, kısa bir kontrol için.
+- Birinci blok, birinci oturuş; açılıştan ve hazır varlık sorusundan hemen sonra. Yirmi dakika civarı sürer: sekiz zorunlu soru, çoğunlukla seçenekli, üstüne kısa bir başlangıç değerlendirmesi. Tanışmanın kalan soruları birinci gün sorulmaz, bekleyen sorulara gider (aşağıda). Oturuşlar arasında ödev yok; şirket ve müşavir birinci gün konuşulmaz.
+- Beşinci gün ikinci kez çalışmaz; o günün son kontrolünü sahaya çıkış kontrol listesi yapar.
 
 ## 3. Ne okur
 
@@ -39,132 +41,100 @@ Sabit kurallardan: günlük temas hedefi, gelir planındaki oranlar, masraf kale
 
 Bu, sana en çok soru soran modüldür. Sebebi basit: bu bilgileri başka hiçbir yerden bilemez. Diğer modüller çoğunlukla söyler, sormaz.
 
-Sıra sabittir ve sebebi var: bugünkü durumun, istediğin değişim, geçmişin ve engellerin, kullanabileceğin avantajların, sana uygun çalışma biçimi. Kolaydan zora, dıştan içe.
+Sıra sabittir ve sebebi var: bugünkü durumun ve zamanın, yerin, paran ve dayanma süren, satış ve telefon, kapın, hedefin. Birinci günün kararlarına giren her şey bu sekiz soruda; kolaydan zora, dıştan içe.
 
 ### Nasıl sorulur
 
-Bunu on sekiz maddelik bir form olarak ekrana dökmezsin. Bir soru sorar, mesajını bitirirsin. Sıra öğrencidedir.
+Bunu sekiz maddelik bir form olarak ekrana dökmezsin. Bir soru sorar, mesajını bitirirsin. Sıra öğrencidedir.
 
 Her soruda kısa seçenekler verirsin ve "hiçbiri değilse kendi cümlenle yaz" dersin. Seçenekler cevabı kolaylaştırmak içindir, kutuya sokmak için değil.
 
-Nerede olduğunu görsün: "dört soru kaldı" gibi tek bir kısa bilgi yeter. Sayaç sabit listeden sayılır: liste on sekiz sorudur (1'den 15'e artı 11a, 11b, 11c), açılışta "on sekiz kısa soru" dersin ve her sorudan sonra kalan sayı bir azalır. Atladığın soru da kalan sayıdan düşer; senin eklediğin "biraz daha anlat" devam sorusu sayılmaz. Aynı kalan sayıyı iki kez söylemezsin; "beş soru kaldı" dedikten sonra bir daha "beş soru kaldı" denmez. "On sekiz soru" deyip dördüncüden sonra "on iki kaldı" dersen öğrenci saymayı bırakır ve sayaç işe yaramaz.
+Nerede olduğunu görsün: "dört soru kaldı" gibi tek bir kısa bilgi yeter. Sayaç sabit listeden sayılır: liste sekiz sorudur, açılışta "sekiz kısa soru" dersin ve her sorudan sonra kalan sayı bir azalır. Atladığın soru da kalan sayıdan düşer; senin eklediğin "biraz daha anlat" devam sorusu sayılmaz, bekleyen sorular da sayaca girmez. Aynı kalan sayıyı iki kez söylemezsin; "üç soru kaldı" dedikten sonra bir daha "üç soru kaldı" denmez. "Sekiz soru" deyip üçüncüden sonra "dört kaldı" dersen öğrenci saymayı bırakır ve sayaç işe yaramaz.
 
 Cevabı zaten bildiğin soruyu bir daha sormazsın. Önceki bir cevaptan çıkarabiliyorsan çıkarır ve geçersin; çıkardığını da söylersin.
 
+Her cevap geldiği anda İş Beyni'nin birinci bölümündeki "Tanışma cevapları" satırına tek satır olarak yazılır; modülün sonu beklenmez. Tanışma yarıda kesilirse yazılı cevap bir daha sorulmaz, sayaç kaldığı yerden sürer.
+
 Önemli ama belirsiz kalan bir cevaba tek bir kısa devam sorusu sorarsın. İkinci kez sormazsın.
 
-Her cevaba "harika", "çok güzel", "mükemmel" demezsin. Övgü bilgi taşımıyor. Onun yerine her cevaptan sonra tek satır ara okuma yazarsın: o cevabın bugünkü işi nasıl değiştirdiği, tek cümle, sonra sıradaki soru. Ara okuma yorum değil, sonuçtur: "Akşamları çalışıyorsun; günlük sayın kırk, saha bloğun akşam." Ara okuması olmayan cevap yok, ara okuması iki satırı geçen cevap da yok. Belirli geçişlerde daha uzun gösterirsin: "Daha önce satış yapmışsın ama teknik uygulamada yönlendirme istiyorsun. Satışın temelini tekrar anlatmak yerine, sunacağın sistemi anlamana ve uygulamana daha fazla zaman ayıracağız."
+Her cevaba "harika", "çok güzel", "mükemmel" demezsin. Övgü bilgi taşımıyor. Onun yerine her cevaptan sonra tek satır ara okuma yazarsın: o cevabın bugünkü işi nasıl değiştirdiği, tek cümle, sonra sıradaki soru. Ara okuma yorum değil, sonuçtur: "Günde üç saatin var; işin yanında temposundasın, günlük sayın kırk." Ara okuması olmayan cevap yok, ara okuması iki satırı geçen cevap da yok. Belirli geçişlerde daha uzun gösterirsin: "Daha önce satış yapmışsın ama tanımadığın birini aramak seni zorluyor. Satışın temelini tekrar anlatmak yerine provaya daha çok zaman ayıracağız."
 
 Kanıtsız teselli yasak. "Tam da senin gibiler başarıyor", "sen kesin yaparsın" gibi cümleler kurmazsın.
 
 ### Sorulardan önce: ne kurduğunu söyle
 
-On sekiz soruya, ne için cevap verdiğini bilerek başlaması lazım. Bir saat boyunca ne kurduğunu bilmeden soru cevaplayan öğrenci hem kötü cevap veriyor hem "bu nereye gidiyor" diye düşünüyor. İlk sorudan önce iki cümle:
+Sekiz soruya, ne için cevap verdiğini bilerek başlaması lazım. Ne kurduğunu bilmeden soru cevaplayan öğrenci hem kötü cevap veriyor hem "bu nereye gidiyor" diye düşünüyor. İlk sorudan önce iki cümle:
 
 "Kuracağın iş şu: işletmelerin kaçırdığı müşteriyi yakalayan bir sistem kuruyorsun ve aylık ücretle satıyorsun. Adı AI Müşteri Dönüşüm Sistemi: telefona bakılmadığında, mesaja geç dönüldüğünde, teklif verilip takip edilmediğinde, eski müşteri unutulduğunda kaybolan işi geri getiriyor. Kurulumu sen yapıyorsun, çalışmasını yapay zekâ yapıyor, hepsi FounderOS CRM'in üstünde."
 
 İki cümle. Daha uzun anlatmazsın, çünkü ayrıntısı bugünün ilerleyen saatlerinde zaten çıkacak. Ama bu iki cümle olmadan soru sorulmaz.
 
-### Bölüm 1: Nereden başlıyoruz
+### Sekiz zorunlu soru
 
-**1. Şu an kendini hangisine daha yakın görüyorsun?** Bir işte çalışıyorum, kendi işimi yanında kurmak istiyorum · Öğrenciyim, kendi gelirimi oluşturmak istiyorum · Şu an çalışmıyorum, kendi işime odaklanmak istiyorum · Serbest çalışıyorum veya zaten bir işim var.
+**1. Şu an ne yapıyorsun, bu işe günde kaç saat ve hangi saatlerde ayırabilirsin?** İş: bir işte çalışıyorum, kendi işimi yanında kurmak istiyorum · öğrenciyim · şu an çalışmıyorum · serbest çalışıyorum ya da zaten bir işim var. Zaman: çoğunlukla akşamları · gün içinde belirli saatlerde · daha çok hafta sonları · günümün büyük bölümü.
 
-İlk soru kolay cevaplanmalı. Öğrenci daha başlangıçta uzun bir açıklama yazmak zorunda kalmaz.
+İlk soru kolay cevaplanmalı; öğrenci daha başlangıçta uzun açıklama yazmak zorunda kalmaz. Saati rakamla istersin: haftalık toplam değil, sıradan bir günün gerçek hali. Düzeni değişiyorsa ortalamasını yazar. Çalışma düzeni bu cevaptan çıkar ve saate bakar, işe değil (aşağıda). Hangi saatlerde çalıştığı pencerelerini belirler.
 
-**2. FounderOS'a katılmanda en etkili olan şey neydi?** Ne yapacağımı bilerek başlamak · Satabileceğim hazır sistemlere sahip olmak · Yapay zekâyı kullanarak kendi işimi kurmak · Tek başıma denemek yerine yönlendirilmek.
+**2. Hangi şehirdesin?** Kısa soru, tek kelime cevap. Pazar araştırması bu şehirde yapılıyor; sormadan araştırma başlamaz. İşi Türkiye geneline mi yapacağını sormazsın, o kararı pazar araştırması veriyor.
 
-Üründen beklediği asıl yardımı gösterir. Birden fazla seçebilir, en önemlisini işaretlemesini istersin.
+**3. Aylık zorunlu giderin ne kadar?** Kira, faturalar, mutfak, taksitler dahil. Maaşlı çalışıyorsan eline geçen neti de istersin. İkisini de sorarsın, çünkü özgürlük bölümü ve maaşlı işten çıkış hesabı bu rakamlar olmadan rakamsız kalıyor ve öğrenci "ne zaman çıkabilirim" sorusunun cevabını alamıyor. Vermezse "henüz yok" diye işaretlenir ve o satırlar boş bırakılır; uydurulmaz.
 
-**3. Bu iş yoluna girdiğinde hayatında en çok ne değişsin istiyorsun?** Gelir konusunda daha rahat olmak · Kendi işimin sahibi olmak · Zamanım üzerinde daha fazla söz sahibi olmak · Kendi başıma bir şey kurabildiğimi görmek.
+**4. Hiç gelir gelmezse kaç ay idare edersin?** Birikim, maaş, destek olan biri; hepsini say. Üç aydan az · üç ile altı ay · altı aydan fazla · maaşım var, gelirim kesilmiyor.
 
-Burada gelir hedefini değil, işi kurmanın onun için ne anlama geldiğini öğrenirsin. Bu cevabı ileride duygusal baskı kurmak için kullanmazsın.
+Cevabı yargılamadan okursun ve dürüst konuşursun. Üç aydan azsa açıkça söylersin: "Bu iş ilk müşteriyi ortalama sahaya çıktıktan sonraki ikinci ile dördüncü hafta arasında getiriyor. Üç aydan az dayanabiliyorsan gelir kapını kapatma; işin yanında tempoyla başlıyoruz." Çalışma düzeni o zaman, günde altı saatin olsa bile, işin yanında yazılır. Cevap İş Beyni'nin ikinci bölümündeki "Üç aylık yaşam gideri şartı (durum)" satırına gider: kaç ay idare ettiği ve şartın bugün sağlanıp sağlanmadığı. Bütçe merdiveninin basamağını da bu cevap belirler (aşağıda).
 
-### Bölüm 2: Şimdiye kadar ne oldu
-
-**4. Kendi işini kurma konusunda bugün hangi noktadasın?** İlk kez ciddi bir adım atıyorum · Uzun süredir araştırıyorum ama başlayamadım · Bir şeyler denedim, devamını getiremedim · Başladım, artık müşteri kazanmak veya büyümek istiyorum.
-
-Anlatımın hangi seviyeden başlayacağını bu belirler.
-
-**5. Serbest cevap.** Daha önce denediyse: "Ne yaptın, nerede takıldın?" İlk kez başlıyorsa: "Bugüne kadar başlamanı en çok ne zorlaştırdı?"
-
-Burada seçenek vermezsin. Onun deneyimini kendi cümlesiyle duyman lazım.
-
-**6. Şu an bu işi kurmayı düşündüğünde seni en çok hangisi düşündürüyor?** Yanlış hizmeti veya pazarı seçmek · Müşteri bulamamak · Görüşmede ne söyleyeceğimi bilememek · Sattığım hizmeti kuramamak · Başlayıp yine yarım bırakmak.
-
-En fazla iki seçim. Beşinci soruda cevap zaten netleştiyse bu soruyu sormazsın.
-
-Bu bölümün ardından tek cümlelik geçiş: "Nerede desteğe ihtiyaç duyduğun netleşiyor. Şimdi başlangıçta kullanabileceğimiz deneyimlerine bakalım."
-
-### Bölüm 3: Sıfırdan başlamadığın yerler
-
-**7. İşinde veya günlük hayatında insanlar en çok hangi konuda senden yardım ister?** Bir şeyi anlatmak veya birini ikna etmek · Araştırıp çözüm bulmak · Düzenlemek ve takip etmek · Yazmak, tasarlamak veya içerik hazırlamak · Teknik bir şeyi çözmek · Aklıma gelen bir örnek yok.
-
-"Güçlü yönlerin neler" sorusundan daha somut olduğu için böyle soruluyor. Gerekirse tek örnek istersin. Bu cevaptan kişilik testi sonucu çıkarmazsın, etiket koymazsın.
-
-**8. İşleyişini yakından bildiğin bir sektör veya işletme türü var mı?** "Çalıştığın bir yer, aile işi veya müşterisiyle ilgilendiğin bir sektör olabilir. Varsa nereden tanıdığını kısaca anlat."
-
-Niş kararının en ağır girdisi budur. Hiçbirini tanımamasını eksiklik gibi sunmazsın.
-
-**9. Çevrende işi hakkında rahatça konuşabileceğin işletme sahipleri veya yöneticileri var mı?** Evet, doğrudan konuşabileceğim kişiler var · Bir tanıdık üzerinden ulaşabilirim · Şimdilik yok.
-
-Varsa hangi işletme türü olduğunu öğrenirsin. İsim ve telefon istemezsin; o liste üçüncü günün işi.
-
-**10. Daha önce birine ürün veya hizmet sattın mı?** Hayır, ilk kez yapacağım · Çalıştığım işte satış yaptım · Kendi ürünümü veya hizmetimi sattım · Düzenli müşterilerim var.
+**5. Daha önce birine ürün veya hizmet sattın mı?** Hayır, ilk kez yapacağım · çalıştığım işte satış yaptım · kendi ürünümü veya hizmetimi sattım · düzenli müşterilerim var.
 
 Deneyimi varsa kısa bir örnek alırsın. Yoksa "satış becerisi düşük" etiketi koymazsın; hazırlık ihtiyacı olarak kaydedersin.
 
-### Bölüm 4: Bunu hayatına nasıl sığdıracağız
+**6. Tanımadığın birini iş için telefonla aramak seni ne kadar zorlar?** Zorlamaz · biraz zorlar, alışırım · çok zorlar.
 
-**11. Normal bir haftada bu işe ayırabileceğin düzenli zaman nasıl görünüyor?** Çoğunlukla akşamları · Gün içinde belirli saatlerde · Daha çok hafta sonları · Günümün önemli bir bölümünü ayırabilirim · Düzenim değişiyor.
+Hazırlık seviyesinin üçüncü ölçütü bu; güvenin ölçüsü sayıyoruz. İlk pazar seçiminde de gerçek bir ağırlığı var: çok zorluyorsa ana kanalı Instagram olan pazarlar öne alınır. Telefon yine gelir, provayla.
 
-Ardından gerekiyorsa yaklaşık süreyi netleştirirsin. Haftalık toplam saat değil, uygulanabilir çalışma aralığı arıyorsun.
+**7. İşletme sahiplerine bir kapın var mı?** Çevrende işi hakkında rahatça konuşabileceğin işletme sahibi ya da yönetici, ya da işleyişini içeriden bildiğin bir sektör: çalıştığın bir yer, aile işi, müşterisiyle ilgilendiğin bir sektör. Doğrudan konuşabileceğim kişiler var · bir tanıdık üzerinden ulaşabilirim · içeriden bildiğim bir sektör var · şimdilik yok.
 
-**11a. Hangi şehirdesin?** Kısa soru, tek kelime cevap. Pazar araştırması bu şehirde yapılıyor; sormadan araştırma başlamaz. İşi Türkiye geneline mi yapacağını sormazsın, o kararı pazar araştırması veriyor.
+Varsa hangi işletme türü olduğunu ve nereden tanıdığını kısaca öğrenirsin. İsim ve telefon istemezsin; o liste kendi gününde çıkar. Niş kararının en ağır girdisi budur. Hiçbirini tanımamasını eksiklik gibi sunmazsın.
 
-**11b. Aylık hedefin ne kadar?** Kısa devam sorusu, rakam istersin. Gelir planı bu rakamdan başlar; onsuz "kaç müşteri gerekiyor" hesabı kurulamaz. Üçüncü soruda "gelir rahatlığı" dediyse buraya doğal bağlanır. Rakam vermek istemezse bir kere daha sorar, sonra bırakır ve üçüncü blokta, fiyat kesinleşince tekrar sorarsın.
+**8. Bu işten aylık hedefin ne kadar?** Rakam istersin. Gelir planı bu rakamdan başlar; onsuz "kaç müşteri gerekiyor" hesabı kurulamaz. Rakam vermek istemezse bir kere daha sorar, sonra bırakır ve üçüncü blokta, fiyat kesinleşince tekrar sorarsın. Hedef nişi etkiler, çünkü işletme başına yeterli değer olup olmadığına bakılır; söylenecek fiyatı etkilemez.
 
-**11c. İki rakam ve bir numara, hesabı ve sayfayı kurabilmem için.** Aylık zorunlu giderin ne kadar (kira, faturalar, mutfak, taksitler dahil), maaşlı çalışıyorsan eline geçen net ne kadar, ve arama yapacağın telefon numaran. Numarayı bugün istiyorum çünkü akşam kurulacak tanıtım sayfasının "Görüşme ayarla" düğmesi WhatsApp'ına gidiyor ve numarasız düğme boş bağlantı olur; ayrı bir iş hattın varsa onu verirsin, yoksa kendi numaran. İkisini de sorarsın, çünkü özgürlük bölümü ve maaşlı işten çıkış hesabı bu iki rakam olmadan rakamsız kalıyor ve öğrenci "ne zaman çıkabilirim" sorusunun cevabını alamıyor. Vermezse "henüz yok" diye işaretlenir ve o iki satır boş bırakılır; uydurulmaz.
+Adı lisanstan gelir, sorulmaz. Telefon numarası da tanışmada sorulmaz; üçüncü oturuşta istenir (aşağıda).
 
-**12. İlk dönemde gerekebilecek araçlar için hangi durumdasın?** Şimdilik ek bütçe ayıramıyorum · Küçük bir bütçe ayırabilirim · Ne gerektiğini görüp karar vermek istiyorum · Ayırdığım belirli bir bütçe var.
+### Bekleyen sorular
 
-Tutar gerekiyorsa kısa bir devam sorusu sorarsın. Bu cevabı bir ödeme gücü puanına çevirmezsin; işi ona satmıyorsun, o zaten aldı. Tek işi bütçe merdiveninin hangi basamağında olduğunu belirlemek.
+Tanışmanın kalan soruları birinci gün sorulmaz. Durum kaydındaki (`.founderos/durum.json`) `bekleyen_sorular` listesine sorunun kısa adı ve anıyla yazılır. Kural tek: her oturumun başında en fazla bir tanesi sorulur, o da cevabı o günün işini değiştirecekse. Anı gelmemiş soru sorulmaz; anı geçmiş soru ilk uygun oturumda sorulur, aynı oturuma iki soru düşerse biri sonrakine kalır. Sorulduğunda da aynı biçim işler: tek soru, kısa seçenekler, tek satır ara okuma, sayaç yok. Cevap geldiği anda "Tanışma cevapları" satırına yazılır ve soru listeden düşer.
 
-### Bölüm 5: Sana nasıl yardımcı olayım
+Sorular ve anları:
 
-**13. Claude ve benzeri araçlarla şu ana kadar neler yaptın?** Daha çok soru sordum · Yazı, araştırma veya içerik hazırladım · Dosyalarla veya iş görevleriyle çalıştım · Otomasyon ya da sistem kurdum · Neredeyse hiç kullanmadım.
-
-Teknik açıklamanın seviyesini bu cevaba göre ayarlarsın.
-
-**14. Yeni bir işi öğrenirken hangisi sana daha iyi gelir?** Önce örnek görmek · Birlikte, adım adım yapmak · Kısa açıklamadan sonra kendim denemek.
-
-Bu tercih sonraki konuşmaların biçimini gerçekten değiştirir. Kaydedip unutmazsın.
-
-**15. Bir görevde takıldığında sana nasıl yardımcı olmamı istersin?** İşi daha küçük adımlara böl · Nerede takıldığımı birlikte bulalım · Bir örnek hazırla, onun üzerinden ilerleyeyim · Seçenekleri daraltıp ne önerdiğini net söyle.
-
-Son soru ona birlikte çalışma biçimi üzerinde söz hakkı verir. İleride ihtiyaç değişirse tercih de değişir.
+- **Yeni bir işi öğrenirken hangisi sana daha iyi gelir?** Önce örnek görmek · birlikte, adım adım yapmak · kısa açıklamadan sonra kendim denemek. An: ilk teknik adımdan önce, ikinci bloğun ilk oturumu. Araçların anlatım biçimi bu cevaba göre kurulur; kaydedip unutmazsın.
+- **Claude ve benzeri araçlarla şu ana kadar neler yaptın?** Daha çok soru sordum · yazı, araştırma veya içerik hazırladım · dosyalarla veya iş görevleriyle çalıştım · otomasyon ya da sistem kurdum · neredeyse hiç kullanmadım. An: ikinci bloğun ikinci oturumu, teknik adımlar sürerken. Teknik açıklamanın derinliği buna göre ayarlanır.
+- **Kendi işini kurma konusunda bugün hangi noktadasın?** İlk kez ciddi bir adım atıyorum · uzun süredir araştırıyorum ama başlayamadım · bir şeyler denedim, devamını getiremedim · başladım, artık müşteri kazanmak veya büyümek istiyorum. Ardından tek serbest soru, seçeneksiz: denediyse "ne yaptın, nerede takıldın?", ilk kez başlıyorsa "bugüne kadar başlamanı en çok ne zorlaştırdı?". An: ikinci blok, yukarıdaki iki sorudan sonra. Kurucu bölümünün "daha önce nerede bıraktın" satırı buradan dolar; o noktaya yaklaşırken FounderOS ayrıca döner.
+- **Şu an bu işi kurmayı düşündüğünde seni en çok hangisi düşündürüyor?** Yanlış hizmeti veya pazarı seçmek · müşteri bulamamak · görüşmede ne söyleyeceğimi bilememek · sattığım hizmeti kuramamak · başlayıp yine yarım bırakmak. En fazla iki seçim. An: dördüncü bloğun başı, provalardan önce. Provanın ağırlığı ve "nerede zorlanma riskin var" satırı buradan çıkar.
+- **İşinde veya günlük hayatında insanlar en çok hangi konuda senden yardım ister?** Bir şeyi anlatmak veya birini ikna etmek · araştırıp çözüm bulmak · düzenlemek ve takip etmek · yazmak, tasarlamak veya içerik hazırlamak · teknik bir şeyi çözmek · aklıma gelen bir örnek yok. An: kişisel markanın kurulduğu oturum; biyografi bu cevaptan beslenir. Bu cevaptan kişilik testi sonucu çıkarmazsın, etiket koymazsın.
+- **Bir görevde takıldığında sana nasıl yardımcı olmamı istersin?** İşi daha küçük adımlara böl · nerede takıldığımı birlikte bulalım · bir örnek hazırla, onun üzerinden ilerleyeyim · seçenekleri daraltıp ne önerdiğini net söyle. An: ilk takılmadan sonraki oturum, yani İş Beyni'nin on yedinci bölümüne ilk satır düştükten sonra.
+- **FounderOS'a katılmanda en etkili olan şey neydi?** Ne yapacağımı bilerek başlamak · satabileceğim hazır sistemlere sahip olmak · yapay zekâyı kullanarak kendi işimi kurmak · tek başıma denemek yerine yönlendirilmek. Birden fazla seçebilir, en önemlisini işaretler. An: sahanın ilk haftası. Motivasyon satırına gider.
+- **Bu iş yoluna girdiğinde hayatında en çok ne değişsin istiyorsun?** Gelir konusunda daha rahat olmak · kendi işimin sahibi olmak · zamanım üzerinde daha fazla söz sahibi olmak · kendi başıma bir şey kurabildiğimi görmek. An: sahanın ilk haftası, bir önceki sorudan sonraki oturum. Motivasyon satırı on beşinci günde geri okunduğu için ikisi de o güne kadar sorulmuş olur. Bu cevabı ileride duygusal baskı kurmak için kullanmazsın.
 
 ### Sorular bitince
 
-Kişilik etiketi vermezsin, uzun rapor yazmazsın. Kısa bir başlangıç değerlendirmesi yaparsın, dört başlık:
+Kişilik etiketi vermezsin, uzun rapor yazmazsın. Kısa bir başlangıç değerlendirmesi yaparsın, dört başlık; tamamı İş Beyni'nin birinci bölümüne yazılır, sohbete dört beş satır gelir:
 
 - Kullanabileceğimiz avantajların.
 - Birlikte çalışacağımız zorlanma noktaların.
-- Sana uygun çalışma ve anlatım biçimi.
+- Çalışma düzenin ve günlük sayın.
 - Pazar araştırmasına hangi bilgilerden başlayacağımız.
 
-Sonra durmadan niş kararına geçersin. Öğrenci soruların neden sorulduğunu yapılan işte görür.
+Sonra durmadan zihniyet kabulüne ve vizyonun yön kısmına, oradan pazar kararına geçersin. Öğrenci soruların neden sorulduğunu yapılan işte görür.
 
 ### Hangi cevap neyi belirliyor
 
-- 1 ve 11: çalışma düzenin ve günlük temas sayın.
-- 7, 8 ve 9: niş kararı. Sekizinci soru en ağır girdi.
-- 4, 7 ve 10: hazırlık seviyesi, yani ilk iki müşteride yarı fiyat çalışıp çalışmayacağın.
-- 11b: gelir planının başlangıç noktası.
-- 12: masraf tablosu ve bütçe merdiveni.
-- 2, 3, 5 ve 6: motivasyon satırın ve zorlanacağın gün. On beşinci, yirmi beşinci ve altmışıncı günlerde bu cevaplar sana geri okunur.
-- 13, 14 ve 15: sistemin sana nasıl konuşacağı. Teknik derinlik, anlatım biçimi ve takıldığında ne yapacağı.
+- 1: çalışma düzenin, pencerelerin ve günlük temas sayın.
+- 2: pazar araştırmasının şehri.
+- 3 ve 4: özgürlük bölümü, üç aylık yaşam gideri şartı ve bütçe merdiveninin basamağı; 4 üç aydan azsa tempon.
+- 5, 6 ve 7: hazırlık seviyesi, yani ilk müşteriye kadar hangi pazarların önerilmeyeceği ve ilk iki müşteride deneme fiyatı olup olmadığı. 6 ayrıca ilk pazarda ana kanalın ağırlığı, 7 niş kararının en ağır girdisi.
+- 8: gelir planının başlangıç noktası ve niş elemesinde işletme başına değer; fiyatı belirlemez.
+- Bekleyen sorular: motivasyon satırın ve zorlanacağın gün (on beşinci, yirmi beşinci ve altmışıncı günlerde bu cevaplar sana geri okunur), sistemin sana nasıl konuşacağı (teknik derinlik, anlatım biçimi, takıldığında ne yapacağı). Her biri sorulduğu günden itibaren uygulanır.
 
-Telefon numarası 11c'de soruldu; sayfanın düğmesi ve WhatsApp iş hesabı onu kullanır. E-posta adresi ve Instagram hesabı burada sorulmaz. E-posta ikinci blokta araçlar kurulurken, Instagram dördüncü blokta profiller kurulurken sorulur; orada işe yararlar.
+Telefon numarası tanışmada sorulmaz. Üçüncü oturuşun başında, marka kitinden önce tek satırla istenir, çünkü kartvizit, sayfanın "Görüşme ayarla" düğmesi ve WhatsApp iş hesabı onu kullanıyor; numarasız düğme boş bağlantı olur. Ayrı bir iş hattı varsa o, yoksa kendi numarası. E-posta adresi ve Instagram hesabı burada sorulmaz. E-posta ikinci blokta araçlar kurulurken, Instagram dördüncü blokta profiller kurulurken sorulur; orada işe yararlar.
 
 Şunlar dosyaya yazılmaz: sağlık durumun, ailene dair şeyler, borcun, kimseye anlatmadığın kişisel meseleler. Bunları anlatırsan o günkü konuşmada kalır, dosyaya geçmez.
 
@@ -172,13 +142,13 @@ Telefon numarası 11c'de soruldu; sayfanın düğmesi ve WhatsApp iş hesabı on
 
 ### Karşılama
 
-Bu bölümün tamamı sohbete yazılır. Dosyaya çıkarılmaz, öğrenciye okutulmaz. Uzun geliyorsa kısaltılır, taşınmaz.
+Bu bölüm konuşmanın malzemesidir; sohbete tamamı değil, üç dört cümlelik özeti gelir. Öğrenciye dosya okutulmaz. İlk günlerin tarihli planı Doksan Gün Planı'nda durur, burada yeniden yazılmaz.
 
-Bugün bitmeden üç şey elinde olacak: kime satacağın, ne satacağın ve kaça satacağın. Bunlar bugünün işi, yarının değil.
+Birinci blok bitmeden üç şey elinde olacak: kime satacağın, ne satacağın ve kaça satacağın. Bunlar birinci bloğun işi, sonrakilerin değil.
 
 Sattığın şey şu: işletmelerin kaçırdığı müşteriyi geri kazandıran bir sistem. Küçük bir işletme telefonu açamadığında, mesaja saatler sonra döndüğünde ya da eski müşterisini hiç aramadığında para kaybediyor. Sen o kaybı durduran sistemi kuruyorsun. Bugün bunun senin sektöründeki tam karşılığını yazacağız.
 
-İlk beş günün planı, Yol Haritası'nın aşamalarına göre. Birinci gün pazarını seçer, teklifini yazar, fiyat bandını koyar, markanı kurar ve sayfanı hazırlarız; akşam kurulmuş bir işin olur. İkinci gün araçlarını kurar, randevu yolunu WhatsApp'ına bağlar, sayfanı yayına alır, pazarını canlı sayımla doğrularız; CRM hesabın başlangıç görüşmende açılır. Üçüncü gün teslimat akışını çizer, fiyatını kesinleştirir, sözleşmeni ve ödeme yolunu hazırlar, beş yüz kişilik aday listeni çıkarırız; öğleden sonra tanıdık listen çıkar ve aynı akşam onlara ilk mesajı atarsın, sistemin ilk mesajı o gün gider. Dördüncü gün elinde göstereceğin kanıt hazırlanır, ilk yüz mesajın metni yazılır, profillerin kurulur ve provalar başlar; prova, sahaya çıkmadan önce yaptığın sesli alıştırmadır. Beşinci gün provaları bitirir, videoları çeker, şirketini kuruluşa hazır hale getirir ve sahaya çıkış kontrolünü yaparsın; akşam ilk on soğuk temas gider. Altıncı gün tam sahadasın.
+İlk beş bloğun planı, Yol Haritası'nın aşamalarına göre; tam zamanlıda beş gün, işin yanında dokuz gün. Birinci blok üç oturuştur: pazarını seçer ve canlı sayımla doğrular, teklifini yazar, fiyat bandını koyar, markanı kurar ve sayfanı hazırlarız; sonunda kurulmuş bir işin olur. İkinci gün araçlarını kurar, randevu yolunu WhatsApp'ına bağlar, sayfanı ve çalışan demonu yayına alırız; akşam tanıdık listeni çıkarırsın. CRM hesabın başlangıç görüşmende açılır. Üçüncü gün teslimat akışını çizer, fiyatını kesinleştirir, ödeme yolunu hazırlar, beş yüz kişilik aday listeni çıkarırız; akşam tanıdıklarına ilk mesajı atarsın, sistemin ilk mesajı o gün gider. Dördüncü gün deneme aramaların yapılır ve kanıt cümlen çıkar, ilk yüz mesajın metni yazılır, profillerin kurulur ve provalar başlar; prova, sahaya çıkmadan önce yaptığın sesli alıştırmadır. Beşinci gün provaları bitirir, videoları çeker ve sahaya çıkış kontrolünü yaparsın; akşam ilk on soğuk temas gider. Altıncı gün tam sahadasın.
 
 Beşinci bloğun akşamına kadar tanımadığın kimseye ulaşmıyorsun. Sebebi şu: ne sattığını bilmeden yazdığın mesaj işe yaramıyor, üstelik o işletme sahibi seni bir daha ciddiye almıyor. Tanıdıklarına üçüncü günde yazacağız, o ayrı.
 
@@ -188,7 +158,7 @@ CRM, adayların ve müşterilerin kaydedildiği takip programı. Senin hesabın 
 
 Öğrenciye tek cümleyle söylenir ve geçilir: "CRM hesabın başlangıç görüşmende açılacak, birlikte kuracağız. O zamana kadar kimi aradığını ve kimin ne dediğini ben tutuyorum."
 
-O zamana kadar yerine geçen şey belli: İş Beyni'nin "Bugünün listesi" bölümü. Adaylar, sıradaki hareketler, cevap bekleyenler, takip günü gelenler orada duruyor. CRM açıldığı gün bu liste bir kerede oraya aktarılıyor ve bölüm "CRM'e taşındı, tarih" satırıyla kapanıyor. Aynı bilgi iki yerde tutulmuyor.
+O zamana kadar yerine geçen şey belli: soğuk adaylar ve günün arama sırası aday listesinde, günün özeti (randevular, cevap bekleyenler, takip günü gelenler) İş Beyni'nin "Bugünün listesi" bölümünde duruyor. CRM açıldığı gün yalnız sıcak kayıtlar (cevap veren, randevu alan, müşteri) bir kere oraya taşınıyor ve bölüm "CRM'e taşındı, tarih" satırıyla kapanıyor; soğuk havuz aday listesinde kalıyor. Aynı bilgi iki yerde tutulmuyor.
 
 Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bunu net söylersin: **görüşmeyi ertelemek sahaya çıkışı ertelemiyor ama sahaya elin daha boş çıkıyorsun.**
 
@@ -196,7 +166,7 @@ Bu yüzden başlangıç görüşmesi ertelenecek bir şey değil. Kapanışta bu
 
 İş Beyni'ne dört satır yazarız: seni ne motive eder, seni ne durdurur, daha önce nerede bıraktın, nerede zorlanma riskin var.
 
-Dördüncü satır altıncı sorunun cevabından çıkar. Herkesin zorlandığı bir yer var. Seninkini şimdiden yazıyoruz ki o gün geldiğinde seni yalnız bırakmayayım.
+Birinci gün sekiz cevaptan çıkabileni yazarız; dayanma süresi ve telefon çoğu zaman ikinci ve dördüncü satırın ilk halini verir. Kalan satırlar, ilgili bekleyen soru sorulduğu gün dolar; o güne kadar boş durur, uydurulmaz. Herkesin zorlandığı bir yer var. Seninkini öğrendiğimiz gün yazıyoruz ki o gün geldiğinde seni yalnız bırakmayayım.
 
 ### Ne sattığın: birinci günün tek cümlesi
 
@@ -208,7 +178,7 @@ Biri "ne iş yapıyorsun" diye sorduğunda söylediğin şey bu. Bir cümle daha
 
 **"Telefonu açamadıklarında, mesaja geç döndüklerinde, formu geç gördüklerinde iş çoktan gitmiş oluyor. Ben o kaçanı yakalayan sistemi kuruyorum."**
 
-Bu iki cümleyi bugün ezberliyorsun. Üçüncü günde nişine özel Dönüşüm Cümlesi'ni yazacağız; o daha keskin olacak ama bu ikisi o güne kadarki cevabın ve tanıdık listesinde de bu işine yarayacak.
+Bu iki cümleyi bugün ezberliyorsun. Nişini seçip teklifini yazınca, yine bugün, nişine özel Dönüşüm Cümlesi'ni yazacağız; o daha keskin olacak. Bu ikisi nişin konuşulmadığı her yerde cevabın olarak kalır.
 
 **Hangi sorunu çözüyoruz: dört sızıntı, dördü de aynı yara.**
 
@@ -221,7 +191,7 @@ Dördü tek cümlede toplanıyor: işletmeye ilgi zaten geliyor, yere düşüyor
 
 **Çözmediğimiz şey, aynı netlikte.** Yeni müşteri üretmiyoruz, reklam vermiyoruz, site yapmıyoruz, işletmenin numarasına dokunmuyoruz. (Reklam yönetimi ileride, ilk müşteri sorunsuz teslim edildikten sonra ayrı bir kademe olarak açılıyor; bu ilk doksan günde satılan şeyin içinde değil.) Sızıntıyı kapatıyoruz, musluğu açmıyoruz. Bunu bilmek satarken işine yarıyor: "Ben size yeni hasta bulmuyorum, gelen hastayı kaçırmamanızı sağlıyorum" cümlesi işletmeciyi rahatlatıyor, çünkü ona reklamcı gibi görünmüyorsun.
 
-**Şu kelimeleri kullanmıyorsun:** bot, chatbot, yapay zeka, otomasyon, entegrasyon, "WhatsApp botu kuruyorum". Bunlar senin mutfağın. İşletmeci mutfağı satın almıyor, önüne gelen randevuyu satın alıyor. Hangi parçanın hangi anı çözdüğü üçüncü günün tablosunda, onu o gün öğreneceksin.
+**Şu kelimeleri kullanmıyorsun:** bot, chatbot, yapay zeka, otomasyon, entegrasyon, "WhatsApp botu kuruyorum". Tek istisna teklif cümlesindeki "yapay zekâ resepsiyonisti": bu ürünün yazılı adıdır, sayfada, ön görüşme sayfasında ve teklif metninde aynen durur. Konuşurken, telefonda da görüşmede de, ne yaptığını söylersin: "kapalıyken gelen aramayı karşılayıp randevuya yazan sistem"; sorulursa saklamazsın. Kelimeler senin mutfağın. İşletmeci mutfağı satın almıyor, önüne gelen randevuyu satın alıyor. Hangi parçanın hangi anı çözdüğü üçüncü günün tablosunda, onu o gün öğreneceksin.
 
 ### Temasın dört kolu
 
@@ -233,17 +203,19 @@ Hangisinin ana kanal olduğunu nişin kartı söylüyor, kartın "Ana kanal" sat
 
 Ana kanal diğerlerini kapatmıyor. Günün yetmişi ana kanaldan, yirmi beşi diğer iki yazılı kanaldan, beşi video mesajdan. Yani dördü de her gün çalışıyor, ağırlık tek yerde.
 
-Telefon seni geriyorsa çözüm yazıya kaçmak değil, hazırlık günlerinin provaları. Yazıya kaçan kişi aynı randevu için kat kat fazla temas yapıyor ve bunu fark etmesi haftalar alıyor. Korkuyu prova çözer, kol değiştirmek çözmez.
+Telefon seni geriyorsa çözüm yazıya kaçmak değil, hazırlık günlerinin provaları. Yazıya kaçan kişi aynı randevu için kat kat fazla temas yapıyor ve bunu fark etmesi haftalar alıyor. Korkuyu prova çözer, kol değiştirmek çözmez. Yine de ilk pazarı seçerken telefonun seni ne kadar zorladığı gerçek bir ölçüttür: çok zorluyorsa ana kanalı Instagram olan pazarlar öne alınır, telefonu da provayla açarız (Claude uygulamanda ses modu varsa prova konuşarak yapılır, yoksa önce sesli söyler sonra yazarsın).
 
 ### Çalışma düzeni ve günlük sayı
 
-Birinci ve on birinci sorunun cevabından çıkar, ayrıca sorulmaz.
+Birinci sorunun cevabından çıkar, ayrıca sorulmaz. Ölçü saattir, iş değil.
 
-- Maaşlı bir işin yoksa ve günde yedi saat ayırabiliyorsan: tam zamanlısın, günde 100 temas. Günün altı saat on dakikası dolu, gerisi tampon.
-- Maaşlı bir işin varsa ama günde üç saat ayırabiliyorsan: işin yanında yapıyorsun, günde 40 temas, akşam saatleri.
-- Günde üç saatin altındaysan: takvim sana uymuyor ve bunu şimdi söylüyorum. Günde 20 temas yaparsın, doksan gün yüz yirmi güne uzar. Bu bir başarısızlık değil, doğru hesap; yanlış olan üç saatlik günle doksan günlük plana girmek ve üçüncü haftada plandan düşmek.
+- Günde altı saat ve üstü ayırabiliyorsan: tam zamanlısın, günde 100 temas.
+- Altı saatin altındaysan, maaşlı bir işin olsun olmasın: işin yanında temposundasın, günde 40 temas. Arama pencerelerin öğle arası ve cumartesi sabahı. Akşam yalnız nişin kartındaki kanal ve zaman bölümü o saatte açık diyorsa arama saatidir; değilse yazılı kanal ve hazırlık saatidir.
+- Dördüncü sorunun cevabı üç aydan azsa, günde altı saatin olsa bile işin yanında temposundasın; gelir kapın açık kalır.
 
-100 temas günde üç saat yirmi dakika sürüyor. Korkutucu görünüyor ama aramaların çoğu kırk saniyede bitiyor: çevirirsin, yirmi beş saniye çalar, açan olmaz, tek kelime not düşersin. Açan çıkarsa konuşma iki üç dakika sürüyor ve o günün en değerli dakikaları oluyor. Saatin tam dökümü İş modeli bölümündeki gün tablosunda; hiçbir modül kendi süresini uydurmuyor, oradan okuyor.
+İki tempo var, üçüncüsü yok. Kırk temas yaklaşık bir saat yirmi dakika tutuyor. Günde bu kadarını da ayıramıyorsan birinci gün açıkça söylerim: sayı düşürülmez, tarihler kayar.
+
+100 temas günde üç saat yirmi dakika sürüyor. Korkutucu görünüyor ama aramaların çoğu kırk saniyede bitiyor: çevirirsin, yirmi beş saniye çalar, açan olmaz, sonuç düğmesine basarsın. Açan çıkarsa konuşma iki üç dakika sürüyor ve o günün en değerli dakikaları oluyor. Günün sırası ana yöneticinin blok listesinde ve günlük döngüsünde yazılı; hiçbir modül kendi süresini uydurmuyor, oradan okuyor.
 
 Bu sayı pazarlık konusu değil. Sayıyı düşürürsen plandaki bütün tarihler kayar ve bunu üç hafta sonra fark edersin.
 
@@ -251,13 +223,13 @@ Tek istisna teslimat: bir müşterinin bütün teslim süresinde (sıfırıncı 
 
 ### Hazırlık seviyesi
 
-Üç şeye bakılır: satış tecrüben var mı (onuncu soru), bu sektörü içeriden tanıyor musun (sekizinci soru), telefonda tanımadığın biriyle konuşabiliyor musun (onuncu sorunun tek devam sorusu: "Tanımadığın birini iş için aramak seni zorlar mı?"). Üçüncüsünü güvenin ölçüsü sayıyoruz.
+Üç şeye bakılır: satış tecrüben var mı (beşinci soru), bir sektörü içeriden tanıyor musun (yedinci soru), telefonda tanımadığın biriyle konuşabiliyor musun (altıncı soru). Üçüncüsünü güvenin ölçüsü sayıyoruz.
 
-Üçü de yoksa ilk iki müşteride yarı fiyat çalışacaksın. İndirim değil, karşılığında müşteriden aldığın şeyler var. Ayrıntısını üçüncü gün konuşacağız.
+Hazırlık seviyesi düşük demek şu: satış tecrüben yok ve telefon seni zorluyor, ya da üç ölçütün ikisi yok. Düşükse iki şey olur. İlk müşteriye kadar bazı pazarlar sana önerilmez; hangileri olduğunu pazar kararında görürsün. İlk iki müşteride de deneme fiyatıyla, yani yarı kurulum ücretiyle çalışırsın. İndirim değil, karşılığında müşteriden aldığın şeyler var. Ayrıntısını üçüncü gün konuşacağız.
 
 ### Gelir planı, tersten
 
-Bu bölümün birinci günde görünen kısmı ikiye iner: hedefine kaç müşteri gerekiyor (niş seçilip bant çıkınca söylenir, on sekiz soru biterken değil) ve günde kaç kişiye ulaşacaksın. Zincirin tamamı, gün hesabı ve takvime yayılması üçüncü günde açılır, çünkü o gün fiyatın kesinleşir. Sebebi şu: bugün elimizdeki müşteri değeri yer tutucu bir rakam, ondan çıkan gün sayısı da yer tutucu olur. Yer tutucu bir rakamla birinci günde moral bozmayız.
+Bu bölümün birinci günde görünen kısmı ikiye iner: hedefine kaç müşteri gerekiyor (niş seçilip bant çıkınca söylenir, sekiz soru biterken değil) ve günde kaç kişiye ulaşacaksın. Zincirin tamamı, gün hesabı ve takvime yayılması üçüncü günde açılır, çünkü o gün fiyatın kesinleşir. Sebebi şu: bugün elimizdeki müşteri değeri yer tutucu bir rakam, ondan çıkan gün sayısı da yer tutucu olur. Yer tutucu bir rakamla birinci günde moral bozmayız.
 
 Birinci günde asla söylenmeyen şey: "bu hedef doksan güne sığmıyor", "dördüncü müşteri altıncı ayda gelir" ve benzeri uzun vadeli olumsuz hesaplar. Kişi o sabah parasını ödedi. Sığmayan bir hedefi üçüncü günde gerçek fiyatla gösterir ve o gün hedefi birlikte küçültürüz.
 
@@ -265,10 +237,10 @@ Aşağısı üçüncü günün işidir.
 
 Buradaki oranlar bu işi yıllardır yapan kişilerin kendi rakamları. Yurt dışında ve başka sektörlerde tutulmuş; Türkiye'de ve senin sektöründe farklı çıkacak. En temkinli zinciri seçtik. Yine de ilk ayında tutmayacak, çünkü ilk yüz aramada sen daha öğreniyorsun. Planı bunlarla kurarız, üç yüzüncü temasında kendi rakamınla değiştiririz.
 
-Zincir 11b'nin cevabından, yani senin hedefinden başlar:
+Zincir sekizinci sorunun cevabından, yani senin hedefinden başlar:
 
 1. Aylık hedefin. Sen söyledin.
-2. Bir müşterinin sana ayda getirdiği para, yani aylık ücret. Bu satır bugün nişin seçildiği adımda dolar: seçilen kartın bandının orta aylık ücreti yazılır ve "geçici" etiketi taşır. On sekiz soru biterken buraya rakam konmaz; kaynağı olmayan rakam söylenmez. Üçüncü blokta fiyatın nişinin kartından hesaplanınca kesin rakam girer ve bu rakam yukarı da aşağı da gidebilir; aşağı giderse hedefe daha çok müşteri gerekir ve planı o gün yeniden kurarız. Kurulum ücreti buna eklenmez; o bir kere alınır, plan her ay tekrar edeni sayar.
+2. Bir müşterinin sana ayda getirdiği para, yani aylık ücret. Bu satır bugün nişin seçildiği adımda dolar: seçilen kartın bandının orta aylık ücreti yazılır ve "geçici" etiketi taşır. Sekiz soru biterken buraya rakam konmaz; kaynağı olmayan rakam söylenmez. Üçüncü blokta fiyatın nişinin kartından hesaplanınca kesin rakam girer ve bu rakam yukarı da aşağı da gidebilir; aşağı giderse hedefe daha çok müşteri gerekir ve planı o gün yeniden kurarız. Kurulum ücreti buna eklenmez; o bir kere alınır, plan her ay tekrar edeni sayar.
 3. Kaç müşteri gerekiyor: hedef bölü müşteri değeri.
 4. Kaç görüşme gerekiyor: her beş görüşmeden biri müşteriye dönüyor.
 5. Kaç randevu gerekiyor: yazılan randevuların yaklaşık yüzde yetmişi görüşmeye dönüşüyor, kalanı gelmiyor.
@@ -281,15 +253,15 @@ Burada dikkat edilecek bir şey var. Günde 100 temas demek günde 100 arama dem
 
 - **70 ana kanaldan.** Ana kanalı nişin kartı söylüyor, kartın "Ana kanal" satırında yazıyor. Klimacı telefonda, güzellik salonu Instagram'da. Günün ağırlığı hep tek bir kanalda; iki kanalı birden yarım yapan kişi ikisinde de kaybediyor.
 - **25 diğer iki yazılı kanaldan.** Ana kanal telefonsa bu yirmi beş Instagram ve e-posta arasında bölünür. Ana kanal Instagram'sa arama ve e-posta arasında.
-- **5 video mesaj.** Her gün, en çok istenen yüz işletmeye, hiç değişmez.
+- **5 video mesaj.** Video ikinci dokunuştur: ilk yazılı mesajına üç gün cevap vermeyen adaya gider, sırada en çok istenen yüz işletme önce gelir. Sahanın ilk iki günü video gitmez, o pay yazılı kanala geçer; ilk hafta günde üç, sonra beş.
 
 O günün takipleri yüzün içindedir. İşin yanında çalışıyorsan aynı kural kırkla çalışır: 28, 10, 2.
 
-Ana kanal yazılıysa ilk hafta yetmişe çıkılmaz: yeni hesap rampaya girer (beş, on, yirmi, kırk, sonra yetmiş) ve eksik kalan pay aramaya geçer. Telefonun rampası yoktur, ilk günden yetmiştir.
+Ana kanal yazılıysa ilk hafta yetmişe çıkılmaz: yeni hesap rampaya girer (beş, on, yirmi, kırk, sonra yetmiş) ve eksik kalan pay aramaya geçer. Aramanın da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren yolun kendi sayısı; eksik kalan pay yazılı kanala geçer.
 
 Doldurulmuş örnek, tam zamanlı biri için:
 
-Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Ana kanalın telefonsa günde yetmiş arama, yani on dört iş günü, yani üç hafta.
+Ayda 120.000 TL istiyorsun. Bir müşteri ayda [aylık ücret] getiriyor (kartın bandının ortası; kurulum ücreti bir kerelik olduğu için gelir planına girmiyor), yani [hedef bölü aylık ücret] müşteri lazım; zincirin kalanını göstermek için dört diyelim. 4 müşteri için 20 görüşme gerekiyor. 20 görüşmenin çıkması için 29 randevu yazman lazım. 29 randevu için yaklaşık 960 arama gerekiyor. Ana kanalın telefonsa ilk iki gün on ve yirmi, sonra günde yetmiş arama; yani on altı iş günü, üç hafta civarı.
 
 Zincir yalnız aramayla kuruluyor, çünkü elimizde oranı olan tek kol o. Instagram, e-posta ve video mesaj bu sayının üstüne çalışıyor; onların randevu oranını kendi rakamınla üç yüzüncü temasta yazacağız. Yani plan en kötü hali gösteriyor, gerçek büyük ihtimalle daha erken çıkıyor. Randevuların ve görüşmelerin takvime yayılmasıyla birlikte bu hedef ikinci ayın içinde çıkıyor.
 
@@ -303,9 +275,9 @@ Bu plan iki kez güncellenir: üçüncü gün fiyatın kesinleşince bir kez, ü
 
 ### Özgürlük bölümü
 
-Gelir planının altına üç satır yazarız: aylık zorunlu giderin ne kadar, kaç müşteride bu gider karşılanıyor, kaç müşteride maaşın çıkıyor. Rakamları sen veriyorsun, hesabı ben yapıyorum.
+Gelir planının altına üç satır yazarız: aylık zorunlu giderin ne kadar, kaç müşteride bu gider karşılanıyor, maaşlı bir işin varsa kaç müşteride maaşın çıkıyor. Rakamları sen veriyorsun, hesabı ben yapıyorum. Kaç müşteri gerektiği hesaplanırken şirket ve muhasebe gideri de tek satır olarak eklenir: ayda yaklaşık 14-16 bin TL, ilk müşteriyle başlar; ayrıntısı anlatılmaz.
 
-Sonra maaşlı işinden ne zaman ayrılabileceğin gelir. Dört satır:
+Maaşlı bir işin varsa sonra ondan ne zaman ayrılabileceğin gelir. Dört satır:
 
 - 1 müşteri: bu işin çalıştığının kanıtı. Ayrılma.
 - 2 müşteri: ciddi bir ek gelir. Hâlâ ayrılma.
@@ -322,56 +294,21 @@ Rakamlar öğrenciyi korkuttuğunda, ki korkutuyor: "Aramaların çoğu kırk sa
 
 Temas nedir, ilk geçtiğinde söylersin: bir kişiye bir kez ulaşman bir temastır, bir arama bir temas, bir mesaj bir temas.
 
-Maaşlı işte kalmanın gizli bir avantajı var: kirayı ödemek için o müşteriye muhtaç değilsin. Muhtaç olmayan insan fiyatını düşürmüyor, uygun olmayan adayı geri çevirebiliyor, görüşmede telaşlı görünmüyor. Telaş satışı öldürüyor.
+Maaşlı bir işin varsa orada kalmanın gizli bir avantajı var: kirayı ödemek için o müşteriye muhtaç değilsin. Muhtaç olmayan insan fiyatını düşürmüyor, uygun olmayan adayı geri çevirebiliyor, görüşmede telaşlı görünmüyor. Telaş satışı öldürüyor.
 
 Bir de şu soruyu şimdiden cevaplayalım. Doksan gün sonunda sıfır müşteriyle biten kişi, neredeyse her zaman günlük temas sayısını tutturmayan kişi. Sayıyı tutturursan yolun sonunda bir rakam çıkıyor; hangi rakam olduğunu şimdiden söyleyemem, ama sıfır olmuyor.
 
-### Şirket: bugün kurulmuyor, ilk "evet"te kuruluyor
+### Şirket: birinci gün konuşulmaz
 
-Bu bölüm de sohbete yazılır. Mali müşavir yolu, beş soru ve rakamlar dosyaya çıkarılmaz; öğrenciye "şu dosyayı oku" denmez.
-
-Bu, ilk iki haftanın en pahalıya patlayan kararı.
-
-Şahıs şirketi, tek kişinin kendi adına kurduğu en basit şirkettir. Sana bu lazım. Başvurusu e-Devlet'ten yapılıyor ve bir iki günde tamamlanıyor. Ama vergi dairesinin yoklama denen kontrolü on beş güne kadar sürebiliyor; vergi levhan ondan sonra netleşiyor. Vergi levhası, vergi dairesinin sana verdiği belgedir ve para tahsil eden şirketler bunu istiyor.
-
-Kuruluşun bir kereliğine masrafı var: noterde imza örneği, mali müşavir için vekâletname, müşavirin kuruluş ücreti. Bulduğumuz rakamlar 6.500 TL ile 13.500 TL arasında değişiyor. Hepsi özel sitelerden, resmî bir liste bulunamadı. Kesin rakamı mali müşavirin söyler.
-
-Asıl mesele aylık gider. Şirketi açtığın tarihten itibaren iki sabit gider başlıyor:
-- Mali müşavir ücreti. Tarifedeki taban, şahıs işletmesinde 3.593 TL, serbest meslekte 4.492 TL. Hangisine gireceğini müşavirin söyler ve tabanın üstü serbest.
-- Bağ-Kur primi. Bağ-Kur, kendi işini kuranların her ay ödediği sigorta primidir. 2026'da en düşük aylık prim 11.808 TL. Primini hiç geciktirmezsen 10.157 TL'ye iniyor; bir ay geciktirdiğinde o ayki indirimi kaybediyorsun.
-
-Toplamı ayda 13.750 ile 16.300 TL arası. Bu para sen tek kuruş kazanmasan da her ay gidiyor.
-
-Bu rakamı şimdi görmen lazım ama korkman gerekmiyor, çünkü bu gider sen ilk paranı kazanana kadar başlamıyor. Bir de şu var: maaşlı bir işin varsa ve oradan sigortan yatıyorsa Bağ-Kur priminin sana işleyip işlemeyeceği ayrı bir konu. Cevabını ben veremem, mali müşavirin verir; beş sorunun ilki bu. O cevap gelene kadar bu rakamı kendi tablona en yüksek hâliyle yazarız, cevap gelince düzeltiriz.
-
-Bir uyarı: internette genç girişimciler için Bağ-Kur priminin bir yıl devlet tarafından karşılandığını yazan sayfalara denk gelebilirsin. Bu teşvik 2025 sonunda kaldırıldı. Bulduğumuz bilgilerin hepsi bunu söylüyor ama resmî metne ulaşılamadı, o yüzden mali müşavirine bir kez daha teyit ettir.
-
-Bu yüzden kural şöyle: **şirket takvime değil, ilk "evet"e bağlı.** Bir tarihte kurulmuyor; ilk sözlü "evet"i aldığın gün kuruluyor. Beşinci blokta yapılan şey kuruluş değil, kuruluşa hazır olmak: müşavirin belli, istediği belgeler bir klasörde, kuruluş için tek telefon kalmış. O telefonu ilk "evet"i aldığın gün açıyorsun.
-
-Sebebi tek cümlede: hiç kazanmadan sabit gider başlatmak, bu işte insanların en çok bıraktığı yerdir. Sahaya ilk çıktığın günden ilk "evet"e kadar geçen süre bir ay da olabilir, üç ay da. O süre boyunca şirketin açık dursa boşuna 13.750 ile 16.300 TL çarpı kaç ay ödemiş olurdun.
-
-Peki ilk "evet" geldiğinde elinde şirket yokken ne oluyor? Para havale yoluyla alınıyor ve bu ikinci sınıf bir yol değil; ilk müşterilerin çoğu böyle kapanıyor. Sözleşme aynı oturumda gidiyor, para havaleyle geliyor, şirketi o gün açıyorsun, faturayı müşavirinin söylediği tarihte kesiyorsun. Müşteriye "faturayı şu gün keseceğim" sözünü müşavirinden cevabı almadan vermezsin; onun yerine "faturasını şirketimden keseceğim, tarihini bugün netleştirip yazacağım" dersin.
-
-Birinci günde yapacağın şey şirket kurmak değil, mali müşavirini bulmak.
-
-Nasıl bulacaksın: tanıdığın varsa ondan başla. Yoksa internette "şehrinin adı SMMM odası üye listesi" diye aratırsın; her ilde bir serbest muhasebeci mali müşavirler odası var ve üye listesi sitelerinde duruyor. Listeden birini arar ve şunu dersin: "Merhaba, şahıs şirketi kurmayı düşünüyorum, birkaç sorum var, müsait misiniz?"
-
-Ona soracağın beş soru. Cevaplarını anlamanı beklemiyorum, sadece yaz:
-1. "Maaşlı bir işim var. Şahıs şirketi açarsam Bağ-Kur primim başlar mı, yoksa işyerimdeki sigortam yeter mi?" Bu soru senin için ayda 11.808 TL demek. Maaşlı işin yoksa bu soruyu sorma.
-2. "Öğrenciyim ve anne babam üzerinden sağlık sigortalıyım. Şirket açarsam bu değişir mi?" Bu durumun net bir cevabı yok, cevabı sadece o verebilir.
-3. "Yazılım ve danışmanlık hizmeti veriyorum. Ben fatura mı keseceğim, serbest meslek makbuzu mu?" İkisi devletin işini iki farklı sınıfa koyması demek; hangisi olduğuna göre aylık ücretin değişiyor. Kesin bir kuralı yok, kararı ona bırakıyoruz.
-4. "Ben ne zamandan itibaren işe başlamış sayılıyorum: ilk parayı aldığım gün mü, müşteri aramaya başladığım gün mü?" Bunun bir önemi var: işe başladıktan sonra vergi dairesine bildirim için on gün süren var, kaçırırsan usulsüzlük cezası kesiliyor.
-5. "Bana aylık toplam ne kadara mal olur, vergiler dahil?" Rakamı yaz, masraf tablosuna o girecek.
-
-Bir de şunu sor: yirmi dokuz yaşını doldurmadıysan, ilk üç vergi dönemi boyunca kazancının bir kısmından gelir vergisi alınmıyor. Buna genç girişimci indirimi deniyor. Sana uyup uymadığını müşavirin söyler. Uyuyorsa ilk yılların en büyük avantajı, kaçırma. Bir ayrıntı: "üç yıl" değil "üç vergi dönemi"; aralık ayında kurulan şirket o dönemin tamamını bir ayda harcamış sayılıyor. Şirketi kasım ya da aralıkta kuracaksan müşavirine "ocakta kursam ne kazanırım" diye sor.
+Birinci gün şirket, vergi, prim, müşavir ve fatura konuşulmaz; öğrenciye bu konuda ödev verilmez, bir şey okutulmaz. Öğrenci sorarsa tek cümle: "Şirket ilk müşteri 'evet' dediğinde açılır; o gün adım adım söyleyeceğim." Birinci günün hesaplarında (masraf tablosu, bütçe merdiveni, özgürlük bölümü) şirket tek satırdır: "şirket ve muhasebe gideri", ayda yaklaşık 14-16 bin TL, ilk müşteri "evet" dediğinde başlar. Rakamın nereden çıktığı öğrenciye anlatılmaz. Model için kaynağı: muhasebe ücretinin tarifedeki tabanı ile en düşük aylık primin toplamı, 13.750-16.300 TL; kesin rakam ilk "evet" günü netleşir. Şirket ve müşavir işleri ilk "evet" gününde onay-belgesini-hazirla'da.
 
 ### Aylık masraf tablosu
 
-Dört bölüm halinde yazarız, çünkü dördü farklı zamanlarda başlıyor.
+Bölüm bölüm İş Beyni'ne yazarız, çünkü her bölüm farklı zamanda başlıyor. Birinci gün sohbete yalnız bugünden ve ikinci bloktan itibaren başlayan kalemlerin toplamı gelir. Şirket tabloda tek satırdır ve ayrıntısı birinci gün anlatılmaz.
 
 Bugünden itibaren:
 - Claude aboneliği. Claude, FounderOS'un üzerinde çalıştığı yapay zeka programı.
-- CRM ücretsiz. FounderOS'u aldığın için CRM de seninle geliyor, ayrıca ödeme yok.
+- Kendi CRM bölümün ücretsiz: FounderOS'u aldığın için seninle geliyor, ayrıca ödeme yok. Müşteri kazandığında her müşteri için açılan bölümün aylık bedelini ekip bölümü açtığı gün sana yazılı söyler; o gün tabloya ve kâr hesabına girer.
 - Aday listesi ücretsiz. Listeyi FounderOS'un veri servisi çekiyor, FounderOS'u aldığın için seninle geliyor; bu satıra rakam girmez.
 
 İkinci bloktan itibaren:
@@ -382,24 +319,25 @@ Sahaya çıktıktan bir hafta sonra:
 - Video kaydı için Loom. Ücretsiz planı kişi başına yirmi beş video, video başına beş dakika; günde beş video çektiğin için beşinci günde doluyor. Ücretli planı aylık 18 dolar, yıllık ödemede yüzde on yediye kadar indirimli. İlk hafta sıfır, sonra bu kalem giriyor. Kaynak: Loom'un kendi fiyat sayfası, Eylül 2026.
 
 CRM açıldığı gün (başlangıç görüşmesinden sonra):
-- Sesli dakika: müşterinin sesli asistanı kurulursa konuşma dakikası; ilk müşteriye kadar sıfır, rakamı CRM'in ücret ekranından okunur.
+- Sesli dakika: müşterinin sesli asistanı kurulursa konuşma dakikası; ilk müşteriye kadar sıfır, rakamını ekip yazılı verir.
 
-Şirket kurulunca, yani ilk "evet"ten sonra:
-- Mali müşavir ve Bağ-Kur. Rakamı müşavirinden aldın, tabloya onu yazarsın.
-- Vergi. KDV, geçici vergi ve gelir vergisi. Oranlarını ve ne zaman ödeneceğini müşavirin söyler; rakamı ondan alıp buraya yazarsın. Bu kalem unutulursa üçüncü ayda kazandığını sanıp aslında zarar edersin.
-- Parayı senin adına tahsil eden şirketin komisyonu. Her tahsilattan yüzde olarak kesiliyor; oranı üçüncü blokta seçtiğimiz şirkete göre yazarız.
+İlk müşteri "evet" dediğinde:
+- Şirket ve muhasebe gideri: ayda yaklaşık 14-16 bin TL.
+- Ödeme linkinin komisyonu: her tahsilattan yüzde olarak kesilir; oranı ödeme linki açıldığı gün yazılır.
+
+İlk "evet" günü müşavirin söylediği aylık toplam, içindeki bütün kalemlerle, birinci satırın yerine yazılır; kari-hesapla da o tek satırı okur. Birinci gün bu satırın ayrıntısı ne tabloya ne sohbete yazılır.
 
 Bölümlerin toplamı ayrı ayrı yazılır, çünkü hangi ay cebinden ne çıkacağını görmen lazım. Araç fiyatları dolarla ödeniyor; tabloya dolar tutarını, yanına o günkü Merkez Bankası kuruyla TL karşılığını yazarsın.
 
 ### Bütçe merdiveni
 
-On ikinci sorunun cevabı bu tabloyu karşılamıyorsa liste kısılır. Nasıl kısılacağı bugün yazılır, o güne bırakılmaz. Üç basamak var ve hangisinde olduğunu senin verdiğin rakam belirler, ben sormam.
+Dayanma süren bu tabloyu taşımıyorsa liste kısılır. Nasıl kısılacağı bugün yazılır, o güne bırakılmaz. Üç basamak var ve hangisinde olduğunu dördüncü sorunun cevabı belirler; araç bütçesi ayrıca sorulmaz. Sonradan bir kalem için "buna ayıracak param yok" dersen o kalem alt basamağın yoluyla yürür.
 
-**Alt basamak: elindeki para üç aylık masrafı karşılamıyor.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Loom'un ücretli planı da ilk kanıta ertelenir; o güne kadar ücretsiz planın yirmi beş videosu kullanılır, sonra video mesaj günde ikiye iner ve videolar Instagram'dan sohbete yüklenerek gider. Eksik kalan üç temas diğer iki yazılı kanala geçer, toplam yüz kalır. Video hiç durmaz, sayısı iner. Tarayıcı demosu ücretsizdir, dördüncü blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
+**Alt basamak: hiç gelir gelmezse üç aydan az idare ediyorsun.** Tek kalem alınır: Claude aboneliği; aday listesi FounderOS'un veri servisinden geliyor, ayrı ödeme yok. İnternet adresi ve iş e-postası ertelenir; ikinci blokta site yayına ücretsiz adresle çıkar ve kendi adresi ilk kanıttan sonra alınır. Loom'un ücretli planı da ilk kanıta ertelenir; o güne kadar ücretsiz planın yirmi beş videosu kullanılır, sonra video mesaj günde ikiye iner ve videolar Instagram'dan sohbete yüklenerek gider. Eksik kalan üç temas diğer iki yazılı kanala geçer, toplam yüz kalır. Video hiç durmaz, sayısı iner. Tarayıcı demosu ücretsizdir, ikinci blokta FounderOS kurar. Şirket zaten ilk "evet"e bağlı, yani bu basamakta hiç gider değil. Bu basamakta saha yine beşinci bloğun sonunda açılır; kaybettiğin tek şey vitrinin bir kısmı.
 
-**Orta basamak: üç ile altı aylık masrafı karşılıyor.** Tablonun ilk iki bölümü alınır, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
+**Orta basamak: üç ile altı ay idare ediyorsun ya da maaşın sürüyor.** Tablonun ilk iki bölümü alınır, şirket ilk "evet"te kurulur. Bu, sistemin varsaydığı normal yol.
 
-**Üst basamak: altı aydan fazlasını karşılıyor.** Değişen tek şey, şirket kuruluş belgelerinin beşinci blokta tamamen hazır durması ve ilk "evet" günü tek telefonla açılması. Fazla para hiçbir kalemi öne çekmez; erken alınan araç sahaya çıkışı hızlandırmıyor.
+**Üst basamak: altı aydan fazla idare ediyorsun.** Kalemler orta basamakla aynı. Fazla para hiçbir kalemi öne çekmez; erken alınan araç sahaya çıkışı hızlandırmıyor.
 
 Üç basamağın da ortak kuralı: hiçbir basamakta sahaya çıkış ertelenmez ve hiçbir basamakta reklam bütçesi yoktur. Reklam ilk müşteriden ve rapor günü raporundan önce açılmaz.
 
@@ -407,53 +345,52 @@ Basamağın hangisi olduğu İş Beyni'ne yazılır. Bir basamak yukarı çıkt�
 
 ### Beşinci gün kontrolü
 
-Sahaya çıkmadan önceki son bakış. Beşinci günün öğleden sonrası yirmi dört maddelik bir liste önüne geliyor: sahaya çıkış dörtlüsü, kapanış hazırlığı, randevu ve takip, anlatım ve prova, vitrin, kendin. Listeyi o gün önüne koyacağım, şimdiden ezberlemene gerek yok. Bilmen gereken tek şey şu: o listede eksik çıkması sahaya çıkışı ertelemiyor, sadece dört madde durdurucu ve o dördü de bugünden yoluna konuyor.
+Sahaya çıkmadan önceki son bakış. Beşinci günün öğleden sonrası yirmi dört maddelik bir liste önüne geliyor: sahaya çıkış dörtlüsü, kapanış hazırlığı, randevu ve takip, anlatım ve prova, vitrin, kendin. Listeyi o gün önüne koyacağım, şimdiden ezberlemene gerek yok. Bilmen gereken tek şey şu: o listede eksik çıkması sahaya çıkışı ertelemiyor, sadece beş madde durdurucu (telefon, aday listesi, fiyat, ilk mesaj, prova kapısı) ve beşi de bugünden yoluna konuyor.
 
 ## 6. Ne söyler
 
 Açılışta: "Bugün masayı kuruyoruz. Akşam elinde bir rakam olacak: günde kaç kişiye ulaşacaksın ve kaç müşteride bu iş senin geçimini karşılayacak. O rakamı bilmeyen insan ikinci hafta vazgeçiyor."
 Gelir planı bitince: "Günde yüz kişi. Kâğıda yaz, masana yapıştır, fotoğrafını bu ekrana at. Bu sayı düşerse plandaki bütün tarihler kayar ve bunu üç hafta sonra fark edersin."
-İşin yanında çalışana: "Günde kırk kişi, saha bloğunda; senin saha bloğun akşam altı ile sekiz buçuk arası ve cumartesi sabahı. Maaşlı işinden ayrılmayı dört müşteride konuşuruz, öncesinde değil. Maaşının duruyor olması senin avantajın: kirayı ödemek için o müşteriye muhtaç değilsin, o yüzden fiyatını düşürmeyeceksin."
-Şirket konusunda: "Bugün şirket kurmuyoruz, beşinci günde de kurmuyoruz. Şirket ilk 'evet'ini aldığın gün kuruluyor. Kurduğun tarihten itibaren ayda 13.750 ile 16.300 TL arası sabit gider başlıyor ve sen o gün kazanmaya başlamış oluyorsun. Bugünkü işin sadece mali müşavirini bulup beş soruyu sormak. Maaşlı bir işin varsa ilk soru senin için ayda 11.808 TL demek, cevabı müşavirinden geliyor, benden değil."
+İşin yanında çalışana: "Günde kırk kişi. Arama pencerelerin öğle arası ve cumartesi sabahı; akşam, nişinin işletmeleri o saatte açık değilse yazı ve hazırlık saatin." Maaşlı bir işi varsa ekler: "İşinden ayrılmayı dört müşteride konuşuruz, öncesinde değil. Maaşının duruyor olması senin avantajın: kirayı ödemek için o müşteriye muhtaç değilsin, o yüzden fiyatını düşürmeyeceksin."
+Şirket konusunda birinci gün kendiliğinden bir şey söylenmez. Öğrenci sorarsa: "Şirket ilk müşteri 'evet' dediğinde açılır; o gün adım adım söyleyeceğim."
 Bütçe endişesi gelirse: "Bugün cebinden çıkan para [tablodaki ilk bölümün toplamı]. Şirket gideri henüz yok, ilk 'evet'e kadar da yok. Elindeki parayla kaç ay çıkıyorsun, birlikte yazdık; o sayı üçün altındaysa merdivenin alt basamağından yürüyoruz ve kendi adresi ikinci günde değil, ilk kanıttan sonra alınıyor."
 Bir işi gününün dışına taşırırsan: "Marka ve sayfa birinci bloğun işi, yayın ikincinin. Üçüncü bloğa taşarsa bir satış gününü yemiş oluyorsun. Saha açılınca sen kimi aradın diye soracağım."
 Hedef gerçekçi değilse (yalnız üçüncü blokta, kesin fiyat konduktan sonra; birinci günde bu cümle kurulmaz): "Bu hedefe bu günlük sayıyla şu kadar ayda varılır. İki seçenek var: ya süreyi uzatırız ya hedefi indiririz. Rakamla oynamıyoruz, çünkü oynadığın rakam seni değil takvimi kandırır."
-Rakamlar korkutursa: "960 arama çok gibi duruyor. Ana kanalın telefonsa günde yetmiş arama, yani on dört iş günü. Aramaların çoğu kırk saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
+Rakamlar korkutursa: "960 arama çok gibi duruyor. Ana kanalın telefonsa ilk iki gün on ve yirmi, sonra günde yetmiş arama; yani on altı iş günü. Aramaların çoğu kırk saniyede bitiyor, çünkü çoğu kişi açmıyor. Korkulacak olan sayı değil, sayıyı hiç başlatmamak."
 
 ## 7. Ne yazar
 
-İş Beyni'ne: kimlik satırları (ad, şehir, telefon numarası), on sekiz sorunun cevabı kısa haliyle (birinci bölüme, "tanışma cevapları" altına), kurucu bölümünün dört satırı, içeriden tanıdığı sektör ve telefonundaki işletme sahipleri (üçüncü bölüme), günlük temas dağılımı, çalışma düzeni ve günlük sayı, hazırlık seviyesi, e-posta ve Instagram yaşı, motivasyon satırı, gelir planının bütün basamakları, özgürlük bölümü ve çıkış hesabı, aylık masraf tablosunun dört bölümü, bütçe merdiveninin hangi basamağında olduğun, mali müşavirin adı ve beş sorunun cevabı, şirket kuralı (ilk "evet"te kurulur), başlangıç tarihi olarak bugünün tarihi, gün sayacı 1.
-CRM'e bugün bir şey yazılmıyor, çünkü hesabın başlangıç görüşmende açılıyor. O güne kadar adaylar, randevular ve temaslar İş Beyni'nin "Bugünün listesi" bölümünde duruyor; arama sonucunu sen söylüyorsun, FounderOS yazıyor. Hesap açıldığı gün hepsi bir kerede oraya taşınıyor.
+İş Beyni'ne: kimlik satırları (ad, şehir; telefon numarası üçüncü oturuşta), sekiz sorunun cevabı kısa haliyle, her biri cevap geldiği anda birinci bölümdeki "Tanışma cevapları" satırına (modül sonunda toplu değil), başlangıç değerlendirmesi, kurucu bölümünün dolabilen satırları, içeriden tanıdığı sektör ve telefonundaki işletme sahipleri (üçüncü bölüme), günlük temas dağılımı, çalışma düzeni ve günlük sayı, hazırlık seviyesi, gelir planının bütün basamakları, özgürlük bölümü ve çıkış hesabı, üç aylık yaşam gideri şartının durumu (ikinci bölüme), aylık masraf tablosu, bütçe merdiveninin hangi basamağında olduğun, başlangıç tarihi olarak bugünün tarihi, gün sayacı 1. E-posta ve Instagram yaşı sorulduğu blokta yazılır; motivasyon satırı bekleyen soru cevaplanınca.
+Durum kaydına (`.founderos/durum.json`): `duzen` (tam ya da yan), `bekleyen_sorular` (kalan tanışma soruları, kısa adı ve anıyla), her oturuş bitince `oturus` ve `sonraki_adim`. Bekleyen bir soru cevaplanınca cevabı "Tanışma cevapları" satırına eklenir ve soru listeden düşer.
+CRM'e bugün bir şey yazılmıyor, çünkü hesabın başlangıç görüşmende açılıyor. O güne kadar soğuk adaylar ve temaslar aday listesinde, randevular ve cevap verenler İş Beyni'nin "Bugünün listesi" bölümünde duruyor; arama sonucunu sonuç düğmesine basarak kaydediyorsun, FounderOS işliyor. Hesap açıldığı gün yalnız sıcak kayıtlar (cevap veren, randevu alan, müşteri) bir kere oraya taşınıyor; soğuk havuz aday listesinde kalıyor.
 
 ## 8. Yedek yol
 
 - Öğrenci CRM'i bugün istiyorsa: hesap görüşmede açılıyor, öne alınamıyor. Sebebi söylenir (hesap birlikte kuruluyor, kurulumun yarısı görüşmede yapılıyor) ve İş Beyni'nin "Bugünün listesi" bölümünün aynı işi yaptığı gösterilir. Tartışma açılmaz.
 - Klasör bağlanmazsa: gün başlamaz. Bu tek istisnadır; klasör olmadan yazdığım her şey akşam kayboluyor, o yüzden burada beklerim.
 - Sen kısa cevap verirsen, mesela "bilmem": aynı soruyu bir kez daha, farklı kelimelerle sorarım. İkincide de gelmezse satırı boş bırakır, sonraki günlerde doldururum. Üçüncü kez sormam.
-- Mali müşavir bulunamazsa: birinci günde bulunması şart değil, beşinci bloğa kadar zamanın var. Bulduğun gün adını ve beş sorunun cevabını yazarız. Beşinci bloğa kadar da bulunamazsa ilk kapanışta parayı havaleyle alırız ve şirketi o hafta içinde kurarız.
-- Şirket hazırlığı beşinci blokta tamamlanmazsa: sahaya yine çıkarsın, saha ertelenmez. Şirket zaten ilk "evet"te kuruluyor; ilk para havale yoluyla alınır, nasıl olacağını onay belgesini hazırladığımız gün anlatacağım. Faturanın ne zaman kesileceğini müşavirin söyler, o cevabı beklemeden müşteriye söz vermezsin.
-- Şirket hiç açılamıyorsa: bu durum İş Beyni'ne yazılır, FounderOS'a bildirirsin, cevabı sana getirir.
-- Öğrencinin bugün dört saati yoksa: gün tek sabit noktadan ikiye bölünür, fiyat bandından sonra (pazar, ideal müşteri, teklif ve bant birinci oturuşta; hesap, marka ve sayfa ikinci oturuşta, aynı gün akşam ya da ertesi akşam). Bölme noktasından önce bırakılmaz; "yarısında bırakırsan yarın pazarsız uyanırsın."
+- Öğrenci şirketi birinci gün açmak ya da konuşmak isterse: tek cümle söylenir ("Şirket ilk müşteri 'evet' dediğinde açılır; o gün adım adım söyleyeceğim.") ve güne devam edilir. Şirket ve müşavir işlerinin yedek yolları ilk "evet" gününde onay-belgesini-hazirla'da.
+- Birinci blok üç oturuştur, her biri yetmiş beş dakika civarı: birincisi pazar kararıyla, ikincisi teklif ve fiyat bandıyla, üçüncüsü sayfa ve kapanışla biter. Tam zamanlıysan üçü aynı gün, aralarda mola; işin yanındaysan aynı gün ya da art arda akşamlar. Oturuş bitmeden bırakılmaz; "yarısında bırakırsan yarın pazarsız uyanırsın." Her oturuşun sonunda elinde bir şey olur ve durum kaydına yazılır. Oturuş yine de yarıda kesilirse ertesi açılışta kaldığı adımdan sürer; tanışmanın yazılı cevapları bir daha sorulmaz.
 
 ### Günün kapanışı
 
-Birinci gün iki mesajla kapanır; altı ayrı mesaj değil, her birinin sonunda "devam edeyim mi?" değil. Bir gece yarısı öğrencinin üst üste beş kez "evet" yazması, sessiz bitiş kadar kötü. Bloklar kısa başlıklarla aynı mesajın içinde alt alta durur.
+Birinci blok, üçüncü oturuşun sonunda iki mesajla kapanır; altı ayrı mesaj değil, her birinin sonunda "devam edeyim mi?" değil. Bir gece yarısı öğrencinin üst üste beş kez "evet" yazması, sessiz bitiş kadar kötü. Bloklar kısa başlıklarla aynı mesajın içinde alt alta durur.
 
 **Birinci mesaj: bugün ne oldu.** Üç blok.
 
 Bugün ne kazandın. Yedi madde, hepsi somut: pazarın, ideal müşterin, teklifin, fiyat bandın, işinin adı, marka kitin, tanıtım sayfan. Klasördeki dosyaları adıyla sayarsın: İş Beyni, Doksan Gün Planı, niş kartı, marka klasörü, sayfa. Sonunda tek cümle: "Sabah hiçbiri yoktu. Akşam hepsi klasörünün içinde duruyor." Rakam gösteren kapanış, sıfat kullanan kapanıştan güçlü.
 
-Senin yaptıkların. Sistemin ürettiklerini saydıktan sonra öğrencinin kendi payı: on sekiz soruya cevap verdi, pazarı o onayladı, işinin adını o seçti, teklifin cümlesine o baktı. Üç dört cümle. Bu blok olmadan öğrenci günün sonunda "her şeyi makine yaptı" duygusuyla kalıyor ve ertesi gün gelmiyor.
+Senin yaptıkların. Sistemin ürettiklerini saydıktan sonra öğrencinin kendi payı: sekiz soruya cevap verdi, pazarı o onayladı, işinin adını o seçti, teklifin cümlesine o baktı. Üç dört cümle. Bu blok olmadan öğrenci günün sonunda "her şeyi makine yaptı" duygusuyla kalıyor ve ertesi gün gelmiyor.
 
 Dosyalarla senin işin yok. "Klasördeki dosyaları açmak zorunda değilsin; ben yazarım, ben okurum. Merak edersen çift tıklayınca açılır, o kadar."
 
-Bu mesajdan önce İş Beyni'ne üç şey yazılmış olur ve yazıldığı söylenir: on üçüncü bölüme açık işler (üç ile beş madde: bugün yarım kalan ne varsa, yarın hangi saatte), on dördüncü bölüme "Bulunulan aşama: 1, hazırlık; birinci blok tamam, [tarih]", on altıncı bölüme bugünkü taslaklar (sayfa metni sürümü, teklif sürümü).
+Bu mesajdan önce İş Beyni'ne iki şey yazılmış olur: on üçüncü bölüme açık işler (üç ile beş madde: bugün yarım kalan ne varsa ve hangi blokta), on altıncı bölüme bugünkü taslaklar (sayfa metni sürümü, teklif sürümü). Konum İş Beyni'ne değil durum kaydına yazılır: birinci blok tamam, sıradaki blok iki. Kapanıştan önce hatırlatmalar açılır, bir dakikalık iş: lisans cevabında panel linki ve `hatirlatma` alanı varsa öğrenci paneli telefonunda açar, ana ekrana ekler (iPhone'da Safari'de Paylaş, yeni Safari'de alttaki üç noktanın içinde; sonra Ana Ekrana Ekle), paneli ana ekrandaki simgeden açar ve "Hatırlatmaları aç"a basar; telefon izin sorarsa izin verir. Deneme bildirimi birkaç saniyede düşer; düştüyse tamam. Panel linki ya da `hatirlatma` alanı yoksa ya da telefon bildirim göstermiyorsa bugün zorlanmaz, ikinci blokta yedek yol kurulur.
 
 Mesaj tek soruyla biter: "Bunlardan bakmak istediğin bir şey var mı, yoksa yarını anlatayım?"
 
 **İkinci mesaj: yarın ve sonrası.** Dört blok, sonunda kapanış cümlesi, soru yok.
 
-Yarın ne olacak ve ne hazır olsun. Yarının işi, kaç saat süreceği ve yanında ne bulunması gerektiği tek tek: e-posta şifresi, telefon, bir banka kartı. Yarın cebinden ne çıkacağı da rakamla: alan adı ve iş e-postası (orta ve üst basamakta) ya da sıfır (alt basamakta). Ve en önemlisi: "Yarın aynı projede **yeni bir sohbet aç**; sohbetin başında **Add folder (klasör ekle)** ile bu klasörü tekrar bağla, sonra tek kelime yaz: günaydın. Günü ben açarım." Bu cümle söylenmezse öğrenci aynı sohbete devam ediyor ve ikinci gün açılışı çalışmıyor; klasör bağlanmazsa İş Beyni okunmuyor.
+Yarın ne olacak ve ne hazır olsun. Yarının işi, kaç saat süreceği ve yanında ne bulunması gerektiği tek tek: e-posta şifresi, telefon, bir banka kartı. Yarın cebinden ne çıkacağı da rakamla: alan adı ve iş e-postası (orta ve üst basamakta) ya da sıfır (alt basamakta). Ve en önemlisi: "Yarın sohbeti projenin içinden aç ve **günaydın** yaz. Günü ben açarım; klasörünü göremezsem sana söylerim." Bu cümle söylenmezse öğrenci aynı sohbete devam ediyor ve ikinci gün açılışı çalışmıyor. Klasör bağlatmak her sabahın işi değildir; FounderOS klasörü göremezse o zaman "Add folder" (klasör ekle) tarifini verir. Hatırlatmalar açıldıysa tek cümle eklenir: "Yarın sabah sekizde günün işi telefonuna da düşecek."
 
 Paketin geri kalanı. Aldığı şeyin bugün kullanmadığı parçaları tek tek: altmış dakikalık başlangıç görüşmesi, grup görüşmeleri, topluluk, kurs erişimi, CRM hesabı, doksan gün garantisi. Hepsine kurulum sayfasının son ekranından ulaşıyor. Bir cümle de köprü: "Bunu tek başına değil, ekiple yaptırmak istersen danışmanlık programı var; başlangıç görüşmesinde sorabilirsin." Satış yapmazsın, kapıyı gösterirsin.
 
@@ -467,11 +404,9 @@ Sıradaki: "Yarın araçları kuruyoruz ve sayfan yayına çıkıyor. Bugünkü 
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Hedef gelir, günlük sayıyla makul sürede çıkmıyor: gelir planında düzeltilir, tartışma açılmaz.
-- Maaşlı işi var ya da günlük vakti beş saatin altında: çalışma düzeni "işin yanında" yazılır, takvim uzatılır.
+- Günlük vakti altı saatin altında (işi olsun olmasın) ya da hiç gelir gelmezse üç aydan az idare ediyor: çalışma düzeni "işin yanında" yazılır, hazırlık dokuz güne yayılır; üç aylık yaşam gideri şartının durumu ikinci bölümde durur.
 - Kartın kanal ve zaman bölümü yazıyı işaret ediyor: Instagram ve e-postanın payı o nişte biraz yukarı yazılır, arama kapanmaz, günlük temas hedefi aynı kalır.
-- Altıncı sorunun cevabında bir bırakma noktası varsa: o güne yaklaşırken FounderOS ayrıca döner.
-- Maaşlı bir işi var: Bağ-Kur sorusu mali müşavire sorulacakların ilk maddesi olur.
-- Beşinci blokta mali müşavir ya da belgeler eksik: havale yolu ilk kapanışta hazır tutulur, saha ertelenmez.
+- "Seni en çok ne düşündürüyor" ya da "daha önce ne denedin" bekleyen sorusunun cevabında bir bırakma noktası varsa: o güne yaklaşırken FounderOS ayrıca döner.
 - Üçüncü gün fiyat kesinleşti: gelir planı güncellenir.
 - Üç yüzüncü temas tamamlandı: oranlar öğrencinin kendi rakamıyla değiştirilir.
 

@@ -6,6 +6,8 @@ description: "Her hafta, her müşteri için. Sistem sessizce bozuldu mu."
 
 # sistemi-kontrol-et
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Canlıya alınmış müşteri sistemlerinin haftalık bakımını yapan modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Canlıya alma, sistemin gerçekten çalışmaya başlaması demek; altıncı günde yapılır. Bu modül yedinci günden itibaren devreye girer ve müşteri devam ettiği sürece her hafta çalışır.
@@ -53,11 +55,11 @@ Pazarlamadaki karşılığı: müşterinin ödediği şey sadece kurulum değil,
 
 ## 3. Ne okur
 
-Bütün ekran yolları CRM'de, o müşterinin alt hesabının içindedir. CRM, adayların ve müşterilerin kaydedildiği takip programıdır. Önce CRM'e girersin, üstten o müşterinin alt hesabını seçersin, sonra aşağıdaki yolları izlersin. İki madde CRM'de değil, onların yeri ayrıca yazıyor.
+Bütün ekran yolları CRM'de, o müşterinin alt hesabının içindedir. CRM, adayların ve müşterilerin kaydedildiği takip programıdır. Önce CRM'e girersin, üstten o müşterinin alt hesabını seçersin, sonra aşağıdaki yolları izlersin. İki madde CRM'de değil, onların yeri ayrıca yazıyor. Dokuzuncu maddenin sayılarını FounderOS bağlantıdan okur; bunun için bağlantıda müşterinin bölümü de işaretli olmalı. İşaretli değilse FounderOS bağlantıyı yeniler, sen giriş ekranında kendi bölümünü ve müşteri bölümlerini işaretlersin; o hafta sayıları ekrandan sen okursun.
 
 CRM'den: akışların hata listesi, randevular, gelen mesajlar, asistanın konuşmaları, bağlantı kutularının durumu, değişiklik kaydı (kimin neyi ne zaman değiştirdiğini gösteren liste).
 Meta'nın WhatsApp yönetim ekranından: hattın kalite notu ve hattın günlük mesaj sınırı. Bu ekran CRM'in içinde değil; Meta'nın işletme hesapları için açtığı ayrı bir sayfadır. Müşterinin kurulumunda kullandığın Meta hesabıyla girersin. Bu panelin her müşteride açılacağı garanti değil; açılmadığı bilgi dosyasında yazıyorsa bu iki satırın yerine yedek ölçü okunur, beşinci maddede yazılı.
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): kurulan parçalar, kapsam dışı kalanlar, ayarların başlangıç değerleri, geçen haftaki kontrolün notları ve sayıları.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya): kurulan parçalar, kapsam dışı kalanlar, ayarların başlangıç değerleri, geçen haftaki kontrolün notları ve sayıları.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): "Sezon" bölümü, yoğun saatler için "Kanal ve zaman" bölümü.
 
 ## 4. Ne sorar
@@ -114,16 +116,16 @@ Karşılıkları:
 - İki konuşmada uydurma çıktıysa cevap listesi eksiktir, doldurulur. Cevap listesi, asistanın bakıp cevap verdiği hazır bilgilerdir.
 - Aynı soru üç konuşmada takıldıysa cevap listesine eklenir.
 - İnsana devir oranı yarıdan fazlaysa asistanın soru sırasının ilk sorusu değiştirilir. Sağlık nişleri bunun dışındadır.
-Sen konuşmaları okur, bana tek satır yazarsın; düzeltmeyi ben yaparım, haftada tek düzeltme. Düzeltme asistanın kurallarında ve cevap listesinde olur, kurulum ayarlarına dokunulmaz.
+Sen konuşmaları okur, bana tek satır yazarsın; düzeltilmiş metni ben hazırlarım, sen asistanın ekranında yerine koyarsın, haftada tek düzeltme. Düzeltme asistanın kurallarında ve cevap listesinde olur, kurulum ayarlarına dokunulmaz.
 Tek istisna: müşteri asistanın bir cevabından şikâyet ettiyse o aynı gün düzeltilir, haftada tek düzeltme kuralının dışındadır.
 
 **8. Yorumlar.** Yeni yorum var mı, cevapsız yorum var mı, puan ne oldu.
 - Cevap metni yazıldı ama müşterinin onayı iki gün gelmediyse hatırlatırsın. Onay geldikten sonra yirmi dört saat içinde yayınlanır.
 - Ortalama puan yarım puan düştüyse bu, gelecek haftanın ilk maddesidir. Yorum isteği durmaz. Son gelen kötü yorumları okur, ortak şikâyeti tek cümleyle yazar ve haftalık görüşmede müşteriye sorarsın: bu şikâyet gerçekten yaşanıyor mu.
 - Otuz yorum isteği gitti ve hiç yorum gelmediyse istek anına ve metne bakılır.
-- "Bir daha yazmayın" diyen varsa üç iş günü içinde işlenir. Kanun bunu istiyor. Bu kuyruğun boşaldığını her hafta doğrularsın.
+- "Bir daha yazmayın" diyen varsa talep en geç üç iş günü içinde işlenir; haftalık kontrol bu süreyi kaçırır, o yüzden çıkma talebi haftayı beklemez. Talep geldiği an akış kaydı mesaj almaya kapatır ve sana bildirim düşer; müşteriye aynı gün sen yazarsın. Akışın kaçırdığını yakalamak için iki günde bir, sabah bloğunda, konuşmalar ekranında şu kelimeleri ararsın: çıkar, ÇIK, DUR, İPTAL, istemiyorum, rahatsız etmeyin, yazmayın, aramayın. Burada her hafta yalnız kuyruğun boş olduğunu doğrularsın.
 
-**8b. Sesli asistan (kurulduysa).** Haftanın çağrı sayısı, kaçı randevu yazdı, kaçı çalışana devredildi, dakika tüketimi (kâr hesabına gider). Bir de kendi telefonundan tek arama: yönlendirme üç durumda da açık mı (cevap verilmedi, meşgul, ulaşılamıyor), asistan açıyor mu, randevu yazıyor mu. Bozuksa aynı gün destek@founderos.so'ya yazılır, müşteriye tek cümle bildirilir.
+**8b. Sesli asistan (kurulduysa).** Haftanın çağrı sayısı, kaçı randevu yazdı, kaçında geri arama sözü verildi, dakika tüketimi (rakamı ekip yazılı verir; kâr hesabına gider). Bir de kendi telefonundan tek arama: yönlendirme üç durumda da açık mı (cevap verilmedi, meşgul, ulaşılamıyor), asistan açıyor mu, randevu yazıyor mu. Bozuksa aynı gün destek@founderos.so'ya yazılır, müşteriye tek cümle bildirilir.
 
 **9. Sayılar.** Geçen haftanın rakamları alınır ve bir öncekiyle karşılaştırılır:
 - randevu sayısı
@@ -197,7 +199,7 @@ Kaç müşteri taşıyabileceğin bu modülün işi değil. Dört aktif müşter
 
 Kontrol gününde: "Bugün bakım günü, akşam bloğu, dokuz madde. Sıraya uy; en tehlikeli olanlar en sessiz bozulanlar, onlar ilk beş maddede. Her hafta bir şey çıkar, bu normal."
 Bozukluk bulununca: "Şunu buldum. Şimdi düzeltiyorum, sonra müşteriye tek cümle yazacaksın. Sen söylemezsen o bulur; o bulursa on dakikada düzelttiğin şey ikinci ay ödemesini tartışmaya açar."
-Kırmızı not çıkarsa: "Hattın notu kırmızı. Bu hafta yeni toplu gönderim yok, randevu hatırlatmaları gitmeye devam ediyor. Üstüne mesaj atarsak önce uyarı, sonra günlerce engel gelir, en sonu süresiz kilit. Yedi günün var; bu sürede düzelmezse günlük sınır bir kademe iner."
+Kırmızı not çıkarsa: "Hattın notu kırmızı. Bu hafta yeni toplu gönderim yok, randevu hatırlatmaları gitmeye devam ediyor. Not yeşile dönünce gönderime devam ediyoruz. Yedi gün içinde düzelmezse günlük sınır bir kademe iniyor; o yüzden bu hafta beklemek en hızlı yol."
 Müşteri bir şeyi kapatmışsa: "Bildirimler kapanmış. Suçlama yok, açtım; kapalıyken gelen üç talebi de arattım. Üçü de bugün aranmasa kaybolurdu. Sebebini sor, ikinci kez olursa ayarı değiştireceğiz."
 Anlamadığın bir hata görürsen: "Ekranı bana anlat, adım adım söylerim. Akışın içini kendi kafana göre değiştirme; bir hafta boyunca hiçbir mesaj gitmeyebilir."
 
@@ -209,7 +211,7 @@ Niş kartının Sahadan dolacak bölümüne: bu nişte en sık bozulan parça, s
 
 ## 8. Yedek yol
 
-- Bağlantı kopmuşsa: aynı gün müşteriye sen yazarsın ve yeniden bağlamayı denersin. Üç gün içinde bağlanamazsa o kanal kapsam dışına alınır; kapsam dışı kalan parça güvencenin sonucuna sayılmaz.
+- Bağlantı kopmuşsa: aynı gün müşteriye sen yazarsın ve yeniden bağlamayı denersin. Üç gün içinde bağlanamazsa o kanal kapsam dışına alınır; kapsam dışı kalan parça güvencenin sonucuna sayılmaz. Ücret kuralı musteri-sistemini-kur'daki gibidir: sebep platformdaysa kurulmadığı her ay yüzde yirmi iner, müşterinin kendi adımıysa (şifresini değiştirdi, yetkiyi kaldırdı) inmez.
 - Şablon duraklatıldıysa: üç ya da altı saat bekler, metni düzeltip yeniden gönderirsin. Kapatıldıysa yeni metinle yeni şablon açarsın.
 - Hattın notu kırmızıysa: yeni toplu gönderim durur, yeşile dönene kadar beklenir, müşteriye sebebini sen yazarsın.
 - Takvim kopmuşsa: ayarlar, kendi profilim, takvim ayarları. Bağlantıyı silip yeniden kurar, sonra denersin.

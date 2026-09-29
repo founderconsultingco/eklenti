@@ -6,6 +6,8 @@ description: "Birinci gün teklifin gövdesi (konumlandırmanın üstüne, sesli
 
 # teklifi-yaz
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Birinci ve üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül ne sattığını yazar. Programın tanıtımındaki adı "Ne Satacaksın".
@@ -44,7 +46,7 @@ Dört sızıntı, işletmenin müşteri kaybettiği dört yerdir: açılmayan te
 
 ## 4. Ne sorar
 
-Sormaz. İş adın yoksa geçici bir ad koyar; aynı gün markani-kur onu kesinleştirir.
+Sormaz. İş adın yoksa geçici bir ad koyar; üçüncü oturuşta markani-kur onu kesinleştirir.
 
 
 ## 4b. Birinci gün: teklifin gövdesi
@@ -134,10 +136,12 @@ Bir test var: cümleyi sesli söyle. Ağzından çıkarken tuhaf ya da bulanık 
 Satılan sistemin çekirdeği üç akış, tek sistem. Teklifin başlığı her zaman sesli resepsiyonisttir:
 
 1. Mesai dışında ve yoğunlukta yapay zekâ resepsiyonisti: kaçan aramayı karşılar, genel soruları cevaplar, kaydı günceller, randevuyu kendisi yazar, gerekince çalışana aktarır.
-2. Yeni talebe hızlı dönüş: reklam ya da site formu dolduran kişiyi sistem beş dakika içinde arar, ihtiyacını sorar, randevu ya da görüşme saatini belirler.
-3. Eski talepleri yeniden canlandırma: fiyat sorup karar vermemiş eski adayları sistem tek tek arar, hâlâ ilgilenene randevu açar. Ülke, numara ve iletişim izni uygunsa; sağlık nişlerinde yalnız açık rızası olan kişiyle.
+2. Yeni talebe hızlı dönüş: reklam ya da site formu dolduran kişiye sistem altmış saniye içinde WhatsApp'tan yazar, hat ve izin hazırsa beş dakika içinde arar da; ihtiyacını sorar, randevu ya da görüşme saatini belirler. Formdaki "beni telefonla arayabilirsiniz" kutusu aramanın iznidir.
+3. Eski talepleri yeniden canlandırma: fiyat sorup karar vermemiş eski adayları sistem tek tek arar, hâlâ ilgilenene randevu açar. Ülke, numara ve iletişim izni uygunsa; sağlık nişlerinde yalnız aranmaya ayrıca izin vermiş kişiyle.
 
 Yazılı asistan (WhatsApp, Instagram) bu üç akışın yanında durur, başlık olmaz.
+
+Kurulamayan parça. Telefon hattı, sağlayıcının giden arama desteği ya da iletişim izni kurulumda uygun çıkmazsa o parça kurulamayan parça sayılır: o akış yazılı çalışır, müşteriye kurulum görüşmesinde söylenir ve o ayın ücreti yüzde yirmi iner; sözleşmede de aynı kural yazılı. Öğrenciye sebebin resmi tarafı anlatılmaz. Görüşmede bu tek cümleyle söylenir, gizlenmez: "Hattınız ve izinli listeniz kurulumda kontrol ediliyor; bir parça kurulamazsa o ay ücretten yüzde yirmi düşüyorum."
 
 Teklif iki kalıptan kurulur ve ikisi de yazılır:
 
@@ -146,6 +150,8 @@ Tek cümle: "[Şehir]'deki [niş]in tek bir müşteri aramasını bile kaçırma
 Mekanizmalı (üç akışı birden kapsar): "[Şehir]'deki [niş]in kaçan aramalarını, cevapsız kalan reklam formlarını ve [fiyat alıp kaybolan müşterilerini / randevu alıp gelmeyenlerini] [Sistem Adı] ile [randevuya / teklife] çeviriyoruz. [gün] günde kurulu, her şeyi biz yapıyoruz."
 
 Sistemin adı nişe özel ve sahiplenilebilir olur, "kaçan / kurtarma / geri kazanma" ekseninde kurulur. Köşeli parantezler İş Beyni'nden doldurulmadan gösterilmez.
+
+Sağlık nişlerinde (diş, estetik) mekanizmalı cümle "cevapsız kalan reklam formlarını" demez, "cevapsız kalan form ve mesajlarını" der; ikinci akış orada sitedeki form ve kişinin kendi başlattığı yazışmadır. Sebebi model içindir: bu nişlerde reklamla tanıtım sınırlı. Teklif reklama yaslanırsa ya kliniğe kullanamayacağı bir kanal satılmış olur ya da reklam veren kliniğe hatası hatırlatılmış olur. Kesin sınır kartın yasal sınırlar bölümünde. Öğrenciye kural anlatılmaz; sorarsa tek cümle: "Bu sektörde form ve mesaj üstünden gidiyoruz; en güvenli yol bu."
 
 ### Teklifin altı parçası ve tam teklif
 
@@ -158,11 +164,11 @@ Dönüşüm Cümlesi telefonda söylediğin kısa haldir. Görüşmede, sitede v
 5. **Fiyat.** Tam teklifte fiyatın yeri var ama telefonda ve sitede yok; görüşmede matematiğiyle söylenir. Kural fiyati-belirle'de.
 6. **Nitelik.** Kime satıyorsun ve **kime satmıyorsun**. "Yalnızca iki ve daha çok hekimli klinikler", "günde yirmi çağrıdan az alan işletmeyle çalışmıyorum" gibi. Kimseyi elemeyen teklif kimseye özel değildir; nitelik cümlesi ideal müşteri sayfasının "ne satın almaz" başlığından çıkar.
 
-Bir de yedinci şey var, parça değil kaldıraç: **işletmecinin yapması gereken tek şey.** İyi tekliflerin hepsinde şu cümle var: "her şeyi sizin için biz yapıyoruz", "ek personel almadan", "mevcut düzeninizi değiştirmeden". Teklifte işletmecinin ne yapacağı tek cümleyle yazılır ve o cümle kısa olur: "Siz bize telefon hattınızı ve WhatsApp'ınızı bağlarsınız, gerisi bizde."
+Bir de yedinci şey var, parça değil kaldıraç: **işletmecinin yapması gereken tek şey.** İyi tekliflerin hepsinde şu cümle var: "her şeyi sizin için biz yapıyoruz", "ek personel almadan", "mevcut düzeninizi değiştirmeden". Teklifte işletmecinin ne yapacağı tek cümleyle yazılır ve o cümle kısa olur: "Siz cevapsız kalan aramanın yönlenmesine onay verirsiniz, gerisi bizde." Numarasına dokunulmaz: cevapsız kalan arama işletmecinin onayıyla yeni hatta yönlenir, WhatsApp hattı kendi numarasında kalır. "Hattınızı bağlarsınız" denmez; işletmeci numarasının elinden alınacağını sanıyor ve "numaranıza dokunmuyoruz" cümlesiyle çelişiyor.
 
 **Tam teklif cümlesi, kalıp:** "[Nitelik] için. [Sistemin adı] ile [süre] içinde [sonuç]. Siz [tek şey] yaparsınız, gerisini biz kuruyoruz." Güvence bu cümleye girmez; sorulduğunda söylenir.
 
-Randevu nişine örnek: "Bursa'da iki ve daha çok teknisyeni olan klima servisleri için. Sezon Çağrı Sistemi ile [21/28] gün içinde açılmayan her arama aynı dakika mesajla yakalanıyor ve randevuya çevriliyor. Siz hattınızı bağlarsınız, gerisini biz kuruyoruz."
+Randevu nişine örnek: "Bursa'da iki ve daha çok teknisyeni olan klima servisleri için. Sezon Çağrı Sistemi ile [21/28] gün içinde açılmayan her arama aynı dakika mesajla yakalanıyor ve randevuya çevriliyor. Siz cevapsız aramanın yönlenmesine onay verirsiniz, gerisini biz kuruyoruz."
 
 Teklif nişine örnek: "Ekibi olan mutfak ve banyo tadilat firmaları için. Keşif Takip Sistemi ile [21/28] gün içinde her keşif talebi randevuya, verdiğiniz her teklif cevaba bağlanıyor; cevapsız teklif kalmıyor. Siz teklifi hazırlarsınız, göndermeyi ve takibi biz yapıyoruz."
 
@@ -207,14 +213,15 @@ Tek ad söylenir, seçenek listesi verilmez. Beğenmezsen ikinci ad söylenir.
 Kartla doldurulur:
 - Kademe 1 bu sektörde ne demek: hangi kanal açık, asistan fiyat verir mi, hangi bilgiyi toplar, yolculuk randevu mu teklif mi.
 - Kademe 2'de duran havuzun tipi ne ve eski müşteriyi hangi sebeple arayacağız. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Sebep kartta yazılı ve kişinin kendi geçmiş işine bağlı olur, kampanya olmaz.
-- Kademe 3 bu nişte mümkün mü. Yasal sınırı olan sağlık nişlerinde "yok" yazılır. Dış arama her nişte şarta bağlıdır ve ilk müşteride vaat edilmez.
+- Kademe 3 bu nişte mümkün mü. Yasal sınırı olan sağlık nişlerinde "yok" yazılır.
+- Kademe 2'nin arama parçaları (forma beş dakikada arama, eski adayları arama) bu nişte kurulabilir mi: hat, sağlayıcının giden arama desteği, iletişim izni. Kurulumda kontrol edilir; uygun çıkmazsa o parça kurulamayan parçadır ve teklif metninde şartıyla tek cümle yazılır. Sağlık nişlerinde yalnız aranmaya ayrıca izin vermiş kişi aranır.
 - Teklifin dışında kalanlar, İş modelinin sınırlar listesinden bu nişe düşenler: reklam yok, içerik yok, işletmenin asıl işi yok, dış arama şartlı, bilinmeyen fiyat uydurulmaz. Bunlar teklif metninde tek satırla yazılır; sonradan "o da dahil sanmıştım" çıkmaz.
 
 Görüşmede tek paket ve tek rakam söylenir, o da Kademe 2'dir. Üç kademe ve karşılaştırma fiyatı ön görüşme sayfasında durur, randevu alan aday oraya bakar; sitede fiyat yoktur.
 
 ### İtirazlar
 
-Üç itiraz ve cevapları karttan alınır, senin ağzına uyarlanır. Dördüncü itiraz her nişte ekleniyor, çünkü bu teklifi duymuş aday her şehirde çıkıyor: "zaten yapay zeka teklifi aldık". Cevabı şu: "Güzel, o zaman ne kaçırdığınızı biliyorsunuz. Onlar ne söz verdi? Ben bot satmıyorum, kaçan aramanın randevuya dönmesini satıyorum, rapor gününde raporla."
+Üç itiraz ve cevapları karttan alınır, senin ağzına uyarlanır. Dördüncü itiraz her nişte ekleniyor, çünkü bu teklifi duymuş aday her şehirde çıkıyor: "zaten yapay zeka teklifi aldık". Cevabı konumlandırmanın itiraz cevabıdır, İş Beyni'nin dördüncü bölümünden aynen alınır; iki ayrı cümle tutulmaz: "Ne kurdular, bot mu? Bot tek başına randevu getirmiyor; telefon açılmıyorsa ve dönen kimse yoksa sadece duruyor. Ben telefonu açan tarafı, geri dönüşü ve takibi tek sistem olarak kuruyorum; ay sonunda kaç randevu geldiği belli oluyor." "Bot satmıyorum" diye söze başlanmaz; "bot" kelimesi yalnız bu cevapta ve konumlandırmanın karşılaştırma cümlesinde geçer, ardından hep ne kurduğun söylenir.
 
 İtirazın kendisi kötü haber değil. İtiraz eden aday, hiç ses çıkarmadan kaybolan adaydan daha ciddidir. İtiraz reddetme değil, bilgi isteme biçimidir.
 
@@ -236,7 +243,7 @@ Cümleyi beğenmezse: "Bu cümle bugün mükemmel olmayacak, on görüşmede otu
 ## 7. Ne yazar
 
 İş Beyni'ne: Dönüşüm Cümlesi, sistemin adı, üç kademenin nişe özel içeriği, bir dakikalık anlatım, üç ya da dört itiraz ve cevapları, teklif sürümü 1 ve tarihi.
-Eski sürüm silinmez. Sonraki sürümler on görüşmelik birikimden çıkar ve yan yana durur; hangisinin daha iyi çalıştığını böyle görürsün.
+Sonraki sürümler on görüşmelik birikimden çıkar. İş Beyni'nde güncel sürüm ve numarası durur; eski sürüm kaybolmaz, değiştiği günün günlüğüne sebebiyle yazılır. Hangisinin daha iyi çalıştığını böyle görürsün.
 
 ## 8. Yedek yol
 
@@ -244,7 +251,7 @@ Eski sürüm silinmez. Sonraki sürümler on görüşmelik birikimden çıkar ve
 - Sen "başka bir şey satmak istiyorum" dersen: sebebi bir kere anlatılır. Israr edersen "300 temas sonra konuşuruz, şimdi bu" denir.
 - Bir dakikalık anlatım iki denemede söylenemezse: prova sayacına "teklif provası" eklenir ve dördüncü bloğa kadar her sabah bir kez yapılır. Prova sayacı, sahaya çıkmadan önce yaptığın alıştırmaların sayısıdır.
 - Kartın "işletmecinin iç sesi" satırı boşsa: duygu parçası genel yazılır ve ilk on görüşmede işletmecilerin kendi cümlelerinden doldurulur.
-- Sağlık nişindeysen: kartın yasal sınırlar bölümü önce okunur. Sonuç cümlesinde tedavi sözü, "kesin sonuç" ve "en iyi" gibi iddialar geçmez.
+- Sağlık nişlerinde: FounderOS kartın yasal sınırlar bölümünü önce okur ve sessizce uygular. Sonuç cümlesinde tedavi sözü, "kesin sonuç" ve "en iyi" gibi iddialar geçmez. Öğrenciye kural anlatılmaz; yalnız cümlenin son hali gösterilir.
 
 ## 9. Sıradaki adım ve işaretler
 
@@ -252,7 +259,7 @@ Sıradaki, birinci günde: "Ne sattığını yazdık. Şimdi kartından fiyat ba
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - On görüşme birikti ve aynı işaret beşinde çıktı: teklif yeniden yazılır.
-- Nişin mevzuat kısıtı var: Kademe 3 "yok" yazılır, sonuç cümlesi kısıtlara göre yeniden kurulur.
+- Nişin kartında yasal sınır var: Kademe 3 "yok" yazılır, sonuç cümlesi o sınıra göre yeniden kurulur; öğrenciye sebep anlatılmaz.
 - Bir dakikalık anlatım iki denemede söylenemedi: prova sayacına eklenir.
 - İlk on görüşmede işletmeciler aynı cümleyi kurdu: o cümle Dönüşüm Cümlesi'ne ve karta geçer.
 

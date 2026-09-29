@@ -6,6 +6,8 @@ description: "Haftanın sonunda. Neyin değişeceğine karar verilir: niş mi, m
 
 # degisiklige-karar-ver
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Haftada bir çalışan karar modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül tek bir soruya cevap verir: bu hafta neyi düzelteceğiz.
@@ -36,7 +38,7 @@ Bu otuz dakika müşteri görüşmesi kadar önemlidir ve takvimden silinmez. Si
 
 ## 3. Ne okur
 
-CRM'den: o haftanın bütün sayıları. Temas, cevap, olumlu cevap, randevu, gelme, görüşme, teklif, kapanış.
+Kayıttan: o haftanın bütün sayıları. Temas ve cevap aday listesinden (aday aracının `ozet` ve `ogren` çıktısı; soğuk temaslar CRM açıldıktan sonra da orada); olumlu cevap, randevu, gelme, görüşme, teklif ve kapanış CRM açıldıysa CRM'den, açılmadıysa aday listesinden ve günlükten.
 İş Beyni'nden: gelir planı, kilitlerin durumu, geçen haftanın kararı ve sonucu, teklif ve fiyat sürümü, hizmet-akisini-ciz'in kurduğu kapasite bölmesi.
 Diğer modüllerden gelen işaretler: gorusmeyi-analiz-et'in zayıf adım teşhisi, adaya-mesaj-yaz'ın cevap oranı, gorusmeye-getir'in gelme oranı, sistemi-kontrol-et'in haftalık bakım süresi, musteriyi-elde-tut'un tahsilat durumu.
 
@@ -63,13 +65,12 @@ Her hafta tek soru: bu dört halkadan hangisi şu an en zayıf. Cevap her hafta 
 
 ### Karşılaştırma rakamları
 
-Bir halkanın zayıf olup olmadığını anlamak için bir ölçü lazım. Bunlar yurt dışında tutulmuş başlangıç rakamları; senin kendi rakamların birikince onlarla değiştirilir.
+Bir halkanın zayıf olup olmadığını anlamak için bir ölçü lazım. Ölçü, gelir planının varsayımlarıdır (İş Beyni'nin ikinci bölümü); senin kendi rakamların birikince onlarla değiştirilir.
 
-- Soğuk e-postada cevap oranı: yüzde on beş üstü iyi.
-- Cevapların olumlu olma oranı: yüzde kırk üstü iyi.
-- Telefonda randevu oranı: yüzde üç ile beş arası normal. Yüz aramada bir randevu kötü.
-- Randevuya gelme oranı: yüzde yetmiş hedef. Yüzde ellinin altı sorun.
-- Görüşmeden kapanışa: yüzde yirmi ile otuz arası hedef. Acemide yüzde on normal.
+- Telefonda randevu: otuz üç aramada bir. Yüz aramada bir randevu kötü.
+- Randevuya gelme oranı: yüzde yetmiş. Yüzde ellinin altı sorun.
+- Görüşmeden kapanışa: beş görüşmede bir. İlk görüşmelerde daha düşük çıkması normal; oran otuz görüşmeden önce okunmaz.
+- Yazılı kanalda (e-posta, Instagram) dışarıdan ölçü kullanılmaz: senin oranın üç yüz temasta çıkar ve iki kanal birbiriyle, bir de telefonla karşılaştırılır.
 - Müşteri kaybı: dört müşterin varken ayda bir kaybediyorsan bu dörtte bir demek ve çok yüksek.
 
 ### Sıra: önce anomali, sonra girdi, sonra süreç, sonra dışarısı
@@ -90,15 +91,17 @@ Sebebi bulduğunu sandığında beş kez "neden" diye sor. İlk cevap neredeyse 
 
 Bir şeyi ne zaman değiştirebileceğin bağlı olduğu kilide göre değişir. Kilit, yeterli veri birikmeden değişiklik yapılmasını engelleyen kuraldır.
 
-**Mesaj metni: 300 temas.** İki yüz temasta sadece bakılır, teşhis konur, değişiklik yapılmaz. Üç yüz temasta karar verilir. Elli temastan önce metne hiç dokunulmaz.
+**Mesaj metni: 300 temas.** İki yüz temasta sadece bakılır, teşhis konur, değişiklik yapılmaz. Üç yüz temasta karar verilir, ama temaslar olgunlaşınca: telefonun oranı üç yüzüncü temasın akşamı okunur, yazılı kanalın oranı üç yüzüncü temasın yedinci günü, çünkü yazılı cevapların çoğu üçüncü ve yedinci gün takibinde geliyor. Elli temastan önce metne hiç dokunulmaz.
 
 **Teklifin kelimeleri: 10 görüşme.** Aynı işaret o on görüşmenin en az beşinde görülecek. Bu nitel bir işaret, yani sayı değil söz: aynı itiraz, aynı yanlış anlama, aynı soru.
 
 **Fiyatın rakamı: 30 görüşme.** Kapanış oranı bir orandır ve on görüşmede ölçülemez. Otuz görüşmen yoksa fiyatın yüksek mi düşük mü olduğunu bilemezsin, sadece hissedersin. Hissin kararı değiştirmez.
 
-**Niş: 90 gün ya da 5 müşteri.** Hangisi önce gelirse. Tek istisnası şu: 300 temas yapılmış ve o üç yüzden hiç görüşme çıkmamış olacak.
+**Niş: 90 gün ya da 5 müşteri.** Hangisi önce gelirse. Tek istisnası: üç yüz olgun temasta sıfır görüşme (olgun temas aşağıda). Yazılmış randevun olup günü henüz gelmediyse istisna açılmaz.
 
 Kilit dolmadan gelen değişiklik isteği reddedilmez, ertelenir. İstek yazılır, kilidin ne zaman dolacağı söylenir, o gün gelince bakılır.
+
+**Olgun temas.** Kilitler sayıyla açılır ama sonuç gecikerek gelir. Olgun temas, sonucunun gelme süresi dolmuş temastır: telefonda aynı gün, yazılı kanalda ilk mesajın yedinci günü, randevuda görüşme günü. Eşik dolduğu akşam öğrenci şunu duyar: "Üç yüz temas bugün doldu. Telefonun sonucu belli: yüz aramada iki randevu. E-postanın sonucu henüz belli değil, cevapların çoğu üçüncü ve yedinci gün takibinde geliyor. Karar [tarih] akşamı, o güne kadar metin aynı." Karar günü İş Beyni'nin onuncu bölümündeki eşik satırına yazılır. Bayram ya da arife haftasına düşen karar günü bir hafta ileri alınır.
 
 ### Bir seferde tek şey
 
@@ -108,7 +111,7 @@ Bir haftada tek şey değişir. Ya sadece açılış cümlesi, ya sadece arama s
 
 Sebebi şu: iki şeyi birden değiştirir ve sonuç iyileşirse hangisinin işe yaradığını bilemezsin, yani bir daha tekrarlayamazsın. Kötüleşirse hangisinin bozduğunu bilemezsin, yani geri alamazsın. O testin bütün verisi çöp olur ve baştan başlaman gerekir.
 
-Her değişikliğe bir numara verilir ve İş Beyni'ne yazılır: ne değişti, hangi tarihte, o hafta ne oldu. Böylece üç ay sonra hangi sürümün en iyi çalıştığını bilirsin.
+Her değişikliğe bir numara verilir ve günlüğe yazılır: ne değişti, hangi tarihte, o hafta ne oldu; İş Beyni'nde değişen alan yerinde güncellenir ve yürürlükteki değişikliğin numarası durur. Böylece üç ay sonra hangi sürümün en iyi çalıştığını bilirsin.
 
 ### Dokunmama kuralı
 
@@ -118,17 +121,17 @@ Bir de sabır meselesi var. Yeni bir şeyi başlattığın hafta sonuç ölçül
 
 ### Ana kanal değişir mi
 
-Ana kanalı nişin kartı seçiyor ve üç yüz temas boyunca kilitli. Üç yüz temas dolunca tek bir soru sorulur: **ikinci kanal, randevu başına ana kanaldan daha az temas harcadı mı.** Cevap evetse ikisi yer değiştirir; yetmiş ona geçer, ana kanal yirmi beşin içine iner. Cevap hayırsa hiçbir şey değişmez ve sonraki üç yüz temas ölçülür.
+Ana kanalı nişin kartı seçiyor ve üç yüz temas boyunca kilitli. Üç yüz temas dolup sonuçları gelince (yazılı kanalda yedi gün sonra) tek bir soru sorulur: **ikinci kanal, randevu başına ana kanaldan daha az temas harcadı mı.** Cevap evetse ikisi yer değiştirir; yetmiş ona geçer, ana kanal yirmi beşin içine iner. Cevap hayırsa hiçbir şey değişmez ve sonraki üç yüz temas ölçülür.
 
 Bir kanalda üç yüz temasın içinde otuzdan az temas varsa o kanalın oranı okunmaz; az sayıdan çıkan oran yanıltır.
 
-Video bu karara girmez. Beş video her gün çekilir, ana kanal ne olursa olsun. Sebebi şu: video en çok istenen yüz işletmeye giden tek dokunuş ve o yüz işletme bu işin en değerli yüz işletmesi.
+Video bu karara girmez. Video her gün çekilir, ana kanal ne olursa olsun; günün sayısı video-mesaj-cek'teki süre kuralından gelir. Sebebi şu: video, ilk yazılı temasa cevap vermeyen adaya giden ikinci dokunuş; önce en çok istenen yüz işletmeye gider ve o yüz işletme bu işin en değerli yüz işletmesi.
 
-### Tavan yükselir, taban yükselmez
+### Tavan yükselir, hedef haftanın kararıyla inmez
 
-Günde yüz temas tabandır ve pazarlık konusu değildir. Beş iş günü üst üste yüzü tutturan öğrencide tavan açılır: ana kanala on eklenir, günlük yüz yirmiye kadar. Bunu FounderOS teklif eder, öğrenci istemezse yüzde kalır.
+Günlük temas hedefi (tam zamanlıda yüz, işin yanında kırk) haftanın kararıyla değişmez. Hedef yalnız iki yerde iner ve ikisi yazılı: teslim süresi (tam zamanlıda altmış, işin yanında yirmi) ve aşağıdaki kapasite kararı. Beş iş günü üst üste hedefi tutturan öğrencide tavan açılır: ana kanala on eklenir, tam zamanlıda günlük yüz yirmiye kadar. Bunu FounderOS teklif eder, öğrenci istemezse hedefte kalır.
 
-Bunun tersi yok. Sayı tutturulamıyorsa çözüm sayıyı düşürmek değil, günün sırasını düzeltmek: saha bloğunun ilk yarım saatinde ilk yirmi temas gitmiyorsa gün zaten kaymış oluyor.
+Günlük plan başka şeydir. Sayı tutturulamıyorsa önce günün sırası düzeltilir: saha bloğunun ilk yarım saatinde ilk temaslar gitmiyorsa gün zaten kaymış oluyor. Plan iki gün üst üste tutmadıysa ana yöneticinin kuralı işler: ilk şüpheli plandır, o günün planı kapasiteye göre küçülür ve sebebi günlüğe yazılır. Bu hedefi değiştirmez; hedef ertesi gün yerinde durur ve haftanın kararı hedefe göre okunur.
 
 ### Kapasite: kaç müşteri taşıyabilirsin
 
@@ -141,7 +144,7 @@ Tavana gelince ilk hareket temas sayısını indirmektir: günlük yüz, kırka 
 Aynı anda üç yoldan biri seçilir:
 1. Kapsamı daralt. Yeni müşterilere daha küçük paket sat.
 2. Daha büyük işletmeye sat. Rakamı sen yükseltmezsin, formül ve oranlar sabittir; yıllık kaybı büyük işletmede aynı formül daha yüksek kurulum ve aylık verir, aynı para daha az müşteriyle gelir.
-3. Yardım al. İlk devredilecek iş satış değil, tekrar eden ve seni yıpratan iştir: bakım kontrolleri, rapor hazırlığı, liste temizliği.
+3. Yardım al. İlk devredilecek iş satış değil, tekrar eden ve müşteri verisine dokunmayan iştir: akşam deneme aramaları, form testleri, liste temizliği. Bakım kontrolleri ve rapor hazırlığı müşterinin kendi müşterileriyle yapılan konuşmalara dokunur; bu ikisi şimdilik sende kalır. Devretmek istediğinde destek adresine gidecek tek satırı FounderOS hazır verir, yolu ekip netleştirir. Bu iki iş yardımcıyla yazılı gizlilik anlaşması yapılmadan devredilmez; öğrenciye kural anlatılmaz.
 
 Sıra önemli: fiyat yükseltmek tavan hareketidir, satış hızını artırmak değil. Tavana gelmiş kişi daha çok aramaz, daha pahalı satar.
 
@@ -155,7 +158,7 @@ O ay tek karar var: satış durur, teslimat düzelir. Sebep musteriyi-elde-tut'u
 
 ### Haftanın kararı
 
-Otuz dakikanın ilk cümlesi haftanın tek sayısıdır: "Bu hafta [sayı] görüşme yapıldı, geçen hafta [sayı]." Dört halkaya bakış bu sayıdan geriye doğru yapılır; görüşme sayısı düşükse hangi halkanın kestiği aranır. Otuz dakikanın sonunda tek bir cümle çıkar ve İş Beyni'ne yazılır: "Bu hafta şunu değiştiriyoruz, sebebi şu, gelecek hafta şuna bakacağız." Haftanın kararının yanına haftanın tek sayısı da yazılır; on hafta üst üste okununca gidişat orada görünür.
+Otuz dakikanın ilk cümlesi haftanın tek sayısıdır: "Bu hafta [sayı] görüşme yapıldı, geçen hafta [sayı]." Dört halkaya bakış bu sayıdan geriye doğru yapılır; görüşme sayısı düşükse hangi halkanın kestiği aranır. Otuz dakikanın sonunda tek bir cümle çıkar, günlüğe yazılır ve İş Beyni'nin kararlar bölümünde yürürlükteki karar olarak güncellenir: "Bu hafta şunu değiştiriyoruz, sebebi şu, gelecek hafta şuna bakacağız." Günlükte haftanın kararının yanına haftanın tek sayısı da yazılır; on hafta üst üste okununca gidişat orada görünür.
 
 Bir cümleden fazlaysa karar verilmemiş demektir.
 
@@ -171,10 +174,11 @@ Müşteri kaybediyorsa: "Dört müşteride ayda bir kayıp dörtte bir demek. Bu
 
 ## 7. Ne yazar
 
-İş Beyni'ne: haftanın tarihi, dört halkanın sayıları, en zayıf halka ve sebebi, verilen karar tek cümleyle, değişikliğin numarası, geçen haftanın kararının sonucu, ertelenen istekler ve hangi eşikte açılacakları, ruh hali cevabı.
+Günlüğe (o günün dosyası, sadece eklenir): haftanın tarihi, dört halkanın sayıları, en zayıf halka ve sebebi, verilen karar tek cümleyle, değişikliğin numarası, geçen haftanın kararının sonucu, ruh hali cevabı.
+İş Beyni'ne (yalnız son değer): yürürlükteki karar ve değişikliğin numarası, değişen alanın yeni hali; ertelenen istekler ve hangi eşikte açılacakları açık işler bölümüne.
 Niş kartına: bu nişte tekrar eden zayıf halka ve işe yarayan düzeltme, otuz görüşmeden sonra.
 
-Değişiklik kaydı silinmez. Üç ay sonra hangi sürümün en iyi çalıştığı sadece oradan görülür.
+Değişiklik kaydı günlükte durur ve silinmez. Üç ay sonra hangi sürümün en iyi çalıştığı sadece oradan görülür.
 
 ## 8. Yedek yol
 
@@ -191,10 +195,10 @@ Sıradaki: verilen karar hangi modülün işiyse oraya gider. Mesaj adaya-mesaj-
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - İki yüz temasta cevap oranı yüzde ikinin altında: teşhis işareti buraya gelir, karar üç yüzde verilir.
-- Üç yüz temas doldu: mesaj kilidi açılır.
+- Üç yüz temas doldu: telefonun oranı o akşam okunur; yazılı kanalın kararı yedi gün sonra, temaslar olgunlaşınca verilir. Karar günü İş Beyni'ne yazılır.
 - On görüşme doldu ve aynı işaret beşinde çıktı: teklif kilidi açılır.
 - Otuz görüşme doldu: fiyat kilidi açılır, kapanış oranı ilk kez okunur.
-- Üç yüz temas doldu ve hiç görüşme çıkmadı: niş kilidi açılır.
+- Üç yüz olgun temasta sıfır görüşme (günü gelmemiş randevu da yok): niş kilidi açılır.
 - Dördüncü aktif müşteri geldi ya da haftalık bakım bir iş gününü aştı: kapasite kararı açılır. Hesap hizmet-akisini-ciz'in kapasite bölmesinden okunur.
 - Ayda bir müşteri kaybedildi ve dört müşteri var: o ay satış durur.
 - Aylık tahsilat iki kez düşmedi: tahsilat sorunu olarak açılır, fiyat sorunu sayılmaz.

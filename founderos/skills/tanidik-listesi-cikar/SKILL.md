@@ -1,39 +1,41 @@
 ---
 user-invocable: false
 name: tanidik-listesi-cikar
-description: "Üçüncü günün öğleden sonrası, kesin fiyattan sonra. Tanıdık listesinin çıkarılması ve sıralanması."
+description: "İkinci günün akşamı, kırk beş dakika. Tanıdık listesinin çıkarılması ve sıralanması; ilk mesaj ertesi akşam gider."
 ---
 
 # tanidik-listesi-cikar
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Üçüncü günün öğleden sonra modülü, kesin fiyattan hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın beşinci aşamasının ilk adımı: müşteri bul.
+İkinci bloğun akşam modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşaması, satışa hazırlan: çevrene duyur.
 
-Bu modül seni tanıyan herkesin listesini çıkarıyor. Listeye ne yazacağını aynı günün akşamı yazıyoruz; liste ve mesaj arka arkaya, aynı oturuşta.
+Bu modül seni tanıyan herkesin listesini çıkarıyor. Listeye gidecek mesajı yarın akşam tanidiga-mesaj-yaz yazıyor; liste bu akşam çıkar, mesaj yarın gider.
 
 Neden soğuk listeden önce: seni zaten tanıyan ya da bir tanıdık üzerinden gelen kişide kapanış oranı, hiç tanımadığın birine göre belirgin şekilde yüksek. Aynı teklif, aynı sen, aynı fiyat. Tek fark, araya giren isim.
 
-İkinci sebep zamanlama. Saha üç gün sonra açılıyor. Tanıdıklara bugün yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
+İkinci sebep zamanlama. Saha üç gün sonra açılıyor. Tanıdıklara yarın yazarsan cevaplar sen soğuk aramaya başlamadan gelmiş oluyor.
 
-Neden bugün, dün değil: tanıdığın ertesi sabah "tamam, yapalım" diyebiliyor. O cümle geldiğinde fiyatın, sözleşmen ve ödeme yolun hazır olmak zorunda; üçü de bu sabah kuruldu. Liste dün çıksaydı mesaj yine bugünü bekleyecekti ve arada bir gün boşa duracaktı.
+Neden liste bugün, mesaj yarın: tanıdığın mesajın ertesi sabahı "tamam, yapalım" diyebiliyor. O cümle geldiğinde fiyatın, ödeme yolun ve müşterinin onaylayacağı sözleşme hazır olmalı; üçü de yarın sabah hazırlanıyor, mesaj onların arkasından yarın akşam gidiyor. Listeyi bugün çıkarmamızın sebebi yarının yükü: üçüncü blok dolu, kırk beş dakikalık liste bu akşama sığıyor.
 
 Şunlar bu modülün işi değildir:
-- Mesajın metni (tanidiga-mesaj-yaz, aynı günün akşamı; bu modül listeyi çıkarır, mesajı o yazar).
-- Soğuk aday listesi (aday-listesi-cikar, aynı gün, sabah).
+- Mesajın metni (tanidiga-mesaj-yaz, yarın akşam; bu modül listeyi çıkarır, mesajı o yazar).
+- Soğuk aday listesi (aday-listesi-cikar, yarın).
 - Müşteri olduktan sonra referans istemek (musteriyi-elde-tut). O ayrı bir iş ve referans dönemi geldiğinde açılıyor.
 
 Pazarlamadaki karşılığı: sıcak çevre. Seni zaten tanıyan insanlar.
 
 ## 2. Ne zaman çalışır
-- Üçüncü günün akşam bloğu, kırk beş dakika. Kesin fiyat, sözleşme ve ödeme yolu bu sabah kuruldu; liste onların arkasından çıkar.
+- İkinci bloğun akşam bloğu, kırk beş dakika. Mesaj yarın akşam, kesin fiyat, sözleşme ve ödeme yolu kurulduktan sonra gider.
 - İkinci kez: her ay bir kere, listeye yeni girenler eklenir.
 
 ## 3. Ne okur
 
 İş Beyni'nden: nişin.
 
-Başka bir şey okumaz. Liste senin telefonundan çıkıyor, CRM'den değil.
+Başka bir şey okumaz. Liste senin telefonundan çıkıyor, CRM'den değil. Rehberini dışa aktarıp eklersen o dosyayı da okur.
 
 ## 4. Ne sorar
 
@@ -51,7 +53,7 @@ Kural şu: rehberinde kim varsa listede. Elemeyi sen yapmıyorsun, cevap veren y
 
 Altı yer, sırayla. Her birini baştan sona geç, seçmeden.
 
-1. **Telefon rehberi.** Harften harfe geç. Adını gördüğünde kim olduğunu hatırlıyorsan listeye yaz.
+1. **Telefon rehberi.** Kısa yol: telefonunda rehberi dışa aktarma seçeneği varsa (çoğu telefonda Kişiler uygulamasının ayarlarında "Dışa aktar" ya da "Export"; çıkan dosyanın adı .vcf ile biter) dosyayı bu sohbete ekle. İsimleri ben listeye dökerim, sen yalnız kimin kim olduğunu ve kimin nişinde işletmesi olduğunu söylersin. Dosya klasöre kaydedilmez, liste çıkınca işi biter. Seçenek yoksa ya da dosya eklenmiyorsa harften harfe geç: adını gördüğünde kim olduğunu hatırlıyorsan listeye yaz.
 2. **WhatsApp sohbet listesi.** Rehberde olmayan ama seninle yazışmış insanlar burada çıkıyor. Bunu biz ekledik, Türkiye'de rehberden çok WhatsApp kullanılıyor.
 3. **WhatsApp grupları.** Gruplara mesaj atmıyorsun ama gruptaki insanların adlarını alıyorsun, sonra tek tek yazacaksın. Bunu da biz ekledik.
 4. **Instagram.** Hem takip ettiklerin hem seni takip edenler.
@@ -62,13 +64,13 @@ LinkedIn'i listeye koymuyoruz. Türkiye'de küçük işletme sahibinin çoğu or
 
 Üç yer daha var ve bunlar tamamen bizim eklememiz: mahallendeki esnaf, aile büyüklerinin tanıdıkları, üniversite ve askerlik grupları. Türkiye'de iş çoğu zaman bu üç yerden çıkıyor.
 
-Bir saatte bitiyor. Uzatma, tereddüt ettiğin ismi yaz ve geç.
+Kırk beş dakikada bitiyor. Uzatma, tereddüt ettiğin ismi yaz ve geç.
 
 ### İki ayrı liste
 
 Çıkardığın isimleri ikiye ayırıyorsun. Bu ayrımı biz koyduk, sebebi şu: iki gruba giden mesaj bambaşka ve karıştırırsan ikisi de çalışmıyor. Ayrımı bozarsan gerisi de bozuluyor.
 
-**A listesi: senin nişinde işletmesi olanlar.** Kuzenin klima servisi işletiyorsa, eski patronun oto galericiyse, komşun kuaförse buraya giriyor. Bunlar aday. Onlara referans sormuyorsun, doğrudan işi anlatıyorsun. Kayıt yerine giriyorlar (CRM henüz açılmadıysa İş Beyni'nin sekizinci bölümüne ad ad; üçüncü blokta `adaylar.csv` çıkınca oraya "sıcak" işaretiyle eklenirler; CRM açıldığı gün oraya taşınırlar), kayıt türleri "aday", aşamaları "yeni", sıcak mı soğuk mu satırları "sıcak".
+**A listesi: senin nişinde işletmesi olanlar.** Kuzenin klima servisi işletiyorsa, eski patronun oto galericiyse, komşun kuaförse buraya giriyor. Bunlar aday. Onlara referans sormuyorsun, doğrudan işi anlatıyorsun. Kayıt yerine giriyorlar (aday listesi çıkana kadar İş Beyni'nin sekizinci bölümüne ad ad; üçüncü blokta `adaylar.csv` çıkınca oraya "sıcak" işaretiyle eklenirler; CRM açıldıktan sonra cevap verenler ve randevu alanlar CRM'e geçer), kayıt türleri "aday", aşamaları "yeni", sıcak mı soğuk mu satırları "sıcak".
 
 **B listesi: geri kalan herkes.** Onlara satmıyorsun. Tek bir şey soruyorsun: tanıdığın var mı.
 
@@ -96,27 +98,27 @@ Bir de şunu bil: çok hayır geleceksin. Bu normal ve senin metninle ilgili de�
 
 ## 6. Ne söyler
 
-Açılışta: "Bu akşam seni tanıyan herkesin listesini çıkarıyoruz. Mesajı bugün yazmıyoruz; kesin fiyat konunca, bir sonraki bloğun akşamı gidecek. Bir saat, rehberini baştan sona geçeceksin."
+Açılışta: "Bu akşam seni tanıyan herkesin listesini çıkarıyoruz. Mesajı bugün yazmıyoruz; kesin fiyat konunca, bir sonraki bloğun akşamı gidecek. Kırk beş dakika, rehberini baştan sona geçeceksin; rehberini dışa aktarabiliyorsan dosyayı buraya ekle, isimleri ben dökerim."
 Listeyi elemek isterse: "Elemeyi sen yapmıyorsun. Rehberinde kim varsa listede. 'O ilgilenmez' dediğin kişi, ilgilenen birini tanıyor olabilir."
 Utanırsa: "Kimse seni konuşmuyor. Mesajını okuyup gününe dönüyorlar. Sen üç gün düşünüyorsun, onlar üç dakika bile düşünmüyor."
 Hayır cevaplarından yılarsa: "Çok hayır gelecek, bu normal. Kaç mesaj attığın senin elinde, kaç cevap geldiği değil. Günü mesaj sayısıyla değerlendiriyoruz."
 Tanıdığına indirim yapmak isterse: "Aynı fiyat. İndirim yaptığın anda iş arkadaşlığa dönüyor, arkadaşlıkta giriş izni de istenmiyor tarih de verilmiyor. O müşteriden ne kanıt çıkıyor ne para."
 Grup mesajı atmak isterse: "Gruba atmıyorsun. Gruptaki isimleri alıp tek tek yazıyorsun. Gruba atılan mesaj kimseye atılmamış sayılıyor."
-Liste küçük çıkarsa: "Rehberini gerçekten baştan sona geçtin mi? WhatsApp sohbetlerine, Instagram'a ve gönderilenler kutusuna da bak. Bir saat dolmadan bitmiyor."
+Liste küçük çıkarsa: "Rehberini gerçekten baştan sona geçtin mi? WhatsApp sohbetlerine, Instagram'a ve gönderilenler kutusuna da bak. Kırk beş dakika dolmadan bitmiyor."
 Bitince: "Liste hazır. Mesajlar bir sonraki bloğun akşamı gidiyor: nişindeki tanıdıklarına biri, geri kalan herkese biri. Bugünlük bu kadar; yarın kesin fiyat ve aday listesi. Yarın görüşürüz."
 
 ## 7. Ne yazar
 
 İş Beyni'ne: A listesindeki kişi sayısı, B listesindeki kişi sayısı, listenin çıkarıldığı tarih, hangi yerlerin tarandığı.
-Kayıt yerine (CRM açıldıysa CRM; açılmadıysa İş Beyni'nin sekizinci bölümü, üçüncü bloktan sonra `adaylar.csv`): A listesindeki isimler, aşamaları "yeni", "sıcak" işaretiyle (`adaylar.csv`'ye aday aracıyla, kaynak "tanıdık" ve bağlayan adıyla; aday-listesi-dosyasi).
-B listesi: CRM açıldıysa CRM'deki "B listesi" listesine; açılmadıysa klasörde `baglantilar.csv` dosyasına, üç kademeye sıralanmış halde. Aday havuzuna girmiyorlar.
+Kayıt yerine (aday listesi çıkana kadar İş Beyni'nin sekizinci bölümü, üçüncü bloktan sonra `adaylar.csv`; CRM açılsa da A listesi orada kalır, cevap veren CRM'e geçer): A listesindeki isimler, aşamaları "yeni", "sıcak" işaretiyle (`adaylar.csv`'ye aday aracıyla, kaynak "tanıdık" ve bağlayan adıyla; aday-listesi-dosyasi).
+B listesi: klasörde `baglantilar.csv` dosyasına, üç kademeye sıralanmış halde; CRM açıldıktan sonra da orada durur, birini bağlayan kişi "bağlantı" türüyle CRM'e geçer. Aday havuzuna girmiyorlar.
 Bir sonraki modüllere: A ve B listeleri tanidiga-mesaj-yaz'a, "sıcak" işareti aday-listesi-cikar'a (o kayıtlar soğuk listeden çıkarılıyor).
 
 ## 8. Yedek yol
 
 - Rehberin küçükse: Instagram ve e-posta kutusu daha çok isim veriyor. Yine de az çıkarsa liste az kalıyor ve gün durmuyor; üçüncü bloğun soğuk listesi zaten geliyor.
 - Kimseye yazmak istemiyorsan: FounderOS seni zorlamıyor ama bunu İş Beyni'ne yazıyor. Saha açıldıktan sonra soğuk aramada zorlanırsan haftanın kararında bu satır tekrar açılıyor.
-- CRM açıksa ve toplu giriş yapamazsan: A listesini elle girersin, beş on kişi. CRM açılmadıysa bu satır işlemez, liste zaten dosyada.
+- A listesi toplu eklenemezse: beş on kişi, tek tek eklenir; liste zaten dosyada.
 
 ## 9. Sıradaki adım ve işaretler
 

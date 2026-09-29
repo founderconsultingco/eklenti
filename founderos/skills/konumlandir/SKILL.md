@@ -6,6 +6,8 @@ description: "Birinci gün, ideal müşteriden hemen sonra, tekliften önce. İ�
 
 # konumlandir
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Birinci günün modülü, ideal müşteriden hemen sonra, tekliften önce. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül tek bir soruyu cevaplar: işletme sahibi neden senden alsın.
@@ -19,7 +21,7 @@ Teklif "ne satıyorum" sorusunun cevabı, konumlandırma "neden senden alsın" s
 Pazarlamadaki karşılığı: konumlandırma, fark cümlesi.
 
 ## 2. Ne zaman çalışır
-- Birinci gün, ideal müşteri sayfası onaylandıktan hemen sonra. On beş dakika.
+- Birinci gün, ikinci oturuş: ideal müşteri sayfasının özetinden hemen sonra. On beş dakika.
 - Teklif on görüşmede yeniden yazılırsa bu cümleye de bakılır; aynı işaret beş görüşmede çıkmadıkça değişmez.
 
 ## 3. Ne okur
@@ -32,9 +34,9 @@ Niş kartından: işletmecinin sözlüğü ve iç sesi, en güçlü üç itiraz.
 
 Tek soru, sonunda: "Bu konumlandırmayı onaylıyor musun?"
 
-Öncesinde kısa bir özet yapılır ve sebep söylenir. Özet üç parça: pazar (neden bu pazar, kime satılmaz), ideal müşteri (günü, derdi, kim karar veriyor), ne satıyoruz (üç akış, gün sayısı, işletmenin tek yaptığı). Sonra: "Sırada konumlandırma var, tekliften önce" ve sebebi. Sonra "Konumlandırmaya geçeyim mi?" Öğrenci "evet" demeden dört boşluk anlatılmaz.
+Öncesinde kısa bir özet yapılır ve sebep söylenir. Özet üç parça: pazar (neden bu pazar, kime satılmaz), ideal müşteri (günü, derdi, kim karar veriyor), ne satıyoruz (üç akış, gün sayısı, işletmenin tek yaptığı). Sonra: "Sırada konumlandırma var, tekliften önce" ve sebebi; aynı mesajda dört boşluğa geçilir. Araya "geçeyim mi" girmez: onay noktası konumlandırmanın kendisidir, ona geçiş değil.
 
-Özette gereksiz rakam ve mevzuat yığılmaz; maaş ortalaması, yönetmelik ayrıntısı İş Beyni'nde durur. Asıl sızıntı teklifin başlığıyla aynıdır; araştırmadan çıkan başka bir sızıntı "ek sızıntı" diye ayrı söylenir. Başka işletmeleri kötüleyen ifade kullanılmaz. Özette ve akışta sistemin kendisinden, dosyalardan ya da yapılan kayıttan bahseden cümle kurulmaz.
+Özette gereksiz rakam yığılmaz, resmi kural hiç anlatılmaz; maaş ortalaması İş Beyni'nde, sektörün resmi sınırları kartta durur ve öğrenciye okunmaz. Asıl sızıntı teklifin başlığıyla aynıdır; araştırmadan çıkan başka bir sızıntı "ek sızıntı" diye ayrı söylenir. Başka işletmeleri kötüleyen ifade kullanılmaz. Özette ve akışta sistemin kendisinden, dosyalardan ya da yapılan kayıttan bahseden cümle kurulmaz.
 
 ## 5. Ne yapar
 
@@ -60,9 +62,9 @@ Kısa hali (telefonda):
 
 İtiraz cevabı ("zaten yapay zekâ teklifi aldık" diyene):
 
-"Ne kurdular, bot mu? Bot tek başına randevu getirmiyor. Telefon açılmıyorsa ve dönen kimse yoksa o bot sadece duruyor."
+"Ne kurdular, bot mu? Bot tek başına randevu getirmiyor; telefon açılmıyorsa ve dönen kimse yoksa sadece duruyor. Ben telefonu açan tarafı, geri dönüşü ve takibi tek sistem olarak kuruyorum; ay sonunda kaç randevu geldiği belli oluyor."
 
-Köşeli parantezler nişin kelimesiyle doldurulur: klinikte hasta, işlem, danışman, dolgu fiyatı; oto detailing'de araç, kaplama; tadilatta keşif, teklif. Teklif nişinde "randevu" yerine "teklif" ya da "keşif" yazılır. Sağlık nişlerinde üçüncü akış yalnız açık rızası olan kişiye döner; cümle "fiyat sorup kaybolana" yerine "size yazıp cevap alamayana" diye kurulur.
+Köşeli parantezler nişin kelimesiyle doldurulur: klinikte hasta, işlem, danışman, dolgu fiyatı; oto detailing'de araç, kaplama; tadilatta keşif, teklif. Teklif nişinde "randevu" yerine "teklif" ya da "keşif" yazılır. Sağlık nişlerinde üçüncü akış yalnız dönülmesine ayrıca izin vermiş kişiye döner; cümle "fiyat sorup kaybolana" yerine "size yazıp cevap alamayana" diye kurulur.
 
 ### Dil kuralları
 
@@ -79,7 +81,7 @@ Cümle bitince: "Konumlandırma tamam. Sırada teklif var, onu bu cümlenin üst
 
 ## 7. Ne yazar
 
-İş Beyni'nin dördüncü bölümüne: "Konumlandırma cümlesi (uzun, kısa, itiraz cevabı)" satırı, tarihiyle, üç parçası birden. On dördüncü bölüme konum satırı.
+İş Beyni'nin dördüncü bölümüne: "Konumlandırma cümlesi (uzun, kısa, itiraz cevabı)" satırı, tarihiyle, üç parçası birden. Konum İş Beyni'ne değil durum kaydına yazılır.
 
 ## 8. Yedek yol
 

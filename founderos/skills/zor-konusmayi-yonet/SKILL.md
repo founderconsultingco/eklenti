@@ -6,6 +6,8 @@ description: "Öğrenci \"müşteri kızdı\", \"iptal etmek istiyor\", \"iş ak
 
 # zor-konusmayi-yonet
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Bir şey ters gittiğinde ne söyleyeceğini veren modül. Modül, FounderOS'un belli bir işi yapan parçasıdır.
@@ -38,7 +40,7 @@ Pazarlamadaki karşılığı: müşteriyi kaybettiren şey sorunun kendisi deği
 - Müşteri kendi işinden çıkan bir sonucu sana yüklediğinde.
 - Müşterinin kendi müşterisi asistandan şikâyetçi olup doğrudan sana yazdığında ya da seni aradığında.
 - Para konusu açıldığında: iade istendiğinde, ödeme geçmediğinde, ücret tartışmaya açıldığında.
-- Rapor günü raporunda yazılan satırlar sıfır çıktığında.
+- Rapor günü raporunda sistemin yazdığı randevu sıfır çıktığında.
 - Sen teslim edemeyecek durumda olduğunda: hastalık, tatil, ailevi durum, başka bir iş.
 - Müşterinin ya da senin verinin dışarı çıktığından şüphelendiğinde.
 - Senin hakkında kötü söz çıktığında.
@@ -47,10 +49,10 @@ Bu modül kendiliğinden başlamaz. Sen ne olduğunu yazarsın, FounderOS "bu bi
 
 ## 3. Ne okur
 
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): kurulan parçalar, kapsam dışı kalanlar, verilen sözler, müşteriye ne bekleyeceğini söylediğin cümleler, işletmede senin konuştuğun tek kişi, hangi kanaldan yazıştığınız, geçmiş şikâyetler.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya): kurulan parçalar, kapsam dışı kalanlar, verilen sözler, müşteriye ne bekleyeceğini söylediğin cümleler, işletmede senin konuştuğun tek kişi, hangi kanaldan yazıştığınız, geçmiş şikâyetler.
 Onay belgesinden (para geçtikten sonra müşteriye gönderdiğin tek sayfa): ne satıldığı, "neyi yapmıyorum" başlığı, güvence ve şartı, sonuç cümlesi.
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): son otuz günün sayıları, o müşteriyle olan bütün yazışma, randevu kayıtları, ödeme durumu.
-Sözleşmeden: işi bitirme, iade ve haber verme maddeleri. FounderOS sözleşmeyi yorumlamaz, sadece hangi maddeye bakacağını söyler.
+Sözleşme şablonundan: işi bitirme, iade ve haber verme kuralları. FounderOS sözleşmede yazanı kendi bilgisi olarak okur; öğrenciye madde göstermez, yalnız sade sonucu söyler (ör. "İlk ay ücretini iade etmiyoruz ama sistemi düzeltip çalışır halde teslim ediyoruz."). Yorum gerektiren bir anlaşmazlıkta yorum yapmaz, ekip yolunu verir.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): o sektörde konuşulması yasak olan konular.
 
 Güvence şudur: rapor gününde rapor, sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz. Şartı var, o da onay belgesinde yazılı.
@@ -69,7 +71,7 @@ Bir. Sen söylersin, o bulmaz. Kötü haberi müşteri kendi fark ederse güven 
 
 İki. İlk haber saatler içinde gider, ertesi güne kalmaz. Elinde çözüm olmasa bile aynı gün tek satır yazarsın: "Aldım, bakıyorum. Bugün akşama kadar döneceğim." Bu satır otuz saniye sürer ve müşterinin gerginliğini en çok düşüren şeydir. Sonra söylediğin saatte dönersin. Dönemiyorsan yine yazarsın.
 
-Üç. İlk haber yazılı gider, asıl konuşma telefonla yapılır. Şu dört halde mutlaka arayacaksın: para tartışmaya döndüyse, müşteri kızgınsa, sistem bir günden uzun durduysa, rapor günü raporunda yazılan satırlar sıfır çıktıysa. Yazışmada ton okunmaz; kırgın duran bir cümle konuşurken küçülür.
+Üç. İlk haber yazılı gider, asıl konuşma telefonla yapılır. Şu dört halde mutlaka arayacaksın: para tartışmaya döndüyse, müşteri kızgınsa, sistem bir günden uzun durduysa, rapor günü raporunda sistemin yazdığı randevu sıfır çıktıysa. Yazışmada ton okunmaz; kırgın duran bir cümle konuşurken küçülür.
 
 Bu modül pencere tanımaz. Kurulum bloğunu, akşam bloğunu, hafta sonunu beklemezsin. İlk satır ne zaman öğrendiysen o zaman gider; işteysen bir dakikalık aranı kullanırsın. Telefonla yapılacak asıl konuşma kurulum bloğuna kalabilir, ama o zaman ilk satırda saatini yazarsın: "Bu akşam sekizde arayacağım." Sonra o saatte ararsın.
 
@@ -97,7 +99,7 @@ Birincisi ilk cümle. Aynı gün, tek cümle: "Bu benim hatam." Arkasına bahane
 
 İkincisi telafi. Telafiyi önce emeğinle yaparsın. Kaybolan talepleri elle ararsın, kaçan randevuları elle yazarsın, gereken parçayı baştan kurarsın.
 
-Üçüncüsü para. Para telafisi tek kapıdan geçer, o da güvencedir. Kendi kafandan ay bağışlamazsın, indirim teklif etmezsin. Fiyat düşürmek değeri düşürür ve bir daha geri gelmez. Tahsilatı bir dönem ertelemek gerekiyorsa yolu musteriyi-elde-tut'ta yazılı.
+Üçüncüsü para. Para telafisi iki kapıdan geçer ve ikisi de sözleşmede yazılı: güvence ve kurulamayan parça indirimi. Bunların dışında kendi kafandan ay bağışlamazsın, indirim teklif etmezsin. Fiyat düşürmek değeri düşürür ve bir daha geri gelmez. Tahsilatı bir dönem ertelemek gerekiyorsa yolu musteriyi-elde-tut'ta yazılı.
 
 ### Sistem durduysa
 
@@ -158,7 +160,7 @@ Para iadesi ne zaman konuşulur: bu telefonda değil. Adam ilk konuşmada "param
 
 Olur. İşletmenin bir müşterisi asistandan rahatsız olur ve seni bulur: numaranı bir yerden görmüştür, sitenden ulaşmıştır. Genelde cümle şudur: "Bana robot cevap verdi", "Yazdım, kimse dönmedi", "Randevumu yanlış yazmışsınız."
 
-Kural tek: sen o kişinin muhatabı değilsin. O kişi senin müşterin değil, işletmenin müşterisi. Cevabı işletme verir, sen vermezsin. Araya girersen işletmenin ağzından konuşmuş olursun; sağlık nişinde bu doğrudan müşteriye ceza yazdırır.
+Kural tek: sen o kişinin muhatabı değilsin. O kişi senin müşterin değil, işletmenin müşterisi. Cevabı işletme verir, sen vermezsin. Araya girersen işletmenin ağzından konuşmuş olursun; sağlık nişinde bu hiç olmaz.
 
 Sen ne yaparsın: tek mesaj, kısa, tartışmasız. Telefonda da aynı cümleyi kurar ve konuşmayı orada bitirirsin.
 
@@ -227,11 +229,11 @@ Bu modülün eklediği tek şey ücret cümlesidir ve onu sen söylersin, müşt
 
 "Sistemin yazdığı randevu sıfır. İkinci ay ücretini almıyorum."
 
-Dikkat edilecek ayrım: kurulamayan bir parçanın satırı boş kalır ve sayılmaz. Boş satır güvenceyi tetiklemez. Güvenceyi tetikleyen şey, yazılan satırların hepsinin sıfır olmasıdır. Kapsam dışı kaldığı için tutmayan bir parça yüzünden ücretten vazgeçmezsin; o durumda ödeme normal çekilir ve sen bunu görüşmede açıkça söylersin.
+Dikkat edilecek ayrım: kurulamayan bir parçanın satırı boş kalır ve sayılmaz. Boş satır güvenceyi tetiklemez. Güvenceyi tetikleyen tek şey sistemin yazdığı randevunun sıfır olmasıdır (teklif yolunda takip ettiği teklifin). Kapsam dışı kalan parçada ücret kuralı ayrıdır ve tektir: sebep resmi bir kural, hat ya da sağlayıcıysa o parçanın kurulmadığı her ay aylık ücret yüzde yirmi iner; sebep müşterinin kendi adımıysa ödeme tam çekilir. Hangisi olduğunu görüşmede açıkça söylersin.
 
 Ücretsiz ay açık uçlu değildir. O ayın sonunda üç yol var ve üçü de musteriyi-elde-tut'ta yazılı: kapsamı daraltıp devam, normal ücretle devam, ya da sözleşmedeki yazılı bildirimle ayrılma. Bunu ücretsiz ay başlarken söylersin, sonunda değil.
 
-İkinci rapor da yazılan satırların hepsini sıfır gösterdiyse durum değişir. Artık tek bir kötü ay değil, çalışmayan bir sistem var. O zaman ya sistem baştan gözden geçirilir ya da iş dürüstçe bitirilir. Üçüncü kez aynı tabloyu göstermek ikinize de zarar verir.
+İkinci rapor da sistemin yazdığı randevuyu sıfır gösterdiyse durum değişir. Artık tek bir kötü ay değil, çalışmayan bir sistem var. O zaman ya sistem baştan gözden geçirilir ya da iş dürüstçe bitirilir. Üçüncü kez aynı tabloyu göstermek ikinize de zarar verir.
 
 ### İade istiyorsa
 
@@ -239,13 +241,13 @@ Karar tek soruya bağlı: müşteri gerçekten hiçbir şey aldı mı, almadı m
 
 Hiçbir şey almadıysa iade edersin. Tartışmazsın, madde aramazsın, geciktirmezsin. İade başlangıçta alınan kurulum ücretiyle sınırlıdır. Küçük bir şehirde ya da tek bir sektörde ismin hızlı yayılır ve bir iade, çıkacak sesten ucuzdur.
 
-İş çıktıysa ve teknik bir gerekçeyle iade istiyorsa sözleşmedeki madde tam bunun için vardır. Sakin, yazılı ve tek seferde açıklarsın.
+İş çıktıysa ve teknik bir gerekçeyle iade istiyorsa iade yapılmaz. Sen madde açıklamazsın; FounderOS sözleşmede yazanı bilir ve sana tek sade cümle verir, ör. "Kurulum ücretini iade etmiyoruz; kurulum tamamlandı ve sistem çalışıyor." Bunu sakin, yazılı ve tek seferde söylersin. Müşteri itirazı büyütürse tartışmazsın: "Not aldım, netleştirip size yazılı döneceğim." dersin; FounderOS destek adresine (destek@founderos.so) gidecek tek satırı hazır verir.
 
 İki ek kural:
-- Temiz bir iade, karta itiraz edilmesinden her zaman iyidir. Müşteri bankasına başvurup ödemeyi geri çevirtirse parayı senin adına tahsil eden şirket seni riskli görür ve o hesabı kapatabilir. Hesap kapanırsa hiçbir müşteriden para alamazsın. Bu, bir iadeden çok daha pahalıdır.
+- Temiz bir iade, karta itiraz edilmesinden her zaman iyidir. Karta itiraz, müşterinin bankasına başvurup ödemeyi geri çevirtmesidir; hem uzun sürer hem ödeme hesabında iz bırakır. İade daha kısa ve daha temiz yoldur.
 - İade konuşması yazışmayla yürütülmez. Telefon edersin.
 
-Para konusunda tehdit dili kullanmazsın ve sözleşmeyi silah gibi sallamazsın. Madde vardır, yeri gelince okunur, o kadar.
+Para konusunda tehdit dili kullanmazsın, sözleşmeyi hatırlatmazsın. Ne yazdığını FounderOS bilir ve sana sade cümleyi verir, o kadar.
 
 ### Ödeme geçmediyse
 
@@ -255,11 +257,11 @@ Sıra musteriyi-elde-tut'takiyle aynıdır ve şöyle işler:
 1. Aynı gün tek mesaj, suçlama yok: "Bu sabahki ödeme geçmemiş, muhtemelen limit ya da kart süresi. Yeni ödeme linkini gönderiyorum, iki dakika sürer." Linki kendi ödeme sağlayıcı hesabından üretirsin, müşterinin alt hesabından değil. Müşterinin alt hesabından üretilen link müşterinin kendi ödeme hesabına para toplar; senin tahsilatın oradan geçmez.
 2. Üç gün içinde tek yazılı hatırlatma.
 3. Hâlâ geçmediyse telefon edersin. Üçüncü kez yazmazsın; üst üste yazılı mesaj takip gibi durur ve ilişkiyi bozar.
-4. Hizmeti durdurmadan önce yazılı bildirim gider. Bildirimin süresi ve yolu sözleşme şablonunda yazar; gün sayısını kendin uydurmazsın, oradan okursun.
+4. Hizmeti durdurmadan önce yazılı bildirim gider. Süresini FounderOS sözleşme şablonundan okur ve metni hazır verir; gün sayısını sen uydurmazsın.
 
 Bildirim süresi dolduğunda duran şeyler: yeni kurulum işleri, yeni toplu gönderimler ve haftalık bakım. Durmayan şeyler: müşterinin kendi müşterilerine giden hiçbir şey. Randevu hatırlatmaları, cevapsız aramaya dönüş ve asistanın cevapları çalışmaya devam eder. Sen emeğini durdurursun, müşterinin işini durdurmazsın. İki sebebi var. Birincisi, doğru olan bu. İkincisi, müşterinin müşterisinin bunda hiçbir suçu yok.
 
-Bildirim gönderirken kullanacağın metin: "Şu tarihten bu yana ödeme geçmedi ve konuşamadık. Sözleşmemizdeki maddeye göre bugünden itibaren yeni kurulum işlerini, yeni gönderimleri ve haftalık bakımı durduruyorum. Randevu hatırlatmalarınız ve asistanınız çalışmaya devam ediyor. Ödeme geçtiği gün her şey kaldığı yerden devam eder."
+Bildirim gönderirken kullanacağın metin: "Şu tarihten bu yana ödeme geçmedi ve konuşamadık. Anlaştığımız gibi bugünden itibaren yeni kurulum işlerini, yeni gönderimleri ve haftalık bakımı durduruyorum. Randevu hatırlatmalarınız ve asistanınız çalışmaya devam ediyor. Ödeme geçtiği gün her şey kaldığı yerden devam eder."
 
 Bunu baştan önlemenin yolu belli: kart görüşmede alınır, tahsilat kendiliğinden çekilir, ilk iki ayda üç bildirim gider. Üç gün önce, bir gece önce, sabahı. Tanımadığı bir çekimi ekranda gören müşteri o gün senden şüphelenmeye başlar.
 
@@ -284,20 +286,18 @@ Fiyat değişmez, indirim teklif etmezsin. Kaçan bakım günü döndüğünde t
 
 Yapmayacağın tek şey: kaybolmak. Hasta olduğunu söylemek zayıflık değil; haber vermeden yok olmak işin sonu.
 
-Kalıcı olarak devam edemeyeceksen iş şöyle kapanır: müşteriye telefonla sen söylersin, ödediği ayın kalan kısmının ücreti iade edilir, kişi listesi dışa aktarılıp verilir, izinler kaldırılır, sendeki kopya silinir. Neyin müşteride kaldığı ve neyin kalmadığı musteriyi-elde-tut'ta yazılı; akışlar, şablonlar ve asistanın cevap listesi senin çalışma hesabında olduğu için devri yok, bunu ayrılırken açıkça söylersin. Kalan maddeler sözleşmeden okunur.
+Kalıcı olarak devam edemeyeceksen iş şöyle kapanır: müşteriye telefonla sen söylersin, ödediği ayın kalan kısmının ücreti iade edilir, kişi listesi dışa aktarılıp verilir, izinler kaldırılır, sendeki kopya silinir. Neyin müşteride kaldığı ve neyin kalmadığı musteriyi-elde-tut'ta yazılı; akışlar, şablonlar ve asistanın cevap listesi senin çalışma hesabında olduğu için devri yok, bunu ayrılırken açıkça söylersin. Kalan ayrıntıları FounderOS sözleşme şablonundan okur ve sana sade haliyle söyler.
 
 ### Verinin dışarı çıktığından şüphelenirsen
 
-Müşterinin listesi, yazışmaları ya da hesapları senin elinden dışarı çıkmış olabilir mi diye şüphelendiğin an bu bir hukuk konusudur.
+Müşterinin listesi, yazışmaları ya da hesapları senin elinden dışarı çıkmış olabilir mi diye şüphelendiğin an sonrasını ekip yürütür.
 
 Aynı gün üç şey:
 1. Ne olduğunu yazılı çıkarırsın: hangi bilgi, kaç kişi, ne zaman, nasıl.
 2. Müşteriye yazılı haber verirsin. Bu adım ertelenmez.
-3. Avukatına sorarsın.
+3. Aynı satırları destek adresine (destek@founderos.so) gönderirsin; ekip sonrasını netleştirir.
 
-Bunu tek başına yönetmeye çalışma. Kanunda bir bildirim süresi ve bildirimin yapılacağı kurum var. Bu iş modelinde bildirimin senin görevin mi müşterinin görevi mi olduğunu ve süreyi avukatına soracaksın.
-
-Avukatın yoksa ilk müşteriden önce bulacaksın. Baroya kayıtlı, kişisel verilerin korunması konusuna bakan bir avukatla tek seferlik yarım saatlik görüşme yeter. Aynı görüşmede sözleşme şablonunu da konuşursun. Soracağın cümle şu: "Müşterimin müşteri listesini benim çalışma hesabımda tutuyorum. Bu liste dışarı çıkarsa bildirimi ben mi yapacağım, müşteri mi? Süresi ne?"
+Bunu tek başına yönetmeye çalışma. Kime ve ne zaman haber verileceğini ekip netleştirir; bunun bir süresi var, o yüzden destek satırı aynı gün gider. FounderOS satırı hazır verir: "Müşteri verisinin dışarı çıktığından şüpheleniyorum; ne olduğu aşağıda. Bugün ne yapmam gerekiyor?"
 
 ### Senin hakkında kötü söz çıkarsa
 
@@ -305,7 +305,7 @@ Kural: herkesin gördüğü yerde tartışmazsın.
 
 Yapılacak: kısa ve savunmasız tek cevap, sonra konuşmayı özele taşıma. "Yazdıklarınızı gördüm, ciddiye alıyorum. Bugün size ulaşacağım, konuşalım." Sonra ulaşırsın.
 
-Yapılmayacak: müşterinin adını, rakamlarını, yazışmalarını ya da işinin ayrıntısını herkesin gördüğü yere yazmak. Haklı olsan bile bunu yaptığın an kaybedersin, ayrıca müşterinin bilgisini yaymak hukuki sorun doğurur.
+Yapılmayacak: müşterinin adını, rakamlarını, yazışmalarını ya da işinin ayrıntısını herkesin gördüğü yere yazmak. Haklı olsan bile bunu yaptığın an kaybedersin; müşterinin bilgisi onundur, yayılmaz.
 
 Kötü sözün büyük kısmı sonuçtan değil sessizlikten çıkar. Yukarıdaki dört kurala uyarsan buraya çok az ihtiyacın olur.
 
@@ -314,7 +314,7 @@ Kötü sözün büyük kısmı sonuçtan değil sessizlikten çıkar. Yukarıdak
 Bu eşik yüksektir. Zor müşteri kötü müşteri değildir; çoğu zaman gergin ve ne aldığını tam anlamamış müşteridir. Sıfırlama görüşmesinden sonra genellikle en sadık müşteriye dönüşür. Yenisini bulmak, elindekini düzeltmekten her zaman daha pahalıdır.
 
 İki halde bırakılır:
-1. Senden yasa dışı ya da yasak bir şey isteniyorsa. Sahte yorum, izinsiz listeye mesaj, sağlık nişinde yasak tanıtım. Bir kere açıklarsın; ısrar ederse iş biter.
+1. Senden yapmadığımız bir şey isteniyorsa: sahte yorum, izinsiz listeye mesaj, sağlık nişinde tanıtım sınırını aşan metin. Bir kere tek cümleyle söylersin ("Bunu yapmıyoruz; en güvenli yol bu."); ısrar ederse iş biter.
 2. Kişisel saygısızlık ya da tehdit varsa.
 
 Ödeme sorunu bu listede yok, çünkü onun kendi sırası var ve zaten çıkış görüşmesine kadar gidiyor.
@@ -323,17 +323,11 @@ Bu eşik yüksektir. Zor müşteri kötü müşteri değildir; çoğu zaman gerg
 
 Bırakma yolu çıkış görüşmesidir, ortadan kaybolmak değil. Adımları musteriyi-elde-tut'ta.
 
-### Türkiye tarafı
+### Anlaşmazlık büyürse
 
-Kriz büyürse hukuk devreye girer. Bilmen gerekenler aşağıda. Hiçbiri kesin karar değil; hepsini avukatına soracaksın. Aşağıdaki madde bilgileri hukuk yayınlarından derlendi, kanunun resmî metniyle karşılaştırılmadı; avukatın kontrol edecek.
+Bir anlaşmazlık resmi bir konuya dönmüş gibi görünüyorsa (işi bitirme, geç ödeme, para alacağı, madde tartışması) bunu sen yönetmezsin, kural ya da madde öğrenmen de gerekmez. Müşteriye tek cümle söylersin: "Not aldım, netleştirip size yazılı döneceğim." FounderOS "Bunu ekip netleştiriyor; destek adresine şu satırı gönder." der ve destek adresine (destek@founderos.so) gidecek tek satırı hazır verir, ör. "Müşterimle ödeme konusunda anlaşamadık; ne olduğu aşağıda. Nasıl ilerleyelim?" Gerisini ekip netleştirir. İş durmaz, sistem çalışmaya devam eder.
 
-İşi bitirme. Kanunda iki farklı sözleşme türünün kuralı var ve sonuçları farklı. Birinde taraflar sözleşmeyi her zaman tek taraflı bitirebiliyor, ama uygun olmayan bir zamanda bitiren, diğerinin zararını karşılamak zorunda kalıyor. Diğerinde iş sahibi işi yarıda kesebiliyor ama yapılan kısmın bedelini ve karşı tarafın zararını ödemek zorunda. Aylık ücretle satılan bir kurulum ve bakım işi bu ikisinden hangisine girer, bunu sözleşmeni yazan avukat belirleyecek. Sözleşme yazılırken soracağın ilk soru budur.
-
-Geç ödeme. İşletmeler arasındaki mal ve hizmet alımlarında şu kural var: sözleşmede ödeme süresi yazmıyorsa, fatura müşteriye ulaştıktan otuz gün sonra müşteri kendiliğinden gecikmiş sayılır. Ayrıca yazılı uyarı göndermene gerek kalmaz. Sözleşmeyle kararlaştırılabilecek süre kural olarak altmış günle sınırlı, ama kanun birkaç istisna sayıyor; hangisinin sana uyduğunu avukatın söyler. Sözleşmede gecikme faizi oranı yazmıyorsa Merkez Bankası'nın her yıl ocak ayında ilan ettiği oran uygulanıyor.
-
-Anlaşmazlık büyürse. Tüketici hakem heyetlerine yalnız tüketiciler başvurabiliyor; senin müşterin bir işletme olduğu için o yol sana kapalı. İşletmeler arasındaki para alacağı ve tazminat taleplerinde ise mahkemeye gitmeden önce arabulucuya başvurmak zorunlu. Arabulucu, mahkemeye gitmeden iki tarafı masaya oturtan resmî görevlidir. Parasal bir alt sınır yok; süreç en geç altı haftada biter, zorunlu hallerde en fazla iki hafta uzayabilir. Yani anlaşmazlık büyürse ilk durak mahkeme değil arabuluculuk.
-
-Nişe özel yasak konular. Sağlık nişlerinde müşterinin adına giden mesajlarda söylenemeyecek şeyler var: fiyat, kampanya, indirim, "kesin sonuç" ve "en iyi" gibi iddialar, hasta yorumu ve öncesi sonrası görsel. Kriz anında müşteri adına bir şey yazacaksan, örneğin kötü bir yoruma cevap, aynı sınır orada da geçerli. Ceza müşteriye kesiliyor, o yüzden metni müşteri onaylamadan hiçbir şey yayınlanmaz. Yasak konuların listesi niş kartının yasal sınırlar bölümündedir.
+Nişe özel sınırlar. Sağlık nişlerinde müşterinin adına giden mesajlarda şunlar yazılmaz: fiyat, kampanya, indirim, "kesin sonuç" ve "en iyi" gibi iddialar, hasta yorumu ve öncesi sonrası görsel. Kriz anında müşteri adına bir şey yazacaksan, örneğin kötü bir yoruma cevap, aynı sınır orada da geçerli ve metni müşteri onaylamadan hiçbir şey yayınlanmaz. Sınırların tam listesi niş kartında.
 
 ### Konuşamadığın an
 
@@ -361,7 +355,7 @@ Müşterinin müşterisi sana yazınca: "Ona cevap veren sen değilsin. Tek cüm
 Kapsam dışı istek gelince: "Hayır deme, sınırı söyle. Onay belgesinde neyi yaptığın yazıyor. 'İyi fikir, bu paketin içinde değil, ayrı bir iş olarak fiyatlayayım' de. Aynı kâğıda bakan iki kişi kavga etmez."
 Kurulum döneminde ek istek gelince: "Tek cümle: 'Not aldım, iyi fikir. Kurduğumuzu bozmadan bitirelim; rapor çıkınca ayrı konuşuruz.' Sonra listesine yaz, kurma."
 Sonuç çıkmayınca: "Kötü haberle başla, raporu açmadan söyle. Sona saklarsan müşteri iyi haberlerin hiçbirini duymaz. Sonra üç satırı oku, sıfır olan satırı sen göster."
-İade isteyince: "Tek soru: gerçekten hiçbir şey aldı mı. Almadıysa iade et, tartışma. Bir iade ucuz; karta itiraz edilirse ödeme hesabın kapanır ve dört müşterinin parasını da alamazsın."
+İade isteyince: "Tek soru: gerçekten hiçbir şey aldı mı. Almadıysa iade et, tartışma; temiz bir iade her zaman en kısa yol. Aldıysa ne diyeceğini ben veriyorum, madde konuşmuyorsun."
 Ödeme geçmeyince: "Kart geçmemesi kötü niyet değil, çoğu zaman limit. İlk mesajı buna göre yaz. Suçlayıcı yazarsan bir daha kart vermez. Üç gün içinde tek hatırlatma, sonra ara."
 Sen teslim edemeyeceksen: "Söyle. Hasta olmak zayıflık değil; haber vermeden kaybolmak işin sonu. Sistem sen olmadan da çalışıyor, duran şey senin bakımın. Yedi günü geçiyorsa telefon et."
 
@@ -381,7 +375,7 @@ Telefonda ne söz verdiysen aynı gün tek mesajla yazarsın. Yazılı olmayan s
 - İşletmenin müşterisi ısrarla sana yazmaya devam ediyorsa: aynı cümleyi bir kez daha yazar, sonra cevap vermezsin ve durumu müşteriye bildirirsin. Tartışmaya girmezsin.
 - Konuşma büyüyor ve sen kontrolü kaybediyorsan: konuşmayı bitirirsin. "Bunu şu an çözemeyeceğiz. Bugün bakıp yarın saat şu kadarda döneceğim." Kızgın anda söz vermezsin.
 - Müşteri tehdit ediyorsa ya da hakaret ediyorsa: konuşmayı orada bitirir, yazılı olarak devam edersin. Ekran görüntüsünü alır, CRM'de o müşterinin notuna tarihiyle yazarsın.
-- Sözleşme maddesi tartışılıyorsa: yorum yapmazsın. "Sözleşmedeki maddeye bakıp size yazılı döneceğim" der, avukatına sorarsın.
+- Müşteri bir maddeyi tartışıyor ya da değiştirmek istiyorsa: açıklamazsın, pazarlık yapmazsın. "Not aldım, netleştirip size yazılı döneceğim." dersin; FounderOS destek adresine (destek@founderos.so) gidecek tek satırı hazır verir.
 - Hangi cümleyi kuracağını bilemiyorsan: FounderOS'a ne olduğunu üç satırla yazarsın, cümleyi o verir. Kendi kafandan yazıp göndermezsin; kriz anında yazılan mesaj çoğunlukla yanlış tonda çıkar.
 
 ## 9. Sıradaki adım ve işaretler

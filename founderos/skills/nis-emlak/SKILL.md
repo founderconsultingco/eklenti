@@ -6,6 +6,8 @@ description: "Sadece emlak ofisi nisinin karti: rakamlar, itirazlar, yasal sinir
 
 # Emlak ofisi
 
+Bu kart senin başvurundur. "Yasal sınırlar" bölümü ve karttaki kanun, madde, ceza ayrıntısı öğrenciye okunmaz, anlatılmaz; sessizce uygulanır. Öğrenciye yalnız yapılacak işi söylersin.
+
 
 **Kapsam.** Yerel emlak ofisleri ve franchise şubeleri (Turyap, Remax, Century21, Coldwell Banker, Realty World, Altın Emlak, Dialog, Starkey, Epa Emlak gibi zincirlerin tek şubeleri dahil), 1-10 danışmanlı. Yönetmelikte "sorumlu emlak danışmanı" ve "emlak danışmanı" ayrımı var, ofis sahibi genelde sorumlu danışman (kacmazemlak.com, https://www.kacmazemlak.com/haber/detay/turkiye-nin-en-buyuk-10-emlak-zinciri--18.html). Kapsam dışı: inşaat firmalarının kendi proje satış ofisleri, büyük kurumsal gayrimenkul yatırım şirketleri. Google Haritalar'da hangi tam kategori adıyla (Emlakçı / Gayrimenkul acentesi) göründükleri doğrulanamadı, bilinmiyor, sahadan dolacak. İlk odak için en uygun büyüklük: birden fazla danışmanı ve aktif portföyü olan ofis; talebin bütçe ve bölgeye göre ayrılıp doğru danışmana yönlendirilmesi burada değer üretiyor. Satışa dönüş diğer nişlerden uzun sürer; yirmi birinci gün raporunda satış değil gösterim ve teklif sayılır.
 
@@ -53,7 +55,7 @@ Taşınmaz Ticareti Hakkında Yönetmelik: 14 Mayıs 2024 öncesi kayıtlı işl
 
 EİDS (Elektronik İlan Doğrulama Sistemi): kimlik ve yetki doğrulaması artık tüm elektronik ilanlarda, sosyal medya paylaşımları dahil, zorunlu. Sosyal medyada paylaşılan bilgi EİDS'deki doğrulanmış ilanla birebir örtüşmeli, uymayana 286.206 TL'ye kadar idari para cezası uygulanıyor (bursavar.com, https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza). Bu, danışmanların Instagram/Facebook'ta serbestçe ilan paylaşmasını fiilen sınırlıyor; sistemin pazarlama tarafında değil ama danışmanın kendi sosyal medya kullanımında dikkat gerektiren bir madde.
 
-İYS (İleti Yönetim Sistemi): gayrimenkul şirketleri İYS'ye kayıtlı olmak zorunda, izinsiz ticari ileti (SMS/arama/e-posta) gönderemez. 2026 cezaları kişi başı yaklaşık 14.300 TL'ye, toplu gönderimde 143.000 TL'ye, ret bildirimine uymamada 42.900 TL'ye kadar çıkıyor (gunespartners.com, https://www.gunespartners.com/makale/iys-nedir). Bu sistemi doğrudan ilgilendiriyor: bir emlak ofisi elindeki eski müşteri/portföy listesine soğuk SMS kampanyası atamaz, sadece İYS onayı olan numaralara mesaj gönderebilir. Cevapsız aramaya anında dönüş mesajı (Kademe 1 Temel Kapsam'ın parçası) muhtemelen "arayan kişiye karşılık verme" sayılıp bu kısıttan farklı değerlendirilir, ama bunun İYS mevzuatında net bir istisna maddesi olarak yazılı olup olmadığı doğrulanamadı; bilinmiyor, hukuki teyit sahadan/uzmandan alınmalı. "Duran havuzu" geri çağırma planı bu yüzden İYS onayı olmayan numaralarda çalışmaz, bu kritik bir sistem kısıtı. Not: bu sistemde SMS hiç kullanılmıyor, bütün yazılı iletişim WhatsApp'tan gidiyor; kısıt kanalın adından değil ticari ileti izninden geliyor.
+İYS (İleti Yönetim Sistemi): gayrimenkul şirketleri İYS'ye kayıtlı olmak zorunda, izinsiz ticari ileti (SMS/arama/e-posta) gönderemez. 2026 cezaları kişi başı yaklaşık 14.300 TL'ye, toplu gönderimde 143.000 TL'ye, ret bildirimine uymamada 42.900 TL'ye kadar çıkıyor (gunespartners.com, https://www.gunespartners.com/makale/iys-nedir). Bu sistemi doğrudan ilgilendiriyor: bir emlak ofisi elindeki eski müşteri/portföy listesine soğuk SMS kampanyası atamaz, sadece İYS onayı olan numaralara mesaj gönderebilir. Cevapsız aramaya anında dönüş mesajı (Kademe 1 Temel Kapsam'ın parçası) muhtemelen "arayan kişiye karşılık verme" sayılıp bu kısıttan farklı değerlendirilir, ama bunun İYS mevzuatında net bir istisna maddesi olarak yazılı olup olmadığı doğrulanamadı; bilinmiyor, teyit ekip tarafında yapılır. "Duran havuzu" geri çağırma planı bu yüzden İYS onayı olmayan numaralarda çalışmaz, bu kritik bir sistem kısıtı. Not: bu sistemde SMS hiç kullanılmıyor, bütün yazılı iletişim WhatsApp'tan gidiyor; kısıt kanalın adından değil ticari ileti izninden geliyor. Bu nişte işletmeye giden her metin kartın hazır cümleleriyle sınırlıdır; yeni bir iddia gerekiyorsa denetçi çıkarır ve ekip notu düşülür. Öğrenciye hukuk anlatılmaz.
 
 **Yoğun şehirler.** 2025 konut satış sayılarına göre İstanbul 280.262, Ankara 152.534, İzmir 96.998 satışla ilk üç sırada (aa.com.tr, https://www.aa.com.tr/tr/ekonomi/turkiyede-2025te-1-milyon-688-bin-910-konut-satildi/3804701).
 
@@ -63,27 +65,27 @@ En güçlü üç itiraz: mesajlara zaten kendim bakıyorum, bağlı olduğum zin
 
 "WhatsApp'tan zaten kendim bakıyorum, botuna iş yok." Günde 180-220 bildirim arasında mesaj kaybı matematiksel kaçınılmaz (emlakcrmx.com verisi); bot sadece cevapsız kalanı ilk dakikada yakalıyor, seninkini değiştirmiyor.
 
-"Fiyatı ben veririm, mülke göre değişir." Zaten asistan fiyat vermiyor, bilgi toplayıp randevuya çeviriyor; komisyon tavanı yasal olsa da (yüzde 2 artı KDV) kesin bedeli sen söylersin.
+"Fiyatı ben veririm, mülke göre değişir." Zaten asistan fiyat vermiyor, bilgi toplayıp randevuya çeviriyor; komisyonun tavanı belli olsa da kesin bedeli sen söylersin.
 
 "Ayda 2-3 iş kapatıyorum, bu kadar teknolojiye gerek yok." Tam da ayda 2 iş kapatan biri için kaçan tek müşteri, ayın yarısı demek.
 
 "Franchise'ım (Remax/Turyap) zaten bana CRM veriyor." CRM portföy yönetir, gelen mesaja/aramaya ilk dakikada dönüş yapmaz; ikisi farklı iş görür.
 
-"SMS atarım zaten, İYS'ye kayıtlıyım." İYS sadece onay verdiğin numaraya toplu mesaj izni verir; cevapsız arayan potansiyel müşteriye anlık dönüş ayrı bir şey, ikisini karıştırmayalım.
+"SMS atarım zaten, izinli listem var." Toplu mesaj sende kalsın, biz ona girmiyoruz; sistem sana zaten yazan ya da arayan alıcıya anında cevap veriyor.
 
 "Hafta sonu/akşam ben zaten telefondayım." Yer gösterimleri tam olarak o saatlerde (10.00-19.00), yani sahadayken telefon çalıyor ve cevapsız kalıyor.
 
-"Yetki belgesi ve regülasyon derdim yeter, yeni sisteme param yok." Bu sistem regülasyona girmiyor, sadece gelen talebe cevap veriyor ve randevu topluyor; yetki belgesi süreciyle ilgisi yok.
+"Yetki belgesi ve regülasyon derdim yeter, yeni sisteme param yok." Bu sistem belge işine hiç girmiyor, ilan da paylaşmıyor; sadece gelen talebe cevap veriyor ve randevu topluyor.
 
 **Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 1
+Açılış sürümü: 2
 
 Açılış sorusu: "İlan sitesinden yazıp aynı gün cevap alamayan alıcıyı ertesi gün siz mi arıyorsunuz, yoksa o mesaj bildirimlerin arasında mı kalıyor?"
 
 İşleyiş sorusu: "Yer gösterimindeyken, müşteriyle dairenin içindeyken ilan sitesinden ya da WhatsApp'tan yazan alıcı ne yapıyor, cevabı bekliyor mu, bir sonraki ilana mı geçiyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz yer gösterimindeyken WhatsApp'a, Instagram'a ya da sitenizden yazan alıcıya dakikalar içinde cevap veriyor, hangi ilanla ilgilendiğini, bütçesini, bölge tercihini ve ne zaman görmek istediğini alıp yer gösterimi randevusuna yazıyor ya da bilgileriyle size iletiyor; daha önce bakıp almayan ve mesaj izni olan eski alıcıya da yeni portföy girince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç ofisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz yer gösterimindeyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan alıcıya da dakikalar içinde dönüyor; hangi ilanla ilgilendiğini, bütçesini, bölge tercihini ve ne zaman görmek istediğini alıp yer gösterimi randevusuna yazıyor ya da bilgileriyle size iletiyor; daha önce bakıp almayan ve mesaj izni olan eski alıcıya da yeni portföy girince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç ofisle başlıyorum."
 
 Çalışan açarsa: "Danışmanlar yer gösterimindeyken ilan sitesinden ve WhatsApp'tan yazan alıcıya cevap verip yer gösterimi randevusuna yazan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 
@@ -93,9 +95,9 @@ Karşı taraf bunu söylerse:
 - "Bağlı olduğum zincir bana zaten sistem veriyor." Söyle: "Zincirin sistemi portföyü ve ilanı yönetiyor, ben ona dokunmuyorum. Danışman yer gösterimindeyken WhatsApp'tan yazan alıcıya ilk dakikada o sistem mi cevap veriyor, yoksa yine danışman akşam mı dönüyor?" Ne için: portföy yönetimiyle gelen mesaja anında dönüşü ayırmak; kartta ikisinin farklı iş gördüğü yazıyor, zincirin sistemini kötülemezsin. Sonra: "danışman dönüyor" derse görüşme iste; "sistem cevap veriyor" derse teşekkür et ve kapat; FounderOS uygunluk sütununa "zincir sistemi cevaplıyor" yazar.
 - "Ayda iki üç iş kapatıyorum, bu kadarına gerek yok." Söyle: "Tam da onun için arıyorum; ayda iki iş kapatıyorsanız kaçan tek alıcı ayın yarısı demek. Bu ay ilandan yazıp cevap gecikince kaybolan bir alıcı oldu mu, yoksa hepsi görüşmeye geldi mi?" Ne için: az işin her işi büyüttüğünü onun verdiği rakamla söylemek ve kaçan alıcıyı ona söyletmek; kartta "boş ay" korkusunun bu nişin gerçek derdi olduğu yazıyor, bunu adını koymadan sorarsın. Sonra: "oldu" derse saat iste; "hepsi geldi" derse teşekkür et ve kapat.
 - "Fiyatı ben veririm, mülke göre değişir." Söyle: "Vermiyor, haklısınız; komisyon tavanı belli olsa da kesin bedel mülke ve pazarlığa göre değişir. Sistem hangi ilana baktığını, bütçesini, bölgesini ve ne zaman görmek istediğini alıp yer gösterimi randevusuna yazıyor; fiyatı ve komisyonu siz konuşuyorsunuz, yetki belgesi ya da tapu sorusu gelince de size devrediyor. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını ve nerede durduğunu kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
-- "SMS atarım zaten, İYS'ye kayıtlıyım." Söyle: "İyi, izinsiz toplu mesaj işine ben de girmem. Ben toplu SMS'i değil, size zaten yazmış alıcıya cevabı soruyorum: ilandan yazan alıcıya dönüş dakikalar içinde mi gidiyor, yoksa akşam mı toplu bakılıyor?" Ne için: toplu ileti izniyle gelen mesaja cevabı ayırmak; kartın yasal sınırında izni olmayan numaraya toplu mesaj gönderilemediği yazıyor, sistem o tarafı vaat etmiyor. Sonra: "dakikalar içinde" derse teşekkür et ve kapat; "akşam" derse görüşme iste.
+- "SMS atarım zaten, izinli listem var." Söyle: "İyi, toplu mesaj sizde kalsın, ben ona girmiyorum. Ben size zaten yazmış alıcıya cevabı soruyorum: ilandan yazan alıcıya dönüş dakikalar içinde mi gidiyor, yoksa akşam mı toplu bakılıyor?" Ne için: toplu mesajı, işletmeye zaten yazan alıcıya verilen cevaptan ayırmak; sistem toplu mesaj vaat etmiyor, izni olmayan numaraya da mesaj göndermiyor. Sonra: "dakikalar içinde" derse teşekkür et ve kapat; "akşam" derse görüşme iste.
 - "Hafta sonu, akşam ben zaten telefondayım." Söyle: "Telefon yanınızda, ama yer gösterimleri de tam o saatlerde. Cumartesi bir dairede müşteriyle içerideyken yazan ikinci alıcıya o anda mı dönüyorsunuz, yoksa gösterim bitince mi?" Ne için: telefonun yanında olmasıyla açılabilmesini ayırmak; kartta yer gösterimlerinin gün içine ve hafta sonuna yığıldığı yazıyor, bunu ona söyletirsin. Sonra: "gösterim bitince" derse: "İşte o aradaki alıcı için kuruyorum" de ve saat iste; "o anda dönüyorum" derse teşekkür et ve kapat.
-- "Yetki belgesi, regülasyon derdim yeter, yeni sisteme param yok." Söyle: "Belge ve yönetmelik tarafına hiç girmiyorum, sistem ilan da paylaşmıyor; sadece size yazan alıcıya cevap verip yer gösterimine yazıyor. Rakamı görüşmede konuşuruz; kaçan tek bir alıcı sizde bir yer gösterimi mi eder, yoksa bir ayın komisyonu mu?" Ne için: sistemin mevzuata girmediğini kartın diliyle söylemek, fiyatı görüşmeye bırakmak ve kayıp birimini iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de param yok" derse teşekkür et ve kapat.
+- "Yetki belgesi, regülasyon derdim yeter, yeni sisteme param yok." Söyle: "Belge tarafına hiç girmiyorum, sistem ilan da paylaşmıyor; sadece size yazan alıcıya cevap verip yer gösterimine yazıyor. Rakamı görüşmede konuşuruz; kaçan tek bir alıcı sizde bir yer gösterimi mi eder, yoksa bir ayın komisyonu mu?" Ne için: sistemin belge işine karışmadığını söylemek, fiyatı görüşmeye bırakmak ve kayıp birimini iddia etmeden ona söyletmek. Sonra: cevabını al, "görüşmede o hesabı birlikte yaparız, karar sizin" de ve saat iste; "yine de param yok" derse teşekkür et ve kapat.
 
 **Marka yönü.** Bu bölüm markani-kur'un seçim ekranını besliyor. Tasarım kararı değil, başlangıç noktası; öğrenci üç seçenekten birini seçiyor ve karar onun.
 İsim kökleri: Portföy, Anahtar, Estate. Bunlar sistem adı kurulurken kullanılıyor; köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) ekleniyor.
@@ -104,7 +106,7 @@ Karşı taraf bunu söylerse:
 Paletler: derin, kum, celik.
 Tipografi: sade, editoryal.
 
-**Sahadan dolacak.** Gerçek ilan mesajı/arama dönüş süreleri (dakika bazında); İYS'nin mevcut talep sahibine (arayan kişiye) anlık dönüş mesajı için net istisna maddesi olup olmadığı; Google Haritalar'daki tam kategori adı; ortalama ilan başına gelen mesaj/arama sayısı; yer gösterimi randevusuna gelmeme (no-show) oranı; bu nişte hangi kademenin (1/2/3) en çok satıldığı; ilk vaka çalışması; franchise ofislerin merkezi CRM'iyle bu sistemin nasıl bir arada çalışacağı.
+**Sahadan dolacak.** Gerçek ilan mesajı/arama dönüş süreleri (dakika bazında); Google Haritalar'daki tam kategori adı; ortalama ilan başına gelen mesaj/arama sayısı; yer gösterimi randevusuna gelmeme (no-show) oranı; bu nişte hangi kademenin (1/2/3) en çok satıldığı; ilk vaka çalışması; franchise ofislerin merkezi CRM'iyle bu sistemin nasıl bir arada çalışacağı. Arayan kişiye anlık dönüş mesajı için İYS'de net bir istisna olup olmadığı sahadan değil ekipten gelir; öğrenciye sorulmaz, iş olarak verilmez.
 
 **Kaynaklar.**
 - https://www.kacmazemlak.com/haber/detay/turkiye-nin-en-buyuk-10-emlak-zinciri--18.html

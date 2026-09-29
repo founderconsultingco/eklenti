@@ -1,16 +1,18 @@
 ---
 user-invocable: false
 name: hizmet-akisini-ciz
-description: "Üçüncü gün. Satılan sistemin parçaları ve teslimat akışı. Kapsam tartışıldığında."
+description: "Birinci günün ikinci oturuşunda on dakikalık teslimat uygunluk kontrolü; üçüncü gün sabah akışın tamamı. Satılan sistemin parçaları, teslimat akışı ve ölçüm satırları. Kapsam tartışıldığında."
 ---
 
 # hizmet-akisini-ciz
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Üçüncü günün sabah modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın üçüncü aşamasının ikinci adımı: hizmet akışı.
+Üçüncü günün sabah modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın üçüncü aşamasının ikinci adımı: hizmet akışı. Birinci günün ikinci oturuşunda da kısa bir iş yapar: on dakikalık teslimat uygunluk kontrolü (aşağıda).
 
-Teslimatın takvimi elinde zaten var. Birinci blokta Doksan Gün Planı'nın beşinci bölümü yazıldı ve [21/28] günün hangi gününde ne olacağını nişine uyarlanmış halde veriyor. Bu modül o takvimi yeniden yazmıyor, ondan beş şey çıkarıyor:
+Teslimatın takvimi elinde zaten var. Birinci blokta Doksan Gün Planı'nın beşinci bölümü yazıldı ve [21/28] günün hangi gününde ne olacağını nişine uyarlanmış halde veriyor. Bu modül o takvimi yeniden yazmıyor, ondan dört şey çıkarıyor:
 
 1. Müşteriye gösterilecek sayfa. Aynı takvimin, teknik hiçbir kelime geçmeyen hali.
 2. Ölçüm satırları. İlk müşteride kendiliğinden dolacak, kapasiten oradan çıkacak.
@@ -27,13 +29,14 @@ Neden müşteri gelmeden: görüşmede "peki nasıl yapıyorsunuz" sorusu geliyo
 Pazarlamadaki karşılığı: teslimat süreci. Yazılı hale gelince süreç oluyor, kafanda kaldığı sürece umut.
 
 ## 2. Ne zaman çalışır
-- Üçüncü gün sabah, iki saat: akışın tamamı ve kapasite hesabı. Kademelerle birlikte çalışır.
-- İkinci kez: ilk müşterinin rapor gününü bitince. Tahminlerin yerine gerçek saatler yazılıyor, kapasite hesabı yenileniyor ve üç soru soruluyor: ne beklediğinden uzun sürdü, hangi soruyu önceden öngörmeliydim, nerede teslim tarihini kıl payı kaçırdık.
+- Birinci gün, ikinci oturuş, konumlandırmadan sonra ve teklif gövdesinden önce: teslimat uygunluk kontrolü, on dakika. Doksan Gün Planı'nı istemez; plan o sırada henüz yazılmadı.
+- Üçüncü gün sabah, iki saat: akışın tamamı ve ölçüm satırları. Kademelerle birlikte çalışır.
+- İkinci kez: ilk müşterinin rapor gününü bitince. Ölçüm satırları gerçek saatlerle doluyor, kapasite ilk kez hesaplanıyor ve üç soru soruluyor: ne beklediğinden uzun sürdü, hangi soruyu önceden öngörmeliydim, nerede teslim tarihini kıl payı kaçırdık.
 - Üçüncü kez: teslimatta bir adım değiştiğinde.
 
 ## 3. Ne okur
 
-Doksan Gün Planı'ndan: beşinci bölüm, yani nişine uyarlanmış [21/28] günlük takvim. Bu modülün ana girdisi bu.
+Doksan Gün Planı'ndan: beşinci bölüm, yani nişine uyarlanmış [21/28] günlük takvim. Bu modülün ana girdisi bu; birinci gün kontrolü onu kullanmaz.
 İş Beyni'nden: teklifin, üç kademenin içeriği, çalışma düzenin.
 Niş kartından: işletmecinin kendi kullandığı cümleler, yasal sınırlar.
 
@@ -41,7 +44,23 @@ Niş kartından: işletmecinin kendi kullandığı cümleler, yasal sınırlar.
 
 Hiçbir şey sormaz.
 
-Haftada kaç saatini teslimata ayırabileceğini sormuyor, çünkü çalışma düzenin birinci günde belli oldu ve İş Beyni'nde yazıyor. Oradan hesaplıyor ve sana rakamı gösteriyor.
+Haftada kaç saatini teslimata ayırabileceğini sormuyor, çünkü çalışma düzenin birinci günde belli oldu ve İş Beyni'nde yazıyor. Kapasite rakamı bugün çıkmıyor; ilk müşterinin ölçüm satırlarından çıkıyor.
+
+## 4b. Birinci gün teslimat kontrolü
+
+On dakika, tam kurulum yok. Tek soruya cevap verir: teklife girecek her parçayı elindeki sistemle gerçekten teslim edebilir misin. Doksan Gün Planı'nı istemez; İş modelinden (üç ajan, on üç işlev, yedi altyapı parçası, sınırlar), nişin kartından (müşteri yolculuğu, asistan kuralları, kanal ve zaman, yasal sınırlar) ve İş Beyni'ndeki konumlandırmadan okur.
+
+Beş başlıkta bakar, her biri tek satır:
+
+1. Özellik: teklifte geçecek her parça İş modelinin listesinde var mı ve bu nişin yolculuğunda açılıyor mu.
+2. Bağlantı: parçanın çalışması için işletmeden ne gerekiyor (cevapsız aramanın yeni hatta yönlenmesine onay, WhatsApp hattı, form, takvim, giriş izinleri).
+3. Veri: sistemin işletmeden alacağı bilgi (hizmet listesi, sık sorulan sorular, eski müşteri listesi ve iletişim izni).
+4. Bakım yükü: kurulduktan sonra haftada senin elinle ne yapılacak; saat yazılmaz, yalnız ne olduğu.
+5. Kritik kısıt: nişin yasal sınırı, izin şartı, hattın ve sağlayıcının uygunluğu.
+
+Belirsiz bir özellik varsa o gün yapılabilecek küçük bir testle bakılır: kartta, İş modelinde ya da resmi kaynakta tek kontrol. Test o gün yapılamıyorsa özellik teklifin dışında kalır. Hat, sağlayıcı ya da izin gibi ancak kurulumda anlaşılacak parçalar dışarı atılmaz; kurulamayan parça kuralıyla şartlı yazılır.
+
+Çıktı İş Beyni'nin beşinci bölümündeki "Birinci gün teslimat uygunluk kontrolü" satırına gider: beş başlığın sonucu, teklif dışında kalanlar, şartlı parçalar, tarih. Sohbete tek cümle: "Teklife girecek her parçayı teslim edebiliyoruz; [parça] şimdilik dışarıda, sebebi [tek cümle]." Sebep sade söylenir ("bu sektörde bu parça şimdilik açılmıyor"); kanun, kurum, izin sisteminin adı ya da yaptırım ne sohbete ne İş Beyni'ne yazılır. Bu adım atlanmaz; atlanırsa teslim edilemeyecek bir şey satılır.
 
 
 ## 5. Ne yapar
@@ -132,7 +151,7 @@ Bugün açılan şey ölçüm satırları. İlk müşterinin teslimatı boyunca 
 
 Bugün bilinen tek işaret şu: dördüncü aktif müşteride iş ağırlaşmaya başlıyor. Kapasite kararı ya dördüncü müşteri geldiğinde ya haftalık bakım bir iş gününü aştığında açılıyor.
 
-### Dördüncü çıktı: görüşmede söyleyeceğin üç cümle
+### Üçüncü çıktı: görüşmede söyleyeceğin üç cümle
 
 "Nasıl teslim ediyorsunuz" sorusuna verilecek cevap bugün yazılıyor. Üç cümle, gün işaretleri onay belgesindeki takvimle aynı olacak. Farklı olursa müşteri farkı görüyor.
 
@@ -145,7 +164,7 @@ Klima servisi (randevu yolu, tam zamanlı öğrenci) için doldurulmuş hali: "A
 
 Bu üç cümle görüşmenin sunum bölümünde geçiyor.
 
-### Beşinci çıktı: müşteriden istenecekler ve dört dosya
+### Dördüncü çıktı: müşteriden istenecekler ve dört dosya
 
 Müşteriden istenecekler listesi, hangi gün isteneceğiyle birlikte: dört giriş izni, mesaj onayları ve vergi levhası birinci günde (levha telefon hattının müşteri adına açılması için gerekiyor), duran havuz listesi üçüncü günde, listenin onayı yedinci günde, karekodun asılması altıncı günden sonra, yönlendirme onayı hat gelince.
 
@@ -160,7 +179,7 @@ Dördü dolunca ikinci müşteri yarı sürede bitiyor.
 
 ### İki karar ve sebepleri
 
-**Erken teslim etmiyorsun.** [21/28] gün sözleşmede yazıyor ve kısaltılmıyor. Kaynakların çoğu "az söz ver, fazla teslim et" diyor; biri buna kâr sızıntısı diyor. Biz ortada duruyoruz ve sebebi güvence: güvencemiz rapor gününün raporuna bağlı, o yüzden gün sabit. Kısa söz vermek yerine sık haber veriyorsun. Müşteri süreyi değil sessizliği sorun ediyor.
+**Erken teslim etmiyorsun.** [21/28] gün sözleşmede yazıyor ve kısaltılmıyor. Az söz verip fazlasını teslim etmek burada işlemiyor, çünkü güvencemiz rapor gününün raporuna bağlı ve o yüzden gün sabit. Kısa söz vermek yerine sık haber veriyorsun. Müşteri süreyi değil sessizliği sorun ediyor.
 
 **İlk müşteriye fazladan saat veriyorsun, fazladan kapsam vermiyorsun.** Bu sistemin kendi kararı, kaynaklar bu ayrımı yapmıyor. Fazladan saat sana kanıt hikâyesi ve gerçek ölçüm olarak geri dönüyor. Fazladan kapsam ise bir kere verildiğinde ikinci müşteride de isteniyor ve fiyat aynı kalıyor.
 
@@ -181,10 +200,10 @@ Bir sonraki modüllere: ölçüm satırları kari-hesapla'ya ve kapasite hesabı
 
 ## 8. Yedek yol
 
-- Doksan Gün Planı'nın beşinci bölümü eksikse: modül durur ve önce o bölüm tamamlanır. On beş dakika sürer.
-- Saat tahminleri yapılamazsa: FounderOS'un başlangıç rakamları girilir, hepsi tahmin diye işaretlenir. Fiyat günün ikinci yarısında yine hesaplanır.
+- Doksan Gün Planı'nın beşinci bölümü eksikse: üçüncü günün işi durur ve önce o bölüm tamamlanır, on beş dakika sürer. Birinci gün kontrolü bu bölümü beklemez.
+- Saat tahmini istenirse: yazılmaz, başlangıç rakamı da girilmez; ölçüm satırları boş açılır ve ilk müşteride dolar. Fiyat günün ikinci yarısında yine hesaplanır, çünkü saatten değil kayıptan çıkıyor.
 - İki saat aşılırsa: dört dosya dördüncü günün ilk boş saatine kayar. Sayfa, ölçüm satırları ve üç cümle bugün bitiyor.
-- Sağlık nişindeysen: kartın yasal sınırlar bölümü müşteriye gösterilecek sayfaya da uygulanır. Kurulamayacak parça sayfada gösterilmez. Teklifin dışında kalanlar: rızasız eski adaya ya da hastaya mesaj veya arama, fiyat söyleyen asistan, hasta yorumu toplayıp paylaşma (hukuki teyide kadar). Kontrol hatırlatmasının "tanıtım" sayılıp sayılmadığı ilk satıştan önce bir sağlık hukukçusuna sorulur.
+- Sağlık nişlerinde: FounderOS kartın yasal sınırlar bölümünü müşteriye gösterilecek sayfaya da sessizce uygular. Kurulamayacak parça sayfada gösterilmez. Teklifin dışında kalanlar: izni olmayan eski adaya ya da hastaya mesaj veya arama, fiyat söyleyen asistan, hasta yorumunun kliniğin tanıtımında kullanılması. Yorum isteği mesajla gitmez; kliniğin yazılı onayı gelirse yalnız asılı QR kodla kurulur, onay gelmezse bu parça yoktur (yorum-topla ile aynı kural). Kontrol hatırlatması kliniğin yazılı onayladığı metinle gider; metinde kampanya, indirim ve tanıtım dili olmaz. Kliniğin kendi danışmanına sorması kliniğin işidir; öğrenciye resmi ödev verilmez, kural anlatılmaz.
 - İşletme WhatsApp'ı ve telefonu aynı cep hattında kullanıyorsa: WhatsApp Business uygulaması ile API'nin aynı numarada birlikte çalışması (coexistence) 2026'da açık ve CRM altyapısı destekliyor. İlk müşteride test edilir; tutmazsa ayrı iş numarası açılır.
 
 ## 9. Sıradaki adım ve işaretler
@@ -199,4 +218,4 @@ Sıradaki: aynı gün, ikinci yarıda kesin fiyat; geçilir.
 - Pakette olmayan bir iş yapıldı: hangi müşteride, ne zaman ve kaç saat olduğu yazılır. İkinci kez tekrarlanırsa ya kapsama girer ya fiyata.
 - Görüşmedeki üç cümlenin günleri onay belgesindeki takvimden farklı: cümleler düzeltilir.
 
-Beş kural: boş sayfa yok (beş çıktının iskeleti ve başlangıç tahminleri hazır gelir) · sessiz bitiş yok (öğleye kadar beşi de İş Beyni'nde) · onay (müşteriye gösterilecek metin senin okumandan sonra kesinleşir) · sahadan güncelleme (ilk müşteride tahminler gerçek saatlerle değişir) · sormaz söyler (çıktıları, sırayı ve iki kararı FounderOS söyler).
+Beş kural: boş sayfa yok (dört çıktının iskeleti hazır gelir) · sessiz bitiş yok (öğleye kadar dördü de İş Beyni'nde) · onay (müşteriye gösterilecek metin senin okumandan sonra kesinleşir) · sahadan güncelleme (ilk müşteride ölçüm satırları gerçek saatlerle dolar) · sormaz söyler (çıktıları, sırayı ve iki kararı FounderOS söyler).

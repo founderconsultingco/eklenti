@@ -6,6 +6,8 @@ description: "Müşteride yorum isteme ve yorum yanıtlama."
 
 # yorum-topla
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 İşi biten kişiden Google yorumu isteyen ve gelen yorumları yöneten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Görüşmede sattığın tam kapsamın, yani Kademe 2'nin parçalarından biridir. Kademe 2, Kademe 1'in üstüne üç iş ekler: eski müşteriyi geri kazanma, yorum ve referans, aylık rapor. Bu modül ikincisini yapar.
@@ -31,7 +33,7 @@ Pazarlamadaki karşılığı: işletmenin bir daha kaybetmediği itibar. Google'
 
 ## 2. Ne zaman çalışır
 
-- Kurulum görüşmesinin yapıldığı gün: yorum isteği şablonu diğer şablonlarla birlikte onaya gider. Bunu musteri-sistemini-kur yürütür.
+- Kurulum görüşmesinin yapıldığı gün: müşteri yorum isteği metnini onaylar. Şablon ikinci gün, hat CRM'e bağlanınca diğer şablonlarla birlikte Meta'nın onayına gider. Bunu musteri-sistemini-kur yürütür.
 - İkinci günden dördüncü güne: yorum linki ve QR kodu alınır, metinler müşteriye onaya gider, QR kodun basılıp nereye asılacağı kararlaştırılır. Link ve metin işi akşam bloğunda yapılır; QR kodun yeri müşteriyle konuşulacağı için kurulum bloğuna girer, çoğunlukla haftalık görüşmenin içinde.
 - Altıncı gün canlıya alma sonrası: işi biten her kişi için istek çalıştırılır. Hangi yolun açık olduğu aşağıdaki kurallara göre belirlenir.
 - On üçüncü günden sonra: WhatsApp yolu açılabilir. Daha önce açılmaz, çünkü sekizinci günden on ikinci güne kadar hattın günlük yerinin çoğu eski müşteri listesinin ilk mesajlarına ayrılmıştır. O günlerde hatta yalnız randevu hatırlatmaları ve cevapsız aramaya dönüşler için yer kalır.
@@ -42,7 +44,7 @@ Eski müşteri listesine yorum isteği gönderilmez. O listeye giden mesaj ayrı
 
 ## 3. Ne okur
 
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya): Google işletme profilinin doğrulanmış olup olmadığı, yorum linki ve QR kodu, müşterinin çalışma saatleri, izin durumu.
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya): Google işletme profilinin doğrulanmış olup olmadığı, yorum linki ve QR kodu, müşterinin çalışma saatleri, izin durumu.
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): işin bittiği an için Sahadan dolacak bölümü, yasal sınırlar, yorumlarda en çok neyin konuşulduğu, işletmecinin kendi kullandığı cümleler.
 CRM'den (adayların ve müşterilerin kaydedildiği takip programı): kapanmış randevular, gelen yorum bildirimleri.
 İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı dosya): [21/28] günün takvimi, sistemin adı.
@@ -78,13 +80,7 @@ Haşere kartında sektörün kendi siteleri sadece olumlu yorum gösteriyor ve g
 
 Google'da hizmeti almamış kişi de yorum yazabildiği için o yorumlar kanıt sayılmıyor, bu yüzden siteye taşınmıyor.
 
-Bu alanda bir de yönetmelik maddesi var. Genel çerçevesi şu:
-1. Yorumu yalnız o hizmeti satın alan yapabilir.
-2. Yorumlar olumlu olumsuz ayrımı yapılmadan, tarafsız bir sıraya göre, en az bir yıl yayında kalır.
-3. Sahte yorum yazdırmak için anlaşma yapılamaz.
-Maddenin bugünkü hâlini müşterinin hukukçusu teyit eder.
-
-Kural: Google yorumları müşterinin sitesine taşınmaz, sitede yorum kutucuğu kurulmaz. Yorum Google'da kalır. Aynı yolu kendi sitende de izle. Bu, kendi işin için verdiğimiz bir tedbir kararıdır, hukuk görüşü değildir.
+Kural: Google yorumları müşterinin sitesine taşınmaz, sitede yorum kutucuğu kurulmaz. Yorum Google'da kalır. Aynı yolu kendi sitende de izle.
 
 ### Üç yol ve sırası
 
@@ -100,11 +96,11 @@ QR kod üretimi yalnız bilgisayar tarayıcısında var, telefonda yok. Kodu sen
 
 Üçüncü yol, WhatsApp mesajı. Onaylı şablonla gider. Onaylı şablon, WhatsApp'ın sahibi Meta'nın önceden onayladığı hazır mesaj metnidir.
 
-E-posta ve WhatsApp izin ister. İzni işletme kendi adına alır; senin adına alınmış izinle bu mesajlar gönderilmez. İznin biçimini ve kaydını müşteri kendi hukukçusuna sorar. İzin yoksa iki yol da kapalıdır, yalnız QR kalır.
+E-posta ve WhatsApp izin ister. Mesaj yalnız işletmenin kendi adına mesaj izni kayıtlı kişiye gider; senin adına alınmış izin sayılmaz. İzin cevabını FounderOS karşılama formundan okur ve sana yalnız hangi yolun açık olduğunu söyler. İzin yoksa iki yol da kapalıdır, yalnız QR kalır.
 
-Asılan bir QR kod mesaj değildir, o yüzden izin kuralının dışında sayıyoruz. Bunu müşterinin hukukçusuna teyit ettirirsin.
+Asılan bir QR kod mesaj değildir, o yüzden izin kuralının dışında sayıyoruz.
 
-Birinci ayda çoğu müşteride yalnız QR çalışır. Bunu müşteriye baştan söylersin. Mesaj yolunun açılması için işletmenin yeni müşterilerinden izin toplamaya başlaması gerekir.
+Birinci ayda çoğu müşteride yalnız QR çalışır. Bunu müşteriye baştan tek cümleyle söylersin: "İlk ay yorum isteği mekândaki QR koddan gidiyor; mesajla istemek, mesaj izni olan müşterilerinizde açılıyor." Mesaj yolu, işletme yeni müşterilerinden izin aldıkça açılır; bu işletmenin kendi işidir, ayrıntısına girmezsin.
 
 ### İstek anı nişten çıkar
 
@@ -136,22 +132,17 @@ Bir kural daha: yorum isteği giden kayda, randevudan bir saat sonra giden sonu�
 
 ### Sağlık nişlerinin ayrı yolu
 
-Sağlık tanıtım yönetmeliği şunları söylüyor:
-1. Örtülü ya da açık reklam yasak.
-2. Hastanın ya da yakınının teşekkür ve memnuniyet sözleri üzerinden reklam gibi paylaşım yapılamaz.
-3. Görsel paylaşımlarda yorum, beğeni ve paylaşım kapatılmak zorunda.
-4. Kişinin bilgisi ve rızası olmadan onunla iletişim kurulamaz.
-5. Özendirme, çekiliş ve hediye yasak.
+Diş, estetik ve güzellik salonunun tıbbi işlemlerinde tanıtım sınırı dardır ve FounderOS bunu sessizce uygular: reklam dili yok; hastanın ya da yakınının teşekkür ve memnuniyet sözleri tanıtımda kullanılmaz; görsel paylaşımlarda yorum, beğeni ve paylaşım kapalı tutulur; kişiye bilgisi ve onayı olmadan yazılmaz; özendirme, çekiliş ve hediye yok. Öğrenciye bu sınırların kaynağı anlatılmaz.
 
-Yönetmelikte Google, işletme profili ya da yorum isteme diye bir şey geçmiyor.
+Yorum istemenin bu sınıra girip girmediği net değil.
 
-Bu yüzden diş, estetik ve güzellik salonunun tıbbi işlemlerinde kural şu: yorum toplama, kliniğin kendi hukukçusunun yazılı onayı olmadan hiç kurulmaz, QR dahil. Hukukçuya sorulacak tek soru yazılı gider: "Hastalarımızdan, karşılığında hiçbir şey vermeden, asılı bir QR kod üzerinden Google yorumu istememizde sakınca var mı?" Cevap yazılı gelmeden bu parça kurulmaz.
+Bu yüzden diş, estetik ve güzellik salonunun tıbbi işlemlerinde kural şu: yorum toplama, kliniğin yazılı onayı olmadan hiç kurulmaz, QR dahil. Onay kliniğe giden hazır soruyla alınır, öğrenci olduğu gibi gönderir ve açıklamaz: "Hastalarınızdan, karşılığında hiçbir şey vermeden, asılı bir QR kod üzerinden Google yorumu istememizi onaylıyor musunuz?" Kliniğin yazılı "onaylıyorum"u yeter; kliniğin kendi danışmanına sorması kliniğin işidir. Cevap yazılı gelmeden bu parça kurulmaz. Öğrenci yalnız sonucu duyar: "Klinik onaylarsa QR'ı kuruyoruz." ya da "Bu klinikte yorum isteme parçasını kurmuyoruz."
 
 Onay gelirse yalnız QR kurulur, mesaj yolu açılmaz. Kliniğin kendi paylaşımlarında hasta yorumu kullanılmaz.
 
 Onay gelmezse bu parça ilk turda kapsam dışıdır ve müşteriye yazılı bildirilir.
 
-Güzellik salonu ve kuaför bu yönetmeliğin kapsamında değil. Ama bu işletmelerin sağlık kuruluşu gibi görünmesine izin verilmiyor; öncesi sonrası fotoğrafı ve hasta yorumu paylaşımı yasak sayılıyor. Kural: bu iki nişte klasik hizmetlerde yorum istenir. Tıbbi işlem yapılan hizmetlerde yukarıdaki klinik kuralı geçerlidir: hukukçunun yazılı onayı gelmeden hiç kurulmaz, onay gelirse yalnız QR kurulur. Hiçbir yorum işletmenin kendi paylaşımına taşınmaz.
+Güzellik salonu ve kuaförde klasik hizmetlerde yorum istenir. Bu işletmeler sağlık kuruluşu gibi görünmez; öncesi sonrası fotoğrafı ve hasta yorumu paylaşılmaz. Tıbbi işlem yapılan hizmetlerde yukarıdaki klinik kuralı geçerlidir: işletmenin yazılı onayı gelmeden hiç kurulmaz, onay gelirse yalnız QR kurulur. Hiçbir yorum işletmenin kendi paylaşımına taşınmaz.
 
 ### Metin
 
@@ -159,7 +150,7 @@ Tek adım, tek istek, tek link. İki adımlı memnuniyet sorusu yok.
 
 Mesaj kalıbı: "Merhaba [ad], ben [iş adı]. [Bugün yaptığımız iş: kombinizin bakımını yaptık]. Nasıl bulduğunuzu Google'a yazarsanız çok memnun olurum, bir dakika sürüyor: [link]"
 
-Kurallar: yaklaşık yüz altmış harf, tek istek, tek link. Yasak kelimeler: beş yıldız, olumlu, güzel yorum, puan verin, indirim, hediye. Mesaj işletmenin adına gider. Altında tek satır bulunur: "[İş adı] · [MERSİS ya da vergi numarası] · Mesaj istemiyorsanız 'çıkar' yazın." MERSİS numarası, işletmenin ticaret sicilindeki kayıt numarasıdır; müşteri kendi belgelerinden bulup verir. Kanun her ticari mesajda çıkma yolu arıyor.
+Kurallar: yaklaşık yüz altmış harf, tek istek, tek link. Yasak kelimeler: beş yıldız, olumlu, güzel yorum, puan verin, indirim, hediye. Mesaj işletmenin adına gider. Altında tek satır bulunur: "[İş adı] · [MERSİS ya da vergi numarası] · Mesaj istemiyorsanız 'çıkar' yazın." Numara, kurulumda müşteriden alınan satırdan gelir. Bu satır her mesajda durur ve hiç çıkarılmaz.
 
 E-posta metni aynı, biraz uzun olabilir. Link tek başına bir satırda durur.
 
@@ -191,7 +182,7 @@ Müşteri "bunu sildir" derse bu kural anlatılır. Olmayan bir yetki vaat edilm
 Nişe göre cevap kuralları:
 1. Sigortada cevapta acente unvanı geçer, sigorta şirketiymiş gibi konuşulmaz.
 2. Haşerede cevapta "kesin çözüm" ve "garanti" kelimeleri geçmez.
-3. Diş ve estetikte cevap kişiye özel yazılmaz, tedaviden söz edilmez; kısa ve tek tip bir cümle kullanılır. Sebebi şu: kliniğin bir yoruma isimle cevap yazması, o kişinin hasta olduğunu herkese doğrular. Sağlık bilgisi özel korunan bir bilgidir.
+3. Diş ve estetikte cevap kişiye özel yazılmaz, tedaviden söz edilmez; kısa ve tek tip bir cümle kullanılır. Sebebi şu: kliniğin bir yoruma isimle cevap yazması, o kişinin hasta olduğunu herkese doğrular.
 
 Yorum isteğine gelen cevabı yazılı asistan karşılamaz. Bu mesajlar randevu konuşması değildir: asistan teşekkür eder ve konuşmayı kapatır, kızgın cevap gelirse aynı gün insana devreder. Bu kural asistanın kurallar bölümüne yazılır.
 
@@ -209,11 +200,11 @@ Niş kartının Sahadan dolacak bölümüne yazılır: bu nişte işin bittiği 
 
 ## 6. Ne söyler
 
-Kurulumda: "Yorum işi üç yoldan yürüyor: QR, e-posta, WhatsApp. Birinci ay büyük ihtimalle sadece QR çalışacak, çünkü mesaj için müşterilerinden izin toplaman gerekiyor. QR'ı bugün basıyoruz. Yorum yazmak bir dakika sürüyor; ilk hafta içinde ilk yorumun gelsin. Parayı yeni ödedin, ilk görünen kazanç bu olacak."
+Kurulumda: "Yorum işi üç yoldan yürüyor: QR, e-posta, WhatsApp. Birinci ay büyük ihtimalle sadece QR çalışacak; mesaj yolu izni olan kişilerde açılıyor, onları ben ayırıyorum. QR'ı bugün basıyoruz. Yorum yazmak bir dakika sürüyor; ilk hafta içinde ilk yorum gelsin. Müşteri parayı yeni ödedi, ilk görünen kazanç bu olacak."
 Ayıklama isteyince: "Sadece memnun olana link gönderemeyiz. Google bunu yasaklı davranışlar arasında sayıyor. Herkese aynı mesaj gidiyor, yüzde yüzüne. Kötü yorum gelirse aynı gün cevabını yazarız."
 Müşteri "indirim verelim yorum yazsınlar" derse: "Hayır. Google'ın kendi sayfasında hediye ya da indirim karşılığı yorum için 'kesinlikle yasak' yazıyor. Bunu yapmıyoruz."
 Kötü yorum gelince: "Yorum geldi, kötü. Bugün cevabını yazıyorum, sen onaylayacaksın; onaydan sonra yirmi dört saat içinde yayında olur. Silinmesini isteme, olmuyor; Google beğenmediğin için bildirilen yorumu kaldırmıyor. Cevapsız kötü yorum en pahalı yorumdur."
-Sağlık nişinde: "Klinikte yorum işine hukukçun yazılı onay vermeden başlamıyoruz. Kanun bu tarafta net değil, riski sana aldırmam. Onay gelirse sadece QR asıyoruz, mesaj göndermiyoruz."
+Sağlık nişinde: "Yorum isteme parçasını klinik yazılı onaylarsa kuruyoruz. Onay sorusu hazır, olduğu gibi gönder. Onay gelirse sadece QR asıyoruz, mesaj göndermiyoruz."
 
 ## 7. Ne yazar
 
@@ -227,7 +218,7 @@ Niş kartının Sahadan dolacak bölümüne: işin bittiği gerçek an, işe yar
 - İzin yoksa: mesaj ve e-posta yolu kapalı, yalnız QR yürür.
 - Şablon onayı gelmediyse ya da reddedildiyse: WhatsApp yolu kapalı, QR ve e-posta yürür.
 - Müşteri QR asmıyorsa: fişe ve teslim belgesine bastırması istenir. O da olmazsa yorum toplama fiilen çalışmaz. Müşteriye yazılı bildirilir; müşterinin kendi adımını atmadığı bu hal güvencenin sonucuna sayılmaz.
-- Sağlık nişinde hukukçu onayı gelmezse: parça hiç kurulmaz, kapsam dışıdır ve güvencenin sonucuna sayılmaz.
+- Sağlık nişinde kliniğin yazılı onayı gelmezse: parça hiç kurulmaz, kapsam dışıdır ve güvencenin sonucuna sayılmaz; öğrenci yalnız sonucu duyar: "Bu klinikte yorum isteme parçasını kurmuyoruz."
 - Müşteri sahte yorum yazdırmak isterse: yapılmaz, sebebi yazılı bildirilir.
 - Puan düşerse: istek durmaz. Son gelen kötü yorumları okur, ortak şikâyeti tek cümleyle yazar ve haftalık kontrolde müşteriye sorarsın: bu şikâyet gerçekten yaşanıyor mu.
 

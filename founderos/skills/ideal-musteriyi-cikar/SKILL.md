@@ -6,6 +6,8 @@ description: "Nis karari onaylandiktan hemen sonra, teklif yazilmadan once calis
 
 # ideal-musteriyi-cikar
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Birinci bloğun modülü, niş kararından hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül seçtiğin sektörün içindeki tek bir kişiyi tarif eder: sana para verecek olan kişiyi. Çıkardığı sayfanın adı **ideal müşteri sayfası**. Programın tanıtımındaki adı "İdeal Müşteri".
@@ -24,7 +26,7 @@ Yazacağın her cümle sahibe söylenir, ama sahibin kendi müşterisinden bahse
 
 Şunlar bu modülün işi değildir:
 - Sektörü seçmek (nisi-sec, az önce bitti).
-- Sektörü canlı sayımla doğrulamak (nisi-dogrula, ikinci blok).
+- Sektörü canlı sayımla doğrulamak (nisi-dogrula, pazar onaylanınca arka planda).
 - Teklifin kelimelerini yazmak (teklifi-yaz, hemen sonra). Bu modül kime yazılacağını verir, ne yazılacağını değil.
 - Aday listesi çıkarmak (aday-listesi-cikar). Bu modül elemenin ölçütünü verir, listeyi çıkarmaz.
 - Tek bir işletmeyi incelemek (aday-denetimi-cikar). O bir işletmeye bakıyor, bu sektördeki tipik kişiye bakıyor.
@@ -32,8 +34,8 @@ Yazacağın her cümle sahibe söylenir, ama sahibin kendi müşterisinden bahse
 Pazarlamadaki karşılığı: ideal müşteri profili ve müşteri avatarı.
 
 ## 2. Ne zaman çalışır
-- Birinci blok, niş kararı onaylandıktan hemen sonra, tekliften önce. Senin tarafında on beş dakika sürer. Araştırmanın kendisi arka plan yardımcısında yürüyor ve sen niş kararını okurken o çalışmaya başlamış oluyor.
-- İkinci kez: ikinci bloğun canlı doğrulaması sayıları değiştirirse sayfa güncellenir, baştan yazılmaz.
+- Birinci blok. Araştırma niş kararı onaylanır onaylanmaz arka plan yardımcısında başlar; özeti ikinci oturuşun ilk işidir, konumlandırmadan ve tekliften önce. Senin tarafında on dakika sürer.
+- İkinci kez: canlı sayım sayıları değiştirirse sayfa güncellenir, baştan yazılmaz.
 - Üçüncü kez ve en önemlisi: on görüşmeden sonra. O güne kadarki sayfa masabaşı bilgisidir. On görüşmeden sonra sahadan duyduğun cümleler masabaşı bilgisinin üstüne yazılır ve sayfa bir kere ciddi biçimde değişir. Bu yenilemeyi gorusmeyi-analiz-et tetikler.
 - Pazar değişirse baştan çalışır.
 
@@ -49,17 +51,17 @@ Sahadan, varsa: görüşme analizlerinde geçen cümleler, cevap alan ve almayan
 
 ## 4. Ne sorar
 
-Üç şey sorar, hepsi seçenekli ve hepsi araştırma bittikten sonra:
+Tek soru sorar, araştırma bitip özet gösterildikten sonra: "Sana yanlış gelen bir şey var mı? Daha önce çalıştığın ve bir daha çalışmak istemediğin bir müşteri tipi varsa onu da yaz." Cevap ne olursa olsun devam edilir; onay beklenmez, "bu kişiyi tanıyor musun" diye sorulmaz. Yanlış bulunan satır on sekizinci bölümde işaretlenir ve ilk görüşmelerde sınanır, sayfa baştan yazılmaz. Yazılan tip doğrudan eleme listesine girer.
 
-1. Hedeflediğin işletme büyüklüğü. Üç seçenek gösterilir, her birinin yanında o büyüklüğün ne kadar ödeyebileceği ve sana kaç saat iş çıkaracağı yazılı: tek kişilik işletme, iki ila beş kişilik işletme, beşten kalabalık işletme. Karar senin değil aslında; FounderOS gelir planındaki müşteri değerine ve kartın kapasite rakamına bakarak birini işaretli getirir, sen onaylarsın ya da değiştirirsin.
-2. Elemek istediğin bir tip var mı. Daha önce çalıştığın ve bir daha çalışmak istemediğin bir müşteri tipi varsa yazıyorsun. Bu satır doğrudan eleme listesine giriyor. Yoksa geçiliyor.
-3. Sayfayı gösterdikten sonra tek soru: "Bu kişiyi tanıyor musun." Tanıyorum dersen devam ediyoruz. Tanımıyorum dersen hangi satırın yanlış durduğunu söylüyorsun, o satır araştırmaya geri gidiyor.
+Hedeflenen işletme büyüklüğü sorulmaz, nişten çıkar: FounderOS gelir planındaki müşteri değerine ve kartın kapasite rakamına bakarak üç büyüklükten birini seçer (tek kişilik, iki ila beş kişilik, beşten kalabalık) ve özette tek cümlelik gerekçesiyle söyler. Öğrenci farklı düşünüyorsa yukarıdaki sorunun cevabında söyler.
+
+İdeal müşteriyi doğrulayacak üç soru ilk beş görüşmeye yazılır: sayfanın en zayıf üç satırını sınayan, işletmecinin kendi deneyimini soran üç soru. İş Beyni'nin on üçüncü bölümüne "ilk beş görüşme" eşiğiyle girer.
 
 Bunun dışında hiçbir şey sormaz. Ne araştıracağını, nereye bakacağını ve neyin bulgu sayılacağını FounderOS söylüyor.
 
 ## 4b. Araştırma nereden yapılır
 
-Araştırmayı arka plan yardımcısı yürütür, çünkü çok sayfa açıyor ve ana konuşmayı şişirir. Sıra önemlidir; üstteki kaynaklar alttakilerden daha ağır basar.
+Araştırmayı arka plan yardımcısı yürütür, çünkü çok sayfa açıyor ve ana konuşmayı şişirir. Yardımcıya sonucu `.founderos/ideal-musteri-arastirma.md` dosyasına da yazmasını söylersin: bu bir ara dosyadır, öğrenciye gösterilmez. Oturuş kesilirse sonuç kaybolmaz; sonraki oturuşta araştırma yeniden başlatılmaz, bu dosyadan okunur. Sayfa on sekizinci bölüme geçince ara dosya bir daha okunmaz. Sıra önemlidir; üstteki kaynaklar alttakilerden daha ağır basar.
 
 **Müşterinin müşterisi için:**
 1. Google Haritalar yorumları. Şehrindeki o sektörden en az otuz işletmenin son yorumları. En değerli kaynak bu, çünkü şikayeti yazan kişi hem gerçek hem yakın hem de kendi kelimeleriyle yazıyor. Aranan şey: hangi cümle kaç kere tekrarlıyor. "Aradım açmadılar", "dönerim dediler dönmediler", "fiyat verdiler sonra değişti" gibi tekrar eden cümleler sızıntının kendisidir.
@@ -76,7 +78,7 @@ Araştırmayı arka plan yardımcısı yürütür, çünkü çok sayfa açıyor 
 Üç kural:
 - **Her satırın kaynağı yazılır.** Kaynağı olmayan satır sayfaya girmez.
 - **Bulgu ile yorum ayrı işaretlenir.** Bulgu, bir yerde okuduğun cümledir. Yorum, FounderOS'un o bulgulardan çıkardığı sonuçtur. İkisi aynı sayfada durur ama hiçbir zaman karışmaz, çünkü sahada biri tutmazsa hangisinin tutmadığını bilmen gerekiyor.
-- **Alıntı değiştirilmez.** İnsanların yazdığı cümle düzeltilmeden alınır. Senin mesajındaki güç, onların kelimesini kullanmandan geliyor; düzeltirsen o gücü kaybediyorsun.
+- **Alıntı değiştirilmez.** İnsanların yazdığı cümle düzeltilmeden alınır. Senin mesajındaki güç, onların kelimesini kullanmandan geliyor; düzeltirsen o gücü kaybediyorsun. Kanun, kurum, yaptırım ya da izin sisteminin adı geçen alıntı sayfaya seçilmez, çünkü sayfa öğrencinin okuduğu dosyada duruyor; böyle bir dert varsa yorum satırına sade dille yazılır.
 
 ## 4c. Tamamlandı demek için
 
@@ -86,10 +88,10 @@ Sayfa "hazır" demek için güzel görünmesi yetmez:
 2. En az on beş gerçek alıntı var, her birinin yanında nereden alındığı yazılı. Alıntıların en az beşi karar veren kişinin ağzından, en az beşi müşterinin müşterisinin ağzından.
 3. Her başlıkta bulgu ve yorum ayrı ayrı işaretli.
 4. Eleme listesi dolu: en az beş madde, "bu tipe satmıyoruz" satırı.
-5. Sen sayfayı okudun ve "bu kişiyi tanıyorum" dedin.
+5. Sayfanın özeti sana gösterildi ve "yanlış gelen bir şey var mı" sorusu soruldu; cevabı ne olursa olsun yazıldı ve doğrulayıcı üç soru on üçüncü bölümde.
 6. Sayfa İş Beyni'nin on sekizinci bölümüne yazıldı ve teklifi-yaz onu okuyabiliyor.
 
-**Ayrı dosya açılmaz.** İdeal müşteri sayfasının tek yeri İş Beyni'nin on sekizinci bölümüdür. Klasöre `ideal-musteri.md` diye ikinci bir dosya yazılmaz; yazılırsa iki kopya oluşuyor, modüllerin hangisini okuyacağı belirsizleşiyor ve biri güncellenip diğeri kalıyor. Öğrencinin klasöründe birinci günün sonunda duran dosyalar bellidir: `is-beyni.md`, `doksan-gun-plani.md`, `nis-karti.md`, artı `marka/` ve `site/` klasörleri. Sayfayı öğrenciye gösterirken ekrana yazarsın, dosya vermezsin.
+**Ayrı dosya açılmaz.** İdeal müşteri sayfasının tek yeri İş Beyni'nin on sekizinci bölümüdür. Klasöre `ideal-musteri.md` diye ikinci bir dosya yazılmaz; yazılırsa iki kopya oluşuyor, modüllerin hangisini okuyacağı belirsizleşiyor ve biri güncellenip diğeri kalıyor. Öğrencinin klasöründe birinci günün sonunda duran dosyalar bellidir: `is-beyni.md`, `doksan-gun-plani.md`, `nis-karti.md`, artı `marka/`, `site/`, `gunluk/` ve gizli `.founderos/` klasörleri; müşteri gelince `musteriler/` eklenir. `.founderos/` içindeki araştırma ara dosyası sayfa değildir, yalnız oturuş kesilince sonuç kaybolmasın diye durur. Sayfanın tamamı sohbete dökülmez: sohbete en fazla beş satırlık özet ve üç alıntı gelir, tamamı on sekizinci bölümde durur. Dosya vermezsin, okutmazsın.
 
 ## 5. Ne yapar
 
@@ -121,19 +123,19 @@ Araştırmayı arka planda yürütür, sonra tek sayfa yazar. Sayfanın on iki b
 
 Sızıntı sırası: sayfayı anlatırken asıl sızıntı teklifin başlığıyla aynı söylenir (kaçan arama, cevapsız form, fiyat sorup kaybolan). Araştırmadan başka bir sızıntı çıkarsa (estetikte işlem sonrası rötuş ve kontrol için muhatap bulamayan hasta gibi) "ek sızıntı" diye ayrı söylenir, teklifin başlığına geçmez. Hedef daraltma pazarın kendi eğilimiyle anlatılır (medikal estetikte ameliyatsız işlemler gibi). Başka işletmeleri kötüleyen ifade kullanılmaz.
 
-Sonra sayfayı sana gösterir ve üç yerden bağlar: teklifin hangi cümlesi hangi başlıktan çıkacak, sitenin hangi bölümü hangi başlıktan çıkacak, soğuk mesajın ilk satırı hangi başlıktan çıkacak. Bağlamayı göstermeden sayfayı kapatmaz, çünkü bağlanmayan sayfa okunmuş ve unutulmuş sayfadır.
+Sonra sayfayı on sekizinci bölüme yazar ve sohbete özetini gösterir: en fazla beş satır ve üç alıntı. Satırlardan biri üç bağdır: teklifin hangi cümlesi, sitenin hangi bölümü ve soğuk mesajın ilk satırı hangi başlıktan çıkacak. Bağlamayı göstermeden sayfayı kapatmaz, çünkü bağlanmayan sayfa okunmuş ve unutulmuş sayfadır.
 
 ## 6. Ne söyler
 
 Başlarken, tek cümle: "Pazarını seçtik. Şimdi o pazarın içinden sana para verecek tek kişiyi çıkarıyoruz. Bundan sonra yazdığımız her cümle bu kişiye yazılacak."
 
-Sayfayı gösterirken: "Bu sayfayı ezberlemeni istemiyorum. Sadece oku ve bu kişiyi tanıyıp tanımadığını söyle. Tanıyorsan yarın yazacağımız hiçbir cümlede zorlanmayacaksın."
+Özeti gösterirken: "Bunu ezberlemeni istemiyorum. Sana yanlış gelen bir şey var mı, onu söyle; yoksa devam ediyoruz. Bu kişiyi ilk beş görüşmede üç soruyla sınayacağız."
 
 Neden yapıldığını sorarsa: "Sektör seçmek yetmiyor. Klima servisi diye bir insan yok; klima servisi olan bir adam var, günü belli, derdi belli, korktuğu şey belli. Ona yazdığın cümle işe yarıyor, sektöre yazdığın cümle kimseye yaramıyor."
 
 Sitenin başlığını yazarken: "Bu başlık senin fikrin değil, ideal müşteri sayfanın üçüncü başlığındaki cümle. Şu kişi şunu yazmış, biz onu başlığa taşıdık."
 
-Sayfadaki bir kişiyi tanımadığını söylerse: "Hangi satır yanlış duruyor. Onu söyle, gerisi doğruysa sadece o satırı yenileriz." Sayfa baştan yazılmaz.
+Bir satır yanlış gelirse: "Onu işaretledim, ilk görüşmelerde sınıyoruz. Gerisiyle devam ediyoruz." Sayfa baştan yazılmaz, gün durmaz.
 
 Sayfayı değiştirmek isterse, on görüşmeden önce: "Şu an elimizde sekiz görüşme var. Sayfayı on görüşmeden önce değiştirirsek neyin tutmadığını bilemeyiz. Dediğini on sekizinci bölümün altına not düştüm, onuncu görüşmede birlikte bakacağız."
 
@@ -157,7 +159,7 @@ Doksan Gün Planı üretilirken (bant konunca) bu sayfanın birinci başlığın
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: "Şimdi bu kişiye ne satacağını yazıyoruz. Teklifin her cümlesi bu sayfadaki bir başlıktan çıkacak ve hangisinden çıktığını sana göstereceğim."
+Sıradaki: "Şimdi bu kişi neden senden alsın, onu tek cümleye koyuyoruz; sonra ne sattığını yazıyoruz. Her cümle bu sayfadaki bir başlıktan çıkacak ve hangisinden çıktığını sana göstereceğim."
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Eleme listesi beşten az: aday-listesi-cikar'ın sıralaması zayıf kalır, uygunluk puanı eksik ölçütle çalışır.
@@ -166,4 +168,4 @@ Sıradaki: "Şimdi bu kişiye ne satacağını yazıyoruz. Teklifin her cümlesi
 - Sahadan gelen cümleler sayfadaki dertlerle tutmuyor: bu bir niş işareti değil, bir profil işaretidir. Önce profil düzeltilir; niş ancak üç yüz temasta konuşulur.
 - Yorum satırlarından üçü sahada tutmadı: yorumların ağırlığı düşer, sonraki yenilemede yorum sayısı üçe iner.
 
-Beş kural: boş sayfa yok (araştırma hazır gelir, sen onaylarsın) · kaynaksız satır yok (her satırın nereden geldiği yazılı) · bulgu ile yorum karışmaz · uydurma alıntı yok (sayı tutmuyorsa eksik yazılır) · bağlanmadan kapanmaz (sayfa hangi cümleyi besleyeceği gösterilerek kapanır).
+Beş kural: boş sayfa yok (araştırma hazır gelir, sen özetini görürsün) · kaynaksız satır yok (her satırın nereden geldiği yazılı) · bulgu ile yorum karışmaz · uydurma alıntı yok (sayı tutmuyorsa eksik yazılır) · bağlanmadan kapanmaz (sayfa hangi cümleyi besleyeceği gösterilerek kapanır).

@@ -6,11 +6,13 @@ description: "CRM hesabı açıldığı gün (başlangıç görüşmesinden sonr
 
 # musteri-takip-sistemini-kur
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-CRM hesabın açıldığı günün modülü, bağlantıdan hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın altıncı aşamasının altyapısını kuruyoruz: takip sistemi.
+CRM hesabın açıldığı günün modülü, bağlantıdan hemen sonra. Modül, FounderOS'un belli bir işi yapan parçasıdır. Yol Haritası'nın dördüncü aşaması, satışa hazırlan: randevu ve takip sistemi.
 
-Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, adayların ve her temasın kaydedildiği takip programıdır. Aday, henüz müşterin olmayan ama olabilecek işletmedir. Temas, bir adaya bir kanaldan bir kez ulaşmandır.
+Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, sana cevap veren adayların, randevuların ve müşterilerin kaydedildiği takip programıdır. Soğuk aday listen, günün sırası ve telefondaki saha ekranın CRM açıldıktan sonra da aday listesinde kalır; CRM onların yerini almaz. Aday, henüz müşterin olmayan ama olabilecek işletmedir. Temas, bir adaya bir kanaldan bir kez ulaşmandır.
 
 Müşterinin sistemiyle karıştırma. O, müşteri kazandığında CRM'de ayrı bir bölümde kuruluyor.
 
@@ -18,7 +20,7 @@ Neden bu iş var: saha açılınca günde yüz temas yapacaksın. Yetmişi ana k
 
 Üçüncüsü bugünün asıl işi: aynı adaya dört ayrı kanaldan ulaşacaksın. Telefon, e-posta, Instagram, video. Kimin hangi kanalda nerede kaldığını bilmezsen ya aynı kişiye üst üste yazarsın ya da cevap vereni unutursun. İkisi de adayı kaybettiriyor.
 
-Neden bugün: CRM bugün açıldı. Sistem bugün tanınır ve İş Beyni'ndeki liste tek seferde içine girer; yarından itibaren kayıt yeri CRM'dir.
+Neden bugün: CRM bugün açıldı. Sistem bugün tanınır; cevap vermiş adaylar ve randevular tek seferde içine girer. Yarından itibaren onların kayıt yeri CRM'dir; soğuk temasların kayıt yeri aday listesi olarak kalır.
 
 Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört akış hesabın açıldığı gün hazır geldi. Bugünkü işin doğrulamak ve tanımak.
 
@@ -31,8 +33,8 @@ Bugün sıfırdan kurmuyorsun. Dokuz aşama, elli beş kayıt satırı ve dört 
 Pazarlamadaki karşılığı: aday takibi.
 
 ## 2. Ne zaman çalışır
-- CRM hesabın açıldığı gün, bağlantıdan hemen sonra, bir saat. Hesap başlangıç görüşmesinde açıldığı için bu gün sabit değil; görüşmenin ertesi günüdür. O güne kadar takip işini İş Beyni'nin "Bugünün listesi" bölümü yapar: takip günü gelenler her sabah oradan okunur ve mesajlar elle gider.
-- İkinci kez: ayda bir liste yenilendiğinde. O gün yalnız yükleme bölümü açılır.
+- CRM hesabın açıldığı gün, bağlantıdan hemen sonra, bir saat. Hesap başlangıç görüşmesinde açıldığı için bu gün sabit değil; görüşmenin ertesi günüdür. Soğuk adayların takibini CRM açılmadan önce de sonra da aday listesi yürütür: takip günü gelenler her sabah günün listesine düşer ve mesajlar senin elinden gider. Randevular o güne kadar İş Beyni'nin "Bugünün listesi" bölümünde durur.
+- İkinci kez: sıcak kayıtların toplu aktarımı tekrarlanacaksa (bağlantı düşmüş, kayıtlar elde birikmişse). Ayda bir yenilenen soğuk liste CRM'e yüklenmez.
 - Üçüncü kez: üç yüzüncü temasta ya da bir satır işe yaramadığında.
 
 Bir saat: kurmuyorsun, tanıyorsun. İşin yanında çalışıyorsan bu saat ikinci bloğun ilk akşamına oturur.
@@ -65,7 +67,7 @@ Bir şeyi baştan söyleyeyim: CRM'in ekranı İngilizce ve öyle kalacak. Türk
 
 Aşamalar hakkında bilmen gereken iki şey:
 
-**"Sonra" ne demek.** Şimdi olmayan ama altı ay sonra yeniden aranacak aday. Hem sen elle koyabiliyorsun hem de takip zinciri bittiğinde kendiliğinden düşüyor.
+**"Sonra" ne demek.** Şimdi olmayan ama geri dönülecek aday; ne zaman dönüleceği adaya-mesaj-yaz'daki geri dönüş tablosunda (konuşup söndüyse otuzuncu gün, hiç cevap vermediyse kırk beşinci gün). Hem sen elle koyabiliyorsun hem de takip zinciri bittiğinde kendiliğinden düşüyor.
 
 **Randevuya gelmemek bir aşama değil.** Aday gelmediğinde aşaması "görüşme ayarlandı"da kalıyor. Gelmediğini randevunun kendi kaydına yazıyorsun. Sebebi şu: o kişi hâlâ randevu almış bir aday, sadece o gün gelmemiş. İki denemede de gelmezse "sonra" aşamasına geçiyor.
 
@@ -96,7 +98,7 @@ Sıradaki hareket ve sıradaki tarih kanal başına değil, adayın tamamı içi
 
 Bilmen gereken üç şey var:
 
-**Bu satırları sahada sen doldurmuyorsun.** Telefonu kapatınca tek kelime söylüyorsun: "açmadı" ya da "randevu yarın on birde". Kanalı, tarihi, sonucu ve yeni durumu ben yazıyorum.
+**Bu satırları sahada sen doldurmuyorsun.** Telefonu kapatınca saha ekranındaki sonuç düğmesine basıyorsun; soğuk adayın kanalını, tarihini, sonucunu ve yeni durumunu aday listesine araç yazıyor. Aday cevap verince, randevu alınca ya da müşteri olunca kaydı CRM'e ben geçiriyorum, senin "tamam"ınla; bu satırlar o kayıtla birlikte gelir.
 
 **Kanal durumu geçmişi tutmuyor, bugünü tutuyor.** O kanalın şu anki hâlini gösteriyor. Adayın ne dediği ayrı: her temastan sonra kayda tek satırlık bir not düşüyorum. Akşamki sayılar nottan değil, kanalın tarih satırından çıkıyor: o gün tarihi bugüne yazılan her kayıt bir temas demek. Bu yüzden tarih satırı boş kalmıyor.
 
@@ -120,7 +122,7 @@ Bizim beş klasörümüzde toplam elli beş satır duruyor. Hepsini ezberlemiyor
 
 Dört satır hakkında ayrıca bilgin olsun:
 
-**"Kayıt türü" ne işe yarıyor.** İki değeri var: aday ve bağlantı. Aday, senin nişinde işletmesi olan kişi. Bağlantı, sana birini bağlayabilecek kişi; üçüncü günde çıkardığın B listesi buraya giriyor. Günün listesi sadece "aday" işaretlileri getiriyor, yani bağlantılar akşamki sayıları bozmuyor.
+**"Kayıt türü" ne işe yarıyor.** İki değeri var: aday ve bağlantı. Aday, senin nişinde işletmesi olan kişi. Bağlantı, sana birini bağlayabilecek kişi; ikinci bloğun akşamında çıkardığın B listesinden cevap verip birini bağlayanlar buraya giriyor. Bağlantılar günün listesine ve akşamki sayılara karışmıyor.
 
 **"Sıcak mı soğuk mu" ne zaman doluyor.** Görüşmede değil, kayıt açıldığında. Tanıdıkların ve onların bağladığı kişiler "sıcak", listeden çıkan işletmeler "soğuk".
 
@@ -148,15 +150,15 @@ Bir kayıt aç, sıradaki hareketi "ara" yap ve tarihine yarını yaz. Sonra ger
 
 ### Beşinci iş, takip zincirini doğrula (15 dakika)
 
-Cevap vermeyene tek seferde vazgeçmiyorsun. Zincir üç adımlı: üçüncü gün, yedinci gün, on dördüncü gün. Zincir hesabında kurulu ve açık; sen kurmuyorsun.
+Cevap vermeyene tek seferde vazgeçmiyorsun. Zincir üç adımlı: üçüncü gün, yedinci gün, on dördüncü gün. Soğuk adayda zinciri aday listesi yürütür: araç her temastan sonra sıradaki günü hesaplar, aday o sabah günün listesine ve saha ekranına düşer. CRM'deki takip zinciri akışı hesabında kurulu ve açık; o yalnız CRM'e geçmiş kayıtlarda çalışır. İkisini de sen kurmuyorsun.
 
-Ne yapıyor: bir kanalın durumu "yapıldı" olduğu anda başlıyor. Üçüncü, yedinci ve on dördüncü günde adayın sıradaki tarihini o güne çekiyor, yani aday o sabah kendiliğinden günün listesine düşüyor. Rapor gününde sıradaki hareketi "yok" yapıyor ve adayı "sonra" aşamasına taşıyor. Kaydı silinmiyor, altı ay sonra yeniden açılıyor.
+CRM'deki akış ne yapıyor: bir kanalın durumu "yapıldı" olduğu anda başlıyor. Üçüncü, yedinci ve on dördüncü günde adayın sıradaki tarihini o güne çekiyor, yani aday o sabah kendiliğinden günün listesine düşüyor. Zincir bitince sıradaki hareketi "yok" yapıyor ve adayı "sonra" aşamasına taşıyor. Kaydı silinmiyor, kırk beş gün sonra yeniden açılıyor.
 
-Mesajı zincir göndermiyor, sen gönderiyorsun. Zincir sadece o günü sana hatırlatıyor. Tek istisna e-posta takipleri: onların metnini sen onaylıyorsun, gönderimi CRM yapıyor.
+Mesajı zincir göndermiyor, sen gönderiyorsun. Zincir sadece o günü sana hatırlatıyor. Soğuk adayın e-posta takibini de sen kendi e-postandan gönderirsin, metin saha ekranında hazır gelir. CRM'den giden tek mesajlar, CRM'deki kayıtlara onayladığın şablonlardır: randevu hatırlatmaları gibi.
 
 Sebebi şu: cevapların çoğu ilk temasta gelmiyor; iki temasta bırakan kişi işin çoğunu görmeden bırakıyor. Bizde kaçıncı temasta geldiği sahadan dolacak.
 
-Zincirin istisnası yok, herkeste aynı çalışıyor. Bu bilerek böyle: dallanan akış bozulduğunda sessizce bozuluyor, tek yollu akış bozulduğunda hemen görülüyor. Tek ayrı sıra en çok istenen yüz işletmede: orada ilk temas video olduğu için video sırası yürüyor; zincir o adayları sadece listende gösteriyor, ne yapacağını video sırası söylüyor.
+Zincirin istisnası yok, herkeste aynı çalışıyor. Bu bilerek böyle: dallanan akış bozulduğunda sessizce bozuluyor, tek yollu akış bozulduğunda hemen görülüyor. Tek ayrı sıra video giden adaylarda: ilk yazılı temasın üçüncü günü cevap yoksa video gider, o adayda yazılı zincir kapanır ve video sırası yürür; zincir o adayları sadece listende gösteriyor, ne yapacağını video sırası söylüyor.
 
 Doğrulaması şöyle: bir test kaydında telefon durumunu "yapıldı" yap. Akışın kayıt listesinde o adayın adı birkaç saniye içinde görünecek. Görmüyorsan buraya yaz.
 
@@ -176,7 +178,7 @@ Bu ikisini CRM'de aramıyorsun, çünkü CRM'de böyle bir ekran yok. İkisi de 
 
 Sabah "günaydın" yazıyorsun. O gün temas edeceğin adayları sırayla veriyorum: önce cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda hızlı denetimi o sabah yapılacaklar. Aynı puandakileri yorum sayısı ayırıyor, çok yorum çok iş demek. Kaç kayıt geleceğini çalışma düzenin belirliyor; ekranda gördüğün sayı o gün bitirilecek sayı.
 
-Akşam "akşam" yazıyorsun. Beş sayıyı veriyorum: kaç temas (kanal ayrımıyla), kaç cevap, kaç olumlu cevap, kaç randevu, kaç görüşme ve kapanış. Sayıları CRM kayıtlarından ben çıkarıyorum.
+Akşam "akşam" yazıyorsun. Beş sayıyı veriyorum: kaç temas (kanal ayrımıyla), kaç cevap, kaç olumlu cevap, kaç randevu, kaç görüşme ve kapanış. Sayıları saha ekranının sonuçlarından, aday listesinden ve CRM'deki kayıtlardan ben çıkarıyorum.
 
 Sen kimi arayacağına karar vermiyorsun, sıralama yapmıyorsun, sayı toplamıyorsun. Kimi önce arayacağını düşünmek günde yirmi dakika yiyor ve o yirmi dakika beş arama demek.
 
@@ -184,25 +186,25 @@ Oranlara bugün bakmıyorsun. Her oranın kendi eşiği var: iki yüz temasta ce
 
 ### Sekizinci iş, yükleme ekranı (30 dakika)
 
-Yükleme ekranını iki durumda da aynı yerden açıyorsun; yaptığın iş aday listenin hazır olup olmadığına göre değişiyor.
+Yükleme ekranı yalnız sıcak kayıtların ilk aktarımı içindir; soğuk aday listesi bu ekrandan hiç yüklenmez. Cevap vermiş aday ve randevu azsa kayıtları bağlantıyla tek tek ben yazıyorum ve bu ekrana gerek kalmıyor; çoksa ekran şöyle çalışır.
 
 1. Sol menüde "Contacts" (kişiler). Sağ üstte "Import Contacts" (kişileri içe aktar) düğmesi.
-2. "Upload File" (dosya yükle) kutusuna dosyayı bırak. Aday listen `adaylar.csv`'de hazırsa o dosyayı veriyorum; listen henüz çıkmadıysa bugün dosya yüklemiyorsun, ekranı görüp geri okuyla çıkıyorsun ve bu adım liste çıktığı gün tamamlanıyor.
+2. "Upload File" (dosya yükle) kutusuna dosyayı bırak. Dosyayı ben veriyorum: aday listesinden yalnız cevap vermiş adayların ve randevuların satırları. Henüz böyle kayıt yoksa bugün on kayıtlık deneme dosyasıyla ekranı görüp yüklemeyi geri alıyorsun.
 3. "Map Fields" (alanları eşle) ekranı gelir: dosyanın hangi sütunu CRM'in hangi satırına gidecek, satır satır seçilir. Hangi sütunun nereye gideceğini ben veririm, sen listeden seçersin.
 4. Kayıt türü satırına "aday" yaz. Yükleme ekranı bütün kayıtlara aynı değeri verebiliyor, tek tek yazmıyorsun.
 5. Yükle, sonra sayıyı karşılaştır: CRM'e düşen kayıt sayısı dosyadaki satır sayısıyla aynı olmalı. Tutmuyorsa eşleme yanlıştır, geri alınır ve tekrarlanır.
 6. Bir kaydı aç ve üç şeye bak: dört kanal durumunun dördü de "yapılmadı" mı, sıradaki hareket satırı boş mu, kayıt türü "aday" mı. Dört kanalı "yeni aday hazırlama" akışı dolduruyor, birkaç saniye sürebiliyor; hemen bakma, sayfayı bir kez yenile.
 7. Bir kaydı aday hattına ekle, aşaması "yeni" gelsin. Sonra elle "yazdım" yap ve ekranın o kaydı taşıdığını gör.
 
-Aynı adayın iki kere girmemesi yükleme ekranının kendi işi: aynı numarayı görünce yeni kayıt açmaz, olanı günceller. Bu önemli, çünkü ikinci ayda listeyi yenilediğinde aynı işletmeler tekrar çıkıyor ve arka arkaya aranan numara seni engelliyor.
+Aynı adayın iki kere girmemesi yükleme ekranının kendi işi: aynı numarayı görünce yeni kayıt açmaz, olanı günceller. Bu önemli, çünkü aynı aday ikinci kez cevap verdiğinde ya da yeni randevu aldığında ikinci kayıt açılırsa geçmişi ikiye bölünüyor.
 
 ### Dokuzuncu iş, not kuralı (5 dakika)
 
-Her temastan sonra tek satır yazıyorsun: aday ne dedi. Uzun not yazma, yorum yazma, "iyi geçti" yazma. Adayın kendi kelimelerini yaz.
+Her temastan sonra saha ekranındaki not kutusuna tek satır yazıyorsun: aday ne dedi. Uzun not yazma, yorum yazma, "iyi geçti" yazma. Adayın kendi kelimelerini yaz.
 
 İki sebebi var. İki hafta sonra ona döndüğünde o cümleyi kullanıyorsun ve seni hatırlıyor. İkincisi, son on görüşmenin en az beşinde aynı itiraz çıkarsa teklifin kelimeleri ona göre değişiyor; bu sayımı ancak yazdıysan yapabiliyorsun.
 
-Notu kayda ben yazıyorum, sen söylüyorsun. Arama biter bitmez, on saniye sürüyor. Akşama bıraktığın notu yazmıyorsun.
+Not akşam sonuçlarla birlikte kayda geçer; CRM'deki kayıtlarda notu ben yazıyorum. Arama biter bitmez, on saniye sürüyor. Akşama bıraktığın notu yazmıyorsun.
 
 Adayın söylediği cümle nota gidiyor, itirazı ise ayrıca "itiraz" satırına yazılıyor. İkisi karışırsa on görüşme sonunda hangi itirazın kaç kere çıktığını sayamıyorsun.
 
@@ -229,7 +231,7 @@ Toplam üç saat: 20 + 25 + 30 + 10 + 15 + 10 + 15 + 30 + 5 + 10 dakika.
 
 Açılışta: "Bugün sabah bloğunda kendi adaylarını izleyeceğin düzeni öğreniyoruz. Sistem hazır kurulu geliyor; senin işin tanımak ve bir kez çalıştırmak. Liste yarın geliyor."
 Aşamaları değiştirmek isterse: "Dokuzu da yerinde kalıyor. Akşam okuduğun beş sayı ve haftalık kararların hepsi bunlardan çıkıyor; birini çıkarırsan bir sayıyı kaybediyorsun."
-Kanal satırlarını fazla bulursa: "Dört kanaldan ulaşacaksın ve aynı adaya iki kere yazarsan aday gidiyor. Dört satır, her birinde tek kelime. Sen yazmıyorsun zaten, ben yazıyorum; sen sadece 'açmadı' diyorsun."
+Kanal satırlarını fazla bulursa: "Dört kanaldan ulaşacaksın ve aynı adaya iki kere yazarsan aday gidiyor. Dört satır, her birinde tek kelime. Sen yazmıyorsun zaten; sahada sonuç düğmesine basıyorsun, gerisini araç ve ben yazıyoruz."
 İki hareket birden açmak isterse: "Bir adayın tek sıradaki hareketi olur. Bugün hem arayıp hem yazarsan kovalamış oluyorsun, cevap oranı düşüyor. Sıradaki hareket telefon, tarihi perşembe. Başka bir şey açmıyoruz."
 Ekranın İngilizce olmasına takılırsa: "Ekran İngilizce ve öyle kalacak, Türkçesi yok. Sen İngilizce okumuyorsun, ben hangi düğme nerede duruyor söylüyorum. Bulamadığın yerde ekranın görüntüsünü at."
 Satır eklemek isterse: "Elle satır ekleme. Adı birebir tutmazsa o satırı hiçbir modül bulamıyor ve sayım bozuluyor. Ne lazımsa söyle, ben ekliyorum."
@@ -237,7 +239,7 @@ Not almayı atlamak isterse: "Arama biter bitmez tek satır, adayın kendi cüml
 İki temasta vazgeçmek isterse: "Cevapların çoğu ilk mesajda gelmiyor. Zincir üç adımlı ve o günü sana kendiliğinden hatırlatıyor."
 Satır sayısını fazla bulursa: "Her satırı bir modül okuyor. Gözlem satırını mesajın yazıyor, itiraz satırını haftanın kararı sayıyor, en güçlü bulguyu mesajın ilk cümlesi okuyor, arama testi sonucunu görüşmedeki kanıtın kullanıyor. Boş duran satır yok."
 Sabah listesini kendi sıralamak isterse: "Sıralamayı sen yapmıyorsun. 'Gün' yazıyorsun, en üstten başlıyorsun. Kimi önce arayacağını düşünmek günde yirmi dakika yiyor ve o yirmi dakika beş arama demek."
-Günün listesini CRM'de arıyorsa: "O listeyi CRM'de arama, orada yok. Sıralamayı ben kuruyorum çünkü dört kademeli sıralama CRM'in liste ekranından çıkmıyor. Sen 'gün' yazıyorsun, liste geliyor."
+Günün listesini CRM'de arıyorsa: "O listeyi CRM'de arama, orada yok. Günün listesi telefondaki saha ekranında, sıralamayı ben kuruyorum. Soğuk adaylar CRM'e girmiyor; CRM'de yalnız cevap verenler, randevular ve müşteriler duruyor."
 Oran sorarsa: "Bugün oran yok. Cevap oranına iki yüz temasta bakıyoruz, karar üç yüzde. Gelme oranı otuz randevuda, kapanış oranı otuz görüşmede."
 Bitince: "Sistem hazır. Sırada sayfanın yayını; yarın liste."
 
@@ -245,17 +247,17 @@ Bitince: "Sistem hazır. Sırada sayfanın yayını; yarın liste."
 
 İş Beyni'ne: dokuz aşamanın doğrulandığı, beş klasörün ve elli beş satırın görüldüğü, dört akışın açık olduğunun doğrulandığı, takip zincirinin günleri, takip zincirinin canlı denendiği ve sonucu, test yüklemesinin tarihi ve sonucu, aynı kaydın birleştiğinin doğrulandığı, takvim linkinin özel değerlere yazıldığı.
 
-Bir sonraki modüllere: randevu durumu ve erteleme sayısı gorusmeye-getir'e (aynı gün, bu modülden sonra), yükleme adımları aday-listesi-cikar'a, denetim satırları aday-denetimi-cikar'a, dört kanal durum satırı ve sıradaki hareket satırı adaya-mesaj-yaz ile video-mesaj-cek'e, günün listesinin sırası gunu-planla'ya, akşamki beş sayı rakamlari-oku'ya, takip günü gelenler ve gelmedi işaretliler gunu-planla'ya, itiraz satırı gorusmeyi-analiz-et'e ve teklifin on görüşmelik kontrolüne, gözlem ve kanca satırları adaya-mesaj-yaz'a.
+Bir sonraki modüllere: randevu durumu ve erteleme sayısı gorusmeye-getir'e (aynı gün, bu modülden sonra), denetim satırları aday-denetimi-cikar'a (cevap veren aday CRM'e geçerken kartıyla geçer), dört kanal durum satırı ve sıradaki hareket satırı adaya-mesaj-yaz ile video-mesaj-cek'e, günün listesinin sırası gunu-planla'ya, akşamki beş sayı rakamlari-oku'ya, takip günü gelenler ve gelmedi işaretliler gunu-planla'ya, itiraz satırı gorusmeyi-analiz-et'e ve teklifin on görüşmelik kontrolüne, gözlem ve kanca satırları adaya-mesaj-yaz'a.
 
 Bu modülün tanıttığı ama doldurmadığı satırlar da var: sızıntı puanını, en güçlü bulguyu, lira karşılığını, karar verenin adını ve denetim kartının tamamını aday-denetimi-cikar yazıyor; arama testi ve yazılı test sonucunu kanitini-hazirla üretiyor ve dördüncü günde yazıyor. Bu modül yalnızca yerlerini gösteriyor.
 
 ## 8. Yedek yol
 
-- CRM henüz açılmadıysa: bu modül çalışmaz ve beklemez. Takip zinciri elle yürür, günleri İş Beyni'ne yazılır, sen gönderirsin. Zincirin günleri aynıdır; değişen tek şey mesajı kimin gönderdiği.
+- CRM henüz açılmadıysa: bu modül çalışmaz ve beklemez. Soğuk adayların takip zinciri zaten aday listesinde yürür; randevular İş Beyni'nin "Bugünün listesi" bölümünde durur ve hatırlatmaları sen gönderirsin.
 - Bir ekranı bulamazsan: ekranın görüntüsünü buraya at, hangi düğme olduğunu söylerim. Tarayıcı çevirisini açma.
 - Dokuz aşama ya da bir klasör eksik geliyorsa: kurulum sırasında bir şey aksamış demektir. Sen elle eklemiyorsun, buraya yazıyorsun, aynı gün düzeltiliyor.
 - Takip zinciri test kaydında görünmüyorsa: akış kapalı kalmış olabilir. Buraya yaz, bakıyorum. Zincir çalışmasa da gün durmuyor; takip günlerini o hafta ben hatırlatıyorum.
-- Yükleme ekranı bulunamazsa ya da eşleme tutmazsa: üçüncü güne kadar vaktin var. O gün elle giriş yolu devreye giriyor ve ilk yüz aday elle yazılıyor.
+- Yükleme ekranı bulunamazsa ya da eşleme tutmazsa: sıcak kayıtları bağlantıyla tek tek ben yazıyorum; sayıları az olduğu için gün durmuyor.
 - Aynı kayıt ikinci kez yeni kayıt açıyorsa: eşleme yanlış. Liste yüklenmeden düzeltiyorsun, sonra düzeltmek zor.
 - Yüklenen kayıtlarda dört kanal durumu boş geliyorsa: "yeni aday hazırlama" akışı çalışmamış demektir. Sayfayı yenile, hâlâ boşsa buraya yaz. Yüklemeyi geri almıyorsun, satırları sonradan doldurmak mümkün.
 - Takvim linki hâlâ yoksa: ikinci günde gorusmeye-getir yarım kalmış demektir, önce o bitiyor. Boş linkli mesaj gönderilmiyor.

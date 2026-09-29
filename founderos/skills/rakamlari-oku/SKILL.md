@@ -1,10 +1,12 @@
 ---
 user-invocable: false
 name: rakamlari-oku
-description: "Her akşam. Günün beş sayısı ve tek cümle."
+description: "Her akşam. Saha ekranının sonuçlarını işler, günün beş sayısını ve tek cümleyi verir, günlüğe ve durum kaydına yazar."
 ---
 
 # rakamlari-oku
+
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -31,15 +33,15 @@ Pazarlamadaki karşılığı: ölçmediğin şeyi yönetemezsin, ama yanlış ş
 
 ## 3. Ne okur
 
-Kayıt yerinden: CRM açıldıysa CRM'den, açılmadıysa İş Beyni'nin "Bugünün listesi" bölümünden. O günün bütün kayıtları: temas sayısı ve kanalı, gelen cevaplar, olumlu cevaplar, yazılan randevular, gelen ve gelmeyen randevular, yapılan görüşmeler, kapanışlar. Akşamki beş sayıyı FounderOS bu kayıtlardan sayıyor. CRM'siz günlerde sayılar gün içinde öğrencinin söylediklerinden Bugünün listesi'ne yazılmıştır; bu "elle yazıldı" sayılmaz, normal yoldur.
+Kayıttan: soğuk temasların sonuçları saha ekranından ve aday listesinden (aday aracının `ozet` çıktısı); cevap verenler, randevular, görüşmeler ve kapanışlar CRM açıldıysa CRM'den, açılmadıysa aday listesinden ve İş Beyni'nin "Bugünün listesi" bölümünden. O günün bütün kayıtları: temas sayısı ve kanalı, gelen cevaplar, olumlu cevaplar, yazılan randevular, gelen ve gelmeyen randevular, yapılan görüşmeler, kapanışlar. Akşamki beş sayıyı FounderOS bu kayıtlardan sayıyor; öğrenci sayı söylemez, sonuç düğmesine basmış olması yeter.
 İş Beyni'nden: gelir planındaki hedefler, dünkü ve bu haftanın sayıları, gün sayacı.
 gorusmeyi-analiz-et'ten: o günkü görüşmelerin sonucu.
 
 ## 4. Ne sorar
 
-Sormaz. Sayıları kayıt yerinden kendisi alır.
+Sormaz. Sayıları kayıttan kendisi alır.
 
-Tek istisna: kayıt yerinde o gün hiç kayıt yoksa tek soru sorar. "Bugün hiç kayıt görünmüyor. Gerçekten sıfır mı, yoksa yazmayı mı unuttun?" Sebebi şu: sıfır gün ile yazılmamış gün aynı şey değil ve ikisine verilen cevap farklı.
+Önce kapanışı atlanan günler kapanır: saha açıksa aday aracının `kapat` komutu son kapanıştan bu yana her günün saha sonuçlarını o günün tarihiyle işler ve ölçümünü yazar (en çok yedi gün geriye); öğrenciye sorulmaz, söylenmez. Komutun ilk satırı iş günüdür: gece yarısından sonra, sabah beşe kadar yapılan kapanış önceki günündür. Sonra iş gününün saha ekranına bakar: veri bağlantısı varsa `saha_sonuclari` iş gününün tarihiyle o günün sonuçlarını getirir. Saha ekranında sonuç varsa gün sıfır kayıt sayılmaz; sonuçlar işlenir ve sayılar oradan okunur. Tek istisna: saha ekranında da kayıtta da o gün hiç sonuç yoksa tek soru sorar. Bağlantı varsa: "Bugün hiç sonuç görünmüyor. Gerçekten sıfır mı?" Bağlantı yoksa: "Bugün hiç sonuç görünmüyor. Gerçekten sıfır mı, yoksa Sonuçları kopyala deyip yapıştırmayı mı unuttun?" Sebebi şu: sıfır gün ile işlenmemiş gün aynı şey değil ve ikisine verilen cevap farklı.
 
 ## 5. Ne yapar
 
@@ -102,7 +104,7 @@ Haftanın tek sayısı, o akşamın ilk cümlesi: bu hafta kaç görüşme yapı
 ## 6. Ne söyler
 
 Normal akşam: "Bugün yüz temas, on iki cevap, iki randevu. Haftalık toplam beş yüz. Yarın aynı sayı."
-Sıfır kayıt varsa: "Bugün hiç kayıt yok. Gerçekten sıfır mı, yoksa yazmayı mı unuttun? İkisine verdiğim cevap farklı."
+Sıfır kayıt varsa (saha ekranında da sonuç yoksa): "Bugün hiç sonuç yok. Gerçekten sıfır mı?" Bağlantı yoksa arkasından: "Yoksa sonuçları yapıştırmayı mı unuttun? İkisine verdiğim cevap farklı."
 Açılma oranına bakarsa: "Açılma oranına bakma. O sayı artık güvenilir değil, bazı posta programları e-postayı sen açmadan kendisi açıyor. Cevaba bak."
 Az sayıda orana bakarsa: "Beş randevunun üçü gelmedi. Bu yüzde kırk değil, sadece beş randevu. Otuza gelmeden bu orana bakmıyoruz."
 Kötü görüşme sonrası: "Bugünün en kötü görüşmesine bakacağız, sadece şuna: nerede koptu. Sonra kapatıyoruz. Üç nefes, üç kelime, gün bitti."
@@ -111,27 +113,29 @@ Sayaç okurken: "Gün yirmi altı. Toplam bin iki yüz temas, on iki görüşme.
 
 ## 7. Ne yazar
 
-İş Beyni'ne: o günün beş sayısı (onuncu bölüm), gün sayacı, haftalık toplam, akşamın tek cümlesi, kötü görüşme notu. CRM açılmadıysa Bugünün listesi'nin "Dün ne oldu" satırı da bu akşam yazılır; sabah planı oradan okur. Bir de koşan toplam: bugüne kadar kaç temas, kaç görüşme, kaç randevu. Bu toplam her akşam üstüne ekleniyor ve bütün kilitler (üç yüz temas, on görüşme, otuz görüşme, otuz randevu) ondan okunuyor. CRM böyle bir toplamı tutmuyor, o yüzden akşam sayımı atlanan gün kilitler de kayıyor.
+Günlüğe (o günün dosyası, sadece eklenir): o günün beş sayısı, sıcak ve soğuk ayrımıyla; haftanın son akşamı haftalık toplam; akşamın tek cümlesi; kötü görüşme notu. İş Beyni'nin onuncu bölümünde yalnız son değer ve koşan toplam durur: bugüne kadar kaç temas, kaç cevap, kaç randevu, kaç görüşme, kaç müşteri; eşik satırı da orada güncellenir. Bütün kilitler (üç yüz temas, on görüşme, otuz görüşme, otuz randevu) bu toplamdan okunuyor. CRM böyle bir toplamı tutmuyor, o yüzden akşam sayımı atlanan gün kilitler de kayıyor. CRM açılmadıysa Bugünün listesi'nin "Dün ne oldu" satırı da bu akşam yazılır; sabah planı oradan okur.
+Durum kaydına (`.founderos/durum.json`): sayaçlar (temas, cevap, randevu, görüşme, müşteri) koşan toplamla aynı, son temas tarihi, sıradaki adım (yarın sabah gün planı; en çok on iki kelime, sabah telefona bildirim olarak da gider), kapanış günü (`son_kapanis`, iş günü), güncellenme saati. Veri bağlantısı açıksa aynı içerik `durum_yaz` aracıyla sunucuya da yazılır; panel ve hatırlatmalar oradan okur. Hata olursa sessizce geçilir, klasördeki durum kaydı yine yazılır.
 CRM'e: eksik kalan kayıtlar tamamlanır. Bu modül eksik kaydı görür ve sana söyler, ama senin onayın olmadan yazmaz.
-CRM açılmadıysa: öğrencinin yapıştırdığı saha sonuçları aday aracıyla işlenir (aday-listesi-dosyasi, sonuclar), günün sayıları aracın ozet komutundan okunur; sabah `adaylar.html` bugünkü haliyle açılır.
+Saha sonuçları (CRM açık olsa da): akşam veri bağlantısındaki `saha_sonuclari` aracı telefondaki saha ekranının sonuçlarını "FounderOS saha sonuçları" metni olarak döndürür; FounderOS metni olduğu gibi `.founderos/sonuc.txt` dosyasına yazar ve aday aracının `sonuclar` komutunu iş gününün tarihiyle çalıştırır (`--gun`, aday-listesi-dosyasi). Bağlantı yoksa yedek yol: öğrenci masaüstündeki sayfada "Sonuçları kopyala"ya basar ve metni sohbete yapıştırır; aynı dosyaya yazılır, aynı komut çalışır. Günün sayıları aracın `ozet` komutundan okunur; sabah `adaylar.html` bugünkü haliyle açılır. Cevap veren, randevu alan ya da müşteri olan aday CRM açıksa oraya da geçer, öğrencinin onayıyla.
 
-**Günde iki gelen kutusu anı var ve planın içinde duruyor.** Öğlen, aramaların arasında beş dakika: e-posta ve Instagram açılır, gelen cevaplar olduğu gibi yapıştırılır, FounderOS yanıtları yazar ve öğrenci öğleden sonra gönderir. Akşam, sonuçlar yapıştırılırken aynı şey tekrarlanır. Sebebi şu: cevap veren aday en değerli aday ve yirmi dört saat sonra cevap veren kişi soğuyor. "Cevap gelince söyle" demek yetmiyor, saha günü buna yer bırakmıyor; o yüzden saat sabit.
+**Günde iki gelen kutusu anı var ve planın içinde duruyor.** Öğlen, aramaların arasında beş dakika: e-posta ve Instagram açılır, gelen cevaplar olduğu gibi yapıştırılır, FounderOS yanıtları yazar ve öğrenci o kontrolün içinde, bekletmeden gönderir. Akşam, sonuçlar okunurken aynı şey tekrarlanır. Sebebi şu: cevap veren aday en değerli aday ve yirmi dört saat sonra cevap veren kişi soğuyor. "Cevap gelince söyle" demek yetmiyor, saha günü buna yer bırakmıyor; o yüzden saat sabit.
 
-**Günde iki deneme anı var ve ikisi de planın içinde.** Sabah yirmi beş dakika: ertesi gün yazılı temas edilecek adayların formu doldurulur, WhatsApp'ına gerçek bir müşteri sorusu yazılır. Tam zamanlıda yirmi aday, işin yanında on. Akşam yarım saat, yedi ile yedi buçuk arası: ertesi gün telefonla aranacak adaylar aranır, kimin açtığı sayılır. Tam zamanlıda kırk aday, işin yanında yirmi. İkisi de temas sayılmıyor ve günlük temas sayısından düşülmüyor; kuralları kanitini-hazirla'da.
+**Deneme anları planın içinde, ama her gün değil.** Sahanın ilk haftası her gün iki deneme anı var, ikinci haftadan itibaren haftada iki gün. Sabah yirmi beş dakika: sonraki günlerde yazılı temas edilecek adayların formu doldurulur, WhatsApp'ına gerçek bir müşteri sorusu yazılır. Tam zamanlıda yirmi aday, işin yanında on. Akşam yarım saat, kartın saatinde: sonraki günlerde telefonla ilk aranacak adaylar aranır, kimin açtığı sayılır. Tam zamanlıda kırk aday, işin yanında yirmi. Sonuç sohbete tek tek gelmez, test bitince sayıyla gelir. İkisi de temas sayılmıyor ve günlük temas sayısından düşülmüyor; kuralları ve günleri kanitini-hazirla'da.
 
 Sebebi tek cümle: test edilmiş adaya "dün akşam aradım, açan olmadı" denir, edilmemişe kartın sorusu sorulur. Birincisi ikincisinden güçlü, o yüzden testin sayısı günün planından geliyor, sabit bir rakamdan değil.
 
 Haftada bir de toplu araştırma var, pazartesi sabahı on dakika: nişin iş ilanı araması. Tek arama, sonucu bütün listeye dağılıyor. Bu, gözlemi olmayan adayların gözlem kazandığı yer. Reklam bakışı buraya girmiyor, onu veri servisi çekimle birlikte kendisi yapıyor.
 
-**Liste stoğu her sabah ozet'in son satırında görünür ve takvimle değil stokla tetiklenir.** Araç dokunulmamış aday sayısını günlük temposuna bölüyor ve kaç gün kaldığını yazıyor. Beş günün altına inince "yeni ilçe çekilmeli" uyarısı çıkıyor ve o gün FounderOS yeni bir ilçe için çekim başlatıyor; öğrenciye sorulmuyor, söyleniyor. Aylık kayıt tavanı 3.500; telefon yolunda ayın üç ilçesi 2.400 tutuyor ve sekiz yüzlük bir tazeleme üstüne sığıyor. Takvime bağlı bir yenileme yok: listenin ne zaman biteceği tempoya bağlı, aya değil.
-Veri servisine: günün sayıları, yalnız sayı olarak (gün sayacı, aşama, temas, cevap, randevu, görüşme, toplam müşteri); isim, işletme adı, not gitmez. Bu, FounderOS ekibinin kimin nerede takıldığını görüp erken yardım etmesi için. O gün saha çıkışı olduysa aynı çağrıya nişin adı, kartın açılış sürümü ve günün sonuç dökümü (açmadı, gönderdim, istemedi, ilgilendi, sonra) eklenir; ikisi de aday aracının `sonuclar` komutunun bastığı "gün dökümü" satırından okunur, uydurulmaz, `sonuclar` çalışmadıysa gönderilmez. Bu, hangi kartın hangi açılış metniyle ne getirdiğini merkezde toplamak için; öğrenciye söylenmez. Servis cevap vermezse sessizce geçilir, gün durmaz.
+**Liste stoğu her sabah ozet'in son satırında görünür ve takvimle değil stokla tetiklenir.** Araç dokunulmamış aday sayısını günlük temposuna bölüyor ve kaç gün kaldığını yazıyor. Beş günün altına inince "yeni ilçe çekilmeli" uyarısı çıkıyor. O akşam FounderOS sıradaki ilçeyi seçer ve durum kaydına `siradaki_cekim` olarak yazar (kategori, şehir, ilçe, hedef 800, kartın reklam kütüphanesi kelimeleri, bugünün tarihi); veri bağlantısı açıksa `durum_yaz` ile gider. Sunucu çekimi gece başlatır, sabah günaydında liste hazır gelir ve içeri alınır. Öğrenciye sorulmuyor, tek cümle söyleniyor: "Listen beş günlük işin altına indi; yeni ilçenin listesi bu gece çekiliyor, sabah hazır." Gece çekimi gelmediyse sabah eski yol işler: FounderOS çekimi oturumda başlatır. Aylık kayıt tavanı 3.500; telefon yolunda ayın üç ilçesi 2.400 tutuyor ve sekiz yüzlük bir tazeleme üstüne sığıyor. Takvime bağlı bir yenileme yok: listenin ne zaman biteceği tempoya bağlı, aya değil.
+Veri servisine (`olcum_yaz`, iş gününün tarihiyle; yanında yukarıdaki `durum_yaz`): günün sayıları, yalnız sayı olarak (gün sayacı, aşama, temas, cevap, randevu, görüşme, toplam müşteri); isim, işletme adı, not gitmez. Bu, FounderOS ekibinin kimin nerede takıldığını görüp erken yardım etmesi için. O gün saha çıkışı olduysa aynı çağrıya nişin adı, kartın açılış sürümü ve günün sonuç dökümü (açmadı, gönderdim, istemedi, ilgilendi, sonra) eklenir; ikisi de aday aracının `sonuclar` komutunun bastığı "gün dökümü" satırından okunur, uydurulmaz, `sonuclar` çalışmadıysa gönderilmez. Bu, hangi kartın hangi açılış metniyle ne getirdiğini merkezde toplamak için; öğrenciye söylenmez. Servis cevap vermezse sessizce geçilir, gün durmaz.
 
 ## 8. Yedek yol
 
-- CRM açıkken o gün CRM'e yazılmamışsa: sayılar senden alınır ve "elle yazıldı" notu düşülür. Üç gün üst üste elle yazılıyorsa kayıt alışkanlığı bozulmuş demektir, haftanın kararına gider. CRM açılmadıysa bu satır işlemez.
+- O gün sonuç düğmesine basılmamışsa (arama yapıldı ama saha ekranında sonuç yok): sayılar senden alınır ve "elle yazıldı" notu düşülür. Üç gün üst üste elle yazılıyorsa kayıt alışkanlığı bozulmuş demektir, haftanın kararına gider.
+- Veri bağlantısı yoksa: saha sonuçları "Sonuçları kopyala" yoluyla gelir; `olcum_yaz` ve `durum_yaz` atlanır, durum kaydı klasöre yine yazılır.
 - Bir sayı ölçülemiyorsa: "ölçülemedi" yazılır, uydurulmaz. Ölçülemeyen sayı hakkında karar verilmez.
 - Görüşme kaydı yoksa: gorusmeyi-analiz-et'in yedek yolu işler, bu modül sadece sayıları alır.
-- Akşam okuma atlanırsa: ertesi sabah plandan önce yapılır, atlanmaz. İki gün üst üste atlanırsa haftanın kararına gider.
+- Akşam okuma atlanırsa: o günün saha sonuçları ertesi sabah `kapat` ile, ilk mesajdan önce işlenir (en çok yedi gün geriye); takipler, randevular ve istemeyenler kaybolmaz. İki gün üst üste atlanırsa haftanın kararına gider.
 - Sayılar hedefin çok üstündeyse: bu da bir işarettir ve sorgulanır. Genellikle kayıt yanlış girilmiştir.
 
 ## 9. Sıradaki adım ve işaretler
@@ -139,9 +143,10 @@ Veri servisine: günün sayıları, yalnız sayı olarak (gün sayacı, aşama, 
 Sıradaki: ertesi sabah gunu-planla. Haftanın son akşamında degisiklige-karar-ver.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- İki gün üst üste sıfır kayıt: vazgeçme işareti, sabah planı değişir.
-- Üç gün üst üste sayılar elle yazıldı (yalnız CRM açıkken): kayıt alışkanlığı bozuk, haftanın kararına gider.
-- İki yüz temasta cevap oranı yüzde ikinin altında: teşhis işareti degisiklige-karar-ver'e gider, karar üç yüzde verilir.
+- İki gün üst üste sıfır kayıt (saha ekranında sonuç varsa sıfır sayılmaz): vazgeçme işareti, sabah planı değişir.
+- Üç gün üst üste sayılar elle yazıldı (sonuç düğmesine basılmadı): kayıt alışkanlığı bozuk, haftanın kararına gider.
+- İki yüz temasta cevap oranı yüzde ikinin altında: teşhis işareti degisiklige-karar-ver'e gider, karar üç yüzde, temaslar olgunlaşınca verilir.
+- Üç yüz temas doldu: yazılı kanalın karar günü (yedi gün sonrası) eşik satırına yazılır ve öğrenciye tarihiyle söylenir.
 - Otuz randevu doldu: gelme oranı ilk kez okunur.
 - Otuz görüşme doldu: kapanış oranı ilk kez okunur, fiyat kilidi açılır.
 - Bir sayı normalin çok altına düştü: haftayı beklemez, aynı akşam degisiklige-karar-ver açılır.

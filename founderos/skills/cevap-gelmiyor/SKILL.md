@@ -6,6 +6,8 @@ description: "Öğrenci \"kimse cevap vermedi\", \"hiç dönüş yok\" dediğind
 
 # cevap-gelmiyor
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Ürünün gerçek sınavı bu modülde verilir. Birinci gün her şey etkileyici görünebilir; asıl an şu cümle: "On işletmeye yazdım, kimse cevap vermedi."
@@ -22,7 +24,7 @@ Pazarlamadaki karşılığı: yanıtsızlık bir sonuç değil, bir veridir.
 
 ## 3. Ne okur
 
-CRM'den ya da İş Beyni'nin "Bugünün listesi" bölümünden: son yedi günde kime yazıldı, hangi kanaldan, hangi saatte, hangi metinle, kaç kişiye, kaçından ne geldi.
+Aday listesinden (aday aracının kayıtları; soğuk temaslar CRM açıldıktan sonra da orada): son yedi günde kime yazıldı, hangi kanaldan, hangi saatte, hangi metinle, kaç kişiye, kaçından ne geldi.
 Denetim kartlarından: yazılan adayların sızıntı puanı, karar vericinin adı bulunmuş mu.
 Niş kartından: kanal ve zaman bölümü, kim karar veriyor bölümü.
 adaya-mesaj-yaz'dan: kullanılan kalıp ve takip zinciri.
@@ -45,7 +47,7 @@ Beş kontrolü sırayla yapar ve her birinin sonucunu tek cümleyle söyler.
 
 **5. Ne yazıldı.** Metin, adaya-mesaj-yaz'ın kalıbıyla ve kartın açılış bulgusuyla karşılaştırılır. Kanca yok, bulgu yok, rakam yok, "ilginizi çekerse" tonu varsa sorun metindedir. Bu durumda metin tek noktadan değiştirilir, baştan yazılmaz.
 
-Beş kontrolden çıkan sonuç tek bir değişikliktir. İki şey aynı anda değiştirilmez, çünkü hangisinin işe yaradığını bilemezsin. Değişiklik gerekçesiyle söylenir ve İş Beyni'ne yazılır: ne değişti, neden, hangi sayıda tekrar bakılacak.
+Beş kontrolden çıkan sonuç tek bir değişikliktir. İki şey aynı anda değiştirilmez, çünkü hangisinin işe yaradığını bilemezsin. Değişiklik gerekçesiyle söylenir ve günlüğe yazılır: ne değişti, neden, hangi sayıda tekrar bakılacak; değişen alan İş Beyni'nde yerinde güncellenir.
 
 ### Ne demez
 
@@ -59,15 +61,15 @@ Aynı mesajın yeni versiyonunu "yeni bir deneyelim" diye vermez. Değişiklik b
 
 ## 6. Ne söyler
 
-"On kişiye yazmışsın, üçüne dün, yedisine üç gün önce. Yedisinin takip günü bugün, üçününki yarın; henüz sonuç sayılacak gün gelmedi. Bir şey var: yedisine e-posta atmışsın, senin kartın bu sektörde sabah dokuzla on bir arası telefon diyor. Bugün o yediyi sabah bloğunda arıyoruz, e-posta zincirine dokunmuyoruz. Otuz temastan sonra bir daha bakarız."
+"On kişiye yazmışsın, üçüne dün, yedisine üç gün önce. Yedisinin takip günü bugün, üçününki yarın; henüz sonuç sayılacak gün gelmedi. Bir şey var: yedisine e-posta atmışsın, senin kartın bu sektörde [kartın saati] telefon diyor. Bugün o yediyi saha bloğunun ilk yarım saatinde arıyoruz, e-posta zincirine dokunmuyoruz. Otuz temastan sonra bir daha bakarız."
 
 ## 7. Ne yazar
 
-İş Beyni'nin kayıt bölümüne: tarih, hangi kontrol ne çıkardı, yapılan tek değişiklik, tekrar bakılacak sayı.
+Günlüğe: tarih, hangi kontrol ne çıkardı, yapılan tek değişiklik, tekrar bakılacak sayı. İş Beyni'ne: değişen alanın yeni hali (kanal, saat, liste sırası ya da metin); tekrar bakılacak sayı açık işler bölümüne.
 
 ## 8. Yedek yol
 
-Kayıt eksikse (kime ne zaman yazıldığı belli değilse) önce kayıt tamamlatılır; bu, günün ilk işi olur ve bir daha eksik kalmasın diye o gün her temas kaydedilerek yapılır. Kayıtsız temasın incelenecek bir yanı yoktur.
+Kayıt eksikse (kime ne zaman yazıldığı belli değilse) önce kayıt tamamlatılır; bu, günün ilk işi olur ve bir daha eksik kalmasın diye o gün her temas sonuç düğmesiyle kaydedilerek yapılır. Kayıtsız temasın incelenecek bir yanı yoktur.
 
 ## 9. Sıradaki adım ve işaretler
 

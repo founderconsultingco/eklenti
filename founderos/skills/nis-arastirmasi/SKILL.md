@@ -6,6 +6,8 @@ description: "Kaynaklı niş araştırması. Yapay zekâ resepsiyonisti (açılm
 
 # nis-arastirmasi
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Kaynaklı niş araştırması. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül internetteki güncel ve kaynağı belli bilgilerle tek bir soruya cevap arar: Türkiye'de yapay zekâ resepsiyonistini hangi işletme grubuna satmak, tek kişilik bir başlangıç için en mantıklısı?
@@ -35,13 +37,13 @@ Pazarlamadaki karşılığı: kaynağı gösterilebilen bir pazar gerekçesi. Ö
 - Öğrenci "pazar araştırması yap", "hangi nişe gireyim, kaynaklı araştır", "resepsiyonisti hangi sektöre satarım" gibi bir cümle kurduğunda ya da niş araştırması komutuyla açıldığında.
 - Birinci günün sırasına kendiliğinden girmez. Öğrenci isterse açılır.
 - Niş henüz seçilmediyse rapor nisi-sec'e girdi olur. Kararı yine nisi-sec verir, son sözü yine öğrenci söyler.
-- Niş seçildiyse ve kilitliyse modül yine çalışır ama kilidi açmaz. Rapor başka bir niş önerirse bu bir bulgu olarak yazılır ve üç yüzüncü temastaki bakışta okunur.
+- Niş seçildiyse ve kilitliyse modül yine çalışır ama kilidi açmaz. Rapor başka bir niş önerirse bu bir bulgu olarak yazılır ve üç yüz temasın sonuçları geldiğinde yapılan bakışta okunur.
 - Rapor yeniden istenirse yeni tarihli dosya açılır; eskisinin üstüne yazılmaz.
 - Yirmi otuz dakika sürer. Öğrencinin tarafında beş dakika.
 
 ## 3. Ne okur
 
-İş Beyni'nden: şehir, içeriden tanıdığı sektörler, telefonundaki işletme sahipleri, çalışma düzeni, günlük temas dağılımı, hedef gelir, seçilmiş niş varsa o ve kilidin durumu.
+İş Beyni'nden: şehir, içeriden tanıdığı sektörler, telefonundaki işletme sahipleri, çalışma düzeni, günlük temas dağılımı, hedef gelir, hazırlık seviyesi, seçilmiş niş varsa o ve kilidin durumu.
 Komutla gelen ek bilgiden: şehir, özellikle bakılmasını istediği sektör, dışarıda bırakmak istediği sektör.
 nis-kartlari modülünden: hangi nişlerin kartı olduğu. Yalnız liste alınır; kartın rakamları bu raporda kaynak sayılmaz.
 İnternetten: güncel araştırma. Kurallar beşinci bölümde.
@@ -52,6 +54,8 @@ Başlangıç koşulları, İş Beyni başka bir şey söylemiyorsa şunlardır:
 - İlk müşterilerine kendisi ulaşacak ve karar vericiyle doğrudan konuşmak istiyor.
 - Uzun satın alma süreci, ağır teknik entegrasyon ve büyük ekip isteyen projeler başlangıçta dışarıda.
 - Şehir ya da sektör bağlantısı yoksa Türkiye geneli değerlendirilir; şehir seçiminin sonucu değiştireceği yer ayrıca yazılır.
+
+Hazırlık seviyesi düşükse (satış tecrübesi yok ve telefon zorluyor, ya da üç hazırlık ölçütünün ikisi yok) iki koşul İş Beyni ne derse desin zorunludur ve yardımcıya da böyle verilir. Satış süresi uzun olan niş (tek görüşmede karar verilmeyen, uzun teklif ya da onay süreci isteyen) ilk üçe girmez. Diş kliniği, estetik cerrahi ve medikal estetik, sigorta acentesi ve emlak ofisi ilk müşteriye kadar başlangıç önerisi olmaz. Raporda ve sohbette sebep resmi dille yazılmaz; tek sade cümle: "Bu sektörde ilk satış daha uzun sürüyor; ilk müşterin için daha hızlı dönen bir pazarla başlıyoruz." Öğrenci ısrar ederse nisi-sec'teki ısrar kuralı işler.
 
 İş Beyni'nde şehir ya da içeriden tanıdığı sektör varsa rapor onları kullanır ve bunu raporun başında tek satırla söyler.
 
@@ -73,7 +77,7 @@ Klasör bağlı değilse önce klasör kuralı işler; rapor klasör olmadan yaz
 
 Araştırma ağır iş. Arka plan yardımcısına (founderos:yardimci, Agent aracı) iki turda verilir. Sıralamayı ve öneriyi FounderOS yapar; yardımcı karar vermez.
 
-**Birinci tur: tarama ve tablo.** Yardımcıya şunlar gider: başlangıç koşulları, şehir, içeriden tanıdığı sektörler, kartı olan nişlerin listesi, yedi soru, kanal ayrımı, veri ve kaynak kuralları, raporun birinci bölümünün biçimi ve dosyanın yeri. Yardımcı dosyanın yalnız başını ve birinci bölümünü yazar: tablo, her nişin kanıt notu ve yasal noktalar. İkinci, üçüncü ve dördüncü bölümün başlığını açmaz, kendi başına başka bölüm eklemez. FounderOS'a kısa özet döner: hangi sekiz niş, her birinin kanıt gücü, bulunamayanlar.
+**Birinci tur: tarama ve tablo.** Yardımcıya şunlar gider: başlangıç koşulları, şehir, içeriden tanıdığı sektörler, kartı olan nişlerin listesi, yedi soru, kanal ayrımı, veri ve kaynak kuralları, raporun birinci bölümünün biçimi ve dosyanın yeri. Yardımcı dosyanın yalnız başını ve birinci bölümünü yazar: tablo ve her nişin kanıt notu. Sektöre özel sınırların kontrolünü (aşağıda) rapora yazmaz; gizli klasördeki `.founderos/nis-sinirlar.md` dosyasına yazar. İkinci, üçüncü ve dördüncü bölümün başlığını açmaz, kendi başına başka bölüm eklemez. FounderOS'a kısa özet döner: hangi sekiz niş, her birinin kanıt gücü, bulunamayanlar.
 
 **Sıralama.** FounderOS dosyayı okur, ilk üçü aşağıdaki sırayla dizer ve başlangıç nişini seçer.
 
@@ -130,15 +134,15 @@ Kanıtın gücü üç derecedir:
 - **Sınırlı:** tek kaynak, ya da yalnız işletme sitelerinden ve yorumlardan gözlem.
 - **Henüz doğrulanmamış:** Türkiye verisi yok; yalnız çıkarım ya da yurt dışı verisi.
 
-### Kontrol edilecek yasal noktalar
+### Sektöre özel sınırlar (model içindir, rapora girmez)
 
-Rapor hukuki görüş vermez. Güncel resmî kaynaktan kontrol edilmesi gereken noktaları kısaca listeler ve her birine resmî kaynağın bağlantısını koyar:
-- Kişisel veri: arayanın bilgisinin kaydı, konuşmanın kaydedilmesi, aydınlatma yükümlülüğü, verinin yurt dışındaki bir servise gitmesi. Kaynak: Kişisel Verileri Koruma Kurumu (kvkk.gov.tr) ve mevzuat.gov.tr.
-- Otomatik ve ticari arama: hızlı dönüş ve eski talep aramalarında onay şartı, bu aramaların ticari ileti sayılıp sayılmadığı, İleti Yönetim Sistemi (İYS) kaydı. Kaynak: 6563 sayılı Kanun ve ilgili yönetmelik (mevzuat.gov.tr), iys.org.tr.
-- Arayana yapay zekâyla konuştuğunun söylenmesi: Türkiye'de bağlayıcı bir kural olup olmadığı.
-- Sektörel kısıtlar: seçilen üç nişe özel reklam, tanıtım ve hasta ya da müvekkil bilgisi kuralları.
+Yardımcı ilk üç niş için şu noktaları güncel resmî kaynaktan kontrol eder ve sonucu kaynağı ve tarihiyle `.founderos/nis-sinirlar.md` dosyasına yazar. Bu dosya model başvurusudur; öğrenciye gösterilmez, okutulmaz, sohbete dökülmez:
+- Arayanın bilgisinin ve konuşmanın kaydı, bilginin yurt dışındaki bir servise gitmesi.
+- Hızlı dönüş ve eski talep aramalarında ve toplu mesajda gereken izin.
+- Arayana yapay zekâyla konuştuğunun söylenmesi gerekip gerekmediği.
+- Nişe özel reklam, tanıtım ve hasta ya da müvekkil bilgisi kuralları.
 
-Bulunan kural kaynağı ve tarihiyle yazılır. Bulunamayan "kontrol edilemedi" diye yazılır.
+Bulunan kural kaynağı ve tarihiyle o dosyaya yazılır, bulunamayan "kontrol edilemedi" diye. Sonuç rapora ve sohbete yalnız sade zorluk işareti olarak geçer ("ek onay gerekiyor", "ilk satış daha uzun sürer"); kanun, kurum, madde ya da yaptırım adı yazılmaz.
 
 ### Raporun biçimi
 
@@ -149,7 +153,6 @@ Başlık iskeleti sabittir, başka başlık açılmaz:
     # Niş araştırması
     ## 1. Karşılaştırma tablosu
     ### 1a. Kanıt notları
-    ### 1b. Kontrol edilecek yasal noktalar
     ## 2. En uygun üç niş
     ## 3. Gerçek işletme örnekleri
     ## 4. Başlangıç önerisi
@@ -166,6 +169,7 @@ Sonra sabit sırayla dört bölüm.
 - Ekonomik değer nereden oluşur?
 - Karar vericiye ulaşmak ve sistemi kurmak ne kadar kolay?
 - En önemli engel ya da belirsizlik.
+- Başlangıç zorluğu: satış süresi (tek görüşmede karar mı, uzun süreç mi) ve ek onay gereği; düşük hazırlığa uygun mu.
 - Kanıtın gücü: güçlü, sınırlı ya da henüz doğrulanmamış.
 
 Tablonun altında her niş için kısa kanıt notu: yedi sorunun cevabı, dört kanalın ayrı durumu, etiketli iddialar ve bağlantıları.
@@ -176,19 +180,21 @@ Tablonun altında her niş için kısa kanıt notu: yedi sorunun cevabı, dört 
 - İşletme sahibiyle konuşurken hangi somut problem araştırılır?
 - İhtiyacın gerçekten var olduğunu doğrulamak için sorulacak beş soru.
 - FounderOS'ta bu nişin kartı var mı?
+- Zorluk işareti: düşük hazırlığa uygun mu; değilse sebebi tek sade satır (uzun satış süresi, ek onay gereği).
 
 Beş soru işletme sahibinin kendi deneyimini sorar, çözümü satmaz. "Yapay zekâ resepsiyonisti ister misiniz" diye soru yazılmaz. "Geçen hafta mesai dışında kaç arama geldi, bunu nereden biliyorsunuz?" gibi, rakamı ve kaynağı işletmecinin kendisinden çıkaran sorular yazılır.
 
 **3. Gerçek işletme örnekleri.** İlk üç nişin her biri için Türkiye'den iki gerçek işletme ve sitesinin bağlantısı. Yalnız kamuya açık bilgiyle neden araştırma adayı oldukları yazılır. Bu işletmelerin cevapsız arama sorunu yaşadığı ya da hizmeti satın alacağı iddia edilmez. Çalışan adı, kişisel cep numarası gibi kişisel bilgi yazılmaz.
 
 **4. Başlangıç önerisi.** Tek niş. Altında:
+- Zorluk işareti ve öğrencinin hazırlık seviyesine uyup uymadığı.
 - En güçlü üç gerekçe.
 - En önemli belirsizlik.
 - Hangi bulgu ortaya çıkarsa kararın değişmesi gerektiği.
 - Masa başı araştırmayla kesinleşmeyen noktalar, ayrı liste.
 - Kararı doğrulamak için ilk beş işletme görüşmesinde öğrenilecekler.
 
-Dil sade Türkçe. Teknik terim ilk geçtiği yerde açıklanır. Genel sektör tanıtımı yazılmaz; yalnız niş seçtiren bulgu yazılır. Uzun çizgi (—) kullanılmaz, cümle bölünür. İngilizce iş jargonu yazılmaz, Türkçesi yazılır: "front-desk" değil "ön büro" ya da "resepsiyon". Bu kurallar sohbete yazılan özet için de geçerli.
+Dil sade Türkçe. Teknik terim ilk geçtiği yerde açıklanır. Raporda kanun, kurum, madde ya da yaptırım adı geçmez; resmi bir sınır ancak sade zorluk işareti olarak yazılır. Genel sektör tanıtımı yazılmaz; yalnız niş seçtiren bulgu yazılır. Uzun çizgi kullanılmaz, cümle bölünür. İngilizce iş jargonu yazılmaz, Türkçesi yazılır: "front-desk" değil "ön büro" ya da "resepsiyon". Bu kurallar sohbete yazılan özet için de geçerli.
 
 ### Sıralama
 
@@ -200,6 +206,8 @@ Dil sade Türkçe. Teknik terim ilk geçtiği yerde açıklanır. Genel sektör 
 4. Ek hizmet fırsatı (yedinci soru). Eşitliği bozar, sıralamayı tek başına değiştirmez.
 5. Kanıtın gücü. Benzer durumdaki iki nişten kanıtı güçlü olan öne geçer.
 
+Eksik veri geçti sayılmaz: bir soru için veri bulunamadıysa o soru "bilinmiyor" kalır, olumlu okunmaz. İki ve daha fazla soruda "bilinmiyor" kalan niş ilk üçe girmez; tek soruda kalan niş, benzer durumdaki nişlerin arkasına düşer. Bu kural sekiz nişin hepsini dışarıda bırakıyorsa en az bilinmeyeni olan üç niş alınır ve raporun başına tek satır yazılır. Hazırlık seviyesi düşükse başlangıç koşullarındaki iki zorunlu koşul bu sıralamanın bütün maddelerinden önce gelir.
+
 İçeriden tanıdığı sektör ilk üçe girdiyse bir basamak öne alınır ve sebebi yazılır: o sektörün dilini biliyor, işletmeci bunu ilk otuz saniyede anlıyor.
 
 Kartı olmayan niş ilk üçe girebilir. Başlangıç önerisi o olursa bunu tek cümleyle söylersin: bu nişin kartı yok, mesajlar ve itiraz cevapları sahadan kurulacak.
@@ -210,19 +218,19 @@ Başlangıç önerisinin kanıtı en az sınırlı olur. Sekiz nişin hiçbiri s
 
 Başlarken tek cümle ve aynı mesajda araştırmayı başlatırsın: "Kaynaklı bir niş araştırması yapıyorum, yirmi otuz dakika sürer. Bitince özeti buraya, tamamını klasörüne yazacağım."
 
-Bitince sohbete en fazla dört cümle: önerilen başlangıç nişi ve en güçlü gerekçesi, en önemli belirsizlik, raporun yeri, sıradaki iş. Tablo sohbete dökülmez.
+Bitince sohbete en fazla dört cümle: önerilen başlangıç nişi, zorluk işareti ve en güçlü gerekçesi, en önemli belirsizlik, raporun yeri, sıradaki iş. Tablo sohbete dökülmez.
 
 Niş seçilmemişse: "Rapor [niş] diyor, sebebi [tek cümle]. Kararı şimdi birlikte veriyoruz." Sonra nisi-sec açılır.
 
 Niş seçilmiş ve rapor aynı nişi öneriyorsa: "Rapor seçtiğin nişi destekliyor. İlk beş görüşmede soracağın beş soru hazır."
 
-Niş seçilmiş ve rapor başka niş öneriyorsa: "Rapor başka bir nişi öne koyuyor: [niş], çünkü [tek cümle]. Pazarın üç yüz temasa kadar kilitli; bu bulguyu o gün birlikte okuyacağız."
+Niş seçilmiş ve rapor başka niş öneriyorsa: "Rapor başka bir nişi öne koyuyor: [niş], çünkü [tek cümle]. Pazar kilitli; üç yüz temasın sonuçları gelince bu bulguyu birlikte okuyacağız."
 
 Ölçülemeyen yeri saklamazsın: "Arama hacmi için Türkiye verisi bulunamadı. Karar telefonun önemine dair işaretlere dayanıyor."
 
 ## 7. Ne yazar
 
-Klasöre: `nis-arastirmasi.md` ya da tarihli adı.
+Klasöre: `nis-arastirmasi.md` ya da tarihli adı. Gizli klasöre: `.founderos/nis-sinirlar.md`, sektöre özel sınırların kontrolü; model başvurusudur, öğrenciye gösterilmez.
 İş Beyni'nin üçüncü bölümüne, tarihiyle tek satır: dosyanın adı, önerilen başlangıç nişi, ilk üç, seçili nişle çelişen bulgu varsa o.
 İş Beyni'nin on üçüncü bölümüne: ilk beş görüşmede öğrenilecekler, tek satır.
 Niş kartına hiçbir şey yazmaz. Kartla çelişen bulgu İş Beyni'ne yazılır; kartı değiştirmek bu modülün işi değil.

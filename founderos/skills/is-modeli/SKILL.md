@@ -44,6 +44,20 @@ Bunlar sistemin hedeflediği sonuçlardır. Belirli bir satış ya da gelir raka
 
 Eski adlar kullanılmaz. İki sistem birbirine karıştırılmaz: **Claude üzerinde çalışan FounderOS**, girişimcinin işini kuran ve yöneten sistemdir; **FounderOS CRM üzerinde çalışan AI Müşteri Dönüşüm Sistemi**, girişimcinin işletmelere sattığı hizmettir.
 
+## Sitedeki beş sistem
+
+Öğrenci FounderOS'u alırken satış sayfasında "beş hazır sistem" gördü. Beşi de aynı AI Müşteri Dönüşüm Sistemi'nin parçasıdır; işletmeye ayrı ayrı değil, tek sistem olarak ve öğrencinin sistem adıyla satılır. Öğrenci "beş sistem nerede" diye sorarsa bu tabloyla, kendi niş ve teklifine bağlayarak cevap verirsin:
+
+| Satış sayfasındaki ad | Bu bölümdeki karşılığı |
+|---|---|
+| 7/24 Yapay Zekâ Resepsiyonisti | AI Telefon Karşılama Asistanı ve Cevapsız Arama Sonrası Mesaj |
+| WhatsApp ve Instagram Asistanı | AI Mesajlaşma ve Randevu Asistanı, Yeni Başvuruya Hızlı Dönüş, Adayı Değerlendirme ve Yönlendirme |
+| Randevu Takip Sistemi | Randevu Hatırlatmaları, Randevuya Gelmeyeni Geri Kazanma, Tekrar Randevu Alma |
+| Müşteri Adayı Takip Sistemi | AI Otomatik Takip, Fiyat Teklifinden Satışa Takip, Görüşme Sonrası Satış Takibi |
+| Eski Müşterileri Geri Kazanma Sistemi | Eski Müşteri ve Başvuruyu Yeniden Kazanma, Müşteri Yorumu İsteme, Referans İsteme, Ek Hizmet Satışı |
+
+Hangi parçanın teklife gireceğini nişin kartı ve teklifi-yaz seçer; beşini birden satmak kural değildir.
+
 ## Üç ajan
 
 Adlar görevleri tanımlar. Her biri platformda aynı adla duran ayrı bir ürün değildir; ekranda Türkçesiyle birlikte söylenir.
@@ -51,10 +65,10 @@ Adlar görevleri tanımlar. Her biri platformda aynı adla duran ayrı bir ürü
 | Ekrandaki adı | Türkçe adı | Görevi | Ekranda nerede |
 |---|---|---|---|
 | AI Chat & Appointment Setter | AI Mesajlaşma ve Randevu Asistanı | Bağlı mesaj kanallarında karşılar, soruyu cevaplar, gerekli bilgiyi toplar, randevuya ya da çalışana yönlendirir | Conversation AI |
-| AI Voice Receptionist | AI Telefon Karşılama Asistanı | Gelen telefonu karşılar, bilgi verir, randevu yazar, gerekince çalışana aktarır | Voice AI |
-| AI Outbound Calling | AI Dış Arama | Uygun yeni başvuruyu ya da eski müşteriyi sistem arar, görüşmeyi randevuya ya da çalışana yönlendirir | Voice AI, giden arama |
+| AI Voice Receptionist | AI Telefon Karşılama Asistanı | Gelen telefonu karşılar, bilgi verir, randevu yazar, gerekince işi çalışana bırakır | Ayrı sesli ajan servisi; ekip kurar ve CRM'e bağlar |
+| AI Outbound Calling | AI Dış Arama | Uygun yeni başvuruyu ya da eski müşteriyi sistem arar, görüşmeyi randevuya ya da çalışana yönlendirir | Aynı sesli ajan servisi, giden arama; şimdilik açılmıyor (aşağıda) |
 
-AI Dış Arama, cevapsız aramayı geri çevirmek değildir; sistemin kendisinin arama başlatmasıdır. Şarta bağlıdır: ülke, numara, hesap ve iletişim izni. Teklifin üçüncü akışıdır ve teklifte yazar; kurulumu ülke, numara, hesap ve iletişim izni uygunsa yapılır. Uygun değilse o parça kurulamayan parça sayılır, güvencedeki kural işler (o ayın ücreti yüzde yirmi iner). Sağlık nişlerinde yalnız açık rızası olan kişiyle kurulur.
+AI Dış Arama, cevapsız aramayı geri çevirmek değildir; sistemin kendisinin arama başlatmasıdır. Şarta bağlıdır: ülke, numara, hesap ve iletişim izni. Teklifin ikinci ve üçüncü akışının sesli halidir ve teklifte yazar; kurulumu ülke, numara, hesap ve iletişim izni uygunsa yapılır. Uygun değilse o parça kurulamayan parça sayılır ve aşağıdaki ücret kuralı işler: kurulmadığı her ay ücret yüzde yirmi iner. Bugünkü durum şu: telefon sağlayıcısı bu hat üzerinden sesli ajanla giden aramayı belgelemiyor, yalnız gelen arama belgeli. Belgelenene kadar dış arama her müşteride kurulamayan parçadır; iki akış yazılı yürür (forma altmış saniyede yazılı dönüş, eski adaylara yazılı geri kazanma). Sağlık nişlerinde yalnız aranmaya ayrıca izin vermiş kişiyle kurulur.
 
 Karşılama, ön eleme ve randevu yazma için ayrı ayrı botlar şart değil; aynı mesaj asistanı üçünü birlikte yürütür. Uygun ayarla aynı sesli ajan gelen ve giden aramada kullanılır.
 
@@ -100,15 +114,15 @@ Bütün işlevler aynı kayıtlar ve aynı satış süreci üstünde çalışır
 
 Rapor günü ve güvence her yerde aynı cümleyle yazılır; sözleşme, onay belgesi, site, görüşme ve rapor bu cümleyi buradan alır. Rapor günü öğrencinin çalışma düzenine göre [21/28]. gündür: tam zamanlıda yirmi bir, işin yanında çalışanda yirmi sekiz; hangisi olduğu İş Beyni'nden okunur ve belgeye o sayı yazılır.
 
-**Köşeli parantez iç notasyondur, dışarı çıkmaz.** `[21/28]` ve `[31/38]` bu dosyanın kendi yazım kısaltmasıdır; öğrenciye, müşteriye ya da herhangi bir belgeye bu haliyle **asla** yazılmaz. Öğrencinin çalışma düzeni birinci günde on birinci soruda öğreniliyor; o an sayı kesinleşir, İş Beyni'nin beşinci bölümüne "rapor günü: 21" ya da "rapor günü: 28" diye tek sayı olarak yazılır ve bundan sonra teklif, sayfa, sözleşme, onay belgesi, görüşme ve rapor o tek sayıyı okur. Bir metinde köşeli parantez görürsen orada bir iş yarım kalmış demektir: sayıyı İş Beyni'nden alır, yerine koyar, öyle gösterirsin. Aynı kural metindeki bütün köşeli parantezli yerler için geçerli ([iş adı], [tarih], [şehir]); hiçbiri doldurulmadan ekrana çıkmaz.
+**Köşeli parantez iç notasyondur, dışarı çıkmaz.** `[21/28]` ve `[31/38]` bu dosyanın kendi yazım kısaltmasıdır; öğrenciye, müşteriye ya da herhangi bir belgeye bu haliyle **asla** yazılmaz. Öğrencinin çalışma düzeni birinci günün tanışmasında belli olur: ilk soru günlük saati, dördüncü soru dayanma süresini verir; o an sayı kesinleşir, İş Beyni'nin beşinci bölümüne "rapor günü: 21" ya da "rapor günü: 28" diye tek sayı olarak yazılır ve bundan sonra teklif, sayfa, sözleşme, onay belgesi, görüşme ve rapor o tek sayıyı okur. Bir metinde köşeli parantez görürsen orada bir iş yarım kalmış demektir: sayıyı İş Beyni'nden alır, yerine koyar, öyle gösterirsin. Aynı kural metindeki bütün köşeli parantezli yerler için geçerli ([iş adı], [tarih], [şehir]); hiçbiri doldurulmadan ekrana çıkmaz.
 
 Randevu yolunda: "Raporda üç sayı görünecek: sisteme gelen talep sayısı, sistemin yazdığı randevu sayısı, eski müşteri listesinde ulaşılan kişi sayısı. Kurulamayan bir parça olursa o satır boş kalır ve sayılmaz. Sistemin yazdığı randevu sıfırsa ikinci ay ücreti alınmaz."
 
 Teklif yolunda ikinci sayı değişir: "sistemin takip ettiği teklif sayısı". İkisi birlikte olan nişte ikinci sayı "sistemin yazdığı randevu ve takip ettiği teklif sayısı" olur. Gerisi aynı. Hangi sürümün geçerli olduğunu niş kartının "Müşteri yolculuğu" satırı söyler.
 
-**Şart neden üç sayıya değil tek sayıya bağlı.** Eskiden "yazılan satırların hepsi sıfırsa" yazıyordu ve bu güvence pratikte hiç tetiklenmiyordu: yirmi bir günde tek bir WhatsApp mesajı gelse "sisteme gelen talep" sıfır olmuyor ve şart düşüyordu. Yani müşteriye risk paylaşımı diye anlatılan şey gerçekte müşterinin üstündeydi. Şimdi şart tek sayıya bağlı ve o sayı bizim işimiz: sistemin yazdığı randevu. Gelen talep işletmenin kendi pazarlamasına bağlı, ulaşılan eski müşteri listenin İYS durumuna bağlı; ikisi de bizim elimizde değil. Randevu yazmak bizim elimizde.
+**Şart neden üç sayıya değil tek sayıya bağlı.** Eskiden "yazılan satırların hepsi sıfırsa" yazıyordu ve bu güvence pratikte hiç tetiklenmiyordu: yirmi bir günde tek bir WhatsApp mesajı gelse "sisteme gelen talep" sıfır olmuyor ve şart düşüyordu. Yani müşteriye risk paylaşımı diye anlatılan şey gerçekte müşterinin üstündeydi. Şimdi şart tek sayıya bağlı ve o sayı bizim işimiz: sistemin yazdığı randevu. Gelen talep işletmenin kendi pazarlamasına bağlı, ulaşılan eski müşteri listenin mesaj izni durumuna bağlı; ikisi de bizim elimizde değil. Randevu yazmak bizim elimizde.
 
-**Kapsam dışı kalan parça aylık ücretten düşer.** Bir parça mevzuat yüzünden ya da müşterinin adımını atmaması yüzünden on sekizinci güne kadar kurulamazsa o satır rapordan düşüyordu ama ücretten düşmüyordu. Artık düşüyor: kurulamayan her parça için o ayın aylık ücreti yüzde yirmi iner, parça kurulduğu ay tam ücrete döner. Sebebi dürüstlük: fiyat kaçan aramadan hesaplanıyor, aramayı karşılayan parça kurulmadıysa o fiyatın tamamı istenmez. Bu satır sözleşmede ve onay belgesinde yazılı.
+**Kapsam dışı kalan parça aylık ücretten düşer; kural tek.** Bir parça mevzuat, hat ya da sağlayıcı (platform kuralı dahil) yüzünden kurulamazsa kapsam dışıdır: raporda satırı boş kalır, güvenceye sayılmaz ve parçanın kurulmadığı her ay aylık ücret yüzde yirmi iner. İndirim parça başınadır, toplamda en çok yüzde altmış olur; parça kurulduğu ayı izleyen aydan ücret tama döner. Parça müşterinin kendi adımı yüzünden kurulamazsa (izin vermedi; liste, form ya da belge gelmedi; metne onay vermedi) yine kapsam dışıdır ve güvenceye sayılmaz, ama indirim yoktur. Sebebi dürüstlük: fiyat kaçan aramadan hesaplanıyor; dışarıdan gelen bir engel yüzünden kurulamayan parçanın bedeli istenmez, müşterinin atmadığı adımın bedeli de öğrenciye yüklenmez. Kural sözleşmedeki kurulamayan parça maddesiyle aynıdır; onay belgesine ve kapsam dışı mesajına aynı dille yazılır. Öğrenci sebebin resmi tarafını duymaz, yalnız sonucu duyar: "Bu parça bu müşteride şimdilik açılmıyor; ücreti ona göre ayarladım."
 
 ## Tek sistem, iki müşteri yolculuğu
 
@@ -126,7 +140,7 @@ Asistan, işletmenin yerine her satışı kendi başına kapatan bir çalışan 
 
 **Tek bir bütünleşik sistem satılır; müşteriye ayrı ayrı bot seçtirilmez.** Ama kullanılmayan kanal ve işlev zorla açılmaz; sistem işletmenin yolculuğuna, kanallarına ve teknik uygunluğuna göre daraltılır ya da genişletilir.
 
-Kademeler bu daralma ve genişlemenin adıdır, ayrı ürün değil: **Kademe 1 Temel Kapsam** (gelen tarafın karşılanması, randevu ya da teklif takibi, hatırlatma), **Kademe 2 Tam Kapsam** (üstüne eski müşteriyi geri kazanma, yorum ve referans, aylık rapor; asıl satılan bu), **Kademe 3 Genişletilmiş Kapsam** (üstüne dış arama ve reklam; büyüme şartı sağlanınca, en erken ikinci ay). Hiçbir kademe tek başına "bot" olarak anlatılmaz ve satılmaz. Görüşmede tek paket, tek rakam: Kademe 2.
+Kademeler bu daralma ve genişlemenin adıdır, ayrı ürün değil: **Kademe 1 Temel Kapsam** (gelen tarafın karşılanması: telefonu açan sesli resepsiyonist ve mesaj asistanı; forma altmış saniyede yazılı dönüş; randevu ya da teklif takibi, hatırlatma), **Kademe 2 Tam Kapsam** (üstüne forma beş dakikada arama ve eski adayları arayıp canlandırma, yani teklifin üç akışı burada tamamlanır; eski müşteriyi geri kazanma, yorum ve referans, aylık rapor; asıl satılan bu), **Kademe 3 Genişletilmiş Kapsam** (üstüne reklam yönetimi ve ek hizmetler; büyüme şartı sağlanınca, en erken ikinci ay; reklamın teslim modülü yazılana kadar Kademe 3'te reklam satılmaz). Hiçbir kademe tek başına "bot" olarak anlatılmaz ve satılmaz. Görüşmede tek paket, tek rakam: Kademe 2.
 
 ## Fiyat kuralı (kilitli)
 
@@ -144,7 +158,7 @@ Bunlar teklifin dışında kalır ve teklifi-yaz ile hizmet-sozlesmesi bunları 
 - Özel fiyat gerektiren işte işletmenin hazırladığı ya da onayladığı teklif esastır.
 - Telefonla dış arama ülke, numara, hesap ve iletişim iznine bağlıdır.
 - WhatsApp mesajlaşması ile WhatsApp araması farklıdır; Türkiye'de işletmenin başlattığı WhatsApp araması standart vaat değildir.
-- Mesajlaşma pencereleri, onaylı şablonlar ve iletişimden çıkma tercihine uyulur; İYS kuralı burada.
+- Mesajlaşma pencereleri, onaylı şablonlar ve iletişimden çıkma tercihine uyulur; toplu tanıtım mesajı yalnız mesaj izni kayıtlı numaraya gider.
 - Randevu alınınca eski randevu davetinin takibi durur; satın alma gerçekleşince eski satış takibi durur.
 - Çalışan konuşmayı devralınca asistan aynı anda cevap vermeye devam etmez.
 - Platformda bir özelliğin bulunması, her müşteride etkin ve çalışıyor olduğu anlamına gelmez; nişin kartındaki müşteri yolculuğu ve yasal sınır satırları hangi parçanın o nişte kurulmayacağını söyler.

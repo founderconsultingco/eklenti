@@ -8,7 +8,9 @@ description: "On dokuz nis kartinin listesi, kart kurallari ve kart sablonu. Nis
 
 Kartlar plugin'in skill'lerinin okuduğu bilgi dosyalarıdır. Kural: uydurma yok, her rakam kaynaklı, bilinmeyen "sahadan dolacak" diye yazılır. Şablon en sonda.
 
-Durum: 19 kartın 19'u şablona göre yazıldı (kart başına 5 ile 47 kaynak; oto kuaför kartı şablona sonradan tamamlandı, dil ve mesleki eğitim kursları kartı en son eklendi). Bilinen açıklar: Meta Reklam Kütüphanesi hiçbir kartta görülemedi (canlı taramayla dolacak); diş kliniğinde TDB ve Resmi Gazete tam metni robot engeline takıldı, hukukçu teyidi şart.
+Kartın "Yasal sınırlar" bölümü model başvurusudur: öğrenciye okunmaz, uygulanır. Aynısı kartın başka bölümlerinde geçen kanun, madde, ceza ve hukuk ayrıntısı için de, Kart özeti tablosundaki "Yasal sınır" sütunu için de geçerli. Öğrenciye yalnız yapılacak iş söylenir. Teyit gereken bir nokta öğrenciye ödev olmaz, ekip notu olur.
+
+Durum: 19 kartın 19'u şablona göre yazıldı (kart başına 5 ile 47 kaynak; oto kuaför kartı şablona sonradan tamamlandı, dil ve mesleki eğitim kursları kartı en son eklendi). Bilinen açıklar: Meta Reklam Kütüphanesi hiçbir kartta görülemedi (canlı taramayla dolacak); diş kliniğinde TDB ve Resmi Gazete tam metni robot engeline takıldı; ekip teyidi şart, öğrenciye iş olarak verilmez.
 
 ## İçindekiler
 
@@ -90,22 +92,22 @@ Bölümün son iki satırı sabit: `Sözlüğü: [6-10 kelime ve deyim, virgüll
 
 **İş ilanı kelimeleri.** İş ilanı sitelerinde ve Instagram'da aranacak, bu nişte telefonu ve randevuyu yöneten kişinin ilan adı ("resepsiyonist", "hasta kabul", "ön büro", "müşteri temsilcisi", "randevu asistanı" gibi), şehir adıyla. Kartta bu satır yoksa varsayılan altı kelime kullanılır: resepsiyonist, sekreter, çağrı karşılama, müşteri temsilcisi, randevu asistanı, ön büro.
 
-**Yasal sınırlar.** Reklam, tanıtım, mesaj (İYS), sağlık, KVKK açısından bu nişe özel kısıt var mı; kaynaklı. Yoksa "yok".
+**Yasal sınırlar.** Reklam, tanıtım, mesaj (İYS), sağlık, KVKK açısından bu nişe özel kısıt var mı; kaynaklı. Yoksa "yok". Bu bölüm model başvurusudur: öğrenciye okunmaz, uygulanır; öğrenciye yalnız yapılacak iş söylenir. Teyit gereken nokta öğrenciye ödev olarak yazılmaz; yerine model talimatı yazılır: "Bu nişte işletmeye giden her metin kartın hazır cümleleriyle sınırlıdır; yeni bir iddia gerekiyorsa denetçi çıkarır ve ekip notu düşülür. Öğrenciye hukuk anlatılmaz."
 
 **Yoğun şehirler.** Kaynaklı.
 
-**Gerçek itirazlar ve karşılıkları.** 5-7 itiraz; her biri işletmecinin ağzından, karşılık sektör verisiyle. Bölümün ilk satırı sabit: `En güçlü üç itiraz: [üç kısa ad, virgülle]`. Sistem üç itiraz videosunu bu üçünden çekiyor.
+**Gerçek itirazlar ve karşılıkları.** 5-7 itiraz; her biri işletmecinin ağzından, karşılık sektör verisiyle. Karşılıkta kanun ya da yönetmelik adı, madde, ceza, hukukçu, İYS, KVKK geçmez; hukuki bir itirazın karşılığı kısa, sakin, ders vermeyen bir cümledir ve gerçek olmayan güvence vermez. Bölümün ilk satırı sabit: `En güçlü üç itiraz: [üç kısa ad, virgülle]`. Sistem üç itiraz videosunu bu üçünden çekiyor.
 
 **Telefonda söylenecekler.** Öğrencinin telefonda sesli okuyacağı satırlar; aday sayfasının Saha modu kartı bu bölümü olduğu gibi gösterir. Genel arama sırası (tanış, rahatlat, gözlem ya da açılış sorusu, işleyiş sorusu, ne yaptığın, randevu) ve genel itirazlar (müsait değilim, ne için arıyorsunuz, WhatsApp'tan gönderin, kendimiz ilgileniyoruz, bot istemiyoruz, pahalı, ilgilenmiyorum) adaya-mesaj-yaz modülünde durur, karta yazılmaz. Karta yalnız bu nişe özel olan girer. Bölümün yapısı sabit, satır adları değişmez:
 
 - `Açılış sürümü: [sayı]` Bölümün ilk satırı. Yeni kartta 1. Açılış sorusu ya da Ne yaptığın satırı değiştiğinde bir artar; itiraz eklemek ya da yazım düzeltmek sürümü değiştirmez. Sahadan gelen sonuçlar bu sayıyla etiketlenir, eski ve yeni metin yan yana okunabilsin diye.
 - `Açılış sorusu: "…"` Kartın açılış cümlesinin telefonda sorulan hali. Tek soru, işletmecinin bir cümleyle cevaplayabileceği, zaten yapması gerektiğini bildiği bir şeyi hatırlatan. Sınav sorusu değil ("kaç arama kaçırdığınızı biliyor musunuz" yazılmaz).
 - `İşleyiş sorusu: "…"` Yoğunken telefona ya da mesaja yetişemeyince müşterinin ne yaptığını soran tek soru, nişin diliyle (sahada, koltukta, ameliyatta, keşifte).
-- `Ne yaptığın: "…"` Sistemin bu nişte ne yaptığı, tek cümle, kapsam içi: yazan müşteriye dakikalar içinde cevap, bilgiyi alıp randevuya ya da teklife yazma, eski müşteriye zamanı gelince hatırlatma. Teslim edilmeyen parça (cevapsız aramayı geri arama, telefonu açan sesli asistan) yazılmaz. Sonu sabit: "[Şehir]'de bu ay ilk üç [işletme türü] ile başlıyorum."
+- `Ne yaptığın: "…"` Sistemin bu nişte ne yaptığı, tek cümle, kapsam içi ve teklifin başlığıyla aynı sırada: telefon çalarsa aramayı açmak, yazan müşteriye dakikalar içinde dönmek, bilgiyi alıp randevuya ya da teklife yazmak, eski müşteriye zamanı gelince hatırlatmak. "Telefon çalarsa aramayı o açıyor" kısmı öğrencinin sesli örneği İş Beyni'nde "kuruldu" yazdıktan sonra söylenir; o güne kadar FounderOS Saha modu kartına bu kısmı koymaz. Sonu sabit: "[Şehir]'de bu ay ilk üç [işletme türü] ile başlıyorum."
 - `Çalışan açarsa: "…"` Telefonu sahibi yerine açan kişinin "ne hakkında" sorusuna nişin diliyle iki cümle ve saat isteği ("Ne zaman [yerde] olur?").
 - `Karşı taraf bunu söylerse:` altında 5-7 madde, kartın "Gerçek itirazlar" bölümündeki itirazlardan, telefonda söylenecek biçimde. Her madde tek satır ve üç parça: `- "[itiraz, işletmecinin ağzından]" Söyle: "[sesli okunacak cümle]" Ne için: [tek cümle gerekçe] Sonra: [iki olası cevaba göre ne yapılır]`.
 
-Bu bölümün kuralları: Söyle cümlesi soruyla biter ve tek soru taşır, ikinci itiraz sorusu yok. Lira rakamı telefonda söylenmez, görüşmeye kalır. Kartta olmayan rakam geçmez; kartın rakamı geçiyorsa işletmecinin anlayacağı biçimde ("iki katından fazla", "günde onlarca çağrı"). Kartın kanıtı öğrencinin ağzından iddia olarak söylenmez, işletmeciye soru olarak sorulur ("bunu sen söylemezsin, ona söyletirsin"). Yer tutucu yalnız [adın], [şehir], [Şehir], [Ad]. Kendini küçültme yok, muhtaç ton yok, ısrar yok; açık ret gelince teşekkür ve kapanış, aday bir daha aranmaz. "Sonra" satırında FounderOS'un ne yazacağı varsa açıkça yazılır ("FounderOS 'sonra, sezon başı' yazar"). Bu bölüm yoksa Saha modu kartı modülün genel metniyle çalışır, uydurmaz.
+Bu bölümün kuralları: Söyle cümlesi soruyla biter ve tek soru taşır, ikinci itiraz sorusu yok. Lira rakamı telefonda söylenmez, görüşmeye kalır. Söyle, Ne için ve Sonra satırlarında kanun ya da yönetmelik adı, madde, ceza, hukukçu, İYS, KVKK geçmez; öğrenciye hukuk ödevi verilmez ("oda kuralına bak", "teyit et" yazılmaz). Kartta olmayan rakam geçmez; kartın rakamı geçiyorsa işletmecinin anlayacağı biçimde ("iki katından fazla", "günde onlarca çağrı"). Kartın kanıtı öğrencinin ağzından iddia olarak söylenmez, işletmeciye soru olarak sorulur ("bunu sen söylemezsin, ona söyletirsin"). Yer tutucu yalnız [adın], [şehir], [Şehir], [Ad]. Kendini küçültme yok, muhtaç ton yok, ısrar yok; açık ret gelince teşekkür ve kapanış; aday altı ay aranmaz, "bir daha aramayın" diyen hiç aranmaz. "Sonra" satırında FounderOS'un ne yazacağı varsa açıkça yazılır ("FounderOS 'sonra, sezon başı' yazar"). Bu bölüm yoksa Saha modu kartı modülün genel metniyle çalışır, uydurmaz.
 
 **Marka yönü.** markani-kur'un seçim ekranını besler. Tasarım kararı değil, başlangıç noktası.
 İsim kökleri: [üç kök, nişin kendi dilinden]. Sistem adı kurulurken köke mekanizma (Flow, Sync, Loop, Pulse, Track, Link, Core) ve varsa sistem eki (OS, HQ) eklenir.
@@ -114,30 +116,34 @@ Bu bölümün kuralları: Söyle cümlesi soruyla biter ve tek soru taşır, iki
 Paletler: [üç palet: gece murekkep orman koz celik bordo kum derin mor kiremit].
 Tipografi: [iki eşleşme: teknik karakter editoryal saglam yumusak sade].
 
-**Sahadan dolacak.** Bilinmeyenler listesi (gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademe satılıyor, ilk vaka çalışması).
+**Sahadan dolacak.** Bilinmeyenler listesi (gerçek dönüş süreleri, çalışan açılış cümlesi, kapatma oranı, hangi kademe satılıyor, ilk vaka çalışması). Hukuk ve izin soruları (yönetmelik metni, madde numarası, İYS, KVKK) sahadan değil ekipten gelir; listede duruyorsa "sahadan değil ekipten gelir; öğrenciye sorulmaz" diye işaretlenir.
 
 **Kaynaklar.** Kullanılan tüm URL'ler.
 
-## Kart modüllerinin adları
+## Kart özeti
 
-- Oto kuaför, seramik kaplama, araç kaplama: `nis-oto-kuafor`
-- Güzellik salonu ve güzellik merkezi: `nis-guzellik-salonu`
-- Klima ve kombi servisi: `nis-klima-kombi`
-- Temizlik şirketi: `nis-temizlik`
-- Oto servis ve cam filmi: `nis-oto-servis`
-- Cam balkon, PVC pencere, panjur: `nis-cam-balkon`
-- Mutfak-banyo tadilat ve iç mimarlık: `nis-tadilat`
-- Emlak ofisi: `nis-emlak`
-- Düğün organizasyon ve mekan: `nis-dugun`
-- Randevulu kuaför ve berber: `nis-kuafor-berber`
-- Haşere ilaçlama: `nis-hasere`
-- Oto galeri: `nis-oto-galeri`
-- Sigorta acentesi: `nis-sigorta`
-- Elektrik ve teknik bakım: `nis-elektrik`
-- Fotoğraf stüdyosu: `nis-fotograf`
-- Diş kliniği: `nis-dis-klinigi`
-- Pilates, PT ve butik stüdyo: `nis-pilates`
-- Estetik cerrahi ve medikal estetik: `nis-estetik`
-- Yetişkinlere yönelik dil ve mesleki eğitim kursları: `nis-dil-kursu`
+Seçim için tek bakış. Karar ve rakam her zaman kartın kendisinden okunur; tablo yalnız hangi kartın açılacağını gösterir. "Düşük hazırlık" sütunu: hazırlık seviyesi düşük öğrenciye (satış tecrübesi yok ve telefon zorluyor ya da üç hazırlık ölçütünün ikisi yok) ilk müşteriye kadar önerilmeyen kartlar; öğrenci ısrar ederse bir kez rakamla karşı çıkılır, risk yazılır, devam edilir.
 
-Bir nişin rakamını, itirazını, yasal sınırını ya da kayıp birimini kendi kartından okursun. Kartta rakam yoksa "sahadan dolacak" der ve iş rakamsız yürür.
+| Kart | Modül | Ana kanal | Müşteri yolculuğu | Masa puanı | Sezon (ilk cümle) | Kısıt (model içindir, öğrenciye okunmaz) | Düşük hazırlık |
+|---|---|---|---|---|---|---|---|
+| Oto kuaför, seramik kaplama, araç kaplama | `nis-oto-kuafor` | Instagram | randevu | 8/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Yok. | olur |
+| Güzellik salonu ve güzellik merkezi | `nis-guzellik-salonu` | Instagram | randevu | 9/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | 12 Kasım 2025'te yürürlüğe giren Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik'in kapsamı Madde 2'de "sağlık meslek... | olur |
+| Klima ve kombi servisi | `nis-klima-kombi` | telefon | randevu | 8/10 | Klima tarafında mayıs ile ağustos arası, kombi tarafında ekim ile ocak arası yoğun, tepe ay haziran. | Klima/kombi bakım hizmetinin pazarlamasına özel bir reklam ya da mesaj kısıtlamasına rastlanmadı. | olur |
+| Temizlik şirketi | `nis-temizlik` | telefon | teklif | 9/10 | Kartta ay bazında sezon bilgisi yok. Sadece duran havuz bölümünde bahar temizliği ve bayram öncesi yoğunluk geçiyor, yani ilkbahar ve bayram öncesi... | Standart temizlik hizmeti (süpürme, silme, koltuk/halı yıkama) için sektöre özel bir sağlık ruhsatı şartına rastlanmadı; işyeri açma ve çalışma... | olur |
+| Oto servis ve cam filmi | `nis-oto-servis` | telefon | randevu | 10/10 | Lastik tarafında 15 Kasım ile 15 Nisan arası yoğun; bunu kartın duran havuz bölümündeki kış lastiği takviminden çıkardım (bu tarihler ticari araçta... | Rekabet Kurumu'nun motorlu taşıtlar sektöründeki grup muafiyeti tebliği (2017/3), garantili araç sahiplerinin bağımsız serviste bakım yaptırma... | olur |
+| Cam balkon, PVC pencere, panjur | `nis-cam-balkon` | telefon | teklif | 9/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | İki önemli nokta var. Birincisi, kapı ve pencere sistemleri, cam balkonlar ve elektrikli panjurlar Garanti Belgesi Yönetmeliği'nin 18. maddesi gereği... | olur |
+| Mutfak-banyo tadilat ve iç mimarlık | `nis-tadilat` | telefon | teklif | 10/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Bu oturumda nişe özel bir reklam/tanıtım kısıtı bulunamadı; TMMOB İçmimarlar Odası'nın meslek etiği/reklam kuralları sayfası bu oturumda erişilip... | olur |
+| Emlak ofisi | `nis-emlak` | telefon | ikisi birlikte | 7/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Bu nişte mevzuat çok belirleyici, sistemi doğrudan etkiliyor. | önerilmez |
+| Düğün organizasyon ve mekan | `nis-dugun` | Instagram | ikisi birlikte | 9/10 | Nisan ile ekim arası yoğun, kasım ile mart arası sakin. Bunu kartın kanal ve zaman bölümünden çıkardım: sezon ilkbahar ile sonbahar arasına... | Düğün salonları ve organizasyon firmaları "sıhhi işyeri" sınıfında sayılıyor ve belediyeden "Umuma Açık İstirahat ve Eğlence Yeri Açma ve Çalışma... | olur |
+| Randevulu kuaför ve berber | `nis-kuafor-berber` | Instagram | randevu | 8/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | İki ayrı konu var. Birincisi Pazar günü zorunlu kapanış, il valiliği kararına göre değişiyor, yukarıda anlatıldı (salonmerkezi.com). | olur |
+| Haşere ilaçlama | `nis-hasere` | telefon | teklif | 8/10 | Yaz sonu yoğun, tepe ay ağustos. Bunu kartın kendi verisinden çıkardım: sivrisinek ve haşere şikayetlerinin yoğunlaştığı dönem yaz sonu olarak... | Bu iş "Halk Sağlığı Alanında Haşerelere Karşı İlaçlama Usul ve Esasları Hakkında Yönetmelik"e tabi (kaynak: saglik.gov.tr/TR,10472... | olur |
+| Oto galeri | `nis-oto-galeri` | telefon | ikisi birlikte | 9/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Bu niş için gerçek ve güncel bir kısıt var: İkinci El Motorlu Kara Taşıtlarının Ticareti Hakkında Yönetmelik 27 Ağustos 2024'te yürürlüğe girdi. | olur |
+| Sigorta acentesi | `nis-sigorta` | telefon | teklif | 9/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Sigorta Acenteleri Yönetmeliği Madde 19 (İlan, Reklam, Afiş ve Pano) iki bağımsız kaynaktan doğrulandı... | önerilmez |
+| Elektrik ve teknik bakım | `nis-elektrik` | telefon | ikisi birlikte | 8/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Elektrik Tesisleri Kabul Yönetmeliği'nin kapsamı üretim, iletim ve dağıtım tesisleri; "Elektrik İç Tesisleri Yönetmeliği kapsamına giren elektrik... | olur |
+| Fotoğraf stüdyosu | `nis-fotograf` | Instagram | ikisi birlikte | 8/10 | Mayıs ile ekim arası yoğun, kasım ile nisan arası ölü. Bunu kartın kendi verisinden çıkardım: düğün sezonu mayıs-ekim olarak veriliyor, yoğun sezonda... | Ustalık belgesi zorunluluğu Rekabetin şekli bölümünde anlatıldı (ornekbelge.com.tr); reklam ve mesajla ilgili değil ama işletme meşruiyetini... | olur |
+| Diş kliniği | `nis-dis-klinigi` | telefon | randevu | 9/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Sağlık Bakanlığı 12 Kasım 2025'te, Resmi Gazete Sayı 33075 ile "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik"i... | önerilmez |
+| Pilates, PT ve butik stüdyo | `nis-pilates` | Instagram | randevu | 9/10 | Yaz ayları ölü, yılın kalanı yoğun. Bunu kartın kendi rakamından çıkardım: yaz aylarında müşteri sayısında yüzde 20-30 ek düşüş var ve sezonluk... | Pilates stüdyoları Gençlik ve Spor Bakanlığı'nın yetki/yeterlilik sistemine tabi. | olur |
+| Estetik cerrahi ve medikal estetik | `nis-estetik` | Instagram | randevu | 9/10 | Kartta sezon bilgisi yok, sahadan dolacak. Şimdilik yıl boyu çalışıyor kabul ediliyor. | Ana düzenleme: Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik, ilk hali 29 Temmuz 2023'te yürürlüğe girdi (RG 32263... | önerilmez |
+| Yetişkinlere yönelik dil ve mesleki eğitim kursları | `nis-dil-kursu` | telefon | ikisi birlikte | 9/10 | İki kayıt dalgası: Eylül-Ekim (akademik yıl başı) ve Ocak-Şubat (yeni yıl); kampanyalar bu iki döneme yığılıyor (English Time 2026 yazısı). | 5580 sayılı Özel Öğretim Kurumları Kanunu ve MEB Özel Öğretim Kurumları Yönetmeliği: gerçeğe aykırı reklam yasak; öğrencinin resmi, bilgisi ve başarı... | olur |
+
+Bir nişin rakamını, itirazını, yasal sınırını ya da kayıp birimini kendi kartından okursun. Kartta rakam yoksa "sahadan dolacak" der ve iş rakamsız yürür. Bir elemenin verisi kartta yoksa sonuç "bilinmiyor" olur, geçti sayılmaz.

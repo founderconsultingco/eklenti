@@ -6,6 +6,8 @@ description: "Birinci gunun ucuncu adimi. Once yasanmak istenen hayat, sonra o h
 
 # vizyon-belgesi
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Birinci günün üçüncü adımı. İki parçası var ve ikisi günün iki ayrı yerinde çalışır.
@@ -18,13 +20,13 @@ Pazarlamadaki karşılığı: tasarladığın hayat, tasarladığın iştir.
 
 ## 2. Ne zaman çalışır
 
-- Birinci parça: birinci gün, nişten önce. On dakika.
-- İkinci parça: aynı gün, teklif ve fiyat bandı çıktıktan sonra. Beş dakika.
+- Birinci parça: birinci oturuş, zihniyet kabulünden sonra, nişten önce. On dakika.
+- İkinci parça: ikinci oturuş, teklif ve fiyat bandı çıktıktan sonra. Beş dakika.
 - Sonra: on beşinci, yirmi beşinci ve altmışıncı günlerde geri okunur. Otuzuncu ve altmışıncı günde rakam güncellenebilir.
 
 ## 3. Ne okur
 
-İş Beyni'nden: tanışmanın birinci, üçüncü, on birinci ve on ikinci sorusunun cevabı, çalışma düzeni. İkinci parçada ayrıca: nişin kartındaki fiyat ve o günkü fiyat bandı.
+İş Beyni'nden: tanışmanın birinci (iş ve saat), üçüncü (zorunlu gider), dördüncü (dayanma süresi) ve sekizinci (aylık hedef) sorusunun cevabı, çalışma düzeni. İkinci parçada ayrıca: nişin kartındaki fiyat ve o günkü fiyat bandı.
 
 ## 4. Birinci parça: yön
 
@@ -38,11 +40,11 @@ Bu ikisini ayrı ayrı değil arka arkaya sorarsın ve birlikte okursun. Girişi
 
 Sonra üç çalışma sınırını yazarsın, sormadan, cevaplardan çıkararak: haftada kaç saat, hangi pencerelerde, kaç müşteriye kadar tek başına taşıyabilir. Bu sınırlar araştırmanın girdisi olur.
 
-Aylık hedef rakamı tanışmada (11b) alındı; yeniden sormazsın, buraya yön olarak taşırsın, hesap olarak değil. Burada "şu kadar istiyorum" cümlesi kaydedilir, üstüne plan kurulmaz.
+Aylık hedef rakamı tanışmada (sekizinci soru) alındı; yeniden sormazsın, buraya yön olarak taşırsın, hesap olarak değil. Burada "şu kadar istiyorum" cümlesi kaydedilir, üstüne plan kurulmaz.
 
 ### Hedef fiyatın gerekçesi değildir
 
-Bunu hem kendine hem öğrenciye söylersin. İstediği gelir ne kadar yüksek olursa olsun fiyatı belirlemez. Fiyatın dayanağı işletmenin yıllık kaybıdır: kurulum ücreti onun onda biri, aylık ücret kurulumun beşte biri; formül fiyati-belirle'de. Senin teslimat maliyetin fiyatı yükseltmez, yalnız tabandır: kurulum ücreti onu karşılamıyorsa o işletme sana küçüktür. Hedef yalnızca kaç müşteri gerektiğini ve hangi kapasiteyi kurman gerektiğini söyler.
+Bunu hem kendine hem öğrenciye söylersin. İstediği gelir ne kadar yüksek olursa olsun fiyatı belirlemez. Fiyatın dayanağı işletmenin yıllık kaybıdır: kurulum ücreti onun onda biri, aylık ücret kurulumun beşte biri; formül fiyati-belirle'de. Senin teslimat maliyetin fiyatı yükseltmez, yalnız tabandır: kurulum ücreti onu karşılamıyorsa o işletme sana küçüktür. Hedef yalnızca kaç müşteri gerektiğini, hangi kapasiteyi kurman gerektiğini ve pazar seçerken bir işletmenin sana yeterli değer taşıyıp taşımadığını söyler; söyleyeceğin fiyatı söylemez.
 
 Az çalışıp yüksek gelir isteyen birine "olur" demezsin, "hayır" da demezsin. O hedefin hangi kapasiteyi ve hangi iş yapısını gerektirdiğini birlikte bakarsınız; çoğu zaman cevap fiyatı yükseltmek değil, kimin hedefinde olduğunu değiştirmektir.
 
@@ -68,9 +70,9 @@ Birinci günde tempoyu gösterirsin, hüküm vermezsin: bandın alt ve üst ucuy
 
 ## 6. Ne yazar
 
-İş Beyni'ne ayrı bir bölüm: bir yıl sonra hayat, bir yıl sonra iş, çalışma sınırları, hedef rakamı, seçilen kombinasyon ve tempo, tarih.
+İş Beyni'nin ikinci bölümüne (Hedef ve para): bir yıl sonra hayat, bir yıl sonra iş, çalışma sınırları, hedef rakamı, seçilen kombinasyon ve tempo, tarih.
 
-Ayrı bir dosyaya çıkarılmaz, öğrenciye okutulmaz. İş Beyni onun vizyon belgesidir. Yazmadan önce onay alırsın.
+Ayrı bir dosyaya çıkarılmaz, öğrenciye okutulmaz. İş Beyni onun vizyon belgesidir. Yazarken onay istemezsin; bu bir kayıttır, karar noktası değil.
 
 ## 7. Asla
 

@@ -10,18 +10,28 @@ Bu dosya tek geçiş noktasıdır. CRM'e giden her iş buradan geçer. Platform 
 
 ## Bağlantı nasıl kurulur
 
-Öğrenci hiçbir anahtar yazmaz, hiçbir betik çalıştırmaz. Bağlantı, öğrencinin kendi CRM hesabıyla bir kere giriş yapmasıyla kurulur ve sonra kendi kendine yenilenir.
+Öğrenci hiçbir anahtar yazmaz, hiçbir betik çalıştırmaz. Bağlantı, öğrencinin kendi CRM hesabıyla bir kere giriş yapmasıyla kurulur ve sonra kendi kendine yenilenir. Tek istisna yeni müşteri bölümü: her müşterinin bölümü açıldığı gün giriş bir kez daha yapılır (aşağıda, "Müşteri bölümü açılınca").
 
 Sıra şu:
 
 1. FounderOS CRM'den bir şey okumaya çalışır. Bağlantı yoksa tarayıcıda giriş penceresi bu anda açılır.
 2. Öğrenci kendi kullanıcı adı ve şifresiyle girer. Kullanıcı adı kurulum sayfasında yazıyor; şifreyi CRM kendi e-postasıyla gönderdi, öğrenci onu ilk girişte kendisi belirledi.
-3. Ekranda hangi bölüme erişileceği sorulur. Öğrenci kendi bölümünü işaretler. Burası önemli: işaretlemediği bölümü FounderOS göremez, boş geçilirse bağlantı işe yaramaz.
-4. Onaylar. Bağlantı kurulur, bir daha sorulmaz.
+3. Ekranda hangi bölüme erişileceği sorulur. Öğrenci kendi bölümünü işaretler; müşterisi varsa müşterilerinin bölümlerini de. Burası önemli: işaretlemediği bölümü FounderOS göremez, boş geçilirse bağlantı işe yaramaz.
+4. Onaylar. Bağlantı kurulur. Yeni bir müşteri bölümü açılana kadar bir daha sorulmaz.
 
 FounderOS bu pencereyi öğrenciye önceden haber verir, çünkü habersiz açılan giriş ekranı beginner'ı durduruyor. Söyleyeceği tek cümle şu: "Şimdi CRM'e bağlanıyorum, ekranda bir giriş penceresi açılacak. Kullanıcı adın kurulum sayfanda yazıyor, şifreni de CRM'in sana gönderdiği e-postada belirlemiştin. Girdikten sonra hangi bölüme erişeceğim sorulacak, orada kendi bölümünü işaretle ve onayla."
 
 Giriş penceresi açılmazsa ya da yetki reddedilirse FounderOS durmaz. O günün işine CRM'siz devam eder, kayıtları elde tutar ve bağlantıyı ertesi günün ilk işi yapar. Hiçbir modül bağlantı hatasıyla durmaz.
+
+## Müşteri bölümü açılınca: bağlantıyı yenile
+
+Öğrencinin her müşterisi için CRM'de ayrı bir bölüm (alt hesap) açılır; bölümü FounderOS ekibi açar. Bağlantı yalnız giriş ekranında işaretlenen bölümleri görür. Bu yüzden müşterinin bölümü açıldığı gün FounderOS bağlantıyı yeniler ve öğrenci giriş ekranında İKİ bölümü de işaretler: kendi bölümünü ve müşterinin bölümünü. İkinci müşteride kendi bölümü ve bütün müşteri bölümleri birlikte işaretlenir.
+
+Bu yapılmazsa müşterinin bölümü bağlantıdan okunamaz: rapor günü raporunun, aylık raporun ve haftalık kontrolün sayıları bağlantıdan çıkmaz, FounderOS o müşteride kişi, not ve etiket yazamaz. O gün sayılar ekrandan elle okunur ve bağlantı ertesi günün ilk işi olarak yenilenir.
+
+FounderOS pencereden önce tek cümle söyler: "Müşterinin bölümü açıldı, CRM bağlantısını yeniliyorum. Giriş penceresi açılacak; girdikten sonra hangi bölümlere erişeceğim sorulacak, orada hem kendi bölümünü hem [müşteri adı] bölümünü işaretle ve onayla."
+
+Adımın yeri musteriyi-karsila: müşterinin bölümünün açıldığı günün işi.
 
 ## Hangi iş hangi kayda düşer
 
@@ -30,6 +40,8 @@ Aday ve müşteri kayıtları CRM'de yaşar, İş Beyni'nde ikinci kez tutulmaz.
 CRM'de duran: kişiler, fırsat hattı ve aşamaları, randevular, konuşmalar, akışlar, alanlar ve özel değerler, çağrı kayıtları.
 
 İş Beyni'nde duran: kurucunun kendisi, niş kararı, teklif ve fiyat, marka, kararların gerekçesi, açık işler, gün sayacı ve koşan toplam.
+
+Müşterinin bilgi dosyasında (`musteriler/<musteri-adi>.md`) duran: o müşterinin CRM'de alanı olmayan bilgileri; alınan izinler, kapsam dışı parçalar ve sebepleri, ayarların başlangıç değerleri, kontrol ve kriz kayıtları. Kişiler ve konuşmalar yine CRM'de yaşar, bu dosyaya kopyalanmaz.
 
 Koşan toplam bilerek İş Beyni'nde: CRM böyle bir toplamı tutmuyor, akşam sayımı atlanan gün bütün kilitler kayıyor.
 

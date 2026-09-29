@@ -6,6 +6,8 @@ description: "Ek modül. Uzun satış videosu ve satış sayfası; ilk kanıt hi
 
 # satis-sayfasini-yaz
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Ek modül. Takvimde günü yok, ilk müşterin geldikten sonra açılıyor. Modül, FounderOS'un belli bir işi yapan parçasıdır.
@@ -118,12 +120,12 @@ Kaynağı olmayan araştırma rakamı yok. Kaynağını söyleyemeyeceğin cüml
 Başkasının sonucu senin sonucun gibi anlatılmıyor.
 Uydurma yorum, uydurma müşteri adı, uydurma logo yok.
 Fiyat rakamı yok.
-Sağlık nişindeysen kartın yasal sınırlar bölümü bütün metne uygulanıyor: tedavi sözü, hasta görseli, öncesi sonrası düzeni ve kesin sonuç iddiası geçmiyor. Metni yayına almadan hukukçuya okutuyorsun.
+Sağlık nişindeysen metinde tedavi sözü, hasta görseli, öncesi sonrası düzeni ve kesin sonuç iddiası geçmiyor. FounderOS metni yayından önce bir kez daha kontrol eder; kanıt hikâyesi için kliniğin yazılı "onaylıyorum"u yeter. Kontrolü founderos:denetci kartın yasal sınırlar bölümüyle yapar; öğrenciye kural anlatılmaz.
 
 ### Çekim
 
-Ön görüşme videosuyla aynı kurallar: telefon, ön kamera, sabit yer, sessiz oda, tek çekim, montaj yok. Fark üç yerde:
-- Metin uzun olduğu için ezber olmuyor. Telefonu göz hizasına koyup metni okuyorsun, ama satır satır değil, bölüm bölüm: bir bölümü okuyup kapatıyorsun, sonra kameraya bakıp kendi cümlelerinle söylüyorsun.
+Ön görüşme videosuyla aynı kurallar: telefon, sabit yer, sessiz oda, tek çekim, montaj yok; yüz yolu ya da ses yolu, seçim senin. Fark üç yerde:
+- Metin uzun olduğu için ezber olmuyor. Metni bölüm bölüm okuyorsun: bir bölümü okuyup kapatıyorsun, sonra kendi cümlelerinle söylüyorsun (yüz yolunda telefon göz hizasında, kameraya bakarak).
 - Kanıt anlarında ekran kaydı bindiriliyor. Kayıt oynarken senin sesin devam etmiyor, kaydın kendi sesi duyuluyor.
 - Altyazı şart. Reklamdan gelen izleyicinin çoğu sesi kapalı başlıyor.
 
@@ -157,16 +159,16 @@ Bitince: "Sayfa yayında. Sıradaki iş reklam kurulumu; reklamın gideceği yer
 
 ## 7. Ne yazar
 
-İş Beyni'ne: satış sayfasının adresi, video metninin tam hali ve tarihi, üç kanıt anının yeri ve içeriği, videonun süresi, hangi kanıt hikâyesiyle çekildiği, hukukçu okuması gerekiyorsa okundu bilgisi.
+İş Beyni'ne: satış sayfasının adresi, video metninin tam hali ve tarihi, üç kanıt anının yeri ve içeriği, videonun süresi, hangi kanıt hikâyesiyle çekildiği, sağlık nişindeyse kontrolün ve kliniğin yazılı onayının tarihi.
 Bir sonraki modüllere: sayfa adresi reklam kurulumuna, video metnindeki teşhis cümlesi adaya-mesaj-yaz'a (aynı cümle mesajda da çalışıyor), kanıt anlarının listesi kanitini-hazirla'ya.
 
 ## 8. Yedek yol
 
 - Kanıt hikâyesi var ama izin yazılı değilse: hikâye videoya girmez, yerine kendi sayımından çıkan kanıt cümlesi ve kanıt ekran kaydı kullanılır. İzin gelince video yeniden çekilir.
 - İkinci gün çekim olmazsa: metin İş Beyni'nde durur, çekim ilk boş güne kayar. Sayfa videosuz yayına alınmaz, çünkü videosuz sayfanın işi yok.
-- Kameraya çıkamıyorsan: sesini kaydedip üstüne ekran görüntüsü koyarsın. Bu geçici; on görüşmeden sonra yüzle yeniden çekiliyor.
+- Kameraya çıkmak istemiyorsan: ses yolu; sesini kaydedip üstüne ekran görüntüsü koyarsın. Kalıcıdır.
 - Reklam bütçesi kesilirse: sayfa yayında kalır, adresi yazılı mesajlarda ve e-posta imzasında kullanılır. Zararı yok.
-- Sağlık nişinde hukukçu onayı gelmezse: sayfa açılmaz. Bu şart esnetilmiyor.
+- Sağlık nişinde kontrol temiz çıkmazsa ya da kliniğin yazılı onayı gelmezse: sayfa açılmaz. Bu şart esnetilmiyor.
 
 ## 9. Sıradaki adım ve işaretler
 

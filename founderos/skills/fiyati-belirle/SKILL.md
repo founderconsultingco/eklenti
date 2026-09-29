@@ -6,6 +6,8 @@ description: "Birinci gün fiyat bandı, üçüncü gün kesin fiyat. \"Fiyat ne
 
 # fiyati-belirle
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Birinci ve üçüncü günün modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül rakamı koyar.
@@ -37,7 +39,7 @@ Pazarlamadaki karşılığı: fiyat matematik değil, kendini nereye koyduğun.
 Niş kartından: gerçek fiyatlar ve kapasite, duran havuz, yasal sınırlar.
 Kilitli formül ve oranlardan: aşağıda.
 
-Hazırlık seviyesi, satış tecrübenin, sektör bilgin ve güvenin olup olmadığıdır; üçü de yoksa ilk iki müşteride deneme fiyatı uygulanır.
+Hazırlık seviyesi üç ölçüte bakar: satış tecrüben, sektör bilgin ve tanımadığın birini telefonla arama rahatlığın. Düşük demek: satış tecrüben yok ve telefon seni zorluyor, ya da üçünün ikisi yok. Düşükse ilk iki müşteride deneme fiyatı uygulanır.
 
 ## 4. Ne sorar
 
@@ -55,6 +57,7 @@ Fiyat iki parçadır ve ikisi de değerden hesaplanır, senin saatinden değil: 
 - **Deneme fiyatı:** hazırlık seviyesi düşükse ilk iki müşteride kurulum ücretinin yarısı. Aylık ücret değişmez, çünkü aylık kurulumdan hesaplanır ve tam kurulumdan hesaplanmaya devam eder.
 - **Karşılaştırma fiyatı:** Kademe 2'nin üç aylık peşin paketi (kurulum artı üç aylık). Ön görüşme sayfasında durur (sitede fiyat yoktur), görüşmede söylenmez.
 - **Taban:** aylık ücretin dört katı senin aylık hedefine ulaşmıyorsa o işletme sana küçük demektir; fiyat yukarı yuvarlanmaz, aday uygunluk puanında düşer ve nişte bu sık oluyorsa nisi-sec'in müşteri değeri elemesine işaret gider.
+- **İlk müşteri tavanı:** ilk iki müşteride kurulum en fazla 60.000 TL, aylık en fazla 15.000 TL. Hazırlık seviyesi düşükse deneme fiyatı bu tavanın üstüne işler: önce tavan, sonra yarısı. Tavanı aşan bir hesap, görüşmede işletmecinin kendi rakamlarıyla doğrulanmadan söylenmez.
 
 Neden saat değil değer: birinin daha iyi olduğu bir işi daha hızlı yapıyor diye daha az kazanması saçma. Saatten hesaplayan herkes kendini ucuzlatıyor; değerden hesaplayan rakamın arkasında veri taşıyor ve görüşmede "neden bu kadar" sorusuna rakamla cevap veriyor.
 
@@ -79,6 +82,8 @@ Kalıp, rakamlar karttan: kartın kayıp biriminin ortası alınır, kartın ver
 
 Kartta aylık kaçan olay sayısı yoksa çarpım yapılmaz, tasarruf formülüne geçilir; o da yoksa fiyat **bant** olarak kalır ve kesin rakam görüşmede kurulur. Bant: kayıp biriminin ortası çarpı dört ile çarpı on iki arası, yıla çevrilip onda biri alınarak. Bu bant sahaya çıkmak için yeterli; görüşmenin altı veri sorusu rakamı işletmecinin kendi ağzından alıyor ve fiyat orada kesinleşiyor. Öğrenci fiyatsız sahaya çıkmaz, bantla çıkar.
 
+**Yedek yol.** Kartta kapasite ya da aylık kaçan olay sayısı yoksa ve kayıp birimi bir liste fiyatı ya da yüksek tutarlı tek işlemse (ameliyat, araç, tadilat projesi), bant bu birimle hiç çarpılmaz. Bant ilk müşteri tavanıyla konur ve öğrenciye "en fazla" diye söylenir; rakam görüşmede işletmecinin kendi sayılarıyla kurulur. Sebebi şu: tek bir ameliyatın ya da aracın fiyatını dört ile on iki arasında bir sayıyla çarpmak işletmenin kaybını değil, liste fiyatının katını verir.
+
 **İkinci adım, yıla çevir ve kurulumu koy.** Aylık kayıp çarpı on iki, yıllık kayıp. Kurulum ücreti bunun yüzde onu. Tasarruf formülündeysen haftalık saat çarpı saat maliyeti çarpı elli iki, kurulum bunun yüzde yirmisi ile yirmi beşi.
 
 **Üçüncü adım, aylığı koy.** Kurulum ücretinin yüzde yirmisi. Yuvarlanır; bin lira basamağına, aşağı değil yukarı.
@@ -92,7 +97,7 @@ Bu hesabı telefonda iki cümlede söyleyebilirsin: "Ayda kaçırdığınız [ay
 ### Bant, kesin rakam ve görüşmedeki rakam
 
 Üç rakam var ve karıştırılmaz:
-- **Bant (birinci gün):** formül kartın alt ve üst rakamlarıyla iki kez çalıştırılır; çıkan iki kurulum ve iki aylık, bandın uçlarıdır. Öğrenciye "aralık" diye anlatılır.
+- **Bant (birinci gün):** formül kartın alt ve üst rakamlarıyla iki kez çalıştırılır; çıkan iki kurulum ve iki aylık, bandın uçlarıdır. Öğrenciye "aralık" diye anlatılır. Bandın ilk müşteri tavanını aşan ucu tavana çekilir ve "tavan" diye işaretlenir. Bant İş Beyni'ne onay beklemeden yazılır; birinci günün onay noktası teklifin gövdesidir, bant değil.
 - **Nişin varsayılan rakamı (üçüncü blok, kesin fiyat):** formül kartın orta rakamlarıyla çalıştırılır. Bu rakam İş Beyni'ne yazılır, ön görüşme sayfasındaki karşılaştırma fiyatı bundan hesaplanır, "fiyat ne" cevabında aralık olarak söylenir.
 - **Görüşmede söylenen rakam:** soru bölümünde işletmeci kendi rakamlarını verdi (kaç arama, kaçı cevapsız, bir müşteri ne getiriyor). Formül o rakamlarla yeniden çalıştırılır ve söylenen rakam odur. İşletmecinin rakamı nişin varsayılanının yüzde otuz altında ya da üstündeyse kendi rakamı geçerlidir; aradaysa varsayılan söylenir, rakamla oynanmaz. Böylece fiyat hem her işletmeye özel hem tartışılmaz: rakamı işletmeci verdi, formül sabit.
 
@@ -100,7 +105,7 @@ Kilit şudur: otuz görüşme birikmeden değişmeyen şey formül, oranlar ve n
 
 ### Üç kademeye rakam
 
-Üç kademeye de rakam yazılır ve üçü de aynı formülden çıkar; fark, hesaba giren sızıntılardır. Kademe 1 Temel Kapsam: yalnız birinci sızıntı (kaçan talep). Kademe 2 Tam Kapsam: birinci sızıntı artı eski müşteri geri kazanımının lira karşılığı (kartta varsa); görüşmede satılan budur. Kademe 3 Genişletilmiş Kapsam: Kademe 2 artı dış arama ve reklamın getirdiği ek gelir; en erken ikinci ay, büyüme şartından sonra. Yasal sınırı olan nişlerde Kademe 3'e "yok" yazılır.
+Üç kademeye de rakam yazılır ve üçü de aynı formülden çıkar; fark, hesaba giren sızıntılardır. Kademe 1 Temel Kapsam: yalnız birinci sızıntı (kaçan talep). Kademe 2 Tam Kapsam: birinci sızıntı artı eski müşteri geri kazanımının lira karşılığı (kartta varsa); görüşmede satılan budur. Kademe 3 Genişletilmiş Kapsam: Kademe 2 artı reklamın ve ek hizmetlerin getirdiği ek gelir; en erken ikinci ay, büyüme şartından sonra. Yasal sınırı olan nişlerde Kademe 3'e "yok" yazılır.
 
 Hesap Kademe 2 ile yapılır: bant, nişin varsayılan rakamı ve görüşmedeki rakam Kademe 2'nin rakamıdır. Kartta eski müşteri geri kazanımının lira karşılığı yoksa Kademe 2'nin rakamı Kademe 1'inkiyle aynı çıkar; iki kademe aynı rakamla yazılır, fark kapsamda kalır, rakam uydurulmaz. "Pahalı" itirazında Kademe 1'e inmek kapsamı küçültmektir; iki rakam aynıysa inilecek yer yoktur ve indirim de yapılmaz, kanıta dönülür.
 
@@ -164,7 +169,7 @@ Güvence, müşteriye verdiğin sözdür: rapor gününde ([21/28]. gün) rapor,
 
 Bu bir sayı sözü değildir ve olmamalıdır. "Ayda otuz randevu" diye söz verirsen kontrol edemediğin bir şeyi taahhüt etmiş olursun. Güvencenin ölçüsü sistemin çalışıp çalışmadığıdır, müşterinin satış yapıp yapmadığı değil.
 
-Güvencenin şartları da yazılır: müşteri giriş izinlerini kurulum görüşmesinde verir, karşılama formunu ve duran havuz onayını yedinci güne kadar verir. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Bir parça mevzuat yüzünden ya da müşterinin kendi adımını atmaması yüzünden kurulamıyorsa o parça güvencenin sonucuna sayılmaz.
+Güvencenin şartları da yazılır: müşteri giriş izinlerini kurulum görüşmesinde verir, karşılama formunu ve duran havuz onayını yedinci güne kadar verir. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir. Bir parça dışarıdan bir engel (izin, hat, sağlayıcı, sektör kuralı) ya da müşterinin kendi adımını atmaması yüzünden kurulamıyorsa o parça güvencenin sonucuna sayılmaz.
 
 Güvence nerede söylenir, nerede söylenmez. Sözleşmede yazılıdır ve onay belgesinde durur; görüşmede "garanti veriyor musunuz" sorusuna cevap olarak söylenir. Teklifin başlığında, sitenin açılışında, telefon açılışında ve ilk mesajlarda geçmez. Sebebi şu: iade sözü kimseyi ikna etmiyor, hatta "demek ki çalışmama ihtimali var" diye okunuyor. İkna eden şey kanıt: deneme aramalarının rakamı ve adayın kendi telefonundan arayabileceği çalışan demo. Güvence kararı kolaylaştırmak için var, kararı kurmak için değil.
 
@@ -178,7 +183,7 @@ Rakamı yazışmada tek başına vermezsin. Bağlamsız rakam her zaman pahalı 
 
 ## 6. Ne söyler
 
-Rakamı verirken (deneme fiyatı yalnız hazırlık seviyesi düşükse, yani satış tecrübesi, sektör bilgisi ve güvenin üçü de yoksa): "Fiyatın şu: kurulum [rakam], aylık [rakam], yani kurulumun beşte biri. Hazırlık seviyen düşük, o yüzden ilk iki müşteride kurulum yarısı, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
+Rakamı verirken (deneme fiyatı yalnız hazırlık seviyesi düşükse, yani satış tecrüben yok ve telefon seni zorluyorsa ya da üç ölçütün ikisi yoksa): "Fiyatın şu: kurulum [rakam], aylık [rakam], yani kurulumun beşte biri. Hazırlık seviyen düşük, o yüzden ilk iki müşteride kurulum yarısı, aylık aynı. Karşılığında üç şey alacaksın: rakamları paylaşma izni, isim ve logo izni, rapor gününde kısa bir video."
 Matematiği gösterirken: "Rakamı tartışmıyoruz, matematiği gösteriyorum. Bu sektörde kaçan bir müşteri [kart rakamı] ediyor, ayda [sayı] tanesi kaçıyor: ayda [aylık kayıp], yılda [yıllık]. Kurulum yıllığın onda biri: [kurulum]. Aylık kurulumun beşte biri: [aylık]. İlk yıl toplam ödediği, kaybettiğinin yaklaşık üçte biri; ikinci yıldan itibaren dörtte birinden azı."
 Prova: "Şimdi rakamı sesli söyle ve sus. Ben saymaya başlayacağım. Otuz saniye konuşmayacaksın."
 "Çok yüksek" derse: "Matematiği bir daha bakalım. Deneme fiyatın zaten var. Fiyatı sen değil, ilk otuz görüşme belirleyecek. Şimdilik bu."
@@ -197,11 +202,11 @@ CRM'e (açıldığı gün): kurulum ve aylık ücret satırları kayıtta hazır
 - Sen "çok yüksek" dersen: matematik bir kez daha anlatılır, deneme fiyatı hatırlatılır, indirim açılmaz.
 - Fiyat itirazı son on görüşmenin yarısından fazlasında geliyorsa: sorun fiyat değil, teklifi anlatış biçimidir. teklifi-yaz'a işaret gider.
 - Kapanış oranın beklenenin çok üstündeyse: fiyatın düşük demektir. kari-hesapla'ya işaret gider.
-- Nişin mevzuat kısıtı varsa: Kademe 3 "yok" yazılır, güvence cümlesi o nişin sınırlarına göre yeniden kurulur.
+- Nişin kartında yasal sınır varsa: Kademe 3 "yok" yazılır, güvence cümlesi o nişin sınırlarına göre yeniden kurulur; öğrenciye sebep anlatılmaz.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki, birinci günde (bant): "Şimdi hesap, sonra marka." ve hesaba geçilir. Üçüncü blokta (kesin fiyat): "Aynı günün ikinci yarısında paranın yolunu, sözleşmeni ve aday listeni kuruyoruz; akşam tanıdıklara ilk mesaj gidiyor. Geçelim mi?"
+Sıradaki, birinci günde (bant): "Şimdi hesap; marka ve sayfa sıradaki oturuşta." ve hesaba geçilir; doksan günlük plan arka planda yazılmaya başlar. Üçüncü blokta (kesin fiyat): "Aynı günün ikinci yarısında paranın yolunu ve aday listeni kuruyoruz; akşam tanıdıklara ilk mesaj gidiyor. Geçelim mi?"
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Fiyatı sesli söylerken üç denemede rakam düşüyor: prova sayacına "fiyat provası" yazılır.
@@ -213,4 +218,4 @@ Sıradaki, birinci günde (bant): "Şimdi hesap, sonra marka." ve hesaba geçili
 - İki müşteri deneme fiyatıyla kapandı: deneme fiyatı kapanır, üçüncüden itibaren tam fiyat.
 - Üç ay doldu: kari-hesapla bu modülü yeniden çalıştırır.
 
-Beş kural: boş sayfa yok (rakamlar, hesap ve itiraz cevabı hazır gelir) · sessiz bitiş yok (akşam ilk mesajlar gidiyor) · onay (fiyat tablosu senin "tamam"ınla kaydedilir) · sahadan güncelleme (görüşme analizleri ve aylık kâr hesabı fiyatı yeniler) · sormaz söyler (rakamı söyler, indirim menüsü açmaz).
+Beş kural: boş sayfa yok (rakamlar, hesap ve itiraz cevabı hazır gelir) · sessiz bitiş yok (akşam ilk mesajlar gidiyor) · onay (bant ve fiyat İş Beyni'ne onay beklemeden yazılır; CRM'e ücret satırları senin "tamam"ınla girer) · sahadan güncelleme (görüşme analizleri ve aylık kâr hesabı fiyatı yeniler) · sormaz söyler (rakamı söyler, indirim menüsü açmaz).

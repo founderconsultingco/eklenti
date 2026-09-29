@@ -6,6 +6,8 @@ description: "Ayda bir, artı sekizinci ve on dördüncü günün ara raporu. M�
 
 # aylik-raporu-hazirla
 
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Müşteriye gösterilen raporu üreten modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Üç hali var: sekizinci ve on dördüncü günün ara raporu, rapor günü raporu (güvencenin karşılığı olan rapor budur), ve sonraki aylık raporlar. Müşteriye sayı gösteren her şey buradan çıkar.
@@ -49,7 +51,7 @@ CRM'den (adayların ve müşterilerin kaydedildiği takip programı):
 - duran havuzun kayıt başına gönderim ve cevap durumu. Duran havuz, işletmenin elindeki uzun süredir aranmamış eski müşteri listesidir.
 - yorum isteği gitti mi
 
-Bilgi dosyasından (İş Beyni'nin müşteriler bölümü; her müşteri için tuttuğun geniş dosya):
+Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya):
 - ortalama iş bedeli
 - kayıp rakamı ve birimi. Kayıp birimi, işletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şeydir: bir boş gün, bir koltuk saati.
 - [21/28] günün başlangıç tarihi
@@ -85,7 +87,7 @@ Bu cümle üç işi birden yapıyor:
 2. Ölçülebilir. Üç sayı da CRM'de duruyor, tartışma açılmıyor.
 3. Senin elinde. Randevuya çıkmak ve işi kapatmak müşterinin işidir; sen onun sorumluluğunu almıyorsun.
 
-Boş kalan satır ne demek: bir parça mevzuat yüzünden ya da müşterinin kendi adımını atmaması yüzünden hiç kurulamadıysa o satır sayılmaz. Bilinen haller: cevapsız arama yönlendirmesi kurulamaması, izinlerin çıkmaması, listenin gelmemesi, listede İYS izinli numara çıkmaması, Google işletme profilinin doğrulanmamış olması, sağlık nişinde hukukçu onayının gelmemesi, kare kodun bastırılıp asılmaması.
+Boş kalan satır ne demek: bir parça bizim elimizde olmayan bir sebeple ya da müşterinin kendi adımını atmaması yüzünden hiç kurulamadıysa o satır sayılmaz. Bilinen haller: cevapsız arama yönlendirmesinin kurulamaması, izinlerin çıkmaması, listenin gelmemesi, listede mesaj izni kayıtlı numara çıkmaması, Google işletme profilinin doğrulanmamış olması, sağlık nişinde kliniğin yazılı onayının gelmemesi, kare kodun bastırılıp asılmaması.
 
 Kartta kayıp biriminin lira karşılığı yazmayan iki niş var: emlak ofisi ve oto galeri ("sahadan dolacak"). Orada birimi kurulum görüşmesinde müşteriye sorar ve karta yazarsın.
 
@@ -136,17 +138,17 @@ Görüşmenin sırası:
 
 Birinci maddeyi atlama. Müşteri sorunu senden önce bulursa, sonucu düzeltsen bile güveni kaybedersin.
 
-Süre: üç sayıdan en az biri sıfır değilse, yani sonuç cümlesi tuttuysa, yirmi dakika. Tutmadıysa ya da ay kötüyse kırk dakika ayır. O görüşme zor bir görüşmedir.
+Süre: sistemin yazdığı randevu sıfır değilse, yani sonuç cümlesi tuttuysa, yirmi dakika. Tutmadıysa ya da ay kötüyse kırk dakika ayır. O görüşme zor bir görüşmedir.
 
-Tek sayfanın satırları. Kapsam dışı kalan parça varsa sebebini sayfanın en üstündeki kutuya bir kez sen yazarsın, aşağıdaki satırlarda tekrar etmezsin.
+Tek sayfanın satırları. Kapsam dışı kalan parça varsa sebebini sayfanın en üstündeki kutuya FounderOS bir kez, sade tek cümleyle yazar; sen okursun, aşağıdaki satırlarda tekrar edilmez.
 
 1. Ne kurduk: canlıya alınan parçalar ve tarihleri.
 2. Sistem ne yaptı: karşılanan mesaj sayısı, yazılan randevu sayısı, gelen randevu sayısı. Cevapsız aramaya dönüş kurulduysa onun sayısı da burada.
 3. Eski müşteriler: kaç kişiye gidildi, kaç cevap geldi, kaç randevu çıktı.
 4. Yorum: kaç istek gitti, kaç yeni yorum geldi, puan ne oldu. Bu ikisi ayrı okunur, aralarında oran yazılmaz. Kare koddan gelen yorumu sistem sayamaz.
-5. Sonuç cümlesi: yazılan satırlar sıfır mı değil mi, tek cümle.
+5. Sonuç cümlesi: sistemin yazdığı randevu (teklif yolunda takip ettiği teklif) sıfır mı değil mi, tek cümle.
 6. Para satırı: müşterinin kendi söylediği sayı.
-7. Ücret satırı: ilk ay kurulum ve aylık ücretin toplamı, sonraki aylarda yalnız aylık ücret. Para satırı boşsa bu satır da yazılmaz.
+7. Ücret satırı: ilk ay kurulum ve aylık ücretin toplamı, sonraki aylarda yalnız aylık ücret; kurulamayan parça indirimi varsa aylık ücret indirimli haliyle. Para satırı boşsa bu satır da yazılmaz.
 
 Yasak: sistemin yapabildiklerini anlatmak. Rapor sadece yaptıklarını gösterir. Her özelliği sayarsan müşterinin gözü kayar ve ödediği sonucu göremez.
 
@@ -176,8 +178,8 @@ Sorunu ilk sen söyle. Öfkelenmişse sen ondan daha öfkeli ol. O zaman sana k�
 Kötü ay raporsuz geçmez. En kötü şey rapor göndermemektir. İlk hafta detaylı, sonra seyrelen, en sonunda susan bir düzen her şeyi bozar.
 
 Sonuç cümlesi tutmadıysa üç yol var:
-1. Kapsam dışı bir parça yüzünden tutmadıysa: güvenceye sayılmaz, sebebi raporun üstündeki kutuda yazılıdır. Tahsilat kart kaydından kendiliğinden çekilir, sen bir şey yapmazsın.
-2. Sistem çalıştı ama sistemin yazdığı randevu sıfırsa: ikinci ay ücreti alınmaz, sistem çalışmaya devam eder. Bu bir ücretsiz aydır, açık uçlu değildir. Ayın sonunda üç yol var: kapsamı daraltıp devam, normal ücretle devam, ya da sözleşmedeki yazılı bildirimle ayrılma. Bildirimin kaç gün önce yapılacağı senin sözleşmende yazar; o rakamı müşteriye oradan okursun, kendin uydurmazsın. Süresiz bedava çalışmak yok.
+1. Kapsam dışı bir parça yüzünden tutmadıysa: güvenceye sayılmaz, sebebi raporun üstündeki kutuda yazılıdır. Tahsilatta kural tek: sebep bizim elimizde değilse (bir kural, hat ya da sağlayıcı) o parçanın kurulmadığı her ay aylık ücret yüzde yirmi iner (parça başına, en çok yüzde altmış). Hesabı FounderOS yapar, o ayın tutarını ödeme panelinde sen düzeltirsin; kendiliğinden ayarlanmaz. Sebep müşterinin kendi adımıysa tahsilat kart kaydından tam çekilir.
+2. Sistem çalıştı ama sistemin yazdığı randevu sıfırsa: ikinci ay ücreti alınmaz, sistem çalışmaya devam eder. Bu bir ücretsiz aydır, açık uçlu değildir. Ayın sonunda üç yol var: kapsamı daraltıp devam, normal ücretle devam, ya da yazılı bildirimle ayrılma. Bildirimin kaç gün önce yapılacağını FounderOS sözleşmeden okur ve sana söyler; rakam uydurulmaz. Süresiz bedava çalışmak yok.
 3. Müşteri parasını geri isterse: hiçbir teslimat yapılmadıysa kurulum ücretini iade edersin, tartışma açmazsın. Teslimat başladıysa güvence maddesi işler.
 
 Sayı düşük diye erken karar verilmez. Talep dalgalar halinde gelir; beş gün sıfır, sonra bir günde dört tane olabilir.
@@ -186,7 +188,7 @@ Sayı düşük diye erken karar verilmez. Talep dalgalar halinde gelir; beş gü
 
 Rapor kendiliğinden hazırlanır ama kendiliğinden gitmez. Sistem taslağı çıkarır, sen bakarsın, sen gönderirsin. Müşteriye giden her mesaj senin elinden çıkar, bu rapor da öyle.
 
-Nasıl çıkar: CRM'de hazır bir aylık rapor taslağı yok. CRM'in raporlar bölümü sabit panolardan ibaret ve senin açtığın satırlara göre kişi saymıyor; oradan hazır rapor beklersen boş ekrana bakarsın. Taslağı FounderOS çıkarır: müşterinin alt hesabındaki kayıtları okur, her satırın sayısını kendi sayar ve önüne dolmuş bir metin koyar. Sen bilgi dosyasından gelen satırları tamamlar, baştan sona okur ve müşteriye kendi elinle gönderirsin.
+Nasıl çıkar: CRM'de hazır bir aylık rapor taslağı yok. CRM'in raporlar bölümü sabit panolardan ibaret ve senin açtığın satırlara göre kişi saymıyor; oradan hazır rapor beklersen boş ekrana bakarsın. Taslağı FounderOS çıkarır: müşterinin alt hesabındaki kayıtları okur, her satırın sayısını kendi sayar ve önüne dolmuş bir metin koyar. Bunun için bağlantı müşterinin bölümünü de görmeli: bölüm açıldığı gün iki bölüm birlikte işaretlendiyse görür. Görmüyorsa FounderOS bağlantıyı yeniler, sen giriş ekranında iki bölümü işaretlersin; o ay sayıları ekrandan elle sayarsın. Sen bilgi dosyasından gelen satırları tamamlar, baştan sona okur ve müşteriye kendi elinle gönderirsin.
 
 Yanına iki cümlelik not değil, altmış saniyelik bir sesli mesaj koyarsın. Tek başına giden bir dosya soğuk durur. Müşteri rakamı değil, biriyle konuştuğunu hissetmeyi arıyor.
 
@@ -212,7 +214,7 @@ Kurallar: ham, canlı ve yeni kanıt cilalıdan iyidir. Anlatmak yerine gösterm
 
 İzin: müşterinin adı, işletme adı, logosu ya da ekran görüntüsü kullanılacaksa yazılı izin alınır. Deneme fiyatıyla çalıştıysan bu izin sözleşmende zaten var; değilse izni ayrıca yazılı istersin. İzni sen istersin: rapor görüşmesinin sonunda tek cümleyle sorar, aynı gün yazılı olarak WhatsApp'tan alırsın. İzin yazısını bilgi dosyasına tarihiyle geçirirsin. İzin sonradan geri alınırsa yayındaki isim, logo ve video kaldırılır. İzin yoksa yalnız niş ve şehir yazılır.
 
-Bir kilit daha: diş, estetik ve güzellik salonunun tıbbi işlemlerinde kanıt hikâyesi isim, logo ya da rakamla yayınlanmadan önce müşterinin hukukçusundan yazılı görüş alınır. Bu nişlerde tanıtım kuralları sert ve ceza müşteriye kesiliyor. Görüş gelmezse yalnız niş ve şehir yazılır.
+Bir kilit daha: diş, estetik ve güzellik salonunun tıbbi işlemlerinde kanıt hikâyesi varsayılan olarak yalnız niş ve şehirle yazılır. İsim, logo ya da rakam ancak klinik metnin son halini yazılı onaylarsa girer; kliniğin "onaylıyorum"u yeter, kliniğin kendi danışmanına sorması kliniğin işidir. Metni gönderirken tek satır: "Yayından önce metni size gönderiyorum; isterseniz danışmanınıza da gösterin. Onayınız gelmeden yayınlamıyorum." Öğrenciye sebep anlatılmaz; sorarsa tek cümle: "Bu sektörde işler böyle yürüyor; en güvenli yol bu."
 
 Uydurulmuş rakam yok. Kanıt hikâyesinde gerçek rakam şart.
 
@@ -222,7 +224,7 @@ Rapor sayı gösterir, kişi göstermez. İşletmenin müşterilerinin adı, tel
 
 Sağlık nişlerinde ek kural: rapor tedavi, işlem ya da hasta durumu bilgisi taşımaz. Yalnız randevu ve mesaj sayısı yazar.
 
-Müşterinin hukukçusu farklı derse ona uyulur.
+Müşteri yazılı olarak daha dar bir sınır isterse ona uyulur.
 
 ### Ölçümün sınırları
 
@@ -265,7 +267,7 @@ Sıradaki: ikinci ay planı (musteriyi-elde-tut), haftalık kontrol (sistemi-kon
 - Sekizinci ya da on dördüncü gün geldi, ara rapor gitmedi: akşam bloğunun ilk işi olur.
 - On dokuzuncu gün geldi, raporun sayıları eksik: sabah planının ilk işi olur.
 - Yirminci gün geldi, müşterinin sayısı yok: aynı gün ikinci kez sorulur.
-- Normal ücretle devam edildi ve ikinci rapor da bütün satırları sıfır gösterdi: iş zor-konusmayi-yonet'e geçer.
+- Normal ücretle devam edildi ve ikinci rapor da sistemin yazdığı randevuyu sıfır gösterdi: iş zor-konusmayi-yonet'e geçer.
 - Müşteri iki haftadır rapora cevap vermiyor: ayrılık böyle başlar, haftalık kontrolün ilk maddesi olur.
 - Kademe 2 sorunsuz teslim edildi ve rapor günü raporu çıktı: büyüme şartı açılır, kanıt hikâyesi istenir. Kanıt hikâyesi çıkınca siten, e-posta imzan, yedinci gün takibin ve Instagram profilin yeni kanıtla güncellenir.
 

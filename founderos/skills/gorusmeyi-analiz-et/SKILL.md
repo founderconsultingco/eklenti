@@ -1,10 +1,12 @@
 ---
 user-invocable: false
 name: gorusmeyi-analiz-et
-description: "Öğrenci \"görüşme bitti\", \"kaydı yükledim\", \"şöyle geçti\" dediğinde. Nerede koptu, ne öğrenildi, kayıt İş Beyni'ne."
+description: "Öğrenci \"görüşme bitti\", \"kaydı yükledim\", \"şöyle geçti\" dediğinde. Nerede koptu, ne öğrenildi; kayıt günlüğe, yürürlükteki karar İş Beyni'ne."
 ---
 
 # gorusmeyi-analiz-et
+
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -12,7 +14,7 @@ Görüşme bittikten sonra çalışan arka plan yardımcısıdır. Arka plan yar
 
 ## 2. Ne zaman çalışır
 Görüşme halinde iki adım var.
-- Hızlı adım: görüşme biter bitmez, öğrenci "kaydı yükle" dediğinde çalışır. Dört şey çıkarır: sonuç, evet ile ödeme arasındaki süre, gerekiyorsa bir saat sonra gidecek mesaj, o günün prova konusu. Prova konusu aktif düzeltmedir. Aktif düzeltme, şu an üzerinde çalışılan tek düzeltmedir.
+- Hızlı adım: görüşme biter bitmez, öğrenci dökümü yapıştırdığında ya da kısa notunu anlattığında çalışır. Dört şey çıkarır: sonuç, evet ile ödeme arasındaki süre, gerekiyorsa bir saat sonra gidecek mesaj, o günün prova konusu. Prova konusu aktif düzeltmedir. Aktif düzeltme, şu an üzerinde çalışılan tek düzeltmedir.
 - Tam adım: aynı gün akşam bloğunda, rakamlari-oku modülünden önce çalışır. On soruyu cevaplar, sonra denetim ölçümünü doldurur.
 
 Arama halinde: beşinci günün akşamından itibaren ilk yirmi aramada, her notun hemen ardından çalışır. Çıktısı "sıradaki beş aramada tek şey". Yirminci aramadan sonra not kapanır; akşam sadece sayılar tutulur.
@@ -24,7 +26,7 @@ Haftada bir: en zayıf tek adımı bulur. On görüşmede bir: teklife düşüle
 ## 3. Ne okur
 
 - Görüşme kaydının yazılı hali. Ön şart: yazılı kayıtta kimin ne zaman konuştuğu belli olmalı. Belli değilse süre, oran ve ton için "ölçülemedi" yazılır, uydurulmaz. Arka plan yardımcısı ses dinlemez, yazıyı okur.
-- Kayıt yoksa öğrencinin beş dakikalık notu.
+- Döküm yoksa öğrencinin beş dakikalık notu, sesli ya da yazılı anlatılmış haliyle.
 - Görüşmede yazılan üç şey: işletmecinin sebep cümlesi, kayıp rakamı, itiraz kelimesi.
 - CRM'den: adayın kaydı, sonuç (kazandım / kaybettim / sonra), ödeme saati, kurulum tarihi, takip tarihi.
 - İş Beyni'nden: Dönüşüm Cümlesi ve kaçıncı sürüm olduğu, sistemin adı, üç itiraz, fiyat, görüşme sayacı, prova sayacı, aktif düzeltme, kurucu bölümü, Doksan Gün Planı'nın 9. bölümü (kancalar) ve 12. bölümü (itirazlar). Dönüşüm Cümlesi, ne sattığını tek cümlede söyleyen cümledir. Kurucu bölümü, İş Beyni'nde öğrenciyi anlatan dört satırdır.
@@ -104,13 +106,13 @@ Bu dört satır aday-denetimi-cikar'a geri yazılır: hangi bulgu tipi görüşm
 
 İzin. Kayıt izni görüşmenin ilk yarım dakikasında alınır ve hatta kim varsa herkesten tek tek alınır: "Notlarım için kaydediyorum, uygun mu?" Ortağı ya da ikinci bir kişi varsa ona da ayrıca sorulur. Biri "hayır" derse kayıt yok, aşağıdaki not yolu işler. Gizli kayıt yok; izinsiz alınmış kayıt bu modüle hiç girmez.
 
-Kayıt nasıl alınır. Görüntülü görüşmede görüşme programının kendi kayıt düğmesi. Telefon görüşmesinde iki yol var: telefonun kendi ses kaydedicisi, ya da görüşmeyi hoparlöre alıp ikinci bir telefonun ses kaydedicisiyle kaydetmek. Hangisi sende çalışıyor, bunu beşinci günde bir kez denersin: kendini otuz saniye kaydet, dinle, ses anlaşılıyor mu bak. Görüşme sırasında kayıt düğmesiyle uğraşılmaz; kayıt açılışta başlar, kapanışta biter.
+Kayıt nasıl alınır. Görüntülü görüşmede görüşme programının kendi kayıt düğmesi. Telefon görüşmesinde iki yol var: telefonun kendi ses kaydedicisi, ya da görüşmeyi hoparlöre alıp ikinci bir telefonun ses kaydedicisiyle kaydetmek. Hangisi sende çalışıyor, bunu beşinci günde bir kez denersin: kendini otuz saniye kaydet, dinle, ses anlaşılıyor mu bak. Aynı gün bir şeye daha bakarsın: kullandığın araç kaydı yazıya döküyor mu. Görüşme sırasında kayıt düğmesiyle uğraşılmaz; kayıt açılışta başlar, kapanışta biter.
 
-Kayıt yazıya nasıl çevrilir. Ses dosyasını buraya, sohbete atarsın; dökümü FounderOS çıkarır. Program kurman, abone olman ya da para ödemen gerekmiyor. Dosyayı atarken tek cümle yazarsın: "Ahmet Bey görüşmesi, kaydı attım." Döküm çıkınca analiz kendiliğinden başlar; sen ayrıca bir şey söylemezsin.
+Kayıt yazıya nasıl çevrilir. FounderOS ses dosyasını dinleyemez; yazıya dökülmüş hali gerekir. Dökümü kullandığın araç veriyorsa (görüntülü görüşme programının ya da telefonunun kayıt uygulamasının yazıya dökme özelliği varsa) o dökümü kopyalayıp buraya yapıştırırsın. Araç döküm vermiyorsa görüşmeyi kapatır kapatmaz aşağıdaki beş dakikalık notu anlatırsın; sesli anlatabilirsin (uygulamanda ses modu varsa) ya da yazabilirsin. Getirirken tek cümle yazarsın: "Ahmet Bey görüşmesi." Analiz kendiliğinden başlar; sen ayrıca bir şey söylemezsin.
 
 Dökümün taşıması gereken iki şey var: kimin konuştuğu ve kaçıncı dakikada konuştuğu. Bu ikisi olmadan süre, oran ve ton ölçülmez. Döküm bu haliyle gelmezse o satırlara "ölçülemedi" yazılır ve uydurulmaz; alıntılar yine çıkarılır, on sorunun cevaplanabilenleri cevaplanır.
 
-Kayıt hiç yoksa: beş dakikalık not. Görüşmeyi kapattığın anda, beklemeden, beş dakika. Altı satır, sırası sabit:
+Döküm yoksa (kayıt alınmadı ya da araç yazıya dökmüyor): beş dakikalık not, sesli ya da yazılı. Görüşmeyi kapattığın anda, beklemeden, beş dakika. Altı satır, sırası sabit:
 1. Sonuç: kazandım, kaybettim, düşüneyim, sonra.
 2. İşletmecinin sebep cümlesi, kelimesi kelimesine. Senin özetin değil, onun cümlesi.
 3. Kayıp rakamı ve birimi, onun ağzından çıktığı gibi.
@@ -168,7 +170,7 @@ FounderOS'a giden işaretler:
 - Her görüşmede itiraz: niteleme.
 - On görüşmenin altısında fiyata gelinmiyor: soru bölümü uzuyor, prova.
 - Evet dedi, ödemedi, iki kez: kapanış provası.
-- Öğrenci kaydı üst üste üç kez yüklemiyor: vazgeçme işareti, kurucu bölümüne yazılır.
+- Öğrenci dökümü ya da notu üst üste üç kez getirmiyor: vazgeçme işareti, kurucu bölümüne yazılır.
 - Fiyat itirazı yarıdan fazla: teklifi anlatış biçimi, teklifi-yaz modülüne not.
 - Otuz görüşmede kapanış yüzde yirminin altında: önce niteleme.
 - Kapanış yüzde ellinin üstünde: fiyati-belirle modülüne "fiyat düşük" notu.
