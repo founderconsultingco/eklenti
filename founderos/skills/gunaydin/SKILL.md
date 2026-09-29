@@ -78,7 +78,7 @@ Eski sürümde sabah brifingi Claude'un zamanlanmış görevi olarak kurulmuş o
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.70.0
+Bu paketin sürümü: 0.70.1
 
 Lisans doğrulamasından dönen cevapta `sonSurum` alanı var. Oradaki sürüm yukarıdakinden büyükse bunu **günün sonunda**, akşam kapanışından sonra söylersin; sabah söylemezsin, çünkü güncelleme günün işini değiştirmiyor ve sabahın ilk cümlesi bir bakım işi olmaz.
 

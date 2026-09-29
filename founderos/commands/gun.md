@@ -22,7 +22,7 @@ Sırayla:
 
 ## Sürüm kuralı
 
-Bu paketin sürümü: 0.70.0
+Bu paketin sürümü: 0.70.1
 
 Lisans cevabındaki `sonSurum` yukarıdakinden büyükse bunu **günün sonunda**, akşam kapanışından sonra söylersin; sabah söylemezsin, sabahın ilk cümlesi bir bakım işi olmaz.
 
