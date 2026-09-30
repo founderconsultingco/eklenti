@@ -39,13 +39,13 @@ Beş kontrolü sırayla yapar ve her birinin sonucunu tek cümleyle söyler.
 
 **1. Yeterli süre geçti mi.** Takip zinciri üç, yedi ve on dördüncü gün. İlk temasın üstünden üç gün geçmediyse ortada sonuç yok, veri de yok. Bu durumda değişiklik önerilmez; "henüz sonuç sayılacak gün gelmedi, zincir şurada" denir ve gün normal devam eder.
 
-**2. Sayı yeterli mi.** On temas bir sonuç değildir. Otuz temasın altında hiçbir kanal ve metin kararı verilmez. Öğrenciye bu sayı söylenir ve neden söylendiği: "otuzun altında gördüğün şey şans, üstünde gördüğün şey eğilim".
+**2. Sayı yeterli mi.** On temas bir sonuç değildir. Otuz temasın altında hiçbir kanal ve metin kararı verilmez. Öğrenciye bu sayı söylenir ve neden söylendiği: "otuzun altında gördüğün şey şans, üstünde gördüğün şey eğilim". Berk'in sahada gördüğü oran da söylenir: yüz kişiye ulaşınca doksan üçünden ses çıkmıyor, beşi ilgilenmediğini söylüyor, iki görüşme çıkıyor. Birkaç sessiz mesaj bu oranın içinde; bu iş onunla bırakılmaz.
 
 **3. İşletmeler uygun muydu.** Yazılan adayların sızıntı puanı ve karar vericisi kontrol edilir. Puanı düşük ya da karar vericisi bulunmamış adaylara yazılmışsa sorun mesajda değil listededir. Çözüm: günün listesi puana göre yeniden sıralanır.
 
 **4. İletişim bilgileri ve kanal doğru muydu.** Kartın "kanal ve zaman" bölümüyle karşılaştırılır. Kartın telefon dediği sektöre e-posta atılmışsa, kartın sabah dediği saatte akşam aranmışsa, kanal ve saat düzeltilir. Numara ve adresin doğruluğuna da bakılır; yanlış numaraya on kere yazılan mesaj on temas değildir.
 
-**5. Ne yazıldı.** Metin, adaya-mesaj-yaz'ın kalıbıyla ve kartın açılış bulgusuyla karşılaştırılır. Kanca yok, bulgu yok, rakam yok, "ilginizi çekerse" tonu varsa sorun metindedir. Bu durumda metin tek noktadan değiştirilir, baştan yazılmaz.
+**5. Ne yazıldı.** Metin, Truva Atı Metodu'yla ve kartın açılış bulgusuyla karşılaştırılır: gerçek gözlemle açılıyor mu, mevcut düzene dair tek soru var mı, o işletmeye neden yazıldığı belli mi. Gözlem yok, soru yok, iki soru birden var, ilk mesajda bağlantı ya da kayıp rakamı var, "ilginizi çekerse" tonu varsa sorun metindedir. Bu durumda metin tek noktadan değiştirilir, baştan yazılmaz.
 
 Beş kontrolden çıkan sonuç tek bir değişikliktir. İki şey aynı anda değiştirilmez, çünkü hangisinin işe yaradığını bilemezsin. Değişiklik gerekçesiyle söylenir ve günlüğe yazılır: ne değişti, neden, hangi sayıda tekrar bakılacak; değişen alan İş Beyni'nde yerinde güncellenir.
 
@@ -61,7 +61,7 @@ Aynı mesajın yeni versiyonunu "yeni bir deneyelim" diye vermez. Değişiklik b
 
 ## 6. Ne söyler
 
-"On kişiye yazmışsın, üçüne dün, yedisine üç gün önce. Yedisinin takip günü bugün, üçününki yarın; henüz sonuç sayılacak gün gelmedi. Bir şey var: yedisine e-posta atmışsın, senin kartın bu sektörde [kartın saati] telefon diyor. Bugün o yediyi saha bloğunun ilk yarım saatinde arıyoruz, e-posta zincirine dokunmuyoruz. Otuz temastan sonra bir daha bakarız."
+"On kişiye yazmışsın, üçüne dün, yedisine üç gün önce. Yedisinin takip günü bugün, üçününki yarın; henüz sonuç sayılacak gün gelmedi. Yüz kişinin doksan üçünden zaten ses çıkmıyor; on sessiz mesaj normal. Bir şey var: yedisine e-posta atmışsın, senin kartın bu sektörde [kartın saati] telefon diyor. Bugün o yediyi arama bloğunun ilk yarım saatinde arıyoruz, e-posta zincirine dokunmuyoruz. Otuz temastan sonra bir daha bakarız."
 
 ## 7. Ne yazar
 

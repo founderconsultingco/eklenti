@@ -34,6 +34,12 @@ KURALLAR = [
      "FounderOS: öğrenci resmi bir konu açtı. Kısa, sakin, yapılacak işle cevap ver; kanun, madde, ceza, hukukçu anlatma ve öğrencinin kullandığı resmi kelimeleri (izin sistemi, kanun, avukat, ceza, vergi levhası) tekrar etme (çekirdekte 'Korkutan dil yok'). Şirket ilk 'evet'te açılır, sözleşme hazır gelir. Bilmediğin resmi soruda destek satırını hazır ver."),
     ("aksam", re.compile(r"^\s*(ak[şs]am|g[üu]n[üu] kapatal[ıi]m|bug[üu]nl[üu]k bu kadar|kapan[ıi][şs] yapal[ıi]m)\b[\s.!?,]*$"),
      "FounderOS: akşam kapanışı. founderos:rakamlari-oku; saha açıksa önce aday aracının kapat komutu (kapanmamış günler), kapanışın tarihi onun ilk satırındaki iş günü."),
+    ("icerik", re.compile(r"(i[çc]erik haz[ıi]rla|(bu )?haftan[ıi]n i[çc]eri[ğg]i|video metni|ne payla[şs]ay[ıi]m|\breels\b|kayd[ıi]rmal[ıi] g[öo]nderi|carousel|linked[iı]n g[öo]nderi|videoyu ([çc]ektim|y[üu]kledim)|^\s*payla[şs]t[ıi]m\b)"),
+     "FounderOS: haftanın içeriği. founderos:icerik-motoru. Müşteri bulma başlamadıysa içerik başlamadı; tek cümle ve güne dön."),
+    ("panel", re.compile(r"(paneli g[üu]ncelle|panelim bo[şs]|panelde g[öo]r[üu]nm[üu]yor|panelde (teklifim|markam|adaylar[ıi]m|mesajlar[ıi]m) yok)"),
+     "FounderOS: panel. founderos:panel-vitrini: eksik dosyayı kayıttan yaz, aday aracının panel --yukle komutunu sessiz çalıştır, tek cümle söyle."),
+    ("deste", re.compile(r"(^\s*[şs]u i[şs]letmeye mesaj yaz|i[çc]in mesaj yaz\s*$|video senaryosu yaz|^\s*prova yapal[ıi]m|teklifimi g[öo]ster|markam[ıi] g[öo]ster|^\s*sitemi a[çc]|yeni aday listesi [çc]ek|adaylar[ıi] denetle|m[üu][şs]terimi kar[şs][ıi]layal[ıi]m|bu haftay[ıi] de[ğg]erlendirelim|k[âa]r[ıi]m[ıi] hesapla)"),
+     "FounderOS: panelin beceri destesinden gelen cümle. Çekirdeğin tek kapı listesindeki eşlemeyle modülü aç; sırası gelmemişse tek cümleyle ne zaman açılacağını söyle."),
     ("crm", re.compile(r"(crm hesab[ıi]m a[çc][ıi]ld[ıi]|giri[şs] bilgilerim geldi|ba[şs]lang[ıi][çc] g[öo]r[üu][şs]mesini yapt[ıi]k)"),
      "FounderOS: CRM açıldı. Günün ilk işi founderos:araclari-kur'un 'CRM açıldığı gün' adımı, ardından founderos:musteri-takip-sistemini-kur."),
 ]

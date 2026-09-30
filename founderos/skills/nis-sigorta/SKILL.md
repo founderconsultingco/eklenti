@@ -47,7 +47,7 @@ Sözlüğü: portföy, prim, tecdit, poliçe, basamak, taban komisyon, hasarsız
 
 **Asistan kuralları.** Asistan net fiyat vermez; kasko ve sağlıkta fiyat kişinin ve aracın risk bilgisine göre değiştiği için teklif ancak yetkili tarafından verilebilir. Araç bilgisi (plaka, marka, model, yıl, hasar geçmişi) veya kişi bilgisi toplar, randevu veya geri arama ayarlar. Sağlık teklifi için hastalık geçmişi gibi özel nitelikli veri istenecekse KVKK gereği açık rıza metni gösterilmeli. Hasar ve ödeme sürecine hiç girmez, sahibine devredilir; çünkü Allianz özelindeki şikayetler hasar, ödeme ve otomatik yenileme itirazında yoğunlaşıyor: "poliçemi otomatik olarak yenilemişler" (müşteri onay vermeden), "kredi kartımdan tahsilat yapılmış" (yenilendi mesajı gelmeden) (sikayetvar.com/allianz-sigorta/police/yenileme). Asistan hangi acenteye bağlı çalıştığını her görüşmede açıkça belirtmeli; Sigorta Acenteleri Yönetmeliği Madde 18 bunu zorunlu kılıyor (sigortagazetesi.com PDF; lexpera.com.tr).
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Şikayetvar örnekleri ulaşımın telefon ve WhatsApp üzerinden beklendiğini ama bazen koptuğunu gösteriyor. Büyük karşılaştırma siteleri bile form yanında 444'lü hat sunuyor (sigortam.net/konut-sigortasi). Demo talebi telefon veya WhatsApp'a bırakılmalı, sosyal medya bu sektörde ikincil.
 
@@ -77,15 +77,15 @@ En güçlü üç itiraz: şirket zaten yenileme mesajı atıyor, müşterim bana
 
 "Yenileme takibimiz zaten var, Excel'de tutuyoruz." acenteos.com'un kendi tespiti: Excel'e yazılan tarihler güncellenmiyor, izin veya personel değişikliğinde takip kopuyor, kayıp ay sonu raporunda fark ediliyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Bitiş tarihi yaklaşan trafik ve kasko poliçeleri için müşteriyi önceden siz mi arıyorsunuz, yoksa yenileme günü geldiğinde mi bakılıyor?"
 
 İşleyiş sorusu: "Gün içinde bir müşterinin hasar dosyasıyla uğraşırken ya da telefondayken WhatsApp'tan kasko fiyatı soran müşteri ne yapıyor, cevabı bekliyor mu, internetten teklif alıp gidiyor mu?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz meşgulken telefon çalarsa aramayı o açıyor, WhatsApp'a ya da sitenizden yazan müşteriye de dakikalar içinde, hangi acente adına konuştuğunu söyleyerek dönüyor; plaka, marka, model, yıl ve hasar geçmişi gibi bilgileri alıp teklif için size iletiyor ya da görüşme randevusuna yazıyor; poliçesinin bitiş tarihi yaklaşan müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç acenteyle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz meşgulken telefona ya da mesaja yetişemediğinizde müşteriye hangi acente adına konuştuğunu söyleyerek dakikalar içinde dönüyor, plaka ve araç bilgilerini alıp teklif için size iletiyor. [Şehir]'de bu ay ilk üç acenteyle başlıyorum."
 
 Çalışan açarsa: "Herkes hasar dosyasıyla ya da telefonla meşgulken WhatsApp'a yetişilemeyen saatlerde teklif isteyen müşteriye cevap verip bilgileri toplayan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

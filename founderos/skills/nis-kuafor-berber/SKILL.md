@@ -43,7 +43,7 @@ Sözlüğü: randevu, koltuk, usta, kesim, fön, dip boya, balayaj, gelin saçı
 
 **Asistan kuralları.** Fiyat vermez çünkü fiyat sınıfa, saç uzunluğuna ve hizmete göre çok değişiyor (200 TL ile 3.500 TL arası bir aralıkta). Topladığı bilgi: istenen hizmet, saç durumu/uzunluğu, tercih edilen usta varsa adı, tarih ve saat tercihi. Fiyat ve teknik detay ustaya/sahibe devredilir. Ton konusunda kanıt: şikayetlerin büyük kısmı kaba davranış ve diyalog eksikliği üzerine ("beni resmen azarladı", sikayetvar.com), bu yüzden asistanın nazik ve sabırlı bir dille yazması gerekiyor; robotik, kısa, soğuk cümleler bu sektörde itici olur.
 
-**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** Instagram. Günün yüz temasının ellisi bu kanaldan gider (hesabın tavanı taşımazsa kalanı önce e-postaya), kırkı arama ile e-posta arasında yarı yarıya bölünür, onu video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Pazar günü büyük çoğunlukla zorunlu kapanış var ama uygulama il valiliğine bağlı: İzmir'de kadın kuaförleri ve güzellik salonları tamamen muaf, Ankara'da dijital izinle açılabiliyor, İstanbul'da davetiye/etkinlik bazlı izin gerekiyor (salonmerkezi.com/blog/pazar-yasagi-kapsami). Yani "pazar kesin kapalı" demek yanlış olur, şehre göre sorulmalı. WhatsApp üzerinden gelen taleplerin bir kısmının geç yanıt yüzünden kaybolduğu iddiası var ama yine satıcı kaynaklı ve teyitsiz (kuaforumyanimda.com). Adayın kendi talep kanalı muhtemelen telefon, Instagram DM ve WhatsApp karışımı; kesin oran kaynaklı değil.
 
@@ -69,15 +69,15 @@ En güçlü üç itiraz: randevu yazılımımız zaten var, WhatsApp'a ben bakı
 
 "Kadın kuaförüyüz, müşteri mahremiyeti önemli, botla konuşmaz." Asistan sadece randevu ve temel bilgi topluyor, hizmetin detayı salonda yüz yüze konuşuluyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Randevusu olan müşteriye önceden bir hatırlatma gidiyor mu, yoksa haber vermeden gelmeyen çıkınca koltuk öyle mi boş kalıyor?"
 
 İşleyiş sorusu: "Siz koltukta müşterinin saçındayken, elinizde boya varken WhatsApp'tan ya da Instagram'dan randevu isteyen müşteri ne yapıyor, cevabı bekliyor mu, başka salona mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz koltuktayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; hangi hizmet istendiğini, saçın durumunu, tercih ettiği usta varsa adını ve saat tercihini alıp randevuya yazıyor; randevu günü gelince müşteriye hatırlatıyor, dip boya ya da bakım zamanı gelen eski müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz koltuktayken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, hangi hizmeti ve saati istediğini alıp randevuya yazıyor, randevu günü de müşteriye hatırlatıyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
 
 Çalışan açarsa: "Salon doluyken, usta koltukta müşterinin başındayken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde randevu isteyene cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman salonda olur?"
 

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: video-mesaj-cek
-description: "Kurulum beşinci gün, sahada her gün. Loom ile kişisel video mesaj, ikinci dokunuş olarak: ilk yazılı temasın üçüncü gün takibine gelmiş cevapsız adaylara, önce en çok istenen yüz işletme. Sahanın ilk iki günü video yok."
+description: "Kurulum beşinci gün, sahada her gün, günde on (işin yanında dört). Loom ile kişisel video mesaj, ikinci dokunuş olarak: ilk yazılı temasın üçüncü gün takibine gelmiş cevapsız adaylara, önce en çok istenen yüz işletme. Cevap verip çalışan örneği isteyen adaya izinden sonraki demo videosu. Senaryo adayın satırına yazılır. Sahanın ilk iki günü video yok."
 ---
 
 # video-mesaj-cek
@@ -10,15 +10,17 @@ Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
-Her öğrencinin modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır; bu modül, ilk yazılı temasına üç gündür cevap vermeyen adaya (önce en çok istenen yüz işletmeden), o adayın denetim kartından çıkan bulguyu ekranda göstererek bir dakikalık video mesaj çektirir ve gönderdirir. Yazmak değil çekmek olduğu için ayrı modül.
+Her öğrencinin modülü. Modül, FounderOS'un belli bir işi yapan parçasıdır; bu modül, ilk yazılı temasına üç gündür cevap vermeyen adaya (önce en çok istenen yüz işletmeden), o adayın denetim kartından çıkan gözlemi ekranda göstererek bir dakikalık video mesaj çektirir ve gönderdirir. İkinci işi izinden sonraki demo videosu: cevap verip çalışan örneği görmek isteyen adaya, bir iki dakikada onun sayfası, konuşulan ihtiyaç, demoda test randevusu ve görüşme daveti. Yazmak değil çekmek olduğu için ayrı modül.
 
-Bu sistemin en güçlü dokunuşu bu ve yeri belli: ilk yazılı temastan sonra, üçüncü gün cevap gelmediyse **ikinci dokunuş**. İlk mesaj adını bir kere gösterir; üçüncü gün gelen bir dakikalık, kendi ekranı açık video, yazılı mesajın yapamadığı şeyi yapar.
+İki video da Truva Atı Metodu'yla kurulur (adaya-mesaj-yaz): gerçek gözlemle açılır, tek soru sorulur, çözüm o noktaya bağlanır, çalışan örnek teklif edilir. Yapılmamış arama anlatılmaz, kayıp rakamı söylenmez.
+
+Bu sistemin en güçlü dokunuşu bu ve yeri belli: ilk yazılı temastan sonra, üçüncü gün cevap gelmediyse **ikinci dokunuş**. İlk mesaj adını bir kere gösterir; üçüncü gün gelen bir dakikalık, kendi ekranı açık video, yazılı mesajın yapamadığı şeyi yapar. Video bir bağlantıyla gittiği için ilk temas olmaz; ilk mesajda bağlantı yok.
 
 Şöyle düşün: yazı okunmaz, geçilir. Yüz ve ses geçilmez. Ekranda kendi işletmesinin sayfası açıkken hiç geçilmez. Video emek gösterir, şüpheyi düşürür, işletmeciye "bu bana çekilmiş" dedirtir. Yerel işletmeci büyük şirketlerden yanmıştır, karşısında insan ister. "Ben de bu şehirdeyim" demek seni bir e-posta adresinden yakındaki gerçek bir insana çevirir.
 
-**Bu modül denetim yapmaz, denetimi okur.** Videonun omurgası aday-denetimi-cikar'ın çıkardığı denetim kartıdır. Ekranda gösterilen şey EN GÜÇLÜ BULGU'nun kendisidir; senaryo o bulgunun etrafına kurulur. Kart yoksa video da yok. **Denetimsiz adaya video çekilmez**, istisnası da yoktur: sabah listesinde denetimi olmayan bir aday görünürse o satır atlanır, yerine listenin altındaki denetimi hazır aday gelir.
+**Bu modül denetim yapmaz, denetimi okur.** Videonun omurgası aday-denetimi-cikar'ın çıkardığı denetim kartıdır. Ekranda gösterilen şey EN GÜÇLÜ BULGU'nun kendisidir, yani Truva Atı'nın gözlemi; senaryo o gözlemin etrafına kurulur. Kart yoksa video da yok. **Denetimsiz adaya video çekilmez**, istisnası da yoktur: sabah listesinde denetimi olmayan bir aday görünürse o satır atlanır, yerine listenin altındaki denetimi hazır aday gelir.
 
-Videoya kimin gireceğini de bu modül seçmez. Seçimi adaya-mesaj-yaz'daki karar tablosu yapar ve rol her adayda aynıdır: ilk yazılı temasın üçüncü günü, hâlâ cevap yok, denetim kartı hazır, sahibinin adı biliniyor. Birinci sırada en çok istenen yüz işletme, ikinci sırada listenin kalanında sızıntı puanı dörtten yüksek adaylar. Satırlardan biri uyduğu gün aday video listesine düşer, burası da çeker.
+Videoya kimin gireceğini de bu modül seçmez. Seçimi adaya-mesaj-yaz'daki karar tablosu yapar ve rol her adayda aynıdır: ilk yazılı temasın üçüncü günü, hâlâ cevap yok, denetim kartı hazır, sahibinin adı biliniyor. Birinci sırada en çok istenen yüz işletme, ikinci sırada listenin kalanında sızıntı puanı dört ve üstü adaylar. Satırlardan biri uyduğu gün aday video listesine düşer, burası da çeker. İzinden sonraki demo videosu bu sıranın da önündedir: cevap veren aday soğuk adaydan önce gelir.
 
 Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kendi elinle uğraşmak. Doğru yüz kişi, yanlış yüz bin takipçiden değerlidir.
 
@@ -26,27 +28,27 @@ Pazarlamada bunun adı: en çok istediğin yüz işletmeye, her ay, tek tek kend
 
 ## 2. Ne zaman çalışır
 - Beşinci gün, sabah bloğu, yirmi beş dakika. On dakika kurulum: Loom hesabı, tarayıcı eklentisi, mikrofon ve ekran izinleri, bir deneme linki. On beş dakika deneme: listenin en altındaki bir adayın denetim kartıyla bir deneme videosu çekersin. Kimseye gitmez. Bir kez izlersin, beş maddelik listeye bakarsın, ikinci kez izlemezsin.
-- Sahada her gün: ilk yazılı temasın üçüncü gün takibine gelmiş cevapsız adaylara. Günün video sayısı aşağıdaki süre kuralından gelir (ilk hafta üç, ikinci haftadan itibaren beş; beş tabandır) ve günün yüz temasının içindedir. Sayıyı geçen aday ertesi güne kalır, sırası önce yüz işletme. Bunun için yüz işletmenin ilk yazılı temasları da günde video sayısı kadar adaya yayılır. İlk videolar, ilk yazılı temasların üçüncü gün takibi geldiğinde gider; o güne kadar video payı yazılı kanala geçer.
-- Videonun yeri saha bloğunun son kırk beş dakikasıdır; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
-- Video başına süre tek rakam: **ilk hafta on iki dakika, sonra sekiz dakika.** İlk haftada uzun, çünkü senaryoya alışıyorsun ve ikinci çekim yapıyorsun; sonra tek çekimde bitiyor. Bir dakikalık video için on sekiz dakika harcanmıyor, bulgu zaten denetim kartından hazır geliyor. İlk hafta günde üç video, otuz altı dakika; eksik kalan iki temas o hafta diğer iki yazılı kanala geçer. İkinci haftadan itibaren beş video, kırk dakika, ve beş taban olur. Beş sabit bir tavan değil taban: üçüncü haftadan sonra, senaryoya alıştıysan ve günün diğer sayıları tutuyorsa video sekize, sonra ona, en fazla on beşe çıkar. Artan pay diğer iki yazılı kanaldan alınır, ana kanalın yetmişi sabit kalır: video sekizse yazılı yirmi iki, video onsa yirmi, video on beşse on beş. Toplam hep yüz.
+- Sahada her gün: ilk yazılı temasın üçüncü gün takibine gelmiş cevapsız adaylara, bir de izin veren adayın demo videosu. Günün video sayısı: **tam zamanlıda ilk hafta beş, ikinci haftadan itibaren on; işin yanında ilk hafta iki, sonra dört.** Video günün temas sayısının içindedir. Sıra: önce izin veren adayın demo videosu, sonra en çok istenen yüz işletme, sonra listenin kalanında sızıntı puanı dört ve üstü, sahibinin adı bilinen adaylar. Sayıyı geçen aday ertesi güne kalır. Yüz işletmenin ilk yazılı temasları derin denetim hızıyla gider (tam zamanlıda günde beş, işin yanında üç); videonun kalan payı listenin kalanından dolar. İlk videolar, ilk yazılı temasların üçüncü gün takibi geldiğinde gider; o güne kadar video payı yazılı kanala geçer.
+- Videonun yeri saha bloğunun son bir buçuk saatidir; denetim kartları o sabah zaten okunmuştur, video çekilirken kart açık durur.
+- Video başına süre tek rakam: **ilk hafta on iki dakika, sonra sekiz dakika.** İlk haftada uzun, çünkü senaryoya alışıyorsun ve ikinci çekim yapıyorsun; sonra tek çekimde bitiyor. Bir dakikalık video için on sekiz dakika harcanmıyor, gözlem zaten denetim kartından hazır geliyor. İlk hafta günde beş video, altmış dakika; eksik kalan beş temas o hafta diğer iki yazılı kanala geçer. İkinci haftadan itibaren on video, seksen dakika. İşin yanında ilk hafta iki video yirmi dört dakika, sonra dört video otuz iki dakika. Demo videosu bir iki dakika sürdüğü için on iki dakika sayılır. Toplam hep aynı: ana kanaldan elli, diğer iki kanaldan kırk, on video; işin yanında yirmi, on altı, dört.
 
-Video artarsa liste de erken biter ve bu yazılıdır: günde beş videoyla en çok istenen yüz işletme yirmi iş gününde, günde onla on gününde tükenir. Video ona çıkıyorsa o ay yüz değil yüz altmış işletme seçilir; seçilmiyorsa video beşte kalır. Liste yetmiyorsa sayı artmaz. Üstüne çıkma: kaynağın kendisi günde kırk video çekip üç haftada tükenmiş ve bırakmak zorunda kalmış. Bu bir maraton, her gün beş video atan kişi bir gün kırk atıp iki hafta hiç atmayandan fazla müşteri buluyor. İşin yanında çalışıyorsan video günde iki, akşamın yazılı saatinde, on altı dakika; en çok istenen listen kırk işletme.
-- İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde iki değil bir video çekilir, süre sekiz dakikaya iner. Sebebi rakamda: [21/28] günlük teslimde senin payın yaklaşık kırk beş saat ve o saatler akşamdan çıkıyor. Sıfır video günü yine olmaz.
-- Yüz işletme yaklaşık dört haftada biter; ilk hafta üçle başladığın için birkaç gün fazlasıyla. Ay sonunda aday-listesi-cikar yeni yüz işletme seçer, aday-denetimi-cikar onların hızlı denetimini yapar.
-- Cevap gelirse o adaya video durur; konuşma adaya-mesaj-yaz'ın üç adımlı cevap konuşmasıyla sürer. Üç adım: önce dinlediğini belli edersin, sonra göremediği şeyi söylersin, sonra saat teklif edersin.
+Günde on video en çok istenen yüz işletmeyi erken bitirmez: onların ilk yazılı temasları derin denetim hızıyla gider, video payının kalanı listenin geri kalanından, sızıntı puanı dört ve üstü ve sahibinin adı bilinen adaylardan dolar. Böyle aday o gün yetmiyorsa sayı zorlanmaz, eksik pay diğer iki yazılı kanala geçer; denetimsiz ya da adsız adaya video çekilmez. On sabit sayıdır, üstüne çıkılmaz: kaynağın kendisi günde kırk video çekip üç haftada tükenmiş ve bırakmak zorunda kalmış. Bu bir maraton, her gün on video atan kişi bir gün kırk atıp iki hafta hiç atmayandan fazla müşteri buluyor. İşin yanında çalışıyorsan video akşamın yazılı saatinde; en çok istenen listen kırk işletme.
+- Teslim süresince video da aynı oranla iner: tam zamanlıda ondan altıya (kırk sekiz dakika), işin yanında dörtten ikiye (on altı dakika); işin yanında şirket kuruluş gününde de iki. Sebebi rakamda: [21/28] günlük teslimde senin payın yaklaşık kırk beş saat ve o saatler sahadan ve akşamdan çıkıyor. Sıfır video günü yine olmaz.
+- Yüz işletme yaklaşık dört haftada biter, çünkü ilk yazılı temasları derin denetim hızıyla gider. Ay sonunda aday-listesi-cikar yeni yüz işletme seçer, aday-denetimi-cikar onların hızlı denetimini yapar.
+- Cevap gelirse o adaya soğuk video durur; konuşma adaya-mesaj-yaz'ın üç adımlı cevap konuşmasıyla sürer. Üç adım: dinlediğini belli edersin, çözümü söylediği yere bağlayıp çalışan örneği teklif edersin, izin gelince örneği ve gerekirse demo videosunu gönderip saat teklif edersin.
 
 ## 3. Ne okur
 
 **Denetim kartından (aday-denetimi-cikar), üç satır. Videonun gövdesi budur.**
 - EN GÜÇLÜ BULGU: tek cümle, o adayda gerçekten görülmüş şey. Ekranda gösterilecek olan bu.
-- LİRA KARŞILIĞI: kayıp birimi çarpı kartın rakamı, tek satır hesap.
+- LİRA KARŞILIĞI: videoda söylenmez; görüşmede onun sayılarıyla yeniden kurulur.
 - SIRADAKİ KANAL: bu adayda "video" yazıyorsa video çekilir.
 
-Kartın altıncı ve yedinci satırı da okunur: canlı arama testi ve yazılı test. Yaşanmış kanca oradan çıkıyor, "dün akşam yedide aradım, açan olmadı" cümlesinin kaynağı o satır.
+Kartın altıncı ve yedinci satırı da okunur: canlı arama testi ve yazılı test. Yaşanmış kanca oradan çıkıyor, "dün akşam yedide aradım, açan olmadı" cümlesinin kaynağı o satır. Satır boşsa videoda arama anlatılmaz.
 
-Aday listesinden (`adaylar.csv`; soğuk adaylar CRM açıldıktan sonra da burada): en çok istenen yüz işletme işareti, dört kanalın durum satırları, sıradaki hareket satırı, ilk temas tarihi ve kanalı, cevap durumu, sahibinin adı, Instagram hesabı, e-posta adresi.
+Aday listesinden (`adaylar.csv`; soğuk adaylar CRM açıldıktan sonra da burada): en çok istenen yüz işletme işareti, dört kanalın durum satırları, sıradaki hareket satırı, ilk temas tarihi ve kanalı, cevap durumu, sahibinin adı, Instagram hesabı, e-posta adresi. Demo videosu için ayrıca adayın son cevabı (`son_cevap`; mevcut düzenini anlattığı cümle) ve örneği deneyip denemediği.
 
-İş Beyni'nden: Dönüşüm Cümlesi, sistemin adı, şehir, Instagram hesabının yaşı, kanıt cümlesi, YouTube kanalı hazır mı.
+İş Beyni'nden: Dönüşüm Cümlesi, sistemin adı, şehir, Instagram hesabının yaşı, kanıt cümlesi, YouTube kanalı hazır mı, tanıtım sayfasının adresi (çalışan örnek `/demo`), demo kaydının yeri ve sesli örneğin "kuruldu" satırı.
 
 Niş kartından: kayıp birimi, işletmecinin sözlüğü, yasal sınırlar (sağlıkta fiyat, "en iyi", öncesi-sonrası, hasta yorumu; güzellik ve kuaförde tıbbi işlem; sigortada acente unvanı).
 
@@ -54,7 +56,7 @@ Niş kartından: kayıp birimi, işletmecinin sözlüğü, yasal sınırlar (sa�
 
 Sormaz. Günün adaylarını karar tablosu seçer, senaryoyu FounderOS yazar, hangi ekranın açılacağını FounderOS söyler. Çekimden hemen önce cevap durumuna yeniden bakılır; cevap gelen listeden düşer.
 
-Sabahki tek satırlık kişisel gözlem kalktı. Yerini denetim kartının en güçlü bulgusu aldı. Fark şu: gözlem "gördüğüm bir şey", en güçlü bulgu "kaçırdığın müşteri". İkincisi ekranda gösterilebiliyor, birincisi gösterilemiyordu.
+Sabahki tek satırlık kişisel gözlem kalktı. Yerini denetim kartının en güçlü bulgusu aldı. Fark şu: eski gözlem "gördüğüm bir şey"di, en güçlü bulgu müşterinin kaçtığı yeri gösteren, gerçekten görülmüş şey; Truva Atı'nın gerçek gözlemi budur. İkincisi ekranda gösterilebiliyor, birincisi gösterilemiyordu. Kaçan müşterinin sayısı videoda söylenmez.
 
 Senden aldığı üç şey: her video için "gitti" ve hangi kanaldan gittiği, e-posta metni için "tamam", ekran kaydı programında bir şey görünmüyorsa ekran görüntüsü.
 
@@ -62,9 +64,9 @@ Senden aldığı üç şey: her video için "gitti" ve hangi kanaldan gittiği, 
 
 ### Denetimi tüket, kendin denetim yapma
 
-Çekilir: ilk yazılı temasın üçüncü gününde hâlâ cevap vermemiş, denetim kartı hazır, sahibinin adı bilinen aday; önce en çok istenen yüz işletmeden, sonra listenin kalanında sızıntı puanı dörtten yüksek olanlardan.
+Çekilir: ilk yazılı temasın üçüncü gününde hâlâ cevap vermemiş, denetim kartı hazır, sahibinin adı bilinen aday; önce en çok istenen yüz işletmeden, sonra listenin kalanında sızıntı puanı dört ve üstü olanlardan.
 
-Çekilmez: denetimi olmayan aday, cevap vermiş aday, tanıdık, sahibinin adı olmayan işletme, Instagram hesabı yeni ve e-posta adresi de olmayan aday. Cevapsız ilk temas "bizi biliyor" saymaz; "bizi biliyor" olan, tanıdıktan yönlendirilen, daha önce konuşulmuş ya da siteni ziyaret etmiş adaydır. Bir adaya bir video.
+Çekilmez: denetimi olmayan aday, cevap vermiş aday (ona soğuk video değil, izin verirse demo videosu gider), tanıdık, sahibinin adı olmayan işletme, Instagram hesabı yeni ve e-posta adresi de olmayan aday. Cevapsız ilk temas "bizi biliyor" saymaz; "bizi biliyor" olan, tanıdıktan yönlendirilen, daha önce konuşulmuş ya da siteni ziyaret etmiş adaydır. Bir adaya bir soğuk video.
 
 Aynı adaya daha önce e-posta gittiyse video, e-postanın söylemediği ikinci bulguyu gösterir. Bir bulgu iki kanalda aynı cümleyle kullanılmaz.
 
@@ -76,14 +78,14 @@ Kartın en güçlü bulgusu hangi satırdan geldiyse ekranda o sayfa açık duru
 
 - **Arama testi (kartın altıncı satırı).** Ekranda adayın Google işletme profili ve numarası durur. Aramanın kendisi ekranda gösterilmez, sen sözle söylersin: "Dün akşam yedide bu numarayı aradım, açan olmadı."
 - **Yazılı test (yedinci satır).** Senin gönderdiğin mesajın ekranı açılır: gönderdiğin saat ve altındaki boşluk görünür. Cevapsız boşluğu göstermek bütün cümlelerden güçlü.
-- **Reklam izi (sekizinci satır).** Reklam kütüphanesinde işletmenin aktif reklamı ekranda durur. "Reklama para veriyorsunuz, gelen aramayı ise kimse açmıyor" cümlesinin arkasında bu ekran olur. Sağlık nişlerinde bu ekran açılmaz, cümle de söylenmez.
+- **Reklam izi (sekizinci satır).** Reklam kütüphanesinde işletmenin aktif reklamı ekranda durur. Cümle gözlem ve sorudur: "Reklamınız randevu için bu numaraya yönlendiriyor. Mesai dışında gelen talepler şu an nereye düşüyor?" "Gelen aramayı kimse açmıyor" yalnız akşam testi bunu gösterdiyse söylenir. Sağlık nişlerinde bu ekran açılmaz, cümle de söylenmez.
 - **Google profili (birinci satır).** Şikayet cümlesinin geçtiği yorum ekranda açılır. Yorumu yazan kişinin adı imleçle ya da elle kapatılır, ekranda kalmaz.
 - **Site (ikinci satır).** Site telefon görünümünde açılır, telefon numarasının bulunamadığı yer gösterilir.
 - **Instagram (üçüncü satır).** Profil açılır, son gönderinin tarihi ya da biyografide iletişim yolunun olmadığı yer gösterilir.
 - **Saatler (dördüncü satır).** Çalışma saatleri kutusu açılır, kapalı olan akşam ya da hafta sonu gösterilir.
 - **Duran havuz izi (beşinci satır).** Yorum tarihleri ekranda yukarıdan aşağı kaydırılır; eski yorumlar ile seyrelmiş yeni yorumlar aynı ekranda görünür.
 
-Ekranda görünmeyecekler: denetim kartı, kendi e-postan ve bildirimler, başka adayların sekmeleri, CRM ekranı, kendi sisteminin demosu. Çekimden önce diğer sekmeleri ve bildirimleri kapatırsın; bu tek adım videonun yarısını kurtarıyor.
+Soğuk videoda ekranda görünmeyecekler: denetim kartı, kendi e-postan ve bildirimler, başka adayların sekmeleri, CRM ekranı, kendi sisteminin demosu (demo yalnız izinden sonraki demo videosunda ekrana gelir). Çekimden önce diğer sekmeleri ve bildirimleri kapatırsın; bu tek adım videonun yarısını kurtarıyor.
 
 ### Isınma: videodan önce iki dokunuş
 
@@ -102,37 +104,50 @@ Kalan dört yüz adayda ısınma yok. Yüz işletmenin farkı emek, ısınma o e
 
 ### Senaryo: altı parça, altmış saniye
 
-FounderOS senaryoyu altı parça yazar, her parçanın yanında kaç saniye olduğu ve o saniyede ekranda ne açık olduğu yazar. Sen okumazsın, söylersin. Kayıt boyunca ekran açık; kamera açıksa yüzün köşede küçük bir baloncukta, kapalıysa sesin konuşur.
+FounderOS senaryoyu Truva Atı sırasıyla altı parça yazar, her parçanın yanında kaç saniye olduğu ve o saniyede ekranda ne açık olduğu yazar. Sen okumazsın, söylersin. Kayıt boyunca ekran açık; kamera açıksa yüzün köşede küçük bir baloncukta, kapalıysa sesin konuşur.
 
-**1. parça, sıfırdan sekizinci saniyeye. Ekran: bulgunun durduğu sayfa açık.**
+**Metin adayın satırına kaydedilir.** Her adayın senaryosu yazıldığı anda aday aracıyla o adayın satırına yazılır, sohbette kalmaz: `python3 .founderos/adaylar-arac.py guncelle "<kisa_ad>" video_metni="<metin>"` (diğer sütunlar nasıl yazılıyorsa öyle; öğrencinin klasörünün içinden, komutu sen çalıştırırsın). Metin altı parçayı sırasıyla taşır, her parçanın başında saniyesi ve ekranda ne açık olduğu; metnin içinde çift tırnak olmaz. Panel metni oradan gösterir. Aynı adaya sonra demo videosu çekilecekse onun metni aynı sütuna, öncekinin üstüne yazılır.
+
+**1. parça, sıfırdan sekizinci saniyeye. Ekran: gözlemin durduğu sayfa açık.**
 Adıyla başlarsın ve ne yaptığını değil ne gördüğünü söylersin. "Ahmet Bey, merhaba. Şu an ekranda sizin Haritalar sayfanız açık." Klişe övgü yok, "içeriğinizi takip ediyorum" yok.
 
-**2. parça, sekizinci saniyeden yirmi beşinci saniyeye. Ekran: bulgunun tam üstünde, imleç orada. Videonun omurgası burası.**
-EN GÜÇLÜ BULGU'yu gösterirsin, okumazsın. Yaşanmış kanca varsa burada geçer: "Dün akşam yedide aradım, açan olmadı." Ekranda ne varsa ağzından çıkan cümle onu anlatır; ikisi tutmuyorsa video yeniden çekilir. Bu parça kısalırsa video çöker, uzarsa aday kapatır.
+**2. parça, sekizinci saniyeden yirmi beşinci saniyeye. Ekran: gözlemin tam üstünde, imleç orada. Videonun omurgası burası.**
+Truva Atı'nın birinci adımı. EN GÜÇLÜ BULGU'yu gösterirsin, okumazsın: "Reklamınız randevu için bu numaraya yönlendiriyor." Yaşanmış kanca yalnız akşam testinde gerçekten aradıysan burada geçer: "Dün akşam yedide bu numarayı aradım, ulaşamadım." Kartın altıncı satırı boşsa arama anlatılmaz. Ekranda ne varsa ağzından çıkan cümle onu anlatır; ikisi tutmuyorsa video yeniden çekilir. Bu parça kısalırsa video çöker, uzarsa aday kapatır.
 
-**3. parça, yirmi beşinci saniyeden otuz beşinci saniyeye. Ekran: aynı, hâlâ bulgunun üstünde.**
-LİRA KARŞILIĞI tek cümlede ve tek yerde geçer, ekran açıkken. Hesap görünür olur: kayıp birimi çarpı kartın rakamı. Kartta rakam yoksa bu parça hiç yoktur, video on saniye kısalır ve rakamsız gider. Uydurulmuş rakam ilk soruda çöker. Aynı bulgunun hesabı e-postada zaten söylendiyse burada tekrarlanmaz; video ikinci bulguyu ve varsa onun karşılığını söyler.
+**3. parça, yirmi beşinci saniyeden otuz beşinci saniyeye. Ekran: aynı, hâlâ gözlemin üstünde.**
+Truva Atı'nın ikinci adımı: mevcut düzenine dair tek soru. "Bu saatlerde gelen randevu taleplerine şu an nasıl dönüş yapıyorsunuz?" Soru karttan ve ilk yazılı mesajdan gelir; ilk mesajda sorulan soru aynı kelimelerle tekrarlanmaz. Kayıp rakamı, lira karşılığı ve "kaç müşteri kaçırıyorsunuz" bu videoda yok; kayıp görüşmede onun sayılarıyla hesaplanır.
 
 **4. parça, otuz beşinci saniyeden kırk beşinci saniyeye. Ekran aynı kalır; kamera açıksa baloncuğa dönersin.**
-Kime yardım ettiğin ve ne yaptığın, iki cümle. Şehirle birlikte: "[Şehir]de klima servisleriyle çalışıyorum, telefon çaldığında araç altında olanlarla." Sonra Dönüşüm Cümlesi'nin konuşma hali ve sistemin adı. "Yapay zeka", "bot" ve araç adı geçmez.
+Çözümü tam o noktaya bağla, iki cümle, şehirle birlikte: "[Şehir]de klima servislerine tam bu noktayı kuruyorum: telefon çaldığında araç altındaysanız arayana kısa süre içinde mesaj gidiyor, ne için aradığını soruyor ve uygun saati takvime yazıyor." Sonra varsa sistemin adı. Sistemin tamamı sayılmaz, gözleme dokunan parça söylenir. "Telefonu o açıyor" kısmı sesli örneğin İş Beyni'nde "kuruldu" yazdıktan sonra söylenir. "Yapay zeka", "bot" ve araç adı geçmez.
 
 **5. parça, kırk beşinci saniyeden elli beşinci saniyeye. Ekran aynı.**
-İki şey olabilir, ikisi de varsa söylenir: kanıt cümlesi ve neden şimdi görüşmek gerektiği. İlk müşterin yoksa kanıt cümlesi senin kendi sayımındır ("geçen hafta otuz servisi akşam yedide aradım, yirmi ikisi açmadı, ben saydım") ve neden şimdi cümlesi dürüsttür: "Bu ay [şehir]de ilk işletmelerle başlıyorum, kanıt topluyorum." Sektörü bilmediğini söylemezsin; kartı okudun, saydın, gördün, biliyorsun. Bilmediğin şey sonucun ne olacağı ve onu da söylemezsin, ölçersin. Toplu kanıt cümlesi varsa "ben saydım" diye söylenir. Neden şimdi sorusunun cevabı gerçek ve fiyatsız olur: "İlk müşterilerimle kanıt topluyorum, bu ay [şehir]de birkaç işletmeyle çalışacağım." Fiyat ve deneme fiyatı görüşmede söylenir, videoda değil. Sonuç yoksa sonuçtan söz edilmez.
+Kanıt ve çalışan örnek. İlk müşterin yoksa kanıt cümlesi senin kendi sayımındır ("geçen hafta otuz servisi akşam yedide aradım, yirmi ikisi açmadı, ben saydım"); yoksa bu cümle çıkar. Sonra Truva Atı'nın beşinci adımı: "Elimde çalışan bir örneği var; isterseniz göndereyim, bir müşteri gibi deneyin." Sektörü bilmediğini söylemezsin; kartı okudun, saydın, gördün, biliyorsun. Bilmediğin şey sonucun ne olacağı ve onu da söylemezsin, ölçersin. Fiyat ve deneme fiyatı görüşmede söylenir, videoda değil. Sonuç yoksa sonuçtan söz edilmez.
 
 **6. parça, elli beşinci saniyeden altmışıncı saniyeye. Ekran kapanmaz; kamera açıksa kameraya bakarsın.**
-Tek somut saat teklifi ve adıyla kapanış. Tek saat, iki seçenek değil: "Yarın on birde yirmi dakika konuşalım, uymazsa siz saat söyleyin. Görüşürüz Ahmet Bey." İki tarih vermek videoda karar geciktiriyor; telefonda iki seçenek verilir, videoda bir.
+Tek küçük istek, çıkış kapısı ve adıyla kapanış: "Göndermemi isterseniz bir satır yazmanız yeter. Uygun değilse hiç sorun değil. Görüşürüz Ahmet Bey." Videoda saat istenmez; görüşme daveti örnekten ve demo videosundan sonra gelir. İstek tek olur: iki şey isteyen video karar geciktiriyor.
 
-**Süre: hedef altmış saniye, en fazla doksan.** Sebebi üç tane ve üçü de senin lehine. Birincisi, işletmeci videoyu iş arasında açıyor; kendi adını ve kendi ekranını ilk saniyelerde görmezse kapatıyor. İkincisi, uzun video sohbette ve e-postada ağır kalıyor, açılmıyor. Üçüncüsü, sen günde beş tane çekeceksin; üç dakikalık video çeken öğrenci ikinci günü bırakıyor.
+**Süre: hedef altmış saniye, en fazla doksan.** Sebebi üç tane ve üçü de senin lehine. Birincisi, işletmeci videoyu iş arasında açıyor; kendi adını ve kendi ekranını ilk saniyelerde görmezse kapatıyor. İkincisi, uzun video sohbette ve e-postada ağır kalıyor, açılmıyor. Üçüncüsü, sen günde on tane çekeceksin; üç dakikalık video çeken öğrenci ikinci günü bırakıyor.
 
-**Senaryoda hiç geçmeyecek kalıplar:** "içeriğinizi takip ediyorum", "umarım iyisinizdir", "hızlı bir soru", "sayfanıza baktım", "sizin gibi işletmelere". "Şu kadar müşteri getiririm" gibi sayı sözü yok. Adı ve şirketi olmayan kanıt hikâyesi yok. "Ayda on beş müşteri, olmazsa para iade" gibi teklif artı söz kalıbı yok. Görmediğin hiçbir şey videoya girmez.
+**Senaryoda hiç geçmeyecek kalıplar:** "içeriğinizi takip ediyorum", "umarım iyisinizdir", "hızlı bir soru", "sayfanıza baktım", "sizin gibi işletmelere". "Şu kadar müşteri getiririm" gibi sayı sözü yok, "şu kadar müşteri kaybediyorsunuz" gibi kayıp rakamı yok. Yapmadığın arama, doldurmadığın form yok. Adı ve şirketi olmayan kanıt hikâyesi yok. "Ayda on beş müşteri, olmazsa para iade" gibi teklif artı söz kalıbı yok. Görmediğin hiçbir şey videoya girmez.
 
-### Teklif anlatım kalıbı, videonun ortası
+### Videonun ortası: Truva Atı kalıbı
 
-Senaryonun teklif parçası şu kalıpla söylenir; kelimeler senin, sıra sabit:
+Senaryonun ikinci ile altıncı parçası şu kalıpla söylenir; kelimeler senin, sıra sabit:
 
-"Size ulaşmamın sebebi şu: [birinci dert], [ikinci dert] ve [üçüncü dert] yaşayan [niş] işletmeleriyle çalışıyorum. Biz [sonuç bir], [sonuç iki] ve [sonuç üç] yapıyoruz ve hepsini [21/28] günde kuruyoruz. Karışık duruyor ama aslında basit ve çalışıyor. [Kanıt cümlesi, varsa.] Şu an ilk örnek çalışmalarımı çıkarmak için takvimimi buna ayırdım. Yarın on birde yirmi dakika konuşalım, uymazsa siz saat söyleyin. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
+"Gördüğüm şu: [gözlem]. Sizde bu nasıl işliyor, [mevcut düzene dair tek soru]? Ben [şehir]'de [niş] işletmelerine tam bu noktayı kuruyorum: [gözleme dokunan tek sonuç cümlesi]. [Kanıt cümlesi, varsa.] Elimde çalışan bir örneği var; isterseniz göndereyim, bir müşteri gibi deneyin. Göndermemi isterseniz bir satır yazmanız yeter. Uygun değilse hiç sorun değil, yoğun olduğunuzu biliyorum."
 
-Üç dert kartın "işletmecinin gerçek dertleri" bölümünden ve denetim kartından; üç sonuç teklifin sonuç basamağından. Fiyat, deneme fiyatı ve kademe videoda söylenmez, görüşmeye kalır. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
+Gözlem denetim kartından, soru karttan ve ilk yazılı mesajdan, sonuç cümlesi teklifin sonuç basamağından ve gözleme dokunan işlevden (adaya-mesaj-yaz'daki işlev listesi). Üç dert ve üç sonuç sayılmaz; tek nokta, tek çözüm. Fiyat, deneme fiyatı, kademe ve kayıp rakamı videoda söylenmez, görüşmeye kalır. Kanıt cümlesi yalnızca gerçek kanıt varsa söylenir; yoksa o cümle yoktur, "onlarca işletmede yaptık" denmez. Son cümle çıkış kapısıdır ve atlanmaz.
+
+### İzinden sonraki demo videosu
+
+Truva Atı'nın altıncı adımı. Soğuk video değildir, konuşmanın devamıdır: aday cevap verdi, mevcut düzenini anlattı ve çalışan örneği görmek istedi. Çoğu adayda demo bağlantısı yeter; video, bağlantıyı açmadıysa, "nasıl çalışıyor" diye sorduysa ya da kararı ortağıyla, hekimiyle, patronuyla konuşacaksa çekilir. Süre bir ile iki dakika, dört sahne, sırayla:
+
+1. **Onun sayfası.** Haritalar, site ya da Instagram açık, adıyla başlarsın: "Ahmet Bey, konuştuğumuz konu için kısa bir video."
+2. **Konuşulan ihtiyaç, onun cümlesiyle.** "Akşam gelen aramalara sabah dönüyorsunuz, bazen ulaşamıyorsunuz demiştiniz." Cümle adayın satırındaki son cevaptan gelir; söylemediği bir dert eklenmez.
+3. **Demoda test randevusu.** Tarayıcı demosu telefon görünümünde açık; sen bir müşteri gibi yazarsın, asistan cevaplar, saati verir, "randevunuz yazıldı" düşer. Cevapsız arama sahnesi onun derdiyse o sahne de gösterilir; demo sayfasında konuşma düğmesi açıksa kısa bir sesli deneme. Dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle ve kurallarınızla kurulur."
+4. **Görüşme daveti, tek somut saat.** "Sizin işletmenizde nasıl kurulacağını yirmi dakikada göstereyim. Yarın on birde uyar mı, uymazsa siz saat söyleyin. Görüşürüz Ahmet Bey."
+
+Kayıt yine Loom'la, tek çekim, montaj yok. Link cevabın geldiği kanaldan gider; konuşma zaten başladığı için Instagram'da izin mesajı gerekmez. Bu video günün video sayısının içindedir ve o günün ilk videosudur; cevap veren aday soğuk adaydan önce gelir. Demo videosu da aday başına bir kez çekilir. Metni FounderOS yazar ve soğuk videonun metni gibi adayın satırına kaydeder (`video_metni`). Fiyat, kademe ve kayıp rakamı bu videoda da yok. Randevu gelirse gorusmeye-getir devralır; iki iş günü cevap yoksa tek ilgili kontrol gider, ikinci video yok.
 
 ### Kayıt: Loom, tek çekim, montaj yok
 
@@ -140,7 +155,7 @@ Kayıt Loom ile yapılır (loom.com). Bilgisayarın kendi ekran kaydı da video 
 
 Kurulum, bir kere, on dakika: loom.com'da hesap aç, tarayıcı eklentisini kur, mikrofon ve ekran izinlerini ver. Kayıt düğmesine bastığında üç şey seçiyorsun: görüntü, ses ve alan. Görüntüde iki yol var, seçim senin: **"Screen + Cam"** (ekran ve kamera; yüzün köşede küçük baloncukta durur, karşı taraf seni de görür) ya da **"Screen Only"** (yalnız ekran; sesin konuşur). Kameraya çıkmak istemiyorsan Screen Only kalıcı yoldur, video yine sensin: senin sesin, senin ekranın, senin bulgun. Ses için bilgisayarın mikrofonu; kaydedilecek alan olarak tarayıcı sekmesi. Kamerayı açtıysan baloncuğu çok büyük ya da çok küçük yapma, Loom'un verdiği boy yeter. Bitince "Stop" (durdur) dersin, Loom linki kendiliğinden kopyalanır.
 
-Ücretsiz plan bu iş için ilk haftayı çıkarıyor: kişi başına yirmi beş video ve video başına beş dakika sınırı var; sınır değişirse Loom'un kendi ekranında yazan geçerli. Günde beş video çekiyorsun, yani ücretsiz plan birkaç günde doluyor. Dolduğu gün yolu masraf tablon seçer. Bütçen varsa ücretli plana geçersin (masraf tablosunun "sahaya çıktıktan sonra" bölümü) ve her şey aynı kalır. Bütçen yoksa ücret ödemezsin, tek yol şu: videoyu yine Loom'da çekersin ve bilgisayarına indirirsin; Instagram'da video sohbete yüklenir, e-postada bağlantı gerekiyorsa video YouTube'a "Unlisted" (liste dışı) yüklenir ve o bağlantı gider; yükledikten sonra Loom'daki kopyasını silersin ki sınır dolmasın. Bu yolda video mesaj günde ikiye iner, çünkü her video indirme ve yükleme ister; eksik kalan üç temas diğer iki yazılı kanala geçer, toplam yüz kalır. Bu yolda izlendi bildirimi yok; arama sırası videonun gittiği günden sayılan zincirle yürür.
+Ücretsiz plan bu iş için ilk haftayı çıkarıyor: kişi başına yirmi beş video ve video başına beş dakika sınırı var; sınır değişirse Loom'un kendi ekranında yazan geçerli. İlk hafta günde beş, sonra on video çekiyorsun, yani ücretsiz plan ikinci haftanın ilk günü doluyor. Dolduğu gün yolu masraf tablon seçer. Bütçen varsa ücretli plana geçersin (masraf tablosunun "sahaya çıktıktan sonra" bölümü) ve her şey aynı kalır. Bütçen yoksa ücret ödemezsin, tek yol şu: videoyu yine Loom'da çekersin ve bilgisayarına indirirsin; Instagram'da video sohbete yüklenir, e-postada bağlantı gerekiyorsa video YouTube'a "Unlisted" (liste dışı) yüklenir ve o bağlantı gider; yükledikten sonra Loom'daki kopyasını silersin ki sınır dolmasın. Bu yolda video mesaj tam zamanlıda günde dörde, işin yanında ikiye iner, çünkü her video indirme ve yükleme ister; eksik kalan temas diğer iki yazılı kanala geçer, günün toplamı aynı kalır. Bu yolda izlendi bildirimi yok; arama sırası videonun gittiği günden sayılan zincirle yürür.
 
 **Link gönderilmeden önce bir kez dışarıdan açılır.** Loom'un paylaşım ayarı bazen videoyu yalnız kendi hesabına açık bırakıyor; o linki alan aday boş sayfa görüyor ve bir daha da uğraşmıyor. Kontrol on saniye: linki kopyala, tarayıcının gizli penceresinde, Loom'a giriş yapmadan aç, oynuyor mu bak. Oynamıyorsa paylaşım ayarı "bağlantıya sahip herkes" yapılır. Bu kontrol ilk videoda yapılır, ayar bir kez düzelince her videoda tekrarlanmaz.
 
@@ -154,7 +169,7 @@ Kamera açıksa ışık yüzüne gelsin, karanlık köşe olmasın; arka plan te
 
 **Yasak:** yapay zekaya konuşturmak, ses kopyası, adı ve ekranı kendiliğinden değiştirip yüzlerce video üreten program, yapay yüz. Video sen olacaksın.
 
-Kendi sisteminin demo ekran kaydı bu videoya eklenmez. Aday "nasıl çalışıyor" diye sorsa da demo mesajla gönderilmez; üç adımlı cevap konuşmasıyla randevuya çevrilir. Demo görüşmeye gelme sebebidir.
+Kendi sisteminin demo ekran kaydı soğuk videoya eklenmez; soğuk video onun sayfasını gösterir, senin sistemini değil. Aday cevap verip "nasıl çalışıyor" derse sıra Truva Atı'nındır: demo bağlantısı gider, gerekirse izinden sonraki demo videosu çekilir (yukarıda). İlk mesajda ve soğuk videoda demo bağlantısı yok.
 
 Sağlık ve güzellik nişlerinde videoda söylenmeyecekler ve ekranda gösterilmeyecekler: fiyat, "en iyi", öncesi-sonrası, hasta adı, hasta yorumu. Yorumdan gösterilen alıntı yalnızca "aradım açmadılar" tipi olur.
 
@@ -169,7 +184,7 @@ Sağlık ve güzellik nişlerinde videoda söylenmeyecekler ve ekranda gösteril
 - İkinci çekim genelde gidendir.
 - Üçüncü çekim sadece ikincide bir yerde takıldıysan.
 
-"Yeter" kararını FounderOS verir, sen vermezsin. Ölçü beş madde: adı ilk sekiz saniyede geçti mi, bulgu ekranda göründü mü, tek somut saat teklifi var mı, doksan saniyenin altında mı, sesin canlı mı. Beşi de tuttuysa yeter, gönderilir. Bir kez izlenir, ikinci kez izlenmez; ikinci izleme çekimi düzeltmiyor, sadece cesaretini kırıyor.
+"Yeter" kararını FounderOS verir, sen vermezsin. Ölçü beş madde: adı ilk sekiz saniyede geçti mi, gözlem ekranda göründü mü, tek soru ve tek küçük istek var mı (demo videosunda tek somut saat), doksan saniyenin altında mı (demo videosunda iki dakika), sesin canlı mı. Beşi de tuttuysa yeter, gönderilir. Bir kez izlenir, ikinci kez izlenmez; ikinci izleme çekimi düzeltmiyor, sadece cesaretini kırıyor.
 
 Takılma sebebi kelimeleri unutmaksa senaryoyu ekranın kenarında açık tutarsın. Kelime kelime okuma; okuyan ses duyuluyor ve robotlaştırıyor.
 
@@ -189,7 +204,7 @@ Her gün, her video için:
 3. E-posta metnini yaz, imzanın üstüne önizlemeyi yapıştır. Yapıştırınca fazladan gelen satır varsa sil.
 4. İzlendi bildirimi gelince kartta "Videoyu izledi" düğmesine bas; kaçırdıysan akşam Loom'a bakıp aynı düğmeyle geç.
 
-Konu satırı kısa ve dürüst: "Ahmet Bey, size bir video çektim." Gövde üç beş cümle, sonunda adın ve şehrin: "Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim. Bir dakikanızı ayırabilirseniz sevinirim, uymazsa hiç sorun değil. Ahmet Kaya, Bursa." Metni FounderOS hazırlar, önizlemeyi sen yapıştırırsın, "tamam" dersin.
+Konu satırı kısa ve dürüst: "Ahmet Bey, size bir video çektim." Gövde üç beş cümle, sonunda adın ve şehrin: "Anlatmak yerine göstereyim dedim, ekranınızı açıp bir dakikalık video çektim. Videoda tek bir şey soruyorum: mesai dışında gelen talepler şu an nereye düşüyor? Bir dakikanızı ayırabilirseniz sevinirim, uymazsa hiç sorun değil. Ahmet Kaya, Bursa." Soru videodaki sorunun aynısıdır; videoyu açmayan da soruyu görür. Metni FounderOS hazırlar, önizlemeyi sen yapıştırırsın, "tamam" dersin.
 
 E-posta iş adresinden gider, ücretsiz posta hesabından değil. Kişisel adresten giden video mesajı istenmeyen postaya daha kolay düşüyor ve tuhaf duruyor. İş adresi henüz yoksa kişisel adresten gider, ama alan adı alındığı gün bu değişir.
 
@@ -211,9 +226,9 @@ Sırası şu ve adaya-mesaj-yaz'ın karar tablosuyla aynıdır:
 - **Dördüncü gün:** arama. Video izlendiyse arama dördüncü günü beklemez: bildirim saha bloğunda geldiyse aynı blokta ilk arama, değilse ertesi günün ilk araması; açılış da değişir.
 - **Beşinci gün, cevap yok:** tek satır, yeni bir şey taşıyarak. "Videodaki konu şu an gündeminizde değilse sorun değil, tek bir şey sorayım: mesai dışı gelen aramalar şu an nereye düşüyor?" Boş hatırlatma ("görebildiniz mi") gitmez.
 - **Yedinci gün, cevap yok:** e-postadan tek ayrılık mesajı, sonra aday "sonra" aşamasına geçer ve kırk beş gün sonra yeniden sıraya girer. Adayın e-postası yoksa ayrılık mesajı Instagram'dan gider.
-- **Cevap gelirse:** on dakika içinde aynı kanaldan üç adımlı cevap konuşması. Diğer kanalların sıradaki hareketi durur. Kayıt yerinde cevabın videodan sonra geldiği işaretlenir.
+- **Cevap gelirse:** on dakika içinde aynı kanaldan üç adımlı cevap konuşması: dinlersin, çözümü söylediği yere bağlarsın, çalışan örneği teklif edersin. Diğer kanalların sıradaki hareketi durur. Kayıt yerinde cevabın videodan sonra geldiği işaretlenir.
 
-İkinci video yok; bir adaya bir video.
+İkinci soğuk video yok; bir adaya bir soğuk video. Cevap verip örneği isteyen adaya giden demo videosu ayrıdır ve o da bir kez çekilir.
 
 Hareketli görsel ve şaka takibi kaynakta var ve orada çalışıyor, bizde yok. Sebebi kültür ve sektör: yerel işletmeciye gönderilen komik görsel, senin ciddiyetini düşürüyor ve karşı taraf yaş olarak da senden büyük oluyor. Onun yerine beşinci günün tek satırı var ve o satır yeni bir soru taşıyor. Aynı işi yapıyor: cevap vermemesi kolay olan bir mesaj yerine cevap vermesi kolay olan bir soru.
 
@@ -225,8 +240,8 @@ Video bir huni ve hunide altı basamak var. Her akşam altı sayı yazılır, ha
 |---|---|---|---|
 | Gönderildi | kaç video gitti | | |
 | İzlendi | Loom kaçını "izlendi" dedi | paket: konu satırı, önizlemede görünen ilk kare, başlık, gönderen adı ve fotoğrafı | konu satırını değiştir, önizlemenin ilk karesinde adayın kendi sayfası net görünsün, e-posta hesabında fotoğrafın olsun |
-| Cevap geldi | kaçı yazdı ya da aradı | videonun içi: kişiselleştirme, bulgu, teklif cümlesi, çıkış kapısı | ilk sekiz saniyeyi ve bulguyu değiştir; kanıt cümlesi ekle; istek küçük kalsın |
-| Randevu | kaçı saat verdi | randevu almanın zorluğu ve cevap hızın | cevaba on dakika içinde dön, tek somut saat teklif et, takvim linki değil saat |
+| Cevap geldi | kaçı yazdı ya da aradı | videonun içi: gözlem, tek soru, çözümün o noktaya bağlanması, çalışan örnek teklifi, çıkış kapısı | ilk sekiz saniyeyi ve gözlemi değiştir; soruyu işletmecinin kelimelerine yaklaştır; kanıt cümlesi ekle; istek küçük kalsın |
+| Randevu | kaçı saat verdi | cevaptan sonraki yol: çalışan örnek, demo videosu, davet; cevap hızın | cevaba on dakika içinde dön, örneği aynı gün gönder, demo videosunda tek somut saat teklif et, takvim linki değil saat |
 | Geldi | kaçı görüşmeye geldi | teyit ve hatırlatma, adayın uygunluğu | gorusmeye-getir'in zinciri, üç küçük söz |
 | Kapandı | kaçı müşteri oldu | görüşmenin kendisi | gorusmeyi-yonet, prova |
 
@@ -234,27 +249,27 @@ Kural şu: en üstteki kesen basamak tamir edilir, altındakilere dokunulmaz. İ
 
 Şöyle düşün: bir araştırmacısın. "İzlenme yüzde otuz beş, bunu elliye nasıl çıkarırım." Tek değişken değiştirilir, yirmi videoda ölçülür, sonra sıradaki. Yirmi videodan az sayıyla karar verilmez; elli videodan önce senaryonun altı parçalık iskeleti değişmez, içi değişir. Yurt dışı oranları sana hedef diye söylenmez; kendi oranın ilk yirmi videoda çıkar ve sonraki hedef onun üstüdür.
 
-Bir de sıra kuralı: önce işe yaradığı kanıtlanır, sonra çoğaltılır. İlk hedef yüz video değil, ilk yüz videodan çıkan ilk randevu. O randevu geldiğinde video kanalının çalıştığı kanıtlanmış olur ve ondan sonra sayı artar. Kanıtlanmadan sayıyı artırmak, çalışmayan bir şeyi daha çok yapmak.
+Bir de sıra kuralı: ilk hedef yüz video değil, ilk yüz videodan çıkan ilk randevu. Günün sayısı sabittir, on; ne ilk randevu gelince artar ne gelmeyince düşer. İlk randevu video kanalının çalıştığını kanıtlar; o güne kadar tamir yukarıdaki basamak sırasıyla yapılır, sayıyla oynanmaz.
 
 ### Günün akışı, pencerelere göre
 
-**Tam zamanlı.** Sabah bloğu: günün denetim kartları okunur, video listesi hazır gelir. Saha bloğu: ana kanaldan yetmiş, diğer iki kanaldan yirmi beş; bloğun son kırk beş dakikası video bloğudur: ilk hafta üç video otuz altı dakika, sonra beş video kırk dakika (senaryo, çekim, Loom linki, gönderim). Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaçı izlendi, kaç cevap geldi.
+**Tam zamanlı.** Sabah bloğu: günün denetim kartları okunur, video listesi ve senaryolar hazır gelir, her biri adayın satırında. Saha bloğu: ana kanaldan elli, diğer iki kanaldan kırk; bloğun son bir buçuk saati video bloğudur: ilk hafta beş video altmış dakika, sonra on video seksen dakika (senaryo, çekim, Loom linki, gönderim). Varsa izinden sonraki demo videosu bloğun ilk videosudur. Teslim süresinde altı video, kırk sekiz dakika. Akşam bloğu: kanal durumu ekranı, kaç video gitti, kaçı izlendi, kaç cevap geldi.
 
-**İşin yanında.** Sabah bloğu, yani işe gitmeden önceki bir saat: üç adayın denetim kartı okunur. Akşam, yazılı kanalın saatinde: iki video, on altı dakika. Akşam bloğu: kanal durumu ekranı, on beş dakika. Teslim süresinde ve şirket kuruluş gününde bir video, sekiz dakika.
+**İşin yanında.** Sabah bloğu, yani işe gitmeden önceki bir saat: üç adayın denetim kartı okunur. Akşam, yazılı kanalın saatinde: dört video, otuz iki dakika (ilk hafta iki video, yirmi dört dakika). Akşam bloğu: kanal durumu ekranı, on beş dakika. Teslim süresinde ve şirket kuruluş gününde iki video, on altı dakika.
 
 ## 6. Ne söyler
 
-Beşinci gün: "Yarın sahaya çıkıyorsun. Bugün kurulum ve bir deneme videosu, kimseye gitmeyecek. Listenin en altındaki adayın kartını açtım, bulgusu Haritalar'daki yorum. Ekranı aç, konuş. Sonra bir kez izle, beş şeye bak: adı ilk sekiz saniyede geçiyor mu, bulgu ekranda görünüyor mu, tek saat teklifi var mı, doksan saniyenin altında mı, sesin canlı mı. Sonra bir daha izleme. İlk videon ortalama olacak, herkesinki öyle."
-Saha bloğunun sonunda: "Bugün beş video: Ahmet, Mehmet, Ayşe, Kemal, Selin. Beşinin de kartı hazır. Ahmet Bey'in bulgusu şu: salı formu doldurdun, dönüş gelmedi. Ekranda o formun sayfası duracak. Senaryo altı parça, karşında. Okuma, söyle. Üç çekim, en iyisi gider."
+Beşinci gün: "Yarın sahaya çıkıyorsun. Bugün kurulum ve bir deneme videosu, kimseye gitmeyecek. Listenin en altındaki adayın kartını açtım, gözlemi Haritalar'daki yorum. Ekranı aç, konuş. Sonra bir kez izle, beş şeye bak: adı ilk sekiz saniyede geçiyor mu, gözlem ekranda görünüyor mu, tek soru ve tek küçük istek var mı, doksan saniyenin altında mı, sesin canlı mı. Sonra bir daha izleme. İlk videon ortalama olacak, herkesinki öyle."
+Saha bloğunun sonunda: "Bugün on video. İlki Ahmet Bey'in demo videosu: dün 'örneği gönderin' dedi ama açmadı. Dört sahne, iki dakika: sayfası, akşam aramalarına sabah döndüğü, demoda test randevusu, yarın on bir. Sonra dokuz soğuk video, kartları hazır. Mehmet Bey'in gözlemi şu: salı formu doldurdun, dönüş gelmedi. Ekranda o formun sayfası duracak, soru da şu: 'Formdan gelen taleplere şu an kim dönüyor?' Senaryolar adayların satırında, karşında. Okuma, söyle. Üç çekim, en iyisi gider."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, video çekmiyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."
-Kartta rakam yoksa: "Bu kartta lira karşılığı boş. Üçüncü parçayı çıkardım, video elli saniye. Rakam uydurmuyoruz, ilk soruda çöker."
-Video gitmeyince: "Beş videodan üçü gitti. Kalan ikisi yarın ilk iş."
-Cevap gelince: "Ahmet Bey videoya cevap yazdı: 'nasıl çalışıyor bu?' Anlatma, gösterme; saat teklif et: 'Yarın on birde yirmi dakika, kendi telefonunuzda görürsünüz.' Beş dakikan var."
+Akşam testi yapılmamış adayda: "Bu adayı aramadık. Videoda 'aradım' yok; gözlem sayfasından, soru onu açıyor. Uydurma arama ilk soruda çöker."
+Video gitmeyince: "On videodan yedisi gitti. Kalan üçü yarın ilk iş."
+Cevap gelince: "Ahmet Bey videoya cevap yazdı: 'nasıl çalışıyor bu?' Görmek istiyor demek. Anlatma, göster: 'En kolayı denemeniz: [bağlantı]. Bir müşteri gibi yazın, randevuyu nasıl yazdığını görün.' Açmazsa ya da ortağına soracaksa iki dakikalık demo videosu, sonunda tek saat. Beş dakikan var."
 İki gün geçince: "Ahmet Bey'in videosu iki gün önce gitti, cevap yok. Sıradaki hareket Instagram sesli mesaj, bugün. Yedinci günde ayrılık mesajı gidecek, sonra listeden düşecek."
 
 ## 7. Ne yazar
 
-Aday listesinde (`adaylar.csv`; aday CRM'e geçmişse CRM'de de) adayın kaydına: video kanal durumu satırı "yapıldı", gittiği tarih, hangi kanallardan gittiği, video bağlantısı (Loom ya da liste dışı YouTube), sonucu ve sıradaki tarih. Tek sıradaki hareket satırı: iki gün sonrası Instagram sesli mesaj, yedi gün sonrası ayrılık. Temas sayacına bir temas. Bu adayın üçüncü, yedinci ve on dördüncü gün takibi kapatılır. Cevap gelirse "video sonrası" işareti.
+Aday listesinde (`adaylar.csv`; aday CRM'e geçmişse CRM'de de) adayın kaydına: senaryo yazıldığı anda video metni (`guncelle "<kisa_ad>" video_metni="<metin>"`; demo videosunun metni aynı sütuna, öncekinin üstüne), video kanal durumu satırı "yapıldı", gittiği tarih, hangi kanallardan gittiği, video bağlantısı (Loom ya da liste dışı YouTube), sonucu ve sıradaki tarih. Tek sıradaki hareket satırı: iki gün sonrası Instagram sesli mesaj, yedi gün sonrası ayrılık. Temas sayacına bir temas. Bu adayın üçüncü, yedinci ve on dördüncü gün takibi kapatılır. Cevap gelirse "video sonrası" işareti. Demo videosu gittiyse nota tek satır ("demo videosu gitti", tarihiyle) ve sıradaki tarih iki iş günü sonrası.
 
 Denetim kartına dokunulmaz; kart aday-denetimi-cikar'ın çıktısıdır, buradan değiştirilmez.
 
@@ -262,12 +277,16 @@ Denetim kartına dokunulmaz; kart aday-denetimi-cikar'ın çıktısıdır, burad
 
 Niş kartına: otuz videodan sonra hangi bulgu tipi cevap aldı, "sahadan dolacak" bölümüne tarihiyle.
 
-Doksan Gün Planı'nın onuncu bölümüne (mesajlar): nişe uyarlanmış altı parçalık video senaryosu kalıbı ve hangi bulgunun hangi ekranda gösterildiği.
+Doksan Gün Planı'nın onuncu bölümüne (mesajlar): nişe uyarlanmış altı parçalık video senaryosu kalıbı, dört sahneli demo videosu kalıbı ve hangi bulgunun hangi ekranda gösterildiği.
+
+Panel dosyasına (`.founderos/panel/mesajlar.json`, şeması `founderos:panel-vitrini`'de): `video.ilk_temas` ve `video.izin_sonrasi` kalıpları, satır başında saniyeleriyle. İşletmeye özel senaryo adayın satırında (`video_metni`); panel onu Adaylar'da o işletmenin kartında gösterir; sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 
 - Denetimi hazır aday sayısı o günün video sayısını karşılamıyorsa: kaç denetim varsa o kadar video çekilir. Denetimsiz adaya hiçbir koşulda video çekilmez.
-- Kartta lira karşılığı boşsa: üçüncü parça çıkar, video kısalır, rakamsız gider.
+- Adayın akşam testi yapılmamışsa: ikinci parçada arama anlatılmaz; gözlem sayfadan gösterilir, üçüncü parçanın sorusu konuyu açar.
+- Demo henüz yayında değilse: beşinci parçada çalışan örnek teklif edilmez, yerine "Nasıl çalıştığını yirmi dakikada gösterebilirim" denir; demo videosu da çekilmez.
+- Aday listesine metin yazılamıyorsa (araç çalışmıyor): senaryo o gün sohbette verilir, araç düzelince satıra yazılır.
 - Bilgisayarın yoksa ya da ekran kaydı programı hiç kurulamıyorsa: telefonun kendi ekran kaydıyla çekilir; adayın sayfası telefonda açık, bulgu ekranda gösterilir, sesin konuşur. Kamerayı açmak istersen telefonun ön kamerasıyla yüz videosu da olur; o zaman bulgu sözle söylenir: ayakta, telefon sabit, eller serbest; oturup okumak robotlaştırır. Takılıyorsan telefonun uygulama mağazasında (App Store ya da Google Play) telesuflör (metni kameranın yanında kaydırarak gösteren uygulama) diye aratıp birini kurarsın; onu kullanan telefonu sabit koyar, kullanmayan telefonu elinde tutup yürüyerek de çekebilir. Bu ikinci tercihtir, bilgisayarla ekran kaydı üçüncü haftada tekrar denenir.
 - Instagram hesabın yeni ve adayın e-posta adresi yoksa: video yok, aday telefonla aranır.
 - E-postaya bağlantı konamıyorsa (Loom'un sınırı dolu ve YouTube'a yükleme olmuyor): video yalnızca Instagram'dan gider; e-postaya "Instagram'dan bir video gönderdim" diye tek satır.
@@ -275,7 +294,7 @@ Doksan Gün Planı'nın onuncu bölümüne (mesajlar): nişe uyarlanmış altı 
 - Aday videoyu izlemeden "ne istiyorsunuz" yazarsa: üç adımlı cevap konuşması.
 - Sağlık nişinde kartın bulgusu ekranda gösterilemiyorsa (hasta yorumu, öncesi sonrası): video çekilmez, yazılı takip sürer.
 - Ekran kaydı programının ekranı tarif ettiğimden farklıysa: ekran görüntüsü at, FounderOS söyler. Adım atlanmaz.
-- Günde beş çekilemiyorsa iki; sıfır gün olmaz.
+- Günün sayısı çekilemiyorsa tam zamanlıda dört, işin yanında iki; sıfır gün olmaz.
 
 ## 9. Sıradaki adım ve işaretler
 

@@ -43,7 +43,7 @@ Sözlüğü: portföy, ilan, yer gösterimi, komisyon, danışman, sorumlu danı
 
 **Asistan kuralları.** Fiyat vermez: komisyon oranı yasal tavanla sınırlı olsa da (satışta taraf başına yüzde 2 artı KDV, kirada bir aylık kira artı KDV) kesin bedel mülke göre değişir ve pazarlık payı var. Asistan bilgi toplar: hangi ilan/portföy ile ilgilendiği, bütçe, bölge tercihi, ne zaman görmek istediği; sonra yer gösterimi randevusu verir. Yetki belgesi, tapu süreci gibi sorularda sahibine devreder.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Emlak ofisleri hafta içi genelde 08.00-20.00 arası açık, bazı ofisler 22.00'ye kadar hizmet veriyor, cumartesi benzer saatlerde çalışıyor, pazar ofise göre değişiyor (eleman.net, https://www.eleman.net/is-rehberi/calisma-saatleri/emlak-calisma-saatleri-h7023). Bir forumda emlakçılar için "özellikle cumartesi pazar çalışırlar çünkü insanlar hafta sonu ev bakmaya vakit buluyor" deniyor (kizlarsoruyor.com, https://www.kizlarsoruyor.com/diger/q909684-emlakcilar-pazar-gunu-calisir-mi). Yer gösterimleri tipik olarak 10.00-19.00 arası. Adayın kendi talep kanalı: sahibinden/hepsiemlak ilan mesajı, telefon, WhatsApp.
 
@@ -77,15 +77,15 @@ En güçlü üç itiraz: mesajlara zaten kendim bakıyorum, bağlı olduğum zin
 
 "Yetki belgesi ve regülasyon derdim yeter, yeni sisteme param yok." Bu sistem belge işine hiç girmiyor, ilan da paylaşmıyor; sadece gelen talebe cevap veriyor ve randevu topluyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "İlan sitesinden yazıp aynı gün cevap alamayan alıcıyı ertesi gün siz mi arıyorsunuz, yoksa o mesaj bildirimlerin arasında mı kalıyor?"
 
 İşleyiş sorusu: "Yer gösterimindeyken, müşteriyle dairenin içindeyken ilan sitesinden ya da WhatsApp'tan yazan alıcı ne yapıyor, cevabı bekliyor mu, bir sonraki ilana mı geçiyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz yer gösterimindeyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan alıcıya da dakikalar içinde dönüyor; hangi ilanla ilgilendiğini, bütçesini, bölge tercihini ve ne zaman görmek istediğini alıp yer gösterimi randevusuna yazıyor ya da bilgileriyle size iletiyor; daha önce bakıp almayan ve mesaj izni olan eski alıcıya da yeni portföy girince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç ofisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz yer gösterimindeyken telefona ya da mesaja yetişemediğinizde alıcıya dakikalar içinde dönüyor, hangi ilanla ilgilendiğini, bütçesini ve ne zaman görmek istediğini alıp yer gösterimi randevusuna yazıyor. [Şehir]'de bu ay ilk üç ofisle başlıyorum."
 
 Çalışan açarsa: "Danışmanlar yer gösterimindeyken ilan sitesinden ve WhatsApp'tan yazan alıcıya cevap verip yer gösterimi randevusuna yazan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

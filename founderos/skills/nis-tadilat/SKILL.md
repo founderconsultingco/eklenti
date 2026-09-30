@@ -49,7 +49,7 @@ Sözlüğü: keşif, ölçü, teklif, boş teklif, "bir düşüneyim" diyip kapa
 
 **Asistan kuralları.** Bu nişte asistan kesinlikle net fiyat vermemeli; her iki taraf da (iç mimar fiyat rehberi ve Armut) fiyatın metrekareye, malzemeye, mutfağın/banyoun ölçüsüne göre değiştiğini gösteriyor. Asistan bilgi toplamalı: mekanın büyüklüğü (m2), hangi hizmet (mutfak dolabı mı, banyo tadilatı mı, komple daire mi), bütçe aralığı, fotoğraf, ne zaman keşif için müsait. Sonra keşif randevusu vermeli, sahibi/usta yerinde fiyat söylemeli. Ton: şikayetlerde "iletişimsizlik" ve "dönüş yapmama" en büyük şikayet teması, övgü değil, yani asistanın en büyük görevi net tarih vermek ve söz verdiği zaman geri dönmek ([sikayetvar.com/kelebek-mutfak](https://www.sikayetvar.com/kelebek-mutfak/soz-verilen-tarihte-teslim-edilmeyen-mutfak-dolaplari-ve-iletisimsizlik-nedeniyle-yasanan-magduriyet), [sikayetvar.com/ic-mimar](https://www.sikayetvar.com/ic-mimar)).
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Adayın kendi talep kanalı: teklif pazaryerleri (Armut) üzerinden form, ya da doğrudan telefon/WhatsApp. Armut'un kendi iddiasına göre "ev yenileme" taleplerine teklifler tipik olarak 30-240 dakika içinde veriliyor ([armut.com/ev-yenileme](https://armut.com/ev-yenileme)), bu platformun pazarlama iddiası, sahadaki gerçek yanıt süresi farklı olabilir; bilinmiyor, sahadan doğrulanacak. İşletmecinin hangi saatte müsait olduğuna dair kanıt bulunamadı; küçük atölyelerde sahibi genelde sahada/imalatta olduğu için gündüz saatlerinde telefona zor yetişiyor olması muhtemel ama bu bir varsayım, kanıt yok.
 
@@ -75,15 +75,15 @@ En güçlü üç itiraz: gelip görmeden fiyat söyleyemem, ben zaten dönerim u
 
 "Ben oda üyesiyim, meslek kurallarına aykırı olur mu?" Sistem tanıtım yapmıyor; size zaten yazan müşteriye cevap veriyor ve keşif verdiğiniz kişiyi hatırlatıyor. Odanızın yazılı bir kuralı varsa not alırız, sistem ona göre kurulur.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Keşfe gidip teklif verdiğiniz de 'bir düşüneyim' deyip bir daha dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa o teklifler telefonunuzda öyle mi duruyor?"
 
 İşleyiş sorusu: "Siz keşifteyken ya da imalattayken WhatsApp'tan ya da siteden 'mutfak dolabı kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, üç dört firmaya birden mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; mutfak mı banyo mu komple daire mi, kaç metrekare, bütçe aralığı ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip 'düşüneceğim' diyen müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, işin ne olduğunu, metrekareyi, bütçe aralığını ve fotoğrafı alıp keşif randevusuna yazıyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Usta keşifteyken ya da imalattayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

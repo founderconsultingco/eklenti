@@ -149,6 +149,8 @@ Niş kartına: sahada doğrulanan alıntılar, "Sahadan dolacak" bölümüne.
 
 Doksan Gün Planı üretilirken (bant konunca) bu sayfanın birinci başlığını sekizinci bölümüne alır; plan bu modülden sonra yazıldığı için burada bir şey değiştirilmez.
 
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `icp` (tek_cumle, buyukluk, basliklar: on iki başlık, sayfadaki adlarla ve sırayla); sonra aracın `panel --yukle` komutu sessiz çalışır.
+
 ## 8. Yedek yol
 
 - Arka plan araştırması sonuç veremezse: kart zaten işletmecinin dertlerini, sözlüğünü ve iç sesini taşıyor. Sayfa karttan yazılır, her satırın yanına "karttan, şehir doğrulaması yapılmadı" düşülür ve ikinci blokta canlı doğrulamayla birlikte yenilenir. Gün bu yüzden durmaz.

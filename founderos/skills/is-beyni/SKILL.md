@@ -59,10 +59,10 @@ Yazan: hizmet-akisini-ciz, isini-kur (rapor günü).
 
 ### 6. Marka ve varlıklar
 Marka kitinin yeri, renkler, yazı tipleri, logo ve en küçük boyutu, görsel yön. Dosya haritası: `marka/` altındaki her dosyanın adı, ne işe yaradığı, nerede durduğu; modüller logoyu ve görselleri buradan bulur. Eksik gerçek bilgiler satırı: henüz olmayan telefon, e-posta ya da adres ve hangi dosyayı beklettiği. Açılış görseli hangi kaynaktan (video kapağı, kurucu fotoğrafı, marka görseli).
-Instagram kullanıcı adı ve hesap yaşı, profil fotoğrafının yeri, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, biyografi metni ve sürümü.
+Instagram kullanıcı adı ve hesap yaşı, profil fotoğrafının yeri, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, biyografi metni ve sürümü. YouTube kanalının doğrulandığı tarih (video kapağı için), LinkedIn profil adresi ve güncellenme tarihi.
 Seçilen alan adı ve uzantısı, boş olduğunun kontrol edildiği tarih, yedek alan adı, alınıp alınmadığı ve nereden alındığı, canlı site adresi, ön görüşme sayfasının adresi, proje klasörünün yeri, sayfanın metin sürümü ve tarihi, müşteri gelince değişecek bölümler.
 Video adresleri: ön görüşme videosu, üç itiraz videosu, deneme videosu, kanıt ekran kaydı.
-Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-sayfasini-yaz, isini-kur.
+Yazan: markani-kur, kisisel-markani-kur, siteni-kur, satis-videosunu-cek, satis-sayfasini-yaz, isini-kur, icerik-motoru.
 
 ### 7. Araçlar ve hesaplar
 CRM bölümünün adresi, bağlanan Google hesabı, işaretlenen çalışma saatleri, arama yapacağın numara, sesli mesaj metni.
@@ -82,8 +82,9 @@ Yazan: tanidik-listesi-cikar, aday-listesi-cikar.
 ### 9. Mesajlar ve kanıt
 Her kanalın mesaj metni, sürümü ve tarihi. Sıcak çevrenin iki mesajı ve mesajda geçen sayı. Kanca listesi ve hangisinin cevap aldığı. Günlük gönderim sayısı ve e-posta alıştırma tarihi.
 Kanıt: deneme aramasının sonuçları, kanıt cümlesi ve güncellenme tarihi, kanıt hikâyesi, paylaşım izninin yazılı olup olmadığı.
+İçerik: başlangıç tarihi, çekim yolu (yüz ya da ses), son hafta (tarih, tema, konu türü, beş parçadan kaçı yayında) ve içerikten gelen ilgi (koşan toplam: yazan işletme, görüşmede içerikten söz eden). Haftaların ayrıntısı günlükte ve panel dosyasının geçmişinde.
 Kilitli satır: mesaj metni üç yüz temasta açılıyor, elli temastan önce hiç dokunulmuyor.
-Yazan: adaya-mesaj-yaz, tanidiga-mesaj-yaz, video-mesaj-cek, kanitini-hazirla.
+Yazan: adaya-mesaj-yaz, tanidiga-mesaj-yaz, video-mesaj-cek, kanitini-hazirla, icerik-motoru.
 
 ### 10. Sayılar
 Gün sayacı; birinci bölümdeki başlangıç tarihinden hesaplanır, ikisi tutmuyorsa tarih üstündür. Koşan toplam: bugüne kadar kaç temas, kaç cevap, kaç randevu, kaç görüşme, kaç müşteri (durum kaydındaki sayaçlarla aynı). Son akşamın beş sayısı ve tek cümlesi yalnız son değer olarak durur; her akşamın sayıları (sıcak ve soğuk ayrımıyla), haftalık toplamlar ve akşam cümleleri günlükte.
@@ -150,6 +151,7 @@ Niş kartı da ayrı bir dosya olarak duruyor. Kart on altı bölümlü sabit ya
 - `.founderos/`: gizli klasör; durum kaydı (`durum.json`, aşağıda) ve aday aracı.
 - `marka/`: marka kitinin gerçek dosyaları.
 - `site/`: tanıtım sayfasının dosyaları.
+- `icerik/`: haftanın içeriği, hafta başına bir klasör (`icerik/<YYYY-AA-GG>-<tema>/`): video metni, kesitler, LinkedIn gönderisi, kaydırmalı gönderinin görselleri, video ve Reels kapakları, haftanın panosu. Bu haftanın panel kaydı `.founderos/panel/icerik.json`.
 Aday listesi ve sayfası (`adaylar.csv`, `adaylar.html`) ile modüllerin kendi çıktıları (tanıdık listesi, denetim kartları, niş raporu) klasörün kökünde durur. Başka alt klasör açılmaz. Modüller İş Beyni'ni, planı ve kartı bölüm adıyla okuyor.
 
 ## Durum kaydı (`.founderos/durum.json`)
@@ -189,7 +191,7 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - E-posta:
 - Çalışma düzeni (tam zamanlı / işin yanında):
 - Günlük temas sayısı:
-- Günlük temas dağılımı (ana kanal ve kanalların payı):
+- Günlük temas dağılımı (ana kanal, diğer iki kanal, video; tam zamanlıda 50, 40, 10; işin yanında 20, 16, 4; teslim süresinde 30, 24, 6 ve 10, 8, 2; video ilk hafta 5 ve 2):
 - Haftalık teslimat saati:
 - Hazırlık seviyesi:
 - Kanal yolu (telefon / yazı):
@@ -246,8 +248,10 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Konumlandırma cümlesi (uzun, kısa, itiraz cevabı):
 - Dönüşüm Cümlesi (beş parça):
 - Sistemin adı:
+- Mekanizma (adı ve adımları):
 - Teklif sürümü ve tarihi:
 - Bir dakikalık anlatım:
+- Teklifin açıları (beş ile yedi; başlık ve iki üç cümle):
 - Kademe 1 içeriği:
 - Kademe 2 içeriği:
 - Kademe 3 içeriği:
@@ -295,6 +299,8 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - WhatsApp Business numarası ve karşılama mesajı:
 - E-posta imzası:
 - YouTube kanal adresi:
+- YouTube kanalı doğrulandı mı (video kapağı için), tarih:
+- LinkedIn profil adresi ve güncellenme tarihi:
 - Biyografi metni ve sürümü:
 - Alan adı ve nereden alındığı:
 - Canlı site adresi:
@@ -343,6 +349,8 @@ Bu şablon boş haliyle kopyalanır ve doldurulur. Bölüm adları ve sırası d
 - Kanıt cümlesi ve güncellenme tarihi:
 - Kanıt hikâyesi:
 - Paylaşım izni yazılı mı:
+- İçerik (başlangıç tarihi, çekim yolu yüz/ses, son hafta: tarih, tema, konu türü, beş parçadan kaçı yayında):
+- İçerikten gelen ilgi (koşan toplam: yazan işletme, görüşmede içerikten söz eden):
 - KİLİT: mesaj metni üç yüz temasta açılır, elli temastan önce hiç dokunulmaz.
 
 ## 10. Sayılar

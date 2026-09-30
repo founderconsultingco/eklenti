@@ -121,11 +121,11 @@ Bir de sabır meselesi var. Yeni bir şeyi başlattığın hafta sonuç ölçül
 
 ### Ana kanal değişir mi
 
-Ana kanalı nişin kartı seçiyor ve üç yüz temas boyunca kilitli. Üç yüz temas dolup sonuçları gelince (yazılı kanalda yedi gün sonra) tek bir soru sorulur: **ikinci kanal, randevu başına ana kanaldan daha az temas harcadı mı.** Cevap evetse ikisi yer değiştirir; yetmiş ona geçer, ana kanal yirmi beşin içine iner. Cevap hayırsa hiçbir şey değişmez ve sonraki üç yüz temas ölçülür.
+Ana kanalı nişin kartı seçiyor ve üç yüz temas boyunca kilitli. Üç yüz temas dolup sonuçları gelince (yazılı kanalda yedi gün sonra) tek bir soru sorulur: **ikinci kanal, randevu başına ana kanaldan daha az temas harcadı mı.** Cevap evetse ikisi yer değiştirir; elli ona geçer, ana kanal kırkın içine iner. Yeni ana kanal yazılıysa hesabın tavanı ve e-postanın günlük sınırı yine geçerlidir; taşınamayan pay öbür yazılı kanala, o da doluysa aramaya geçer. Cevap hayırsa hiçbir şey değişmez ve sonraki üç yüz temas ölçülür.
 
 Bir kanalda üç yüz temasın içinde otuzdan az temas varsa o kanalın oranı okunmaz; az sayıdan çıkan oran yanıltır.
 
-Video bu karara girmez. Video her gün çekilir, ana kanal ne olursa olsun; günün sayısı video-mesaj-cek'teki süre kuralından gelir. Sebebi şu: video, ilk yazılı temasa cevap vermeyen adaya giden ikinci dokunuş; önce en çok istenen yüz işletmeye gider ve o yüz işletme bu işin en değerli yüz işletmesi.
+Video bu karara girmez. Video her gün çekilir, ana kanal ne olursa olsun; günün sayısı sabittir, tam zamanlıda on, işin yanında dört (video-mesaj-cek). Sebebi şu: video, ilk yazılı temasa cevap vermeyen adaya giden ikinci dokunuş; önce en çok istenen yüz işletmeye gider ve o yüz işletme bu işin en değerli yüz işletmesi.
 
 ### Tavan yükselir, hedef haftanın kararıyla inmez
 

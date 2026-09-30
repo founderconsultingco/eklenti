@@ -19,7 +19,7 @@ Süre bir saat. Amaç eksikleri bugün bitirmek değil, sahanın hangi eksikle a
 1. **Telefon.** Kendi numaranla arama yapabiliyorsun, WhatsApp iş hesabın açık ve mesaj gidiyor. Kanıt: kendine bir mesaj at, gelsin.
 2. **Aday listesi.** Üçüncü blokta çıkardığın liste elinde ve içinde telefonu olan en az yüz kayıt var. Kanıt: listedeki kayıt sayısı ve telefonu dolu olan satır sayısı ekranda.
 3. **Fiyat.** Üç kademenin rakamı belli, tek fiyat cümlesi ezberde, güvence cümlesi ve şartları yazılı. Kanıt: İş Beyni'nin fiyat bölümü dolu, tarihi var.
-4. **İlk mesaj.** Telefon açılışı, yazılı mesaj ve e-posta metni hazır, sen okuyup onaylamışsın. Kanıt: üç metnin de İş Beyni'nde son hali duruyor.
+4. **İlk mesaj.** Telefon açılışı, yazılı mesaj ve e-posta metni hazır, Truva Atı Metodu'yla kurulu (gerçek gözlemle açılıyor, tek soru soruyor; yapılmamış arama, kayıp rakamı ve bağlantı yok) ve sen okuyup onaylamışsın. Kanıt: üç metnin de İş Beyni'nde son hali duruyor.
 
 Bu dördünden biri eksikse ertesi günün sabah bloğu ona ayrılır ve saha bloğu yine açılır.
 
@@ -36,7 +36,7 @@ Bu dörtten biri eksikse saha yine açılır. Eksik olan kapanış anında ortay
 
 9. **Randevu yolu.** CRM açıldıysa: bir aday takvimden randevu alabiliyor; kanıt, bağlantıyı kendine gönder, randevu al, takvimde gör, iptal et. CRM henüz açılmadıysa (başlangıç görüşmesi yapılmadıysa bu normaldir): sayfadaki düğme WhatsApp'ına gidiyor ve verdiğin saati İş Beyni'nin "Bugünün listesi" bölümüne yazıyorum; kanıt, düğmeye bas, mesaj sana düşsün.
 10. **Hatırlatma.** Randevudan bir gün önce ve iki saat önce gidecek metinler hazır ve senin onayından geçmiş. E-posta hatırlatması CRM açıldıysa kendiliğinden gider; WhatsApp hatırlatmasını her durumda sen gönderirsin, metni ben veririm. Kanıt: metinler İş Beyni'nde.
-11. **Kayıt yeri.** Aday listesi sayfan açılıyor ve yarının ilk kayıtları Saha modu sekmesinde; veri bağlantısı varsa telefondaki saha ekranının bağlantısı da açılıyor. Kanıt: sayfayı ve bağlantıyı telefonundan aç, ilk kartı ve sonuç düğmelerini gör. CRM açıldıysa ayrıca dokuz aşama açık, bir deneme kaydı açıp aşamalar arasında gezdirdin ve sildin; kanıt ekran.
+11. **Kayıt yeri.** Aday listesi sayfan açılıyor ve yarının ilk kayıtları Bugünün listesi sekmesinde; veri bağlantısı varsa telefondaki saha ekranının bağlantısı da açılıyor. Kanıt: sayfayı ve bağlantıyı telefonundan aç, ilk kartı ve sonuç düğmelerini gör. CRM açıldıysa ayrıca dokuz aşama açık, bir deneme kaydı açıp aşamalar arasında gezdirdin ve sildin; kanıt ekran.
 12. **Günlük sayı görünümü.** Her akşam bakacağın sayılar FounderOS'tan geliyor: temas, cevap, randevu, görüşme. Kanıt: sabah "günaydın" yazınca sıfırları gösteriyor.
 
 ## Dört: anlatım ve prova

@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: adaya-mesaj-yaz
-description: "Metinler dördüncü gün, saha altıncı günden itibaren her gün. \"Bir işletme cevap verdi\", \"biri geri döndü\" dendiğinde cevap konuşması buradan. Telefon, e-posta ve Instagram mesajları, üç takip, itirazlar."
+description: "Metinler dördüncü gün, saha altıncı günden itibaren her gün. \"Bir işletme cevap verdi\", \"biri geri döndü\" dendiğinde cevap konuşması buradan. Truva Atı Metodu (gerçek gözlem, tek soru, çalışan örnek), telefon, e-posta ve Instagram mesajları, üç takip, itirazlar, günün kanal dağılımı."
 ---
 
 # adaya-mesaj-yaz
@@ -16,6 +16,8 @@ Dört kanal var: telefon, e-posta, Instagram, video. Dördü de burada yönetili
 
 Bu modül denetim yapmaz, denetimi okur. Her mesajın ilk cümlesi aday-denetimi-cikar'ın denetim kartından gelir. Kart yoksa mesaj da yok.
 
+Her ilk temas ve her cevaba dönüş Truva Atı Metodu'yla kurulur: gerçek gözlemle açılır, tek soru sorulur, çözüm onun cevabına bağlanır, çalışan örnek teklif edilir. Yöntem beşinci bölümün başında; dört kanal da ona uyar.
+
 Şunlar bu modülün işi değil, ayrı modülleri var: adayın denetimi (aday-denetimi-cikar), tanıdıklar (tanidiga-mesaj-yaz), video çekimi (video-mesaj-cek), randevu alındıktan sonrası (gorusmeye-getir).
 
 Amaç satış değil, randevu. Telefonda satış yapılmaz.
@@ -27,22 +29,22 @@ Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altınc�
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 
-Günlük süre üç saat yirmi dakika: ana kanalın yetmiş teması iki saat, diğer iki kanalın yirmi beşi kırk dakika, beş video mesaj kırk dakika. Takip onayı ve gelen cevaplara dönüş saha bloğunda değil sabah bloğunda, yirmi beş dakika.
+Günlük süre üç saat elli dakika: ana kanalın elli teması yaklaşık seksen beş dakika, diğer iki kanalın kırkı altmış beş dakika, on video mesaj seksen dakika (ilk hafta beş video, altmış dakika). İşin yanında bir buçuk saat: yirmi temas otuz dört dakika, on altı temas yirmi altı dakika, dört video otuz iki dakika. Takip onayı ve gelen cevaplara dönüş saha bloğunda değil sabah bloğunda, yirmi beş dakika.
 
 ## 3. Ne okur
 
 **Denetim kartından (aday-denetimi-cikar), üç satır. Mesajın gövdesi budur.**
-- EN GÜÇLÜ BULGU: tek cümle, o adayda gerçekten görülmüş şey.
-- LİRA KARŞILIĞI: kayıp birimi çarpı kartın rakamı, tek satır hesap.
+- EN GÜÇLÜ BULGU: tek cümle, o adayda gerçekten görülmüş şey. Truva Atı'nın gözlemi budur.
+- LİRA KARŞILIĞI: kayıp birimi çarpı kartın rakamı, tek satır hesap. Görüşmeden önce hiçbir temasta, hiçbir kanalda söylenmez; görüşmeye saklanır.
 - SIRADAKİ KANAL: telefon, e-posta, Instagram ya da video.
 
-Bu üç satır yoksa mesaj yazılmaz, aday aranmaz.
+Bu üç satır yoksa mesaj yazılmaz, aday aranmaz. Kartın altıncı ve yedinci satırı (akşam testi ve yazılı test) da okunur: "aradım", "yazdım", "formu doldurdum" cümlesi yalnız oradan kurulur.
 
-İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): niş, günlük temas dağılımı, Dönüşüm Cümlesi (ne sattığını tek cümlede söyleyen cümle), sistemin adı, bir dakikalık anlatım, fiyat aralığı ve "fiyat ne" sorusunun cevabı, şehir, e-posta adresinin ve Instagram hesabının kaç yaşında olduğu.
+İş Beyni'nden (senin hakkında bilinen her şeyin yazıldığı tek dosya): niş, günlük temas dağılımı, Dönüşüm Cümlesi (ne sattığını tek cümlede söyleyen cümle), sistemin adı, bir dakikalık anlatım, fiyat aralığı ve "fiyat ne" sorusunun cevabı, şehir, e-posta adresinin ve Instagram hesabının kaç yaşında olduğu, tanıtım sayfasının adresi (çalışan örnek aynı adreste `/demo`), sesli örneğin ve sesli demonun "kuruldu" satırı.
 
 Niş kartından (sektör hakkında bilinen her şeyin yazılı olduğu hazır sayfa): açılış cümlesi, işletmecinin kullandığı kelimeler, hangi kanal hangi saatte, fiyat gizli mi, sızıntı kanıtı, itirazlar, yasal sınırlar.
 
-İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): günü nasıl geçiyor (hangi saatte yazılacağını belirler), nereden bilgi alıyor (hangi kanaldan yaklaşılacağını belirler), üç dert ve alıntıları. Mesajın ikinci cümlesi bu alıntılardan birinin kelimeleriyle yazılır.
+İş Beyni'nin on sekizinci bölümünden (ideal müşteri sayfası): günü nasıl geçiyor (hangi saatte yazılacağını belirler), nereden bilgi alıyor (hangi kanaldan yaklaşılacağını belirler), üç dert ve alıntıları. Mesajın ikinci cümlesi, yani Truva Atı'nın tek sorusu, bu alıntılardan birinin kelimeleriyle yazılır.
 
 Aday listesinden (`adaylar.csv`, aday aracı; soğuk adaylar CRM açıldıktan sonra da burada, cevap verip CRM'e geçmiş aday CRM'de): sahibinin adı, telefon, e-posta, Instagram, sızıntı puanı, en çok istenen yüz işletmeden mi, dört kanalın durum satırları, sıradaki hareket satırı, önceki temaslar, aşama.
 
@@ -56,9 +58,32 @@ Tek istisna: ilk yirmi aramanın her birinden sonra otuz saniyelik not; o da soh
 
 ## 5. Ne yapar
 
+### Truva Atı Metodu
+
+Kapıyı "size yapay zekâ hizmeti satıyorum" diye çalmıyorsun. İşletmesinde gördüğün somut bir aksaklıkla konuşmayı açıyor, önce onun bugün nasıl çalıştığını soruyor, çözümü sonra ve tam o noktaya bağlıyorsun. İçeri satışla değil, onun kendi derdiyle giriyorsun; adı bu yüzden Truva Atı. Telefon açılışı, e-posta, Instagram mesajı, video ve gelen cevaba dönüş bu sırayla kurulur; kanal değişir, sıra değişmez.
+
+Yedi adım:
+
+1. **Gerçek gözlemle aç.** Gözlem denetim kartının en güçlü bulgusudur, o işletmede gerçekten görülmüş şeydir: reklamı randevu için telefona yönlendiriyor, akşam altıda kapanıyor, formunu doldurdun ve dönüş gelmedi, akşam testinde telefonu açılmadı.
+2. **Mevcut düzenini anlamak için tek soru sor.** "Bu saatlerde gelen randevu taleplerine nasıl dönüş yapıyorsunuz?" Tek soru; sorgu değil, cevabı onun ağzından almak.
+3. **Dinle.** Cevabı ne olursa olsun sonraki cümlenin malzemesi odur. Telefonda araya girmezsin. Yazıda cevabı onun kelimeleriyle geri söylersin.
+4. **Çözümü tam o noktaya bağla.** "Sabah geri arıyoruz, bazen ulaşamıyoruz" dediyse sistemin tamamını değil, o noktaya dokunan parçayı söylersin: "Kurduğum sistem tam orada çalışıyor: telefona yetişemediğinizde arayana kısa süre içinde mesaj gidiyor, ne için aradığını soruyor ve uygun saati takvime yazıyor." Sesli örneğin İş Beyni'nde "kuruldu" yazıyorsa cümle telefon tarafıyla söylenir: "O aramayı o anda karşılıyor, soruları cevaplıyor ve uygun saati takvime yazıyor." Hangi parçanın söyleneceğini aşağıdaki işlev listesi verir.
+5. **Çalışan örneği teklif et.** "İsterseniz çalışan örneğini göndereyim, bir müşteri gibi deneyin." Örnek, tarayıcı demosudur: tanıtım sayfanın adresi, sonunda `/demo`. Demo sayfasında konuşma düğmesi açıksa "arayan bir müşteri gibi konuşup deneyin" dersin. Telefondaysan izin gelince bağlantıyı hemen, izin verdiği kanaldan (WhatsApp ya da e-posta) gönderirsin, o anda dener; bu gönderimin iznini kendisi verdi, soğuk mesaj sayılmaz. Yazılı kanalda "evet", "gönderin" gelince gider. Gönderirken dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle kurulur."
+6. **İzin gelince kısa ekran videosu ve görüşme daveti.** Örneği açmadıysa, "nasıl çalışıyor" diye sorduysa ya da kararı başkasıyla konuşacaksa bir iki dakikalık ekran videosu çekilir: onun sayfası, konuştuğunuz ihtiyaç, demoda test randevusu, sonunda tek saatli görüşme daveti. Metnini ve çekimini video-mesaj-cek yönetir (izinden sonraki demo videosu). Video gerekmiyorsa davet örnekten sonra yazıyla gider: "Sizin işletmenizde nasıl kurulacağını yirmi dakikada göstereyim; yarın on bir uyar mı, uymazsa siz saat söyleyin."
+7. **Takibi kaydet.** İlgilenen ama henüz karar vermeyen adayın takip tarihi o gün aday aracıyla satırına yazılır; sıradaki hareket boş kalmaz.
+
+Dört sert kural, istisnası yok:
+
+- **Yapmadığın aramayı yapmış gibi anlatmazsın.** "Dün akşam aradığımda ulaşamadım" yalnız akşam testinde gerçekten aradıysan kurulur (kanitini-hazirla); gün ve saat denetim kartının altıncı satırından gelir. Arama yoksa aynı konu soruyla açılır: "Ekibiniz müşteriyle ilgilenirken ya da işletme kapalıyken gelen aramaları nasıl karşılıyorsunuz?" Form ve mesaj testi için de aynı kural: yazmadığın mesaj, doldurmadığın form anılmaz.
+- **Kayıp uydurmazsın.** Kaç müşteri, kaç hasta, kaç lira kaybettiği görüşmeden önce hiçbir temasta söylenmez; ne mesajda ne videoda. Lira karşılığı görüşmeye saklanır, kayıp orada onun kendi sayılarıyla birlikte hesaplanır. Kartın sızıntı kanıtındaki sektör rakamı onun kaybı değildir; takipte "sektörde böyle" diye, kaynağıyla geçebilir.
+- **İlk mesajda bağlantı yok**, hiçbir kanalda: demo, site, video, takvim linki cevap geldikten ve izin alındıktan sonra gider.
+- **Kişiselleştirmek, işletmenin adını yazmak değil; o işletmeye neden ulaştığını belli etmektir.** Adı ya da "sizin gibi işletmeler" kalıbını taşıyıp gözlem taşımayan mesaj kişisel değildir, yazılmaz.
+
+Birkaç sessiz mesajla bu iş bırakılmaz. Rastgele yüzlerce kişiye aynı mesajı göndermek yerine doğru işletmeye onun durumuyla ilgili bir konuşma açılır; cevap azsa liste ve mesaj incelenir (cevap-gelmiyor).
+
 ### Denetimi tüket, kendin denetim yapma
 
-Eskiden her adaya tek satırlık gözlem yazılıyordu. Artık yazılmıyor. Yerini denetim kartının en güçlü bulgusu aldı. Fark şu: gözlem "gördüğüm bir şey", en güçlü bulgu "kaçırdığın müşteri".
+Eskiden her adaya tek satırlık gözlem yazılıyordu. Artık yazılmıyor. Yerini denetim kartının en güçlü bulgusu aldı. Fark şu: eski gözlem "gördüğüm bir şey"di, en güçlü bulgu müşterinin kaçtığı yeri gösteren, gerçekten görülmüş şey. Truva Atı'nın "gerçek gözlem" dediği budur. Kaçan müşterinin sayısı ise mesajda söylenmez; görüşmede birlikte bulunur.
 
 Kural sert: **denetimi olmayan aday aranmaz.** Sabah listesinde denetimsiz aday varsa o satır atlanır, yerine listenin altındaki denetimi hazır aday gelir. Saha bloğu hiçbir gün denetim yüzünden kısalmaz.
 
@@ -75,7 +100,7 @@ Sahte kişiselleştirme yok: görmediğin şey mesaja girmez. Tam adı ve şirke
 - Profili kurulmamış hesaptan Instagram mesajı gitmez: fotoğraf, biyografi ve akışta en az dokuz paylaşım yoksa hesap kurulmamış sayılır. Kurulmuş ama yeni hesap rampaya girer: beş, on, yirmi, kırk (aşağıda, Hacim ve zaman). Instagram'ın günlük mesaj sınırını bilmiyoruz; tavanı biz koyarız, hesabın yaşına bağlarız ve bunu platform kuralı diye anlatmayız. Hesap uyarı alırsa durulur (aşağıda, durma işareti).
 - Instagram profili ve öne çıkanları bitmeden Instagram kanalı açılmaz. Adayın ilk işi profile bakmak; yarım profille atılan mesaj o adayı bir kere harcıyor.
 - Instagram mesajları güne yayılır, bir saatte beşten fazlası arka arkaya gitmez.
-- E-postada ilk mesajda link yok, görsel yok, ek dosya yok, düz metin.
+- İlk mesajda hiçbir kanalda link yok (Truva Atı Metodu). E-postada ilk mesajda görsel ve ek dosya da yok, düz metin.
 - Bu modül SMS kullanmıyor.
 - Aynı numara bir günde art arda iki kez aranır, üç değil.
 - Soğuk temasta "neden şimdi ilgilendiniz" sorusu yasak. O seni aramadı.
@@ -87,8 +112,8 @@ Sahte kişiselleştirme yok: görmediğin şey mesaja girmez. Tam adı ve şirke
 ### Adayın ne kadar bildiği, açılışı belirler
 
 CRM'deki önceki temas satırına göre üç seviye var.
-- **Hiç duymamış** (soğuk liste, çoğunluk bu): en güçlü bulgu yüzüne tutulur.
-- **Sorunu biliyor** (denetimde reklamı çıkmış, yorumunda "aradım açmadılar" yazıyor, formu var): anlatma yok. Doğrudan bulgu, sistemin adı ve saat. Sağlık nişlerinde reklam bu seviyeye saymaz.
+- **Hiç duymamış** (soğuk liste, çoğunluk bu): en güçlü bulgu gözlem olarak söylenir, arkasından tek soru.
+- **Sorunu biliyor** (denetimde reklamı çıkmış, yorumunda "aradım açmadılar" yazıyor, formu var): anlatma yok. Gözlem, tek soru ve çalışan örnek teklifi aynı mesajda; sistemin adı ve saat cevaptan sonra. Sağlık nişlerinde reklam bu seviyeye saymaz.
 - **Bizi biliyor** (tanıdıktan yönlendirilen, daha önce konuşulmuş, siteyi ziyaret etmiş): kanca yok. Cevap vermemiş bir ilk temas adayı "bizi biliyor" saymaz. "Ahmet Bey sizi aramamı söyledi, yarın on bir uygun mu." Bu adaya sorunu anlatmak randevuyu geciktirir.
 
 Seviyeyi sistem işaretler, sen seçmezsin.
@@ -97,9 +122,9 @@ Seviyeyi sistem işaretler, sen seçmezsin.
 
 Dördü de aynı bulgudan besleniyor ama aynı cümleyi kullanmıyor. Aynı adaya ikinci kanal gidiyorsa bulgu farklı ağızla söylenir.
 
-**Telefon.** Altı adım; ilk kırk saniyede randevu sorusuna gelinir. Lira karşılığı telefonda söylenmez, görüşmeye saklanır. Yasak: fiyat pazarlığı, satış, lira rakamı, kendini küçültmek, not bıraktırmak, karşı tarafı sınava sokan soru ("kaç arama kaçırıyorsunuz biliyor musunuz").
+**Telefon.** Altı adım, Truva Atı sırasıyla: gözlem, soru, dinlemek, çözümü cevaba bağlamak, çalışan örnek, randevu. İlk kırk saniyede gözlem ya da soru söylenmiş olur; randevu, çözüm onun cevabına bağlandıktan sonra gelir. Lira karşılığı telefonda söylenmez, görüşmeye saklanır. Yasak: fiyat pazarlığı, satış, lira rakamı, yapmadığın aramayı anlatmak, kendini küçültmek, not bıraktırmak, karşı tarafı sınava sokan soru ("kaç arama kaçırıyorsunuz biliyor musunuz").
 
-Sesli söylenecek satırlar tırnak içinde; "bekle" yazan yerde susarsın, karşı taraf konuşur. Sayfanın Saha modu kartı bu altı adımı aynı sırayla gösterir.
+Sesli söylenecek satırlar tırnak içinde; "bekle" yazan yerde susarsın, karşı taraf konuşur. Sayfanın Bugünün listesi kartı bu altı adımı aynı sırayla gösterir.
 
 1. Tanış ve kaynağı söyle: "[sakin] Merhaba, ben [adın], [şehir]'den arıyorum. Numaranızı Haritalar'daki işletme sayfanızdan aldım. [Ad] Bey siz misiniz?" [cevabı bekle] Adını, şehrini ve numarayı nereden aldığını ilk cümlede söylersin; işletmeci en çok bunu merak eder. Ustayla konuşuyorsan "Usta" doğaldır, "Bey" zorunlu değil.
 
@@ -111,16 +136,17 @@ Sesli söylenecek satırlar tırnak içinde; "bekle" yazan yerde susarsın, kar�
 2. Rahatlat ve küçük izni al: "Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?" Bekle. İki iş yapıyor. Birincisi, karşı tarafın aklındakini ("bu kim, ne satacak") önce sen söylüyorsun, savunması düşüyor. İkincisi, konuşmanın en başında küçük bir evet alıyorsun; evet diyen kişi otuz saniye daha dinliyor. "Alakasızsa kapatalım" cümlesi kalkmaz, çünkü çıkışı sen açtığın için kimse çıkmak zorunda hissetmiyor. Kısa hali de olur: "Sizi tanımıyorum, kısa tutacağım." Acelesi olan, sesi gergin ya da dükkanda kalabalık olan işletmecide kısa hali kullanılır.
 3. Gözlem ya da kartın sorusu. Denetim kartında yaşanmış gözlem varsa o, günüyle: "[sakin] Salı akşamı yediye doğru sizi bir kere aradım, [kısa durakla] açılmadı. Onun için arıyorum." Gözlem gerçek olduğu için bu cümle en güçlü açılış; aramanın neden o işletmeye yapıldığını söylüyor ve konuşmayı rastgele aramadan çıkarıyor.
 
-   **Gözlem yoksa aynı şeyi iddia olarak değil soru olarak sorarsın.** "Sizi akşam aradım, kimse açmadı" cümlesi aramadıysan kurulmaz; yerine "Mesai dışında gelen aramalar sizde şu anda nasıl karşılanıyor?" sorulur. Aynı konuyu açar, hiçbir şey uydurmaz ve cevabı onun ağzından alır. Uydurulan gözlemin bedeli şu: adam "ne zaman aradınız" diye soruyor, sen sayıyı bilmiyorsun, konuşma orada bitiyor ve o aday bir daha açmıyor.
+   **Gözlem yoksa aynı şeyi iddia olarak değil soru olarak sorarsın.** "Sizi akşam aradım, kimse açmadı" cümlesi aramadıysan kurulmaz (Truva Atı'nın ilk sert kuralı); yerine "Mesai dışında gelen aramalar sizde şu anda nasıl karşılanıyor?" ya da "Ekibiniz müşteriyle ilgilenirken veya işletme kapalıyken gelen aramaları nasıl karşılıyorsunuz?" sorulur. Aynı konuyu açar, hiçbir şey uydurmaz ve cevabı onun ağzından alır. Uydurulan gözlemin bedeli şu: adam "ne zaman aradınız" diye soruyor, sen sayıyı bilmiyorsun, konuşma orada bitiyor ve o aday bir daha açmıyor.
 
    Sıralama da buradan çıkar: akşam testinde açmayan adaylar ertesi günün listesinde önde gelir, çünkü onlarda söylenecek gerçek bir cümle var. Testi yapılmamış adayda bu adım kartın sorusuna düşer.
 
    Gözlem yoksa uydurmazsın, kartın açılış sorusunu sorarsın; klima kartında bu "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?" gibi bir sorudur. Tek aramadan "sürekli kaçırıyorsunuz" çıkarılmaz.
-4. İşleyiş sorusu, tek soru: "Yoğunken telefona yetişemediğinizde müşteri ne yapıyor, tekrar mı arıyor, mesaj mı yazıyor?" Bekle, araya girme. Cevabı ne olursa olsun sonraki cümlenin malzemesi odur.
-5. Ne yaptığını tek cümlede söyle, kapsamın içinde kal: "Ben tam bunun için bir sistem kuruyorum: siz işteyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; bilgiyi alıp randevuya yazıyor, eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç işletmeyle başlıyorum." Sistemin adı varsa "adı [sistemin adı]" diye eklenir. "Telefon çalarsa aramayı o açıyor" kısmı senin sesli örneğin İş Beyni'nde "kuruldu" yazdıktan sonra söylenir; o güne kadar bu kısım cümleden çıkar.
+4. İşleyiş sorusu, tek soru: "Yoğunken telefona yetişemediğinizde müşteri ne yapıyor, tekrar mı arıyor, mesaj mı yazıyor?" Bekle, araya girme. Cevabı ne olursa olsun sonraki cümlenin malzemesi odur. Üçüncü adım zaten soruya düştüyse ve cevabı düzenini anlattıysa bu soruyu sormazsın, beşinci adıma geçersin; bir aramada sorgu olmaz.
+5. Çözümü onun cevabına bağla, tek cümle, kapsamın içinde: "Sabah geri arıyoruz" dediyse: "Ben tam o nokta için bir sistem kuruyorum: telefona yetişemediğinizde arayana kısa süre içinde mesaj gidiyor, ne için aradığını soruyor ve uygun saati takvime yazıyor. [Şehir]'de bu ay ilk üç işletmeyle başlıyorum." Sistemin tamamı sayılmaz; hangi parçanın söyleneceğini aşağıdaki işlev listesi ve onun cevabı belirler. Sistemin adı varsa "adı [sistemin adı]" diye eklenir. "Telefon çalarsa aramayı o açıyor" kısmı senin sesli örneğin İş Beyni'nde "kuruldu" yazdıktan sonra söylenir; o güne kadar telefon tarafı cevapsız arama sonrası mesajla anlatılır.
+5a. Çalışan örneği teklif et: "İsterseniz çalışan örneğini şimdi göndereyim, bir müşteri gibi deneyin; iki dakika sürer." [cevabı bekle] Evet derse bağlantıyı telefon açıkken, izin verdiği kanaldan gönderirsin (WhatsApp ya da e-posta; sabit hatla konuşuyorsan cep numarasını ya da e-postasını sorarsın): tanıtım sayfanın adresi, sonunda `/demo`. "Açın, bir müşteri gibi yazın." Dener, sen susarsın; bitince dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle kurulur." Demo sayfasında konuşma düğmesi açıksa "Düğmeye basın, bir müşteri gibi konuşun" dersin. Hayır derse zorlamazsın, sıradaki adıma geçersin. Hazır adaya, yani "tamam, görüşelim" diyene örnek teklif edilmez; örnek görüşmede gösterilir.
 5b. Karar vericiyi doğrula, tek soru. Beşinci adımdan sonra, saat teklif etmeden önce: "Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz, yoksa görüşmede olması gereken biri daha var mı?" [cevabı bekle] Tek soru, sorgu değil. "Ben veriyorum" derse geçersin. "Ortağım da var" ya da "eşim bakıyor" derse: "O zaman onu da alalım, ikinizin uygun olduğu bir saat bulalım." İki kişilik görüşme tek kişilikten uzun sürmüyor ama ikinci görüşmeyi ortadan kaldırıyor. Bu soru sorulmazsa görüşme yapılıyor, adam ikna oluyor ve "bir de ortağıma danışayım" diyor; o dosya çoğu zaman kapanmıyor.
 
-6. Randevu, belirli saat ve doğru süre: "Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin." Adaya yirmi dakika denir, "on beş" denmez; takvimde otuz dakika ayrılır ve görüşme yirmi beşi geçmez. Soru gelirse kısa cevap ve görüşmeye bağlama: "Tam bunu görüşmede gösteririm, yarın on bir mi, üç mü?" Randevu kırk sekiz saatten uzağa alınmaz, en iyisi kırk saat sonrası. Onay mesajı için e-posta ya da WhatsApp izni telefondayken alınır. Sonrası gorusmeye-getir'in işi.
+6. Randevu, belirli saat ve doğru süre: "Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin." Örneği denediyse davet ona bağlanır: "Sizin işletmenizde nasıl kurulacağını yirmi dakikada göstereyim. Yarın on bir mi, üç mü?" Adaya yirmi dakika denir, "on beş" denmez; takvimde otuz dakika ayrılır ve görüşme yirmi beşi geçmez. Soru gelirse kısa cevap ve görüşmeye bağlama: "Tam bunu görüşmede gösteririm, yarın on bir mi, üç mü?" Randevu kırk sekiz saatten uzağa alınmaz, en iyisi kırk saat sonrası. Onay mesajı için e-posta ya da WhatsApp izni telefondayken alınır. Sonrası gorusmeye-getir'in işi.
 
 **Metindeki işaretler.** Tırnak içindeki cümlelerin arasında köşeli parantezli işaretler var; onlar sesli okunmaz, nasıl söyleneceğini söyler. Altısı var: `[sakin]` acele etme, ilk cümleyi yavaş söyle. `[meraklı]` sesin sonu yukarı, gerçekten merak ediyormuş gibi. `[kısa durakla]` bir saniye sus, önemli cümleden önce ya da sonra. `[cevabı bekle]` sorunu sordun, artık susuyorsun; karşı taraf düşünürken sessizliği doldurmak konuşmanın en sık öldüğü yer. `[vurgu: şu kelime]` o kelimeyi biraz daha yüksek ve yavaş söyle; insan bir cümleden iki üç kelime hatırlıyor, hangisi olacağını sen seçiyorsun. `[yavaşla]` sayı, tarih ve saat söylerken. Niş kartlarındaki metinlerde bu işaretler yoktur, onlar düz yazılır; işaretler bu modülün kendi metinlerinde durur.
 
@@ -195,7 +221,11 @@ Klima ve kombi servisi, Bursa. Denetim kartındaki bulgu: salı akşamı yedide 
 > **O:** Nasıl yani, robot mu yazıyor?
 > **Sen:** Arka tarafta otomasyon ve yapay zekâ var, evet. Ama sizin göreceğiniz taraf basit: müşteri yazıyor, sistem ne istediğini alıyor ve randevuyu yazıyor. Fiyat vermiyor, karışık konuyu size bırakıyor. Telefonda anlatınca olduğundan karmaşık duyuluyor, gerçek akış üzerinde göstermem çok daha kolay.
 > **O:** Bir bilgi gönderin, bakayım.
-> **Sen:** Tabii, kısa bir özet göndereyim. Yalnız yazıyla biraz soyut kalıyor; yirmi dakikada gerçek akışı gösterirsem ne olduğu çok daha net anlaşılıyor. Yarın on bir mi daha uygun, üç mü?
+> **Sen:** Yazı yerine çalışan örneğini göndereyim, bir müşteri gibi yazıp deneyin; iki dakika sürer. Bu numara WhatsApp'ta mı?
+> **O:** Evet.
+> **Sen:** Gönderdim. Açın, "yarın bakım için gelebilir misiniz" yazın.
+> **O:** Hı, saat sordu. Yarın ikiyi verdi.
+> **Sen:** Bu bir örnek; sizinki sizin saatlerinizle ve sizin kurallarınızla kurulur. Sizin işte nasıl kurulacağını yirmi dakikada göstereyim. Yarın on bir mi daha uygun, üç mü?
 > **O:** Yarın sahadayım. Üç olsun.
 > **Sen:** Tamamdır. Görüşmede size sunum yapmayacağım; bir talebin size nereden geldiğine ve nerede beklediğine birlikte bakacağız. Düzeltilecek bir yer varsa gösteririm, yoksa onu da açıkça söylerim. Size WhatsApp ve e-posta göndereceğim, uygun mu?
 > **O:** WhatsApp olsun.
@@ -210,7 +240,7 @@ Klima ve kombi servisi, Bursa. Denetim kartındaki bulgu: salı akşamı yedide 
 
 Kapatır kapatmaz ilk mesaj gider (gorusmeye-getir, A bölümü). Görüşme sabahı tek satır, ertesi gün kırk üç dakika mesajı.
 
-Konuşmada dikkat edilecek dört şey: adam "bilgi gönderin" dediğinde isteği reddedilmedi ama saat aynı konuşmada alındı; "robot mu" sorusuna teknik anlatım yapılmadı; lira geçmedi; ve kapanış "ilginizi çekerse gelin" değil, "yarın üçte sizi arıyorum" oldu.
+Konuşmada dikkat edilecek beş şey: açılış gerçek bir aramadan kuruldu, uydurma yok; adam "bilgi gönderin" dediğinde bilgi yerine çalışan örnek gitti, o anda denedi ve saat aynı konuşmada alındı; "robot mu" sorusuna teknik anlatım yapılmadı; lira geçmedi; ve kapanış "ilginizi çekerse gelin" değil, "yarın üçte sizi arıyorum" oldu.
 
 **İkinci örnek: telefonu personel açıyor, sahibinin adı bilinmiyor.** Bu yol birincisinden daha sık çıkıyor. Diş kliniği, İzmir. Akşam testi yapılmış, açılmamış.
 
@@ -234,13 +264,15 @@ Bir saat sonra, ikinci arama:
 > **O:** Evet, Merve bakıyor.
 > **Sen:** [meraklı] Peki hiç mesaj bırakmadan kapatan hastayı görebiliyor musunuz?
 > **O:** Yok, onu göremeyiz tabii.
-> **Sen:** Benim kurduğum sistemin farkı tam orada. Mesaj bırakmasını beklemiyor; kapanan aramanın hemen ardından yazıyor, ne için aradığını soruyor ve uygunsa randevuya yazıyor. [kısa durakla] Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz?
+> **Sen:** Benim kurduğum sistemin farkı tam orada. Mesaj bırakmasını beklemiyor; kapanan aramanın hemen ardından yazıyor, ne için aradığını soruyor ve uygunsa randevuya yazıyor. İsterseniz çalışan örneğini şimdi göndereyim, bir hasta gibi yazıp deneyin.
+> **O:** Şimdi hastam var, bakamam.
+> **Sen:** Anladım. [kısa durakla] Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz?
 > **O:** Ben veririm.
 > **Sen:** Yirmi dakikada gerçek akış üzerinden göstereyim. Görüşmede size sunum yapmayacağım; bir hastanın kliniğe nereden ulaştığına ve nerede beklediğine birlikte bakacağız. Yarın on bir mi daha uygun, üçte mi?
 > **O:** Yarın on bir olsun.
 > **Sen:** Tamamdır. [yavaşla] Yarın on bir. Daveti göndereyim, e-posta adresinizi alabilir miyim?
 
-Burada iki şey görülüyor. Birincisi, personel engel değil kaynak oldu: sahibin adı, saati ve kendi adı alındı, üçü de ikinci aramanın açılışını kurdu. İkincisi, telesekreter itirazı tartışılmadı; "işe yaramaz" denmedi, neyi yakalayıp neyi kaçırdığı soruldu ve boşluğu adam kendi ağzıyla söyledi.
+Burada üç şey görülüyor. Birincisi, personel engel değil kaynak oldu: sahibin adı, saati ve kendi adı alındı, üçü de ikinci aramanın açılışını kurdu. İkincisi, telesekreter itirazı tartışılmadı; "işe yaramaz" denmedi, neyi yakalayıp neyi kaçırdığı soruldu ve boşluğu adam kendi ağzıyla söyledi, çözüm de tam o boşluğa bağlandı. Üçüncüsü, çalışan örnek teklif edildi ama o an bakamayacağını söyledi; ısrar edilmedi, saat alındı ve örnek görüşmeye kaldı.
 
 **Telefonu açan başkası** (sekreter, kalfa, personel). "Merhaba, ben [adın], [şehir]'den arıyorum. [Ad] Bey'le görüşebilir miyim?" [cevabı bekle]
 
@@ -250,21 +282,22 @@ Adı bilmiyorsan yardım isteyen açılışla başlarsın (birinci adım) ve "ba
 
 **İkinci arama** (dün açılmadıysa ya da saat verdiyse): geçmişi olduğu gibi söyle. "Merhaba [Ad] Bey, ben [adın], dün de aramıştım, açılmamıştı. Bir dakikanız var mı?" Dünkü arama artık gerçek bir gözlemdir, kanca kendiliğinden doğdu. Saat verdiyse: "Dün 'yarın on gibi ara' demiştiniz, uygun mu?"
 
-**E-posta.** Metin dört ile altı cümle. Bulgu birinci cümle, ne yaptığın ikinci, sistemin adı üçüncü, küçük istek dördüncü; son satırda çıkma yolu ("bir daha yazmamı istemiyorsanız 'yazma' demeniz yeter"); bu satır her e-postada durur. Denetim kartında iş ilanı varsa açılış ondan kurulur ve konu satırı "mesai sonrası" olur: "[İlan başlığı] için eleman aradığınızı gördüm. O telefonların mesai dışı gelen kısmı bugün nereye düşüyor? Ortalama bir [niş] işletmesinin haftada kaç aramayı kaçırdığını ve bunun kaç lira ettiğini tek satırda yazayım mı, otuz saniyede okunur." Sistemin adı ikinci mesaja kalır; ilk mesaj yalnız ilan ve tek soru. Uzunluk: telefon ekranında kaydırmadan okunacak kadar. Yasak: link, görsel, ek dosya, uzun çizgi, "umarım iyisinizdir", "hızlı bir soru" konu satırı, "ayda on beş müşteri ya da para iade" gibi teklif artı söz kalıbı.
+**E-posta.** İlk e-posta Truva Atı'nın ilk iki adımıdır, üç ile beş cümle: gözlem birinci cümle, mevcut düzenine dair tek soru ikinci, neden sorduğun üçüncü (ne yaptığın, tek kısa cümle; sistemin adı, fiyat ve kayıp rakamı yok); altında adın ve şehrin; son satırda çıkma yolu ("bir daha yazmamı istemiyorsanız 'yazma' demeniz yeter"); bu satır her e-postada durur. Konu satırı gözlemden gelir: "Akşam gelen randevu talepleri" gibi. Denetim kartında iş ilanı varsa açılış ondan kurulur ve konu satırı "mesai sonrası" olur: "[İlan başlığı] için eleman aradığınızı gördüm. O telefonların mesai dışı gelen kısmı bugün nereye düşüyor?" Sistemin adı cevaptan sonraya kalır. Uzunluk: telefon ekranında kaydırmadan okunacak kadar. Yasak: link, görsel, ek dosya, uzun çizgi, "umarım iyisinizdir", "hızlı bir soru" konu satırı, yapmadığın bir aramayı ya da testi anlatmak, kayıp rakamı, "ayda on beş müşteri ya da para iade" gibi teklif artı söz kalıbı.
 
-Üç yapı var. Varsayılan olan "Önce Değer": bulgu, lira karşılığı, ne yaptığın, küçük istek. Örnek:
-"Merhaba Ahmet Bey, ben Mehmet. Salı akşamı 19.10'da aradım, açılmadı; sitenizdeki formu da doldurdum, dönüş gelmedi. Bu ikisini randevuya çeviren bir sistem kuruyorum: siz işteyken yazan müşteriye dakikalar içinde cevap veriyor, bilgiyi alıp randevu yazıyor; geçen sezonun bakım listesine de sezon başında hatırlatma gönderiyor. Bursa'da bu ay ilk üç işletmeyle başlıyorum. Yirmi dakika konuşmaya değer mi, yarın on bir uyar mı? Mehmet Kaya, Bursa. Bir daha yazmamı istemiyorsanız 'yazma' demeniz yeter."
+Örnek, akşam testi ve form testi yapılmış adayda:
+"Merhaba Ahmet Bey, salı akşamı 19.10'da işletmenizi aradım, ulaşamadım; sitenizdeki formu da doldurdum, dönüş gelmedi. Bu saatlerde gelen taleplere şu an nasıl dönüş yapıyorsunuz? Soruyorum çünkü bu ay Bursa'da ilk üç klima servisiyle tam bunu çözmek için çalışıyorum. Mehmet Kaya, Bursa. Bir daha yazmamı istemiyorsanız 'yazma' demeniz yeter."
 
-Lira karşılığı e-postaya kartta rakam varsa girer; klima kartında haftalık kaçan çağrı sayısı yok, o zaman satır yoktur ve mesaj rakamsız gider. Gönderen ile alıcı adları örnekteki gibi ayrı tutulur; öğrencinin adı imzada, adayınki hitapta.
+Örnek, test yapılmamış adayda; gözlem kartın başka bir satırından gelir, arama anlatılmaz:
+"Merhaba Ahmet Bey, reklamınızda randevu için telefon numaranıza yönlendirdiğinizi gördüm. Mesai dışında gelen randevu taleplerine nasıl dönüş yapıyorsunuz? Soruyorum çünkü bu ay Bursa'da ilk üç işletmeyle tam bunu çözmek için çalışıyorum. Mehmet Kaya, Bursa. Bir daha yazmamı istemiyorsanız 'yazma' demeniz yeter."
 
-İkincisi merak kalıbı, lira karşılığı yerine soru koyar: "Mesai dışı gelen aramalar ve mesajlar sizde şu an nereye düşüyor? Soruyorum çünkü bu ay [şehir]'de ilk üç [niş] işletmesiyle bunu çözmek için çalışıyorum." "Konuştuğum çoğu işletme" gibi bir cümle, henüz konuşulmuş işletme yoksa yazılmaz. Üçüncüsü doğrudan kalıp; sadece en çok istenen yüz işletmeye ve elinde kanıt varken.
+Lira karşılığı ilk e-postaya girmez; kayıp görüşmede işletmecinin kendi sayısıyla birlikte hesaplanır. Gönderen ile alıcı adları örnekteki gibi ayrı tutulur; öğrencinin adı imzada, adayınki hitapta. "Konuştuğum çoğu işletme" gibi bir cümle, henüz konuşulmuş işletme yoksa yazılmaz. Kanıt hikâyen çıktıysa (gerçek müşteri, adı ve paylaşma izniyle) üçüncü cümlenin yerine o gelir; en çok istenen yüz işletmede ve elinde kanıt varken kullanılan tek farklı hal budur.
 
 Kurallar:
 - Konu satırı gövdeden önemli. Beş konu kalıbı var: soru, ortak tanıdık, alışılmışı bozan cümle, denetimden çıkan belirli bir bulgu, doğrudan fayda.
 - Kısa paragraf, iki satırı geçmeyen cümle.
 - Yerellik şart: şehrin adı hem imzada hem metinde, cevap oranını belirgin artırıyor.
 - Kopyala yapıştır şablon kısa süre çalışır, sonra ölür. Her mesajı denetim kartı değiştirir.
-- Kartta rakam yoksa lira karşılığı cümlesi yazılmaz, mesaj üç cümleye iner. Uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
+- İlk e-postada kayıp rakamı ve sektör rakamı yok; gün ve saat yalnız gerçek testten gelir. Takipte rakam yalnız iki yerden girer: kartın sızıntı kanıtındaki sektör rakamı ve senin kendi sayımın (kanıt cümlesi). Uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
 **Instagram.** Üç parça: önce profil, sonra etkileşim, sonra mesaj.
 
@@ -276,42 +309,42 @@ Bu yüzden kural ikiye ayrıldı: **en çok istenen yüz işletmede yorum zorunl
 
 Yorum mesajın yerine geçmez; tek işi adını tanıdık hale getirmek.
 
-*Mesaj.* Kısa özel mesaj: bulgu soruya çevrilir, arkasına tek soru. Uzunluk en fazla üç satır. Lira karşılığı hiç geçmez; rakam Instagram'da ağır duruyor ve mesaj satış gibi görünüyor. Yasak: rakam, link, sistemin adı, satış cümlesi, profili kurulmamış hesaptan mesaj.
+*Mesaj.* Truva Atı'nın ilk iki adımı, en fazla üç satır: gözlem, arkasından mevcut düzenine dair tek soru; gerekirse neden sorduğun, tek kısa cümle. Lira karşılığı hiç geçmez; rakam Instagram'da ağır duruyor ve mesaj satış gibi görünüyor. Yasak: rakam, link, sistemin adı, satış cümlesi, yapmadığın aramayı anlatmak, profili kurulmamış hesaptan mesaj.
 
-**İlk beş kelime kuralı.** Instagram mesaj kutusunda adam mesajın tamamını görmüyor, ilk satırının başını görüyor. Kararı orada veriyor: açar ya da kaydırır. Bu yüzden mesajın ilk beş kelimesi işin konusunu taşır. "Merhaba, nasılsınız", "Umarım iyisinizdir", "Rahatsız ediyorum ama" gibi açılışlar o beş kelimeyi yakıyor ve mesaj açılmadan ölüyor. Adayın adıyla başlamak da aynı şey; adı kutuda zaten yazıyor.
+**İlk beş kelime kuralı.** Instagram mesaj kutusunda adam mesajın tamamını görmüyor, ilk satırının başını görüyor. Kararı orada veriyor: açar ya da kaydırır. Bu yüzden mesajın ilk beş kelimesi işin konusunu, yani gözlemi taşır. "Merhaba, nasılsınız", "Umarım iyisinizdir", "Rahatsız ediyorum ama" gibi açılışlar o beş kelimeyi yakıyor ve mesaj açılmadan ölüyor. Adayın adıyla başlamak da aynı şey; adı kutuda zaten yazıyor. Tek kelimelik "Merhaba," olur, arkasından hemen gözlem gelir.
 
 Yanlış: "Merhaba Ahmet Bey, nasılsınız? Sizinle bir konuda konuşmak istiyordum..."
-Doğru: "Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor musunuz? Sorumun sebebi..."
+Doğru: "Merhaba, profilinizde randevu için telefon numaranıza yönlendirdiğinizi gördüm..."
 
-Örnek mesajlar, karttan çıkar:
+Örnek mesajlar, gözlemi denetim kartından, soruyu karttan:
 
-"Kaplama yaptırdığınız müşterileri bakım zamanı geri arıyor musunuz? Geçen yılın listesi çoğu yerde duruyor, kimse aramıyor. Sizde nasıl işliyor?"
+"Merhaba, profilinizde randevu için telefon numaranıza yönlendirdiğinizi gördüm. Mesai dışında gelen randevu taleplerine nasıl dönüş yapıyorsunuz?"
 
-"Mesai dışında gelen randevu mesajlarına ertesi gün mü dönülüyor? Bunu soruyorum çünkü o mesajların gittiği yeri kuruyorum. Bakmak ister misiniz?"
+"Seramik kaplama işlerinizi düzenli paylaşıyorsunuz. Kaplama yaptırdığınız müşterileri bakım zamanı siz mi arıyorsunuz, onlar mı sizi?"
 
-**Kapanış sorusu küçük olur.** Son cümle randevu istemez, saat istemez, telefon numarası istemez. Cevabı tek kelime olan bir soru olur: "Bakmak ister misiniz?", "Göstereyim mi?", "Sizde nasıl işliyor?" Sebebi basit: ilk mesajda büyük şey isteyen kişi cevap almıyor, küçük şey isteyen alıyor. Büyük istek konuşma başladıktan sonra geliyor.
+**Kapanış sorusu küçük olur.** İlk mesajın son cümlesi Truva Atı'nın tek sorusudur; randevu istemez, saat istemez, telefon numarası istemez, bağlantı taşımaz. Cevabı bir iki cümle olan bir soru olur: "Sizde nasıl işliyor?", "Bu saatlerde kim dönüyor?" Sebebi basit: ilk mesajda büyük şey isteyen kişi cevap almıyor, küçük şey isteyen alıyor. Büyük istek konuşma başladıktan sonra geliyor; cevaptan sonraki küçük istek "Çalışan örneğini göndereyim mi?" olur.
 
-**Belirsiz olma, ama satma.** İlk mesajda ne yaptığını tek kısa cümleyle söylersin: "Ben [hedef işletme] için [somut iş] yapıyorum." Hiç söylemeyip sonra teklife dönmek en çok cevap kaybettiren yol; adam iki mesaj boyunca senin müşteri olduğunu sanıyor, üçüncüde satış gelince kayboluyor ve haklı olarak kızıyor. Müşteri taklidiyle ("fiyatınız ne kadar") açılış yasaktır. Söylenen tek cümle ne yaptığındır; fiyat, kademe adı, sistemin adı ve link girmez.
+**Belirsiz olma, ama satma.** Truva Atı'daki "neden sorduğun" cümlesi budur: ne yaptığını tek kısa cümleyle söylersin, "Soruyorum çünkü [şehir]'de [hedef işletme] için tam bunu kuruyorum." Hiç söylemeyip sonra teklife dönmek en çok cevap kaybettiren yol; adam iki mesaj boyunca senin müşteri olduğunu sanıyor, üçüncüde satış gelince kayboluyor ve haklı olarak kızıyor. Müşteri taklidiyle ("fiyatınız ne kadar") açılış yasaktır. Söylenen tek cümle ne yaptığındır; fiyat, kademe adı, sistemin adı ve link girmez. Üç satıra sığmıyorsa bu cümle ilk cevaba kalır.
 
-**Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistemin tamamı anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Cevap gelince üç adımlı cevap konuşmasına geçilir ve oradan görüşmeye bağlanır; asıl iş görüşmede, adam demoyu kendi telefonunda denediğinde oluyor. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor.
+**Hedef satış değil, görüşme.** Instagram'da satış yapılmaz, fiyat yazılmaz, sistemin tamamı anlatılmaz. Mesajın tek işi konuşmayı başlatmak. Yazışmada anlatılan sistem ikna etmiyor, denenen sistem ikna ediyor. O yüzden cevap gelince anlatmazsın: üç adımlı cevap konuşmasıyla dinler, çözümü onun söylediği yere bağlar, çalışan örneği teklif edersin; görüşme daveti örnekten ve gerekirse demo videosundan sonra gelir.
 
-**Hacim ve zaman.** Instagram ana kanalsa günlük sayı yolun kendi sayısıdır (tam zamanlıda yetmiş, işin yanında yirmi sekiz), ama hesabın yaşına göre konan tavanı geçmez; değilse yirmi beşin içinden payına düşen, yine tavanın altında. Instagram e-postanın üstünde duruyor, çünkü mesaj doğrudan sahibinin telefonuna düşüyor; gerçek çekimde de kırk kayıttan on dokuzunda Instagram hesabı vardı, on sekizinde e-posta.
+**Hacim ve zaman.** Instagram ana kanalsa günlük sayı yolun kendi sayısıdır (tam zamanlıda elli, işin yanında yirmi), ama hesabın yaşına göre konan tavanı geçmez; değilse kırkın içinden payına düşen yarısı (tam zamanlıda yirmi, işin yanında sekiz), yine tavanın altında. Instagram e-postanın üstünde duruyor, çünkü mesaj doğrudan sahibinin telefonuna düşüyor; gerçek çekimde de kırk kayıttan on dokuzunda Instagram hesabı vardı, on sekizinde e-posta.
 
-Tavan, hesabın yaşına göre. Profili kurulmamış hesapta tavan sıfır, mesaj yok. Kurulmuş ama yeni hesapta (bir yıldan yeni ya da yüz takipçiden az) rampa var: ilk hafta günde beş, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan itibaren kırk; kırk bu hesabın tavanıdır. Bir yıldan eski ve yüz takipçiyi geçmiş hesapta tavan baştan yolun kendi sayısıdır. Rampanın sebebi bir limiti aşmak değil, hesabın gerçekten kullanılıyor olması: yeni açılmış, hiç kullanılmamış bir hesaptan gelen mesaj karşı tarafa güven vermiyor, hesap da yavaş yavaş alışıyor. Hesabı hiç yoksa ilk gün açılır; fotoğraf, biyografi ve dokuz paylaşım konunca rampa başlar. Instagram kanalı kapanmaz, yavaş açılır; tavanın altında kalan pay e-postaya ve telefona geçer.
+Tavan, hesabın yaşına göre. Profili kurulmamış hesapta tavan sıfır, mesaj yok. Kurulmuş ama yeni hesapta (bir yıldan yeni ya da yüz takipçiden az) rampa var: ilk hafta günde beş, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan itibaren kırk; kırk bu hesabın tavanıdır. Bir yıldan eski ve yüz takipçiyi geçmiş hesapta tavan baştan yolun kendi sayısıdır. Rampanın sebebi bir limiti aşmak değil, hesabın gerçekten kullanılıyor olması: yeni açılmış, hiç kullanılmamış bir hesaptan gelen mesaj karşı tarafa güven vermiyor, hesap da yavaş yavaş alışıyor. Hesabı hiç yoksa ilk gün açılır; fotoğraf, biyografi ve dokuz paylaşım konunca rampa başlar. Instagram kanalı kapanmaz, yavaş açılır; tavanın altında kalan pay önce e-postaya geçer, e-postanın o günkü sınırı da doluysa kalanı aramaya.
 
 Sayı güne yayılır: bir saatte beşten fazlası arka arkaya gitmez.
 
-Durma işareti sayıdan değil davranıştan okunur. Üçünden biri olursa o hesaptan bir hafta soğuk mesaj gitmez: mesajlar istek kutusunda kalmaya başladı, Instagram gönderirken ekranda bir uyarı gösterdi, cevap oranı bir hafta içinde yarıya düştü. İkinci hesap açılmaz; yeni hesap zaten rampanın en başında. Öğrenci yalnız sonucu duyar: "Bu hafta Instagram'dan yeni mesaj yok, payını e-postaya ve telefona geçirdim."
+Durma işareti sayıdan değil davranıştan okunur. Üçünden biri olursa o hesaptan bir hafta soğuk mesaj gitmez: mesajlar istek kutusunda kalmaya başladı, Instagram gönderirken ekranda bir uyarı gösterdi, cevap oranı bir hafta içinde yarıya düştü. İkinci hesap açılmaz; yeni hesap zaten rampanın en başında. Öğrenci yalnız sonucu duyar: "Bu hafta Instagram'dan yeni mesaj yok, payını e-postaya geçirdim; e-postaya sığmayanı aramaya."
 
-**Takip, iki gün sonra, tek.** Önce sesli mesaj: "Merhaba, geçen gün yazmıştım, görmüş müydünüz diye sordum, görmediyseniz sorun değil." Sesli mesaj tutmazsa ya da hesap sesli mesaja kapalıysa tek yazılı takip gider ve o takip yeni bir şey taşır: senin kendi ölçümün ya da denetim kartındaki ikinci bulgu. "Geçen hafta [şehir]de otuz [niş] aradım, yirmi ikisi açmadı; sizi de aradım, o saatte açılmadı. Bunu soruyorum çünkü..." Taşımayacak bir şey yoksa takip atılmaz.
+**Takip, iki gün sonra, tek.** Önce sesli mesaj: "Merhaba, geçen gün yazmıştım, görmüş müydünüz diye sordum, görmediyseniz sorun değil." Sesli mesaj tutmazsa ya da hesap sesli mesaja kapalıysa tek yazılı takip gider ve o takip yeni bir şey taşır: senin kendi ölçümün ya da denetim kartındaki ikinci bulgu. "Geçen hafta [şehir]de otuz [niş] aradım, yirmi ikisi açmadı; sizi de aradım, o saatte açılmadı. Bunu soruyorum çünkü..." "Sizi de aradım" parçası yalnız o adayı akşam testinde gerçekten aradıysan yazılır. Taşımayacak bir şey yoksa takip atılmaz.
 
 Takipte olmayacaklar: "Sadece kontrol etmek istedim", "yukarıdaki mesajı görebildiniz mi", "hâlâ ilgileniyor musunuz". Bunlar yeni bir şey taşımıyor ve karşı tarafa cevap vermemesini hatırlatıyor. Yapmadığın işin sonucu da anılmaz: başka bir işletmede aldığın sonuç yoksa o cümle yazılmaz, uydurulmaz.
 
 Bir takip cevapsız kalırsa Instagram satırı "kapandı" olur ve aday "sonra" aşamasına geçer. İkinci takip yok.
 
-**Video.** Metni burada yazılmaz, video-mesaj-cek yazar ve çektirir. Burada üç şey yazılı.
+**Video.** Metni burada yazılmaz, video-mesaj-cek yazar, adayın satırına kaydeder ve çektirir. Burada üç şey yazılı.
 
-Kime gider, tek rol: video ikinci dokunuştur. İlk yazılı temasın üçüncü gününde hâlâ cevap vermemiş, denetim kartı hazır ve sahibinin adı bilinen adaya gider. Sıra önce en çok istenen yüz işletme, sonra listenin kalanında sızıntı puanı dörtten yüksek adaylar. İlk yazılı mesaj adını bir kere gösterir; üçüncü gün gelen bir dakikalık video, kendi ekranı açıkken, yazılı mesajın yapamayacağı şeyi yapar.
+Kime gider, tek rol: video ikinci dokunuştur. İlk yazılı temasın üçüncü gününde hâlâ cevap vermemiş, denetim kartı hazır ve sahibinin adı bilinen adaya gider. Sıra önce en çok istenen yüz işletme, sonra listenin kalanında sızıntı puanı dört ve üstü adaylar. Günde tam zamanlıda on, işin yanında dört; ilk hafta beş ve iki. İlk yazılı mesaj adını bir kere gösterir; üçüncü gün gelen bir dakikalık video, kendi ekranı açıkken, yazılı mesajın yapamayacağı şeyi yapar.
 
 Ne zaman gider: ilk yazılı temasın üçüncü günü, o günün yazılı takibinin yerine. E-postadan doğrudan gider, hareketli önizlemeyle. Instagram'dan küçük bir evetten sonra gider: geri takip, yoruma cevap ya da tek satırlık izin mesajına cevap. İkisinden de gidiyorsa bu tek harekettir. Video gidince yazılı takip zinciri kapanır, yerine video zinciri gelir.
 
@@ -319,19 +352,21 @@ Videodan sonra hangi kanal gelir (günler videonun gittiği günden sayılır): 
 
 Loom'un izlendi bildirimi sırayı değiştirir, tek kuralla: bildirim saha bloğundayken gelirse o adayı aynı blokta ilk arama yaparsın; saha bloğunun dışında gelirse ertesi günün ilk araması odur. Açılış da değişir: "Geçen gün gönderdiğim videoyu açmışsınız." Video hiç izlenmediyse dördüncü günün araması yine yapılır, ama açılış videoya hiç değinmez; açılmamış videoyu hatırlatmak karşı tarafı borçlu duruma sokuyor ve kapatıyor.
 
-Videoda gösterilen şey bulgunun kendisidir. Aynı adaya hem yazılı mesaj hem video gittiyse video, yazılı mesajın söylemediği ikinci bulguyu gösterir.
+Videoda gösterilen şey gerçek gözlemin kendisidir ve video da Truva Atı sırasıyla gider: gözlem, tek soru, o noktaya bağlanan çözüm, çalışan örnek teklifi. Aynı adaya hem yazılı mesaj hem video gittiyse video, yazılı mesajın söylemediği ikinci bulguyu gösterir.
+
+İkinci bir video türü var: izinden sonraki demo videosu (Truva Atı'nın altıncı adımı). Cevap veren, mevcut düzenini anlatan ve çalışan örneği görmek isteyen adaya gider: bir iki dakikada onun sayfası, konuşulan ihtiyaç, demoda test randevusu ve tek saatli görüşme daveti. Soğuk video değildir, konuşmanın devamıdır; cevabın geldiği kanaldan gider, günün video sayısının içindedir ve o günün ilk videosudur. Metnini ve çekimini video-mesaj-cek yönetir.
 
 ### Aramanın sonucu nereye yazılır
 
 Her aramadan sonra sonucu saha ekranındaki düğmeyle işaretlersin, kaydı araç yazar. Yeni durum adı yok; hepsi mevcut sütunlara oturur. Sekiz ayrım var:
 
-- **Cevap vermedi.** Saha modunda "Açmadı". Telefon satırı "yapıldı", sıradaki tarih ertesi gün.
+- **Cevap vermedi.** Bugünün listesinde "Açmadı". Telefon satırı "yapıldı", sıradaki tarih ertesi gün.
 - **Yanlış kişi.** Telefon "yapıldı", sıradaki hareket "doğru kişiye ulaş", nota kimin çıktığı yazılır. Aşama değişmez.
 - **Karar vericiye yönlendirildi.** Telefon "yapıldı", sahibi sütununa öğrenilen ad, sıradaki tarih verilen saat, nota gatekeeper'ın adı. Bu aday sırada öne gelir, çünkü artık adı ve saati var.
-- **Tekrar aranacak.** Saha modunda "Sonra ara". Verdiği tarih yazılır; tarih vermediyse yedi gün.
-- **İlgilenmiyor.** Saha modunda "İstemedi". Aşama "sonra", altı ay sonra yeniden taranır; o güne kadar hiçbir kanaldan ulaşılmaz. "Şu an dolu" deyip bir kez daha aranmaya izin verdiyse "İstemedi" değil "Sonra ara" basılır, tarihi nişin sezon başı ya da altı ay sonrası, hangisi önceyse.
+- **Tekrar aranacak.** Bugünün listesinde "Sonra ara". Verdiği tarih yazılır; tarih vermediyse yedi gün.
+- **İlgilenmiyor.** Bugünün listesinde "İstemedi". Aşama "sonra", altı ay sonra yeniden taranır; o güne kadar hiçbir kanaldan ulaşılmaz. "Şu an dolu" deyip bir kez daha aranmaya izin verdiyse "İstemedi" değil "Sonra ara" basılır, tarihi nişin sezon başı ya da altı ay sonrası, hangisi önceyse.
 - **Uygun değil.** Konuştunuz ve işletme gerçekten sana uymuyor (hacim yok, sektör dışı, kapanmış). `sil --sebep` ile listeden çıkar; satır durur, sayfada görünmez.
-- **Görüşme alındı.** Saha modunda "Randevu", saatiyle. Aşama "randevu", gorusmeye-getir devralır.
+- **Görüşme alındı.** Bugünün listesinde "Randevu", saatiyle. Aşama "randevu", gorusmeye-getir devralır.
 - **İletişim istemiyor.** "Bir daha aramayın", "beni listenizden çıkarın" gibi açık bir talep. Bu "istemedi"den ayrıdır ve daha serttir: `sil --sebep "iletişim istemiyor"` ile satır listeden çıkar. Sebebi şu: "istemedi" aşamasındaki aday altı ay sonra yeniden taranıyor, iletişim istemeyen aday hiçbir zaman taranmamalı. Hiçbir kanaldan bir daha yazılmaz, aranmaz; e-posta ve Instagram satırları da kapanır. Bu talebi tartışmazsın, sebebini sormazsın: "Anladım, kaydınızı çıkarıyorum, iyi çalışmalar."
 
 Bu sekizinin dışında bir sonuç yazma ihtiyacı duyuyorsan kaydedilecek şey sonuç değil nottur; nota yazılır.
@@ -364,7 +399,7 @@ Akşam sonuçlar işlenince kimin hangi kanalda durduğunu tek listede görüyor
 
 ### Karar tablosu: hangi durumda hangi kanal
 
-Sırayla bak, ilk uyan satır senin satırın.
+Sırayla bak, ilk uyan satır senin satırın. Tablonun önünde günün payı durur: sabah plan kanalların sayısını verir (ana kanaldan elli, diğer iki kanaldan kırk, on video). Yazılı pay takiplerle ve telefondan düşen adaylarla dolmuyorsa, e-postası ya da Instagram'ı olan denetimi hazır adaylar 2. ve 3. satırın yerine yazılı kanaldan başlar; arama payı dolmuyorsa tersi. Bu dengeyi FounderOS kurar.
 
 0. Aday en çok istenen yüz işletmeden ve Instagram hesabı var → **ısınma**: takip et, son gönderisine tek samimi yorum. Bu bir temas sayılmaz.
 1. Aday en çok istenen yüz işletmeden, denetim kartı hazır, sahibinin adı var → **ilk temas yazılı**, aynı gün: e-posta varsa e-posta, yoksa Instagram. İlk yazılı temasın üçüncü günü cevap yoksa **video mesaj, ikinci dokunuş olarak**, o günün yazılı takibinin yerine, e-postadan hareketli önizlemeyle. Instagram'da o gün tek satırlık izin mesajı gider ("size özel kısa bir video çektim, göndermemi ister misiniz"); geri takip, yoruma cevap ya da bu mesaja cevap gelince video Instagram'dan da gider. Gelmezse Instagram'dan gitmez. Kanıt hikâyen yoksa videonun kanıt parçası boş kalır, video on saniye kısalır; senaryo değişmez. Video gittiği gün aynı adaya yazılı mesaj gitmez; video linkinin gittiği kanal e-posta varsa e-posta, yoksa Instagram'dır.
@@ -376,7 +411,7 @@ Sırayla bak, ilk uyan satır senin satırın.
 7. Telefon açıldı, "mail atın" dendi → e-posta, aynı gün ilk saat.
 8. E-posta iki takipte cevapsız → e-posta "kapandı", Instagram, ertesi gün.
 9. E-posta adresi yok ya da mesaj geri döndü → e-posta "kapandı", Instagram, aynı gün.
-10. Aday yüz işletmede değil, sızıntı puanı dörtten yüksek, sahibinin adı var, ilk yazılı temasın üçüncü günü ve hâlâ cevap yok → video mesaj, o gün. Video her adayda aynı rolde: ikinci dokunuş; sırada yüz işletme önce gelir.
+10. Aday yüz işletmede değil, sızıntı puanı dört ve üstü, sahibinin adı var, ilk yazılı temasın üçüncü günü ve hâlâ cevap yok → video mesaj, o gün. Video her adayda aynı rolde: ikinci dokunuş; sırada yüz işletme önce gelir.
 11. Video gitti, iki gün cevap yok → Instagram'dan sesli mesaj takibi.
 12. Video gitti, dört gün cevap yok → telefon. İzlendi bildirimi geldiyse arama dördüncü günü beklemez: saha bloğundaysan aynı blokta ilk arama, değilse ertesi günün ilk araması. Loom "izlendi" dediyse arama açılışı değişir: "Geçen gün gönderdiğim videoyu açmışsınız, bir dakikanızı alacağım."
 12b. Video gitti, beş gün cevap yok → tek satır, yeni bir soru taşıyarak. Boş hatırlatma gitmez.
@@ -384,6 +419,7 @@ Sırayla bak, ilk uyan satır senin satırın.
 14. Instagram mesajı bir takiple cevapsız → Instagram "kapandı", aday "sonra" aşamasına.
 15. Adayın Instagram hesabı yok → Instagram "kapandı". Senin profilin yarım ya da hesabın rampada ve o günün payı dolmuş → satır kapanmaz, "yapılmadı"da bekler; profil bitince ya da ertesi gün açılır.
 16. Herhangi bir kanaldan cevap geldi → on dakika içinde aynı kanaldan cevap konuşması (cevap gelen kutusu kontrolünde bulunduysa o kontrolün içinde). Diğer kanallar durur.
+16b. Cevap veren aday çalışan örneği görmek istedi → aynı gün, aynı kanaldan demo bağlantısı. Açmadıysa, "nasıl çalışıyor" diye sorduysa ya da kararı başkasıyla verecekse izinden sonraki demo videosu çekilir: o günün video bloğunda ilk sırada, blok geçtiyse ertesi günün ilk videosu. İkisinin sonunda tek somut saatle görüşme daveti; cevap yoksa iki iş günü sonra tek ilgili kontrol.
 17. Aday "arama, yazma" dedi → dört satır da "kapandı", aday listeden çıkar.
 
 Kapanan adayın geri dönüş süresi sebebine göre değişir ve tek tablodan okunur. Sözlük, CRM zinciri ve aday aracı aynı tabloyu kullanır.
@@ -408,17 +444,17 @@ Havuz sürekli halin en ucuz kaynağıdır: kırk beş günlük süreyle birinci
 
 Bu sorunun cevabı yazılı olmazsa öğrenci ikinci ayın başında boşluğa düşüyor. Sürekli hal şöyle, her ay aynı:
 
-Aşağıdaki tablo tam zamanlı içindir. İşin yanında çalışanda temas 800'e, video 40'a, en çok istenen liste kırk işletmeye iner; kayıt sayısı aynı kalır, çünkü liste daha yavaş tükeniyor.
+Aşağıdaki tablo tam zamanlı içindir. İşin yanında çalışanda temas 800'e, video 80'e, en çok istenen liste kırk işletmeye iner; kayıt sayısı aynı kalır, çünkü liste daha yavaş tükeniyor.
 
 | | Her ay | Nereden |
 |---|---|---|
 | Yeni kayıt | Ana kanal telefonsa 1.400 (üç ilçe), yazıysa 500 (bir ilçe) | aday-listesi-cikar, ayın ilk günü |
 | Yeni en çok istenen yüz | 100, o yeni listeden | aday-listesi-cikar seçer, hızlı denetim aday-denetimi-cikar |
 | Temas | 2.000, yirmi iş günü | 100 temas × 20 gün |
-| Video mesaj | 100, yüz işletmenin hepsine | günde beş |
+| Video mesaj | yaklaşık 200: yüz işletmenin cevapsızları ve sızıntı puanı dört ve üstü adaylar | günde on |
 | Geri gelen havuz | birinci ayın cevapsızları, kırk beş günlük süreyle | zinciri bitmiş adaylar |
 
-En çok istenen yüz işletme tek seferlik bir açılış hamlesi değil, **her ay yenilenen bir dilim**. Ay sonunda o yüz bitiyor, yeni ilçenin listesinden yeni yüz seçiliyor ve video sırası kaldığı yerden devam ediyor. Video hiç durmuyor.
+En çok istenen yüz işletme tek seferlik bir açılış hamlesi değil, **her ay yenilenen bir dilim**. Ay sonunda o yüz bitiyor, yeni ilçenin listesinden yeni yüz seçiliyor ve video sırası kaldığı yerden devam ediyor. Günün on videosunun yüz işletmeye düşmeyen kısmı listenin kalanından dolar. Video hiç durmuyor.
 
 Liste boyu ana kanala göre değişiyor ve sebebi basit. Yazılı kanalda bir adaya dört dokunuş yapılıyor (ilk mesaj artı üç takip), yani beş yüz aday iki bin temas ediyor ve bir ay gidiyor. Telefonda ise bir adaya ortalama bir buçuk dokunuş düşüyor, çünkü açmayan adayın satırı üçüncü denemede kapanıyor; o yüzden telefon ana kanalken ayda üç ilçe çekiliyor. Aylık tavan iki şeyle sınırlı ve ikisi birlikte geçerli: ayda en fazla 3.500 ham kayıt ve en fazla 12 çekim. İlçe başına sekiz yüz ham kayıt istendiği için telefon yolundaki üç ilçe 2.400 tutuyor ve ay ortasında stok bitince bir ilçe daha açılacak yer kalıyor. Tavan eskiden 2.500'dü ve tam da en çok temas yapan öğrencide ay ortasındaki tazeleme sığmıyordu.
 
@@ -428,15 +464,15 @@ Ayın dört yeni işi şunlar ve hepsi aynı güne konur, ayın ilk iş günü: 
 
 Takip, cevap gelmeyen adaya sonraki günlerde gönderilen mesajdır ve temas sayısına girer.
 - İlk temas birinci gün.
-- Üçüncü gün kısa hatırlatma, tek cümle: "Merhaba [Ad] Bey, salı yazmıştım, yoğunken telefona yetişemediğiniz saatler konusu. Yarın on birde yirmi dakika uyar mı, uymazsa siz bir saat söyleyin."
+- Üçüncü gün kısa hatırlatma ve Truva Atı'nın küçük isteği: "Merhaba [Ad] Bey, salı yazmıştım, yoğunken telefona yetişemediğiniz saatler konusu. İsterseniz çalışan bir örneğini göndereyim, bir müşteri gibi yazıp deneyin." Bağlantı bu mesajda da gitmez; "gönderin" gelince gider.
 - Yedinci gün tek soru, satış yok: "[Ad] Bey, geçen hafta iki kez ulaşmaya çalıştım. Tek şey sorayım: mesai dışı gelen mesajlar şu an nereye düşüyor? Cevabınıza göre ya bir şey öneririm ya da sizi rahat bırakırım." Kartın sızıntı kanıtından bir rakam varsa tek cümle eklenir; yoksa eklenmez.
 - On dördüncü gün ayrılık: "Tamamen anlıyorum, zamanlama her zaman uymuyor. Birkaç ay sonra tekrar sorsam sakınca var mı?" Cevap gelmezse aday "sonra" aşamasına geçer.
 
 Zincirin içinde kanal değişir, karar tablosuna göre: e-postayla başlayan aday üçüncü gün aranır (ad bilinmiyorsa yardım isteyen açılışla), telefonla ulaşılamayan aday yedinci gün e-posta alır. Farklı adaylar farklı kanala cevap veriyor.
 
-Video giden adayda sıra video zinciriyle yürür: ilk yazılı temas, üçüncü gün video, videodan iki gün sonra sesli mesaj, dört gün sonra arama, beş gün sonra yeni soru taşıyan tek satır, yedi gün sonra ayrılık. Takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. Videolar günde beş adayla yayılır, çünkü beş video çekmek kırk dakika alıyor; bu yüzden yüz işletmenin ilk yazılı temasları da günde beş adaya yayılır ve yüz işletme dört haftada biter.
+Video giden adayda sıra video zinciriyle yürür: ilk yazılı temas, üçüncü gün video, videodan iki gün sonra sesli mesaj, dört gün sonra arama, beş gün sonra yeni soru taşıyan tek satır, yedi gün sonra ayrılık. Takip zinciri o adayları sadece listende gösterir, ne yapacağını video sırası söyler. Video günde on (işin yanında dört): yüz işletmenin ilk yazılı temasları derin denetim hızıyla günde beş adaya yayılır ve yüz işletme dört haftada biter; günün videolarının kalanı listenin geri kalanında sızıntı puanı dört ve üstü, sahibinin adı bilinen adaylara gider. Böyle aday o gün yetmezse video sayısı zorlanmaz, eksik pay diğer iki yazılı kanala geçer.
 
-**Yazılı kanalın metni adayın satırında durur, sohbette değil.** Bu, günün en çok zaman yiyen yeriydi: günde elli mesaj, elli ayrı sohbet turu demekti. Artık FounderOS sabah bloğunda o günün bütün yazılı mesajlarını tek seferde yazıyor ve aday aracıyla satırlara işliyor: `eposta_konu`, `eposta_metni`, `dm_metni`. Saha kartında E-posta ve Instagram düğmeleri çıkıyor, metin orada hazır duruyor, yanında kopyalama düğmesi var. Öğrenci kopyalıyor, kendi hesabından gönderiyor, aynı kartta sonucu işaretliyor.
+**Yazılı kanalın metni adayın satırında durur, sohbette değil.** Bu, günün en çok zaman yiyen yeriydi: günde kırk mesaj, kırk ayrı sohbet turu demekti. Artık FounderOS sabah bloğunda o günün bütün yazılı mesajlarını Truva Atı Metodu'yla tek seferde yazıyor ve aday aracıyla satırlara işliyor: `eposta_konu`, `eposta_metni`, `dm_metni`. Video metni de aynı yolla adayın satırına yazılır (`video_metni`, video-mesaj-cek). Saha kartında E-posta ve Instagram düğmeleri çıkıyor, metin orada hazır duruyor, yanında kopyalama düğmesi var. Öğrenci kopyalıyor, kendi hesabından gönderiyor, aynı kartta sonucu işaretliyor.
 
 Metin adaya özeldir ve gözlemden kurulur: denetim yapılmışsa en güçlü bulgudan, yapılmamışsa profil gözleminden. İkisi de yoksa o adaya yazılı mesaj yazılmaz, telefona bırakılır; gözlemsiz e-posta ve gözlemsiz mesaj çöp kutusuna gidiyor. Sayfa metni olmayan adayda "metin henüz yazılmadı" diyor, boş kutu göstermiyor.
 
@@ -448,14 +484,18 @@ Her takip tazedir, aynı metin tekrarlanmaz. Zincirin sebebi: cevapların çoğu
 
 ### Cevap geldiğinde, üç adımlı cevap konuşması
 
-- **Onayla**: dinlediğini belli et, satmaya kalkma.
-- **Aydınlat**: kendisinin göremediği şeyi söyle. "Asıl kayıp reklam değil, ilk saat."
-- **Geç**: görüşmeye davet et, somut saatle.
+Truva Atı'nın üçüncü ile altıncı adımı. Cevap gelince anlatmaya başlamazsın, konuşmayı sürdürürsün:
+
+- **Onayla**: dinlediğini belli et, onun cümlesini kendi kelimeleriyle geri söyle; satmaya kalkma.
+- **Bağla**: çözümü tam söylediği yere bağla, tek parça; göremediği bir şey varsa onu söyle ("asıl kayıp reklam değil, ilk saat"). Arkasından çalışan örneği teklif et: "İsterseniz çalışan örneğini göndereyim, bir müşteri gibi deneyin."
+- **Geç**: izin gelince örnek aynı gün gider, gerekirse izinden sonraki demo videosu; sonunda görüşmeye davet, somut saatle.
+
+Örnek, yazılı cevapta: "Sabah dönüyoruz, bazen ulaşamıyoruz" yazdıysa: "Anladım, akşam gelen talep sabaha kalıyor ve bir kısmına ulaşılamıyor. Kurduğum sistem tam orada çalışıyor: o talebe o anda dönüyor, soruları cevaplıyor ve uygun saati takvime yazıyor. İsterseniz çalışan örneğini göndereyim, bir müşteri gibi deneyin."
 
 Üç cevap tipi ve tuzakları:
-- Meraklı: bilgiyle boğma, merak bırak.
-- Şüpheci ("denedik olmadı", "pahalı görünüyor"): savunmaya geçme. Önce haklı olduğu yeri kabul et, sonra farklı bir açı ver.
-- Hazır: karmaşıklaştırma, hemen takvime al.
+- Meraklı: bilgiyle boğma; örneği teklif et, merak bırak.
+- Şüpheci ("denedik olmadı", "pahalı görünüyor"): savunmaya geçme. Önce haklı olduğu yeri kabul et, sonra farklı bir açı ver; ikna etmeye değil denemeye çağır.
+- Hazır: karmaşıklaştırma, hemen takvime al; örnek görüşmede gösterilir.
 
 **Gelen kutusu iki kez açılır, saati bellidir; ama cevap bildirimi bloğu keser.** FounderOS senin e-postanı ve Instagram'ını göremiyor; bu kalıcı bir sınır ve gizlenmiyor. "Cevap gelince söyle" demek de tek başına işe yaramıyor, çünkü öğrenci sahadayken bakmıyor ve akşam unutuyor. O yüzden bakma anı sabitlendi ve günün planında duruyor: **öğlen, aramaların arasında beş dakika; akşam, sonuçlar okunurken.** İkisinde de tek iş var: gelen kutusunu aç, cevapları olduğu gibi yapıştır.
 
@@ -470,7 +510,7 @@ Bunun tek sebebi kolaylık değil. Hangi dalın randevuya döndüğü ancak dal 
 **Yazılı kanalda on iki cevap dalı.** Telefonda itirazın cevabını sesinle yumuşatabiliyorsun; yazıda o yok, o yüzden cevap kısa, net ve tek soruyla biter. Her dal iki üç cümleyi geçmez. Instagram'da mesaj üç satırı, e-postada beş satırı aşmaz.
 
 1. **"Fiyat ne kadar?"** Fiyatı saklamak görüşme kazandırmıyor, konuşmayı bitiriyor. Bandın belliyse bandı verirsin: "Kurulum [band], aylık [band]. Rakamı işletmenin büyüklüğü ve kaç kanal bağlanacağı değiştiriyor. Sizde talepler sadece Instagram'a mı geliyor, WhatsApp'a da mı?" Band belli değilse neyin belirlediğini söylersin, uydurmazsın. Kesin rakam görüşmede netleşir ve bunu da söylersin.
-2. **"Daha önce kime yaptınız?"** Kanıt yoksa yalan söylemezsin: "Bu hizmette paylaşabileceğim müşteri sonucu henüz yok. Temsili verilerle çalışan bir örneğim var, nasıl işlediğini gösterebilirim." Kanıt varsa izinli olanı, adıyla. Adam "referanssız çalışmam" derse zorlamazsın: "Anladım, kararınıza saygı duyuyorum." Kapat. "Herkes bir yerden başlıyor" cümlesi kurulmaz, baskıdır.
+2. **"Daha önce kime yaptınız?"** Kanıt yoksa yalan söylemezsin: "Bu hizmette paylaşabileceğim müşteri sonucu henüz yok. Temsili verilerle çalışan bir örneğim var; isterseniz göndereyim, bir müşteri gibi deneyin." Kanıt varsa izinli olanı, adıyla. Adam "referanssız çalışmam" derse zorlamazsın: "Anladım, kararınıza saygı duyuyorum." Kapat. "Herkes bir yerden başlıyor" cümlesi kurulmaz, baskıdır.
 3. **"Şu an yoğunum, sonra yazın."** Tek soru: "Tabii, hangi gün dönmem uygun olur?" Tarih verirse o tarihe yazılır ve o tarihe kadar hiçbir mesaj gitmez. Tarih vermezse: "Belirli bir gün yoksa şimdilik burada bırakalım, ihtiyaç olursa buradan yazabilirsiniz." Belirsizliğe günlük mesaj eklenmez.
 4. **"Zaten bir sistemimiz var."** Telefondaki soruyla aynı: "Mevcut düzende eksik bulduğunuz bir yer var mı, yoksa ihtiyacınızı karşılıyor mu?" Eksik söylerse yalnız o kısma bakılır, çalışan düzen değiştirilmez. Memnunsa kapat. Mevcut sağlayıcıyı ya da çalışanı küçümseme.
 5. **"Bize yeni müşteri lazım, takip değil."** Bu bir itiraz değil, yanlış eşleşme: "Anladım, öncelik yeni talep. Benim kurduğum sistem mevcut talepleri takip ediyor, tek başına yeni talep yaratmıyor." Kapsamın bunu karşılamıyorsa konuşma biter. Kapsamını o an genişletip reklam ya da yeni müşteri sözü vermezsin.
@@ -478,8 +518,8 @@ Bunun tek sebebi kolaylık değil. Hangi dalın randevuya döndüğü ancak dal 
 7. **"İhtiyacımız yok."** "Anladım, mevcut düzen işinizi görüyorsa ek bir sistem gerekmeyebilir. Vaktiniz için teşekkürler." Gerekçeyi kaydet, kapat. Sessizliğe uzayan takip görevi açma.
 8. **"Ben bakmıyorum, patron ilgilenir."** "Teşekkürler. Bu konuyla ilgilenen kişiye ulaşmam için hangi kanal uygun olur?" Yönlendirme gerçekten geldiyse ikinci mesajda söylersin; gelmediyse "beni size yönlendirdiler" yazılmaz. Özel numara istemeye zorlamazsın.
 9. **"Yapay zekâya güvenmiyorum."** Sınırı söyleyerek cevap verilir: "Anlıyorum. Sınır şu: [sistemin yaptığı iş] sistemde, [insanın onaylayacağı iş] sizde kalıyor. İsterseniz yalnız o devir kısmını göstereyim." Denenmemiş bir entegrasyon ya da kapsam varmış gibi anlatılmaz.
-10. **"Bilgi gönderin."** İstenen bilgi verilir, önce toplantı şartı koşulmaz. "Tabii, [istenen şey] burada: [gerçek bağlantı]." Hangi bilgi istendiği belirsizse sorulur: "Çalışma şeklini mi, kapsam ve ücreti mi görmek istersiniz?" Gönderilmemiş bir şey gönderildi diye yazılmaz.
-11. **"Görüşmeye gerek yok, buradan anlatın."** Görüşme istememek ret değildir. Kapsam ve fiyat yazıyla açıklanabiliyorsa açıklanır: "Olur. Kapsam şu: [somut iş]. [İnsanın görevi] sizde kalır. Eksik tek bilgi: [soru]?" Aynı görüşme daveti tekrarlanmaz.
+10. **"Bilgi gönderin."** ya da **"Nasıl çalışıyor?"** İstenen bilgi verilir, önce toplantı şartı koşulmaz. Çalışma şeklini görmek istiyorsa en iyi bilgi çalışan örnektir: "En kolayı denemeniz: [demo bağlantısı]. Bir müşteri gibi yazın, randevuyu nasıl yazdığını görürsünüz. Bu bir örnek; sizinki sizin bilgilerinizle kurulur." Kapsam ve ücret istiyorsa: "Tabii, [istenen şey] burada: [gerçek bağlantı]." Hangi bilgi istendiği belirsizse sorulur: "Çalışma şeklini mi, kapsam ve ücreti mi görmek istersiniz?" Gönderilmemiş bir şey gönderildi diye yazılmaz.
+11. **"Görüşmeye gerek yok, buradan anlatın."** Görüşme istememek ret değildir. Kapsam ve fiyat yazıyla açıklanabiliyorsa açıklanır: "Olur. Kapsam şu: [somut iş]. [İnsanın görevi] sizde kalır. Eksik tek bilgi: [soru]?" Çalışan örnek ve izinden sonraki demo videosu da buradan gider. Aynı görüşme daveti tekrarlanmaz.
 12. **"Pahalı."** Önce hangi pahalı olduğu ayrılır: "Toplam bütçe mi aşıyor, yoksa karşılığında ne alacağınız mı net değil?" Bütçeyse dar kapsam konuşulur (Kademe 1). Değerse ölçü sorulur. Her itirazda indirim ya da bedava iş teklif edilmez; küçük işletmede etki maliyeti karşılamıyorsa yedinci dala geçilir ve kapatılır.
 
 **Takip ne zaman gider, ne zaman gitmez.** Yazılı kanalda en sık yapılan hata, cevap gelmemiş bir mesajın üstüne otomatik zincir başlatmak. Kural tablosu:
@@ -512,11 +552,11 @@ Adayın sıcak mı soğuk mu olduğu kayda yazılır (CRM açıksa CRM'e). Sıca
 
 ### Karşı taraf bunu söylerse
 
-Her durumda üç şey: söylenecek cümle (tırnak içinde, sesli okunur), ne için söylendiği, cevaba göre sonraki adım. Cevapların içi kartın diliyle dolar; sayfanın Saha modu kartı bu listeyi aynı düzende gösterir. Kural: her cevap tek soru taşır, ikinci itiraz sorusu yok; açık ret gelince görüşme saygıyla biter ve aday bir daha aranmaz.
+Her durumda üç şey: söylenecek cümle (tırnak içinde, sesli okunur), ne için söylendiği, cevaba göre sonraki adım. Cevapların içi kartın diliyle dolar; sayfanın Bugünün listesi kartı bu listeyi aynı düzende gösterir. Kural: her cevap tek soru taşır, ikinci itiraz sorusu yok; açık ret gelince görüşme saygıyla biter ve aday bir daha aranmaz.
 
 - **"Şu an müsait değilim."** Söyle: "Tabii, ne zaman arayayım? Bugün akşamüstü mü, yarın sabah mı?" Ne için: zamanı olmadığını kabul edip somut saat almak, anlatmaya devam etmek değil. Sonra: saat verirse teşekkür et, kapat, FounderOS saati sıradaki tarihe yazar. Belirsiz cevapta bir kez daha sor ("Yarın on gibi uygun mu?"); yine belirsizse yarın ara, üçüncü kez arama.
 - **"Ne için arıyorsunuz?"** Söyle: "Yoğunken telefona yetişemediğiniz saatlerde WhatsApp'a ve Instagram'a yazan müşteriye cevap verip randevuya yazan bir sistem kuruyorum. Sizde böyle bir şey var mı diye soracaktım." Ne için: tek cümlede ne olduğunu söylemek ve konuşmayı işletmenin işleyişine çevirmek. Sonra: "yok" derse dördüncü adımdaki işleyiş sorusuna geç; "var" derse "Nasıl çalışıyor, kim cevap veriyor?" diye sor, cevaba göre ya görüşme iste ya kapat.
-- **"WhatsApp'tan bilgi gönderin."** Söyle: "Tabii, kısa bir özet göndereyim. Yalnız yazıyla biraz soyut kalıyor; yirmi dakikada gerçek akışı gösterirsem ne olduğu çok daha net anlaşılıyor. Yarın on bir mi daha uygun, üç mü?" İsteği reddetmezsin ama saati aynı konuşmada alırsın; bilgiyi gönderip beklemek adayı kaybetmenin en sık yolu. Adam ikinci kez "önce göndereyim" derse yumuşat: "Göndereyim. Okuduktan sonra konuşalım derseniz yarın on bir ya da üç için yer ayırayım, hangisi size yakın?" Üçüncü kez direnirse zorlamazsın: "Tamamdır, özeti gönderiyorum. Okuyunca anlamlı gelirse buradan cevap vermeniz yeterli." Eski hali de geçerli: "Olur, on dakika içinde gönderiyorum: kim olduğum, ne yaptığım ve sayfamın adresi, üç satır. Okuduktan sonra yarın on dakika konuşabilir miyiz, yoksa ben mi arayayım?" Ne için: isteği reddetmemek ama sonraki teması bugün bağlamak. Sonra: kapatınca on dakika içinde şu mesaj gider (bu numaraya yazma iznini kendisi verdi, soğuk mesaj sayılmaz): "Merhaba [Ad] Bey, ben [adın], az önce görüştük. Yoğunken telefona yetişemediğiniz saatlerde WhatsApp'a ve Instagram'a yazan müşteriye cevap verip randevuya yazan bir sistem kuruyorum; eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. Sayfam: [tanıtım sayfasının adresi]. Yarın on birde yirmi dakika uyar mı?" Demo hattı, video ya da rapor örneği gerçekten varsa bir cümle daha eklenir; yoksa anılmaz. Cevap gelmezse üçüncü gün tek takip, yedinci gün tek soru; sonra bırak.
+- **"WhatsApp'tan bilgi gönderin."** Söyle: "Tabii. Yazı yerine çalışan örneğini göndereyim, bir müşteri gibi deneyin; iki dakika sürer. Şimdi atayım mı?" Bu, Truva Atı'nın beşinci adımıdır: bilgi isteyene en iyi bilgi denediği örnek. Evet derse bağlantı telefon açıkken gider, dener, sonra saat: "Sizin işletmenizde nasıl kurulacağını yirmi dakikada göstereyim. Yarın on bir mi daha uygun, üç mü?" Örneğe vakti yoksa: "Tabii, kısa bir özet göndereyim. Yalnız yazıyla biraz soyut kalıyor; yirmi dakikada gerçek akışı gösterirsem ne olduğu çok daha net anlaşılıyor. Yarın on bir mi daha uygun, üç mü?" İsteği reddetmezsin ama saati aynı konuşmada alırsın; bilgiyi gönderip beklemek adayı kaybetmenin en sık yolu. Adam ikinci kez "önce göndereyim" derse yumuşat: "Göndereyim. Okuduktan sonra konuşalım derseniz yarın on bir ya da üç için yer ayırayım, hangisi size yakın?" Üçüncü kez direnirse zorlamazsın: "Tamamdır, özeti gönderiyorum. Okuyunca anlamlı gelirse buradan cevap vermeniz yeterli." Eski hali de geçerli: "Olur, on dakika içinde gönderiyorum: kim olduğum, ne yaptığım ve sayfamın adresi, üç satır. Okuduktan sonra yarın on dakika konuşabilir miyiz, yoksa ben mi arayayım?" Ne için: isteği reddetmemek ama sonraki teması bugün bağlamak. Sonra: kapatınca on dakika içinde şu mesaj gider (bu numaraya yazma iznini kendisi verdi, soğuk mesaj sayılmaz): "Merhaba [Ad] Bey, ben [adın], az önce görüştük. Konuştuğumuz örnek burada: [tanıtım sayfasının adresi]/demo. Bir müşteri gibi yazın, randevuyu nasıl yazdığını görün; bu bir örnek, sizinki sizin bilgilerinizle kurulur. Yarın on birde yirmi dakika uyar mı?" Demo henüz yayında değilse bağlantı yerine sayfanın adresi gider ve ne yaptığın tek cümleyle yazılır; olmayan örnek, video ya da rapor anılmaz. Cevap gelmezse üçüncü gün tek takip, yedinci gün tek soru; sonra bırak.
 **İtiraz cevaplarının ortak tekniği: ölçülüyor mu.** İşletmecinin itirazlarının çoğu bir çözümü anlatıyor: telesekreterim var, ertesi gün geri arıyoruz, zaten az arama geliyor. Bunların hiçbiri yanlış değil ve hiçbirine "işe yaramaz" denmez. Sorulacak tek şey şu: o çözümün sonucunu ölçüyor musunuz. Çünkü ölçülmeyen bir şey hakkında ikinizin de bilgisi yok, ve bilgisizlik ortak olduğunda konuşma tartışma olmaktan çıkıp birlikte bakmaya dönüyor.
 
 Kural: karşı tarafı mantıksız duruma düşüren soru sorulmaz. "Sizce müşteri hangisini seçer, telesekretere düşeni mi canlı açanı mı?" diye sormak adamı köşeye sıkıştırıyor, adam da köşede satın almıyor. Doğrusu ölçüyü sormak, cevabı ona bırakmak ve bilinmiyorsa bunu birlikte kabul etmek. Ölçülüyorsa ve sayı düşükse geri çekilirsin; o aday sana uygun değil ve bunu söylemek seni satıcıdan ayırıyor.
@@ -527,7 +567,7 @@ Kural: karşı tarafı mantıksız duruma düşüren soru sorulmaz. "Sizce müş
 - **"Takvim linkinizi gönderin, ben seçerim."** Söyle: "Gönderebilirim. Ama linki gönderip sizi saat aramakla uğraştırmayayım; uygun saati şimdi seçelim, daveti ben oluşturayım. Yarın on bir mi, üç mü?" Ne için: link gönderilen randevuların çoğu hiç alınmıyor; aday telefonu kapattığı anda konu kapanıyor. Sonra: saat seçerse takvime sen girersin. Linkte ısrar ederse direnmezsin: "Tamamdır, linki gönderiyorum. Saati seçtiğinizde davet kendiliğinden gelir." Link gittikten sonra iki gün cevap yoksa aday takip zincirine girer, ikinci kez link gönderilmez.
 - **"Zaten böyle bir sistemimiz var."** Söyle: "Güzel, o zaman ihtiyacınız olmayabilir. Tek merak ettiğim şu: sistem sadece ilk mesajı mı atıyor, yoksa gelen cevaba göre konuşmayı sürdürüp randevuyu da yazıyor mu?" Ne için: kurulu sistemi kötülemeden gerçekten fark olup olmadığını anlamak; çoğu işletmede kurulu olan tek bir otomatik mesajdır. Sonra: "randevuyu da yazıyor" derse teşekkür et ve kapat, zorlama yok, FounderOS "sonra" yazar. "Sadece mesaj atıyor" derse tek cümle: "Aradaki fark orada. Yirmi dakikada göstereyim, yarın on bir mi, üç mü?"
 - **"Biz zaten kendimiz ilgileniyoruz."** Söyle: "İyi o zaman, çoğu işletme ilgilenemiyor. Yoğunken de yetişebiliyor musunuz, yoksa akşama kalan mesajlar oluyor mu?" Ne için: "kendimiz" cevabının arkasındaki gerçeği anlamak. Sonra: "yetişiyoruz" derse teşekkür et, "yoğun dönemde değişirse aramamı ister misiniz" de, kapat; FounderOS "sonra, sezon başı" yazar. "Akşama kalıyor" derse görüşme iste.
-- **"Yapay zekâ / bot istemiyoruz."** Söyle: "Anlıyorum, kötü kurulmuş olanı ben de istemem. Evet, mesajlara cevap veren bir yapay zekâ asistanı; ama fiyat vermiyor, sadece ne istendiğini ve adresi alıp size uygun bir randevu yazıyor. Fiyat ve karışık konu size düşüyor. Sizi rahatsız eden, müşteriyle robot konuşması mı, yoksa yanlış bilgi vermesi mi?" Ne için: kaygıyı gizlemeden ne yaptığını söylemek ve gerçek endişeyi ayırmak. Sonra: "robot konuşması" derse: "Müşteri isterse hemen size devrediyor, o kural baştan var" de ve görüşmede telefonundan denemesini teklif et. "Yanlış bilgi" derse: "Fiyat ve garanti konusuna hiç girmiyor" de. Israr sürerse kapat: "Anladım, zorlamayayım. Fikriniz değişirse numaram sizde olsun." Bu adaya bir daha bu konuyla gidilmez.
+- **"Yapay zekâ / bot istemiyoruz."** Söyle: "Anlıyorum, kötü kurulmuş olanı ben de istemem. Evet, mesajlara cevap veren bir yapay zekâ asistanı; ama fiyat vermiyor, sadece ne istendiğini ve adresi alıp size uygun bir randevu yazıyor. Fiyat ve karışık konu size düşüyor. Sizi rahatsız eden, müşteriyle robot konuşması mı, yoksa yanlış bilgi vermesi mi?" Ne için: kaygıyı gizlemeden ne yaptığını söylemek ve gerçek endişeyi ayırmak. Sonra: "robot konuşması" derse: "Müşteri isterse hemen size devrediyor, o kural baştan var" de ve çalışan örneği teklif et: "İsterseniz şimdi göndereyim, kendiniz deneyin." Vakti yoksa görüşmede telefonundan dener. "Yanlış bilgi" derse: "Fiyat ve garanti konusuna hiç girmiyor" de. Israr sürerse kapat: "Anladım, zorlamayayım. Fikriniz değişirse numaram sizde olsun." Bu adaya bir daha bu konuyla gidilmez.
 - **"Pahalı."** İlk aramada fiyat konuşulmaz; fiyatı sorarsa İş Beyni'nin dördüncü bölümündeki "fiyat ne" cevabı okunur (aralık ve sebep), pazarlık ve indirim yok. "Pahalı" genelde o aralığı duyunca gelir. Söyle: "Olabilir. Şunu sorayım: rakam mı yüksek geldi, yoksa işe yarayacağından emin değilsiniz?" Ne için: fiyat itirazı ile güven itirazını ayırmak; "sonuç kesin" demeden. Sonra: "rakam" derse: "O zaman görüşmede bir işin sizde kaç lira ettiğini birlikte hesaplayalım, karar sizin" ve saat iste. "Emin değilim" derse: "Haklısınız, ilk müşterilerimle kanıt topluyorum; rapor günü sayıları görüyorsunuz" ve saat iste. İkisine de hayır derse kapat.
 - **"İlgilenmiyorum."** Söyle: "[sakin] Anladım, teşekkür ederim. Kapatmadan tek şey sorabilir miyim?" [cevabı bekle] İzin verirse tek soru sorulur, vermezse hiç sorulmaz: "Tamam, rahatsız etmeyeyim, iyi çalışmalar." İzin isteyip sormak, izinsiz sormaktan daha çok cevap alıyor; ve izin vermeyen adamın hayırı gerçek hayırdır. Tek soru: "Kapatmadan tek şey sorayım: şu an dolu olduğunuz için mi, yoksa konu size uzak geldiği için mi?" Ne için: bir kez, tek soruyla sebebi öğrenmek. Sonra: "dolu" derse: "Anladım, yoğunluk geçince bir kez daha arayabilir miyim?" Evet derse "Sonra ara", tarihi nişin sezon başı ya da altı ay sonrası, hangisi önceyse; hayır derse "İstemedi". "Uzak" ya da sert bir hayır: "Tamam, vaktinizi aldım, iyi çalışmalar." Kapat; FounderOS "istemedi" işaretler, altı ay boyunca aranmaz.
 - **"Sonra arayın."** Söyle: "Tabii, ne zaman uygun?" Ne için: tarih almak. Sonra: verdiği güne yazılır; vermezse "yarın öğleden sonra deneyeyim mi" diye sorulur, cevap beklenir. Cevap beklemeden devam edilmez.
@@ -536,7 +576,7 @@ Kural: karşı tarafı mantıksız duruma düşüren soru sorulmaz. "Sizce müş
 - **"Böyle şeyler işe yaramıyor, denedik."** Söyle: "Olabilir, kötü kurulmuş çoğu. Ne yaşadınız?" Dinle. Ne için: yaşadığı sorunu öğrenmek, savunmak değil. Sonra: anlattığı sorun bizim kuralımızla çözülüyorsa tek cümleyle söyle ("fiyat vermiyor", "müşteri isterse size devrediyor") ve görüşme iste; çözülmüyorsa kapat.
 - **"Kim olduğunuzu bilmiyorum."** Söyle: "Haklısınız. Ben [adın], [şehir]'deyim, [niş] işletmelerine mesaj ve randevu tarafını kuruyorum; bu ay ilk üç işletmeyle başlıyorum." Ne için: kim olduğunu tek cümlede söylemek. Sonra: soruya dön.
 - **"Ne kadar sürer?"** Söyle: "Yirmi dakika. O kadar vaktiniz olur mu?" Sonra: saat.
-- **"Bot fiyat veremez."** Söyle: "Haklısınız, zaten vermiyor; ne istendiğini ve adresi alıp randevuya çeviriyor, fiyatı siz söylüyorsunuz." Sonra: görüşmede kendi telefonundan denemesini teklif et.
+- **"Bot fiyat veremez."** Söyle: "Haklısınız, zaten vermiyor; ne istendiğini ve adresi alıp randevuya çeviriyor, fiyatı siz söylüyorsunuz." Sonra: çalışan örneği teklif et, "İsterseniz şimdi göndereyim, fiyat sorun, ne dediğini görün"; vakti yoksa görüşmede kendi telefonundan dener.
 - **"Instagram'ı ajansa verdim."** Söyle: "Ajans reklamı yapıyor; gelen mesaja ve telefona cevap sizde kalıyor. Ben o tarafı kuruyorum, ajansın rakibi değilim." Sonra: soruya dön.
 - **"Zaten bir yapay zekâ teklifi aldık."** Söyle: "Güzel, ne vaat ettiler?" Dinle. Sonra: "Ben bot satmıyorum diye başlamam; ne kurduğumu rapor günü sayıyla gösteriyorum. Kurulan bir şey varsa yirmi dakikada ne eksik söylerim." Görüşme iste; istemezse kapat.
 - **"Ezberden mi okuyorsun?"** Söyle: "Önümde not var, evet; ezber değil. İsterseniz bırakayım." ve soruya devam.
@@ -573,19 +613,21 @@ Her temas tek harekettir: sen sonuç düğmesine basarsın, kaydı araç yazar.
 
 Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma düzenin belirler.
 
-**Arama rampası.** Telefonun da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren planındaki arama sayısı (ana kanal telefonsa tam zamanlıda yetmiş, işin yanında yirmi sekiz). İlk iki gün aramanın ve saha ekranının oturduğu günlerdir; ilk yirmi aramanın notu da bunun için. Eksik kalan pay yazılı kanala geçer, e-postanın ve Instagram'ın kendi günlük sınırını aşmadan; sığmayan pay o gün yapılmaz ve kötü gün sayılmaz.
+**Arama rampası.** Telefonun da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren planındaki arama sayısı (ana kanal telefonsa tam zamanlıda elli, işin yanında yirmi). İlk iki gün aramanın ve saha ekranının oturduğu günlerdir; ilk yirmi aramanın notu da bunun için. Eksik kalan pay yazılı kanala geçer, e-postanın ve Instagram'ın kendi günlük sınırını aşmadan; sığmayan pay o gün yapılmaz ve kötü gün sayılmaz.
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.
-- Saha bloğu: ana kanaldan yetmiş temas, diğer iki kanaldan yirmi beş, beş video mesaj; o günün takipleri bu yüzün içinde. Teslimat sürerken aynı oran altmışa iner: kırk iki ana kanal, on beş diğer yazılı, üç video. Hesabın rampadaysa o günkü payı rampanın basamağıdır ve eksik kalan sayı aramaya geçer. Bloğun son kırk beş dakikası video bloğudur.
+- Saha bloğu: ana kanaldan elli temas, diğer iki kanaldan kırk, on video mesaj (ilk hafta beş); o günün takipleri bu yüzün içinde. Ana kanal telefonsa bu elli arama ve kırk yazılı mesaj demektir; kırkın yarısı Instagram, yarısı e-posta. Teslimat sürerken aynı oran altmışa iner: otuz ana kanal, yirmi dört diğer iki kanal, altı video. Bir kanal o günkü sınırına takılırsa (Instagram tavanı ya da rampası, e-posta sınırı) artan pay önce öbür yazılı kanala, o da doluysa aramaya geçer; toplam değişmez. Bloğun son bir buçuk saati video bloğudur.
 - Akşam bloğu: kanal durumu ekranı, kayıt kontrolü, ertesi günün onayı.
+
+**Ana kanal yazılıysa.** Kartın ana kanalı Instagram'sa (ya da bir kart ileride e-posta derse) aynı yüz ters dağılır: elli o yazılı kanaldan, kırkı arama ile öbür yazılı kanal arasında yarı yarıya, on video. Sebebi şu: bu nişlerde talep ve cevap mesaja düşüyor, günün en büyük payı oraya gider; arama yine her gün çalışır, çünkü sahibine en hızlı ulaşan yol o. Elliye hemen çıkılmaz. Yeni Instagram hesabı rampada gider (beş, on, yirmi, kırk) ve kırk yeni hesabın tavanıdır; bir yıldan eski, yüz takipçiyi geçmiş hesapta tavan baştan elli. E-postanın günlük sınırı on beşten otuza çıkar, tek başına elliyi hiçbir zaman taşımaz. Taşınamayan pay önce öbür yazılı kanala, o da doluysa aramaya geçer; aramanın ilk iki günkü rampası da sürüyorsa sığmayan pay o gün yapılmaz ve kötü gün sayılmaz. İşin yanında aynı kural yirmi, on altı, dörtle işler.
 
 **İşin yanında: günde kırk temas.**
 - Sabah bloğu, yani işe gitmeden önceki bir saat: dünkü cevaplara dönüş, e-posta takiplerinin onayı, üç adayın derin denetimi.
-- Saha bloğu iki parça. Arama pencereleri öğle arası (yaklaşık 12.30-13.30) ve cumartesi sabahı (10.00-13.00). Akşam 18.00-20.30 yazılı kanalın (e-posta, Instagram) ve hazırlığın saatidir; kartın kanal ve zaman bölümü o saatte telefonun açık olduğunu söylüyorsa akşam da arama yapılır. Günün kırkı: yirmi sekiz ana kanaldan, on diğer iki kanaldan, iki video mesaj; o günün takipleri bu kırkın içinde. Aramalar arama penceresine düşer; ana kanal telefonsa öğle arasındaki yirmi sekiz arama yaklaşık elli dakika sürer. Yazılı mesajlar ve videolar akşama düşer; test akşamıysa akşamın başında, kartın saatinde, on beş dakikada yirmi telefon testi. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
+- Saha bloğu iki parça. Arama pencereleri öğle arası (yaklaşık 12.30-13.30) ve cumartesi sabahı (10.00-13.00). Akşam 18.00-20.30 yazılı kanalın (e-posta, Instagram) ve hazırlığın saatidir; kartın kanal ve zaman bölümü o saatte telefonun açık olduğunu söylüyorsa akşam da arama yapılır. Günün kırkı: yirmi ana kanaldan, on altı diğer iki kanaldan, dört video mesaj (ilk hafta iki); o günün takipleri bu kırkın içinde. Aramalar arama penceresine düşer; ana kanal telefonsa öğle arasındaki yirmi arama yaklaşık otuz beş dakika sürer. Yazılı mesajlar ve videolar akşama düşer; test akşamıysa akşamın başında, kartın saatinde, on beş dakikada yirmi telefon testi. Aramalar nişin izin verdiği saatte yapılır; o daraltma saha bloğunun üstündedir. İki pencere hiç kesişmiyorsa o gün yazılı kanala geçilir.
 - Akşam bloğu: kanal durumu ekranı ve kayıt kontrolü on beş dakika, günün sayıları ve yarının provası yirmi beş dakika; toplam kırk dakika.
 
-İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas: on dört ana kanaldan, beş diğer iki yazılı kanaldan, bir video mesaj. Sebebi rakamda: [21/28] günlük teslimde senin payın yaklaşık kırk beş saat (hattı, sesli ajanı ve müşteri bölümünün açılışını ekip yapar), o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
+İşin yanında çalışanda hedef iki dönemde yarıya iner: ilk müşterinin bütün teslim süresi, yani sıfırıncı günden rapor gününe, ve şirket kuruluş günü. O günlerde kırk değil yirmi temas, aynı oranla: on ana kanaldan, sekiz diğer iki kanaldan, iki video mesaj. Sebebi rakamda: [21/28] günlük teslimde senin payın yaklaşık kırk beş saat (hattı, sesli ajanı ve müşteri bölümünün açılışını ekip yapar), o saatler akşamdan çıkıyor. Garanti şartı bu günleri hariç tutuyor.
 
 Günlük e-posta sınırı yeni adresi alıştırma sürecine bağlı: önce on beş, sonra yirmi, sonra otuz. Bütçen yoksa alan adlı e-posta ilk kanıttan sonra gelir; o güne kadar e-postalar şu an kullandığın Gmail'den gider: kendi kutundan günde en fazla yirmi, ilk e-posta bağlantısız. Hangi saatte hangi kanalın açık olduğunu nişin kanal ve zaman bölümü söylüyor: güzellik salonu akşam yoğun, pazartesi ve salı sabahı sakin; oto serviste öğle ve mesai sonu uygun. Mesai sonrası "telefonu kim açıyor" ölçümü denetimin altıncı satırında yapılıyor.
 
@@ -605,20 +647,22 @@ Bir seferde tek şey değişir: ya sadece açılış cümlesi ya sadece kanal.
 
 Instagram mesajı yazarken: "İlk beş kelimen işin konusunu söyleyecek. Adam kutuda mesajın tamamını görmüyor, ilk satırın başını görüyor ve orada açıp açmamaya karar veriyor. 'Merhaba, nasılsınız' o beş kelimeyi yakıyor."
 Son cümleyi büyütmek isterse: "Son soruyu küçük tut. İlk mesajda randevu isteyen cevap almıyor. 'Bakmak ister misiniz' yeter; saat konuşmayı başlattıktan sonra geliyor."
-Instagram'da fiyat ya da sistem anlatmak isterse: "Yazışmada anlatılan sistem ikna etmiyor. Adam görüşmede kendi telefonundan deneyince ikna oluyor. Mesajın tek işi o görüşmeyi açmak."
+Instagram'da fiyat ya da sistem anlatmak isterse: "Yazışmada anlatılan sistem ikna etmiyor. Adam kendi telefonundan deneyince ikna oluyor. Mesajın tek işi konuşmayı açmak: gözlem ve tek soru. Cevap gelince örneği gönderiyoruz."
 Takipte sonuç uydurmak isterse: "Yapmadığın işin sonucunu yazmıyoruz. Elinde senin kendi sayımın var, onu yazıyoruz; o gerçek ve o daha güçlü."
-Sabah: "Bugün yetmiş [ana kanal], yirmi beş diğer iki kanal, beş video; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
+"Aradım diye yazayım, daha etkili" derse: "Aramadıysan yazmıyoruz. Adam 'ne zaman aradınız' diye sorar, konuşma orada biter. Gözlem kartta zaten var, onunla açıyoruz; aramayı bu akşam testte gerçekten yaparsan yarın yazarsın."
+İlk mesaja demo bağlantısını koymak isterse: "İlk mesajda bağlantı yok. Önce onun düzenini soruyoruz; 'gönderin' derse örnek aynı gün gidiyor."
+Sabah: "Bugün elli [ana kanal], kırk diğer iki kanal, on video; takipler içinde. Önce dün cevap veren dört kişi, beş dakika içinde; ikisi örneği istedi, bağlantıları ilk iş, birinin demo videosu video bloğunun başında. Sonra takibi gelen on iki kişi; e-postaları onayla. Sonra yeni adaylar, hepsinin denetimi hazır. İlk yirmi arama sanayideki servisler, öğleden önce; sonra araç altındalar."
 Arama öncesi: "Yılmaz Isı, Ahmet Kaya. En güçlü bulgu: dün akşam yedide aradın, açan olmadı. Kanca bu. Lira karşılığını söyleme, görüşmeye saklıyoruz. Ara."
 Kapattıktan sonra: "Sonucu karttaki düğmeyle işaretle, bana yazma; sonraki aday. Cevap veren, randevu isteyen ya da yeni bir itiraz söyleyen olursa o zaman buraya gel."
 Denetimsiz aday çıkarsa: "Bu adayın denetimi yok, aramıyoruz. Yerine listenin altından denetimi hazır olanı aldım. Devam."
 Kanal değişince: "Yılmaz Isı üç gündür açmıyor. Telefonu kapattım, yarın e-posta gidiyor. Bulgu aynı, cümle değişiyor: telefonda kanca olan şey e-postada birinci cümle, altına lira karşılığı geliyor."
-Akşam: "Hedef yetmiş aramaydı, altmış sekiz yapıldı; on yedisi açtı, beşi konuştu, bir randevu. Yirmi beş yazılı mesaj ve beş video gitti. Kanal durumu ekranı: yedi aday telefonda, on ikisi e-postada, dördü Instagram'da, üçü kapandı. Yarının sırası hazır. Üç yüz temasa yüz seksen üç kaldı, ondan önce hiçbir şeyi değiştirmiyoruz."
+Akşam: "Hedef elli aramaydı, kırk sekiz yapıldı; on ikisi açtı, dördü konuştu, biri örneği o anda denedi, bir randevu. Kırk yazılı mesaj ve on video gitti. Kanal durumu ekranı: yedi aday telefonda, on ikisi e-postada, dördü Instagram'da, üçü kapandı. Yarının sırası hazır. Üç yüz temasa yüz seksen üç kaldı, ondan önce hiçbir şeyi değiştirmiyoruz."
 
 ## 7. Ne yazar
 
 **Hiçbir açık adayın sırası boş kalmaz.** Bu bir kural değil, aracın kendi kontrolü: temas işlendiğinde sıradaki tarih verilmediyse zincirden hesaplanır (üçüncü, yedinci, on dördüncü gün), zincir bittiyse aday "sonra"ya düşer ve kırk beş gün sonrasına yazılır. Sebebi şu: sırası boş kalan aday günün listesinden tamamen düşüyor, ne takipte ne "hiç aranmamış"ta görünüyor, ve bir daha hiç aranmıyor. Randevu alındıysa sıradaki adım görüşmenin kendisidir.
 
-Aday listesine (`adaylar.csv`, aday aracıyla, CRM açıldıktan sonra da; günün özeti günlüğe): her temas kaydı, kanalı, tarihi ve sonucu. Yazılı kanal metinleri adayın kendi satırına: e-postanın konusu ve metni, Instagram mesajı. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (araçta: yeni, temasta, cevap verdi, randevu, görüşüldü, sonra; CRM'de karşılıkları sözlükte). Adayın itirazı kelimesi kelimesine. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi. O ekran klasördeki `adaylar.html`, Saha modu sekmesi; gün içinde telefondaki saha ekranı. Saha sonuçları akşam `saha_sonuclari` aracından ya da öğrencinin yapıştırdığı metinden aday aracıyla işlenir; sohbete gelen tek tek temaslar (cevap, randevu, yeni itiraz) da araçla yazılır (aday-listesi-dosyasi: sonuclar, temas). Cevap veren, randevu alan ve müşteri olan aday CRM açıksa CRM'e de yazılır, onayla.
+Aday listesine (`adaylar.csv`, aday aracıyla, CRM açıldıktan sonra da; günün özeti günlüğe): her temas kaydı, kanalı, tarihi ve sonucu. Yazılı kanal metinleri adayın kendi satırına: e-postanın konusu ve metni, Instagram mesajı. Dört kanal durum satırı, her biri kendi tarihi, sonucu ve sıradaki tarihiyle. Tek sıradaki hareket satırı, kanalı ve tarihi. Hangi kanalın hangi sebeple kapandığı. Aşama geçişleri (araçta: yeni, temasta, cevap verdi, randevu, görüşüldü, sonra; CRM'de karşılıkları sözlükte). Adayın itirazı kelimesi kelimesine. Truva Atı'nın izi: adayın mevcut düzenini anlattığı cevap (`son_cevap`), çalışan örnek gittiyse nota tek satır ("örnek gitti", tarihiyle), demo videosu gittiyse video satırı; ilgilenip karar vermeyenin takip tarihi sıradaki tarihe. Adayın sıcak mı soğuk mu olduğu. Bunların hepsi akşam bloğunda tek ekranda toplanıyor: bir satırda bir aday, dört sütunda dört kanal, beşinci sütunda sıradaki hareket ve tarihi. O ekran klasördeki `adaylar.html`, Bugünün listesi sekmesi; gün içinde telefondaki saha ekranı. Saha sonuçları akşam `saha_sonuclari` aracından ya da öğrencinin yapıştırdığı metinden aday aracıyla işlenir; sohbete gelen tek tek temaslar (cevap, randevu, yeni itiraz) da araçla yazılır (aday-listesi-dosyasi: sonuclar, temas). Cevap veren, randevu alan ve müşteri olan aday CRM açıksa CRM'e de yazılır, onayla.
 
 İş Beyni'ne: mesaj sürümü ve tarihi, hangi bulgu tipi hangi kanalda cevap alıyor, kanal başına cevap oranı, en sık üç itiraz.
 
@@ -626,15 +670,19 @@ Niş kartına: "sahadan dolacak" bölümüne gerçek cevap oranı ve çalışan 
 
 Onay: e-posta metni "tamam" deyince sıraya girer; arama sonucu sen söyleyince kayda geçer; Instagram ve video senin elinden çıkar.
 
+Panel dosyasına (`.founderos/panel/mesajlar.json`, şeması `founderos:panel-vitrini`'de): kalıplar, yani `karisim` (günün dağılımı), `telefon` (adımlar, telefonu başkası açarsa, ikinci arama), `ilk_mesaj`, `takipler`, `itirazlar` ve `kancalar` (Truva Atı açılışları). İşletmeye özel metinler adayın satırında durur; panel onları satırdan okur; sonra aracın `panel --yukle` komutu sessiz çalışır.
+
 ## 8. Yedek yol
 
 - Sabah listesi hazırlanmamışsa modül on kişilik küçük liste üretir. Gün yüzle değil onla başlar, durmaz.
 - Denetimi hazır aday sayısı o günün temas sayısını karşılamıyorsa: kaç denetim varsa o kadar temas yapılır. Denetimsiz aday hiçbir koşulda aranmaz.
-- Kartta lira karşılığı boşsa: e-posta üç cümleye iner, telefon zaten rakam söylemiyor, Instagram değişmiyor.
+- Kartta lira karşılığı boşsa hiçbir metin değişmez: lira zaten hiçbir ilk temasta söylenmiyor, görüşmede işletmecinin sayısıyla kuruluyor.
+- Adayın akşam testi yapılmamışsa: "aradım" cümlesi hiçbir kanalda kurulmaz; gözlem kartın başka satırından gelir, o da yoksa açılış soruya döner.
+- Demo henüz yayında değilse: çalışan örnek teklif edilmez; cevap veren adaya ekran paylaşımıyla görüşmede gösterilir, davet saatle gider.
 - Kanal durumu ekranı açılmıyorsa: durumlar o akşam tek tek adayın kaydından okunur, ekran ertesi gün düzeltilir. Kayıt tutulmayan gün olmaz.
 - E-posta adresin henüz alışmamışsa e-posta sınırı düşer, telefon artar. Eski bir Gmail adresin varsa yirmi e-posta oradan gider.
-- Instagram hesabın yeniyse kanal kapanmaz, rampanın ilk basamağından başlar (günde beş) ve eksik kalan temas sayısı e-postaya ve telefona dağılır. Hesabın hiç yoksa o gün açılır; fotoğraf, biyografi ve dokuz paylaşım konunca aynı rampa işler.
-- Instagram profilin, öne çıkanların ya da dokuz paylaşımın eksikse: o gün Instagram yok, sayı telefona ve e-postaya dağılır; eksik kisisel-markani-kur'da bitirilir, ertesi gün kanal açılır.
+- Instagram hesabın yeniyse kanal kapanmaz, rampanın ilk basamağından başlar (günde beş) ve eksik kalan temas sayısı önce e-postaya, e-postanın sınırı da doluysa telefona geçer. Hesabın hiç yoksa o gün açılır; fotoğraf, biyografi ve dokuz paylaşım konunca aynı rampa işler.
+- Instagram profilin, öne çıkanların ya da dokuz paylaşımın eksikse: o gün Instagram yok, sayı önce e-postaya, sığmayanı telefona geçer; eksik kisisel-markani-kur'da bitirilir, ertesi gün kanal açılır.
 - Instagram'da mesajların istek kutusunda kalıyorsa ya da gönderirken ekranda bir uyarı çıkıyorsa: o hesaptan bir hafta soğuk mesaj yok, sayı e-postaya geçer. İkinci hesap açılmaz; yeni hesap profili kurulana kadar mesaj atamaz, sonra rampanın en başından başlar.
 - O gün telefon yapamıyorsan ("sesim yok") aramanın payı Instagram ve e-postaya dağılır, video yine çekilir çünkü videoda yüzün değil ekranın konuşuyor. Ertesi gün geri dönülür, telefon satırlarının tarihi bir gün kayar.
 - Soğuk temasların kayıt yeri her zaman `adaylar.csv`; CRM'e girilememesi onları etkilemez. CRM açıksa ama o an girilemiyorsa cevap veren ve randevu alan adaylar da `adaylar.csv`'de kalır, bağlantı gelince CRM'e aktarılır.

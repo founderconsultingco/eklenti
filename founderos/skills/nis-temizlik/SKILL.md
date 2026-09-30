@@ -57,7 +57,7 @@ Sözlüğü: ekip, personel, gündelikçi, randevu, metrekare, inşaat sonrası,
 
 **Asistan kuralları.** Sektör bazen fiyat yayınlıyor (Armut, Doğu Temizlik gibi) ama alan, kirlilik durumu ve personel sayısına göre fiyat çok değişiyor. Asistanın net fiyat vermesi riskli, aralık verilebilir ama kesin fiyat keşif/telefon görüşmesine bırakılmalı. Toplanacak bilgiler: hizmet türü (ev, ofis, inşaat sonrası, koltuk, halı), metrekare veya oda sayısı, kaç personel istendiği, tarih ve saat tercihi, adres. Ton konusunda şikayetlerde "ilgisizlik", "ciddiyetsizlik" gibi kelimeler öne çıkıyor (SCT Temizlik şikayeti), bu yüzden asistan hızlı yanıt vermeli ve net, nazik konuşmalı.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Doğrudan kaynaklı saat/kanal verisi bulunamadı (bilinmiyor, sahadan dolacak). İncelenen firma sitelerinin çoğu telefon ve WhatsApp'ı öne çıkarıyor, form daha arka planda. Ev temizliği kararını genelde evdeki kişi (çoğunlukla gündüz), ofis temizliği kararını ofis yöneticisi mesai saatinde veriyor olabilir; bu bir varsayım, sahada doğrulanmalı.
 
@@ -83,15 +83,15 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, kâr düşük yazılıma
 
 "Ev temizliğinde güven meselesi var, botla olmaz." Doğru, asistan sadece randevu ve hatırlatma yapıyor, eve giren kişi değişmiyor; güven konusu mevcut süreçte olduğu gibi kalıyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Geçen ay size ulaşıp da aynı gün dönüş alamayan müşteriler sonra tekrar aradı mı, yoksa öyle mi kaldı?"
 
 İşleyiş sorusu: "Ekip sahadayken, iki ev arasında telefon çalınca ya da WhatsApp'tan fiyat sorulunca ne oluyor, siz mi bakıyorsunuz, akşama mı kalıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: ekip sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; ev mi ofis mi inşaat sonrası mı, kaç metrekare, kaç personel, hangi gün ve adres bilgisini alıp teklif için size iletiyor; haftalıktan aylığa düşen ya da geçen yıl bahar temizliği yaptıran müşteriye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: ekip sahadayken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, ev mi ofis mi, kaç metrekare, hangi gün ve adres bilgisini alıp teklif için size iletiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Ekip sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap verip bilgileri toplayan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

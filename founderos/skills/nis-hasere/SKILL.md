@@ -39,7 +39,7 @@ Sözlüğü: ilaçlama, keşif, seans, garanti, tahtakurusu, hamamböceği, kemi
 
 **Asistan kuralları.** Fiyatı asistan vermemeli: fiyat mekân/durum görülmeden konuşulmuyor (fiyat aralıklarının genişliği ve "keşif" vurgusu yukarıdaki kaynaklarda açık). Asistan hizmet türü (tahtakurusu/hamamböceği/fare/karınca/sivrisinek/güve), mekân tipi, metrekare, sorunun büyüklüğü, daha önce ilaçlama yaptırılıp yaptırılmadığı bilgilerini toplayıp keşif/randevu ayarlamalı. "Kesin çözüm", "garanti" gibi ifadeler asistan ağzından çıkmamalı, iki somut şikayet vakası tam bu sözlerin tutulmamasından doğdu (kaynaklar yukarıda) ve resmi yönetmelik ihlallerde en az 6 ay geçici/kesin izin iptali öngörüyor (Madde 24-25, kaynak: saglik.gov.tr), yani abartılı vaat hem güven kaybı hem yasal risk. Kullanılan kimyasalın adı, dozu, kokunun süresi gibi sorulara asistan genel bilgi verip detayı mesul müdüre/uygulayıcıya bırakmalı.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** İşletmelerin hangi kanaldan (telefon/WhatsApp/Instagram) ne kadar açık olduğuna dair doğrudan kanıt bulunamadı; bilinmiyor, sahadan dolacak. Armut gibi pazaryerinde talebin "form doldur, teklif al" şeklinde işlediği görülüyor (kaynak: armut.com/fiyatlari/hasere-ilaclama_31); bu, adayların kendi talep kanalının form/pazaryeri veya WhatsApp olabileceğini gösteriyor ama kesin değil.
 
@@ -55,15 +55,15 @@ En güçlü üç itiraz: müşteri zaten telefonla arıyor, fiyatı görmeden ve
 
 "Bizim müşteri zaten telefonla arıyor, biz karşılıyoruz." Karşılık: bir çalışan günde ortalama 10 ev yapabiliyor (kaynak: karliyatirimlar.com), telefon çaldığında sahadasın, arayan ikinci kez aramaz. "Fiyatı görmeden veremem, bot fiyat açıklayamaz." Haklısın, zaten vermiyor; mekân bilgisi ve fotoğraf toplayıp keşif/randevuya çeviriyor. "Garanti/kesin çözüm demezsen müşteri ikna olmaz." Tam tersi: iki şikayet vakası da bu sözlerin tutulmamasından doğdu; asistanın bunu söylememesi seni koruyor. "Zaten Armut/pazaryerinden iş geliyor, yeter." Armut'ta 4.472 rakip kayıtlı (kaynak yukarıda); paylaşılan bir havuz, senin özel talebin değil. "Mesul müdür zaten her şeyi takip ediyor, yazılıma gerek yok." Mesul müdür çoğu küçük firmada sahada ilaçlayan kişi; telefon ve mesaj başında değil. "Koku/kimyasal soruları müşteriyi ürkütür, cevap vermeyelim." Bu sorular zaten soruluyor (mesul müdür şartının kendisi bunun hassas bir konu olduğunu gösteriyor); cevapsız bırakmak güven kaybettirir, asistanın hazır bir genel cevabı olması daha iyi.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "İlaçlama yaptırıp garantisi devam eden müşterileri kontrol zamanı gelince siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz sahada, müşterinin evinde ilaçlarken WhatsApp'tan ya da sitenizin formundan fiyat soran müşteri ne yapıyor, cevabı bekliyor mu, sıradaki firmaya mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; tahtakurusu mu hamamböceği mi kemirgen mi, ev mi işyeri mi, kaç metrekare ve daha önce ilaçlama yapıldı mı bilgisini alıp keşif randevusuna yazıyor ya da teklif için size iletiyor; garantisi süren müşteriye kontrol zamanı gelince, geçen yaz ilaçlama yaptırana da sezon başında sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahada ilaçlarken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, hangi haşere, ev mi işyeri mi ve kaç metrekare bilgisini alıp keşif randevusuna yazıyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Ekip sahada ilaçlarken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap verip bilgileri toplayan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

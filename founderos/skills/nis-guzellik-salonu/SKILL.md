@@ -43,7 +43,7 @@ Sözlüğü: paket, seans, randevu, koltuk, kira, maaş, asgari ücret, "sistemd
 
 **Asistan kuralları.** Asistan "tedavi", "iyileştirir", "kalıcı çözüm" gibi sağlık çağrışımlı ifadeler kullanmamalı; öncesi-sonrası fotoğraf ya da müşteri "vakası" paylaşmamalı, çünkü Reklam Kurulu bu tür içerikler için 2023'te iki ayrı dosyada 347.128 TL idari para cezası ve reklam durdurma kararı vermiş (kaynak: hukukihaber.net). Fiyat konusunda esnaf odası tarifesi zaten kamuya açık olduğu için asistan genel aralığı söyleyebilir, ama kesin fiyatı cilt tipine/bölgeye göre uzman belirler, bu ayrım baştan söylenmeli. Asistan bölge/hizmet, önceki seans bilgisi, cilt/tüy tipi gibi bilgileri toplar ve randevuya yönlendirir. Ton nazik ve baskısız olmalı; sektörün asıl imaj sorunu zaten zorla içeri çekme ve baskı satışı, asistanın tam tersi bir izlenim vermesi avantaj.
 
-**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** Instagram. Günün yüz temasının ellisi bu kanaldan gider (hesabın tavanı taşımazsa kalanı önce e-postaya), kırkı arama ile e-posta arasında yarı yarıya bölünür, onu video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Şikayetlerden görüldüğü kadarıyla telefon, WhatsApp ve Instagram DM'in üçü de aktif kullanılıyor ama aralarında senkron yok. Sektör kaynağına göre en yoğun saatler akşam 17.00-20.00 ve hafta sonu, en sakin saatler pazartesi-salı sabahları ve hafta içi gündüz 10.00-14.00 (kaynak: menajer.im). Adayın kendi talep kanalı (form mu, IG DM mi, WhatsApp mı) net değil, demo talebinin nereye bırakılacağı sahada belirlenmeli.
 
@@ -71,15 +71,15 @@ En güçlü üç itiraz: kendim cevap veriyorum, fiyatı ben söylemeliyim, bot 
 
 "Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Biz reklam üretmiyoruz, size zaten gelen talebi (arayan, yazan, eski müşteri) değerlendiriyoruz. Mesajlarımızda öncesi sonrası fotoğrafı, "tedavi" lafı, kampanya yok.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Epilasyon ya da cilt bakımı paketi alıp seansını yarıda bırakan müşterileri siz mi arıyorsunuz, yoksa kalan seans hakları öylece mi duruyor?"
 
 İşleyiş sorusu: "Akşam saatlerinde salon doluyken, siz müşterinin başındayken WhatsApp'tan ya da Instagram'dan randevu isteyen müşteri ne yapıyor, cevabı bekliyor mu, başka salona mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz müşterinin başındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; hangi bölge ya da hangi bakım istendiğini, daha önce seans alınıp alınmadığını sorup randevuyu tek yere yazıyor; paketini yarıda bırakan ya da idame zamanı gelen müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz müşterinin başındayken telefona ya da mesaja yetişemediğinizde yazana dakikalar içinde dönüyor, hangi bakımı istediğini ve uygun saatini alıp randevuya yazıyor. [Şehir]'de bu ay ilk üç salonla başlıyorum."
 
 Çalışan açarsa: "Salon doluyken, herkes müşterinin başındayken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde randevu isteyene cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman salonda olur?"
 

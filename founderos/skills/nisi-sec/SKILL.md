@@ -130,7 +130,7 @@ Sonra kurulum ve aylık çıkar: aylık kayıp çarpı on iki, yıllık; kurulum
 
 Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; × 12 = yıllık; kurulum = yıllığın onda biri; aylık = kurulumun beşte biri. Müşteri değeri elemesi: aylık ücret çarpı dört senin aylık hedefine ulaşmıyorsa niş yalnız büyük işletmeleriyle (çok koltuk, çok şube, çok ekip) geçer, kartın Kapsam bölümüne bu şart yazılır; büyük işletmesi de taşımıyorsa niş düşer. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve bu elemenin sonucu "bilinmiyor" olur; bilinmiyor geçti sayılmaz (yukarıdaki eksik veri kuralı).
 
-Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Hesap isini-kur'daki zincirle yapılır (hedef bölü nişin aylık ücreti, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı). Aynı hesap günde yirmi sekiz arama yapan biri için iki buçuk katı uzun çıkar; o yüzden işin yanında çalışanda bu eleme hedef üzerinden değil, tek müşteri üzerinden yapılır. Bu hesap içeride yapılır; "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta verilir.
+Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Hesap isini-kur'daki zincirle yapılır (hedef bölü nişin aylık ücreti, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı). Aynı hesap günde yirmi arama yapan biri için iki buçuk katı uzun çıkar; o yüzden işin yanında çalışanda bu eleme hedef üzerinden değil, tek müşteri üzerinden yapılır. Bu hesap içeride yapılır; "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta verilir.
 
 Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı nerede" bölümlerinden çıkar. Kartta ikisinden biri yoksa bu elemenin sonucu "bilinmiyor" olur; kart elenmez ama geçmiş de sayılmaz, sırası eksik veri kuralıyla belirlenir.
 
@@ -195,6 +195,8 @@ Niş değiştirmek isterse: "Üç yüz temasa gelmeden niş değişmez. Şu an k
 İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi). Doğrulama tablosunu nisi-dogrula'nın sonucuyla FounderOS yazar: çoğu zaman birinci gün, servis cevap vermediyse ikinci blokta.
 Klasöre: `nis-karti.md`, seçilen kartın tamamı; yalnız "Yasal sınırlar" bölümünün gövdesi yerine tek satırlık yönlendirme (yukarıda). Gizli klasöre: `.founderos/nis-sinirlar.md`, o bölümün gövdesi (denetçi ve modüller için).
 Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
+
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `nis`, `pazar.secilen`, `pazar.neden`, `pazar.adaylar` (karşılaştırılan nişler: nişin adı, şehirdeki sayım, Türkiye sayısı, reklam veren ve telefonu olan yüzdesi, tek cümle not; bilinmeyen değer yazılmaz); sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 

@@ -231,6 +231,14 @@ Cümleyi ve sistemi bir dakikada anlatan metin yazılır. Sen sesli okursun. Fou
 
 Ölçü şu: yanındaki masada oturan birine, hazırlıksız, rahatça söyleyebiliyor musun. Söyleyemiyorsan cümle uzun ya da bulanıktır.
 
+### Mekanizmanın adımları
+
+Sistemin nasıl çalıştığı üç ya da dört adımda yazılır. Her adımın adı bir iki kelime ("Yakala", "Randevuya yaz", "Hatırlat"), altında iki üç cümle: ne oluyor, kime, ne zaman. Adımlar teklifin başlığındaki üç akıştan çıkar; yeni vaat eklenmez, fiyat ve rakam girmez. Adımların toplu adı mekanizmanın adıdır ("Yakala, yaz, hatırlat"). Sayfa, satış videosu ve görüşmedeki sunum aynı adımları aynı adlarla kullanır; panelde Ajansım'da "Benzersiz mekanizma" olarak durur.
+
+### Teklifin açıları
+
+Aynı teklif, işletmeye başka kapıdan giren beş ile yedi açı olarak da yazılır. Her açı bir başlık ve iki üç cümle. Açılar nişin kartından ve teklifin kendisinden çıkar: işin en yoğun zamanı (sezon, akşam saati, hafta sonu), eski müşteri listesi, numaranın ve düzenin değişmemesi, fiyat vermeyen asistan, reklam parasının boşa gitmemesi, işin öbür mevsimi. Yeni vaat yok; rakam varsa kaynağıyla, kaynağı yoksa rakam yok. Açı, işletmede görülen aksaklığa göre seçilir: yorumunda "ulaşamadım" yazan işletmeye akşam saati açısı, reklam verene reklam açısı, eski müşterisi çok olana liste açısı. Mesajın, videonun ve görüşmenin ilk cümlesi o açıdan kurulur; haftanın içeriği de konusunu bu açılardan alır. Panelde Ajansım'da "Teklifin farklı açılardan" olarak durur, öğrenci oradan kopyalar.
+
 ## 6. Ne söyler
 
 Cümle bitince: "Teklifin hazır. Sen yazmadın, sektörün yazdı. Şunu satıyorsun: [Dönüşüm Cümlesi]. Cümlenin sonundaki duyguya dikkat et. İşletmeci onu satın alıyor, sistemi değil."
@@ -242,8 +250,10 @@ Cümleyi beğenmezse: "Bu cümle bugün mükemmel olmayacak, on görüşmede otu
 
 ## 7. Ne yazar
 
-İş Beyni'ne: Dönüşüm Cümlesi, sistemin adı, üç kademenin nişe özel içeriği, bir dakikalık anlatım, üç ya da dört itiraz ve cevapları, teklif sürümü 1 ve tarihi.
+İş Beyni'ne: Dönüşüm Cümlesi, sistemin adı, mekanizmanın adı ve adımları, üç kademenin nişe özel içeriği, bir dakikalık anlatım, teklifin açıları, üç ya da dört itiraz ve cevapları, teklif sürümü 1 ve tarihi.
 Sonraki sürümler on görüşmelik birikimden çıkar. İş Beyni'nde güncel sürüm ve numarası durur; eski sürüm kaybolmaz, değiştiği günün günlüğüne sebebiyle yazılır. Hangisinin daha iyi çalıştığını böyle görürsün.
+
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `donusum`, `sistem_adi`, `mekanizma` (ad ve adımlar), `teklif` (bir_dakika, kademeler, guvence, acilar, itirazlar); sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 

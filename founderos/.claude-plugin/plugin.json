@@ -1,7 +1,7 @@
 {
   "name": "founderos",
   "displayName": "FounderOS",
-  "version": "0.70.1",
+  "version": "0.72.0",
   "description": "Sıfırdan tek kişilik yapay zekâ servis işini doksan günde kuran sistem. Her sabah ne yapacağını söyler, her adımı seninle birlikte kurar.",
   "author": {
     "name": "Berk Sezgin"

@@ -316,6 +316,8 @@ Ayrıca aynı bölüme **dosya haritası**: hangi dosya hangi kullanım için ve
 Ve **eksik gerçek bilgiler satırı**: henüz olmayan telefon, e-posta ya da adres, hangi dosyayı beklettiğiyle birlikte. Bilgi geldiği gün o dosyalar yeniden üretilir.
 Bir sonraki modüllere: sayfa düzeni panosu ve seçilen alan adı siteni-kur'a, kanal şablonları kisisel-markani-kur'a, belge şablonları onay-belgesini-hazirla'ya.
 
+Panel: marka kitinin `window.MARKA` bloğu panelin Ajansım bölümünün kaynağıdır (logo, renk, yazı tipi, biz ve değil); ayrıca yazılmaz. `.founderos/panel/ajans.json`'a yalnız `ad`, `sehir`, `nis` ve `alan_adi` (şeması `founderos:panel-vitrini`'de); sonra aracın `panel --yukle` komutu sessiz çalışır.
+
 ## 8. Yedek yol
 
 - Seçim ekranı açılmazsa: üç seçenek sohbette yazıyla anlatılır (isim, işaret, palet, tipografi, tek satır açıklama) ve öğrenci yine numarayla seçer. Gün durmaz.

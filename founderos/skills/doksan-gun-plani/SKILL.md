@@ -52,7 +52,8 @@ Görevin: aşağıdaki öğrenci için, seçtiği nişte AI Müşteri Dönüşü
 - Öğrencinin takvimi beş bloktur, gün değil. Birinci blok üç oturuştur: tam zamanlıda aynı gün, işin yanında aynı gün ya da art arda akşamlar. Sonraki dört blok tam zamanlıda birer gün, işin yanında çalışanda ikişer gün; hazırlık tam zamanlıda beş gün, işin yanında dokuz gün sürer, birinci blok bir günden uzun sürdüyse sonraki tarihler o kadar kayar. Çalışma düzenini İş Beyni'nden okur, tarihleri başlangıç tarihinden sayar ve planda gerçek tarihle yazarsın. Birinci bloğun sonunda kurulmuş bir iş vardır; üçüncü bloğun akşamı tanıdıklara ilk mesaj gider; beşinci bloğun akşamı ilk on soğuk temas, ertesi gün tam saha: günde yüz temas, işin yanında çalışıyorsa kırk. Şirket konusu planda hiç geçmez; ilk müşteri "evet" dediğinde ayrıca konuşulur.
 - CRM hesabı başlangıç görüşmesinde açılır, hazırlık bloklarında değil. O güne kadar soğuk adaylar aday listesinde, randevular ve cevap verenler İş Beyni'nin "Bugünün listesi" bölümünde tutulur; bu bir eksiklik değil, varsayılan yoldur. CRM açılınca yalnız sıcak kayıtlar oraya taşınır.
 - Müşterinin teslimatı [21/28] gün; öğrenci işin yanında çalışıyorsa takvim yirmi sekiz güne yazılır. Hangisi olduğunu çalışma düzeninden okur, planda o sayıyı kullanırsın.
-- Günde yüz temas, tek kural: yetmişi ana kanaldan (nişin kartı seçer), yirmi beşi diğer iki yazılı kanaldan, beşi video mesaj. Takipler yüzün içinde. İşin yanında çalışanda aynı kural kırkla: 28, 10, 2. Ana kanal yazılıysa ilk haftalar rampada gider ve eksik pay aramaya geçer. Aramanın da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren yolun kendi sayısı; eksik pay yazılı kanala geçer.
+- Günde yüz temas, tek kural: ellisi ana kanaldan (nişin kartı seçer), kırkı diğer iki kanaldan, onu video mesaj. Ana kanal telefonsa bu elli arama, kırk yazılı mesaj (yarısı Instagram, yarısı e-posta) demek; ana kanal Instagram'sa elli Instagram, kırk arama ve e-posta. Takipler yüzün içinde. İşin yanında çalışanda aynı kural kırkla: 20, 16, 4. Teslim süresinde aynı oran: 30, 24, 6 ve işin yanında 10, 8, 2. Video ilk hafta beş (işin yanında iki), sonra on (dört). Ana kanal yazılıysa yeni hesap rampada gider; kanalın taşıyamadığı pay önce öbür yazılı kanala, o da doluysa aramaya geçer. Aramanın da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren yolun kendi sayısı; eksik pay yazılı kanala geçer.
+- Soğuk temasın yolu Truva Atı Metodu: gerçek gözlemle açılır, mevcut düzene dair tek soru sorulur, dinlenir, çözüm tam o noktaya bağlanır, çalışan örnek teklif edilir, izin gelince kısa ekran videosu ve görüşme daveti gider, takip tarihi kaydedilir. Yapılmamış arama anlatılmaz, kayıp uydurulmaz, ilk mesajda bağlantı olmaz.
 - İşin yanında çalışanın arama pencereleri öğle arası ve cumartesi sabahıdır. Akşam yalnız kartın kanal ve zaman bölümü o saatte açık diyorsa arama saatidir; değilse yazılı kanal ve hazırlık saatidir.
 - WhatsApp'tan soğuk mesaj yok.
 - Sahibinin adı yoksa arama yine yapılır; açılış adı sormadan, yardım isteyen haldir (işletmenin adı teyit edilir, gelen aramaları kimin takip ettiği sorulur), "işletme sahibi siz misiniz" diye sorulmaz. Ad ilk aramada öğrenilip karta yazılır. Adı bulunmuş aday sırada önde gelir. Veri servisi sahip adı vermiyor, o yüzden listenin çoğunda bu satır boş geliyor; boş diye aday atlanmaz.
@@ -97,10 +98,11 @@ Tutum: Zayıf, belirsiz, aşırı temkinli tavsiye verme. "Sonuç garanti değil
 
 9. KANCALAR. Kanca: işletmecinin zaten bildiği ama yapmadığı şeyi yüzüne tutan tek cümle. En az on beş tane, bu nişin diliyle, karttaki gerçek şikâyetlerden ve kapasite rakamlarından. Yeni müşteri vaadi değil. Her kancanın yanına hangi kanalda çalışacağını yaz: telefon, e-posta, Instagram.
 
-10. MESAJLAR. Bu nişe özel tam metinler:
-- telefon açılışı, beş parça: rahatlatma, kanca, tek cümle, belirli saatle randevu, itiraz
-- e-posta: gözlem, sorun, ne yaptığın, küçük istek; link yok, şehir imzada
+10. MESAJLAR. Bu nişe özel tam metinler, hepsi Truva Atı Metodu'yla (gerçek gözlemle açılır, tek soru sorar; yapılmamış arama anlatılmaz, kayıp rakamı yok, ilk mesajda bağlantı yok):
+- telefon açılışı: rahatlatma, gözlem ya da kartın sorusu, işleyiş sorusu, çözümü cevaba bağlayan tek cümle, çalışan örnek teklifi, belirli saatle randevu, itiraz
+- e-posta: gözlem, tek soru, neden sorduğun; link yok, şehir imzada
 - Instagram mesajı: önce yorum, sonra gözlem ve tek soru
+- cevap gelince: dinlediğini belli eden cümle, çözümü o noktaya bağlayan cümle, çalışan örnek teklifi, izinden sonra demo videosu ve görüşme daveti
 - üç takip: üçüncü gün, yedinci gün değer, on dördüncü gün ayrılık
 - tanıdığa tek soruluk mesaj
 - "fiyat ne" cevabı: aralık, sebep, görüşmeye bağla

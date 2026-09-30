@@ -195,6 +195,8 @@ Ucuz satmak isterse: "Ucuz fiyat ucuz müşteri getiriyor. Ayrıca dört müşte
 İş Beyni'ne: hangi formülün kullanıldığı (gelir ya da tasarruf) ve hesabın iki girdisi, üç kademenin kurulum ve aylık rakamı, nişin varsayılan rakamı ve bandı, karşılaştırma fiyatı, deneme fiyatı işareti, üç karşılık, güvence cümlesi ve şartları, "fiyat ne" cevabı, kartın kaçan müşteri rakamı ve kurtarma tahmini, fiyat sürümü 1 ve tarihi.
 CRM'e (açıldığı gün): kurulum ve aylık ücret satırları kayıtta hazır duruyor, aday "kazandım" aşamasına geçtiğinde doldurulur.
 
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `fiyat` (bant; kesinleşince kurulum ve aylık), `teklif.kademeler`'in `kurulum` ve `aylik` rakamları, fiyat itirazı ve cevabı `teklif.itirazlar`'a; sonra aracın `panel --yukle` komutu sessiz çalışır.
+
 ## 8. Yedek yol
 
 - Bant kesinleşmemişse: modül kart verisinden formülle bir aralık önerir ve "aralık" etiketiyle kaydeder. Nişin varsayılanı üçüncü blokta konur, görüşmede işletmecinin rakamıyla hesap yeniden kurulur.

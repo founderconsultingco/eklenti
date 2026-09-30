@@ -63,7 +63,7 @@ Toplayacağı bilgi: hangi hizmet (reformer, mat, PT, EMS), daha önce deneyim v
 
 Ton uyarısı: rezervasyon anında iptal ve telafi kuralını açık ve yazılı hatırlatmalı. Aylarca cevap verilmeyen iade talepleri (sikayetvar.com/playstudyo/... sikayetvar.com/nova-pilates-studyo/...), bu belirsizliğin işletmecinin kendi kontrolünde olduğunu gösteriyor.
 
-**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** Instagram. Günün yüz temasının ellisi bu kanaldan gider (hesabın tavanı taşımazsa kalanı önce e-postaya), kırkı arama ile e-posta arasında yarı yarıya bölünür, onu video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** SunFizyo Pazartesi-Cumartesi 09.00-22.00 çalışıyor (sunfizyo.com), Fitamine Pazartesi-Cuma 09.00-21.00 (fitamine.com.tr). Taranan stüdyoların hepsi talebi aynı üç kanala yönlendiriyor: telefon, WhatsApp, Instagram. Instagram DM yoğunluğu bu oturumda da doğrudan ölçülemedi, bilinmiyor, sahadan dolacak; ama sitelerin sistematik olarak buraya yönlendirmesi bunun birincil talep noktası olduğunu dolaylı ama tutarlı şekilde gösteriyor.
 
@@ -91,15 +91,15 @@ En güçlü üç itiraz: WhatsApp'a ben cevap veriyorum, müşterim zaten sadık
 
 "Instagram'ı ajansa verdim, onlar ilgileniyor." İçerik üreten ile DM'e dönen genelde farklı kişi. Ajansın rakibi değil tamamlayıcısısın, ajans talep üretiyor, sen o talebi kaçırmıyorsun.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Paketi bitip yenilemeyen üyeleri sonradan stüdyodan biri mi arıyor, yoksa dönerse kendisi mi dönüyor?"
 
 İşleyiş sorusu: "Siz derste, reformerın başında üyeyle ilgilenirken WhatsApp'tan ya da Instagram'dan 'deneme dersi var mı, fiyat ne' diye yazan kişi ne yapıyor, cevabı bekliyor mu, başka stüdyoya mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz derste ya da üyenin başındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye de dakikalar içinde dönüyor; reformer mı mat mı PT mi EMS mi istediğini, daha önce yapıp yapmadığını ve uygun gün saatini sorup deneme dersi randevusuna yazıyor; paketi biten ya da yazın düşüp dönmeyen üyeye de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz dersteyken telefona ya da mesaja yetişemediğinizde yazana dakikalar içinde dönüyor, ne yapmak istediğini ve uygun saatini sorup deneme dersine yazıyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
 
 Çalışan açarsa: "Eğitmen derste, herkes üyenin başındayken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde deneme dersi isteyene cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman stüdyoda olur?"
 

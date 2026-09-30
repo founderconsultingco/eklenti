@@ -47,7 +47,7 @@ Sözlüğü: usta, çırak, sanayi, dükkan, parçacı, balata, balans, periyodi
 
 **Asistan kuralları.** Fiyat vermez; bu sektörde arıza görülmeden, araca bakılmadan fiyat verilemeyeceği hem forumda hem şikayet örneklerinde (yanlış teşhis vakaları) açık. Asistan araç bilgisi toplar: marka, model, yıl, km, arızanın belirtisi (ses, ışık, koku), varsa fotoğraf/video, ne zaman getirebileceği. Sonra randevuya çevirir, fiyatı usta söyler. Ton: Ekşi Sözlük'te övgüler "arızayı açık ve net anlatan", "sabit ve insaflı fiyat veren" ustalar üzerine; şikayetler yanlış teşhis ("akü ölmüş deyip mutlu akü satmak isterken asıl arıza benzin pompasıymış") ve gereksiz parça değişimi üzerine yoğunlaşıyor (eksisozluk.com). Asistan bunu taklit etmemeli, net ve dürüst bilgi toplamalı, teşhis ve fiyat konusunda hiçbir şey iddia etmemeli.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Telefon ana kanal gibi görünüyor (şikayetlerin çoğu telefon/iletişim eksikliği temalı), ama ustanın günün hangi saatinde müsait olmadığı (araç altında, elleri kirli) konusunda doğrudan kaynaklı kanıt bulunamadı, bilinmiyor. Adayın kendi talep kanalı (form/DM/WhatsApp/telefon) sahadan doldurulacak.
 
@@ -73,15 +73,15 @@ En güçlü üç itiraz: telefona zaten ben bakıyorum, aracı görmeden fiyat v
 
 "Garantili araç bize zaten gelmez, yetkili servise gider." Garanti kapsamındaki araç sahibi de eşdeğer parça ve faturayla bağımsız serviste bakım yaptırabilir, garanti bundan dolayı düşmez.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Geçen sezon lastiğini değiştirdiğiniz ya da bakımını yaptığınız müşterileri bu sezon siz mi arıyorsunuz, yoksa onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz aracın altındayken, elleriniz yağlıyken telefon çalınca ne oluyor, çırak mı açıyor, müşteri tekrar mı arıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz aracın altındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; aracın markasını, modelini, kilometresini ve arızanın belirtisini alıp servis randevusuna yazıyor; geçen yılın bakım ve lastik müşterilerine de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz aracın altındayken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, aracı, kilometresini ve arızanın belirtisini alıp servis randevusuna yazıyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
 
 Çalışan açarsa: "Usta aracın altındayken telefona ve WhatsApp'a yetişilemeyen saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
 

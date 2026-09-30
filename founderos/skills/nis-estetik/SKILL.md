@@ -39,7 +39,7 @@ Sözlüğü: konsültasyon, kontrol muayenesi, işlem, seans, randevu, rinoplast
 
 **Asistan kuralları.** Bu nişte en kritik bölüm, çünkü sağlık hizmeti kuruluşu. Yönetmeliğe göre (Mevzuat bölümüne bakın) asistan fiyat bilgisi ve "üstün hizmet" iddiası paylaşmaz, kampanya/indirim/hediye/çekiliş dili kurmaz, öncesi-sonrası görsel veya hasta yorumunu tanıtım amacıyla kullanmaz. Toplar: ad soyad, iletişim bilgisi, ilgilenilen işlem, uygun tarih, daha önce konsültasyon yapılıp yapılmadığı; tıbbi/klinik değerlendirmeyi hekime devreder. Yaptığı şey mevcut hastaya kontrol hatırlatması ve randevu bilgilendirmesidir, bu tanıtım/reklam değil hizmet devamlılığıdır. Sağlık verisi KVKK'da özel nitelikli kişisel veri sayıldığından ton mahremiyete duyarlı olmalı.
 
-**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** Instagram. Günün yüz temasının ellisi bu kanaldan gider (hesabın tavanı taşımazsa kalanı önce e-postaya), kırkı arama ile e-posta arasında yarı yarıya bölünür, onu video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Doğrudan kanıt (telefon açıklığı, günün hangi saati müsait) bu oturumda da bulunamadı, bilinmiyor, sahadan dolacak. Ama kanal örüntüsü net: medikal turizm sürecinde birincil kanal WhatsApp ve Instagram, danışman profili üzerinden yürüyor (kaynak: efcclinic.com), Vera Clinic'te ameliyat sonrası takip de özellikle WhatsApp üzerinden (önceki oturum kaynağı: trustpilot.com/review/veraclinic.net). Randevu sisteminin kendisi güvenilmez olabiliyor: Apex Tıp Merkezi'nde randevu bir gün öncesinden iptal edilmiş (kaynak: sikayetvar.com/apex-tip-merkezi).
 
@@ -57,15 +57,15 @@ En güçlü üç itiraz: yeni yönetmelik yüzünden temkinliyiz, kontrolü dan�
 
 "Yeni yönetmelik yüzünden temkinliyiz, bir şey eklemeyelim." Sistem reklam yapmıyor; kampanya, indirim, öncesi sonrası görseli yok. Sadece mevcut hastaya kontrol hatırlatması ve randevu bilgilendirmesi yapıyor; metni klinik onaylamadan hiçbir şey gitmiyor. "Kontrol randevusunu zaten hemşiremiz/danışmanımız arıyor." Şikayetvar'daki örnekler bunun sahada çoğu zaman işlemediğini gösteriyor: 4 ay hiç arama yapılmaması, 1 yıldan fazla bilgilendirme dönüşü olmaması (sikayetvar.com/jinekomasti). "Biz zaten WhatsApp'tan dönüyoruz." Sektörün kendi best-practice örneği bile bunu ayrı bir danışman rolüne bağlamış (efcclinic.com); küçük klinikte bunu tek başına sekreter yapıyor ve atlıyor. "Fiyat konusunda bot bir şey söyleyemez." Doğru, zaten rinoplasti dışında hemen hiçbir klinik fiyat yayınlamıyor (doktortakvimi.com), rinoplasti'de bile fiyat 40.000 ile 300.000 TL arasında 7 kat değişiyor (drakinsahin.com, estetikrehberi.tr); asistan da fiyat vermeyecek, sadece bilgi toplayıp randevuya çevirecek. "Hasta mahremiyeti var, bilgi toplayamayız." Toplanan bilgi ad, iletişim ve randevu tercihi; tıbbi karar hekimde kalıyor. "Zaten kurulum maliyetimiz çok yüksek, ek gidere param yok." Klinik kurulum maliyeti 1,7-7,75 milyon TL ve break-even 18-24 ay (dermanplus.com.tr); aylık asistan ücreti bunun yanında marjinal, tek bir kaçırılan rinoplasti hastası bunu kat kat karşılıyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "İşlem yaptığınız hastaların kontrol muayenesi zamanı gelince klinikten biri mi arıyor, yoksa hasta kendisi mi arıyor?"
 
 İşleyiş sorusu: "Siz ameliyatta ya da işlemdeyken WhatsApp'tan ya da Instagram'dan konsültasyon isteyen kişi ne yapıyor, cevabı bekliyor mu, başka kliniğe mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz ameliyatta ya da işlemdeyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye de dakikalar içinde dönüyor; adını, telefonunu, hangi işlemle ilgilendiğini, uygun tarihini ve daha önce konsültasyon yapılıp yapılmadığını alıp muayene randevusuna yazıyor, fiyat ve tıbbi bilgi vermiyor; işlem yaptığınız hastaya da hekimin planladığı kontrol muayenesi zamanı gelince sizin adınıza, kampanya dili olmadan randevu hatırlatması gönderiyor. [Şehir]'de bu ay ilk üç klinikle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz ameliyatta ya da işlemdeyken telefona ya da mesaja yetişemediğinizde yazana dakikalar içinde dönüyor, hangi işlemle ilgilendiğini ve uygun tarihini alıp muayene randevusuna yazıyor; fiyat ve tıbbi bilgi vermiyor. [Şehir]'de bu ay ilk üç klinikle başlıyorum."
 
 Çalışan açarsa: "Hekim ameliyatta ya da işlemdeyken telefona ve WhatsApp'a yetişilemeyen saatlerde konsültasyon isteyen kişiye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman klinikte müsait olur?"
 

@@ -55,7 +55,7 @@ Bu cümle yedi şikayetin ortak kalıbına (müşteri arıyor, işletme cevap ve
 
 **Asistan kuralları.** Bu oturumun en önemli çıkarımı: yedi şikayetin yedisinde de sorun ilk temasta değil, satış SONRASI süreçte. Asistanın işi randevu almakla bitmiyor; çekim sonrası "albümünüz şu aşamada, tahmini teslim tarihi şu" gibi düzenli otomatik durum bildirimi göndermesi, sektörün en kanıtlı şikayet temasını doğrudan hedefliyor. Fiyat konusunda asistan net rakam vermemeli, çekim türü, tarih, mekan, kişi sayısını toplayıp randevuya yönlendirmeli; fiyat uçurumu (1.200-250.000 TL) bunu zorunlu kılıyor. Övgü ya da kabalık teması öne çıkmadı, baskın tema hep gecikme ve sessizlik; asistanın en çok önemsemesi gereken şey sessiz kalmamak.
 
-**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** Instagram. Günün yüz temasının ellisi bu kanaldan gider (hesabın tavanı taşımazsa kalanı önce e-postaya), kırkı arama ile e-posta arasında yarı yarıya bölünür, onu video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Instagram, Stüdyo Mod şikayetinde ve İzmir Düğün Hikayesi/Aşk Hikayesi'nin marka adlandırmasında ilk temas ve marka kanalı olarak doğrulandı. Saatlik müsaitlik bilgisi bulunamadı, sahadan dolacak.
 
@@ -85,15 +85,15 @@ En güçlü üç itiraz: Instagram'a ben bakıyorum, sezonda gecikme normal, tek
 
 "Kuruluşa zaten yüz binlerce lira yatırdım, bir yazılıma daha param yok." Kuruluş maliyeti 101.000-750.000 TL, aylık asistan ücreti bunun yanında küçük; kaçırılan tek bir düğün talebi bile (3.500-40.000 TL) bu farkı kapatıyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Geçen sene teslim ettiğiniz işlerde albümün hangi aşamada olduğunu müşteriye siz mi haber verdiniz, yoksa müşteri arayıp mı sordu?"
 
 İşleyiş sorusu: "Siz çekimdeyken, sezonun en dolu haftasında Instagram'dan ya da WhatsApp'tan 'düğün paketiniz ne kadar' diye yazan çift ne yapıyor, cevabı bekliyor mu, başka stüdyoya mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz çekimdeyken telefon çalarsa aramayı o açıyor, Instagram'a, WhatsApp'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; çekim türünü, tarihi, mekanı ve kişi sayısını alıp paket teklifi için size iletiyor ya da stüdyo çekimine randevu yazıyor; siz 'albüm baskıda' dediğinizde teslimi bekleyen müşteriye sizin adınıza haber veriyor, yenidoğan çekimi yaptırmış aileye de bir sonraki seans zamanı gelince hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz çekimdeyken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, çekim türünü, tarihi ve mekanı alıp paket teklifi için size iletiyor. [Şehir]'de bu ay ilk üç stüdyoyla başlıyorum."
 
 Çalışan açarsa: "Fotoğrafçı çekimdeyken Instagram'a ve WhatsApp'a yetişilemeyen saatlerde paket soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman stüdyoda olur?"
 

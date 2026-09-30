@@ -43,7 +43,8 @@ Siteye konan uzun satış videosu ayrı bir iştir ve bugün çekilmez. Onun iş
 Sistemdeki videolar, karıştırma:
 - **Ön görüşme videosu:** bu modül. Üç ile beş dakika, herkese aynı, randevu alana gider.
 - **İtiraz videoları:** bu modül. Üç tane, her biri bir iki dakika, aynı sayfada durur.
-- **Video mesaj:** bir dakika, adaya özel, Loom ile; ilk yazılı temastan sonra üçüncü gün cevap gelmediyse ikinci dokunuş olarak, önce en çok istenen yüz işletmeye.
+- **Video mesaj:** bir dakika, adaya özel, Loom ile; ilk yazılı temastan sonra üçüncü gün cevap gelmediyse ikinci dokunuş olarak, önce en çok istenen yüz işletmeye (video-mesaj-cek).
+- **İzinden sonraki demo videosu:** bir iki dakika, cevap verip çalışan örneği görmek isteyen adaya: onun sayfası, konuşulan ihtiyaç, demoda test randevusu, görüşme daveti (video-mesaj-cek).
 - **Deneme videosu:** beşinci gün, kimseye gitmez.
 - **Site videosu:** bu modül, aynı oturuş. Ön görüşme videosunun malzemesi seni hiç tanımayana göre yeniden sıralanır, beş parça, iki dakika; sitenin video bölümüne girer.
 - **Uzun satış videosu:** ilk müşteriden sonra, satış sayfasıyla birlikte.

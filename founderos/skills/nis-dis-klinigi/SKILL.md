@@ -41,7 +41,7 @@ Sözlüğü: muayene, dolgu, kanal tedavisi, implant, protez, ortodonti, diş ta
 
 **Asistan kuralları.** Fiyat vermez: sektörün büyük markaları da (Dentakay, VIP Dental, Dent Group) hastayı görmeden fiyat vermiyor. Vaat/abartı içeren ifade kullanmaz ("kesin sonuç", "ağrısız", "en iyi" gibi), bu tam olarak 12 Kasım 2025 yönetmeliğinin yasakladığı alan (aşağıda). Hasta yorumu, teşekkür mesajı veya "öncesi-sonrası" görsel paylaşmaz/kullanmaz. Sadece bilgi toplar: şikayet hangi diş/bölgede, ne zamandır var, daha önce röntgen çekilmiş mi, fotoğraf gönderilebilir mi; sonra randevuya yönlendirir. Mevcut/kayıtlı bir hastaya kontrol hatırlatması gönderirken kampanya, indirim veya "gelin bakalım" tarzı genel çağrı dili kullanmaz; hatırlatmayı hastanın kendi geçmiş tedavisine ve hekimin verdiği tavsiyeye bağlar (randevu teyidi/hizmet sürekliliği çerçevesi). Ton konusunda tekrar eden şikayet teması kabalık/sabırsızlık ("Kaba Ve Sabırsız Çocuk Diş Hekimi Tutumu" gibi, önceki oturumda tespit edildi), bu yüzden asistan sakin ve bilgilendirici bir ton kullanmalı.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Şikayetlerden görülen ana talep kanalları telefon (randevu/geri dönüş şikayetlerinin çoğu) ve Instagram (pazarlama kanalı ve aynı zamanda yanıltıcı görsel şikayetlerinin kaynağı). MHRS örneğinde diş ağrısı olan hastaların acil/kısa vadeli randevu aradığı görülüyor. Kesin müsait saat aralığı verisi bu oturumda da bulunamadı, bilinmiyor, sahadan dolacak.
 
@@ -65,15 +65,15 @@ En güçlü üç itiraz: telefonu sekreterim açıyor, yeni yönetmelikten sonra
 
 "Telefonu ben/sekreterim zaten açıyorum", şikayet kayıtları randevuya 1,5 ay ulaşılamadığını ve "hiçbir geri dönüş yapılmadı"ğını gösteriyor. "Fiyatı bot veremez", haklı, zaten vermiyor; Dentakay ve VIP Dental gibi büyük markalar da hastayı görmeden fiyat vermiyor. "Instagram'ı ajansa verdim", şikayetlerin çoğu tam da Instagram'dan gelen talebin sonrasında koptuğunu gösteriyor (Yıldız İstanbul, Özel Diyalog). "Yeni yönetmelikten sonra hiçbir mesaj gönderemeyiz", sistem reklam yapmıyor; kayıtlı hastaya giden kontrol hatırlatması fiyat, vaat ve kampanya içermiyor, hastanın kendi tedavisine bağlı; metni klinik onaylamadan hiçbir şey gitmiyor. "Hastalarım zaten kendi geliyor", Elif ve Işık Diş Sağlığı örnekleri, tedavisi yarım kalanların sistematik aranmadığını gösteriyor. "Randevu iptali hastanın suçu", MHRS örneğinde hasta habersiz iptalden şikayetçi. "Ek maliyet, karşılığını göremem", tek bir implant hastasının değeri (32.000-200.000 TL) aylık ücretin onlarca katı, TDB'nin resmi tarifesi de 2025'ten 2026'ya %36-50 arttı.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Altı ayda bir kontrole gelin dediğiniz hastaları zamanı gelince klinikten biri mi arıyor, yoksa hasta aklına gelince mi arıyor?"
 
 İşleyiş sorusu: "Siz hastanın başındayken, ünitte elinizde işken telefona ve WhatsApp'a yetişilemeyince diş ağrısıyla yazan hasta ne yapıyor, cevabı bekliyor mu, başka kliniğe mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz hastanın başındayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan hastaya da dakikalar içinde dönüyor; şikayetin hangi bölgede olduğunu ve ne zamandır sürdüğünü sorup randevuya yazıyor, tıbbi bilgi ve fiyat vermiyor; kayıtlı hastanıza da hekimin tavsiye ettiği kontrol zamanı gelince sizin adınıza, kampanya dili olmadan hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç klinikle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz hastanın başındayken telefona ya da mesaja yetişemediğinizde hastaya dakikalar içinde dönüyor, şikayetin nerede ve ne zamandır olduğunu sorup randevuya yazıyor; tıbbi bilgi ve fiyat vermiyor. [Şehir]'de bu ay ilk üç klinikle başlıyorum."
 
 Çalışan açarsa: "Hekim hastanın başındayken telefona ve WhatsApp'a yetişilemeyen saatlerde randevu isteyen hastaya cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman klinikte müsait olur?"
 

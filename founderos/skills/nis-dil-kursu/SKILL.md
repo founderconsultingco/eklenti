@@ -36,7 +36,7 @@ Kayıp birimi: 8.000 ile 40.000 lira (bir kaçan kayıt; kartın kur fiyat aral�
 
 **Asistan kuralları.** Kur fiyatını bilgi bankasında varsa söyler, yoksa "seviye tespitinden sonra size uygun kur ve ödeme planını danışmanınız iletsin" der. Seviye tespiti randevusu yazar. En fazla üç soru: hangi dil ya da alan, hedef (iş, sınav, yurt dışı), tercih edilen gün ve saat. "Kesin başarı", "garanti geçersiniz", "iki ayda konuşursunuz" demez; bu MEB kuralı. Kayıtlı öğrencinin ders, devamsızlık ve sınav bilgisini vermez, danışmana aktarır. Takip zinciri bu nişte sert sınırlı: üç mesajdan sonra susar ve "aramayın" gelirse kapanır, çünkü sektörün şikayeti aşırı aramadan.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Başvuru site formu, Instagram DM, WhatsApp ve telefon; zincirlerde form ve çağrı merkezi ağır basıyor, yerel kurumda WhatsApp. Talebin yoğun saati sahadan dolacak; kayıt dalgası Eylül-Ekim ve Ocak-Şubat.
 
@@ -60,15 +60,15 @@ En güçlü üç itiraz: eğitim danışmanımız var, merkez yazılım veriyor,
 
 "Öğrenci verisi hassas." Asistan kayıtlı öğrenci bilgisine hiç dokunmuyor, yalnızca başvuru aşamasında çalışıyor; kural kartta yazılı.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Eylül dalgasında bilgi isteyip seviye tespitine gelmeyen kişileri sonradan kurumdan biri mi arıyor, yoksa o başvurular danışmanın telefonunda mı kalıyor?"
 
 İşleyiş sorusu: "Kayıt haftasında danışman görüşmedeyken, ön büro telefondayken akşam Instagram'dan ya da WhatsApp'tan 'kur ne zaman açılıyor, fiyat ne' diye yazan kişi ne yapıyor, cevabı bekliyor mu, başka kursa mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: danışman görüşmedeyken ya da kurum kapalıyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan kişiye de dakikalar içinde dönüyor; hangi dil ya da alan, hedefi ne, hangi gün uygun diye sorup seviye tespiti randevusuna yazıyor, kur ve ödeme planı için bilgileri danışmana iletiyor; bilgi isteyip kayıt olmayana ve kuru bitip devam etmeyen eski öğrenciye de dönem başında sizin adınıza, en fazla üç mesajla hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç kursla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: danışman görüşmedeyken ya da kurum kapalıyken telefona ya da mesaja yetişemediğinizde yazana dakikalar içinde dönüyor, hangi dil ya da alan, hedefi ve uygun günü sorup seviye tespitine yazıyor. [Şehir]'de bu ay ilk üç kursla başlıyorum."
 
 Çalışan açarsa: "Danışman görüşmedeyken ve kurum kapalıyken WhatsApp'a ve Instagram'a yetişilemeyen saatlerde bilgi isteyen kişiye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman kurumda olur?"
 

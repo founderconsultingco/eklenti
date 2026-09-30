@@ -83,6 +83,8 @@ Cümle bitince: "Konumlandırma tamam. Sırada teklif var, onu bu cümlenin üst
 
 İş Beyni'nin dördüncü bölümüne: "Konumlandırma cümlesi (uzun, kısa, itiraz cevabı)" satırı, tarihiyle, üç parçası birden. Konum İş Beyni'ne değil durum kaydına yazılır.
 
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `konum` (kisa: telefonda söylenen kısa hali, uzun: uzun hali); sonra aracın `panel --yukle` komutu sessiz çalışır.
+
 ## 8. Yedek yol
 
 - Kartta işletmecinin sözlüğü boşsa: cümle genel kelimelerle yazılır, ilk on görüşmede işletmecinin kendi kelimeleriyle değiştirilir.

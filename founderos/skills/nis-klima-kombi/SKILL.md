@@ -43,7 +43,7 @@ Sözlüğü: servis, çağrı, usta, yetkili servis, bakım, montaj, gaz dolumu,
 
 **Asistan kuralları.** Fiyat vermemeli. Armut'un kendi ilan ettiği aralıklar bile çok geniş (350-9.000 TL gibi), cihaz markası, yaşı ve arıza tipine göre değişiyor, tek fiyat söylemek yanlış bilgi riski taşıyor. Toplaması gereken bilgiler: cihaz markası ve modeli, kaç yıllık, arıza mı bakım mı montaj mı istendiği, adres/kat bilgisi (montajda önemli), müsait randevu zamanı. Sahibine devredilecek konular: fiyat pazarlığı, garanti kapsamı tartışması, hasar ya da mağduriyet iddiaları. Ton uyarısı: şikayetlerin çoğu "geldi ama iş bitmedi" ve "gelmedi, aranmadı" üzerine yoğunlaşıyor, yani asistanın verdiği randevu sözünü net söylemesi ve teyit etmesi kritik, boş vaat vermemeli.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Kanıt: birçok özel servis WhatsApp hattı ve Instagram hesabı üzerinden çalışıyor (örnek: Kocaeli Kombi Servisi Instagram hesabı, çeşitli kombi servisi sitelerinde WhatsApp butonu öne çıkıyor). Telefonun günün hangi saatinde açık kaldığına dair somut veri bulunamadı, sahadan dolacak. Sezonluk yoğunluk net: klima tarafında mayıs-ağustos (Şikayetvar'ın haziran verisi), kombi tarafında ekim-ocak (kış başı ve soğuk dalgası dönemleri, dolaylı kanıt: "soğuk kışta kombisiz bırakıldı" şikayeti, sikayetvar.com/kombi-arizasi/servis). Bu dönemlerde talep ve cevap süresi baskısı en yüksek, kesin saat aralığı bilinmiyor, sahadan dolacak.
 
@@ -69,15 +69,15 @@ En güçlü üç itiraz: telefonum zaten yanımda, fiyatı görmeden veremem, se
 
 "Yetkili servisiz, marka bizim adımıza reklam yapıyor." Marka talep üretiyor ama telefonu kim açtığı sahada senin elinde; Baymak, Buderus, ECA örneklerindeki şikayetlerin çoğu markanın ürettiği talebin sahada karşılanamamasından çıkıyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Geçen sezon bakım yaptırdığınız müşterileri bu sezon siz mi arıyorsunuz, onlar mı sizi arıyor?"
 
 İşleyiş sorusu: "Yazın en yoğun haftada siz sahadayken telefon çalınca ne oluyor, müşteri tekrar mı arıyor, WhatsApp'tan mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; cihazı ve adresi alıp servis randevusuna yazıyor; geçen sezonun bakım listesine de sezon başında sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, cihazı ve adresi alıp servis randevusuna yazıyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
 
 Çalışan açarsa: "Sezonda usta sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman serviste olur?"
 

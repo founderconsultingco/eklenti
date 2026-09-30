@@ -45,7 +45,7 @@ Sözlüğü: usta, arıza, çağrı, tesisat, kaçak, tıkanıklık, periyodik b
 
 **Asistan kuralları.** Asistan fiyat vermemeli; su tesisatçısı örneğindeki "metre şişirme" şikayeti (sikayetvar.com/su-tesisatcisi) gösteriyor ki fiyatın yerinde/telefonda usta tarafından netleştirilmesi hem doğru hem güven artırıcı. Asistan arıza tipi, adres, fotoğraf/video isteyip randevuya çevirmeli. Beyaz eşyada cihaz teslim alınırken ("aldı götürdü, geri getirmedi" - sikayetvar.com/beyaz-esya-servisi) asistan cihaz teslim kaydını (marka/model, alınan tarih, tahmini teslim tarihi) not düşmeli; bu, teslim anlaşmazlıklarına karşı somut kayıt üretir. Asansör/jeneratörde asistan periyodik ziyareti hatırlatmalı ve tamamlandığında rapor/foto istemeli, "ödendi ama özenli yapılmıyor" algısını (sikayetvar.com/asansor-bakim) azaltan kanıt üretir.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** İşletmecinin hangi kanaldan (telefon/WhatsApp/Instagram) daha açık olduğuna dair bu oturumda da doğrudan kanıt bulunamadı; bilinmiyor, sahadan doldurulacak. Müşteri tarafında talep büyük ölçüde Armut gibi pazaryeri üzerinden teklif isteme şeklinde, 30-240 dakikada dönüş bekleniyor (armut.com/su-tesisatcisi); hız beklentisi yüksek.
 
@@ -73,15 +73,15 @@ En güçlü üç itiraz: WhatsApp'a ben bakıyorum, zaten iş var yetiştiremiyo
 
 "Fiyat listem zaten var, oda/EMO'nun tarifesini kullanıyorum." Odaların tarifesi var ama halka açık sayfalarda somut rakam yok, PDF'ler erişime kapalı (deo.org.tr, elektriktesisatportali.com); bu da müşterinin fiyatı öğrenmek için seni araması gerektiği anlamına geliyor, telefon/mesaj kaçırma riski aynen duruyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Geçen yıl yaptığınız işlerde garanti ya da periyodik bakım zamanı gelen müşterileri siz mi arıyorsunuz, yoksa onlar arıza çıkınca mı sizi arıyor?"
 
 İşleyiş sorusu: "Siz sahada, elinizde alet, tavanda ya da makinenin başındayken telefon çalınca ya da WhatsApp'a yazılınca ne oluyor, müşteri bekliyor mu, başka ustaya mı geçiyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; arızayı, adresi ve varsa fotoğrafı alıp arıza çağrısını servis randevusuna yazıyor, tesisat ya da proje işinde keşif için bilgileri alıp size iletiyor; periyodik bakım ya da sözleşmeli bakım zamanı gelen eski müşteriye de sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz sahadayken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, arızayı, adresi ve varsa fotoğrafı alıp servis randevusuna yazıyor. [Şehir]'de bu ay ilk üç servisle başlıyorum."
 
 Çalışan açarsa: "Usta sahadayken telefona ve WhatsApp'a yetişilemeyen saatlerde arıza için yazan müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?"
 

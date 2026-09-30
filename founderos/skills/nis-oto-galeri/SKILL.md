@@ -51,7 +51,7 @@ Eski alıcılar. Araç değiştirme, kredi bitişi gibi meşru bir sebeple tekra
 
 **Asistan kuralları.** Fiyatı bot vermiyor ama gerekçe farklı: fiyat zaten ilanda yazılı, itiraz "fiyat söyleyemezsin" değil "pazarlık benim işim" oluyor. Asistan topluyor: hangi ilan/araç, ne zaman gelip görmek veya test sürmek istiyor, takas var mı, nakit mi kredi mi, satmaya mı almaya mı geldi. Pazarlığa girmiyor, randevuya çeviriyor. Güven algısı düşük bir sektörde (yukarıdaki "dolandırıcılar" yorumu) asistanın abartılı güven telkini yapan cümlelerden kaçınması mantıklı; bu çıkarım, kanıtlanmış kural değil.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Sahibinden.com ve arabam.com üzerinden gelen mesaj/arama ana kanal, ilanlarda telefon açık olduğu için WhatsApp da yaygın uzantı. Bu platformların kendisiyle ilgili ayrı şikayetler var, örneğin ilan sayısı sınırlaması: "1 ayda 10 araba paylaşmanız lazımmış" (sikayetvar.com/sahibinden/oto-galeri/satis, 16 Ekim 2024). Galericinin gün içinde ne zaman müsait olmadığı konusunda doğrudan kaynak yok; bilinmiyor, sahadan dolacak.
 
@@ -79,15 +79,15 @@ En güçlü üç itiraz: telefonu hiç elimden düşürmem, fiyat zaten ilanda y
 
 "Müşteri zaten pazarlık için geliyor, bot pazarlık yapamaz ki." Doğru, pazarlık senin işin; botun işi o pazarlığa oturacak kişiyi kaybetmeden sana getirmek.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Bu ay fiyat sorup pazarlık edip almadan giden alıcıları bir yere yazıyor musunuz, yoksa telefonda isim olarak mı duruyorlar?"
 
 İşleyiş sorusu: "Siz test sürüşündeyken ya da vitrinde bir alıcıyla pazarlığın ortasındayken ilan sitesinden ya da WhatsApp'tan yazan ikinci alıcı ne yapıyor, cevabı bekliyor mu, sonraki ilana mı geçiyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz pazarlıktayken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan alıcıya da dakikalar içinde dönüyor; hangi araca baktığını, ne zaman gelip görmek ya da sürmek istediğini, takası var mı, nakit mi kredi mi, almaya mı satmaya mı geldiğini alıp araç görme randevusuna yazıyor; fiyat sorup pazarlık edip gelmeyen alıcıya da sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç galeriyle başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz pazarlıktayken telefona ya da mesaja yetişemediğinizde alıcıya dakikalar içinde dönüyor, hangi araca baktığını, ne zaman görmek istediğini ve takası olup olmadığını alıp araç görme randevusuna yazıyor. [Şehir]'de bu ay ilk üç galeriyle başlıyorum."
 
 Çalışan açarsa: "Kendisi test sürüşündeyken ya da pazarlıktayken ilan sitesinden ve WhatsApp'tan yazan alıcıya cevap verip araç görme randevusuna yazan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman galeride olur?"
 

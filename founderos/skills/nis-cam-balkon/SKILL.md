@@ -43,7 +43,7 @@ Sözlüğü: keşif, ücretsiz keşif, ölçü, teklif, montaj, bayi, peşinat, 
 
 **Asistan kuralları.** Sektör "ücretsiz keşif" ile çalıştığı için asistan fiyat vermez, zaten sektörün kendisi de telefonla net fiyat vermiyor (Armut'taki 1.000-150.000 TL gibi devasa aralık bunun kanıtı). Asistan bilgi toplar: hangi ürün, kaç metrekare/kaç pencere, kat ve bina yüksekliği, fotoğraf, ne zaman keşif istendiği; sonra randevu verir. Apartmanda komşu izni gibi hukuki konularda görüş bildirmez, sahibine devreder (bkz. mevzuat notu). Ton konusunda doğrudan yorum analizi yapılamadı, sahadan dolacak.
 
-**Ana kanal.** telefon. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** telefon. Günün yüz temasının ellisi bu kanaldan gider, kırkı iki yazılı kanal (Instagram ve e-posta) arasında yarı yarıya bölünür, onu video mesajdır. Talebin ve şikayetin çoğu telefonda; kaçan arama bu nişin en görünür sızıntısı. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** Hemen her firma sitesinde telefon ve WhatsApp öne çıkarılmış, form sonrası dönüş sorunu var (Armut'taki "100 teklife çoğu mesajı görmedi" örneği). Adayın kendi talep kanalı büyük olasılıkla telefon/WhatsApp ve form karışımı. Hangi saat müsait, hangi saat değil, doğrudan kanıt bulunamadı, bilinmiyor, sahadan dolacak.
 
@@ -71,15 +71,15 @@ En güçlü üç itiraz: keşfi de telefonu da ben yapıyorum, keşif olmadan fi
 
 "WhatsApp'tan zaten dönüyorum." Şikayetlerde tekrarlanan tema "sürekli oyalandım, kimse gelmedi"; yazılı dönüş sistemsiz yürüyor, unutuluyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Geçen ay keşfe gidip teklif verdiğiniz de dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa telefonda öyle mi duruyorlar?"
 
 İşleyiş sorusu: "Ekip montajdayken, siz keşifteyken WhatsApp'tan ya da siteden 'cam balkon kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, başka bayiye de mi yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan müşteriye de dakikalar içinde dönüyor; hangi ürün, kaç metrekare ya da kaç pencere, kaçıncı kat ve fotoğraf bilgisini alıp keşif randevusuna yazıyor; teklif verip dönmeyen müşteriye ve garantisi süren eski işe de zamanı gelince sizin adınıza hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken telefona ya da mesaja yetişemediğinizde müşteriye dakikalar içinde dönüyor, hangi ürün, kaç metrekare ve fotoğraf bilgisini alıp keşif randevusuna yazıyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Usta keşifteyken ya da montajdayken telefona ve WhatsApp'a yetişilemeyen saatlerde fiyat soran müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste olur?"
 

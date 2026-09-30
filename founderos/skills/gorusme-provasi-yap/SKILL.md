@@ -127,7 +127,7 @@ Dördüncü gün, akşam bloğu: "Bugün beş prova, ben karşındayım. Önce t
 
 Prova sonu: "Bitti. İyi: 'yarın on bir mi üç mü' dedin, saat aldın. Düzeltilecek tek şey: 'bir şey satmaya çalışmıyorum' dedin. O cümle seni küçültüyor, bir daha yok. Tekrar. Sıradaki senaryo beş dakika sonra, aynı tek şey."
 
-Beşinci gün: "Bugün iki prova sesli, tanıdığınla. O Ahmet Bey, sen sensin, sayfa onda. Bitince bana ne dediğini yaz, tek cümle. Sonra beşi benimle. Yetişmezse akşam bitiriyoruz. Altıncı gün, yani sahaya çıkış, provalar bitince başlar."
+Beşinci gün: "Bugün iki prova sesli, tanıdığınla. O Ahmet Bey, sen sensin, sayfa onda. Bitince bana ne dediğini yaz, tek cümle. Sonra beşi benimle. Yetişmezse akşam bitiriyoruz. Altıncı gün, yani müşteri bulmanın ilk günü, provalar bitince başlar."
 
 Altıncı günden sonra, akşam bloğunda: "Yarın on birde Ahmet Bey, klima. On dakika prova, iki parça. Önce açılış: kartın bulgusu 'salı formunu doldurdun, dönüş gelmedi'. Tek cümlede söyle. Ben Ahmet'im: Bizim form zaten çalışmıyor, boş verin onu. Sonra tek konu: 'yetişemiyorum' duyunca 'neden'."
 

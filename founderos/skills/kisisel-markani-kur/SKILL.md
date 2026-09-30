@@ -21,7 +21,7 @@ Neden bu iş var: aradığın işletmeci telefonu kapattıktan sonra adını ar�
 Şunlar bu modülün işi değildir:
 - Marka kiti (markani-kur, birinci blok). Renkler, logo ve şablonlar oradan gelir.
 - Landing page (siteni-kur, birinci blokta kuruldu, ikinci blokta yayında).
-- İçerik üretmek. Profiller doldurulur, tanıtım paylaşımı yapılmaz. Instagram'dan mesaj atabilmek için gereken dokuz paylaşım içerik sayılmaz, profilin parçasıdır (aşağıda). İçerik ikinci ayın işi; kuralı "İkinci ayda içerik" bölümünde.
+- İçerik üretmek. Profiller doldurulur, tanıtım paylaşımı yapılmaz. Instagram'dan mesaj atabilmek için gereken dokuz paylaşım içerik sayılmaz, profilin parçasıdır (aşağıda). İçerik saha açıldıktan sonraki ilk pazartesi başlar ve icerik-motoru'nun işidir; bu modülden ona ne gittiği "Sahada içerik" bölümünde.
 - Takipçi kasmak. Takipçi sayısı bu işte hiçbir şey getirmiyor.
 
 Pazarlamadaki karşılığı: profil bir vitrin değil, kimlik kartı. İşi tanıtmaz, seni tanıtır.
@@ -56,7 +56,7 @@ Profil beş parçadan oluşur:
 - **Öne çıkanlar bugün dolar**, çünkü demo ekran kaydı ikinci blokta alındı; nasıl dolacağı aşağıda yazıyor. Kayıt yoksa öne çıkan boş açılmaz: elinde gösterecek bir şey yokken açılan öne çıkan boş bir raf gibi duruyor ve boş raf yeni açılmış izlenimi veriyor. O durumda kaydın alındığı gün doldurulur.
 - **Akışta en az dokuz paylaşım.** Profili kurulmamış hesaptan mesaj atılmaz: fotoğraf, biyografi ve akışta en az dokuz paylaşım yoksa hesap kurulmamış sayılır. Hesabında dokuz paylaşım zaten varsa dokunmazsın. Yoksa bugün dokuza tamamlanır ve bu içerik üretimi değildir: marka kitindeki üç Instagram gönderisi, demo kaydından kısa bir parça (kayıt yoksa alındığı gün), gerçek hayatından kareler. Tanıtım yazısı, kampanya, "takip edin" çağrısı yok.
 
-Hesap yeniyse kanal kapanmaz, yavaş açılır; hesap alışsın. Yeni açılmış, hiç kullanılmamış bir hesaptan gelen mesaj karşı tarafa da güven vermiyor. Saha açılana kadar hesabı normal kullanırsın; nişindeki işletmeleri takip edersin, gördüğün gönderilere gerçek yorum yazarsın. Saha açılınca, profil kurulmuşsa rampa işler: ilk hafta günde beş mesaj, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan itibaren kırk. Rampanın sayıları, hesap yaşına göre tavan ve durma işaretleri adaya-mesaj-yaz'da.
+Hesap yeniyse kanal kapanmaz, yavaş açılır; hesap alışsın. Yeni açılmış, hiç kullanılmamış bir hesaptan gelen mesaj karşı tarafa da güven vermiyor. Saha açılana kadar hesabı normal kullanırsın; nişindeki işletmeleri takip edersin, gördüğün gönderilere gerçek yorum yazarsın. Saha açılınca, profil kurulmuşsa rampa işler: ilk hafta günde beş mesaj, ikinci hafta on, üçüncü hafta yirmi, dördüncü haftadan itibaren kırk. Rampa ve tavan günün yeni sayısında da aynen geçerli. Instagram payını taşıyamadığı gün kalan pay e-postaya geçer (e-postanın o günkü sınırı da doluysa aramaya); günün toplamı değişmez. Rampanın sayıları, hesap yaşına göre tavan ve durma işaretleri adaya-mesaj-yaz'da.
 
 Adaya mesaj atmadan önce onun bir gönderisine gerçek bir yorum yazma kuralı da buradan geliyor. Saha açılınca o kural yalnız en çok istenen yüz işletmede zorunlu olarak işliyor; kalan adaylarda mesaj doğrudan gidiyor, sebebi adaya-mesaj-yaz'da yazılı.
 
@@ -70,7 +70,7 @@ Neden var: soğuk mesaj attığın kişinin ilk yaptığı şey mesaja cevap ver
 
 **Bir: Sistem.** Demo ekran kaydından yirmi otuz saniye. Müşteri yazıyor, asistan cevaplıyor, saat veriyor, randevu yazılıyor. Sesli örneğin kaydı varsa aynı öne çıkana ikinci parça olarak girer: arayan müşteri ve resepsiyonistin cevabı, yirmi saniye. Üstüne yazı, altına müzik, araya efekt konmaz; kayıt neyse o. Kapak görseli marka kitinden.
 
-Demonun linki buraya konmaz, videosu konur. Sebebi ayrımı bilmekte: linki gönderdiğin ya da profiline koyduğun anda aday sistemi kendi telefonunda dener ve görüşmeye gelme sebebi biter. Videoyu izleyen hâlâ kendi işletmesinde nasıl olacağını görmek için geliyor. Aday "linkini atar mısın" derse cevap tek cümle: "Görüşmede kendi telefonunuzda denetiyorum, yirmi dakika."
+Demonun linki buraya konmaz, videosu konur. Sebebi Truva Atı Metodu'nda: çalışan örnek herkese açık bir rafta durmaz, derdini konuştuğun kişiye, sorusunu cevapladıktan sonra verilir; o zaman denediği şey kendi derdinin cevabı olur. Profildeki video sistemin çalıştığını gösterir, bağlantı konuşmanın içinde gider. Aday "linkini atar mısın" derse gönderirsin, tek cümleyle: "Tabii, burada; bir müşteri gibi yazın, randevuyu nasıl yazdığını görün." Önce tek soru sorulmadıysa bağlantının arkasına o soru eklenir: "Sizde bu talepler şu an nasıl karşılanıyor?"
 
 **İki: Ben.** Üç beş kare, gerçek hayatından. Çalıştığın masa, gittiğin bir yer, bir maç, bir yemek. Kurgu değil, cilalı değil, ajans işi değil. Sebebi şu: karşı tarafın kafasındaki ilk soru "bu hesabın arkasında insan var mı". Bu bölüm o soruyu kapatıyor ve başka hiçbir işi yok.
 
@@ -107,33 +107,30 @@ Açılır ve marka kitindeki kanal görseli konur. Adı senin işinin adı.
 
 Şu an tek işi var: yarın çekeceğin ön görüşme videosunu, site videosunu ve üç itiraz videosunu barındırmak. Video mesajlar Loom'dan gider; Loom'un ücretsiz sınırı dolar ve ücretli plana geçmezsen, e-postaya gidecek video mesajlar da buraya liste dışı yüklenir. Liste dışı video aramada çıkmaz, linki olan izler.
 
-Kanala içerik yüklemiyorsun. Kanalın boş olması sorun değil, çünkü kimse kanalına bakmıyor; sadece linkler oradan geçiyor.
+Kanala bugün içerik yüklemiyorsun; kanalın bugün boş olması sorun değil. Saha açıldıktan sonraki ilk pazartesiden itibaren her hafta bir video herkese açık yüklenir (icerik-motoru). Liste dışı satış videoları herkese açık listede görünmez, olduğu gibi kalır.
 
 ### Ne yapılmayacak
 
-LinkedIn kurulmaz. Bizim kanallarımız telefon, e-posta, Instagram ve WhatsApp. LinkedIn'de küçük işletme sahibi yok.
+LinkedIn bugün kurulmaz ve LinkedIn'den soğuk mesaj hiç gitmez. Bizim temas kanallarımız telefon, e-posta, Instagram ve WhatsApp; küçük işletme sahibinin çoğu LinkedIn'de değil. LinkedIn profili içerik başladığı hafta on dakikada güncellenir; oradaki işi haftada bir gönderi (icerik-motoru).
 
-Tanıtım paylaşımı yapılmaz. Profiller doldurulur, eksikse dokuz paylaşım tamamlanır, gün biter. "Bir tanıtım gönderisi atayım" cümlesi ikinci aya sarkar; ilk kanıt gelmeden anlatılacak bir şey yok.
+Tanıtım paylaşımı yapılmaz. Profiller doldurulur, eksikse dokuz paylaşım tamamlanır, gün biter. "Bir tanıtım gönderisi atayım" cümlesi saha açıldıktan sonraki ilk pazartesiye sarkar; içerik o gün, sahadan gelen gerçek bir gözlemle başlar.
 
-### İkinci ayda içerik
+### Sahada içerik
 
-Paylaşım ilk kanıt hikâyesinin çıktığı hafta ya da sahanın beşinci haftasında başlar, hangisi önce gelirse. Haftada bir gönderi, akşam bloğundan otuz dakika; temas sayılmaz, günlük sayıdan düşmez. Üç tür sırayla döner:
-1. Haftanın ölçümü: pazartesi güncellenen kanıt cümlesi, tek görsel, marka kitinden. "Bu hafta Bursa'da kırk klima servisini akşam aradım, yirmi yedisine ulaşılamadı. Usta işinin başında; akşam yedide telefona bakacak kimse yok."
-2. Bir günden tek an: hizmet akışındaki "bir günü anlat"tan bir sahne, bugün ve sistemle; araç adı yok.
-3. İzinli sonuç: rapor günü rakamı, müşterinin yazılı izniyle.
+Profil bugün dolar, içerik bugün başlamaz. Saha açıldıktan sonraki ilk pazartesi icerik-motoru başlar: her pazartesi sabahı FounderOS haftanın içeriğini hazırlar. Ana parça bir YouTube videosunun metni; ondan videodan kesilen iki Reels, aynı metinden bir kaydırmalı gönderi ve bir LinkedIn gönderisi çıkar. Yayın günleri pazartesi, çarşamba ve cuma. Senin payın haftada yetmiş beş dakika, günün temasları bittikten sonra; temas sayısından tek dakika almaz. Konuları, günleri, görselleri ve ölçüsü o modülde.
 
-Sabitlenen gönderi ilk müşteriye kadar demo kaydıdır, sonra kanıt hikâyesi. Ölçü beğeni değil, gönderiden gelen mesaj. Üç ayda tek görüşme getirmediyse bırakılır. İşletme adı geçmez; sağlık nişlerinde hasta teşekkürü ve öncesi-sonrası görsel yoktur.
+Bu modülden oraya giden dört şey: profil fotoğrafının yeri (video kapağında ve görsellerin son sayfasında yüzün durur), Instagram ad satırı (görsellerde ne yaptığını söyleyen satır), YouTube kanalı (haftanın videosu oraya herkese açık yüklenir) ve demo kaydı (profilde sabitlenen ilk gönderi, ilk müşteriye kadar).
 
 Takipçi satın alınmaz, takipleşme yapılmaz.
 
 ## 6. Ne söyler
 
-Açılışta: "Bir saat. Dört profil dolduracağız: Instagram, WhatsApp, e-posta imzası, YouTube. Tanıtım paylaşımı yok, içerik yok; Instagram'da dokuz paylaşımın yoksa onu tamamlıyoruz. Bugün sadece doldurma günü."
+Açılışta: "Bir saat. Dört profil dolduracağız: Instagram, WhatsApp, e-posta imzası, YouTube. Tanıtım paylaşımı yok; içerik saha açılınca başlıyor, hazırlığı benden. Instagram'da dokuz paylaşımın yoksa onu tamamlıyoruz. Bugün sadece doldurma günü."
 Fotoğraf için: "Profil fotoğrafına logo koyma, yüzünü koy. Tek kişilik bir işte logo koyan kişi şirket taklidi yapıyor gibi duruyor ve işletmeci bunu anlıyor. Telefonla, düz duvar önünde, gün ışığında çek. On dakika."
 Biyografi için: "Üç satır. Ne yaptığın, kanıtın, linkin. Dördüncü satır yazmak istiyorsan yazma. Link sitenin adresi, altıncı bölümde yazıyor; ben koyuyorum."
-Hesabı yeniyse: "Hesabın iki aylık. Saha açıldığında Instagram'ı günde beş mesajla açıyoruz, dördüncü haftada kırka çıkıyoruz; hesap yeni, yavaş ısıtıyoruz. O güne kadar nişindeki işletmeleri takip et, gördüğün gönderilere gerçek yorum yaz. Günde beş dakika."
-İçerik üretmek isterse: "Bugün paylaşım yok. İçerik ikinci ayın işi ve şu an elinde paylaşacak kanıt yok. Saha açılınca kim aradın diye soracağım, kaç gönderi attın diye değil."
-LinkedIn sorarsa: "LinkedIn'de senin müşterin yok. Klima servisi sahibi LinkedIn'de değil, telefonun ucunda."
+Hesabı yeniyse: "Hesabın iki aylık. Saha açıldığında Instagram'ı günde beş mesajla açıyoruz, dördüncü haftada kırka çıkıyoruz; hesap yeni, yavaş ısıtıyoruz. Instagram'ın taşıyamadığı mesajlar o arada e-postadan gidiyor, günün sayısı düşmüyor. O güne kadar nişindeki işletmeleri takip et, gördüğün gönderilere gerçek yorum yaz. Günde beş dakika."
+İçerik üretmek isterse: "Bugün paylaşım yok. İçerik saha açıldıktan sonraki ilk pazartesi başlıyor; o gün elinde gerçek bir gözlem olacak: kaç işletmeyi aradın, kaçı açmadı. Metni ben yazıyorum, sen haftada bir çekiyorsun."
+LinkedIn sorarsa: "LinkedIn'den mesaj atmıyoruz; klima servisi sahibi orada değil, telefonun ucunda. İçerik başlayınca LinkedIn'e haftada bir gönderi giriyor: adını arayan seni orada görüyor, eski iş arkadaşların ne yaptığını öğreniyor."
 Şirket gibi görünmek isterse: "Logo koyma, yüzünü koy. Küçük işletmeye satarken senin adın şirketin adından güçlü; adam adamla çalışmak istiyor. Şirket adı biyografinin ikinci satırında durur, orası yeter."
 Demo kaydı yokken öne çıkanları açmak isterse: "Bugün açmıyoruz, içine koyacak bir şeyin yok. Demo kaydını aldığın gün on beş dakikada dolduruyoruz."
 Öne çıkanları doldururken: "İki bölüm. Biri sistemin çalıştığı yirmi saniye, biri senin gerçek hayatın. Adam mesajını okuyunca buraya bakacak; o an ikna oluyor ya da olmuyor."
@@ -141,13 +138,13 @@ Demo kaydı yokken öne çıkanları açmak isterse: "Bugün açmıyoruz, içine
 ## 7. Ne yazar
 
 İş Beyni'ne: Instagram kullanıcı adı, hesap yaşı ve akıştaki paylaşım sayısı, işletme hesabına geçildiği, WhatsApp Business numarası ve karşılama mesajı, e-posta imzası metni, YouTube kanal adresi, profil fotoğrafının yeri, biyografi metni ve sürümü, öne çıkanların durumu (boş, dolu, hangi tarihte).
-Bir sonraki modüllere: Instagram hesap yaşı adaya-mesaj-yaz'a (yeni hesapsa mesaj başlangıcı sahanın ilk gününe kilitlenir), profilin ve öne çıkanların dolu olup olmadığı yine adaya-mesaj-yaz'a (Instagram kanalı profil bitmeden açılmaz), YouTube adresi satis-videosunu-cek'e, WhatsApp numarası onay-belgesini-hazirla'ya.
+Bir sonraki modüllere: Instagram hesap yaşı adaya-mesaj-yaz'a (yeni hesapsa mesaj başlangıcı sahanın ilk gününe kilitlenir), profilin ve öne çıkanların dolu olup olmadığı yine adaya-mesaj-yaz'a (Instagram kanalı profil bitmeden açılmaz), YouTube adresi satis-videosunu-cek'e ve icerik-motoru'na, WhatsApp numarası onay-belgesini-hazirla'ya, profil fotoğrafının yeri ve ad satırı icerik-motoru'na.
 Siteye: bugün çekilen fotoğraf sayfanın Kim bölümüne konur ve sayfa yeniden yayınlanır (siteni-kur, on dakika); birinci günde fotoğrafsız kurulduysa bu adım atlanmaz.
 
 ## 8. Yedek yol
 
 - Fotoğrafın yoksa: gün durmaz, profiller doldurulur, fotoğraf ertesi sabah eklenir. Ama bir gün içinde eklenir.
-- Instagram hesabın hiç yoksa: bugün açılır; fotoğraf, biyografi ve dokuz paylaşım bugün konur, "yeni hesap" işareti düşer. Mesaj başlangıcı yine sahanın ilk günü, rampanın ilk basamağıyla: günde beş. Dokuz paylaşım tamamlanmadıysa o güne kadar Instagram'dan mesaj gitmez, pay e-postaya ve telefona geçer.
+- Instagram hesabın hiç yoksa: bugün açılır; fotoğraf, biyografi ve dokuz paylaşım bugün konur, "yeni hesap" işareti düşer. Mesaj başlangıcı yine sahanın ilk günü, rampanın ilk basamağıyla: günde beş. Dokuz paylaşım tamamlanmadıysa o güne kadar Instagram'dan mesaj gitmez, pay e-postaya geçer; e-postanın o günkü sınırı da doluysa kalanı aramaya.
 - WhatsApp Business ikinci bir numara istiyorsa: kişisel numaranı kullanabilirsin ama bunu İş Beyni'ne yazarız; ikinci hat alınca değişir.
 - İş adı henüz kesinleşmediyse: profiller kendi adınla açılır, iş adı sonra eklenir. Ad bekleyip gün kaybedilmez.
 - Demo ekran kaydı bozuk ya da alınamadıysa: öne çıkanların Sistem bölümü açılmaz, yalnız Ben bölümü açılır. Yarım kayıt konmaz; bozuk kayıt hiç kayıt olmamasından kötü.
@@ -165,6 +162,6 @@ Sıradaki: aynı blokta kanıt, mesaj metinleri ve ilk beş prova; beşinci blok
 - Demo ekran kaydı alındı: öne çıkanlar aynı gün doldurulur, on beş dakika.
 - Instagram kanalı açılacak ama profil, öne çıkanlar ya da dokuz paylaşım yarım: mesaj başlamaz, önce profil bitirilir. Yarım profille atılan mesaj adayı bir kere kaybediyor ve o aday geri gelmiyor.
 - İlk kanıt hikâyesi çıktı: biyografinin ikinci satırı, e-posta imzası ve üçüncü öne çıkan güncellenir.
-- Paylaşım yapılmaya başlandı: bu ikinci ayın işi, degisiklige-karar-ver'e not gider.
+- Saha açıldı: sonraki ilk pazartesi icerik-motoru başlar; profil fotoğrafı, ad satırı ve demo kaydı oradan okunur.
 
 Beş kural: boş sayfa yok (biyografi, imza ve karşılama mesajı hazır gelir) · sessiz bitiş yok (gün, yarının işiyle kapanır) · onay (metinler senin "tamam"ınla yayınlanır) · sahadan güncelleme (kanıt hikâyesi çıkınca biyografi ve imza yenilenir) · sormaz söyler (hangi profilin nasıl doldurulacağını FounderOS verir).

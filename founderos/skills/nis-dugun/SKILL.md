@@ -41,7 +41,7 @@ Sözlüğü: boş tarih, kapora, sezon, revize, keşif, rezervasyon, doluluk, da
 
 **Asistan kuralları.** Asistan kesin fiyat vermemeli. Fiyatlar sezona, kişi sayısına ve menüye göre çok değişken (karekod.org, dugunnotu.com verileri bunu gösteriyor) ve sektörün çoğu zaten site üzerinde fiyat yayınlamıyor, iletişime yönlendiriyor (barisorganizasyon.com). Asistanın toplaması gereken bilgiler: düğün tarihi (en kritik bilgi, sabit), tahmini davetli sayısı, mekan mı organizasyon mu arandığı, bütçe aralığı, şehir ve ilçe. Sonra keşif veya görüşme randevusu veriyor, net fiyatı sahibi ya da koordinatör kendisi söylüyor. Asistan kapora şartlarını veya sözleşme detaylarını da açıklamamalı, bu konu hukuken tartışmalı ve karar sahibine ait (kapora iadesiyle ilgili Yargıtay kararları var, memurlar.net, hukukdestegi.com). Ton konusunda övgü tarafında doğrudan alıntı bulamadım, bilinmiyor; ama şikayetlerde en çok "vaat edilenin tutulmaması" ve "iletişimsizlik" öne çıktığı için asistanın net, tarih odaklı ve gerçekçi konuşması, boş vaat vermemesi önemli.
 
-**Ana kanal.** Instagram. Günün yüz temasının yetmişi bu kanaldan gider, yirmi beşi diğer iki yazılı kanal arasında bölünür, beşi video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
+**Ana kanal.** Instagram. Günün yüz temasının ellisi bu kanaldan gider (hesabın tavanı taşımazsa kalanı önce e-postaya), kırkı arama ile e-posta arasında yarı yarıya bölünür, onu video mesajdır. İş görsel, talep DM'den başlıyor; sahibi gün içinde telefona değil telefonundaki uygulamaya bakıyor. Bu satır üç yüz temas boyunca kilitli; üç yüzde ikinci kanal randevu başına daha ucuz çıkarsa yer değiştirirler.
 
 **Kanal ve zaman.** İşletmecinin hangi saatte müsait olduğuna dair somut kaynak bulamadım, bilinmiyor, sahadan dolacak. Dolaylı olarak sezon ilkbahar-sonbahar arasına yoğunlaşıyor ("düğün sezonu yaklaşırken" haberi bahar sonrasını işaret ediyor, cumhuriyet.com.tr), yani Nisan-Ekim arası iş yükü ve muhtemelen telefon-DM trafiği daha yoğun olabilir, kış ayları görece sakin olabilir; bu bir çıkarım, doğrulanmadı. Firma siteleri ağırlıkla telefon ve WhatsApp/DM'e yönlendiriyor, canlı fiyat teklifi formu neredeyse yok. Adayın kendi talep kanalının form mu, Instagram DM mi, yoksa telefon mu olduğu görülemedi.
 
@@ -62,15 +62,15 @@ En güçlü üç itiraz: telefona ve yazışmalara zaten biz dönüyoruz, tarih 
 "Kapora aldık, sözleşme imzalandı, bizim işimiz bitti." Kapora sonrası sessizlik tam olarak şikayetlerin çıktığı nokta; memnun çift referans getirmiyor ama memnun olmayan şikayet sitesine yazıyor.
 "Küçük işletmeyiz, bu bize göre değil." Sektöre girişin kendisi zaten kolay ("2 kişi kafa kafaya verip organizatör olunur", eksisozluk.com), yani küçük ölçek norm; teknolojiye erişim ölçekten bağımsız fark yaratıyor.
 
-**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Saha modu kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
+**Telefonda söylenecekler.** Sesli okunacak satırlar; sayfanın Bugünün listesi kartı bunları gösterir. Genel arama sırası ve genel itirazlar adaya-mesaj-yaz modülünde durur, burada yalnız bu nişe özel olanlar var.
 
-Açılış sürümü: 2
+Açılış sürümü: 3
 
 Açılış sorusu: "Bu sezon fiyat sorup kaporaya kadar gelmeyen çiftleri siz mi geri arıyorsunuz, yoksa o liste telefonda öyle mi duruyor?"
 
 İşleyiş sorusu: "Cumartesi düğün varken, siz salonda koşuştururken Instagram'dan ya da WhatsApp'tan fiyat soran çift ne yapıyor, cevabı bekliyor mu, sıradaki mekana mı yazıyor?"
 
-Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz düğündeyken telefon çalarsa aramayı o açıyor, WhatsApp'a, Instagram'a ya da sitenizden yazan çifte de dakikalar içinde dönüyor; düğün tarihini, tahmini davetli sayısını, mekan mı organizasyon mu arandığını, bütçe aralığını ve ilçeyi alıp keşif randevusuna yazıyor ya da teklif için size iletiyor; fiyat sorup kaporaya gelmeyen çifte de tarihi hâlâ boşsa sizin adınıza kampanyasız bir hatırlatma gönderiyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
+Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz düğündeyken telefona ya da mesaja yetişemediğinizde çifte dakikalar içinde dönüyor, düğün tarihini, davetli sayısını ve bütçe aralığını alıp keşif randevusuna yazıyor. [Şehir]'de bu ay ilk üç firmayla başlıyorum."
 
 Çalışan açarsa: "Düğün günü herkes salondayken Instagram'a ve WhatsApp'a yetişilemeyen saatlerde fiyat soran çifte cevap verip tarihini alan bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman ofiste ya da mekanda olur?"
 

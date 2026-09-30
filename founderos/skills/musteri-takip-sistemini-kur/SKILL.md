@@ -16,7 +16,7 @@ Bu modül senin kendi adaylarını izlediğin düzeni tamamlıyor. CRM, sana cev
 
 Müşterinin sistemiyle karıştırma. O, müşteri kazandığında CRM'de ayrı bir bölümde kuruluyor.
 
-Neden bu iş var: saha açılınca günde yüz temas yapacaksın. Yetmişi ana kanaldan, yirmi beşi diğer iki kanaldan, beşi video; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
+Neden bu iş var: saha açılınca günde yüz temas yapacaksın. Ellisi ana kanaldan, kırkı diğer iki kanaldan, onu video; o günün takipleri bu sayının içinde. İşin yanında çalışıyorsan günde kırk temas: yirmi, on altı, dört. Bunu kafanda tutmak mümkün değil. Tutmaya çalışan kişi iki hafta sonra kimi aradığını, kimin ne dediğini ve kime dönmesi gerektiğini bilmiyor. İkincisi: her akşam beş sayı okuyacaksın ve o sayılar ancak kayıt varsa çıkıyor. Yazılmayan temas olmamış sayılıyor.
 
 Üçüncüsü bugünün asıl işi: aynı adaya dört ayrı kanaldan ulaşacaksın. Telefon, e-posta, Instagram, video. Kimin hangi kanalda nerede kaldığını bilmezsen ya aynı kişiye üst üste yazarsın ya da cevap vereni unutursun. İkisi de adayı kaybettiriyor.
 

@@ -161,7 +161,7 @@ Sebebi şu: görünüş düz yazıyla tarif edilince model her öğrencide HTML'
 
 **Şablona dokunulmaz.** CSS'e satır eklenmez, sınıf adı değiştirilmez, bölüm sırası oynatılmaz, şablonda olmayan bölüm uydurulmaz, dışarıdan yazı tipi ya da kütüphane çağrılmaz. Sayfanın kimliği kitten `window.SITE.renk`, `window.SITE.yazi_tipi` ve `window.SITE.yuvarlak` üzerinden geliyor; renk değiştirmek demek CSS yazmak değil, o üç satırı doldurmak demek. Şablonun kendisinde bir eksik görülürse öğrencinin dosyasında yamanmaz, FounderOS bunu açık iş olarak not eder ve şablon bir kere düzeltilir.
 
-**Şablonda hazır duranlar.** Kayan üst çubuk, sayfa içi menü ve düğme; tam ekran açılış (nişin fotoğrafı, koyu örtü, kelime kelime beliren başlık, üç sayı şeridi); kodla çizilen telefon çerçevesi ve sırayla beliren baloncuklar; numaralı bölüm başlıkları ("01 · DERT"; numaralar görünen bölümlere göre kendiliğinden sayılır); çekme cümle ve kaynağı; hesap listesi; haftalık iş listesi; üç kanal ekranı (arama listesi, sohbet, form) ve bugün/sistemle satırları; çubuk grafik; süreç çizelgesi; üç satırlık karşılaştırma; fotoğraflı kurucu kartı; güvence kutusu; açılır kapanır sorular; takvim yuvası; masaüstünde yüzen WhatsApp düğmesi, telefonda alta yapışan düğme; görünür olunca beliren bölümler; hareket azaltma tercihi; 360 ve 390 pikselde taşmasız yerleşim. Bunların hiçbiri yeniden yazılmaz. Yazı tipleri ve fotoğraf dışarıdan çağrılmaz, `site-uret.py` ile dosyanın içine gömülür.
+**Şablonda hazır duranlar.** Kayan üst çubuk, sayfa içi menü ve düğme; tam ekran açılış (markanın iki atmosfer rengiyle ağır ağır dalgalanan ışık zemini, kelime kelime beliren başlık, yanında buzlu cam kart, üç sayı şeridi; WebGL olmayan cihazda aynı renklerde durağan zemin); dert bölümünde nişin fotoğrafıyla bant; kodla çizilen telefon çerçevesi ve sırayla beliren baloncuklar; numaralı bölüm başlıkları ("01 · DERT"; numaralar görünen bölümlere göre kendiliğinden sayılır); çekme cümle ve kaynağı; hesap listesi; haftalık iş listesi; üç kanal ekranı (arama listesi, sohbet, form) ve bugün/sistemle satırları; çubuk grafik; süreç çizelgesi; üç satırlık karşılaştırma; fotoğraflı kurucu kartı; güvence kutusu; açılır kapanır sorular; takvim yuvası; masaüstünde yüzen WhatsApp düğmesi, telefonda alta yapışan düğme; görünür olunca beliren bölümler; hareket azaltma tercihi; 360 ve 390 pikselde taşmasız yerleşim. Bunların hiçbiri yeniden yazılmaz. Yazı tipleri ve fotoğraf dışarıdan çağrılmaz, `site-uret.py` ile dosyanın içine gömülür.
 
 #### Veri sözleşmesi: `window.SITE`
 
@@ -173,6 +173,8 @@ window.SITE = {
   yuvarlak: "14px",
   renk: { zemin, yazi, soluk, cizgi, koyu, koyu_yazi, vurgu, vurgu_yazi },  // kitin renk kodları
   yazi_tipi: { baslik: "...", govde: "..." },                               // kitin iki yazı tipi
+  palet: "derin",                 // marka kitinin palet adı; açılışın ışık zemini kitin iki atmosfer rengiyle kurulur
+  atmosfer: ["#0B3B8C", "#062449"],  // yalnız kitte atmosfer elle verildiyse; yoksa yazılmaz, paletten gelir
   is: { ad, sehir, kurucu, logo, telefon, whatsapp, eposta },
   serit: "",                      // gerçek müşteri sonucu cümlesi; yoksa boş, şerit görünmez
   acilis: {
@@ -181,7 +183,8 @@ window.SITE = {
     aciklama: "...",                              // müşterinin elde edeceği sonuç, iki satır
     dugme: "Ücretsiz görüşme planla",
     ikinci_dugme: "Örnek çalışmaları gör",        // yalnız gerçek vaka varsa görünür
-    guven: "..."                                  // birinci gün kartın kaynaklı rakamı, kanıt cümlesi çıkınca kendi sayımın (ay ve şehirle), müşteri gelince gerçek sayı; güvence burada yazmaz
+    guven: "...",                                 // birinci gün kartın kaynaklı rakamı, kanıt cümlesi çıkınca kendi sayımın (ay ve şehirle), müşteri gelince gerçek sayı; güvence burada yazmaz
+    kart: { etiket: "Sezonda kaçan iş", baslik: "...", maddeler: ["...", "...", "..."] }   // açılıştaki buzlu kart: tek cümle başlık, en çok üç kısa madde, dertten ve kayıptan; yoksa şablon dertten kurar
   },
   sayilar: [ { deger: "1 dk", aciklama: "..." } ],   // açılışın altındaki üç sayı; sistemin kuralı ya da kaynaklı kart rakamı, yoksa boş dizi
   konusma: { isletme, saat, baloncuklar: [ { kim: "musteri"|"sistem", metin } ], sonuc: "Randevu yazıldı" },
@@ -247,7 +250,7 @@ Birinci günde burada durulur. Sayfa hazır, öğrencinin klasöründe ve ekran�
 
 ### Yayına alma: ikinci blok
 
-İki yol var ve hangisinin seçileceğini bütçe merdiveni söylüyor, öğrenci değil. Aynı yayın bir dosya daha taşır: `site/demo.html`, tarayıcı demosu (kanitini-hazirla kurar), aynı adresin altında `/demo` olarak durur ve ana sayfadan link verilmez; demo görüşmeye gelme sebebidir.
+İki yol var ve hangisinin seçileceğini bütçe merdiveni söylüyor, öğrenci değil. Aynı yayın bir dosya daha taşır: `site/demo.html`, tarayıcı demosu (kanitini-hazirla kurar), aynı adresin altında `/demo` olarak durur ve ana sayfadan link verilmez; demo, derdini konuştuğun adaya konuşmanın içinde verilir (Truva Atı Metodu, adaya-mesaj-yaz).
 
 **Ücretsiz adres.** Sayfa, FounderOS'un ekranda açtığı kartın adresiyle paylaşılabilir hale gelir; hesap yok, İngilizce ekran yok, beş dakika. Alt basamaktaki öğrencinin yolu bu ve ilk kanıta kadar bu adres işini görüyor: aradığın işletmeci adını Google'a yazınca sayfa çıkıyor, mesajındaki link bir yere gidiyor. Kısıtı da açıkça söylenir: adres senin iş adını taşımıyor.
 
@@ -331,6 +334,8 @@ Bitince, ikinci blok: "Sayfa yayında. Linkini artık mesajına koyabilirsin."
 
 İş Beyni'ne: alınan alan adı ve nereden alındığı, birinci günde seçilen adresle aynı mı yoksa yedeğe mi geçildiği, alan adı bugün alınmadıysa hangi basamak yüzünden ertelendiği ve hangi güne ertelendiği, canlı site adresi (alt basamakta ücretsiz adres), ön görüşme sayfasının adresi, sayfanın dosya yolu, sayfanın metin sürümü ve tarihi, her bölümün metninin nereden geldiği, iş e-postası ve alıştırma başlangıç tarihi, müşteri gelince değişecek bölümler, açılış görselinin kaynağı.
 Bir sonraki modüllere: site adresi kisisel-markani-kur'un biyografisine ve e-posta imzasına, ön görüşme sayfasının boş hali gorusmeye-getir'e, iş e-postası adaya-mesaj-yaz'a, müşteri gelince değişecek bölümlerin listesi ve ertelenmiş alan adı ilk kanıt hikâyesi çıktığında birlikte güncellenmek üzere kanitini-hazirla'ya.
+
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `site.durum` (taslak; yayına alınınca `yayinda`) ve yayındaysa `site.adres`. Sayfanın başlığını ve açıklamasını araç `window.SITE` bloğundan kendisi okur; sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 

@@ -235,6 +235,8 @@ Klasöre: `nis-arastirmasi.md` ya da tarihli adı. Gizli klasöre: `.founderos/n
 İş Beyni'nin on üçüncü bölümüne: ilk beş görüşmede öğrenilecekler, tek satır.
 Niş kartına hiçbir şey yazmaz. Kartla çelişen bulgu İş Beyni'ne yazılır; kartı değiştirmek bu modülün işi değil.
 
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `pazar.rapor` (tarih, ilk üç niş ve gerekçesi, öneri); sonra aracın `panel --yukle` komutu sessiz çalışır.
+
 ## 8. Yedek yol
 
 - İnternet yoksa rapor yazılmaz, sebebi tek cümleyle söylenir. Niş kararı gerekiyorsa nisi-sec kartlarla ilerler.
