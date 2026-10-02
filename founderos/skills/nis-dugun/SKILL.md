@@ -17,7 +17,9 @@ Müşteri yolculuğu: ikisi birlikte (mekân görme randevusu, sonra teklif ve k
 
 Kapasite tarafında İstanbul Düğün Salonları Derneği Başkanı Adem Sönmez, sezon öncesi salonların yüzde 60-70 doluluğa ulaştığını ama girdi maliyetleri yüzünden zarar ettiklerini söylüyor (cumhuriyet.com.tr). TÜİK'e göre 2024'te Türkiye'de 568.395 çift evlendi; Düğün.com CEO'su 2025 için yaklaşık 500.000 düğün bekliyor ve mekanların bir önceki yıla göre yüzde 20-25 daha fazla rezervasyon aldığını belirtiyor (bigpara.hurriyet.com.tr). Bu işin diliyle söylersek kaçan tek bir müşteri "bir hafta sonu"nun tamamı demek: sezon cumartesi-pazarları tek büyük etkinlik alıyor, kaçan bir tarih o yıl bir daha dolmuyor çünkü rakip firma o tarihi kapıyor.
 
-Kayıp birimi: 40.000 ile 300.000 lira (bir hafta sonu, yani bir düğün tarihi; kartın yemeksiz salon paketi aralığı bu ve kaçan tarih o yıl bir daha dolmuyor).
+Kayıp birimi: 40.000 ile 150.000 lira (bir müşteri: bir düğün tarihi, yani bir hafta sonu; kartın yemeksiz salon paketi 40.000'den başlıyor, genel paketler 50.000-150.000; kaçan tarih o yıl bir daha dolmuyor).
+
+Kaçan talep: ayda 15 talep, yüzde 10'u müşteri olur (tahmin: fiyat soran çiftlerin çoğu birkaç mekanı geziyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Birincisi, fiyat sorup kapora ödedikten sonra iletişimin kopması. Şikayetvar'da doğrudan örnek: bir çift "yer durumu ve fiyat bilgisi aldıktan sonra" 4.000 TL kapora ödüyor, sonra firmayla iletişim kesiliyor (sikayetvar.com/dugun/organizasyon). Aynı kategoride "Melissa Organizasyon Parayı Aldı İşini Yapmadı" başlıklı şikayet de aynı örüntüyü gösteriyor. İkincisi, vaat edilenle günü örtüşmemesi ve dönüş yapmama: "vaat edilen hizmetle organizasyon günü sunulan hizmetin neredeyse hiçbir noktası örtüşmedi" (Vera Düğün Salonları şikayeti, sikayetvar.com). Üçüncüsü, kampanyalı fiyatın uygulanmaması: "Adalina Event Hall Kampanyalı Fiyat Geçerli Değilmiş Güvenimiz Sarsıldı" (sikayetvar.com).
 

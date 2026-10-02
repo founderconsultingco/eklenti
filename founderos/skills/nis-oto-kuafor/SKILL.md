@@ -21,7 +21,9 @@ Kapasite: sektörün kendi forumundan: tek başına günde bir araba çıkarmak 
 
 Bunu fiyatla çarpınca satışın matematiği çıkıyor: kaçırılan tek bir seramik müşterisi, bir günlük cironun tamamı. İşletmeciye "ayda beş müşteri kaçırıyorsun" demek bir şey ifade etmiyor. "Ayda beş boş gün" demek ediyor.
 
-Kayıp birimi: 19.000 ile 43.000 lira (bir boş gün; kartın seramik kaplama tam uygulama fiyatı ile günde bir iki araç kapasitesinden çıkıyor, kaçan tek seramik müşterisi bir günlük cironun tamamı).
+Kayıp birimi: 20.000 ile 45.000 lira (bir müşteri: seramik kaplama ya da ön boya koruma filmi, yanında yıl içindeki bakımlar; kartın seramik kaplama tam uygulama fiyatı 19.000-43.000, ön set boya koruma filmi 22.000-38.000, üç altı ayda bir bakım da aynı müşteriden geliyor. Kapasiteyle okunuşu: günde bir iki araç çıktığı için kaçan tek seramik müşterisi bir günlük cironun tamamı, işletmecinin diliyle bir boş gün).
+
+Kaçan talep: ayda 20 talep, yüzde 15'i müşteri olur (tahmin: gün içinde eli araçtayken Instagram'dan ve WhatsApp'tan fiyat soranların çoğu fiyat karşılaştırıyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.**
 
@@ -83,7 +85,7 @@ En güçlü üç itiraz: telefonu zaten ben açıyorum, bot fiyat veremez, tekno
 
 "Zaten iş var, yetiştiremiyorum." Doluluk kârlılık değil. Sektörün kendi sözü: işini iyi yapan yerlerin çoğu iyi denilecek kadar iyi kazanmıyor. Mesele boş günü doldurmak değil, ucuz işi eleyip yüksek bileti öne almak.
 
-"Ucuzcu müşteri var, teknolojiye para yok." Aylık ücret bir seramik kaplama müşterisi kadar (19.000-43.000 TL bandı); ay içinde kurtarılan ilk seramik müşterisi aylığı öder, ikincisinden itibaren kâr. Boya koruma filmi müşterisi (72.000-130.000 TL) tek başına iki üç aylığı karşılar. Ucuzcu müşteri zaten sistemin hedefi değil, asistan yüksek bileti öne alır.
+"Ucuzcu müşteri var, teknolojiye para yok." Aylık ücret (10.000-15.000 TL) bir seramik kaplama müşterisinin (19.000-43.000 TL) yarısından az; ay içinde kurtarılan ilk seramik müşterisi aylığı öder, ikincisinden itibaren kâr. Boya koruma filmi müşterisi (72.000-130.000 TL) tek başına beş altı aylığı karşılar. Ucuzcu müşteri zaten sistemin hedefi değil, asistan yüksek bileti öne alır.
 
 "Elemanım var, o baksın." Personel bulunamıyor ve güvenilmiyor, bunu kendileri söylüyor.
 

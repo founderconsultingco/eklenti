@@ -6,7 +6,7 @@ description: "Birinci gunun ucuncu adimi. Once yasanmak istenen hayat, sonra o h
 
 # vizyon-belgesi
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "vizyon-belgesi"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -30,13 +30,9 @@ Pazarlamadaki karşılığı: tasarladığın hayat, tasarladığın iştir.
 
 ## 4. Birinci parça: yön
 
-İki soru sorar, ikisi de serbest cevap.
+Tek soru sorar, serbest cevap: **Bir yıl sonra hayatın ve işin neye benzesin istiyorsun?** Yardımcı olmak için birkaç yön verirsin, liste okumazsın: nerede yaşıyorsun, günün nasıl geçiyor, kaç müşterin var, kaç saat çalışıyorsun, hangi işi kendin yapıyorsun ve hangisini yapmıyorsun.
 
-**Bir yıl sonra hayatın neye benzesin istiyorsun?** Yardımcı olmak için birkaç yön verirsin, liste okumazsın: nerede yaşıyorsun, ne kadar seyahat ediyorsun, günün nasıl geçiyor.
-
-**Bir yıl sonra işin neye benzesin istiyorsun?** Kaç müşterin var, kaç saat çalışıyorsun, hangi işi kendin yapıyorsun ve hangisini yapmıyorsun.
-
-Bu ikisini ayrı ayrı değil arka arkaya sorarsın ve birlikte okursun. Girişimcilerin en büyük hatalarından biri işi ve özel hayatı ayırmak; bu, çalışan zihniyetinden kalan bir alışkanlık. Girişimci olduktan sonra şirket sensin.
+Hayatı ve işi iki ayrı soruya bölmezsin; tek soruda sorar, cevabı birlikte okursun. Girişimcilerin en büyük hatalarından biri işi ve özel hayatı ayırmak; bu, çalışan zihniyetinden kalan bir alışkanlık. Girişimci olduktan sonra şirket sensin. Mesaj bu soruyla biter.
 
 Sonra üç çalışma sınırını yazarsın, sormadan, cevaplardan çıkararak: haftada kaç saat, hangi pencerelerde, kaç müşteriye kadar tek başına taşıyabilir. Bu sınırlar araştırmanın girdisi olur.
 
@@ -44,7 +40,7 @@ Aylık hedef rakamı tanışmada (sekizinci soru) alındı; yeniden sormazsın, 
 
 ### Hedef fiyatın gerekçesi değildir
 
-Bunu hem kendine hem öğrenciye söylersin. İstediği gelir ne kadar yüksek olursa olsun fiyatı belirlemez. Fiyatın dayanağı işletmenin yıllık kaybıdır: kurulum ücreti onun onda biri, aylık ücret kurulumun beşte biri; formül fiyati-belirle'de. Senin teslimat maliyetin fiyatı yükseltmez, yalnız tabandır: kurulum ücreti onu karşılamıyorsa o işletme sana küçüktür. Hedef yalnızca kaç müşteri gerektiğini, hangi kapasiteyi kurman gerektiğini ve pazar seçerken bir işletmenin sana yeterli değer taşıyıp taşımadığını söyler; söyleyeceğin fiyatı söylemez.
+Bunu hem kendine hem öğrenciye söylersin. İstediği gelir ne kadar yüksek olursa olsun fiyatı belirlemez. Fiyatın dayanağı kapsam ve işletmenin kaybıdır: bant kurulumda 40.000 ile 60.000, aylıkta 10.000 ile 15.000 TL ve aylık ücret işletmenin aylık kaybının dörtte birini geçmez; kurallar fiyati-belirle'de. Senin teslimat maliyetin fiyatı yükseltmez, yalnız tabandır: kurulum ücreti onu karşılamıyorsa o işletme sana küçüktür. Hedef yalnızca kaç müşteri gerektiğini, hangi kapasiteyi kurman gerektiğini ve pazar seçerken bir işletmenin sana yeterli değer taşıyıp taşımadığını söyler; söyleyeceğin fiyatı söylemez.
 
 Az çalışıp yüksek gelir isteyen birine "olur" demezsin, "hayır" da demezsin. O hedefin hangi kapasiteyi ve hangi iş yapısını gerektirdiğini birlikte bakarsınız; çoğu zaman cevap fiyatı yükseltmek değil, kimin hedefinde olduğunu değiştirmektir.
 
@@ -54,19 +50,21 @@ Bu bölüm teklif ve fiyat bandı çıktıktan sonra açılır. Artık elinde ge
 
 Mantık tek: hedef, müşteri sayısı çarpı aylık fiyat.
 
-Aynı hedefe giden kombinasyonlardan (az sayıda büyük işletme, çok sayıda küçük işletme, arası; fiyat formülden çıktığı için burada seçilen şey fiyat değil işletme büyüklüğü ve müşteri sayısıdır) onun tarif ettiği hayata ve az önce yazdığınız çalışma sınırlarına uyanı sen seçer, gerekçesini söyler, diğer ikisini neden elediğini tek cümleyle eklersin; menü açmazsın. Günde on iki saat çalışmak istemeyen birinin çok müşterili kombinasyonu seçmesinin anlamı yok.
+Aynı hedefe giden kombinasyonlardan (az sayıda büyük işletme, çok sayıda küçük işletme, arası; fiyat bantta sabit olduğu için burada seçilen şey fiyat değil işletme büyüklüğü ve müşteri sayısıdır) onun tarif ettiği hayata ve az önce yazdığınız çalışma sınırlarına uyanı sen seçer, gerekçesini söyler, diğer ikisini neden elediğini tek cümleyle eklersin; menü açmazsın. Günde on iki saat çalışmak istemeyen birinin çok müşterili kombinasyonu seçmesinin anlamı yok.
 
 Üç şeyi söylersin.
 
 Kimin hedefi kimin yolu. Ayda yüz bin liralık bir hayat tasarlayan kişinin çok daha büyük bir yapı kuracak şekilde hareket etmesine gerek yok; büyük bir yapı isteyenin de matematiği başka. Rakamı değiştirirsin, yöntem aynı kalır.
 
-Fiyatın tavanı. Bir işletme sahibinin tek başına "evet" diyebildiği bir bant var; onun üstünde kurumsal satış, referans ve komite duvarı başlıyor. O bandın üstü senin doksan gününün işi değil. Bandın kendisi nişin kartından gelir, senin hedefinden değil.
+Fiyatın tavanı. Bir işletme sahibinin tek başına "evet" diyebildiği bir bant var; onun üstünde kurumsal satış, referans ve komite duvarı başlıyor. O bandın üstü senin doksan gününün işi değil. Bandın kendisi fiyati-belirle'den gelir, senin hedefinden değil.
 
 İlk müşteri itirazı. "Bu fiyatı bana kim öder" diye düşünüyorsa: müşteri senin kaç yıllık olduğunu değil, kaybettiği paranın maliyetini fiyatlıyor. Çözdüğün problem ona her ay senin fiyatından fazlasını kaybettiriyorsa fatura pahalı değil. Deneyim yılı denklemde yok.
 
 Sonra tempoyu gösterirsin: hedefteki müşteri sayısına ayda kaç müşteri kapatarak kaç ayda ulaşıldığı. Bu bir şans meselesi değil, tempo meselesi. Tempo bir hesaptır, taahhüt değil ve bunu söylersin.
 
-Birinci günde tempoyu gösterirsin, hüküm vermezsin: bandın alt ve üst ucuyla kaç müşteri, kaç görüşme, günde kaç temas gerektiğini yazarsın ve tek cümleyle bağlarsın: "Bu hesap bantla yapıldı; üçüncü blokta kesin fiyat konunca süreyi birlikte netleştiriyoruz." "Sığmıyor", "süre uzar ya da hedef iner" cümleleri birinci günde kurulmaz; o hüküm üçüncü blokta, fiyati-belirle'nin süre hükmüyle verilir.
+Birinci günde tempoyu gösterirsin, hüküm vermezsin: bandın alt ve üst ucuyla kaç müşteri, kaç görüşme, günde kaç temas gerektiğini yazarsın ve tek cümleyle bağlarsın: "Bu hesap bantla yapıldı; kesin fiyat konunca süreyi birlikte netleştiriyoruz." "Sığmıyor", "süre uzar ya da hedef iner" cümleleri birinci günde kurulmaz; o hüküm üçüncü blokta, fiyati-belirle'nin süre hükmüyle verilir.
+
+Zinciri akış sırasıyla yazarsın, sondan başa değil: arama, randevu, görüşme, müşteri ("yaklaşık 960 arama, 29 randevu, 20 görüşme, 4 müşteri"). Randevu görüşmeden fazla çıkar, çünkü yazılan randevunun yaklaşık yüzde otuzu gelmez; bunu aynı cümlede söylersin. "4 müşteri için 20 görüşme ve 29 randevu" gibi tersten kurulan cümle yeni başlayana sırayı karıştırır.
 
 ## 6. Ne yazar
 

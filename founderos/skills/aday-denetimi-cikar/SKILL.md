@@ -6,7 +6,7 @@ description: "Dördüncü gün hızlı denetim, sonra her sabah derin denetim ve
 
 # aday-denetimi-cikar
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "aday-denetimi-cikar"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -63,7 +63,7 @@ Sıra şu: hızlı denetim yüz işletmeyi puana göre sıraya dizer, derin dene
 
 İş Beyni'nden: nişin, şehrin, günlük temas dağılımın, çalışma düzenin, sistemin adı, Dönüşüm Cümlesi.
 
-Niş kartından: kayıp birimi ve rakamı, sızıntı nerede bölümünün üç sızıntısı, duran havuz tipleri, kanal ve zaman, işletmecinin sözlüğü ve iç sesi, açılış cümlesi, yasal sınırlar.
+Niş kartından: kayıp birimi (bir müşteri ve değeri) ve kaçan talep satırı, sızıntı nerede bölümünün üç sızıntısı, duran havuz tipleri, kanal ve zaman, işletmecinin sözlüğü ve iç sesi, açılış cümlesi, yasal sınırlar.
 
 Aday listesinden (`adaylar.csv`; soğuk adaylar CRM açıldıktan sonra da burada, cevap verip CRM'e geçen aday CRM'de): adayın kaydı, önceki temaslar, hangi kanalların denendiği, kanal durumu satırları.
 
@@ -152,7 +152,7 @@ Tek sayfa, sabit yapıda, on satır artı üç sonuç satırı. FounderOS doldur
 10 Sızıntı puanı: [0-5]
 
 EN GÜÇLÜ BULGU: [tek cümle, gördüğün şey]
-LİRA KARŞILIĞI: [kayıp birimi × kartın sızıntı rakamı, tek satır hesap]
+LİRA KARŞILIĞI: [ayda kaçan talep × müşteri olma oranı × müşteri değeri, tek satır hesap]
 SIRADAKİ KANAL: [telefon / e-posta / Instagram / video]
 ```
 
@@ -164,7 +164,7 @@ Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gide
 
 **Kanca sütunu** telefonda sesli söylenecek tam cümledir, bulgunun kendisi değil: bulgu "11 Eylül salı 19.05'te aradın, dört çalışta açılmadı, geri arayan olmadı" diye kaydedilir; kanca "Salı akşamı yediye doğru sizi bir kere aradım, açılmadı" olur. Kanca günün adını taşır, bir haftadan eskiyse FounderOS yeniler ya da boşaltır. Gözlem yoksa kanca boştur, sayfa "gözlem yok" gösterir ve kartın açılış sorusu kullanılır. Tek gözlemden "sürekli", "her akşam" gibi genelleme yazılmaz.
 
-**Lira karşılığı** telefonda söylenmez; sayfanın Bugünün listesi kartında görünmez, görüşme özet ekranında durur. Tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla akşam gelen çağrı [sayı], çağrı başına [kayıp birimi], ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
+**Lira karşılığı** telefonda söylenmez; sayfanın Bugünün listesi kartında görünmez, görüşme özet ekranında durur. Tek satır ve hesabı görünür: "Haftada üç akşam kapalısınız; kartın rakamıyla ayda [sayı] talebe dönülemiyor, [kaçan müşteri] tanesi müşteri olurdu, müşteri başı [müşteri değeri]: ayda [çarpım]." Rakamların ikisi de kartın kendisinden gelir, buradan uydurulmaz. Kartta rakam yoksa lira karşılığı satırı boş kalır ve mesaj rakamsız gider; uydurulmuş rakamla giden mesaj ilk soruda çöküyor.
 
 **Sıradaki kanal** nasıl seçilir: aday en çok istenen yüzdeyse ve sahibinin adı biliniyorsa ilk temas yazılı (e-posta varsa e-posta, yoksa Instagram), üçüncü gün cevap yoksa video. Değilse kartın ana kanalı. Ana kanal telefonsa ve karar verenin adı bulunamamışsa yine telefon, yardım isteyen açılışla. Ana kanal Instagram'sa ve adayın hesabı yoksa e-posta, o da yoksa telefon. Listenin kalanında sızıntı puanı dört ve üstü olup ilk yazılı temasın üçüncü gününde hâlâ cevap vermemiş adayda da video; video her adayda ikinci dokunuştur. Günün kanal payı da seçimi etkiler: yazılı pay (tam zamanlıda kırk) takiplerle ve telefondan düşen adaylarla dolmuyorsa, e-postası ya da Instagram'ı olan denetimi hazır adaylar ilk temasa yazılıdan girer; arama payı dolmuyorsa tersi. Bu seçimi FounderOS yapar, sen seçmezsin.
 
@@ -173,7 +173,7 @@ Hiçbiri yoksa kartın açılış cümlesi kullanılır ve mesaj gözlemsiz gide
 Denetim kartı dört kanala dört farklı cümle veriyor ve dördü de aynı bulgudan çıkıyor. Metinlerin kendisi adaya-mesaj-yaz'da yazılı; burada sadece hangi satırın nereye gittiği yazıyor.
 
 - **Telefon**: en güçlü bulgu, kancanın içine girer. Lira karşılığı telefonda söylenmez, görüşmeye saklanır.
-- **E-posta**: en güçlü bulgu birinci cümle, lira karşılığı ikinci cümle, sistemin adı üçüncü cümle.
+- **E-posta**: en güçlü bulgu birinci cümle, tek soru ikinci cümle, sistemin adı üçüncü cümle. Lira karşılığı e-postada da geçmez, görüşmeye saklanır (adaya-mesaj-yaz: kayıp görüşmeden önce hiçbir temasta söylenmez).
 - **Instagram**: en güçlü bulgu soruya çevrilir, lira karşılığı hiç geçmez. Instagram'da rakam ağır duruyor ve mesaj satış gibi görünüyor.
 - **Video**: ekranda gösterilen şey en güçlü bulgunun kendisi olur. Sen konuşurken o ekran açık durur.
 
@@ -208,7 +208,7 @@ Günlüğe: o gün kaç adayın hızlı ve derin denetimi yapıldı. İş Beyni'
 
 Niş kartına: aynı bulgu tipi yirmi işletmenin on beşinde çıkıyorsa o bulgu kartın "sızıntı nerede" bölümüne sahadan gelen satır olarak eklenir, tarihiyle.
 
-Sonraki modüllere: en güçlü bulgu ve lira karşılığı adaya-mesaj-yaz'a, video senaryosu için video-mesaj-cek'e, görüşme özet ekranı için gorusmeyi-yonet'e.
+Sonraki modüllere: en güçlü bulgu adaya-mesaj-yaz'a ve video senaryosu için video-mesaj-cek'e; lira karşılığı yalnız görüşme özet ekranı için gorusmeyi-yonet'e.
 
 ## 8. Yedek yol
 

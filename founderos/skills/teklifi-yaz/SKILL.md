@@ -6,7 +6,7 @@ description: "Birinci gün teklifin gövdesi (konumlandırmanın üstüne, sesli
 
 # teklifi-yaz
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "teklifi-yaz"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -30,6 +30,7 @@ Pazarlamadaki karşılığı: aynı sistemi satan iki kişiden, sektörün kelim
 ## 2. Ne zaman çalışır
 - Birinci gün: teklifin gövdesi, teslimat kontrolünden sonra, yarım saat. Dönüşüm Cümlesi, sistemin adı, kayıp, çözüm, risk.
 - Üçüncü gün sabah, bir saat: kademeler ve kapsam, hizmet-akisini-ciz ile birlikte.
+- Öğrenci teklifi açıkça isterse (sistemin adı, akışlar ve süre kendi cümlesinde olabilir: "Randevu360 Sistemi adıyla uçtan uca bir hizmet teklifi hazırla"): pazar seçiliyse o turda yazılır. İdeal müşteri ve konumlandırma henüz yoksa teklif onları beklemez; ikisi tekliften sonra aynı oturumda tamamlanır, teklif gerekirse tek cümleyle güncellenir. Öğrencinin verdiği sistem adı, akışlar ve süre aynen kullanılır, kendi adını önermezsin. İstediği biçim önce gelir: iki cümlelik teklif (Dönüşüm Cümlesi ve süre cümlesi), sonra hizmete dahil işler sade liste (üç akış, ortak müşteri kaydı ve randevu takvimi, görüşme takibi, kurulum ve test); sayı ve gelir garantisi yok; "eksik bilgileri sor" dendiyse en sonda tek soru (bugün senin bilemeyeceğin, teklifi değiştiren bilgi), müşterinin bilgileri müşteri gelince karşılama formunda alınır. Birinci günün onay sorusu ("Bunu bir işletme sahibine okusan sence ne der?") o tek sorunun yerine geçmez; mesaj yine tek soruyla biter. Panele aynı turda gider: dönüşüm cümlesi, sistemin adı, mekanizma, teklif, değer bölgesi, üç ajan. Birinci gün sürüyorsa iş bitince kurulumun atlanan adımına dönülür (ideal müşteri, konumlandırma, teslimat kontrolü); durum kaydının `adim` ve `sonraki_adim` alanı onu gösterir.
 - Sonra sadece bir şartla yeniden çalışır: on görüşme birikecek ve aynı işaret bu on görüşmenin en az beşinde görülecek. Kararı degisiklige-karar-ver verir. Tek görüşmeyle teklif değişmez; bir görüşmede duyduğun cümle bilgidir, kanıt değildir. Fiyatın rakamı ayrı bir eşiğe bağlı, o otuz görüşmede açılıyor.
 - Her görüşmeden sonra gorusmeyi-analiz-et not düşer, ama bu modülü çalıştırmaz.
 
@@ -61,7 +62,7 @@ Gövdenin beş parçası var:
 4. Sistemin o kaybı nasıl durduğu. Nişin kartındaki müşteri yolculuğunun getirdiği parçalar, sadece onlar.
 5. Karşı tarafın riski. Ödeme sırası, deneme, çıkış şartı. Bir işletme sahibinin "peki ya olmazsa" sorusunun cevabı.
 
-**Beşinci parça birinci günde taslaktır ve öyle işaretlenir.** Güvencenin kesin metni, şartları ve hangi sayının tetiklediği fiyati-belirle'de, üçüncü blokta yazılıyor; teklif ondan önce yazıldığı için buradaki cümle geçicidir. Metnin içine tek satır konur ve İş Beyni'nin dördüncü bölümüne "güvence sürümü: taslak, [tarih]" diye geçer: "Bu cümle üçüncü blokta kesinleşecek." Öğrenciye de bir kez söylenir. Taslak cümle sayfaya da aynı işaretle gider; kesin metin çıkınca teklif ve sayfa aynı oturumda güncellenir. Sebebi şu: öğrenci birinci günde kesin sandığı bir güvenceyi ezberliyor, üçüncü blokta cümle değişince hangisinin geçerli olduğunu bilmiyor ve görüşmede ikisini karıştırıyor.
+**Beşinci parça birinci günde taslaktır ve öyle işaretlenir.** Güvencenin kesin metni, şartları ve hangi sayının tetiklediği fiyati-belirle'de, üçüncü blokta yazılıyor; teklif ondan önce yazıldığı için buradaki cümle geçicidir. Metnin içine tek satır konur ve İş Beyni'nin dördüncü bölümüne "güvence sürümü: taslak, [tarih]" diye geçer: "Bu cümle, kesin fiyatı koyduğumuz gün kesinleşecek." Öğrenciye de bir kez, bu sözle söylenir; blok numarası söylenmez. Taslak cümle sayfaya da aynı işaretle gider; kesin metin çıkınca teklif ve sayfa aynı oturumda güncellenir. Sebebi şu: öğrenci birinci günde kesin sandığı bir güvenceyi ezberliyor, üçüncü blokta cümle değişince hangisinin geçerli olduğunu bilmiyor ve görüşmede ikisini karıştırıyor.
 
 ### Güçlü teklif, dolu teklif değildir
 
@@ -159,7 +160,7 @@ Dönüşüm Cümlesi telefonda söylediğin kısa haldir. Görüşmede, sitede v
 
 1. **Sonuç.** İşletmecinin gerçekten istediği şey, senin yönteminin adı değil. Sonucun somutluk basamağı var ve ne kadar yukarıdaysan o kadar iyi: başvuru bir isimdir, kolay küçümsenir; randevu gerçektir, takvimde biri var; teklif kabulü daha gerçek; kapanmış iş tartışılmaz. Teklif, sistemin gerçekten ölçebildiği en yukarıdaki basamağı söyler: randevu nişinde "yazılan ve gelen randevu", teklif nişinde "cevap alınan ve kabul edilen teklif". Rakam sözü verilmez; olay sözü verilir.
 2. **Süre.** Sonucun ne zaman görüneceği. Bizimki sabit: sistem [21/28] günde kurulur ve rapor gününde üç sayı önüne konur. Gün yazılır, ay değil; "[21/28] gün" "üç hafta"dan sert okunuyor.
-3. **Yöntem.** Sistemin adı ve üç ile beş adımı, çocuk anlayacak kadar sade. "Telefon açılmayınca otuz saniyede mesaj gidiyor, cevap gelince sistem üç soru soruyor, randevu takvime düşüyor, gelmeyeni ertesi gün arıyor." Araç adı yok.
+3. **Yöntem.** Sistemin adı ve üç ile beş adımı, çocuk anlayacak kadar sade. "Telefon açılmayınca otuz saniyede mesaj gidiyor, cevap gelince sistem üç soru soruyor, randevu takvime düşüyor, gelmeyene ertesi gün yazıyor." Araç adı yok.
 4. **Kanıt.** Adayın "bu gerçekten çalışıyor mu" sorusuna verilen cevap. İki parçası var ve ikisi de gösterilir, anlatılmaz: sorunun kanıtı, senin kendi yaptığın deneme aramalarının sayısı ("geçen hafta otuz klima servisini akşam yedide aradım, yirmi ikisi açmadı"); çözümün kanıtı, adayın kendi telefonundan arayabileceği çalışan demo. İlk müşteriden sonra üçüncü parça ekleniyor: kanıt hikâyesi, gerçek rakamla. Güvence bu parçanın yerine geçmiyor; güvence "garanti var mı" sorulduğunda söylenen cevap, teklifin başlığı değil. Sebebi şu: iade sözü inandırmıyor, çalışan bir demo inandırıyor.
 5. **Fiyat.** Tam teklifte fiyatın yeri var ama telefonda ve sitede yok; görüşmede matematiğiyle söylenir. Kural fiyati-belirle'de.
 6. **Nitelik.** Kime satıyorsun ve **kime satmıyorsun**. "Yalnızca iki ve daha çok hekimli klinikler", "günde yirmi çağrıdan az alan işletmeyle çalışmıyorum" gibi. Kimseyi elemeyen teklif kimseye özel değildir; nitelik cümlesi ideal müşteri sayfasının "ne satın almaz" başlığından çıkar.
@@ -239,6 +240,14 @@ Sistemin nasıl çalıştığı üç ya da dört adımda yazılır. Her adımın
 
 Aynı teklif, işletmeye başka kapıdan giren beş ile yedi açı olarak da yazılır. Her açı bir başlık ve iki üç cümle. Açılar nişin kartından ve teklifin kendisinden çıkar: işin en yoğun zamanı (sezon, akşam saati, hafta sonu), eski müşteri listesi, numaranın ve düzenin değişmemesi, fiyat vermeyen asistan, reklam parasının boşa gitmemesi, işin öbür mevsimi. Yeni vaat yok; rakam varsa kaynağıyla, kaynağı yoksa rakam yok. Açı, işletmede görülen aksaklığa göre seçilir: yorumunda "ulaşamadım" yazan işletmeye akşam saati açısı, reklam verene reklam açısı, eski müşterisi çok olana liste açısı. Mesajın, videonun ve görüşmenin ilk cümlesi o açıdan kurulur; haftanın içeriği de konusunu bu açılardan alır. Panelde Ajansım'da "Teklifin farklı açılardan" olarak durur, öğrenci oradan kopyalar.
 
+### Değer bölgesi
+
+Dönüşüm Cümlesi üç parçaya ayrılır; bu Değer Bölgesi Metodu'nun kendisidir ve panelde Ajansım'da "Değer bölgen" olarak üç daire halinde durur. Pazar: kime satıyorsun, şehir, niş ve büyüklükle ("Bursa'da iki ila beş teknisyenli klima ve kombi servisleri"). Problem: işletmecinin para ödeyeceği acı, onun diliyle ("Sezonda usta sahadayken açılmayan telefon; müşteri tekrar aramıyor, bir sonraki servisi arıyor"). Sonuç: ölçülen kazanım ("Kaçan arama servis randevusuna dönüyor; ay sonunda kaç randevu geldiği belli"). Her biri tek cümle, Dönüşüm Cümlesi'nden çıkar, yeni vaat eklemez ve rakam taşımaz; rakamları panel kayıttan kendisi koyar: şehirdeki işletme sayısı, kartın kayıp birimi, fiyat. Üçünün kesiştiği yerde sistemin adı durur.
+
+### Teslime hazır üç ajan
+
+Sattığın sistem öğrenciye üç hazır ajan olarak gösterilir: Hızlı Dönüş Ajanı, Randevu Ajanı, Eski Müşteri Kazanma Ajanı. Adlar ve içlerindeki işlevler İş modeli'nde sabittir. Burada yazılan, her birinin bu nişte ne yaptığıdır: iki cümle, kartın bilgileri ve işletmecinin sözlüğüyle (hangi bilgiyi alır, neyi yapmaz), bir de müşteriye giden tek bir örnek mesaj. Örnek mesaj kartın asistan kurallarına uyar: fiyat yok, tıbbi bilgi yok, sağlıkta hasta gibi konuşma yok, yer tutucu yok; doğal bir cümle ("Merhaba, formunuz bize ulaştı. Klima mı kombi mi, arıza mı bakım mı?"). Hızlı Dönüş'ün ölçüsü altmış saniye ve yazılıdır; telefonla arama tarafı hatlarda açılana kadar yazılı yürür, örnek mesaj arama sözü vermez. Randevu Ajanı'nın telefon tarafı hat uygunsa; Eski Müşteri Kazanma mesajla başlar. Görüşmenin sunum bölümünde üç parça bu adlarla anılabilir; açılış cümlesinde ad değil sonuç söylenir.
+
 ## 6. Ne söyler
 
 Cümle bitince: "Teklifin hazır. Sen yazmadın, sektörün yazdı. Şunu satıyorsun: [Dönüşüm Cümlesi]. Cümlenin sonundaki duyguya dikkat et. İşletmeci onu satın alıyor, sistemi değil."
@@ -250,10 +259,11 @@ Cümleyi beğenmezse: "Bu cümle bugün mükemmel olmayacak, on görüşmede otu
 
 ## 7. Ne yazar
 
-İş Beyni'ne: Dönüşüm Cümlesi, sistemin adı, mekanizmanın adı ve adımları, üç kademenin nişe özel içeriği, bir dakikalık anlatım, teklifin açıları, üç ya da dört itiraz ve cevapları, teklif sürümü 1 ve tarihi.
+İş Beyni'ne: Dönüşüm Cümlesi, sistemin adı, mekanizmanın adı ve adımları, üç kademenin nişe özel içeriği, bir dakikalık anlatım, teklifin açıları, üç ya da dört itiraz ve cevapları, teklif sürümü 1 ve tarihi. Değer bölgesi ve üç ajanın nişe özel cümleleri İş Beyni'ne ayrıca yazılmaz; Dönüşüm Cümlesi'nden ve kademelerden çıkar, yalnız panel dosyasında durur.
 Sonraki sürümler on görüşmelik birikimden çıkar. İş Beyni'nde güncel sürüm ve numarası durur; eski sürüm kaybolmaz, değiştiği günün günlüğüne sebebiyle yazılır. Hangisinin daha iyi çalıştığını böyle görürsün.
 
-Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `donusum`, `sistem_adi`, `mekanizma` (ad ve adımlar), `teklif` (bir_dakika, kademeler, guvence, acilar, itirazlar); sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `donusum`, `sistem_adi`, `mekanizma` (ad ve adımlar), `teklif` (bir_dakika, kademeler, guvence, acilar, itirazlar), `deger_bolgesi` (pazar, problem, sonuc) ve `ajanlar` (üç ajan: `kod` hizli_donus, randevu, eski_musteri; `ne` bu nişte ne yaptığı; `ornek` müşteriye giden mesaj); sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panele odak (`odak_yaz`; panelde Ajansım'da teklif açılır): başta `basladi` (birinci gün adım 1/2 "Teklifin gövdesi", üçüncü blokta adım 2/2 "Kademeler"), öğrenciye tek soruyu yazmadan hemen önce `bekliyor` (bekleyen: teklife bakıp tek cümle yorum; `sonraki` yok), dosya gönderilince `bitti` (sonraki: "Devam").
 
 ## 8. Yedek yol
 
@@ -265,7 +275,7 @@ Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitri
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki, birinci günde: "Ne sattığını yazdık. Şimdi kartından fiyat bandını çıkarıyoruz; kesin rakam üçüncü blokta." Üçüncü blokta: "Kademeler yazıldı, aynı gün ikinci yarıda kesin fiyat."
+Sıradaki, birinci günde: "Ne sattığını yazdık. Şimdi fiyat bandını koyuyoruz ve kartının rakamıyla sınıyoruz; kesin rakamı aday listesini çıkardığımız gün koyuyoruz." Üçüncü blokta: "Kademeler yazıldı, aynı gün ikinci yarıda kesin fiyat."
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - On görüşme birikti ve aynı işaret beşinde çıktı: teklif yeniden yazılır.

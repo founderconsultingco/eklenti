@@ -1,12 +1,12 @@
 ---
 user-invocable: false
 name: nisi-sec
-description: "Birinci gün. On dokuz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda."
+description: "Birinci gün. On dokuz niş kartından araştırıp ilk odak pazarını önerir, gerekçesini anlatır, son sözü öğrenciye bırakır. Pazar kararı ya da pazar değişimi konuşulduğunda. \"Nişimi seçelim\" dendiğinde de; karşılaştırma ve canlı sayım panelin Pazar Radarı'nda."
 ---
 
 # nisi-sec
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "nisi-sec"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -69,7 +69,7 @@ Bu dördü İş Beyni'ne yazılır. Üç yüzüncü temasta o satıra birlikte b
 
 ### Onay
 
-Son sözü öğrenci söyler. "İlk odak pazarımız bu, sen ne diyorsun?" diye sorarsın ve cevabını beklersin.
+Son sözü öğrenci söyler. "İlk odak pazarımız bu, sen ne diyorsun?" diye sorarsın ve cevabını beklersin. Soruyu yazmadan hemen önce panele odak (`odak_yaz`) gider: `bekliyor` (bekleyen: önerdiğin pazara onayı ya da itirazı; sonraki: "Tamam, bu pazarla başlıyoruz."). Kopyalanan cümle de onaydır; itiraz gelirse aşağıdaki ayrım aynen işler.
 
 ### İtirazın sebebini ayır
 
@@ -120,21 +120,20 @@ Düşen nişler yok olmuyor, ikinci ay listesine gidiyor. Sezonu açıldığınd
 
 ### İkinci eleme: para (müşteri değeri)
 
-Fiyat değerden hesaplandığı için niş seçimi de değerden başlar: hangi nişte en çok değer üretebilirsin, en çok orada kazanırsın. Müşterisi başına az para dönen işletme (tek koltuklu berber, küçük spor salonu, restoran) değer formülünü taşımaz; bunlara "en iyi niş hangisi" diye değil "hangi nişte kaçan bir müşteri en pahalı" diye bakılır. Kural, dört müşteri kuralı: kartın rakamlarından çıkan aylık ücretin dört katı senin aylık hedefine ulaşmıyorsa o niş ya yalnız büyük işletmeleriyle geçer ya düşer. Dört sayısının sebebi çıkış hesabı: tek kişilik işte dört aktif müşteri güvenli çıkış noktası, beşincide iş ağırlaşıyor. Hesabın iki girdisi de yazılı bir yerden geliyor, hiçbiri tahmin değil: aylık hedef İş Beyni'nde, aylık ücret kartın rakamlarından formülle çıkıyor. Hedef burada yalnız nişi eler, işletme başına yeterli değer var mı diye bakar; söyleyeceğin fiyatın gerekçesi olmaz, fiyat işletmenin kaybından çıkar.
+Satış videosunun birinci ölçütü: işletme tek bir müşteriden ne kadar kazanıyor? Başlangıçta müşteri başına en az 10.000 TL'lik satış yapan işletmelere odaklanılır. Sebebi: kazandırdığın birkaç müşteriyle işletmeci ödediği paranın karşılığını görüyorsa teklifini satmak kolaylaşıyor. Müşterisi başına az para dönen işletmede (tek koltuklu berber, küçük spor salonu, restoran) aylığını çıkarmak için çok sayıda ek müşteri gerekiyor.
 
-Burada dikkat edilecek bir şey var: müşteri sana tek bir kurtarılan müşteriden ödemiyor, bir ayda kurtarılanların toplamından ödüyor. O yüzden "kaçan bir müşteri kurulum ücretini karşılıyor mu" diye bakmak yanlış olur.
+Rakam kartın kendisinden çıkar, buradan uydurulmaz: kayıp birimi satırı bir müşteriyi ve değerini yazar (ilk iş ve yıl içindeki tekrar, lira aralığı); hesapta aralığın ortası alınır. Kural:
+- Müşteri değerinin ortası 10.000 TL ve üstündeyse bu eleme geçilir.
+- Altındaysa niş ilk müşteri için düşer. Kartın Kapsam bölümü büyük işletmeyi (çok koltuk, çok şube, çok ekip) tarif ediyor ve aşağıdaki fayda kontrolü o büyüklükte tutuyorsa niş yalnız büyük işletmeleriyle geçer; bu şart İş Beyni'ne yazılır.
+- Kartta müşteri değeri yoksa ("sahadan dolacak") sonuç "bilinmiyor" olur; bilinmiyor geçti sayılmaz (yukarıdaki eksik veri kuralı).
 
-Hesabın iki rakamı da nişin kartından çıkar, hiçbiri buradan uydurulmaz. Kayıp birimi kartın "gerçek fiyatlar ve kapasite" bölümünün son satırında; aylık kaçan iş sayısı kartın "sızıntı nerede" bölümünün birinci sızıntısında. İkisi çarpılır ve o işletmenin ayda kaybettiği para çıkar.
+Fayda kontrolü, kartın rakamlarıyla: aylık kayıp = kartın kaçan talep satırındaki aylık talep × müşteri olma oranı × müşteri değeri. Görüşmede satılan paketin aylığı (Kademe 2, 12.500 TL; fiyati-belirle) bu kaybın dörtte birini geçmemeli. Geçiyorsa niş, müşteri değeri 10.000 TL'nin üstünde olsa da yalnız büyük işletmeleriyle geçer. Dikkat: işletmeci sana tek bir kurtarılan müşteriden ödemiyor, bir ayda kurtarılanların toplamından ödüyor. O yüzden "kaçan bir müşteri kurulumu karşılıyor mu" diye bakmak yanlış olur; doğru soru "ayda kurtarılan müşteriler aylığın kaç katı ediyor".
 
-Sonra kurulum ve aylık çıkar: aylık kayıp çarpı on iki, yıllık; kurulum yıllığın yüzde onu; aylık kurulumun yüzde yirmisi. Bu, o nişin taşıyabileceği fiyattır (formül fiyati-belirle'de).
+Hesap kalıbı, rakamlar karttan: [ayda kaçan talep] × [yüzde kaçı müşteri olur] = ayda kaçan müşteri; × [müşteri değeri] = aylık kayıp. Aylık ücret, aylık kaybın dörtte birinden az olmalı. Kaç müşteri kurtarması aylığı çıkarır: aylık ücret bölü müşteri değeri, yukarı yuvarlanır.
 
-Hesap kalıbı, rakamlar karttan gelir: [kartın kayıp birimi] × [kartın aylık kaçan olay sayısı] = aylık kayıp; × 12 = yıllık; kurulum = yıllığın onda biri; aylık = kurulumun beşte biri. Müşteri değeri elemesi: aylık ücret çarpı dört senin aylık hedefine ulaşmıyorsa niş yalnız büyük işletmeleriyle (çok koltuk, çok şube, çok ekip) geçer, kartın Kapsam bölümüne bu şart yazılır; büyük işletmesi de taşımıyorsa niş düşer. Kartında aylık kaçan olay sayısı yoksa hesap yapılamaz ve bu elemenin sonucu "bilinmiyor" olur; bilinmiyor geçti sayılmaz (yukarıdaki eksik veri kuralı).
+Hedefin bu elemede yeri yok: fiyat bütün nişlerde aynı bantta olduğu için hedefine kaç müşteri gerektiği (hedef bölü aylık ücret) nişten nişe değişmez. Süre hesabı isini-kur'daki zincirle yapılır (hedef bölü aylık ücret, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı); "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta fiyati-belirle'de verilir.
 
-Son adım, çıkan rakamın taşınıp taşınmadığı. Ölçü şu: o rakamla senin hedefine ulaşman için gereken müşteri sayısı, gelir planındaki zincirle doksan güne sığmıyorsa niş düşer. Hesap isini-kur'daki zincirle yapılır (hedef bölü nişin aylık ücreti, beş görüşmede bir müşteri, randevuların yüzde yetmişi görüşme, otuz üç aramada bir randevu, günlük arama sayısı). Aynı hesap günde yirmi arama yapan biri için iki buçuk katı uzun çıkar; o yüzden işin yanında çalışanda bu eleme hedef üzerinden değil, tek müşteri üzerinden yapılır. Bu hesap içeride yapılır; "hedefin sığmıyor" cümlesi birinci günde öğrenciye söylenmez, süre hükmü üçüncü blokta verilir.
-
-Bu hesabın rakamları kartın "gerçek fiyatlar ve kapasite" ve "sızıntı nerede" bölümlerinden çıkar. Kartta ikisinden biri yoksa bu elemenin sonucu "bilinmiyor" olur; kart elenmez ama geçmiş de sayılmaz, sırası eksik veri kuralıyla belirlenir.
-
-Kayıp birimi uyarısı (22 Eylül 2026): kartın kayıp birimi işlemin liste fiyatıysa işletmenin kaybı gibi söylenmez; "kaçan bir kişi, işlemine göre X ile Y arası liste fiyatı; işletmenin elinde kalanı bilinmiyor" denir. "Hedefini taşıyabilecek tek fiyat seviyesi" gibi kıyaslanmamış iddia kurulmaz. Yüksek ciro ya da yüksek işlem fiyatı hizmete ödeme yapılacağının kanıtı sayılmaz; kanıt, işletmenin bu işe zaten ödediği paradır (personel maaşı, yazılım, ajans).
+Müşteri değeri uyarısı: müşteri değeri işletmenin cirosudur, elinde kalan kâr değil. "Kaçan bir müşteri, işine göre X ile Y arası bırakıyor" denir; "elinize şu kadar kalıyor" denmez. Kartın aralığı bir liste fiyatıysa (estetik gibi) "liste fiyatı" diye söylenir. "Hedefini taşıyabilecek tek fiyat seviyesi" gibi kıyaslanmamış iddia kurulmaz. Yüksek ciro ya da yüksek işlem fiyatı hizmete ödeme yapılacağının kanıtı sayılmaz; kanıt, işletmenin bu işe zaten ödediği paradır (personel maaşı, yazılım, ajans, reklam).
 
 ### Üçüncü eleme: pazar büyüklüğü
 
@@ -160,7 +159,7 @@ Bu eleme puanı öğrenciye söylemez ve elenen kartı ona saymaz. Öğrenciye y
 
 ### Altıncı eleme: senin hazırlığın
 
-Hazırlık seviyen düşükse, yani satış tecrüben yok ve telefon seni zorluyor ya da üç hazırlık ölçütünün ikisi yoksa, ilk müşteriye kadar şu kartlar önerilmez: diş kliniği, estetik cerrahi ve medikal estetik, sigorta acentesi, emlak ofisi. FounderOS bunu Kart özeti tablosundaki "düşük hazırlıkta önerilmez" işaretinden okur. Asıl sebep model içindir: bu sektörlerde metinler ve eski müşteriye dönüş ek onaya bağlı, ilk satış uzuyor. Öğrenciye gerekçe tek sade cümleyle söylenir: "Bu sektörde ilk satış daha uzun sürüyor; ilk müşterin için daha hızlı dönen bir pazarla başlıyoruz." Bu kartlardan birinde ısrar edersen ısrar kuralı işler: bir kez rakamla karşı çıkarım, yine istersen riski İş Beyni'ne sade dille ("ilk satış daha uzun sürebilir") yazar ve devam ederiz.
+Hazırlık seviyen düşükse, yani satış tecrüben yok ve telefon seni zorluyor ya da üç hazırlık ölçütünün ikisi yoksa, ilk müşteriye kadar şu kartlar önerilmez: diş kliniği, estetik cerrahi ve medikal estetik, sigorta acentesi, emlak ofisi. FounderOS bunu Kart özeti tablosundaki "düşük hazırlıkta önerilmez" işaretinden okur. Asıl sebep model içindir: bu sektörlerde metinler ve eski müşteriye dönüş ek onaya bağlı, ilk satış uzuyor. Öğrenciye gerekçe tek sade cümleyle söylenir: "Bu sektörde ilk satış daha uzun sürüyor; ilk müşterin için daha hızlı dönen bir pazarla başlıyoruz." Bu kartları FounderOS kendisi önermez, ama seçimi engellemez: bu kartlardan birini açıkça seçersen karşı çıkmam, tartışma açmam, ısrar kuralı burada işlemez. Tek cümleyle neye dikkat edeceğini söylerim (diş kliniğinde: "Olur, diş klinikleriyle başlıyoruz; tek dikkat edeceğin, burada ilk satış biraz daha uzun sürüyor, o yüzden günlük temasın aksamasın."), riski İş Beyni'ne sade dille ("ilk satış daha uzun sürebilir") yazar ve aynı turda devam ederiz.
 
 ### Kalanlar arasından seçim
 
@@ -173,13 +172,17 @@ Sırayla:
 
 ### Doğrulama
 
-Doğrulama birinci günde, arka planda: pazar onaylanır onaylanmaz seçilen niş ve iki yedeği nisi-dogrula'ya verilir, tablo teklife geçmeden, en geç markadan önce gelir. Tablo canlı sayılara bakar: gerçekten kaç işletme var, telefonları açık mı, reklam veren var mı. Karar kartın rakamıyla verilir, tablo onu sınar; pazarı bozarsa niş aynı gün değişir ve marka ile sayfa henüz kurulmadığı için hiçbir şey boşa gitmez. Servis o gün cevap vermezse tablo ikinci bloğun sabahında gelir.
+Öğrenci nişleri kendisi verip karşılaştırma isterse (satış videosundaki "diş klinikleri, estetik merkezleri ve emlak ofislerini karşılaştır" gibi) tablo o turda verilir ve şehir belliyse karşılaştırılan nişlerin sayımı aynı turda başlar; onaydan sonra yeniden başlatılmaz ve iki yedek o nişlerdir. Doğrulama birinci günde, arka planda: pazar onaylanır onaylanmaz seçilen niş ve iki yedeği nisi-dogrula'ya verilir, tablo teklife geçmeden, en geç markadan önce gelir. Tablo canlı sayılara bakar: gerçekten kaç işletme var, telefonları açık mı, reklam veren var mı. Karar kartın rakamıyla verilir, tablo onu sınar; pazarı bozarsa niş aynı gün değişir ve marka ile sayfa henüz kurulmadığı için hiçbir şey boşa gitmez. Servis o gün cevap vermezse tablo ikinci bloğun sabahında gelir.
 
 ### Karar ve kayıt
 
-Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici müşteri değerini kartın bandının ortasıyla günceller ve "geçici" etiketi kalır; kesin rakam üçüncü blokta girer.
+Kararı sana söyler, sebebiyle birlikte. Seçilen kartı İş Beyni'ne bağlar. Gelir planındaki geçici aylık ücreti Kademe 2'nin aylığıyla (12.500 TL) yazar ve "geçici" etiketi kalır; kesin rakam üçüncü blokta girer.
 
 Seçilen kartı klasöre `nis-karti.md` adıyla yazar ve öğrenciye söyler: "Sektörünün kartı klasöründe; okuman gerekmiyor, ben okuyorum." Klasördeki kopyada kartın "Yasal sınırlar" bölümünün gövdesi yer almaz; yerine tek satır yazılır: "Bu bölüm FounderOS'un eklentideki niş kartında durur." Aynı bölümün gövdesi gizli `.founderos/nis-sinirlar.md` dosyasına olduğu gibi yazılır; bu dosya model başvurusudur, öğrenciye gösterilmez ve denetçi alt ajanı sınırları buradan okur. Modüller o bölümü eklentideki kartın aslından ya da bu gizli dosyadan okur ve sessizce uygular; öğrencinin açabileceği dosyada kanun adı, madde ve yaptırım durmaz. Bu yüzden kopyada kartın öteki bölümlerinde geçen kanun, yönetmelik ya da kurul adı, madde numarası, ceza tutarı, KVKK ve İYS içeren cümleler de yazılmaz; kuralın kendisi kalır, dayanağı düşer ("fiyat vermez" kalır, hangi yönetmeliğe dayandığı yazılmaz). Kartın tam hali eklentide durur. Doksan Gün Planı bu modülde değil, fiyat bandı konduktan sonra üretilir; on altı bölümlük plan klasörde `doksan-gun-plani.md` olarak durur ve arka plan yardımcısı yazar.
+
+### Panel anları
+
+Panelde Ajansım'ın Pazar Radarı açılır (çekirdek, "Panel: odak ve tur"). Modül başında odak (`odak_yaz`) `basladi` (adım 1/3 "Kartları karşılaştır"); önerini yazmadan hemen önce `bekliyor` (adım 2/3 "Önerim ve onayın", yukarıda, Onay). Onay gelince aynı turda sayım çekimleri başlar; iş kimlikleri gelir gelmez, başka hiçbir işten önce (kart yazmak, `aday_sonuc`'u beklemek, araştırmayı başlatmak dahil) pazar satırları panele gider (yedinci bölüm), aracın `panel --yukle` komutu sessiz çalışır; araç klasörde yoksa (birinci gün) önce `founderos:aday-listesi-araci` ile kurulur. Sayım ancak böyle canlı akar; satırlar sayım bittikten sonra giderse öğrenci radarda akışı hiç görmez. Sonra odak `bitti` (adım 3/3 "Canlı sayım"; not: pazar belli, üç pazarın canlı sayımı Pazar Radarı'nda akıyor; sonraki: "Devam"). Panel linki yazılıysa öğrenciye tek cümle: "Panelde Pazar Radarı açıldı; üç pazarın sayımı orada canlı akıyor." Sayım sonucu gelince ölçüler, puan ve karar aynı satırlara eklenir (nisi-dogrula). Sayım bitince radarın altında Karşılaştırma tablosu açılır. Öğrenci sohbette "karşılaştır, tabloda ver, her sektör için problem ve üç soru yaz" derse sohbetteki tablo da aynı satırlardan kurulur: aynı problem, aynı üç soru, kesin bilinmeyen rakam "tahmin" diye işaretli; panelle sohbet aynı şeyi söyler. Bu anlar seçim mantığını değiştirmez: rakamlar karttan, canlı sayım onaydan sonra.
 
 ## 6. Ne söyler
 
@@ -192,11 +195,11 @@ Niş değiştirmek isterse: "Üç yüz temasa gelmeden niş değişmez. Şu an k
 
 ## 7. Ne yazar
 
-İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, güncellenmiş müşteri değeri, coğrafya (şehir mi Türkiye geneli mi). Doğrulama tablosunu nisi-dogrula'nın sonucuyla FounderOS yazar: çoğu zaman birinci gün, servis cevap vermediyse ikinci blokta.
+İş Beyni'ne: seçilen niş, kart bağlantısı, ikinci ve üçüncü aday, karar tarihi, doğrulama tablosu, kartın müşteri değeri ve gelir planının geçici aylık ücreti, coğrafya (şehir mi Türkiye geneli mi). Doğrulama tablosunu nisi-dogrula'nın sonucuyla FounderOS yazar: çoğu zaman birinci gün, servis cevap vermediyse ikinci blokta.
 Klasöre: `nis-karti.md`, seçilen kartın tamamı; yalnız "Yasal sınırlar" bölümünün gövdesi yerine tek satırlık yönlendirme (yukarıda). Gizli klasöre: `.founderos/nis-sinirlar.md`, o bölümün gövdesi (denetçi ve modüller için).
 Niş kartına: bu tarihte bu şehirde sayılan işletme sayısı.
 
-Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `nis`, `pazar.secilen`, `pazar.neden`, `pazar.adaylar` (karşılaştırılan nişler: nişin adı, şehirdeki sayım, Türkiye sayısı, reklam veren ve telefonu olan yüzdesi, tek cümle not; bilinmeyen değer yazılmaz); sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de), onay gelip sayımlar başlar başlamaz, modülün sonunu beklemeden: `nis`, `pazar.secilen`, `pazar.neden`, `pazar.sehir` ve `pazar.adaylar` (üç niş: kartın adıyla nişin adı, sayımın `is_id`'si, `karar`: seçilen `secildi`, iki yedek `yedek`; `neden` tek cümle; karttan `tr_sayisi`, `musteri_degeri` (kayıp birimi aralığının ortası) ve `sezon`; karşılaştırma tablosu için karttan `problem`, `sorular` ve `kaynaklar`; bilinmeyen değer yazılmaz). `problem`: kartın "Sızıntı nerede" bölümündeki en güçlü sızıntı, tek cümle, işletmecinin diliyle; seçilen nişte teklifteki problemle aynı acı. `sorular`: kartın "Telefonda söylenecekler" bölümündeki açılış sorusu ve işleyiş sorusu birebir, üçüncüsü "Ayda kaç arama, mesaj ya da form geliyor, kaçına aynı gün dönemiyorsunuz?". `kaynaklar`: sızıntının dayanağı, kartın Kaynaklar listesinden en çok iki bağlantı (`ad`, `adres`). Panel bu satırlardan Pazar Radarı'nda Karşılaştırma tablosunu kurar: sütunlar üç niş, satırlar dört ölçüt (geçti ya da zayıf; canlı sayılan ile tahmin ayrı), problem, üç soru ve kaynak. Bir nişin sayımı daha önce başladıysa (nis-arastirmasi) iş kimliği İş Beyni'nde durur, yeniden başlatılmaz. Sonra aracın `panel --yukle` komutu sessiz çalışır ve odak gider. Sayımın ölçüleri gelince (şehirdeki sayı, telefon, reklam, site, akşam ve şikâyet oranları, puan) aynı satırlar güncellenir; bu yazımı nisi-dogrula'nın sonucuyla FounderOS yapar.
 
 ## 8. Yedek yol
 
@@ -204,15 +207,15 @@ Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitri
 - Sen üç adayı da reddedersen: FounderOS bunu işaret sayar ve günü seçim bitmeden kapatmaz. Reddetme sebebini yazar, o sebep kalan kartlara uygulanır ve üç yeni aday çıkarılır.
 - Üç aday da elemelerden geçemezse: en az eleme yiyen niş seçilir ve hangi elemede takıldığı İş Beyni'ne yazılır. Bu, o nişte hangi konuda zorlanacağını önceden bilmen demek.
 - Şehrinde hiçbir nişte 500 işletme yoksa: bütün nişler Türkiye geneline açılır ve bu İş Beyni'ne yazılır. Mesajlardan "sizin şehirde" cümlesi çıkar, kanıt cümlesi ülke geneline döner.
-- Kartta kapasite bilgisi yoksa: para elemesinin sonucu "bilinmiyor" olur ve geçti sayılmaz; sıra eksik veri kuralıyla belirlenir.
+- Kartta müşteri değeri ya da kaçan talep satırı yoksa: para elemesinin sonucu "bilinmiyor" olur ve geçti sayılmaz; sıra eksik veri kuralıyla belirlenir.
 - Elemelerden sonra masa puanı sekiz ve üstü kart kalmazsa: en yüksek puanlı üç kart alınır ve hangi maddelerinin eksik olduğu İş Beyni'ne yazılır. Öğrenci durmaz; eksik kartla çalışıldığı biliniyor olur.
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: "Pazarın belli. Birinci oturuş burada bitiyor; şehrindeki canlı sayım ve bu pazarın içinden sana para verecek tek kişinin araştırması arka planda başladı. Sıradaki oturuşta onu okuyup ne sattığını yazıyoruz; fiyat bandı o oturuşta, kesin rakam üçüncü blokta."
+Sıradaki: "Pazarın belli. Birinci oturuş burada bitiyor; şehrindeki canlı sayım ve bu pazarın içinden sana para verecek tek kişinin araştırması arka planda başladı. Sıradaki oturuşta onu okuyup ne sattığını yazıyoruz; fiyat bandı o oturuşta, kesin rakamı aday listesini çıkardığımız gün koyuyoruz."
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
-- Üç adaydan hiçbiri para elemesini geçemedi: eşik değil kart eksiktir, kapasite bilgisi olmayan kartlar işaretlenir.
+- Üç adaydan hiçbiri para elemesini geçemedi: müşteri değeri olmayan kartlar işaretlenir; değeri olup 10.000 TL'nin altında kalan nişler ilk müşteriden sonraya kalır.
 - Kalan kartların masa puanı sekizin altında: kart eksikliği işaretlenir, seçim en yüksek puanlıyla yapılır.
 - Şehirde 500 işletme yok: coğrafya Türkiye geneline açılır, mesaj metinleri buna göre yazılır.
 - Seçilen nişin kartında yasal sınır var (sağlık nişleri): teklifi-yaz, yazili-asistani-kur ve sesli-ajani-kur o sınırı baştan okur ve sessizce uygular; öğrenciye kural anlatılmaz, yalnız yapılacak iş söylenir.

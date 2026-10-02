@@ -19,7 +19,9 @@ Müşteri yolculuğu: randevu (deneme dersi randevusu, sonra üyelik). Teslimat 
 
 Kapasite tarafında iki sourced sektör raporu var ama rakamları farklı: pilatesrehberi.com'un harita raporu stüdyoların %94'ünün reformer sunduğunu söylerken (pilatesrehberi.com/blog/turkiye-pilates-haritasi-2026-stuedyo-dagilimi), aynı sitenin 2026 raporu bu oranı %55 veriyor (pilatesrehberi.com/2026-pilates-raporu). İkisi de reformer sayısının sabit ve sınırlı olduğunu doğruluyor. Buradan çıkan hesap: reformer saati dolmadıysa o saat geri gelmiyor, işletmecinin diline çevirirsek "boş bir reformer saati". Sektörün müşteri elde tutma ortalaması %60-70 (nordenpilates.com/pilates-studyosu-acilis-maliyeti-2026-detayli-butce-plani), yani ayda müşterilerin %30-40'ı zaten kayboluyor; yaz aylarında bu düşüşe ek %20-30 sezonluk kayıp biniyor (aynı kaynak). Eğitmen maliyeti aylık bütçenin %22'sini oluşturuyor ve başabaş için minimum %45-50 doluluk gerekiyor (gymrehberi.com/maliyet-hesaplama/pilates-studyosu-maliyeti-2026). Yani yenilenmeyen tek bir paket (3.000-50.000 TL arası, yukarıdaki şikayet örnekleri) direkt kâr marjından gidiyor.
 
-Kayıp birimi: 1.200 ile 7.800 lira (işletmecinin diliyle yenilenmeyen bir paket; kartın rakamlarından: aylık 8 derslik paket 1.200-6.500 lira, 12 derslik paket 5.500-7.800 lira, tek boş reformer saati ise 250-1.000 lira).
+Kayıp birimi: 8.000 ile 20.000 lira (bir üye: birkaç aylık paket; kartın rakamlarından: aylık 8 derslik paket 1.200-6.500, 12 derslik paket 5.500-7.800, yıllık reformer üyeliği 32.000; sektörün müşteri elde tutma ortalaması yüzde 60-70 olduğu için üye ortalama birkaç ay kalıyor, işletmecinin diliyle yenilenmeyen bir paket).
+
+Kaçan talep: ayda 25 talep, yüzde 20'si üye olur (tahmin: deneme dersi soranların bir kısmı pakete geçiyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.**
 

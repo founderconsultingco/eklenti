@@ -6,7 +6,7 @@ description: "Öğrenci \"görüşme bitti\", \"kaydı yükledim\", \"şöyle ge
 
 # gorusmeyi-analiz-et
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "gorusmeyi-analiz-et"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -153,8 +153,12 @@ Ton: suç kişide değil yöntemde. Övgü yok, alıntı var.
 - Doksan Gün Planı'na: 9. ve 12. bölüm.
 - Niş kartına: "sahadan dolacak" kısmı, otuz görüşmede bir.
 - Prova sayacına: prova konusu.
+- Aday listesine (aday aracıyla; CRM açılmadıysa havuz burasıdır, panelin Aday panosu buradan okur): `temas <işletme> --kanal <görüşmenin kanalı> --sonuc "görüşüldü" --asama görüşüldü --siradaki "<sonraki adım>" --tarih <gün>`; ikinci görüşme sözü varsa `--randevu "<gün saat>"`. Sonuç "evet"se onay-belgesini-hazirla, açık "hayır"sa aşama kapandı.
+- Durum kaydına: `sayaclar.gorusme`; ilk görüşmede `ilerleme_asamasi` 3 ve `yol_haritasi_asamasi` 6 (İş Beyni'nin on dördüncü bölümüyle aynı). Aynı içerik `durum_yaz` ile sunucuya da gider: panelin görüşme sayısı ve aşaması oradan okunur; gitmezse sohbet "sayaçta" derken panel sıfır gösterir.
 
 Onay: İş Beyni kişiseldir, onay gerekmez. CRM notu ve niş kartı güncellemesi öğrencinin "tamam" demesiyle yazılır. Adaya giden mesajı öğrenci kendi eliyle gönderir.
+
+Panele odak (`odak_yaz`; panelde satış görüşmesi açılır), yalnız görüşme halinde hızlı adımda: başta `calisiyor` (not: görüşmenin sonucunu çıkarıyorum; işletme sahibinin adı yazılmaz), dört şey çıkınca `bitti` (not: sonuç ve prova konusu, tek cümle; sonraki: bir saat sonra mesaj gidecekse "Mesajı hazırla", yoksa "Devam"). Öğrenciden bir bilgi bekleniyorsa (ikinci görüşmenin saati gibi) `bekliyor` gider ve `sonraki` boş kalır; `sonraki` panelde öğrencinin kopyalayıp yapıştıracağı cümledir, bilmediğin cevabı ("Cuma saat on bir, ortağı da gelecek") oraya yazmazsın. Tam adımda ve arama halinde odak gönderilmez.
 
 ## 8. Yedek yol
 

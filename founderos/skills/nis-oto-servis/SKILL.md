@@ -17,7 +17,9 @@ Müşteri yolculuğu: randevu (servis randevusu; ağır işte teklif eklenir). T
 
 Kapasite tarafında bir lastikçi işletme rehberi şu örneği veriyor: günde 3 lastik değişim işi alan bir dükkan aylık yaklaşık 100.000 TL'ye ulaşabiliyor, günde 8 iş (2 tamir, 3 satış, 3 değişim) yapılınca gelir belirgin artıyor (enyakin.com/blog). Bir oto tamir dükkanı için aylık ciro tahmini 150.000-300.000 TL (odak360.com). Buradan çıkan hesap: kaçan tek bir lastik müşterisi günün sekizde biri, kaçan tek bir periyodik bakım müşterisi 1.000-4.500 TL'lik bir iş demek. Günlük araç kapasitesi (kaldıraç/köprü sayısına bağlı) için kaynaklı somut rakam bulunamadı, bilinmiyor.
 
-Kayıp birimi: 1.000 ile 4.500 lira (bir periyodik bakım işi; kartın kendi hesabı, lastikçide aynı kayıp günün sekizde biri demek).
+Kayıp birimi: 5.000 ile 12.000 lira (bir müşteri: yılda bir periyodik bakım, iki lastik değişimi ve arıza; kartın periyodik bakımı çoğu talepte 1.000-4.500, lastik değişimi 500-5.000, cam filmi 2.500-6.900). Tek müşteri çoğu serviste on binin altında kalıyor: niş cam filmi ve ağır bakım yapan servislerle geçer.
+
+Kaçan talep: ayda 20 talep, yüzde 25'i müşteri olur (tahmin: usta aracın altındayken açılmayan arama; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Birincisi, gecikme ve bilgi vermeme. Şikayetvar'ın "oto/tamir" kategorisinde 1.062 şikayet var, en sık tema "araç tamirinde uzun süreli gecikme ve iletişimsizlik": bir müşteri aracını teslim ettikten sonra süreç hakkında hiç bilgi alamadığını yazıyor (sikayetvar.com/oto/tamir). Somut bir örnek: "Cengiz Usta" şikayetinde işletme "3 güne teslim edeceğiz" dediği halde aracı bir ay teslim etmiyor (sikayetvar.com, 9 Eylül 2024).
 

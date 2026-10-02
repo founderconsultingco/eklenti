@@ -16,7 +16,9 @@ Müşteri yolculuğu: ikisi birlikte (bilgi isteyen kişi seviye tespiti ya da d
 
 Kapasite: bir şubenin ayda kaç kayıt aldığına dair yayınlanmış rakam bulunamadı, sahadan dolacak. Ama iş modelinin matematiği açık: kur başına 8.000 ile 40.000 lira, öğrenci genelde birden çok kur alıyor; kaçan tek bir kayıt en az bir kur bedelidir.
 
-Kayıp birimi: 8.000 ile 40.000 lira (bir kaçan kayıt; kartın kur fiyat aralığından çıkıyor, öğrencinin ömür boyu değeri kur sayısıyla katlanıyor).
+Kayıp birimi: 15.000 ile 40.000 lira (bir öğrenci: bir iki kur; kartın kur fiyat aralığı 8.000-40.000, öğrenci genelde birden çok kur alıyor ve ömür boyu değeri kur sayısıyla katlanıyor).
+
+Kaçan talep: ayda 15 talep, yüzde 20'si öğrenci olur (tahmin: kayıt dalgasında danışman görüşmedeyken dönülemeyen başvuru; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Bu sektörde sızıntı iki yönlü ve ikisi de şikayet sitesinde yazılı. Birincisi cevapsızlık: "Mersin English Time'da yaşanan kurs açılış gecikmesi ve iletişim sorunları" başlığında kayıt olan kişi aylarca aradığını ve cevap alamadığını yazıyor; "İzmir Kültür Sanat İngilizce kurs mağdurları" başlığında telefonlara bakılmadığı geçiyor; "English Time İngilizce kursunda hayal kırıklığı: verilen sözler tutulmadı" başlığında kayıttan sonra dönüş yapılmadığı yazıyor (Şikayetvar, İngilizce kurs şikayetleri). İkincisi tersi: "Just English sürekli mesaj ve aramalarla rahatsız ediliyorum" başlığı, bilgi isteyen kişinin taciz edilircesine arandığını anlatıyor. Yani sektör ya hiç dönmüyor ya da fazla dönüyor; ölçülü ve zamanında dönen kurum ayrışıyor.
 

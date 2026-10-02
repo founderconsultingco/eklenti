@@ -6,7 +6,7 @@ description: "Musteriyle imzalanacak hizmet sozlesmesinin sablonu. Sadece onay-b
 
 # Hizmet Sözleşmesi (modül değil, onay-belgesini-hazirla'nın kullandığı şablon)
 
-Bu şablon hazır gelir. Üçüncü blokta FounderOS köşeli parantezleri doldurur, öğrenci okur ve gönderir; her müşteride yalnız köşeli parantezler değişir. Madde eklenmez, çıkarılmaz, değiştirilmez. Bilgiler kayıttan gelir; öğrenciden yalnız eksik kişisel bilgisi (açık adresi, kimlik numarası) bir kere istenir. Şirket henüz açılmadıysa Hizmet Veren'in vergi dairesi alanına "-" yazılır, vergi numarası yerine kimlik numarası girer; öğrenciye vergi dairesi sorulmaz. Müşterinin fatura bilgileri kayıtta yoksa sözleşme o alanlar boş gitmez: kapanış mesajına müşteriye giden tek satır eklenir, "Sözleşmeye yazmam için fatura bilgilerinizi (unvan, adres, vergi dairesi ve numarası) buraya yazar mısınız?", cevap gelince FounderOS belgeyi tamamlar ve öğrenci gönderir; ödeme bunu beklemez. KDV alanı İş Beyni'nde fiyat cümlesinin yanındaki cevaptan dolar (varsayılan "hariç"), öğrenciye sorulmaz. Öğrenciye madde, hukuki terim ya da imza türü anlatılmaz; ona söylenen tek cümle: "Müşterinin onaylayacağı sözleşme hazır, mesajın içinde."
+Bu şablon hazır gelir. Üçüncü blokta FounderOS köşeli parantezleri doldurur, öğrenci okur ve gönderir. Öğrenciye verilirken tek not eklenir, sözleşmenin metnine girmez ve müşteriye gitmez: "İmzadan önce kendi avukatına okut." Ödeme yarı yarıya kalır (kurulumun yarısı başlangıçta, yarısı teslimde). Her müşteride yalnız köşeli parantezler değişir. Madde eklenmez, çıkarılmaz, değiştirilmez. Bilgiler kayıttan gelir; öğrenciden yalnız eksik kişisel bilgisi (açık adresi, kimlik numarası) bir kere istenir. Şirket henüz açılmadıysa Hizmet Veren'in vergi dairesi alanına "-" yazılır, vergi numarası yerine kimlik numarası girer; öğrenciye vergi dairesi sorulmaz. Müşterinin fatura bilgileri kayıtta yoksa sözleşme o alanlar boş gitmez: kapanış mesajına müşteriye giden tek satır eklenir, "Sözleşmeye yazmam için fatura bilgilerinizi (unvan, adres, vergi dairesi ve numarası) buraya yazar mısınız?", cevap gelince FounderOS belgeyi tamamlar ve öğrenci gönderir; ödeme bunu beklemez. KDV alanı İş Beyni'nde fiyat cümlesinin yanındaki cevaptan dolar (varsayılan "hariç"), öğrenciye sorulmaz. Öğrenciye madde, hukuki terim ya da imza türü anlatılmaz; ona söylenen tek cümle: "Müşterinin onaylayacağı sözleşme hazır, mesajın içinde."
 
 Müşteri bir maddeyi sorarsa ya da değişiklik isterse onay-belgesini-hazirla'daki yol işler: öğrenci açıklamaz, pazarlık yapmaz, "Not aldım, netleştirip size yazılı döneceğim." der; FounderOS destek adresine (destek@founderos.so) gidecek tek satırı hazır verir. Ekibin cevabı gelmeden değişmiş metin gönderilmez; bu not öğrenciye söylenmez.
 
@@ -31,7 +31,7 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 ### 3. Tanımlar
 
 **Sistem:** Ek-1'de sayılan parçaların bütünü.
-**Kurulum dönemi:** Kurulum ücretinin Hizmet Veren'in hesabına geçtiği günü izleyen [21/28] günlük süre. (Sayı, Hizmet Veren'in çalışma düzenine göre sözleşme doldurulurken yazılır: yirmi bir ya da yirmi sekiz.)
+**Kurulum dönemi:** Kurulum ücretinin ilk yarısının Hizmet Veren'in hesabına geçtiği günü izleyen [21/28] günlük süre. (Sayı, Hizmet Veren'in çalışma düzenine göre sözleşme doldurulurken yazılır: yirmi bir ya da yirmi sekiz.)
 **Rapor:** Kurulum döneminin son gününde ([21/28]. gün) Müşteri'ye yazılı olarak verilen, Ek-2'de sayılan üç sayıyı gösteren belge.
 **Giriş izni:** Müşteri'nin kendi hesapları üzerinden Hizmet Veren'e verdiği, Ek-3'te sayılan sınırlı yetkiler.
 
@@ -71,7 +71,7 @@ Sistemin kapsamı Ek-1'de sayılmıştır. Ek-1 bu sözleşmenin ayrılmaz parç
 
 ### 7. Ücret ve ödeme
 
-7.1. Kurulum ücreti [tutar] TL'dir (KDV [dahil/hariç]). Bu ücret sözleşmenin imzalanmasıyla birlikte ödenir ve sistem bu ödemenin ardından kurulmaya başlanır.
+7.1. Kurulum ücreti [tutar] TL'dir (KDV [dahil/hariç]). Bu ücretin yarısı, [yarı tutar] TL, sözleşmenin imzalanmasıyla birlikte ödenir ve sistem bu ödemenin ardından kurulmaya başlanır. Kalan yarısı, [yarı tutar] TL, teslimde, kurulum döneminin son günü olan rapor gününde ödenir.
 
 7.2. Aylık ücret [tutar] TL'dir (KDV [dahil/hariç]). İlk aylık tahsilat kurulum döneminin bitimini izleyen 10. günde, sonrakiler her ay aynı günde yapılır.
 

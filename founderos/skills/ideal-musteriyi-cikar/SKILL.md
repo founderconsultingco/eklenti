@@ -6,7 +6,7 @@ description: "Nis karari onaylandiktan hemen sonra, teklif yazilmadan once calis
 
 # ideal-musteriyi-cikar
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "ideal-musteriyi-cikar"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -43,7 +43,7 @@ Pazarlamadaki karşılığı: ideal müşteri profili ve müşteri avatarı.
 
 Niş kartından: işletmecinin gerçek dertleri bölümü, sözlüğü ve iç sesi, kim karar veriyor bölümü, gerçek itirazlar ve karşılıkları, duran havuz tipleri, sızıntı nerede, kanal ve zaman, sezon, gerçek fiyatlar ve kapasite, reklam kütüphanesi kelimeleri, yasal sınırlar.
 
-İş Beyni'nden: seçilen niş ve coğrafya, senin şehrin, içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, gelir planındaki müşteri değeri, günlük temas dağılımın.
+İş Beyni'nden: seçilen niş ve coğrafya, senin şehrin, içeriden tanıdığın sektörler, tanıdığın işletme sahipleri, gelir planındaki aylık ücret, günlük temas dağılımın.
 
 Sahadan, varsa: görüşme analizlerinde geçen cümleler, cevap alan ve almayan açılış cümleleri, en çok çıkan itirazlar.
 
@@ -53,7 +53,7 @@ Sahadan, varsa: görüşme analizlerinde geçen cümleler, cevap alan ve almayan
 
 Tek soru sorar, araştırma bitip özet gösterildikten sonra: "Sana yanlış gelen bir şey var mı? Daha önce çalıştığın ve bir daha çalışmak istemediğin bir müşteri tipi varsa onu da yaz." Cevap ne olursa olsun devam edilir; onay beklenmez, "bu kişiyi tanıyor musun" diye sorulmaz. Yanlış bulunan satır on sekizinci bölümde işaretlenir ve ilk görüşmelerde sınanır, sayfa baştan yazılmaz. Yazılan tip doğrudan eleme listesine girer.
 
-Hedeflenen işletme büyüklüğü sorulmaz, nişten çıkar: FounderOS gelir planındaki müşteri değerine ve kartın kapasite rakamına bakarak üç büyüklükten birini seçer (tek kişilik, iki ila beş kişilik, beşten kalabalık) ve özette tek cümlelik gerekçesiyle söyler. Öğrenci farklı düşünüyorsa yukarıdaki sorunun cevabında söyler.
+Hedeflenen işletme büyüklüğü sorulmaz, nişten çıkar: FounderOS kartın müşteri değerine, kaçan talep satırına ve kapasite rakamına bakarak, aylık ücretin aylık kaybın dörtte birini geçmediği en küçük büyüklüğü alıp üç büyüklükten birini seçer (tek kişilik, iki ila beş kişilik, beşten kalabalık) ve özette tek cümlelik gerekçesiyle söyler. Öğrenci farklı düşünüyorsa yukarıdaki sorunun cevabında söyler.
 
 İdeal müşteriyi doğrulayacak üç soru ilk beş görüşmeye yazılır: sayfanın en zayıf üç satırını sınayan, işletmecinin kendi deneyimini soran üç soru. İş Beyni'nin on üçüncü bölümüne "ilk beş görüşme" eşiğiyle girer.
 

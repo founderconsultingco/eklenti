@@ -24,6 +24,7 @@ input[type=search]{flex:1;min-width:220px;padding:8px 10px;border:1px solid var(
 .cip.aktif{background:var(--m);color:var(--w);border-color:var(--m)}
 .cip small{color:inherit;opacity:.7;margin-left:4px}
 main{padding:12px 20px 60px}
+#icerik{overflow-x:auto}
 table{width:100%;border-collapse:collapse;background:var(--w);border:1px solid var(--l);border-radius:8px;overflow:hidden;font-size:13px}
 th{position:sticky;top:0;background:#fafaf9;text-align:left;font-weight:600;padding:8px;border-bottom:1px solid var(--l);cursor:pointer;white-space:nowrap;user-select:none}
 th.sirali::after{content:" ↓";color:var(--g)}
@@ -113,7 +114,8 @@ textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Cons
 .yazibas button.ok{background:#166534;color:#fff;border-color:#166534}
 .yazieksik{color:var(--g);font-size:13px;font-style:italic;padding:6px 0}
 .mesaj{background:#dcfce7;color:#166534;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:13px}
-@media (max-width:760px){.kart{grid-template-columns:1fr;grid-template-areas:"oku" "soyle" "sonuc"}.kart .soyle-alani{border-left:0;padding-left:0;border-top:1px solid var(--l);padding-top:8px}.modlar button.itiraz-ac{margin-left:0}}
+.mesaj.uyari{background:#fef3c7;color:#92400e}
+@media (max-width:760px){header{position:static;padding:12px 16px}main{padding:12px 16px 60px}.kart{grid-template-columns:1fr;grid-template-areas:"oku" "soyle" "sonuc"}.kart .soyle-alani{border-left:0;padding-left:0;border-top:1px solid var(--l);padding-top:8px}.modlar button.itiraz-ac{margin-left:0}}
 @media print{header{position:static}.arac,.cip,.sekme,.saha-ust,.sonuc,.kanal,.ek,.modlar,.cekmece{display:none}tr.detay{display:none}}
 </style>
 </head>
@@ -127,7 +129,7 @@ textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Cons
     <input type="search" id="ara" placeholder="İşletme, sahibi, ilçe, telefon ara…">
     <div id="cipler"></div>
   </div>
-  <div class="aciklama">Satıra tıklayınca ayrıntı açılır. Sütun başlığına tıklayınca sıralanır.<i style="background:#dcfce7"></i>bugün sırada<i style="background:#ffedd5"></i>günü geçmiş<i style="background:#ede9fe"></i>İlk 100: en çok istenen yüz işletme</div>
+  <div class="aciklama">Satıra tıklayınca ayrıntı açılır. Sütun başlığına tıklayınca sıralanır.<i style="background:#dcfce7"></i>bugün sırada<i style="background:#ffedd5"></i>günü geçmiş<i style="background:#ede9fe"></i><span id="yuz-aciklama">en çok istenen işletmeler</span></div>
   <div class="aciklama">Uygunluk: denetimden çıkan 0-15 arası puan, A 10 ve üstü, B 6-9, C 5 ve altı. Sızıntı: kaç sızıntı görüldüğü, 0-5. İkisi de denetim yapılmadan boş durur. En çok istenen: derin denetimden geçen işletmeler; tam zamanlı çalışanda yüz, işin yanında çalışanda kırk tane seçilir.</div>
   </div>
 </header>
@@ -155,24 +157,27 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // Tahmin degil: Google isletme profilinde gorunen sey. Elle yapilan derin
 // denetimin yerine gecmez; denetimi yapilmamis adayin mesaji gozlemsiz
 // gitmesin diye var. Sira guclu olandan zayifa.
+// Sira araçtaki IPUCU_BIRLESIK ve IPUCU_GOZLEM ile ayni: telefondaki saha ekrani ve
+// panel kancayi aractan aliyor, bu sayfa da ayni cumleyi gostermeli. Tek basina
+// "reklam veriyor" son caredir.
 var IPUCU_BIRLESIK=[
- [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
- [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
- [['reklam_veriyor','sikayet_gelmedi'],"Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"]
+ [['reklam_veriyor','sikayet_gelmedi'],"Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
+ [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam erken kapanıyor"],
+ [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"]
 ];
 var IPUCU_KANCA=[
- ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
- ['reklam_veriyor',"Reklam veriyorsunuz; o reklamdan gelen aramaya kim bakıyor?"],
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
  ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
  ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
  ['yorum_sikayet',"Google yorumlarınızdan biri yetişilemeyen bir müşteriyi anlatıyor"],
  ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
- ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
+ ['aksam_kapali',"Google'da hafta içi saatleriniz akşam erken kapanıyor görünüyor"],
  ['saat_yok',"Google'da çalışma saatiniz yazmıyor"],
  ['site_yok',"Google'da site bağlantınız görünmüyor"],
  ['hafta_sonu_kapali',"Google'da hafta sonu kapalı görünüyorsunuz"],
- ['instagram_yok',"Instagram hesabınızı bulamadım"]
+ ['instagram_yok',"Instagram hesabınızı bulamadım"],
+ ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
+ ['reklam_veriyor',"Reklam veriyorsunuz; o reklamdan gelen aramaya kim bakıyor?"]
 ];
 function profilKancasi(r){
  // Sikayet cumlesi geldiyse genel cumle yerine musterinin kendi cumlesi.
@@ -228,6 +233,10 @@ var alt=document.getElementById('alt'),icerik=document.getElementById('icerik'),
 if(!ham){alt.textContent='Liste henüz bu sayfaya yüklenmedi.';icerik.innerHTML='<div class="bos">FounderOS\'a "listemi yenile" yaz; liste dolunca bu sayfa da dolar.</div>';return}
 var satirlar=csvOku(ham).filter(function(r){return !r.elenme});
 satirlar.forEach(function(r,i){r._i=i;r._ipucu=(r.ipuclari||'').split(/\s+/).filter(Boolean);r._yuz=/^(evet|1|x)$/i.test(r.yuz||'');r._sicak=/tanıdık|referans/.test((r.kaynak||'').toLocaleLowerCase('tr'));r._bugun=!!r.siradaki_tarih&&r.siradaki_tarih.slice(0,10)===BUGUN&&!kapali(r);r._gecmis=!!r.siradaki_tarih&&r.siradaki_tarih.slice(0,10)<BUGUN&&!kapali(r)});
+// En cok istenenlerin sayisi duzene bagli (tam zamanli 100, isin yaninda 40); arac yazar.
+// Bilinmiyorsa rozet ve aciklama sayisiz kalir: kirk secilmisken "Ilk 100" eksik gibi gorunuyordu.
+var SECIM=parseInt(window.ADAYLAR_SECIM,10)||0;var YUZ_ROZET=SECIM?'İlk '+SECIM:'En çok istenen';
+document.getElementById('yuz-aciklama').textContent=SECIM?'İlk '+SECIM+': en çok istenen '+SECIM+' işletme':'en çok istenen işletmeler';
 var enCok=NIS.ad||'';if(!enCok){var kategoriler={};satirlar.forEach(function(r){if(r.kategori)kategoriler[r.kategori]=(kategoriler[r.kategori]||0)+1});enCok=Object.keys(kategoriler).sort(function(a,b){return kategoriler[b]-kategoriler[a]})[0]||''}
 alt.textContent=(enCok?enCok+' · ':'')+satirlar.length+' aday'+(tarih?' · Son güncelleme: '+tarih:'')+' · Bugün: '+tarihTr(BUGUN);
 
@@ -237,7 +246,7 @@ var OZET=[['Toplam',satirlar.length],['Telefonu olan',say(function(r){return r.t
 document.getElementById('ozet').innerHTML=OZET.map(function(k){return'<div class="kutu"><b>'+k[1]+'</b><span>'+k[0]+'</span></div>'}).join('');
 
 // --- filtreler ---
-var FILTRE=[['hepsi','Hepsi',function(){return true}],['bugun','Bugün sırada',function(r){return r._bugun||r._gecmis}],['yuz','En çok istenen yüz',function(r){return r._yuz}],['cevap','Cevap verenler',function(r){return /cevap verdi|randevu|görüşüldü/.test(r.asama||'')}],['yeni','Hiç aranmamış',function(r){return !r.son_temas_tarihi&&!kapali(r)}],['denetsiz','Denetlenmemiş',function(r){return r.sizinti===''}],['sonra','Sonra / kapandı',function(r){return /sonra|kapandı/.test(r.asama||'')}]];
+var FILTRE=[['hepsi','Hepsi',function(){return true}],['bugun','Bugün sırada',function(r){return r._bugun||r._gecmis}],['yuz','En çok istenen',function(r){return r._yuz}],['cevap','Cevap verenler',function(r){return /cevap verdi|randevu|görüşüldü/.test(r.asama||'')}],['yeni','Hiç aranmamış',function(r){return !r.son_temas_tarihi&&!kapali(r)}],['denetsiz','Denetlenmemiş',function(r){return r.sizinti===''}],['sonra','Sonra / kapandı',function(r){return /sonra|kapandı/.test(r.asama||'')}]];
 var aktif='hepsi',arama='',siraKey='',siraTers=false;
 document.getElementById('cipler').innerHTML=FILTRE.map(function(f){return'<button class="cip'+(f[0]===aktif?' aktif':'')+'" data-f="'+f[0]+'">'+f[1]+'<small>'+say(f[2])+'</small></button>'}).join('');
 document.getElementById('cipler').addEventListener('click',function(e){var b=e.target.closest('.cip');if(!b)return;aktif=b.dataset.f;document.querySelectorAll('.cip').forEach(function(x){x.classList.toggle('aktif',x.dataset.f===aktif)});ciz()});
@@ -246,7 +255,7 @@ document.getElementById('ara').addEventListener('input',function(e){arama=e.targ
 // --- tablo ---
 var KOLON=[['kisa_ad','İşletme'],['sahibi','Sahibi'],['telefon','Telefon'],['semt','İlçe / semt'],['yorum_sayisi','Yorum'],['sizinti','Sızıntı'],['uygunluk','Uygunluk'],['ipuclari','İpuçları'],['asama','Aşama'],['son_temas_tarihi','Son temas'],['siradaki_tarih','Sıradaki'],['eklenme_tarihi','Eklendi']];
 function deger(r,k){if(k==='yorum_sayisi'||k==='sizinti'||k==='uygunluk')return parseInt(r[k],10)||-1;return (r[k]||'').toLocaleLowerCase('tr')}
-function etiketler(r){return (r._yuz?' '+rozet('İlk 100','mor'):'')+(r._sicak?' '+rozet(r.kaynak==='referans'?'Referans':'Tanıdık','iyi'):'')}
+function etiketler(r){return (r._yuz?' '+rozet(YUZ_ROZET,'mor'):'')+(r._sicak?' '+rozet(r.kaynak==='referans'?'Referans':'Tanıdık','iyi'):'')}
 function ciz(){
  var f=FILTRE.filter(function(x){return x[0]===aktif})[0][2];
  var liste=satirlar.filter(f).filter(function(r){if(!arama)return true;return [r.kisa_ad,r.ad,r.sahibi,r.semt,r.telefon,r.adres,r.not,r.bulgu].join(' ').toLocaleLowerCase('tr').indexOf(arama)>=0});
@@ -279,7 +288,11 @@ function alan(b,v){return v?'<div><span>'+b+'</span>'+v+'</div>':''}
 ciz();
 
 // --- saha modu: günün listesi, söyle paneli, sonuç düğmeleri, sonuçları kopyala ---
-var gunluk=satirlar.filter(function(r){return r._bugun||r._gecmis}).sort(function(a,b){var ca=/cevap verdi|randevu/.test(a.asama||'')|0,cb=/cevap verdi|randevu/.test(b.asama||'')|0;return cb-ca||(b._gecmis|0)-(a._gecmis|0)||(b._yuz|0)-(a._yuz|0)||(parseInt(b.sizinti,10)||0)-(parseInt(a.sizinti,10)||0)});
+// Sira araçtaki saha_listesi ile ayni: once cevap verenler, sonra takibi gelenler,
+// sonra denetimi hazirlar, en sonda denetimsizler; her grupta gunu gecmis, en cok
+// istenen yuz, sizinti ve yorum sayisi once. Telefondaki saha ekrani da bu sirada.
+function sahaGrubu(r){return /^(cevap verdi|randevu)$/.test(r.asama||'')?0:r.son_temas_tarihi?1:r.sizinti!==''?2:3}
+var gunluk=satirlar.filter(function(r){return r._bugun||r._gecmis}).sort(function(a,b){return sahaGrubu(a)-sahaGrubu(b)||(b._gecmis|0)-(a._gecmis|0)||(b._yuz|0)-(a._yuz|0)||(parseInt(b.sizinti,10)||0)-(parseInt(a.sizinti,10)||0)||(parseInt(b.yorum_sayisi,10)||0)-(parseInt(a.yorum_sayisi,10)||0)});
 var ANAHTAR='founderos-saha-'+BUGUN;
 function durumOku(){try{return JSON.parse(localStorage.getItem(ANAHTAR)||'{}')}catch(e){return{}}}
 function durumYaz(d){try{localStorage.setItem(ANAHTAR,JSON.stringify(d))}catch(e){}}
@@ -288,7 +301,9 @@ var durum=durumOku();
 // Durum anahtari ada degil, ad+telefon ciftine bagli; yoksa iki isletme ayni
 // dugmeyi paylasiyor ve biri digerinin sonucunu eziyordu.
 function kayitAnahtari(r){return (r.kisa_ad||'')+'\u00a7'+((r.telefon||r.semt||'').trim())}
-function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');
+// Telefon cikan ama numarasi olmayan aday: Instagram, o da yoksa e-posta (araçtaki telefonsuz_kanal).
+function kanalTahmin(r){var k=kanalHareketten(r);if(k==='telefon'&&!(r.telefon||'').trim())return r.instagram?'instagram':r.eposta?'e-posta':'telefon';return k}
+function kanalHareketten(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');
  // Satir '<kanal>, ...' bicimindeyse bastaki kanal esastir: 'telefon, videoyu acmis, ara'
  // satiri once video sanilıyordu ve telefon temasi video kanalina isleniyordu.
  if(/^\s*telefon\b/.test(h))return'telefon';
@@ -306,7 +321,8 @@ var GENEL={
  isleyis:'Yoğunken telefona yetişemediğinizde müşteri ne yapıyor, tekrar mı arıyor, mesaj mı yazıyor?',
  vaat:'Ben tam bunun için bir sistem kuruyorum: siz işteyken WhatsApp\'a, Instagram\'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, bilgiyi alıp randevuya yazıyor; eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. [Şehir]\'de bu ay ilk üç işletmeyle başlıyorum.',
  calisan:'Yoğunken telefona yetişemediğiniz saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?',
- randevu:'Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin.'};
+ randevu:'Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin.',
+ rahatlat:'Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?'};
 var GENEL_ITIRAZ=[
  {durum:'Şu an müsait değilim.',soyle:'Tabii, ne zaman arayayım? Bugün akşamüstü mü, yarın sabah mı?',neden:'Zamanı olmadığını kabul edip somut saat almak, anlatmaya devam etmek değil.',sonra:'Saat verirse teşekkür et, kapat; "Sonra ara" düğmesine bas, tarihi yaz. Belirsizse bir kez daha sor ("Yarın on gibi uygun mu?"); yine belirsizse yarın ara, üçüncü kez arama.'},
  {durum:'Ne için arıyorsunuz?',soyle:'Yoğunken telefona yetişemediğiniz saatlerde WhatsApp\'a ve Instagram\'a yazan müşteriye cevap verip randevuya yazan bir sistem kuruyorum. Sizde böyle bir şey var mı diye soracaktım.',neden:'Tek cümlede ne olduğunu söylemek ve konuşmayı işletmenin işleyişine çevirmek.',sonra:'"Yok" derse işleyiş sorusuna geç; "var" derse "Nasıl çalışıyor, kim cevap veriyor?" diye sor, cevaba göre görüşme iste ya da kapat.'},
@@ -346,16 +362,16 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
   a.push(['Kural','Konuyu saklama, "kendisi biliyor" deme. Not bıraktırma, saat al. "Bana anlatın" derse iki cümle anlat, yine saat iste; çalışana satış yok. Açanın adını nota yaz; sonraki aramada onunla başla.']);return a}
  if(mod==='acilmadi'){a.push(['Şimdi','Hemen bir kez daha ara. Yine açılmazsa bugün bırak, mesaj bırakma; "Açmadı" düğmesine bas.']);a.push(['Yarın','Başka bir saatte bir kez daha. İki günde açılmazsa e-posta, FounderOS karar tablosuna göre yazar.']);return a}
  if(mod==='ikinci'){var nz=neZaman(r.son_temas_tarihi);var ac=sonTelefonAcildi(r);a.push(['Tanış ve geçmiş','Merhaba'+(s?' '+s:'')+', ben '+kac(OAD)+', '+nz+' '+deDa(nz)+' aramıştım'+(ac?', kısa konuşmuştuk':', açılmamıştı')+'. Bir dakikanız var mı? <span class="kucuk">saat verdiyse: "'+(nz==='dün'?'Dün':'Geçen aramada')+' \'şu saatte ara\' demiştiniz, uygun mu?"</span>']);
-  if(r.kanca||!ac){a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki arama gerçek gözlemdir; uydurma yok</span>'])}
+  if(r.kanca||!ac){a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki aramada görülen</span>'])}
   else{a.push(['Açılış sorusu',NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok; işleyiş sorusuna geç. Uydurma.</i>'])}}
  else{if(s){a.push(['Tanış ve kaynağı söyle','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' '+kim+' <span class="kucuk">bekle</span>'])}
   else{a.push(['Yardım iste (sahibinin adı yok)','Merhaba, burası '+isletme+' '+soruEki(r.kisa_ad||r.ad||'')+'? <span class="kucuk">bekle</span> Kısa bir konuda yardımcı olabilir misiniz? Gelen aramaları ve randevuları kimin takip ettiğini öğrenmek istiyorum. <span class="kucuk">bekle</span>']);
    a.push(['"Ben ilgileniyorum" derse','Tamamdır, doğru kişiye ulaşmışım. Ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' <span class="kucuk">başkası derse: adını ve ne zaman ulaşılacağını sor, nota yaz; "işletme sahibi siz misiniz" diye sorma</span>'])}
-  a.push(['Rahatlat','Sizi tanımıyorum, kısa tutacağım.']);
+  a.push(['Rahatlat',kac(GENEL.rahatlat)+' <span class="kucuk">bekle</span>']);
   var pk=r.kanca?'':kancaMetni(r);
   a.push([r.kanca?'Gözlem (doğrulanmış)':(pk?'Gözlem (profilden)':'Açılış sorusu'),
     r.kanca?kac(r.kanca)+' Onun için arıyorum.'
-    :(pk?kac(pk)+' Onun için arıyorum. <span class="kucuk">Google profilinde görülen şey; denetim yapılmadı, uydurma yok</span>'
+    :(pk?kac(pk)+' Onun için arıyorum. <span class="kucuk">Google profilinde görülen şey</span>'
        :(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>'))]);}
  a.push(['İşleyiş sorusu, tek soru',kac(doldur(NIS.isleyis_sorusu||GENEL.isleyis))+' <span class="kucuk">bekle, araya girme</span>']);
  a.push(['Ne yaptığın, kapsam içinde',kac(doldur(NIS.vaat||GENEL.vaat))+(OSIS?' Adı '+kac(OSIS)+'.':'')]);
@@ -367,7 +383,7 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
 function yaziPanel(r,mod){
  if(mod==='eposta'){
   if(!r.eposta) return '<div class="yazieksik">Bu adayın e-posta adresi yok. Telefon ya da Instagram kullan.</div>';
-  if(!r.eposta_metni) return '<div class="yazieksik">E-posta metni henüz yazılmadı. FounderOS\'a "bugünün e-postalarını yaz" de.</div>';
+  if(!r.eposta_metni) return '<div class="yazieksik">E-posta metni henüz yazılmadı. FounderOS\'a "'+kac(r.kisa_ad||r.ad)+' için mesaj yaz" de.</div>';
   return '<div class="yazibas"><span>Kime</span><button data-kop="'+kac(r.eposta)+'">Adresi kopyala</button></div>'
    +'<div class="yazikutu">'+kac(r.eposta)+'</div>'
    +(r.eposta_konu?'<div class="yazibas"><span>Konu</span><button data-kop="'+kac(r.eposta_konu)+'">Kopyala</button></div><div class="yazikutu">'+kac(r.eposta_konu)+'</div>':'')
@@ -376,7 +392,7 @@ function yaziPanel(r,mod){
    +'<div class="kucuk">Kendi iş e-postandan gönder. Gönderdikten sonra aşağıdan kanalı e-posta seçip sonucu işaretle.</div>';
  }
  if(!r.instagram) return '<div class="yazieksik">Bu adayın Instagram hesabı bulunamadı. Telefon ya da e-posta kullan.</div>';
- if(!r.dm_metni) return '<div class="yazieksik">Mesaj metni henüz yazılmadı. FounderOS\'a "bugünün mesajlarını yaz" de.</div>';
+ if(!r.dm_metni) return '<div class="yazieksik">Mesaj metni henüz yazılmadı. FounderOS\'a "'+kac(r.kisa_ad||r.ad)+' için mesaj yaz" de.</div>';
  return '<div class="yazibas"><span>Hesap</span><button data-kop="'+kac(r.instagram)+'">Kopyala</button></div>'
   +'<div class="yazikutu">'+kac(r.instagram)+'</div>'
   +'<div class="yazibas"><span>Mesaj</span><button class="ok" data-kop="'+kac(r.dm_metni)+'">Mesajı kopyala</button></div>'
@@ -422,7 +438,7 @@ function sahaCiz(){
    +(r.semt?'<div><span>İlçe</span>'+kac(r.semt)+(r.yorum_sayisi?' · '+kac(r.yorum_sayisi)+' yorum':'')+'</div>':'')
    +(r.baglayan?'<div><span>Bağlayan</span>'+kac(r.baglayan)+'</div>':'')
    +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>'
-      :(kancaMetni(r)?'<div><span>Profilden gözlem</span>'+kac(kancaMetni(r))+' <i class="kucuk">denetim yapılmadı; bu satır Google profilinden geliyor</i></div>'
+      :(kancaMetni(r)?'<div><span>Profilden gözlem</span>'+kac(kancaMetni(r))+' <i class="kucuk">bu satır Google profilinden geliyor</i></div>'
         :'<div><span>Doğrulanmış gözlem</span><i class="kucuk">yok; kartın açılış sorusuyla başla, "sürekli kaçırıyorsunuz" deme</i></div>'))
    +(r.kanca?'<div><span>Kanca</span>'+kac(r.kanca)+'</div>':'')
    +(r.siradaki_hareket?'<div><span>Bugün</span>'+kac(r.siradaki_hareket)+'</div>':'')
@@ -453,7 +469,11 @@ function bagla(){
  });
  saha.querySelectorAll('[data-itiraz]').forEach(function(b){b.addEventListener('click',function(){cekmeceAc(true)})});
  var kop=document.getElementById('kopyala'),tem=document.getElementById('temizle'),alan=document.getElementById('kopya-alani');
- if(kop)kop.addEventListener('click',function(){var m=sonucMetni();if(!m){alan.innerHTML='<div class="mesaj">Henüz sonuç girilmedi. Her adayın altındaki düğmelerden birine bas.</div>';return}
+ if(kop)kop.addEventListener('click',function(){
+  var eksik=gunluk.filter(function(r){var d=durum[kayitAnahtari(r)];return d&&d.sonuc==='randevu'&&!d.randevu});
+  if(eksik.length){alan.innerHTML='<div class="mesaj uyari">Randevunun gününü ve saatini yaz: '+eksik.map(function(r){return kac(r.kisa_ad||r.ad)}).join(', ')+'. Sonra yeniden kopyala.</div>';
+   var hedefAd=kayitAnahtari(eksik[0]);saha.querySelectorAll('.kart').forEach(function(k){if(k.dataset.k===hedefAd){var g=k.querySelector('[data-randevu]');if(g){g.focus();g.scrollIntoView({block:'center'})}}});return}
+  var m=sonucMetni();if(!m){alan.innerHTML='<div class="mesaj">Henüz sonuç girilmedi. Her adayın altındaki düğmelerden birine bas.</div>';return}
   var ta=document.createElement('textarea');ta.className='cikti';ta.value=m;alan.innerHTML='<div class="mesaj" id="kopya-mesaj">Kopyalandı. FounderOS\'a git, yazı kutusuna yapıştır ve gönder; listeyi o işler.</div>';alan.appendChild(ta);
   var ok=false;try{ta.select();ok=document.execCommand('copy')}catch(e){}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m).then(function(){},function(){if(!ok)document.getElementById('kopya-mesaj').textContent='Kopyalanamadı; aşağıdaki metni seçip kendin kopyala (Cmd+A, Cmd+C), FounderOS\'a yapıştır.'})}

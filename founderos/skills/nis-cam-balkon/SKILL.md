@@ -17,7 +17,9 @@ Müşteri yolculuğu: teklif (keşif randevusu, sonra teklif ve kapora). Teslima
 
 Kapasite tarafında bir sektör blogu şunu söylüyor: keşif ve ölçü genelde aynı gün ya da ertesi gün yapılıyor, üretim 5 ile 10 iş günü sürüyor, montajın kendisi düz balkonda 2-3 saat, geniş U tipte 4-6 saat (egepenakcayapi.com). Yani bir ekip günde ortalama bir ile iki ev çıkarabiliyor. Şikayetlerdeki sipariş tutarları 3.500 TL'den 235.000 TL'ye kadar uzanıyor (Salih İmrak PVC, sikayetvar.com), orta ölçekli bir proje (cam balkon artı birkaç pencere) 40.000-100.000 TL bandında görünüyor. İşletmecinin diline çevirirsek: kaçan tek bir orta ölçekli keşif, günlük montaj kapasitesinin tamamına yakınına denk düşüyor.
 
-Kayıp birimi: 40.000 ile 100.000 lira (bir keşif; kartın orta ölçekli proje aralığı bu, günlük montaj kapasitesi bir iki ev olduğu için kaçan tek keşif günün tamamına yakını demek).
+Kayıp birimi: 40.000 ile 100.000 lira (bir müşteri: bir cam balkon ya da pencere projesi; kartın orta ölçekli proje aralığı bu, günlük montaj kapasitesi bir iki ev olduğu için kaçan tek keşif günün tamamına yakını demek).
+
+Kaçan talep: ayda 15 talep, yüzde 15'i müşteri olur (tahmin: keşif isteyenin bir kısmı birkaç firmadan teklif alıyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Birincisi ve en büyüğü: teklif verilip kaybolan havuz. Armut üzerinde bir usta "yaklaşık 100 kişiye teklif verdi ancak çoğu mesajı görmemiş" diye şikayet etmiş (sikayetvar.com/armut/cam-balkon/teklif). İstanbul'da Armut'ta 3.343 cam balkon firması listeleniyor ve yılda 16.306 kişi bu kategoride talep bırakıyor (armut.com/istanbul-cam-balkon); yani firma başına yılda beşten az talep düşüyor, rekabet çok kalabalık ve müşteri genelde birden fazla firmadan teklif alıp karşılaştırıyor (bir forumda iki bayiden 15.500 TL ve 17.000 TL teklif karşılaştırması, tavsiyeforumu.com). Her kazanılan iş için kaybedilen en az bir teklif var demek.
 
@@ -75,7 +77,7 @@ En güçlü üç itiraz: keşfi de telefonu da ben yapıyorum, keşif olmadan fi
 
 Açılış sürümü: 3
 
-Açılış sorusu: "Geçen ay keşfe gidip teklif verdiğiniz de dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa telefonda öyle mi duruyorlar?"
+Açılış sorusu: "Geçen ay keşfe gidip teklif verdiğiniz hâlde dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa telefonda öyle mi duruyorlar?"
 
 İşleyiş sorusu: "Ekip montajdayken, siz keşifteyken WhatsApp'tan ya da siteden 'cam balkon kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, başka bayiye de mi yazıyor?"
 

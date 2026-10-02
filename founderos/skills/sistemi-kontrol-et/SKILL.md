@@ -6,7 +6,7 @@ description: "Her hafta, her müşteri için. Sistem sessizce bozuldu mu."
 
 # sistemi-kontrol-et
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "sistemi-kontrol-et"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -170,6 +170,8 @@ Düzeltme sırası beş adımdır:
 
 Müşteriye söyleme kuralı: bozukluğu sen bulduysan ve aynı gün düzelttiysen yine de söylersin. "Şu oldu, şunu yaptım, şu an çalışıyor" cümlesi güven kazandırır.
 
+**Asistanın yanlış cevabı (Hata inceleme).** Öğrenci panelin Kurulum stüdyosundaki Hata inceleme'den "Hata incele: [işletme]" metnini getirir: müşteri ne yazdı, asistan ne cevap verdi, doğrusu ne olmalıydı; varsa ekran görüntüsü. Önce nedeni üçten birine ayırırsın: bilgi eksik ya da yanlış (saatler, hizmet adı, adres), kural eksik (fiyat, devir, mesai dışı), akış hatası (soru sırası, randevu adımı). Sonra düzeltmeyi Türkçe, adım adım, ekran yoluyla yazarsın; her adım tek iş. Düzeltme bitince öğrenci aynı soruyu yeniden sorar ve cevabı getirir; temiz çıkmadan "düzeldi" denmez. Hata sesli asistandaysa kurulum adımı yazmazsın; ekip düzeltir, destek satırını hazır verirsin. Müşterinin adı ve telefonu bu metne girmez.
+
 Arıza sırasında gelen mesajları sen tek tek okur ve cevaplarsın. Telefonla dönülmesi gereken varsa müşteriye o listeyi verirsin.
 
 ### Müşteri sistemi kendi bozarsa
@@ -208,6 +210,7 @@ Anlamadığın bir hata görürsen: "Ekranı bana anlat, adım adım söylerim. 
 Bilgi dosyasına: her haftalık kontrolün tarihi, o kontrolün kaç dakika sürdüğü (haftalık bakım süresi; kapasite kararı bu satıra bakar), dokuz maddenin sonucu, dokuzuncu maddedeki beş sayının o haftaki değerleri, bulunan bozukluk ve ne yapıldığı, müşteriye ne yazıldığı, düzelmeyen ve haftaya kalan işler, bağlantı yenileme tarihleri.
 CRM'e: kontrol yapıldı ve tarihi, açık kalan arıza.
 Niş kartının Sahadan dolacak bölümüne: bu nişte en sık bozulan parça, sezonda değişen ayar.
+Panel dosyasına (`.founderos/panel/teslimat.json`): teslimin beş şartı tamamlandıysa o müşterinin satırında `evre: calisiyor` ve beş `kontrol` `true`; sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 

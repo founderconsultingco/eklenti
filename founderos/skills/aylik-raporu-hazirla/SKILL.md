@@ -6,7 +6,7 @@ description: "Ayda bir, artı sekizinci ve on dördüncü günün ara raporu. M�
 
 # aylik-raporu-hazirla
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "aylik-raporu-hazirla"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -53,7 +53,7 @@ CRM'den (adayların ve müşterilerin kaydedildiği takip programı):
 
 Müşterinin bilgi dosyasından (`musteriler/<musteri-adi>.md`; her müşteri için tuttuğun geniş dosya):
 - ortalama iş bedeli
-- kayıp rakamı ve birimi. Kayıp birimi, işletmecinin bir kaçan müşteriyi kendi diliyle ölçtüğü şeydir: bir boş gün, bir koltuk saati.
+- kayıp rakamı ve birimi. Kayıp birimi bir müşteridir; rakamı o müşterinin işletmeye yıl içinde bıraktığı para (müşteri değeri).
 - [21/28] günün başlangıç tarihi
 - kapsam dışı kalan parçalar ve sebepleri
 - duran havuz ve yorum sayıları
@@ -89,7 +89,7 @@ Bu cümle üç işi birden yapıyor:
 
 Boş kalan satır ne demek: bir parça bizim elimizde olmayan bir sebeple ya da müşterinin kendi adımını atmaması yüzünden hiç kurulamadıysa o satır sayılmaz. Bilinen haller: cevapsız arama yönlendirmesinin kurulamaması, izinlerin çıkmaması, listenin gelmemesi, listede mesaj izni kayıtlı numara çıkmaması, Google işletme profilinin doğrulanmamış olması, sağlık nişinde kliniğin yazılı onayının gelmemesi, kare kodun bastırılıp asılmaması.
 
-Kartta kayıp biriminin lira karşılığı yazmayan iki niş var: emlak ofisi ve oto galeri ("sahadan dolacak"). Orada birimi kurulum görüşmesinde müşteriye sorar ve karta yazarsın.
+Kartta müşteri değeri tahmin olarak yazan nişlerde (emlak ofisi, oto galeri, estetik) gerçek rakamı kurulum görüşmesinde müşteriye sorar ve karta yazarsın.
 
 ### Ara rapor: sekizinci ve on dördüncü günün akşamı
 
@@ -167,7 +167,7 @@ Kurallar:
 - Müşteri sayı vermezse para satırı yazılmaz. Uydurulmaz, tahmin edilmez.
 - Ciro yazılır, kâr yazılmaz. Kârın ne kadar kaldığını bilmiyorsun.
 - Para satırı doluysa yanına ilk ay için kurulum ve aylık ücretin toplamı yazılır, sonraki aylarda yalnız aylık ücret. Karşılaştırmayı müşteri kendisi yapar, sen yapmazsın.
-- Para satırı boşsa ücret satırı da yazılmaz. Boş ciro ile görünen ücret raporu senin aleyhine çevirir. Onun yerine kayıp birimi cümlesi yazılır: "Üç randevu, üç dolan koltuk saati demek."
+- Para satırı boşsa ücret satırı da yazılmaz. Boş ciro ile görünen ücret raporu senin aleyhine çevirir. Onun yerine müşteri cümlesi yazılır: "Üç randevu, kapınıza gelen üç kişi demek; müşteri olan her biri yıl içinde size [müşteri değeri] bırakır."
 
 ### Sonuç kötüyse
 

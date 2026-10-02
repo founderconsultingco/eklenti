@@ -25,7 +25,7 @@ Durum: 19 kartın 19'u şablona göre yazıldı (kart başına 5 ile 47 kaynak; 
 - Düğün organizasyon ve mekan (masa puanı 9/10, 16 açık)
 - Randevulu kuaför ve berber (masa puanı 8/10, 17 açık)
 - Haşere ilaçlama (masa puanı 8/10, 16 açık)
-- Oto galeri (masa puanı 9/10, 13 açık)
+- Oto galeri (masa puanı 9/10, 12 açık)
 - Sigorta acentesi (masa puanı 9/10, 9 açık)
 - Elektrik ve teknik bakım (masa puanı 8/10, 6 açık)
 - Fotoğraf stüdyosu (masa puanı 8/10, 14 açık)
@@ -64,7 +64,7 @@ Bölümün son satırı sabit: `Müşteri yolculuğu: randevu | teklif | ikisi b
 
 **Gerçek fiyatlar ve kapasite.** Ana hizmetlerin yayınlanmış fiyat aralıkları (kaynaklı). Günde/haftada kaç iş çıkarabildikleri (forum, röportaj, sektör yazısı). Bundan çıkan "kaçan tek bir müşteri = ne demek" hesabı, işletmecinin diliyle ("bir boş gün", "bir koltuk saati", "bir keşif").
 
-Bölümün son satırı sabit: `Kayıp birimi: [tutar] ([işletmecinin dilindeki karşılığı]).` Rakam kartın kendi fiyat ve kapasite sayılarından çıkar; çıkmıyorsa "sahadan dolacak" yazılır, uydurulmaz.
+Bölümün son iki satırı sabit. Birincisi: `Kayıp birimi: [tutar] (bir müşteri: [o müşterinin ne aldığı, kısa]; [hesabın gerekçesi, kartın fiyatlarından]).` Kayıp birimi bir müşteridir, bir çağrı ya da bir seans değil: tutar o müşterinin ilk işi ve yıl içindeki tekrarıyla işletmeye bıraktığı para (klimada montaj ya da değişim ve yıllık bakım, dişte ilk tedavi ve kontroller). Sayılan kelime nişin dilindeyse o yazılır (bir hasta, bir üye, bir öğrenci, bir alıcı); iki noktadan sonrası panelde müşteri değerinin açıklaması olarak görünür, bu yüzden kısa ve virgülsüz ya da tek virgüllü yazılır, noktalı virgülden sonrası gerekçedir. Tek müşteri on bin liranın altındaysa bu satırın hemen ardından tek cümleyle yazılır ve hangi işletmelerle geçtiği söylenir (satış videosunun ölçütü: başlangıçta müşteri başına en az on bin liralık satış). Rakam kartın kendi fiyat ve kapasite sayılarından çıkar; çıkmıyorsa "sahadan dolacak" yazılır, uydurulmaz. İkincisi: `Kaçan talep: ayda [sayı] talep, yüzde [oran]'ı müşteri olur ([tahmin olduğu ve dayanağı]).` Bu satır kartın tahminidir: işletmenin ayda dönemediği talep (açılmayan arama, akşama kalan mesaj, dönülmeyen form) ve bunlardan kaçının müşteri olacağı. Görüşmede işletmecinin kendi sayısı gelince onun yerine geçer; panelin Teklif stüdyosu o güne kadar bu satırla açılır.
 
 **Sızıntı nerede.** Bu sektörde talebin gerçekten nerede kaybolduğuna dair KANIT: müşteri yorumları ("aradım açmadılar", "mesajıma üç gün sonra döndüler"), şikayet siteleri, sektör yazıları. En fazla üç sızıntı, en güçlüsü önce. Kanıt yoksa "yorumlarda iletişim şikayeti baskın değil, baskın tema şu" diye yaz; bu da kritik bulgu.
 

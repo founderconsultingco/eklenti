@@ -1,12 +1,12 @@
 ---
 user-invocable: false
 name: veri-servisi
-description: "FounderOS veri servisinin sekiz aracının kuralları: aday çekimi ve niş sayımı, kullanım, akşam ölçümü, durum kaydının yedeği, telefondaki saha ekranı (saha_yukle, saha_sonuclari). Aday listesi çekilirken, sayım başlatılırken, sabah saha ekranı yüklenirken, akşam sonuçlar ve ölçüm yazılırken, klasöre erişilemeyen oturumda durum okunurken açılır."
+description: "FounderOS veri servisinin araçlarının kuralları: aday çekimi ve niş sayımı (Pazar Radarı), kullanım, akşam ölçümü, durum kaydının yedeği, telefondaki saha ekranı (saha_yukle, saha_sonuclari) ve panelin Şu an kartı (odak_yaz). Aday listesi çekilirken, sayım başlatılırken, sabah saha ekranı yüklenirken, akşam sonuçlar ve ölçüm yazılırken, klasöre erişilemeyen oturumda durum okunurken ve panel odağının bir alanı belirsizken açılır."
 ---
 
 # Veri servisi (FounderOS'un kendi sunucusu)
 
-Aday listesini öğrenci değil, FounderOS'un veri servisi çeker; sunucu ayrıca durum kaydının yedeğini ve telefondaki saha ekranını tutar. Servis eklentiye "veri" adlı bağlantı olarak takılıdır. Her çağrıda İş Beyni'nin birinci bölümündeki lisans anahtarını `anahtar` alanında gönderirsin; öğrenciye anahtarı, iş kimliğini, jetonu ya da ham cevabı göstermezsin, sonucu kendi cümlenle söylersin.
+Aday listesini öğrenci değil, FounderOS'un veri servisi çeker; sunucu ayrıca durum kaydının yedeğini, telefondaki saha ekranını ve öğrencinin panelini tutar. Servis eklentiye "veri" adlı bağlantı olarak takılıdır. Her çağrıda İş Beyni'nin birinci bölümündeki lisans anahtarını `anahtar` alanında gönderirsin; öğrenciye anahtarı, iş kimliğini, jetonu ya da ham cevabı göstermezsin, sonucu kendi cümlenle söylersin.
 
 ## Araçlar
 
@@ -18,6 +18,9 @@ Aday listesini öğrenci değil, FounderOS'un veri servisi çeker; sunucu ayrıc
 - `durum_oku`: sunucudaki durum kaydı, son ölçüm ve son lisans kontrolü.
 - `saha_yukle`: günün saha listesini yükler, telefonda açılacak saha ekranının bağlantısını döner.
 - `saha_sonuclari`: saha ekranında basılan sonuç düğmelerini "FounderOS saha sonuçları" metni olarak döner (`tarih`: bugün ya da son yedi gün; bir günün sonuçları o gün basılanlardır).
+- `odak_yaz`: panelin o an açık ekranı ve "Şu an" kartı: hangi işteyiz, kaçıncı adım, ne yapılıyor, öğrenciden ne bekleniyor, sohbete yapıştıracağı sıradaki cümle. Kuralları aşağıda, "Panel odağı".
+- `demo_olustur`, `demolar`: adaya özel demo ve demoların açılıp açılmadığı (kuralları çekirdekte ve kanitini-hazirla'da). İkisinin cevabında da her demo için iki adres gelir: `adres` adaya gider ve açılınca sayılır; `onizleme` öğrencinin kendi bakışıdır, açılma sayılmaz. Öğrenci demoya kendisi bakacaksa (göndermeden önce denemek, demo videosu için ekranını kaydetmek, görüşmede kendi telefonunda göstermek) `onizleme` adresini verirsin; alan gelmezse `adres`in sonuna `?onizleme=1` eklersin. Adaya giden mesaja yalnız çıplak `adres` konur.
+- `panel_yaz`: panelin bölümlerini yazar. Onu aday aracının `panel --yukle` komutu çağırır; sen doğrudan çağırmazsın (`founderos:panel-vitrini`).
 
 ## Çekim
 
@@ -29,13 +32,15 @@ Sıra: `aday_ara` "çalışıyor" derse iş kimliğini hemen İş Beyni'nin yedi
 
 Niş doğrulaması için sayım çekimi ayrıdır: `aday_ara` `sayim: true` ile, üç niş için, beş yüz kayıta kadar, e-posta ve Instagram çıkarmadan; aylık kayıt tavanından düşmez, çekim sayısına girer. Sayım çekimine de her nişin kartındaki reklam kütüphanesi kelimelerini `reklam_kelimeleri` olarak verirsin (yukarıdaki kural); servis reklam kütüphanesini de tarar ve özetteki `reklamli` sayısı `kalan`a bölününce niş doğrulama tablosunun reklam veren oranı çıkar. Özette reklam sayısı yoksa oran "görülemedi" yazılır. Sayımı birinci günde, pazar onaylanır onaylanmaz başlatırsın; özeti teklife geçmeden, en geç markadan önce `aday_sonuc` ile alır ve yardımcıya verirsin. Servis o gün cevap vermezse sayım ikinci bloğun sabahında başlar; yardımcının servise erişimi yoktur, o yalnız tabloyu kurar ve rakip taramasını yapar.
 
+**Pazar Radarı.** Panel, iş kimliği yazılı sayımı sunucudan canlı gösterir: çekim sürerken tarama, bitince ölçüler ve nişlerin karşılaştırması. Bu yüzden sayımın iş kimliği gelir gelmez, başka hiçbir işten önce (kart yazmak, `aday_sonuc`'u beklemek, yardımcıyı başlatmak dahil; aday_ara "çalışıyor" da dese "hazır" da dese `is_id` döner) iki yere yazarsın: İş Beyni'nin yedinci bölümündeki "Sayım çekimleri" satırına ve panelin pazar alanına (`ajans.pazar.sehir` ve `ajans.pazar.adaylar[]`: nişin adı ve `is_id`; şeması `founderos:panel-vitrini`). Sonra `panel --yukle` ve odak gider (aşağıda); araç klasörde yoksa (birinci gün) önce `founderos:aday-listesi-araci` ile kurarsın. Satırlar sayım bittikten sonra giderse öğrenci radarda canlı akışı hiç görmez. Özet gelince ölçüleri aynı satırlara eklersin (özetten hangi ölçünün nasıl çıktığı panel-vitrini'nde) ve yeniden gönderirsin. Aynı niş ve şehrin iş kimliği İş Beyni'nde zaten duruyorsa sayım yeniden başlatılmaz; o kimlik kullanılır.
+
 Servis "tavan", "kapalı" ya da iki denemede "hata" derse gün durmaz: yedek yol tarayıcı eklentisidir (araclari-kur'un üçüncü adımı). Öğrenciye "servis çöktü" demezsin; "bugün elle tarıyoruz, servis açılınca kalanını oradan alacağız" dersin.
 
 ## Saha ekranı
 
 Sabah günün listesi kurulunca (`bugun --planla`) aday aracının `saha-paketi --yukle` komutunu çalıştırırsın: araç günün listesini ve arama senaryosunu paketler, servise kendisi yükler ve "saha ekranı: <adres>" satırını basar. Araç servise ulaşamazsa paket `.founderos/saha-paketi.json` dosyasında durur; o dosyanın içeriğini olduğu gibi `saha_yukle` aracına `paket` olarak verirsin. Dönen adres telefonda açılacak saha ekranıdır; öğrenciye bağlantıyı verir ve tek cümle söylersin: "Bugünün listesi hazır: [bağlantı]. Telefonunda aç (panelindeki 'Bugünün listesini aç' da aynı yere gider), aramayı oradan yap, her aramadan sonra ne olduğuna bas; ekran kendisi sıradakine geçer." Ekran tek tek gider: ekranda bir işletme durur (önce oku, ilk cümle, Ara), altında "Ne oldu?" düğmeleri; basınca sonuç kaydedilir ve sonuç girilmemiş sıradaki işletme gelir. Altta "Geri al" (son sonucu siler), "Liste" (bütün liste, gruplarıyla; dokunulan işletmeye gider) ve "Konuşma metni" var. Aynı gün liste değişirse yeniden yüklersin; bağlantı ve o günün sonuçları korunur.
 
-Saha ekranının üstünde günün temas sayısı hedefe karşı halka olarak durur (bugün kaç, hedef kaç, seri); hedef dolunca ekran bir kez kutlar. Hedefi durum kaydındaki `gunluk_hedef` belirler; yoksa düzen (tam 100, yan 40). Her telefon kartında "Kısa not" altında dört kısayol var: "Sahibi açtı", "Çalışan açtı", "Sahibi yoktu", "Numara yanlış". Öğrenci dokununca nota eklenir, akşam metnine not olarak gelir. Akşam okurken: "Çalışan açtı" ya da "Sahibi yoktu" olan adayın sıradaki aramasında kartın çalışan açılışıyla sahibini sorarsın; "Numara yanlış" olan adayın numarası aday aracının `guncelle` komutuyla düzeltilir; doğrusu bulunamazsa `sil <anahtar> --sebep "numara yanlış"` ile işaretlenir (satır silinmez) ve aday bir daha aranmaz. Randevu basılınca gün ve saat sorulur, kaydedince ekran kutlar ve adaya gidecek onay mesajını hazır verir (cep numarasına WhatsApp'la tek dokunuş); öğrenci yine sana "randevu aldım" der, hatırlatmaları sen hazırlarsın. Onay mesajı ön görüşme sayfasının ya da videonun linkini taşır: link İş Beyni'nde yazılıysa aday aracına bir kez verirsin (`adaylar-arac.py sayfa --onay-linki <adres>`), her sabahın paketi onu taşır.
+Saha ekranının üstünde günün temas sayısı hedefe karşı halka olarak durur (bugün kaç, hedef kaç, seri); hedef dolunca ekran bir kez kutlar. Hedefi durum kaydındaki `gunluk_hedef` belirler; yoksa düzen (tam 100, yan 40). Her telefon kartında "Kısa not" altında dört kısayol var: "Sahibi açtı", "Çalışan açtı", "Sahibi yoktu", "Numara yanlış". Öğrenci dokununca nota eklenir, akşam metnine not olarak gelir. Akşam okurken: "Çalışan açtı" ya da "Sahibi yoktu" olan adayın sıradaki aramasında kartın çalışan açılışıyla sahibini sorarsın; "Numara yanlış" olan adayın numarası aday aracının `guncelle` komutuyla düzeltilir; doğrusu bulunamazsa `sil <anahtar> --sebep "numara yanlış"` ile işaretlenir (satır silinmez) ve aday bir daha aranmaz. Randevu basılınca gün ve saat sorulur, kaydedince ekran kutlar ve adaya gidecek onay mesajını hazır verir (cep numarasına WhatsApp'la tek dokunuş); öğrenci yine sana "randevu aldım" der, hatırlatmaları sen hazırlarsın. Saha ekranından basılan randevu sayaca akşam kapanışında (sonuç satırından) girer, o an ayrıca sayılmaz; saha ekranı dışından gelen randevu (WhatsApp, Instagram, e-posta, geri dönen arama, tanıdık) o anda sayaca eklenir ve `durum_yaz` gider (gorusmeye-getir). Emin değilsen bugünün `saha_sonuclari`na bakarsın: o işletmenin satırında randevu varsa akşam sayılır. Onay mesajı ön görüşme sayfasının ya da videonun linkini taşır: link İş Beyni'nde yazılıysa aday aracına bir kez verirsin (`adaylar-arac.py sayfa --onay-linki <adres>`), her sabahın paketi onu taşır.
 
 Akşam kapanışı iki adımdır. Önce kapanmamış günler (aşağıda). Sonra iş günü kapanır: `saha_sonuclari` aracını iş gününün tarihiyle (`tarih`) çağırırsın. Dönen `metin` boş değilse onu `.founderos/sonuc.txt` dosyasına yazar, `.founderos/adaylar-arac.py sonuclar .founderos/sonuc.txt --gun <iş günü>` komutunu çalıştırır, sonucu tek cümleyle söylersin. Metin boşsa ve öğrenci masaüstü sayfasını kullandıysa "Sonuçları kopyala" yolu işler: öğrenci yapıştırır, sen aynı dosyaya yazar ve aynı komutu çalıştırırsın. Aynı satırı iki kez işlemek sorun değil; araç o gün için işlenmiş satırı atlar. `olcum_yaz` da iş gününün tarihiyle gider. Kapanış bitince durum kaydına `son_kapanis` olarak iş günü yazılır. İş günü `kapat` çıktısının ilk satırıdır: gece yarısından sonra, sabah beşe kadar yapılan kapanış önceki günündür; 00.30'da "akşam" diyen öğrenci dünü kapatır.
 
@@ -60,3 +65,38 @@ Akşam kapanışında aday aracının `ozet` çıktısındaki stok satırı "lis
 Kategori ve kelimeler nişin kartından, ilçe kartın yoğun ilçelerinden ve daha önce çekilmemiş olanlardan; istek tarihi bugün. Durum kaydı `durum_yaz` ile gider; sunucu çekimi gece başlatır, öğrenci uyurken liste çekilir. Öğrenciye tek cümle: "Listen beş günlük işin altına indi; yeni ilçenin listesi bu gece çekiliyor, sabah hazır."
 
 Sabah günaydında `durum_oku` yaparsın. `gece_cekimi` geldiyse (iş kimliği, kategori, şehir, ilçe) o iş kimliğiyle listeyi alırsın: `.founderos/adaylar-arac.py cek --is <is_id>` (hâlâ çalışıyorsa `aday_sonuc` ile yirmi saniye aralıkla sorarsın); `aday_ara`'yı yeniden çağırmazsın, o ikinci çekim açar ve tavandan düşer. Liste içeri alınınca `siradaki_cekim` durum kaydından silinir ve `durum_yaz` gider. Öğrenciye tek cümle: "Gece yeni ilçenin listesi çekildi: [kaç] işletme listene eklendi." `gece_cekimi` gelmediyse ve `siradaki_cekim` duruyorsa eski yol: çekimi oturumda başlatırsın, gün durmaz. Aylık tavan dolduysa gece de çekim olmaz; tavan kuralı aynen geçerli. `aday_sonuc` gece çekimi için hata dönerse (çekim sağlayıcıda başarısız) o çekim bir daha sunulmaz; çekimi oturumda `aday_ara` ile başlatırsın. Liste hangi yoldan gelirse gelsin (gece ya da oturum) içeri alınınca `siradaki_cekim` silinir; silinmezse ertesi gece aynı yer yeniden istenir.
+
+## Panel odağı (`odak_yaz`)
+
+Öğrencinin paneli çoğu zaman Claude'un yanında açıktır. Panelin hangi ekranı açacağını ve "Şu an" kartını sen söylersin: öğrenci bir işe girince panel o işin ekranını açar, ilgili bölümü vurgular; kartta kaçıncı adımda olduğunuz, şu an ne yaptığın, ondan ne beklediğin ve sohbete yapıştıracağı sıradaki cümle (kopyala düğmesiyle) durur. `bitti` gelince panel veriyi yeniden okur.
+
+Alanlar:
+- `anahtar`: lisans anahtarı.
+- `is`: işin adı, öneksiz (`nisi-sec`, `fiyati-belirle`, `gunaydin`). Hangi sekmenin ve bölümün açılacağını sunucu bu addan bilir; `sekme` ve `hedef` vermezsin (yalnız eşleme yanlışsa ezmek için vardır).
+- `durum`: `basladi`, `calisiyor`, `bekliyor`, `bitti` ya da `hata`.
+- `adim`: `{"no": 2, "toplam": 3, "ad": "Canlı sayım"}`; büyük adımlar, soru soru değil. Bilinmiyorsa yazılmaz.
+- `not`: şu an ne yapılıyor, tek cümle.
+- `bekleyen`: öğrenciden ne bekleniyor, tek cümle; `bekliyor`da dolu.
+- `sonraki`: öğrencinin sohbete yazacağı sıradaki cümle; panelde kopyalanır.
+- `tur`: `true` yalnız panel turu açılacaksa (çekirdek, "Panel: odak ve tur").
+
+`not`, `bekleyen` ve `sonraki` öğrencinin ekranında görünür: her biri en çok 160 harf, öğrenciye yazılmış Türkçe, kısa fiil cümlesi. İçlerinde modül, beceri, araç ya da dosya adı, iş kimliği, lisans anahtarı, işletme sahibinin adı ya da telefonu, İngilizce kelime, uzun tire ve hazırlığın blok numarası olmaz; "saha" yerine öğrenciye söylenen karşılıklar ("müşteri bulma", "bugünün listesi"), blok yerine o günün işi ("Fiyat bandın Teklif stüdyosunda; kesin rakam aday listesinin çıktığı gün.", "kesin rakam üçüncü blokta" değil). `sonraki` mümkünse FounderOS'un tanıdığı bir cümledir: "Devam", "Günaydın", "Akşam", "Tamam, bu pazarla başlıyoruz.", "Fiyatımı hesapla", "Prova yapalım" ya da panelin beceri destesindeki bir cümle. Cevap serbestse (tanışma soruları gibi) `sonraki` yazılmaz.
+
+Ne zaman:
+- İş başlarken `basladi`: her modül açılınca, modülün ilk işinden önce (`is`: modülün başındaki satırda yazan ad); adım sayısı biliniyorsa `adim` ve `not` ile. İş başka modüle geçince (randevudan provaya) yenisinin `basladi`sı gider.
+- Büyük adım değişince `calisiyor`.
+- Öğrenciden seçim, onay ya da bilgi beklerken `bekliyor`: `bekleyen` dolu; beklenen tek cümlelik bir onaysa `sonraki` o cümledir. Bu odak soruyu yazmadan önce gider; mesaj yine soruyla biter, araçtan sonra metin eklenmez.
+- İş bitince `bitti`: `sonraki` dolu. Günün son işiyse (hazırlık günleri ve ilk günün son kapanışı dahil) `sonraki`: "Günaydın"; panel akşam "bugünlük tamam, yarın sabah günaydın yaz" der. Birinci günün oturuş kapanışlarında `sonraki`: "Devam".
+- `hata` yalnız o adım bugün yapılamıyor ve yedek yola geçildiyse; `not` yedek yolu sakin söyler ("Bugün elle tarıyoruz, servis açılınca kalanı oradan"), arızayı anlatmaz.
+- Panele veri gönderdiğin her seferde (`panel --yukle`) ardından odak gider: iş bittiyse `bitti` (panel yeni veriyi o anda okur), sürüyorsa `calisiyor` (panel yeni veriyi en geç dakikalık tazelemede gösterir). Sıra hep önce gönderim, sonra odak.
+- Tipik bir işte üç ile altı çağrı. Her küçük işte, her soruda çağırmazsın.
+
+Çağrının sonucu beklenmez, öğrenciye söylenmez, araç adı anılmaz. Hata dönerse ya da araç bu oturumda yoksa sessizce geçersin; iş durmaz. Aynı oturumda iki kez hata dönerse o oturumda bir daha denemezsin.
+
+Örnekler:
+
+```json
+{"anahtar": "FOS-...", "is": "nisi-sec", "durum": "bekliyor", "adim": {"no": 2, "toplam": 3, "ad": "Önerim ve onayın"}, "not": "Kartları senin cevaplarınla karşılaştırdım, önerim hazır.", "bekleyen": "Önerdiğim pazara onayın ya da itirazın.", "sonraki": "Tamam, bu pazarla başlıyoruz."}
+{"anahtar": "FOS-...", "is": "nisi-sec", "durum": "bitti", "not": "Pazar belli; üç pazarın canlı sayımı Pazar Radarı'nda akıyor.", "sonraki": "Devam"}
+{"anahtar": "FOS-...", "is": "fiyati-belirle", "durum": "bitti", "not": "Fiyat bandın ve iş değerin Teklif stüdyosunda.", "sonraki": "Devam"}
+```

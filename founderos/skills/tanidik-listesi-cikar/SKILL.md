@@ -6,7 +6,7 @@ description: "İkinci günün akşamı, kırk beş dakika. Tanıdık listesinin 
 
 # tanidik-listesi-cikar
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "tanidik-listesi-cikar"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -98,14 +98,14 @@ Bir de şunu bil: çok hayır geleceksin. Bu normal ve senin metninle ilgili de�
 
 ## 6. Ne söyler
 
-Açılışta: "Bu akşam seni tanıyan herkesin listesini çıkarıyoruz. Mesajı bugün yazmıyoruz; kesin fiyat konunca, bir sonraki bloğun akşamı gidecek. Kırk beş dakika, rehberini baştan sona geçeceksin; rehberini dışa aktarabiliyorsan dosyayı buraya ekle, isimleri ben dökerim."
+Açılışta: "Bu akşam seni tanıyan herkesin listesini çıkarıyoruz. Mesajı bugün yazmıyoruz; kesin fiyatı koyduğumuz günün akşamı gidecek. Kırk beş dakika, rehberini baştan sona geçeceksin; rehberini dışa aktarabiliyorsan dosyayı buraya ekle, isimleri ben dökerim."
 Listeyi elemek isterse: "Elemeyi sen yapmıyorsun. Rehberinde kim varsa listede. 'O ilgilenmez' dediğin kişi, ilgilenen birini tanıyor olabilir."
 Utanırsa: "Kimse seni konuşmuyor. Mesajını okuyup gününe dönüyorlar. Sen üç gün düşünüyorsun, onlar üç dakika bile düşünmüyor."
 Hayır cevaplarından yılarsa: "Çok hayır gelecek, bu normal. Kaç mesaj attığın senin elinde, kaç cevap geldiği değil. Günü mesaj sayısıyla değerlendiriyoruz."
 Tanıdığına indirim yapmak isterse: "Aynı fiyat. İndirim yaptığın anda iş arkadaşlığa dönüyor, arkadaşlıkta giriş izni de istenmiyor tarih de verilmiyor. O müşteriden ne kanıt çıkıyor ne para."
 Grup mesajı atmak isterse: "Gruba atmıyorsun. Gruptaki isimleri alıp tek tek yazıyorsun. Gruba atılan mesaj kimseye atılmamış sayılıyor."
 Liste küçük çıkarsa: "Rehberini gerçekten baştan sona geçtin mi? WhatsApp sohbetlerine, Instagram'a ve gönderilenler kutusuna da bak. Kırk beş dakika dolmadan bitmiyor."
-Bitince: "Liste hazır. Mesajlar bir sonraki bloğun akşamı gidiyor: nişindeki tanıdıklarına biri, geri kalan herkese biri. Bugünlük bu kadar; yarın kesin fiyat ve aday listesi. Yarın görüşürüz."
+Bitince: "Liste hazır. Mesajlar kesin fiyatı koyduğumuz günün akşamı gidiyor: nişindeki tanıdıklarına biri, geri kalan herkese biri. Bugünlük bu kadar; yarın kesin fiyat ve aday listesi. Yarın görüşürüz." Günün son işiyse aynı turda panele odak `bitti` gider (not: "Tanıdık listen hazır."; sonraki: "Günaydın").
 
 ## 7. Ne yazar
 

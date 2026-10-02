@@ -6,7 +6,7 @@ description: "Birinci gün tanıtım sayfası İş Beyni'nden tam kurulur, iki g
 
 # siteni-kur
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "siteni-kur"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -107,7 +107,7 @@ Sıra sabittir ve kanıt durumuna göre kendiliğinden kısalır. Verisi olmayan
 
 **4. Dert.** Üç paragraf, kart değil düz yazı, dar sütun. İdeal müşteri sayfasının üçüncü başlığından: adayın kendi cümleleriyle, düzeltilmeden. Ortada bir çekme cümle, adayın ağzından tek satır. Sayfanın en çok okunan yeri burasıdır, çünkü adam kendi cümlesini okuyor.
 
-**5. Bedel.** Kartın kayıp birimi ve rakamı: solda üç satırlık hesap, sağda tek cümle sonuç. Rakamlar niş kartındandır ve kartta kaynağı yoksa sayfada da yoktur; o zaman bölüm rakamsız, kayıp biriminin adıyla kurulur. Müşterinin rapor günü raporu gelince bu bölüm onun gerçek rakamıyla değişir.
+**5. Bedel.** Kartın kaçan talep satırı ve müşteri değeri: solda üç satırlık hesap (ayda kaçan talep, kaçı müşteri olurdu, müşteri başı değer), sağda tek cümle sonuç: ayda kaçan para. Rakamlar niş kartındandır ve kartta kaynağı yoksa sayfada da yoktur; o zaman bölüm rakamsız, kayıp biriminin adıyla kurulur. Müşterinin rapor günü raporu gelince bu bölüm onun gerçek rakamıyla değişir.
 
 **6. Ne yapıyoruz.** Sistemin adı ve teslimat kontrolünden geçmiş parçalar. Üç an, üç telefon ekranı yan yana (telefonda alt alta): mesaj geldi ve cevap gitti; sistem sordu ve saat verdi; randevu yazıldı ve hatırlatma gitti. Her ekranın altında tek cümle, sonuç diliyle. Araç adı yok, "yapay zekâ" kelimesi yok. Kalan parçalar üç ekranın altında düz yazı üç satır.
 
@@ -169,7 +169,7 @@ Sebebi şu: görünüş düz yazıyla tarif edilince model her öğrencide HTML'
 
 ```js
 window.SITE = {
-  yon: "saglam",                  // saglam | sakin | olculu, marka kitinin görsel yönü
+  yon: "teknik",                  // kitin tipografi adı: teknik | karakter | editoryal | saglam | yumusak | sade
   yuvarlak: "14px",
   renk: { zemin, yazi, soluk, cizgi, koyu, koyu_yazi, vurgu, vurgu_yazi },  // kitin renk kodları
   yazi_tipi: { baslik: "...", govde: "..." },                               // kitin iki yazı tipi
@@ -215,7 +215,7 @@ window.SITE = {
 };
 ```
 
-Alanların içi uydurulmaz. `acilis.etiket` şehir ve niş adından, `konusma.baloncuklar` niş kartından ve yazılı asistanın kurallarından, `bedel.satirlar` kartın kayıp biriminden ve rakamından kaynağıyla, `dert.paragraflar` on sekizinci bölümdeki üç dertten, `neden` kartın rekabet şeklinden, `kim.paragraflar` kurucu bölümündeki gerçek geçmişten gelir. `konusma.saat` kartın kapanış saatinden sonrası, tarih bugünün tarihi. `urun.gunler` kartın hizmet adlarından, müşteri adı yok. `kanallar.liste` üç kanal, her birinin bugün/sistemle satırı kartın rekabet şeklinden. Rakam varsa kaynağıyla; kaynağı olmayan rakam sayfaya yazılmaz. Ekran taklitlerindeki süre satırları ("4 dk", "41 sn") ölçüm gibi durur; gerçek müşteri ölçümü gelmeden buraya sistemin kuralı yazılır ("1 dk içinde"), saniyeli rakam yazılmaz. `grafik` ve `urun.doluluk` kaynaksızsa boş kalır.
+Alanların içi uydurulmaz. `acilis.etiket` şehir ve niş adından, `konusma.baloncuklar` niş kartından ve yazılı asistanın kurallarından, `bedel.satirlar` kartın kaçan talep satırından ve müşteri değerinden kaynağıyla, `dert.paragraflar` on sekizinci bölümdeki üç dertten, `neden` kartın rekabet şeklinden, `kim.paragraflar` kurucu bölümündeki gerçek geçmişten gelir. `konusma.saat` kartın kapanış saatinden sonrası, tarih bugünün tarihi. `urun.gunler` kartın hizmet adlarından, müşteri adı yok. `kanallar.liste` üç kanal, her birinin bugün/sistemle satırı kartın rekabet şeklinden. Rakam varsa kaynağıyla; kaynağı olmayan rakam sayfaya yazılmaz. Ekran taklitlerindeki süre satırları ("4 dk", "41 sn") ölçüm gibi durur; gerçek müşteri ölçümü gelmeden buraya sistemin kuralı yazılır ("1 dk içinde"), saniyeli rakam yazılmaz. `grafik` ve `urun.doluluk` kaynaksızsa boş kalır.
 
 **Kontrol: veri kontrolü, göz kontrolü değil.** Sayfa gösterilmeden önce FounderOS şablonun dışına çıkılmadığına ve verinin dürüst olduğuna bakar. Aşağıdakilerden biri bile doğruysa sayfa yeniden kurulur, öğrenciye gösterilmez:
 1. Şablonun HTML ya da CSS kısmında bir değişiklik var mı; `window.SITE` bloğunun dışına bir satır yazılmış mı?
@@ -234,7 +234,7 @@ Bunlar bittiğinde sayfaya bir de bakılır: telefon ve masaüstü görüntüsü
 
 Sayfa bir kere kurulur, bir kere bakılır, bir kere düzeltilir ve biter. Sonsuz düzeltme turu yoktur; her tur öğrencinin kotasını ve akşamını yiyor.
 
-**1. Malzeme toplanır, tek soru sorulur.** Tek soru: "Telefonunda düz duvar önünde, gün ışığında çekilmiş bir fotoğrafın var mı? Varsa klasöre at, Kim bölümüne koyuyorum; yoksa sorun değil, dördüncü blokta çekiyoruz." Gerisi sorulmaz. İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur; telefon numarası markadan önce alınmadıysa fotoğraf sorusuyla aynı mesajda istenir, çünkü düğme onsuz boş bağlantı olur.
+**1. Malzeme toplanır, tek soru sorulur.** Tek soru: "Telefonunda düz duvar önünde, gün ışığında çekilmiş bir fotoğrafın var mı? Varsa klasöre at, Kim bölümüne koyuyorum; yoksa sorun değil, profilini kurduğumuz gün çekiyoruz." Gerisi sorulmaz. İş Beyni'nden Dönüşüm Cümlesi, sistemin adı, teslimat parçaları, güvence metni, şehir, kanal; on sekizinci bölümden tek cümlelik tanım, üç dert, itirazlar; niş kartından kayıp birimi ve rakamı, rekabetin şekli, yasal sınırlar; kurucu bölümünden gerçek geçmiş; marka kitinden renk kodları, yazı tipleri, dosya haritasındaki logo ve görsel yolları. Eksik olan tek şey sorulur, o da nadiren olur; telefon numarası markadan önce alınmadıysa fotoğraf sorusuyla aynı mesajda istenir, çünkü düğme onsuz boş bağlantı olur.
 
 **2. Şablon kopyalanır ve doldurulur.** Şablon bu becerinin klasöründe `site-sablonu.html` adıyla duruyor (beceri açıldığında klasör yolu görünür). Olduğu gibi `site/[is-adi].html` olarak öğrencinin klasörüne kopyalanır. Kopyalama tek satırlık bir dosya kopyalama komutudur ve kabuk kuralının sayfa istisnasıdır (istisnalar marka, sayfa ve aday aracının betikleri); komuttan önce öğrenciye bir kez "sayfayı kuruyorum, ekranda birkaç işlem satırı görünecek, normal" denir. Komut çalışmazsa ikinci kez denenir, gerekirse `python3` ile kopyalanır. **Şablonun içeriği okunmaz ve elle yeniden yazılmaz.** Dosya büyüktür; içeriğini konuşmaya taşımak günün geri kalanında erken konuşulanların kaybolmasına sebep olur. Üç denemede de kopyalanamazsa sayfa o gün kurulmaz, açık iş olarak yazılır ve gün devam eder. FounderOS dosyanın içindeki `/*FOUNDEROS-SITE*/` işaretinin üstüne `window.SITE` bloğunu yazar; dosyanın başka hiçbir yerine dokunmaz. Bütün alanlar tek seferde doldurulur, yarım bırakılıp "devamı sonra" denmez.
 
@@ -264,7 +264,7 @@ Sıra şu:
 4. Kendi adresini bağlamak için sol menüde "Domain management" (adres yönetimi), "Add a domain" (adres ekle); alan adını yaz, "Verify" (doğrula), sonra "Add domain" (adresi ekle). Servis sana iki satır gösterir (kayıt türü ve değeri); o iki satırı alan adını aldığın satıcının "DNS" (adres kayıtları) ekranına yazacaksın. Satırları ben okuyup hangi kutuya ne yazacağını tek tek söylerim; ekran görüntüsünü at, satıcının ekranı Türkçe.
 5. Bağlantı birkaç dakikadan birkaç saate kadar sürer; hazır olunca adresin yanındaki yazı "Netlify DNS" ya da "External DNS" altında yeşil görünür, ben kontrol ederim. O güne kadar sayfa servisin kendi adresinde açık kalır, mesajlarına o adres girer.
 
-Demo dosyası sayfa yayına çıkmadan klasöre konur, ikisi tek sürükle bırakla çıkar. Demo sonradan değişirse "Deploys" (yayınlar) sayfasında aynı sürükle bırak kutusuna klasörün yeni hali bırakılır; eski sayfa yerinde kalır, üstüne yenisi gelir.
+Demo dosyası sayfa yayına çıkmadan klasöre konur, ikisi tek sürükle bırakla çıkar. Klasörde bir de `_redirects` dosyası durur (site aracı kendisi yazar, tek satır: `/d/*  https://founderos.so/d/:splat  200`): adaya özel demoların bağlantısı böylece senin alan adında açılır (siten.com/d/...). Yayından sonra `siten.com/d/ornek` adresini açıp örnek demonun geldiğini görürsün; geldiyse panel dosyasına `demo.vekil: true` yazılır ve yeni demo bağlantıları senin alan adınla çıkar. Gelmediyse bağlantılar founderos.so adresinde kalır, iş durmaz. Demo sonradan değişirse "Deploys" (yayınlar) sayfasında aynı sürükle bırak kutusuna klasörün yeni hali bırakılır; eski sayfa yerinde kalır, üstüne yenisi gelir.
 
 Canlı adreste üç bakış: sayfa yükleniyor mu, düğme takvime ya da WhatsApp'a gidiyor mu, telefonda düzgün mü. Düğme bugün WhatsApp'a gider; CRM açıldığı gün gorusmeye-getir takvimi kurunca düğmeler oraya bağlanır, o güne kadar bu İş Beyni'nde yazılıdır.
 
@@ -352,7 +352,7 @@ Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitri
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki, birinci günde: birinci bloğun kapanışı. İkinci blokta, yayından sonra: canlı sayım birinci gün okunamadıysa o, akşam tanıdık listesi. Ön görüşme sayfası, takvim ve hatırlatma akışı CRM açıldığı gün.
+Sıradaki, birinci günde: birinci bloğun kapanışı; sayfa onaylanınca gün bitmiş sayılmaz, kurulum komutunun son üç adımı aynı turda ve sırayla gelir. (1) Kontrol: İş Beyni şemayla karşılaştırılır, boş yer konuşmadan doldurulur; durum kaydı `blok` 2, `oturus` 1, `adim` boş, `sonraki_adim` "Araçlar ve sayfanın yayını.", `yol_haritasi_asamasi` 4 ve aynı içerik `durum_yaz` ile gider. `blok` 1 kalırsa ertesi sabah panel "günaydın" yerine "devam yaz" der ve günaydın birinci günü yeniden açmaya kalkar. (2) Hatırlatmalar (lisans cevabında `hatirlatma` varsa paneli telefonda ana ekrana ekleme ve anahtarı açma; yoksa "yarın araçları kurarken takvim alarmı"). (3) isini-kur'un "Günün kapanışı": iki mesaj, arada tek soru; ikinci mesajla aynı turda odak `bitti` (`is: "kurulum"`, `sonraki`: "Günaydın"). İkinci blokta, yayından sonra: canlı sayım birinci gün okunamadıysa o, akşam tanıdık listesi. Ön görüşme sayfası, takvim ve hatırlatma akışı CRM açıldığı gün.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - İkinci gün bitti, sayfa yayında değil: üçüncü günün sabah bloğunun ilk işi olur, sonrası ertelenmez.

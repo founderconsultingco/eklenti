@@ -8,7 +8,7 @@ description: "Sahaya çıkmadan önceki kontrol listesi, beşi durdurucu (telefo
 
 Sahaya çıkmadan önceki son bakış. Beşinci bloğun öğleden sonrası FounderOS bu listeyi önüne koyar ve tek tek sorar. Liste bilerek akşamdan alındı: eskiden akşam bloğuna hem kontrol listesi hem ilk on soğuk temas konuyordu ve ilk temas kimsenin açmayacağı saate kalıyordu. Her madde iki cevaptan birini alır: tamam, ya da eksik. "Sanırım" cevabı kabul edilmez; her maddenin bir kanıtı var ve kanıt ekranda gösterilir.
 
-Süre bir saat. Amaç eksikleri bugün bitirmek değil, sahanın hangi eksikle açılacağını bilmek. Liste bittiğinde iki şey yazılır: saha açılıyor mu, ve açılıyorsa hangi maddeler açık kalarak açılıyor.
+Süre bir saat. Amaç eksikleri bugün bitirmek değil, sahanın hangi eksikle açılacağını bilmek. Liste bittiğinde iki şey yazılır: saha açılıyor mu, ve açılıyorsa hangi maddeler açık kalarak açılıyor. Liste açılırken panele odak (`odak_yaz`) `basladi` gider (`is`: sahaya-cikis-kontrol-listesi; panel Bugün'ü açar), liste bitince `bitti` (not: sahanın hangi eksikle açıldığı, tek cümle; sonraki: "Devam"); ilk on soğuk temastan sonra gün akşam kapanışıyla biter.
 
 ## Değişmeyen kural
 
@@ -59,7 +59,7 @@ Vitrin maddelerinden biri eksikse saha açılır ve o madde ilk hafta içinde ta
 
 21. **Çalışma düzeni ve pencereler.** Yarından itibaren hangi saatlerde arayacağın yazılı ve o saatler kendi Google takviminde (ikinci blokta işaretlendi) blok olarak duruyor. Kanıt: takvim.
 22. **Günlük sayı.** Yarın kaç temas yapacağın tek rakam olarak yazılı ve görünen bir yerde. Kanıt: kâğıdın fotoğrafı.
-23. **İlk gün listesi.** Yarın ilk temas edeceğin kayıtlar bugünden seçilmiş ve sıralanmış: aramalar rampanın ilk basamağında, on; kalanı yazılı. Kanıt: liste.
+23. **İlk gün listesi.** Bu akşamın on soğuk teması ve yarının listesi seçilmiş, sıralanmış, hepsinin hızlı denetimi yapılmış. Bu akşam giden temaslar kayda geçerse sahanın birinci günü bu akşamdır (rampanın ilk basamağı, on); yarın ikinci gün, aramada yirmi, kalanı yazılı. Panel de aynı günü sayar. Kanıt: liste.
 24. **Üç aylık yaşam gideri ve masraf tablosu.** Tablonun bölümleri güncel; şirket ve muhasebe gideri tek satır, ilk müşteriden sonra başlıyor. Kanıt: tablo.
 
 ## Liste bitince

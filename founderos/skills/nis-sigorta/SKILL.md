@@ -19,7 +19,9 @@ Komisyon oranları branşa göre değişiyor: trafik %8-12, kasko %10-20, konut/
 
 Bir acentenin günde kaç teklif veya poliçe çıkardığına dair sektör kaynaklı bir rakam bulunamadı (bilinmiyor, sahadan dolacak). Ama TOBB SAİK Başkanı Hüseyin Kasap'ın kendi cümlesi işin döngüsünü gösteriyor: "Vatandaş hiç kazaya karışmazsa 260 lira prim öder, sonraki sene 700 lira ödeyince bunu açıklamak imkansız hale geliyor" (sigortacigazetesi.com.tr/acenteler-taban-komisyon-istiyor). Yani acentenin işi tek satış değil, her yıl aynı müşteriye yeniden fiyatı anlatmak; kaçırılan tek bir yenileme, o müşterinin yıllık tüm komisyonunun kaybı demek.
 
-Kayıp birimi: 1.300 ile 2.600 lira (acentenin diliyle bir tecdit, yani kaçan bir yenileme; kartın rakamlarından çıkarıldı: 13.099 liralık Egea kaskosunda yüzde 10-20 komisyon, 17.631 liralık standart basamak trafik poliçesinde yüzde 8-12 komisyon bu bandı veriyor).
+Kayıp birimi: 2.000 ile 6.000 lira (bir müşteri: bir yıllık poliçelerinin komisyonu, trafik ve kasko, varsa konut ve sağlık; kartın rakamlarından: 13.099 liralık Egea kaskosunda yüzde 10-20 komisyon 1.300-2.600, 17.631 liralık standart basamak trafik poliçesinde yüzde 8-12 komisyon 1.400-2.100). Tek müşteri on binin altında kalıyor; müşteri her yıl yenilediği için acentenin diliyle kaçan bir tecdit, yani yıllık komisyonun tamamı.
+
+Kaçan talep: ayda 20 talep, yüzde 30'u müşteri olur (tahmin: meşgulken WhatsApp'tan kasko fiyatı soran; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Birincisi, yenileme takibi kurumsal değil, kişiye ve hafızaya bağlı. Bir acente yazılımı sağlayıcısının kendi tespiti: "Birçok sigorta acentesi yenileme sürecini hâlâ Excel listeleri, WhatsApp hatırlatmaları, masa ajandası ve personelin kişisel hafızasına dayandırarak yönetmektedir" ve "Poliçe yenilendi sanıyorsunuz, üç ay sonra prim raporuna baktığınızda müşterinin başka acenteye geçtiğini görüyorsunuz" (acenteos.com/blog/sigorta-police-yenileme-takibi). Bu tam olarak bizim sattığımız sistemin karşılığı.
 
@@ -69,7 +71,7 @@ En güçlü üç itiraz: şirket zaten yenileme mesajı atıyor, müşterim bana
 
 "WhatsApp'tan zaten kendim dönüyorum." Şikayetvar'daki "acenteye kesinlikle ulaşılamadı" ve "ne acenteden ne de Allianz tarafından aranmadım" örnekleri gösteriyor ki her zaman değil; yoğun günde bir tanesi bile kaybolsa yıllık tecdit gidiyor.
 
-"Küçük acenteyim, yazılıma param yok." Komisyonlar zaten dengesiz, TOBB SAİK bile taban komisyon istiyor (sigortacigazetesi.com.tr/acenteler-taban-komisyon-istiyor); bir kurtarılan kasko yenilemesi aylık ücreti kat kat karşılar.
+"Küçük acenteyim, yazılıma param yok." Komisyonlar zaten dengesiz, TOBB SAİK bile taban komisyon istiyor (sigortacigazetesi.com.tr/acenteler-taban-komisyon-istiyor); kurtarılan her yenileme o müşterinin her yıl tekrar eden komisyonu; ama tek poliçenin komisyonu (1.300-2.600 TL) aylık ücretin altında kaldığı için hesap yalnız portföyü büyük, çok şirketli acentede tutuyor: orada ayda beş altı kurtarılan yenileme aylık ücreti karşılıyor.
 
 "Müşterim bana zaten bağlı, tanıdık ilişkisi." 31 milyon araçtan sadece 7 milyonu kaskolu; tanıdık ilişki olsa bile çapraz satış havuzu büyük ölçüde boşta duruyor.
 

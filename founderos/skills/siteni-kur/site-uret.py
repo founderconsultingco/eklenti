@@ -9,6 +9,10 @@ Sira: sablon kopyalanir, window.SITE blogu yazilir, SONRA bu betik calisir.
 Betik dosyanin yalniz iki isaretine dokunur: <!--FOUNDEROS-FONT--> ve
 <!--FOUNDEROS-FOTO-->. Ikinci kez calisirsa eskisini degistirir, ustune eklemez.
 
+Bir de sayfanin klasorune _redirects dosyasi yazilir (varsa satir eklenir, digerlerine
+dokunulmaz): /d/* yolu founderos.so/d/* adresine aktarilir; adaya ozel demolar ogrencinin
+alan adinda acilir. Yayin servisi dosyayi surukle birakla birlikte alir.
+
 Neden gomuluyor: sayfa tek dosya olarak tasinir, internet olmasa da ayni gorunur,
 disaridan yazi tipi cagrilmaz (sablon kurali). Fotograf pakette nis basina bir tane
 duruyor (nis-fotolari/<slug>.webp); yoksa sayfa dokulu koyu zeminle acilir, bos kalmaz.
@@ -60,12 +64,14 @@ def yaz(yol, metin):
 
 def eslesme_bul(govde):
     """window.SITE.yazi_tipi.baslik icindeki ilk aile adindan paketi bulur."""
-    m = re.search(r"yazi_tipi\s*:\s*\{[^}]*?baslik\s*:\s*[\"']\s*'?([A-Za-z ]+?)'?\s*[,\"']", govde)
+    # Anahtar tirnakli (JSON: "yazi_tipi": {"baslik": ...}) ya da tirnaksiz (JS) yazilabilir;
+    # ikisi de tutulur, yoksa sayfa kitin yazi tipi yerine varsayilanla cikar.
+    m = re.search(r"(?<!\w)[\"']?yazi_tipi[\"']?\s*:\s*\{[^}]*?[\"']?baslik[\"']?\s*:\s*[\"']\s*'?([A-Za-z ]+?)'?\s*[,\"']", govde)
     aile = (m.group(1).strip() if m else "").lower()
     for ad, es in ESLESME.items():
         if es["baslik"][1].lower() == aile:
             return ad, es
-    m2 = re.search(r"yon\s*:\s*[\"']([a-z]+)[\"']", govde)
+    m2 = re.search(r"(?<!\w)[\"']?yon[\"']?\s*:\s*[\"']([a-z]+)[\"']", govde)
     ad = m2.group(1) if m2 and m2.group(1) in ESLESME else "saglam"
     return ad, ESLESME[ad]
 
@@ -115,6 +121,19 @@ def isarete_yaz(govde, isaret, stil, kimlik):
     return govde.replace("</title>", "</title>" + isaret + (stil or ""), 1)
 
 
+YONLENDIRME = "/d/*  https://founderos.so/d/:splat  200"
+
+
+def yonlendirme_yaz(klasor):
+    yol = os.path.join(klasor, "_redirects")
+    satirlar = oku(yol).splitlines() if os.path.exists(yol) else []
+    if any(x.strip().startswith("/d/*") for x in satirlar):
+        return False
+    satirlar.append(YONLENDIRME)
+    yaz(yol, "\n".join(x for x in satirlar if x.strip()) + "\n")
+    return True
+
+
 def main():
     if len(sys.argv) < 2:
         print("kullanim: site-uret.py <sayfa.html> [--nis slug] [--foto dosya]")
@@ -154,6 +173,8 @@ def main():
         print("fotograf: yok, dokulu koyu zemin" + ("  [%s icin dosya bulunamadi]" % nis if nis else ""))
 
     yaz(hedef, govde)
+    if yonlendirme_yaz(os.path.dirname(os.path.abspath(hedef))):
+        print("yonlendirme: _redirects yazildi (/d/ adaya ozel demo yolu)")
     print("bitti: %s (%d KB)" % (hedef, os.path.getsize(hedef) // 1024))
     return 0
 

@@ -6,7 +6,7 @@ description: "Haftanın sonunda. Neyin değişeceğine karar verilir: niş mi, m
 
 # degisiklige-karar-ver
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "degisiklige-karar-ver"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -44,7 +44,7 @@ Diğer modüllerden gelen işaretler: gorusmeyi-analiz-et'in zayıf adım teşhi
 
 ## 4. Ne sorar
 
-İki soru sorar, ikisi de tek cümlelik cevap ister:
+İki soru sorar, ikisi de tek cümlelik cevap ister; birer birer sorulur, ikincisi birincinin cevabı gelince:
 1. Geçen haftanın kararını uyguladın mı, uygulamadıysan neden.
 2. Bu hafta kendini nasıl hissettin, sıfırdan ona kadar.
 
@@ -143,7 +143,7 @@ Tavana gelince ilk hareket temas sayısını indirmektir: günlük yüz, kırka 
 
 Aynı anda üç yoldan biri seçilir:
 1. Kapsamı daralt. Yeni müşterilere daha küçük paket sat.
-2. Daha büyük işletmeye sat. Rakamı sen yükseltmezsin, formül ve oranlar sabittir; yıllık kaybı büyük işletmede aynı formül daha yüksek kurulum ve aylık verir, aynı para daha az müşteriyle gelir.
+2. Daha büyük işletmeye sat. Rakamı sen yükseltmezsin, bant ve kademe rakamları sabittir; büyük işletmede kayıp aylığın birkaç katı olduğu için fayda kontrolü rahat tutar ve Kademe 3 (kurulum 60.000, aylık 15.000) erken açılır, aynı para daha az müşteriyle gelir.
 3. Yardım al. İlk devredilecek iş satış değil, tekrar eden ve müşteri verisine dokunmayan iştir: akşam deneme aramaları, form testleri, liste temizliği. Bakım kontrolleri ve rapor hazırlığı müşterinin kendi müşterileriyle yapılan konuşmalara dokunur; bu ikisi şimdilik sende kalır. Devretmek istediğinde destek adresine gidecek tek satırı FounderOS hazır verir, yolu ekip netleştirir. Bu iki iş yardımcıyla yazılı gizlilik anlaşması yapılmadan devredilmez; öğrenciye kural anlatılmaz.
 
 Sıra önemli: fiyat yükseltmek tavan hareketidir, satış hızını artırmak değil. Tavana gelmiş kişi daha çok aramaz, daha pahalı satar.

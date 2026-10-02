@@ -6,7 +6,7 @@ description: "Birinci gün, ideal müşteriden hemen sonra, tekliften önce. İ�
 
 # konumlandir
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "konumlandir"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -83,7 +83,7 @@ Cümle bitince: "Konumlandırma tamam. Sırada teklif var, onu bu cümlenin üst
 
 İş Beyni'nin dördüncü bölümüne: "Konumlandırma cümlesi (uzun, kısa, itiraz cevabı)" satırı, tarihiyle, üç parçası birden. Konum İş Beyni'ne değil durum kaydına yazılır.
 
-Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `konum` (kisa: telefonda söylenen kısa hali, uzun: uzun hali); sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `konum` (kisa: telefonda söylenen kısa hali, uzun: uzun hali); sonra aracın `panel --yukle` komutu sessiz çalışır. Zamanı: onay sorusunu yazmadan önce, aynı turda, taslak olarak (öğrenci onaylarken Ajansım'ın Fark kutusunda da görür); onaydan sonra değişen varsa aynı alan güncellenir. Mesajda yalnız kısa hali veriyorsan uzun hal için "Uzun hali panelde, Ajansım'daki Fark kutusunda" dersin ve itiraz cevabını mesajda tırnak içinde verirsin; panele ya da dosyaya gitmemiş bir şey için "yazdım" denmez.
 
 ## 8. Yedek yol
 

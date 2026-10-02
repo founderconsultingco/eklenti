@@ -6,7 +6,7 @@ description: "Üçüncü günün akşamı, sistemin ilk mesajı. Sonra her gün:
 
 # tanidiga-mesaj-yaz
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "tanidiga-mesaj-yaz"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -147,7 +147,7 @@ Bedava yapmak isterse: "Hayır. Parasını ödemeyen müşteri giriş izni vermi
 Yalvarma cümlesi kurarsa: "O cümleyi çıkarıyoruz. Sana acıyan kişi seni kolluyor, müşteri bağlamıyor."
 Cevap gelmeyince: "İki gün sonra tek mesaj, sonrası yok. Sıcak çevrede ısrar ilişkiyi yıpratıyor."
 Metni değiştirmek isterse: "Elli mesajdan önce dokunmuyoruz. Otuz mesajın cevabı metnin iyi mi kötü mü olduğunu söylemiyor."
-Bitince: "İlk mesajlar gitti. Bir sonraki blokta adayların hızlı denetimi ve profiller; sıcak mesajlar arka planda devam ediyor. Bugünlük bu kadar, yarın görüşürüz."
+Bitince: "İlk mesajlar gitti. Yarın adayların hızlı denetimi ve profilin; sıcak mesajlar arka planda devam ediyor. Bugünlük bu kadar, yarın görüşürüz." Aynı turda panele odak `bitti` gider (not: "Tanıdıklarına ilk mesajlar gitti."; sonraki: "Günaydın").
 
 ## 7. Ne yazar
 
@@ -167,7 +167,7 @@ Bir sonraki modüllere: çıkan randevular gorusmeye-getir'e, sıcak sayılar ra
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: bir sonraki blok, adayların hızlı denetimi ve profiller. Bugünlük bu kadar, yarın görüşürüz.
+Sıradaki: yarın, denetim ve prova günü: adayların hızlı denetimi ve profiller. Bugünlük bu kadar, yarın görüşürüz.
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Üçüncü blok bitiyor, ilk mesajlar gitmedi: blok kapanmaz. Bu mesaj ertelenmeyen tek iştir; metin hazırsa gönderme on dakikadır, gitmeden gün bitmez.

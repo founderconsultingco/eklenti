@@ -6,7 +6,7 @@ description: "İlk ödeme geldiğinde, müşterinin birinci günü. Karşılama,
 
 # musteriyi-karsila
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "musteriyi-karsila"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -271,6 +271,7 @@ Beklenti cümlesi: "İlk günler sessiz gelebilir, kurulum yapıyorum. Altıncı
 Bilgi dosyasına: karşılama formunun cevapları, görüşme kaydından çıkan notlar, alınan ve alınamayan izinler, tek muhatap, iletişim kanalı ve haftalık görüşme günü, listenin nerede durduğu ve ne zaman geleceği, beklenti cümleleri, nişin sınırı yüzünden açılmayan parça ve sonucu (tek sakin satır, kaynaksız; bu dosyayı öğrenci de okur), müşteri bölümünün aylık bedeli, CRM bağlantısının iki bölüme yenilendiği tarih.
 CRM'e: kurulum görüşmesi yapıldı ve tarihi, kayıt izni var mı, izin durumu, liste durumu, [21/28] günün başlangıç tarihi ve şart geç yerine getirildiyse kayan tarih, kayan aylık tahsilat günü, haftalık görüşme günü.
 Niş kartının Sahadan dolacak bölümüne: listenin bu nişte gerçekte nerede durduğu, telefonu kimin açtığı, Google ve Instagram hesabının kimde olduğu. Kartta boş duran satırlar ilk müşteriden sonra dolar.
+Panel dosyasına (`.founderos/panel/teslimat.json`, şeması `founderos:panel-vitrini`'de): müşterinin satırı, para hesaba geçtiği gün, karşılama mesajıyla aynı turda açılır (ertesi güne kalmaz): `ad` (işletmenin adı), `baslangic`, `rapor_gunu` (şart geç geldiyse kayan tarih), `aylik` (onay belgesindeki aylık ücret, sayı; panelin Her ay gelen kartı bundan toplar), `evre` (`karsilama`, kurulum görüşmesinden sonra `kurulum`), `bilgiler` (toplanacak on bir bilgiden gelen), `siradaki`; sonra aracın `panel --yukle` komutu sessiz çalışır. Öğrenci müşterinin gününü Bugün'deki Teslimat kartında görür.
 
 ## 8. Yedek yol
 

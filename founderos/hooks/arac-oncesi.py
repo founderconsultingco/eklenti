@@ -2,7 +2,7 @@
 """FounderOS PreToolUse kancasi.
 
 adaylar.csv'nin aday araci disinda elle degistirilmesini engeller. Aday
-listesi 46 sutunlu, tekrar eleme ve tarih hesaplari aracin icinde; elle
+listesi 47 sutunlu, tekrar eleme ve tarih hesaplari aracin icinde; elle
 yazilan tek satir listeyi bozuyor. Engellenen islemde cikis kodu 2 ve sebep
 stderr'e gider; Claude araci kullanarak yeniden dener.
 """

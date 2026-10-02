@@ -6,7 +6,7 @@ description: "Metinler dördüncü gün, saha altıncı günden itibaren her gü
 
 # adaya-mesaj-yaz
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "adaya-mesaj-yaz"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -29,13 +29,15 @@ Beşinci günün akşamı ilk soğuk temaslar gider, küçük: on aday. Altınc�
 
 Gün içinde her cevap geldiğinde çalışır. Takip günlerinde takip metnini üretir. Akşam bloğunda kanal durumu ekranını verir.
 
+Öğrenci tek bir işletme için ilk mesajı açıkça isterse ("bu klinik için araştırmada doğruladığın bir gözleme dayanarak kısa bir ilk mesaj hazırla") hangi günde olursa olsun o turda yazılır; dördüncü gün beklenmez. İşletme sohbette son konuşulan işletmedir; satırı aday listesindedir. Ad verilmediyse ve sohbette işletme geçmediyse listenin ilk satırıyla yazılır ve hangisi olduğu ilk cümlede söylenir (öğrenci panelde hangi işletmeyi açtığını sohbete yazmadıkça göremezsin). Denetim kartı yoksa önce yalnız o işletmenin hızlı denetimi yapılır (aday-denetimi-cikar; satırın ipuçları, yorum alıntısı, reklam sütunu, saatler, sitesi), en güçlü bulgu oradan seçilir. Gözlem yalnız kayıtta görülen şeydir; akşam testi yapılmadıysa "aradım" yok, kayıp ve hasta sayısı yok, ilk mesajda bağlantı yok, tek soru. Bulgu, kanca ve metin adayın satırına aday aracıyla yazılır (`guncelle "<işletme>" yuz=evet bulgu=... kanca=... dm_metni=...`; e-postaysa `eposta_konu` ve `eposta_metni`), sonra `panel --yukle`: Mesajlar'daki Truva mesaj stüdyosu ve Adaylar'daki kartı oradan dolar.
+
 Günlük süre üç saat elli dakika: ana kanalın elli teması yaklaşık seksen beş dakika, diğer iki kanalın kırkı altmış beş dakika, on video mesaj seksen dakika (ilk hafta beş video, altmış dakika). İşin yanında bir buçuk saat: yirmi temas otuz dört dakika, on altı temas yirmi altı dakika, dört video otuz iki dakika. Takip onayı ve gelen cevaplara dönüş saha bloğunda değil sabah bloğunda, yirmi beş dakika.
 
 ## 3. Ne okur
 
 **Denetim kartından (aday-denetimi-cikar), üç satır. Mesajın gövdesi budur.**
 - EN GÜÇLÜ BULGU: tek cümle, o adayda gerçekten görülmüş şey. Truva Atı'nın gözlemi budur.
-- LİRA KARŞILIĞI: kayıp birimi çarpı kartın rakamı, tek satır hesap. Görüşmeden önce hiçbir temasta, hiçbir kanalda söylenmez; görüşmeye saklanır.
+- LİRA KARŞILIĞI: kartın kaçan talep satırından çıkan, ayda kaçan müşteri sayısı çarpı müşteri değeri, tek satır hesap. Görüşmeden önce hiçbir temasta, hiçbir kanalda söylenmez; görüşmeye saklanır.
 - SIRADAKİ KANAL: telefon, e-posta, Instagram ya da video.
 
 Bu üç satır yoksa mesaj yazılmaz, aday aranmaz. Kartın altıncı ve yedinci satırı (akşam testi ve yazılı test) da okunur: "aradım", "yazdım", "formu doldurdum" cümlesi yalnız oradan kurulur.
@@ -68,7 +70,7 @@ Yedi adım:
 2. **Mevcut düzenini anlamak için tek soru sor.** "Bu saatlerde gelen randevu taleplerine nasıl dönüş yapıyorsunuz?" Tek soru; sorgu değil, cevabı onun ağzından almak.
 3. **Dinle.** Cevabı ne olursa olsun sonraki cümlenin malzemesi odur. Telefonda araya girmezsin. Yazıda cevabı onun kelimeleriyle geri söylersin.
 4. **Çözümü tam o noktaya bağla.** "Sabah geri arıyoruz, bazen ulaşamıyoruz" dediyse sistemin tamamını değil, o noktaya dokunan parçayı söylersin: "Kurduğum sistem tam orada çalışıyor: telefona yetişemediğinizde arayana kısa süre içinde mesaj gidiyor, ne için aradığını soruyor ve uygun saati takvime yazıyor." Sesli örneğin İş Beyni'nde "kuruldu" yazıyorsa cümle telefon tarafıyla söylenir: "O aramayı o anda karşılıyor, soruları cevaplıyor ve uygun saati takvime yazıyor." Hangi parçanın söyleneceğini aşağıdaki işlev listesi verir.
-5. **Çalışan örneği teklif et.** "İsterseniz çalışan örneğini göndereyim, bir müşteri gibi deneyin." Örnek, tarayıcı demosudur: tanıtım sayfanın adresi, sonunda `/demo`. Demo sayfasında konuşma düğmesi açıksa "arayan bir müşteri gibi konuşup deneyin" dersin. Telefondaysan izin gelince bağlantıyı hemen, izin verdiği kanaldan (WhatsApp ya da e-posta) gönderirsin, o anda dener; bu gönderimin iznini kendisi verdi, soğuk mesaj sayılmaz. Yazılı kanalda "evet", "gönderin" gelince gider. Gönderirken dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle kurulur."
+5. **Çalışan örneği teklif et.** "İsterseniz çalışan örneğini göndereyim, bir müşteri gibi deneyin." Örnek, adaya özel demodur: veri bağlantısının `demo_olustur` aracı (işletmenin adı, varsa Instagram'ı) o işletmenin adıyla karşılayan bir bağlantı verir; öğrenci aynı şeyi panelde Adaylar'daki Tek Tıkla Demo'dan da yapar (kanitini-hazirla). Araç çalışmazsa tanıtım sayfanın tarayıcı demosu (adresin sonunda `/demo`). Tanıtım sayfası yayında değil diye örnek geri çevrilmez; aday "örnek görebilir miyim" dediyse izin gelmiştir, bağlantı o cevapla gider. Demo sayfasında konuşma düğmesi açıksa "arayan bir müşteri gibi konuşup deneyin" dersin. Telefondaysan izin gelince bağlantıyı hemen, izin verdiği kanaldan (WhatsApp ya da e-posta) gönderirsin, o anda dener; bu gönderimin iznini kendisi verdi, soğuk mesaj sayılmaz. Yazılı kanalda "evet", "gönderin" gelince gider. Gönderirken dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle kurulur." Adaya giden mesajda yalnız çıplak demo adresi durur. Öğrenci göndermeden önce kendisi bakacaksa aracın cevabındaki `onizleme` adresini verirsin (alan yoksa adresin sonuna `?onizleme=1`); çıplak adresi kendisi açarsa adayın açtığı sayılır ve "Demoyu açmışsınız" takibi açmamış adaya gider.
 6. **İzin gelince kısa ekran videosu ve görüşme daveti.** Örneği açmadıysa, "nasıl çalışıyor" diye sorduysa ya da kararı başkasıyla konuşacaksa bir iki dakikalık ekran videosu çekilir: onun sayfası, konuştuğunuz ihtiyaç, demoda test randevusu, sonunda tek saatli görüşme daveti. Metnini ve çekimini video-mesaj-cek yönetir (izinden sonraki demo videosu). Video gerekmiyorsa davet örnekten sonra yazıyla gider: "Sizin işletmenizde nasıl kurulacağını yirmi dakikada göstereyim; yarın on bir uyar mı, uymazsa siz saat söyleyin."
 7. **Takibi kaydet.** İlgilenen ama henüz karar vermeyen adayın takip tarihi o gün aday aracıyla satırına yazılır; sıradaki hareket boş kalmaz.
 
@@ -678,7 +680,7 @@ Panel dosyasına (`.founderos/panel/mesajlar.json`, şeması `founderos:panel-vi
 - Denetimi hazır aday sayısı o günün temas sayısını karşılamıyorsa: kaç denetim varsa o kadar temas yapılır. Denetimsiz aday hiçbir koşulda aranmaz.
 - Kartta lira karşılığı boşsa hiçbir metin değişmez: lira zaten hiçbir ilk temasta söylenmiyor, görüşmede işletmecinin sayısıyla kuruluyor.
 - Adayın akşam testi yapılmamışsa: "aradım" cümlesi hiçbir kanalda kurulmaz; gözlem kartın başka satırından gelir, o da yoksa açılış soruya döner.
-- Demo henüz yayında değilse: çalışan örnek teklif edilmez; cevap veren adaya ekran paylaşımıyla görüşmede gösterilir, davet saatle gider.
+- Tanıtım sayfasının demosu yayında değilse çalışan örnek adaya özel demodur (`demo_olustur`, panelde Tek Tıkla Demo). İkisi de çalışmıyorsa çalışan örnek teklif edilmez; davet saatle gider. Görüşmede ekran paylaşılmaz: kanıt deneme aramalarının sayımıdır, yüz yüze görüşmede aday demoyu senin telefonunda dener; demo yayına çıkınca bağlantı izinle gider.
 - Kanal durumu ekranı açılmıyorsa: durumlar o akşam tek tek adayın kaydından okunur, ekran ertesi gün düzeltilir. Kayıt tutulmayan gün olmaz.
 - E-posta adresin henüz alışmamışsa e-posta sınırı düşer, telefon artar. Eski bir Gmail adresin varsa yirmi e-posta oradan gider.
 - Instagram hesabın yeniyse kanal kapanmaz, rampanın ilk basamağından başlar (günde beş) ve eksik kalan temas sayısı önce e-postaya, e-postanın sınırı da doluysa telefona geçer. Hesabın hiç yoksa o gün açılır; fotoğraf, biyografi ve dokuz paylaşım konunca aynı rampa işler.

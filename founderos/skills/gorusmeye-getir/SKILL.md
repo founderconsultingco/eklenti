@@ -6,7 +6,7 @@ description: "Öğrenci \"randevu aldım\", \"yarın görüşme var\" dediğinde
 
 # gorusmeye-getir
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "gorusmeye-getir"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -26,6 +26,8 @@ CRM'den okur: randevu kaydı (aday, saat, kanal, sahibinin adı, işletme), aday
 Sormaz. Randevu telefonda alınırken adaydan istenen üç şeyi, adaya-mesaj-yaz modülünün arama metnine bu modül yazar (aşağıda "Telefondayken" bölümü). Sana sorulmaz, söylenir.
 
 ## 5. Ne yapar
+
+**Her randevuda ilk iş: panel ve kayıt.** Öğrenci "randevu aldım" dediğinde (ya da panodan "görüşme ayarladım" geldiğinde) önce panele odak (`odak_yaz`) gider: `basladi` (`is`: gorusmeye-getir; not: randevunun günü ve saati işletmenin adıyla, tek cümle; sahibinin adı yazılmaz). Panelde Adaylar'ın Aday panosu açılır. Aynı turda randevu aday listesine yazılır (`temas <işletme> --randevu "<gün saat>"`), sayaç ve durum kaydı güncellenir, `durum_yaz` gider (aşağıda, "Ne yazar"), adaya gidecek mesaj hazırlanır. İş bitince odak `bitti` (not: "Randevu kayıtta: <gün saat>, <işletme>."; sonraki: "Prova yapalım"). Provaya geçilince odak gorusme-provasi-yap'ın `basladi`sıyla geçer; kart eski işte kalmaz.
 
 **A. Kurulum, CRM açıldığı gün (tek sefer).** Randevu takvimini o gün ekip açar, hesabını açarken; hazır pakette gelmiyor, çünkü takvim bir kişiye bağlı açılıyor ve o kişi sensin. Sayfanın yazısı, hatırlatma akışı ve EVET akışı hazır paketten geliyor.
 
@@ -80,11 +82,11 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
 - Randevu alınınca hemen: "Merhaba [Ad] Bey, ben [öğrenci], [gün] [saat] görüşmemiz kayıtta. Görüşmeden önce şu üç dakikalık videoyu izleyin, sonra EVET yazın, yerinizi kesinleştireyim." Link WhatsApp ve e-postada.
 - 24 saat önce, insan yazmış gibi, kendiliğinden gitmiş görünmeyen: "[Ad] Bey, ben [öğrenci]. Yarın [saat] konuşuyoruz, takvimde görüyorum. Geleceğinizi bir 'tamam' ile yazar mısınız?" Randevu yirmi dört saatten yakınsa bu mesaj, randevu alındıktan iki saat sonra ya da aynı akşam 20.00'de gider.
 - Görüşmeden iki saat önce, tek satır, senin elinden. Bu mesajın işi hatırlatmak değil, merak bırakmak: "yarın konuşuyoruz" diyen mesaj cevapsız kalıyor, "baktım, iki şey not ettim" diyen mesaja cevap geliyor ve cevap veren adam geliyor. Dört hali var ve hangisini kullanacağın gerçekten ne yaptığına bağlıdır, hiçbiri uydurulmaz.
-  - Gerçekten baktıysan: "[Ad] Bey merhaba. Bugünkü görüşme için sitenizdeki randevu akışına baktım, iki nokta not ettim. [Saat]'te ekranda gösteririm."
+  - Gerçekten baktıysan: "[Ad] Bey merhaba. Bugünkü görüşme için sitenizdeki randevu akışına baktım, iki nokta not ettim. [Saat]'te anlatırım."
   - Gerçekten rakiplere baktıysan: "[Ad] Bey merhaba. Bölgenizdeki dört [niş] işletmesinin telefon ve mesaj akışına baktım. Sizin tarafta uygulanabilecek belirgin bir fark var. [Saat]'te birlikte bakalım."
   - Özel bir hazırlık yapmadıysan merak uydurulmaz, düz yazılır: "[Ad] Bey merhaba. Bugün [saat]'te görüşüyoruz. Birkaç kısa soruyla başlayacağım, sonra size uyan akışı göstereceğim."
   - Aday çalışan örneği gerçekten denediyse: "[Ad] Bey merhaba. Denediğiniz örneği [saat]'te sizin randevu akışınıza göre göstereceğim."
-  Hangi hal gidecekse o iş gerçekten yapılmış olmalı; yapılmamış hazırlık, bakılmamış rakip, denenmemiş örnek yazılmaz (Truva Atı'nın kuralı burada da geçer). Adam "ne buldunuz" diye yazarsa telefonda anlatmazsın: "Ekranda göstermem daha kolay, [saat]'te bakalım." Bulduğun şeyi mesajda anlatırsan görüşmeye gelme sebebi kalmıyor.
+  Hangi hal gidecekse o iş gerçekten yapılmış olmalı; yapılmamış hazırlık, bakılmamış rakip, denenmemiş örnek yazılmaz (Truva Atı'nın kuralı burada da geçer). Adam "ne buldunuz" diye yazarsa mesajla anlatmazsın: "Görüşmede anlatmam daha kolay, [saat]'te konuşalım." Bulduğun şeyi mesajda anlatırsan görüşmeye gelme sebebi kalmıyor.
 - 43 dakika önce, kendiliğinden, yalnız e-posta: "43 dakika sonra görüşüyoruz, uygun mu?" Neden kırk üç? Yuvarlak saat kendiliğinden giden mesaj gibi görünür; tuhaf rakam insan yazmış gibi durur. Görüntülü görüşmeyse arama linki bu mesajda olur. Telefonla görüşmeyse "sizi ben arayacağım" yazar. Ayrı "1 saat önce" mesajı yok; 43 dakika mesajı onun yerine geçer.
 - İlk 20 randevuda ve soğuk telefonla (aday seni hiç tanımazken aranarak) alınmış randevularda, EVET gelmediyse iki saat önceki mesajın yerine sen ararsın: "Bugün üçte görüşüyoruz, hazır mısınız? Şu iki rakamı yanınızda bulundurun." EVET geldiyse aramazsın, mesaj gider.
 - Görüşmeden bir saat sonra gidecek mesaj bu modülün değil, gorusmeyi-analiz-et modülünün işidir. O mesaj yalnızca görüşme "düşüneyim" ile bitip karar görüşmesi hattayken tarihlendiyse gider; tek satırlık teyittir.
@@ -130,6 +132,8 @@ Hangi hatırlatma hangi pencerede gider. E-posta tarafı her durumda CRM'den ken
 
 Randevu düşünce sana: "Randevun var: Ahmet Bey, yarın on birde. Üç şey gitti: davet, video, EVET isteği. Senin işin tek. Bu akşam Ahmet Bey EVET ya da 'tamam' yazdıysa dokunma. Yazmadıysa sabah bloğunda ara: 'Bugün on birde görüşüyoruz, hazır mısınız? Şu iki rakamı yanınıza alın.' E-postalar CRM'den kendiliğinden gidiyor; WhatsApp'ı sen atıyorsun, iki mesaj: bir gün önce ve iki saat önce. Prova bugün akşam bloğunda."
 
+CRM açılmadıysa (davet, e-posta ve EVET akışı yok) aynı anda öğrenciye gidecek mesajın metni sohbete dolu yazılır; "davet ve EVET mesajı gitsin" deyip metni vermemek yok: "Randevun kayıtta: Ahmet Bey, yarın on bir. Şu mesajı şimdi WhatsApp'tan at: 'Merhaba Ahmet Bey, ben [adın]. Yarın saat on birde görüşmemiz kayıtta. Saati buradan yazıyorum, uygunsa bir tamam yazar mısınız?' Tamam yazarsa dokunma; yazmazsa sabah bloğunda ara." Satış videon varsa linki bu mesaja eklenir; yoksa video cümlesi hiç geçmez. Randevu telefondaki saha ekranından kaydedildiyse onay mesajı orada çıktı ("... EVET yazın, yerinizi kesinleştireyim."); sohbette ikinci, başka bir metin verilmez, iki ayrı mesaj öğrenciyi şaşırtır. O zaman tek cümle: "Telefondaki onay mesajını işletmenin cep numarasına gönder; numara sabit hatsa görüşmede cep numarasını iste."
+
 İşin yanında çalışan öğrenciye, randevu saati verilirken: "Saha bloğun sekiz buçukta bitiyor. Görüşmeyi oraya değil, hemen arkasına koyuyoruz: yarın sekiz buçuk. Adaya iki saat söyle, üçüncüsünü söyleme: yarın sekiz buçuk mu, cumartesi bir mi? Aramanın saatini görüşmeye yedirmiyoruz; bu akşam yine on arama var."
 
 Gelmeyen randevuda: "Ahmet Bey gelmedi. Şimdi ara; açmazsa şu mesaj hazır. İki gün sonra tek takip, sonra 'sonra' aşaması. Suçlu hatırlatma değil, randevunun alınış şekli. Otuz randevu dolunca bakarız; şimdi sıradaki arama."
@@ -139,6 +143,8 @@ Otuz randevudan sonra gelme oranı yüzde ellinin altındaysa: "Otuz randevu, on
 ## 7. Ne yazar
 
 CRM'e yazar: randevu durumu (onaysız; EVET gelince onaylı; sonra geldi ya da gelmedi), hatırlatma gönderim kayıtları (bunları kendiliğinden giden mesaj sistemi yazar), erteleme sayısı, sözlü onay notu, gelmeme sebebi (sen söylersen). Aşama satırı ayrıdır; adaya-mesaj-yaz modülünün kuralıyla yazılır. İş Beyni'ne yazar: gelme oranı (otuz randevuda bir güncellenir), ön görüşme sayfasının ve videonun adresi, randevu takviminin adresi (takvim CRM açıldığı gün kurulur, adresi aynı gün İş Beyni'ne yazılır), hangi hatırlatmaya cevap geldiği. Niş kartının "sahadan dolacak" bölümüne yazar: bu nişte gelme oranı ve işletmecinin gerçekten müsait olduğu saat. Kartlarda bu bilgi yoktur; ilk gerçek bilgi buradan gelir. Onay: hazırlık günü kurulum ve şablon metinleri senin "tamam" demenle geçer. Sonrasında hatırlatmaların e-postası onaylı metinden kendiliğinden gider; bu, onaylanmış e-posta takipleriyle aynı istisnanın içindedir. WhatsApp hatırlatmaları, arama ve gelmeyen randevu mesajı her zaman senin elinden çıkar.
+Durum kaydına yazar (`.founderos/durum.json`; veri bağlantısı açıksa `durum_yaz` ile sunucuya da): randevu hangi kanaldan gelirse gelsin sayılır. Saha ekranında o adaya bugün Randevu'ya basıldıysa sayaca akşam kapanışı ekler (sonuç satırından), o an ayrıca sayılmaz. Başka her yoldan gelen randevu (WhatsApp, Instagram, e-posta, geri dönen arama, tanıdık, panodaki "görüşme ayarladım") o anda `sayaclar.randevu`ya bir eklenir, İş Beyni'nin koşan toplamı güncellenir ve `durum_yaz` gider; panelin sayacı buradan okunur, gitmezse panel aday listesinden eksik gösterir. Emin değilsen bugünün `saha_sonuclari`na bakarsın: o işletmenin satırında randevu varsa akşam sayılır. Saat değişikliği yeni randevu sayılmaz.
+Aday listesine yazar (aday aracıyla, CRM açık olsa da): randevunun günü ve saati `temas <işletme> --randevu "<gün saat>"` ile. Saat değişince (öğrenci "X'i sekiz buçuğa aldım" der, aday erteler) yeni saat o anda aynı komutla yazılır; İş Beyni'ne ya da günlüğe yazmak yetmez, panelin Aday panosu, saha ekranının randevu satırı ve ertesi sabahın planı listeden okur. Yazılmayan saat ertesi sabah çakışma diye yeniden sorulur.
 
 ## 8. Yedek yol
 

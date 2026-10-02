@@ -23,7 +23,9 @@ Gerçek bir sipariş büyüklüğü örneği: Sivas'ta bir Kelebek Mutfak bayisi
 
 Kapasite (günde/ayda kaç iş çıkarılabildiği) için sektörün kendi ağzından somut bir rakam bu oturumda bulunamadı; bilinmiyor, sahadan dolacak. Ama fiyat büyüklüklerinden çıkan hesap net: bir mutfak veya komple tadilat siparişi, işletmenin aylık cirosunun büyük bir dilimi (bazen tek başına ayın cirosu). Yani kaçan tek bir teklif, işletmecinin diliyle "bir ayın işi" demek olabilir; bunu doğrulayacak birebir alıntı sahadan toplanmalı.
 
-Kayıp birimi: 50.000 ile 350.000 lira (bir kayıp teklif, kartın diliyle "bir ayın işi"; alt uç kartın komple banyo tadilatı fiyatı, üst uç kartta geçen 350.000 liralık mutfak dolabı siparişi).
+Kayıp birimi: 50.000 ile 200.000 lira (bir müşteri: komple banyo ya da mutfak işi; kartın komple banyo tadilatı 50.000-200.000, üst uçta kartta 350.000 liralık mutfak dolabı siparişi de var; kartın diliyle kaçan tek teklif bir ayın işi).
+
+Kaçan talep: ayda 10 talep, yüzde 10'u müşteri olur (tahmin: soranların çoğu üç dört firmaya birden yazıyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Birincisi, teklif verilip müşterinin sessizce kaybolması. Aynı teklif pazaryerinde esnafın kendi cümleleri: "verdiğiniz her teklif için para ödediğinizi düşünce zaten bu ihtimal kaçınılmaz" ve "teklif verip mevzuyu anlatmışsınızdır, 'hmm ben bir düşüneyim' diyip kapatır" ([eksisozluk.com/armut-com](https://eksisozluk.com/armut-com--3138412?p=33)). Yüksek bedelli ve uzun kararlı bu nişte bu çok daha keskin: müşteri 3-4 firmadan teklif alıp haftalarca/aylarca düşünüyor, arayan ilk firma değil son hatırlatan kazanıyor. Somut örnek: bir iç mimarlık firmasında (Decorhub) keşif yapılıp teklif verildikten sonra müşteri, teklif bütçesini aştığı için kendi başına tasarım yapmaya yönelmiş ve iş kaybolmuş ([sikayetvar.com/ic-mimar](https://www.sikayetvar.com/ic-mimar)), yani itiraz/bütçe farkı ortaya çıktığında geri dönüp pazarlık/alternatif sunan olmamış.
 
@@ -79,7 +81,7 @@ En güçlü üç itiraz: gelip görmeden fiyat söyleyemem, ben zaten dönerim u
 
 Açılış sürümü: 3
 
-Açılış sorusu: "Keşfe gidip teklif verdiğiniz de 'bir düşüneyim' deyip bir daha dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa o teklifler telefonunuzda öyle mi duruyor?"
+Açılış sorusu: "Keşfe gidip teklif verdiğiniz hâlde 'bir düşüneyim' deyip bir daha dönmeyen müşterileri sonradan siz mi arıyorsunuz, yoksa o teklifler telefonunuzda öyle mi duruyor?"
 
 İşleyiş sorusu: "Siz keşifteyken ya da imalattayken WhatsApp'tan ya da siteden 'mutfak dolabı kaç para' diye yazan müşteri ne yapıyor, cevabı bekliyor mu, üç dört firmaya birden mi yazıyor?"
 
@@ -89,7 +91,7 @@ Ne yaptığın: "Ben tam bunun için bir sistem kuruyorum: siz keşifteyken tele
 
 Karşı taraf bunu söylerse:
 
-- "Zaten müşteri az, teklif kaybı diye bir şeyim yok." Söyle: "Müşteri azken kaçan tek teklif daha çok acıtıyor, onun için arıyorum. Geçen ay keşfe gidip teklif verdiğiniz de sessizce kaybolan bir müşteri oldu mu, yoksa hepsi cevap verdi mi?" Ne için: teklif kaybını iddia etmemek, ona sormak; kartta tek bir mutfak siparişinin ayın işinin büyük bölümü olabildiği yazıyor, bunu sen söylemezsin. Sonra: "oldu" derse "işte o teklif için kuruyorum" de ve saat iste; "hepsi cevap verdi" derse teşekkür et, kapat; FounderOS "sonra" yazar.
+- "Zaten müşteri az, teklif kaybı diye bir şeyim yok." Söyle: "Müşteri azken kaçan tek teklif daha çok acıtıyor, onun için arıyorum. Geçen ay keşfe gidip teklif verdiğiniz hâlde sessizce kaybolan bir müşteri oldu mu, yoksa hepsi cevap verdi mi?" Ne için: teklif kaybını iddia etmemek, ona sormak; kartta tek bir mutfak siparişinin ayın işinin büyük bölümü olabildiği yazıyor, bunu sen söylemezsin. Sonra: "oldu" derse "işte o teklif için kuruyorum" de ve saat iste; "hepsi cevap verdi" derse teşekkür et, kapat; FounderOS "sonra" yazar.
 - "Fiyatı telefonda, mesajda söyleyemem, gelip görmem lazım." Söyle: "Söylemiyor, haklısınız; metrekaresi, malzemesi görülmeden bu işte fiyat verilmez. Sistem mutfak mı banyo mu komple daire mi, kaç metrekare, düşündüğü bütçe aralığı ne diye soruyor, fotoğraf isteyip kayda ekliyor ve size uygun güne keşif randevusu yazıyor; fiyatı yerinde siz söylüyorsunuz. Böyle olsa işinize yarar mı?" Ne için: fiyat kaygısını kabul edip sistemin bu nişte ne topladığını kartın asistan kurallarıyla söylemek. Sonra: "yarar" derse saat iste; "istemem" derse teşekkür et ve kapat.
 - "Ben zaten dönerim, unutmam." Söyle: "Güzel, çoğu dönemiyor. Keşif yapıp teklif verdiğiniz müşteriye 'şu gün arayacağım' dediğinizde o gün siz mi arıyorsunuz, yoksa o sırada başka bir işin ortasında mı kalıyor?" Ne için: niyeti tartışmamak, dönüşün gerçekte ne zaman gittiğini sormak; kartta şikayetlerin en büyük temasının "net tarih verilmiyor, dönüş yok" olduğu yazıyor, bunu sen söylemezsin, ona söyletirsin. Sonra: "ben arıyorum" derse teşekkür et, "yoğunluk artarsa bir kez daha arayabilir miyim" de, kapat; FounderOS "sonra" yazar. "Kalıyor" derse: "İşte o kalan arama için kuruyorum" de ve saat iste.
 - "Karar süresi zaten uzun, aceleye getirmek istemem." Söyle: "Acele ettirmiyor zaten, baskı yok; müşteri haftalarca düşünürken arada bir nazikçe 'sorunuz var mı, yardımcı olabilir miyim' diye soruyor. O haftalar boyunca müşteri sizden mi haber alıyor, yoksa teklif aldığı öbür firmadan mı?" Ne için: uzun karar süresinin sistemin tam işe yaradığı yer olduğunu kartın diliyle söylemek; rakibin de aynı süreyi beklediğini ve son hatırlatanın kazandığını ona sormak. Sonra: "bizden alır" derse teşekkür et ve kapat; "kimseden" ya da "bilmiyorum" derse görüşme iste.

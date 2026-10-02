@@ -6,7 +6,7 @@ description: "Kaynaklı niş araştırması. Yapay zekâ resepsiyonisti (açılm
 
 # nis-arastirmasi
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "nis-arastirmasi"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -81,6 +81,8 @@ Araştırma ağır iş. Arka plan yardımcısına (founderos:yardimci, Agent ara
 
 **Sıralama.** FounderOS dosyayı okur, ilk üçü aşağıdaki sırayla dizer ve başlangıç nişini seçer.
 
+**Canlı sayım (Pazar Radarı).** Niş henüz seçilmediyse ve şehir belliyse, sıralamanın hemen ardından ilk üçün kartı olanları için sayım çekimi başlar (`founderos:veri-servisi`: sayım, kartın Haritalar kategori adı, şehir, kartın reklam kütüphanesi kelimeleri). İş kimlikleri İş Beyni'nin yedinci bölümündeki "Sayım çekimleri" satırına ve panelin pazar alanına gider (`pazar.sehir`; `pazar.adaylar`: kartın adıyla nişin adı ve `is_id`; `karar` yazılmaz, kararı nisi-sec verir), aracın `panel --yukle` komutu sessiz çalışır, odak (`odak_yaz`) `calisiyor`; ikinci tur bu arada yürür. Tamamlamada hazır olan sayımın ölçüleri aynı satırlara eklenir (şeması panel-vitrini'de), raporun ikinci bölümünden her nişin `problem`'i (araştırılacak somut problem, tek cümle), `sorular`'ı (beş sorudan ilk üçü, birebir) ve kanıt notundan `kaynaklar`'ı (en çok dört bağlantı, adı ve tarihiyle) da yazılır ve yeniden gönderilir; panelin Karşılaştırma tablosu bunlardan dolar. Canlı sayım raporun kaynağı sayılmaz, rapora yazılmaz; panelde ve sohbette durur. Kartı olmayan niş sayılmaz. Niş seçilmişse, şehir yoksa ya da İş Beyni'nde lisans anahtarı yoksa sayım başlatılmaz, `pazar.adaylar`'a dokunulmaz. Aynı niş ve şehrin iş kimliği İş Beyni'nde duruyorsa o kullanılır; nisi-sec de bu kimlikleri kullanır, sayımı yeniden başlatmaz.
+
 **İkinci tur: gerçek işletmeler.** İlk üç nişin her biri için Türkiye'den iki gerçek işletme. Yardımcı dosya yazmaz, altı işletmeyi özetinde döner: adı, şehri, sitesinin bağlantısı, kamuya açık bilgiden neden araştırma adayı olduğu. Her bağlantıyı açıp bakar; arama sonucundaki önizleme yetmez. Açılmayan sitenin işletmesi listeye girmez, yerine başkası bulunur.
 
 **Tamamlama.** FounderOS dosyaya ikinci, üçüncü ve dördüncü bölümü ekler.
@@ -97,7 +99,7 @@ Her niş için:
 
 1. Telefon araması bu işletmelerde müşteri kazanmanın önemli bir parçası mı?
 2. Yoğunlukta ya da mesai dışında cevapsız kalan arama somut bir iş kaybına dönüşüyor mu?
-3. Kazanılan bir ek müşterinin ekonomik değeri bu hizmete ödeme yapmayı anlamlı kılıyor mu?
+3. Kazanılan bir ek müşterinin ekonomik değeri bu hizmete ödeme yapmayı anlamlı kılıyor mu? Ölçü satış videosunun ölçüsü: bir müşteri işletmeye yıl içinde en az 10.000 TL bırakıyor mu (ilk iş ve yıl içindeki tekrar), birkaç kurtarılan müşteri aylık ücreti çıkarıyor mu?
 4. Yeterli talep hacmi ve ödeme gücü var mı?
 5. İşletme sahibine ya da karar vericiye ulaşmak kolay mı?
 6. Sistemi kurmak ve faydasını ölçmek başlangıç seviyesinde uygulanabilir mi?
@@ -218,7 +220,7 @@ Başlangıç önerisinin kanıtı en az sınırlı olur. Sekiz nişin hiçbiri s
 
 Başlarken tek cümle ve aynı mesajda araştırmayı başlatırsın: "Kaynaklı bir niş araştırması yapıyorum, yirmi otuz dakika sürer. Bitince özeti buraya, tamamını klasörüne yazacağım."
 
-Bitince sohbete en fazla dört cümle: önerilen başlangıç nişi, zorluk işareti ve en güçlü gerekçesi, en önemli belirsizlik, raporun yeri, sıradaki iş. Tablo sohbete dökülmez.
+Bitince sohbete en fazla dört cümle: önerilen başlangıç nişi, zorluk işareti ve en güçlü gerekçesi, en önemli belirsizlik, raporun yeri, sıradaki iş. Tablo sohbete dökülmez. Canlı sayım başladıysa ve panel linki yazılıysa raporun yerini söylediğin cümleye eklenir: "tamamı klasöründe, ilk üçün canlı sayımı panelde Pazar Radarı'nda."
 
 Niş seçilmemişse: "Rapor [niş] diyor, sebebi [tek cümle]. Kararı şimdi birlikte veriyoruz." Sonra nisi-sec açılır.
 
@@ -235,7 +237,8 @@ Klasöre: `nis-arastirmasi.md` ya da tarihli adı. Gizli klasöre: `.founderos/n
 İş Beyni'nin on üçüncü bölümüne: ilk beş görüşmede öğrenilecekler, tek satır.
 Niş kartına hiçbir şey yazmaz. Kartla çelişen bulgu İş Beyni'ne yazılır; kartı değiştirmek bu modülün işi değil.
 
-Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `pazar.rapor` (tarih, ilk üç niş ve gerekçesi, öneri); sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `pazar.rapor` (tarih, ilk üç niş ve gerekçesi, öneri); niş seçilmediyse ilk üçün `pazar.adaylar` satırları, `problem`, `sorular` ve `kaynaklar` dahil (Canlı sayım paragrafı); sonra aracın `panel --yukle` komutu sessiz çalışır. Rapordaki problem ve sorular panele birebir geçer; öğrenci ikisini aynı cümlelerle görür.
+Panele odak (`odak_yaz`; panelde Pazar Radarı açılır): başta `basladi` (adım 1/3 "Kaynak taraması"), sıralamada `calisiyor` (adım 2/3 "Sıralama ve canlı sayım"), ikinci turda `calisiyor` (adım 3/3 "Gerçek işletme örnekleri"), rapor ve panel yazılınca `bitti` (sonraki: niş seçilmediyse "Nişimi seçelim", seçildiyse "Devam").
 
 ## 8. Yedek yol
 

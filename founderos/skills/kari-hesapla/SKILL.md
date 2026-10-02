@@ -1,18 +1,18 @@
 ---
 user-invocable: false
 name: kari-hesapla
-description: "Ayda bir. Gelir, gider, kâr marjı, müşteri başına kâr."
+description: "Ayda bir. Gelir, gider, kâr marjı, müşteri başına kâr. \"Kârımı hesapla\" dendiğinde de; araç ve sabit gider panelin Teklif stüdyosuna gider."
 ---
 
 # kari-hesapla
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "kari-hesapla"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
 Ayda bir çalışan modül. Modül, FounderOS'un belli bir işi yapan parçasıdır. Bu modül cebine ne kaldığını hesaplar.
 
-Neden bu iş var: sıfırdan başlayan biri cirosuna bakıp kazandığını sanıyor. "Bu ay 70.000 TL geldi" diyor ama o paranın içinde şirket ve muhasebe gideri, araç abonelikleri ve ödeme komisyonu var. Hepsi çıkınca kalan bambaşka bir rakam.
+Neden bu iş var: sıfırdan başlayan biri cirosuna bakıp kazandığını sanıyor. "Bu ay 70.000 TL geldi" diyor ama o paranın içinde şirket ve muhasebe gideri, yazılım ve abonelik harcamaları ve ödeme komisyonu var. Hepsi çıkınca kalan bambaşka bir rakam.
 
 İkinci sebep: para geldiği ay ile paranın harcandığı ay aynı değil. Kurulum ücreti bir kere geliyor, giderler her ay gidiyor. Üçüncü ayda "iyi gidiyorum" sanan kişi aslında ilk iki ayın kurulum paralarını yemiş oluyor.
 
@@ -55,13 +55,13 @@ O ay hesabına gerçekten geçen para yazılır. Fatura kesilen değil, geçen.
 - Kurulum ücretleri. Bunlar bir kerelik, tekrar etmiyor.
 - Aylık ücretler. Bunlar her ay tekrar ediyor.
 
-Bu ayrım önemli. İki müşteriden gelen paranın büyük kısmı kurulum ücretiyse gelecek ay tekrar edecek olan yalnız iki aylık ücrettir; aylık kurulumun beşte biri olduğu için ilk ayın cirosu tekrar eden gelirin birkaç katı görünür. Kurulum parasını aylık gelir sanmak en sık yapılan hata.
+Bu ayrım önemli. İki müşteriden gelen paranın büyük kısmı kurulum ücretiyse gelecek ay tekrar edecek olan yalnız iki aylık ücrettir; kurulum aylığın üç katından fazla olduğu için (Kademe 2'de 40.000'e 12.500) ilk ayın cirosu tekrar eden gelirin birkaç katı görünür. Kurulum parasını aylık gelir sanmak en sık yapılan hata.
 
 ### Gider
 
 Kalemler sırayla:
 - Şirket ve muhasebe gideri. Tek satır: müşavirin o ay söylediği toplam (vergi, prim ve müşavirin ücreti bir arada). Şirket açılmadıysa bu satır boş durur.
-- Araç abonelikleri: yapay zeka, aday listesi programı, posta kutusu, alan adı. Senin kendi CRM bölümün FounderOS'la birlikte geliyor; ayrı bir fatura gelirse o ay bu satıra yazılır. Tarayıcı demosu ücretsiz.
+- Yazılım ve abonelik harcamaları: yapay zeka, aday listesi programı, posta kutusu, alan adı. Senin kendi CRM bölümün FounderOS'la birlikte geliyor; ayrı bir fatura gelirse o ay bu satıra yazılır. Tarayıcı demosu ücretsiz.
 - Müşteri bölümü: her müşterinin CRM bölümünün aylık bedeli, müşteri başına ayrı. Rakamı ekip bölümü açtığı gün sana yazılı söyledi; o gün bu satıra girdi.
 - Müşteri başına kullanım giderleri, müşteri başına ayrı satırlar: yazılı asistan kullanımı, yorum yanıtları, akış tetikleyicileri (kullanım başına ücretli olanlar), sesli dakika. Sesli dakikanın rakamını ekip yazılı verir; sesli asistan kurulmadıysa sıfır. Bu dört satırın rakamı ilk müşteride ölçülür: sahadan dolacak. Ölçülene kadar satır boş geçilmez, "sahadan dolacak" diye durur ve kâr o ay "kullanım giderleri hariç" etiketiyle yazılır.
 - Ödeme komisyonu. Her tahsilattan kesilen yüzde.
@@ -73,7 +73,7 @@ Toplam çıkarılır.
 
 Gelir eksi gider, kalan kârın. Kârın bölü gelir, kâr marjın.
 
-Burada bir tuzak var: iki tür kâr hesabı dolaşıyor. Biri sadece araç masraflarını çıkarıp "yüzde doksan sekiz kâr" gösteriyor. O rakam gerçek değil, çünkü şirket ve muhasebe gideri onun içinde yok. Bu modül her zaman hepsi çıktıktan sonraki rakamı gösterir.
+Burada bir tuzak var: iki tür kâr hesabı dolaşıyor. Biri sadece yazılım ve abonelik harcamalarını çıkarıp "yüzde doksan sekiz kâr" gösteriyor. O rakam gerçek değil, çünkü şirket ve muhasebe gideri onun içinde yok. Bu modül her zaman hepsi çıktıktan sonraki rakamı gösterir.
 
 ### Müşteri başına kâr
 
@@ -95,7 +95,7 @@ Her ay üç soruya bakılır:
 
 Burada dikkatli olmak lazım, çünkü iki farklı şey karıştırılıyor.
 
-**Yeni müşterilerin fiyatı yükselir.** Kanıt hikâyen çıktıkça, üçüncü müşteriden itibaren tam fiyat. Oranlar değişmez, formül aynı kalır; rakam ancak daha büyük işletmeye satınca büyür. Yeni fiyat yeni müşterilere uygulanır.
+**Yeni müşterilerin fiyatı yükselir.** Kanıt hikâyen çıktıkça, üçüncü müşteriden itibaren tam fiyat (deneme fiyatı biter). Bant ve kademe rakamları otuz görüşme birikmeden değişmez; rakam ancak üst kademe satınca büyür. Yeni fiyat yeni müşterilere uygulanır.
 
 **Mevcut müşterinin aynı hizmete zammı yoktur.** Onun yerine kademe yükseltmesi var: müşteri sonuç görmeye başladıktan sonra, en erken ikinci ayda, üst kademeye geçiş konuşulur. Aldığı iş büyür, ücreti de büyür. Aynı işe daha fazla para istemek değil, daha fazla iş vermek.
 
@@ -131,6 +131,8 @@ O günün günlüğüne (`gunluk/YYYY-AA-GG.md`, ayın son iş günü): ayın ge
 İş Beyni'nin hedef ve para bölümüne: yalnız son değerler; bu ayın kârı, kâr marjı, müşteri başına kâr ve tekrar eden aylık gelir. Eski değer yerinde güncellenir.
 Niş kartına: bu nişte gerçekleşen kurulum ve aylık rakamlar, üçüncü aydan sonra.
 
+Panel dosyasına (`.founderos/panel/ajans.json`, şeması `founderos:panel-vitrini`'de): `teklif.hesap.arac_maliyeti` (bu ayın müşteri başına giderlerinin ortalaması: müşteri bölümü ve ölçülen kullanım; müşteri yoksa yazılmaz) ve `teklif.hesap.sabit_maliyet` (bu ayın gerçek sabit gideri: şirket ve muhasebe tek satır, yazılım ve abonelik harcamaları); `teklif.hesap`'ın öbür alanları ve dosyanın geri kalanı korunur. Sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panele odak (`odak_yaz`; panelde Ajansım'daki Kâr hesabı açılır): başta `basladi`, iki rakamı sormadan hemen önce `bekliyor` (bekleyen: bu ayın iki rakamı; `sonraki` yok), panel yazılınca `bitti` (not: bu ayın kâr hesabı panelde, Kâr hesabı'nda; sonraki: "Devam").
 Aylık hesaplar günlükte üst üste durur, silinmez. Kâr marjının üç ay boyunca nereye gittiği tek tek aylardan değil, sıradan görülür: FounderOS son üç ayın kaydını günlükten yan yana koyar.
 
 ## 8. Yedek yol

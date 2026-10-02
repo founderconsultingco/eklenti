@@ -17,7 +17,9 @@ Müşteri yolculuğu: randevu. Teslimat bu yola göre kurulur; sahada tersi gör
 
 Bu rakamlardan çıkan hesap şu: premium bir berberde bir randevu (komple kesim) 45-60 dakika sürüyor ve 1.000-3.500 TL değerinde. Yani kaçan tek bir randevu, işletmecinin diliyle "bir koltuk saati", doğrudan o saatin cirosu demek. Berberin günde kaç müşteri baktığına dair doğrulanmış bir röportaj bulamadım (bilinmiyor, sahadan dolacak); tek dolaylı kanıt bir müşterinin forum yorumu: 10 yıldır randevu sistemiyle çalışan berberinin "aylık geliri en az 50 bin lira" (forum.donanimhaber.com, müşteri tanıklığı, berberin kendi ağzı değil).
 
-Kayıp birimi: 1.000 ile 3.500 lira (bir koltuk saati; kartın kendi hesabında premium berberde 45-60 dakikalık komple kesim randevusu bu bantta, kadın kuaföründe aynı birim uzun saçta tüm boyada 900 liraya kadar iniyor).
+Kayıp birimi: 4.000 ile 10.000 lira (bir müşteri: yıl içinde sekiz on randevu; kartın B sınıfı saç kesimi 500-600, premium komple kesim 1.000-3.500, kadın kuaföründe uzun saçta tüm boya 900). Tek müşteri on binin altında kalıyor: aylık ücreti çıkarmak için çok müşteri gerekir, niş yalnız çok koltuklu, randevu defteri dolu salonlarla geçer.
+
+Kaçan talep: ayda 20 talep, yüzde 20'si müşteri olur (tahmin: koltuktayken Instagram'dan ve WhatsApp'tan gelen randevu isteği; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Randevu uygulaması olan büyük bir zincirde bile senkron hatası var: San Kuaför Çukurambar şubesinde müşteri online 09:30 randevu almış, işletme saati 10:00'a çekmiş, müşteri geldiğinde dükkan kapalı bulmuş ve 20 dakika dışarıda beklemiş; üstelik online sistemde 650 TL görünen kaş-bıyık fiyatı, mağazada 800 TL çıkmış ve "sistem doğru göstermiyor" cevabı verilmiş (sikayetvar.com, 16 Kasım 2025 tarihli şikayet). Bu, "bizim zaten bir randevu yazılımımız var" itirazına doğrudan cevap: yazılım randevuyu kaydediyor ama gerçek zamanlı tutarlılığı ve fiyat iletişimini garanti etmiyor.
 

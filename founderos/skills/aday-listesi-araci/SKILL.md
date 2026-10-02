@@ -1,17 +1,17 @@
 ---
 user-invocable: false
 name: aday-listesi-araci
-description: "Aday listesi aracinin kurulum dosyalari: adaylar-arac.py ve adaylar-sablon.html, ham dosya olarak bu klasorde ve gomulu olarak icinde. Sadece aday listesi ilk kez cikarken (.founderos klasoru yokken) ve aracin surumu eskiyken acilir; kullanim kurallari aday-listesi-dosyasi'nda."
+description: "Aday listesi aracinin kurulum dosyalari: adaylar-arac.py ve adaylar-sablon.html, ham dosya olarak bu klasorde ve gomulu olarak icinde. Sadece .founderos/adaylar-arac.py henuz yokken (birinci gun panele ilk kez veri gonderilirken ya da aday listesi ilk kez cikarken) ve aracin surumu eskiyken acilir; kullanim kurallari aday-listesi-dosyasi'nda."
 ---
 
 # Aday listesi aracı (kurulum dosyaları)
 
 Bu beceri iki dosya taşır: `adaylar-arac.py` (aday listesi aracı) ve `adaylar-sablon.html` (sayfa şablonu). İkisi bu becerinin klasöründe ham dosya olarak durur; aşağıda da birebir kopyaları var. Kullanım kuralları aday-listesi-dosyasi becerisinde; burası yalnız kurulum ve güncelleme içindir.
 
-Ne zaman açılır: aday listesi ilk kez çıkarılırken (`.founderos/` klasörü yokken) ve `python3 .founderos/adaylar-arac.py surum` çıktısı buradaki sürümden küçükken.
+Ne zaman açılır: `.founderos/adaylar-arac.py` henüz yokken (birinci gün panele ilk kez veri gönderilirken ya da aday listesi ilk kez çıkarken; `.founderos/` klasörü durum kaydı yüzünden birinci günden beri vardır, ona bakılmaz) ve `python3 .founderos/adaylar-arac.py surum` çıktısı buradaki sürümden küçükken.
 
 Kurulum:
-1. Öğrencinin klasöründe `.founderos` adlı klasörü aç.
+1. Öğrencinin klasöründe `.founderos` adlı klasör yoksa aç.
 2. Beceri klasöründeki `adaylar-arac.py` ve `adaylar-sablon.html` dosyalarını oraya kopyala (beceri açıldığında klasör yolu görünür; `cp "<beceri klasörü>/adaylar-arac.py" "<öğrenci klasörü>/.founderos/"` biçiminde). Kopyalama çalışmazsa aşağıdaki iki bloğu aynı adlarla, kısaltmadan, değiştirmeden yaz.
 3. Öğrencinin klasörünün içinde `python3 .founderos/adaylar-arac.py surum` çalıştır. Beklenen çıktı aşağıdaki sürüm. Gelmiyorsa dosya kesik kopyalanmıştır, yeniden yap.
 4. Sayfa şablonunun `</html>` ile bittiğini kontrol et.
@@ -19,7 +19,7 @@ Kurulum:
 
 Öğrenci bu klasörü ve dosyaları görmez, ona anlatılmaz. Komutlar sohbete yazılmaz.
 
-Aracın sürümü: 0.40.0
+Aracın sürümü: 0.42.6
 
 ## `adaylar-arac.py` (birebir)
 
@@ -53,8 +53,11 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
                              reklam_veriyor elle yazılmaz, veri servisinden gelir)
   sil ANAHTAR --sebep "..."  (satırı elenme ile işaretler, silmez)
   bugun [--sayi N] [--planla] [--kanal telefon|yazı]
+                            (günün listesi: cevap verenler, takibi gelenler, denetimi hazır olanlar. İlk temas
+                             yalnız denetimi olan adaya gider: denetimsiz aday listeye ve plana girmez, çıktıda
+                             "denetim bekliyor" diye ayrı durur. İlk satırın altında sahanın kaçıncı günü)
   yuz-sec [--sayi N] [--yorum-ust-siniri N]
-                            (en çok istenen yüzü listeden seçer. Sıra: ilan verenler, reklam verenler,
+                            (en çok istenenleri listeden seçer. Sıra: ilan verenler, reklam verenler,
                              sızıntı puanı, yorum sayısı, ulaşılabilir olanlar. Yorum sayısı üst sınırın
                              üstündekiler listenin sonuna konur. Elle işaretlenmişlere dokunmaz)
   ozet
@@ -67,17 +70,19 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
                              Paketi .founderos/saha-paketi.json'a yazar; --yukle ile servise kendisi yükler
                              ve bağlantıyı basar. Servise ulaşamazsa FounderOS dosyayı saha_yukle ile yükler)
   panel [--yukle] [--anahtar FOS-...] [--adres URL] [--hepsi]
-                            (paneldeki dört bölüm: ajans, adaylar, mesajlar, icerik. adaylar bu listeden hesaplanır;
+                            (paneldeki beş bölüm: ajans, adaylar, mesajlar, icerik, teslimat. adaylar bu listeden hesaplanır;
                              ajans .founderos/panel/ajans.json ile marka kitinin ve sayfanın bloklarından, mesajlar ve
                              icerik .founderos/panel/ altındaki kendi dosyalarından. Bölümleri denetler,
                              .founderos/panel/gonderilecek.json'a yazar; --yukle ile yalnız değişenleri panel_yaz'a
-                             gönderir, --hepsi ile hepsini. Servise ulaşamazsa sessizce geçer, iş durmaz)
+                             gönderir, --hepsi ile hepsini. Servise ulaşamazsa sessizce geçer, iş durmaz.
+                             Pazar ve teklif hesabındaki sayı alanlarını sunucunun biçimine getirir;
+                             ajansın adı yokken pazar, teklif ya da fiyat varsa ajans yine gider)
   surum
 """
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.40.0"
+SURUM = "0.42.6"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -91,6 +96,10 @@ EKLENEN = ["eklenme_tarihi", "kaynak", "baglayan", "yuz", "sahibi", "uygunluk", 
            "son_cevap", "cevap_dali", "zincir_adimi", "acmadi_sayisi", "not", "video_metni"]
 SUTUNLAR = SERVIS + EKLENEN
 ASAMALAR = ["yeni", "temasta", "cevap verdi", "randevu", "görüşüldü", "sonra", "kapandı", "müşteri"]
+# Saha sonucunun geri alamayacagi asamalar (sohbetten gun icinde yazilir).
+ILERI_ASAMALAR = ("randevu", "görüşüldü", "müşteri")
+# Soguk liste disindaki kaynaklar: ilk temaslari denetim beklemez (tanidiga-mesaj-yaz).
+SICAK_KAYNAK = ("tanıdık", "referans", "içerik")
 DURUMLAR = ["yapılmadı", "yapıldı", "cevap geldi", "kapandı"]
 # Video kanalinin bir durumu fazla: Loom videonun izlenip izlenmedigini
 # soyluyor. Izlenme cevap degil ama cevaptan once elimizdeki tek isaret ve
@@ -366,9 +375,13 @@ def sayfa_uret(satirlar=None):
                 ham = _csv_metni(yukle())
         except Exception:
             ham = _csv_metni(yukle())
+    # En cok istenenlerin sayisi duzene bagli: tam zamanlida yuz, isin yaninda kirk.
+    # Sayfanin rozeti ve suzgeci bunu yazar ("Ilk 40"); duzen bilinmiyorsa sayisiz.
+    secim = {"tam": 100, "yan": 40}.get(str(_durum_kaydi().get("duzen") or "").strip(), 0)
     veri = ("window.ADAYLAR=" + json.dumps(ham, ensure_ascii=False) +
             ";window.ADAYLAR_TARIH=" + json.dumps(simdi_metin()) +
-            ";window.ADAYLAR_NIS=" + json.dumps(nis_oku(), ensure_ascii=False) + ";")
+            ";window.ADAYLAR_NIS=" + json.dumps(nis_oku(), ensure_ascii=False) +
+            ";window.ADAYLAR_SECIM=" + json.dumps(secim) + ";")
     veri = veri.replace("</", "<\\/")
     m = sablon.read_text(encoding="utf-8")
     if "/*FOUNDEROS-VERI*/" not in m:
@@ -576,13 +589,19 @@ def servis_istegi(adres, arac, argumanlar):
         raise ServisHatasi("servis cevabı anlaşılmadı")
 
 
-def servis_cagir(adres, arac, argumanlar):
+CEK_YEDEGI = "aday_sonuc ile sayfaları al, .founderos/gelen.csv yaz, ekle komutunu çalıştır"
+SAHA_YEDEGI = ".founderos/saha-paketi.json dosyasını veri bağlantısındaki saha_yukle aracına paket olarak ver"
+
+
+def servis_cagir(adres, arac, argumanlar, yedek=CEK_YEDEGI):
+    """Servise ulasilamazsa cikis 2 ve komutun kendi yedek yolu. Eskiden her komut cekimin
+    yedegini basiyordu; saha paketi yuklenemeyince FounderOS listeyi yeniden cekmeye kalkiyordu."""
     try:
         return servis_istegi(adres, arac, argumanlar)
     except ServisHatasi as e:
         m = str(e)
         if m.startswith("veri servisine ulaşılamadı"):
-            print("HATA: %s. Yedek: aday_sonuc ile sayfaları al, .founderos/gelen.csv yaz, ekle komutunu çalıştır." % m)
+            print("HATA: %s. Yedek: %s." % (m, yedek))
             sys.exit(2)
         hata(m)
 
@@ -724,9 +743,15 @@ def temas_uygula(satirlar, s, kanal, sonuc, durum=None, asama=None, siradaki=Non
     # listesinden tamamen dusuyor ve bir daha hic gorunmuyor: ne takipte, ne
     # "hic aranmamis"ta. Cagiran komut sira vermediyse zincirden hesaplanir.
     # Randevu alindiysa sıradaki adim gorusmenin kendisidir.
-    if s["asama"] == "randevu" and s["randevu_tarihi"] and not s["siradaki_tarih"]:
+    # Yeni randevu verildiyse eski plan ("ilk temas, telefon" gibi) yerinde kalmaz: saha ekrani ve
+    # gunun listesi adayi yeniden aranacak sanmasin. Cagiran sira verdiyse onunki gecerli.
+    yeni_randevu = bool(randevu) and siradaki is None and tarih is None
+    if s["asama"] == "randevu" and s["randevu_tarihi"] and (not s["siradaki_tarih"] or yeni_randevu):
         s["siradaki_hareket"] = "randevu hazırlığı"
         s["siradaki_tarih"] = s["randevu_tarihi"][:10]
+    if randevu and not re.search(r"\d{1,2}[:.]\d{2}", s["randevu_tarihi"]):
+        print("DİKKAT: randevunun saati yok (%s). Saati de yaz: --randevu \"%s SS:DD\"; saha ekranındaki Görüşme satırı saatle çıkar"
+              % (s["randevu_tarihi"], s["randevu_tarihi"][:10]))
     eski_sira = (s["siradaki_tarih"] or "")[:10]
     if acik(s) and not tarih and s["asama"] != "randevu" \
        and (not eski_sira or eski_sira <= bugun().isoformat()):
@@ -843,11 +868,69 @@ def _dokum_yaz(d):
     p.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
 
 
+# Sahanin birinci gunu: ilk soguk temas sonucunun islendigi gun (saha ekraninda
+# basilan ya da yapistirilan sonuc). Panel de ayni gunu sayar (sitede sahaGunSirasi:
+# saha ekraninda sonuc basilan ilk gun). Acilis aksaminin ilk on temasi islendiyse o
+# aksam 1. gundur, ertesi gun 2. gun. Dokum on dort gun tutuldugu icin gun ayri
+# dosyada, bir kez yazilir; daha erken bir gunun sonucu sonradan islenirse o gun olur.
+def _saha_baslangici():
+    p = calisma() / "saha.json"
+    try:
+        g = json.loads(p.read_text(encoding="utf-8")).get("baslangic") if p.exists() else None
+        return datetime.date.fromisoformat(str(g)[:10]) if g else None
+    except Exception:
+        return None
+
+
+def _saha_baslangici_yaz(gun, toplam):
+    if temas_toplami(toplam) <= 0:
+        return
+    eski = _saha_baslangici()
+    if eski is not None and eski <= gun:
+        return
+    p = calisma() / "saha.json"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps({"baslangic": gun.isoformat()}), encoding="utf-8")
+
+
+ARAMA_RAMPASI = (10, 20)
+
+
+def arama_rampasi_bugun(gun=None):
+    """Bugunun arama rampasi (sahanin birinci gunu 10, ikinci gunu 20); rampa yoksa None.
+    Gun saha_gunu_satiri'ndaki satirdan okunur, iki yer ayni sayiyi soyler."""
+    m = re.search(r"bugün en çok (\d+) arama", saha_gunu_satiri(gun))
+    return int(m.group(1)) if m else None
+
+
+def saha_gunu_satiri(gun=None):
+    """'saha günü: 2 (ilk soğuk temas sonucu 2026-09-30) · arama rampası: bugün en çok 20 arama'.
+    Saha açık değilse ve hiç sonuç işlenmediyse boş döner."""
+    g = gun or bugun()
+    bas = _saha_baslangici()
+    if bas is None:
+        # Dokum on dort gunu tutuyor; saha.json'dan onceki surumde islenmis gunler oradan.
+        gunler = sorted(k for k, v in _dokum_oku().items() if isinstance(v, dict) and temas_toplami(v) > 0)
+        bas = _tarih_ya_da_bos(gunler[0]) if gunler else None
+    if bas is None:
+        if not _durum_kaydi().get("saha_acik"):
+            return ""
+        return ("saha günü: 1 (henüz işlenmiş soğuk temas sonucu yok; ilk sonuçların günü birinci gün sayılır) · "
+                "arama rampası: bugün en çok %d arama" % ARAMA_RAMPASI[0])
+    n = max(1, (g - bas).days + 1)
+    satir = "saha günü: %d (ilk soğuk temas sonucu %s)" % (n, bas.isoformat())
+    if n <= len(ARAMA_RAMPASI):
+        return satir + " · arama rampası: bugün en çok %d arama, kalan pay yazılı kanala" % ARAMA_RAMPASI[n - 1]
+    return satir + " · arama rampası bitti"
+
+
 # Kapanis penceresi: sunucu saha sonuclarini ve olcumu en cok yedi gun geriye
 # kabul ediyor; arac da ayni pencereyle calisir.
 KAPANIS_GERI = 7
 # Sabah ilk cumlenin okudugu sonuclar: cevap veren ve randevu isteyen.
 DIKKAT = ("ilgilendi", "randevu", "cevap")
+SONUC_ETIKET = {"acmadi": "açmadı", "gonderdim": "gönderildi", "istemedi": "istemedi", "ilgilendi": "ilgilendi",
+                "sonra": "sonra ara dedi", "cevap": "cevap geldi"}
 
 
 def gun_ayarla(ham):
@@ -910,6 +993,23 @@ def _sonuclari_isle(metin):
                     bulunamayan.append(ad)
                     continue
             notu = ek.get("not", "")
+            if s["asama"] in ILERI_ASAMALAR and kod not in ("randevu", "izlendi"):
+                # Aday gun icinde sohbetten ilerledi (randevu, gorusme, musteri); saha
+                # sonuclari aksam ya da ertesi sabah toplu islenince "ilgilendi" satiri
+                # randevuyu "cevap verdi"ye geri aliyor, randevu hazirligi listeden
+                # dusuyordu. Temas sayilir, asama, sira ve randevu yerinde kalir.
+                s[KANAL_SUTUN[kanal]] = s[KANAL_SUTUN[kanal]] or "yapıldı"
+                s["temas_sayisi"] = str(int(s["temas_sayisi"] or 0) + 1)
+                s["son_temas_tarihi"] = bugun().isoformat()
+                s["son_temas_kanali"] = kanal
+                ek_not = "%s %s: %s (aşama %s kaldı)" % (bugun().strftime("%d.%m"), kanal, SONUC_ETIKET.get(kod, kod), s["asama"])
+                s["not"] = ((s["not"] + "; ") if s["not"] else "") + ek_not + ((" " + notu) if notu else "")
+                islenen.append(ozet_satir(s))
+                if kod in DIKKAT:
+                    dikkat.append("%s: %s" % (kod, islenen[-1]))
+                gecmis.add(imza)
+                dokum[kod] = dokum.get(kod, 0) + 1
+                continue
             if kod == "acmadi":
                 # Telefon uc ayri gunde acilmazsa hat kapanir ve sira yaziya gecer.
                 # Once sonsuza kadar "tekrar ara" yaziyordu, aday hic kapanmiyordu.
@@ -1001,6 +1101,7 @@ def _sonuclari_isle(metin):
         toplam[k] = toplam.get(k, 0) + v
     gun[g] = toplam
     _dokum_yaz(gun)
+    _saha_baslangici_yaz(bugun(), toplam)
     return islenen, bulunamayan, anlasilmayan, tekrar, toplam, dikkat, dokum
 
 
@@ -1106,6 +1207,9 @@ def kmt_kapat(a):
     print("iş günü: " + ig.isoformat())
     if not gunler:
         print("kapanacak gün yok")
+        sg = saha_gunu_satiri(ig)
+        if sg:
+            print(sg)
         if son:
             print("son_kapanis: " + son.isoformat())
         return
@@ -1190,6 +1294,9 @@ def kmt_kapat(a):
     if ek["temas"] or ek["cevap"] or ek["randevu"]:
         print("sayaçlara eklenecek: temas %d, cevap %d, randevu %d%s" % (
             ek["temas"], ek["cevap"], ek["randevu"], (" (son temas %s)" % son_temas.isoformat()) if son_temas else ""))
+    sg = saha_gunu_satiri(ig)
+    if sg:
+        print(sg)
     if kapanan:
         print("son_kapanis: " + kapanan.isoformat())
     if durdu:
@@ -1268,7 +1375,7 @@ IPUCU_GOZLEM = [
  ("profil_sahipsiz", "Google işletme profili sahiplenilmemiş görünüyor",
   "Google'daki işletme sayfanız sahiplenilmemiş görünüyor"),
  ("aksam_kapali", "Google'da hafta içi kapanış saati 18.00 ve öncesi",
-  "Google'da saatleriniz akşam altıda kapanıyor görünüyor"),
+  "Google'da hafta içi saatleriniz akşam erken kapanıyor görünüyor"),
  ("saat_yok", "Google profilinde çalışma saati yazmıyor",
   "Google'da çalışma saatiniz yazmıyor"),
  ("site_yok", "Google profilinde site bağlantısı yok",
@@ -1301,8 +1408,8 @@ IPUCU_BIRLESIK = [
   "Reklam veriyor ve yorumlarda söz verilen gün gelinmediği yazıyor",
   "Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"),
  (("reklam_veriyor", "aksam_kapali"),
-  "Reklam veriyor ama Google'da akşam altıda kapanıyor",
-  "Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"),
+  "Reklam veriyor ama Google'da akşam erken kapanıyor",
+  "Reklam veriyorsunuz ama Google'da saatleriniz akşam erken kapanıyor"),
  (("reklam_veriyor", "sikayet_ulasilamiyor"),
   "Reklam veriyor ve yorumlarda ulaşılamadığı yazıyor",
   "Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"),
@@ -1375,6 +1482,23 @@ def acik(s):
     return not s["elenme"] and s["asama"] not in ("kapandı", "müşteri")
 
 
+def denetim_bekliyor(s):
+    """Ilk soguk temas yalniz denetimi olan adaya gider (hizli denetim sizinti puanini
+    yazar). Denetimsiz aday gunun listesine, plana ve saha ekranina girmez; sabah
+    denetimi planin parcasi, "denetimi yarin yapariz" yok. Sicak kaynaklar (tanidik,
+    referans, icerik) ve daha once temas edilmis aday bu kuralin disinda."""
+    return s["sizinti"] == "" and not s["son_temas_tarihi"] and kucult(s["kaynak"]) not in SICAK_KAYNAK
+
+
+def yuz_sirasi(satirlar):
+    """En cok istenenlerin panele yazilan sirasi (panel Adaylar > En cok istenen ve Ilk 25 bu
+    sirayi gosterir). Sohbetteki 'ilk on' da bu siradan alinir; ikisi ayni isletmeler olsun diye
+    tek yerde."""
+    yuz = [s for s in satirlar if s["yuz"] and not s.get("elenme")]
+    yuz.sort(key=lambda s: (0 if acik(s) else 1, s["siradaki_tarih"][:10] or "9999-99-99", -(_sayi_al(s["uygunluk"]) or 0)))
+    return yuz
+
+
 def kmt_yuz_sec(a):
     """En cok istenen yuzu listeden secer.
     Sira: reklam veren, sonra sizinti puani, sonra yorum sayisi. Elle 'evet'
@@ -1412,7 +1536,7 @@ def kmt_yuz_sec(a):
         return sum(1 for s in secilen if kod in (s.get("ipuclari") or "").split())
 
     buyuk = sum(1 for s in secilen if int(s["yorum_sayisi"] or 0) > ust_sinir)
-    print("en çok istenen yüz: zaten işaretli %d, yeni seçilen %d (ilan veren %d, reklam veren %d), toplam %d"
+    print("en çok istenenler: zaten işaretli %d, yeni seçilen %d (ilan veren %d, reklam veren %d), toplam %d"
           % (len(zaten), len(secilen), say("is_ilani"), say("reklam_veriyor"),
              len(zaten) + len(secilen)))
     if buyuk:
@@ -1420,6 +1544,13 @@ def kmt_yuz_sec(a):
               % (buyuk, ust_sinir))
     if kalan and len(secilen) < kalan:
         print("liste yetmedi: %d kişilik yer boş kaldı, yeni çekim gerekiyor" % (kalan - len(secilen)))
+    # Sohbetteki ilk on bu siradan: panelin 'Listenin başı' ile ayni isletmeler, ayni sira.
+    bas = yuz_sirasi(satirlar)[:10]
+    if bas:
+        print("listenin başı (panelle aynı sıra; sohbetteki ilk on bu):")
+        for i, s in enumerate(bas, 1):
+            print("%d. %s | %s | %s | %s | %s" % (i, s["ad"], s["telefon"] or "yok", s["site"] or "yok",
+                                                s["instagram"] or "yok", s["ipuclari"] or ""))
 
 
 def kmt_bugun(a):
@@ -1435,35 +1566,99 @@ def kmt_bugun(a):
     def reklamli(s):
         return 1 if "reklam_veriyor" in (s.get("ipuclari") or "").split() else 0
 
+    # Dunden kalan ilk temas plani (hic temas edilmemis, siradaki tarihi gecmis) takip degildir:
+    # bugunun listesine onceligiyle yeniden girer ve bugunun kanaliyla yeniden planlanir; listeye
+    # girmezse plani kalkar, havuza doner. Yoksa dunun telefon plani saha ekranina tasiniyordu
+    # (gun 3: plan 10 arama derken ekranda 33 arama).
+    def tasinan(s):
+        return (not s["son_temas_tarihi"] and bool(s["siradaki_tarih"]) and s["siradaki_tarih"][:10] < g
+                and kucult(s["siradaki_hareket"]).startswith("ilk temas"))
+
     cevap = [s for s in acik_satirlar if s["asama"] in ("cevap verdi", "randevu") and (not s["siradaki_tarih"] or s["siradaki_tarih"][:10] <= g)]
-    takip = [s for s in acik_satirlar if s not in cevap and s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g]
+    takip = [s for s in acik_satirlar if s not in cevap and s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g
+             and not denetim_bekliyor(s) and not tasinan(s)]
     hazir = [s for s in acik_satirlar if s not in cevap and s not in takip and s["sizinti"] != "" and not s["son_temas_tarihi"]]
-    denetsiz = [s for s in acik_satirlar if s not in cevap and s not in takip and s not in hazir and s["sizinti"] == "" and not s["son_temas_tarihi"]]
+    denetsiz = [s for s in acik_satirlar if s not in cevap and s not in takip and s not in hazir and denetim_bekliyor(s)]
     cevap.sort(key=lambda s: s["siradaki_tarih"] or "")
     takip.sort(key=lambda s: (s["siradaki_tarih"], -puan(s)[0]))
     hazir.sort(key=lambda s: (-int(bool(s["yuz"])), -puan(s)[0], -reklamli(s), -puan(s)[1]))
     denetsiz.sort(key=lambda s: (-int(bool(s["yuz"])), -reklamli(s), -puan(s)[1]))
     n = a.sayi
-    liste = (cevap + takip + hazir + denetsiz)[:n]
+    liste = (cevap + takip + hazir)[:n]
+    eksik = max(0, n - len(liste))
+    bekleyen = denetsiz[:eksik]
     gozlemsiz = sum(1 for s in liste if not gozlem(s)[0])
-    print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetimsiz %d; ilk %d gösteriliyor%s" %
+    print("bugün %s: cevap verenler %d, takibi gelen %d, denetimi hazır %d, denetim bekliyor %d; ilk %d gösteriliyor%s" %
           (g, len(cevap), len(takip), len(hazir), len(denetsiz), len(liste),
            ("" if not liste else ((", %d adayda gözlem yok" % gozlemsiz) if gozlemsiz else ", hepsinde gözlem var"))))
+    sg = saha_gunu_satiri()
+    if sg:
+        print(sg)
+    if eksik and bekleyen:
+        print("denetim bekliyor: günün sayısına %d eksik. Hızlı denetimi olmayan aday listeye girmez; "
+              "aşağıdaki %d adayın hızlı denetimini yap (aday-denetimi-cikar), sonra bugun --planla yeniden. "
+              "Denetimsiz adaya hiçbir kanaldan ulaşılmaz." % (eksik, len(bekleyen)))
+    elif eksik:
+        print("liste yetmedi: günün sayısına %d eksik ve denetim bekleyen aday da yok; yeni çekim gerekiyor" % eksik)
     if a.planla:
         kanal = "telefon" if (a.kanal or "telefon") == "telefon" else "yazı"
-        sayac = 0
-        for s in liste:
-            if not s["siradaki_tarih"]:
-                s["siradaki_hareket"] = "ilk temas, " + kanal
+        # Kanal verilmediyse rampa gununde liste kendiliginden iki parca kurulur: ilk
+        # [rampa] aday aramaya, kalan pay yazili kanala (gunu-planla'daki iki adimin aynisi).
+        # Tek komutla kirk adayin hepsi telefon yazilinca saha ekrani kirk arama gosteriyordu.
+        rampa = arama_rampasi_bugun() if not a.kanal else None
+        sayac = yaziya = yazisiz = 0
+        for i, s in enumerate(liste):
+            if not s["siradaki_tarih"] or tasinan(s):
+                k = "yazı" if (rampa is not None and i >= rampa) else kanal
+                # Soguk temasta yazili kanal Instagram ve e-posta (WhatsApp yok). Ikisi de yoksa
+                # yazi payina konmaz: saha ekraninda arama kartina donup "Arama 0/17" diye gunun
+                # arama sayisini (rampa 10) asiyordu. Aday havuzda kalir, arama gununde sirasi gelir.
+                if k == "yazı" and not (s.get("instagram") or "").strip() and not (s.get("eposta") or "").strip():
+                    if tasinan(s):
+                        s["siradaki_tarih"] = ""
+                        s["siradaki_hareket"] = ""
+                    yazisiz += 1
+                    continue
+                s["siradaki_hareket"] = "ilk temas, " + (telefonsuz_kanal(s) if k == "telefon" else k)
                 s["siradaki_tarih"] = g
                 sayac += 1
+                yaziya += k == "yazı" and kanal == "telefon"
+        # Dunden kalip bugunun listesine girmeyen ilk temas plani kalkar (aday havuza doner).
+        listede = {id(s) for s in liste}
+        tasinan_kalkan = 0
+        for s in acik_satirlar:
+            if tasinan(s) and id(s) not in listede:
+                s["siradaki_tarih"] = ""
+                s["siradaki_hareket"] = ""
+                tasinan_kalkan += 1
+        # Denetimsiz adaya daha once (eski surumde ya da denetimsiz) yazilmis ilk temas
+        # plani kalkar: saha ekrani ve sayfanin Bugunun listesi onu gostermesin.
+        kalkan = 0
+        for s in denetsiz:
+            if s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g and (s["siradaki_hareket"] or "").startswith("ilk temas"):
+                s["siradaki_tarih"] = ""
+                s["siradaki_hareket"] = ""
+                kalkan += 1
         kaydet(satirlar)
         print("planlandı: %d adayın sıradaki tarihi bugüne yazıldı, sayfa yenilendi" % sayac)
+        if yaziya:
+            print("arama rampası uygulandı: listenin ilk %d adayı aramada, yeni %d aday yazılı kanalda "
+                  "(günün sayısı aynı)" % (rampa, yaziya))
+        if yazisiz:
+            print("%d adayın yalnız telefonu var: yazılı paya konmadı (soğuk temasta WhatsApp yok), "
+                  "arama sırası gelince aranır; günün arama sayısı aşılmadı" % yazisiz)
+        if kalkan:
+            print("denetimsiz %d adayın ilk temas planı kaldırıldı; hızlı denetimden sonra listeye girer" % kalkan)
+        if tasinan_kalkan:
+            print("dünden kalan %d adayın ilk temas planı bugünün listesine girmedi, kaldırıldı; aday havuzda, sırası gelince planlanır" % tasinan_kalkan)
     baslik = "grup | işletme | telefon | sahibi | sızıntı | aşama | son temas | sıradaki | bulgu"
     print(baslik)
     for s in liste:
-        grup = "cevap" if s in cevap else "takip" if s in takip else "hazır" if s in hazir else "denetimsiz"
+        grup = "cevap" if s in cevap else "takip" if s in takip else "hazır"
         print(grup + " | " + ozet_satir(s))
+    # Listeye girmeyen ama sabah hizli denetimi yapilirsa girecek olanlar: planlanmaz.
+    for s in bekleyen:
+        print("denetim bekliyor | " + ozet_satir(s))
 
 
 def kmt_ozet(a):
@@ -1473,8 +1668,11 @@ def kmt_ozet(a):
     say = lambda f: sum(1 for s in canli if f(s))
     print("toplam %d (elenen %d)" % (len(canli), len(satirlar) - len(canli)))
     print("telefonlu %d, e-postalı %d, instagramlı %d" % (say(lambda s: s["telefon"]), say(lambda s: s["eposta"]), say(lambda s: s["instagram"])))
-    print("en çok istenen yüz %d, denetlenmiş %d, hiç aranmamış %d" % (say(lambda s: s["yuz"]), say(lambda s: s["sizinti"] != ""), say(lambda s: not s["son_temas_tarihi"] and acik(s))))
+    print("en çok istenen %d, denetlenmiş %d, hiç aranmamış %d" % (say(lambda s: s["yuz"]), say(lambda s: s["sizinti"] != ""), say(lambda s: not s["son_temas_tarihi"] and acik(s))))
     print("bugün sırada %d, gecikmiş %d" % (say(lambda s: acik(s) and s["siradaki_tarih"][:10] == g), say(lambda s: acik(s) and s["siradaki_tarih"] and s["siradaki_tarih"][:10] < g)))
+    sg = saha_gunu_satiri()
+    if sg:
+        print(sg)
     dag = {}
     for s in canli:
         dag[s["asama"] or "yeni"] = dag.get(s["asama"] or "yeni", 0) + 1
@@ -1495,11 +1693,7 @@ def kmt_ozet(a):
     # Stok: liste bitmeden once haber ver. Takvimle degil stokla tetikleniyor,
     # cunku listenin ne zaman bitecegi tempoya bagli.
     dokunulmamis = say(lambda s: acik(s) and not s["son_temas_tarihi"])
-    tempo = 0
-    try:
-        tempo = int(str(n.get("gunluk_temas") or "").strip() or 0)
-    except ValueError:
-        tempo = 0
+    tempo = gunluk_tempo(n)
     if tempo > 0:
         gun_kaldi = dokunulmamis / float(tempo)
         satir = "stok: %d dokunulmamış aday, günde %d temasla %.1f gün" % (dokunulmamis, tempo, gun_kaldi)
@@ -1507,7 +1701,21 @@ def kmt_ozet(a):
             satir += "  >>> liste bitiyor, yeni ilçe çekilmeli"
         print(satir)
     else:
-        print("stok: %d dokunulmamış aday (günlük tempo sayfa.json'a yazılmamış, gün hesabı yapılamadı)" % dokunulmamis)
+        print("stok: %d dokunulmamış aday (günlük temas sayısı kayıtta yok, gün hesabı yapılamadı)" % dokunulmamis)
+
+
+def gunluk_tempo(n=None):
+    """Gunun temas sayisi: sayfa.json'daki gunluk_temas, yoksa durum kaydindaki gunluk_hedef,
+    o da yoksa duzen (tam 100, yan 40). Stok uyarisi bununla hesaplanir; eskiden yalniz
+    sayfa.json'a bakiliyordu ve o alani hicbir adim yazmadigi icin uyari hic cikmiyordu."""
+    for ham in ((n or {}).get("gunluk_temas"), _durum_kaydi().get("gunluk_hedef")):
+        try:
+            v = int(str(ham if ham is not None else "").strip() or 0)
+        except ValueError:
+            v = 0
+        if v > 0:
+            return v
+    return {"tam": 100, "yan": 40}.get(str(_durum_kaydi().get("duzen") or "").strip(), 0)
 
 
 def cevap_verdi(s):
@@ -1805,8 +2013,26 @@ def son_telefon_acildi(s):
     return bool(kayit) and not kayit[-1].strip().startswith("açmadı")
 
 
+def telefonsuz_kanal(s):
+    """Telefon kanali istenen aday icin gercek kanal: telefonu yoksa Instagram, o da yoksa e-posta.
+    Telefonsuz aday telefon kartiyla gelince saha ekraninda numarasiz bir "Ara" duruyordu."""
+    if (s.get("telefon") or "").strip():
+        return "telefon"
+    if (s.get("instagram") or "").strip():
+        return "instagram"
+    if (s.get("eposta") or "").strip():
+        return "e-posta"
+    return "telefon"
+
+
 def saha_kanal(s):
-    """Sayfadaki kanalTahmin ile aynı: sıradaki hareketin başındaki kanal esastır."""
+    """Sayfadaki kanalTahmin ile aynı: sıradaki hareketin başındaki kanal esastır; telefon
+    çıkarsa ve adayın telefonu yoksa telefonsuz_kanal."""
+    k = _saha_kanal_hareketten(s)
+    return telefonsuz_kanal(s) if k == "telefon" else k
+
+
+def _saha_kanal_hareketten(s):
     h = kucult(s.get("siradaki_hareket"))
     for desen, kanal in ((r"^\s*telefon\b", "telefon"), (r"^\s*instagram\b", "instagram"),
                          (r"^\s*e-?posta\b", "e-posta"), (r"^\s*video\b", "video")):
@@ -1855,7 +2081,8 @@ def saha_acilis(s, ad, sehir):
 def saha_listesi(satirlar):
     """Sayfanın Bugünün listesi sekmesinin gösterdiği liste: sıradaki tarihi bugün ya da geçmiş, açık adaylar."""
     g = bugun().isoformat()
-    l = [s for s in satirlar if acik(s) and s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g]
+    l = [s for s in satirlar if acik(s) and s["siradaki_tarih"] and s["siradaki_tarih"][:10] <= g
+         and not denetim_bekliyor(s)]
 
     def sira(s):
         yuz = 1 if re.fullmatch(r"evet|1|x", kucult(s["yuz"])) else 0
@@ -1884,7 +2111,7 @@ def saha_paketi_kur(satirlar, en_cok=SAHA_EN_COK):
         kanal = saha_kanal(s)
         bulgu, kanca, kaynak = gozlem(s)
         if kaynak == "profil" and bulgu:
-            bulgu += " (Google profilinden; denetim yapılmadı, uydurma yok)"
+            bulgu += " (Google profilinde görülen)"
         yazi = kanal != "telefon"
         adaylar.append({
             "kisa_ad": s["kisa_ad"] or s["ad"], "ad": s["ad"], "telefon": s["telefon"], "semt": s["semt"],
@@ -1943,7 +2170,7 @@ def kmt_saha_paketi(a):
     if not a.yukle:
         return
     anahtar = anahtar_bul(a.anahtar)
-    cevap = servis_cagir(a.adres or "https://founderos.so/mcp", "saha_yukle", {"anahtar": anahtar, "paket": paket})
+    cevap = servis_cagir(a.adres or "https://founderos.so/mcp", "saha_yukle", {"anahtar": anahtar, "paket": paket}, SAHA_YEDEGI)
     if not isinstance(cevap, dict) or not cevap.get("adres"):
         m = cevap.get("mesaj") if isinstance(cevap, dict) else ""
         hata("saha ekranı yüklenmedi: %s (paket dosyada; veri bağlantısındaki saha_yukle ile yükle)" % (m or "servis cevabı boş"))
@@ -1951,16 +2178,18 @@ def kmt_saha_paketi(a):
         cevap["adres"], cevap.get("gecerlilik", "?"), cevap.get("aday_sayisi", len(paket["adaylar"]))))
 
 
-# ---------- panel: ajans, adaylar, mesajlar, icerik ----------
-# Ogrencinin panelindeki dort bolum (founderos.so/panel). adaylar bu listeden
+# ---------- panel: ajans, adaylar, mesajlar, icerik, teslimat ----------
+# Ogrencinin panelindeki bes bolum (founderos.so/panel). adaylar bu listeden
 # hesaplanir; ajans FounderOS'un yazdigi .founderos/panel/ajans.json ile marka
 # kitinin (window.MARKA) ve tanitim sayfasinin (window.SITE) bloklarindan kurulur;
-# mesajlar ve icerik kendi dosyalarindan (mesajlar.json, icerik.json) oldugu gibi.
+# mesajlar, icerik ve teslimat kendi dosyalarindan (mesajlar.json, icerik.json,
+# teslimat.json) oldugu gibi.
 # Sunucunun kurallari burada da denetlenir; bozuk bolum gitmez, hata alanin yolunu
 # soyler. Ayni icerik ikinci kez gonderilmez (son-yukleme.json'daki ozetler).
 
-PANEL_BOLUMLERI = ("ajans", "adaylar", "mesajlar", "icerik")
-PANEL_SINIRI = {"ajans": 96 * 1024, "adaylar": 480 * 1024, "mesajlar": 128 * 1024, "icerik": 160 * 1024}
+PANEL_BOLUMLERI = ("ajans", "adaylar", "mesajlar", "icerik", "teslimat")
+PANEL_SINIRI = {"ajans": 96 * 1024, "adaylar": 480 * 1024, "mesajlar": 128 * 1024, "icerik": 160 * 1024,
+                "teslimat": 48 * 1024}
 PANEL_ANAHTAR = re.compile(r"^[a-z0-9_]{1,40}$")
 # Ogrencinin bilgisayarindaki dosya yollari panele gitmez.
 PANEL_YEREL = {"gorseller", "kapak", "metin_dosyasi", "foto", "klasor", "logo"}
@@ -2091,6 +2320,154 @@ def yerelleri_at(v):
     return v
 
 
+# Pazar Radari ve Teklif studyosu (0.75): sayi alanlari sunucunun bekledigi bicime
+# getirilir. Model JSON'u elle yaziyor; "18.000 TL", "%43", "4,6" ya da yaziyla
+# yazilmis is kimligi gelebilir. Okunamayan sayi, araligi disindaki oran ve bilinmeyen
+# karar gonderilmez; dayanagi olmayan aylik kayip da gonderilmez.
+# Kayip modeli (0.42.3): kacan sey bir cagri degil, bir musteri. musteri_degeri bir
+# musterinin isletmeye yil icinde biraktigi para; eski is_degeri (bir isin ya da cagrinin
+# tutari) gonderilmez, panel okumaz. Eski hesap alanlari (haftalik kacan, donus orani)
+# yenisi yoksa aya cevrilir: haftalik x 52 / 12.
+PAZAR_ORANLAR = ("reklam_orani", "telefon_orani", "aksam_orani", "sikayet_orani", "site_yok_orani")
+PAZAR_TAM = ("sehir_sayisi", "tr_sayisi", "musteri_degeri", "aylik_kayip")
+PAZAR_KARAR = ("secildi", "yedek", "elendi")
+HESAP_TL = ("musteri_degeri", "arac_maliyeti", "sabit_maliyet")
+ESKI_DEGER = "is_degeri"
+# Ajansin adi henuz yokken (birinci gunun ilk iki oturusu) bolum bunlardan biri varsa gider.
+AJANS_ADSIZ = ("pazar", "icp", "konum", "teklif", "fiyat", "donusum", "deger_bolgesi", "sistem_adi", "mekanizma", "ajanlar")
+
+
+def sayi_coz(x):
+    """Sayi ya da sayiya benzeyen metin -> int/float; okunamazsa None."""
+    if x is None or isinstance(x, bool):
+        return None
+    if isinstance(x, (int, float)):
+        return x if x == x and x not in (float("inf"), float("-inf")) else None
+    if not isinstance(x, str):
+        return None
+    t = x.strip().lower().replace("tl", "").replace("\u20ba", "").replace("%", "").replace(" ", "").replace("\u00a0", "")
+    if not t:
+        return None
+    if re.fullmatch(r"-?\d{1,3}(\.\d{3})+(,\d+)?", t):  # 18.000 ya da 1.250,5
+        t = t.replace(".", "").replace(",", ".")
+    elif re.fullmatch(r"-?\d+,\d+", t):  # 4,6
+        t = t.replace(",", ".")
+    if not re.fullmatch(r"-?\d+(\.\d+)?", t):
+        return None
+    v = float(t)
+    return int(v) if v.is_integer() else v
+
+
+def _karar_coz(x):
+    if not isinstance(x, str):
+        return None
+    t = unicodedata.normalize("NFKD", x.strip().lower().replace("ı", "i")).encode("ascii", "ignore").decode()
+    return t if t in PAZAR_KARAR else None
+
+
+def pazar_duzelt(pz):
+    """ajans.pazar: adaylar satirlarinin sayi alanlari. Metin alanlarina dokunmaz."""
+    pz = dict(pz)
+    adaylar = pz.get("adaylar")
+    if isinstance(adaylar, list):
+        temiz = []
+        for x in adaylar:
+            if not isinstance(x, dict):
+                continue
+            x = dict(x)
+            x.pop(ESKI_DEGER, None)
+            if "is_id" in x:
+                v = sayi_coz(x.get("is_id"))
+                if isinstance(v, float) and v.is_integer():
+                    v = int(v)
+                if isinstance(v, int) and v > 0:
+                    x["is_id"] = v
+                else:
+                    x.pop("is_id")
+            for k in PAZAR_ORANLAR:
+                if k in x:
+                    v = sayi_coz(x.get(k))
+                    if v is None or v < 0 or v > 100:
+                        x.pop(k)
+                    else:
+                        x[k] = int(round(v))
+            for k in PAZAR_TAM:
+                if k in x:
+                    v = sayi_coz(x.get(k))
+                    if v is None or v < 0:
+                        x.pop(k)
+                    else:
+                        x[k] = int(round(v))
+            if "ort_puan" in x:
+                v = sayi_coz(x.get("ort_puan"))
+                if v is None or v < 0 or v > 5:
+                    x.pop("ort_puan")
+                else:
+                    x["ort_puan"] = round(float(v), 1)
+            if "puan" in x:
+                v = sayi_coz(x.get("puan"))
+                if v is None or v < 0 or v > 100:
+                    x.pop("puan")
+                else:
+                    x["puan"] = int(round(v))
+            if "sinirda" in x:
+                # Sayim tavaninda durdu isareti: yalniz dogruysa gider (panel "+" koyar).
+                if x.get("sinirda") in (True, 1, "true", "evet", "True"):
+                    x["sinirda"] = True
+                else:
+                    x.pop("sinirda")
+            if "karar" in x:
+                v = _karar_coz(x.get("karar"))
+                if v:
+                    x["karar"] = v
+                else:
+                    x.pop("karar")
+            if not _duz(x.get("kayip_dayanak")) or "aylik_kayip" not in x:
+                x.pop("aylik_kayip", None)
+                x.pop("kayip_dayanak", None)
+            temiz.append(x)
+        pz["adaylar"] = temiz
+    return pz
+
+
+def hesap_duzelt(h):
+    """ajans.teklif.hesap: Teklif studyosunun sayilari. Bos kalirsa None."""
+    h = dict(h)
+    h.pop(ESKI_DEGER, None)
+    # Eski alanlar yenisi yoksa yenisine gecer, sonra dusulur.
+    haftalik = h.pop("kacan_haftalik", None)
+    donus = h.pop("donus_orani", None)
+    if "kacan_aylik" not in h and haftalik is not None:
+        v = sayi_coz(haftalik)
+        if v is not None and v >= 0:
+            h["kacan_aylik"] = v * 52 / 12
+    if "musteri_orani" not in h and donus is not None:
+        h["musteri_orani"] = donus
+    if "kacan_aylik" in h:
+        v = sayi_coz(h.get("kacan_aylik"))
+        if v is None or v < 0:
+            h.pop("kacan_aylik")
+        else:
+            h["kacan_aylik"] = max(1, int(round(v))) if v > 0 else 0
+    if "musteri_orani" in h:
+        v = sayi_coz(h.get("musteri_orani"))
+        if v is None or v < 0 or v > 100:
+            h.pop("musteri_orani")
+        else:
+            # Kesir geldiyse yuzdeye cevrilir (0.4 -> 40), sunucuyla ayni; yuvarlama sonra.
+            if 0 < v < 1:
+                v = v * 100
+            h["musteri_orani"] = int(round(v))
+    for k in HESAP_TL:
+        if k in h:
+            v = sayi_coz(h.get(k))
+            if v is None or v < 0:
+                h.pop(k)
+            else:
+                h[k] = int(round(v))
+    return h if any(k != "not" for k in h) else None
+
+
 def ajans_kur():
     taban, hata_ = panel_dosyasi("ajans")
     m = marka_oku()
@@ -2141,12 +2518,42 @@ def ajans_kur():
     st = a.get("site") if isinstance(a.get("site"), dict) else None
     if st is not None and st.get("durum") == "yayinda" and not _duz(st.get("adres")) and _duz(a.get("alan_adi")):
         st["adres"] = "https://" + a["alan_adi"].strip()
-    if not _duz(a.get("ad")):
+    # Tarayici demosu (kanitini-hazirla): site/demo.html varsa ve sayfa yayindaysa demo
+    # ayni adresin altinda /demo. Durum, kanit ve testleri FounderOS ajans.json'a yazar.
+    if (st is not None and st.get("durum") == "yayinda" and _duz(st.get("adres"))
+            and st["adres"].strip().startswith("https://") and (KLASOR / "site" / "demo.html").is_file()):
+        dm = dict(a["demo"]) if isinstance(a.get("demo"), dict) else {}
+        if not _duz(dm.get("adres")):
+            dm["adres"] = st["adres"].strip().split("#")[0].split("?")[0].rstrip("/") + "/demo"
+            a["demo"] = dm
+    if isinstance(a.get("pazar"), dict):
+        a["pazar"] = pazar_duzelt(a["pazar"])
+    if isinstance(a.get("teklif"), dict) and isinstance(a["teklif"].get("hesap"), dict):
+        tk = dict(a["teklif"])
+        h = hesap_duzelt(tk["hesap"])
+        if h:
+            tk["hesap"] = h
+        else:
+            tk.pop("hesap")
+        a["teklif"] = tk
+    if not _duz(a.get("ad")) and not any(a.get(k) for k in AJANS_ADSIZ):
         return None, hata_ or "ajansın adı yok (ajans.json ya da marka kiti)"
     a["surum"] = 1
     if not _duz(a.get("guncellendi")):
         a["guncellendi"] = simdi_iso()
     return a, hata_
+
+
+KAYNAK_ASCII = {"haritalar": "haritalar", "reklam": "reklam", "iş ilanı": "is_ilani", "elle": "elle",
+                "tanıdık": "tanidik", "referans": "referans", "içerik": "icerik"}
+
+
+def reklam_veriyor(s):
+    return bool(s["reklam"]) or "reklam_veriyor" in s["ipuclari"].split()
+
+
+def ilan_veriyor(s):
+    return s["kaynak"] == "iş ilanı" or "is_ilani" in s["ipuclari"].split()
 
 
 def aday_satiri(s):
@@ -2185,6 +2592,13 @@ def aday_satiri(s):
             mesaj[k] = s[sutun]
     if mesaj:
         x["mesaj"] = mesaj
+    # Ilk Musteri Motoru'nun isaretleri: panelde satirin yaninda rozet.
+    if reklam_veriyor(s):
+        x["reklam"] = True
+    if ilan_veriyor(s):
+        x["ilan"] = True
+    if s["kaynak"] and s["kaynak"] != "haritalar":
+        x["kaynak"] = s["kaynak"]
     return x
 
 
@@ -2194,7 +2608,7 @@ def adaylar_kur(satirlar):
     g = bugun().isoformat()
     canli = [s for s in satirlar if not s["elenme"]]
     say = lambda f: sum(1 for s in canli if f(s))
-    reklamli = lambda s: bool(s["reklam"]) or "reklam_veriyor" in s["ipuclari"].split()
+    reklamli = reklam_veriyor
     asamalar, ipuclari, semt = {}, {}, {}
     for s in canli:
         k = ASAMA_ASCII.get(s["asama"] or "yeni", "yeni")
@@ -2216,8 +2630,14 @@ def adaylar_kur(satirlar):
         if anahtar == "video":
             k["izlendi"] = say(lambda s: s[sutun] == "izlendi")
         kanallar[anahtar] = k
-    yuz = [s for s in canli if s["yuz"]]
-    yuz.sort(key=lambda s: (0 if acik(s) else 1, s["siradaki_tarih"][:10] or "9999-99-99", -(_sayi_al(s["uygunluk"]) or 0)))
+    # Ilk Musteri Motoru: kaynak basina satir (butun liste), reklam ve ilan isareti (elenmeyenler).
+    kaynaklar = {}
+    for s in satirlar:
+        k = KAYNAK_ASCII.get(s["kaynak"] or "haritalar", "elle")
+        kaynaklar[k] = kaynaklar.get(k, 0) + 1
+    kaynaklar["reklam_veren"] = say(reklam_veriyor)
+    kaynaklar["ilan_veren"] = say(ilan_veriyor)
+    yuz = yuz_sirasi(canli)
     return {
         "surum": 1,
         "ozet": {
@@ -2228,7 +2648,9 @@ def adaylar_kur(satirlar):
             "hic_ulasilmayan": say(lambda s: acik(s) and not s["son_temas_tarihi"]),
             "bugun_sirada": say(lambda s: acik(s) and s["siradaki_tarih"][:10] == g),
             "geciken": say(lambda s: acik(s) and s["siradaki_tarih"] and s["siradaki_tarih"][:10] < g),
+            "ulasilan": say(lambda s: bool(s["son_temas_tarihi"])),
         },
+        "kaynaklar": kaynaklar,
         "asamalar": asamalar,
         "ipuclari": ipuclari,
         "semtler": semtler,
@@ -2307,7 +2729,15 @@ def panel_bolumleri():
         t, h2 = panel_denetle("ajans", ajans)
         if t:
             bolumler["ajans"] = t
-            parca = [p for p, k in (("marka", "marka"), ("teklif", "teklif"), ("ideal müşteri", "icp"), ("pazar", "pazar")) if ajans.get(k)]
+            parca = [p for p, k in (("marka", "marka"), ("değer bölgesi", "deger_bolgesi"), ("teklif", "teklif"), ("üç ajan", "ajanlar"),
+                                    ("demo", "demo"), ("ideal müşteri", "icp"), ("pazar", "pazar")) if ajans.get(k)]
+            if isinstance(ajans.get("teklif"), dict) and ajans["teklif"].get("hesap"):
+                parca.append("teklif hesabı")
+            canli = sum(1 for x in ((ajans.get("pazar") or {}).get("adaylar") or []) if isinstance(x, dict) and x.get("is_id"))
+            if canli:
+                parca.append("canlı sayım %d" % canli)
+            if not _duz(ajans.get("ad")):
+                parca.append("ad henüz yok")
             notlar["ajans"] = "hazır (%s)" % ", ".join(parca) if parca else "hazır (yalnız ad)"
         else:
             notlar["ajans"] = "GİTMEDİ: " + h2
@@ -2324,7 +2754,7 @@ def panel_bolumleri():
             notlar["adaylar"] = "GİTMEDİ: " + h
     else:
         notlar["adaylar"] = "yok (aday listesi boş)"
-    for b in ("mesajlar", "icerik"):
+    for b in ("mesajlar", "icerik", "teslimat"):
         v, h = panel_dosyasi(b)
         if v is None:
             notlar[b] = ("GİTMEDİ: " + h) if h else "yok (%s.json yazılmamış)" % b
@@ -2371,7 +2801,13 @@ def kmt_panel(a):
     if not anahtar:
         print("panel yüklenmedi: lisans anahtarı bulunamadı (sonra yeniden denenir)")
         return
-    cevap, sebep = _servis_dene(a.adres or "https://founderos.so/mcp", "panel_yaz", {"anahtar": anahtar, "bolumler": gidecek})
+    adres = a.adres or "https://founderos.so/mcp"
+    cevap, sebep = _servis_dene(adres, "panel_yaz", {"anahtar": anahtar, "bolumler": gidecek})
+    # Eski sunucu teslimat bolumunu tanimiyorsa o bolum sonraya kalir, gerisi gider.
+    red = (cevap.get("mesaj") or cevap.get("hata") or "") if isinstance(cevap, dict) else ""
+    if "teslimat" in gidecek and len(gidecek) > 1 and "bilinmeyen bolum" in str(red or sebep or ""):
+        gidecek = {b: v for b, v in gidecek.items() if b != "teslimat"}
+        cevap, sebep = _servis_dene(adres, "panel_yaz", {"anahtar": anahtar, "bolumler": gidecek})
     if sebep or not isinstance(cevap, dict) or not cevap.get("tamam"):
         m = sebep or (cevap.get("mesaj") or cevap.get("hata") if isinstance(cevap, dict) else "") or "servis cevabı boş"
         print("panel yüklenmedi: %s (dosyalar yerinde; sonra yeniden denenir)" % m)
@@ -2495,6 +2931,12 @@ def ana():
 
 
 if __name__ == "__main__":
+    # Cikti head ile kesilince (komut | head) Python iz yigini basmasin; sessiz biter.
+    try:
+        import signal
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+    except (ImportError, AttributeError, ValueError):
+        pass
     ana()
 ````
 
@@ -2527,6 +2969,7 @@ input[type=search]{flex:1;min-width:220px;padding:8px 10px;border:1px solid var(
 .cip.aktif{background:var(--m);color:var(--w);border-color:var(--m)}
 .cip small{color:inherit;opacity:.7;margin-left:4px}
 main{padding:12px 20px 60px}
+#icerik{overflow-x:auto}
 table{width:100%;border-collapse:collapse;background:var(--w);border:1px solid var(--l);border-radius:8px;overflow:hidden;font-size:13px}
 th{position:sticky;top:0;background:#fafaf9;text-align:left;font-weight:600;padding:8px;border-bottom:1px solid var(--l);cursor:pointer;white-space:nowrap;user-select:none}
 th.sirali::after{content:" ↓";color:var(--g)}
@@ -2616,7 +3059,8 @@ textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Cons
 .yazibas button.ok{background:#166534;color:#fff;border-color:#166534}
 .yazieksik{color:var(--g);font-size:13px;font-style:italic;padding:6px 0}
 .mesaj{background:#dcfce7;color:#166534;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:13px}
-@media (max-width:760px){.kart{grid-template-columns:1fr;grid-template-areas:"oku" "soyle" "sonuc"}.kart .soyle-alani{border-left:0;padding-left:0;border-top:1px solid var(--l);padding-top:8px}.modlar button.itiraz-ac{margin-left:0}}
+.mesaj.uyari{background:#fef3c7;color:#92400e}
+@media (max-width:760px){header{position:static;padding:12px 16px}main{padding:12px 16px 60px}.kart{grid-template-columns:1fr;grid-template-areas:"oku" "soyle" "sonuc"}.kart .soyle-alani{border-left:0;padding-left:0;border-top:1px solid var(--l);padding-top:8px}.modlar button.itiraz-ac{margin-left:0}}
 @media print{header{position:static}.arac,.cip,.sekme,.saha-ust,.sonuc,.kanal,.ek,.modlar,.cekmece{display:none}tr.detay{display:none}}
 </style>
 </head>
@@ -2630,7 +3074,7 @@ textarea.cikti{width:100%;min-height:140px;font:12px/1.4 ui-monospace,Menlo,Cons
     <input type="search" id="ara" placeholder="İşletme, sahibi, ilçe, telefon ara…">
     <div id="cipler"></div>
   </div>
-  <div class="aciklama">Satıra tıklayınca ayrıntı açılır. Sütun başlığına tıklayınca sıralanır.<i style="background:#dcfce7"></i>bugün sırada<i style="background:#ffedd5"></i>günü geçmiş<i style="background:#ede9fe"></i>İlk 100: en çok istenen yüz işletme</div>
+  <div class="aciklama">Satıra tıklayınca ayrıntı açılır. Sütun başlığına tıklayınca sıralanır.<i style="background:#dcfce7"></i>bugün sırada<i style="background:#ffedd5"></i>günü geçmiş<i style="background:#ede9fe"></i><span id="yuz-aciklama">en çok istenen işletmeler</span></div>
   <div class="aciklama">Uygunluk: denetimden çıkan 0-15 arası puan, A 10 ve üstü, B 6-9, C 5 ve altı. Sızıntı: kaç sızıntı görüldüğü, 0-5. İkisi de denetim yapılmadan boş durur. En çok istenen: derin denetimden geçen işletmeler; tam zamanlı çalışanda yüz, işin yanında çalışanda kırk tane seçilir.</div>
   </div>
 </header>
@@ -2658,24 +3102,27 @@ return s.slice(1).map(function(x){var o={};b.forEach(function(k,j){o[k]=(x[j]||'
 // Tahmin degil: Google isletme profilinde gorunen sey. Elle yapilan derin
 // denetimin yerine gecmez; denetimi yapilmamis adayin mesaji gozlemsiz
 // gitmesin diye var. Sira guclu olandan zayifa.
+// Sira araçtaki IPUCU_BIRLESIK ve IPUCU_GOZLEM ile ayni: telefondaki saha ekrani ve
+// panel kancayi aractan aliyor, bu sayfa da ayni cumleyi gostermeli. Tek basina
+// "reklam veriyor" son caredir.
 var IPUCU_BIRLESIK=[
- [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam altıda kapanıyor"],
- [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
- [['reklam_veriyor','sikayet_gelmedi'],"Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"]
+ [['reklam_veriyor','sikayet_gelmedi'],"Reklam veriyorsunuz ama yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
+ [['reklam_veriyor','aksam_kapali'],"Reklam veriyorsunuz ama Google'da saatleriniz akşam erken kapanıyor"],
+ [['reklam_veriyor','sikayet_ulasilamiyor'],"Reklam veriyorsunuz ama yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"]
 ];
 var IPUCU_KANCA=[
- ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
- ['reklam_veriyor',"Reklam veriyorsunuz; o reklamdan gelen aramaya kim bakıyor?"],
  ['is_ilani',"Şu an telefona bakacak birini arıyorsunuz, ilanınızı gördüm"],
  ['sikayet_ulasilamiyor',"Google yorumlarınızdan birinde telefona ulaşılamadığı yazıyor"],
  ['sikayet_gelmedi',"Google yorumlarınızdan birinde söz verilen gün gelinmediği yazıyor"],
  ['yorum_sikayet',"Google yorumlarınızdan biri yetişilemeyen bir müşteriyi anlatıyor"],
  ['profil_sahipsiz',"Google'daki işletme sayfanız sahiplenilmemiş görünüyor"],
- ['aksam_kapali',"Google'da saatleriniz akşam altıda kapanıyor görünüyor"],
+ ['aksam_kapali',"Google'da hafta içi saatleriniz akşam erken kapanıyor görünüyor"],
  ['saat_yok',"Google'da çalışma saatiniz yazmıyor"],
  ['site_yok',"Google'da site bağlantınız görünmüyor"],
  ['hafta_sonu_kapali',"Google'da hafta sonu kapalı görünüyorsunuz"],
- ['instagram_yok',"Instagram hesabınızı bulamadım"]
+ ['instagram_yok',"Instagram hesabınızı bulamadım"],
+ ['sadece_reklam',"Reklamınızı gördüm ama Google'da işletme sayfanızı bulamadım"],
+ ['reklam_veriyor',"Reklam veriyorsunuz; o reklamdan gelen aramaya kim bakıyor?"]
 ];
 function profilKancasi(r){
  // Sikayet cumlesi geldiyse genel cumle yerine musterinin kendi cumlesi.
@@ -2731,6 +3178,10 @@ var alt=document.getElementById('alt'),icerik=document.getElementById('icerik'),
 if(!ham){alt.textContent='Liste henüz bu sayfaya yüklenmedi.';icerik.innerHTML='<div class="bos">FounderOS\'a "listemi yenile" yaz; liste dolunca bu sayfa da dolar.</div>';return}
 var satirlar=csvOku(ham).filter(function(r){return !r.elenme});
 satirlar.forEach(function(r,i){r._i=i;r._ipucu=(r.ipuclari||'').split(/\s+/).filter(Boolean);r._yuz=/^(evet|1|x)$/i.test(r.yuz||'');r._sicak=/tanıdık|referans/.test((r.kaynak||'').toLocaleLowerCase('tr'));r._bugun=!!r.siradaki_tarih&&r.siradaki_tarih.slice(0,10)===BUGUN&&!kapali(r);r._gecmis=!!r.siradaki_tarih&&r.siradaki_tarih.slice(0,10)<BUGUN&&!kapali(r)});
+// En cok istenenlerin sayisi duzene bagli (tam zamanli 100, isin yaninda 40); arac yazar.
+// Bilinmiyorsa rozet ve aciklama sayisiz kalir: kirk secilmisken "Ilk 100" eksik gibi gorunuyordu.
+var SECIM=parseInt(window.ADAYLAR_SECIM,10)||0;var YUZ_ROZET=SECIM?'İlk '+SECIM:'En çok istenen';
+document.getElementById('yuz-aciklama').textContent=SECIM?'İlk '+SECIM+': en çok istenen '+SECIM+' işletme':'en çok istenen işletmeler';
 var enCok=NIS.ad||'';if(!enCok){var kategoriler={};satirlar.forEach(function(r){if(r.kategori)kategoriler[r.kategori]=(kategoriler[r.kategori]||0)+1});enCok=Object.keys(kategoriler).sort(function(a,b){return kategoriler[b]-kategoriler[a]})[0]||''}
 alt.textContent=(enCok?enCok+' · ':'')+satirlar.length+' aday'+(tarih?' · Son güncelleme: '+tarih:'')+' · Bugün: '+tarihTr(BUGUN);
 
@@ -2740,7 +3191,7 @@ var OZET=[['Toplam',satirlar.length],['Telefonu olan',say(function(r){return r.t
 document.getElementById('ozet').innerHTML=OZET.map(function(k){return'<div class="kutu"><b>'+k[1]+'</b><span>'+k[0]+'</span></div>'}).join('');
 
 // --- filtreler ---
-var FILTRE=[['hepsi','Hepsi',function(){return true}],['bugun','Bugün sırada',function(r){return r._bugun||r._gecmis}],['yuz','En çok istenen yüz',function(r){return r._yuz}],['cevap','Cevap verenler',function(r){return /cevap verdi|randevu|görüşüldü/.test(r.asama||'')}],['yeni','Hiç aranmamış',function(r){return !r.son_temas_tarihi&&!kapali(r)}],['denetsiz','Denetlenmemiş',function(r){return r.sizinti===''}],['sonra','Sonra / kapandı',function(r){return /sonra|kapandı/.test(r.asama||'')}]];
+var FILTRE=[['hepsi','Hepsi',function(){return true}],['bugun','Bugün sırada',function(r){return r._bugun||r._gecmis}],['yuz','En çok istenen',function(r){return r._yuz}],['cevap','Cevap verenler',function(r){return /cevap verdi|randevu|görüşüldü/.test(r.asama||'')}],['yeni','Hiç aranmamış',function(r){return !r.son_temas_tarihi&&!kapali(r)}],['denetsiz','Denetlenmemiş',function(r){return r.sizinti===''}],['sonra','Sonra / kapandı',function(r){return /sonra|kapandı/.test(r.asama||'')}]];
 var aktif='hepsi',arama='',siraKey='',siraTers=false;
 document.getElementById('cipler').innerHTML=FILTRE.map(function(f){return'<button class="cip'+(f[0]===aktif?' aktif':'')+'" data-f="'+f[0]+'">'+f[1]+'<small>'+say(f[2])+'</small></button>'}).join('');
 document.getElementById('cipler').addEventListener('click',function(e){var b=e.target.closest('.cip');if(!b)return;aktif=b.dataset.f;document.querySelectorAll('.cip').forEach(function(x){x.classList.toggle('aktif',x.dataset.f===aktif)});ciz()});
@@ -2749,7 +3200,7 @@ document.getElementById('ara').addEventListener('input',function(e){arama=e.targ
 // --- tablo ---
 var KOLON=[['kisa_ad','İşletme'],['sahibi','Sahibi'],['telefon','Telefon'],['semt','İlçe / semt'],['yorum_sayisi','Yorum'],['sizinti','Sızıntı'],['uygunluk','Uygunluk'],['ipuclari','İpuçları'],['asama','Aşama'],['son_temas_tarihi','Son temas'],['siradaki_tarih','Sıradaki'],['eklenme_tarihi','Eklendi']];
 function deger(r,k){if(k==='yorum_sayisi'||k==='sizinti'||k==='uygunluk')return parseInt(r[k],10)||-1;return (r[k]||'').toLocaleLowerCase('tr')}
-function etiketler(r){return (r._yuz?' '+rozet('İlk 100','mor'):'')+(r._sicak?' '+rozet(r.kaynak==='referans'?'Referans':'Tanıdık','iyi'):'')}
+function etiketler(r){return (r._yuz?' '+rozet(YUZ_ROZET,'mor'):'')+(r._sicak?' '+rozet(r.kaynak==='referans'?'Referans':'Tanıdık','iyi'):'')}
 function ciz(){
  var f=FILTRE.filter(function(x){return x[0]===aktif})[0][2];
  var liste=satirlar.filter(f).filter(function(r){if(!arama)return true;return [r.kisa_ad,r.ad,r.sahibi,r.semt,r.telefon,r.adres,r.not,r.bulgu].join(' ').toLocaleLowerCase('tr').indexOf(arama)>=0});
@@ -2782,7 +3233,11 @@ function alan(b,v){return v?'<div><span>'+b+'</span>'+v+'</div>':''}
 ciz();
 
 // --- saha modu: günün listesi, söyle paneli, sonuç düğmeleri, sonuçları kopyala ---
-var gunluk=satirlar.filter(function(r){return r._bugun||r._gecmis}).sort(function(a,b){var ca=/cevap verdi|randevu/.test(a.asama||'')|0,cb=/cevap verdi|randevu/.test(b.asama||'')|0;return cb-ca||(b._gecmis|0)-(a._gecmis|0)||(b._yuz|0)-(a._yuz|0)||(parseInt(b.sizinti,10)||0)-(parseInt(a.sizinti,10)||0)});
+// Sira araçtaki saha_listesi ile ayni: once cevap verenler, sonra takibi gelenler,
+// sonra denetimi hazirlar, en sonda denetimsizler; her grupta gunu gecmis, en cok
+// istenen yuz, sizinti ve yorum sayisi once. Telefondaki saha ekrani da bu sirada.
+function sahaGrubu(r){return /^(cevap verdi|randevu)$/.test(r.asama||'')?0:r.son_temas_tarihi?1:r.sizinti!==''?2:3}
+var gunluk=satirlar.filter(function(r){return r._bugun||r._gecmis}).sort(function(a,b){return sahaGrubu(a)-sahaGrubu(b)||(b._gecmis|0)-(a._gecmis|0)||(b._yuz|0)-(a._yuz|0)||(parseInt(b.sizinti,10)||0)-(parseInt(a.sizinti,10)||0)||(parseInt(b.yorum_sayisi,10)||0)-(parseInt(a.yorum_sayisi,10)||0)});
 var ANAHTAR='founderos-saha-'+BUGUN;
 function durumOku(){try{return JSON.parse(localStorage.getItem(ANAHTAR)||'{}')}catch(e){return{}}}
 function durumYaz(d){try{localStorage.setItem(ANAHTAR,JSON.stringify(d))}catch(e){}}
@@ -2791,7 +3246,9 @@ var durum=durumOku();
 // Durum anahtari ada degil, ad+telefon ciftine bagli; yoksa iki isletme ayni
 // dugmeyi paylasiyor ve biri digerinin sonucunu eziyordu.
 function kayitAnahtari(r){return (r.kisa_ad||'')+'\u00a7'+((r.telefon||r.semt||'').trim())}
-function kanalTahmin(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');
+// Telefon cikan ama numarasi olmayan aday: Instagram, o da yoksa e-posta (araçtaki telefonsuz_kanal).
+function kanalTahmin(r){var k=kanalHareketten(r);if(k==='telefon'&&!(r.telefon||'').trim())return r.instagram?'instagram':r.eposta?'e-posta':'telefon';return k}
+function kanalHareketten(r){var h=(r.siradaki_hareket||'').toLocaleLowerCase('tr');
  // Satir '<kanal>, ...' bicimindeyse bastaki kanal esastir: 'telefon, videoyu acmis, ara'
  // satiri once video sanilıyordu ve telefon temasi video kanalina isleniyordu.
  if(/^\s*telefon\b/.test(h))return'telefon';
@@ -2809,7 +3266,8 @@ var GENEL={
  isleyis:'Yoğunken telefona yetişemediğinizde müşteri ne yapıyor, tekrar mı arıyor, mesaj mı yazıyor?',
  vaat:'Ben tam bunun için bir sistem kuruyorum: siz işteyken WhatsApp\'a, Instagram\'a ya da sitenizden yazan müşteriye dakikalar içinde cevap veriyor, bilgiyi alıp randevuya yazıyor; eski müşterilerinize de zamanı gelince hatırlatma gönderiyor. [Şehir]\'de bu ay ilk üç işletmeyle başlıyorum.',
  calisan:'Yoğunken telefona yetişemediğiniz saatlerde müşteriye cevap veren bir sistemle ilgili; kendisiyle iki dakika konuşmak istiyorum. Ne zaman dükkanda olur?',
- randevu:'Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin.'};
+ randevu:'Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin.',
+ rahatlat:'Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?'};
 var GENEL_ITIRAZ=[
  {durum:'Şu an müsait değilim.',soyle:'Tabii, ne zaman arayayım? Bugün akşamüstü mü, yarın sabah mı?',neden:'Zamanı olmadığını kabul edip somut saat almak, anlatmaya devam etmek değil.',sonra:'Saat verirse teşekkür et, kapat; "Sonra ara" düğmesine bas, tarihi yaz. Belirsizse bir kez daha sor ("Yarın on gibi uygun mu?"); yine belirsizse yarın ara, üçüncü kez arama.'},
  {durum:'Ne için arıyorsunuz?',soyle:'Yoğunken telefona yetişemediğiniz saatlerde WhatsApp\'a ve Instagram\'a yazan müşteriye cevap verip randevuya yazan bir sistem kuruyorum. Sizde böyle bir şey var mı diye soracaktım.',neden:'Tek cümlede ne olduğunu söylemek ve konuşmayı işletmenin işleyişine çevirmek.',sonra:'"Yok" derse işleyiş sorusuna geç; "var" derse "Nasıl çalışıyor, kim cevap veriyor?" diye sor, cevaba göre görüşme iste ya da kapat.'},
@@ -2849,16 +3307,16 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
   a.push(['Kural','Konuyu saklama, "kendisi biliyor" deme. Not bıraktırma, saat al. "Bana anlatın" derse iki cümle anlat, yine saat iste; çalışana satış yok. Açanın adını nota yaz; sonraki aramada onunla başla.']);return a}
  if(mod==='acilmadi'){a.push(['Şimdi','Hemen bir kez daha ara. Yine açılmazsa bugün bırak, mesaj bırakma; "Açmadı" düğmesine bas.']);a.push(['Yarın','Başka bir saatte bir kez daha. İki günde açılmazsa e-posta, FounderOS karar tablosuna göre yazar.']);return a}
  if(mod==='ikinci'){var nz=neZaman(r.son_temas_tarihi);var ac=sonTelefonAcildi(r);a.push(['Tanış ve geçmiş','Merhaba'+(s?' '+s:'')+', ben '+kac(OAD)+', '+nz+' '+deDa(nz)+' aramıştım'+(ac?', kısa konuşmuştuk':', açılmamıştı')+'. Bir dakikanız var mı? <span class="kucuk">saat verdiyse: "'+(nz==='dün'?'Dün':'Geçen aramada')+' \'şu saatte ara\' demiştiniz, uygun mu?"</span>']);
-  if(r.kanca||!ac){a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki arama gerçek gözlemdir; uydurma yok</span>'])}
+  if(r.kanca||!ac){a.push(['Gözlem',(r.kanca?kac(r.kanca)+' Onun için arıyorum.':nz.charAt(0).toLocaleUpperCase('tr')+nz.slice(1)+' aradığımda açılmamıştı, onun için arıyorum.')+' <span class="kucuk">önceki aramada görülen</span>'])}
   else{a.push(['Açılış sorusu',NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok; işleyiş sorusuna geç. Uydurma.</i>'])}}
  else{if(s){a.push(['Tanış ve kaynağı söyle','Merhaba, ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' '+kim+' <span class="kucuk">bekle</span>'])}
   else{a.push(['Yardım iste (sahibinin adı yok)','Merhaba, burası '+isletme+' '+soruEki(r.kisa_ad||r.ad||'')+'? <span class="kucuk">bekle</span> Kısa bir konuda yardımcı olabilir misiniz? Gelen aramaları ve randevuları kimin takip ettiğini öğrenmek istiyorum. <span class="kucuk">bekle</span>']);
    a.push(['"Ben ilgileniyorum" derse','Tamamdır, doğru kişiye ulaşmışım. Ben '+kac(OAD)+', '+kac(ek(OSEHIR,'den'))+' arıyorum. '+kac(kaynakCumle(r))+' <span class="kucuk">başkası derse: adını ve ne zaman ulaşılacağını sor, nota yaz; "işletme sahibi siz misiniz" diye sorma</span>'])}
-  a.push(['Rahatlat','Sizi tanımıyorum, kısa tutacağım.']);
+  a.push(['Rahatlat',kac(GENEL.rahatlat)+' <span class="kucuk">bekle</span>']);
   var pk=r.kanca?'':kancaMetni(r);
   a.push([r.kanca?'Gözlem (doğrulanmış)':(pk?'Gözlem (profilden)':'Açılış sorusu'),
     r.kanca?kac(r.kanca)+' Onun için arıyorum.'
-    :(pk?kac(pk)+' Onun için arıyorum. <span class="kucuk">Google profilinde görülen şey; denetim yapılmadı, uydurma yok</span>'
+    :(pk?kac(pk)+' Onun için arıyorum. <span class="kucuk">Google profilinde görülen şey</span>'
        :(NIS_ACILIS?kac(doldur(NIS_ACILIS)):'<i class="kucuk">Kartta açılış sorusu yok ve bu adayda gözlem yok; işleyiş sorusuna geç. Uydurma.</i>'))]);}
  a.push(['İşleyiş sorusu, tek soru',kac(doldur(NIS.isleyis_sorusu||GENEL.isleyis))+' <span class="kucuk">bekle, araya girme</span>']);
  a.push(['Ne yaptığın, kapsam içinde',kac(doldur(NIS.vaat||GENEL.vaat))+(OSIS?' Adı '+kac(OSIS)+'.':'')]);
@@ -2870,7 +3328,7 @@ function adimlar(r,mod){var s=r.sahibi?kac(r.sahibi):'';var kim=s?s+' ile mi gö
 function yaziPanel(r,mod){
  if(mod==='eposta'){
   if(!r.eposta) return '<div class="yazieksik">Bu adayın e-posta adresi yok. Telefon ya da Instagram kullan.</div>';
-  if(!r.eposta_metni) return '<div class="yazieksik">E-posta metni henüz yazılmadı. FounderOS\'a "bugünün e-postalarını yaz" de.</div>';
+  if(!r.eposta_metni) return '<div class="yazieksik">E-posta metni henüz yazılmadı. FounderOS\'a "'+kac(r.kisa_ad||r.ad)+' için mesaj yaz" de.</div>';
   return '<div class="yazibas"><span>Kime</span><button data-kop="'+kac(r.eposta)+'">Adresi kopyala</button></div>'
    +'<div class="yazikutu">'+kac(r.eposta)+'</div>'
    +(r.eposta_konu?'<div class="yazibas"><span>Konu</span><button data-kop="'+kac(r.eposta_konu)+'">Kopyala</button></div><div class="yazikutu">'+kac(r.eposta_konu)+'</div>':'')
@@ -2879,7 +3337,7 @@ function yaziPanel(r,mod){
    +'<div class="kucuk">Kendi iş e-postandan gönder. Gönderdikten sonra aşağıdan kanalı e-posta seçip sonucu işaretle.</div>';
  }
  if(!r.instagram) return '<div class="yazieksik">Bu adayın Instagram hesabı bulunamadı. Telefon ya da e-posta kullan.</div>';
- if(!r.dm_metni) return '<div class="yazieksik">Mesaj metni henüz yazılmadı. FounderOS\'a "bugünün mesajlarını yaz" de.</div>';
+ if(!r.dm_metni) return '<div class="yazieksik">Mesaj metni henüz yazılmadı. FounderOS\'a "'+kac(r.kisa_ad||r.ad)+' için mesaj yaz" de.</div>';
  return '<div class="yazibas"><span>Hesap</span><button data-kop="'+kac(r.instagram)+'">Kopyala</button></div>'
   +'<div class="yazikutu">'+kac(r.instagram)+'</div>'
   +'<div class="yazibas"><span>Mesaj</span><button class="ok" data-kop="'+kac(r.dm_metni)+'">Mesajı kopyala</button></div>'
@@ -2925,7 +3383,7 @@ function sahaCiz(){
    +(r.semt?'<div><span>İlçe</span>'+kac(r.semt)+(r.yorum_sayisi?' · '+kac(r.yorum_sayisi)+' yorum':'')+'</div>':'')
    +(r.baglayan?'<div><span>Bağlayan</span>'+kac(r.baglayan)+'</div>':'')
    +(r.bulgu?'<div><span>Doğrulanmış gözlem</span>'+kac(r.bulgu)+'</div>'
-      :(kancaMetni(r)?'<div><span>Profilden gözlem</span>'+kac(kancaMetni(r))+' <i class="kucuk">denetim yapılmadı; bu satır Google profilinden geliyor</i></div>'
+      :(kancaMetni(r)?'<div><span>Profilden gözlem</span>'+kac(kancaMetni(r))+' <i class="kucuk">bu satır Google profilinden geliyor</i></div>'
         :'<div><span>Doğrulanmış gözlem</span><i class="kucuk">yok; kartın açılış sorusuyla başla, "sürekli kaçırıyorsunuz" deme</i></div>'))
    +(r.kanca?'<div><span>Kanca</span>'+kac(r.kanca)+'</div>':'')
    +(r.siradaki_hareket?'<div><span>Bugün</span>'+kac(r.siradaki_hareket)+'</div>':'')
@@ -2956,7 +3414,11 @@ function bagla(){
  });
  saha.querySelectorAll('[data-itiraz]').forEach(function(b){b.addEventListener('click',function(){cekmeceAc(true)})});
  var kop=document.getElementById('kopyala'),tem=document.getElementById('temizle'),alan=document.getElementById('kopya-alani');
- if(kop)kop.addEventListener('click',function(){var m=sonucMetni();if(!m){alan.innerHTML='<div class="mesaj">Henüz sonuç girilmedi. Her adayın altındaki düğmelerden birine bas.</div>';return}
+ if(kop)kop.addEventListener('click',function(){
+  var eksik=gunluk.filter(function(r){var d=durum[kayitAnahtari(r)];return d&&d.sonuc==='randevu'&&!d.randevu});
+  if(eksik.length){alan.innerHTML='<div class="mesaj uyari">Randevunun gününü ve saatini yaz: '+eksik.map(function(r){return kac(r.kisa_ad||r.ad)}).join(', ')+'. Sonra yeniden kopyala.</div>';
+   var hedefAd=kayitAnahtari(eksik[0]);saha.querySelectorAll('.kart').forEach(function(k){if(k.dataset.k===hedefAd){var g=k.querySelector('[data-randevu]');if(g){g.focus();g.scrollIntoView({block:'center'})}}});return}
+  var m=sonucMetni();if(!m){alan.innerHTML='<div class="mesaj">Henüz sonuç girilmedi. Her adayın altındaki düğmelerden birine bas.</div>';return}
   var ta=document.createElement('textarea');ta.className='cikti';ta.value=m;alan.innerHTML='<div class="mesaj" id="kopya-mesaj">Kopyalandı. FounderOS\'a git, yazı kutusuna yapıştır ve gönder; listeyi o işler.</div>';alan.appendChild(ta);
   var ok=false;try{ta.select();ok=document.execCommand('copy')}catch(e){}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m).then(function(){},function(){if(!ok)document.getElementById('kopya-mesaj').textContent='Kopyalanamadı; aşağıdaki metni seçip kendin kopyala (Cmd+A, Cmd+C), FounderOS\'a yapıştır.'})}

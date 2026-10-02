@@ -6,7 +6,7 @@ description: "nisi-sec'in arka plan yardımcısı, birinci gün: pazar onaylanı
 
 # nisi-dogrula (arka plan yardımcısı)
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "nisi-dogrula"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -57,11 +57,11 @@ Reklam sütunu "görülemedi" kaldığında o soru elemez; karar diğer ölçül
 
 Her nişe aynı beş soru sorulur ve cevaplar tabloya yazılır:
 
-1. Bu şehirde yeterli işletme var mı? Eşik ana kanala bağlı: telefon nişinde 1.500, yazılı nişinde 600. Sayım çekimi eşiğe ulaştıysa cevap evet; altında kaldıysa gelen sayı yazılır. Sebebi: üçüncü blokta çıkan 500 kişilik liste bir ay gidiyor, doksan günün ihtiyacı telefon yolunda dört bin iki yüz, yazılı yolda bin beş yüz; liste her ay yeni ilçeyle yenileniyor ve şehir bu yenilemeyi taşıyacak kadar derin olmalı.
+1. Bu şehirde yeterli işletme var mı? Doksan günün eşiği ana kanala bağlı: telefon nişinde 1.500, yazılı nişinde 600 (nisi-sec, üçüncü eleme). Sayım beş yüz kayıtta durduğu için canlı sayım bu eşiğe hiç ulaşamaz: sayım beş yüze dayandıysa hücreye "500 ve üstü, eşik bu sayımla ölçülemedi" yazılır ve karar kartın şehir sayısına kalır (puanda "ölçülemedi"); beş yüzün altında kaldıysa gelen sayı yazılır, cevap hayır ve niş ikinci soruyla komşu illere ve Türkiye geneline açılır. Sebebi: üçüncü blokta çıkan 500 kişilik liste bir ay gidiyor, doksan günün ihtiyacı telefon yolunda dört bin iki yüz, yazılı yolda bin beş yüz; liste her ay yeni ilçeyle yenileniyor ve şehir bu yenilemeyi taşıyacak kadar derin olmalı.
 2. Türkiye'de yeterli işletme var mı? Eşik yine kanala bağlı: telefonda 5.000, yazılıda 2.000. Şehirde eşik çıkmazsa niş önce komşu illere, sonra Türkiye geneline açılıyor ve bu sayı devreye giriyor. Gerekçe tabloya yazılır.
 3. Reklam veren oranı en az yüzde on mu? Reklam veren işletme, pazarlamaya para ayırmayı zaten kabul etmiş işletmedir. Bakılamadıysa "görülemedi" yazılır ve bu soru elemez. Sağlık nişlerinde (diş, estetik) bu soru ne eler ne artı sayılır: o sektörde reklam az verilir, düşük oran beklenen şeydir. Tabloda bu hücreye "bu sektörde ölçü değil" yazılır; sebebi öğrenciye anlatılmaz.
 4. Telefonu dolu olanlar en az yüzde yetmiş mi? Ulaşamadığın işletmeye satamazsın. Instagram bu sayımda ölçülmüyor, oran yalnız telefonla kurulur.
-5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kurulum ücreti yıllık kaybın onda biri, aylık kurulumun beşte biri; aylık ücretin dört katı öğrencinin aylık hedefine ulaşmalı.
+5. Bu ay bu nişin sezonu mu, ve para hesabı tutuyor mu? Para hesabı nisi-sec'te yazılı: kartın müşteri değeri en az 10.000 TL ve Kademe 2'nin aylığı (12.500 TL) kartın rakamlarıyla çıkan aylık kaybın (ayda kaçan talep × müşteri olma oranı × müşteri değeri) dörtte birini geçmiyor.
 
 ### Sonuç
 
@@ -85,6 +85,7 @@ Bu tarama yalnız herkese açık işletme bilgisini topluyor: harita kaydı, iş
 
 Yardımcı dosya yazmaz; tabloyu FounderOS'a döner ve şunları FounderOS yazar. İş Beyni'ne: doğrulama tablosu ve tarihi, hangi sayıların canlı sayıldığı, hangilerinin karttan geldiği.
 Niş kartına (`nis-karti.md`): bu tarihte bu şehirde sayılan işletme sayısı, kartın "sahadan dolacak" bölümüne.
+Panel dosyasına (`.founderos/panel/ajans.json`, FounderOS yazar; şeması `founderos:panel-vitrini`'de): her nişin `pazar.adaylar` satırına özetten ölçüler (`sehir_sayisi`, `telefon_orani`, `reklam_orani`, `site_yok_orani`, `aksam_orani`, `sikayet_orani`, özet veriyorsa `ort_puan`), beş sorunun tablosundan `puan`, `karar` (beş sorudan üçünü geçemeyen niş `elendi`; seçilen pazar tutmazsa niş o gün değişir ve kararlar yeniden yazılır), `neden`; karttan `musteri_degeri`; dayanağı varsa `aylik_kayip` ve `kayip_dayanak`: şehirde kapalı saatte kaçan talep × müşteri olma oranı × müşteri değeri, hesabı tek cümleyle (formül `founderos:panel-vitrini`'de; dayanak yoksa yazılmaz). Ölçülemeyen hücre panelde de boş kalır, sıfır yazılmaz. Sonra aracın `panel --yukle` komutu sessiz çalışır ve odak (`odak_yaz`) `bitti` gider (`is`: nisi-dogrula; not: sayım bitti ve seçilen pazarın şehirdeki sayısı, tek cümle; sonraki: "Devam"). Öğrenciye söylenen rakam cümlesi panelde gördüğüyle aynıdır.
 CRM'e: hiçbir şey. Aday listesi üçüncü blokta çıkar.
 
 ## 8. Yedek yol

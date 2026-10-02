@@ -19,7 +19,9 @@ Kapasite gerçeği emlak CRM sektörünün kendi zaman analizinden: aktif bir da
 
 Bu rakamdan çıkan hesap işletmecinin diliyle şu: ayda 2 iş kapatan bir danışman için kaçırılan tek bir müşteri, o ayın cirosunun yarısı demek.
 
-Kayıp birimi: lira karşılığı kartta yok, sahadan dolacak (bir kapanmayan iş; kartın kendi hesabıyla danışman ayda ortalama iki satış kapattığı için kaçan tek müşteri ayın cirosunun yarısı demek).
+Kayıp birimi: 25.000 ile 100.000 lira (bir müşteri: bir kiralama ya da satış komisyonu; kirada bir aylık kira, satışta bedelin yüzde ikisi; tahmin: büyük şehirde bir aylık kira 25.000-45.000, iki ile beş milyonluk dairenin yüzde ikisi 40.000-100.000; ofisin gerçek rakamı sahadan dolacak. Kartın kendi hesabıyla danışman ayda ortalama iki satış kapattığı için kaçan tek müşteri ayın cirosunun yarısı demek).
+
+Kaçan talep: ayda 20 talep, yüzde 5'i müşteri olur (tahmin: ilan sitesinden yazan alıcının küçük bir kısmı işlem yapıyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Birincisi, ilan sitesi mesaj kutusu kayboluyor. Şikayetvar'da örnek başlık: "Hepsiemlak İlan Mesajları Görünmüyor Ve Müşteri Hizmetine Ulaşılamıyor" (sikayetvar.com/hepsiemlak/ilan, https://www.sikayetvar.com/hepsiemlak/ilan). İkincisi, randevu ve dönüş gecikmesi doğrudan şikayete konu oluyor. Sahibinden üzerinden bir şikayette müşteri saat 20.00'de sözleşmiş, danışman 20.45'e kadar gelmemiş, müşteri "iletişimsizlik", "zamanıma saygısız davranış", "oyalayıcı cevaplar" kelimelerini kullanmış (sikayetvar.com, https://www.sikayetvar.com/sahibinden/emlak-danismaninin-iletisimsizligi-ve-zamanima-saygisiz-davranisi). Üçüncüsü, dolaylı ama güçlü bir kanıt: günde 180-220 bildirim arasında danışmanın dikkati bölünüyor (emlakcrmx.com verisi); bu hacimde mesaj kaçırmak matematiksel olarak kaçınılmaz, ama "kaç dakikada dönüldüğü" için doğrudan sayısal kaynak bulunamadı, bilinmiyor, sahadan dolacak.
 

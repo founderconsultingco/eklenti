@@ -6,7 +6,7 @@ description: "Müşterinin ikinci gününden itibaren. AI Müşteri Dönüşüm 
 
 # musteri-sistemini-kur
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "musteri-sistemini-kur"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -38,7 +38,7 @@ Hangi parçanın işletmede hangi anı çözdüğü hizmet-akisini-ciz'in tablos
 **Gelen taraf (birinci dalga, yazılı; ikinci dalga, sesli):**
 8. AI Mesajlaşma ve Randevu Asistanı (AI Chat & Appointment Setter). Yazana anında cevap verir, ihtiyacı öğrenir, ölçüte uygunluğuna bakar, randevuya ya da çalışana yönlendirir. Adayı Değerlendirme ve Yönlendirme (Lead Qualification & Routing) bu asistanın içindedir. Metni ve kuralları: yazili-asistani-kur.
 9. Yeni Başvuruya Hızlı Dönüş (Speed-to-Lead). Form, karekod ya da mesaj gelince ilk iletişim altmış saniye içinde yazılı çıkar; hat ve izin hazırsa sesli asistan beş dakika içinde arar da (19. madde); ölçülür, kaçarsa bildirim yükselir. Formdan gelen başvuruya giden ilk mesajın şablonu hazır pakette gelir ve müşteri onaylar: "Merhaba [ad], [işletme adı]'na formunuz ulaştı. [Hizmet] için size en uygun saati bulalım: bugün mü, yarın mı?" Metin işletmecinin sözlüğüyle nişe uyarlanır, fiyat geçmez.
-10. Cevapsız Arama Sonrası Mesaj (Missed-Call Text Back). Açılmayan aramanın ardından aynı dakika WhatsApp'tan yazılı dönüş.
+10. Cevapsız Arama Sonrası Mesaj (Missed-Call Text Back). Açılmayan aramanın ardından otuz saniye içinde WhatsApp'tan yazılı dönüş; hat ikinci dalgada bağlanınca çalışır.
 11. AI Telefon Karşılama Asistanı (AI Voice Receptionist). İkinci dalga. Ayrı sesli ajan servisinde çalışır; ekip kurar ve CRM'e bağlar. İşletme açmadığında hattı karşılar, bilgi verir, randevu yazar, gerekince işi çalışana bırakır (şimdilik geri arama sözüyle; sesli-ajani-kur).
 
 **Randevu ve satış (yolculuğa göre):**
@@ -97,6 +97,8 @@ sesli-ajani-kur'dan: sesli ajanın karşılama cümlesi, soru sırası, insana d
 Sormaz. Ayarların değerleri karttan ve bilgi dosyasından gelir. Senden aldığı beş şey: her kurulum adımının bittiği ("tamam"), test sonuçları, iki dalganın canlıya alma onayı, müşterinin yönlendirme için yazılı onayı, telefon aboneliğinin açıldığı bilgisi.
 
 Müşteriden istenen tek yeni belge var ve kurulum görüşmesinde istenir: vergi levhası. Telefon hattı müşterinin kendi adına açılıyor, sağlayıcı onu istiyor.
+
+**Panelin Kurulum stüdyosu (Yol'da).** Öğrenci karşılama formundan ve kurulum görüşmesinden gelenleri üç sekmede toplar. Kodsuz kurulum: işletmenin telefonu ve semti, gün gün çalışma saatleri, randevu süresi, hizmetler, fiyat listesi (dosya), bildirim adresi, talebe kim dönecek, hizmet bölgesi, asistanın bilmesi gereken not. Bitince "Kurulum bilgileri: [işletme] ..." metni sohbete gelir; bilgileri müşterinin bilgi dosyasına yazarsın, eksik kalanı tek listede istersin, fiyat listesi geldiyse dosyayı okursun. Fiyat listesi asistanın bilgisidir, müşteriye söylenmez: fiyat kuralı değişmez. Test listesi: canlı öncesi testin maddeleri ve zor sorular (mesai dışı, yanlış bilgi, fiyat, bilmediği soru, aynı soru iki kez) geçti ya da kaldı diye işaretlenir; "Test sonuçları: [işletme] · x/y geçti · Kalan: ..." gelince geçenleri teslimat kaydına yazarsın, kalan her madde için düzeltmeyi adım adım verirsin, düzeltme bitince aynı maddeyi yeniden denetirsin. Hepsi geçmeden panelde "Canlıya al" kilitli durur; "Canlıya al: [işletme]" gelince teslim kontrolünün beş şartına bakar, eksik varsa tek cümleyle söylersin. Sesli tarafın kurulum adımını bu metin yazmaz; sesli taraf ekip tarafından bağlanır.
 
 ## 4c. Tamamlandı demek için
 
@@ -279,6 +281,8 @@ Geçme ölçütü tek cümle: "Müşteriye, söz verdiğim sonucu bu sistemin na
 
 Yöntem: uçtan uca çalıştır, kötü örnekleri dene. Çalışmıyorsa teslim edilmez. Özel değerler ekranındaki satırlar dolmadan test etme.
 
+Senaryolardan önce iki kontrol, on dakika. Eksik bilgi: özel değerler ekranında boş satır kalmadı (işletmenin adı, adresi, çalışma saatleri, takvim linki, ödeme linki, onay sayfası); karşılama formunda eksik kalan bilgi varsa önce o tamamlanır; eksik bilgiyle test yapılmaz. Yanlış yazım: bütün mesaj metinlerinde ve asistanın cevap listesinde işletmenin adı, adresi, saatleri ve hizmet adları müşterinin karşılama formundaki yazımla birebir; metinler müşteriye onaylatıldıysa onaylı hâl kullanılır. İkisi temiz çıkmadan senaryolara geçilmez.
+
 Testleri kendi adın ve kendi telefonunla açtığın tek bir kayıt üzerinden yaparsın. Müşteriye giden bildirimleri kapalı tutarsın; yalnız "müşteriye bildirimin ulaşması" senaryosunun son üç turunda açarsın.
 
 Birinci dalganın on dört senaryosu, toplam otuz iki tur. Her senaryo bir tur; kritik dördü (randevu alma, hatırlatma, teklif takibi, müşteriye bildirim) beş tur:
@@ -404,6 +408,7 @@ Bilgi dosyasına: kurulan parçalar ve tarihleri, 0850 numara, başvuru tarihi v
 CRM'e: teslimat aşaması (kurulum, test, canlı), randevu ve mesaj sayıları.
 Niş kartının Sahadan dolacak bölümüne: bu nişte randevu süresi, yoğun saatler, asistanın en sık takıldığı soru, sesli ajanın en sık takıldığı istek, hatırlatma saatlerinin gelme oranı, teklif takibinin kaçıncı dokunuşta cevap getirdiği.
 Her kurulum gününün tek satırı ve tek görüntüsü musteriyi-karsila'ya teslim edilir; müşteriye onu o modül gönderir.
+Panel dosyasına (`.founderos/panel/teslimat.json`, şeması `founderos:panel-vitrini`'de): o müşterinin satırında `evre` (`birinci_dalga`, `test`, `canli`, `ikinci_dalga`, `eksikler`, `rapor`), `testler` (birinci dalga otuz iki, ikinci dalga on dört turdan geçen), `kontrol` (teslimin beş şartından gerçekleşenler), `kapsam_disi` (müşteriye bildirilen her kurulamayan parça, sebebiyle), `siradaki`. Her kurulum gününün sonunda, testten ve canlıya almadan sonra yazılır; sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 

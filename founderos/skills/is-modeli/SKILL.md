@@ -72,6 +72,18 @@ AI Dış Arama, cevapsız aramayı geri çevirmek değildir; sistemin kendisinin
 
 Karşılama, ön eleme ve randevu yazma için ayrı ayrı botlar şart değil; aynı mesaj asistanı üçünü birlikte yürütür. Uygun ayarla aynı sesli ajan gelen ve giden aramada kullanılır.
 
+## Teslime hazır üç ajan (öğrencinin ve panelin dili)
+
+FounderOS'un tanıtım videosu satılan sistemi üç hazır ajan olarak anlatır: Hızlı Dönüş Ajanı, Randevu Ajanı, Eski Müşteri Kazanma Ajanı. Bunlar yukarıdaki platform ajanlarının yerine geçen yeni ürünler değildir; aynı işlevlerin öğrenciye, panele ve görüşmedeki sunuma gösterilen üç paketidir. Müşteriye yine tek sistem satılır: AI Müşteri Dönüşüm Sistemi, öğrencinin sistem adıyla.
+
+| Ajan | Panelde kodu | İçindeki işlevler | Ölçü |
+|---|---|---|---|
+| Hızlı Dönüş Ajanı | `hizli_donus` | Yeni Başvuruya Hızlı Dönüş, Cevapsız Arama Sonrası Mesaj | Forma ilk dönüş altmış saniye içinde yazılı; hat bağlanınca açılmayan aramaya otuz saniyede mesaj; telefonla arama tarafı hatlarda açılana kadar yazılı |
+| Randevu Ajanı | `randevu` | AI Mesajlaşma ve Randevu Asistanı, hat uygunsa AI Telefon Karşılama Asistanı, Adayı Değerlendirme ve Yönlendirme, Randevu Hatırlatmaları, Randevuya Gelmeyeni Geri Kazanma | Mesajda 7/24; telefonda hat uygunsa |
+| Eski Müşteri Kazanma Ajanı | `eski_musteri` | Eski Müşteri ve Başvuruyu Yeniden Kazanma, Tekrar Randevu Alma | Mesajla yürür; telefonla arama tarafı hatlarda açılana kadar yazılı |
+
+Teklifin çekirdeğindeki üç akış bu üç ajana oturur: resepsiyonist Randevu Ajanı'nda, forma hızlı dönüş Hızlı Dönüş Ajanı'nda, fiyat sorup kaybolanı canlandırma Eski Müşteri Kazanma Ajanı'nda. Adlar öğrencinin, panelin ve görüşmenin sunum bölümünün dilidir; işletmeciye açılış cümlesinde ad değil sonuç söylenir, teklif kuralı aynen durur. Üçü de FounderOS CRM'in hazır kurulum paketiyle gelir: öğrenci işletmenin bilgilerini girer, test listesini geçirir, teslim eder; sesli asistanı ve hattı ekip bağlar. Hangi ajanın hangi kademede olduğu kademelerin içeriğinden okunur, ayrı liste tutulmaz.
+
 ## On üç işlev
 
 Her satır ayrı bir ajan ya da ayrı satılan ürün değildir. Bir kısmı ajanın yürüttüğü iş, bir kısmı ajanla birlikte çalışan otomasyondur.
@@ -144,7 +156,7 @@ Kademeler bu daralma ve genişlemenin adıdır, ayrı ürün değil: **Kademe 1 
 
 ## Fiyat kuralı (kilitli)
 
-Fiyat iki parça: kurulum ücreti ve aylık ücret; ikisi de değerden hesaplanır, harcanan saatten değil. Kurulum ücreti, işletmenin yıllık kaybının yüzde onu (sistem para kazandırıyor: kaçan talep, takip, geri kazanma); sistem yalnız personel saati kurtarıyorsa yıllık tasarrufun yüzde yirmisi ile yirmi beşi. Aylık ücret kurulum ücretinin yüzde yirmisi. Deneme fiyatı ilk iki müşteride kurulumun yarısı, aylık aynı. Görüşmede rakam işletmecinin kendi sayısıyla formülden çıkar; formül ve oranlar kilitlidir, otuz görüşme birikmeden değişmez. Ayrıntı fiyati-belirle'de.
+Fiyat iki parça: kurulum ücreti ve aylık ücret; ikisi de kurulan kapsamdan ve işletmeye sağlanan faydadan belirlenir, harcanan saatten değil. Bant her nişte aynı: kurulum 40.000 ile 60.000 TL, aylık 10.000 ile 15.000 TL. Kademe 1: kurulum 40.000, aylık 10.000. Kademe 2, görüşmede satılan: kurulum 40.000, aylık 12.500. Kademe 3: kurulum 60.000, aylık 15.000. Fayda kontrolü: aylık ücret işletmenin aylık kaybının (ayda kaçan talep çarpı müşteri olma oranı çarpı müşteri değeri) dörtte birini geçmez; geçiyorsa işletme küçüktür, fiyat düşmez. Kurulumun yarısı başlangıçta, yarısı teslimde (rapor günü) alınır. Deneme fiyatı ilk iki müşteride kurulumun yarısı, aylık aynı. Bant, kademe rakamları ve fayda kontrolü kilitlidir, otuz görüşme birikmeden değişmez. Ayrıntı fiyati-belirle'de.
 
 Müşteriye verilen şey CRM hesabı ya da yazılım erişimi değildir: işletmenin müşteri iletişimini, randevularını ve satış takibini bir arada yürüten, işletmeye uyarlanmış sistem. Devam eden yönetim ve iyileştirme kapsamı sözleşmede açıkça yazılır.
 

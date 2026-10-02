@@ -6,14 +6,56 @@ Cikti (stdout) modelin baglamina girer. Uc is yapar:
 2. Oturum sikistirmadan sonra aciliyorsa "kaldigin modulu yeniden ac" der.
 3. Calisma klasorunde durum kaydi varsa kisa ozetini koyar; yoksa nereden
    okunacagini soyler (bulut oturumunda klasor bilgisayardadir).
+4. Ogrencinin klasorundeki aday araci paketteki surumden eskiyse iki dosyasini
+   (adaylar-arac.py, adaylar-sablon.html) paketten yeniler; csv'ye dokunmaz. Model
+   eski araci kullanirsa yeni kurallar (denetimsiz aday listeye girmez, rampa
+   satiri) hic calismiyor; surum karsilastirmasi modele birakilmaz.
 Hata olursa sessiz kalir; oturumu asla durdurmaz.
 """
 import json
 import os
+import re
+import shutil
 import sys
 from pathlib import Path
 
 KOK = Path(os.environ.get("CLAUDE_PLUGIN_ROOT") or Path(__file__).resolve().parent.parent)
+ARAC_KAYNAK = KOK / "skills" / "aday-listesi-araci"
+SURUM_DESENI = re.compile(r'^SURUM\s*=\s*"(\d+(?:\.\d+)*)"', re.M)
+
+
+def surum_oku(p):
+    try:
+        with open(p, encoding="utf-8", errors="ignore") as f:
+            m = SURUM_DESENI.search(f.read(40000))
+        return tuple(int(x) for x in m.group(1).split(".")) if m else None
+    except Exception:
+        return None
+
+
+def araci_guncelle(cwd):
+    """Klasordeki arac paketinkinden eskiyse yenilenir. Donus: "eski yeni" ya da None."""
+    yeni = surum_oku(ARAC_KAYNAK / "adaylar-arac.py")
+    if not yeni:
+        return None
+    for kok in dict.fromkeys([cwd, os.getcwd(), os.environ.get("CLAUDE_PROJECT_DIR")]):
+        if not kok:
+            continue
+        hedef = Path(kok) / ".founderos" / "adaylar-arac.py"
+        if not hedef.is_file():
+            continue
+        eski = surum_oku(hedef)
+        if eski is None or eski >= yeni:
+            return None
+        for ad in ("adaylar-arac.py", "adaylar-sablon.html"):
+            kaynak = ARAC_KAYNAK / ad
+            if not kaynak.is_file():
+                continue
+            gecici = hedef.with_name(ad + ".yeni")
+            shutil.copyfile(kaynak, gecici)
+            os.replace(gecici, hedef.with_name(ad))
+        return "%s %s" % (".".join(map(str, eski)), ".".join(map(str, yeni)))
+    return None
 
 
 def oku_girdi():
@@ -75,6 +117,15 @@ def main():
             "Bağlam az önce sıkıştırıldı. FounderOS oturumuysa: önce durum kaydını (.founderos/durum.json) "
             "ve İş Beyni'ni oku, founderos:ana-yonetici becerisini ve kaldığın modülü (durum kaydındaki "
             "acik_modul) Skill aracıyla yeniden aç, kaldığın adımdan sürdür. Öğrenciye aynı soruyu sorma.")
+    try:
+        guncel = araci_guncelle(g.get("cwd"))
+    except Exception:
+        guncel = None
+    if guncel:
+        eski, yeni = guncel.split()
+        cikti.append(
+            "Aday aracı bu oturumun başında yeni sürüme geçirildi (%s yerine %s); komutlarını ve çıktısını "
+            "founderos:aday-listesi-dosyasi'ndaki haliyle kullan. Öğrenciye söylenmez." % (eski, yeni))
     ozet = durum_ozeti(g.get("cwd"))
     if ozet:
         cikti.append("Durum kaydı: " + ozet)

@@ -6,7 +6,7 @@ description: "Her sabah, saha açıldıktan sonra. Dünü tek cümleyle okur, o 
 
 # gunu-planla
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "gunu-planla"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -75,7 +75,7 @@ Plan "sabah" diyorsa sabah bloğunu kastediyor. Nişin kanal ve zaman bölümü 
 
 Gün şu sırayla geçer ve bu sıra değişmez:
 
-**Sabah bloğu: önce denetim, sonra liste.** Plan beş dakikada verilir, hemen ardından o günün derin denetimleri yapılır. Tam zamanlıda beş aday, işin yanında üç; bunlar günün ilk aramaları. Kalan temaslar hızlı denetimle gider, hızlı denetimi olmayan aday listeye girmez. Denetim bitmeden aranacak liste kilitlenmez. Denetimler bitince bugünün saha listesi açılır ve telefondaki saha ekranına yüklenir: üstte dün cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar, en sonda denetimsizler. Sen sıralamıyorsun, sıra hazır geliyor. Dünkü cevaplara dönüş ve e-posta takiplerinin onayı da bu blokta biter.
+**Sabah bloğu: önce denetim, sonra liste.** Plan beş dakikada verilir, hemen ardından o günün derin denetimleri yapılır. Tam zamanlıda beş aday, işin yanında üç; bunlar günün ilk aramaları. Kalan temaslar hızlı denetimle gider, hızlı denetimi olmayan aday listeye girmez. Denetim bitmeden aranacak liste kilitlenmez. Denetimler bitince bugünün saha listesi açılır ve telefondaki saha ekranına yüklenir: üstte dün cevap verenler, sonra takip günü bugüne düşenler, sonra denetimi hazır ve sızıntı puanı yüksek adaylar. Denetimsiz aday listede yoktur: hızlı denetimi olmayan adaya hiçbir kanaldan ulaşılmaz. Sabah denetimi planın parçasıdır ve ertelenmez; aday aracı "denetim bekliyor" derse o adayların hızlı denetimi (işletme başına yirmi saniye) bu sabah yapılır ve liste yeniden kurulur. Denetimi yapılamayan aday o gün listeye girmez; "denetimi yarın yaparız" deyip denetimsiz adayla aranmaz. Sen sıralamıyorsun, sıra hazır geliyor. Dünkü cevaplara dönüş ve e-posta takiplerinin onayı da bu blokta biter.
 
 **Önce satış.** Saha bloğunun ilk yarım saati temasa ayrılır. Aramalar nişin söylediği yoğun saatte yapılır, çoğu nişte bu sabahın ve öğlenin içine düşüyor. Bu blok bitmeden başka bir şey açılmaz.
 
@@ -96,7 +96,7 @@ Akşam bloğunun içi de sabittir: kayıt kontrolü, günün sayılarının okun
 
 İşin yanında çalışıyorsan hedef sadece kurulum haftasında değil, ilk müşterinin **bütün teslim süresinde** yarıya iniyor: sıfırıncı günden rapor gününe kadar, her gün. Kırk temas o dönemde yirmi oluyor. Bir gün daha aynı şekilde yarılanıyor, o da şirket kuruluş günü.
 
-Sebebi rakamda: [21/28] günlük teslimde senin payın yaklaşık kırk beş saat (hattı, sesli ajanı ve müşteri bölümünün açılışını ekip yapar) ve o saatler senin akşam bloğundan çıkıyor. Senin akşam bloğun günde bir saat; teslim süresi boyunca bu saatler kırk beş saati karşılamıyor. Aradaki fark başka bir yerden değil, saha bloğundan alınıyor. Bunu plan baştan yazıyor ki sen hem sayıyı tutturamayıp hem de kendini suçlu hissetme. Garanti şartı da bu günleri hariç tutuyor.
+Sebebi rakamda: [21/28] günlük teslimde senin payın yaklaşık kırk beş saat (hattı, sesli ajanı ve müşteri bölümünün açılışını ekip yapar) ve o saatler senin akşam bloğundan çıkıyor. Senin akşam bloğun günde bir saat; teslim süresi boyunca bu saatler kırk beş saati karşılamıyor. Aradaki fark başka bir yerden değil, saha bloğundan alınıyor. Bunu plan baştan yazıyor ki sen hem sayıyı tutturamayıp hem de kendini suçlu hissetme. İlk Müşteri Güvencesi'nin şartı da bu günleri hariç tutuyor.
 
 Teslim bitip rapor günü raporu çıktığı gün hedef kırka döner. Plan bunu kendisi yapar, sen hatırlatmazsın.
 
@@ -114,7 +114,7 @@ Denetim bu otuz dakikanın içinde değil, öncesinde. Denetim sabah bloğunda b
 
 ### Arama rampası
 
-Sahanın ilk iki günü aramada rampa var: ilk gün on arama, ikinci gün yirmi, üçüncü günden itibaren planındaki arama sayısı (ana kanal telefonsa tam zamanlıda elli, işin yanında yirmi). Eksik kalan pay yazılı kanala geçer, e-postanın ve Instagram'ın kendi günlük sınırını aşmadan; sığmayan pay o gün yapılmaz ve kötü gün sayılmaz. Plan bunu ilk iki sabah kendisi söyler, sen hesaplamazsın.
+Sahanın ilk iki günü aramada rampa var: ilk gün on arama, ikinci gün yirmi, üçüncü günden itibaren planındaki arama sayısı (ana kanal telefonsa tam zamanlıda elli, işin yanında yirmi). Eksik kalan pay yazılı kanala geçer, e-postanın ve Instagram'ın kendi günlük sınırını aşmadan; sığmayan pay o gün yapılmaz ve kötü gün sayılmaz. Sahanın birinci günü ilk soğuk temas sonucunun kayda geçtiği gündür: açılış akşamının ilk on teması saha ekranından kayda geçtiyse o akşam birinci gün, ertesi sabah ikinci gündür. Panel de aynı günü sayar. Kaçıncı gün olduğunu aday aracının "saha günü" satırı söyler (`kapat`, `bugun` ve `ozet` basar); plan rampayı o satırdan söyler, sen tarihten hesaplamazsın. Rampa yalnız aramayı küçültür, günün sayısını küçültmez: işin yanında yine kırk, tam zamanlıda yüz; panelin günün halkası ve saha ekranının sayacı da bu toplamı gösterir. O yüzden liste her gün iki adımda kurulur, rampa günü de rampadan sonra da: önce `bugun --planla --sayi <bugünün arama sayısı> --kanal telefon` (rampa günü rampanın sayısı; sonra planın arama sayısı: işin yanında yirmi, tam zamanlıda elli; teslim süresinde işin yanında on, tam zamanlıda otuz), hemen ardından `bugun --planla --sayi <günün sayısı> --kanal yazı` (aramaya alınanlar yeniden planlanmaz, kalan pay yazılı kanaldan gider; telefonu olmayan zaten yazılı gider). Tek komutla günün sayısı telefona yazılırsa saha ekranına bütün liste arama diye gider; panel ise günü arama, mesaj ve video diye böler. Öğrenciye "bugün on arama" ya da "bugün yirmi arama" tek başına söylenmez; aynı cümlede kalan payın yazılı mesajla gittiği ve günün toplamı söylenir, yoksa akşam panel günü "eksik" gösterirken sohbet "tamamladın" der.
 
 ### Günün sayısı
 
@@ -190,7 +190,8 @@ Gün sayacı bunun için var. Her sabah planın başında duruyor: kaçıncı g�
 
 Normal bir sabah (tam zamanlı): "Gün [sayı]. Bugünün tek işi şu. Önce beş adayın derin denetimi, sonra liste açılıyor. Günün sayısı: elli [ana kanal], kırk diğer iki kanal, on video mesaj. Arama bloğunun ilk otuz dakikasında ilk yirmi temas gitmiş olacak. Listen telefonunda, bağlantı burada; her aramadan sonra sonuç düğmesine bas. Akşam sayıları kayıt söyleyecek."
 Normal bir sabah (işin yanında): "Gün [sayı]. Sabah bloğun bir saat: üç adayın denetimi ve dünkü cevaplar. Aramalar öğle arasında, ilk yarım saatte on arama; akşam yazılı mesajlar ve videolar. Günün sayısı kırk: yirmi [ana kanal], on altı diğer iki kanal, dört video. Listen telefonunda, her aramadan sonra sonuç düğmesi."
-Sahanın ilk günü: "Gün [sayı], müşteri bulmanın ilk günü. Bugün aramada on, fazlası yok; yarın yirmi, öbür gün tam sayı. Kalan pay yazılı kanala. İlk yirmi aramanın her birinden sonra kartın not kutusuna otuz saniyelik not."
+Saha günü 2 (dün akşam ilk on temas gitti): "Gün [sayı], müşteri bulmanın ikinci günü; dün akşam ilk on temas gitti. Aramada bugün yirmi, yarından itibaren tam sayı. Günün sayısı yine [kırk ya da yüz]: kalan [yirmi ya da seksen] yazılı mesaj ve video, listen ona göre hazır."
+Saha günü 1 (açılış akşamında temas gitmediyse): "Gün [sayı], müşteri bulmanın ilk günü. Aramada bugün on, fazlası yok; yarın yirmi, öbür gün tam sayı. Günün sayısı yine [kırk ya da yüz]: kalan [otuz ya da doksan] yazılı mesaj ve video, listen ona göre hazır. İlk yirmi aramanın her birinden sonra kartın not kutusuna otuz saniyelik not."
 Denetimden önce: "Plan hazır, beş dakika sürdü. Şimdi bugünün adaylarının denetimi. Denetim bitmeden liste kilitlenmiyor; ilk aramalar bu adaylara, gerisi hızlı denetimle."
 Öğrenci araç kurcalamaya başlarsa: "Bugün arama bloğunun temas kısmı bitmedi. O bitmeden başka bir şey açılmıyor. Kurcaladığın şey akşam da orada duruyor, aramadığın işletme akşam orada durmuyor."
 Görüşme günü: "Bugün iki görüşmen var. Her birinden on dakika önce prova yapacağız, tek konu. Görüşmeler arasındaki boşluk arama bloğu, boş bırakmıyoruz."
@@ -208,13 +209,13 @@ Günlüğe (`gunluk/` altında o günün dosyası, sadece eklenir): o günün pl
 Durum kaydına (`.founderos/durum.json`; veri bağlantısı açıksa `durum_yaz` ile sunucuya da): açık modül, sıradaki adım, güncellenme saati.
 İş Beyni'ne: açık işler bölümünde ertesi güne kalan iş ve "Sonraki adım" satırı; tek değerli alanlar yerinde güncellenir.
 CRM'e: hiçbir şey. Kayıtları modüllerin kendisi yazar, plan sadece sırayı verir.
-Günün listesi her sabah aday aracıyla kurulur, CRM açık olsa da (aday-listesi-dosyasi): önce `bugun --planla` (tam zamanlıda yüz, işin yanında kırk); bugün sıraya alınan adayların sıradaki tarihi bugüne yazılır, sayfanın Bugünün listesi dolar. Sonra `saha-paketi --yukle` günün listesini, her adayın ilk cümlesini ve arama senaryosunu servise kendisi yükler ve bağlantıyı basar (araç servise ulaşamazsa FounderOS `.founderos/saha-paketi.json`'u veri bağlantısındaki `saha_yukle` aracıyla yükler); bağlantı öğrenciye verilir: "Bugünün listen telefonunda, şu bağlantıdan aç. Aramayı oradan yap, her aramadan sonra sonuç düğmesine bas." Bağlantı yoksa yedek yol bugünkü sayfa: "Bugünün listesi sayfada, Bugünün listesi sekmesinde; her kartta ne söyleyeceğin yazıyor, her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Sekiz yüz satır sohbete okunmaz, aracın çıktısı yeter.
+Günün listesi her sabah aday aracıyla kurulur, CRM açık olsa da (aday-listesi-dosyasi): önce iki adımda `bugun --planla` (günün sayısı tam zamanlıda yüz, işin yanında kırk, teslim süresinde yarısı; önce arama sayısı telefonla, sonra günün sayısına kalan pay yazılı, yukarıda "Arama rampası"); bugün sıraya alınan adayların sıradaki tarihi bugüne yazılır, sayfanın Bugünün listesi dolar. Sonra `saha-paketi --yukle` günün listesini, her adayın ilk cümlesini ve arama senaryosunu servise kendisi yükler ve bağlantıyı basar (araç servise ulaşamazsa FounderOS `.founderos/saha-paketi.json`'u veri bağlantısındaki `saha_yukle` aracıyla yükler); bağlantı öğrenciye verilir: "Bugünün listen telefonunda, şu bağlantıdan aç. Aramayı oradan yap, her aramadan sonra sonuç düğmesine bas." Bağlantı yoksa yedek yol bugünkü sayfa: "Bugünün listesi sayfada, Bugünün listesi sekmesinde; her kartta ne söyleyeceğin yazıyor, her aramadan sonra düğmeye bas, akşam Sonuçları kopyala." Sekiz yüz satır sohbete okunmaz, aracın çıktısı yeter.
 
 ## 8. Yedek yol
 
 - Takvim boşsa ya da bağlanmadıysa: plan yine verilir, saatler yerine pencere sırası verilir.
 - Randevu ile müşteri işi çakışıyorsa: randevu öne alınır, müşteri işi aynı gün içinde kaydırılır. Randevu ertelenmez.
-- Sabah bloğu denetime yetmezse: o gün kaç aday denetlendiyse o kadarıyla sahaya çıkılır. Saha bloğu hiçbir gün denetim yüzünden kısalmaz.
+- Sabah bloğu denetime yetmezse: o gün kaç aday denetlendiyse o kadarıyla sahaya çıkılır. Saha bloğu hiçbir gün denetim yüzünden kısalmaz. Hızlı denetimi olmayan aday o gün listeye girmez; denetim yarına ertelenip denetimsiz adayla aranmaz.
 - Saha bloğu ile nişin söylediği saatler hiç kesişmiyorsa: o gün yazılı kanala geçilir ve plan sebebini söyler.
 - Gün yarıda kalırsa: kalan iş ertesi güne yazılır ama ertesi günün sayısına eklenmez.
 - Hasta olduğun ya da gidemediğin gün: plan verilmez, gün sayacı durmaz. Ertesi gün normal sayıdan devam edilir.

@@ -6,7 +6,7 @@ description: "Beşinci günün ikinci yarısı, provalarla aynı gün. Ön gör�
 
 # satis-videosunu-cek
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "satis-videosunu-cek"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -81,7 +81,7 @@ Sıra sabit. Toplam üç ile beş dakika.
 
 **2. Görüşmede ne olacağı.** Bu parça beklentiyi kuruyor ve gelme oranını en çok yükselten yer burası. "Yirmi dakika. Bu bir satış konuşması değil; size uyup uymadığımıza bakacağız. Uymuyorsa bunu size ben söyleyeceğim."
 
-**3. Senden istediklerim.** Sessiz bir yerde ol, araba kullanırken bağlanma, yanında kâğıt kalem olsun. Sebebi de söylenir: "İşinizle ilgili sorular soracağım ve sistemi ekrandan göstereceğim."
+**3. Senden istediklerim.** Sessiz bir yerde ol, araba kullanırken bağlanma, yanında kâğıt kalem olsun. Sebebi de söylenir: "İşinizle ilgili sorular soracağım, sistemi de kendi telefonunuzda deneyeceksiniz."
 
 **4. Neden gelmeni istiyorum.** Bu parça dürüst ve işe yarıyor: "Her görüşmeden önce o işletmeyi inceliyorum. Sizin sayfanıza, yorumlarınıza, telefonunuza baktım. Bu bir saatimi alıyor, o yüzden gelemeyecekseniz haber verin, kırılmam. Ama söz verdiyseniz bekliyorum." Bu cümle uydurma değil; sistem gerçekten her görüşmeden önce görüşme özet ekranını hazırlıyor ve sen deneme aramasını yapıyorsun.
 

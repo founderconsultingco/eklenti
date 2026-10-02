@@ -17,7 +17,9 @@ Müşteri yolculuğu: randevu. Teslimat bu yola göre kurulur; sahada tersi gör
 
 Kapasite konusunda saha verisi yok ama bir randevu yazılımı firmasının kendi modeline göre: mahalle tipi butik salon ayda 150-200 müşteri, ilçe ölçeğinde profesyonel salon 400-500 müşteri (kaynak: menajer.im, bu bir tahmin modeli, gerçek sayım değil). Buradan çıkan hesap: butik bir salonda günde ortalama 6-8 müşteri görülüyorsa, kaçan tek bir lazer epilasyon paketi müşterisi o günün cirosunun büyük bölümü demek. İşletmeciye "ayda üç müşteri kaçırıyorsun" değil, "üç boş koltuk saati" ya da "bir paket müşterisi" demek daha çok karşılık buluyor.
 
-Kayıp birimi: 26.250 ile 31.500 lira (bir paket müşterisi; kartın tüm vücut epilasyon tek seans 5.250 lira fiyatı ile paketin tek seansın beş altı katına satıldığı bilgisi çarpılarak çıktı, tek seans ölçüsüyle karşılığı üç boş koltuk saati).
+Kayıp birimi: 15.000 ile 30.000 lira (bir müşteri: epilasyon ya da cilt bakımı paketi, yanında yıl içindeki idame seansları; kartın tüm vücut epilasyon paketi tek seans 5.250 liranın beş altı katı, yani 26.250-31.500, bölgesel lazer paketleri bunun altında; tek manikür ya da tek ağda müşterisi bu hesaba girmez, tek seans ölçüsüyle karşılığı üç boş koltuk saati).
+
+Kaçan talep: ayda 30 talep, yüzde 15'i müşteri olur (tahmin: akşam ve hafta sonu yazanların bir kısmı paket soruyor, çoğu tek işlem; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** En güçlü kanıt randevu kanalları arasındaki kopukluk. Şikayetvar'da art arda örnekler var: bir müşteri WhatsApp'tan randevu onayı almış ama salona gittiğinde "sistemde görünmüyor" denmiş (Yeşim Alımcı Güzellik Merkezi). Bir başka müşteri Instagram üzerinden randevusu iptal edilip habersiz bırakılmış (Turkana Beauty Center). Bir müşteri 1,5 aydır ödediği lazer epilasyon paketi için randevu alamadığını yazmış (Zümrüt Güzellik). Yani telefon, WhatsApp ve Instagram DM üçü de kullanılıyor ama birbirinden bağımsız, kayıt tek yerde tutulmuyor (kaynak: sikayetvar.com/guzellik-salonu/randevu).
 
@@ -67,7 +69,7 @@ En güçlü üç itiraz: kendim cevap veriyorum, fiyatı ben söylemeliyim, bot 
 
 "Bot müşteriyi soğutur, bu iş sıcaklık ister." Ton uzmanın kendi diliyle ayarlanabilir; sektörün asıl güven kırıcı imajı zaten zorla içeri çekme ve baskı satışı, nazik ve zamanında dönen bir asistan bunun tersini gösterir.
 
-"Ucuzcu müşteri var, ekstra ödemeye parası yok." Aylık ücret bir sekiz seanslık epilasyon paketi müşterisi kadar (tek seans 5.250 TL, paket tek seansın 5-6 katı); ay içinde kurtarılan ilk paket müşterisi aylığı öder, ikincisinden itibaren kâr. Ucuzcu müşteri (tek manikür, tek ağda) sistemin hedefi değil, asistan paket müşterisini öne alır.
+"Ucuzcu müşteri var, ekstra ödemeye parası yok." Aylık ücret (10.000-15.000 TL) bir tüm vücut epilasyon paketi müşterisinin yarısı kadar (tek seans 5.250 TL, paket tek seansın 5-6 katı, yani 26.250-31.500 TL); ay içinde kurtarılan ilk paket müşterisi aylığı öder, ikincisinden itibaren kâr. Ucuzcu müşteri (tek manikür, tek ağda) sistemin hedefi değil, asistan paket müşterisini öne alır.
 
 "Reklam yasakları yüzünden zaten pazarlama yapamıyoruz." Biz reklam üretmiyoruz, size zaten gelen talebi (arayan, yazan, eski müşteri) değerlendiriyoruz. Mesajlarımızda öncesi sonrası fotoğrafı, "tedavi" lafı, kampanya yok.
 

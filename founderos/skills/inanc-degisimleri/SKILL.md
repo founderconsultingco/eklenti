@@ -36,7 +36,7 @@ Kullanım kuralı: bir oturumda en fazla bir tane. Aynı inanç değişimi aynı
 
 ## Üçüncü küme: para ve fiyat
 
-**9. "Bu para çok, kimse vermez."** Rakamı sen belirlemedin, kartın kayıp birimi belirledi. İşletmeci senin fiyatına değil, kaçan işlerinin toplamına bakıyor. Kartın rakamı: [kayıp birimi]. Aylık kaybı: [rakam]. Senin fiyatın onun yanında [şu oran]. Kullanım: fiyat söylemekten çekinme.
+**9. "Bu para çok, kimse vermez."** Rakamı sen belirlemedin; işletmecinin kaçırdığı müşteriler belirliyor. İşletmeci senin fiyatına değil, kaçan müşterilerinin toplamına bakıyor. Kartın müşteri değeri: [rakam]. Aylık kaybı: [rakam]. Senin aylığın onun yanında [şu oran]; ayda [sayı] müşteri kurtarması aylığı çıkarıyor. Kullanım: fiyat söylemekten çekinme.
 
 **10. "İndirim yapsam kapanır."** İndirim kapatmıyor, sonraki bütün görüşmelerini bozuyor. Fiyat düştüğü an aday sattığın şeyin değerinden şüpheye düşüyor, çünkü fiyatı savunmayan satıcı ürününü savunmuyor demektir. Fiyat itirazının cevabı indirim değil, kapsam küçültme: Kademe 1 var. Kullanım: indirim isteği.
 

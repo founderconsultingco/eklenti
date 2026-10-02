@@ -23,7 +23,9 @@ Kapasite için ilk somut kaynak bulundu: piyzi.com'a göre bir stüdyo, düğün
 
 Kuruluş maliyeti kapasitenin arka planı: piyzi.com asgari 101.000 TL, ortalama 265.000 TL, premium 640.000 TL üzeri diyor; dotkom.tr ve cekimvar.com 113.000-180.000 TL bandı veriyor; ornekbelge.com.tr 150.000-750.000 TL veriyor. KOSGEB girişimcilik desteği iki ayrı kaynakta da aynı bant: 65.000-365.000 TL (piyzi.com, ornekbelge.com.tr). Yüksek kuruluş maliyeti, sahibin her boş koltuğu daha ağır hissetmesi demek.
 
-Kayıp birimi: 15.000 ile 80.000 lira (bir düğün; kartın kendi hesabında stüdyo sezonda 10-30 etkinlik çekiyor ve paket başına 15.000-80.000 lira alıyor, yani kaçan tek düğün sezon ayındaki işin beşte biri ile yarısı).
+Kayıp birimi: 15.000 ile 55.000 lira (bir müşteri: bir düğün çekimi ya da yıllık aile paketi; kartın 2026 düğün paketleri ekonomik 18.000-26.000, standart 30.000-55.000, yenidoğan yıllık paketi 15.000-30.000; stüdyo sezonda 10-30 etkinlik çektiği için kaçan tek düğün sezon ayındaki işin beşte biri ile yarısı).
+
+Kaçan talep: ayda 15 talep, yüzde 10'u müşteri olur (tahmin: sezonda paket soran çift birkaç stüdyoya yazıyor; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Bu oturumda taranan yedi Şikayetvar şikayetinin tamamında aynı kalıp var: para alındıktan sonra iletişim kesiliyor, teslimat aylarca gecikiyor. Bu, önceki oturumun bulgusunu çok daha güçlü kanıtla doğruluyor; ilk temas gecikmesi değil, satış SONRASI sessizlik asıl sızıntı.
 

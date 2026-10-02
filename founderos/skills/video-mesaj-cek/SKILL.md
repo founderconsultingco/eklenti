@@ -6,7 +6,7 @@ description: "Kurulum beşinci gün, sahada her gün, günde on (işin yanında 
 
 # video-mesaj-cek
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "video-mesaj-cek"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -144,7 +144,7 @@ Truva Atı'nın altıncı adımı. Soğuk video değildir, konuşmanın devamıd
 
 1. **Onun sayfası.** Haritalar, site ya da Instagram açık, adıyla başlarsın: "Ahmet Bey, konuştuğumuz konu için kısa bir video."
 2. **Konuşulan ihtiyaç, onun cümlesiyle.** "Akşam gelen aramalara sabah dönüyorsunuz, bazen ulaşamıyorsunuz demiştiniz." Cümle adayın satırındaki son cevaptan gelir; söylemediği bir dert eklenmez.
-3. **Demoda test randevusu.** Tarayıcı demosu telefon görünümünde açık; sen bir müşteri gibi yazarsın, asistan cevaplar, saati verir, "randevunuz yazıldı" düşer. Cevapsız arama sahnesi onun derdiyse o sahne de gösterilir; demo sayfasında konuşma düğmesi açıksa kısa bir sesli deneme. Dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle ve kurallarınızla kurulur."
+3. **Demoda test randevusu.** Tarayıcı demosu telefon görünümünde açık (adaya özel demoyu kendi ekranında `onizleme` adresiyle açarsın, `demolar` satırında durur; alan yoksa adresin sonuna `?onizleme=1`: çıplak adresi sen açarsan adayın açtığı sayılır); sen bir müşteri gibi yazarsın, asistan cevaplar, saati verir, "randevunuz yazıldı" düşer. Cevapsız arama sahnesi onun derdiyse o sahne de gösterilir; demo sayfasında konuşma düğmesi açıksa kısa bir sesli deneme. Dürüstlük cümlesi: "Bu bir örnek; sizinki sizin bilgilerinizle ve kurallarınızla kurulur."
 4. **Görüşme daveti, tek somut saat.** "Sizin işletmenizde nasıl kurulacağını yirmi dakikada göstereyim. Yarın on birde uyar mı, uymazsa siz saat söyleyin. Görüşürüz Ahmet Bey."
 
 Kayıt yine Loom'la, tek çekim, montaj yok. Link cevabın geldiği kanaldan gider; konuşma zaten başladığı için Instagram'da izin mesajı gerekmez. Bu video günün video sayısının içindedir ve o günün ilk videosudur; cevap veren aday soğuk adaydan önce gelir. Demo videosu da aday başına bir kez çekilir. Metni FounderOS yazar ve soğuk videonun metni gibi adayın satırına kaydeder (`video_metni`). Fiyat, kademe ve kayıp rakamı bu videoda da yok. Randevu gelirse gorusmeye-getir devralır; iki iş günü cevap yoksa tek ilgili kontrol gider, ikinci video yok.

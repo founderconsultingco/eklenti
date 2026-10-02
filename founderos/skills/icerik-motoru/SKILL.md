@@ -6,7 +6,7 @@ description: "Saha açıldıktan sonraki ilk pazartesiden itibaren her pazartesi
 
 # icerik-motoru
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "icerik-motoru"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -158,7 +158,7 @@ Beş bölüm, sıra sabit:
 
 **1. Kanca, ilk otuz saniye.** İlk cümle haftanın en güçlü somut cümlesi: senin gözlemin ya da işletmecinin kendi cümlesi. Arkasından ona neye mal olduğu, tek cümle. Sonra kim olduğun, tek cümle: "Ben Ahmet; Bursa'daki servislere bu kaçan aramayı yakalayan sistemi kuruyorum." Son cümle videonun ne göstereceği. Açılışta şunlar yok: "merhaba arkadaşlar", "kanalıma hoş geldiniz", "bugün sizlere", "abone olmayı unutmayın".
 
-**2. Sorun, yaklaşık bir dakika.** İşletmecinin bir anı: ideal müşteri sayfasındaki günü, kartın sızıntısı, onun sözlüğü. Kayıp onun biriminde söylenir: bir servis, bir koltuk saati, bir keşif. Rakamı kartın kayıp biriminden; kartta yoksa rakamsız. Suçlama yok.
+**2. Sorun, yaklaşık bir dakika.** İşletmecinin bir anı: ideal müşteri sayfasındaki günü, kartın sızıntısı, onun sözlüğü. Kayıp müşteri olarak ve onun diliyle söylenir: kaçan bir müşteri, yıl içinde bırakacağı parayla. Rakamı kartın kayıp biriminden (müşteri değeri); kartta yoksa rakamsız. Suçlama yok.
 
 **3. Ne gördüm, bir buçuk ile iki dakika.** Senin kayıtların: kaç işletmeyi aradın, kaçı açtı; kaçına yazdın, kaç saatte döndüler; denetimlerde kaç işletmede ne gördün. Her sayı günü ya da ayı ve şehriyle, isimsiz. Kayıtta yeni sayı yoksa bu bölüm kartın kaynaklı bulgusuyla ve şikâyet cümleleriyle kurulur.
 

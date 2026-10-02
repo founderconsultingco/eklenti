@@ -6,7 +6,7 @@ description: "Birinci gün. İş adı, alan adı kontrolü, konumlandırma, logo
 
 # markani-kur
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "markani-kur"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -44,7 +44,7 @@ Aynı günün teklifinden: Dönüşüm Cümlesi, sistemin adı, üç kademenin i
 
 İki karar öğrenciye aittir ve ikisi de birer turda biter. Marka, bu sistemde öğrencinin zevkine bırakılan tek yerdir; sebebi şu: her gün o logoya bakacak olan o, ve kendi seçmediği bir markayı ilk itirazda savunamıyor.
 
-**Birinci karar, isim.** Üç isim önerirsin, her biri farklı bir aileden, her birinin yanında tek satır gerekçe ve boş olduğunu kontrol ettiğin adres. Adres kontrolü tek kontrol değil; ad ayrıca internette aranır ve çağrışımı temiz çıkmayan ad listeye hiç girmez. Öğrenci bir numarayı söyler. Üçünü de beğenmezse tek bir tur daha gelir, üç yeni isimle; ikinci turdan sonra karar verilir. Dördüncü tur yoktur.
+**Birinci karar, isim.** Üç isim önerirsin, her biri farklı bir aileden, her birinin yanında tek satır gerekçe ve boş olduğunu kontrol ettiğin adres. Adres kontrolü tek kontrol değil; ad ayrıca internette aranır ve çağrışımı temiz çıkmayan ad listeye hiç girmez. Öğrenci bir numarayı söyler. Üçünü de beğenmezse tek bir tur daha gelir, üç yeni isimle; ikinci turdan sonra karar verilir. Üçüncü tur yoktur.
 
 **İkinci karar, marka yönü.** Seçilen isimle üç kilit üretirsin ve ekranda kart olarak açarsın. Üçü birbirinden gerçekten farklıdır: farklı işaret, farklı tipografi, farklı palet, farklı kilit biçimi. Öğrenci bir numarayı söyler. Burada ikinci tur yoktur; üçünden biri seçilir, çünkü üçü de kullanılabilir haldedir ve gün akşama kadar bitmek zorundadır.
 
@@ -57,6 +57,8 @@ Sorulmayanlar: alan adı seçimi (isim önerilirken kontrol edilmiş oluyor), ya
 ## 4b. Birinci gün
 
 Marka birinci günün işi ve tamamı bugün çıkar. Kısaltılmış hali yok. Sırası şu: üç isim, seçim; üç kilit, seçim; sonra kit.
+
+**Panel, isimlerden önce.** Modül açılır açılmaz, isim ve adres taramasına girmeden önce panele odak (`odak_yaz`) gider: `basladi` (`is`: markani-kur, adım 1/3 "İş adı", not: "Üç isim buluyorum, adreslerine bakıyorum."). Tarama birkaç dakika sürer; odak gitmezse panel bu sürede eski işi gösterir. Panelde Ajansım'ın Marka kiti açılır. Üç ismi yazmadan hemen önce `bekliyor` (adım 1/3, bekleyen: "Üç isimden birinin numarasını yaz."), üç kilidi açmadan önce `bekliyor` (adım 2/3 "Marka yönü", bekleyen: "Üç marka yönünden birinin numarasını yaz."), dosyalar üretilirken `calisiyor` (adım 3/3 "Marka kiti"), kit ve panel gönderilince `bitti` (not: "Marka kitin hazır, Ajansım'da."; sonraki: "Devam"). Sayfaya geçince odak siteni-kur'un `basladi`sıyla geçer.
 
 **Üç isim birlikte gelir, adresleriyle.** İsim tek başına önerilmez: önerilmeden önce adresi kontrol edilir. Sebebi şu: ad birinci günde konuyor, logo o adla çiziliyor, bütün panolar o adla basılıyor; adres ilk kez günler sonra aranırsa ve doluysa elinde iki kötü seçenek kalıyor, ya kiti çöpe atacaksın ya tireli rakamlı bir adres alacaksın.
 
@@ -301,7 +303,7 @@ Sistem adını açıklarken: "[Ad] senin nişinin kökü artı sistemin yaptığ
 Neden bu isimler diye sorarsa: "Adın ne yaptığını anlatması gerekmiyor, tanınması gerekiyor. Ne yaptığını tek cümlelik konumlandırman anlatıyor. 'Klima Asistan' gibi bir ad hem sıkıcı duruyor hem ikinci nişe geçtiğinde seninle gelmiyor."
 Bir adı aradığında kötü çıkarsa: "[Ad]'ı listeden çıkardım. Sözlükte sorun yok ama Türkiye'de [çıkan çağrışım] olarak biliniyor; sen ilk aramanda bunu duyarsın ve markanı değiştirmek zorunda kalırsın. Yerine [yeni ad] koydum."
 Kilitleri gösterirken: "Üç marka yönü, ekranda açtım. Üçü de kullanılabilir halde, üçü de senin adınla. Birinci nişinin kartının önerdiği yön, ikincisi ondan belirgin farklı, üçüncüsü işaretsiz sade hal. Numarasını söyle, kitin tamamını onunla kuruyorum."
-Dördüncü seçenek isterse: "Yok. Üçü de bugün kullanılabilir ve akşam sahaya çıkmaya hazır olman lazım. İki hafta sonra hâlâ rahatsızsan o zaman bakarız; bugün seçiyoruz."
+Dördüncü seçenek isterse: "Yok. Üçü de bugün kullanılabilir; markan bugün bitiyor ki sayfan yayına hazır olsun. İki hafta sonra hâlâ rahatsızsan o zaman bakarız; bugün seçiyoruz."
 Adres soran öğrenciye: "Adresi bugün almıyoruz, bugün seçiyoruz. Alma günü [orta ve üst basamakta yarın, alt basamakta ilk kanıttan sonra]. Bugün cebinden para çıkmıyor."
 Alt basamaktaki öğrenci kapılmaktan çekinirse: "Kapılabilir, o yüzden yedeğini de seçtim. Kapılırsa yedeğe geçeriz, adın değişmez. Adres sitede ve imzada duruyor, logonda değil."
 Kiti üretmeden önce: "Seçimini aldım. Şimdi kitin tamamını üretiyorum: on iki pano ve yirmi iki dosya. On dakika sürer, ekranda birkaç işlem satırı göreceksin, normal."
@@ -316,14 +318,14 @@ Ayrıca aynı bölüme **dosya haritası**: hangi dosya hangi kullanım için ve
 Ve **eksik gerçek bilgiler satırı**: henüz olmayan telefon, e-posta ya da adres, hangi dosyayı beklettiğiyle birlikte. Bilgi geldiği gün o dosyalar yeniden üretilir.
 Bir sonraki modüllere: sayfa düzeni panosu ve seçilen alan adı siteni-kur'a, kanal şablonları kisisel-markani-kur'a, belge şablonları onay-belgesini-hazirla'ya.
 
-Panel: marka kitinin `window.MARKA` bloğu panelin Ajansım bölümünün kaynağıdır (logo, renk, yazı tipi, biz ve değil); ayrıca yazılmaz. `.founderos/panel/ajans.json`'a yalnız `ad`, `sehir`, `nis` ve `alan_adi` (şeması `founderos:panel-vitrini`'de); sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panel: marka kitinin `window.MARKA` bloğu panelin Ajansım bölümünün kaynağıdır (logo, renk, yazı tipi, biz ve değil); ayrıca yazılmaz. `.founderos/panel/ajans.json`'a yalnız `ad`, `sehir`, `nis` ve `alan_adi` (şeması `founderos:panel-vitrini`'de); sonra aracın `panel --yukle` komutu sessiz çalışır ve odak `bitti` gider (4b, "Panel, isimlerden önce").
 
 ## 8. Yedek yol
 
 - Seçim ekranı açılmazsa: üç seçenek sohbette yazıyla anlatılır (isim, işaret, palet, tipografi, tek satır açıklama) ve öğrenci yine numarayla seçer. Gün durmaz.
 - Tarayıcı bulunamazsa: panolar yine çıkar (`marka-kiti.html` tek dosya, tarayıcıda açılıyor), görsel dosyalar üretilemez. Eksik olanlar İş Beyni'ne yazılır ve öğrenciye tek cümleyle söylenir. Birinci gün kapanır, ikinci güne ertelenmez.
 - Yazı tipi Türkçe karakteri bozuyorsa: talimat yenilenir ve Türkçe destekleyen bir tipe geçilir. Bu tartışma konusu değil.
-- Adı beğenmezsen: ikincisi gelir, sonra üçüncüsü; üçüncü turda karar verilir, dördüncü tur yok. Ad iki hafta sonra değiştirilebilir, bugün değil.
+- Üç adı da beğenmezsen: bir tur daha, üç yeni adla; ikinci turdan sonra karar verilir, üçüncü tur yok (dördüncü bölümdeki kural). Ad iki hafta sonra değiştirilebilir, bugün değil.
 - Beğendiğin adın iki uzantısı da (.com ve .com.tr) doluysa: o ad önerilmez, sıradaki ada geçilir. Tireli ya da rakamlı adres alınmaz; adresi olmayan adla marka kurulmaz.
 - Çağrışım araması yapılamazsa (arama çalışmıyorsa): o tur için yalnız sistem adı, kısa uydurma ve soyadı aileleri kullanılır. Gerçek Türkçe kelime ailesi aramasız açılmaz, çünkü riski en yüksek olan ailedir.
 - Alan adı kontrolü yapılamazsa (satıcının ekranı açılmazsa): ad yine de konur ve kit basılır, İş Beyni'ne "adres kontrolü bekliyor" satırı yazılır. Gün durmaz; kontrol satın alma günü ekranın kendisinde yapılır, dolu çıkarsa yedeğe geçilir.
@@ -335,7 +337,7 @@ Panel: marka kitinin `window.MARKA` bloğu panelin Ajansım bölümünün kayna�
 
 ## 9. Sıradaki adım ve işaretler
 
-Sıradaki: aynı gün tanıtım sayfası (siteni-kur). Profil ve fotoğraf dördüncü blokta (kisisel-markani-kur).
+Sıradaki: aynı gün tanıtım sayfası (siteni-kur). Profil ve fotoğraf denetim ve prova gününde (kisisel-markani-kur).
 
 İşaretler (FounderOS okur, sen bir şey yapmazsın):
 - Kit iki kez baştan yaptırıldı: üçüncü tur açılmaz, eldeki kitle devam edilir.

@@ -6,7 +6,7 @@ description: "Birinci günün ikinci oturuşunda on dakikalık teslimat uygunluk
 
 # hizmet-akisini-ciz
 
-Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç.
+Bu modülün kuralları `founderos:ana-yonetici` becerisindedir (ses, beş kural, kayıt yerleri, onay, asla listesi); bu oturumda açılmadıysa önce onu aç. Panel: modül açılınca, ilk işinden önce `odak_yaz` `basladi` gider (`is`: "hizmet-akisini-ciz"); öğrenciden seçim ya da bilgi beklerken `bekliyor`, iş bitince `bitti`. Aşağıda kendi odak satırı varsa o geçer, ne zaman gönderilmediği dahil (çekirdek, "Panel: odak ve tur").
 
 ## 1. Adı, rolü, pazarlamadaki karşılığı
 
@@ -160,7 +160,7 @@ Kalıp:
 "Yedinci günden itibaren [üçüncü bölüm, tek cümle]."
 "[21/28]. günde raporda üç sayı var: gelen talep, [yazılan randevu | takip edilen teklif], ulaşılan eski müşteri." (İkinci sayı kartın müşteri yolculuğuna göre; kaynağı İş modeli'ndeki güvence cümlesi.)
 
-Klima servisi (randevu yolu, tam zamanlı öğrenci) için doldurulmuş hali: "Altıncı günde sistem canlıda, yani açamadığınız her aramaya otuz saniyede mesaj gidiyor ve yazan müşteriye asistan cevap veriyor. Yedinci günden itibaren geçen sezon bakım yaptırıp bu sene gelmeyenlere dönmeye başlıyoruz. Rapor gününde raporda üç sayı var: gelen talep, yazılan randevu, ulaşılan eski müşteri."
+Klima servisi (randevu yolu, tam zamanlı öğrenci) için doldurulmuş hali: "Altıncı günde sistem canlıda, yani yazan ve form dolduran müşteriye asistan bir dakika içinde cevap veriyor; hattınız bağlandığı gün açamadığınız her aramaya da otuz saniyede mesaj gitmeye başlıyor. Yedinci günden itibaren geçen sezon bakım yaptırıp bu sene gelmeyenlere dönmeye başlıyoruz. Rapor gününde raporda üç sayı var: gelen talep, yazılan randevu, ulaşılan eski müşteri."
 
 Bu üç cümle görüşmenin sunum bölümünde geçiyor.
 

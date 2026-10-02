@@ -25,7 +25,9 @@ Halı yıkama: Armut'ta ortalama 500-25.000 TL, genelde m² başına; 5 m² 500-
 
 Kapasite: "Bir ekip günde kaç ev çıkarıyor" sorusuna doğrudan kaynaklı bir rakam bulunamadı (bilinmiyor, sahadan dolacak). CNN Türk'ün verdiği "4 saatlik temizlik" süresinden çıkan mantıklı sonuç: standart mesaide bir ekip günde en fazla bir iki ev bitirebilir. Kaçan tek bir ev temizliği müşterisi işletmecinin diliyle bir "ekip yarım günü" demek, kaçan bir inşaat sonrası temizlik ise doğrudan 6.000-15.000 TL'lik bir işin tamamı.
 
-Kayıp birimi: 2.000 ile 6.000 lira (bir ekip yarım günü; kartın dört saatlik ev temizliği fiyatından çıkıyor, stüdyo dairede 2.000 lira, üç artı birde 6.000 lira). İnşaat sonrası işte aynı kayıp 6.000 ile 15.000 liraya çıkıyor.
+Kayıp birimi: 4.000 ile 9.000 lira (bir müşteri: bir ev temizliği ve yıl içinde bir iki tekrar; kartın dört saatlik ev temizliği fiyatı stüdyo dairede 2.000, üç artı birde 6.000). Tek müşteri on binin altında kalıyor: bu niş ancak inşaat sonrası ve ofis sözleşmesi olan firmalarla geçer, orada tek iş 6.000 ile 15.000 lira.
+
+Kaçan talep: ayda 30 talep, yüzde 25'i müşteri olur (tahmin: ekip sahadayken aynı gün dönülemeyen fiyat sorusu; görüşmede işletmecinin kendi sayısıyla değişir).
 
 **Sızıntı nerede.** Şikayetvar'ın temizlik şirketi kategorisinde 664 şikayet var (sikayetvar.com/temizlik-sirketi). En sık tekrarlanan temalar: randevuya gelmeme veya geç kalıp haber vermeme, iletişim eksikliği (aranınca açmama, mesaja dönmeme), iş kalitesi, ücret/iade anlaşmazlığı.
 
