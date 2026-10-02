@@ -147,7 +147,7 @@ Eşik buradan çıkıyor ve ana kanala bağlı:
 
 ### Dördüncü eleme: kanal
 
-Tanışmada tanımadığın birini aramanın seni çok zorladığını söylediysen ana kanalı Instagram olan kartlar öne alınır. Bu, ilk pazar seçiminde gerçek bir ölçüttür, süs değil. Telefon ağırlıklı nişler listeden çıkmaz ve telefon yine provayla gelir: hangi niş seçilirse seçilsin dört kolu da yapıyorsun. Ana kanal Kart özeti tablosunda, hangi kolun hangi saatte açık olduğu kartın "kanal ve zaman" bölümünde yazıyor.
+Tanışmada tanımadığın birini aramanın seni çok zorladığını söylediysen ana kanalı Instagram olan kartlar öne alınır. Bu, ilk pazar seçiminde gerçek bir ölçüttür, süs değil. Telefon ağırlıklı nişler listeden çıkmaz ve telefon yine provayla gelir: hangi niş seçilirse seçilsin dört kolu da yapıyorsun. Bu yüzden öneride "telefonla aramak zorunda kalmayacaksın", "arama yok" gibi bir söz verilmez; ana kanal Instagram olsa da günün temasının bir kısmı aramadır, payı kartın "Ana kanal" satırında yazılı ve öneride o payla söylenir ("aramanın payı az, metni ve provası hazır gelir"). Ana kanal Kart özeti tablosunda, hangi kolun hangi saatte açık olduğu kartın "kanal ve zaman" bölümünde yazıyor.
 
 ### Beşinci eleme: kartın hazırlığı
 

@@ -24,6 +24,20 @@ son asistan turunu (panelin "Su an" kartina giden odak_yaz metinleri dahil) su h
   9. Durum kaydinda aktif musteri var ama panelin teslimat dosyasi (.founderos/panel/teslimat.json)
      o musteriyi tasimiyor mu: ogrenci musterinin gununu panelde (Bugun'deki Teslimat karti, Yol'daki
      Teslimat Motoru) goremez. musteriyi-karsila satiri para geldigi turda acar; atlanirsa burada yakalanir.
+ 11. Durum kaydinda musteri sayisi gorusme sayisindan buyuk mu (evet gorusmenin icinden geldi, gorusme
+     sayaca yazilmadi; panelin hunisi "0 gorusme, 1 musteri" gosterir).
+ 10. Gunaydin turunda (founderos:gunaydin acildi) Is Beyni'ndeki panel linki turun hicbir metninde yok mu:
+     yeni sohbette yan panel yalniz bu baglantiyla acilir (z2: ilk mesaj iki gun ust uste hic yazilmadi).
+ 13. Gunaydin turunda saha aciksa (hafta ici) bugunun saha paketi kuruldu mu (.founderos/saha-paketi.json
+     tarihi bugun) ve siradaki_cekim duruyorsa durum_oku yapildi mi: musteri isi ya da bekleyen soru
+     sahanin yerine gecmez (z2 gun 7: liste, saha baglantisi ve gunun sayisi hic gelmedi).
+ 15. Aday araci bu turda stok satirinda "liste bitiyor" dediyse durum kaydinda siradaki_cekim var mi (ya da
+     oturumda aday_ara cagrildi mi): yoksa liste birkac gunde biter (z2 gun 7 kapanisi).
+ 14. Bu turda saha paketi kurulduysa (saha-paketi) paketteki yazili kanal adaylarinin gonderecek metni var
+     mi: yoksa telefondaki kartta yalniz Gonderdim kalir (z2 gun 7: 24 yazili aday metinsiz yuklendi).
+ 12. Durum kaydi bu turda yazildiysa (dosya ya da durum_yaz) icindeki siradaki_cekim gece gorevinin
+     okudugu adlarla mi (reklam_kelimeleri, istek_tarihi; istek_tarihi son uc gunde): degilse gece
+     cekimi hic baslamaz ama ogrenciye "bu gece cekiliyor" denmistir (z2 tur 42).
   6-8'de tirnak, kod ve alinti icindeki hazir metinler sayilmaz. 6-8 yalniz kalici metne bakar:
   turun son mesaji ve panel notu (odak_yaz). Araclar arasindaki ara mesaj ogrenciye coktan gitti;
   onu duzeltmek icin durdurmak turun sonuna baglamsiz yeni bir mesaj ekletiyordu (simulasyonda
@@ -96,6 +110,81 @@ PANELE_GONDERDIM = re.compile(
     r"\bpanel(?:e|ine|inize)\s+(?:de\s+)?(?:g[öo]nder(?:iyorum|dim|dik|iyoruz|eceğim|ece[gğ]iz)"
     r"|yolla(?:d[ıi]m|d[ıi]k|yaca[ğg][ıi]m)|yoll[uı]yorum|y[üu]kl(?:edim|edik|[üu]yorum|eyece[ğg]im)"
     r"|at(?:t[ıi]m|[ıi]yorum))\b", re.I)
+# Hayalet mesaj: "ozeti gonderdim", "yukarida yazdim" denip o metin bu turda ekranda yoksa. 2 Ekim z1:
+# tur ortasinda baglam sikistirildi, model kapanis ozetini gonderdigini sandi; ogrencinin gordugu tek
+# cumle "Birinci günün kapanış özetini gönderdim ve kayıtlar güncel. Cevabını bekliyorum." oldu.
+HAYALET = re.compile(
+    r"(?:[öo]zet\w*|kapan[ıi][şs]\w*|mesaj\w*|soru\w*|plan\w*|liste\w*|cevab\w*)[^.\n]{0,40}"
+    r"(?:g[öo]nderdim|yollad[ıi]m|ilettim|payla[şs]t[ıi]m)|\byukar[ıi]da(?:ki)?\b", re.I)
+
+
+def gorunen_diger_uzunluk(kayitlar, son_metin):
+    """Bu turda ogrencinin sohbette gordugu metnin (ara metinler ve SendUserMessage) son mesaj disindaki uzunlugu."""
+    toplam = 0
+    for k in kayitlar:
+        if k.get("type") != "assistant":
+            continue
+        icerik = (k.get("message") or {}).get("content")
+        parcalar = [icerik] if isinstance(icerik, str) else []
+        for p in icerik if isinstance(icerik, list) else []:
+            if not isinstance(p, dict):
+                continue
+            if p.get("type") == "text":
+                parcalar.append(p.get("text") or "")
+            elif p.get("type") == "tool_use" and "SendUserMessage" in (p.get("name") or ""):
+                parcalar.append(str((p.get("input") or {}).get("message") or ""))
+        for x in parcalar:
+            x = x.strip()
+            if x and x != (son_metin or "").strip():
+                toplam += len(x)
+    return toplam
+
+
+# Gunun ilk mesaji: kisa selamla (gunaydin) gelen turda panel linki ve dune bagli cumle ekrana hic gelmezse.
+# 2 Ekim z1 gun 4: "günaydın"dan sonra uc dakika sessiz is yapildi, gorunen tek metin "Kesin fiyat kondu..." oldu;
+# panel linki, selam, dun ve bugunun isi yoktu (sim-y2 Y4 ile ayni kalip).
+SELAM = re.compile(r"^\s*(?:g[üu]nayd[ıi]n+|ba[şs]layal[ıi]m|haz[ıi]r[ıi]m)[\s.!,]*$", re.I)
+
+
+def kullanici_metni(k):
+    icerik = (k.get("message") or {}).get("content")
+    if isinstance(icerik, str):
+        return icerik
+    if isinstance(icerik, list):
+        return " ".join(p.get("text") or "" for p in icerik if isinstance(p, dict) and p.get("type") == "text")
+    return ""
+
+
+def panel_linki(kok):
+    try:
+        with open(os.path.join(kok, "is-beyni.md"), encoding="utf-8") as f:
+            s = f.read(30000)
+    except Exception:
+        return None
+    m = re.search(r"Panel linki[^\n]*?(https?://[^\s)]+/panel/[A-Za-z0-9_-]+)", s)
+    return m.group(1) if m else None
+
+
+def gorunen_metin(kayitlar):
+    """Bu turda ogrencinin sohbette gordugu metin (ara metinler ve SendUserMessage)."""
+    parcalar = []
+    for k in kayitlar:
+        if k.get("type") != "assistant":
+            continue
+        icerik = (k.get("message") or {}).get("content")
+        if isinstance(icerik, str):
+            parcalar.append(icerik)
+            continue
+        for p in icerik if isinstance(icerik, list) else []:
+            if not isinstance(p, dict):
+                continue
+            if p.get("type") == "text":
+                parcalar.append(p.get("text") or "")
+            elif p.get("type") == "tool_use" and "SendUserMessage" in (p.get("name") or ""):
+                parcalar.append(str((p.get("input") or {}).get("message") or ""))
+    return "\n".join(parcalar)
+
+
 # Ingilizce ic not: modelin kendine yazdigi plan cumlesi ekrana dusuyor.
 INGILIZCE_NOT = re.compile(
     r"(?<![\w])(?:Step \d|Let me |Let's |I'll |I will |I need to |I'm going to |Now I |Next,? I |First,? I |"
@@ -259,6 +348,117 @@ def panel_gonderilmedi(araclar):
     return kirli
 
 
+PANEL_SATIRI = re.compile(r"^\s*-\s*Panel linki[^:\n]*:\s*(https?://\S+)", re.M)
+
+
+def saha_plani_eksikleri(kok, araclar):
+    """Saha acikken gunaydin turunda bugunun listesi kuruldu mu, gece hazirligina bakildi mi.
+    z2 gun 7 (tur 43-44): ilk musterinin ertesi sabahi gunaydin gunu "tek is: kurulum saati"ne indirdi;
+    liste, saha baglantisi ve gunun sayisi hic gelmedi, siradaki_cekim icin durum_oku yapilmadi.
+    Donus: eksikler ("liste", "gece"); saha kapaliyken ve hafta sonu bos."""
+    try:
+        with open(os.path.join(kok, ".founderos", "durum.json"), encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception:
+        return []
+    if not isinstance(d, dict) or not d.get("saha_acik"):
+        return []
+    import datetime
+    simdi = datetime.datetime.now()
+    gunler = {simdi.date().isoformat(), (simdi - datetime.timedelta(hours=5)).date().isoformat()}
+    if simdi.date().weekday() >= 5:
+        return []
+    try:
+        with open(os.path.join(kok, ".founderos", "saha-paketi.json"), encoding="utf-8") as f:
+            p = json.load(f)
+        tarih = str(p.get("tarih") or "")[:10] if isinstance(p, dict) else ""
+    except Exception:
+        tarih = ""
+    eksik = [] if tarih in gunler else ["liste"]
+    if isinstance(d.get("siradaki_cekim"), dict) and not any((a.get("name") or "").endswith("durum_oku") for a in araclar):
+        eksik.append("gece")
+    return eksik
+
+
+def arac_ciktilari(kayitlar):
+    """Kayittaki arac sonuclarinin metinleri (user kayitlarindaki tool_result)."""
+    for k in kayitlar:
+        if k.get("type") != "user":
+            continue
+        c = (k.get("message") or {}).get("content")
+        if not isinstance(c, list):
+            continue
+        for p in c:
+            if not (isinstance(p, dict) and p.get("type") == "tool_result"):
+                continue
+            cc = p.get("content")
+            if isinstance(cc, str):
+                yield cc
+            elif isinstance(cc, list):
+                for x in cc:
+                    if isinstance(x, dict) and x.get("type") == "text":
+                        yield str(x.get("text") or "")
+
+
+def siradaki_cekim_var(kok):
+    try:
+        with open(os.path.join(kok, ".founderos", "durum.json"), encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception:
+        return True
+    return isinstance(d, dict) and isinstance(d.get("siradaki_cekim"), dict)
+
+
+def saha_paketi_kuruldu(araclar):
+    for a in araclar:
+        ad = a.get("name") or ""
+        g = a.get("input") or {}
+        if (ad == "Bash" or ad.endswith("device_bash")) and isinstance(g, dict) and "saha-paketi" in str(g.get("command") or ""):
+            return True
+    return False
+
+
+def metinsiz_yazili_adaylar(kok):
+    """Bugunun saha paketinde gonderecek metni olmayan yazili kanal adaylari (adlari). Listedeki satirda
+    metin varsa (paket boyut yuzunden kirpti) sayilmaz. z2 gun 7: 24 yazili adayin hicbirinde metin yoktu."""
+    try:
+        with open(os.path.join(kok, ".founderos", "saha-paketi.json"), encoding="utf-8") as f:
+            p = json.load(f)
+        adaylar = p.get("adaylar") or []
+    except Exception:
+        return []
+    satir = {}
+    try:
+        import csv
+        with open(os.path.join(kok, "adaylar.csv"), encoding="utf-8-sig", newline="") as f:
+            for s in csv.DictReader(f):
+                satir[s.get("ad")] = s
+    except Exception:
+        pass
+    bos = []
+    for x in adaylar:
+        if not isinstance(x, dict):
+            continue
+        alan = "dm_metni" if x.get("kanal") == "instagram" else "eposta_metni" if x.get("kanal") == "e-posta" else None
+        if alan and not str(x.get(alan) or "").strip() and not str((satir.get(x.get("ad")) or {}).get(alan) or "").strip():
+            bos.append(str(x.get("kisa_ad") or x.get("ad") or "?"))
+    return bos
+
+
+def gunaydin_acildi(araclar):
+    return any(a.get("name") == "Skill" and str((a.get("input") or {}).get("skill", "")).endswith("gunaydin")
+               for a in araclar)
+
+
+def panel_linki(kok):
+    try:
+        with open(os.path.join(kok, "is-beyni.md"), encoding="utf-8", errors="ignore") as f:
+            m = PANEL_SATIRI.search(f.read(20000))
+    except Exception:
+        return None
+    return m.group(1).rstrip(").,;") if m else None
+
+
 def son_odak_bekleyen(kayitlar):
     """Kayitlardaki son odak_yaz 'Senden' satiri birakti mi (bekleyen); biraktiysa metni."""
     son = None
@@ -271,6 +471,10 @@ def son_odak_bekleyen(kayitlar):
     if not son:
         return None
     b = str(son.get("bekleyen") or "").strip()
+    # Prova ve canli gorusme rol oyunu: kart "sirani bekliyorum" der ve her turda gecerlidir. Her cevapta
+    # odak istemek oyunun replik satirini ogrenciye iki kez yazdiriyordu (z2 tur 28).
+    if str(son.get("is") or "") in ("gorusme-provasi-yap", "gorusmeyi-yonet"):
+        return None
     return b if b and son.get("durum") in ("bekliyor", "basladi", "calisiyor") else None
 
 
@@ -366,8 +570,64 @@ def durum_eski_mi(kok, son_gonderilen):
     return any(yerel.get(k) != son.get(k) for k in alanlar if k in yerel or k in son)
 
 
+def gorusmesiz_musteri(kok):
+    """Durum kaydinda musteri sayisi gorusme sayisindan buyuk mu: evet gorusmenin icinden geldi,
+    gorusme sayaca yazilmadi (z2 tur 39: randevu 1, gorusme 0, musteri 1). Donus: (musteri, gorusme) ya da None."""
+    try:
+        with open(os.path.join(kok, ".founderos", "durum.json"), encoding="utf-8") as f:
+            d = json.load(f)
+        say = d.get("sayaclar") or {}
+        m, g = int(say.get("musteri") or 0), int(say.get("gorusme") or 0)
+    except Exception:
+        return None
+    return (m, g) if m > g else None
+
+
+# Gece gorevi (sitede lib/gece.ts) yalniz bu adlari okur; istek_tarihi yoksa ya da uc gunden eskiyse
+# cekim hic baslamaz. z2 tur 42: kapanis `kelimeler` ve `tarih` yazdi, ogrenciye "bu gece cekiliyor" dendi.
+SIRADAKI_YANLIS_AD = (("kelimeler", "reklam_kelimeleri"), ("anahtar_kelimeler", "reklam_kelimeleri"),
+                      ("tarih", "istek_tarihi"), ("istek", "istek_tarihi"))
+
+
+def siradaki_cekim_sorunlari(kok):
+    """Durum kaydindaki siradaki_cekim sunucunun okudugu bicimde mi. Donus: kisa sorun listesi (bos: sorun yok)."""
+    try:
+        with open(os.path.join(kok, ".founderos", "durum.json"), encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception:
+        return []
+    c = d.get("siradaki_cekim") if isinstance(d, dict) else None
+    if not isinstance(c, dict):
+        return []
+    sorun = ["`%s` değil `%s`" % (yanlis, dogru) for yanlis, dogru in SIRADAKI_YANLIS_AD if yanlis in c and dogru not in c]
+    for alan in ("kategori", "sehir"):
+        if not str(c.get(alan) or "").strip():
+            sorun.append("`%s` boş" % alan)
+    t = str(c.get("istek_tarihi") or "").strip()[:10]
+    try:
+        import datetime
+        fark = (datetime.date.today() - datetime.date.fromisoformat(t)).days
+        if fark < 0 or fark > 3:
+            sorun.append("`istek_tarihi` bugün değil (%s)" % t)
+    except ValueError:
+        if not any("istek_tarihi" in s for s in sorun):
+            sorun.append("`istek_tarihi` yok")
+    if "reklam_kelimeleri" in c and not isinstance(c.get("reklam_kelimeleri"), list):
+        sorun.append("`reklam_kelimeleri` liste değil")
+    return sorun
+
+
 def teslimati_eksik_musteriler(kok):
-    """Durum kaydindaki aktif musterilerden panelin teslimat dosyasinda olmayanlar."""
+    """Durum kaydindaki aktif musterilerden panelin teslimat dosyasinda olmayanlar.
+    Klasorde musteri dosyasi yoksa (bilgisayar degisti, durum kaydi sunucudan kuruldu) bos doner:
+    satiri kuracak bilgi yok, yazilan bos satir sunucudaki dolu Teslimat bolumunun ustune gider
+    (simulasyon z3, uc durum d: Teslimat yalniz adla kaldi)."""
+    try:
+        md = [f for f in os.listdir(os.path.join(kok, "musteriler")) if f.endswith(".md")]
+    except Exception:
+        md = []
+    if not md:
+        return []
     try:
         with open(os.path.join(kok, ".founderos", "durum.json"), encoding="utf-8") as f:
             d = json.load(f)
@@ -502,6 +762,14 @@ def main():
     bn = BLOK_NUMARASI.search(duz)
     if bn:
         sorunlar.append("Öğrenciye giden metinde hazırlığın blok numarası var (%s). Blok iç sözdür; o günün işiyle söyle ('kesin rakamı aday listesini çıkardığımız gün koyuyoruz'). Panel notunda da aynı kural." % bn.group(0))
+    if son_kullanici >= 0 and SELAM.match(kullanici_metni(kayitlar[son_kullanici])):
+        link = panel_linki(g.get("cwd") or os.getcwd())
+        gorunen = gorunen_metin(kayitlar[son_kullanici + 1:]) + "\n" + (son_mesaj or "")
+        if link and link not in gorunen and "Panelini aç" not in gorunen:
+            sorunlar.append("Öğrenci günü selamla açtı ama günün ilk mesajı ekranda yok: ilk satır `[Panelini aç](%s)`, sonra dünü tek cümleyle bağlayan cümle ve bugünün işi (founderos:gunaydin, 'İlk satır panel', 'İlk cümle düne bağlanır'). O mesajı şimdi tek parça yaz; bu turda yaptığın işi bir iki cümleyle içine kat, öğrenciden bir şey bekliyorsan sonda tek soru." % link)
+    hy = HAYALET.search(ifade_disi(son_metin or ""))
+    if hy and len((son_metin or "").strip()) < 260 and gorunen_diger_uzunluk(kayitlar[son_kullanici + 1:], son_metin) < 300:
+        sorunlar.append("Öğrenci bu turda sohbette yalnız şu kısa cümleyi gördü: \"%s\". Söz ettiğin mesaj ekranda yok; düşüncedeki taslak ya da bağlam sıkıştırılmadan önceki plan gönderilmiş sayılmaz. O mesajın kendisini şimdi tek parça yaz (kapanışsa kapanışın kendisi, soruysa sorunun kendisi); kısa cümleyi tekrar etme, gönderdiğini söyleme." % (son_metin or "").strip()[:160])
     bs = BEKLEME_SOZU.search(ifade_disi(son_metin or ""))
     if bs and not arka_plan_var(son_araclar):
         sorunlar.append("Turu '%s' sözüyle bitirdin ama arka planda çalışan bir iş yok; tur bitince hiçbir şey çalışmaz, öğrenci boşuna bekler. Söz verdiğin işi şimdi bu turda yap ve sonucunu kısaca söyle; öğrenciden bir şey bekliyorsan onu tek cümleyle sor." % bs.group(0)[:60])
@@ -523,6 +791,60 @@ def main():
         sorunlar.append("Panel dosyasını (.founderos/panel/) bu turda değiştirdin ama panele göndermedin; panelde gösterdiğin şey orada yok. Öğrencinin klasöründe aracın panel --yukle komutunu sessiz çalıştır. " + SESSIZ_BITIS)
     if panel_gonderilmedi(son_araclar):
         sorunlar.append("Aday listesini bu turda değiştirdin (aday aracının yazan komutu) ama panele göndermedin; panelin Adaylar bölümü ve Mesajlar'daki Truva mesaj stüdyosu eski satırları gösteriyor. Öğrencinin klasöründe aracın panel --yukle komutunu sessiz çalıştır. " + SESSIZ_BITIS)
+    # Gunun ilk mesaji (gunaydin): ilk satiri panel linki. z2 tur 1 ve 7: link, dune bagli cumle ve gunun
+    # isi hic yazilmadi; istem kancasinin hazir linkli notuna ragmen tur yalniz isin sonucuyla bitti.
+    # Yeni sohbette yan panel yalniz bu baglantiyla acilir. Link turun hicbir metninde yoksa sona eklenir.
+    link = panel_linki(kok) if gunaydin_acildi(son_araclar) else None
+    if link and link not in metin:
+        sorunlar.append(("Günün ilk mesajı gitmedi: panel linki ve düne bağlı cümle öğrenciye hiç yazılmadı; yeni sohbette yan panel "
+                         "bu bağlantıyla açılır. Şimdi kısa bir mesaj yaz: ilk satır tam olarak [Panelini aç](%s), altında düne bağlı "
+                         "tek cümle (dün ne oldu) ve bugünün tek işi, tek cümle. Az önce yazdığını tekrar anlatma; öğrenciden bir şey "
+                         "istediysen mesaj o isteğin tek cümlelik aynısıyla biter. Kayıttan, panelden ya da araçtan söz etme.") % link)
+    sp = saha_plani_eksikleri(kok, son_araclar) if gunaydin_acildi(son_araclar) else []
+    if sp:
+        parca = []
+        if "gece" in sp:
+            parca.append("Durum kaydında `siradaki_cekim` duruyor: önce `durum_oku`; `gece_cekimi` geldiyse listeyi `cek --is` ile al, "
+                         "gelmediyse çekimi şimdi `aday_ara` ile başlat (founderos:veri-servisi, gece hazırlığı).")
+        if "liste" in sp:
+            parca.append("Saha açık ama bugünün listesi kurulmadı; müşteri işi, görüşme ya da öğrenciden beklenen bir cevap sahanın "
+                         "yerine geçmez. Şimdi founderos:gunu-planla: aday aracıyla `bugun --planla`, ardından `saha-paketi --yukle`; "
+                         "dönen saha bağlantısını ve günün sayısını (durum kaydındaki `gunluk_hedef` ve dağılımı) öğrenciye kısa bir "
+                         "mesajla ver.")
+        sorunlar.append(" ".join(parca) + " Öğrenciye sorduğun bir soru varsa mesaj o sorunun tek cümlelik aynısıyla biter. "
+                        "Kayıttan, panelden ya da araçtan söz etme.")
+    # z2 gun 7: aksam kapanisi stok 4.7 gunken siradaki_cekim yazmadi (gun 6'da yazmisti); arac stok satirini
+    # basar, burada yalniz o satir bu turda ciktiysa ve ne istek ne oturumda cekim varsa durdurulur.
+    if any(">>> liste bitiyor" in t for t in arac_ciktilari(kayitlar[son_kullanici + 1:])) \
+            and not siradaki_cekim_var(kok) and not any((a.get("name") or "").endswith("aday_ara") for a in son_araclar):
+        sorunlar.append("Aday aracı bu turda stok satırında \"liste bitiyor\" dedi ama durum kaydında `siradaki_cekim` yok; liste "
+                        "birkaç günde biter. Sıradaki yeri seç (founderos:veri-servisi, gece hazırlığı: ilk çekim şehir geneliyse kartın "
+                        "diğer Haritalar kategori adı, sonra çekilmemiş ilçe, sonra komşu il), `siradaki_cekim`'i tam alan adlarıyla yaz "
+                        "(kategori, sehir, ilce, hedef, reklam_kelimeleri, istek_tarihi bugün) ve aynı içeriği durum_yaz ile gönder. "
+                        "Listenin bu gece çekileceğini öğrenciye bu turda söylemediysen tek cümle: \"Listen beş günlük işin altına indi; "
+                        "yeni ilçenin listesi bu gece çekiliyor, sabah hazır.\" Söylediysen yeni bir şey yazma, öğrenciye son sorduğun "
+                        "soruyu ya da son cümleni tek cümle olarak aynen yinele. Kayıttan, panelden ya da araçtan söz etme.")
+    mz = metinsiz_yazili_adaylar(kok) if saha_paketi_kuruldu(son_araclar) else []
+    if mz:
+        sorunlar.append(("Bugünün saha listesinde %d yazılı aday metinsiz (%s); telefondaki kartta gönderecek metin yok, yalnız "
+                         "Gönderdim düğmesi var. Bu adayların metnini founderos:adaya-mesaj-yaz kuralıyla (gözlemden, adaya özel) yaz, "
+                         "aday aracının guncelle komutuyla satırına işle (Instagram: `dm_metni`; e-posta: `eposta_konu` ve `eposta_metni`), "
+                         "sonra `saha-paketi --yukle`'yi yeniden çalıştır. Gözlemi olmayan adaya yazılı mesaj yazılmaz, o aday bugünün "
+                         "listesinden telefona bırakılır. Öğrenciye tek cümle: Instagram ve e-posta mesajları telefondaki kartlarında "
+                         "hazır, kartta \"Mesajı kopyala\"ya basıp kendi hesabından gönderecek, sonra \"Gönderdim\". Öğrenciye sorduğun "
+                         "bir soru varsa mesaj o sorunun tek cümlelik aynısıyla biter. Kayıttan, panelden ya da araçtan söz etme."
+                         % (len(mz), ", ".join(mz[:4]) + (" ..." if len(mz) > 4 else ""))))
+    gm = gorusmesiz_musteri(kok)
+    if gm:
+        sorunlar.append(("Durum kaydında müşteri sayısı görüşme sayısından büyük (müşteri %d, görüşme %d): evet görüşmenin içinden geldi, "
+                         "görüşme sayaca yazılmadı. `sayaclar.gorusme`'yi en az müşteri sayısına çıkar (ilk görüşmeyse `ilerleme_asamasi` en az 3) "
+                         "ve aynı içeriği durum_yaz ile gönder; görüşmenin notları gün kapanmadan gorusmeyi-analiz-et ile yazılır. " % gm) + SESSIZ_BITIS)
+    durum_yazildi = any(durum_kaydi_yazildi(a) or (a.get("name") or "").endswith("durum_yaz") for a in son_araclar)
+    sc = siradaki_cekim_sorunlari(kok) if durum_yazildi else []
+    if sc:
+        sorunlar.append(("Durum kaydındaki `siradaki_cekim` sunucunun okuduğu biçimde değil (%s); gece çekimi bu haliyle hiç başlamaz. "
+                         "Alanları tam bu adlarla yaz: `kategori`, `sehir`, `ilce`, `hedef`, `reklam_kelimeleri` (liste), "
+                         "`istek_tarihi` (bugün, YYYY-AA-GG); başka ad kullanma. Aynı içeriği durum_yaz ile gönder. " % "; ".join(sc)) + SESSIZ_BITIS)
     eksik = teslimati_eksik_musteriler(kok)
     if eksik:
         sorunlar.append(("Durum kaydında müşteri var (%s) ama panelin Teslimat dosyası (.founderos/panel/teslimat.json) onu taşımıyor; öğrenci müşterisinin gününü panelde göremez. Şimdi founderos:panel-vitrini şemasıyla müşterinin satırını yaz (ad, baslangic: paranın geçtiği gün, rapor_gunu, aylik: anlaşılan aylık ücret, evre, siradaki; öbür müşterilerin satırlarını koru) ve aracın panel --yukle komutunu sessiz çalıştır. " % ", ".join(eksik)) + SESSIZ_BITIS)
@@ -534,6 +856,10 @@ def main():
         if onceki:
             sorunlar.append(("Panelin Şu an kartında \"Senden: %s\" duruyor ve bu turda odak gitmedi. Öğrenciden şimdi başka bir şey bekliyorsan odak_yaz `bekliyor` ve yeni `bekleyen` (varsa `sonraki`); aynı şeyi bekliyorsan aynı `bekleyen` ile yeniden; beklemiyorsan `calisiyor` ya da `bitti` gönder. " % onceki[:80]) + SESSIZ_BITIS)
     if sorunlar:
+        # Ogrenciye yeni mesaj yazdiran bir sorun varsa (gunun ilk mesaji, hayalet mesaj) obur sorunlarin
+        # "yalniz son cumleyi yinele" sonu onunla celisir: o son cikarilir, arac yine sessiz calisir.
+        if any(x.startswith("Öğrenci günü selamla açtı") or x.startswith("Öğrenci bu turda sohbette yalnız") for x in sorunlar):
+            sorunlar = [x.replace(SESSIZ_BITIS, "Araçtan sonra öğrenciye kayıttan, sunucudan, panelden ya da araçtan söz etme.") for x in sorunlar]
         sys.stderr.write("FounderOS denetimi: " + " ".join(sorunlar) + "\n")
         return 2
     return 0

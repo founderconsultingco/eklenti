@@ -43,12 +43,16 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
                             (telefondaki saha ekranının paketi: günün listesi ve arama senaryosu.
                              Paketi .founderos/saha-paketi.json'a yazar; --yukle ile servise kendisi yükler
                              ve bağlantıyı basar. Servise ulaşamazsa FounderOS dosyayı saha_yukle ile yükler)
-  panel [--yukle] [--anahtar FOS-...] [--adres URL] [--hepsi]
+  panel [--yukle] [--anahtar FOS-...] [--adres URL] [--hepsi] [--bastan [BÖLÜM]]
                             (paneldeki beş bölüm: ajans, adaylar, mesajlar, icerik, teslimat. adaylar bu listeden hesaplanır;
                              ajans .founderos/panel/ajans.json ile marka kitinin ve sayfanın bloklarından, mesajlar ve
                              icerik .founderos/panel/ altındaki kendi dosyalarından. Bölümleri denetler,
                              .founderos/panel/gonderilecek.json'a yazar; --yukle ile yalnız değişenleri panel_yaz'a
-                             gönderir, --hepsi ile hepsini. Servise ulaşamazsa sessizce geçer, iş durmaz.
+                             gönderir, --hepsi ile hepsini. Sunucu gelen alanları eskisinin üstüne yazar, gelmeyen alanı
+                             korur; panelden silmek için dosyada alanı null yaz (teslimatta müşteriye "sil": true),
+                             yüklenince dosyadan temizlenir. --bastan BÖLÜM: o bölüm sunucuda dosyanın tamamıyla baştan
+                             yazılır (yalnız sunucu "sınırı aşıyor" derse, onun adını verdiği bölüm). Servise ulaşamazsa
+                             sessizce geçer, iş durmaz.
                              Pazar ve teklif hesabındaki sayı alanlarını sunucunun biçimine getirir;
                              ajansın adı yokken pazar, teklif ya da fiyat varsa ajans yine gider)
   surum
@@ -56,7 +60,7 @@ Komutlar (hepsi klasörün içinden çalışır, ya da --klasor ile klasör veri
 import argparse, csv, datetime, io, json, os, re, shutil, sys, unicodedata
 from pathlib import Path
 
-SURUM = "0.42.6"
+SURUM = "0.42.15"
 IST = datetime.timezone(datetime.timedelta(hours=3))
 
 SERVIS = ["kisa_ad", "ad", "telefon", "eposta", "instagram", "site", "adres", "semt",
@@ -1091,6 +1095,15 @@ def dokum_satiri(toplam):
         n.get("ad") or "yazılmamış", n.get("acilis_surumu") or "1", temas_toplami(toplam), (", " + parca) if parca else "")
 
 
+def gun_sayilari_satiri(toplam):
+    """Gunun temas, cevap ve randevusu; kapat ile ayni tanim. z2: aksam kapanisi acan herkesi cevap saydi
+    (gun 6: 13 temas, 6 acmadi, "7 cevap"; gun 7: "6 cevap", aracin taniminda 1)."""
+    cevap = toplam.get("ilgilendi", 0) + toplam.get("randevu", 0) + toplam.get("cevap", 0)
+    return ("günün sayıları: temas %d, cevap %d, randevu %d (cevap: ilgilendi, randevu ve yazılı kanaldan gelen cevap; "
+            "açıp istemeyen ya da sonra ara diyen cevap değil; olcum_yaz'a ve sayaçlara bu sayılar)" % (
+                temas_toplami(toplam), cevap, toplam.get("randevu", 0)))
+
+
 def kmt_sonuclar(a):
     if getattr(a, "gun", None):
         gun_ayarla(a.gun)
@@ -1102,6 +1115,11 @@ def kmt_sonuclar(a):
         len(islenen), len(bulunamayan), len(anlasilmayan),
         (", %s zaten işlenmiş %d" % ("bugün" if _GUN is None else "o gün", len(tekrar))) if tekrar else ""))
     print(dokum_satiri(toplam))
+    print(gun_sayilari_satiri(toplam))
+    # z2 gun 7: aksam kapanisi ozet'i hic calistirmadi, stok 4.7 gun iken siradaki_cekim yazilmadi.
+    st = stok_satiri(yukle())
+    if "liste bitiyor" in st:
+        print(st + " (bu akşam siradaki_cekim yazılır: veri-servisi, gece hazırlığı)")
     for x in islenen:
         print("  " + x)
     if bulunamayan:
@@ -1635,6 +1653,20 @@ def kmt_bugun(a):
         print("denetim bekliyor | " + ozet_satir(s))
 
 
+def stok_satiri(satirlar, n=None):
+    """Stok: liste bitmeden once haber ver. Takvimle degil stokla tetikleniyor,
+    cunku listenin ne zaman bitecegi tempoya bagli."""
+    dokunulmamis = sum(1 for s in satirlar if not s["elenme"] and acik(s) and not s["son_temas_tarihi"])
+    tempo = gunluk_tempo(n if n is not None else nis_oku())
+    if tempo <= 0:
+        return "stok: %d dokunulmamış aday (günlük temas sayısı kayıtta yok, gün hesabı yapılamadı)" % dokunulmamis
+    gun_kaldi = dokunulmamis / float(tempo)
+    satir = "stok: %d dokunulmamış aday, günde %d temasla %.1f gün" % (dokunulmamis, tempo, gun_kaldi)
+    if gun_kaldi < 5:
+        satir += "  >>> liste bitiyor, yeni ilçe çekilmeli"
+    return satir
+
+
 def kmt_ozet(a):
     satirlar = yukle()
     g = bugun().isoformat()
@@ -1664,18 +1696,7 @@ def kmt_ozet(a):
         print("niş %s, açılış sürümü %s" % (n["ad"], n.get("acilis_surumu") or "1"))
     if canli:
         print("son eklenme %s, kaynaklar: %s" % (max(s["eklenme_tarihi"] for s in canli), ", ".join(sorted({s["kaynak"] for s in canli if s["kaynak"]}))))
-    # Stok: liste bitmeden once haber ver. Takvimle degil stokla tetikleniyor,
-    # cunku listenin ne zaman bitecegi tempoya bagli.
-    dokunulmamis = say(lambda s: acik(s) and not s["son_temas_tarihi"])
-    tempo = gunluk_tempo(n)
-    if tempo > 0:
-        gun_kaldi = dokunulmamis / float(tempo)
-        satir = "stok: %d dokunulmamış aday, günde %d temasla %.1f gün" % (dokunulmamis, tempo, gun_kaldi)
-        if gun_kaldi < 5:
-            satir += "  >>> liste bitiyor, yeni ilçe çekilmeli"
-        print(satir)
-    else:
-        print("stok: %d dokunulmamış aday (günlük temas sayısı kayıtta yok, gün hesabı yapılamadı)" % dokunulmamis)
+    print(stok_satiri(satirlar, n))
 
 
 def gunluk_tempo(n=None):
@@ -1902,7 +1923,7 @@ SAHA_GENEL = {
 SAHA_SABIT = {
     "rahatlat": "Plansız aradım, kısa tutacağım. Yirmi saniyede neden aradığımı söyleyeyim, alakasızsa kapatalım. Uygun mudur?",
     "karar_sorusu": "Bu konuda yeni bir şey değerlendirilirse son kararı siz mi veriyorsunuz, yoksa görüşmede olması gereken biri daha var mı?",
-    "randevu": "Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin.",
+    "randevu": "Yarın on birde yirmi dakika görüşelim mi, uymazsa siz saat söyleyin. (Saat tamamsa) Saati WhatsApp'tan teyit edeyim; cep numaranız hangisi?",
 }
 
 
@@ -2078,6 +2099,20 @@ def saha_paketi_kur(satirlar, en_cok=SAHA_EN_COK):
         senaryo[alan] = metin
     senaryo["itirazlar"] = [{k: saha_doldur(x.get(k, ""), ad, sehir) for k in ITIRAZ_ALANLAR}
                             for x in (n.get("itirazlar") or [])]
+    # Kartin itirazlarinin arkasina "Her nişte" olanlar (sayfadaki gibi); ayni itiraz iki kez durmaz.
+    gorulen = {_itiraz_anahtari(x["durum"]) for x in senaryo["itirazlar"]}
+    fiyat = fiyat_cevabi()
+    for x in genel_itirazlar():
+        if _itiraz_anahtari(x.get("durum")) in gorulen:
+            continue
+        gorulen.add(_itiraz_anahtari(x.get("durum")))
+        y = {k: saha_doldur(str(x.get(k) or ""), ad, sehir) for k in ITIRAZ_ALANLAR}
+        if fiyat and y["soyle"].startswith("(İş Beyni"):
+            y["soyle"] = fiyat
+        # Ogrencinin adi ya da sehri bilinmiyorsa yer tutuculu cumle telefonda okunmaz; o itiraz gitmez.
+        if "[" in y["soyle"] and not y["soyle"].startswith("("):
+            continue
+        senaryo["itirazlar"].append(y)
     liste = saha_listesi(satirlar)
     kesilen = max(0, len(liste) - en_cok)
     adaylar = []
@@ -2119,6 +2154,21 @@ def saha_paketi_kur(satirlar, en_cok=SAHA_EN_COK):
     return paket, kesilen, kirpilan
 
 
+def metinsiz_yazili(adaylar, satirlar=()):
+    """Paketteki yazili kanal adaylarindan gonderecek metni olmayanlar (z2 gun 7: 24 yazili adayin
+    hicbirinde metin yoktu; telefondaki kartta yalniz Instagram baglantisi ve Gonderdim duruyordu).
+    Paket boyut yuzunden metni kirptiysa listedeki satira bakilir."""
+    satir = {s.get("ad"): s for s in satirlar}
+    bos = []
+    for x in adaylar:
+        alan = "dm_metni" if x.get("kanal") == "instagram" else "eposta_metni" if x.get("kanal") == "e-posta" else None
+        if not alan:
+            continue
+        if not str(x.get(alan) or "").strip() and not str((satir.get(x.get("ad")) or {}).get(alan) or "").strip():
+            bos.append(x)
+    return bos
+
+
 def kmt_saha_paketi(a):
     satirlar = yukle()
     paket, kesilen, kirpilan = saha_paketi_kur(satirlar, max(1, min(SAHA_EN_COK, a.sayi)))
@@ -2141,6 +2191,11 @@ def kmt_saha_paketi(a):
         (", %d adayın yazılı metni pakete girmedi" % kirpilan) if kirpilan else ""))
     if eksik:
         print("eksik senaryo bilgisi: " + ", ".join(eksik) + " (sayfa komutuyla ver; ekran o zamana kadar genel metinle çalışır)")
+    metinsiz = metinsiz_yazili(paket["adaylar"], satirlar)
+    if metinsiz:
+        print("metni olmayan yazılı aday: %d (%s): telefonda gönderecek metin görünmez; adaya-mesaj-yaz kuralıyla yaz, "
+              "guncelle ile satırına işle (instagram: dm_metni, e-posta: eposta_konu ve eposta_metni), sonra saha-paketi --yukle" % (
+                  len(metinsiz), ", ".join(x["kisa_ad"] for x in metinsiz[:5]) + (" ..." if len(metinsiz) > 5 else "")))
     if not a.yukle:
         return
     anahtar = anahtar_bul(a.anahtar)
@@ -2199,7 +2254,13 @@ def js_nesnesi(metin, ad):
     m = re.search(r"window\.%s\s*=\s*\{" % re.escape(ad), metin)
     if not m:
         return None
-    i, n = m.end() - 1, len(metin)
+    v = _js_degeri(metin, m.end() - 1)
+    return v if isinstance(v, dict) else None
+
+
+def _js_degeri(metin, i):
+    """metin[i] '{' ya da '[' iken o JavaScript degerini (nesne ya da dizi) cozer; okunamazsa None."""
+    n = len(metin)
     cikti, derinlik = [], 0
     while i < n:
         c = metin[i]
@@ -2248,10 +2309,38 @@ def js_nesnesi(metin, ad):
             break
     govde = re.sub(r",(\s*[}\]])", r"\1", "".join(cikti))
     try:
-        v = json.loads(govde)
+        return json.loads(govde)
     except ValueError:
         return None
-    return v if isinstance(v, dict) else None
+
+
+def genel_itirazlar():
+    """Sayfa sablonundaki "Her nişte" itirazlari (GENEL_ITIRAZ). Telefondaki saha ekrani yalniz kartin
+    itirazlarini tasiyordu; en sik gelenler ("Şu an müsait değilim", "WhatsApp'tan bilgi gönderin",
+    "Pahalı", "Sonra arayın", "Fiyat ne?") telefonda yoktu, masaustu sayfasinda vardi (z2). Tek kaynak
+    sablon; okunamazsa bos liste."""
+    sablon = Path(__file__).resolve().parent / "adaylar-sablon.html"
+    try:
+        metin = sablon.read_text(encoding="utf-8")
+    except Exception:
+        return []
+    m = re.search(r"var\s+GENEL_ITIRAZ\s*=\s*\[", metin)
+    v = _js_degeri(metin, m.end() - 1) if m else None
+    return [x for x in v if isinstance(x, dict) and x.get("durum")] if isinstance(v, list) else []
+
+
+def fiyat_cevabi():
+    """Is Beyni'nin dorduncu bolumundeki "Fiyat ne" sorusunun cevabi; yoksa bos."""
+    try:
+        metin = (KLASOR / "is-beyni.md").read_text(encoding="utf-8")
+    except Exception:
+        return ""
+    m = re.search(r'^\s*-\s*"?Fiyat ne"? sorusunun cevab[ıi]:\s*(.+)$', metin, re.M | re.I)
+    return m.group(1).strip() if m else ""
+
+
+def _itiraz_anahtari(durum):
+    return re.sub(r"[^a-zçğıöşü0-9 ]", "", kucult(durum or "")).strip()
 
 
 def marka_oku():
@@ -2284,6 +2373,48 @@ def panel_dosyasi(ad):
     if not isinstance(v, dict):
         return None, "%s.json bir nesne olmalı" % ad
     return v, None
+
+
+# teslimat.json (0.42.7): panel (lib/teslimat.ts) testleri "testler.birinci/ikinci" altinda,
+# teslimin bes sartini adlariyla boolean okur. Model dosyayi elle yaziyor ve simulasyonda (z3)
+# "testler": {"gecen", "toplam"} ile "kontrol": {"gerceklesen", "toplam"} yazdi; panel ikisini de
+# gostermedi. Bilinen kaymalar duzeltilir, okunamayan kontrol atilir; not satiri modele soyler.
+TESLIM_KONTROL = ("test", "onay", "musteri_gordu", "kapsam_disi", "bakim")
+TESLIM_EVRE = ("karsilama", "kurulum", "birinci_dalga", "test", "canli", "ikinci_dalga", "eksikler", "rapor", "calisiyor")
+
+
+def _sayi_mi(x):
+    return isinstance(x, (int, float)) and not isinstance(x, bool) and x >= 0
+
+
+def teslimati_duzelt(v):
+    """Doner: (duzeltilmis sozluk, notlar). Bilinmeyen alanlara dokunmaz."""
+    notlar = []
+    for m in v.get("musteriler") or []:
+        if not isinstance(m, dict):
+            continue
+        ad = str(m.get("ad") or "").strip() or "?"
+        t = m.get("testler")
+        if isinstance(t, dict) and "birinci" not in t and "ikinci" not in t and _sayi_mi(t.get("gecen")) and _sayi_mi(t.get("toplam")):
+            m["testler"] = {"birinci": {"gecen": int(t["gecen"]), "toplam": int(t["toplam"])}}
+            notlar.append("%s: testler.birinci'ye taşındı" % ad)
+        k = m.get("kontrol")
+        if isinstance(k, dict) and any(x not in TESLIM_KONTROL or not isinstance(y, bool) for x, y in k.items()):
+            if _sayi_mi(k.get("gerceklesen")) and _sayi_mi(k.get("toplam")) and int(k["gerceklesen"]) == int(k["toplam"]) == len(TESLIM_KONTROL):
+                m["kontrol"] = {x: True for x in TESLIM_KONTROL}
+                notlar.append("%s: kontrol beş şartın adıyla yazıldı" % ad)
+            else:
+                temiz = {x: y for x, y in k.items() if x in TESLIM_KONTROL and isinstance(y, bool)}
+                if temiz:
+                    m["kontrol"] = temiz
+                else:
+                    # Silme isareti: sunucudaki eski kontrol de duser; yuklenince dosyadan temizlenir.
+                    m["kontrol"] = None
+                notlar.append("%s: kontrol yalnız şu adlarla true/false yazılır: %s" % (ad, ", ".join(TESLIM_KONTROL)))
+        e = m.get("evre")
+        if isinstance(e, str) and e.strip() and e.strip() not in TESLIM_EVRE:
+            notlar.append("%s: evre '%s' panelde yok (%s); panel günden hesaplar" % (ad, e.strip(), ", ".join(TESLIM_EVRE)))
+    return v, notlar
 
 
 def yerelleri_at(v):
@@ -2734,18 +2865,89 @@ def panel_bolumleri():
             notlar[b] = ("GİTMEDİ: " + h) if h else "yok (%s.json yazılmamış)" % b
             continue
         v = yerelleri_at(v)
+        duzeltme = []
+        if b == "teslimat":
+            v, duzeltme = teslimati_duzelt(v)
+            if duzeltme:
+                try:
+                    (panel_klasoru() / "teslimat.json").write_text(json.dumps(v, ensure_ascii=False, indent=1), encoding="utf-8")
+                except OSError:
+                    pass
         if b == "icerik":
             v.pop("marka", None)
+        if b == "mesajlar":
+            karisimi_hedefe_cek(v)
         v.setdefault("surum", 1)
         if not _duz(v.get("guncellendi")):
             v["guncellendi"] = simdi_iso()
         t, h = panel_denetle(b, v)
         if t:
             bolumler[b] = t
-            notlar[b] = "hazır"
+            notlar[b] = "hazır" + (" (düzeltildi: %s)" % "; ".join(duzeltme) if duzeltme else "")
         else:
             notlar[b] = "GİTMEDİ: %s (%s.json'u düzelt)" % (h, b)
     return bolumler, notlar
+
+
+def karisimi_hedefe_cek(v):
+    """mesajlar.karisim gunun dagilimidir ve toplami durum kaydindaki gunluk_hedef olmali. Hedef degisince
+    (ilk musterinin teslim suresi: tam zamanlida 100 yerine 60) dosya eski dagilimla kaliyordu; panel
+    "hedef 60" derken "20 arama, 70 mesaj, 10 video" gosterdi (z2). Toplam tutmuyorsa oranla hedefe cekilir."""
+    k = v.get("karisim")
+    hedef = _sayi_al(_durum_kaydi().get("gunluk_hedef"))
+    if not isinstance(k, dict) or not hedef or hedef <= 0:
+        return
+    parca = [_sayi_al(k.get(x)) for x in ("ana", "yazili", "video")]
+    if any(x is None or x < 0 for x in parca) or sum(parca) <= 0 or sum(parca) == hedef:
+        return
+    ana = round(hedef * parca[0] / sum(parca))
+    yazili = round(hedef * parca[1] / sum(parca))
+    k.update({"ana": ana, "yazili": yazili, "video": max(0, hedef - ana - yazili)})
+
+
+def _silme_isareti_temizle(v):
+    """Ust kattaki null alanlari ve teslimatin "sil": true musterilerini (musterinin null alanlarini da) atar.
+    Doner: (temiz deger, silinenlerin adlari)."""
+    if not isinstance(v, dict):
+        return v, []
+    silinen = [k for k, x in v.items() if x is None]
+    temiz = {k: x for k, x in v.items() if x is not None}
+    ms = temiz.get("musteriler")
+    if isinstance(ms, list):
+        yeni = []
+        for m in ms:
+            if isinstance(m, dict) and m.get("sil") is True:
+                silinen.append(str(m.get("ad") or "?"))
+                continue
+            if isinstance(m, dict):
+                bos = [k for k, x in m.items() if x is None]
+                if bos:
+                    silinen.extend("%s.%s" % (m.get("ad") or "?", k) for k in bos)
+                    m = {k: x for k, x in m.items() if x is not None}
+            yeni.append(m)
+        temiz["musteriler"] = yeni
+    return temiz, silinen
+
+
+def silme_isaretlerini_temizle(gidenler):
+    """Yuklenen bolumlerin klasordeki dosyalarindan silme isaretlerini temizler (sunucu sildi)."""
+    adlar = []
+    for b in gidenler:
+        if b == "adaylar":
+            continue
+        yol = panel_klasoru() / ("%s.json" % b)
+        try:
+            v = json.loads(_metni_oku(yol)[0])
+        except (OSError, ValueError):
+            continue
+        temiz, silinen = _silme_isareti_temizle(v)
+        if silinen:
+            try:
+                yol.write_text(json.dumps(temiz, ensure_ascii=False, indent=1), encoding="utf-8")
+                adlar.extend("%s.%s" % (b, x) for x in silinen)
+            except OSError:
+                pass
+    return adlar
 
 
 def kmt_panel(a):
@@ -2776,12 +2978,24 @@ def kmt_panel(a):
         print("panel yüklenmedi: lisans anahtarı bulunamadı (sonra yeniden denenir)")
         return
     adres = a.adres or "https://founderos.so/mcp"
-    cevap, sebep = _servis_dene(adres, "panel_yaz", {"anahtar": anahtar, "bolumler": gidecek})
+
+    # Sunucu (0.76) gelen alanlari eskisinin ustune yazar, gelmeyeni korur: yarim dosya paneli silmez. Silmek icin
+    # dosyada null (teslimatta "sil": true) yazilir; yuklenince dosyadan temizlenir. --bastan: bolum dosyanin
+    # tamamiyla bastan yazilir (tam); yalniz sunucu birlesik bolum sinirini asiyor derse. Bagimsiz inceleme
+    # (2 Ekim): kendiliginden tam, yeni bilgisayarda yeniden kurulan eksik dosyayla ikinci yuklemede paneli siliyordu.
+    def govde(g):
+        if not a.bastan:
+            return {"anahtar": anahtar, "bolumler": g}
+        istenen = set(g) if a.bastan == "hepsi" else {x.strip() for x in a.bastan.split(",") if x.strip()}
+        tam = sorted(b for b in g if b in istenen)
+        return {"anahtar": anahtar, "bolumler": g, **({"tam": tam} if tam else {})}
+
+    cevap, sebep = _servis_dene(adres, "panel_yaz", govde(gidecek))
     # Eski sunucu teslimat bolumunu tanimiyorsa o bolum sonraya kalir, gerisi gider.
     red = (cevap.get("mesaj") or cevap.get("hata") or "") if isinstance(cevap, dict) else ""
     if "teslimat" in gidecek and len(gidecek) > 1 and "bilinmeyen bolum" in str(red or sebep or ""):
         gidecek = {b: v for b, v in gidecek.items() if b != "teslimat"}
-        cevap, sebep = _servis_dene(adres, "panel_yaz", {"anahtar": anahtar, "bolumler": gidecek})
+        cevap, sebep = _servis_dene(adres, "panel_yaz", govde(gidecek))
     if sebep or not isinstance(cevap, dict) or not cevap.get("tamam"):
         m = sebep or (cevap.get("mesaj") or cevap.get("hata") if isinstance(cevap, dict) else "") or "servis cevabı boş"
         print("panel yüklenmedi: %s (dosyalar yerinde; sonra yeniden denenir)" % m)
@@ -2790,7 +3004,9 @@ def kmt_panel(a):
         son[b] = kodlar[b]
     son["zaman"] = simdi_iso()
     son_p.write_text(json.dumps(son, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("panel yüklendi: " + ", ".join(cevap.get("yazilan") or sorted(gidecek)))
+    temizlenen = silme_isaretlerini_temizle(gidecek)
+    print("panel yüklendi: " + ", ".join(cevap.get("yazilan") or sorted(gidecek))
+          + (" (silme işareti gitti, dosyadan temizlendi: %s)" % ", ".join(temizlenen) if temizlenen else ""))
 
 
 def ana():
@@ -2881,6 +3097,7 @@ def ana():
     pn = alt.add_parser("panel")
     pn.add_argument("--yukle", action="store_true")
     pn.add_argument("--hepsi", action="store_true")
+    pn.add_argument("--bastan", nargs="?", const="hepsi", default=None)
     pn.add_argument("--anahtar")
     pn.add_argument("--adres")
 

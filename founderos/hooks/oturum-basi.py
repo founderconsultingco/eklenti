@@ -7,7 +7,8 @@ Cikti (stdout) modelin baglamina girer. Uc is yapar:
 3. Calisma klasorunde durum kaydi varsa kisa ozetini koyar; yoksa nereden
    okunacagini soyler (bulut oturumunda klasor bilgisayardadir).
 4. Ogrencinin klasorundeki aday araci paketteki surumden eskiyse iki dosyasini
-   (adaylar-arac.py, adaylar-sablon.html) paketten yeniler; csv'ye dokunmaz. Model
+   (adaylar-arac.py, adaylar-sablon.html) paketten yeniler; csv'ye dokunmaz. Durum kaydi olan
+   klasorde arac hic yoksa ayni iki dosyayi kurar. Model
    eski araci kullanirsa yeni kurallar (denetimsiz aday listeye girmez, rampa
    satiri) hic calismiyor; surum karsilastirmasi modele birakilmaz.
 Hata olursa sessiz kalir; oturumu asla durdurmaz.
@@ -34,7 +35,10 @@ def surum_oku(p):
 
 
 def araci_guncelle(cwd):
-    """Klasordeki arac paketinkinden eskiyse yenilenir. Donus: "eski yeni" ya da None."""
+    """Klasordeki arac paketinkinden eskiyse yenilenir; durum kaydi olan klasorde hic yoksa kurulur.
+    Donus: "eski yeni", "yok yeni" ya da None.
+    Kurulum kancadan yapilir ki model aracin 2.900 satirlik gomulu kodunu tasiyan becerivi acmasin
+    (2 Ekim z1: beceri acildiktan iki tur sonra baglam sikistirildi, o turda kural atlandi)."""
     yeni = surum_oku(ARAC_KAYNAK / "adaylar-arac.py")
     if not yeni:
         return None
@@ -43,10 +47,14 @@ def araci_guncelle(cwd):
             continue
         hedef = Path(kok) / ".founderos" / "adaylar-arac.py"
         if not hedef.is_file():
-            continue
-        eski = surum_oku(hedef)
-        if eski is None or eski >= yeni:
-            return None
+            # Birinci gunun ortasinda kurulmaz (klasor bos baslar, kayit sonra acilir); kayit varsa kurulur.
+            if not (Path(kok) / ".founderos" / "durum.json").is_file():
+                continue
+            eski = None
+        else:
+            eski = surum_oku(hedef)
+            if eski is None or eski >= yeni:
+                return None
         for ad in ("adaylar-arac.py", "adaylar-sablon.html"):
             kaynak = ARAC_KAYNAK / ad
             if not kaynak.is_file():
@@ -54,7 +62,7 @@ def araci_guncelle(cwd):
             gecici = hedef.with_name(ad + ".yeni")
             shutil.copyfile(kaynak, gecici)
             os.replace(gecici, hedef.with_name(ad))
-        return "%s %s" % (".".join(map(str, eski)), ".".join(map(str, yeni)))
+        return "%s %s" % (".".join(map(str, eski)) if eski else "yok", ".".join(map(str, yeni)))
     return None
 
 
@@ -123,9 +131,15 @@ def main():
         guncel = None
     if guncel:
         eski, yeni = guncel.split()
-        cikti.append(
-            "Aday aracı bu oturumun başında yeni sürüme geçirildi (%s yerine %s); komutlarını ve çıktısını "
-            "founderos:aday-listesi-dosyasi'ndaki haliyle kullan. Öğrenciye söylenmez." % (eski, yeni))
+        if eski == "yok":
+            cikti.append(
+                "Aday aracı bu oturumun başında öğrencinin klasörüne kuruldu (%s, .founderos/adaylar-arac.py ve "
+                "adaylar-sablon.html). founderos:aday-listesi-araci becerisini açma; komutlar founderos:aday-listesi-dosyasi'nda. "
+                "Öğrenciye söylenmez." % yeni)
+        else:
+            cikti.append(
+                "Aday aracı bu oturumun başında yeni sürüme geçirildi (%s yerine %s); komutlarını ve çıktısını "
+                "founderos:aday-listesi-dosyasi'ndaki haliyle kullan. Öğrenciye söylenmez." % (eski, yeni))
     ozet = durum_ozeti(g.get("cwd"))
     if ozet:
         cikti.append("Durum kaydı: " + ozet)

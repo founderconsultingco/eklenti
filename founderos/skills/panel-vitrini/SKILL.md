@@ -172,7 +172,7 @@ Yalnız düz JSON. Anahtarlar bu sayfadaki adlarla birebir: küçük harf, Türk
 }
 ```
 
-- `karisim`: günün temas dağılımı, İş Beyni'nin birinci bölümündeki dağılım satırıyla aynı. Ana kanal telefonsa `ana` arama sayısı, `yazili` iki yazılı kanalın toplamı. Yazılmazsa panel günün hedefinden yüzde 50, 40, 10 hesaplar ve ana kanalı telefon sayar.
+- `karisim`: günün temas dağılımı, İş Beyni'nin birinci bölümündeki dağılım satırıyla aynı. Toplamı durum kaydındaki `gunluk_hedef` olur; hedef değişince (ilk müşterinin teslim süresi, tam zamanlıda 60 = 30, 24, 6) aday aracının `panel` komutu dağılımı oranla hedefe çeker. Ana kanal telefonsa `ana` arama sayısı, `yazili` iki yazılı kanalın toplamı. Yazılmazsa panel günün hedefinden yüzde 50, 40, 10 hesaplar ve ana kanalı telefon sayar.
 - Metinler kalıptır: işletmenin adı ve gözlemi yerine `[Ad]` ya da `[işletme]` durur. İşletmeye özel hâli adayın satırında (`dm_metni`, `eposta_metni`, `video_metni`), buraya yazılmaz.
 - `telefon.adimlar`: telefon metninin adımları sırasıyla; her adımda söylenen cümle birebir. Gözlem yoksa ne denir, o adımın metnine girer.
 - `video.ilk_temas` ve `video.izin_sonrasi`: satır başında saniye aralığı (`0-8 sn: ...`) ya da parça numarası (`1. Kim olduğun, 30 sn: ...`); panel satırları böyle ayırır.

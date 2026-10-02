@@ -35,7 +35,7 @@
     ],
     "PreToolUse": [
       {
-        "matcher": "Write|Edit|MultiEdit|Bash|mcp__.*device_bash",
+        "matcher": "Write|Edit|MultiEdit|Bash|mcp__.*device_bash|mcp__.*panel_yaz|mcp__.*saha_yukle",
         "hooks": [
           {
             "type": "command",

@@ -6,6 +6,7 @@ yakalar; eslesme varsa baglama tek satirlik yon notu koyar. Eslesme yoksa
 hicbir sey yazmaz. Istemi asla engellemez.
 """
 import json
+import os
 import re
 import sys
 
@@ -33,9 +34,13 @@ KURALLAR = [
     # Ogrencinin kendi guvencesi ve destegi (musterinin garantisi degil). Simulasyon k2: "garanti
     # var mi, param iade olur mu, destek nasil" sorusuna "bilmiyorum, satin alma kosullarinda yaziyor"
     # cevabi geldi; cekirdekteki bolum uzun sohbette akilda kalmamisti. Notta kararlar aynen durur.
-    ("guvence", re.compile(r"(para(m|m[ıi]z)?[ıi]? iade|iade (var|olur|ediliyor|alabil)|ilk m[üu][şs]teri g[üu]vence|g[üu]vence(niz|n[ıi]z)? (nedir|ne\b|nas[ıi]l)|garanti(niz)? var m[ıi]|garanti(si)? (nedir|ne\b)|destek nas[ıi]l|destek var m[ıi]|deste[ğg]e nas[ıi]l)"),
+    ("guvence", re.compile(r"(para(m|m[ıi]z)?[ıi]? iade|iade (var|olur|ediliyor|alabil)|param[ıi]? geri|geri [öo]den|para iadesi|ilk m[üu][şs]teri g[üu]vence|g[üu]vence(niz|n[ıi]z)? (nedir|ne\b|nas[ıi]l)|garanti(niz)? var m[ıi]|garanti(si)? (nedir|ne\b)|destek nas[ıi]l|destek var m[ıi]|deste[ğg]e nas[ıi]l)"),
      "FounderOS: öğrenci FounderOS'un kendisine verdiği güvenceyi ya da desteği soruyor (müşteriye verdiği güvence değil). Çekirdeğin 'İlk Müşteri Güvencesi' ve 'Takılma ve destek' bölümleriyle, bilmiyorum demeden, kısa ve sakin cevap ver: 90 günlük İlk Müşteri Güvencesi; şart üç eylem (verilen müşteri mesajlarını her gün göndermek: tam zamanlı 100, işin yanında 40 temas, takipler dahil; randevu alan işletmelerle görüşmeye girmek; canlı görüşme geri bildirimini uygulamak); karşılığı ilk ücretli müşteriye kadar destek, grup görüşmeleri ve CRM ücretsiz devam; para iadesi yok; 'garanti yok' ya da 'garanti değildir' gibi uyarı cümlesi kurma, yerine aynen 'Gelir değil, ilk müşteri güvencesi.' Destek: 'Destek kanalı 7/24 açık; ekip en geç 12 saat içinde döner.' Yolu WhatsApp hattı ve destek@founderos.so. Süreler: FounderOS, beceriler, şablonlar ve topluluk 12 ay; canlı grup görüşmeleri, destek kanalı ve CRM ilk 120 gün."),
-    ("destek", re.compile(r"(destek [öo]zeti|deste[ğg]e yaz(al[ıi]m|aca[ğg][ıi]m)?|destekle g[öo]r[üu][şs]mek)"),
+    # Tek kelime "yardım" / "destek": test planinin gorev 7'si destek adresini bekliyor. 2 Ekim z1 ve z3
+    # (tur 27): yalniz "nerede takildin" soruldu, destek yolu soylenmedi.
+    ("yardim_tek", re.compile(r"^\s*(yard[ıi]m|destek|help|imdat)\s*(l[aâ]z[ıi]m|istiyorum|edin|et)?[\s.!?,]*$"),
+     "FounderOS: öğrenci yalnız 'yardım' yazdı. Nerede takıldığını seçenekli tek soruyla sor (bugünkü iş, bir ekran, bir müşteri) ve aynı mesajın sonuna destek iki yolunu tek satırla koy: WhatsApp hattı https://wa.me/905320618077 ve destek@founderos.so; 'Destek kanalı 7/24 açık; ekip en geç 12 saat içinde döner.' Söz verilmeyen bir şey söyleme (canlı insan, hemen cevap)."),
+    ("destek", re.compile(r"(destek [öo]zeti|deste[ğg]e yaz(al[ıi]m|aca[ğg][ıi]m|ay[ıi]m)?\b(?! ?d[ıi]m)|destekle g[öo]r[üu][şs]mek)"),
      "FounderOS: destek özeti. Takılma yöntemini baştan yürütme; çekirdekteki beş satırı (iş, denenen, takılan yer, ilgili kayıt, beklenen yardım) hemen yaz. Lisans anahtarı, şifre ve kişisel bilgi girmez. Altına iki yolu koy: WhatsApp hattı ve destek@founderos.so; öğrenci yapıştırıp gönderir."),
     # "Istanbul'da implant hizmeti veren 100 dis klinigi bul" (satis videosundaki cumle) de
     # buraya gelir: sehir eki -da/-de, arada hizmet ve sayi, sonda bul/listele.
@@ -43,7 +48,7 @@ KURALLAR = [
      "FounderOS: aday listesi, açık istek. Günün sırası bekletmez: pazar seçiliyse founderos:aday-listesi-cikar şimdi (veri servisi, aday_ara; aday aracı yoksa önce kur); planda liste sonraki bir günse tek cümle söyle, işi yap. Pazar yoksa önce pazarı seç (founderos:nisi-sec). İstenen niş öğrencinin pazarı değilse niş kilidini tek cümleyle söyle, kendi pazarının listesini öner. Çekim başlayınca: panelde Adaylar'daki Müşteri Bulma Motoru'nda liste canlı akar. Yüz seçilince ilk on tek tablo (İşletme, Telefon, Site, Instagram, Neden bu işletme; kanal istendiyse İlk temas). Taramada olmayan bilgi (yönetici adı) boş kalır ve tek cümleyle söylenir; kaynak her satırın Google Haritalar kaydı."),
     # Satis videosundaki uzun istek "Klinik: X. Instagram: Y. ... klinige ozel demo hazirla" da buraya gelir.
     ("demo_olustur", re.compile(r"(demo olu[şs]tur|i[çc]in demo (olu[şs]tur|haz[ıi]rla|yap)|(?:adaya|klini[ğg]e|i[şs]letmeye|ofise|salona) [öo]zel demo|[öo]zel (bir )?demo (haz[ıi]rla|olu[şs]tur|yap)|demo ba[ğg]lant[ıi]s[ıi] (ver|olu[şs]tur|haz[ıi]rla))"),
-     "FounderOS: adaya özel demo, açık istek. Günün sırası bekletmez: veri servisinin demo_olustur aracını şimdi, işletmenin adı ve varsa Instagram'ıyla çağır (önce eksik bilgi sorma, bağlantı önce gelir); bağlantıyı ve dürüstlük cümlesini ver. Demo Instagram sayfasını okumaz: 'sayfadaki bilgileri aldım' deme; kliniğin adıyla açıldığını, saatler taramada yoksa örnek olduğunu söyle. Demo telefonla başlayan akışı gösterir; öğrenci reklam formu ya da eski müşteri listesinin aynı kayda toplandığını da istediyse onu panelde Ajansım'daki hizmet akışı şeması gösterir, demoda varmış gibi anlatma (istemediyse bu konu açılmaz). 'Eksik bilgileri sor' dense de saat ve semt sorma: demo onları alamaz, işletme aday listesine girince kendiliğinden gelir; mesaj soruyla değil, demoyu nasıl deneyeceğiyle biter (Mesajla dene, Sesli dene, İşletmenin ekranı). İlk mesajda bağlantı gitmez, aday izin verince gider. Öğrenci kendisi bakacaksa cevaptaki onizleme adresini ver (alan yoksa adresin sonuna ?onizleme=1); adaya yalnız çıplak adres gider. Araç hata verirse panelde Adaylar'daki Tek Tıkla Demo."),
+     "FounderOS: adaya özel demo, açık istek. Günün sırası bekletmez: veri servisinin demo_olustur aracını şimdi, işletmenin adı, varsa Instagram'ı ve İş Beyni'ndeki seçilen nişle (`nis`) çağır (önce eksik bilgi sorma, bağlantı önce gelir); bağlantıyı ve dürüstlük cümlesini ver. Demo Instagram sayfasını okumaz: 'sayfadaki bilgileri aldım' deme; kliniğin adıyla açıldığını, saatler taramada yoksa örnek olduğunu söyle. Demo telefonla başlayan akışı gösterir; öğrenci reklam formu ya da eski müşteri listesinin aynı kayda toplandığını da istediyse onu panelde Ajansım'daki hizmet akışı şeması gösterir, demoda varmış gibi anlatma (istemediyse bu konu açılmaz). 'Eksik bilgileri sor' dense de saat ve semt sorma: demo onları alamaz, işletme aday listesine girince kendiliğinden gelir; mesaj soruyla değil, demoyu nasıl deneyeceğiyle biter (Mesajla dene, Sesli dene, İşletmenin ekranı). İlk mesajda bağlantı gitmez, aday izin verince gider. Öğrenci kendisi bakacaksa cevaptaki onizleme adresini ver (alan yoksa adresin sonuna ?onizleme=1); adaya yalnız çıplak adres gider. Araç hata verirse panelde Adaylar'daki Tek Tıkla Demo."),
     ("demo_acti", re.compile(r"(demo(yu|mu|yi)? a[çc]t[ıi] m[ıi]|demo(yu|mu)? a[çc]m[ıi][şs] m[ıi]|demoya bakt[ıi] m[ıi]|\bdemolar[ıi]m\b)"),
      "FounderOS: demonun durumu. demolar aracıyla bak: açtıysa takip demoya bağlanır (randevu kısmını denedi mi), açmadıysa izinden sonraki demo videosu (founderos:video-mesaj-cek). Öğrenci demoya kendisi bakacaksa satırdaki onizleme adresini verirsin; çıplak adresi açarsa adayın açtığı sayılır."),
     ("kurulum_studyo", re.compile(r"^\s*(kurulum bilgileri|test sonu[çc]lar[ıi]|canl[ıi]ya al)\b"),
@@ -52,14 +57,23 @@ KURALLAR = [
      "FounderOS: asistanın yanlış cevabı. founderos:sistemi-kontrol-et'in hata incelemesi: nedeni ayır (bilgi, kural, akış), düzeltmeyi Türkçe adım adım yaz, aynı soruyla yeniden test ettir. Sesli taraftaysa adım yazma, destek satırını ver."),
     ("pano", re.compile(r"(\bile temas kurdum|\bcevap verdi\s*:|\bile g[öo]r[üu][şs]t[üu]m\b|\bile g[öo]r[üu][şs]me ayarlad[ıi]m|m[üu][şs]teri oldu)"),
      "FounderOS: aday panosundan aşama bildirimi. Aday aracıyla adayın aşamasını ve son temasını yaz. Cevap verdiyse cevabını satırına yaz, sıradaki cümleyi founderos:adaya-mesaj-yaz ile hazırla; görüşme ayarladıysa aşama randevu ve randevu tarihi (temas --randevu), sayaçtaki randevu ve durum_yaz (founderos:gorusmeye-getir); görüştüyse founderos:gorusmeyi-analiz-et; müşteri olduysa founderos:onay-belgesini-hazirla, sonra founderos:musteriyi-karsila."),
-    ("takilma", re.compile(r"(anlamad[ıi]m|yapamad[ıi]m|tak[ıi]ld[ıi]m|olmad[ıi]|[çc]al[ıi][şs]m[ıi]yor|hata veriyor|bende bu ekran yok|bulam[ıi]yorum|g[öo]remiyorum|nereye bas)"),
+    ("takilma", re.compile(r"(anlamad[ıi]m|yapamad[ıi]m|tak[ıi]ld[ıi]m|(?<!açan )(?<!acan )(?<!veren )(?<!kimse )olmad[ıi]|[çc]al[ıi][şs]m[ıi]yor|hata veriyor|bende bu ekran yok|bulam[ıi]yorum|g[öo]remiyorum|nereye bas)"),
      "FounderOS: takılma. Takılma yöntemini uygula: nerede kaldı, türü ne (bilgi, erişim, teknik, uygulama), işi küçült; aynı açıklamayı tekrarlama; iki denemede çözülmezse destek özeti."),
     ("cevap_yok", re.compile(r"(kimse cevap vermedi|cevap gelmiyor|hi[çc] d[öo]n[üu][şs] yok|kimse a[çc]m[ıi]yor|kimse d[öo]nmedi)"),
      "FounderOS: founderos:cevap-gelmiyor modülünü aç. Motivasyon konuşması yok, beş kontrol ve tek gerekçeli değişiklik."),
+    # Simulasyon z3: "keskin aradi pazartesiye erteledi" gunluge yazildi, aday satiri "bugun 11.00"
+    # kaldi; panel ertelenen gorusmeyi bugunun randevusu saydi.
+    ("erteleme", re.compile(r"(ertele(di|dik|ndi|yelim|mi[şs])|ba[şs]ka (bir )?g[üu]ne ald[ıi]|(saati|g[üu]n[üu])(n[ıi])? de[ğg]i[şs]tir|[ıi]ptal etti)"),
+     "FounderOS: bir randevu ya da görüşme ertelendi ya da iptal edildi. Aynı turda aday aracıyla yaz: ertelendiyse temas <işletme> --kanal <kanal> --randevu \"YYYY-AA-GG SS:DD\" (saat belli değilse yalnız gün; sıradaki iş saati sormak), iptalse aşama ve sıradaki hareket; sonra panel --yukle. İş Beyni'ne ya da günlüğe yazmak yetmez, panel randevuyu aday satırından okur. Sayaçtaki randevu değişmez."),
     ("randevu", re.compile(r"(randevu ald[ıi]m|yar[ıi]n g[öo]r[üu][şs]me|g[öo]r[üu][şs]me ayarlad[ıi]m|randevu verdi|g[öo]r[üu][şs]mem var(?!d)|g[öo]r[üu][şs]meye haz[ıi]rlan)"),
      "FounderOS: randevu. founderos:gorusmeye-getir (açılışta odak_yaz basladi), ardından founderos:gorusme-provasi-yap. Randevu hangi kanaldan gelirse gelsin aday listesine (temas --randevu) ve sayaca yazılır; saha ekranında Randevu'ya basılmadıysa sayaç şimdi artar ve durum_yaz gider."),
-    ("gorusme_bitti", re.compile(r"(g[öo]r[üu][şs]me bitti|g[öo]r[üu][şs]t[üu]k|g[öo]r[üu][şs]meyi yapt[ıi]m|[şs][öo]yle ge[çc]ti)"),
+    ("gorusme_bitti", re.compile(r"(g[öo]r[üu][şs]me(si)? bitti|g[öo]r[üu][şs]meyi bitirdi|g[öo]r[üu][şs]t[üu]k|g[öo]r[üu][şs]meyi yapt[ıi]m|[şs][öo]yle ge[çc]ti)"),
      "FounderOS: görüşme bitti. founderos:gorusmeyi-analiz-et."),
+    # Gorusmenin icinden kisa mesaj ("pahali dedi", "dusunecegim dedi"): ogrenci isletmecinin karsisinda.
+    # z2 tur 33-34: cevap urunun itiraz maddesinden saptı ("kapsamı da kırpma" dedi; madde Kademe 1 ile
+    # kapsami kucult diyor; "Neyi düşüneceksiniz" sorusu atlandi).
+    ("canli_itiraz", re.compile(r"(pahal[ıi] (dedi|buldu|geldi)|d[üu][şs][üu]nece[ğg]im dedi|d[üu][şs][üu]neyim dedi|d[üu][şs][üu]nmek istiyor|orta[ğg][ıi]ma soray[ıi]m dedi|e-?posta at[ıi]n dedi|taksit (sordu|var m[ıi] dedi|istedi))"),
+     "FounderOS: görüşmenin içinden itiraz; öğrenci şu an işletmecinin karşısında. founderos:gorusmeyi-yonet'in itiraz maddesindeki cümleyi ver: en çok iki kısa cümle ve tek soru, açıklama yok. Düşüneyim: \"Elbette. Neyi düşüneceksiniz: çalışır mı, rakam mı, kararı başkası mı veriyor?\", sebep yoksa karar görüşmesi iki üç gün sonrasına hattayken yazılır. Pahalı: önce ayırıcı soru (\"Sonucun kesin olacağını bilseniz bu rakam mantıklı gelir miydi?\"); fiyat sorunuysa \"Neye göre pahalı?\", indirim yok, Kademe 1 ile kapsam küçülür. Taksit: \"Rakam mı ağır geldi, yoksa bu ay nakit mi sıkışık?\""),
     ("evet", re.compile(r"(evet dedi|kabul etti|paray[ıi] g[öo]nderecek|[öo]deme yapacak|anla[şs]t[ıi]k)"),
      "FounderOS: evet geldi. founderos:onay-belgesini-hazirla, sonra founderos:musteriyi-karsila. Erken evet bekletilmez."),
     ("resmi", re.compile(r"(kvkk|\biys\b|yasal m[ıi]|yasal olarak|kanun|s[öo]zle[şs]me|vergi|fatura|[şs]irket (kur|a[çc])|mali m[üu][şs]avir|muhasebeci|avukat|hukuk|ceza|izin (laz[ıi]m|gerek)|ruhsat|ba[ğg]-?kur)"),
@@ -166,6 +180,9 @@ def son_senden(yol):
     if not son:
         return None
     b = str(son.get("bekleyen") or "").strip()
+    # Prova ve canli gorusme rol oyununda kart her turda gecerli; not her replikte odak istetmesin (dur.py ile ayni).
+    if str(son.get("is") or "") in ("gorusme-provasi-yap", "gorusmeyi-yonet"):
+        return None
     if b and son.get("durum") in ("bekliyor", "basladi", "calisiyor"):
         return b[:120]
     return None
@@ -208,6 +225,31 @@ def hatali_kayit_araclari(yol):
     return [arac for arac in ("odak_yaz", "durum_yaz", "panel_yaz") if son.get(arac, [None, False])[1]]
 
 
+PANEL_SATIRI = re.compile(r"^\s*-\s*Panel linki[^:\n]*:\s*(https?://\S+)", re.M)
+
+
+def panel_linki(g):
+    """Is Beyni'nin birinci bolumundeki panel linki (yoksa None). Gunun ilk mesaji bu satirla
+    baslar (gunaydin, 'Ilk satir panel'); simulasyon z2 tur 1: link, dune bagli cumle ve gunun
+    isi hic yazilmadi, ogrenci iki dakika bos ekranda bekledi. Not linki hazir verir."""
+    for kok in dict.fromkeys([g.get("cwd"), os.environ.get("CLAUDE_PROJECT_DIR"), os.getcwd()]):
+        if not kok:
+            continue
+        try:
+            with open(os.path.join(kok, "is-beyni.md"), encoding="utf-8", errors="ignore") as f:
+                m = PANEL_SATIRI.search(f.read(20000))
+        except Exception:
+            continue
+        if m:
+            return m.group(1).rstrip(").,;")
+    return None
+
+
+ILK_MESAJ_NOTU = ("Günün ilk mesajının ilk satırı tam olarak [Panelini aç](%s); altında düne bağlı tek cümle ve günün tek işi. "
+                  "Bu mesaj atlanmaz. Birinci blok yarımsa kalıp ve zamanı founderos:gunaydin'in beşinci adımındaki gibi; "
+                  "hazırlıkta ve sahada işe (çekim, denetim, plan) girmeden önce yazılır, öğrenci sessiz ekranda beklemez.")
+
+
 HATA_NOTU = ("FounderOS: son %s çağrısı hata döndürdü (bağlantı koptu); panel eski hâlinde duruyor. Bu turda "
              "işin şimdiki hâliyle yeniden gönder (panel_yaz için aracın panel --yukle komutu); öğrenciye bundan söz edilmez.")
 
@@ -215,6 +257,28 @@ HATA_NOTU = ("FounderOS: son %s çağrısı hata döndürdü (bağlantı koptu);
 SENDEN_NOTU = ("FounderOS: panelin Şu an kartında \"Senden: %s\" duruyor. Bu mesaj onun cevabıysa kart eski "
                "soruda kalmaz: bu turda yeni soru soracaksan soruyu yazmadan önce odak_yaz `bekliyor` ve yeni "
                "`bekleyen`, soru yoksa `calisiyor` (bekleyensiz) gider; öğrenciye bundan söz edilmez.")
+
+
+MUSTERI_GORUSME_NOTU = ("FounderOS: müşteriyle yapılan görüşme bitti (kurulum, haftalık ya da rapor görüşmesi; satış görüşmesi değil). "
+                        "founderos:gorusmeyi-analiz-et açılmaz: notlar teslim modülüyle (founderos:musteriyi-karsila; rapor görüşmesiyse "
+                        "founderos:aylik-raporu-hazirla) müşterinin bilgi dosyasına, günlüğe ve teslimat dosyasına yazılır.")
+MUSTERI_GORUSME = re.compile(r"(kurulum g[öo]r[üu][şs]mesi|haftal[ıi]k g[öo]r[üu][şs]me|rapor g[öo]r[üu][şs]mesi|ba[şs]lang[ıi][çc] g[öo]r[üu][şs]mesi)")
+
+
+def aktif_musteriler(kok):
+    """Durum kaydindaki aktif musterilerin adlari (kucuk harf). Okunamazsa bos."""
+    try:
+        with open(os.path.join(kok or ".", ".founderos", "durum.json"), encoding="utf-8") as f:
+            d = json.load(f)
+        return [kucult(m.strip()) for m in d.get("aktif_musteriler") or [] if isinstance(m, str) and m.strip()]
+    except Exception:
+        return []
+
+
+def musteri_gorusmesi_mi(k, kok):
+    if MUSTERI_GORUSME.search(k):
+        return True
+    return any(ad and ad in k for ad in aktif_musteriler(kok))
 
 
 def main():
@@ -244,11 +308,22 @@ def main():
         if ad == "pazar_sec" and "pazar_arastir" in eslesen:
             continue
         if desen.search(k) and ek_sart(ad, k):
+            if ad == "gorusme_bitti" and musteri_gorusmesi_mi(k, g.get("cwd") or os.getcwd()):
+                notu = MUSTERI_GORUSME_NOTU
             notlar.append(notu)
             eslesen.add(ad)
     notlar = notlar[:2]
+    if SELAM_NOTU in notlar:
+        link = panel_linki(g)
+        if link:
+            notlar[notlar.index(SELAM_NOTU)] = SELAM_NOTU + " " + ILK_MESAJ_NOTU % link
     hatali = hatali_kayit_araclari(g.get("transcript_path"))
     senden = None if "odak_yaz" in hatali else son_senden(g.get("transcript_path"))
+    # "akşam" ve "günaydın" panelin öğrettiği gün kelimeleridir, kartta bekleyen sorunun cevabı değil
+    # (z2 tur 41: "akşam" kurulum görüşmesinin saati sanıldı, kapanış yapılmadı).
+    if senden and ("aksam" in eslesen or "selam" in eslesen):
+        notlar.append("FounderOS: bu mesaj kartta bekleyen \"%s\" sorusunun cevabı değil, günün kelimesi. Önce onun işini yap; açık soru turun sonunda tek cümleyle hatırlatılır." % senden)
+        senden = None
     if hatali:
         notlar.append(HATA_NOTU % ", ".join(hatali))
     if senden:

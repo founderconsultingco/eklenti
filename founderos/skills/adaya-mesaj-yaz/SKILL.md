@@ -615,7 +615,7 @@ Her temas tek harekettir: sen sonuç düğmesine basarsın, kaydı araç yazar.
 
 Saatler pencere adıyla söylenir, pencerenin kaça denk geldiğini çalışma düzenin belirler.
 
-**Arama rampası.** Telefonun da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren planındaki arama sayısı (ana kanal telefonsa tam zamanlıda elli, işin yanında yirmi). İlk iki gün aramanın ve saha ekranının oturduğu günlerdir; ilk yirmi aramanın notu da bunun için. Eksik kalan pay yazılı kanala geçer, e-postanın ve Instagram'ın kendi günlük sınırını aşmadan; sığmayan pay o gün yapılmaz ve kötü gün sayılmaz.
+**Arama rampası.** Telefonun da rampası var: sahanın ilk günü on arama, ikinci günü yirmi, üçüncü günden itibaren planındaki arama sayısı (ana kanal telefonsa tam zamanlıda elli, işin yanında yirmi; ana kanal yazılıysa, örneğin Instagram, kartın "Ana kanal" satırındaki arama payı: işin yanında sekiz, tam zamanlıda yirmi). Rampa en çok sayıdır: planın arama sayısı rampadan küçükse rampa günü de o sayı aranır; Instagram ana kanallı öğrenciye "yarın yirmi arama" denmez. İlk iki gün aramanın ve saha ekranının oturduğu günlerdir; ilk yirmi aramanın notu da bunun için. Eksik kalan pay yazılı kanala geçer, e-postanın ve Instagram'ın kendi günlük sınırını aşmadan; sığmayan pay o gün yapılmaz ve kötü gün sayılmaz.
 
 **Tam zamanlı: günde yüz temas.**
 - Sabah bloğu: dün cevap verenlere dönüş, e-posta takiplerinin onayı, günün denetim kartlarının okunması.

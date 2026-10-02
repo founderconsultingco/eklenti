@@ -110,13 +110,13 @@ Müşteriden istenen tek yeni belge var ve kurulum görüşmesinde istenir: verg
 4. Teslim kontrolü yapılmış: kapsam dışı kalan parçalar ve sebepleri müşteriye yazılı verilmiş.
 5. Bakım işleri takvime girmiş: haftalık kontrol, aylık rapor.
 
-Beşi tamam olmadan dördüncü aşama kapanmaz. Beşinci aşama, "müşterin kullanıyor", rapor günü raporunda üç sayının sıfır olmamasıyla kapanır.
+Beşi tamam olmadan dördüncü aşama kapanmaz. Beşi tamamlandığı turda İş Beyni'nin on dördüncü bölümüne "4. Hizmeti teslim ettin: tamam, <tarih>" yazılır (ilk müşteride), durum kaydında `ilerleme_asamasi` 5 olur ve `durum_yaz` gider. Beşinci aşama, "müşterin kullanıyor", rapor günü raporunda üç sayının sıfır olmamasıyla kapanır.
 
 ## 5. Ne yapar
 
 ### Sıra
 
-Birinci dalganın sırası sabittir: hat başvurusu (kurulum görüşmesi günü), hazır paketin yüklü geldiğinin kontrolü, CRM bağlantısının iki bölüme yenilendiğinin kontrolü, müşterinin kendi girişi, kanallar (WhatsApp bağlandığı gün şablon başvurusu), formlar, takvim, ödeme, akışlar, özel değerler, bildirimler, sonuç ekranı, test.
+Birinci dalganın sırası sabittir: önce müşterinin CRM bölümü istendi mi (bilgi dosyasında isteğin tarihi; istenmediyse ilk iş musteriyi-karsila'nın sıfırıncı gün e-postası, satırı hazır verilir; öğrencinin kendi CRM bölümü de yoksa aynı satırda), hat başvurusu (kurulum görüşmesi günü), hazır paketin yüklü geldiğinin kontrolü, CRM bağlantısının iki bölüme yenilendiğinin kontrolü, müşterinin kendi girişi, kanallar (WhatsApp bağlandığı gün şablon başvurusu), formlar, takvim, ödeme, akışlar, özel değerler, bildirimler, sonuç ekranı, test.
 
 Müşterinin girişi neden bu kadar başta: takvim ona bağlanıyor, asistanın insana devri ona bağlanıyor, müşterinin kendi bildirimleri ona bağlanıyor. Giriş bir gün gecikirse üç iş birden bekliyor.
 
@@ -322,7 +322,7 @@ Canlıya alma anahtarı bellidir ve kapatma yolu aynı yerdedir; geri alma iki d
 
 Yayına aldıktan sonra ayarla oynanmaz.
 
-Teslim paketi altıncı günde müşteriye gider: kişiye özel olmayan, ekiple paylaşılabilir kısa video (ne yapar, nasıl değiştirilir, bozulursa ne yapılır) ve yazılı rehber, üstüne teslim mesajı. Video ve rehber hazır pakette gelir; sen sadece müşterinin adını yazarsın. Sesli taraf canlıya alınınca ikinci kısa video gider.
+Teslim paketi altıncı günde müşteriye gider: kişiye özel olmayan, ekiple paylaşılabilir kısa video (ne yapar, nasıl değiştirilir, bozulursa ne yapılır) ve yazılı rehber, üstüne teslim mesajı. Rehberi FounderOS yazar: tek sayfa, müşterinin kendi sistemiyle (kanallar, saatler, kim ne yapar, bozulursa kime yazılır), klasörde `musteriler/rehber-[musteri].pdf`. Videoyu sen çekersin: telefonunla iki dakikalık ekran kaydı, üç başlık (ne yapar, nasıl değiştirilir, bozulursa ne yapılır); metnini FounderOS verir. Hazır pakette rehber ya da video varsa onları kullanırsın, yoksa bu ikisiyle gider; "hazır pakette" diye olmayan bir dosya söylenmez. Sesli taraf canlıya alınınca ikinci kısa video gider.
 
 Her canlıya almadan sonraki yirmi dört saat izlenir. Bir şey bozulursa sıra şu: sahiplen, saatler içinde haber ver, aynı gün düzelt, kaçan talepleri elle ara, izlemeyi sıkılaştır.
 
@@ -408,7 +408,7 @@ Bilgi dosyasına: kurulan parçalar ve tarihleri, 0850 numara, başvuru tarihi v
 CRM'e: teslimat aşaması (kurulum, test, canlı), randevu ve mesaj sayıları.
 Niş kartının Sahadan dolacak bölümüne: bu nişte randevu süresi, yoğun saatler, asistanın en sık takıldığı soru, sesli ajanın en sık takıldığı istek, hatırlatma saatlerinin gelme oranı, teklif takibinin kaçıncı dokunuşta cevap getirdiği.
 Her kurulum gününün tek satırı ve tek görüntüsü musteriyi-karsila'ya teslim edilir; müşteriye onu o modül gönderir.
-Panel dosyasına (`.founderos/panel/teslimat.json`, şeması `founderos:panel-vitrini`'de): o müşterinin satırında `evre` (`birinci_dalga`, `test`, `canli`, `ikinci_dalga`, `eksikler`, `rapor`), `testler` (birinci dalga otuz iki, ikinci dalga on dört turdan geçen), `kontrol` (teslimin beş şartından gerçekleşenler), `kapsam_disi` (müşteriye bildirilen her kurulamayan parça, sebebiyle), `siradaki`. Her kurulum gününün sonunda, testten ve canlıya almadan sonra yazılır; sonra aracın `panel --yukle` komutu sessiz çalışır.
+Panel dosyasına (`.founderos/panel/teslimat.json`, şeması `founderos:panel-vitrini`'de): o müşterinin satırında `evre` (`birinci_dalga`, `test`, `canli`, `ikinci_dalga`, `eksikler`, `rapor`), `testler` (birinci dalga otuz iki, ikinci dalga on dört turdan geçen), `kontrol` (teslimin beş şartından gerçekleşenler), `kapsam_disi` (müşteriye bildirilen her kurulamayan parça, sebebiyle), `siradaki`. Biçim sabittir, panel başka biçimi okumaz: `"testler": {"birinci": {"gecen": 15, "toplam": 15}, "ikinci": {"gecen": 0, "toplam": 6}}`, `"kontrol": {"test": true, "onay": true, "musteri_gordu": true, "kapsam_disi": true, "bakim": true}` (yalnız gerçekleşen `true`), `"kapsam_disi": ["Sesli taraf: hat bekleniyor"]`. Kurulum stüdyosundan "Test sonuçları: x/21" gelirse ilk on beş madde (iki kontrol, yazılı taraf, zor sorular) `birinci`, son altısı (sesli taraf) `ikinci` olur; sayı eksik kalan madde denenmemiş sayılır, hat bağlanmadıysa bunlar sesli maddelerdir. Her kurulum gününün sonunda, testten ve canlıya almadan sonra yazılır; sonra aracın `panel --yukle` komutu sessiz çalışır.
 
 ## 8. Yedek yol
 

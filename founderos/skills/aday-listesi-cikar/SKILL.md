@@ -88,7 +88,7 @@ On iki arama, çekim başına en çok dört yüz **reklam veren**. Buradaki biri
 
 Kaç kayıt gelir, bilinmiyor, sahadan dolacak. Beklenti şu: Instagram'dan satan nişlerde (güzellik, estetik, düğün, oto kuaför, fotoğraf, pilates) çok, telefondan yürüyen nişlerde az. Sıfır çıkması sorun değil, liste zaten Haritalar'dan doluyor.
 
-1. FounderOS kartındaki Haritalar kategori adını ve İş Beyni'ndeki şehrini alır, servise ilçe başına sekiz yüz kayıt ister; eleme sonrası elde yaklaşık beş yüz kalıyor.
+1. FounderOS kartındaki Haritalar kategori adını, İş Beyni'ndeki şehri ve coğrafyadaki ilçeyi alır; her ilçe ayrı bir `aday_ara` çağrısıdır (`ilce` alanı dolu) ve servise ilçe başına sekiz yüz kayıt ister; eleme sonrası elde yaklaşık beş yüz kalıyor. Ana kanal telefonsa coğrafyanın ilk üç ilçesi bugün çekilir (üç çağrı), yazıysa ilki. Coğrafyada ilçe yazmıyorsa kartın yoğun ilçeleri alınır. Şehir geneli tek çekim (ilçesiz) yapılmaz: sekiz yüzde kesilir ve sonraki ayların yeni ilçe yenilemesi aynı işletmeleri yeniden getirir; tam zamanlıda günde yüz temasla şehir geneli bir liste birkaç günde biter.
 
 **Reklam araması kategori adıyla yapılmaz, kartın kelimeleriyle yapılır.** Bu ayrım kritik: hiçbir diş kliniği "diş kliniği" diye reklam vermiyor, "implant fiyatları" ve "gülüş tasarımı" diye veriyor. Kategori adıyla aranırsa o şehirdeki reklam verenlerin neredeyse hepsi kaçar. Kartın **reklam kütüphanesi kelimeleri** satırı tam bunun için yazıldı ve on dokuz kartın hepsinde dolu.
 
@@ -106,7 +106,7 @@ Gürültüyü arama elemiyor, birleştirme eliyor. Kural tek: **Haritalar listes
 
 Üç sonuç çıkıyor. İstanbul'daki bir zincir klinik geniş kolda çıkıyor ama listeye girmiyor, çünkü ne Haritalar listesinde var ne adında Bursa geçiyor. Bursa'daki bir klinik Haritalar listesinde varsa sitesinden ya da adından eşleşiyor ve satırına reklam sütunu doluyor. "Nilüfer Ağız ve Diş Sağlığı" gibi adında semtini yazan, Haritalar'da hiç çıkmayan bir işletme ise yeni satır olarak listeye giriyor.
 
-Şehir her aramanın içine giriyor, ilçe girmiyor: reklam metni ilçe adı geçirmiyor. İlçe yalnız eleme aşamasında, adında semt yazan işletmeyi kurtarmak için kullanılıyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
+Şehir her reklam aramasının içine giriyor, ilçe girmiyor: reklam metni ilçe adı geçirmiyor (bu kural reklam kelimeleri içindir; Haritalar çekimi yukarıdaki gibi ilçe ilçe yapılır). İlçe yalnız eleme aşamasında, adında semt yazan işletmeyi kurtarmak için kullanılıyor. Ana kanalın telefonsa üç ilçe çekilir, çünkü telefonda bir adaya ortalama bir buçuk dokunuş düşüyor ve liste yazılı kanaldakinden hızlı tükeniyor.
 2. Servis "çalışıyor" der. FounderOS iş kimliğini hemen İş Beyni'ne yazar ve sana tek cümle söyler: "Çekim başladı, birkaç dakika sürer." Sonucu yirmi saniyede bir sorar, en fazla on kez; on sorguda bitmediyse başka işe geçer ve daha sonra yalnız sonucu sorar, çekimi yeniden başlatmaz. Çekim sunucuda sürdüğü için ekranı kapatsan da bozulmaz.
 3. Servis "hazır" deyince FounderOS özeti okur ve sana söyler: kaç kayıt geldi, kaçında telefon var, kaçında e-posta, kaçında Instagram, kaçı reklam veriyor, kaçı yalnız reklamdan bilindi, kaçı hangi sebeple işaretli. Sen "tamam" deyince listeyi klasöre kendi aracıyla indirir (aday-listesi-dosyasi); satırlar sohbete dökülmez, çift kayıt olmaz.
 4. Ay başında bu çekim ilk çekimdir; genişletme ve aylık yenileme aynı yoldan yürür, hepsi aylık tavanın içinde.
@@ -170,7 +170,7 @@ Listenin en büyüğünü yüzün sonuna koyduğunda bunu öğrenciye tek cümle
 
 Yüz işletmenin farkı emek, mesaj sayısı değil. Kalan dört yüz hızlı denetimle ve kartın gözlemiyle gidiyor; yüz işletme derin denetimden geçiyor (on satır, karar verenin adı, lira karşılığı), mesajı o işletmede gerçekten görülmüş bulguyla açılıyor, ilk yazılı temasına üç gün cevap gelmezse ikinci dokunuşu video mesaj oluyor. İlk yazılı temaslar ve videolar derin denetim hızıyla, günde beş adayla yayılıyor ki her biri hazırlıklı gitsin; günün on videosunun kalanı listenin geri kalanından gelir (video-mesaj-cek). Denetim kartı adaya belge olarak gönderilmiyor; bulgu görüşmede ve videoda söyleniyor. Kâğıt gönderen satıcı, konuşan satıcının gerisinde kalıyor.
 
-### Adım 6: yüz işletmenin hızlı denetimi (dördüncü blokta, yarım saat)
+### Adım 6: en çok istenenlerin hızlı denetimi (dördüncü blokta, yarım saat; tam zamanlıda yüz, işin yanında kırk işletme)
 
 Bu adım bugün yapılmaz ve bu modül onu tarif etmez. Yüz işletmenin hızlı denetimi dördüncü bloğun sabahında, tek oturuşta yapılır; nasıl yapıldığı aday-denetimi-cikar'da yazılı, çıktısı sızıntı puanıdır. İşletme başına yaklaşık yirmi saniye; beş satırın dördü veri servisinden hazır geliyor, senin işin okuyup onaylamak. Puan yüz işletmeyi sıraya diziyor ve sahaya çıktığında kimi önce arayacağını o sıra söylüyor.
 
